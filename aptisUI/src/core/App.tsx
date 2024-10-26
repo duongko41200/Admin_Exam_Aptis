@@ -1,6 +1,6 @@
 import { Actions, Permission } from '@/types/roles'
 import { Admin, CustomRoutes, Resource } from 'react-admin'
-// import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import authProvider from '../providers/authProvider'
 import dataProvider from '../providers/dataProviders/dataProvider'
 import { checkRole } from './role/permissions'
@@ -8,6 +8,7 @@ import { checkRole } from './role/permissions'
 // Define resources
 import { ResourceIF } from '@/types/general'
 import Resources from './role/resources'
+import SignUp from '../components//SignUp/SignUp.jsx'
 
 // const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 
@@ -67,9 +68,9 @@ const App = () => (
               )
             })}
 
-            {/* <CustomRoutes>
-              <Route path="/voice" element={<VoiceSpeak />} />
-            </CustomRoutes> */}
+         <CustomRoutes>
+              <Route path="/signUp" element={<SignUp />} />
+            </CustomRoutes> 
           </>
         )
       }}

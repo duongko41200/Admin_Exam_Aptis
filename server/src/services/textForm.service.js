@@ -1,7 +1,7 @@
 'use strict';
 
 //define FACTORY parten
-const { text, word, sentence } = require('../models/textform.model');
+const userModel = require('../models/reading.model');
 const { BadRequestError } = require('../cores/Error.response');
 const {
 	findAllInfoText,

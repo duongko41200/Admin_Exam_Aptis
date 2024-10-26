@@ -46,7 +46,7 @@ const baseDataProvider: DataProvider = {
 
     const requestParams = `sort=${query.sort}&&range=${query.range}&&filter=${query.filter}`
 
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/?${requestParams}`
+    const url = `${apiUrlDesktopApp}/${resource}/?${requestParams}`
 
     const request = new Request(`${url}`, {
       method: 'GET',
@@ -73,7 +73,7 @@ const baseDataProvider: DataProvider = {
   // get a single record by id
   getOne: async (resource: string, params: GetOneParams): Promise<GetOneResult> => {
     console.log('param;', params)
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/get-id/${params.id}`
+    const url = `${apiUrlDesktopApp}/${resource}/get-id/${params.id}`
 
     console.log({ url })
 
@@ -99,7 +99,7 @@ const baseDataProvider: DataProvider = {
   },
   // get a list of records based on an array of ids
   getMany: async (resource: string, params: GetManyParams): Promise<GetManyResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}?id=${params.ids}`
+    const url = `${apiUrlDesktopApp}/${resource}?id=${params.ids}`
     const {
       json: { metadata }
     } = await httpClient(url)
@@ -115,7 +115,7 @@ const baseDataProvider: DataProvider = {
   ): Promise<GetManyReferenceResult> => {
     const query = JSON.stringify(params)
 
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/refer?${query}`
+    const url = `${apiUrlDesktopApp}/${resource}/refer?${query}`
     const {
       json: { metadata }
     } = await httpClient(url)
@@ -124,7 +124,7 @@ const baseDataProvider: DataProvider = {
   },
   // create a record
   create: async (resource: string, params: CreateParams): Promise<CreateResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}`
+    const url = `${apiUrlDesktopApp}/${resource}`
 
     let body = JSON.stringify(params.data)
 
@@ -155,7 +155,7 @@ const baseDataProvider: DataProvider = {
   },
 
   createMany: async (resource: string, params: CreateParams): Promise<CreateResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/batch`
+    const url = `${apiUrlDesktopApp}/${resource}/batch`
 
     const body = JSON.stringify(params.data)
 
@@ -174,7 +174,7 @@ const baseDataProvider: DataProvider = {
 
   // update a record based on a patch
   update: async (resource: string, params: UpdateParams): Promise<UpdateResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/${params.id}`
+    const url = `${apiUrlDesktopApp}/${resource}/${params.id}`
 
     console.log({ params })
 
@@ -200,7 +200,7 @@ const baseDataProvider: DataProvider = {
   },
 
   getAll: async (resource: string) => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/batch`
+    const url = `${apiUrlDesktopApp}/${resource}/batch`
     const {
       json: { metadata }
     } = await httpClient(url)
@@ -212,7 +212,7 @@ const baseDataProvider: DataProvider = {
 
   // update a list of records based on an array of ids and a common patch
   updateMany: async (resource: string, params: UpdateManyParams): Promise<UpdateManyResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/batch`
+    const url = `${apiUrlDesktopApp}/${resource}/batch`
     const body = JSON.stringify(params.data)
 
     const response = await httpClient(url, {
@@ -230,7 +230,7 @@ const baseDataProvider: DataProvider = {
   // delete a record by id
   delete: async (resource: string, params: DeleteParams): Promise<DeleteResult> => {
     console.log('params', params)
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/${params.id}`
+    const url = `${apiUrlDesktopApp}/${resource}/${params.id}`
     const response = await httpClient(url, {
       method: 'DELETE'
     })
@@ -244,7 +244,7 @@ const baseDataProvider: DataProvider = {
   },
   // delete a list of records based on an array of ids
   deleteMany: async (resource: string, params: DeleteManyParams): Promise<DeleteManyResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/batch`
+    const url = `${apiUrlDesktopApp}/${resource}/batch`
     const body = JSON.stringify(params.ids)
 
     console.log({ body })
@@ -266,7 +266,7 @@ const baseDataProvider: DataProvider = {
 
   getPutPresignedUrl: async (resource: string, params: GetPutPresignedUrlparams) => {
     console.log({ resource, params })
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}`
+    const url = `${apiUrlDesktopApp}/${resource}`
     const body = JSON.stringify(params.data)
 
     const response = await httpClient(url, {
@@ -303,7 +303,7 @@ const baseDataProvider: DataProvider = {
 
   resetData: async (resource: string) => {
     console.log({ resource })
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/resetData`
+    const url = `${apiUrlDesktopApp}/${resource}/resetData`
 
     const request = new Request(`${url}`, {
       method: 'GET',
@@ -324,7 +324,7 @@ const baseDataProvider: DataProvider = {
 
   synchData: async (resource: string) => {
     console.log({ resource })
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/synch`
+    const url = `${apiUrlDesktopApp}/${resource}/synch`
 
     const request = new Request(`${url}`, {
       method: 'GET',
@@ -438,7 +438,7 @@ const baseDataProvider: DataProvider = {
     }
   },
   updateAndCreate: async (resource: string, params: UpdateParams): Promise<UpdateResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/update-create/${params.id}`
+    const url = `${apiUrlDesktopApp}/${resource}/update-create/${params.id}`
 
     let body = JSON.stringify(params.data)
 
@@ -477,7 +477,7 @@ const baseDataProvider: DataProvider = {
   },
 
   updateFileUpload: async (resource: string, params: UpdateParams): Promise<UpdateResult> => {
-    const url = `${validUrlApi(resource) ? apiUrlDesktopApp : apiUrlApp}/${resource}/update-file-upload`
+    const url = `${apiUrlDesktopApp}/${resource}/update-file-upload`
 
     let body = JSON.stringify(params.data)
 console.log({body})

@@ -31,9 +31,13 @@ const userSchema = new Schema(
 			type: String,
 			default: '',
 		},
-		level: {
+		class: {
 			type: Number,
-			default: 1,
+			default: null,
+		},
+		identityCard: {
+			type: Number,
+			default: null,
 		},
 		status: {
 			type: String,
