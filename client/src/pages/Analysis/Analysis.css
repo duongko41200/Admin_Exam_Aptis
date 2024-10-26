@@ -1,0 +1,18 @@
+.wrapper-analysis{
+	/* padding:20px 15px 0 15px; */
+}
+.sub-header{
+	font-size: 18px;
+	font-weight:900;
+}
+.pie{
+	background-color:rgb(243, 243, 98) ;
+}
+.bg-topic{
+	background-color:#F7F1AF ;
+}
+.list-topic{
+	height: fit-content;
+    max-height: calc(100vh - 200px);
+    overflow-y: scroll;
+}

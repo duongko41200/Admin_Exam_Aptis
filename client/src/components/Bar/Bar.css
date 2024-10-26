@@ -1,0 +1,19 @@
+.wrapper-title {
+	display: flex;
+	justify-content: space-between;
+}
+.title-bar,
+.title-detail {
+	margin-top: 1rem;
+	font-weight: 700;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.title-detail {
+	color: #1da1f2;
+	text-decoration: underline;
+	font-weight: 600;
+	width:fit-content;
+	font-size:15px
+}

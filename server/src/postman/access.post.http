@@ -1,0 +1,14 @@
+
+
+@url_dev = http://localhost:3052/v1/api/
+
+POST {{url_dev}}/shop/signup
+
+Content-Type: application/json
+x-api-key: xxxxfdsgdfgdfg
+
+{
+	"name":"show dfduong",
+	"email":"duonddfdfgsfdg@gmail.com",
+	"password":"123df56"
+}

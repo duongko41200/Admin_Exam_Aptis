@@ -1,0 +1,120 @@
+.router-padding-bottom {
+  padding-bottom: calc(3.75rem + 0.675rem);
+}
+.router-container .fluid {
+  width: 100%;
+  max-width: 46rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: unset;
+  overflow: hidden;
+  height: inherit;
+}
+.topbar-separator {
+  margin-top: 3.75rem;
+}
+.calc-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card.invisible {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: auto;
+  min-height: unset;
+  border-radius: unset;
+  border: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card.invisible {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: auto;
+  min-height: unset;
+  border-radius: unset;
+  border: none;
+}
+
+.card {
+  background-color: var(--background-50, white);
+  border: thin solid var(--secondary-300, #d4d4d4);
+  box-shadow: 0 0 16px var(--background-300, #e0e2e5);
+  padding: 1em;
+  width: 100%;
+  min-height: 1em;
+  border-radius: 8px;
+}
+
+.lrn_stimulus_content,
+.lrn .lrn_stimulus_content {
+  font-family: Inter, sans-serif !important;
+  color: #161616 !important;
+  color: var(--text-default, #161616) !important;
+}
+
+.lrn_widget * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+.lrn_widget.lrn_clozedropdown .lrn_response_input {
+  margin-top: 10px;
+}
+
+.lrn_widget .lrn_question {
+  margin-bottom: 1em !important;
+}
+
+select {
+  color: #4d4d4d;
+  border: 1px solid #939393;
+  background-color: #fff;
+  padding: 2px;
+  margin: 0;
+  width: auto;
+  height: 2em;
+  border-radius: 2px;
+  font-size: 14px;
+}
+p {
+  line-height: 2.7;
+  font-size: 14px;
+}
+
+.footer-test {
+  height: 3.75rem;
+  background-color: var(--background-default, white);
+  border: 0.5px solid var(--secondary-50, #f8f8f8);
+  bottom: 0.675rem;
+  width: calc(100% - 0.675rem * 2) !important;
+  margin: 0;
+  left: 0.675rem;
+  position: fixed;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 20px 2px var(--primary-10, #c3c1dd);
+  display: flex;
+  padding: 7px;
+  justify-content: space-between;
+}
+
+.footer {
+  box-shadow: none;
+  background: transparent;
+  align-items: center;
+  height: auto;
+  border: none;
+  z-index: 5;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  right: 0;
+  margin: 0;
+  left: unset;
+  display: flex;
+}

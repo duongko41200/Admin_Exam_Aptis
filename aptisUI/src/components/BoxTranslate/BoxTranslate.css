@@ -1,0 +1,143 @@
+.modal__preview {
+	width: fit-content;
+	height: fit-content;
+	/* background-color: white; */
+	position: absolute;
+	top: 3%;
+	left: 30%;
+	user-select:none !important
+}
+.none-select{
+	user-select:none !important
+}
+.swap {
+	min-height: 75vh;
+
+	width: 100%;
+	/* background-color: aliceblue; */
+}
+.modal__preview--title {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+/deep/ td,
+tr,
+th {
+	border: 2px solid rgba(0, 0, 0, 0.439) !important;
+}
+.icon {
+	font-size: 1em; /* Kích thước biểu tượng */
+	position: absolute; /* Đặt biểu tượng tuyệt đối so với đối tượng cha */
+	background-color: rgb(71, 70, 70);
+	border-radius: 10px;
+
+	color: aliceblue;
+	cursor: pointer;
+	transform: translate(
+		-50%,
+		0%
+	); /* Dịch chuyển để canh giữa chính xác */
+}
+.translate {
+	min-height: 500px;
+	height: fit-content;
+
+	background-color: #fff;
+	border: 1px solid rgb(181, 180, 180) !important;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px rgba(199, 198, 198, 0.716);
+}
+.header {
+	width: 100%;
+	height: 40px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 1px solid rgb(0, 179, 255) !important;
+	background-color: rgb(0, 179, 255);
+}
+.word-value {
+	width: 100%;
+	/* height: 80px; */
+	/* background-color: aqua; */
+}
+.pronounce {
+	padding: 0 20px;
+	text-align: start;
+	font-style: italic;
+
+	color: rgb(155, 154, 154);
+}
+.vaule {
+	padding: 0 20px;
+	text-align: start;
+	font-size: 30px;
+	font-weight: 700;
+
+	color: black;
+}
+.audio {
+	height: 30px !important;
+}
+.box-translate {
+	width: 100%;
+	max-height: 341px;
+	height: fit-content;
+	/* background-color: aqua; */
+	color: black;
+	padding: 20px 10px;
+	overflow-y: scroll;
+	padding-bottom: 15px;
+}
+.type-word {
+	padding: 5px 10px;
+	text-align: start;
+	font-size: 19px;
+	font-weight: 700;
+	color: rgba(243, 187, 84, 0.879);
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	
+}
+.translate-text,
+.source-text {
+	padding: 12px 10px;
+	text-align: start;
+	/* font-size: 19px; */
+	/* font-weight: 700; */
+	background-color: rgba(134, 134, 134, 0.238);
+	border-radius: 10px;
+	min-height: 150px;
+	max-height: 250px;
+	overflow-y: scroll;
+	color: rgba(55, 55, 55, 0.879);
+	position: relative;
+}
+.source-text {
+	/* margin-bottom: 200px; */
+	overflow-y: scroll;
+	max-height: 100px;
+}
+.margin-box {
+	margin-top: 25px;
+}
+.definition {
+	font-size: 14px;
+	font-style: italic;
+	color: rgba(128, 128, 128, 0.793);
+}
+.margin-top-box {
+	margin-top: 49px;
+}
+.voice{
+	padding:0 20px
+}
+.icon-dictionary{
+	display: flex;
+	justify-content: end;
+	gap:6px;
+	align-items: center;
+
+}

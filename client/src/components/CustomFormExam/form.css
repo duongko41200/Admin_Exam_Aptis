@@ -1,0 +1,22 @@
+.textarea {
+	box-sizing: border-box;
+	width: 100%;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid #dae2ed;
+	box-shadow: 0px 2px 2px #dae2ed;
+	min-height: 200px;
+}
+
+.textarea:focus {
+	border-color: #3399ff;
+	box-shadow: 0 0 0 3px #b6daff;
+}
+
+.textarea:focus-visible {
+	outline: 0;
+}

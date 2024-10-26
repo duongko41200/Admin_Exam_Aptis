@@ -1,0 +1,11 @@
+.rich-text {
+  height: calc(100vh - 270px);
+  position: initial !important;
+  overflow: auto;
+}
+
+.rich-text-box {
+  height: 100%;
+  position: initial !important;
+  overflow: auto;
+}

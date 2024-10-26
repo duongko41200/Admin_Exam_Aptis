@@ -1,0 +1,526 @@
++-------------------------+        +------------------------+
+|      ReadingExercise     |  1  <--> *       Question       |
++-------------------------+        +------------------------+
+| id                      |        | id                     |
+| title                   |        | readingExerciseId      |
+| timeToDo                |        | questionTitle          |
+| skill                   |        | content                |
+| description             |        | questionType           |
+| questions (Array)       |        | isExample             |
++-------------------------+        | questionPart          |
+                                    | answerList (Array)     |
+                                    | correctAnswer         |
+                                    | file                   |                     
+                                    | suggestion             |
+                                    | subQuestions (Array)  |
+                                    | image                  |
+                                    +------------------------+
+                                              |
+                                              |
+                                              v
+                                    +------------------------+ 
+                                    |    AnswerChoice        |
+                                    +------------------------+
+                                    | id                     |
+                                    | questionId             |
+                                    | content                |
+                                    +------------------------+
+                                              ^
+                                              |
+                                              |
+                                    +------------------------+
+                                    |    SubQuestion         |
+                                    +------------------------+
+                                    | id                     |
+                                    | questionId             |
+                                    | content                |
+                                    | correctAnswer          |
+                                    | answerList (Array)     |
+                                    | subQuestionAnswerList  |
+                                    +------------------------+
+                                              ^
+                                              |
+                                              |
+                                    +------------------------+
+                                    |  SubQuestionAnswer     |
+                                    +------------------------+
+                                    | subQuestionId          |
+                                    | answerChoiceId         |
+                                    +------------------------+
+
+
+
+
+
+
+									{
+										"code": 200,
+										"data": {
+											"id": 81,
+											"title": "Reading 5 - BC",
+											"timeToDo": 35,
+											"questions": [
+												{
+													"id": 617,
+													"questionTitle": "Reading - Test 5 - Part 1",
+													"content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Janice to her friend.&nbsp;Choose one word from the list for each gap. The first one is done for you.</strong></p><p><span style=\"color: rgb(22, 22, 22);\">﻿Dear Sally,</span></p> tentisspace <p>Love,</p><p>Janice</p>",
+													"answerList": [
+														{
+															"id": "807036fb-3fb0-481b-b295-2a270577730b",
+															"content": "large"
+														},
+														{
+															"id": "2dec691c-fc57-4ad9-91b7-794416c97f60",
+															"content": "great"
+														},
+														{
+															"id": "46ffd681-aec6-4680-a52e-9e1d898d607d",
+															"content": "big"
+														},
+														{
+															"id": "e324edc8-f5da-45ce-befe-81e661a5402e",
+															"content": "boat"
+														},
+														{
+															"id": "b979f897-8fac-499c-a459-16907bd26d41",
+															"content": "train"
+														},
+														{
+															"id": "a52e8665-acee-4198-b11d-f77c40aa0ee8",
+															"content": "bus"
+														},
+														{
+															"id": "a2b71177-c105-49f6-82f5-ccbe3cc9427f",
+															"content": "window."
+														},
+														{
+															"id": "e4d387aa-781d-4b88-beed-f3980926b271",
+															"content": "cup."
+														},
+														{
+															"id": "3db05ac6-31ac-4b0f-bc62-bfcd83f439bb",
+															"content": "town."
+														},
+														{
+															"id": "ad68c534-173a-4210-873d-db45c7250d13",
+															"content": "drive"
+														},
+														{
+															"id": "b1e81f42-067a-49a4-99de-17a11e2570a1",
+															"content": "walk"
+														},
+														{
+															"id": "5197ec3b-f85c-49db-904c-5233b2fb90fa",
+															"content": "fly"
+														},
+														{
+															"id": "e02ee23e-b49b-4881-a639-03b9b52fb5a7",
+															"content": "books"
+														},
+														{
+															"id": "87ff6ac8-1ab1-4ffb-a004-7f1a7b2e57b1",
+															"content": "shops"
+														},
+														{
+															"id": "bd9a07a8-206e-4b0e-99d3-ffec0356bbf0",
+															"content": "brothers"
+														}
+													],
+													"correctAnswer": "",
+													"file": null,
+													"subQuestionAnswerList": [],
+													"suggestion": null,
+													"subQuestion": [
+														{
+															"content": "Tim and I are on holiday in Greece. We have a nice  tentisspace  of the sea from our hotel.",
+															"correctAnswer": "view",
+															"file": null,
+															"answerList": [],
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "The weather is  tentisspace  and it’s really hot.",
+															"correctAnswer": "2dec691c-fc57-4ad9-91b7-794416c97f60",
+															"file": null,
+															"answerList": [
+																{
+																	"id": "807036fb-3fb0-481b-b295-2a270577730b",
+																	"content": "large"
+																},
+																{
+																	"id": "2dec691c-fc57-4ad9-91b7-794416c97f60",
+																	"content": "great"
+																},
+																{
+																	"id": "46ffd681-aec6-4680-a52e-9e1d898d607d",
+																	"content": "big"
+																}
+															],
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Yesterday we went on a  tentisspace  Yesterday we went on a",
+															"correctAnswer": "e324edc8-f5da-45ce-befe-81e661a5402e",
+															"file": null,
+															"answerList": [
+																{
+																	"id": "e324edc8-f5da-45ce-befe-81e661a5402e",
+																	"content": "boat"
+																},
+																{
+																	"id": "b979f897-8fac-499c-a459-16907bd26d41",
+																	"content": "train"
+																},
+																{
+																	"id": "a52e8665-acee-4198-b11d-f77c40aa0ee8",
+																	"content": "bus"
+																}
+															],
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "We had lunch and then we visited an old   tentisspace",
+															"correctAnswer": "3db05ac6-31ac-4b0f-bc62-bfcd83f439bb",
+															"file": null,
+															"answerList": [
+																{
+																	"id": "a2b71177-c105-49f6-82f5-ccbe3cc9427f",
+																	"content": "window."
+																},
+																{
+																	"id": "e4d387aa-781d-4b88-beed-f3980926b271",
+																	"content": "cup."
+																},
+																{
+																	"id": "3db05ac6-31ac-4b0f-bc62-bfcd83f439bb",
+																	"content": "town."
+																}
+															],
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Tomorrow we are going to take a car and  tentisspace  around.",
+															"correctAnswer": "ad68c534-173a-4210-873d-db45c7250d13",
+															"file": null,
+															"answerList": [
+																{
+																	"id": "ad68c534-173a-4210-873d-db45c7250d13",
+																	"content": "drive"
+																},
+																{
+																	"id": "b1e81f42-067a-49a4-99de-17a11e2570a1",
+																	"content": "walk"
+																},
+																{
+																	"id": "5197ec3b-f85c-49db-904c-5233b2fb90fa",
+																	"content": "fly"
+																}
+															],
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "We are going to visit some  tentisspace  and buy clothes.",
+															"correctAnswer": "87ff6ac8-1ab1-4ffb-a004-7f1a7b2e57b1",
+															"file": null,
+															"answerList": [
+																{
+																	"id": "e02ee23e-b49b-4881-a639-03b9b52fb5a7",
+																	"content": "books"
+																},
+																{
+																	"id": "87ff6ac8-1ab1-4ffb-a004-7f1a7b2e57b1",
+																	"content": "shops"
+																},
+																{
+																	"id": "bd9a07a8-206e-4b0e-99d3-ffec0356bbf0",
+																	"content": "brothers"
+																}
+															],
+															"image": null,
+															"suggestion": "<p>1. great 2. boat 3. town 4. drive 5. shops</p>"
+														}
+													],
+													"questionType": "READING",
+													"isExample": false,
+													"questionPart": "ONE",
+													"image": null
+												},
+												{
+													"id": 618,
+													"questionTitle": "Reading - Test 5 - Part 2",
+													"content": "<p><strong style=\"color: rgb(22, 22, 22);\">The sentences below are from a report. Put the sentences in the right order. The first sentence is done for you.</strong></p><p>Signs on the coast road&nbsp;&nbsp;</p> tentisspace  This report gives information about the traffic problems on the coast road.",
+													"answerList": [
+														{
+															"id": "557b49a4-8f32-4f46-861a-524a6cd5a7de",
+															"content": "For this reason it is easy for them to take a wrong turn and get lost."
+														},
+														{
+															"id": "008e29e4-d9a9-4dbd-9713-1f0273ef52e5",
+															"content": "This road is busy during the summer when tourists visit the area. "
+														},
+														{
+															"id": "320b30d3-1577-486b-b0cb-1322cdec6a29",
+															"content": "This is why we think there should be more signs along the road."
+														},
+														{
+															"id": "f9511944-41bc-4cf2-84f4-6730dc328dd6",
+															"content": "They don’t know the road because many of them are here for the first time."
+														},
+														{
+															"id": "3c6a44cd-a222-4742-bd58-65d26b601762",
+															"content": "These will help visitors to find their way to our beautiful town."
+														}
+													],
+													"correctAnswer": "320b30d3-1577-486b-b0cb-1322cdec6a29,557b49a4-8f32-4f46-861a-524a6cd5a7de,f9511944-41bc-4cf2-84f4-6730dc328dd6,008e29e4-d9a9-4dbd-9713-1f0273ef52e5,3c6a44cd-a222-4742-bd58-65d26b601762",
+													"file": null,
+													"subQuestionAnswerList": [],
+													"suggestion": "<ol><li>This road is busy during the summer when tourists visit the area. </li><li>They don’t know the road because many of them are here for the first time. </li><li>For this reason, it is easy for them to take a wrong turn and get lost. </li><li>This is why we think there should be more signs along the road. </li><li>These will help visitors to find their way to our beautiful town.&nbsp;</li></ol>",
+													"subQuestion": [],
+													"questionType": "READING",
+													"isExample": false,
+													"questionPart": "TWO",
+													"image": null
+												},
+												{
+													"id": 620,
+													"questionTitle": "Reading - Test 5 - Part 3",
+													"content": "<p class=\"ql-align-justify\"><strong>The sentences below are from some instructions. Put the sentences in the right order. The first sentence is done for you.</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(22, 22, 22);\">Instructions for office visitors</span></p> tentisspace  If you are visiting our office for the first time, please follow these instructions.",
+													"answerList": [
+														{
+															"id": "f4dd4ad4-9b0b-4154-88e5-c5711b8703c8",
+															"content": "A member of staff will write this information in the visitor’s book."
+														},
+														{
+															"id": "8b1424a6-00a3-43ac-9601-9524901d9783",
+															"content": "You can then use the card to enter through the security gate."
+														},
+														{
+															"id": "a7504786-45e0-437c-83ed-f5db2db5b961",
+															"content": "You should go to the front desk upon arrival and give your name and address."
+														},
+														{
+															"id": "520352bb-a20f-4291-9307-16d5e228efc6",
+															"content": "Before you leave, please return the card to a member of staff at the front desk. "
+														},
+														{
+															"id": "e1e133d2-cec1-4ab7-a425-d07df950b9d9",
+															"content": "Next, he or she will give you a visitor’s identity card"
+														}
+													],
+													"correctAnswer": "8b1424a6-00a3-43ac-9601-9524901d9783,f4dd4ad4-9b0b-4154-88e5-c5711b8703c8,520352bb-a20f-4291-9307-16d5e228efc6,a7504786-45e0-437c-83ed-f5db2db5b961,e1e133d2-cec1-4ab7-a425-d07df950b9d9",
+													"file": null,
+													"subQuestionAnswerList": [],
+													"suggestion": "<ol><li>You should go to the front desk upon arrival and give your name and address. </li><li>A member of staff will write this information in the visitor’s book. \\</li><li>Next, he or she will give you a visitor’s identity card. </li><li>You can then use the card to enter through the security gate. </li><li>Before you leave, please return the card to a member of staff at the front desk.</li></ol>",
+													"subQuestion": [],
+													"questionType": "READING",
+													"isExample": false,
+													"questionPart": "TWO",
+													"image": null
+												},
+												{
+													"id": 621,
+													"questionTitle": "Reading - Test 5 - Part 4",
+													"content": "<h2><strong style=\"color: rgb(22, 22, 22);\">                            Education and work</strong></h2><p><strong>Petra</strong></p><p class=\"ql-align-justify\">As you get older, responsibilities like a job and family dominate your life. It can be hard to balance things. Studying at university is demanding. So you should do it at an age when you are independent and carefree. It is also important to learn how the world of business works. Spending unpaid time in a company is a great way to get that experience. Any course that can give you an opportunity to do that is worth considering.</p><p><strong>Antonio</strong></p><p class=\"ql-align-justify\">Life doesn’t really get serious until you hit your mid-twenties. Before that, try out different things and get some life experience. It’s only as you approach your thirties that you need to get serious about your career. That’s the time to start thinking about further education. Many colleges offer inexpensive courses for more mature students. Going back to student life for a year is a great idea, and you can then return to the world of work at management level.</p><p><strong>Eleanor</strong></p><p class=\"ql-align-justify\">Nowadays, it is popular for school leavers to take a break before they think about an occupation or a place at university. I think the most important thing is to start working as soon as you can. You need practical experience for your CV, and that can be more valuable than a diploma. Nevertheless, your studies do not have to stop just because you are working. Colleges and universities offer options for people who want to do both.</p><p><strong>Jermaine</strong></p><p class=\"ql-align-justify\">I think we should all keep learning, but you don’t need a piece of paper from an institution to prove it. There are many free courses available online. Of course, not all are good, but a little research will help you identify which one is best for you. A lot of young people get into debt because they have to pay for their studies. With the resources available online these days, you can take control. You won’t regret it.</p><p><br></p><p><br></p> tentisspace <p><strong style=\"color: rgb(22, 22, 22);\">Four people respond in the comments section of an online magazine article about education and work.&nbsp;Decide whose opinion matches the statements below. Read the texts and complete the questions below.</strong></p>",
+													"answerList": [
+														{
+															"id": "d0923bbb-c6e9-4aa1-8243-ca56085de58f",
+															"content": "Petra"
+														},
+														{
+															"id": "294bc76e-870a-476c-be18-511fbe5020dc",
+															"content": "Antonio"
+														},
+														{
+															"id": "9a67f2e4-adf0-49d5-83fe-3d940adb4667",
+															"content": "Eleanor"
+														},
+														{
+															"id": "2dbe5c04-2f47-4edd-b131-0a8920004a29",
+															"content": "Jermaine"
+														}
+													],
+													"correctAnswer": "",
+													"file": null,
+													"subQuestionAnswerList": [],
+													"suggestion": "<p>1. Antonio</p><p>2. Jermaine</p><p>3. Petra</p><p>4. Jermaine</p><p>5. Eleanor</p><p>6. Petra</p><p>7. Eleanor</p>",
+													"subQuestion": [
+														{
+															"content": "Who thinks you should study when you are older?",
+															"correctAnswer": "294bc76e-870a-476c-be18-511fbe5020dc",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": " Who thinks formal qualifications are too expensive?",
+															"correctAnswer": "2dbe5c04-2f47-4edd-b131-0a8920004a29",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Who thinks you should go to university when you are young?",
+															"correctAnswer": "d0923bbb-c6e9-4aa1-8243-ca56085de58f",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Who thinks you should study independently?",
+															"correctAnswer": "2dbe5c04-2f47-4edd-b131-0a8920004a29",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Who thinks you should combine a job with studying?",
+															"correctAnswer": "9a67f2e4-adf0-49d5-83fe-3d940adb4667",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Who thinks you should choose a course that is practical?",
+															"correctAnswer": "d0923bbb-c6e9-4aa1-8243-ca56085de58f",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "Who thinks you should get a job immediately after leaving school?",
+															"correctAnswer": "9a67f2e4-adf0-49d5-83fe-3d940adb4667",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														}
+													],
+													"questionType": "READING",
+													"isExample": false,
+													"questionPart": "THREE",
+													"image": null
+												},
+												{
+													"id": 624,
+													"questionTitle": "Reading - Test 5 - Part 5",
+													"content": "<p><br></p><p><br></p><p><strong>Mission to Mars</strong></p><p><strong>1.</strong>&nbsp;On 3 June 2010, an international crew of six astronauts entered a spaceship and prepared themselves for a 520-day voyage to the planet Mars and back. The module that was to be their home for the next year and a half contained their sleeping quarters, a kitchen/dining room, a living room, a control room and a toilet. There was also space for food storage, a small greenhouse, a bathroom, a sauna and even a gym. The Mars landing was scheduled for 12 February 2011, following a 255-day flight, and would involve a full two days of exploration of the planet's surface. An equally long return journey would see the astronauts return to Earth on 4 November 2011.</p><p><strong>2.</strong>&nbsp;Emerging from the spaceship after an exhausting 520 days, Russian commander Alexei Sitev declared the mission finally over. 'The programme has been fully carried out', he announced at a press conference. 'All the crew members are in good health. We are now ready for further tests'. Indeed, the general consensus in the scientific community was that the Mars 500 project had achieved its aims, and, what is more, the crew had managed to complete their mission without ever having to leave the earth’s atmosphere.</p><p><strong>3.</strong>&nbsp;Mars 500 was, in fact, a simulation exercise. The astronauts never even left the ground, and their spaceship was a specially constructed working model situated in a warehouse in the suburbs of Moscow. The aims of the mission were to see how well humans could cope with the confinement and stress involved in extended interplanetary travel. The astronauts – three Russians, a Frenchman, an Italian and a Chinese national – were volunteers for the project, and although all of them had the option of leaving their 550-cubic metre living space at any time, none of them chose to do so.</p><p><strong>4.</strong>&nbsp;All communications between the crew and mission control were subject to a twenty-minute delay to simulate the time it would take signals to reach the earth from outer space. Although not all the elements of space flight – such as the effects of zero gravity – could be reproduced, the conditions on board were made as realistic as possible. The astronauts breathed recycled air, showered only once every ten days and lived mostly on a diet of tinned food. Even the surface of Mars had been recreated to allow the crew the simulated experience of walking on the red planet.</p><p><strong>5.</strong>&nbsp;In addition to the discomforts of living in a confined space, the astronauts also had to endure the psychological stresses brought about by isolation and boredom. Scientific studies have already shown that extended periods of social isolation can disrupt the normal mechanisms of the body. This can lead to increased levels of stress and higher blood pressure, which, in turn, can create feelings of anxiety and aggression. The astronauts were subject to regular medical tests throughout the experiment and they were under constant observation via a twenty-four hour closed-circuit television system. The tests continued even after the men had completed their mission as the scientists were interested to see how the astronauts would cope with a return to normal life.</p><p><strong>6.</strong>&nbsp;The data collected by the experiment is further evidence that human beings are capable of overcoming the pressures of long space flight that will be necessary if future exploration of planets is to be feasible. Although there is resistance in some quarters to investment in space exploration, some scientists believe that our future lies in the stars. With the world's population exceeding seven billion and showing no sign of slowing down, future generations may be forced to seek out new worlds beyond our own increasingly overcrowded planet.</p><p class=\"ql-align-justify\"><strong>7.</strong>&nbsp;Although the dry and dusty landscape of Mars may not be the most suitable spot for future habitation, there are other planets that could sustain human life. To date about 700 planets with similarities to Earth have been identified outside our own solar system, and about 15 of these are potentially habitable. The most recent to be discovered – Kepler 22-b – has a surface temperature of about 22°C and orbits a star not unlike our own sun. Scientists believe that it may even contain water. However, although it may seem like a good candidate for a future space colony, it is 600 light years away, and so it is likely to remain beyond human reach for many generations to come.</p> tentisspace <p><strong style=\"color: rgb(22, 22, 22);\">Read the passage quickly. Choose a heading for each numbered paragraph (1</strong><span style=\"color: rgb(22, 22, 22);\">–</span><strong style=\"color: rgb(22, 22, 22);\">7) from the drop-down box. There is one more heading than you need.</strong></p>",
+													"answerList": [
+														{
+															"id": "fed58caa-41c1-4328-9519-b8d4b1c174e5",
+															"content": "Life on Mars"
+														},
+														{
+															"id": "a516a772-2f1c-4784-960e-bcdb6358dbd8",
+															"content": "Is space the future for mankind?"
+														},
+														{
+															"id": "af4029e6-a621-4fcd-9937-079c41f64017",
+															"content": "The difficulties of living in space"
+														},
+														{
+															"id": "ec922923-3da4-4cbe-8597-42214af2eea8",
+															"content": "A successful outcome"
+														},
+														{
+															"id": "953959a8-cdf2-4c2c-9bbd-0d24b970e251",
+															"content": "A distant new world"
+														},
+														{
+															"id": "634a0fb7-c10a-4ac2-9978-6e5ef2cc814f",
+															"content": "Imitating life in space"
+														},
+														{
+															"id": "05b3a0c9-507b-466a-8a68-0cfea62c9ef8",
+															"content": "A long journey in space"
+														},
+														{
+															"id": "17b037bc-deb2-4e88-87ad-39f37657db99",
+															"content": "Only an experiment"
+														}
+													],
+													"correctAnswer": null,
+													"file": null,
+													"subQuestionAnswerList": [],
+													"suggestion": null,
+													"subQuestion": [
+														{
+															"content": "",
+															"correctAnswer": "05b3a0c9-507b-466a-8a68-0cfea62c9ef8",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "ec922923-3da4-4cbe-8597-42214af2eea8",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "17b037bc-deb2-4e88-87ad-39f37657db99",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "634a0fb7-c10a-4ac2-9978-6e5ef2cc814f",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "af4029e6-a621-4fcd-9937-079c41f64017",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "a516a772-2f1c-4784-960e-bcdb6358dbd8",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": null
+														},
+														{
+															"content": "",
+															"correctAnswer": "953959a8-cdf2-4c2c-9bbd-0d24b970e251",
+															"file": null,
+															"answerList": null,
+															"image": null,
+															"suggestion": "<p>1. A long journey in space</p><p>2. A successful outcome</p><p>3. Only an experiment</p><p>4. Imitating life in space</p><p>5. The difficulties of living in space</p><p>6. Is space the future for mankind?</p><p>7. A distant new world</p>"
+														}
+													],
+													"questionType": "READING",
+													"isExample": false,
+													"questionPart": "FOUR",
+													"image": null
+												}
+											],
+											"skill": "READING",
+											"description": null
+										},
+										"success": true,
+										"message": "OK",
+										"timestamp": "2024-10-19T05:17:00.435+00:00"
+									}

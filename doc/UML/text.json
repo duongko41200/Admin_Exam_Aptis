@@ -1,0 +1,129 @@
++----------------------+                  
+|  ListeningQuestion   |                  
++----------------------+                  
+| id                   |   1  <---->  *   | SubQuestion                    
+| questionTitle        |                  
+| content              |                   
+| answerList           |<----+                  
+| correctAnswer        |                   
+| file                 |                   
+| suggestion           |                   
+| questionType         |                   
+| isExample            |                   
+| questionPart         |                   
++----------------------+                   
+		  | 1                                     
+		  |                                      
+   +----------------+     *        +--------------------+
+   |   AnswerChoice  | <------->   |   SubQuestionAnswer |
+   +----------------+             +--------------------+
+   | id             |             | subQuestionId       |
+   | questionId     |             | answerChoiceId      |
+   | content        |             +--------------------+
+   +----------------+
+		  |
+		  |
+	+-------------+
+	|  SubQuestion |
+	+-------------+
+	| id          |
+	| questionId  |
+	| content     |
+	| correctAnswer |
+	| answerList  |
+	+-------------+
+		  |
+		  |
+	+-------------------+
+	| SubQuestionAnswer |
+	+-------------------+
+	| subQuestionId      |
+	| answerChoiceId     |
+	+-------------------+
+
+
+
+
+	{
+		"id": 1145,
+		"questionTitle": "Listening 5 BC - Câu 16",
+		"content": "<p><span style=\"color: rgb(22, 22, 22);\">Listen to a city planner talk at a press conference about a new transport plan and answer the questions below.</span></p>",
+		"answerList": [
+			{
+				"id": "44801394-3945-4e90-9552-801e8bbfaef9",
+				"content": "It is very similar to previous community projects in the same area."
+			},
+			{
+				"id": "a21446be-dc2d-4059-975c-8bbfbc51e78b",
+				"content": "It was prepared without proper consultation with the community."
+			},
+			{
+				"id": "93b87580-e916-473c-8db9-96c0fadac667",
+				"content": "It does not represent the opinions of the whole community."
+			},
+			{
+				"id": "3d558231-b945-421e-a9ed-63d85ca6f8b9",
+				"content": "He is critical of the media’s reporting of the plan."
+			},
+			{
+				"id": "02aaf505-cbaa-4418-bc69-3f6a61de1160",
+				"content": "He is surprised by the media’s interest in the plan."
+			},
+			{
+				"id": "ef5f360f-1336-4303-bbe7-dfd797a763a0",
+				"content": "He is confused by the media’s reaction to the plan."
+			}
+		],
+		"correctAnswer": "",
+		"file": "https://thithuaptis.com/uploads/1727326316648-file.mp3",
+		"subQuestionAnswerList": [],
+		"suggestion": null,
+		"subQuestion": [
+			{
+				"content": "<p>What is his opinion of the plan overall?</p>",
+				"correctAnswer": "93b87580-e916-473c-8db9-96c0fadac667",
+				"file": null,
+				"answerList": [
+					{
+						"id": "44801394-3945-4e90-9552-801e8bbfaef9",
+						"content": "It is very similar to previous community projects in the same area."
+					},
+					{
+						"id": "a21446be-dc2d-4059-975c-8bbfbc51e78b",
+						"content": "It was prepared without proper consultation with the community."
+					},
+					{
+						"id": "93b87580-e916-473c-8db9-96c0fadac667",
+						"content": "It does not represent the opinions of the whole community."
+					}
+				],
+				"image": null,
+				"suggestion": null
+			},
+			{
+				"content": "<p>What is his opinion of the role of the media?</p>",
+				"correctAnswer": "3d558231-b945-421e-a9ed-63d85ca6f8b9",
+				"file": null,
+				"answerList": [
+					{
+						"id": "3d558231-b945-421e-a9ed-63d85ca6f8b9",
+						"content": "He is critical of the media’s reporting of the plan."
+					},
+					{
+						"id": "02aaf505-cbaa-4418-bc69-3f6a61de1160",
+						"content": "He is surprised by the media’s interest in the plan."
+					},
+					{
+						"id": "ef5f360f-1336-4303-bbe7-dfd797a763a0",
+						"content": "He is confused by the media’s reaction to the plan."
+					}
+				],
+				"image": null,
+				"suggestion": null
+			}
+		],
+		"questionType": "LISTENING",
+		"isExample": false,
+		"questionPart": "FOUR",
+		"image": null
+	}
