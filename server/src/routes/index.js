@@ -14,5 +14,6 @@ router.use('/v1/api/text', require('./textForm'));
 router.use('/v1/api/topic', require('./topic'))
 router.use('/v1/api/other', require('./otherService'))
 router.use('/v1/api/users', require('./user'))
+router.use('/v1/api/readings', require('./reading'))
 
 module.exports = router;
