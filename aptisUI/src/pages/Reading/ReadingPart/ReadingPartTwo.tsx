@@ -49,26 +49,27 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "200px",
+      minHeight: "160px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
     }}
   >
     <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
+      Nội Dung Câu {questionNumber}
     </Box>
     <Box>
       <div>
         <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
+          type="number"
+          {...register(`numberOrder${questionNumber}`, { required: true })}
+          placeholder={`Số thứ tự khi được sắp xếp`}
           variant="outlined"
           fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
+          inputProps={{ min: 1, max: 5 }} // Added max value here
+          error={!!errors[`numberOrder${questionNumber}`]}
           helperText={
-            errors[`subContent${questionNumber}`]
+            errors[`numberOrder${questionNumber}`]
               ? "This field is required"
               : ""
           }
@@ -76,9 +77,9 @@ const QuestionBox = ({
       </div>
       <div>
         <TextField
-          type={`correctAnswer${questionNumber}`}
+          type={`contentAnswer${questionNumber}`}
           {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder="Đán án đúng"
+          placeholder={`Nội dung câu ${questionNumber}`}
           variant="outlined"
           fullWidth
           error={!!errors[`correctAnswer${questionNumber}`]}
@@ -89,39 +90,11 @@ const QuestionBox = ({
           }
         />
       </div>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 1,
-        }}
-      >
-        {[1, 2, 3].map((num) => (
-          <div key={num}>
-            <TextField
-              type={`answer${num}Sub${questionNumber}`}
-              {...register(`answer${num}Sub${questionNumber}`, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${num}`}
-              variant="outlined"
-              fullWidth
-              error={!!errors[`answer${num}Sub${questionNumber}`]}
-              helperText={
-                errors[`answer${num}Sub${questionNumber}`]
-                  ? "This field is required"
-                  : ""
-              }
-            />
-          </div>
-        ))}
-      </Box>
     </Box>
   </Box>
 );
 
-const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
+const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
@@ -152,24 +125,18 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [],
-        correctAnswer: "",
+        answerList: [1, 2, 3, 4, 5].map((num) => ({
+          content: values[`correctAnswer${num}`],
+          numberOrder: values[`numberOrder${num}`],
+        })),
+        correctAnswer: [1, 2, 3, 4, 5],
         file: null,
         subQuestionAnswerList: [],
         suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
-          content: values[`subContent${num}`],
-          correctAnswer: values[`correctAnswer${num}`],
-          file: null,
-          answerList: [1, 2, 3].map((ansNum) => ({
-            content: values[`answer${ansNum}Sub${num}`],
-          })),
-          image: null,
-          suggestion: null,
-        })),
+        subQuestion: [],
         questionType: "READING",
         isExample: false,
-        questionPart: "ONE",
+        questionPart: "TWO",
         image: null,
       },
 
@@ -185,7 +152,11 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         type: "success",
       });
       reset();
-    } catch (error) {
+	} catch (error) {
+		
+		await notify(error, {
+			type: "success",
+		  });
       console.log({ error });
     }
   };
@@ -204,7 +175,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
-        <h2 className="title">Reading Part 1</h2>
+        <h2 className="title">Reading Part 2</h2>
         <div>
           <TextField
             type="title"
@@ -218,17 +189,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
             type="subTitle"
             {...register("subTitle", { required: true })}
             placeholder="Sub Title"
@@ -236,6 +196,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             fullWidth
             error={!!errors.subTitle}
             helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
           />
         </div>
 
@@ -253,7 +224,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6].map((num) => (
+          {[1, 2, 3, 4, 5].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
@@ -314,4 +285,4 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   );
 };
 
-export default ReadingPartOne;
+export default ReadingPartTwo;

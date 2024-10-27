@@ -4,6 +4,8 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import ReadingPartOne from "../../pages/Reading/ReadingPart/ReadingPartOne";
+import ReadingPartTwo from "../../pages/Reading/ReadingPart/ReadingPartTwo";
+import ReadingPartThree from "../../pages/Reading/ReadingPart/ReadingPartThree";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,16 +54,20 @@ export default function BasicTabs() {
           <Tab label="Part 1" {...a11yProps(0)} />
           <Tab label="Part 2" {...a11yProps(1)} />
           <Tab label="Part 3" {...a11yProps(2)} />
+          <Tab label="Part 4" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
         <ReadingPartOne showDeleteButton={false} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        <ReadingPartTwo showDeleteButton={false} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        <ReadingPartThree/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+        Item Four
       </CustomTabPanel>
     </Box>
   );

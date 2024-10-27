@@ -36,6 +36,10 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  optionPerson1: string;
+  optionPerson2: string;
+  optionPerson3: string;
+  optionPerson4: string;
 }
 
 const QuestionBox = ({
@@ -49,26 +53,26 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "200px",
+      minHeight: "160px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
     }}
   >
     <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
+      Nội Dung Câu {questionNumber}
     </Box>
     <Box>
       <div>
         <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
+          type={`questionPerson${questionNumber}`}
+          {...register(`questionPerson${questionNumber}`, { required: true })}
+          placeholder={`Nội dung câu ${questionNumber}`}
           variant="outlined"
           fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
+          error={!!errors[`questionPerson${questionNumber}`]}
           helperText={
-            errors[`subContent${questionNumber}`]
+            errors[`questionPerson${questionNumber}`]
               ? "This field is required"
               : ""
           }
@@ -76,52 +80,25 @@ const QuestionBox = ({
       </div>
       <div>
         <TextField
-          type={`correctAnswer${questionNumber}`}
-          {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder="Đán án đúng"
+          type="text"
+          {...register(`personMatch${questionNumber}`, { required: true })}
+          placeholder={`Đáp án đúng`}
           variant="outlined"
           fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
+          inputProps={{ min: 1, max: 5 }} // Added max value here
+          error={!!errors[`personMatch${questionNumber}`]}
           helperText={
-            errors[`correctAnswer${questionNumber}`]
+            errors[`personMatch${questionNumber}`]
               ? "This field is required"
               : ""
           }
         />
       </div>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 1,
-        }}
-      >
-        {[1, 2, 3].map((num) => (
-          <div key={num}>
-            <TextField
-              type={`answer${num}Sub${questionNumber}`}
-              {...register(`answer${num}Sub${questionNumber}`, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${num}`}
-              variant="outlined"
-              fullWidth
-              error={!!errors[`answer${num}Sub${questionNumber}`]}
-              helperText={
-                errors[`answer${num}Sub${questionNumber}`]
-                  ? "This field is required"
-                  : ""
-              }
-            />
-          </div>
-        ))}
-      </Box>
     </Box>
   </Box>
 );
 
-const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
+const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
@@ -152,24 +129,24 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [],
+        answerList: [1, 2, 3, 4].map((num) => ({
+          content: values[`optionPerson${num}`],
+        })),
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
         suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
-          content: values[`subContent${num}`],
-          correctAnswer: values[`correctAnswer${num}`],
+        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
+          content: values[`questionPerson${num}`],
+          correctAnswer: values[`personMatch${num}`],
           file: null,
-          answerList: [1, 2, 3].map((ansNum) => ({
-            content: values[`answer${ansNum}Sub${num}`],
-          })),
+          answerList: null,
           image: null,
           suggestion: null,
         })),
         questionType: "READING",
         isExample: false,
-        questionPart: "ONE",
+        questionPart: "THREE",
         image: null,
       },
 
@@ -186,6 +163,9 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       });
       reset();
     } catch (error) {
+      await notify(error, {
+        type: "error",
+      });
       console.log({ error });
     }
   };
@@ -204,7 +184,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
-        <h2 className="title">Reading Part 1</h2>
+        <h2 className="title">Reading Part 3</h2>
         <div>
           <TextField
             type="title"
@@ -218,17 +198,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
             type="subTitle"
             {...register("subTitle", { required: true })}
             placeholder="Sub Title"
@@ -238,6 +207,68 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+        <div>
+          <TextField
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+
+        <Box
+          sx={{
+            width: "100%",
+            height: "fit-content",
+            background: "#fff !important",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 2,
+          }}
+        >
+          <TextField
+            type="optionPerson1"
+            {...register("optionPerson1", { required: true })}
+            placeholder="Tên người thứ nhất"
+            variant="outlined"
+            fullWidth
+            error={!!errors.optionPerson1}
+            helperText={errors.optionPerson1 ? "This field is required" : ""}
+          />
+
+          <TextField
+            type="optionPerson2"
+            {...register("optionPerson2", { required: true })}
+            placeholder="Tên người thứ hai"
+            variant="outlined"
+            fullWidth
+            error={!!errors.optionPerson2}
+            helperText={errors.optionPerson2 ? "This field is required" : ""}
+          />
+
+          <TextField
+            type="optionPerson3"
+            {...register("optionPerson3", { required: true })}
+            placeholder="Tên người thứ ba"
+            variant="outlined"
+            fullWidth
+            error={!!errors.optionPerson3}
+            helperText={errors.optionPerson3 ? "This field is required" : ""}
+          />
+
+          <TextField
+            type="optionPerson4"
+            {...register("optionPerson4", { required: true })}
+            placeholder="Tên người thứ bốn"
+            variant="outlined"
+            fullWidth
+            error={!!errors.optionPerson4}
+            helperText={errors.optionPerson4 ? "This field is required" : ""}
+          />
+        </Box>
 
         <Box
           sx={{
@@ -245,7 +276,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             height: "fit-content",
             background: "#fff !important",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
             boxShadow:
               "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
             gap: "10px",
@@ -253,7 +284,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6].map((num) => (
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
@@ -314,4 +345,4 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   );
 };
 
-export default ReadingPartOne;
+export default ReadingPartThree;
