@@ -6,6 +6,10 @@ const {
 	getAllTopc,
 } = require('../models/respositories/text.repo.js');
 const { createReading } = require('../services/reading.service.js');
+const {
+	getAllWithQuery,
+	getOneById,
+} = require('../services/reading.service.js');
 
 class ReadingController {
 	create = async (req, res, next) => {
@@ -163,6 +167,20 @@ class ReadingController {
 		}).send(res);
 	};
 
+	getAllWithQuery = async (req, res, next) => {
+		const params = req.query;
+
+		const filter = JSON.parse(params.filter);
+
+		const range = JSON.parse(params.range);
+
+		const sort = JSON.parse(params.sort);
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await getAllWithQuery({ filter, range, sort }),
+		}).send(res);
+	};
 	// //QUERY//
 
 	getAllTopic = async (req, res, next) => {

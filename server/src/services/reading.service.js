@@ -2,6 +2,7 @@
 
 const mongoose = require('mongoose');
 const ReadingModel = require('../models/reading.model');
+const baseRepo = require('./base-repo/baseRepo');
 
 class ReadingFactory {
     static createReading = async ({ title, timeToDo, questions, skill, description }) => {
@@ -25,6 +26,9 @@ class ReadingFactory {
 			console.log('error: là: ', error);
             return error;
         }
+    };
+    static getAllWithQuery = async ({ filter, range, sort }) => {
+        return await baseRepo.getAllWithQuery({ filter, range, sort }, ReadingModel);
     };
 
     static findById = async (id) => {

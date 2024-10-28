@@ -16,6 +16,8 @@ router.post(
 	asyncHandle(ReadingController.create)
 );
 
+router.get('/', asyncHandle(ReadingController.getAllWithQuery));
+
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
 
