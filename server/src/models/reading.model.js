@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { TestBank } = require('./testBank.model');
 
 const Schema = mongoose.Schema;
 
@@ -76,5 +77,19 @@ const ReadingSchema = new Schema(
 		collection: COLLECTION_NAME,
 	}
 );
-
+ReadingSchema.pre('remove', async function (next) {
+    try {
+        await TestBank.deleteMany({
+            $or: [
+                { 'reading.part1': this._id },
+                { 'reading.part2': this._id },
+                { 'reading.part3': this._id },
+                { 'reading.part4': this._id },
+            ],
+        });
+        next();
+    } catch (error) {
+        next(error);
+    }
+});
 module.exports = mongoose.model('Reading', ReadingSchema);

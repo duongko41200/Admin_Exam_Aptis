@@ -5,15 +5,18 @@ import { createElement, FunctionComponent } from "react";
 const ADMIN: Permission = {
   users: "*",
   readings: "*",
+  "test-banks":"*"
 };
 const EDIT: Permission = {
   users: ["list", "show", "edit"],
   readings: ["list", "show", "edit", "delete"],
+  "test-banks": ["list", "show", "edit", "delete"],
 };
 const VIEW: Permission = {
   users: ["list", "show", "edit"],
 
   readings: ["list", "show"],
+  "test-banks": ["list", "show"],
 };
 
 const ROLES_MAP: {
