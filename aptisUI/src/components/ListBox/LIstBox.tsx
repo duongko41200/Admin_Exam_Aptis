@@ -4,32 +4,35 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import { SET_QUESTION_RANDOM } from '@renderer/store/features/speakVoice/slice'
+// import { SET_QUESTION_RANDOM } from '@renderer/store/features/speakVoice/slice'
 import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+// import { useDispatch, useSelector } from 'react-redux'
 // import * as React from 'react'
 
 export default function CheckboxList({ values }) {
 
-  const questionsRandom = useSelector((state: any) => state.speaking.questionsRandom)
-  const [checked, setChecked] = useState(questionsRandom)
+  // const questionsRandom = useSelector((state: any) => state.speaking.questionsRandom)
+  // const [checked, setChecked] = useState(questionsRandom)
 
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   const handleToggle = (value: number) => () => {
-    const currentIndex = checked.indexOf(value)
-    const newChecked = [...checked]
 
-    if (currentIndex === -1) {
-      newChecked.push(value)
-      // dispatch(SET_QUESTION_RANDOM(newChecked))
-    } else {
-      newChecked.splice(currentIndex, 1)
-    }
 
-    dispatch(SET_QUESTION_RANDOM(newChecked))
+    console.log({value})
+    // const currentIndex = checked.indexOf(value)
+    // const newChecked = [...checked]
 
-    setChecked(newChecked)
+    // if (currentIndex === -1) {
+    //   newChecked.push(value)
+    //   // dispatch(SET_QUESTION_RANDOM(newChecked))
+    // } else {
+    //   newChecked.splice(currentIndex, 1)
+    // }
+
+    // // dispatch(SET_QUESTION_RANDOM(newChecked))
+
+    // setChecked(newChecked)
   }
 
 
@@ -47,7 +50,7 @@ export default function CheckboxList({ values }) {
                 <ListItemIcon>
                   <Checkbox
                     edge="start"
-                    checked={checked?.includes(value)}
+                    // checked={checked?.includes(value)}
                     tabIndex={-1}
                     disableRipple
                     inputProps={{ 'aria-labelledby': labelId }}
@@ -55,7 +58,7 @@ export default function CheckboxList({ values }) {
                 </ListItemIcon>
                 <ListItemText
                   id={labelId}
-                  primary={`${value}`}
+                  primary={`${value.value}`}
                   sx={{ fontSize: '1.2rem', fontWeight: 'bold' }}
                 />
               </ListItemButton>
