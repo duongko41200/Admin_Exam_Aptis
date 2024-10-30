@@ -1,5 +1,6 @@
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 import CheckboxList from "../../../components/ListBox/LIstBox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Datagrid,
   DeleteWithConfirmButton,
@@ -9,18 +10,27 @@ import {
   useRefresh,
 } from "react-admin";
 
-const ReadingBank = () => {
-  // useEffect(() => {
-  //   // getUserLogin()
-  //   // refresh()
+const ReadingBank = ({partSkill}) => {
 
-  //   fetchapi()
-  // }, [])
 
-  const [valueReading, setValueReading] = useState([
-    {id: 1, value: "Reading 1"},
-    {id: 2, value: "Reading 2"},
-  ]);
+  const handleCallApi = async () => { 
+
+    const {data} = await dataProvider.getFiltersRecord("readings", {
+
+      partSkill:"FOUR"
+    })
+    setValueReading(data)
+
+    console.log({data})
+  }
+  useEffect(() => {
+    // getUserLogin()
+    // refresh()
+    handleCallApi()
+    // fetchapi()
+  }, [])
+
+  const [valueReading, setValueReading] = useState();
 
   return (
     <>

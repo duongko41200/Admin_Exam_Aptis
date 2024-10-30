@@ -263,6 +263,35 @@ const baseDataProvider: DataProvider = {
       data: metadata
     }
   },
+  getFiltersRecord: async (resource: string,params:any) => { 
+
+    const url = `${apiUrlDesktopApp}/${resource}/filters`
+    const body = JSON.stringify(params)
+    console.log({body})
+    
+    const request = new Request(`${url}`, {
+      method: 'POST',
+      headers: new Headers(HEADERS),
+      body
+    })
+
+    const response = await fetch(request)
+
+    console.log('response :', response)
+    if (!response.ok) {
+      console.log('Error')
+      throw new Error(`HTTP error! Status: ${response.status}`)
+    }
+
+    const data = await response.json()
+
+    console.log({ data })
+
+    console.log(':::metadata', data.metadata)
+    return {
+      data: data.metadata
+    }
+  },
 
   getPutPresignedUrl: async (resource: string, params: GetPutPresignedUrlparams) => {
     console.log({ resource, params })

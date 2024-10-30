@@ -9,6 +9,7 @@ const { createReading } = require('../services/reading.service.js');
 const {
 	getAllWithQuery,
 	getOneById,
+	getAllWithFilters
 } = require('../services/reading.service.js');
 
 class ReadingController {
@@ -179,6 +180,18 @@ class ReadingController {
 		new SuccessResponse({
 			message: 'creat new Reading success!',
 			metadata: await getAllWithQuery({ filter, range, sort }),
+		}).send(res);
+	};
+
+
+	
+	getAllWithFilters = async (req, res, next) => {
+
+		console.log('data req:', req.body);	
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await getAllWithFilters(req.body),
 		}).send(res);
 	};
 	// //QUERY//

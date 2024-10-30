@@ -17,6 +17,7 @@ router.post(
 );
 
 router.get('/', asyncHandle(ReadingController.getAllWithQuery));
+router.post('/filters', asyncHandle(ReadingController.getAllWithFilters));
 
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));

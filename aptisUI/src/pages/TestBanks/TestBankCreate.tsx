@@ -225,7 +225,7 @@ const TestBankCreate = ({ resource }: BaseComponentProps) => {
           closeModalEdit={closeModalCreateFrame}
           label={`${typeSkill} - Part ${partSkill}`}
         >
-          <>{typeSkill && typeSkill === "Reading" && <ReadingBank />}</>
+          <>{typeSkill && typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}</>
         </ModalFrame>
       </Box>
     </Create>
