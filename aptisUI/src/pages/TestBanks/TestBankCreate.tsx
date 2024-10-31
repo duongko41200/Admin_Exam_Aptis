@@ -55,7 +55,7 @@ const TestTitle = styled(Typography)(({ theme }) => ({
   textOverflow: "ellipsis",
 }));
 
-const TestButton = styled(Button)(({ bgColor }) => ({
+const TestButton = styled(Button)({
   height: "32px",
   width: "100px",
   margin: "0 auto",
@@ -63,12 +63,11 @@ const TestButton = styled(Button)(({ bgColor }) => ({
   fontSize: "0.875rem", // equivalent to text-[9px]
   fontWeight: "bold",
   letterSpacing: "0.5px",
-  backgroundColor: bgColor,
   color: "#fff",
   "&:hover": {
     opacity: 0.9,
   },
-}));
+});
 
 const tests = [
   {

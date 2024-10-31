@@ -56,7 +56,7 @@ export default function CheckboxList({ values }) {
                 </ListItemIcon>
                 <ListItemText
                   id={labelId}
-                  primary={`${value.data.title} - ${value.data.questions.questionPart}`}
+                  primary={`${value.data.title} - ${value.data?.questions?.questionPart}`}
                   sx={{ fontSize: "1.2rem", fontWeight: "bold" }}
                 />
               </ListItemButton>

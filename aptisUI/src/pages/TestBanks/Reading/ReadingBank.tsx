@@ -9,32 +9,49 @@ import {
   TextField,
   useRefresh,
 } from "react-admin";
+import { converPartReadingSkill } from "../../../utils/convertPartSkill";
+import DataTable from "../../../components/Table/DataTable";
 
-const ReadingBank = ({partSkill}) => {
+const ReadingBank = ({ partSkill }) => {
+  const handleCallApi = async () => {
+    const { data } = await dataProvider.getFiltersRecord("readings", {
+      partSkill: converPartReadingSkill(partSkill),
+    });
+
+    let mappedData = data.map((data, index) => {
+      data = {
+        id: data._id,
+        title: data.data.title,
+        timeToDo: data.data.timeToDo,
+        questionPart: data.data.questions.questionPart,
+        createdAt: data.createdAt,
+        updatedAt: data.updatedAt,
+      };
+
+      return data;
+    });
 
 
-  const handleCallApi = async () => { 
+    // const params = { id: data._id, title: data.title, timeToDo: data.timeToDo, questionPart: data.questions.questionPart },
 
-    const {data} = await dataProvider.getFiltersRecord("readings", {
+    setValueReading(mappedData);
 
-      partSkill:"FOUR"
-    })
-    setValueReading(data)
+    console.log("duong data", data);
+  };
 
-    console.log({data})
-  }
   useEffect(() => {
     // getUserLogin()
     // refresh()
-    handleCallApi()
+    handleCallApi();
     // fetchapi()
-  }, [])
+  }, []);
 
-  const [valueReading, setValueReading] = useState();
+  const [valueReading, setValueReading] = useState([]);
 
   return (
     <>
-      <CheckboxList values={valueReading}></CheckboxList>
+      <DataTable rows={valueReading}></DataTable>
+      {/* <CheckboxList values={valueReading}></CheckboxList> */}
     </>
   );
 };

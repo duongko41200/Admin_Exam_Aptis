@@ -12,7 +12,7 @@ export default function ModalFrame({ open, closeModalEdit, children, label }) {
         onClose={closeModalEdit}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
-        maxWidth="lg"
+        maxWidth="xl"
 
       >
         <DialogTitle id="alert-dialog-title">{label}</DialogTitle>
