@@ -3,6 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Paper, Box } from "@mui/material";
 import clsx from "clsx";
 import { GridColDef, GridValueGetter } from "@mui/x-data-grid";
+import { useDispatch, useSelector } from "react-redux";
 
 const columns: GridColDef[] = [
   {
@@ -62,7 +63,14 @@ const columns: GridColDef[] = [
 const paginationModel = { page: 0, pageSize: 5 };
 
 export default function DataTable({ rows }) {
-  const [selectionModel, setSelectionModel] = React.useState(["671fa177d527c8e020df74cf"]);
+  const [selectionModel, setSelectionModel] = React.useState([
+    "671fa177d527c8e020df74cf",
+  ]);
+
+  const dispatch = useDispatch();
+  const level = useSelector((state: any) => state.wordStore.level);
+
+  console.log({ level });
 
   const handleSelectionChange = (newSelection) => {
     setSelectionModel(newSelection);

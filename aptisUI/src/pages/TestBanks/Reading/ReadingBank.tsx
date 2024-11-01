@@ -18,6 +18,9 @@ const ReadingBank = ({ partSkill }) => {
       partSkill: converPartReadingSkill(partSkill),
     });
 
+
+    console.log("duong data sdfsdfsdf", data);
+
     let mappedData = data.map((data, index) => {
       data = {
         id: data._id,
@@ -36,7 +39,6 @@ const ReadingBank = ({ partSkill }) => {
 
     setValueReading(mappedData);
 
-    console.log("duong data", data);
   };
 
   useEffect(() => {

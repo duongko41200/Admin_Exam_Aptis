@@ -1,9 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import {
-	LIMIT_LIST_TEXT_OF_PAGE,
-	RES_DATA,
-} from '../../Constant/global';
-import TextService from '../../services/API/tex.service';
 
 const currentMonth = new Date().getMonth() + 1;
 const currentYear = new Date().getFullYear();
@@ -26,132 +21,131 @@ const initialState = {
 	openModalDetailText: false,
 
 	page: '1',
-	limit: LIMIT_LIST_TEXT_OF_PAGE,
+	limit: 5,
 	level: 'all',
 	typeText: 'all',
 	date: `${currentYear}-${currentMonth}`,
 };
 
-export const getAllText = createAsyncThunk(
-	'wordStore/getAllText',
-	async (payload, { state }) => {
-		const listText = JSON.parse(localStorage.getItem('listText'));
-		try {
-			const { page, limit } = payload;
-			const res = await TextService.getAllText({ page, limit });
+// export const getAllText = createAsyncThunk(
+// 	'wordStore/getAllText',
+// 	async (payload, { state }) => {
+// 		const listText = JSON.parse(localStorage.getItem('listText'));
+// 		try {
+// 			const { page, limit } = payload;
+// 			const res = await TextService.getAllText({ page, limit });
 
-			console.log('res:', res);
+// 			console.log('res:', res);
 
-			if (!listText) {
-				localStorage.setItem(
-					'listText',
-					JSON.stringify(res[RES_DATA].metadata.contents)
-				);
+// 			if (!listText) {
+// 				localStorage.setItem(
+// 					'listText',
+// 					JSON.stringify(res[RES_DATA].metadata.contents)
+// 				);
 
-				localStorage.setItem(
-					'totalPages',
-					JSON.stringify(res[RES_DATA].metadata.totalPages)
-				);
+// 				localStorage.setItem(
+// 					'totalPages',
+// 					JSON.stringify(res[RES_DATA].metadata.totalPages)
+// 				);
 
-				localStorage.setItem(
-					'total',
-					JSON.stringify(res[RES_DATA].metadata.total)
-				);
-			}
+// 				localStorage.setItem(
+// 					'total',
+// 					JSON.stringify(res[RES_DATA].metadata.total)
+// 				);
+// 			}
 
-			return res[RES_DATA]?.metadata;
-		} catch (error) {
-			throw new Error(error.message);
-		}
-	}
-);
+// 			return res[RES_DATA]?.metadata;
+// 		} catch (error) {
+// 			throw new Error(error.message);
+// 		}
+// 	}
+// );
 
-export const getListTextByFilter = createAsyncThunk(
-	'wordStore/getListTextByFilter',
-	async (payload) => {
-		// const listText = JSON.parse(localStorage.getItem('listText'));
-		try {
-			const { page, limit, level, typeText, date } = payload;
+// export const getListTextByFilter = createAsyncThunk(
+// 	'wordStore/getListTextByFilter',
+// 	async (payload) => {
+// 		// const listText = JSON.parse(localStorage.getItem('listText'));
+// 		try {
+// 			const { page, limit, level, typeText, date } = payload;
 
-			const res = await TextService.getListTextByFilter({
-				page,
-				limit,
-				level,
-				typeText,
-				date,
-			});
+// 			const res = await TextService.getListTextByFilter({
+// 				page,
+// 				limit,
+// 				level,
+// 				typeText,
+// 				date,
+// 			});
 
-			// if (!listText) {
-			// 	localStorage.setItem(
-			// 		'listText',
-			// 		JSON.stringify(res[RES_DATA].metadata.contents)
-			// 	);
+// 			// if (!listText) {
+// 			// 	localStorage.setItem(
+// 			// 		'listText',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.contents)
+// 			// 	);
 
-			// 	localStorage.setItem(
-			// 		'totalPages',
-			// 		JSON.stringify(res[RES_DATA].metadata.totalPages)
-			// 	);
+// 			// 	localStorage.setItem(
+// 			// 		'totalPages',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.totalPages)
+// 			// 	);
 
-			// 	localStorage.setItem(
-			// 		'total',
-			// 		JSON.stringify(res[RES_DATA].metadata.total)
-			// 	);
-			// }
+// 			// 	localStorage.setItem(
+// 			// 		'total',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.total)
+// 			// 	);
+// 			// }
 
-			return res[RES_DATA]?.metadata;
-		} catch (error) {
-			console.log({ error });
-			throw new Error(error.message);
-		}
-	}
-);
-export const deleteText = createAsyncThunk(
-	'wordStore/deleteText',
-	async (payload, thunkAPI) => {
-		try {
-			const { page, limit, level, typeText, date } =
-				thunkAPI.getState().wordStore;
-			const { textId } = payload;
+// 			return res[RES_DATA]?.metadata;
+// 		} catch (error) {
+// 			console.log({ error });
+// 			throw new Error(error.message);
+// 		}
+// 	}
+// );
+// export const deleteText = createAsyncThunk(
+// 	'wordStore/deleteText',
+// 	async (payload, thunkAPI) => {
+// 		try {
+// 			const { page, limit, level, typeText, date } =
+// 				thunkAPI.getState().wordStore;
+// 			const { textId } = payload;
 
+// 			const res = await TextService.deleteText({
+// 				page:
+// 					thunkAPI.getState().wordStore.remainingQuantity == 1
+// 						? parseInt(page) - 1
+// 						: page,
+// 				limit,
+// 				level,
+// 				typeText,
+// 				date,
+// 				textId,
+// 			});
 
-			const res = await TextService.deleteText({
-				page:
-					thunkAPI.getState().wordStore.remainingQuantity == 1
-						? parseInt(page) - 1
-						: page,
-				limit,
-				level,
-				typeText,
-				date,
-				textId,
-			});
+// 			localStorage.removeItem('listText');
 
-			localStorage.removeItem('listText');
+// 			// if (!listText) {
+// 			// 	localStorage.setItem(
+// 			// 		'listText',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.contents)
+// 			// 	);
 
-			// if (!listText) {
-			// 	localStorage.setItem(
-			// 		'listText',
-			// 		JSON.stringify(res[RES_DATA].metadata.contents)
-			// 	);
+// 			// 	localStorage.setItem(
+// 			// 		'totalPages',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.totalPages)
+// 			// 	);
 
-			// 	localStorage.setItem(
-			// 		'totalPages',
-			// 		JSON.stringify(res[RES_DATA].metadata.totalPages)
-			// 	);
+// 			// 	localStorage.setItem(
+// 			// 		'total',
+// 			// 		JSON.stringify(res[RES_DATA].metadata.total)
+// 			// 	);
+// 			// }
 
-			// 	localStorage.setItem(
-			// 		'total',
-			// 		JSON.stringify(res[RES_DATA].metadata.total)
-			// 	);
-			// }
-
-			return res[RES_DATA]?.metadata;
-		} catch (error) {
-			console.log({ error });
-			throw new Error(error.message);
-		}
-	}
-);
+// 			return res[RES_DATA]?.metadata;
+// 		} catch (error) {
+// 			console.log({ error });
+// 			throw new Error(error.message);
+// 		}
+// 	}
+// );
 
 export const wordReducer = createSlice({
 	name: 'wordStore',
