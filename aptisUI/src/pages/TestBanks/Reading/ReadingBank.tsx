@@ -18,10 +18,13 @@ const ReadingBank = ({ partSkill }) => {
       partSkill: converPartReadingSkill(partSkill),
     });
 
+    console.log({ data });
+
     let mappedData = data.map((data, index) => {
       data = {
         id: data._id,
         title: data.data.title,
+        subTitle: data.data.questions.questionTitle,
         timeToDo: data.data.timeToDo,
         questionPart: data.data.questions.questionPart,
         createdAt: data.createdAt,

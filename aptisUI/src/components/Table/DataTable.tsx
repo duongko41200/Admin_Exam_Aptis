@@ -21,6 +21,13 @@ const columns: GridColDef[] = [
     headerClassName: "super-app-theme--header",
   },
   {
+    field: "subTitle",
+    headerName: "Tiêu đề phụ",
+    description: "tiêu đề Phu từng bài tập",
+    width: 130,
+    headerClassName: "super-app-theme--header",
+  },
+  {
     field: "timeToDo",
     headerName: "Thời gian",
     description: "thời gian làm bài",
