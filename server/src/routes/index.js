@@ -15,5 +15,6 @@ router.use('/v1/api/topic', require('./topic'))
 router.use('/v1/api/other', require('./otherService'))
 router.use('/v1/api/users', require('./user'))
 router.use('/v1/api/readings', require('./reading'))
+router.use('/v1/api/test-banks', require('./test-banks'))
 
 module.exports = router;

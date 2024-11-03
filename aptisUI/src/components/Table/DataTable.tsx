@@ -2,8 +2,9 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Paper, Box } from "@mui/material";
 import clsx from "clsx";
-import { GridColDef, GridValueGetter } from "@mui/x-data-grid";
+import { GridColDef } from "@mui/x-data-grid";
 import { useDispatch, useSelector } from "react-redux";
+import { SET_TESTBANK_DATA } from "../../store/feature/testBank";
 
 const columns: GridColDef[] = [
   {
@@ -62,25 +63,32 @@ const columns: GridColDef[] = [
 
 const paginationModel = { page: 0, pageSize: 5 };
 
-export default function DataTable({ rows }) {
-  const [selectionModel, setSelectionModel] = React.useState([
-    "671fa177d527c8e020df74cf",
-  ]);
+export default function DataTable({
+  rows,
+  partSkill,
+}: {
+  rows: any;
+  partSkill: any;
+}) {
+  const [selectionModel, setSelectionModel] = React.useState([]);
 
   const dispatch = useDispatch();
-  const level = useSelector((state: any) => state.wordStore.level);
+  const testBankData = useSelector(
+    (state: any) => state.testBankStore.testBankData
+  );
 
-  console.log({ level });
-
-  const handleSelectionChange = (newSelection) => {
+  const handleSelectionChange = (newSelection: any) => {
     setSelectionModel(newSelection);
-    console.log("Selected rows:", newSelection);
-    // Nếu bạn cần lấy giá trị của các hàng đã chọn
-    const selectedRows = newSelection.map((id) =>
-      rows.find((row) => row.id === id)
-    );
-    console.log("Selected row data:", selectedRows);
+    const payload = { type: "reading", newSelection, partSkill };
+    dispatch(SET_TESTBANK_DATA(payload));
   };
+
+  React.useEffect(() => {
+
+    console.log("testBankData là: ", testBankData);
+    setSelectionModel(testBankData["reading"][`part${partSkill}`]);
+  }, []);
+
   return (
     <Paper sx={{ height: 400, width: "100%" }}>
       <Box

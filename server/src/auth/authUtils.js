@@ -100,6 +100,8 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 			req.refreshToken = refreshToken;
 			return next();
 		} catch (error) {
+
+			conssole.log(`error tesst : `, error);
 			throw error;
 		}
 	}
@@ -117,7 +119,10 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 		req.keyStore = KeyStore;
 		req.user = decodeUser;
 		return next();
-	} catch (error) {}
+	} catch (error) {
+
+		console.log("error :", error);
+	}
 });
 
 const verifyJWT = async (token, keySecret) => {

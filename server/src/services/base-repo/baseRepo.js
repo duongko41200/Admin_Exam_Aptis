@@ -31,8 +31,18 @@ const getAllWithQuery = async ({ filter, range, sort }, model) => {
 	return res;
 };
 
+const getAll = async (model) => {
+	const res = await model
+		.find()
+		.populate(
+			'reading.part1 reading.part2 reading.part3 reading.part4 reading.part5'
+		)
+		.exec();
+
+	return res;
+};
+
 const getAllWithFilters = async ({ partSkill }, model) => {
-	
 	// console.log()
 	// const [sortField, sortOrder] = sort;
 	// const [start, end] = range;
@@ -58,9 +68,7 @@ const getAllWithFilters = async ({ partSkill }, model) => {
 		.exec();
 
 	return res;
-}
-
-
+};
 
 // const getAllWithQuery = async ({ sort, range, filter }) => {
 //     const [sortField, sortOrder] = sort;
@@ -77,7 +85,7 @@ const getAllWithFilters = async ({ partSkill }, model) => {
 //               .split(' ')
 //               .map((word) => `${word} ${word}*`.toLowerCase())
 //               .join(' '),
-            
+
 //           ),
 //         },
 //       ])
@@ -94,9 +102,8 @@ const getAllWithFilters = async ({ partSkill }, model) => {
 //     return res;
 // };
 
-
-
 module.exports = {
 	getAllWithQuery,
-	getAllWithFilters
+	getAllWithFilters,
+	getAll,
 };

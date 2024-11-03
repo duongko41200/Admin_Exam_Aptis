@@ -1,10 +1,7 @@
-import { Create, PasswordInput, SelectInput, TextInput } from "react-admin";
-import { userRoles } from "../../consts/user";
+import { Create, useNotify } from "react-admin";
 
-import CustomForm from "../../components/CustomForm";
 import { BaseComponentProps } from "../../types/general";
-import { validateUserCreation } from "./formValidator";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Stack } from "@mui/material";
 import ReadingIcon from "../../assets/img/reading-icon.svg";
 import ListeningIcon from "../../assets/img/listening-icon.svg";
 import SpeakingIcon from "../../assets/img/speaking-icon.svg";
@@ -13,6 +10,11 @@ import { styled } from "@mui/system";
 import { useState } from "react";
 import ModalFrame from "../../components/ModalBase/ModalFrame";
 import ReadingBank from "./Reading/ReadingBank";
+import { useDispatch, useSelector } from "react-redux";
+import dataProvider from "../../providers/dataProviders/baseDataProvider";
+import { useNavigate, NavLink, useParams } from "react-router-dom";
+import { UPDATED_SUCCESS } from "../../consts/general";
+import { RESET_TESTBANK_DATA } from "../../store/feature/testBank";
 
 const ModuleContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -98,11 +100,17 @@ const tests = [
 ];
 
 const TestBankCreate = ({ resource }: BaseComponentProps) => {
-  const resourcePath = `/${resource}`;
-
+  const resourcePath = `/test-banks`;
+  const navigate = useNavigate();
+  const notify = useNotify();
   const [isOpenModalFrame, setIsOpenModalFrame] = useState(false);
   const [partSkill, setPartSkill] = useState(null);
   const [typeSkill, setTypeSkill] = useState(null);
+
+  const testBankData = useSelector(
+    (state: any) => state.testBankStore.testBankData
+  );
+  const dispatch = useDispatch();
 
   const FilterSkill = (index: number) => {
     switch (index) {
@@ -134,6 +142,26 @@ const TestBankCreate = ({ resource }: BaseComponentProps) => {
   };
   const openModalCreateFrame = () => {
     setIsOpenModalFrame(true);
+  };
+
+  const handleSaveTestBank = async () => {
+    console.log({ testBankData });
+
+    try {
+      const CreateData = await dataProvider.create("test-banks", {
+        data: testBankData,
+      });
+      await notify(UPDATED_SUCCESS, {
+        type: "success",
+      });
+      navigate(resourcePath);
+
+      dispatch(RESET_TESTBANK_DATA());
+
+      console.log({ CreateData });
+    } catch (error) {
+      console.log({ error });
+    }
   };
 
   return (
@@ -224,8 +252,50 @@ const TestBankCreate = ({ resource }: BaseComponentProps) => {
           closeModalEdit={closeModalCreateFrame}
           label={`${typeSkill} - Part ${partSkill}`}
         >
-          <>{typeSkill && typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}</>
+          <>
+            {typeSkill && typeSkill === "Reading" && (
+              <ReadingBank partSkill={partSkill} />
+            )}
+          </>
         </ModalFrame>
+      </Box>
+
+      <Box
+        sx={{
+          width: "100%",
+          minHeight: "100px",
+          position: "relative",
+        }}
+      >
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={2}
+          width="100%"
+          sx={{
+            backgroundColor: "#f1f1f1",
+            padding: "1rem",
+            borderRadius: "4px",
+            marginTop: "1rem",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+          }}
+        >
+          <Button variant="contained" color="info" onClick={handleSaveTestBank}>
+            <span>Submit</span>
+          </Button>
+
+          <Button
+            type="button"
+            variant="contained"
+            color="error"
+            // onClick={handleCancel}
+          >
+            <span>Cancel</span>
+          </Button>
+        </Stack>
       </Box>
     </Create>
   );

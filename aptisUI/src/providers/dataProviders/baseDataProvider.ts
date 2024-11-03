@@ -108,6 +108,34 @@ const baseDataProvider: DataProvider = {
       data: metadata
     }
   },
+
+  getAll: async (resource: string): Promise<GetOneResult> => {
+    const url = `${apiUrlDesktopApp}/${resource}/batch/`
+
+
+
+    const request = new Request(`${url}`, {
+      method: 'GET',
+      headers: new Headers(HEADERS),
+      
+    })
+
+    const response = await fetch(request)
+    console.log('response :', response)
+    if (!response.ok) {
+      console.log('Error')
+      throw new Error(`HTTP error! Status: ${response.status}`)
+    }
+
+    const data = await response.json()
+
+    console.log({ data })
+
+    console.log(':::metadata', data.metadata)
+    return {
+      data: data.metadata
+    }
+  },
   // get the records referenced to another record, e.g. comments for a post
   getManyReference: async (
     resource: string,
@@ -199,16 +227,16 @@ const baseDataProvider: DataProvider = {
     }
   },
 
-  getAll: async (resource: string) => {
-    const url = `${apiUrlDesktopApp}/${resource}/batch`
-    const {
-      json: { metadata }
-    } = await httpClient(url)
+  // getAll: async (resource: string) => {
+  //   const url = `${apiUrlDesktopApp}/${resource}/batch`
+  //   const {
+  //     json: { metadata }
+  //   } = await httpClient(url)
 
-    return {
-      data: metadata
-    }
-  },
+  //   return {
+  //     data: metadata
+  //   }
+  // },
 
   // update a list of records based on an array of ids and a common patch
   updateMany: async (resource: string, params: UpdateManyParams): Promise<UpdateManyResult> => {

@@ -15,32 +15,54 @@ const testBankSchema = new Schema(
 			part1: {
 				type: [Number],
 				required: true,
+				default: [],
 			},
 			part2: {
 				type: [Number],
 				required: true,
+				default: [],
 			},
 			part3: {
 				type: [Number],
 				required: true,
+				default: [],
 			},
 			part4: {
 				type: [Number],
 				required: true,
+				default: [],
+			},
+			part5: {
+				type: [Number],
+				required: true,
+				default: [],
 			},
 		},
 		listening: {
 			part1: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
 			},
 			part2: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
 			},
 			part3: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
+			},
+			part4: {
+				type: [Number],
+				required: true,
+				default: [],
+			},
+			part5: {
+				type: [Number],
+				required: true,
+				default: [],
 			},
 		},
 		reading: {
@@ -48,39 +70,58 @@ const testBankSchema = new Schema(
 				type: [Schema.Types.ObjectId],
 				ref: 'Reading',
 				required: true,
+				default: [],
 			},
 			part2: {
 				type: [Schema.Types.ObjectId],
 				ref: 'Reading',
 				required: true,
+				default: [],
 			},
 			part3: {
 				type: [Schema.Types.ObjectId],
 				ref: 'Reading',
 				required: true,
+				default: [],
 			},
 			part4: {
 				type: [Schema.Types.ObjectId],
 				ref: 'Reading',
 				required: true,
+				default: [],
+			},
+			part5: {
+				type: [Schema.Types.ObjectId],
+				ref: 'Reading',
+				required: true,
+				default: [],
 			},
 		},
 		writing: {
 			part1: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
 			},
 			part2: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
 			},
 			part3: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
 			},
 			part4: {
-				type: String,
+				type: [Number],
 				required: true,
+				default: [],
+			},
+			part5: {
+				type: [Number],
+				required: true,
+				default: [],
 			},
 		},
 	},
@@ -91,6 +132,5 @@ const testBankSchema = new Schema(
 );
 
 // Xuất ReadingSchema và TestBankSchema
-const TestBank = mongoose.model('TestBank', testBankSchema);
 
-module.exports = { TestBank };
+module.exports = mongoose.model('TestBank', testBankSchema);;

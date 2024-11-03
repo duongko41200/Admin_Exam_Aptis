@@ -18,9 +18,6 @@ const ReadingBank = ({ partSkill }) => {
       partSkill: converPartReadingSkill(partSkill),
     });
 
-
-    console.log("duong data sdfsdfsdf", data);
-
     let mappedData = data.map((data, index) => {
       data = {
         id: data._id,
@@ -38,7 +35,6 @@ const ReadingBank = ({ partSkill }) => {
     // const params = { id: data._id, title: data.title, timeToDo: data.timeToDo, questionPart: data.questions.questionPart },
 
     setValueReading(mappedData);
-
   };
 
   useEffect(() => {
@@ -52,7 +48,7 @@ const ReadingBank = ({ partSkill }) => {
 
   return (
     <>
-      <DataTable rows={valueReading}></DataTable>
+      <DataTable rows={valueReading} partSkill={partSkill}></DataTable>
       {/* <CheckboxList values={valueReading}></CheckboxList> */}
     </>
   );

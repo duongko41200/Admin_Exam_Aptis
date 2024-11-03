@@ -37,6 +37,8 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
 	const statusCode = err.status || 500;
+
+	console.log("looix", err)
 	return res.status(statusCode).json({
 		status: 'err',
 		code: statusCode,

@@ -1,24 +1,22 @@
 'use strict';
 
 const { SuccessResponse } = require('../cores/success.response.js');
+
 const {
-	createTopic,
-	getAllTopc,
-} = require('../models/respositories/text.repo.js');
-const { createReading } = require('../services/reading.service.js');
-const {
+	createTestBank,
 	getAllWithQuery,
 	getOneById,
 	getAllWithFilters,
-} = require('../services/reading.service.js');
+	getAll
+} = require('../services/testBank.service.js');
 
-class ReadingController {
+class TestBankController {
 	create = async (req, res, next) => {
-		// console.log('data req:', req.body);
+		console.log('test data', req.body);
 
 		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await createReading(req.body),
+			message: 'creat new bo de success!',
+			metadata: await createTestBank(req.body),
 		}).send(res);
 	};
 
@@ -32,7 +30,7 @@ class ReadingController {
 		const sort = JSON.parse(params.sort);
 
 		new SuccessResponse({
-			message: 'creat new Reading success!',
+			message: 'creat new BO DE success!',
 			metadata: await getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
@@ -45,17 +43,16 @@ class ReadingController {
 			metadata: await getAllWithFilters(req.body),
 		}).send(res);
 	};
-	// //QUERY//
 
-	getAllTopic = async (req, res, next) => {
-		// console.log('data req:', req.body);
-
+	getAll = async (req, res, next) => {
 		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await getAllTopc(),
+			message: 'creat new Reading success!',
+			metadata: await getAll(),
 		}).send(res);
 	};
+	// //QUERY//
+
 	//END QUERY
 }
 
-module.exports = new ReadingController();
+module.exports = new TestBankController();
