@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const router = express.Router();
-const ReadingController = require('../../controllers/reading.controller')
+const ReadingController = require('../../controllers/reading.controller');
 const { asyncHandle } = require('../../auth/checkAuth');
 const {
 	authentication,
@@ -11,13 +11,18 @@ const {
 //Authen//
 router.use(authenticationV2);
 
-router.post(
-	'/',
-	asyncHandle(ReadingController.create)
-);
+router.post('/', asyncHandle(ReadingController.create));
 
 router.get('/', asyncHandle(ReadingController.getAllWithQuery));
-router.post('/filters', asyncHandle(ReadingController.getAllWithFilters));
+router.get(
+	'/get-id/:id',
+	asyncHandle(ReadingController.getOneById)
+);
+
+router.post(
+	'/filters',
+	asyncHandle(ReadingController.getAllWithFilters)
+);
 
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));

@@ -14,6 +14,7 @@ interface ReadingPartOneProps {
   alwaysEnable?: boolean;
   pathTo?: string;
   handleCancel?: () => void;
+  dataReadingPartFour?: any;
 }
 
 interface FormData {
@@ -109,6 +110,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
+  dataReadingPartFour=null,
   handleCancel,
   ...props
 }) => {
@@ -120,10 +122,10 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
     handleSubmit,
     formState: { errors },
     control,
+    setValue,
     reset,
   } = useForm<FormData>();
-  const [idTele, setIdTele] = useState("");
-  const [isShow, setIsShow] = useState(false);
+
 
   const onSubmit = async (values: any) => {
     console.log({ values });
@@ -174,13 +176,31 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const id = searchParams.get("id");
-    if (id) {
-      setIdTele(id);
-    }
-  }, []);
+useEffect(() => {
+  if (dataReadingPartFour) {
+    setValue("title", dataReadingPartFour.data.title);
+    setValue("content", dataReadingPartFour.data.questions.content);
+    setValue("subTitle", dataReadingPartFour.data.questions.questionTitle);
+
+    [1, 2, 3, 4, 5, 6, 7].map((num) => {
+    setValue(
+      `contentPartFour${num}` as keyof FormData,
+      dataReadingPartFour.data.questions.subQuestion[num - 1].content
+    );
+    setValue(
+      `answerPartFour${num}` as keyof FormData,
+      dataReadingPartFour.data.questions.subQuestion[num - 1].correctAnswer
+    );
+    });
+
+    [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
+    setValue(
+      `optionAnswer${num}` as keyof FormData,
+      dataReadingPartFour.data.questions.answerList[num - 1].content
+    );
+    });
+  }
+  }, [dataReadingPartFour, setValue]);
 
   return (
     <div>

@@ -15,6 +15,7 @@ interface ReadingPartOneProps {
   alwaysEnable?: boolean;
   pathTo?: string;
   handleCancel?: () => void;
+  dataReadingPartTwo?: any;
 }
 
 interface FormData {
@@ -101,6 +102,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
+  dataReadingPartTwo = null,
   handleCancel,
   ...props
 }) => {
@@ -112,9 +114,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     handleSubmit,
     formState: { errors },
     control,
+    setValue,
     reset,
   } = useForm<FormData>();
-  const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
 
   const onSubmit = async (values: any) => {
@@ -152,22 +154,33 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         type: "success",
       });
       reset();
-	} catch (error) {
-		
-		await notify(error, {
-			type: "success",
-		  });
+    } catch (error) {
+      await notify(error, {
+        type: "success",
+      });
       console.log({ error });
     }
   };
 
+  useEffect(() => {}, []);
   useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const id = searchParams.get("id");
-    if (id) {
-      setIdTele(id);
+    if (dataReadingPartTwo) {
+      setValue("title", dataReadingPartTwo.data.title);
+      setValue("content", dataReadingPartTwo.data.questions.content);
+      setValue("subTitle", dataReadingPartTwo.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5].map((num) => {
+        setValue(
+          `correctAnswer${num}` as keyof FormData,
+          dataReadingPartTwo.data.questions.answerList[num - 1].content
+        );
+        setValue(
+          `numberOrder${num}` as keyof FormData,
+          dataReadingPartTwo.data.questions.answerList[num - 1].numberOrder
+        );
+      });
     }
-  }, []);
+  }, [dataReadingPartTwo, setValue]);
 
   return (
     <div>

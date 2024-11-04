@@ -14,6 +14,7 @@ interface ReadingPartOneProps {
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
+  dataReadingPartOne?: any;
   handleCancel?: () => void;
 }
 
@@ -128,6 +129,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
+  dataReadingPartOne = null,
   handleCancel,
   ...props
 }) => {
@@ -139,6 +141,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     handleSubmit,
     formState: { errors },
     control,
+    setValue,
     reset,
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
@@ -197,6 +200,33 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       setIdTele(id);
     }
   }, []);
+
+  useEffect(() => {
+    if (dataReadingPartOne) {
+      setValue("title", dataReadingPartOne.data.title);
+      setValue("content", dataReadingPartOne.data.questions.content);
+      setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5, 6].map((num) => {
+        setValue(
+          `subContent${num}` as keyof FormData,
+          dataReadingPartOne.data.questions.subQuestion[num - 1].content
+        );
+        setValue(
+          `correctAnswer${num}` as keyof FormData,
+          dataReadingPartOne.data.questions.subQuestion[num - 1].correctAnswer
+        );
+        [1, 2, 3].map((ansNum) => {
+          setValue(
+            `answer${ansNum}Sub${num}` as keyof FormData,
+            dataReadingPartOne.data.questions.subQuestion[num - 1].answerList[
+              ansNum - 1
+            ].content
+          );
+        });
+      });
+    }
+  }, [dataReadingPartOne, setValue]);
 
   return (
     <div>

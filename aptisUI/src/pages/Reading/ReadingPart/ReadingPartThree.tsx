@@ -15,6 +15,7 @@ interface ReadingPartOneProps {
   alwaysEnable?: boolean;
   pathTo?: string;
   handleCancel?: () => void;
+  dataReadingPartThree?: any;
 }
 
 interface FormData {
@@ -105,6 +106,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
+  dataReadingPartThree = null,
   handleCancel,
   ...props
 }) => {
@@ -116,6 +118,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
     handleSubmit,
     formState: { errors },
     control,
+    setValue,
     reset,
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
@@ -169,14 +172,31 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
       console.log({ error });
     }
   };
-
   useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const id = searchParams.get("id");
-    if (id) {
-      setIdTele(id);
+    if (dataReadingPartThree) {
+      setValue("title", dataReadingPartThree.data.title);
+      setValue("content", dataReadingPartThree.data.questions.content);
+      setValue("subTitle", dataReadingPartThree.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5, 6, 7].map((num) => {
+        setValue(
+          `questionPerson${num}` as keyof FormData,
+          dataReadingPartThree.data.questions.subQuestion[num - 1].content
+        );
+        setValue(
+          `personMatch${num}` as keyof FormData,
+          dataReadingPartThree.data.questions.subQuestion[num - 1].correctAnswer
+        );
+      });
+
+      [1, 2, 3, 4].map((num) => {
+        setValue(
+          `optionPerson${num}` as keyof FormData,
+          dataReadingPartThree.data.questions.answerList[num - 1].content
+        );
+      });
     }
-  }, []);
+  }, [dataReadingPartThree, setValue]);
 
   return (
     <div>

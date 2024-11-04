@@ -36,6 +36,16 @@ class ReadingController {
 			metadata: await getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
+	getOneById = async (req, res, next) => {
+		const { id } = req.params;
+
+		console.log('id:', id);
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await getOneById(id),
+		}).send(res);
+	};
 
 	getAllWithFilters = async (req, res, next) => {
 		console.log('data req:', req.body);
