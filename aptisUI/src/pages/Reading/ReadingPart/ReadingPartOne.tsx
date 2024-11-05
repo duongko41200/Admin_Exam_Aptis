@@ -15,6 +15,7 @@ interface ReadingPartOneProps {
   alwaysEnable?: boolean;
   pathTo?: string;
   dataReadingPartOne?: any;
+  statusHandler?: string;
   handleCancel?: () => void;
 }
 
@@ -130,6 +131,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   showCancelButton = true,
   alwaysEnable = false,
   dataReadingPartOne = null,
+  statusHandler = "create",
   handleCancel,
   ...props
 }) => {
@@ -148,7 +150,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const [isShow, setIsShow] = useState(false);
 
   const onSubmit = async (values: any) => {
-    console.log({ values });
     const data = {
       title: values.title,
       timeToDo: 35,
@@ -179,8 +180,16 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       skill: "READING",
       description: null,
     };
+    if (statusHandler === "create") {
+      createReadingPartOne(data);
+    }
+    if (statusHandler === "edit") {
+      console.log("edit");
+      updateReadingPartOne(data);
+    }
+  };
 
-    console.log({ data });
+  const createReadingPartOne = async (data: any) => {
     try {
       const CreateData = await baseDataProvider.create("readings", { data });
 
@@ -193,15 +202,28 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const id = searchParams.get("id");
-    if (id) {
-      setIdTele(id);
+  //tentisspace
+  const updateReadingPartOne = async (values: any) => {
+    try {
+      await dataProvider.update("readings", {
+        id: dataReadingPartOne?.id,
+        data: values,
+        previousData: dataReadingPartOne,
+      });
+
+      await notify(UPDATED_SUCCESS, {
+        type: "success",
+      });
+      navigate("/readings");
+    } catch (error) {
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
-  }, []);
+  };
 
   useEffect(() => {
+    console.log({ dataReadingPartOne });
     if (dataReadingPartOne) {
       setValue("title", dataReadingPartOne.data.title);
       setValue("content", dataReadingPartOne.data.questions.content);

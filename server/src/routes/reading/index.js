@@ -18,6 +18,10 @@ router.get(
 	'/get-id/:id',
 	asyncHandle(ReadingController.getOneById)
 );
+router.put(
+	'/:id',
+	asyncHandle(ReadingController.updateOneById)
+);
 
 router.post(
 	'/filters',

@@ -10,6 +10,7 @@ const {
 	getAllWithQuery,
 	getOneById,
 	getAllWithFilters,
+	updateReading,
 } = require('../services/reading.service.js');
 
 class ReadingController {
@@ -44,6 +45,17 @@ class ReadingController {
 		new SuccessResponse({
 			message: 'creat new Reading success!',
 			metadata: await getOneById(id),
+		}).send(res);
+	};
+
+	updateOneById = async (req, res, next) => {
+		const { id } = req.params;
+		const data = req.body;
+
+
+		new SuccessResponse({
+			message: 'update new Reading success!',
+			metadata: await updateReading(id, data),
 		}).send(res);
 	};
 

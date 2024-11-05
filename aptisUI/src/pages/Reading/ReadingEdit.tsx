@@ -17,7 +17,7 @@ const ReadingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const renderReadingPart = () => {
     switch (record?.data.questions.questionPart) {
       case "ONE":
-        return <ReadingPartOne dataReadingPartOne={record} />;
+        return <ReadingPartOne dataReadingPartOne={record} statusHandler='edit' />;
       case "TWO":
         return <ReadingPartTwo dataReadingPartTwo={record} />;
       case "THREE":
