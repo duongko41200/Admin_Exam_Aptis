@@ -16,6 +16,7 @@ interface ReadingPartOneProps {
   pathTo?: string;
   handleCancel?: () => void;
   dataReadingPartThree?: any;
+  statusHandler?: string;
 }
 
 interface FormData {
@@ -107,6 +108,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
   showCancelButton = true,
   alwaysEnable = false,
   dataReadingPartThree = null,
+  statusHandler = "create",
   handleCancel,
   ...props
 }) => {
@@ -125,7 +127,6 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
   const [isShow, setIsShow] = useState(false);
 
   const onSubmit = async (values: any) => {
-    console.log({ values });
     const data = {
       title: values.title,
       timeToDo: 35,
@@ -156,8 +157,16 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
       skill: "READING",
       description: null,
     };
+    if (statusHandler === "create") {
+      createReadingPartThree(data);
+    }
+    if (statusHandler === "edit") {
+      console.log("edit");
+      updateReadingPartThree(data);
+    }
+  };
 
-    console.log({ data });
+  const createReadingPartThree = async (data: any) => {
     try {
       const CreateData = await baseDataProvider.create("readings", { data });
 
@@ -166,10 +175,27 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
       });
       reset();
     } catch (error) {
-      await notify(error, {
-        type: "error",
-      });
       console.log({ error });
+    }
+  };
+
+  //tentisspace
+  const updateReadingPartThree = async (values: any) => {
+    try {
+      await dataProvider.update("readings", {
+        id: dataReadingPartThree?.id,
+        data: values,
+        previousData: dataReadingPartThree,
+      });
+
+      await notify(UPDATED_SUCCESS, {
+        type: "success",
+      });
+      navigate("/readings");
+    } catch (error) {
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
   };
   useEffect(() => {

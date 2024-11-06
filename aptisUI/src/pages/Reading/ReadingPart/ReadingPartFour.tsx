@@ -5,6 +5,7 @@ import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -15,6 +16,7 @@ interface ReadingPartOneProps {
   pathTo?: string;
   handleCancel?: () => void;
   dataReadingPartFour?: any;
+  statusHandler?: string;
 }
 
 interface FormData {
@@ -110,7 +112,8 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataReadingPartFour=null,
+  dataReadingPartFour = null,
+  statusHandler = "create",
   handleCancel,
   ...props
 }) => {
@@ -126,9 +129,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
     reset,
   } = useForm<FormData>();
 
-
   const onSubmit = async (values: any) => {
-    console.log({ values });
     const data = {
       title: values.title,
       timeToDo: 35,
@@ -159,8 +160,16 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
       skill: "READING",
       description: null,
     };
+    if (statusHandler === "create") {
+      createReadingPartFour(data);
+    }
+    if (statusHandler === "edit") {
+      console.log("edit");
+      updateReadingPartFour(data);
+    }
+  };
 
-    console.log({ data });
+  const createReadingPartFour = async (data: any) => {
     try {
       const CreateData = await baseDataProvider.create("readings", { data });
 
@@ -169,37 +178,54 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
       });
       reset();
     } catch (error) {
-      await notify(error, {
-        type: "error",
-      });
       console.log({ error });
     }
   };
 
-useEffect(() => {
-  if (dataReadingPartFour) {
-    setValue("title", dataReadingPartFour.data.title);
-    setValue("content", dataReadingPartFour.data.questions.content);
-    setValue("subTitle", dataReadingPartFour.data.questions.questionTitle);
+  //tentisspace
+  const updateReadingPartFour = async (values: any) => {
+    try {
+      await dataProvider.update("readings", {
+        id: dataReadingPartFour?.id,
+        data: values,
+        previousData: dataReadingPartFour,
+      });
 
-    [1, 2, 3, 4, 5, 6, 7].map((num) => {
-    setValue(
-      `contentPartFour${num}` as keyof FormData,
-      dataReadingPartFour.data.questions.subQuestion[num - 1].content
-    );
-    setValue(
-      `answerPartFour${num}` as keyof FormData,
-      dataReadingPartFour.data.questions.subQuestion[num - 1].correctAnswer
-    );
-    });
+      await notify(UPDATED_SUCCESS, {
+        type: "success",
+      });
+      navigate("/readings");
+    } catch (error) {
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
+    }
+  };
 
-    [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
-    setValue(
-      `optionAnswer${num}` as keyof FormData,
-      dataReadingPartFour.data.questions.answerList[num - 1].content
-    );
-    });
-  }
+  useEffect(() => {
+    if (dataReadingPartFour) {
+      setValue("title", dataReadingPartFour.data.title);
+      setValue("content", dataReadingPartFour.data.questions.content);
+      setValue("subTitle", dataReadingPartFour.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5, 6, 7].map((num) => {
+        setValue(
+          `contentPartFour${num}` as keyof FormData,
+          dataReadingPartFour.data.questions.subQuestion[num - 1].content
+        );
+        setValue(
+          `answerPartFour${num}` as keyof FormData,
+          dataReadingPartFour.data.questions.subQuestion[num - 1].correctAnswer
+        );
+      });
+
+      [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
+        setValue(
+          `optionAnswer${num}` as keyof FormData,
+          dataReadingPartFour.data.questions.answerList[num - 1].content
+        );
+      });
+    }
   }, [dataReadingPartFour, setValue]);
 
   return (

@@ -19,11 +19,11 @@ const ReadingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
       case "ONE":
         return <ReadingPartOne dataReadingPartOne={record} statusHandler='edit' />;
       case "TWO":
-        return <ReadingPartTwo dataReadingPartTwo={record} />;
+        return <ReadingPartTwo dataReadingPartTwo={record} statusHandler='edit'  />;
       case "THREE":
-        return <ReadingPartThree dataReadingPartThree={record} />;
+        return <ReadingPartThree dataReadingPartThree={record} statusHandler='edit' />;
       case "FOUR":
-        return <ReadingPartFour dataReadingPartFour={record} />;
+        return <ReadingPartFour dataReadingPartFour={record} statusHandler='edit' />;
       default:
         return null;
     }
