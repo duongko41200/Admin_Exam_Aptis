@@ -99,27 +99,26 @@ const testBankSchema = new Schema(
 		},
 		writing: {
 			part1: {
-				type: [Number],
+				type: [Schema.Types.ObjectId],
+				ref: 'Writing',
 				required: true,
 				default: [],
 			},
 			part2: {
-				type: [Number],
+				type: [Schema.Types.ObjectId],
+				ref: 'Writing',
 				required: true,
 				default: [],
 			},
 			part3: {
-				type: [Number],
+				type: [Schema.Types.ObjectId],
+				ref: 'Writing',
 				required: true,
 				default: [],
 			},
 			part4: {
-				type: [Number],
-				required: true,
-				default: [],
-			},
-			part5: {
-				type: [Number],
+				type: [Schema.Types.ObjectId],
+				ref: 'Writing',
 				required: true,
 				default: [],
 			},
@@ -133,4 +132,4 @@ const testBankSchema = new Schema(
 
 // Xuất ReadingSchema và TestBankSchema
 
-module.exports = mongoose.model('TestBank', testBankSchema);;
+module.exports = mongoose.model('TestBank', testBankSchema);

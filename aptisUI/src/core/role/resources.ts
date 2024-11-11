@@ -5,6 +5,7 @@ import { UserCreate, UserEdit, UserList, UserShow } from '../../pages/Users'
 import { ReadingList, ReadingCreate, ReadingEdit, ReadingShow } from '../../pages/Reading'
 import { Dashboard } from '@mui/icons-material'
 import { TestBankList, TestBankCreate, TestBankEdit, TestBankShow } from '../../pages/TestBanks'
+import { WritingList, WritingCreate, WritingEdit, WritingShow } from '../../pages/Writing'
 
 
 const Resources: ResourceIF[] = [
@@ -27,6 +28,15 @@ const Resources: ResourceIF[] = [
     icon: Dashboard,
     resource: 'readings',
     label: 'Reading'
+  },
+  {
+    list: WritingList,
+    edit: WritingEdit,
+    create: WritingCreate,
+    show: WritingShow,
+    icon: Dashboard,
+    resource: 'writings',
+    label: 'Writings'
   },
   {
     list: TestBankList,
