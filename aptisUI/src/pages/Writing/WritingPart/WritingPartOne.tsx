@@ -142,7 +142,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      // reset();
+      reset();
     } catch (error) {
       console.log({ error });
     }
