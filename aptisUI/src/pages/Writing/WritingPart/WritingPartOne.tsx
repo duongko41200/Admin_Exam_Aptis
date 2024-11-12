@@ -23,21 +23,12 @@ interface FormData {
   title: string;
   subTitle: string;
   content: string;
+  suggestion: string;
   subContent1: string;
-  correctAnswer1: string;
-  answerOneSub1: string;
-  answerTwoSub1: string;
-  answerThreeSub1: string;
   subContent2: string;
-  correctAnswer2: string;
-  answerOneSub2: string;
-  answerTwoSub2: string;
-  answerThreeSub2: string;
   subContent3: string;
-  correctAnswer3: string;
-  answerOneSub3: string;
-  answerTwoSub3: string;
-  answerThreeSub3: string;
+  subContent4: string;
+  subContent5: string;
 }
 
 const QuestionBox = ({
@@ -51,7 +42,7 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "200px",
+      minHeight: "100px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
@@ -76,49 +67,6 @@ const QuestionBox = ({
           }
         />
       </div>
-      <div>
-        <TextField
-          type={`correctAnswer${questionNumber}`}
-          {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder="Đán án đúng"
-          variant="outlined"
-          fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
-          helperText={
-            errors[`correctAnswer${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 1,
-        }}
-      >
-        {[1, 2, 3].map((num) => (
-          <div key={num}>
-            <TextField
-              type={`answer${num}Sub${questionNumber}`}
-              {...register(`answer${num}Sub${questionNumber}`, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${num}`}
-              variant="outlined"
-              fullWidth
-              error={!!errors[`answer${num}Sub${questionNumber}`]}
-              helperText={
-                errors[`answer${num}Sub${questionNumber}`]
-                  ? "This field is required"
-                  : ""
-              }
-            />
-          </div>
-        ))}
-      </Box>
     </Box>
   </Box>
 );
@@ -149,37 +97,35 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
 
-  const onSubmit = async (values: any) => {
+  const onSubmit = async (values: FormData) => {
     const data = {
       title: values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle: values.subTitle,
-        content: values.content,
-        answerList: [],
-        correctAnswer: "",
-        file: null,
-        subQuestionAnswerList: [],
-        suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
-          content: values[`subContent${num}`],
-          correctAnswer: values[`correctAnswer${num}`],
+      timeToDo: 50,
+      questions: [
+        {
+          questionTitle: values.subTitle,
+          content: values.content,
+          answerList: [],
+          correctAnswer: "",
           file: null,
-          answerList: [1, 2, 3].map((ansNum) => ({
-            content: values[`answer${ansNum}Sub${num}`],
+          subQuestionAnswerList: [],
+          suggestion: values.suggestion,
+          subQuestion: [1, 2, 3, 4, 5].map((num) => ({
+            content: values[`subContent${num}`],
+            correctAnswer: null,
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
           })),
-          image: null,
-          suggestion: null,
-        })),
-        questionType: "Writing",
-        isExample: false,
-        questionPart: "ONE",
-        image: null,
-      },
-
-      skill: "Writing",
-      description: null,
+        },
+      ],
+      questionType: "WRITING",
+      questionPart: "ONE",
+      image: null,
     };
+
+    console.log({ data });
     if (statusHandler === "create") {
       createWritingPartOne(data);
     }
@@ -191,12 +137,12 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
 
   const createWritingPartOne = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("Writings", { data });
+      const CreateData = await baseDataProvider.create("writings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+      // reset();
     } catch (error) {
       console.log({ error });
     }
@@ -224,30 +170,30 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
 
   useEffect(() => {
     console.log({ dataWritingPartOne });
-    if (dataWritingPartOne) {
-      setValue("title", dataWritingPartOne.data.title);
-      setValue("content", dataWritingPartOne.data.questions.content);
-      setValue("subTitle", dataWritingPartOne.data.questions.questionTitle);
+    // if (dataWritingPartOne) {
+    //   setValue("title", dataWritingPartOne.data.title);
+    //   setValue("content", dataWritingPartOne.data.questions.content);
+    //   setValue("subTitle", dataWritingPartOne.data.questions.questionTitle);
 
-      [1, 2, 3, 4, 5, 6].map((num) => {
-        setValue(
-          `subContent${num}` as keyof FormData,
-          dataWritingPartOne.data.questions.subQuestion[num - 1].content
-        );
-        setValue(
-          `correctAnswer${num}` as keyof FormData,
-          dataWritingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-        );
-        [1, 2, 3].map((ansNum) => {
-          setValue(
-            `answer${ansNum}Sub${num}` as keyof FormData,
-            dataWritingPartOne.data.questions.subQuestion[num - 1].answerList[
-              ansNum - 1
-            ].content
-          );
-        });
-      });
-    }
+    //   [1, 2, 3, 4, 5, 6].map((num) => {
+    //     setValue(
+    //       `subContent${num}` as keyof FormData,
+    //       dataWritingPartOne.data.questions.subQuestion[num - 1].content
+    //     );
+    //     setValue(
+    //       `correctAnswer${num}` as keyof FormData,
+    //       dataWritingPartOne.data.questions.subQuestion[num - 1].correctAnswer
+    //     );
+    //     [1, 2, 3].map((ansNum) => {
+    //       setValue(
+    //         `answer${ansNum}Sub${num}` as keyof FormData,
+    //         dataWritingPartOne.data.questions.subQuestion[num - 1].answerList[
+    //           ansNum - 1
+    //         ].content
+    //       );
+    //     });
+    //   });
+    // }
   }, [dataWritingPartOne, setValue]);
 
   return (
@@ -290,6 +236,17 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+        <div>
+          <TextField
+            type="suggestion"
+            {...register("suggestion", { required: true })}
+            placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
 
         <Box
           sx={{
@@ -305,7 +262,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6].map((num) => (
+          {[1, 2, 3, 4, 5].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

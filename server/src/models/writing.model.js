@@ -20,21 +20,21 @@ const questionSchema = new mongoose.Schema({
 	subQuestionAnswerList: { type: [String], default: [] },
 	suggestion: { type: String, default: null },
 	subQuestion: { type: [subQuestionSchema], default: [] },
-	questionType: { type: String, default: 'WRITING' },
-	isExample: { type: Boolean, default: false },
-	questionPart: { type: String, required: true },
-	image: { type: String, default: null },
 });
 
-const writingSchema = new mongoose.Schema({
-	title: { type: String, default: null },
-	timeToDo: { type: Number, default: null },
-	questions: { type: [questionSchema], default: [] },
-	skill: { type: String, default: null },
-	description: { type: String, default: null },
-}, {
-	timestamps: true,
-	collection: COLLECTION_NAME,
-});
+const writingSchema = new mongoose.Schema(
+	{
+		title: { type: String, default: null },
+		timeToDo: { type: Number, default: null },
+		questions: { type: [questionSchema], default: [] },
+		questionPart: { type: String, default: null },
+		questionType: { type: String, default: 'WRITING' },
+		image: { type: String, default: null },
+	},
+	{
+		timestamps: true,
+		collection: COLLECTION_NAME,
+	}
+);
 
 module.exports = mongoose.model('Writing', writingSchema);
