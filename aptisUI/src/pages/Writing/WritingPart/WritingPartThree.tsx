@@ -42,6 +42,8 @@ interface FormData {
   optionPerson2: string;
   optionPerson3: string;
   optionPerson4: string;
+  suggestion: string;
+  question: string;
 }
 
 const QuestionBox = ({
@@ -55,7 +57,7 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "160px",
+      minHeight: "100px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
@@ -67,32 +69,14 @@ const QuestionBox = ({
     <Box>
       <div>
         <TextField
-          type={`questionPerson${questionNumber}`}
-          {...register(`questionPerson${questionNumber}`, { required: true })}
+          type={`question${questionNumber}`}
+          {...register(`question${questionNumber}`, { required: true })}
           placeholder={`Nội dung câu ${questionNumber}`}
           variant="outlined"
           fullWidth
-          error={!!errors[`questionPerson${questionNumber}`]}
+          error={!!errors[`question${questionNumber}`]}
           helperText={
-            errors[`questionPerson${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      <div>
-        <TextField
-          type="text"
-          {...register(`personMatch${questionNumber}`, { required: true })}
-          placeholder={`Đáp án đúng`}
-          variant="outlined"
-          fullWidth
-          inputProps={{ min: 1, max: 5 }} // Added max value here
-          error={!!errors[`personMatch${questionNumber}`]}
-          helperText={
-            errors[`personMatch${questionNumber}`]
-              ? "This field is required"
-              : ""
+            errors[`question${questionNumber}`] ? "This field is required" : ""
           }
         />
       </div>
@@ -129,33 +113,29 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
   const onSubmit = async (values: any) => {
     const data = {
       title: values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle: values.subTitle,
-        content: values.content,
-        answerList: [1, 2, 3, 4].map((num) => ({
-          content: values[`optionPerson${num}`],
-        })),
-        correctAnswer: "",
-        file: null,
-        subQuestionAnswerList: [],
-        suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
-          content: values[`questionPerson${num}`],
-          correctAnswer: values[`personMatch${num}`],
+      timeToDo: 50,
+      questions: [
+        {
+          questionTitle: values.subTitle,
+          content: values.content,
+          answerList: [],
+          correctAnswer: "",
           file: null,
-          answerList: null,
-          image: null,
-          suggestion: null,
-        })),
-        questionType: "Writing",
-        isExample: false,
-        questionPart: "THREE",
-        image: null,
-      },
-
-      skill: "Writing",
-      description: null,
+          subQuestionAnswerList: [],
+          suggestion: values.suggestion,
+          subQuestion: [1, 2, 3].map((num) => ({
+            content: values[`question${num}`],
+            correctAnswer: null,
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
+          })),
+        },
+      ],
+      questionType: "WRITING",
+      questionPart: "THREE",
+      image: null,
     };
     if (statusHandler === "create") {
       createWritingPartThree(data);
@@ -206,7 +186,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
         setValue(
-          `questionPerson${num}` as keyof FormData,
+          `question${num}` as keyof FormData,
           dataWritingPartThree.data.questions.subQuestion[num - 1].content
         );
         setValue(
@@ -264,57 +244,15 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
             helperText={errors.content ? "This field is required" : ""}
           />
         </div>
-
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "flex",
-            justifyContent: "space-between",
-            gap: 2,
-          }}
-        >
-          <TextField
-            type="optionPerson1"
-            {...register("optionPerson1", { required: true })}
-            placeholder="Tên người thứ nhất"
-            variant="outlined"
-            fullWidth
-            error={!!errors.optionPerson1}
-            helperText={errors.optionPerson1 ? "This field is required" : ""}
-          />
-
-          <TextField
-            type="optionPerson2"
-            {...register("optionPerson2", { required: true })}
-            placeholder="Tên người thứ hai"
-            variant="outlined"
-            fullWidth
-            error={!!errors.optionPerson2}
-            helperText={errors.optionPerson2 ? "This field is required" : ""}
-          />
-
-          <TextField
-            type="optionPerson3"
-            {...register("optionPerson3", { required: true })}
-            placeholder="Tên người thứ ba"
-            variant="outlined"
-            fullWidth
-            error={!!errors.optionPerson3}
-            helperText={errors.optionPerson3 ? "This field is required" : ""}
-          />
-
-          <TextField
-            type="optionPerson4"
-            {...register("optionPerson4", { required: true })}
-            placeholder="Tên người thứ bốn"
-            variant="outlined"
-            fullWidth
-            error={!!errors.optionPerson4}
-            helperText={errors.optionPerson4 ? "This field is required" : ""}
-          />
-        </Box>
+        <TextField
+          type="suggestion"
+          {...register("suggestion", { required: true })}
+          placeholder="Gợi ý câu trả lời"
+          variant="outlined"
+          fullWidth
+          error={!!errors.suggestion}
+          helperText={errors.suggestion ? "This field is required" : ""}
+        />
 
         <Box
           sx={{
@@ -322,7 +260,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
             height: "fit-content",
             background: "#fff !important",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
             boxShadow:
               "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
             gap: "10px",
@@ -330,7 +268,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          {[1, 2, 3].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

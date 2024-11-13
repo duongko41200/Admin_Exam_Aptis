@@ -46,7 +46,8 @@ interface FormData {
   optionAnswer6: string;
   optionAnswer7: string;
   optionAnswer8: string;
-  [key: `optionAnswer${number}`]: string; // Add this line
+  suggestion: string;
+  [key: `optionAnswer${number}`]: string;
 }
 
 const QuestionBox = ({
@@ -72,14 +73,14 @@ const QuestionBox = ({
     <Box>
       <div>
         <TextField
-          type={`contentPartFour${questionNumber}`}
-          {...register(`contentPartFour${questionNumber}`, { required: true })}
+          type={`question${questionNumber}`}
+          {...register(`question${questionNumber}`, { required: true })}
           placeholder={`Nội dung câu ${questionNumber}`}
           variant="outlined"
           fullWidth
-          error={!!errors[`contentPartFour${questionNumber}`]}
+          error={!!errors[`question${questionNumber}`]}
           helperText={
-            errors[`contentPartFour${questionNumber}`]
+            errors[`question${questionNumber}`]
               ? "This field is required"
               : ""
           }
@@ -88,7 +89,7 @@ const QuestionBox = ({
       <div>
         <TextField
           type="text"
-          {...register(`answerPartFour${questionNumber}`, { required: true })}
+          {...register(`answerPartFour${questionNumber}`)}
           placeholder={`Đáp án đúng`}
           variant="outlined"
           fullWidth
@@ -132,33 +133,29 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
   const onSubmit = async (values: any) => {
     const data = {
       title: values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle: values.subTitle,
-        content: values.content,
-        answerList: [1, 2, 3, 4, 5, 6, 7, 8].map((num) => ({
-          content: values[`optionAnswer${num}`],
-        })),
-        correctAnswer: "",
-        file: null,
-        subQuestionAnswerList: [],
-        suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
-          content: values[`contentPartFour${num}`],
-          correctAnswer: values[`answerPartFour${num}`],
+      timeToDo: 50,
+      questions: [
+        {
+          questionTitle: values.subTitle,
+          content: values.content,
+          answerList: [],
+          correctAnswer: "",
           file: null,
-          answerList: null,
-          image: null,
-          suggestion: null,
-        })),
-        questionType: "Writing",
-        isExample: false,
-        questionPart: "FOUR",
-        image: null,
-      },
-
-      skill: "Writing",
-      description: null,
+          subQuestionAnswerList: [],
+          suggestion: values.suggestion,
+          subQuestion: [1, 2].map((num) => ({
+            content: values[`question${num}`],
+            correctAnswer: null,
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
+          })),
+        },
+      ],
+      questionType: "WRITING",
+      questionPart: "FOUR",
+      image: null,
     };
     if (statusHandler === "create") {
       createWritingPartFour(data);
@@ -210,7 +207,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
         setValue(
-          `contentPartFour${num}` as keyof FormData,
+          `question${num}` as keyof FormData,
           dataWritingPartFour.data.questions.subQuestion[num - 1].content
         );
         setValue(
@@ -268,48 +265,15 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
             helperText={errors.content ? "This field is required" : ""}
           />
         </div>
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "flex",
-            justifyContent: "space-between",
-            gap: 2,
-          }}
-        >
-          <Box
-            sx={{
-              width: "100%",
-              height: "fit-content",
-              background: "#f3f3f3ad !important",
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-              boxShadow:
-                "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-              gap: "10px",
-              padding: "10px",
-              marginTop: "20px",
-            }}
-          >
-            {[...Array(8)].map((_, index) => (
-              <TextField
-                key={index}
-                type={`optionAnswer${index + 1}`}
-                {...register(`optionAnswer${index + 1}`, { required: true })}
-                placeholder={`Tên người thứ ${index + 1}`}
-                variant="outlined"
-                fullWidth
-                error={!!errors[`optionAnswer${index + 1}`]}
-                helperText={
-                  errors[`optionAnswer${index + 1}`]
-                    ? "This field is required"
-                    : ""
-                }
-              />
-            ))}
-          </Box>
-        </Box>
+        <TextField
+          type="suggestion"
+          {...register("suggestion", { required: true })}
+          placeholder="Gợi ý câu trả lời"
+          variant="outlined"
+          fullWidth
+          error={!!errors.suggestion}
+          helperText={errors.suggestion ? "This field is required" : ""}
+        />
 
         <Box
           sx={{
@@ -317,7 +281,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
             height: "fit-content",
             background: "#fff !important",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
             boxShadow:
               "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
             gap: "10px",
@@ -325,7 +289,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          {[1, 2, 3].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
