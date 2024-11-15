@@ -117,24 +117,24 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
     }
   };
 
-  useEffect(() => {
-    if (dataWritingPartTwo) {
-      setValue("title", dataWritingPartTwo.data.title);
-      setValue("content", dataWritingPartTwo.data.questions.content);
-      setValue("subTitle", dataWritingPartTwo.data.questions.questionTitle);
+  // useEffect(() => {
+  //   if (dataWritingPartTwo) {
+  //     setValue("title", dataWritingPartTwo.data.title);
+  //     setValue("content", dataWritingPartTwo.data.questions.content);
+  //     setValue("subTitle", dataWritingPartTwo.data.questions.questionTitle);
 
-      [1, 2, 3, 4, 5].forEach((num) => {
-        setValue(
-          `correctAnswer${num}`,
-          dataWritingPartTwo.data.questions.answerList[num - 1].content
-        );
-        setValue(
-          `numberOrder${num}`,
-          dataWritingPartTwo.data.questions.answerList[num - 1].numberOrder
-        );
-      });
-    }
-  }, [dataWritingPartTwo, setValue]);
+  //     [1, 2, 3, 4, 5].forEach((num) => {
+  //       setValue(
+  //         `correctAnswer${num}`,
+  //         dataWritingPartTwo.data.questions.answerList[num - 1].content
+  //       );
+  //       setValue(
+  //         `numberOrder${num}`,
+  //         dataWritingPartTwo.data.questions.answerList[num - 1].numberOrder
+  //       );
+  //     });
+  //   }
+  // }, [dataWritingPartTwo, setValue]);
 
   return (
     <div>

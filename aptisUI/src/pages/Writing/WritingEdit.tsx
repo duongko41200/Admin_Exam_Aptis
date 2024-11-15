@@ -15,7 +15,7 @@ const WritingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const resourcePath = `/${resource}`;
 
   const renderWritingPart = () => {
-    switch (record?.data.questions.questionPart) {
+    switch (record?.questionPart) {
       case "ONE":
         return <WritingPartOne dataWritingPartOne={record} statusHandler='edit' />;
       case "TWO":

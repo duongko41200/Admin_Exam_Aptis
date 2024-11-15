@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@mui/x-data-grid": "^7.22.0",
+    "@reduxjs/toolkit": "^2.3.0",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
     "ra-data-fakerest": "^5.0.0",
     "react": "^18.3.0",
     "react-admin": "^5.0.0",

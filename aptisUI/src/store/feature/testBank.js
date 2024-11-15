@@ -29,7 +29,6 @@ const initialState = {
       part2: [],
       part3: [],
       part4: [],
-      part5: [],
     },
   },
 };
@@ -200,7 +199,6 @@ export const testBankReducer = createSlice({
           part2: [],
           part3: [],
           part4: [],
-          part5: [],
         },
       };
     },

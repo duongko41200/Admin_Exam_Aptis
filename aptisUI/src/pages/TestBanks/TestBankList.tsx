@@ -13,6 +13,7 @@ import {
 } from "react-admin";
 import { validRole } from "../../core/role/permissions";
 import { BaseComponentProps } from "../../types/general";
+import { convertDate } from "../../utils/formatDate";
 
 const TestBankList = ({
   actions,
@@ -42,13 +43,29 @@ const TestBankList = ({
             key={field}
             source={field}
             render={(record) =>
-              `P1:${record[field].part1.length} | P2:${record[field].part2.length} | P3:${record[field].part3.length} | P4:${record[field].part4.length} | P5:${record[field].part5.length}`
+              `P1:${record[field].part1?.length} | P2:${
+                record[field].part2?.length
+              } | P3:${record[field].part3.length} | P4:${
+                record[field].part4.length
+              } | ${
+                record[field]?.part5?.length
+                  ? `P5:${record[field]?.part5?.length}`
+                  : ""
+              } `
             }
           />
         ))}
 
-        <TextField source="createdAt" label="Ngày tạo" />
-        <TextField source="updatedAt" label="Ngày Cập nhập" />
+        <FunctionField
+          source="createdAt"
+          label="Ngày tạo"
+          render={(record) => convertDate(record?.createdAt)}
+        />
+        <FunctionField
+          source="updatedAt"
+          label="Ngày tạo"
+          render={(record) => convertDate(record?.createdAt)}
+        />
 
         {validRole("delete", actions) && (
           <CustomButtonByRoleDelete

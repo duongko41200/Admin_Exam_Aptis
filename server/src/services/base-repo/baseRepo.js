@@ -70,6 +70,34 @@ const getAllWithFilters = async ({ partSkill }, model) => {
 	return res;
 };
 
+const getAllWithFiltersWritting = async ({ partSkill }, model) => {
+	// console.log()
+	// const [sortField, sortOrder] = sort;
+	// const [start, end] = range;
+
+	// const whereClause = Object.fromEntries(
+	//   Object.entries(filter).map(([key, value]) => [
+	//     key,
+	//     {
+	//       search: (value)
+	//         .trim()
+	//         .split(' ')
+	//         .map((word) => `${word} ${word}*`.toLowerCase())
+	//         .join(' '),
+	//     },
+	//   ])
+	// );
+
+	const res = await model
+		.find({ 'questionPart': partSkill })
+		.sort({ _id: 1 })
+		// .skip(start || 0)
+		// .limit((end || 0) - (start || 0) + 1)
+		.exec();
+
+	return res;
+};
+
 const getOneById = async ({ id }, model) => {
 	const res = await model.findById({ _id: id }).exec();
 
@@ -81,4 +109,5 @@ module.exports = {
 	getAllWithFilters,
 	getAll,
 	getOneById,
+	getAllWithFiltersWritting
 };

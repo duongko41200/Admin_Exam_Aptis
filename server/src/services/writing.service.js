@@ -27,7 +27,7 @@ class writingFactory {
 	};
 
 	static getAllWithFilters = async ({ partSkill }) => {
-		return await baseRepo.getAllWithFilters(
+		return await baseRepo.getAllWithFiltersWritting(
 			{ partSkill },
 			WritingModel
 		);
