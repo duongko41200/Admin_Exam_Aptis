@@ -7,7 +7,8 @@ const {
 	getAllWithQuery,
 	getOneById,
 	getAllWithFilters,
-	getAll
+	getAll,
+	updateOneById
 } = require('../services/testBank.service.js');
 
 class TestBankController {
@@ -17,6 +18,30 @@ class TestBankController {
 		new SuccessResponse({
 			message: 'creat new bo de success!',
 			metadata: await createTestBank(req.body),
+		}).send(res);
+	};
+	getOneById = async (req, res, next) => {
+		const { id } = req.params;
+
+		console.log('id:', id);
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await getOneById(id),
+		}).send(res);
+	};
+	updateOneById = async (req, res, next) => {
+		const { id } = req.params;
+		const data = req.body;
+
+
+
+		console.log("data:", data);
+
+
+		new SuccessResponse({
+			message: 'update new Reading success!',
+			metadata: await updateOneById(id, data),
 		}).send(res);
 	};
 

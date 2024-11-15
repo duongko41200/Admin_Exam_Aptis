@@ -13,3 +13,18 @@ export const converPartReadingSkill = (part: number) => {
       return "NULL";
   }
 };
+
+export const converPartWritingSkill = (part: number) => {
+  switch (part) {
+    case 1:
+      return "ONE";
+    case 2:
+      return "TWO";
+    case 3:
+      return "THREE";
+    case 4:
+      return "FOUR";
+    default:
+      return "NULL";
+  }
+};

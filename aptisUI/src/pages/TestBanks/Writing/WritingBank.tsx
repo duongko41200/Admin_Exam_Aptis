@@ -9,14 +9,14 @@ import {
   TextField,
   useRefresh,
 } from "react-admin";
-import { converPartReadingSkill } from "../../../utils/convertPartSkill";
+import { converPartWritingSkill } from "../../../utils/convertPartSkill";
 import DataTable from "../../../components/Table/DataTable";
 import DataTableWriting from "../../../components/Table/DataTableWriting";
 
 const WritingBank = ({ partSkill }) => {
   const handleCallApi = async () => {
     const { data } = await dataProvider.getFiltersRecord("writings", {
-      partSkill: converPartReadingSkill(partSkill),
+      partSkill: converPartWritingSkill(partSkill),
     });
 
     console.log(

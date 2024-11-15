@@ -14,12 +14,19 @@ class TestBankFactory {
 			return error;
 		}
 	};
+	static getOneById = async (id) => {
+		return await baseRepo.getOneById({ id }, TestBankModel);
+	};
 
 	static getAllWithQuery = async ({ filter, range, sort }) => {
 		return await baseRepo.getAllWithQuery(
 			{ filter, range, sort },
 			TestBankModel
 		);
+	};
+	static updateOneById = async (id, data) => {
+        console.log('data tesst:', data);
+		return await TestBankModel.findOneAndUpdate({ _id: id }, {...data}, { new: true });
 	};
 
 	static getAllWithFilters = async ({ partSkill }) => {

@@ -91,9 +91,13 @@ export default function DataTable({
   };
 
   React.useEffect(() => {
-
     console.log("testBankData là: ", testBankData);
-    setSelectionModel(testBankData["reading"][`part${partSkill}`]);
+    if (
+      testBankData["reading"] &&
+      testBankData["reading"][`part${partSkill}`]
+    ) {
+      setSelectionModel(testBankData["reading"][`part${partSkill}`]);
+    }
   }, []);
 
   return (

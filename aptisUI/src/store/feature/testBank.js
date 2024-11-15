@@ -202,6 +202,10 @@ export const testBankReducer = createSlice({
         },
       };
     },
+    SET_TESTBANK_DATA_EDIT: (state, action) => { 
+      state.testBankData = action.payload;
+    }
+
 
     //Action
   },
@@ -235,6 +239,7 @@ export const {
   SET_TESTBANK_DATA,
   SET_TYPE_TEXT,
   RESET_TESTBANK_DATA,
+  SET_TESTBANK_DATA_EDIT
 } = testBankReducer.actions;
 
 export default testBankReducer.reducer;

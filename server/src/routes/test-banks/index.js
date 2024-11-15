@@ -19,6 +19,15 @@ router.post(
 	'/filters',
 	asyncHandle(TestBankController.getAllWithFilters)
 );
+router.get(
+	'/get-id/:id',
+	asyncHandle(TestBankController.getOneById)
+);
+
+router.put(
+	'/:id',
+	asyncHandle(TestBankController.updateOneById)
+);
 
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
