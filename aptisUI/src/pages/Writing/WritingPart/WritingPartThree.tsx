@@ -44,6 +44,7 @@ interface FormData {
   optionPerson4: string;
   suggestion: string;
   question: string;
+  [key: `question${number}`]: string;
 }
 
 const QuestionBox = ({
@@ -180,26 +181,12 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
   };
   useEffect(() => {
     if (dataWritingPartThree) {
-      setValue("title", dataWritingPartThree.data.title);
-      setValue("content", dataWritingPartThree.data.questions.content);
-      setValue("subTitle", dataWritingPartThree.data.questions.questionTitle);
-
-      [1, 2, 3, 4, 5, 6, 7].map((num) => {
-        setValue(
-          `question${num}` as keyof FormData,
-          dataWritingPartThree.data.questions.subQuestion[num - 1].content
-        );
-        setValue(
-          `personMatch${num}` as keyof FormData,
-          dataWritingPartThree.data.questions.subQuestion[num - 1].correctAnswer
-        );
-      });
-
-      [1, 2, 3, 4].map((num) => {
-        setValue(
-          `optionPerson${num}` as keyof FormData,
-          dataWritingPartThree.data.questions.answerList[num - 1].content
-        );
+      setValue("title", dataWritingPartThree.title);
+      setValue("subTitle", dataWritingPartThree.questions[0].questionTitle);
+      setValue("content", dataWritingPartThree.questions[0].content);
+      setValue("suggestion", dataWritingPartThree.questions[0].suggestion);
+      dataWritingPartThree.questions[0].subQuestion.forEach((subQuestion: any, index: number) => {
+        setValue(`question${index + 1}`, subQuestion.content);
       });
     }
   }, [dataWritingPartThree, setValue]);
@@ -246,7 +233,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
         </div>
         <TextField
           type="suggestion"
-          {...register("suggestion", { required: true })}
+          {...register("suggestion")}
           placeholder="Gợi ý câu trả lời"
           variant="outlined"
           fullWidth

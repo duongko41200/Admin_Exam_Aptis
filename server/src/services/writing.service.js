@@ -41,7 +41,7 @@ class writingFactory {
 		console.log('data tesst:', data);
 		return await WritingModel.findOneAndUpdate(
 			{ _id: id },
-			{ data },
+			{ ...data },
 			{ new: true }
 		);
 	};

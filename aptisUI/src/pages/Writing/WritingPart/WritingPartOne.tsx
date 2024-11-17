@@ -170,30 +170,17 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
 
   useEffect(() => {
     console.log({ dataWritingPartOne });
-    // if (dataWritingPartOne) {
-    //   setValue("title", dataWritingPartOne.data.title);
-    //   setValue("content", dataWritingPartOne.data.questions.content);
-    //   setValue("subTitle", dataWritingPartOne.data.questions.questionTitle);
+    if (dataWritingPartOne) {
+      setValue("title", dataWritingPartOne.title);
+      setValue("content", dataWritingPartOne.questions[0].content);
+      setValue("subTitle", dataWritingPartOne.questions[0].questionTitle);
+      setValue("suggestion", dataWritingPartOne.questions[0].suggestion);
 
-    //   [1, 2, 3, 4, 5, 6].map((num) => {
-    //     setValue(
-    //       `subContent${num}` as keyof FormData,
-    //       dataWritingPartOne.data.questions.subQuestion[num - 1].content
-    //     );
-    //     setValue(
-    //       `correctAnswer${num}` as keyof FormData,
-    //       dataWritingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-    //     );
-    //     [1, 2, 3].map((ansNum) => {
-    //       setValue(
-    //         `answer${ansNum}Sub${num}` as keyof FormData,
-    //         dataWritingPartOne.data.questions.subQuestion[num - 1].answerList[
-    //           ansNum - 1
-    //         ].content
-    //       );
-    //     });
-    //   });
-    // }
+      [1, 2, 3, 4, 5].map((num) => {
+        setValue(`subContent${num}` as keyof FormData, dataWritingPartOne.questions[0].subQuestion[num - 1].content);
+      });
+
+    }
   }, [dataWritingPartOne, setValue]);
 
   return (
@@ -239,7 +226,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
         <div>
           <TextField
             type="suggestion"
-            {...register("suggestion", { required: true })}
+            {...register("suggestion")}
             placeholder="Gợi ý câu trả lời"
             variant="outlined"
             fullWidth

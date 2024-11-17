@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler, set } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
@@ -48,6 +48,8 @@ interface FormData {
   optionAnswer8: string;
   suggestion: string;
   [key: `optionAnswer${number}`]: string;
+  [key: `answerPartFour${number}`]: string;
+  [key: `question${number}`]: string;
 }
 
 const QuestionBox = ({
@@ -80,9 +82,7 @@ const QuestionBox = ({
           fullWidth
           error={!!errors[`question${questionNumber}`]}
           helperText={
-            errors[`question${questionNumber}`]
-              ? "This field is required"
-              : ""
+            errors[`question${questionNumber}`] ? "This field is required" : ""
           }
         />
       </div>
@@ -145,7 +145,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
           suggestion: values.suggestion,
           subQuestion: [1, 2].map((num) => ({
             content: values[`question${num}`],
-            correctAnswer: null,
+            correctAnswer: values[`answerPartFour${num}`],
             file: null,
             answerList: null,
             image: null,
@@ -200,26 +200,20 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
   };
 
   useEffect(() => {
+    console.log({ dataWritingPartFour });
     if (dataWritingPartFour) {
-      setValue("title", dataWritingPartFour.data.title);
-      setValue("content", dataWritingPartFour.data.questions.content);
-      setValue("subTitle", dataWritingPartFour.data.questions.questionTitle);
-
-      [1, 2, 3, 4, 5, 6, 7].map((num) => {
+      setValue("title", dataWritingPartFour.title);
+      setValue("subTitle", dataWritingPartFour.questions[0].questionTitle);
+      setValue("content", dataWritingPartFour.questions[0].content);
+      setValue("suggestion", dataWritingPartFour.questions[0].suggestion);
+      [1, 2].map((num) => {
         setValue(
-          `question${num}` as keyof FormData,
-          dataWritingPartFour.data.questions.subQuestion[num - 1].content
+          `question${num}`,
+          dataWritingPartFour.questions[0].subQuestion[num - 1].content
         );
         setValue(
-          `answerPartFour${num}` as keyof FormData,
-          dataWritingPartFour.data.questions.subQuestion[num - 1].correctAnswer
-        );
-      });
-
-      [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
-        setValue(
-          `optionAnswer${num}` as keyof FormData,
-          dataWritingPartFour.data.questions.answerList[num - 1].content
+          `answerPartFour${num}`,
+          dataWritingPartFour.questions[0].subQuestion[num - 1].correctAnswer
         );
       });
     }
@@ -289,7 +283,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3].map((num) => (
+          {[1, 2].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

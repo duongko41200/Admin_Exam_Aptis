@@ -6,12 +6,14 @@ import {
   Datagrid,
   DeleteWithConfirmButton,
   EditButton,
+  FunctionField,
   List,
   TextField,
   useRefresh,
 } from "react-admin";
 import { validRole } from "../../core/role/permissions";
 import { BaseComponentProps } from "../../types/general";
+import { convertDate } from "../../utils/formatDate";
 
 const ReadingList = ({
   actions,
@@ -77,11 +79,22 @@ const ReadingList = ({
     >
       <Datagrid rowClick="show" bulkActionButtons={false}>
         <TextField source="no" label="NO" />
-        <TextField source="data.title" label="Chủ đề Reading" />
-        <TextField source="data.questions.questionTitle" label="Chủ đề từng phần" />
-        <TextField source="data.questions.questionPart" label="Reading Part" />
-        <TextField source="createdAt" label="Ngày tạo" />
-        <TextField source="updatedAt" label="Ngày Cập nhập" />
+        <TextField source="title" label="Chủ đề Reading" />
+        <TextField
+          source="questions[0].questionTitle"
+          label="Chủ đề từng phần"
+        />
+        <TextField source="questionPart" label="Reading Part" />
+        <FunctionField
+          source="createdAt"
+          label="Ngày tạo"
+          render={(record) => convertDate(record?.createdAt)}
+        />
+        <FunctionField
+          source="updatedAt"
+          label="Ngày tạo"
+          render={(record) => convertDate(record?.createdAt)}
+        />
 
         {validRole("delete", actions) && (
           <CustomButtonByRoleDelete
