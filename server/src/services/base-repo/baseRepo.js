@@ -35,7 +35,7 @@ const getAll = async (model) => {
 	const res = await model
 		.find()
 		.populate(
-			'reading.part1 reading.part2 reading.part3 reading.part4 reading.part5'
+			'reading.part1 reading.part2 reading.part3 reading.part4 reading.part5 writing.part1 writing.part2 writing.part3 writing.part4'
 		)
 		.exec();
 
@@ -89,7 +89,7 @@ const getAllWithFiltersWritting = async ({ partSkill }, model) => {
 	// );
 
 	const res = await model
-		.find({ 'questionPart': partSkill })
+		.find({ questionPart: partSkill })
 		.sort({ _id: 1 })
 		// .skip(start || 0)
 		// .limit((end || 0) - (start || 0) + 1)
@@ -109,5 +109,5 @@ module.exports = {
 	getAllWithFilters,
 	getAll,
 	getOneById,
-	getAllWithFiltersWritting
+	getAllWithFiltersWritting,
 };
