@@ -1,14 +1,16 @@
 
-
-@url_dev = http://localhost:3052/v1/api/
-
-POST {{url_dev}}/shop/signup
+ // api signup when created user
+@url_dev = http://localhost:3333/v1/api/
+POST {{url_dev}}access/signup
 
 Content-Type: application/json
-x-api-key: xxxxfdsgdfgdfg
+x-api-key: 72f911ffb218d524a9037afa6bfae1f734760ea1d30addfbe3ed83c18df50f75908b457a509044fadd1bda8c2cb97f89e98f7aa397f4594bc4d8d3d803e5ba61
 
+
+body:
 {
-	"name":"show dfduong",
-	"email":"duonddfdfgsfdg@gmail.com",
-	"password":"123df56"
-}
+    "name": "duong",
+    "email": "duongabc@gmail.com ",
+    "password": "123456",
+    "idTelegram": "12345"
+  }

@@ -7,7 +7,7 @@ const router = express.Router();
 router.use(apiKey);
 
 //check permission
-router.unsubscribe(permission('000'));
+router.unsubscribe(String(permission("000")));
 
 router.use('/v1/api', require('./access'));
 router.use('/v1/api/text', require('./textForm'));

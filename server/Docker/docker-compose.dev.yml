@@ -1,16 +1,31 @@
 version: '3.8'  # Chỉ định phiên bản của Docker Compose
 
 services:
-  app:  # Tên dịch vụ, bạn có thể đặt tên bất kỳ
+  app:  # Tên dịch vụ ứng dụng của bạn
     container_name: ADMIN_APTIS_API
     build:
-      context: ../  # Đảm bảo Docker Compose biết nơi để xây dựng image, `.` là thư mục hiện tại (với Dockerfile và các tệp nguồn)
+      context: ../  # Đảm bảo Docker Compose biết nơi để xây dựng image
       dockerfile: Docker/DockerFile.api.dev  # Tên file Dockerfile nếu nó không phải là 'Dockerfile' mặc định
     volumes:
       - ../src:/app/src
-      - ../server.js:/app/server.js # Gắn kết thư mục `server` trong hệ thống của bạn vào container tại `/server`
+      - ../server.js:/app/server.js  # Gắn kết thư mục `server` trong hệ thống của bạn vào container tại `/server`
     ports:
-      - "3000:3000"  # Mở cổng 3000 từ container ra ngoài (tùy thuộc vào ứng dụng của bạn, có thể thay đổi cổng)
+      - "3333:3333"  # Mở cổng 3333 từ container ra ngoài
     environment:
-      - NODE_ENV=dev  # Thiết lập biến môi trường nếu cần
+      - NODE_ENV=pro  # Thiết lập biến môi trường nếu cần
+      - MONGO_URL_PRO=mongodb://mongo:27017/aptisDev  # Cấu hình kết nối MongoDB
+      - API_KEY=72f911ffb218d524a9037afa6bfae1f734760ea1d30addfbe3ed83c18df50f75908b457a509044fadd1bda8c2cb97f89e98f7aa397f4594bc4d8d3d803e5ba61
     command: ["yarn", "start"]  # Chạy lệnh "yarn start" khi container khởi động
+    depends_on:
+      - mongo  # Đảm bảo MongoDB được khởi động trước ứng dụng
+
+  mongo:  # Dịch vụ MongoDB
+    container_name: mongo
+    image: mongo:latest  # Sử dụng image MongoDB chính thức từ Docker Hub
+    ports:
+      - "27017:27017"  # Mở cổng 27017 để kết nối MongoDB từ bên ngoài (hoặc từ các container khác)
+    volumes:
+      - mongo-data:/data/db  # Gắn kết một volume để lưu trữ dữ liệu MongoDB
+
+volumes:
+  mongo-data:  # Định nghĩa volume để MongoDB lưu trữ dữ liệu
