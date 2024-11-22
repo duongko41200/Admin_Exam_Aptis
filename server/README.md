@@ -35,12 +35,6 @@ This is Monorepo using Turborepo as the management tool.
 
 ### Find file `access.post.http` inside folder `postman` and Copy api Paste postman to creat the first user
 
-Because of Prisma require interactive environment, so you need migrate each app manually
-Go to each apps directory:
-
-Ex: `cd apps/react-admin`
-
-`npx prisma migrate dev`
 
 # Docker
 
@@ -55,3 +49,7 @@ Ex: `cd apps/react-admin`
 ## Step4: Create user
 
 ### Find file `access.post.http` inside folder `postman` and Copy api Paste postman to creat the first user
+
+
+## note : webpack : build: `npx webpack --config webpack.config.js`
+## deploy:  `wrangler login ` `wrangler deploy `

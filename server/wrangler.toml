@@ -1,0 +1,11 @@
+name = "api-aptis"
+type = "webpack"  # Hoặc "rust" tùy theo ngôn ngữ bạn sử dụng
+
+account_id = "5279a7f74a4a2579a63b720ab43cc811"  # Thay bằng Account ID của bạn
+workers_dev = true  # Nếu bạn muốn deploy lên môi trường phát triển
+compatibility_flags = ["nodejs_compat"]
+main = "server.js"
+# Opt into backwards-incompatible changes through April 5, 2022.
+compatibility_date = "2024-09-23"
+# Optional: Định nghĩa tên và route của ứng dụng
+route = "api-aptis.workers.dev"
