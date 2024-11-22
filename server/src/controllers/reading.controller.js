@@ -1,17 +1,8 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-const {
-	createTopic,
-	getAllTopc,
-} = require('../models/respositories/text.repo.js');
-const { createReading } = require('../services/reading.service.js');
-const {
-	getAllWithQuery,
-	getOneById,
-	getAllWithFilters,
-	updateReading,
-} = require('../services/reading.service.js');
+import { SuccessResponse } from '../cores/success.response.js';
+import { createTopic, getAllTopc } from '../models/respositories/text.repo.js';
+import ReadingFactory from '../services/reading.service.js';
 
 class ReadingController {
 	create = async (req, res, next) => {
@@ -19,7 +10,7 @@ class ReadingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: await createReading(req.body),
+			metadata: await ReadingFactory.createReading(req.body),
 		}).send(res);
 	};
 
@@ -34,7 +25,7 @@ class ReadingController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getAllWithQuery({ filter, range, sort }),
+			metadata: await ReadingFactory.getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
 	getOneById = async (req, res, next) => {
@@ -44,7 +35,7 @@ class ReadingController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getOneById(id),
+			metadata: await ReadingFactory.getOneById(id),
 		}).send(res);
 	};
 
@@ -52,10 +43,9 @@ class ReadingController {
 		const { id } = req.params;
 		const data = req.body;
 
-
 		new SuccessResponse({
 			message: 'update new Reading success!',
-			metadata: await updateReading(id, data),
+			metadata: await ReadingFactory.updateReading(id, data),
 		}).send(res);
 	};
 
@@ -64,7 +54,7 @@ class ReadingController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getAllWithFilters(req.body),
+			metadata: await ReadingFactory.getAllWithFilters(req.body),
 		}).send(res);
 	};
 	// //QUERY//
@@ -74,10 +64,10 @@ class ReadingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: await getAllTopc(),
+			metadata: await ReadingFactory.getAllTopc(),
 		}).send(res);
 	};
 	//END QUERY
 }
 
-module.exports = new ReadingController();
+export default new ReadingController();

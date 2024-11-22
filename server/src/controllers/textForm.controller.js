@@ -1,7 +1,7 @@
 'use strict';
 
-const TextFormService = require('../services/textForm.service.js');
-const { SuccessResponse } = require('../cores/success.response.js');
+import TextFormService from '../services/textForm.service.js';
+import { SuccessResponse } from '../cores/success.response.js';
 
 class TextFormController {
 	createTextForm = async (req, res, next) => {
@@ -142,4 +142,4 @@ class TextFormController {
 	//END QUERY
 }
 
-module.exports = new TextFormController();
+export default new TextFormController();

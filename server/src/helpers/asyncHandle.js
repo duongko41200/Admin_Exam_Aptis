@@ -1,9 +1,7 @@
 const asyncHandle = (fn) => {
 	return (req, res, next) => {
-		fn(req, res, next).catch(next)
+		fn(req, res, next).catch(next);
 	};
 };
 
-module.exports = {
-	asyncHandle
-}
+export default asyncHandle;

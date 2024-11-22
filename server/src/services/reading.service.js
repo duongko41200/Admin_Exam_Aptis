@@ -1,8 +1,7 @@
 'use strict';
 
-const mongoose = require('mongoose');
-const ReadingModel = require('../models/reading.model');
-const baseRepo = require('./base-repo/baseRepo');
+import ReadingModel from '../models/reading.model.js';
+import baseRepo from './base-repo/baseRepo.js';
 
 class ReadingFactory {
 	static createReading = async ({
@@ -54,7 +53,7 @@ class ReadingFactory {
 	};
 
 	static updateReading = async (id, data) => {
-        console.log('data tesst:', data);
+		console.log('data tesst:', data);
 		return await ReadingModel.findOneAndUpdate({ _id: id }, {data}, { new: true });
 	};
 
@@ -67,4 +66,4 @@ class ReadingFactory {
 	};
 }
 
-module.exports = ReadingFactory;
+export default ReadingFactory;

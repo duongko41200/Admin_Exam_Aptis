@@ -1,4 +1,4 @@
-module.exports = {
-    StatusCodes: require('./statusCodes'),
-    ReasonPhrases: require('./reasonPhrases')
-}
+import StatusCodes  from './statusCodes.js';
+import  ReasonPhrases  from './reasonPhrases.js';
+
+export { StatusCodes, ReasonPhrases };

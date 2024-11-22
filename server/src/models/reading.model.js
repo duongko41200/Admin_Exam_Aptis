@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const { TestBank } = require('./testBank.model');
+import mongoose from 'mongoose';
+import TestBank from './testBank.model.js';
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 const COLLECTION_NAME = 'Readings';
 
@@ -37,7 +37,7 @@ const QuestionSchema = new Schema({
 				type: Schema.Types.ObjectId,
 				default: () => new mongoose.Types.ObjectId(),
 			},
-            numberOrder: { type: Number || String, default: null},
+			numberOrder: { type: Number || String, default: null},
 			content: { type: String, required: true },
 		},
 	],
@@ -77,19 +77,21 @@ const ReadingSchema = new Schema(
 		collection: COLLECTION_NAME,
 	}
 );
+
 ReadingSchema.pre('remove', async function (next) {
-    try {
-        await TestBank.deleteMany({
-            $or: [
-                { 'reading.part1': this._id },
-                { 'reading.part2': this._id },
-                { 'reading.part3': this._id },
-                { 'reading.part4': this._id },
-            ],
-        });
-        next();
-    } catch (error) {
-        next(error);
-    }
+	try {
+		await TestBank.deleteMany({
+			$or: [
+				{ 'reading.part1': this._id },
+				{ 'reading.part2': this._id },
+				{ 'reading.part3': this._id },
+				{ 'reading.part4': this._id },
+			],
+		});
+		next();
+	} catch (error) {
+		next(error);
+	}
 });
-module.exports = mongoose.model('Reading', ReadingSchema);
+
+export default mongoose.model('Reading', ReadingSchema);

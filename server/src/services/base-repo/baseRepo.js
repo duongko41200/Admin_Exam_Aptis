@@ -104,7 +104,7 @@ const getOneById = async ({ id }, model) => {
 	return res;
 };
 
-module.exports = {
+export default {
 	getAllWithQuery,
 	getAllWithFilters,
 	getAll,

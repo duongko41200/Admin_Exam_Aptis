@@ -1,13 +1,12 @@
 'use strict';
 
-const mongoose = require('mongoose');
-const WritingModel = require('../models/writing.model');
-const baseRepo = require('./base-repo/baseRepo');
 
-class writingFactory {
+import WritingModel from '../models/writing.model.js';
+import baseRepo from './base-repo/baseRepo.js';
+
+class WritingFactory {
 	static createWriting = async (data) => {
 		try {
-
 			const writing = await WritingModel.create(data);
 			return writing ? writing : null;
 		} catch (error) {
@@ -15,6 +14,7 @@ class writingFactory {
 			return error;
 		}
 	};
+
 	static getAllWithQuery = async ({ filter, range, sort }) => {
 		return await baseRepo.getAllWithQuery(
 			{ filter, range, sort },
@@ -37,7 +37,7 @@ class writingFactory {
 		return await WritingModel.findById(id).lean();
 	};
 
-	static updatewriting = async (id, data) => {
+	static updateWriting = async (id, data) => {
 		console.log('data tesst:', data);
 		return await WritingModel.findOneAndUpdate(
 			{ _id: id },
@@ -46,7 +46,7 @@ class writingFactory {
 		);
 	};
 
-	static deletewritingById = async (id) => {
+	static deleteWritingById = async (id) => {
 		return await WritingModel.deleteOne({ _id: id }).lean();
 	};
 
@@ -55,4 +55,4 @@ class writingFactory {
 	};
 }
 
-module.exports = writingFactory;
+export default WritingFactory;

@@ -1,7 +1,7 @@
 'use strict';
 
-const { Types } = require('mongoose');
-const keytokenModel = require('../models/keytoken.model');
+
+import keytokenModel from '../models/keytoken.model.js';
 
 class keyTokenService {
 	static createKeyToken = async ({
@@ -11,16 +11,6 @@ class keyTokenService {
 		refreshToken,
 	}) => {
 		try {
-			// const publicKeySting = publicKey.toString();
-			//level 0
-			// const token = await keytokenModel.create({
-			// 	user: userId,
-			// 	publicKey,
-			// 	privateKey,
-			// });
-			//return token ? token.publicKey : null;
-
-			//level xxx
 			const filter = { user: userId },
 				update = {
 					publicKey,
@@ -67,4 +57,4 @@ class keyTokenService {
 	};
 }
 
-module.exports = keyTokenService;
+export default keyTokenService;

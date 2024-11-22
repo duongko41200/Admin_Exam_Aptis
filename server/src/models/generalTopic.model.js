@@ -1,22 +1,19 @@
 'use strict';
 
+import mongoose from 'mongoose';
 
-//!mdbgum: create model partent
-
-const { model, Schema, Types } = require('mongoose'); // Erase if already required
+const { model, Schema, Types } = mongoose;
 
 // Declare the Schema of the Mongo model
 const DOCUMENT_NAME = 'GeneralTopic';
 const COLLECTION_NAME = 'GeneralTopics';
 const generalTopicSchema = new Schema(
 	{
-
 		userId: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: 'User',
 		},
-		
 		TopicId: {
 			type: Schema.Types.ObjectId,
 			required: true,
@@ -26,7 +23,6 @@ const generalTopicSchema = new Schema(
 			type: Number,
 			default: 0,
 		},
-
 	},
 	{
 		timestamps: true,
@@ -34,9 +30,5 @@ const generalTopicSchema = new Schema(
 	}
 );
 
-
-
-
-//Export the model
-module.exports =  model(DOCUMENT_NAME, generalTopicSchema)
-
+// Export the model
+export default model(DOCUMENT_NAME, generalTopicSchema);

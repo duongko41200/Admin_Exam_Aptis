@@ -1,10 +1,11 @@
 'use strict';
 
-const { Schema, model } = require('mongoose'); // Erase if already required
+import { Schema, model } from 'mongoose';
 
 const DOCUMENT_NAME = 'Apikey';
 const COLLECTION_NAME = 'Apikeys';
-var apiKeySchema = new Schema(
+
+const apiKeySchema = new Schema(
 	{
 		key: {
 			type: String,
@@ -15,7 +16,6 @@ var apiKeySchema = new Schema(
 			type: Boolean,
 			default: true,
 		},
-
 		permissions: {
 			type: [String],
 			required: true,
@@ -28,5 +28,4 @@ var apiKeySchema = new Schema(
 	}
 );
 
-//Export the model
-module.exports = model(DOCUMENT_NAME, apiKeySchema);
+export default model(DOCUMENT_NAME, apiKeySchema);

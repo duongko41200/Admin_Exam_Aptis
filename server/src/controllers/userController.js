@@ -1,11 +1,8 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-const {
-	createTopic,
-	getAllTopc,
-} = require('../models/respositories/text.repo.js');
-const { getAllWithQuery,getOneById } = require('../services/user.service.js');
+import { SuccessResponse } from '../cores/success.response.js';
+import { createTopic, getAllTopc } from '../models/respositories/text.repo.js';
+import { getAllWithQuery, getOneById } from '../services/user.service.js';
 
 class UserController {
 	createTopic = async (req, res, next) => {
@@ -48,4 +45,4 @@ class UserController {
 	//END QUERY
 }
 
-module.exports = new UserController();
+export default new UserController();

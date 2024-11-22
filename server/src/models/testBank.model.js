@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-// Định nghĩa ReadingSchema (giả sử bạn đã có schema này)
+// Define ReadingSchema (assuming you already have this schema)
 
-// Định nghĩa TestBankSchema
+// Define TestBankSchema
 const testBankSchema = new Schema(
 	{
 		title: {
@@ -130,6 +130,6 @@ const testBankSchema = new Schema(
 	}
 );
 
-// Xuất ReadingSchema và TestBankSchema
+// Export ReadingSchema and TestBankSchema
 
-module.exports = mongoose.model('TestBank', testBankSchema);
+export default mongoose.model('TestBank', testBankSchema);

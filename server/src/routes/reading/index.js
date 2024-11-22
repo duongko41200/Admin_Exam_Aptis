@@ -1,12 +1,10 @@
 'use strict';
-const express = require('express');
+import express from 'express';
+import ReadingController from '../../controllers/reading.controller.js';
+import { asyncHandle } from '../../auth/checkAuth.js';
+import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+
 const router = express.Router();
-const ReadingController = require('../../controllers/reading.controller');
-const { asyncHandle } = require('../../auth/checkAuth');
-const {
-	authentication,
-	authenticationV2,
-} = require('../../auth/authUtils');
 
 //Authen//
 router.use(authenticationV2);
@@ -14,21 +12,12 @@ router.use(authenticationV2);
 router.post('/', asyncHandle(ReadingController.create));
 
 router.get('/', asyncHandle(ReadingController.getAllWithQuery));
-router.get(
-	'/get-id/:id',
-	asyncHandle(ReadingController.getOneById)
-);
-router.put(
-	'/:id',
-	asyncHandle(ReadingController.updateOneById)
-);
+router.get('/get-id/:id', asyncHandle(ReadingController.getOneById));
+router.put('/:id', asyncHandle(ReadingController.updateOneById));
 
-router.post(
-	'/filters',
-	asyncHandle(ReadingController.getAllWithFilters)
-);
+router.post('/filters', asyncHandle(ReadingController.getAllWithFilters));
 
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
 
-module.exports = router;
+export default router;

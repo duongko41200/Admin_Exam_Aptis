@@ -1,15 +1,7 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-
-const {
-	createTestBank,
-	getAllWithQuery,
-	getOneById,
-	getAllWithFilters,
-	getAll,
-	updateOneById
-} = require('../services/testBank.service.js');
+import { SuccessResponse } from '../cores/success.response.js';
+import TestBankFactory from '../services/testBank.service.js';
 
 class TestBankController {
 	create = async (req, res, next) => {
@@ -17,7 +9,7 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new bo de success!',
-			metadata: await createTestBank(req.body),
+			metadata: await TestBankFactory.createTestBank(req.body),
 		}).send(res);
 	};
 	getOneById = async (req, res, next) => {
@@ -27,21 +19,18 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getOneById(id),
+			metadata: await TestBankFactory.getOneById(id),
 		}).send(res);
 	};
 	updateOneById = async (req, res, next) => {
 		const { id } = req.params;
 		const data = req.body;
 
-
-
 		console.log("data:", data);
-
 
 		new SuccessResponse({
 			message: 'update new Reading success!',
-			metadata: await updateOneById(id, data),
+			metadata: await TestBankFactory.updateOneById(id, data),
 		}).send(res);
 	};
 
@@ -56,7 +45,7 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new BO DE success!',
-			metadata: await getAllWithQuery({ filter, range, sort }),
+			metadata: await TestBankFactory.getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
 
@@ -65,14 +54,14 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getAllWithFilters(req.body),
+			metadata: await TestBankFactory.getAllWithFilters(req.body),
 		}).send(res);
 	};
 
 	getAll = async (req, res, next) => {
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await getAll(),
+			metadata: await TestBankFactory.getAll(),
 		}).send(res);
 	};
 	// //QUERY//
@@ -80,4 +69,4 @@ class TestBankController {
 	//END QUERY
 }
 
-module.exports = new TestBankController();
+export default new TestBankController();

@@ -1,12 +1,13 @@
 'use strict';
-const mongoose = require('mongoose');
-const safetyCount = require('../../helpers/safetyCount');
-const { text, word, sentence } = require('../../models/textform.model');
-const TopicModel = require('../../models/topic.model');
-const { Types } = mongoose;
-const dayjs = require('dayjs');
+import mongoose from 'mongoose';
+import {safetyCount} from '../../helpers/safetyCount.js';
+import { text, word, sentence } from '../../models/textform.model.js';
+import TopicModel from '../../models/topic.model.js';
+import dayjs from 'dayjs';
 
-const getAll = async ({ userId, model }) => {
+const { Types } = mongoose;
+
+export const getAll = async ({ userId, model }) => {
 	console.log('userId', userId);
 
 	const getAll = await model
@@ -15,15 +16,11 @@ const getAll = async ({ userId, model }) => {
 		.lean();
 
 	return {
-		// total: count,
-		// count: AllRecords.length,
-		// totalPages: Math.ceil(count / limit),
-		// currentPage: parseInt(page),
 		contents: getAll,
 	};
 };
 
-const findAllInfoText = async ({ model, query, limit, page }) => {
+export const findAllInfoText = async ({ model, query, limit, page }) => {
 	const countPromise = safetyCount({ model: model, query });
 	console.log({ query });
 	const resDataPromise = text
@@ -41,14 +38,13 @@ const findAllInfoText = async ({ model, query, limit, page }) => {
 
 	return {
 		total: count,
-		// count: AllRecords.length,
 		totalPages: Math.ceil(count / limit),
 		currentPage: parseInt(page),
 		contents: resData,
 	};
 };
 
-const findListTextByFilter = async ({
+export const findListTextByFilter = async ({
 	model,
 	userId,
 	limit,
@@ -93,14 +89,13 @@ const findListTextByFilter = async ({
 	]);
 	return {
 		total: count,
-		// count: AllRecords.length,
 		totalPages: Math.ceil(count / limit),
 		currentPage: parseInt(page),
 		contents: resData,
 	};
 };
 
-const deleteText = async ({
+export const deleteText = async ({
 	userId,
 	textId,
 	limit,
@@ -123,11 +118,10 @@ const deleteText = async ({
 		});
 	} catch (error) {
 		console.log({ error });
-		// return next(new AppError('No product found with that id', 404));
 	}
 };
 
-const updateTextById = async ({
+export const updateTextById = async ({
 	textId,
 	textName,
 	defind,
@@ -154,7 +148,7 @@ const updateTextById = async ({
 	}
 };
 
-const pendingReview = async ({ userId, model }) => {
+export const pendingReview = async ({ userId, model }) => {
 	try {
 		const listPenddingReview = await model.find({
 			userId,
@@ -170,16 +164,15 @@ const pendingReview = async ({ userId, model }) => {
 	}
 };
 
-///TOPIC
-
-const createTopic = async ({ name, userId }) => {
+export const createTopic = async ({ name, userId }) => {
 	return await TopicModel.create({ name: name, userId: userId });
 };
-const getAllTopc = async () => {
+
+export const getAllTopc = async () => {
 	return await TopicModel.find();
 };
 
-const updateLevelText = async ({
+export const updateLevelText = async ({
 	textId,
 	repeat,
 	dayReview,
@@ -199,8 +192,7 @@ const updateLevelText = async ({
 	}
 };
 
-// Đồng bộ data từ desktop app sang mobile
-const synchData = async ({
+export const synchData = async ({
 	dataCreate,
 	dataDelete,
 	dataUpdate,
@@ -260,7 +252,7 @@ const synchData = async ({
 	}
 };
 
-const getAllWithQuery = async ({
+export const getAllWithQuery = async ({
 	filter,
 	range,
 	sort,
@@ -271,23 +263,6 @@ const getAllWithQuery = async ({
 	const [start, end] = range;
 
 	console.log({ sort });
-
-	// console.log()
-	// const [sortField, sortOrder] = sort;
-	// const [start, end] = range;
-
-	// const whereClause = Object.fromEntries(
-	//   Object.entries(filter).map(([key, value]) => [
-	//     key,
-	//     {
-	//       search: (value)
-	//         .trim()
-	//         .split(' ')
-	//         .map((word) => `${word} ${word}*`.toLowerCase())
-	//         .join(' '),
-	//     },
-	//   ])
-	// );
 
 	try {
 		const res = await model
@@ -300,18 +275,4 @@ const getAllWithQuery = async ({
 	} catch (error) {
 		console.log('error:', error);
 	}
-};
-
-module.exports = {
-	findAllInfoText,
-	createTopic,
-	getAllTopc,
-	findListTextByFilter,
-	deleteText,
-	updateTextById,
-	pendingReview,
-	updateLevelText,
-	getAllWithQuery,
-	synchData,
-	getAll,
 };

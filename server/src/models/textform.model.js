@@ -2,7 +2,7 @@
 
 //!mdbgum: create model partent
 
-const { model, Schema, Types } = require('mongoose'); // Erase if already required
+import { model, Schema, Types } from 'mongoose'; // Erase if already required
 
 // Declare the Schema of the Mongo model
 const DOCUMENT_NAME = 'TextStructure';
@@ -98,9 +98,7 @@ const sentenceSchema = new Schema(
 	}
 );
 
-//Export the model
-module.exports = {
-	text: model(DOCUMENT_NAME, textFormSchema),
-	word: model('Words', wordSchema),
-	sentence: model('Sentences', sentenceSchema),
-};
+// Export the model
+export const text = model(DOCUMENT_NAME, textFormSchema);
+export const word = model('Words', wordSchema);
+export const sentence = model('Sentences', sentenceSchema);

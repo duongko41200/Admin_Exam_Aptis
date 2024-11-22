@@ -1,13 +1,14 @@
 'use strict';
 
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const _SECONDS = 5000;
 const countConnect = () => {
 	const numConnections = mongoose.connections.length;
 	console.log('Mumber of connections', numConnections);
 };
-const process = require('process');
-const os = require('os');
+
+import process from 'process';
+import os from 'os';
 
 // check over load
 const checkOverload = () => {
@@ -26,7 +27,7 @@ const checkOverload = () => {
 	}, _SECONDS); //minitor every 5 seconds
 };
 
-module.exports = {
+export {
 	countConnect,
 	checkOverload,
 };

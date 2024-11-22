@@ -1,8 +1,8 @@
 'use strict';
 
-const mongoose = require('mongoose');
-const TestBankModel = require('../models/testBank.model');
-const baseRepo = require('./base-repo/baseRepo');
+import mongoose from 'mongoose';
+import TestBankModel from '../models/testBank.model.js';
+import baseRepo from './base-repo/baseRepo.js';
 
 class TestBankFactory {
 	static createTestBank = async (data) => {
@@ -25,7 +25,7 @@ class TestBankFactory {
 		);
 	};
 	static updateOneById = async (id, data) => {
-        console.log('data tesst:', data);
+		console.log('data tesst:', data);
 		return await TestBankModel.findOneAndUpdate({ _id: id }, {...data}, { new: true });
 	};
 
@@ -61,4 +61,4 @@ class TestBankFactory {
 	};
 }
 
-module.exports = TestBankFactory;
+export default TestBankFactory;

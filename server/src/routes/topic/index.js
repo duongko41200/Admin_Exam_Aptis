@@ -1,12 +1,10 @@
 'use strict';
-const express = require('express');
+import express from 'express';
+import TopicController from '../../controllers/topic.controller.js';
+import { asyncHandle } from '../../auth/checkAuth.js';
+import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+
 const router = express.Router();
-const TopicController = require('../../controllers/topic.controller')
-const { asyncHandle } = require('../../auth/checkAuth');
-const {
-	authentication,
-	authenticationV2,
-} = require('../../auth/authUtils');
 
 //Authen//
 router.use(authenticationV2);
@@ -19,4 +17,4 @@ router.post(
 // QUERY
 router.get('/all', asyncHandle(TopicController.getAllTopic));
 
-module.exports = router;
+export default router;

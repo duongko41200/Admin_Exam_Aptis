@@ -1,27 +1,24 @@
 'use strict';
-const userModel = require('../models/user.model');
-const bcrypt = require('bcrypt');
-const crypto = require('node:crypto');
-const keyTokenService = require('./keyToken.service');
-const { createTokenPair, verifyJWT } = require('../auth/authUtils');
-const { getIntoData } = require('../utils');
-const {
+import userModel from '../models/user.model.js';
+import bcrypt from 'bcrypt';
+import crypto from 'node:crypto';
+import keyTokenService from './keyToken.service.js';
+import { createTokenPair, verifyJWT } from '../auth/authUtils.js';
+import { getIntoData } from '../utils/index.js';
+import {
 	BadRequestError,
 	AuthFailureError,
 	ForbiddenError,
-} = require('../cores/Error.response');
-const { findByEmail } = require('./user.service');
-const keytokenModel = require('../models/keytoken.model');
-// const { LocalStorage } = require('node-localstorage');
-
-// Tạo một kho lưu trữ local với đường dẫn tạm thời
-// const localStorage = new LocalStorage('./scratch');
+} from '../cores/Error.response.js';
+import { findByEmail } from './user.service.js';
+import keytokenModel from '../models/keytoken.model.js';
 
 const RoleApp = {
 	USER: 'USER',
 	OWNER: 'OWNER',
 	ADMIN: 'ADMIN',
 };
+
 class AccessService {
 	/**
 	 *
@@ -43,14 +40,12 @@ class AccessService {
 			console.log({ userId, email });
 			await keyTokenService.deleteKeyById(userId);
 			throw new ForbiddenError('something warm heppend !! pls relogin');
-
-	
 		}
 
-		const holderToken = await keyTokenService.findByRefreshToken( refreshToken )
+		const holderToken = await keyTokenService.findByRefreshToken(refreshToken);
 
-		console.log({holderToken})
-		if (!holderToken) throw new AuthFailureError('User not registerted')
+		console.log({ holderToken });
+		if (!holderToken) throw new AuthFailureError('User not registerted');
 
 		//verify Token
 		const { userId, email } = await verifyJWT(
@@ -58,9 +53,8 @@ class AccessService {
 			holderToken.privateKey
 		);
 
-		const foundShop = await findByEmail({email})
-		if (!foundShop) throw new AuthFailureError('User not registerted')
-
+		const foundShop = await findByEmail({ email });
+		if (!foundShop) throw new AuthFailureError('User not registerted');
 
 		//create 1 cap moi
 		const tokens = await createTokenPair(
@@ -72,36 +66,32 @@ class AccessService {
 			holderToken.privateKey
 		);
 
-		console.log({tokens})
+		console.log({ tokens });
 
 		//update token
 
 		await keytokenModel.updateOne({
 			$set: {
-				refreshToken: tokens.refreshToken
+				refreshToken: tokens.refreshToken,
 			},
 			$addToSet: {
-				refreshTokensUsed:refreshToken
+				refreshTokensUsed: refreshToken,
 			},
-		})
-		
+		});
+
 		return {
 			user: { userId, email },
-			tokens
-		}
-
-		
-		
+			tokens,
+		};
 	};
 
-
-		/**
+	/**
 	 *
 	 * check this token used
 	 */
 
 	static handleRefreshTokenV2 = async ({ keyStore, user, refreshToken }) => {
-		const { userId, email } = user
+		const { userId, email } = user;
 
 		if (keyStore.refreshTokensUsed.includes(refreshToken)) {
 			await keyTokenService.deleteKeyById(userId);
@@ -112,10 +102,8 @@ class AccessService {
 			throw new AuthFailureError('User not registered');
 		}
 
-
-		const foundShop = await findByEmail({email})
-		if (!foundShop) throw new AuthFailureError('User not registerted')
-
+		const foundShop = await findByEmail({ email });
+		if (!foundShop) throw new AuthFailureError('User not registerted');
 
 		//create 1 cap moi
 		const tokens = await createTokenPair(
@@ -127,28 +115,24 @@ class AccessService {
 			keyStore.privateKey
 		);
 
-		console.log({tokens})
+		console.log({ tokens });
 
 		//update token
 
 		await keytokenModel.updateOne({
 			$set: {
-				refreshToken: tokens.refreshToken
+				refreshToken: tokens.refreshToken,
 			},
 			$addToSet: {
-				refreshTokensUsed:refreshToken
+				refreshTokensUsed: refreshToken,
 			},
-		})
-		
+		});
+
 		return {
 			user,
-			tokens
-		}
-	
-	
-			
-			
+			tokens,
 		};
+	};
 
 	static logout = async ({ keyStore }) => {
 		console.log({ keyStore });
@@ -203,8 +187,7 @@ class AccessService {
 		};
 	};
 
-	static signUp = async ({ name, email, password,idTelegram }) => {
-
+	static signUp = async ({ name, email, password, idTelegram }) => {
 		//step1: CHECK EMAIL EXIST?
 		const holeUser = await userModel.find({ email }).lean();
 		// console.log({ holeUser });
@@ -218,7 +201,7 @@ class AccessService {
 			email,
 			password: passwordHash,
 			roles: [RoleApp.USER],
-			idTelegram
+			idTelegram,
 			// idTelegram:localStorage.getItem('idTelegram')
 		});
 
@@ -255,16 +238,14 @@ class AccessService {
 			);
 
 			return {
-
-					user: getIntoData({
-						fileds: ['_id', 'name', 'email'],
-						object: newUser,
-					}),
-					tokens,
-			
+				user: getIntoData({
+					fileds: ['_id', 'name', 'email'],
+					object: newUser,
+				}),
+				tokens,
 			};
 		}
 	};
 }
 
-module.exports = AccessService;
+export default AccessService;

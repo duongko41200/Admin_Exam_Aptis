@@ -1,17 +1,11 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-const {
+import { SuccessResponse } from '../cores/success.response.js';
+import {
 	createTopic,
 	getAllTopc,
-} = require('../models/respositories/text.repo.js');
-const { createWriting } = require('../services/writing.service.js');
-const {
-	getAllWithQuery,
-	getOneById,
-	getAllWithFilters,
-	updatewriting,
-} = require('../services/writing.service.js');
+} from '../models/respositories/text.repo.js';
+import WritingFactory from '../services/writing.service.js';
 
 class WritingController {
 	create = async (req, res, next) => {
@@ -19,7 +13,7 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: await createWriting(req.body),
+			metadata: await WritingFactory.createWriting(req.body),
 		}).send(res);
 	};
 
@@ -34,7 +28,7 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await getAllWithQuery({ filter, range, sort }),
+			metadata: await WritingFactory.getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
 	getOneById = async (req, res, next) => {
@@ -44,7 +38,7 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await getOneById(id),
+			metadata: await WritingFactory.getOneById(id),
 		}).send(res);
 	};
 
@@ -52,10 +46,9 @@ class WritingController {
 		const { id } = req.params;
 		const data = req.body;
 
-
 		new SuccessResponse({
 			message: 'update new writing success!',
-			metadata: await updatewriting(id, data),
+			metadata: await WritingFactory.updatewriting(id, data),
 		}).send(res);
 	};
 
@@ -64,7 +57,7 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await getAllWithFilters(req.body),
+			metadata: await WritingFactory.getAllWithFilters(req.body),
 		}).send(res);
 	};
 	// //QUERY//
@@ -74,10 +67,10 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: await getAllTopc(),
+			metadata: await WritingFactory.getAllTopc(),
 		}).send(res);
 	};
 	//END QUERY
 }
 
-module.exports = new WritingController();
+export default new WritingController();

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const COLLECTION_NAME = 'Writings';
 
@@ -37,4 +37,4 @@ const writingSchema = new mongoose.Schema(
 	}
 );
 
-module.exports = mongoose.model('Writing', writingSchema);
+export default mongoose.model('Writing', writingSchema);

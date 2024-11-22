@@ -2,7 +2,7 @@
 
 //!mdbgum: create model partent
 
-const { model, Schema, Types } = require('mongoose'); // Erase if already required
+import { model, Schema, Types } from 'mongoose'; // Erase if already required
 
 // Declare the Schema of the Mongo model
 const DOCUMENT_NAME = 'User';
@@ -46,10 +46,8 @@ const userSchema = new Schema(
 		},
 		verfify: {
 			type: Schema.Types.Boolean,
-
 			default: false,
 		},
-		//ngày hết hạn
 		roles: {
 			type: Array,
 			default: [],
@@ -61,5 +59,5 @@ const userSchema = new Schema(
 	}
 );
 
-//Export the model
-module.exports = model(DOCUMENT_NAME, userSchema);
+// Export the model
+export default model(DOCUMENT_NAME, userSchema);

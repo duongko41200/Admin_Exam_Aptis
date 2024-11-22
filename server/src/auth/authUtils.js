@@ -1,12 +1,9 @@
 'use strict';
 
-const JWT = require('jsonwebtoken');
-const { asyncHandle } = require('../helpers/asyncHandle');
-const {
-	AuthFailureError,
-	NotFoundError,
-} = require('../cores/Error.response');
-const { findByUserId } = require('../services/keyToken.service');
+import JWT from 'jsonwebtoken';
+import asyncHandle  from '../helpers/asyncHandle.js';
+import { AuthFailureError, NotFoundError } from '../cores/Error.response.js';
+import keyTokenService from '../services/keyToken.service.js';
 
 const HEADER = {
 	API_KEY: 'x-api-key',
@@ -14,6 +11,7 @@ const HEADER = {
 	AUTHORIZATION: 'authorization',
 	REFRESHTOKEN: 'x-rtoken-id',
 };
+
 const createTokenPair = async (payload, publicKey, privateKey) => {
 	try {
 		//accessToken
@@ -37,6 +35,7 @@ const createTokenPair = async (payload, publicKey, privateKey) => {
 		return { accessToken, refreshToken };
 	} catch (error) {}
 };
+
 const authentication = asyncHandle(async (req, res, next) => {
 	/**
 	 * 1- check userid missing
@@ -51,7 +50,7 @@ const authentication = asyncHandle(async (req, res, next) => {
 	if (!userId) throw new AuthFailureError('Invalid Request');
 
 	//2
-	const KeyStore = await findByUserId(userId);
+	const KeyStore = await keyTokenService.findByUserId(userId);
 
 	if (!KeyStore) throw new NotFoundError('Not found KeyStore');
 
@@ -86,7 +85,7 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 	if (!userId) throw new AuthFailureError('Invalid request: missing client id');
 
 	//2
-	const KeyStore = await findByUserId(userId);
+	const KeyStore = await keyTokenService.findByUserId(userId);
 	if (!KeyStore) throw new NotFoundError('Not found KeyStore');
 
 	//3
@@ -101,7 +100,7 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 			return next();
 		} catch (error) {
 
-			conssole.log(`error tesst : `, error);
+			console.log(`error tesst : `, error);
 			throw error;
 		}
 	}
@@ -129,7 +128,7 @@ const verifyJWT = async (token, keySecret) => {
 	return await JWT.verify(token, keySecret);
 };
 
-module.exports = {
+export {
 	createTokenPair,
 	authentication,
 	verifyJWT,

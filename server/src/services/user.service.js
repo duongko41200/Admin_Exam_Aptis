@@ -1,10 +1,9 @@
 'use strict';
 
-const baseRepo = require('./base-repo/baseRepo');
+import baseRepo from './base-repo/baseRepo.js';
+import userModel from '../models/user.model.js';
 
-const userModel = require('../models/user.model');
-
-const findByEmail = async ({
+export const findByEmail = async ({
 	email,
 	select = {
 		email: 1,
@@ -17,11 +16,14 @@ const findByEmail = async ({
 	return await userModel.findOne({ email }).select(select).lean();
 };
 
-const getAllWithQuery = async ({ filter, range, sort }) => {
-	return await baseRepo.getAllWithQuery({ filter, range, sort }, userModel);
+export const getAllWithQuery = async ({ filter, range, sort }) => {
+	return await baseRepo.getAllWithQuery(
+		{ filter, range, sort },
+		userModel
+	);
 };
 
-const getOneById = async (id) => {
+export const getOneById = async (id) => {
 	try {
 		const res = await userModel.findOne({ _id: id }).lean();
 		console.log({ res });
@@ -32,10 +34,4 @@ const getOneById = async (id) => {
 
 		return [];
 	}
-};
-
-module.exports = {
-	findByEmail,
-	getAllWithQuery,
-	getOneById,
 };
