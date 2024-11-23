@@ -1,4 +1,4 @@
-export default{
+export default {
     /**
      * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.3
      *

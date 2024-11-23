@@ -15,6 +15,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"assert": "^2.1.0",
 		"aws-sdk": "^2.1692.0",
 		"axios": "^1.6.7",
 		"bcrypt": "^5.1.1",
