@@ -6,20 +6,23 @@ const ADMIN: Permission = {
   users: "*",
   readings: "*",
   "test-banks": "*",
-  "writings": "*",
+  writings: "*",
+  speakings: "*",
 };
 const EDIT: Permission = {
   users: ["list", "show", "edit"],
   readings: ["list", "show", "edit", "delete"],
   "test-banks": ["list", "show", "edit", "delete"],
-  "writings": ["list", "show", "edit", "delete"],
+  writings: ["list", "show", "edit", "delete"],
+  speakings: ["list", "show", "edit", "delete"],
 };
 const VIEW: Permission = {
   users: ["list", "show", "edit"],
 
   readings: ["list", "show"],
   "test-banks": ["list", "show"],
-  "writings": ["list", "show"],
+  writings: ["list", "show"],
+  speakings: ["list", "show"],
 };
 
 const ROLES_MAP: {

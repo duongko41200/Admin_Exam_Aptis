@@ -166,7 +166,14 @@ const baseDataProvider: DataProvider = {
   ): Promise<CreateResult> => {
     const url = `${apiUrlDesktopApp}/${resource}`;
 
-    let body = JSON.stringify(params.data);
+    console.log({ params });
+    let body:any
+
+    if (resource === "speakings") {
+      body = params.data;
+    } else {
+      body = JSON.stringify(params.data);
+    }
 
     console.log({ body });
 

@@ -10,6 +10,8 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.1",
+    "@cloudinary/url-gen": "^1.21.0",
     "@mui/x-data-grid": "^7.22.0",
     "@reduxjs/toolkit": "^2.3.0",
     "clsx": "^2.1.1",

@@ -9,6 +9,7 @@ import userRouter from './user/index.js'; // Thay đổi require bằng import
 import readingRouter from './reading/index.js'; // Thay đổi require bằng import
 import testBanksRouter from './test-banks/index.js'; // Thay đổi require bằng import
 import writingRouter from './writing/index.js'; // Thay đổi require bằng import
+import speakingRouter from './speaking/index.js'
 
 const router = express.Router();
 
@@ -27,5 +28,7 @@ router.use('/v1/api/users', userRouter);
 router.use('/v1/api/readings', readingRouter);
 router.use('/v1/api/test-banks', testBanksRouter);
 router.use('/v1/api/writings', writingRouter);
+
+router.use('/v1/api/speakings', speakingRouter);
 
 export default router;

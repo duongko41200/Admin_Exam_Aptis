@@ -17,6 +17,6 @@
     "jsx": "react-jsx",
     "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  "include": ["src", "../server/src/utils/uploadFile"],
   "references": [{ "path": "./tsconfig.web.json" }]
 }
