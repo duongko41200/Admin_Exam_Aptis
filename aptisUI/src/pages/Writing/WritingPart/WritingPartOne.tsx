@@ -98,6 +98,8 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   const [isShow, setIsShow] = useState(false);
 
   const onSubmit = async (values: FormData) => {
+
+    console.log("skdfjksd:",values)
     const data = {
       title: values.title,
       timeToDo: 50,
@@ -125,7 +127,6 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
       image: null,
     };
 
-    console.log({ data });
     if (statusHandler === "create") {
       createWritingPartOne(data);
     }
@@ -136,6 +137,9 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   };
 
   const createWritingPartOne = async (data: any) => {
+
+
+    console.log({testDate: data });
     try {
       const CreateData = await baseDataProvider.create("writings", { data });
 

@@ -6,7 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
-import {InputFileUpload} from "../../../components/UploadFile/UploadFile";
+import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -149,50 +149,27 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
+  const [imageUpload, setImageUpload] = useState();
 
   const onSubmit = async (values: any) => {
-    const data = {
-      title: values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle: values.subTitle,
-        content: values.content,
-        answerList: [],
-        correctAnswer: "",
-        file: null,
-        subQuestionAnswerList: [],
-        suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
-          content: values[`subContent${num}`],
-          correctAnswer: values[`correctAnswer${num}`],
-          file: null,
-          answerList: [1, 2, 3].map((ansNum) => ({
-            content: values[`answer${ansNum}Sub${num}`],
-          })),
-          image: null,
-          suggestion: null,
-        })),
-        questionType: "READING",
-        isExample: false,
-        questionPart: "ONE",
-        image: null,
-      },
-
-      skill: "READING",
-      description: null,
-    };
     if (statusHandler === "create") {
-      createReadingPartOne(data);
+      createSpeakingPartOne(values);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateReadingPartOne(data);
+      updateReadingPartOne(values);
     }
   };
 
-  const createReadingPartOne = async (data: any) => {
+  const createSpeakingPartOne = async (data: any) => {
+    console.log("data sdfsd", data);
+
+    const uploadData = new FormData();
+    uploadData.append("file", imageUpload);
+    uploadData.append("title", data.title);
+
     try {
-      const CreateData = await baseDataProvider.create("readings", { data });
+      const CreateData = await baseDataProvider.createAndUploadImage("speakings", { data: uploadData });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -222,34 +199,39 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       });
     }
   };
+  const handleFileUpload = async (e) => {
+    console.log(" e.target.files[0]", e.target.files[0]);
 
-  useEffect(() => {
-    console.log({ dataReadingPartOne });
-    if (dataReadingPartOne) {
-      setValue("title", dataReadingPartOne.data.title);
-      setValue("content", dataReadingPartOne.data.questions.content);
-      setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
+    setImageUpload(e.target.files[0]);
+  };
 
-      [1, 2, 3, 4, 5, 6].map((num) => {
-        setValue(
-          `subContent${num}` as keyof FormData,
-          dataReadingPartOne.data.questions.subQuestion[num - 1].content
-        );
-        setValue(
-          `correctAnswer${num}` as keyof FormData,
-          dataReadingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-        );
-        [1, 2, 3].map((ansNum) => {
-          setValue(
-            `answer${ansNum}Sub${num}` as keyof FormData,
-            dataReadingPartOne.data.questions.subQuestion[num - 1].answerList[
-              ansNum - 1
-            ].content
-          );
-        });
-      });
-    }
-  }, [dataReadingPartOne, setValue]);
+  // useEffect(() => {
+  //   console.log({ dataReadingPartOne });
+  //   if (dataReadingPartOne) {
+  //     setValue("title", dataReadingPartOne.data.title);
+  //     setValue("content", dataReadingPartOne.data.questions.content);
+  //     setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
+
+  //     [1, 2, 3, 4, 5, 6].map((num) => {
+  //       setValue(
+  //         `subContent${num}` as keyof FormData,
+  //         dataReadingPartOne.data.questions.subQuestion[num - 1].content
+  //       );
+  //       setValue(
+  //         `correctAnswer${num}` as keyof FormData,
+  //         dataReadingPartOne.data.questions.subQuestion[num - 1].correctAnswer
+  //       );
+  //       [1, 2, 3].map((ansNum) => {
+  //         setValue(
+  //           `answer${ansNum}Sub${num}` as keyof FormData,
+  //           dataReadingPartOne.data.questions.subQuestion[num - 1].answerList[
+  //             ansNum - 1
+  //           ].content
+  //         );
+  //       });
+  //     });
+  //   }
+  // }, [dataReadingPartOne, setValue]);
 
   return (
     <div>
@@ -258,7 +240,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         className="form sign-up-form relative"
       >
         <h2 className="title">Speaking Part 1</h2>
-        {/* <div>
+        <div>
           <TextField
             type="title"
             {...register("title", { required: true })}
@@ -268,10 +250,9 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             error={!!errors.title}
             helperText={errors.title ? "This field is required" : ""}
           />
-        </div> */}
+        </div>
 
-
-<InputFileUpload />
+        <InputFileUpload handleFileUpload={handleFileUpload} />
 
         <Box
           sx={{

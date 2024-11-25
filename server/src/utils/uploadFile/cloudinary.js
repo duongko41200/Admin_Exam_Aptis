@@ -13,12 +13,13 @@ cloudinary.config({
 
 const storage = new CloudinaryStorage({
   cloudinary,
-  params:{
-    public_id: (req, file) => `images_speaking_aptis/${file.originalname}`,
+  allowedFormats: ['jpg', 'png'],
+  params: {
+    folder: 'images_speaking_aptis'
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname); 
   }
-  // filename: function (req, file, cb) {
-  //   cb(null, file.originalname);
-  // },
 });
 
 const uploadCloud = multer({ storage });

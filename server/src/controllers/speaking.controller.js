@@ -1,83 +1,85 @@
-"use strict";
+'use strict';
 
-import { SuccessResponse } from "../cores/success.response.js";
-import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
-import WritingFactory from "../services/writing.service.js";
+import { SuccessResponse } from '../cores/success.response.js';
+import {
+	createTopic,
+	getAllTopc,
+} from '../models/respositories/text.repo.js';
+import WritingFactory from '../services/writing.service.js';
 
 class speakingController {
-  create = async (req, res, next) => {
-    console.log("foe;", req.file);
+	createImage = async (req, res, next) => {
+		console.log('foe;', req.file);
+		console.log('Title:', req.body.title);
 
-    if (!req.file) {
-      return res.status(400).send("No file uploaded");
-    }
+		if (!req.file) {
+			return res.status(400).send('No file uploaded');
+		}
 
+		new SuccessResponse({
+			message: 'creat new textFrom success!',
+			metadata: 'thanh codng',
+		}).send(res);
+	};
 
+	getAllWithQuery = async (req, res, next) => {
+		const params = req.query;
 
-    new SuccessResponse({
-      message: "creat new textFrom success!",
-      metadata: "thanh codng",
-    }).send(res);
-  };
+		const filter = JSON.parse(params.filter);
 
-  getAllWithQuery = async (req, res, next) => {
-    const params = req.query;
+		const range = JSON.parse(params.range);
 
-    const filter = JSON.parse(params.filter);
+		const sort = JSON.parse(params.sort);
 
-    const range = JSON.parse(params.range);
+		new SuccessResponse({
+			message: 'creat new writing success!',
+			metadata: await WritingFactory.getAllWithQuery({
+				filter,
+				range,
+				sort,
+			}),
+		}).send(res);
+	};
+	getOneById = async (req, res, next) => {
+		const { id } = req.params;
 
-    const sort = JSON.parse(params.sort);
+		console.log('id:', id);
 
-    new SuccessResponse({
-      message: "creat new writing success!",
-      metadata: await WritingFactory.getAllWithQuery({
-        filter,
-        range,
-        sort,
-      }),
-    }).send(res);
-  };
-  getOneById = async (req, res, next) => {
-    const { id } = req.params;
+		new SuccessResponse({
+			message: 'creat new writing success!',
+			metadata: await WritingFactory.getOneById(id),
+		}).send(res);
+	};
 
-    console.log("id:", id);
+	updateOneById = async (req, res, next) => {
+		const { id } = req.params;
+		const data = req.body;
 
-    new SuccessResponse({
-      message: "creat new writing success!",
-      metadata: await WritingFactory.getOneById(id),
-    }).send(res);
-  };
+		new SuccessResponse({
+			message: 'update new writing success!',
+			metadata: await WritingFactory.updatewriting(id, data),
+		}).send(res);
+	};
 
-  updateOneById = async (req, res, next) => {
-    const { id } = req.params;
-    const data = req.body;
+	getAllWithFilters = async (req, res, next) => {
+		console.log('data req:', req.body);
 
-    new SuccessResponse({
-      message: "update new writing success!",
-      metadata: await WritingFactory.updatewriting(id, data),
-    }).send(res);
-  };
+		new SuccessResponse({
+			message: 'creat new writing success!',
+			metadata: await WritingFactory.getAllWithFilters(req.body),
+		}).send(res);
+	};
+	// //QUERY//
 
-  getAllWithFilters = async (req, res, next) => {
-    console.log("data req:", req.body);
+	getAllTopic = async (req, res, next) => {
+		// console.log('data req:', req.body);
 
-    new SuccessResponse({
-      message: "creat new writing success!",
-      metadata: await WritingFactory.getAllWithFilters(req.body),
-    }).send(res);
-  };
-  // //QUERY//
-
-  getAllTopic = async (req, res, next) => {
-    // console.log('data req:', req.body);
-
-    new SuccessResponse({
-      message: "creat new textFrom success!",
-      metadata: await WritingFactory.getAllTopc(),
-    }).send(res);
-  };
-  //END QUERY
+		new SuccessResponse({
+			message: 'creat new textFrom success!',
+			metadata: await WritingFactory.getAllTopc(),
+		}).send(res);
+	};
+	//END QUERY
 }
 
 export default new speakingController();

@@ -28,13 +28,16 @@ import {
   GetPutPresignedUrlparams,
   PutObjectViaPresignedUrlParams,
 } from "@/types/dataProvider";
-import { HEADERS } from "../../consts/header";
+import { getHeaders } from "../../consts/header";
 import { validUrlApi } from "../..//consts/text";
 import { pushId } from "../..//utils/pushId";
 
 const apiUrlApp = `https://bot-app-english-apiss.vercel.app/v1/api`;
 const apiUrlDesktopApp = `http://localhost:3333/v1/api`;
 const httpClient = fetchUtils.fetchJson;
+
+
+
 
 const baseDataProvider: DataProvider = {
   // get a list of records based on sort, filter, and pagination
@@ -56,7 +59,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
     const response = await fetch(request);
 
@@ -88,7 +91,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
 
     const response = await fetch(request);
@@ -126,7 +129,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
 
     const response = await fetch(request);
@@ -167,19 +170,13 @@ const baseDataProvider: DataProvider = {
     const url = `${apiUrlDesktopApp}/${resource}`;
 
     console.log({ params });
-    let body:any
-
-    if (resource === "speakings") {
-      body = params.data;
-    } else {
-      body = JSON.stringify(params.data);
-    }
+    let body = JSON.stringify(params.data);
 
     console.log({ body });
 
     const request = new Request(`${url}`, {
       method: "POST",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
       body,
     });
 
@@ -241,7 +238,7 @@ const baseDataProvider: DataProvider = {
 
     const response = await fetch(url, {
       method: "PUT",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
       body,
     });
 
@@ -338,7 +335,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "POST",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
       body,
     });
 
@@ -409,7 +406,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -430,7 +427,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -453,7 +450,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
     const response = await fetch(request);
     console.log({ response });
@@ -568,7 +565,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(HEADERS),
+      headers: new Headers(getHeaders(resource)),
     });
     const response = await fetch(request);
     console.log({ response });
@@ -599,6 +596,46 @@ const baseDataProvider: DataProvider = {
 
     return {
       data: metadata,
+    };
+  },
+  createAndUploadImage: async (
+    resource: string,
+    params: CreateParams
+  ): Promise<CreateResult> => {
+    const url = `${apiUrlDesktopApp}/${resource}/create-part-image`;
+
+    console.log({ params });
+    let body: any;
+
+    if (resource === "speakings") {
+      body = params.data;
+    } else {
+      body = JSON.stringify(params.data);
+    }
+
+    console.log({ body });
+
+    const request = new Request(`${url}`, {
+      method: "POST",
+      headers: new Headers(getHeaders(resource)),
+      body,
+    });
+
+    const response = await fetch(request);
+
+    console.log("response :", response);
+    // if (!response.ok) {
+    //   console.log("Error");
+    //   throw new Error(`HTTP error! Status: ${response.status}`);
+    // }
+
+    const data = await response.json();
+
+    console.log({ data });
+
+    console.log(":::metadata", data.metadata);
+    return {
+      data: data.metadata,
     };
   },
 

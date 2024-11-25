@@ -1,0 +1,162 @@
+
+{
+    "data": {
+        "code": 200,
+        "data": {
+            "id": 170,
+            "title": "Thử thách",
+            "timeToDo": null,
+            "questions": [
+                {
+                    "id": 392,
+                    "questionTitle": "Speaking - Part 1 - 6",
+                    "content": null,
+                    "answerList": [],
+                    "correctAnswer": "",
+                    "file": null,
+                    "subQuestionAnswerList": [],
+                    "suggestion": null,
+                    "subQuestion": [
+                        {
+                            "content": "Tell me about the person you love the most.",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1727020895710-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<p>Tên, tuổi (30, 40, 50 years old), nghề nghiệp (teacher, doctor, dentist, banker,...), ngoại hình (handsome, beautiful with</p><p>a round face and fair skin), sở thích (sing and play badminton). (Thường làm gì cùng nhau) We often go shopping on</p><p>weekends. That is very interesting and fun.</p>"
+                        },
+                        {
+                            "content": "What’s your favorite kind of music?",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1727020985463-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<p><strong>CÔNG THỨC</strong> : I love all kinds of ... such as .... but if I had to choose one, I would go for ....I often .... with my friends on weekends. We also like talking about it when we chat online. It helps me ....</p>"
+                        },
+                        {
+                            "content": "Please tell me what you do at the weekend.",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1727021111247-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<p>I have a lot of things to do at the weekend such as watching films, reading books, listening to music, playing sports, and going shopping. Now, I am living alone so I come over to have dinner with my friends on the weekend. Sometimes, we go shopping after dinner. It helps me relax after a tiring week.</p>"
+                        }
+                    ],
+                    "questionType": "SPEAKING",
+                    "isExample": false,
+                    "questionPart": "ONE",
+                    "image": null
+                },
+                {
+                    "id": 980,
+                    "questionTitle": "Speaking - Một thử thách - Part 2",
+                    "content": null,
+                    "answerList": [],
+                    "correctAnswer": "",
+                    "file": null,
+                    "subQuestionAnswerList": [],
+                    "suggestion": null,
+                    "subQuestion": [
+                        {
+                            "content": "Describe the picture",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773068217-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">In the picture is a group of 7 people in a very nice room. There was a man dressed very neatly standing and speaking in front of people. This man's demeanor is very calm and confident. There are many papers and files on the table. I guess they were presenting about some important project.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I remember I used to be like that before. I am also very confident speaking in front of people.</span></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Trong hình là một nhóm gồm 7 người trong một căn phòng rất đẹp. Có một người đàn ông đang mặc rất chỉnh tề và đứng nói trước những người còn lại. Phong thái của người đàn ông này rất điềm tĩnh, tự tin. Trên bàn có rất nhiều giấy tờ và hồ sơ. Tôi đoán là họ đang thuyết trình về một dự án quan trọng nào đó.</em></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Tôi nhớ lại trước kia tôi cũng đã từng như vậy. Tôi cũng rất tự tin nói trước đám đông.</em></p>"
+                        },
+                        {
+                            "content": "Tell me the last time you spoke in front of a lot of people.",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773078615-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<ul><li><span style=\"background-color: transparent;\">The last time spoke in front of a lot of people was 5 months ago.</span></li><li><span style=\"background-color: transparent;\">When presenting initial emotions: shy, worried, scared,...Later, calm down, confident.</span></li><li><span style=\"background-color: transparent;\">After the presentation that day, I felt like I had become a different person.</span></li></ul><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">The last time I spoke in front of a lot of people was 5 months ago. When I was a leader in a group. This is the first time I have been the leader and present in front of a lot of people. First, I felt shy, worried about, and scared,.. because many people follow me and they were evaluating my actions when I spoke. Later, I was calm down and confident,...because I was preparing it very carefully. I spoke smoothly, about how to emphasize important points. Finally, the presentation was successful and many people complimented me. After the presentation that day, I became more confident, bolder and transformed myself into a different person to be more successful.</span></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Lần cuối cùng tôi nói trước nhiều người là vào 5 tháng trước. Khi ấy tôi là trưởng nhóm. Đây là lần đầu tiên tôi trong vai trò lãnh đạo và thuyết trình trước mọi người. Ban đầu, tôi cảm thấy ngại, sợ, lo lắng,.. bởi vì có rất nhiều người theo dõi và đánh giá những hành động khi tôi nói. Về sau, tôi cảm thấy bình tĩnh, tự tin,.. bởi vì tôi đã chuẩn bị nos cẩn thận. Tôi nói rất mượt, biết nhấn nhá những điểm quan trọng. Cuối cùng, bài thuyết trình diễn ra tốt đẹp và nhiều người đã dành lời khen cho tôi. Sau buổi nói ngày hôm đó tôi có thêm nhiều tự tin hơn, mạnh dạn hơn và tự biến mình thành một con người khác để thành công hơn.</em></p>"
+                        },
+                        {
+                            "content": " Why do people usually feel worried when speaking in front of many people?",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773082987-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<ul><li><span style=\"background-color: transparent;\">People were afraid that they didn’t speak well, not able to say the key point problem because there were many other people following them. They were shy and might cry.</span></li><li><span style=\"background-color: transparent;\">Some people were unconfident about appearance, voice, ethnicity. They were afraid that their bad appearance would be criticized, and teased by others.</span></li></ul><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">That was obvious. Because people were afraid that they didn’t speak well, not able to say the key point problem because there were many other people following them. They were shy and might cry. Some people were unconfident about appearance, voice, ethnicity,...They were afraid that their bad appearance would be criticized, and teased by others.</span></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Đó là một điều hiển nhiên. Bởi vì rất nhiều ánh mắt của người khác nhìn họ. Họ ngại và có thể sẽ khóc. Một số người lại tự ti về ngoại hình, giọng nói, dân tộc,... Họ sợ rằng ngoại hình xấu sẽ bị mọi người chỉ trích và trêu ghẹo,...</em></p>"
+                        }
+                    ],
+                    "questionType": "SPEAKING",
+                    "isExample": false,
+                    "questionPart": "TWO",
+                    "image": "https://thithuaptis.com/uploads/1725772930579-file.PNG"
+                },
+                {
+                    "id": 981,
+                    "questionTitle": "Speaking - Một thử thách - Part 3",
+                    "content": "<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\"><em>45s/câu trả lời - trả lời từng câu</em></strong></p>",
+                    "answerList": [],
+                    "correctAnswer": "",
+                    "file": null,
+                    "subQuestionAnswerList": [],
+                    "suggestion": null,
+                    "subQuestion": [
+                        {
+                            "content": "Tell me what you see in the two pictures.",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773420428-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<ul><li><span style=\"background-color: transparent;\">Điểm giống: Both pictures show eating places.</span></li></ul><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Cả hai bức ảnh đều thể hiện được những nơi ăn uống</em></p><ul><li><span style=\"background-color: transparent;\">Điểm khác: In picture 1, a girl is carrying food. She must be a waitress. The impression is the girl's radiant smile. I don't feel tired when doing this job, but very happy and comfortable. Certainly attracts a lot of customers. I guess this is a low restaurant.</span></li></ul><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">In picture 2, the girl wears a serving outfit, comes to the customer's table and thoughtfully takes the order, with a respectful, considerate, warm attitude towards the customer. The space of the restaurant looks so sophisticated and luxurious. I guess this is a high quality restaurant.</span></p><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Trong hình 1, một cô gái đang mang thức ăn. Cô ấy chắc hẳn là một cô hầu bàn. Ấn tượng là nụ cười rạng rỡ của cô gái. Tôi không cảm thấy mệt mỏi khi làm công việc này mà rất vui vẻ và thoải mái. Chắc chắn sẽ thu hút được rất nhiều khách hàng. Tôi đoán đây là một nhà hàng thấp.</em></p><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Ở hình 2, cô gái mặc trang phục phục vụ, đến bàn khách và chu đáo nhận món, với thái độ tôn trọng, ân cần, niềm nở với khách. Không gian của nhà hàng nhìn rất tinh tế và sang trọng. Tôi đoán đây là một nhà hàng chất lượng cao.</em></p>"
+                        },
+                        {
+                            "content": "What are the attractions of eating in these different places?",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773346277-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<ul><li><span style=\"background-color: transparent;\">Each place will have its own attractions.</span></li><li><span style=\"background-color: transparent;\">Eating in a low restaurant, the food is cheap suitable for many people, you can eat more food, without having to pay attention to the same rules as in luxury restaurants.</span></li><li><span style=\"background-color: transparent;\">Eating in a high restaurant, expressing elegance, politeness, beautifully decorated space, and on-site service. However, the food is expensive.</span></li></ul><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Each place has its own attractions. When people are eating in a low restaurant, the waiter will give them a menu, paper, and a pen to write down what to order. They will have more time to order and feel more comfortable. The food is suitable for many people, you can eat more food, without having to pay attention to the same rules as in luxury restaurants. When people are eating in a high restaurant, the waiter comes to the table to take down the customer’s order. That is the feeling that “the customer is king”. The restaurant is decorated beautifully and luxurious.</span></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Mỗi nơi đều có những điểm hấp dẫn riêng. Khi mọi người dùng bữa ở một nhà hàng nhỏ, người phục vụ sẽ đưa cho họ thực đơn, giấy và bút để viết món cần gọi. Khách hàng sẽ có nhiều thời gian hơn để đặt hàng và cảm thấy thoải mái hơn. Món ăn phù hợp với nhiều người, bạn có thể ăn nhiều đồ ăn hơn mà không cần phải chú ý đến những quy tắc giống như ở những nhà hàng sang trọng. Khi mọi người đang dùng bữa trong một nhà hàng cao cấp, người phục vụ sẽ đến bàn ghi món ăn của khách hàng. Đó chính là cảm giác “khách hàng là thượng đế”. Nhà hàng được trang trí đẹp mắt và sang trọng.</em></p>"
+                        },
+                        {
+                            "content": "Why do some people like to eat out on special occasions?",
+                            "correctAnswer": "",
+                            "file": "http://103.145.5.146/uploads/1725773427477-file.mp3",
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": "<ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Create precious memories, express luxury, politeness.</span></li><li><span style=\"background-color: transparent;\">People are too lazy to do groceries or wash dishes after meals so, eating out is much more convenient.</span></li><li><span style=\"background-color: transparent;\">People want to change of atmosphere.</span></li></ul><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Some people like to eat out on the special occasions.Because create precious memories, express luxury, politeness, people lazy to do groceries or wash dishes after meals so, eating out is much more convenient, for a change of atmosphere, eating out bring about new experience than at home.</span></p><p><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Một số người thích đi ăn ngoài vào những dịp đặc biệt. Vì tạo ra những kỷ niệm quý giá, thể hiện sự sang trọng, lịch sự nên người ta lười đi chợ hay rửa bát sau bữa ăn nên việc đi ăn ngoài sẽ thuận tiện hơn nhiều, để thay đổi không khí, đi ăn ngoài mang lại cảm giác mới mẻ. trải nghiệm hơn ở nhà.</em></p>"
+                        }
+                    ],
+                    "questionType": "SPEAKING",
+                    "isExample": false,
+                    "questionPart": "THREE",
+                    "image": "https://thithuaptis.com/uploads/1725773228290-file.PNG,https://thithuaptis.com/uploads/1725773230931-file.PNG"
+                },
+                {
+                    "id": 1092,
+                    "questionTitle": "Speaking - Một thử thách - Part 4",
+                    "content": "<p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>2 phút/ 3 câu - trả lời liên tục</em></strong></p><ol><li>Tell me about a time when you were successful in a challenging situation.</li><li>How do you feel when you are given a challenge?</li><li>What can help people face the challenges of daily life?</li></ol>",
+                    "answerList": [],
+                    "correctAnswer": "",
+                    "file": "https://thithuaptis.com/uploads/1726647279862-file.mp3",
+                    "subQuestionAnswerList": [],
+                    "suggestion": "<p><strong style=\"color: rgb(68, 114, 196); background-color: transparent;\"><em>1. Tell me about a time when you were successful in a challenging situation.</em></strong></p><ul><li><span style=\"background-color: transparent;\">Once in a situation where a client was very unhappy with a project’s results. They were threatening to cancel their contract and take their business elsewhere.</span></li><li><span style=\"background-color: transparent;\">Then did some research and came up with a few possible solutions.</span></li><li><span style=\"background-color: transparent;\">After presenting these options to the client, we were able to come to a resolution.</span></li></ul><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I was once in a situation where a client was very unhappy with a project’s results. They were threatening to cancel their contract and take their business elsewhere. I knew that if I didn't act quickly the company would lose a lot of money, so I sat down with the client and listened to their concerns. I then did some research and came up with a few possible solutions. After presenting these options to the client, we were able to come to a resolution that satisfied both parties.</span></p><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Tôi đã từng rơi vào tình huống một khách hàng rất không hài lòng với kết quả của dự án. Họ đe dọa sẽ hủy hợp đồng và đưa công việc kinh doanh của họ đi nơi khác. Tôi biết rằng nếu tôi không hành động nhanh chóng thì công ty sẽ mất rất nhiều tiền, vì vậy tôi đã ngồi lại với khách hàng và lắng nghe những lo lắng của họ. Sau đó tôi đã thực hiện một số nghiên cứu và đưa ra một số giải pháp khả thi. Sau khi trình bày các lựa chọn này cho khách hàng, chúng tôi đã có thể đi đến giải pháp làm hài lòng cả hai bên.</em></p><p><strong style=\"color: rgb(68, 114, 196); background-color: transparent;\"><em>2. How do you feel when you are given a challenge?</em></strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Certainly, the first I’m confused, scared, tired, unconfident to do it. Later, over the moon when successful it</span></p><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Chắc chắn, lần đầu tiên tôi bối rối, sợ hãi, mệt mỏi, không tự tin để làm điều đó. Về sau, hạnh phúc khi làm thành công</em></p><p><strong style=\"color: rgb(68, 114, 196); background-color: transparent;\"><em>&nbsp;3. What can help people face the challenges of daily life?</em></strong></p><ul><li><span style=\"background-color: transparent;\">Make a plan.</span></li><li><span style=\"background-color: transparent;\">Confident yourself.</span></li><li><span style=\"background-color: transparent;\">Accept support.</span></li></ul><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">There are many ways to help people face challenges. Example make a plan. Planning will help them to take a step in the right direction. Confident yourself. Confidence helps people to be strong and not discouraged. Accept support. Accepting support is an advantage because someone shares part of the difficulty.</span></p><p><br></p><p><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Có rất nhiều cách giúp mọi người đối mặt với những thách thức. Ví dụ Lên kế hoạch. Lập kế hoạch sẽ giúp họ thực hiện một bước đi đúng hướng. Tự tin vào bản thân. Sự tự tin giúp con người mạnh mẽ và không nản chí. Chấp nhận hỗ trợ. Chấp nhận hỗ trợ là một lợi thế vì có người chia sẻ một phần khó khăn</em></p><p><br></p>",
+                    "subQuestion": [
+                        {
+                            "content": "",
+                            "correctAnswer": "",
+                            "file": null,
+                            "answerList": null,
+                            "image": null,
+                            "suggestion": null
+                        }
+                    ],
+                    "questionType": "SPEAKING",
+                    "isExample": false,
+                    "questionPart": "FOUR",
+                    "image": null
+                }
+            ],
+            "skill": "SPEAKING",
+            "description": null
+        },
+        "success": true,
+        "message": "OK",
+        "timestamp": "2024-11-25T15:51:12.246+00:00"
+    }
+}

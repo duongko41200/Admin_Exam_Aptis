@@ -13,10 +13,12 @@ const router = express.Router();
 //Authen//
 router.use(authenticationV2);
 
+router.post('/', asyncHandle(speakingController.create));
+
 router.post(
-  "/",
+  "/create-part-image",
   uploadCloud.single("file"),
-  asyncHandle(speakingController.create)
+  asyncHandle(speakingController.createImage)
 );
 
 router.get('/', asyncHandle(speakingController.getAllWithQuery));
