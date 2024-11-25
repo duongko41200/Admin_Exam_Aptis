@@ -1,126 +1,83 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
-import {
-	createTopic,
-	getAllTopc,
-} from '../models/respositories/text.repo.js';
-import WritingFactory from '../services/writing.service.js';
-import { v2 as cloudinary } from 'cloudinary';
+import { SuccessResponse } from "../cores/success.response.js";
+import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
+import WritingFactory from "../services/writing.service.js";
 
 class speakingController {
-	create = async (req, res, next) => {
-		// Thiết lập thông tin Cloudinary
-		cloudinary.config({
-			cloud_name: 'dys0lk3ly',
-			api_key: '487986324139414',
-			api_secret: 'cvMGKbZ45JucH0fZs7SBo44DDzI',
-		});
+  create = async (req, res, next) => {
+    console.log("foe;", req.file);
 
-		console.log('foe;', req.file);
+    if (!req.file) {
+      return res.status(400).send("No file uploaded");
+    }
 
-		if (!req.file) {
-			return res.status(400).send('No file uploaded');
-		}
 
-		// Upload ảnh lên Cloudinary
 
-		// Upload an image
-		const uploadResult = await cloudinary.uploader
-			.upload(
-				req.file,
-				{
-					public_id: 'shoes',
-				}
-			)
-			.catch((error) => {
-				console.log(error);
-			});
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: "thanh codng",
+    }).send(res);
+  };
 
-		console.log(uploadResult);
+  getAllWithQuery = async (req, res, next) => {
+    const params = req.query;
 
-		// Optimize delivery by resizing and applying auto-format and auto-quality
-		const optimizeUrl = cloudinary.url('shoes', {
-			fetch_format: 'auto',
-			quality: 'auto',
-		});
+    const filter = JSON.parse(params.filter);
 
-		console.log(optimizeUrl);
+    const range = JSON.parse(params.range);
 
-		// Transform the image: auto-crop to square aspect_ratio
-		const autoCropUrl = cloudinary.url('shoes', {
-			crop: 'auto',
-			gravity: 'auto',
-			width: 500,
-			height: 500,
-		});
+    const sort = JSON.parse(params.sort);
 
-		console.log({autoCropUrl});
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await WritingFactory.getAllWithQuery({
+        filter,
+        range,
+        sort,
+      }),
+    }).send(res);
+  };
+  getOneById = async (req, res, next) => {
+    const { id } = req.params;
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: 'thanh codng',
-		}).send(res);
-	};
+    console.log("id:", id);
 
-	getAllWithQuery = async (req, res, next) => {
-		const params = req.query;
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await WritingFactory.getOneById(id),
+    }).send(res);
+  };
 
-		const filter = JSON.parse(params.filter);
+  updateOneById = async (req, res, next) => {
+    const { id } = req.params;
+    const data = req.body;
 
-		const range = JSON.parse(params.range);
+    new SuccessResponse({
+      message: "update new writing success!",
+      metadata: await WritingFactory.updatewriting(id, data),
+    }).send(res);
+  };
 
-		const sort = JSON.parse(params.sort);
+  getAllWithFilters = async (req, res, next) => {
+    console.log("data req:", req.body);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await WritingFactory.getAllWithQuery({
-				filter,
-				range,
-				sort,
-			}),
-		}).send(res);
-	};
-	getOneById = async (req, res, next) => {
-		const { id } = req.params;
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await WritingFactory.getAllWithFilters(req.body),
+    }).send(res);
+  };
+  // //QUERY//
 
-		console.log('id:', id);
+  getAllTopic = async (req, res, next) => {
+    // console.log('data req:', req.body);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await WritingFactory.getOneById(id),
-		}).send(res);
-	};
-
-	updateOneById = async (req, res, next) => {
-		const { id } = req.params;
-		const data = req.body;
-
-		new SuccessResponse({
-			message: 'update new writing success!',
-			metadata: await WritingFactory.updatewriting(id, data),
-		}).send(res);
-	};
-
-	getAllWithFilters = async (req, res, next) => {
-		console.log('data req:', req.body);
-
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await WritingFactory.getAllWithFilters(req.body),
-		}).send(res);
-	};
-	// //QUERY//
-
-	getAllTopic = async (req, res, next) => {
-		// console.log('data req:', req.body);
-
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await WritingFactory.getAllTopc(),
-		}).send(res);
-	};
-	//END QUERY
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await WritingFactory.getAllTopc(),
+    }).send(res);
+  };
+  //END QUERY
 }
 
 export default new speakingController();
