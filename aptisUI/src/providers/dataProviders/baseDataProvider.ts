@@ -28,16 +28,13 @@ import {
   GetPutPresignedUrlparams,
   PutObjectViaPresignedUrlParams,
 } from "@/types/dataProvider";
-import { getHeaders } from "../../consts/header";
+import { HEADER_FORMAT, HEADER } from "../../consts/header";
 import { validUrlApi } from "../..//consts/text";
 import { pushId } from "../..//utils/pushId";
 
 const apiUrlApp = `https://bot-app-english-apiss.vercel.app/v1/api`;
 const apiUrlDesktopApp = `http://localhost:3333/v1/api`;
 const httpClient = fetchUtils.fetchJson;
-
-
-
 
 const baseDataProvider: DataProvider = {
   // get a list of records based on sort, filter, and pagination
@@ -59,7 +56,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
     const response = await fetch(request);
 
@@ -91,7 +88,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
 
     const response = await fetch(request);
@@ -129,7 +126,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
 
     const response = await fetch(request);
@@ -176,7 +173,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "POST",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
       body,
     });
 
@@ -238,7 +235,7 @@ const baseDataProvider: DataProvider = {
 
     const response = await fetch(url, {
       method: "PUT",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
       body,
     });
 
@@ -335,7 +332,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "POST",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
       body,
     });
 
@@ -406,7 +403,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -427,7 +424,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -450,7 +447,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
     const response = await fetch(request);
     console.log({ response });
@@ -565,7 +562,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "GET",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER),
     });
     const response = await fetch(request);
     console.log({ response });
@@ -617,7 +614,7 @@ const baseDataProvider: DataProvider = {
 
     const request = new Request(`${url}`, {
       method: "POST",
-      headers: new Headers(getHeaders(resource)),
+      headers: new Headers(HEADER_FORMAT),
       body,
     });
 

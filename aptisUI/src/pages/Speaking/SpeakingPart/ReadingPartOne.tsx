@@ -15,9 +15,10 @@ interface ReadingPartOneProps {
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataReadingPartOne?: any;
+  dataSpeakingPartOne?: any;
   statusHandler?: string;
   handleCancel?: () => void;
+  suggestion?: string;
 }
 
 interface FormData {
@@ -39,6 +40,7 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  suggestion?: string;
 }
 
 const QuestionBox = ({
@@ -52,7 +54,7 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "200px",
+      minHeight: "100px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
@@ -77,52 +79,10 @@ const QuestionBox = ({
           }
         />
       </div>
-      <div>
-        <TextField
-          type={`correctAnswer${questionNumber}`}
-          {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder="Đán án đúng"
-          variant="outlined"
-          fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
-          helperText={
-            errors[`correctAnswer${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 1,
-        }}
-      >
-        {[1, 2, 3].map((num) => (
-          <div key={num}>
-            <TextField
-              type={`answer${num}Sub${questionNumber}`}
-              {...register(`answer${num}Sub${questionNumber}`, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${num}`}
-              variant="outlined"
-              fullWidth
-              error={!!errors[`answer${num}Sub${questionNumber}`]}
-              helperText={
-                errors[`answer${num}Sub${questionNumber}`]
-                  ? "This field is required"
-                  : ""
-              }
-            />
-          </div>
-        ))}
-      </Box>
     </Box>
   </Box>
 );
+
 
 const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   children,
@@ -131,7 +91,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataReadingPartOne = null,
+  dataSpeakingPartOne = null,
   statusHandler = "create",
   handleCancel,
   ...props
@@ -151,25 +111,55 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const [isShow, setIsShow] = useState(false);
   const [imageUpload, setImageUpload] = useState();
 
-  const onSubmit = async (values: any) => {
+  const onSubmit = async (values: FormData) => {
+
+    console.log("skdfjksd:",values)
+    const data = {
+      title: values.title,
+      timeToDo: 50,
+      description:values.subTitle,
+      questions: [
+        {
+          questionTitle: values.subTitle,
+          content: values.content,
+          answerList: [],
+          correctAnswer: "",
+          file: null,
+          subQuestionAnswerList: [],
+          suggestion: '',
+          subQuestion: [1, 2, 3].map((num) => ({
+            content: values[`subContent${num}`],
+            correctAnswer: null,
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
+          })),
+          isExample:'',
+          image: null,
+        },
+      ],
+      questionType: "SPEAKING",
+      questionPart: "ONE",
+    };
+
+    console.log({data});
+
     if (statusHandler === "create") {
-      createSpeakingPartOne(values);
+      createWritingPartOne(data);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateReadingPartOne(values);
+      // updateWritingPartOne(data);
     }
   };
 
-  const createSpeakingPartOne = async (data: any) => {
-    console.log("data sdfsd", data);
+  const createWritingPartOne = async (data: any) => {
 
-    const uploadData = new FormData();
-    uploadData.append("file", imageUpload);
-    uploadData.append("title", data.title);
 
+    console.log({testDate: data });
     try {
-      const CreateData = await baseDataProvider.createAndUploadImage("speakings", { data: uploadData });
+      const CreateData = await baseDataProvider.create("speakings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -181,24 +171,27 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   };
 
   //tentisspace
-  const updateReadingPartOne = async (values: any) => {
-    try {
-      await dataProvider.update("readings", {
-        id: dataReadingPartOne?.id,
-        data: values,
-        previousData: dataReadingPartOne,
-      });
+  // const updateWritingPartOne = async (values: any) => {
+  //   try {
+  //     await dataProvider.update("Writings", {
+  //       id: dataWritingPartOne?.id,
+  //       data: values,
+  //       previousData: dataWritingPartOne,
+  //     });
 
-      await notify(UPDATED_SUCCESS, {
-        type: "success",
-      });
-      navigate("/readings");
-    } catch (error) {
-      notify("エラー: 生産管理の更新に失敗しました: " + error, {
-        type: "warning",
-      });
-    }
-  };
+  //     await notify(UPDATED_SUCCESS, {
+  //       type: "success",
+  //     });
+  //     navigate("/Writings");
+  //   } catch (error) {
+  //     notify("エラー: 生産管理の更新に失敗しました: " + error, {
+  //       type: "warning",
+  //     });
+  //   }
+  // };
+
+
+
   const handleFileUpload = async (e) => {
     console.log(" e.target.files[0]", e.target.files[0]);
 
@@ -206,32 +199,32 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   };
 
   // useEffect(() => {
-  //   console.log({ dataReadingPartOne });
-  //   if (dataReadingPartOne) {
-  //     setValue("title", dataReadingPartOne.data.title);
-  //     setValue("content", dataReadingPartOne.data.questions.content);
-  //     setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
+  //   console.log({ dataSpeakingPartOne });
+  //   if (dataSpeakingPartOne) {
+  //     setValue("title", dataSpeakingPartOne.data.title);
+  //     setValue("content", dataSpeakingPartOne.data.questions.content);
+  //     setValue("subTitle", dataSpeakingPartOne.data.questions.questionTitle);
 
   //     [1, 2, 3, 4, 5, 6].map((num) => {
   //       setValue(
   //         `subContent${num}` as keyof FormData,
-  //         dataReadingPartOne.data.questions.subQuestion[num - 1].content
+  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].content
   //       );
   //       setValue(
   //         `correctAnswer${num}` as keyof FormData,
-  //         dataReadingPartOne.data.questions.subQuestion[num - 1].correctAnswer
+  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].correctAnswer
   //       );
   //       [1, 2, 3].map((ansNum) => {
   //         setValue(
   //           `answer${ansNum}Sub${num}` as keyof FormData,
-  //           dataReadingPartOne.data.questions.subQuestion[num - 1].answerList[
+  //           dataSpeakingPartOne.data.questions.subQuestion[num - 1].answerList[
   //             ansNum - 1
   //           ].content
   //         );
   //       });
   //     });
   //   }
-  // }, [dataReadingPartOne, setValue]);
+  // }, [dataSpeakingPartOne, setValue]);
 
   return (
     <div>
@@ -251,8 +244,63 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             helperText={errors.title ? "This field is required" : ""}
           />
         </div>
+        <div>
+          <TextField
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="subTitle"
+            {...register("subTitle", { required: true })}
+            placeholder="Sub Title"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="suggestion"
+            {...register("suggestion")}
+            placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
 
-        <InputFileUpload handleFileUpload={handleFileUpload} />
+        <Box
+          sx={{
+            width: "100%",
+            height: "fit-content",
+            background: "#fff !important",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
+            boxShadow:
+              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+            gap: "10px",
+            padding: "10px",
+            marginTop: "20px",
+          }}
+        >
+          {[1, 2, 3].map((num) => (
+            <QuestionBox
+              key={num}
+              questionNumber={num}
+              register={register}
+              errors={errors}
+            />
+          ))}
+        </Box>
 
         <Box
           sx={{

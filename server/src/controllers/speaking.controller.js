@@ -5,9 +5,16 @@ import {
 	createTopic,
 	getAllTopc,
 } from '../models/respositories/text.repo.js';
-import WritingFactory from '../services/writing.service.js';
+import SpeakingFactory from '../services/speaking.service.js';
 
 class speakingController {
+	create = async (req, res, next) => {
+		console.log('data req:', req.body);
+		new SuccessResponse({
+			message: 'creat new textFrom success!',
+			metadata: await SpeakingFactory.create(req.body),
+		}).send(res);
+	};
 	createImage = async (req, res, next) => {
 		console.log('foe;', req.file);
 		console.log('Title:', req.body.title);
@@ -33,7 +40,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await WritingFactory.getAllWithQuery({
+			metadata: await SpeakingFactory.getAllWithQuery({
 				filter,
 				range,
 				sort,
@@ -47,7 +54,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await WritingFactory.getOneById(id),
+			metadata: await SpeakingFactory.getOneById(id),
 		}).send(res);
 	};
 
@@ -57,7 +64,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'update new writing success!',
-			metadata: await WritingFactory.updatewriting(id, data),
+			metadata: await SpeakingFactory.updatewriting(id, data),
 		}).send(res);
 	};
 
@@ -66,7 +73,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await WritingFactory.getAllWithFilters(req.body),
+			metadata: await SpeakingFactory.getAllWithFilters(req.body),
 		}).send(res);
 	};
 	// //QUERY//
@@ -76,7 +83,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: await WritingFactory.getAllTopc(),
+			metadata: await SpeakingFactory.getAllTopc(),
 		}).send(res);
 	};
 	//END QUERY
