@@ -162,7 +162,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   };
 
   const createSpeakingPartOne = async (data: any) => {
-    console.log("data sdfsd", data);
+    console.log("data sdfsd", data, imageUpload);
 
     const uploadData = new FormData();
     uploadData.append("file", imageUpload);

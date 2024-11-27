@@ -7,6 +7,7 @@ import multer from 'multer'
 import uploadCloud from '../../utils/uploadFile/cloudinary.js';
 
 const storage = multer.memoryStorage(); // Dữ liệu sẽ được lưu vào bộ nhớ RAM
+const upload = multer({ storage: storage });
 
 const router = express.Router();
 

@@ -7,7 +7,7 @@ import { generateRole } from '../core/role/permissions'
 const apiUrl = `http://localhost:3333/v1/api`
 const httpClient = fetchUtils.fetchJson
 const API_KEY =
-  "4379e3b406e606110a01e8fbe364120fdc58be39a9f30431476dd53ad14b20fe66f52423a3e4546dfa272f4c389822299709414bb44b6b3ffce7f04292be2556";
+  "2ec64e0705db689b64489975fcd06ca3249725dccac9a4d428c930a4a6d140af55fa0f09ea96f3e333a98f8efb68bed963f818a16e58e0d6584b163fa8a52924";
 
 const authProvider: AuthProvider = {
   // authentication
