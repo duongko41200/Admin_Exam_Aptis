@@ -17,7 +17,10 @@ class speakingController {
 	};
 	createImage = async (req, res, next) => {
 		console.log('foe;', req.file);
-		console.log('Title:', req.body.title);
+
+		const data = JSON.parse(req.body.data)
+		data.questions[0].image = req.file.path;
+
 
 		if (!req.file) {
 			return res.status(400).send('No file uploaded');
@@ -25,7 +28,7 @@ class speakingController {
 
 		new SuccessResponse({
 			message: 'creat new textFrom success!',
-			metadata: 'thanh codng',
+			metadata: await SpeakingFactory.create(data),
 		}).send(res);
 	};
 

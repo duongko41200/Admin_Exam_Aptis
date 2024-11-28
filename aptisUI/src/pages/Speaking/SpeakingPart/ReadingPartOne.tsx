@@ -113,7 +113,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
 
   const onSubmit = async (values: FormData) => {
 
-    console.log("skdfjksd:",values)
     const data = {
       title: values.title,
       timeToDo: 50,
@@ -191,12 +190,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   // };
 
 
-
-  const handleFileUpload = async (e) => {
-    console.log(" e.target.files[0]", e.target.files[0]);
-
-    setImageUpload(e.target.files[0]);
-  };
 
   // useEffect(() => {
   //   console.log({ dataSpeakingPartOne });

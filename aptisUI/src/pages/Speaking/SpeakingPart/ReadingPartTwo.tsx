@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
@@ -7,6 +7,7 @@ import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
+import { stylesInpection } from "../../../styles/product-inspection";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -39,6 +40,7 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  suggestion?: string;
 }
 
 const QuestionBox = ({
@@ -52,7 +54,7 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "200px",
+      minHeight: "100px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
@@ -77,49 +79,6 @@ const QuestionBox = ({
           }
         />
       </div>
-      <div>
-        <TextField
-          type={`correctAnswer${questionNumber}`}
-          {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder="Đán án đúng"
-          variant="outlined"
-          fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
-          helperText={
-            errors[`correctAnswer${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 1,
-        }}
-      >
-        {[1, 2, 3].map((num) => (
-          <div key={num}>
-            <TextField
-              type={`answer${num}Sub${questionNumber}`}
-              {...register(`answer${num}Sub${questionNumber}`, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${num}`}
-              variant="outlined"
-              fullWidth
-              error={!!errors[`answer${num}Sub${questionNumber}`]}
-              helperText={
-                errors[`answer${num}Sub${questionNumber}`]
-                  ? "This field is required"
-                  : ""
-              }
-            />
-          </div>
-        ))}
-      </Box>
     </Box>
   </Box>
 );
@@ -147,37 +106,72 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     setValue,
     reset,
   } = useForm<FormData>();
-  const [idTele, setIdTele] = useState("");
-  const [isShow, setIsShow] = useState(false);
+
   const [imageUpload, setImageUpload] = useState();
 
+  const [images, setImages] = useState([]);
+  const [previewUrls, setPreviewUrls] = useState([]);
+  const [rangeUpload, setRangeUpload] = useState(false);
+
+  ////////////////////////////////////////////////////////////////////////////
+
   const onSubmit = async (values: any) => {
+    const data = {
+      title: values.title,
+      timeToDo: 50,
+      description: values.subTitle,
+      questions: [
+        {
+          questionTitle: values.subTitle,
+          content: values.content,
+          answerList: [],
+          correctAnswer: "",
+          file: null,
+          subQuestionAnswerList: [],
+          suggestion: "",
+          subQuestion: [1, 2, 3].map((num) => ({
+            content: values[`subContent${num}`],
+            correctAnswer: null,
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
+          })),
+          isExample: "",
+          image: null,
+        },
+      ],
+      questionType: "SPEAKING",
+      questionPart: "TWO",
+    };
+
+    console.log({ data });
+
+    const uploadData = new FormData();
+    uploadData.append("file", images[0]);
+    uploadData.append("data", JSON.stringify({ ...data }));
+
     if (statusHandler === "create") {
-      createSpeakingPartOne(values);
+      createSpeakingPartOne(uploadData);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateReadingPartOne(values);
+      updateReadingPartOne(uploadData);
     }
   };
 
   const createSpeakingPartOne = async (data: any) => {
-    console.log("data sdfsd", data);
-
-    const uploadData = new FormData();
-    uploadData.append("file", imageUpload);
-    uploadData.append("title", data.title);
-
     try {
       const CreateData = await baseDataProvider.createAndUploadImage(
         "speakings",
-        { data: uploadData }
+        { data }
       );
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
       reset();
+      setImages([]);
     } catch (error) {
       console.log({ error });
     }
@@ -204,6 +198,24 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   };
   const handleFileUpload = async (e) => {
     setImageUpload(e.target.files[0]);
+  };
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files as unknown as File[]);
+
+    // Tạo preview URL
+    const newPreviewUrls = files.map((file: File) => URL.createObjectURL(file));
+    setPreviewUrls((prev) => [...prev, ...newPreviewUrls]);
+
+    // Lưu file trong state
+    setImages((prev) => [...prev, ...files]);
+  };
+
+  const handleRemoveImage = (index) => {
+    const newImages = images.filter((_, i) => i !== index);
+    const newPreviewUrls = previewUrls.filter((_, i) => i !== index);
+    setImages(newImages);
+    setPreviewUrls(newPreviewUrls);
   };
 
   // useEffect(() => {
@@ -233,6 +245,23 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   //     });
   //   }
   // }, [dataReadingPartOne, setValue]);
+  const handleDragOver = (event: any) => {
+    if (event.y >= 140 && event.y < 550) {
+      setRangeUpload(true);
+    } else {
+      setRangeUpload(false);
+    }
+  };
+  const handleDrop = () => {
+    setRangeUpload(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("dragover", handleDragOver);
+    return () => {
+      document.removeEventListener("dragover", handleDragOver);
+    };
+  }, []);
 
   return (
     <div>
@@ -253,7 +282,150 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           />
         </div>
 
-        <InputFileUpload handleFileUpload={handleFileUpload} />
+        <div>
+          <TextField
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="subTitle"
+            {...register("subTitle", { required: true })}
+            placeholder="Sub Title"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="suggestion"
+            {...register("suggestion")}
+            placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+
+        {/* ////////////////////// INUPT DRAG AND DROP ////////////////////// */}
+
+        <Box
+          sx={{
+            ...stylesInpection.dropzone,
+          }}
+        >
+          <Box
+            sx={{
+              ...stylesInpection.dropzoneContent,
+            }}
+          >
+            <Box fontSize="large">DRAG AND DROP TO UPLOAD YOUR IMAGES</Box>
+          </Box>
+          <input
+            type="file"
+            multiple
+            value=""
+            onChange={handleFileChange}
+            onDrop={handleDrop}
+            style={{
+              opacity: "0",
+              width: "100%",
+              position: "absolute",
+              top: "0",
+              left: "0",
+              border: "1px solid",
+              cursor: "pointer",
+              backgroundColor: "red",
+              height: !rangeUpload ? "100%" : "370%",
+            }}
+          />
+        </Box>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(8, 1fr)", // Cố định 5 cột
+            gap: "10px",
+          }}
+        >
+          {previewUrls.map((url, index) => (
+            <div
+              key={index}
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "150px",
+                border: "1px solid",
+              }}
+            >
+              <img
+                src={url}
+                alt={`Preview ${index}`}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  borderRadius: "4px",
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => handleRemoveImage(index)}
+                style={{
+                  position: "absolute",
+                  top: "5px",
+                  right: "5px",
+                  background: "red",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "50%",
+                  width: "20px",
+                  height: "20px",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                X
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* ////////////////////// INUPT DRAG AND DROP ////////////////////// */}
+
+        <Box
+          sx={{
+            width: "100%",
+            height: "fit-content",
+            background: "#fff !important",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
+            boxShadow:
+              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+            gap: "10px",
+            padding: "10px",
+            marginTop: "20px",
+          }}
+        >
+          {[1, 2, 3].map((num) => (
+            <QuestionBox
+              key={num}
+              questionNumber={num}
+              register={register}
+              errors={errors}
+            />
+          ))}
+        </Box>
 
         <Box
           sx={{
