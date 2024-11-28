@@ -6,6 +6,7 @@ import {
 	getAllTopc,
 } from '../models/respositories/text.repo.js';
 import SpeakingFactory from '../services/speaking.service.js';
+import uploadImage from '../utils/uploadFile/cloudFlare-r2.js';
 
 class speakingController {
 	create = async (req, res, next) => {
@@ -21,6 +22,10 @@ class speakingController {
 		const data = JSON.parse(req.body.data)
 		data.questions[0].image = req.file.path;
 
+
+		// const upload_image_cloudflare = await uploadImage(req.file);
+
+		// console.log('upload_image_cloudflare:', upload_image_cloudflare);
 
 		if (!req.file) {
 			return res.status(400).send('No file uploaded');
