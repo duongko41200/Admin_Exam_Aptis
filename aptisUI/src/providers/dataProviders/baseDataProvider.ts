@@ -292,6 +292,7 @@ const baseDataProvider: DataProvider = {
     const url = `${apiUrlDesktopApp}/${resource}/${params.id}`;
     const response = await httpClient(url, {
       method: "DELETE",
+      headers: new Headers(HEADER),
     });
     const {
       json: { metadata },

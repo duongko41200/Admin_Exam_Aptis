@@ -18,6 +18,7 @@ import ReadingIcon from "../../assets/img/reading-icon.svg";
 import ListeningIcon from "../../assets/img/listening-icon.svg";
 import SpeakingIcon from "../../assets/img/speaking-icon.svg";
 import WritingIcon from "../../assets/img/writing-icon.svg";
+import SpeakingBank from "./Speaking/SpeakingBank";
 
 const ModuleContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -137,8 +138,6 @@ const TestBankCreate = ({
     }
   };
   const updateWritingPartOne = async () => {
-
-    console.log("testBankData: ", testBankData);
     try {
       await dataProvider.update("test-banks", {
         id: recordEdit?.id,
@@ -162,7 +161,6 @@ const TestBankCreate = ({
         createWritingPartOne();
       }
       if (statusHandler === "edit") {
-        console.log("edit");
         updateWritingPartOne();
       }
       navigate("/test-banks");
@@ -264,6 +262,7 @@ const TestBankCreate = ({
           closeModalEdit={() => setIsOpenModalFrame(false)}
           label={`${typeSkill} - Part ${partSkill}`}
         >
+          {typeSkill === "Speaking" && <SpeakingBank partSkill={partSkill} />}
           {typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}
           {typeSkill === "Writing" && <WritingBank partSkill={partSkill} />}
         </ModalFrame>

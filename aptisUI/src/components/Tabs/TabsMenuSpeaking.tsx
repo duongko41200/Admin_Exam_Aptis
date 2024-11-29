@@ -5,8 +5,8 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import ReadingPartOne from "../../pages/Speaking/SpeakingPart/ReadingPartOne";
 import ReadingPartTwo from "../../pages/Speaking/SpeakingPart/ReadingPartTwo";
-import ReadingPartThree from "../../pages/Speaking/SpeakingPart/ReadingPartThree";
-import ReadingPartFour from "../../pages/Speaking/SpeakingPart/ReadingPartFour";
+import SpeakingPartThree from "../../pages/Speaking/SpeakingPart/SpeakingPartThree";
+import SpeakingPartFour from "../../pages/Speaking/SpeakingPart/SpeakingPartFour";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -65,10 +65,10 @@ export default function BasicTabs() {
         <ReadingPartTwo showDeleteButton={false} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <ReadingPartThree/>
+        <SpeakingPartThree showDeleteButton={false} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <ReadingPartFour/>
+        <SpeakingPartFour showDeleteButton={false} />
       </CustomTabPanel>
     </Box>
   );

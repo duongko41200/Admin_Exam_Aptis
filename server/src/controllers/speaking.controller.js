@@ -1,100 +1,105 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
-import {
-	createTopic,
-	getAllTopc,
-} from '../models/respositories/text.repo.js';
-import SpeakingFactory from '../services/speaking.service.js';
-import uploadImage from '../utils/uploadFile/cloudFlare-r2.js';
+import { SuccessResponse } from "../cores/success.response.js";
+import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
+import SpeakingFactory from "../services/speaking.service.js";
+import uploadImage from "../utils/uploadFile/cloudFlare-r2.js";
 
 class speakingController {
-	create = async (req, res, next) => {
-		console.log('data req:', req.body);
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await SpeakingFactory.create(req.body),
-		}).send(res);
-	};
-	createImage = async (req, res, next) => {
-		console.log('foe;', req.file);
+  create = async (req, res, next) => {
+    console.log("data req:", req.body);
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await SpeakingFactory.create(req.body),
+    }).send(res);
+  };
+  createImage = async (req, res, next) => {
+    const data = JSON.parse(req.body.data);
+    data.questions[0].image = req.files;
 
-		const data = JSON.parse(req.body.data)
-		data.questions[0].image = req.file.path;
+    // const upload_image_cloudflare = await uploadImage(req.file);
 
+    // console.log('upload_image_cloudflare:', upload_image_cloudflare);
 
-		// const upload_image_cloudflare = await uploadImage(req.file);
+    if (!req.files) {
+      return res.status(400).send("No file uploaded");
+    }
 
-		// console.log('upload_image_cloudflare:', upload_image_cloudflare);
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await SpeakingFactory.create(data),
+    }).send(res);
+  };
 
-		if (!req.file) {
-			return res.status(400).send('No file uploaded');
-		}
+  getAllWithQuery = async (req, res, next) => {
+    const params = req.query;
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await SpeakingFactory.create(data),
-		}).send(res);
-	};
+    const filter = JSON.parse(params.filter);
 
-	getAllWithQuery = async (req, res, next) => {
-		const params = req.query;
+    const range = JSON.parse(params.range);
 
-		const filter = JSON.parse(params.filter);
+    const sort = JSON.parse(params.sort);
 
-		const range = JSON.parse(params.range);
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await SpeakingFactory.getAllWithQuery({
+        filter,
+        range,
+        sort,
+      }),
+    }).send(res);
+  };
+  getOneById = async (req, res, next) => {
+    const { id } = req.params;
 
-		const sort = JSON.parse(params.sort);
+    console.log("id:", id);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await SpeakingFactory.getAllWithQuery({
-				filter,
-				range,
-				sort,
-			}),
-		}).send(res);
-	};
-	getOneById = async (req, res, next) => {
-		const { id } = req.params;
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await SpeakingFactory.getOneById(id),
+    }).send(res);
+  };
 
-		console.log('id:', id);
+  updateOneById = async (req, res, next) => {
+    const { id } = req.params;
+    const data = req.body;
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await SpeakingFactory.getOneById(id),
-		}).send(res);
-	};
+    new SuccessResponse({
+      message: "update new writing success!",
+      metadata: await SpeakingFactory.updatewriting(id, data),
+    }).send(res);
+  };
 
-	updateOneById = async (req, res, next) => {
-		const { id } = req.params;
-		const data = req.body;
+  getAllWithFilters = async (req, res, next) => {
+    console.log("data req:", req.body);
 
-		new SuccessResponse({
-			message: 'update new writing success!',
-			metadata: await SpeakingFactory.updatewriting(id, data),
-		}).send(res);
-	};
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await SpeakingFactory.getAllWithFilters(req.body),
+    }).send(res);
+  };
+  // //QUERY//
 
-	getAllWithFilters = async (req, res, next) => {
-		console.log('data req:', req.body);
+  getAllTopic = async (req, res, next) => {
+    // console.log('data req:', req.body);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await SpeakingFactory.getAllWithFilters(req.body),
-		}).send(res);
-	};
-	// //QUERY//
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await SpeakingFactory.getAllTopc(),
+    }).send(res);
+  };
 
-	getAllTopic = async (req, res, next) => {
-		// console.log('data req:', req.body);
+  deleteById = async (req, res, next) => {
+    console.log(" data req:", req.params);
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await SpeakingFactory.getAllTopc(),
-		}).send(res);
-	};
-	//END QUERY
+    new SuccessResponse({
+      message: "delete record success!",
+      metadata: await SpeakingFactory.deleteSpeakingById({
+        _id: req.params.id,
+      }),
+    }).send(res);
+  };
+  //END QUERY
 }
 
 export default new speakingController();

@@ -83,7 +83,7 @@ const QuestionBox = ({
   </Box>
 );
 
-const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
+const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
@@ -138,16 +138,19 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             suggestion: null,
           })),
           isExample: "",
-          image: null,
+          image: [],
         },
       ],
       questionType: "SPEAKING",
-      questionPart: "TWO",
+      questionPart: "THREE",
     };
 
     console.log({ data });
 
+    console.log({ images });
+
     const uploadData = new FormData();
+
     for (let i = 0; i < images.length; i++) {
       uploadData.append("files", images[i]);
     }
@@ -172,8 +175,8 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
-      setImages([]);
+      // reset();
+      // setImages([]);
     } catch (error) {
       console.log({ error });
     }
@@ -271,7 +274,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
-        <h2 className="title">Speaking Part 2</h2>
+        <h2 className="title">Speaking Part 3</h2>
         <div>
           <TextField
             type="title"
@@ -328,9 +331,11 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           <Box
             sx={{
               ...stylesInpection.dropzoneContent,
+              gap: "10px",
             }}
           >
             <Box fontSize="large">DRAG AND DROP TO UPLOAD YOUR IMAGES</Box>
+            <Box fontSize="small"> (Upload ít nhất 2 cái ảnh)</Box>
           </Box>
           <input
             type="file"
@@ -480,4 +485,4 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   );
 };
 
-export default ReadingPartOne;
+export default SpeakingPartThree;

@@ -8,7 +8,6 @@ const initialState = {
       part2: [],
       part3: [],
       part4: [],
-      part5: [],
     },
     listening: {
       part1: [],
@@ -157,14 +156,6 @@ export const testBankReducer = createSlice({
   name: "testBankStore",
   initialState,
   reducers: {
-    SET_WORD: (state, action) => {
-      state.wordObject[`${Object.keys(action.payload)}`] =
-        action.payload[`${Object.keys(action.payload)}`];
-    },
-    SET_TYPE_TEXT: (state, action) => {
-      console.log("action type text:", action);
-      state.typeText = action.payload;
-    },
     SET_TESTBANK_DATA: (state, action) => {
       state.testBankData[action.payload.type][
         `part${action.payload.partSkill}`
@@ -178,7 +169,6 @@ export const testBankReducer = createSlice({
           part2: [],
           part3: [],
           part4: [],
-          part5: [],
         },
         listening: {
           part1: [],
@@ -202,10 +192,9 @@ export const testBankReducer = createSlice({
         },
       };
     },
-    SET_TESTBANK_DATA_EDIT: (state, action) => { 
+    SET_TESTBANK_DATA_EDIT: (state, action) => {
       state.testBankData = action.payload;
-    }
-
+    },
 
     //Action
   },
@@ -235,11 +224,9 @@ export const testBankReducer = createSlice({
 
 // Action creators are generated for each case reducer function
 export const {
-  SET_WORD,
   SET_TESTBANK_DATA,
-  SET_TYPE_TEXT,
   RESET_TESTBANK_DATA,
-  SET_TESTBANK_DATA_EDIT
+  SET_TESTBANK_DATA_EDIT,
 } = testBankReducer.actions;
 
 export default testBankReducer.reducer;
