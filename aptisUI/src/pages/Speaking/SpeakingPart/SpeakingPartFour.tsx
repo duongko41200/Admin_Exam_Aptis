@@ -15,7 +15,7 @@ interface ReadingPartOneProps {
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataSpeakingPartOne?: any;
+  dataReadingPartFour?: any;
   statusHandler?: string;
   handleCancel?: () => void;
   suggestion?: string;
@@ -90,7 +90,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataSpeakingPartOne = null,
+  dataReadingPartFour = null,
   statusHandler = "create",
   handleCancel,
   ...props
@@ -182,33 +182,23 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   //   }
   // };
 
-  // useEffect(() => {
-  //   console.log({ dataSpeakingPartOne });
-  //   if (dataSpeakingPartOne) {
-  //     setValue("title", dataSpeakingPartOne.data.title);
-  //     setValue("content", dataSpeakingPartOne.data.questions.content);
-  //     setValue("subTitle", dataSpeakingPartOne.data.questions.questionTitle);
-
-  //     [1, 2, 3, 4, 5, 6].map((num) => {
-  //       setValue(
-  //         `subContent${num}` as keyof FormData,
-  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].content
-  //       );
-  //       setValue(
-  //         `correctAnswer${num}` as keyof FormData,
-  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-  //       );
-  //       [1, 2, 3].map((ansNum) => {
-  //         setValue(
-  //           `answer${ansNum}Sub${num}` as keyof FormData,
-  //           dataSpeakingPartOne.data.questions.subQuestion[num - 1].answerList[
-  //             ansNum - 1
-  //           ].content
-  //         );
-  //       });
-  //     });
-  //   }
-  // }, [dataSpeakingPartOne, setValue]);
+   useEffect(() => {
+     console.log({ dataReadingPartFour });
+     if (dataReadingPartFour) {
+       setValue("title", dataReadingPartFour.title);
+       setValue("content", dataReadingPartFour.questions[0].content);
+       setValue("subTitle", dataReadingPartFour.questions[0].questionTitle);
+ 
+       [1, 2, 3].map((num) => {
+         setValue(
+           `subContent${num}` as keyof FormData,
+           dataReadingPartFour.questions[0].subQuestion[num - 1].content
+         );
+ 
+ 
+       });
+     }
+   }, [dataReadingPartFour, setValue]);
 
   return (
     <div>
@@ -244,6 +234,17 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
             type="subTitle"
             {...register("subTitle", { required: true })}
             placeholder="Sub Title"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="suggestion"
+            {...register("suggestion")}
+            placeholder="Gợi ý câu trả lời"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}

@@ -14,11 +14,14 @@ const SpeakingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const record = useRecordContext();
   const resourcePath = `/${resource}`;
 
+
+  console.log("record 213", record);
+
   const renderReadingPart = () => {
-    switch (record?.data.questions.questionPart) {
+    switch (record?.questionPart) {
       case "ONE":
         return (
-          <ReadingPartOne dataReadingPartOne={record} statusHandler="edit" />
+          <ReadingPartOne dataSpeakingPartOne={record} statusHandler="edit" />
         );
       case "TWO":
         return (

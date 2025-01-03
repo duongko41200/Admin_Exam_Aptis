@@ -16,7 +16,7 @@ interface ReadingPartOneProps {
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataReadingPartOne?: any;
+  dataReadingPartThree?: any;
   statusHandler?: string;
   handleCancel?: () => void;
 }
@@ -90,7 +90,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataReadingPartOne = null,
+  dataReadingPartThree = null,
   statusHandler = "create",
   handleCancel,
   ...props
@@ -186,9 +186,9 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   const updateReadingPartOne = async (values: any) => {
     try {
       await dataProvider.update("readings", {
-        id: dataReadingPartOne?.id,
+        id: dataReadingPartThree?.id,
         data: values,
-        previousData: dataReadingPartOne,
+        previousData: dataReadingPartThree,
       });
 
       await notify(UPDATED_SUCCESS, {
@@ -223,33 +223,23 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
     setPreviewUrls(newPreviewUrls);
   };
 
-  // useEffect(() => {
-  //   console.log({ dataReadingPartOne });
-  //   if (dataReadingPartOne) {
-  //     setValue("title", dataReadingPartOne.data.title);
-  //     setValue("content", dataReadingPartOne.data.questions.content);
-  //     setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
-
-  //     [1, 2, 3, 4, 5, 6].map((num) => {
-  //       setValue(
-  //         `subContent${num}` as keyof FormData,
-  //         dataReadingPartOne.data.questions.subQuestion[num - 1].content
-  //       );
-  //       setValue(
-  //         `correctAnswer${num}` as keyof FormData,
-  //         dataReadingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-  //       );
-  //       [1, 2, 3].map((ansNum) => {
-  //         setValue(
-  //           `answer${ansNum}Sub${num}` as keyof FormData,
-  //           dataReadingPartOne.data.questions.subQuestion[num - 1].answerList[
-  //             ansNum - 1
-  //           ].content
-  //         );
-  //       });
-  //     });
-  //   }
-  // }, [dataReadingPartOne, setValue]);
+   useEffect(() => {
+     console.log({ dataReadingPartThree });
+     if (dataReadingPartThree) {
+       setValue("title", dataReadingPartThree.title);
+       setValue("content", dataReadingPartThree.questions[0].content);
+       setValue("subTitle", dataReadingPartThree.questions[0].questionTitle);
+ 
+       [1, 2, 3].map((num) => {
+         setValue(
+           `subContent${num}` as keyof FormData,
+           dataReadingPartThree.questions[0].subQuestion[num - 1].content
+         );
+ 
+ 
+       });
+     }
+   }, [dataReadingPartThree, setValue]);
   const handleDragOver = (event: any) => {
     if (event.y >= 140 && event.y < 550) {
       setRangeUpload(true);

@@ -41,6 +41,7 @@ interface FormData {
   answerTwoSub3: string;
   answerThreeSub3: string;
   suggestion?: string;
+  file?: string;
 }
 
 const QuestionBox = ({
@@ -79,6 +80,28 @@ const QuestionBox = ({
           }
         />
       </div>
+      <div>
+          <TextField
+            type="suggestion"
+            {...register(`suggestion${questionNumber}`)}
+            placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+      </div>
+      <div>
+          <TextField
+            type="suggestion"
+            {...register(`subFile${questionNumber}`)}
+            placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
     </Box>
   </Box>
 );
@@ -123,16 +146,16 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           content: values.content,
           answerList: [],
           correctAnswer: "",
-          file: null,
+          file: values.file,
           subQuestionAnswerList: [],
           suggestion: '',
           subQuestion: [1, 2, 3].map((num) => ({
             content: values[`subContent${num}`],
             correctAnswer: null,
-            file: null,
+            file: values[`subFile${num}`],
             answerList: null,
             image: null,
-            suggestion: null,
+            suggestion: values[`suggestion${num}`],
           })),
           isExample:'',
           image: null,
@@ -191,33 +214,23 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
 
 
 
-  // useEffect(() => {
-  //   console.log({ dataSpeakingPartOne });
-  //   if (dataSpeakingPartOne) {
-  //     setValue("title", dataSpeakingPartOne.data.title);
-  //     setValue("content", dataSpeakingPartOne.data.questions.content);
-  //     setValue("subTitle", dataSpeakingPartOne.data.questions.questionTitle);
+  useEffect(() => {
+    console.log({ dataSpeakingPartOne });
+    if (dataSpeakingPartOne) {
+      setValue("title", dataSpeakingPartOne.title);
+      setValue("content", dataSpeakingPartOne.questions[0].content);
+      setValue("subTitle", dataSpeakingPartOne.questions[0].questionTitle);
 
-  //     [1, 2, 3, 4, 5, 6].map((num) => {
-  //       setValue(
-  //         `subContent${num}` as keyof FormData,
-  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].content
-  //       );
-  //       setValue(
-  //         `correctAnswer${num}` as keyof FormData,
-  //         dataSpeakingPartOne.data.questions.subQuestion[num - 1].correctAnswer
-  //       );
-  //       [1, 2, 3].map((ansNum) => {
-  //         setValue(
-  //           `answer${ansNum}Sub${num}` as keyof FormData,
-  //           dataSpeakingPartOne.data.questions.subQuestion[num - 1].answerList[
-  //             ansNum - 1
-  //           ].content
-  //         );
-  //       });
-  //     });
-  //   }
-  // }, [dataSpeakingPartOne, setValue]);
+      [1, 2, 3].map((num) => {
+        setValue(
+          `subContent${num}` as keyof FormData,
+          dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
+        );
+
+
+      });
+    }
+  }, [dataSpeakingPartOne, setValue]);
 
   return (
     <div>
@@ -264,6 +277,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             type="suggestion"
             {...register("suggestion")}
             placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            // type="file"
+            {...register("file")}
+            placeholder="link file nghe de bai"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}
