@@ -41,6 +41,7 @@ interface FormData {
   answerTwoSub3: string;
   answerThreeSub3: string;
   suggestion?: string;
+  file?: string;
 }
 
 const QuestionBox = ({
@@ -77,6 +78,28 @@ const QuestionBox = ({
               ? "This field is required"
               : ""
           }
+        />
+      </div>
+      <div>
+        <TextField
+          type="suggestion"
+          {...register(`suggestion${questionNumber}`)}
+          placeholder="Gợi ý câu trả lời"
+          variant="outlined"
+          fullWidth
+          error={!!errors.subTitle}
+          helperText={errors.subTitle ? "This field is required" : ""}
+        />
+      </div>
+      <div>
+        <TextField
+          // type="file âm thanh câu hỏi "
+          {...register(`subFile${questionNumber}`)}
+          placeholder="file âm thanh câu hỏi"
+          variant="outlined"
+          fullWidth
+          error={!!errors.subTitle}
+          helperText={errors.subTitle ? "This field is required" : ""}
         />
       </div>
     </Box>
@@ -126,16 +149,16 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           content: values.content,
           answerList: [],
           correctAnswer: "",
-          file: null,
+          file: values.file,
           subQuestionAnswerList: [],
           suggestion: "",
           subQuestion: [1, 2, 3].map((num) => ({
             content: values[`subContent${num}`],
             correctAnswer: null,
-            file: null,
+            file: values[`subFile${num}`],
             answerList: null,
             image: null,
-            suggestion: null,
+            suggestion: values[`suggestion${num}`],
           })),
           isExample: "",
           image: null,
@@ -145,20 +168,19 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       questionPart: "TWO",
     };
 
-    console.log({ data });
-
-    const uploadData = new FormData();
-    for (let i = 0; i < images.length; i++) {
-      uploadData.append("files", images[i]);
-    }
-    uploadData.append("data", JSON.stringify({ ...data }));
+    console.log({ dataForm: data });
 
     if (statusHandler === "create") {
+      const uploadData = new FormData();
+      for (let i = 0; i < images.length; i++) {
+        uploadData.append("files", images[i]);
+      }
+      uploadData.append("data", JSON.stringify({ ...data }));
       createSpeakingPartOne(uploadData);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateReadingPartOne(uploadData);
+      updateReadingPartOne(data);
     }
   };
 
@@ -182,7 +204,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   //tentisspace
   const updateReadingPartOne = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("speakings", {
         id: dataReadingPartTwo?.id,
         data: values,
         previousData: dataReadingPartTwo,
@@ -191,7 +213,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/speakings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -220,23 +242,29 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     setPreviewUrls(newPreviewUrls);
   };
 
-   useEffect(() => {
-     console.log({ dataReadingPartTwo });
-     if (dataReadingPartTwo) {
-       setValue("title", dataReadingPartTwo.title);
-       setValue("content", dataReadingPartTwo.questions[0].content);
-       setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
- 
-       [1, 2, 3].map((num) => {
-         setValue(
-           `subContent${num}` as keyof FormData,
-           dataReadingPartTwo.questions[0].subQuestion[num - 1].content
-         );
- 
- 
-       });
-     }
-   }, [dataReadingPartTwo, setValue]);
+  useEffect(() => {
+    console.log({ dataReadingPartTwo });
+    if (dataReadingPartTwo) {
+      setValue("title", dataReadingPartTwo.title);
+      setValue("content", dataReadingPartTwo.questions[0].content);
+      setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
+
+      [1, 2, 3].map((num) => {
+        setValue(
+          `subContent${num}` as keyof FormData,
+          dataReadingPartTwo.questions[0].subQuestion[num - 1].content
+        );
+        setValue(
+          `suggestion${num}` as keyof FormData,
+          dataReadingPartTwo.questions[0].subQuestion[num - 1].suggestion
+        );
+        setValue(
+          `subFile${num}` as keyof FormData,
+          dataReadingPartTwo.questions[0].subQuestion[num - 1].file
+        );
+      });
+    }
+  }, [dataReadingPartTwo, setValue]);
   const handleDragOver = (event: any) => {
     if (event.y >= 140 && event.y < 550) {
       setRangeUpload(true);
@@ -301,6 +329,17 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             type="suggestion"
             {...register("suggestion")}
             placeholder="Gợi ý câu trả lời"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            // type="file"
+            {...register("file")}
+            placeholder="link file nghe de bai"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}

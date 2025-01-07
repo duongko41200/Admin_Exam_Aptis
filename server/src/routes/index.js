@@ -10,6 +10,7 @@ import readingRouter from './reading/index.js'; // Thay đổi require bằng im
 import testBanksRouter from './test-banks/index.js'; // Thay đổi require bằng import
 import writingRouter from './writing/index.js'; // Thay đổi require bằng import
 import speakingRouter from './speaking/index.js'
+import listeningRouter from './listening/index.js'
 
 const router = express.Router();
 
@@ -17,6 +18,7 @@ const router = express.Router();
 router.use(apiKey);
 
 //check permission
+
 router.unsubscribe(String(permission("000")));
 
 // Các route
@@ -30,5 +32,6 @@ router.use('/v1/api/test-banks', testBanksRouter);
 router.use('/v1/api/writings', writingRouter);
 
 router.use('/v1/api/speakings', speakingRouter);
+router.use('/v1/api/listenings', listeningRouter);
 
 export default router;

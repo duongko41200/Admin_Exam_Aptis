@@ -6,20 +6,17 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
-import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 
-interface ReadingPartOneProps {
+interface ListeningPartOneProps {
   children?: JSX.Element | JSX.Element[];
   showDeleteButton?: boolean;
   showSaveButton?: boolean;
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataReadingPartFour?: any;
-  statusHandler?: string;
   handleCancel?: () => void;
-  suggestion?: string;
-  file?: string;
+  dataListeningPartTwo?: any;
+  statusHandler?:string
 }
 
 interface FormData {
@@ -41,8 +38,6 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
-  suggestion?: string;
-  file?: string;
 }
 
 const QuestionBox = ({
@@ -56,54 +51,59 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "100px",
+      minHeight: "160px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
     }}
   >
     <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
+      Nội Dung Câu {questionNumber}
     </Box>
     <Box>
       <div>
         <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
+          type="number"
+          {...register(`numberOrder${questionNumber}`, { required: true })}
+          placeholder={`Số thứ tự khi được sắp xếp`}
           variant="outlined"
           fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
+          inputProps={{ min: 1, max: 5 }} // Added max value here
+          error={!!errors[`numberOrder${questionNumber}`]}
           helperText={
-            errors[`subContent${questionNumber}`]
+            errors[`numberOrder${questionNumber}`]
               ? "This field is required"
               : ""
           }
         />
       </div>
-            <div>
-                <TextField
-                  // type="file âm thanh câu hỏi "
-                  {...register(`subFile${questionNumber}`)}
-                  placeholder="file âm thanh câu hỏi"
-                  variant="outlined"
-                  fullWidth
-                  error={!!errors.subTitle}
-                  helperText={errors.subTitle ? "This field is required" : ""}
-                />
-              </div>
+      <div>
+        <TextField
+          type={`contentAnswer${questionNumber}`}
+          {...register(`correctAnswer${questionNumber}`, { required: true })}
+          placeholder={`Nội dung câu ${questionNumber}`}
+          variant="outlined"
+          fullWidth
+          error={!!errors[`correctAnswer${questionNumber}`]}
+          helperText={
+            errors[`correctAnswer${questionNumber}`]
+              ? "This field is required"
+              : ""
+          }
+        />
+      </div>
     </Box>
   </Box>
 );
 
-const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
+const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataReadingPartFour = null,
+  dataListeningPartTwo = null,
   statusHandler = "create",
   handleCancel,
   ...props
@@ -119,52 +119,46 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     setValue,
     reset,
   } = useForm<FormData>();
+  const [isShow, setIsShow] = useState(false);
 
-  const onSubmit = async (values: FormData) => {
+  const onSubmit = async (values: any) => {
     const data = {
       title: values.title,
-      timeToDo: 50,
-      description: values.subTitle,
-      questions: [
-        {
-          questionTitle: values.subTitle,
-          content: values.content,
-          answerList: [],
-          correctAnswer: "",
-          file: values.file,
-          subQuestionAnswerList: [],
-          suggestion: "",
-          subQuestion: [1, 2, 3].map((num) => ({
-            content: values[`subContent${num}`],
-            correctAnswer: null,
-            file: values[`subFile${num}`],
-            answerList: null,
-            image: null,
-            suggestion: null,
-          })),
-          isExample: "",
-          image: null,
-        },
-      ],
-      questionType: "SPEAKING",
-      questionPart: "FOUR",
+      timeToDo: 35,
+      questions: {
+        questionTitle: values.subTitle,
+        content: values.content,
+        answerList: [1, 2, 3, 4, 5].map((num) => ({
+          content: values[`correctAnswer${num}`],
+          numberOrder: values[`numberOrder${num}`],
+        })),
+        correctAnswer: [1, 2, 3, 4, 5],
+        file: null,
+        subQuestionAnswerList: [],
+        suggestion: null,
+        subQuestion: [],
+        questionType: "READING",
+        isExample: false,
+        questionPart: "TWO",
+        image: null,
+      },
+
+      skill: "READING",
+      description: null,
     };
-
-    console.log({ data });
-
     if (statusHandler === "create") {
-      createWritingPartOne(data);
+      createListeningPartOne(data);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateSpeakingPartOne(data);
+      updateListeningPartOne(data);
     }
   };
 
-  const createWritingPartOne = async (data: any) => {
-    console.log({ testDate: data });
+  
+  const createListeningPartOne = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("speakings", { data });
+      const CreateData = await baseDataProvider.create("readings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -176,18 +170,18 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   };
 
   //tentisspace
-  const updateSpeakingPartOne = async (values: any) => {
+  const updateListeningPartOne = async (values: any) => {
     try {
-      await dataProvider.update("speakings", {
-        id: dataReadingPartFour?.id,
+      await dataProvider.update("readings", {
+        id: dataListeningPartTwo?.id,
         data: values,
-        previousData: dataReadingPartFour,
+        previousData: dataListeningPartTwo,
       });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/speakings");
+      navigate("/readings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -195,29 +189,24 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-   useEffect(() => {
-     console.log({ dataReadingPartFour });
-     if (dataReadingPartFour) {
-       setValue("title", dataReadingPartFour.title);
-       setValue("content", dataReadingPartFour.questions[0].content);
-       setValue("subTitle", dataReadingPartFour.questions[0].questionTitle);
-       setValue("file", dataReadingPartFour.questions[0].file);
-       
- 
-       [1, 2, 3].map((num) => {
-         setValue(
-           `subContent${num}` as keyof FormData,
-           dataReadingPartFour.questions[0].subQuestion[num - 1].content
-         );
-         setValue(
-          `subFile${num}` as keyof FormData,
-          dataReadingPartFour.questions[0].subQuestion[num - 1].file
+  useEffect(() => {
+    if (dataListeningPartTwo) {
+      setValue("title", dataListeningPartTwo.data.title);
+      setValue("content", dataListeningPartTwo.data.questions.content);
+      setValue("subTitle", dataListeningPartTwo.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5].map((num) => {
+        setValue(
+          `correctAnswer${num}` as keyof FormData,
+          dataListeningPartTwo.data.questions.answerList[num - 1].content
         );
- 
- 
-       });
-     }
-   }, [dataReadingPartFour, setValue]);
+        setValue(
+          `numberOrder${num}` as keyof FormData,
+          dataListeningPartTwo.data.questions.answerList[num - 1].numberOrder
+        );
+      });
+    }
+  }, [dataListeningPartTwo, setValue]);
 
   return (
     <div>
@@ -225,7 +214,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
-        <h2 className="title">Speaking Part 4</h2>
+        <h2 className="title">Listening Part 2</h2>
         <div>
           <TextField
             type="title"
@@ -239,19 +228,8 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
             type="subTitle"
-            {...register("subTitle")}
+            {...register("subTitle", { required: true })}
             placeholder="Sub Title"
             variant="outlined"
             fullWidth
@@ -261,24 +239,13 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="suggestion"
-            {...register("suggestion")}
-            placeholder="Gợi ý câu trả lời"
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
             variant="outlined"
             fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            // type="file"
-            {...register("file")}
-            placeholder="link file nghe de bai"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
           />
         </div>
 
@@ -296,7 +263,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3].map((num) => (
+          {[1, 2, 3, 4, 5].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
@@ -357,4 +324,4 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   );
 };
 
-export default SpeakingPartFour;
+export default ListeningPartTwo;

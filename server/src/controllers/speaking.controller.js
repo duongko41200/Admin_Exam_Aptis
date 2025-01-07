@@ -66,7 +66,7 @@ class speakingController {
 
     new SuccessResponse({
       message: "update new writing success!",
-      metadata: await SpeakingFactory.updatewriting(id, data),
+      metadata: await SpeakingFactory.updateSpeaking(id, data),
     }).send(res);
   };
 

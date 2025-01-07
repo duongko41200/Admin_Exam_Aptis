@@ -93,9 +93,9 @@ const QuestionBox = ({
       </div>
       <div>
           <TextField
-            type="suggestion"
+            // type="file âm thanh câu hỏi "
             {...register(`subFile${questionNumber}`)}
-            placeholder="Gợi ý câu trả lời"
+            placeholder="file âm thanh câu hỏi"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}
@@ -172,7 +172,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      // updateWritingPartOne(data);
+      updateWritingPartOne(data);
     }
   };
 
@@ -193,24 +193,24 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   };
 
   //tentisspace
-  // const updateWritingPartOne = async (values: any) => {
-  //   try {
-  //     await dataProvider.update("Writings", {
-  //       id: dataWritingPartOne?.id,
-  //       data: values,
-  //       previousData: dataWritingPartOne,
-  //     });
+  const updateWritingPartOne = async (values: any) => {
+    try {
+      await dataProvider.update("speakings", {
+        id: dataSpeakingPartOne?.id,
+        data: values,
+        previousData: dataSpeakingPartOne,
+      });
 
-  //     await notify(UPDATED_SUCCESS, {
-  //       type: "success",
-  //     });
-  //     navigate("/Writings");
-  //   } catch (error) {
-  //     notify("エラー: 生産管理の更新に失敗しました: " + error, {
-  //       type: "warning",
-  //     });
-  //   }
-  // };
+      await notify(UPDATED_SUCCESS, {
+        type: "success",
+      });
+      navigate("/speakings");
+    } catch (error) {
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
+    }
+  };
 
 
 
@@ -226,6 +226,14 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           `subContent${num}` as keyof FormData,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
         );
+        setValue(
+          `suggestion${num}` as keyof FormData,
+          dataSpeakingPartOne.questions[0].subQuestion[num - 1].suggestion
+        )
+        setValue(
+          `subFile${num}` as keyof FormData,
+          dataSpeakingPartOne.questions[0].subQuestion[num - 1].file
+        )
 
 
       });

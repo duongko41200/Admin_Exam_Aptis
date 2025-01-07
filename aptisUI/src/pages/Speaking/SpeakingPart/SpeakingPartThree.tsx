@@ -41,6 +41,7 @@ interface FormData {
   answerTwoSub3: string;
   answerThreeSub3: string;
   suggestion?: string;
+  file?: string;
 }
 
 const QuestionBox = ({
@@ -79,6 +80,28 @@ const QuestionBox = ({
           }
         />
       </div>
+         <div>
+              <TextField
+                type="suggestion"
+                {...register(`suggestion${questionNumber}`)}
+                placeholder="Gợi ý câu trả lời"
+                variant="outlined"
+                fullWidth
+                error={!!errors.subTitle}
+                helperText={errors.subTitle ? "This field is required" : ""}
+              />
+            </div>
+            <div>
+              <TextField
+                // type="file âm thanh câu hỏi "
+                {...register(`subFile${questionNumber}`)}
+                placeholder="file âm thanh câu hỏi"
+                variant="outlined"
+                fullWidth
+                error={!!errors.subTitle}
+                helperText={errors.subTitle ? "This field is required" : ""}
+              />
+            </div>
     </Box>
   </Box>
 );
@@ -126,16 +149,16 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
           content: values.content,
           answerList: [],
           correctAnswer: "",
-          file: null,
+          file: values.file,
           subQuestionAnswerList: [],
           suggestion: "",
           subQuestion: [1, 2, 3].map((num) => ({
             content: values[`subContent${num}`],
             correctAnswer: null,
-            file: null,
+            file: values[`subFile${num}`],
             answerList: null,
             image: null,
-            suggestion: null,
+            suggestion: values[`suggestion${num}`],
           })),
           isExample: "",
           image: [],
@@ -149,19 +172,20 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
 
     console.log({ images });
 
-    const uploadData = new FormData();
 
-    for (let i = 0; i < images.length; i++) {
-      uploadData.append("files", images[i]);
-    }
-    uploadData.append("data", JSON.stringify({ ...data }));
 
     if (statusHandler === "create") {
+      const uploadData = new FormData();
+
+      for (let i = 0; i < images.length; i++) {
+        uploadData.append("files", images[i]);
+      }
+      uploadData.append("data", JSON.stringify({ ...data }));
       createSpeakingPartOne(uploadData);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateReadingPartOne(uploadData);
+      updateReadingPartOne(data);
     }
   };
 
@@ -185,7 +209,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   //tentisspace
   const updateReadingPartOne = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("speakings", {
         id: dataReadingPartThree?.id,
         data: values,
         previousData: dataReadingPartThree,
@@ -194,7 +218,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/speakings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -235,7 +259,14 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
            `subContent${num}` as keyof FormData,
            dataReadingPartThree.questions[0].subQuestion[num - 1].content
          );
- 
+         setValue(
+          `suggestion${num}` as keyof FormData,
+          dataReadingPartThree.questions[0].subQuestion[num - 1].suggestion
+        );
+        setValue(
+          `subFile${num}` as keyof FormData,
+          dataReadingPartThree.questions[0].subQuestion[num - 1].file
+        );
  
        });
      }
@@ -310,6 +341,17 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+                <div>
+                  <TextField
+                    // type="file"
+                    {...register("file")}
+                    placeholder="link file nghe de bai"
+                    variant="outlined"
+                    fullWidth
+                    error={!!errors.subTitle}
+                    helperText={errors.subTitle ? "This field is required" : ""}
+                  />
+                </div>
 
         {/* ////////////////////// INUPT DRAG AND DROP ////////////////////// */}
 

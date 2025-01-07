@@ -3,23 +3,20 @@ import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
-import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 
-interface ReadingPartOneProps {
+interface ListeningPartOneProps {
   children?: JSX.Element | JSX.Element[];
   showDeleteButton?: boolean;
   showSaveButton?: boolean;
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataReadingPartFour?: any;
-  statusHandler?: string;
   handleCancel?: () => void;
-  suggestion?: string;
-  file?: string;
+  dataListeningPartFour?: any;
+  statusHandler?: string;
 }
 
 interface FormData {
@@ -41,8 +38,15 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
-  suggestion?: string;
-  file?: string;
+  optionAnswer1: string;
+  optionAnswer2: string;
+  optionAnswer3: string;
+  optionAnswer4: string;
+  optionAnswer5: string;
+  optionAnswer6: string;
+  optionAnswer7: string;
+  optionAnswer8: string;
+  [key: `optionAnswer${number}`]: string; // Add this line
 }
 
 const QuestionBox = ({
@@ -56,54 +60,59 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "100px",
+      minHeight: "160px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
     }}
   >
     <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
+      Nội Dung Câu {questionNumber}
     </Box>
     <Box>
       <div>
         <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
+          type={`contentPartFour${questionNumber}`}
+          {...register(`contentPartFour${questionNumber}`, { required: true })}
+          placeholder={`Nội dung câu ${questionNumber}`}
           variant="outlined"
           fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
+          error={!!errors[`contentPartFour${questionNumber}`]}
           helperText={
-            errors[`subContent${questionNumber}`]
+            errors[`contentPartFour${questionNumber}`]
               ? "This field is required"
               : ""
           }
         />
       </div>
-            <div>
-                <TextField
-                  // type="file âm thanh câu hỏi "
-                  {...register(`subFile${questionNumber}`)}
-                  placeholder="file âm thanh câu hỏi"
-                  variant="outlined"
-                  fullWidth
-                  error={!!errors.subTitle}
-                  helperText={errors.subTitle ? "This field is required" : ""}
-                />
-              </div>
+      <div>
+        <TextField
+          type="text"
+          {...register(`answerPartFour${questionNumber}`, { required: true })}
+          placeholder={`Đáp án đúng`}
+          variant="outlined"
+          fullWidth
+          inputProps={{ min: 1, max: 5 }} // Added max value here
+          error={!!errors[`answerPartFour${questionNumber}`]}
+          helperText={
+            errors[`answerPartFour${questionNumber}`]
+              ? "This field is required"
+              : ""
+          }
+        />
+      </div>
     </Box>
   </Box>
 );
 
-const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
+const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
   showSaveButton = true,
   showCancelButton = true,
   alwaysEnable = false,
-  dataReadingPartFour = null,
+  dataListeningPartFour = null,
   statusHandler = "create",
   handleCancel,
   ...props
@@ -120,51 +129,49 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     reset,
   } = useForm<FormData>();
 
-  const onSubmit = async (values: FormData) => {
+  const onSubmit = async (values: any) => {
     const data = {
       title: values.title,
-      timeToDo: 50,
-      description: values.subTitle,
-      questions: [
-        {
-          questionTitle: values.subTitle,
-          content: values.content,
-          answerList: [],
-          correctAnswer: "",
-          file: values.file,
-          subQuestionAnswerList: [],
-          suggestion: "",
-          subQuestion: [1, 2, 3].map((num) => ({
-            content: values[`subContent${num}`],
-            correctAnswer: null,
-            file: values[`subFile${num}`],
-            answerList: null,
-            image: null,
-            suggestion: null,
-          })),
-          isExample: "",
+      timeToDo: 35,
+      questions: {
+        questionTitle: values.subTitle,
+        content: values.content,
+        answerList: [1, 2, 3, 4, 5, 6, 7, 8].map((num) => ({
+          content: values[`optionAnswer${num}`],
+        })),
+        correctAnswer: "",
+        file: null,
+        subQuestionAnswerList: [],
+        suggestion: null,
+        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
+          content: values[`contentPartFour${num}`],
+          correctAnswer: values[`answerPartFour${num}`],
+          file: null,
+          answerList: null,
           image: null,
-        },
-      ],
-      questionType: "SPEAKING",
-      questionPart: "FOUR",
+          suggestion: null,
+        })),
+        questionType: "READING",
+        isExample: false,
+        questionPart: "FOUR",
+        image: null,
+      },
+
+      skill: "READING",
+      description: null,
     };
-
-    console.log({ data });
-
     if (statusHandler === "create") {
-      createWritingPartOne(data);
+      createListeningPartFour(data);
     }
     if (statusHandler === "edit") {
       console.log("edit");
-      updateSpeakingPartOne(data);
+      updateListeningPartFour(data);
     }
   };
 
-  const createWritingPartOne = async (data: any) => {
-    console.log({ testDate: data });
+  const createListeningPartFour = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("speakings", { data });
+      const CreateData = await baseDataProvider.create("readings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -176,18 +183,18 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   };
 
   //tentisspace
-  const updateSpeakingPartOne = async (values: any) => {
+  const updateListeningPartFour = async (values: any) => {
     try {
-      await dataProvider.update("speakings", {
-        id: dataReadingPartFour?.id,
+      await dataProvider.update("readings", {
+        id: dataListeningPartFour?.id,
         data: values,
-        previousData: dataReadingPartFour,
+        previousData: dataListeningPartFour,
       });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/speakings");
+      navigate("/readings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -195,29 +202,31 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-   useEffect(() => {
-     console.log({ dataReadingPartFour });
-     if (dataReadingPartFour) {
-       setValue("title", dataReadingPartFour.title);
-       setValue("content", dataReadingPartFour.questions[0].content);
-       setValue("subTitle", dataReadingPartFour.questions[0].questionTitle);
-       setValue("file", dataReadingPartFour.questions[0].file);
-       
- 
-       [1, 2, 3].map((num) => {
-         setValue(
-           `subContent${num}` as keyof FormData,
-           dataReadingPartFour.questions[0].subQuestion[num - 1].content
-         );
-         setValue(
-          `subFile${num}` as keyof FormData,
-          dataReadingPartFour.questions[0].subQuestion[num - 1].file
+  useEffect(() => {
+    if (dataListeningPartFour) {
+      setValue("title", dataListeningPartFour.data.title);
+      setValue("content", dataListeningPartFour.data.questions.content);
+      setValue("subTitle", dataListeningPartFour.data.questions.questionTitle);
+
+      [1, 2, 3, 4, 5, 6, 7].map((num) => {
+        setValue(
+          `contentPartFour${num}` as keyof FormData,
+          dataListeningPartFour.data.questions.subQuestion[num - 1].content
         );
- 
- 
-       });
-     }
-   }, [dataReadingPartFour, setValue]);
+        setValue(
+          `answerPartFour${num}` as keyof FormData,
+          dataListeningPartFour.data.questions.subQuestion[num - 1].correctAnswer
+        );
+      });
+
+      [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
+        setValue(
+          `optionAnswer${num}` as keyof FormData,
+          dataListeningPartFour.data.questions.answerList[num - 1].content
+        );
+      });
+    }
+  }, [dataListeningPartFour, setValue]);
 
   return (
     <div>
@@ -225,7 +234,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
-        <h2 className="title">Speaking Part 4</h2>
+        <h3 className="title">Listening Part 4</h3>
         <div>
           <TextField
             type="title"
@@ -239,19 +248,8 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
             type="subTitle"
-            {...register("subTitle")}
+            {...register("subTitle", { required: true })}
             placeholder="Sub Title"
             variant="outlined"
             fullWidth
@@ -261,26 +259,57 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="suggestion"
-            {...register("suggestion")}
-            placeholder="Gợi ý câu trả lời"
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Content"
             variant="outlined"
             fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
           />
         </div>
-        <div>
-          <TextField
-            // type="file"
-            {...register("file")}
-            placeholder="link file nghe de bai"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
+        <Box
+          sx={{
+            width: "100%",
+            height: "fit-content",
+            background: "#fff !important",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 2,
+          }}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              height: "fit-content",
+              background: "#f3f3f3ad !important",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+              boxShadow:
+                "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+              gap: "10px",
+              padding: "10px",
+              marginTop: "20px",
+            }}
+          >
+            {[...Array(8)].map((_, index) => (
+              <TextField
+                key={index}
+                type={`optionAnswer${index + 1}`}
+                {...register(`optionAnswer${index + 1}`, { required: true })}
+                placeholder={`Tên người thứ ${index + 1}`}
+                variant="outlined"
+                fullWidth
+                error={!!errors[`optionAnswer${index + 1}`]}
+                helperText={
+                  errors[`optionAnswer${index + 1}`]
+                    ? "This field is required"
+                    : ""
+                }
+              />
+            ))}
+          </Box>
+        </Box>
 
         <Box
           sx={{
@@ -288,7 +317,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
             height: "fit-content",
             background: "#fff !important",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
             boxShadow:
               "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
             gap: "10px",
@@ -296,7 +325,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3].map((num) => (
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
@@ -357,4 +386,4 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   );
 };
 
-export default SpeakingPartFour;
+export default ListeningPartFour;

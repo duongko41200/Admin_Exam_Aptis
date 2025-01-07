@@ -297,7 +297,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
                 key={index}
                 type={`optionAnswer${index + 1}`}
                 {...register(`optionAnswer${index + 1}`, { required: true })}
-                placeholder={`Tên người thứ ${index + 1}`}
+                placeholder={`đáp án số  ${index + 1}`}
                 variant="outlined"
                 fullWidth
                 error={!!errors[`optionAnswer${index + 1}`]}

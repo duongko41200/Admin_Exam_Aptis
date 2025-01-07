@@ -8,6 +8,7 @@ const ADMIN: Permission = {
   "test-banks": "*",
   writings: "*",
   speakings: "*",
+  listenings:"*"
 };
 const EDIT: Permission = {
   users: ["list", "show", "edit"],
@@ -15,6 +16,7 @@ const EDIT: Permission = {
   "test-banks": ["list", "show", "edit", "delete"],
   writings: ["list", "show", "edit", "delete"],
   speakings: ["list", "show", "edit", "delete"],
+  listenings:["list","show","edit","delete"]
 };
 const VIEW: Permission = {
   users: ["list", "show", "edit"],
@@ -23,6 +25,7 @@ const VIEW: Permission = {
   "test-banks": ["list", "show"],
   writings: ["list", "show"],
   speakings: ["list", "show"],
+  listenings:["list","show"]
 };
 
 const ROLES_MAP: {

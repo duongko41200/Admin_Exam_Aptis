@@ -7,7 +7,7 @@ import { Dashboard } from '@mui/icons-material'
 import { TestBankList, TestBankCreate, TestBankEdit, TestBankShow } from '../../pages/TestBanks'
 import { WritingList, WritingCreate, WritingEdit, WritingShow } from '../../pages/Writing'
 import { SpeakingList, SpeakingCreate, SpeakingEdit, SpeakingShow } from '../../pages/Speaking'
-
+import { ListeningList, ListeningCreate, ListeningEdit, ListeningShow } from '../../pages/Listening'
 
 const Resources: ResourceIF[] = [
 
@@ -28,6 +28,15 @@ const Resources: ResourceIF[] = [
     icon: Dashboard,
     resource: 'speakings',
     label: 'Speaking'
+  },
+  {
+    list: ListeningList,
+    edit: ListeningEdit,
+    create: ListeningCreate,
+    show: ListeningShow,
+    icon: Dashboard,
+    resource: 'listenings',
+    label: 'Listening'
   },
 
   {
