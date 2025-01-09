@@ -38,7 +38,17 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  optionAnswer1: string;
+  optionAnswer2: string;
+  optionAnswer3: string;
+  optionAnswer4: string;
+  optionAnswer5: string;
+  optionAnswer6: string;
+  optionAnswer7: string;
+  optionAnswer8: string;
+  [key: `optionAnswer${number}`]: string; // Add this line
 }
+
 
 const QuestionBox = ({
   questionNumber,
@@ -63,9 +73,9 @@ const QuestionBox = ({
     <Box>
       <div>
         <TextField
-          type="number"
+          type="text"
           {...register(`numberOrder${questionNumber}`, { required: true })}
-          placeholder={`Số thứ tự khi được sắp xếp`}
+          placeholder={`Số thứ tự nguoi noi`}
           variant="outlined"
           fullWidth
           inputProps={{ min: 1, max: 5 }} // Added max value here
@@ -128,22 +138,28 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [1, 2, 3, 4, 5].map((num) => ({
-          content: values[`correctAnswer${num}`],
-          numberOrder: values[`numberOrder${num}`],
+        answerList: [1, 2, 3, 4,5,6].map((num, idx) => ({
+          id: idx + 1,
+          content: values[`optionAnswer${num}`],
         })),
-        correctAnswer: [1, 2, 3, 4, 5],
+        correctAnswer: null,
         file: null,
         subQuestionAnswerList: [],
         suggestion: null,
-        subQuestion: [],
-        questionType: "READING",
+        subQuestion: [1, 2, 3, 4].map((num) => ({
+          content: values[`numberOrder${num}`],
+          correctAnswer: values[`answerPartFour${num}`],
+          file: null,
+          answerList: null,
+          image: null,
+          suggestion: null,
+        })),
         isExample: false,
-        questionPart: "TWO",
         image: null,
       },
 
-      skill: "READING",
+      questionType: "LISTENING",
+      questionPart:'TWO' ,
       description: null,
     };
     if (statusHandler === "create") {
@@ -158,7 +174,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   
   const createListeningPartOne = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("readings", { data });
+      const CreateData = await baseDataProvider.create("Listenings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -172,7 +188,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   //tentisspace
   const updateListeningPartOne = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("Listenings", {
         id: dataListeningPartTwo?.id,
         data: values,
         previousData: dataListeningPartTwo,
@@ -181,7 +197,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/Listenings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -249,6 +265,49 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
           />
         </div>
 
+                <Box
+                  sx={{
+                    width: "100%",
+                    height: "fit-content",
+                    background: "#fff !important",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    gap: 2,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: "100%",
+                      height: "fit-content",
+                      background: "#f3f3f3ad !important",
+                      display: "grid",
+                      gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+                      boxShadow:
+                        "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+                      gap: "10px",
+                      padding: "10px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    {[...Array(6)].map((_, index) => (
+                      <TextField
+                        key={index}
+                        type={`optionAnswer${index + 1}`}
+                        {...register(`optionAnswer${index + 1}`, { required: true })}
+                        placeholder={`dap an so ${index + 1}`}
+                        variant="outlined"
+                        fullWidth
+                        error={!!errors[`optionAnswer${index + 1}`]}
+                        helperText={
+                          errors[`optionAnswer${index + 1}`]
+                            ? "This field is required"
+                            : ""
+                        }
+                      />
+                    ))}
+                  </Box>
+                </Box>
+
         <Box
           sx={{
             width: "100%",
@@ -263,7 +322,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5].map((num) => (
+          {[1, 2, 3, 4].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

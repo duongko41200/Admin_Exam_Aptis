@@ -133,14 +133,14 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [1, 2, 3, 4].map((num) => ({
+        answerList: [1, 2, 3].map((num) => ({
           content: values[`optionPerson${num}`],
         })),
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
         suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
+        subQuestion: [1, 2, 3, 4].map((num) => ({
           content: values[`questionPerson${num}`],
           correctAnswer: values[`personMatch${num}`],
           file: null,
@@ -148,13 +148,12 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
           image: null,
           suggestion: null,
         })),
-        questionType: "READING",
         isExample: false,
-        questionPart: "THREE",
         image: null,
       },
 
-      skill: "READING",
+      questionType: "READING",
+      questionPart: "THREE",
       description: null,
     };
     if (statusHandler === "create") {
@@ -168,12 +167,12 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
 
   const createListeningPartThree = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("readings", { data });
+      const CreateData = await baseDataProvider.create("Listenings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+      // reset();
     } catch (error) {
       console.log({ error });
     }
@@ -182,7 +181,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
   //tentisspace
   const updateListeningPartThree = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("Listenings", {
         id: dataListeningPartThree?.id,
         data: values,
         previousData: dataListeningPartThree,
@@ -191,7 +190,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/Listenings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -280,6 +279,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
             {...register("optionPerson1", { required: true })}
             placeholder="Tên người thứ nhất"
             variant="outlined"
+            defaultValue="Woman"
             fullWidth
             error={!!errors.optionPerson1}
             helperText={errors.optionPerson1 ? "This field is required" : ""}
@@ -290,6 +290,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
             {...register("optionPerson2", { required: true })}
             placeholder="Tên người thứ hai"
             variant="outlined"
+            defaultValue="Man"
             fullWidth
             error={!!errors.optionPerson2}
             helperText={errors.optionPerson2 ? "This field is required" : ""}
@@ -300,20 +301,12 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
             {...register("optionPerson3", { required: true })}
             placeholder="Tên người thứ ba"
             variant="outlined"
+            defaultValue='Both'
             fullWidth
             error={!!errors.optionPerson3}
             helperText={errors.optionPerson3 ? "This field is required" : ""}
           />
 
-          <TextField
-            type="optionPerson4"
-            {...register("optionPerson4", { required: true })}
-            placeholder="Tên người thứ bốn"
-            variant="outlined"
-            fullWidth
-            error={!!errors.optionPerson4}
-            helperText={errors.optionPerson4 ? "This field is required" : ""}
-          />
         </Box>
 
         <Box
@@ -330,7 +323,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          {[1, 2, 3, 4].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

@@ -187,19 +187,17 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
           file: null,
-          answerList: [1, 2, 3].map((ansNum) => ({
+          answerList: [1, 2, 3,4].map((ansNum) => ({
             content: values[`answer${ansNum}Sub${num}`],
           })),
           image: null,
           suggestion: null,
         })),
-        questionType: "READING",
         isExample: false,
-        questionPart: "ONE",
         image: null,
       },
-
-      skill: "READING",
+      questionType: "LISTENING",
+      questionPart:'ONE' ,
       description: null,
     };
     if (statusHandler === "create") {
@@ -213,7 +211,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
 
   const createListeningPartOne = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("readings", { data });
+      const CreateData = await baseDataProvider.create("listenings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -227,7 +225,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
   //tentisspace
   const updateListeningPartOne = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("listenings", {
         id: dataListeningPartOne?.id,
         data: values,
         previousData: dataListeningPartOne,

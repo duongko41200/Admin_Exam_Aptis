@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 
 
-const COLLECTION_NAME = "Speakngs";
+const COLLECTION_NAME = "Listenings";
 
 const SubQuestionSchema = new Schema({
   content: { type: String, required: true },
@@ -42,7 +42,7 @@ const ListeningSchema = new Schema(
 	description: { type: String, default: "" },
 	questions: { type: [QuestionSchema], default: [] },
 	questionPart: { type: String, default: null },
-	questionType: { type: String, default: "SPEAKING" },
+	questionType: { type: String, default: "LISTENING" },
   },
   {
 	timestamps: true,

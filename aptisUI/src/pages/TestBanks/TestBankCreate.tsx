@@ -19,6 +19,7 @@ import ListeningIcon from "../../assets/img/listening-icon.svg";
 import SpeakingIcon from "../../assets/img/speaking-icon.svg";
 import WritingIcon from "../../assets/img/writing-icon.svg";
 import SpeakingBank from "./Speaking/SpeakingBank";
+import ListeningBank from "./Listening/ListeningBank";
 
 const ModuleContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -265,6 +266,7 @@ const TestBankCreate = ({
           {typeSkill === "Speaking" && <SpeakingBank partSkill={partSkill} />}
           {typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}
           {typeSkill === "Writing" && <WritingBank partSkill={partSkill} />}
+          {typeSkill === "Listening" && <ListeningBank partSkill={partSkill}/>}
         </ModalFrame>
       </Box>
       <Box sx={{ width: "100%", minHeight: "100px", position: "relative" }}>

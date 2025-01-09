@@ -85,6 +85,35 @@ const QuestionBox = ({
           }
         />
       </div>
+       <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                gap: 1,
+              }}
+            >
+              {[1, 2, 3].map((num) => (
+                <div key={num}>
+                  <TextField
+                    sx={{ width: "340px", border:'1px solid black' }}
+                    type={`answer${num}Sub${questionNumber}`}
+                    {...register(`answer${num}Sub${questionNumber}`, {
+                      required: true,
+                    })}
+                    placeholder={`Đáp án ${num}`}
+                    variant="outlined"
+                    fullWidth
+                    error={!!errors[`answer${num}Sub${questionNumber}`]}
+                    helperText={
+                      errors[`answer${num}Sub${questionNumber}`]
+                        ? "This field is required"
+                        : ""
+                    }
+                  />
+                </div>
+              ))}
+            </Box>
       <div>
         <TextField
           type="text"
@@ -136,28 +165,26 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [1, 2, 3, 4, 5, 6, 7, 8].map((num) => ({
-          content: values[`optionAnswer${num}`],
-        })),
+        answerList: null,
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
         suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
+        subQuestion: [1, 2].map((num) => ({
           content: values[`contentPartFour${num}`],
           correctAnswer: values[`answerPartFour${num}`],
           file: null,
-          answerList: null,
+          answerList:  [1, 2, 3].map((ansNum) => ({
+            content: values[`answer${ansNum}Sub${num}`],
+          })),
           image: null,
           suggestion: null,
         })),
-        questionType: "READING",
         isExample: false,
-        questionPart: "FOUR",
         image: null,
       },
-
-      skill: "READING",
+      questionType: "LISTENING",
+      questionPart: "FOUR",
       description: null,
     };
     if (statusHandler === "create") {
@@ -171,7 +198,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
 
   const createListeningPartFour = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("readings", { data });
+      const CreateData = await baseDataProvider.create("Listenings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -185,7 +212,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
   //tentisspace
   const updateListeningPartFour = async (values: any) => {
     try {
-      await dataProvider.update("readings", {
+      await dataProvider.update("Listenings", {
         id: dataListeningPartFour?.id,
         data: values,
         previousData: dataListeningPartFour,
@@ -194,7 +221,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/Listenings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -278,7 +305,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
             gap: 2,
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               width: "100%",
               height: "fit-content",
@@ -308,7 +335,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
                 }
               />
             ))}
-          </Box>
+          </Box> */}
         </Box>
 
         <Box
@@ -317,7 +344,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
             height: "fit-content",
             background: "#fff !important",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(550px, 1fr))",
             boxShadow:
               "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
             gap: "10px",
@@ -325,7 +352,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          {[1, 2].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}
