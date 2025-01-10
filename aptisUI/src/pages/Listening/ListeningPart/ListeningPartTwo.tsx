@@ -148,7 +148,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
         suggestion: null,
         subQuestion: [1, 2, 3, 4].map((num) => ({
           content: values[`numberOrder${num}`],
-          correctAnswer: values[`answerPartFour${num}`],
+          correctAnswer: values[`correctAnswer${num}`],
           file: null,
           answerList: null,
           image: null,
@@ -207,20 +207,27 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
 
   useEffect(() => {
     if (dataListeningPartTwo) {
-      setValue("title", dataListeningPartTwo.data.title);
-      setValue("content", dataListeningPartTwo.data.questions.content);
-      setValue("subTitle", dataListeningPartTwo.data.questions.questionTitle);
+      setValue("title", dataListeningPartTwo.title);
+      setValue("content", dataListeningPartTwo.questions[0].content);
+      setValue("subTitle", dataListeningPartTwo.questions[0].questionTitle);
 
-      [1, 2, 3, 4, 5].map((num) => {
+      [1, 2, 3, 4].map((num) => {
         setValue(
           `correctAnswer${num}` as keyof FormData,
-          dataListeningPartTwo.data.questions.answerList[num - 1].content
+          dataListeningPartTwo.questions[0].subQuestion[num - 1].correctAnswer
         );
         setValue(
           `numberOrder${num}` as keyof FormData,
-          dataListeningPartTwo.data.questions.answerList[num - 1].numberOrder
+          dataListeningPartTwo.questions[0].subQuestion[num - 1].content
         );
       });
+
+      [1, 2, 3, 4,5,6].map((num, idx) => {
+        setValue(
+          `optionAnswer${num}` as keyof FormData,
+          dataListeningPartTwo.questions[0].answerList[num - 1].content
+   )
+      })
     }
   }, [dataListeningPartTwo, setValue]);
 

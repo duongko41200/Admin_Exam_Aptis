@@ -121,7 +121,7 @@ const QuestionBox = ({
           gap: 1,
         }}
       >
-        {[1, 2, 3, 4].map((num) => (
+        {[1, 2, 3].map((num) => (
           <div key={num}>
             <TextField
               type={`answer${num}Sub${questionNumber}`}
@@ -187,7 +187,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
           file: null,
-          answerList: [1, 2, 3,4].map((ansNum) => ({
+          answerList: [1, 2, 3].map((ansNum) => ({
             content: values[`answer${ansNum}Sub${num}`],
           })),
           image: null,
@@ -234,7 +234,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      navigate("/readings");
+      navigate("/listenings");
     } catch (error) {
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
@@ -245,23 +245,23 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
   useEffect(() => {
     console.log({ dataListeningPartOne });
     if (dataListeningPartOne) {
-      setValue("title", dataListeningPartOne.data.title);
-      setValue("content", dataListeningPartOne.data.questions.content);
-      setValue("subTitle", dataListeningPartOne.data.questions.questionTitle);
+      setValue("title", dataListeningPartOne.title);
+      setValue("content", dataListeningPartOne.questions[0].content);
+      setValue("subTitle", dataListeningPartOne.questions[0].questionTitle);
 
       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => {
         setValue(
           `subContent${num}` as keyof FormData,
-          dataListeningPartOne.data.questions.subQuestion[num - 1].content
+          dataListeningPartOne.questions[0].subQuestion[num - 1].content
         );
         setValue(
           `correctAnswer${num}` as keyof FormData,
-          dataListeningPartOne.data.questions.subQuestion[num - 1].correctAnswer
+          dataListeningPartOne.questions[0].subQuestion[num - 1].correctAnswer
         );
         [1, 2, 3].map((ansNum) => {
           setValue(
             `answer${ansNum}Sub${num}` as keyof FormData,
-            dataListeningPartOne.data.questions.subQuestion[num - 1].answerList[
+            dataListeningPartOne.questions[0].subQuestion[num - 1].answerList[
               ansNum - 1
             ].content
           );

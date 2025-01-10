@@ -199,25 +199,29 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
   };
   useEffect(() => {
     if (dataListeningPartThree) {
-      setValue("title", dataListeningPartThree.data.title);
-      setValue("content", dataListeningPartThree.data.questions.content);
-      setValue("subTitle", dataListeningPartThree.data.questions.questionTitle);
+      setValue("title", dataListeningPartThree.title);
+      setValue("content", dataListeningPartThree.questions[0].content);
+      setValue("subTitle", dataListeningPartThree.questions[0].questionTitle);
 
-      [1, 2, 3, 4, 5, 6, 7].map((num) => {
-        setValue(
-          `questionPerson${num}` as keyof FormData,
-          dataListeningPartThree.data.questions.subQuestion[num - 1].content
-        );
-        setValue(
-          `personMatch${num}` as keyof FormData,
-          dataListeningPartThree.data.questions.subQuestion[num - 1].correctAnswer
-        );
-      });
+      // [1, 2, 3, 4, 5, 6, 7].map((num) => {
+      //   setValue(
+      //     `questionPerson${num}` as keyof FormData,
+      //     dataListeningPartThree.data.questions.subQuestion[num - 1].content
+      //   );
+      //   setValue(
+      //     `personMatch${num}` as keyof FormData,
+      //     dataListeningPartThree.data.questions.subQuestion[num - 1].correctAnswer
+      //   );
+      // });
 
       [1, 2, 3, 4].map((num) => {
         setValue(
-          `optionPerson${num}` as keyof FormData,
-          dataListeningPartThree.data.questions.answerList[num - 1].content
+          `questionPerson${num}` as keyof FormData,
+          dataListeningPartThree.questions[0].subQuestion[num - 1].content
+        );
+        setValue(
+          `personMatch${num}` as keyof FormData,
+          dataListeningPartThree.questions[0].subQuestion[num - 1].correctAnswer
         );
       });
     }

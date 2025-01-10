@@ -231,27 +231,35 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
 
   useEffect(() => {
     if (dataListeningPartFour) {
-      setValue("title", dataListeningPartFour.data.title);
-      setValue("content", dataListeningPartFour.data.questions.content);
-      setValue("subTitle", dataListeningPartFour.data.questions.questionTitle);
+      setValue("title", dataListeningPartFour.title);
+      setValue("content", dataListeningPartFour.questions[0].content);
+      setValue("subTitle", dataListeningPartFour.questions[0].questionTitle);
 
-      [1, 2, 3, 4, 5, 6, 7].map((num) => {
+      [1, 2].map((num) => {
         setValue(
           `contentPartFour${num}` as keyof FormData,
-          dataListeningPartFour.data.questions.subQuestion[num - 1].content
+          dataListeningPartFour.questions[0].subQuestion[num - 1].content
         );
         setValue(
           `answerPartFour${num}` as keyof FormData,
-          dataListeningPartFour.data.questions.subQuestion[num - 1].correctAnswer
+          dataListeningPartFour.questions[0].subQuestion[num - 1].correctAnswer
         );
+        [1, 2, 3].map((ansNum) => {
+          setValue(
+            `answer${ansNum}Sub${num}` as keyof FormData,
+            dataListeningPartFour.questions[0].subQuestion[num - 1].answerList[
+              ansNum - 1
+            ].content
+          );
+        });
       });
 
-      [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
-        setValue(
-          `optionAnswer${num}` as keyof FormData,
-          dataListeningPartFour.data.questions.answerList[num - 1].content
-        );
-      });
+      // [1, 2, 3, 4, 5, 6, 7, 8].map((num) => {
+      //   setValue(
+      //     `optionAnswer${num}` as keyof FormData,
+      //     dataListeningPartFour.data.questions.answerList[num - 1].content
+      //   );
+      // });
     }
   }, [dataListeningPartFour, setValue]);
 

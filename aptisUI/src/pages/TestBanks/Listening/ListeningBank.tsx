@@ -1,7 +1,7 @@
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import { useEffect, useState } from "react";
 
-import { converPartReadingSkill } from "../../../utils/convertPartSkill";
+import { converPartListeningSkill } from "../../../utils/convertPartSkill";
 import DataTableListening from "../../../components/Table/DataTableListening";
 
 const ListeningBank = ({ partSkill }) => {
@@ -9,18 +9,18 @@ const ListeningBank = ({ partSkill }) => {
 	console.error("ListeningBank: ", partSkill);
   const handleCallApi = async () => {
     const { data } = await dataProvider.getFiltersRecord("listenings", {
-      partSkill: converPartReadingSkill(partSkill),
+      partSkill: converPartListeningSkill(partSkill),
     });
 
-    console.log({ data });
+    console.log({ ddataTest:data });
 
     let mappedData = data.map((data, index) => {
       data = {
         id: data._id,
-        title: data.data.title,
-        subTitle: data.data.questions.questionTitle,
-        timeToDo: data.data.timeToDo,
-        questionPart: data.data.questions.questionPart,
+        title: data.title,
+        subTitle: data.questions[0].questionTitle,
+        timeToDo: data.timeToDo,
+        questionPart: data.questionPart,
         createdAt: data.createdAt,
         updatedAt: data.updatedAt,
       };

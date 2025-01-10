@@ -15,7 +15,7 @@ const ListeningEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const resourcePath = `/${resource}`;
 
   const renderListeningPart = () => {
-    switch (record?.data.questions.questionPart) {
+    switch (record?.questionPart) {
       case "ONE":
         return <ListeningPartOne dataListeningPartOne={record} statusHandler='edit' />;
       case "TWO":

@@ -125,6 +125,9 @@ const TestBankCreate = ({
   const dispatch = useDispatch();
 
   const handleChooseTest = (partId: number, index: number) => {
+
+console.log({first: partId, second: index});
+
     setPartSkill(partId);
     setTypeSkill(skillLabels[index]);
     setIsOpenModalFrame(true);
@@ -244,7 +247,7 @@ const TestBankCreate = ({
                   {!(skillLabels[index] === "Writing" && test.partId === 5) &&
                     !(
                       skillLabels[index] === "Speaking" && test.partId === 5
-                    ) && (
+                    ) &&  !(skillLabels[index] === "Listening" && test.partId === 5) && (
                       <TestButton
                         variant="contained"
                         sx={{ width: "fit-content", backgroundColor: color }}
