@@ -39,30 +39,30 @@ const testBankSchema = new Schema(
     },
     listening: {
       part1: {
-        type: [Number],
+        type: [Schema.Types.ObjectId],
+        ref: "Listening",
         required: true,
         default: [],
       },
       part2: {
-        type: [Number],
+        type: [Schema.Types.ObjectId],
+        ref: "Listening",
         required: true,
         default: [],
       },
       part3: {
-        type: [Number],
+        type: [Schema.Types.ObjectId],
+        ref: "Listening",
         required: true,
         default: [],
       },
       part4: {
-        type: [Number],
+        type: [Schema.Types.ObjectId],
+        ref: "Listening",
         required: true,
         default: [],
       },
-      part5: {
-        type: [Number],
-        required: true,
-        default: [],
-      },
+
     },
     reading: {
       part1: {

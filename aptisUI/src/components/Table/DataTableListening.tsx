@@ -88,13 +88,13 @@ export default function DataTableListening({
 
   const handleSelectionChange = (newSelection: any) => {
     setSelectionModel(newSelection);
-    const payload = { type: "speaking", newSelection, partSkill };
+    const payload = { type: "listening", newSelection, partSkill };
     dispatch(SET_TESTBANK_DATA(payload));
   };
 
   React.useEffect(() => {
     console.log("testBankData là: ", testBankData);
-    setSelectionModel(testBankData["speaking"][`part${partSkill}`]);
+    setSelectionModel(testBankData["listening"][`part${partSkill}`]);
   }, []);
 
   return (
