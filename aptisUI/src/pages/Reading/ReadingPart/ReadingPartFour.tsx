@@ -266,6 +266,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
             fullWidth
             error={!!errors.content}
             helperText={errors.content ? "This field is required" : ""}
+            multiline
           />
         </div>
         <Box
