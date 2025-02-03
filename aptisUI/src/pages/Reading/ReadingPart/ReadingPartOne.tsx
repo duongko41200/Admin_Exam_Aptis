@@ -17,12 +17,14 @@ interface ReadingPartOneProps {
   dataReadingPartOne?: any;
   statusHandler?: string;
   handleCancel?: () => void;
+
 }
 
 interface FormData {
   title: string;
   subTitle: string;
   content: string;
+  suggestion: string;
   subContent1: string;
   correctAnswer1: string;
   answerOneSub1: string;
@@ -160,7 +162,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
-        suggestion: null,
+        suggestion: values.suggestion,
         subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
@@ -228,6 +230,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartOne.data.title);
       setValue("content", dataReadingPartOne.data.questions.content);
       setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
+      setValue("suggestion", dataReadingPartOne.data.questions.suggestion);
 
       [1, 2, 3, 4, 5, 6].map((num) => {
         setValue(
@@ -284,6 +287,16 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             type="subTitle"
             {...register("subTitle", { required: true })}
             placeholder="Sub Title"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            {...register("suggestion", { required: true })}
+            placeholder="suggestion"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}

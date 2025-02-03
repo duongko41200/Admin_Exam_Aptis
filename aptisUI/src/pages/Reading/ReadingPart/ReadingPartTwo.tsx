@@ -38,6 +38,7 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  suggestion: string;
 }
 
 const QuestionBox = ({
@@ -135,7 +136,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         correctAnswer: [1, 2, 3, 4, 5],
         file: null,
         subQuestionAnswerList: [],
-        suggestion: null,
+        suggestion: values.suggestion,
         subQuestion: [],
         questionType: "READING",
         isExample: false,
@@ -194,6 +195,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartTwo.data.title);
       setValue("content", dataReadingPartTwo.data.questions.content);
       setValue("subTitle", dataReadingPartTwo.data.questions.questionTitle);
+      setValue("suggestion", dataReadingPartTwo.data.questions.suggestion);
 
       [1, 2, 3, 4, 5].map((num) => {
         setValue(
@@ -242,6 +244,17 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             type="content"
             {...register("content", { required: true })}
             placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="suggestion"
+            {...register("suggestion", { required: true })}
+            placeholder="suggestion"
             variant="outlined"
             fullWidth
             error={!!errors.content}

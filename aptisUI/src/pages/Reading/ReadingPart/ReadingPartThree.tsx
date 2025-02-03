@@ -42,6 +42,7 @@ interface FormData {
   optionPerson2: string;
   optionPerson3: string;
   optionPerson4: string;
+  suggestion: string;
 }
 
 const QuestionBox = ({
@@ -139,7 +140,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
-        suggestion: null,
+        suggestion: values.suggestion,
         subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
           content: values[`questionPerson${num}`],
           correctAnswer: values[`personMatch${num}`],
@@ -203,6 +204,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartThree.data.title);
       setValue("content", dataReadingPartThree.data.questions.content);
       setValue("subTitle", dataReadingPartThree.data.questions.questionTitle);
+      setValue("suggestion", dataReadingPartThree.data.questions.suggestion);
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
         setValue(
@@ -258,6 +260,16 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
             type="content"
             {...register("content", { required: true })}
             placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            {...register("suggestion", { required: true })}
+            placeholder="suggestion"
             variant="outlined"
             fullWidth
             error={!!errors.content}
