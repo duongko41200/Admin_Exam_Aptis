@@ -191,7 +191,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
             content: values[`answer${ansNum}Sub${num}`],
           })),
           image: null,
-          suggestion: null,
+          suggestion: values[`suggestion${num}`],
         })),
         isExample: false,
         image: null,
@@ -257,6 +257,10 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
         setValue(
           `correctAnswer${num}` as keyof FormData,
           dataListeningPartOne.questions[0].subQuestion[num - 1].correctAnswer
+        );
+        setValue(
+          `suggestion${num}` as keyof FormData,
+          dataListeningPartOne.questions[0].subQuestion[num - 1].suggestion
         );
         [1, 2, 3].map((ansNum) => {
           setValue(
