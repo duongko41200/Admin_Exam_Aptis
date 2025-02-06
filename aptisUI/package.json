@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-react": "^9.4.0",
     "@cloudinary/react": "^1.13.1",
     "@cloudinary/url-gen": "^1.21.0",
     "@mui/x-data-grid": "^7.22.0",
@@ -17,9 +18,11 @@
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "ra-data-fakerest": "^5.0.0",
+    "ra-input-rich-text": "^5.5.3",
     "react": "^18.3.0",
     "react-admin": "^5.0.0",
     "react-dom": "^18.3.0",
+    "react-quill": "^2.0.0",
     "react-redux": "^9.1.2"
   },
   "devDependencies": {

@@ -1,11 +1,14 @@
+import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import { useForm } from "react-hook-form";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+// import ReactQuill from "react-quill";
+// import "react-quill/dist/quill.snow.css";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -17,7 +20,6 @@ interface ReadingPartOneProps {
   dataReadingPartOne?: any;
   statusHandler?: string;
   handleCancel?: () => void;
-
 }
 
 interface FormData {
@@ -150,8 +152,10 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
 
   const onSubmit = async (values: any) => {
+    console.log("suggestion", suggestion);
     const data = {
       title: values.title,
       timeToDo: 35,
@@ -162,7 +166,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
-        suggestion: values.suggestion,
+        suggestion: suggestion,
         subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
@@ -230,7 +234,8 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartOne.data.title);
       setValue("content", dataReadingPartOne.data.questions.content);
       setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
-      setValue("suggestion", dataReadingPartOne.data.questions.suggestion);
+      // setValue("suggestion", dataReadingPartOne.data.questions.suggestion);
+      setSuggestion(dataReadingPartOne.data.questions.suggestion);
 
       [1, 2, 3, 4, 5, 6].map((num) => {
         setValue(
@@ -294,13 +299,10 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           />
         </div>
         <div>
-          <TextField
-            {...register("suggestion", { required: true })}
-            placeholder="suggestion"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
           />
         </div>
 

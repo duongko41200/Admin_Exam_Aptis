@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -16,7 +17,7 @@ interface ReadingPartOneProps {
   pathTo?: string;
   handleCancel?: () => void;
   dataReadingPartTwo?: any;
-  statusHandler?:string
+  statusHandler?: string;
 }
 
 interface FormData {
@@ -121,6 +122,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     reset,
   } = useForm<FormData>();
   const [isShow, setIsShow] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -136,7 +138,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         correctAnswer: [1, 2, 3, 4, 5],
         file: null,
         subQuestionAnswerList: [],
-        suggestion: values.suggestion,
+        suggestion: suggestion,
         subQuestion: [],
         questionType: "READING",
         isExample: false,
@@ -156,7 +158,6 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  
   const createReadingPartOne = async (data: any) => {
     try {
       const CreateData = await baseDataProvider.create("readings", { data });
@@ -195,7 +196,8 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartTwo.data.title);
       setValue("content", dataReadingPartTwo.data.questions.content);
       setValue("subTitle", dataReadingPartTwo.data.questions.questionTitle);
-      setValue("suggestion", dataReadingPartTwo.data.questions.suggestion);
+      // setValue("suggestion", dataReadingPartTwo.data.questions.suggestion);
+      setSuggestion(dataReadingPartTwo.data.questions.suggestion);
 
       [1, 2, 3, 4, 5].map((num) => {
         setValue(
@@ -251,14 +253,10 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           />
         </div>
         <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion", { required: true })}
-            placeholder="suggestion"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
           />
         </div>
 

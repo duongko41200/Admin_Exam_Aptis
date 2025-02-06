@@ -1,0 +1,22 @@
+.ql-toolbar .ql-list {
+	color: black !important; /* Đổi màu icon */
+	border: 1px solid #ccc; /* Viền để dễ nhìn */
+	background-color: #f0f0f0; /* Màu nền nhẹ */
+	border-radius: 4px;
+	padding: 5px;
+  }
+  
+  .ql-toolbar .ql-list:hover {
+	background-color: #ddd; /* Hiệu ứng hover */
+  }
+  .text-editor{
+	margin-top: 10px;
+  }
+  .ql-insertStar{
+	color: #000 !important;
+  }
+
+  .ql-insertStar:hover{
+	background-color: #c0bdbd !important;
+  }
+  
