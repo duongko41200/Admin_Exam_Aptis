@@ -274,6 +274,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
             placeholder="Write something or insert a star ★"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
+            editorId="editor1"
           />
         </div>
 

@@ -7,6 +7,13 @@ import "./TextEditor.css";
 /* Custom "star" icon for the toolbar */
 const CustomButton = () => <span className="octicon octicon-star" />;
 
+interface PropType {
+  placeholder: string;
+  setSuggestion: any;
+  suggestion: string;
+  editorId?: number | string;
+}
+
 /* Event handler to insert a star at the cursor position */
 const insertStar = function () {
   const cursorPosition = this.quill.getSelection()?.index || 0;
@@ -15,8 +22,8 @@ const insertStar = function () {
 };
 
 /* Custom toolbar component */
-const CustomToolbar = () => (
-  <div id="toolbar">
+const CustomToolbar = ({ toolbarId }) => (
+  <div id={toolbarId} className="toolbar">
     <select className="ql-header" defaultValue={""}>
       <option value="1" />
       <option value="2" />
@@ -63,8 +70,9 @@ const CustomToolbar = () => (
 );
 
 /* Main TextEditor Component */
-const TextEditor = ({ placeholder, setSuggestion, suggestion }) => {
+const TextEditor = ({ placeholder, setSuggestion, suggestion, editorId = 1 }: PropType) => {
   const quillRef = useRef(null);
+  const toolbarId = `toolbar-${editorId}`;
 
   useEffect(() => {
     if (quillRef.current) {
@@ -77,13 +85,13 @@ const TextEditor = ({ placeholder, setSuggestion, suggestion }) => {
 
   return (
     <div className="text-editor">
-      <CustomToolbar />
+      <CustomToolbar toolbarId={toolbarId}/>
       <ReactQuill
         ref={quillRef}
         value={suggestion}
         onChange={setSuggestion}
         placeholder={placeholder}
-        modules={TextEditor.modules}
+        modules={TextEditor.modules(toolbarId)}
         formats={TextEditor.formats}
         theme="snow"
       />
@@ -92,9 +100,9 @@ const TextEditor = ({ placeholder, setSuggestion, suggestion }) => {
 };
 
 /* Quill modules */
-TextEditor.modules = {
+TextEditor.modules = (toolbarId:any) => ({
   toolbar: {
-    container: "#toolbar",
+    container: `#${toolbarId}`,
     handlers: {
       insertStar: insertStar,
     },
@@ -102,7 +110,7 @@ TextEditor.modules = {
   clipboard: {
     matchVisual: false,
   },
-};
+});
 
 /* Quill formats */
 TextEditor.formats = [

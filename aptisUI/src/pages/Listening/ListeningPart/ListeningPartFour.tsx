@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ListeningPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -150,6 +151,8 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+
+  const [suggestion, setSuggestion] = useState("");
   const {
     register,
     handleSubmit,
@@ -170,7 +173,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
-        suggestion: values.suggestion,
+        suggestion: suggestion,
         subQuestion: [1, 2].map((num) => ({
           content: values[`contentPartFour${num}`],
           correctAnswer: values[`answerPartFour${num}`],
@@ -235,7 +238,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       setValue("title", dataListeningPartFour.title);
       setValue("content", dataListeningPartFour.questions[0].content);
       setValue("subTitle", dataListeningPartFour.questions[0].questionTitle);
-      setValue("suggestion", dataListeningPartFour.questions[0].suggestion);
+      setSuggestion(dataListeningPartFour.questions[0].suggestion);
 
       [1, 2].map((num) => {
         setValue(
@@ -305,15 +308,12 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
             helperText={errors.content ? "This field is required" : ""}
           />
         </div>
+
         <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion", { required: true })}
-            placeholder="suggestion"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
           />
         </div>
         <Box
