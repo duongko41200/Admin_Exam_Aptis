@@ -7,6 +7,7 @@ import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -48,10 +49,16 @@ const QuestionBox = ({
   questionNumber,
   register,
   errors,
+  suggestion,
+  setSuggestion,
+  num,
 }: {
   questionNumber: number;
   register: any;
   errors: any;
+  suggestion: any;
+  setSuggestion: any;
+  num: number;
 }) => (
   <Box
     sx={{
@@ -80,32 +87,29 @@ const QuestionBox = ({
           }
         />
       </div>
+
       <div>
-          <TextField
-            type="suggestion"
-            {...register(`suggestion${questionNumber}`)}
-            placeholder="Gợi ý câu trả lời"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
+        <TextEditor
+          placeholder="Write something or insert a star ★"
+          suggestion={suggestion}
+          setSuggestion={setSuggestion}
+          editorId={`editor${num}`}
+        />
       </div>
       <div>
-          <TextField
-            // type="file âm thanh câu hỏi "
-            {...register(`subFile${questionNumber}`)}
-            placeholder="file âm thanh câu hỏi"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
+        <TextField
+          // type="file âm thanh câu hỏi "
+          {...register(`subFile${questionNumber}`)}
+          placeholder="file âm thanh câu hỏi"
+          variant="outlined"
+          fullWidth
+          error={!!errors.subTitle}
+          helperText={errors.subTitle ? "This field is required" : ""}
+        />
+      </div>
     </Box>
   </Box>
 );
-
 
 const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   children,
@@ -133,13 +137,21 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [imageUpload, setImageUpload] = useState();
+  const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
+
+  const handleSuggestionChange = (index: number, value: string) => {
+    setSuggestions((prev) => {
+      const newSuggestions = [...prev];
+      newSuggestions[index] = value;
+      return newSuggestions;
+    });
+  };
 
   const onSubmit = async (values: FormData) => {
-
     const data = {
       title: values.title,
       timeToDo: 50,
-      description:values.subTitle,
+      description: values.subTitle,
       questions: [
         {
           questionTitle: values.subTitle,
@@ -148,16 +160,16 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           correctAnswer: "",
           file: values.file,
           subQuestionAnswerList: [],
-          suggestion: '',
+          suggestion: "",
           subQuestion: [1, 2, 3].map((num) => ({
             content: values[`subContent${num}`],
             correctAnswer: null,
             file: values[`subFile${num}`],
             answerList: null,
             image: null,
-            suggestion: values[`suggestion${num}`],
+            suggestion: suggestions[num],
           })),
-          isExample:'',
+          isExample: "",
           image: null,
         },
       ],
@@ -165,21 +177,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       questionPart: "ONE",
     };
 
-    console.log({data});
 
     if (statusHandler === "create") {
       createWritingPartOne(data);
     }
     if (statusHandler === "edit") {
-      console.log("edit");
       updateWritingPartOne(data);
     }
   };
 
   const createWritingPartOne = async (data: any) => {
-
-
-    console.log({testDate: data });
+    console.log({ testDate: data });
     try {
       const CreateData = await baseDataProvider.create("speakings", { data });
 
@@ -212,8 +220,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-
-
   useEffect(() => {
     console.log({ dataSpeakingPartOne });
     if (dataSpeakingPartOne) {
@@ -226,16 +232,19 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           `subContent${num}` as keyof FormData,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
         );
-        setValue(
-          `suggestion${num}` as keyof FormData,
+        // setValue(
+        //   `suggestion${num}` as keyof FormData,
+        //   dataSpeakingPartOne.questions[0].subQuestion[num - 1].suggestion
+        // );
+
+        handleSuggestionChange(
+          num,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].suggestion
-        )
+        );
         setValue(
           `subFile${num}` as keyof FormData,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].file
-        )
-
-
+        );
       });
     }
   }, [dataSpeakingPartOne, setValue]);
@@ -323,6 +332,9 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
               questionNumber={num}
               register={register}
               errors={errors}
+              suggestion={suggestions[num]}
+              setSuggestion={(value: any) => handleSuggestionChange(num, value)}
+              num={num}
             />
           ))}
         </Box>

@@ -8,6 +8,7 @@ import baseDataProvider from "../../../providers/dataProviders/baseDataProvider"
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 import { stylesInpection } from "../../../styles/product-inspection";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -48,10 +49,16 @@ const QuestionBox = ({
   questionNumber,
   register,
   errors,
+  suggestion,
+  setSuggestion,
+  num,
 }: {
   questionNumber: number;
   register: any;
   errors: any;
+  suggestion: any;
+  setSuggestion: any;
+  num: number;
 }) => (
   <Box
     sx={{
@@ -80,15 +87,13 @@ const QuestionBox = ({
           }
         />
       </div>
+
       <div>
-        <TextField
-          type="suggestion"
-          {...register(`suggestion${questionNumber}`)}
-          placeholder="Gợi ý câu trả lời"
-          variant="outlined"
-          fullWidth
-          error={!!errors.subTitle}
-          helperText={errors.subTitle ? "This field is required" : ""}
+        <TextEditor
+          placeholder="Write something or insert a star ★"
+          suggestion={suggestion}
+          setSuggestion={setSuggestion}
+          editorId={`editor${num}`}
         />
       </div>
       <div>
@@ -135,6 +140,15 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   const [images, setImages] = useState([]);
   const [previewUrls, setPreviewUrls] = useState([]);
   const [rangeUpload, setRangeUpload] = useState(false);
+    const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
+  
+    const handleSuggestionChange = (index: number, value: string) => {
+      setSuggestions((prev) => {
+        const newSuggestions = [...prev];
+        newSuggestions[index] = value;
+        return newSuggestions;
+      });
+    };
 
   ////////////////////////////////////////////////////////////////////////////
 
@@ -158,7 +172,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             file: values[`subFile${num}`],
             answerList: null,
             image: null,
-            suggestion: values[`suggestion${num}`],
+            suggestion:suggestions[num],
           })),
           isExample: "",
           image: null,
@@ -254,8 +268,13 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           `subContent${num}` as keyof FormData,
           dataReadingPartTwo.questions[0].subQuestion[num - 1].content
         );
-        setValue(
-          `suggestion${num}` as keyof FormData,
+        // setValue(
+        //   `suggestion${num}` as keyof FormData,
+        //   dataReadingPartTwo.questions[0].subQuestion[num - 1].suggestion
+        // );
+
+        handleSuggestionChange(
+          num,
           dataReadingPartTwo.questions[0].subQuestion[num - 1].suggestion
         );
         setValue(
@@ -454,6 +473,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
               questionNumber={num}
               register={register}
               errors={errors}
+              suggestion={suggestions[num]}
+              setSuggestion={(value: any) => handleSuggestionChange(num, value)}
+              num={num}
             />
           ))}
         </Box>
