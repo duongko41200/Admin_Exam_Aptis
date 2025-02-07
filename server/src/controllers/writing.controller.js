@@ -28,7 +28,11 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'creat new writing success!',
-			metadata: await WritingFactory.getAllWithQuery({ filter, range, sort }),
+			metadata: await WritingFactory.getAllWithQuery({
+				filter,
+				range,
+				sort,
+			}),
 		}).send(res);
 	};
 	getOneById = async (req, res, next) => {
@@ -48,7 +52,7 @@ class WritingController {
 
 		new SuccessResponse({
 			message: 'update new writing success!',
-			metadata: await WritingFactory.updatewriting(id, data),
+			metadata: await WritingFactory.updateWriting(id, data),
 		}).send(res);
 	};
 

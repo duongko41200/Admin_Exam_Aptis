@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface WritingPartTwoProps {
   children?: JSX.Element | JSX.Element[];
@@ -50,7 +51,7 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
     setValue,
     reset,
   } = useForm<FormData>();
-  const [isShow, setIsShow] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
 
   const onSubmit = async (values: FormData) => {
     const data = {
@@ -64,7 +65,7 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion: values.suggestion,
+          suggestion: suggestion,
           subQuestion: [
             {
               content: values.question,
@@ -103,7 +104,7 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
 
   const updateWritingPart = async (data: any) => {
     try {
-      await dataProvider.update("Writings", {
+      await dataProvider.update("writings", {
         id: dataWritingPartTwo?.id,
         data,
         previousData: dataWritingPartTwo,
@@ -123,7 +124,7 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
       setValue("title", dataWritingPartTwo.title);
       setValue("content", dataWritingPartTwo.questions[0].content);
       setValue("subTitle", dataWritingPartTwo.questions[0].questionTitle);
-      setValue("suggestion", dataWritingPartTwo.questions[0].suggestion);
+      setSuggestion(dataWritingPartTwo.questions[0].suggestion);
       setValue(
         "question",
         dataWritingPartTwo.questions[0].subQuestion[0].content
@@ -165,15 +166,14 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
           error={!!errors.content}
           helperText={errors.content ? "This field is required" : ""}
         />
-        <TextField
-          type="suggestion"
-          {...register("suggestion")}
-          placeholder="Gợi ý câu trả lời"
-          variant="outlined"
-          fullWidth
-          error={!!errors.suggestion}
-          helperText={errors.suggestion ? "This field is required" : ""}
-        />
+
+        <div>
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
+          />
+        </div>
         <TextField
           type="question"
           {...register("question", { required: true })}

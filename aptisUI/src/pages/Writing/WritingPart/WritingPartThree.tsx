@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface WritingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -110,6 +111,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -123,7 +125,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion: values.suggestion,
+          suggestion: suggestion,
           subQuestion: [1, 2, 3].map((num) => ({
             content: values[`question${num}`],
             correctAnswer: null,
@@ -163,7 +165,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
   //tentisspace
   const updateWritingPartThree = async (values: any) => {
     try {
-      await dataProvider.update("Writings", {
+      await dataProvider.update("writings", {
         id: dataWritingPartThree?.id,
         data: values,
         previousData: dataWritingPartThree,
@@ -184,7 +186,7 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
       setValue("title", dataWritingPartThree.title);
       setValue("subTitle", dataWritingPartThree.questions[0].questionTitle);
       setValue("content", dataWritingPartThree.questions[0].content);
-      setValue("suggestion", dataWritingPartThree.questions[0].suggestion);
+      setSuggestion(dataWritingPartThree.questions[0].suggestion);
       dataWritingPartThree.questions[0].subQuestion.forEach((subQuestion: any, index: number) => {
         setValue(`question${index + 1}`, subQuestion.content);
       });
@@ -231,15 +233,13 @@ const WritingPartThree: React.FC<WritingPartOneProps> = ({
             helperText={errors.content ? "This field is required" : ""}
           />
         </div>
-        <TextField
-          type="suggestion"
-          {...register("suggestion")}
-          placeholder="Gợi ý câu trả lời"
-          variant="outlined"
-          fullWidth
-          error={!!errors.suggestion}
-          helperText={errors.suggestion ? "This field is required" : ""}
-        />
+        <div>
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
+          />
+        </div>
 
         <Box
           sx={{

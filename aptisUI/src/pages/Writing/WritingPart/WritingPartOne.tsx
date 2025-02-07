@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface WritingPartThree {
   children?: JSX.Element | JSX.Element[];
@@ -96,10 +97,9 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   } = useForm<FormData>();
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
+  const [suggestion, setSuggestion] = useState("");
 
   const onSubmit = async (values: FormData) => {
-
-    console.log("skdfjksd:",values)
     const data = {
       title: values.title,
       timeToDo: 50,
@@ -111,7 +111,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion: values.suggestion,
+          suggestion: suggestion,
           subQuestion: [1, 2, 3, 4, 5].map((num) => ({
             content: values[`subContent${num}`],
             correctAnswer: null,
@@ -137,9 +137,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   };
 
   const createWritingPartOne = async (data: any) => {
-
-
-    console.log({testDate: data });
+    console.log({ testDate: data });
     try {
       const CreateData = await baseDataProvider.create("writings", { data });
 
@@ -154,8 +152,10 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
 
   //tentisspace
   const updateWritingPartOne = async (values: any) => {
+
+    console.log({ values });
     try {
-      await dataProvider.update("Writings", {
+      await dataProvider.update("writings", {
         id: dataWritingPartOne?.id,
         data: values,
         previousData: dataWritingPartOne,
@@ -178,12 +178,14 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
       setValue("title", dataWritingPartOne.title);
       setValue("content", dataWritingPartOne.questions[0].content);
       setValue("subTitle", dataWritingPartOne.questions[0].questionTitle);
-      setValue("suggestion", dataWritingPartOne.questions[0].suggestion);
+      setSuggestion(dataWritingPartOne.questions[0].suggestion);
 
       [1, 2, 3, 4, 5].map((num) => {
-        setValue(`subContent${num}` as keyof FormData, dataWritingPartOne.questions[0].subQuestion[num - 1].content);
+        setValue(
+          `subContent${num}` as keyof FormData,
+          dataWritingPartOne.questions[0].subQuestion[num - 1].content
+        );
       });
-
     }
   }, [dataWritingPartOne, setValue]);
 
@@ -228,14 +230,10 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
           />
         </div>
         <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion")}
-            placeholder="Gợi ý câu trả lời"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
           />
         </div>
 

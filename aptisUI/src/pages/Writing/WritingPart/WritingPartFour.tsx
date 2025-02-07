@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface WritingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -121,6 +122,8 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const [suggestion, setSuggestion] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -142,7 +145,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion: values.suggestion,
+          suggestion:suggestion,
           subQuestion: [1, 2].map((num) => ({
             content: values[`question${num}`],
             correctAnswer: values[`answerPartFour${num}`],
@@ -168,7 +171,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
 
   const createWritingPartFour = async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("Writings", { data });
+      const CreateData = await baseDataProvider.create("writings", { data });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -182,7 +185,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
   //tentisspace
   const updateWritingPartFour = async (values: any) => {
     try {
-      await dataProvider.update("Writings", {
+      await dataProvider.update("writings", {
         id: dataWritingPartFour?.id,
         data: values,
         previousData: dataWritingPartFour,
@@ -205,7 +208,7 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
       setValue("title", dataWritingPartFour.title);
       setValue("subTitle", dataWritingPartFour.questions[0].questionTitle);
       setValue("content", dataWritingPartFour.questions[0].content);
-      setValue("suggestion", dataWritingPartFour.questions[0].suggestion);
+      setSuggestion(dataWritingPartFour.questions[0].suggestion);
       [1, 2].map((num) => {
         setValue(
           `question${num}`,
@@ -259,15 +262,13 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
             helperText={errors.content ? "This field is required" : ""}
           />
         </div>
-        <TextField
-          type="suggestion"
-          {...register("suggestion", { required: true })}
-          placeholder="Gợi ý câu trả lời"
-          variant="outlined"
-          fullWidth
-          error={!!errors.suggestion}
-          helperText={errors.suggestion ? "This field is required" : ""}
-        />
+        <div>
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
+          />
+        </div>
 
         <Box
           sx={{

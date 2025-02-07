@@ -6,6 +6,7 @@ import { Stack, Box, TextField } from "@mui/material";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
+import TextEditor from "../../../components/TextEditor/TextEditor";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -121,6 +122,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const [suggestion, setSuggestion] = useState("");
   const {
     register,
     handleSubmit,
@@ -143,7 +145,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
-        suggestion: values.suggestion,
+        suggestion: suggestion,
         subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
           content: values[`contentPartFour${num}`],
           correctAnswer: values[`answerPartFour${num}`],
@@ -208,7 +210,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartFour.data.title);
       setValue("content", dataReadingPartFour.data.questions.content);
       setValue("subTitle", dataReadingPartFour.data.questions.questionTitle);
-      setValue("suggestion", dataReadingPartFour.data.questions.suggestion);
+      setSuggestion(dataReadingPartFour.data.questions.suggestion);
 
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
@@ -273,15 +275,10 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
           />
         </div>
         <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion", { required: true })}
-            placeholder="suggestion"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-            multiline
+          <TextEditor
+            placeholder="Write something or insert a star ★"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
           />
         </div>
         <Box
