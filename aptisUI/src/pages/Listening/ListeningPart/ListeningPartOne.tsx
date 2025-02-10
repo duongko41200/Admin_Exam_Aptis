@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler, set } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
@@ -212,7 +212,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
         subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
-          file: null,
+          file: values[`subFile${num}`],
           answerList: [1, 2, 3].map((ansNum) => ({
             content: values[`answer${ansNum}Sub${num}`],
           })),
@@ -289,6 +289,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
           num,
           dataListeningPartOne.questions[0].subQuestion[num - 1].suggestion
         );
+        setValue( `subFile${num}` as keyof FormData, dataListeningPartOne.questions[0].subQuestion[num - 1].file);
         [1, 2, 3].map((ansNum) => {
           setValue(
             `answer${ansNum}Sub${num}` as keyof FormData,

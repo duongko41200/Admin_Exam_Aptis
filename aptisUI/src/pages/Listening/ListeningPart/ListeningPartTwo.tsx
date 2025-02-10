@@ -17,7 +17,7 @@ interface ListeningPartOneProps {
   pathTo?: string;
   handleCancel?: () => void;
   dataListeningPartTwo?: any;
-  statusHandler?:string
+  statusHandler?: string;
 }
 
 interface FormData {
@@ -48,9 +48,9 @@ interface FormData {
   optionAnswer7: string;
   optionAnswer8: string;
   suggestion: string;
+  file: string;
   [key: `optionAnswer${number}`]: string; // Add this line
 }
-
 
 const QuestionBox = ({
   questionNumber,
@@ -141,14 +141,14 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       questions: {
         questionTitle: values.subTitle,
         content: values.content,
-        answerList: [1, 2, 3, 4,5,6].map((num, idx) => ({
+        answerList: [1, 2, 3, 4, 5, 6].map((num, idx) => ({
           id: idx + 1,
           content: values[`optionAnswer${num}`],
         })),
         correctAnswer: null,
-        file: null,
+        file: values.file,
         subQuestionAnswerList: [],
-        suggestion:suggestion,
+        suggestion: suggestion,
         subQuestion: [1, 2, 3, 4].map((num) => ({
           content: values[`numberOrder${num}`],
           correctAnswer: values[`correctAnswer${num}`],
@@ -162,7 +162,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       },
 
       questionType: "LISTENING",
-      questionPart:'TWO' ,
+      questionPart: "TWO",
       description: null,
     };
     if (statusHandler === "create") {
@@ -174,7 +174,6 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
     }
   };
 
-  
   const createListeningPartOne = async (data: any) => {
     try {
       const CreateData = await baseDataProvider.create("Listenings", { data });
@@ -213,6 +212,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       setValue("title", dataListeningPartTwo.title);
       setValue("content", dataListeningPartTwo.questions[0].content);
       setValue("subTitle", dataListeningPartTwo.questions[0].questionTitle);
+      setValue("file", dataListeningPartTwo.questions[0].file);
       setSuggestion(dataListeningPartTwo.questions[0].suggestion);
 
       [1, 2, 3, 4].map((num) => {
@@ -226,12 +226,12 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
         );
       });
 
-      [1, 2, 3, 4,5,6].map((num, idx) => {
+      [1, 2, 3, 4, 5, 6].map((num, idx) => {
         setValue(
           `optionAnswer${num}` as keyof FormData,
           dataListeningPartTwo.questions[0].answerList[num - 1].content
-   )
-      })
+        );
+      });
     }
   }, [dataListeningPartTwo, setValue]);
 
@@ -276,6 +276,17 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
           />
         </div>
         <div>
+          <TextField
+            type="mp3"
+            {...register("file", { required: true })}
+            placeholder="file am thanh"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
           <TextEditor
             placeholder="Write something or insert a star ★"
             suggestion={suggestion}
@@ -283,48 +294,48 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
           />
         </div>
 
-                <Box
-                  sx={{
-                    width: "100%",
-                    height: "fit-content",
-                    background: "#fff !important",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    gap: 2,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: "100%",
-                      height: "fit-content",
-                      background: "#f3f3f3ad !important",
-                      display: "grid",
-                      gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-                      boxShadow:
-                        "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-                      gap: "10px",
-                      padding: "10px",
-                      marginTop: "20px",
-                    }}
-                  >
-                    {[...Array(6)].map((_, index) => (
-                      <TextField
-                        key={index}
-                        type={`optionAnswer${index + 1}`}
-                        {...register(`optionAnswer${index + 1}`, { required: true })}
-                        placeholder={`dap an so ${index + 1}`}
-                        variant="outlined"
-                        fullWidth
-                        error={!!errors[`optionAnswer${index + 1}`]}
-                        helperText={
-                          errors[`optionAnswer${index + 1}`]
-                            ? "This field is required"
-                            : ""
-                        }
-                      />
-                    ))}
-                  </Box>
-                </Box>
+        <Box
+          sx={{
+            width: "100%",
+            height: "fit-content",
+            background: "#fff !important",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 2,
+          }}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              height: "fit-content",
+              background: "#f3f3f3ad !important",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+              boxShadow:
+                "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+              gap: "10px",
+              padding: "10px",
+              marginTop: "20px",
+            }}
+          >
+            {[...Array(6)].map((_, index) => (
+              <TextField
+                key={index}
+                type={`optionAnswer${index + 1}`}
+                {...register(`optionAnswer${index + 1}`, { required: true })}
+                placeholder={`dap an so ${index + 1}`}
+                variant="outlined"
+                fullWidth
+                error={!!errors[`optionAnswer${index + 1}`]}
+                helperText={
+                  errors[`optionAnswer${index + 1}`]
+                    ? "This field is required"
+                    : ""
+                }
+              />
+            ))}
+          </Box>
+        </Box>
 
         <Box
           sx={{

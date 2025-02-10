@@ -44,6 +44,7 @@ interface FormData {
   optionPerson3: string;
   optionPerson4: string;
   suggestion: string;
+  file: string;
 }
 
 const QuestionBox = ({
@@ -140,9 +141,9 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
           content: values[`optionPerson${num}`],
         })),
         correctAnswer: "",
-        file: null,
+        file:values.file,
         subQuestionAnswerList: [],
-        suggestion:suggestion,
+        suggestion: suggestion,
         subQuestion: [1, 2, 3, 4].map((num) => ({
           content: values[`questionPerson${num}`],
           correctAnswer: values[`personMatch${num}`],
@@ -205,6 +206,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       setValue("title", dataListeningPartThree.title);
       setValue("content", dataListeningPartThree.questions[0].content);
       setValue("subTitle", dataListeningPartThree.questions[0].questionTitle);
+      setValue('file', dataListeningPartThree.questions[0].file);
       setSuggestion(dataListeningPartThree.questions[0].suggestion);
 
       // [1, 2, 3, 4, 5, 6, 7].map((num) => {
@@ -272,6 +274,17 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
           />
         </div>
         <div>
+          <TextField
+            type="mp3"
+            {...register("file", { required: true })}
+            placeholder="file am thanh"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+        <div>
           <TextEditor
             placeholder="Write something or insert a star ★"
             suggestion={suggestion}
@@ -316,12 +329,11 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
             {...register("optionPerson3", { required: true })}
             placeholder="Tên người thứ ba"
             variant="outlined"
-            defaultValue='Both'
+            defaultValue="Both"
             fullWidth
             error={!!errors.optionPerson3}
             helperText={errors.optionPerson3 ? "This field is required" : ""}
           />
-
         </Box>
 
         <Box

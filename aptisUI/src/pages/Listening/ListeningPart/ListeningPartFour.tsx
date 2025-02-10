@@ -48,6 +48,7 @@ interface FormData {
   optionAnswer7: string;
   optionAnswer8: string;
   suggestion: string;
+  file: string;
   [key: `optionAnswer${number}`]: string; // Add this line
 }
 
@@ -87,35 +88,35 @@ const QuestionBox = ({
           }
         />
       </div>
-       <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                gap: 1,
-              }}
-            >
-              {[1, 2, 3].map((num) => (
-                <div key={num}>
-                  <TextField
-                    sx={{ width: "340px", border:'1px solid black' }}
-                    type={`answer${num}Sub${questionNumber}`}
-                    {...register(`answer${num}Sub${questionNumber}`, {
-                      required: true,
-                    })}
-                    placeholder={`Đáp án ${num}`}
-                    variant="outlined"
-                    fullWidth
-                    error={!!errors[`answer${num}Sub${questionNumber}`]}
-                    helperText={
-                      errors[`answer${num}Sub${questionNumber}`]
-                        ? "This field is required"
-                        : ""
-                    }
-                  />
-                </div>
-              ))}
-            </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 1,
+        }}
+      >
+        {[1, 2, 3].map((num) => (
+          <div key={num}>
+            <TextField
+              sx={{ width: "340px", border: "1px solid black" }}
+              type={`answer${num}Sub${questionNumber}`}
+              {...register(`answer${num}Sub${questionNumber}`, {
+                required: true,
+              })}
+              placeholder={`Đáp án ${num}`}
+              variant="outlined"
+              fullWidth
+              error={!!errors[`answer${num}Sub${questionNumber}`]}
+              helperText={
+                errors[`answer${num}Sub${questionNumber}`]
+                  ? "This field is required"
+                  : ""
+              }
+            />
+          </div>
+        ))}
+      </Box>
       <div>
         <TextField
           type="text"
@@ -171,14 +172,14 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
         content: values.content,
         answerList: null,
         correctAnswer: "",
-        file: null,
+        file: values.file,
         subQuestionAnswerList: [],
         suggestion: suggestion,
         subQuestion: [1, 2].map((num) => ({
           content: values[`contentPartFour${num}`],
           correctAnswer: values[`answerPartFour${num}`],
           file: null,
-          answerList:  [1, 2, 3].map((ansNum) => ({
+          answerList: [1, 2, 3].map((ansNum) => ({
             content: values[`answer${ansNum}Sub${num}`],
           })),
           image: null,
@@ -238,6 +239,7 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       setValue("title", dataListeningPartFour.title);
       setValue("content", dataListeningPartFour.questions[0].content);
       setValue("subTitle", dataListeningPartFour.questions[0].questionTitle);
+      setValue("file", dataListeningPartFour.questions[0].file);
       setSuggestion(dataListeningPartFour.questions[0].suggestion);
 
       [1, 2].map((num) => {
@@ -302,6 +304,18 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
             type="content"
             {...register("content", { required: true })}
             placeholder="Content"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
+
+        <div>
+          <TextField
+            type="mp3"
+            {...register("file", { required: true })}
+            placeholder="file am thanh"
             variant="outlined"
             fullWidth
             error={!!errors.content}
