@@ -165,6 +165,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     console.log({ testDate: data });
     try {
       const CreateData = await baseDataProvider.create("speakings", { data });
+      console.log("CreateData", CreateData);
 
       await notify(UPDATED_SUCCESS, {
         type: "success",

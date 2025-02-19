@@ -140,7 +140,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   const [images, setImages] = useState([]);
   const [previewUrls, setPreviewUrls] = useState([]);
   const [rangeUpload, setRangeUpload] = useState(false);
-    const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
+  const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
   
     const handleSuggestionChange = (index: number, value: string) => {
       setSuggestions((prev) => {
