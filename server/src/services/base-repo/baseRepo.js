@@ -101,9 +101,9 @@ const getAllWithFiltersWritting = async ({ partSkill }, model) => {
 const getOneById = async ({ id }, model) => {
 	const res = await model
 		.findById({ _id: id })
-		.populate(
-			`reading.part1 reading.part2 reading.part3 reading.part4 reading.part5 writing.part1 writing.part2 writing.part3 writing.part4 speaking.part1 speaking.part2 speaking.part3 speaking.part4 listening.part1 listening.part2 listening.part3 listening.part4`
-		)
+		// .populate(
+		// 	`reading.part1 reading.part2 reading.part3 reading.part4 reading.part5 writing.part1 writing.part2 writing.part3 writing.part4 speaking.part1 speaking.part2 speaking.part3 speaking.part4 listening.part1 listening.part2 listening.part3 listening.part4`
+		// )
 		.exec();
 
 	return res;
