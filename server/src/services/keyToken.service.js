@@ -1,6 +1,5 @@
 'use strict';
 
-
 import keytokenModel from '../models/keytoken.model.js';
 
 class keyTokenService {
@@ -11,14 +10,14 @@ class keyTokenService {
 		refreshToken,
 	}) => {
 		try {
-			const filter = { user: userId },
-				update = {
-					publicKey,
-					privateKey,
-					refreshTokenUsed: [],
-					refreshToken,
-				},
-				options = { upsert: true, new: true };
+			const filter = { user: userId };
+			const update = {
+				publicKey,
+				privateKey,
+				refreshTokenUsed: [],
+				refreshToken,
+			};
+			const options = { upsert: true, new: true };
 			const tokens = await keytokenModel.findOneAndUpdate(
 				filter,
 				update,
@@ -39,21 +38,27 @@ class keyTokenService {
 	};
 
 	static findByRefreshTokenUsed = async (refreshToken) => {
-		return await keytokenModel.findOne({
-			refreshTokensUsed: refreshToken,
-		}).lean();
+		return await keytokenModel
+			.findOne({
+				refreshTokensUsed: refreshToken,
+			})
+			.lean();
 	};
 
 	static findByRefreshToken = async (refreshToken) => {
-		return await keytokenModel.findOne({
-			refreshToken,
-		}).lean();
+		return await keytokenModel
+			.findOne({
+				refreshToken,
+			})
+			.lean();
 	};
 
 	static deleteKeyById = async (userId) => {
-		return await keytokenModel.deleteOne({
-			user: userId
-		}).lean();
+		return await keytokenModel
+			.deleteOne({
+				user: userId,
+			})
+			.lean();
 	};
 }
 
