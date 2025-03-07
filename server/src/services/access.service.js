@@ -12,6 +12,7 @@ import {
 } from '../cores/Error.response.js';
 import { findByEmail } from './user.service.js';
 import keytokenModel from '../models/keytoken.model.js';
+import  {SESSION_TOKEN_SECRET} from '../const/key.js'
 
 const RoleApp = {
 	USER: 'USER',
@@ -159,7 +160,7 @@ class AccessService {
 		//3
 		//create pivateKey, publicKey
 		const privateKey = crypto.randomBytes(64).toString('hex');
-		const publicKey = crypto.randomBytes(64).toString('hex');
+		const publicKey = SESSION_TOKEN_SECRET
 
 		//4
 		const tokens = await createTokenPair(
@@ -170,6 +171,8 @@ class AccessService {
 			publicKey,
 			privateKey
 		);
+
+		console.log({ tokens });
 
 		await keyTokenService.createKeyToken({
 			refreshToken: tokens.refreshToken,

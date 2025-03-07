@@ -14,16 +14,20 @@ const HEADER = {
 
 const createTokenPair = async (payload, publicKey, privateKey) => {
 	try {
+
+		console.log({payload,publicKey })
 		//accessToken
 		const accessToken = await JWT.sign(payload, publicKey, {
 			// algorithm: 'RS256',
-			expiresIn: '2 days',
+			expiresIn: '2d',
 		});
 
 		const refreshToken = await JWT.sign(payload, privateKey, {
 			// algorithm: 'RS256',
 			expiresIn: '7 days',
 		});
+
+		console.log({ accessToken, refreshToken });
 
 		JWT.verify(accessToken, publicKey, (err, decode) => {
 			if (err) {
