@@ -44,6 +44,8 @@ interface FormData {
   answerThreeSub3: string;
   suggestion?: string;
   file?: string;
+  imgUrl_1?: string;
+  imgUrl_2?: string;
 }
 
 const QuestionBox = ({
@@ -178,7 +180,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
             suggestion: suggestions[num],
           })),
           isExample: "",
-          image: [],
+          image: [values['imgUrl_1'], values['imgUrl_2']],
         },
       ],
       questionType: "SPEAKING",
@@ -278,6 +280,8 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
        setValue("title", dataReadingPartThree.title);
        setValue("content", dataReadingPartThree.questions[0].content);
        setValue("subTitle", dataReadingPartThree.questions[0].questionTitle);
+       setValue("imgUrl_1", dataReadingPartThree.questions[0].image[0]);
+       setValue("imgUrl_2", dataReadingPartThree.questions[0].image[1]);
  
        [1, 2, 3].map((num) => {
          setValue(
@@ -377,6 +381,30 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
                     // type="file"
                     {...register("file")}
                     placeholder="link file nghe de bai"
+                    variant="outlined"
+                    fullWidth
+                    error={!!errors.subTitle}
+                    helperText={errors.subTitle ? "This field is required" : ""}
+                  />
+        </div>
+        
+        <div>
+                  <TextField
+                    // type="file"
+                    {...register("imgUrl_1")}
+                    placeholder="link image 1 "
+                    variant="outlined"
+                    fullWidth
+                    error={!!errors.subTitle}
+                    helperText={errors.subTitle ? "This field is required" : ""}
+                  />
+        </div>
+        
+        <div>
+                  <TextField
+                    // type="file"
+                    {...register("imgUrl_2")}
+                    placeholder="link image 2 "
                     variant="outlined"
                     fullWidth
                     error={!!errors.subTitle}

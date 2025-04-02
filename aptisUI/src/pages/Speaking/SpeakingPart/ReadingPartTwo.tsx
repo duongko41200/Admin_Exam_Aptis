@@ -43,6 +43,7 @@ interface FormData {
   answerThreeSub3: string;
   suggestion?: string;
   file?: string;
+  imgUrl?: string;
 }
 
 const QuestionBox = ({
@@ -171,7 +172,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             correctAnswer: null,
             file: values[`subFile${num}`],
             answerList: null,
-            image: null,
+            image: values[`imgUrl`],
             suggestion:suggestions[num],
           })),
           isExample: "",
@@ -186,9 +187,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
 
     if (statusHandler === "create") {
       const uploadData = new FormData();
-      for (let i = 0; i < images.length; i++) {
-        uploadData.append("files", images[i]);
-      }
+      // for (let i = 0; i < images.length; i++) {
+      //   uploadData.append("files", images[i]);
+      // }
       uploadData.append("data", JSON.stringify({ ...data }));
       createSpeakingPartOne(uploadData);
     }
@@ -262,6 +263,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartTwo.title);
       setValue("content", dataReadingPartTwo.questions[0].content);
       setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
+      setValue('imgUrl', dataReadingPartTwo.questions[0].subQuestion[0].image);
 
       [1, 2, 3].map((num) => {
         setValue(
@@ -359,6 +361,18 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             // type="file"
             {...register("file")}
             placeholder="link file nghe de bai"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+
+        <div>
+          <TextField
+            // type="file"
+            {...register("imgUrl")}
+            placeholder="link img nghe de bai"
             variant="outlined"
             fullWidth
             error={!!errors.subTitle}
