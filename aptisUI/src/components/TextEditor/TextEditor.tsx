@@ -12,6 +12,7 @@ interface PropType {
   setSuggestion: any;
   suggestion: string;
   editorId?: number | string;
+  key?: string | number;
 }
 
 /* Event handler to insert a star at the cursor position */
@@ -41,12 +42,12 @@ const CustomToolbar = ({ toolbarId }) => (
       <select className="ql-color"></select>
       <select className="ql-background"></select>
     </span>
-	<span className="ql-formats">
-    <button className="ql-list" value="ordered"></button>
-    <button className="ql-list" value="bullet"></button>
-    <button className="ql-indent" value="-1"></button>
-    <button className="ql-indent" value="+1"></button>
-  </span>
+    <span className="ql-formats">
+      <button className="ql-list" value="ordered"></button>
+      <button className="ql-list" value="bullet"></button>
+      <button className="ql-indent" value="-1"></button>
+      <button className="ql-indent" value="+1"></button>
+    </span>
     <span className="ql-formats">
       <button className="ql-direction" value="rtl"></button>
       <select className="ql-align"></select>
@@ -70,7 +71,12 @@ const CustomToolbar = ({ toolbarId }) => (
 );
 
 /* Main TextEditor Component */
-const TextEditor = ({ placeholder, setSuggestion, suggestion, editorId = 1 }: PropType) => {
+const TextEditor = ({
+  placeholder,
+  setSuggestion,
+  suggestion,
+  editorId = 1,
+}: PropType) => {
   const quillRef = useRef(null);
   const toolbarId = `toolbar-${editorId}`;
 
@@ -85,8 +91,9 @@ const TextEditor = ({ placeholder, setSuggestion, suggestion, editorId = 1 }: Pr
 
   return (
     <div className="text-editor">
-      <CustomToolbar toolbarId={toolbarId}/>
+      <CustomToolbar toolbarId={toolbarId} />
       <ReactQuill
+        // key={key}
         ref={quillRef}
         value={suggestion}
         onChange={setSuggestion}
@@ -100,7 +107,7 @@ const TextEditor = ({ placeholder, setSuggestion, suggestion, editorId = 1 }: Pr
 };
 
 /* Quill modules */
-TextEditor.modules = (toolbarId:any) => ({
+TextEditor.modules = (toolbarId: any) => ({
   toolbar: {
     container: `#${toolbarId}`,
     handlers: {

@@ -93,7 +93,6 @@ export default function DataTableSpeading({
   };
 
   React.useEffect(() => {
-    console.log("testBankData là: ", testBankData);
     setSelectionModel(testBankData["speaking"][`part${partSkill}`]);
   }, []);
 

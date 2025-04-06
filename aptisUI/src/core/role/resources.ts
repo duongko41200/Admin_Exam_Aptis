@@ -9,6 +9,9 @@ import { WritingList, WritingCreate, WritingEdit, WritingShow } from '../../page
 import { SpeakingList, SpeakingCreate, SpeakingEdit, SpeakingShow } from '../../pages/Speaking'
 import { ListeningList, ListeningCreate, ListeningEdit, ListeningShow } from '../../pages/Listening'
 
+import { CourseList, CourseCreate, CourseEdit, CourseShow } from '../../pages/Course'
+import { LectureList, LectureCreate, LectureEdit, LectureShow } from '../../pages/Lectures'
+
 const Resources: ResourceIF[] = [
 
   {
@@ -65,6 +68,28 @@ const Resources: ResourceIF[] = [
     icon: Dashboard,
     resource: 'test-banks',
     label: 'BỘ ĐỀ'
+  },
+
+
+  {
+    list: CourseList,
+    edit: CourseEdit,
+    create: CourseCreate,
+    show: CourseShow,
+    icon: Dashboard,
+    resource: 'courses',
+    label: 'Khóa học'
+  },
+
+  
+  {
+    list: LectureList,
+    edit: LectureEdit,
+    create: LectureCreate,
+    show: LectureShow,
+    icon: Dashboard,
+    resource: 'lectures',
+    label: 'Tung bai hoc'
   },
 
 

@@ -12,6 +12,9 @@ import writingRouter from './writing/index.js'; // Thay đổi require bằng im
 import speakingRouter from './speaking/index.js'
 import listeningRouter from './listening/index.js'
 
+import courseRouter from './courses/index.js'; // Thay đổi require bằng import
+import lectureRouter from './lectures/index.js'; // Thay đổi require bằng import
+
 const router = express.Router();
 
 //check apiKey middleware
@@ -33,5 +36,7 @@ router.use('/v1/api/writings', writingRouter);
 
 router.use('/v1/api/speakings', speakingRouter);
 router.use('/v1/api/listenings', listeningRouter);
+router.use('/v1/api/courses', courseRouter);
+router.use('/v1/api/lectures', lectureRouter);	
 
 export default router;

@@ -189,6 +189,10 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
     }
   }, [dataWritingPartOne, setValue]);
 
+  useEffect(() => {
+
+  }, []);
+
   return (
     <div>
       <form

@@ -637,6 +637,32 @@ const baseDataProvider: DataProvider = {
     };
   },
 
+  getAllWithFiltersCourseType: async (resource: string, params: any) => {
+
+    console.log({ resource, params });
+    const url = `${apiUrlDesktopApp}/${resource}/course-type/${params.courseType}`;
+
+    const request = new Request(`${url}`, {
+      method: "GET",
+      headers: new Headers(HEADER),
+    });
+
+    const response = await fetch(request);
+
+    console.log("response :", response);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    console.log({ data });
+
+    return {
+      data: data.metadata,
+    };
+  },
+
   // GetUserLogin: async (resource: string, params: GetPutPresignedUrlparams) => {
   //   const url = `${validUrlApi(resource) ? apiUrlDesktopApp :  apiUrlApp}/${resource}`;
   //   const body = JSON.stringify(params.data);
