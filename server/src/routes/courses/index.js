@@ -2,12 +2,12 @@
 import express from 'express';
 import CourseController from '../../controllers/course.controller.js';
 import { asyncHandle } from '../../auth/checkAuth.js';
-import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+// import { authentication, authenticationV2 } from '../../auth/authUtils.js';
 
 const router = express.Router();
 
 //Authen//
-router.use(authenticationV2);
+// router.use(authenticationV2);
 
 router.post('/', asyncHandle(CourseController.create));
 

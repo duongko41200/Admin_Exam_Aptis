@@ -37,7 +37,8 @@ class CourseFactory {
 		return await baseRepo.getAllWithFilters({ partSkill }, CourseModel);
 	};
 	static getAll = async () => {
-		return await baseRepo.getAll(CourseModel);
+		const res = await CourseModel.find().populate('lectures').exec();
+		return res;
 	};
 	static getAllWithFiltersCourseType = async (filter) => {
 		return await CourseModel.find({

@@ -18,11 +18,11 @@ import lectureRouter from './lectures/index.js'; // Thay đổi require bằng i
 const router = express.Router();
 
 //check apiKey middleware
-router.use(apiKey);
+// router.use(apiKey);
 
 //check permission
 
-router.unsubscribe(String(permission("000")));
+// router.unsubscribe(String(permission("000")));
 
 // Các route
 router.use('/v1/api', accessRouter);

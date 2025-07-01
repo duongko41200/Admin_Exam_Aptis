@@ -85,42 +85,42 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 	 * 6_OK all => return next()
 	 */
 
-	const userId = req.headers[HEADER.CLIENT_ID];
-	if (!userId) throw new AuthFailureError('Invalid request: missing client id');
+	// const userId = req.headers[HEADER.CLIENT_ID];
+	// if (!userId) throw new AuthFailureError('Invalid request: missing client id');
 
-	//2
-	const KeyStore = await keyTokenService.findByUserId(userId);
-	if (!KeyStore) throw new NotFoundError('Not found KeyStore');
+	// //2
+	// const KeyStore = await keyTokenService.findByUserId(userId);
+	// if (!KeyStore) throw new NotFoundError('Not found KeyStore');
 
-	//3
-	const refreshToken = req.headers[HEADER.REFRESHTOKEN];
-	if (refreshToken) {
-		try {
-			const decodeUser = JWT.verify(refreshToken, KeyStore.privateKey);
-			if (userId !== decodeUser.userId) throw new AuthFailureError('Invalid user');
-			req.keyStore = KeyStore;
-			req.user = decodeUser;
-			req.refreshToken = refreshToken;
-			return next();
-		} catch (error) {
+	// //3
+	// const refreshToken = req.headers[HEADER.REFRESHTOKEN];
+	// if (refreshToken) {
+	// 	try {
+	// 		const decodeUser = JWT.verify(refreshToken, KeyStore.privateKey);
+	// 		if (userId !== decodeUser.userId) throw new AuthFailureError('Invalid user');
+	// 		req.keyStore = KeyStore;
+	// 		req.user = decodeUser;
+	// 		req.refreshToken = refreshToken;
+	// 		return next();
+	// 	} catch (error) {
 
-			console.log(`error tesst : `, error);
-			throw error;
-		}
-	}
+	// 		console.log(`error tesst : `, error);
+	// 		throw error;
+	// 	}
+	// }
 
-	const accessToken = req.headers[HEADER.AUTHORIZATION];
-	if (!accessToken) throw new AuthFailureError('Invalid Request');
+	// const accessToken = req.headers[HEADER.AUTHORIZATION];
+	// if (!accessToken) throw new AuthFailureError('Invalid Request');
 
 	//4
 	try {
-		const decodeUser = JWT.verify(accessToken, KeyStore.publicKey);
+		// const decodeUser = JWT.verify(accessToken, KeyStore.publicKey);
 
-		// console.log({ decodeUser });
-		if (userId !== decodeUser.userId)
-			throw new AuthFailureError('Invalid Userid');
-		req.keyStore = KeyStore;
-		req.user = decodeUser;
+		// // console.log({ decodeUser });
+		// if (userId !== decodeUser.userId)
+		// 	throw new AuthFailureError('Invalid Userid');
+		// req.keyStore = KeyStore;
+		// req.user = decodeUser;
 		return next();
 	} catch (error) {
 
