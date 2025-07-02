@@ -11,6 +11,7 @@ const ADMIN: Permission = {
   listenings: "*",
   courses: "*",
   lectures: "*",
+  assignments: "*",
 };
 const EDIT: Permission = {
   users: ["list", "show", "edit"],
@@ -21,6 +22,7 @@ const EDIT: Permission = {
   listenings: ["list", "show", "edit", "delete"],
   courses: ["list", "show", "edit", "delete"],
   lectures: ["list", "show", "edit", "delete"],
+  assignments: ["list", "show", "edit", "delete"],
 };
 const VIEW: Permission = {
   users: ["list", "show", "edit"],
@@ -32,6 +34,7 @@ const VIEW: Permission = {
   listenings: ["list", "show"],
   courses: ["list", "show"],
   lectures: ["list", "show"],
+  assignments: ["list", "show"],
 };
 
 const ROLES_MAP: {

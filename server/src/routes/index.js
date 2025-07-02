@@ -14,15 +14,16 @@ import listeningRouter from './listening/index.js'
 
 import courseRouter from './courses/index.js'; // Thay đổi require bằng import
 import lectureRouter from './lectures/index.js'; // Thay đổi require bằng import
+import assignmentRouter from './assignment/index.js'; // Thay đổi require bằng import
 
 const router = express.Router();
 
 //check apiKey middleware
-// router.use(apiKey);
+router.use(apiKey);
 
 //check permission
 
-// router.unsubscribe(String(permission("000")));
+router.unsubscribe(String(permission("000")));
 
 // Các route
 router.use('/v1/api', accessRouter);
@@ -38,5 +39,6 @@ router.use('/v1/api/speakings', speakingRouter);
 router.use('/v1/api/listenings', listeningRouter);
 router.use('/v1/api/courses', courseRouter);
 router.use('/v1/api/lectures', lectureRouter);	
+router.use('/v1/api/assignments', assignmentRouter); // Thêm route cho assignments
 
 export default router;
