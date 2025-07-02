@@ -37,7 +37,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Tutorial- CMS",
-      items: ["Aptis/CMS/four-skill"],
+      items: ["Aptis/CMS/Intro","Aptis/CMS/four-skill"],
     },
   ],
 };
