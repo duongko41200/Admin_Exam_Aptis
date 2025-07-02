@@ -25,7 +25,7 @@ router.post(
 	'/filters',
 	asyncHandle(WritingController.getAllWithFilters)
 );
-
+router.delete("/:id", asyncHandle(WritingController.deleteById));
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
 

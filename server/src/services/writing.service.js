@@ -46,7 +46,7 @@ class WritingFactory {
 		);
 	};
 
-	static deleteWritingById = async (id) => {
+	static deleteById = async (id) => {
 		return await WritingModel.deleteOne({ _id: id }).lean();
 	};
 
