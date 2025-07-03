@@ -2,16 +2,25 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Tổng quan 
 
-Let's discover **Docusaurus in less than 10 minutes**.
+Màn hình Tổng quát của CMS
 
-## Getting Started
+![Locale Dropdown](./img/tong-quat.png)
+
+Đây là màn hình của trang quản lý của phần mềm.
+**gồm có:** 
+
+  **SideBar:** khung bên trái ( có 4 mục)
+
+  **Danh sách nội dung** : Khung bên phải 
+
+
+## 1. User INFOMATION
 
 Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
