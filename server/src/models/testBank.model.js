@@ -62,7 +62,6 @@ const testBankSchema = new Schema(
         required: true,
         default: [],
       },
-
     },
     reading: {
       part1: {
@@ -121,6 +120,12 @@ const testBankSchema = new Schema(
         required: true,
         default: [],
       },
+    },
+    classRoomId: {
+      type: Schema.Types.ObjectId,
+      ref: "ClassRoom",
+      required: false,
+      default: [],
     },
   },
   {

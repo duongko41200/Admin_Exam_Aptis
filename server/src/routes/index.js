@@ -15,6 +15,7 @@ import listeningRouter from './listening/index.js'
 import courseRouter from './courses/index.js'; // Thay đổi require bằng import
 import lectureRouter from './lectures/index.js'; // Thay đổi require bằng import
 import assignmentRouter from './assignment/index.js'; // Thay đổi require bằng import
+import classRoomRouter from './class-room/index.js'; // Thay đổi require bằng import
 
 const router = express.Router();
 
@@ -39,6 +40,7 @@ router.use('/v1/api/speakings', speakingRouter);
 router.use('/v1/api/listenings', listeningRouter);
 router.use('/v1/api/courses', courseRouter);
 router.use('/v1/api/lectures', lectureRouter);	
-router.use('/v1/api/assignments', assignmentRouter); // Thêm route cho assignments
+router.use('/v1/api/assignments', assignmentRouter); 
+router.use('/v1/api/classrooms', classRoomRouter);
 
 export default router;

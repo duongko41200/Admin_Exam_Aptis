@@ -12,6 +12,7 @@ const ADMIN: Permission = {
   courses: "*",
   lectures: "*",
   assignments: "*",
+  classrooms: "*",
 };
 const EDIT: Permission = {
   users: ["list", "show", "edit"],
@@ -23,6 +24,7 @@ const EDIT: Permission = {
   courses: ["list", "show", "edit", "delete"],
   lectures: ["list", "show", "edit", "delete"],
   assignments: ["list", "show", "edit", "delete"],
+  classrooms: ["list", "show", "edit", "delete"],
 };
 const VIEW: Permission = {
   users: ["list", "show", "edit"],
@@ -35,6 +37,7 @@ const VIEW: Permission = {
   courses: ["list", "show"],
   lectures: ["list", "show"],
   assignments: ["list", "show"],
+  classrooms: ["list", "show"],
 };
 
 const ROLES_MAP: {

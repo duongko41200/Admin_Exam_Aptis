@@ -1,15 +1,15 @@
 'use strict';
 
 import { SuccessResponse } from '../cores/success.response.js';
-import TestBankFactory from '../services/testBank.service.js';
+import ClassRoomFactory from '../services/classRoom.service.js';
 
-class TestBankController {
+class ClassRoomController {
 	create = async (req, res, next) => {
 		console.log('test data', req.body);
 
 		new SuccessResponse({
 			message: 'creat new bo de success!',
-			metadata: await TestBankFactory.createTestBank(req.body),
+			metadata: await ClassRoomFactory.createTestBank(req.body),
 		}).send(res);
 	};
 	getOneById = async (req, res, next) => {
@@ -19,9 +19,19 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getOneById(id),
+			metadata: await ClassRoomFactory.getOneById(id),
 		}).send(res);
 	};
+	getAllWithFiltersCourseType = async (req, res, next) => { 
+		const { courseType } = req.params;
+
+		console.log('courseType:', courseType);
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await ClassRoomFactory.getAllWithFiltersCourseType(courseType),
+		}).send(res);
+	}
 	updateOneById = async (req, res, next) => {
 		const { id } = req.params;
 		const data = req.body;
@@ -30,7 +40,7 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'update new Reading success!',
-			metadata: await TestBankFactory.updateOneById(id, data),
+			metadata: await ClassRoomFactory.updateOneById(id, data),
 		}).send(res);
 	};
 
@@ -45,7 +55,7 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new BO DE success!',
-			metadata: await TestBankFactory.getAllWithQuery({ filter, range, sort }),
+			metadata: await ClassRoomFactory.getAllWithQuery({ filter, range, sort }),
 		}).send(res);
 	};
 
@@ -54,31 +64,27 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getAllWithFilters(req.body),
+			metadata: await ClassRoomFactory.getAllWithFilters(req.body),
 		}).send(res);
 	};
 
 	getAll = async (req, res, next) => {
 		new SuccessResponse({
 			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getAll(),
+			metadata: await ClassRoomFactory.getAll(),
 		}).send(res);
 	};
+	deleteOneById = async (req, res, next) => {
+		const { id } = req.params;
 
-	
-	  deleteById = async (req, res, next) => {
-		console.log(" data req:", req.params);
-	
 		new SuccessResponse({
-      message: "delete record success!",
-      metadata: await TestBankFactory.deleteTestBankById({
-        _id: req.params.id,
-      }),
-    }).send(res);
-	  };
+			message: 'delete new Reading success!',
+			metadata: await ClassRoomFactory.deleteTestBankById(id),
+		}).send(res);
+	};
 	// //QUERY//
 
 	//END QUERY
 }
 
-export default new TestBankController();
+export default new ClassRoomController();

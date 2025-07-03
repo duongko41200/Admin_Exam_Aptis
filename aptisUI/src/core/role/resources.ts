@@ -52,6 +52,12 @@ import {
   AssignmentEdit,
   AssignmentShow,
 } from "../../pages/Assignment";
+import {
+  ClassRoomList,
+  ClassRoomCreate,
+  ClassRoomEdit,
+  ClassRoomShow,
+} from "../../pages/ClassRoom";
 
 const Resources: ResourceIF[] = [
   {
@@ -138,6 +144,16 @@ const Resources: ResourceIF[] = [
     icon: Dashboard,
     resource: "assignments",
     label: "Bài tập hàng ngày",
+  },
+
+  {
+    list: ClassRoomList,
+    edit: ClassRoomEdit,
+    create: ClassRoomCreate,
+    show: ClassRoomShow,
+    icon: Dashboard,
+    resource: "classrooms",
+    label: "Lớp học",
   },
 ];
 

@@ -27,6 +27,8 @@ router.put(
 	asyncHandle(TestBankController.updateOneById)
 );
 
+
+router.delete("/:id", asyncHandle(TestBankController.deleteById));
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
 

@@ -1,13 +1,13 @@
 "use strict";
 
 import mongoose from "mongoose";
-import AssignmentModel from "../models/assignment.model.js";
+import ClassRoomModel from "../models/classRoom.model.js";
 import baseRepo from "./base-repo/baseRepo.js";
 
-class AssignmentFactory {
+class ClassRoomFactory {
   static createTestBank = async (data) => {
     try {
-      const reading = await AssignmentModel.create(data);
+      const reading = await ClassRoomModel.create(data);
       return reading ? reading : null;
     } catch (error) {
       console.log("error: là: ", error);
@@ -15,53 +15,56 @@ class AssignmentFactory {
     }
   };
   static getOneById = async (id) => {
-    return await baseRepo.getOneById({ id }, AssignmentModel);
+    // return await baseRepo.getOneByIdExtend(
+    //   { id, populate: "assignments.assignmentId" },
+    //   ClassRoomModel
+    // );
+    return await baseRepo.getOneById({ id }, ClassRoomModel);
   };
 
   static getAllWithQuery = async ({ filter, range, sort }) => {
     return await baseRepo.getAllWithQuery(
       { filter, range, sort },
-      AssignmentModel
+      ClassRoomModel
     );
   };
   static updateOneById = async (id, data) => {
     console.log("data tesst:", data);
-    return await AssignmentModel.findOneAndUpdate(
-      { _id: id },
-      { ...data },
-      { new: true }
+    return await baseRepo.findOneAndUpdate(
+      { _id: id, data: data },
+      ClassRoomModel
     );
   };
 
   static getAllWithFilters = async ({ partSkill }) => {
-    return await baseRepo.getAllWithFilters({ partSkill }, AssignmentModel);
+    return await baseRepo.getAllWithFilters({ partSkill }, ClassRoomModel);
   };
   static getAll = async () => {
-    const res = await AssignmentModel.find().exec();
+    const res = await ClassRoomModel.find().exec();
     return res;
   };
   static getAllWithFiltersCourseType = async (filter) => {
-    return await AssignmentModel.find({
+    return await ClassRoomModel.find({
       courseType: filter,
     }).lean();
   };
 
   static findById = async (id) => {
-    return await AssignmentModel.findById(id).lean();
+    return await ClassRoomModel.findById(id).lean();
   };
 
   static updateTestBank = async (id, updateData) => {
     const options = { new: true };
-    return await AssignmentModel.findByIdAndUpdate(id, updateData, options);
+    return await ClassRoomModel.findByIdAndUpdate(id, updateData, options);
   };
 
   static deleteTestBankById = async (id) => {
-    return await AssignmentModel.deleteOne({ _id: id }).lean();
+    return await ClassRoomModel.deleteOne({ _id: id }).lean();
   };
 
   static findAll = async () => {
-    return await AssignmentModel.find().lean();
+    return await ClassRoomModel.find().lean();
   };
 }
 
-export default AssignmentFactory;
+export default ClassRoomFactory;

@@ -8,17 +8,28 @@ const COLLECTION_NAME = "ClassRooms";
 const classRoomSchema = new Schema(
   {
     nameRoom: { type: String, required: true, trim: true },
-    dateStart: { type: String, required: true },
-    dateEnd: { type: String, required: true },
+    dateStart: {
+      type: String,
+      required: false,
+      default: null,
+      description: "Start date of the class",
+    },
+    dateEnd: {
+      type: String,
+      required: false,
+      default: null,
+      description: "End date of the class",
+    },
 
     assignments: [
       {
         assignmentId: {
           type: Types.ObjectId,
           ref: "Assignment",
-          required: true,
+          required: false,
+          default: null,
         },
-        datePublic: { type: String, required: true },
+        datePublic: { type: String, required: false, default: null },
       },
     ],
   },
@@ -27,5 +38,5 @@ const classRoomSchema = new Schema(
     collection: COLLECTION_NAME,
   }
 );
-
-export default model(DOCUMENT_NAME, classRoomSchema);
+const ClassRoomModel = model(DOCUMENT_NAME, classRoomSchema);
+export default ClassRoomModel;

@@ -1,25 +1,28 @@
-import { Create, useNotify } from "react-admin";
-import { BaseComponentProps } from "../../types/general";
-import { Box, Typography, Button, Stack } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { Create, useNotify } from "react-admin";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import ListeningIcon from "../../assets/img/listening-icon.svg";
+import ReadingIcon from "../../assets/img/reading-icon.svg";
+import SpeakingIcon from "../../assets/img/speaking-icon.svg";
+import WritingIcon from "../../assets/img/writing-icon.svg";
 import ModalFrame from "../../components/ModalBase/ModalFrame";
-import ReadingBank from "./Reading/ReadingBank";
-import WritingBank from "./Writing/WritingBank";
-import dataProvider from "../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../consts/general";
+import dataProvider from "../../providers/dataProviders/baseDataProvider";
 import {
   RESET_TESTBANK_DATA,
   SET_TESTBANK_DATA_EDIT,
 } from "../../store/feature/testBank";
-import ReadingIcon from "../../assets/img/reading-icon.svg";
-import ListeningIcon from "../../assets/img/listening-icon.svg";
-import SpeakingIcon from "../../assets/img/speaking-icon.svg";
-import WritingIcon from "../../assets/img/writing-icon.svg";
-import SpeakingBank from "./Speaking/SpeakingBank";
 import ListeningBank from "./Listening/ListeningBank";
+import ReadingBank from "./Reading/ReadingBank";
+import SpeakingBank from "./Speaking/SpeakingBank";
+import WritingBank from "./Writing/WritingBank";
 
 const ModuleContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -119,14 +122,28 @@ const TestBankCreate = ({
   const [partSkill, setPartSkill] = useState<number | null>(null);
   const [typeSkill, setTypeSkill] = useState<string | null>(null);
 
+  const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([
+    {
+      id: "",
+      name: "Chọn lớp học",
+    },
+  ]);
+
+  const [selectedClassId, setSelectedClassId] = useState<number | string>("");
+
+  const handleChange = (event: SelectChangeEvent) => {
+    const value = event.target.value;
+    console.log("Selected class ID:", value);
+    setSelectedClassId(event.target.value);
+  };
+
   const testBankData = useSelector(
     (state: any) => state.testBankStore.testBankData
   );
   const dispatch = useDispatch();
 
   const handleChooseTest = (partId: number, index: number) => {
-
-console.log({first: partId, second: index});
+    console.log({ first: partId, second: index });
 
     setPartSkill(partId);
     setTypeSkill(skillLabels[index]);
@@ -134,18 +151,28 @@ console.log({first: partId, second: index});
   };
 
   const createWritingPartOne = async () => {
+
+    const testBankDataClone = { ...testBankData };
+    testBankDataClone.classRoomId = selectedClassId;
     try {
-      await dataProvider.create("test-banks", { data: testBankData });
+      await dataProvider.create("test-banks", { data: testBankDataClone });
       notify(UPDATED_SUCCESS, { type: "success" });
     } catch (error) {
       console.error(error);
     }
   };
   const updateWritingPartOne = async () => {
+    const testBankDataClone = { ...testBankData };
+    testBankDataClone.classRoomId = selectedClassId;
+
+    // testBankDataClone.classRoomId = selectedClassId;
+
+    console.log("testBankDataClone:::::::::::", testBankDataClone);
+
     try {
       await dataProvider.update("test-banks", {
         id: recordEdit?.id,
-        data: testBankData,
+        data: testBankDataClone,
         previousData: testBankData,
       });
 
@@ -174,18 +201,72 @@ console.log({first: partId, second: index});
     }
   };
 
+  const fetchClassrooms = async () => {
+    try {
+      const response = await dataProvider.getAll("classrooms");
+
+      const classroomList = response.data ?? [];
+
+      console.log("classroomList:::::::::::", response);
+
+      const formattedClassrooms = classroomList.map((classroom: any) => ({
+        id: classroom._id,
+        name: classroom.nameRoom,
+      }));
+
+      console.log("formattedClassrooms:::::::::::", formattedClassrooms);
+
+      setClassrooms(formattedClassrooms);
+    } catch (error) {
+      console.error("Error fetching classrooms:", error);
+      notify("Call api class room lỗi", { type: "error" });
+    }
+  };
+
   useEffect(() => {
     if (!recordEdit) return;
 
-    const { title, listening, reading, writing, speaking } = recordEdit;
+    const { title, listening, reading, writing, speaking, classRoomId } =
+      recordEdit;
 
-    const testBankData = { title, listening, reading, writing, speaking };
+    console.log("recordEdit:::::::::::", recordEdit);
+    setSelectedClassId(classRoomId || "");
+
+    const testBankData = {
+      title,
+      listening,
+      reading,
+      writing,
+      speaking,
+    };
     dispatch(SET_TESTBANK_DATA_EDIT(testBankData));
   }, [recordEdit]);
+
+  useEffect(() => {
+    fetchClassrooms();
+  }, []);
 
   return (
     <Create redirect="list" title="管理ユーザー管理　新規作成">
       <Box>
+        <Box sx={{ minWidth: 120, marginBottom: 2 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Tên lớp học</InputLabel>
+            <Select
+              labelId="classroom-select-label"
+              id="classroom-select"
+              value={selectedClassId}
+              label="Age"
+              onChange={handleChange}
+            >
+              {classrooms.map((cls, idx) => (
+                <MenuItem key={cls.id} value={cls.id}>
+                  {cls.name}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
         <ModuleContainer>
           <Box sx={{ width: "150px" }}>
             <Typography
@@ -233,6 +314,7 @@ console.log({first: partId, second: index});
             ))}
           </Box>
         </ModuleContainer>
+
         <Box>
           {tests.map((test) => (
             <TestContainer key={test.partId}>
@@ -245,9 +327,10 @@ console.log({first: partId, second: index});
                   sx={{ width: "16.42%", textAlign: "center", paddingX: 1 }}
                 >
                   {!(skillLabels[index] === "Writing" && test.partId === 5) &&
+                    !(skillLabels[index] === "Speaking" && test.partId === 5) &&
                     !(
-                      skillLabels[index] === "Speaking" && test.partId === 5
-                    ) &&  !(skillLabels[index] === "Listening" && test.partId === 5) && (
+                      skillLabels[index] === "Listening" && test.partId === 5
+                    ) && (
                       <TestButton
                         variant="contained"
                         sx={{ width: "fit-content", backgroundColor: color }}
@@ -269,7 +352,7 @@ console.log({first: partId, second: index});
           {typeSkill === "Speaking" && <SpeakingBank partSkill={partSkill} />}
           {typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}
           {typeSkill === "Writing" && <WritingBank partSkill={partSkill} />}
-          {typeSkill === "Listening" && <ListeningBank partSkill={partSkill}/>}
+          {typeSkill === "Listening" && <ListeningBank partSkill={partSkill} />}
         </ModalFrame>
       </Box>
       <Box sx={{ width: "100%", minHeight: "100px", position: "relative" }}>

@@ -11,10 +11,10 @@ const assignmentSchema = new Schema(
     description: { type: String },
     dueDate: {
       type: String,
-      required: true,
+      required: false,
       description: "Deadline for the assignment",
     },
-    timeStamp: { type: Number, default: () => Date.now() },
+    MaBoDe: { type: Types.ObjectId, required: true, ref: "TestBank" },
 
     skill: {
       type: String,
