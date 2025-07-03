@@ -1,10 +1,16 @@
-const compression = require('compression');
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const { default: helmet } = require('helmet');
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
+import compression from 'compression';
+import dotenv from 'dotenv';
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
+import initDb from './dbs/init.mongodb.js';
+import { checkOverload } from './helpers/check.connect.js';
+import routes from './routes/index.js';
+
+dotenv.config();
+
 const app = express();
 
 app.use(cors());
@@ -19,14 +25,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.post('https://api.telegram.org/bot6893164702:AAEPdDlqfEy20Np_goXO7R-9cqAgfelPys0/setWebHook?url=https://bot-app-english.vercel.app'
 // );
 
-
 // init db
-require('./dbs/init.mongodb');
-const { checkOverload } = require('./helpers/check.connect');
+// initDb();
 checkOverload();
 
 // init router
-app.use('/', require('./routes/index'));
+app.use('/', routes);
 
 //handling errors
 app.use((req, res, next) => {
@@ -37,6 +41,8 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
 	const statusCode = err.status || 500;
+
+	console.log('looix', err);
 	return res.status(statusCode).json({
 		status: 'err',
 		code: statusCode,
@@ -44,4 +50,5 @@ app.use((err, req, res, next) => {
 		message: err.message || 'Internal Server Error',
 	});
 });
-module.exports = app;
+
+export default app;

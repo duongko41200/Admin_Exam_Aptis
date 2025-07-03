@@ -1,11 +1,11 @@
 'use strict';
 
-const AccessService = require('../services/access.service');
-const {
+import AccessService from '../services/access.service.js';
+import {
 	OK,
 	CREATED,
 	SuccessResponse,
-} = require('../cores/success.response.js');
+} from '../cores/success.response.js';
 
 class AccessController {
 	handleRefreshToken = async (req, res, next) => {
@@ -29,7 +29,7 @@ class AccessController {
 	logout = async (req, res, next) => {
 		new SuccessResponse({
 			message: 'logout success',
-			metadata:await AccessService.logout({ keyStore: req.keyStore })
+			metadata: await AccessService.logout({ keyStore: req.keyStore })
 		}).send(res);
 	};
 
@@ -50,4 +50,4 @@ class AccessController {
 	};
 }
 
-module.exports = new AccessController();
+export default new AccessController();

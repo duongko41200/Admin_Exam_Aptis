@@ -1,10 +1,7 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-const {
-	createTopic,
-	getAllTopc,
-} = require('../models/respositories/text.repo.js');
+import { SuccessResponse } from '../cores/success.response.js';
+import { createTopic, getAllTopc } from '../models/respositories/text.repo.js';
 
 class TopicController {
 	createTopic = async (req, res, next) => {
@@ -32,4 +29,4 @@ class TopicController {
 	//END QUERY
 }
 
-module.exports = new TopicController();
+export default new TopicController();

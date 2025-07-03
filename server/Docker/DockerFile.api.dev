@@ -1,0 +1,24 @@
+# Dockerfile
+
+# Bắt đầu với một image Node.js chính thức
+FROM node:20.12.0-alpine
+
+# Đặt thư mục làm việc trong container
+WORKDIR /app
+
+# Sao chép package.json và package-lock.json (nếu có) từ thư mục gốc vào container
+COPY ../package.json ./  
+
+# Cài đặt các dependencies từ package.json
+RUN yarn install  
+
+# Sao chép thư mục src vào container
+COPY ../src ./src  
+
+# Sao chép tệp server.js vào thư mục làm việc của container
+COPY ../server.js ./server.js
+# Expose port 3000 nếu ứng dụng của bạn chạy trên cổng này
+EXPOSE 3333
+
+# Lệnh để chạy ứng dụng khi container khởi động
+CMD ["yarn", "start"]  

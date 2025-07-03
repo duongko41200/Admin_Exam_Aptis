@@ -1,9 +1,9 @@
 'use strict';
 
-//define FACTORY parten
-const { text, word, sentence } = require('../models/textform.model');
-const { BadRequestError } = require('../cores/Error.response');
-const {
+//define FACTORY pattern
+
+import { BadRequestError } from '../cores/Error.response.js';
+import {
 	findAllInfoText,
 	findListTextByFilter,
 	deleteText,
@@ -13,8 +13,8 @@ const {
 	getAllWithQuery,
 	synchData,
 	getAll,
-} = require('../models/respositories/text.repo');
-const dayjs = require('dayjs');
+} from '../models/respositories/text.repo.js';
+import dayjs from 'dayjs';
 
 class TextFormFactory {
 	/**
@@ -49,29 +49,10 @@ class TextFormFactory {
 
 		console.log({ sort });
 
-		// console.log()
-		// const [sortField, sortOrder] = sort;
-		// const [start, end] = range;
-
-		// const whereClause = Object.fromEntries(
-		//   Object.entries(filter).map(([key, value]) => [
-		//     key,
-		//     {
-		//       search: (value)
-		//         .trim()
-		//         .split(' ')
-		//         .map((word) => `${word} ${word}*`.toLowerCase())
-		//         .join(' '),
-		//     },
-		//   ])
-		// );
-
 		try {
 			const res = await text
 				.find({ userId: userId })
 				.sort({ _id: sortOrder === 'ASC' ? 1 : -1 })
-				// .skip(start || 0)
-				// .limit((end || 0) - (start || 0) + 1)
 				.exec();
 			return res;
 		} catch (error) {
@@ -196,23 +177,23 @@ class TextForm {
 	}
 }
 
-//define sub-class fro diff types word
+//define sub-class for diff types word
 class Word extends TextForm {
 	async createTextForm() {
 		const newWord = await word.create({
 			...this.attributes,
 			userId: this.userId,
 		});
-		if (!newWord) throw new BadRequestError('creat new Word error');
+		if (!newWord) throw new BadRequestError('create new Word error');
 		super.attributes = newWord;
 		const newTextForm = await super.createTextForm(newWord._id);
-		if (!newTextForm) throw new BadRequestError('creat textFrom error');
+		if (!newTextForm) throw new BadRequestError('create textForm error');
 
 		return newTextForm;
 	}
 }
 
-//define sub-class fro diff types sentence
+//define sub-class for diff types sentence
 class Sentence extends TextForm {
 	async createTextForm() {
 		const newSentence = await sentence.create({
@@ -221,12 +202,13 @@ class Sentence extends TextForm {
 		});
 
 		console.log({ newSentence });
-		if (!newSentence) throw new BadRequestError('creat new Word error');
+		if (!newSentence) throw new BadRequestError('create new Sentence error');
 		super.attributes = newSentence;
 		const newTextForm = await super.createTextForm(newSentence._id);
-		if (!newTextForm) throw new BadRequestError('creat textFrom error');
+		if (!newTextForm) throw new BadRequestError('create textForm error');
 
 		return newTextForm;
 	}
 }
-module.exports = TextFormFactory;
+
+export default TextFormFactory;

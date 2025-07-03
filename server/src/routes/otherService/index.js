@@ -1,12 +1,10 @@
 'use strict';
-const express = require('express');
+import express from 'express';
+import { asyncHandle } from '../../auth/checkAuth.js';
+import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+import otherServiceController from '../../controllers/otherService.controller.js';
+
 const router = express.Router();
-const { asyncHandle } = require('../../auth/checkAuth');
-const {
-	authentication,
-	authenticationV2,
-} = require('../../auth/authUtils');
-const otherServiceController = require('../../controllers/otherService.controller');
 
 //Authen//
 router.use(authenticationV2);
@@ -17,4 +15,4 @@ router.get(
 	asyncHandle(otherServiceController.textToVoice)
 );
 
-module.exports = router;
+export default router;

@@ -1,9 +1,6 @@
 'use strict';
 
-
-//!mdbgum: create model partent
-
-const { model, Schema, Types } = require('mongoose'); // Erase if already required
+import { model, Schema } from 'mongoose';
 
 // Declare the Schema of the Mongo model
 const DOCUMENT_NAME = 'Topic';
@@ -30,9 +27,5 @@ const topicSchema = new Schema(
 	}
 );
 
-
-
-
-//Export the model
-module.exports =  model(DOCUMENT_NAME, topicSchema)
-
+// Export the model
+export default model(DOCUMENT_NAME, topicSchema);

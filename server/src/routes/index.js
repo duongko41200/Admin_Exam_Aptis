@@ -1,18 +1,46 @@
 'use strict';
-const express = require('express');
-const { apiKey, permission } = require('../auth/checkAuth');
+import express from 'express';
+import { apiKey, permission } from '../auth/checkAuth.js';
+import accessRouter from './access/index.js'; // Thay đổi require bằng import
+import textFormRouter from './textForm/index.js'; // Thay đổi require bằng import
+import topicRouter from './topic/index.js'; // Thay đổi require bằng import
+import otherServiceRouter from './otherService/index.js'; // Thay đổi require bằng import
+import userRouter from './user/index.js'; // Thay đổi require bằng import
+import readingRouter from './reading/index.js'; // Thay đổi require bằng import
+import testBanksRouter from './test-banks/index.js'; // Thay đổi require bằng import
+import writingRouter from './writing/index.js'; // Thay đổi require bằng import
+import speakingRouter from './speaking/index.js'
+import listeningRouter from './listening/index.js'
+
+import courseRouter from './courses/index.js'; // Thay đổi require bằng import
+import lectureRouter from './lectures/index.js'; // Thay đổi require bằng import
+import assignmentRouter from './assignment/index.js'; // Thay đổi require bằng import
+import classRoomRouter from './class-room/index.js'; // Thay đổi require bằng import
+
 const router = express.Router();
 
-//check apiKey midderware
+//check apiKey middleware
 router.use(apiKey);
 
 //check permission
-router.unsubscribe(permission('000'));
 
-router.use('/v1/api', require('./access'));
-router.use('/v1/api/text', require('./textForm'));
-router.use('/v1/api/topic', require('./topic'))
-router.use('/v1/api/other', require('./otherService'))
-router.use('/v1/api/users', require('./user'))
+router.unsubscribe(String(permission("000")));
 
-module.exports = router;
+// Các route
+router.use('/v1/api', accessRouter);
+router.use('/v1/api/text', textFormRouter);
+router.use('/v1/api/topic', topicRouter);
+router.use('/v1/api/other', otherServiceRouter);
+router.use('/v1/api/users', userRouter);
+router.use('/v1/api/readings', readingRouter);
+router.use('/v1/api/test-banks', testBanksRouter);
+router.use('/v1/api/writings', writingRouter);
+
+router.use('/v1/api/speakings', speakingRouter);
+router.use('/v1/api/listenings', listeningRouter);
+router.use('/v1/api/courses', courseRouter);
+router.use('/v1/api/lectures', lectureRouter);	
+router.use('/v1/api/assignments', assignmentRouter); 
+router.use('/v1/api/classrooms', classRoomRouter);
+
+export default router;

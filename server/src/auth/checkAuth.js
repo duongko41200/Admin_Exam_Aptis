@@ -1,14 +1,16 @@
 'use strict';
 
-const { findbyId } = require('../services/apikey.service');
+import { findbyId } from '../services/apikey.service.js';
 
 const HEADER = {
 	API_KEY: 'x-api-key',
 	AUTHORIZATION: 'authorization',
 };
 
-const apiKey = async (req, res, next) => {
+export const apiKey = async (req, res, next) => {
 	try {
+
+		console.log("req.headers", req.headers);
 		const key = req.headers[HEADER.API_KEY]?.toString();
 		console.log({ key });
 		if (!key) {
@@ -34,7 +36,7 @@ const apiKey = async (req, res, next) => {
 	}
 };
 
-const permission = (permission) => {
+export const permission = (permission) => {
 	return (req, res, next) => {
 		if (!req.objKey.permissions) {
 			return res.status(403).json({
@@ -53,13 +55,8 @@ const permission = (permission) => {
 	};
 };
 
-const asyncHandle = (fn) => {
+export const asyncHandle = (fn) => {
 	return (req, res, next) => {
 		fn(req, res, next).catch(next)
 	};
-};
-module.exports = {
-	apiKey,
-	permission,
-	asyncHandle
 };

@@ -1,12 +1,10 @@
 'use strict';
-const express = require('express');
+import express from 'express';
+import TextFormController from '../../controllers/textForm.controller.js';
+import { asyncHandle } from '../../auth/checkAuth.js';
+import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+
 const router = express.Router();
-const TextFormController = require('../../controllers/textForm.controller');
-const { asyncHandle } = require('../../auth/checkAuth');
-const {
-	authentication,
-	authenticationV2,
-} = require('../../auth/authUtils');
 
 //Authen//
 router.use(authenticationV2);
@@ -41,4 +39,4 @@ router.patch(
 );
 router.post('/synch', asyncHandle(TextFormController.synchDataText));
 
-module.exports = router;
+export default router;

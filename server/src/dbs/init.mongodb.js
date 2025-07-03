@@ -1,10 +1,22 @@
 'use strict';
 
-const mongoose = require('mongoose');
-const { db: { host, port, name } } = require('../configs/config.mongodb')
+import mongoose from 'mongoose';
+import db from '../configs/config.mongodb.js';
+import { countConnect } from '../helpers/check.connect.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
+const { host, port, name } = db.db;
 
-let connectString =''
+let connectString = '';
+
+// Kiểm tra nếu db cấu hình không có đủ giá trị
+if (!host || !port || !name) {
+	console.error(
+		'MongoDB configuration is missing required parameters: host, port, or name'
+	);
+	process.exit(1); // Dừng ứng dụng nếu thiếu cấu hình
+}
 
 if (process.env.NODE_ENV === 'dev') {
 	connectString = `mongodb://${host}:${port}/${name}`;
@@ -12,33 +24,32 @@ if (process.env.NODE_ENV === 'dev') {
 	connectString = process.env.MONGO_URL_PRO;
 }
 
+if (!connectString) {
+	console.error('MongoDB connection string is not defined.');
+	process.exit(1); // Dừng ứng dụng nếu không có kết nối MongoDB
+}
 
+console.log('MongoDB connect string:', connectString);
 
-console.log(connectString)
-const {countConnect} = require("../helpers/check.connect")
-
-class Database {
+const instanceMongodb = new (class Database {
 	constructor() {
 		this.connect();
 	}
 
-	//connect
-	connect(type = 'mongodb') {
-		if (1 === 1) {
+	connect() {
+		if (process.env.NODE_ENV === 'dev') {
 			mongoose.set('debug', true);
 			mongoose.set('debug', { color: true });
 		}
 
 		mongoose
-			.connect(connectString, {
-				maxPoolSize:50
+			.connect(connectString, { maxPoolSize: 50 })
+			.then(() => {
+				console.log('MongoDB connected successfully', countConnect());
 			})
-			.then((_) => {
-
-
-				console.log('connect Mongodb Sucessfully',countConnect());
-			})
-			.catch((err) => console.log('Error Connect', err));
+			.catch((err) => {
+				console.error('Error connecting to MongoDB:', err);
+			});
 	}
 
 	static getInstance() {
@@ -47,7 +58,6 @@ class Database {
 		}
 		return Database.instance;
 	}
-}
+})();
 
-const instanceMongodb = Database.getInstance();
-module.exports = instanceMongodb;
+export default instanceMongodb;

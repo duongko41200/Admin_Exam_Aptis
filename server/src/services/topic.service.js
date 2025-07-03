@@ -1,11 +1,9 @@
 'use strict';
 
-//define FACTORY parten
-const { text, word, sentence } = require('../models/textform.model');
-const { BadRequestError } = require('../cores/Error.response');
-const {
-	findAllInfoText,
-} = require('../models/respositories/text.repo');
+//define FACTORY pattern
+import { text, word, sentence } from '../models/textform.model.js';
+import { BadRequestError } from '../cores/Error.response.js';
+import { findAllInfoText } from '../models/respositories/text.repo.js';
 
 class TopicFactory {
 	/**
@@ -59,23 +57,23 @@ class TextForm {
 	}
 }
 
-//define sub-class fro diff types word
+//define sub-class for diff types word
 class Word extends TextForm {
 	async createTextForm() {
 		const newWord = await word.create({
 			...this.attributes,
 			userId: this.userId,
 		});
-		if (!newWord) throw new BadRequestError('creat new Word error');
+		if (!newWord) throw new BadRequestError('create new Word error');
 		super.attributes = newWord;
 		const newTextForm = await super.createTextForm(newWord._id);
-		if (!newTextForm) throw new BadRequestError('creat textFrom error');
+		if (!newTextForm) throw new BadRequestError('create textForm error');
 
 		return newTextForm;
 	}
 }
 
-//define sub-class fro diff types sentence
+//define sub-class for diff types sentence
 class Sentence extends TextForm {
 	async createTextForm() {
 		const newSentence = await sentence.create({
@@ -83,13 +81,14 @@ class Sentence extends TextForm {
 			userId: this.userId,
 		});
 
-		console.log({newSentence})
-		if (!newSentence) throw new BadRequestError('creat new Word error');
+		console.log({ newSentence });
+		if (!newSentence) throw new BadRequestError('create new Sentence error');
 		super.attributes = newSentence;
 		const newTextForm = await super.createTextForm(newSentence._id);
-		if (!newTextForm) throw new BadRequestError('creat textFrom error');
+		if (!newTextForm) throw new BadRequestError('create textForm error');
 
 		return newTextForm;
 	}
 }
-module.exports = TopicFactory;
+
+export default TopicFactory;

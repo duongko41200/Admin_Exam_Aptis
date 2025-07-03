@@ -4,10 +4,10 @@ import { generateRole } from '../core/role/permissions'
 
 // const apiUrl = `${process.env.NEXT_PUBLIC_API_URL ?? 'http:local: 3000'}/api/cms`;
 
-const apiUrl = `https://bot-app-english-apiss.vercel.app/v1/api`
+const apiUrl = `http://localhost:3333/v1/api`
 const httpClient = fetchUtils.fetchJson
 const API_KEY =
-  '4379e3b406e606110a01e8fbe364120fdc58be39a9f30431476dd53ad14b20fe66f52423a3e4546dfa272f4c389822299709414bb44b6b3ffce7f04292be2556'
+  "4379e3b406e606110a01e8fbe364120fdc58be39a9f30431476dd53ad14b20fe66f52423a3e4546dfa272f4c389822299709414bb44b6b3ffce7f04292be2556";
 
 const authProvider: AuthProvider = {
   // authentication

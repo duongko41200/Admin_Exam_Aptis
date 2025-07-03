@@ -1,10 +1,12 @@
 'use strict';
 
-const { Schema, model } = require('mongoose'); // Erase if already required
+import mongoose from 'mongoose';
+
+const { Schema, model } = mongoose;
 
 const DOCUMENT_NAME = 'Key';
 const COLLECTION_NAME = 'Keys';
-var keyTokenSchema = new Schema(
+const keyTokenSchema = new Schema(
 	{
 		user: {
 			type: Schema.Types.ObjectId,
@@ -25,7 +27,7 @@ var keyTokenSchema = new Schema(
 		},
 		refreshToken: {
 			type: String,
-			require:true
+			require: true
 		}
 	},
 	{
@@ -34,5 +36,5 @@ var keyTokenSchema = new Schema(
 	}
 );
 
-//Export the model
-module.exports = model(DOCUMENT_NAME, keyTokenSchema);
+// Export the model
+export default model(DOCUMENT_NAME, keyTokenSchema);

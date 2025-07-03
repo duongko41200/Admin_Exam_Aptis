@@ -1,0 +1,7 @@
+server/
+├── src/
+├── package.json       
+└── Dockerfile/              
+    ├── Dockerfile
+    └── docker-compose.yml
+|__ server.js   

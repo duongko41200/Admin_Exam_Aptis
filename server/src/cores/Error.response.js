@@ -1,3 +1,5 @@
+import { ReasonPhrases, StatusCodes } from '../utils/httpStatusCode.js';
+
 'use strict';
 
 const StatusCode = {
@@ -9,11 +11,7 @@ const ReasonStatusCode = {
 	FOBIDEN: 'Bad request Error',
 	CONFLIC: 'Conflic Error',
 };
-const {
-	
-	ReasonPhrases,
-	StatusCodes,
-} = require('../utils/httpStatusCode');
+
 
 class ErrorResponse extends Error {
 	constructor(message, status) {
@@ -38,21 +36,20 @@ class BadRequestError extends ErrorResponse {
 		super(message, statusCode);
 	}
 }
-class AuthFailureError extends ErrorResponse{
-	constructor(message = ReasonPhrases.UNAUTHORIZED, StatusCode = StatusCodes.UNAUTHORIZED) {
-		super(message,StatusCode)
+class AuthFailureError extends ErrorResponse {
+	constructor(message = ReasonPhrases.UNAUTHORIZED, statusCode = StatusCodes.UNAUTHORIZED) {
+		super(message, statusCode);
 	}
 }
-class NotFoundError extends ErrorResponse{
-	constructor(message = ReasonPhrases.NOT_FOUND, StatusCode = StatusCodes.NOT_FOUND) {
-		super(message,StatusCode)
+class NotFoundError extends ErrorResponse {
+	constructor(message = ReasonPhrases.NOT_FOUND, statusCode = StatusCodes.NOT_FOUND) {
+		super(message, statusCode);
 	}
 }
-class ForbiddenError  extends ErrorResponse{
-	constructor(message = ReasonPhrases.FORBIDDEN, StatusCode = StatusCodes.FORBIDDEN) {
-		super(message,StatusCode)
+class ForbiddenError extends ErrorResponse {
+	constructor(message = ReasonPhrases.FORBIDDEN, statusCode = StatusCodes.FORBIDDEN) {
+		super(message, statusCode);
 	}
 }
 
-
-module.exports = { ConflcRequestError, BadRequestError,AuthFailureError,NotFoundError,ForbiddenError };
+export { ConflcRequestError, BadRequestError, AuthFailureError, NotFoundError, ForbiddenError };

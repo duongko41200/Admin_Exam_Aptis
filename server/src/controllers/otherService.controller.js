@@ -1,11 +1,8 @@
 'use strict';
 
-const { SuccessResponse } = require('../cores/success.response.js');
-const {
-	createTopic,
-	getAllTopc,
-} = require('../models/respositories/text.repo.js');
-const axios = require('axios');
+import { SuccessResponse } from '../cores/success.response.js';
+import { createTopic, getAllTopc } from '../models/respositories/text.repo.js';
+import axios from 'axios';
 
 class OtherController {
 	textToVoice = async (req, res, next) => {
@@ -37,4 +34,4 @@ class OtherController {
 	};
 }
 
-module.exports = new OtherController();
+export default new OtherController();

@@ -73,11 +73,15 @@ const userContentLength = {
   }
 }
 
+
+const SESSION_TOKEN_SECRET = 'aptis_academy_pro'
+
 export {
   defaultUsers,
   // countryList,
   userRoles,
   userContentLength,
   ROLE_ACCOUNT,
-  ROLE_ACCOUNT_TEXT
+  ROLE_ACCOUNT_TEXT,
+  SESSION_TOKEN_SECRET
 }
