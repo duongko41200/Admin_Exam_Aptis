@@ -11,30 +11,11 @@ const router = express.Router();
 
 router.post("/", asyncHandle(ClassRoomController.create));
 router.get("/", asyncHandle(ClassRoomController.getAllWithQuery));
-router.get('/batch', asyncHandle(ClassRoomController.getAll));
-// router.post(
-//     '/filters',
-//     asyncHandle(ClassRoomController.getAllWithFilters)
-// );
-router.get(
-    '/get-id/:id',
-    asyncHandle(ClassRoomController.getOneById)
-);
+router.get("/batch", asyncHandle(ClassRoomController.getAll));
 
-router.put(
-    '/:id',
-    asyncHandle(ClassRoomController.updateOneById)
-);
-router.delete(
-    '/:id',
-    asyncHandle(ClassRoomController.deleteOneById)
-);
-// router.get(
-//     '/course-type/:courseType',
-//     asyncHandle(ClassRoomController.getAllWithFiltersCourseType)
-// );
+router.get("/get-id/:id", asyncHandle(ClassRoomController.getOneById));
 
-// QUERY
-// router.get('/all', asyncHandle(TopicController.getAllTopic));
+router.put("/:id", asyncHandle(ClassRoomController.updateOneById));
+router.delete("/:id", asyncHandle(ClassRoomController.deleteOneById));
 
 export default router;

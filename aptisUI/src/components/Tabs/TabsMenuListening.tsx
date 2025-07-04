@@ -7,6 +7,7 @@ import ListeningPartOne from "../../pages/Listening/ListeningPart/ListeningPartO
 import ListeningPartTwo from "../../pages/Listening/ListeningPart/ListeningPartTwo";
 import ListeningPartThree from "../../pages/Listening/ListeningPart/ListeningPartThree";
 import ListeningPartFour from "../../pages/Listening/ListeningPart/ListeningPartFour";
+import { useNavigate } from "react-router-dom";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,9 +40,13 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  const navigate = useNavigate();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+  const handleCancel = () => {
+    navigate("/listenings");
   };
 
   return (
@@ -59,16 +64,28 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <ListeningPartOne showDeleteButton={false} />
+        <ListeningPartOne
+          showDeleteButton={false}
+          handleCancel={handleCancel}
+        />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <ListeningPartTwo showDeleteButton={false} />
+        <ListeningPartTwo
+          showDeleteButton={false}
+          handleCancel={handleCancel}
+        />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <ListeningPartThree showDeleteButton={false} />
+        <ListeningPartThree
+          showDeleteButton={false}
+          handleCancel={handleCancel}
+        />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <ListeningPartFour showDeleteButton={false} />
+        <ListeningPartFour
+          showDeleteButton={false}
+          handleCancel={handleCancel}
+        />
       </CustomTabPanel>
     </Box>
   );

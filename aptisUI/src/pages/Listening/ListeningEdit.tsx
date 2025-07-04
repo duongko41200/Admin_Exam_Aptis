@@ -14,16 +14,44 @@ const ListeningEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const record = useRecordContext();
   const resourcePath = `/${resource}`;
 
+  const handleCancel = () => {
+    navigate(resourcePath);
+  };
+
   const renderListeningPart = () => {
     switch (record?.questionPart) {
       case "ONE":
-        return <ListeningPartOne dataListeningPartOne={record} statusHandler='edit' />;
+        return (
+          <ListeningPartOne
+            dataListeningPartOne={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "TWO":
-        return <ListeningPartTwo dataListeningPartTwo={record} statusHandler='edit'  />;
+        return (
+          <ListeningPartTwo
+            dataListeningPartTwo={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "THREE":
-        return <ListeningPartThree dataListeningPartThree={record} statusHandler='edit' />;
+        return (
+          <ListeningPartThree
+            dataListeningPartThree={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "FOUR":
-        return <ListeningPartFour dataListeningPartFour={record} statusHandler='edit' />;
+        return (
+          <ListeningPartFour
+            dataListeningPartFour={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       default:
         return null;
     }

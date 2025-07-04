@@ -11,7 +11,7 @@ import CustomForm from "../../components/CustomForm";
 import { BaseComponentProps } from "../../types/general";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UPDATED_SUCCESS } from "../../consts/general";
 import baseDataProvider from "../../providers/dataProviders/baseDataProvider";
 
@@ -20,23 +20,14 @@ const ClassRoomCreate = ({ resource }: BaseComponentProps) => {
   const notify = useNotify();
   const navigate = useNavigate();
   // assignments should be fetched from the server or context
-  const [asssignments, setAssignments] = useState([
-    {
-      id: "677ead29826106165ca47945",
-      name: "Vội vàng",
-      description: "Vội vàng",
-    },
-    { id: "677eaf2a826106165ca479c2", name: "travel" },
-    { id: "677eaf2a826106165ca479c2", name: "Activity" },
-    { id: "677fcd1acdf0d2a9b1a1dc2a", name: "Hobby" },
-  ]);
+  const [asssignments, setAssignments] = useState([]);
 
   const [assignmentCount, setAssignmentCount] = useState([]);
 
   const handleAddAssignment = () => {
     setAssignmentCount((prev) => [
       ...prev,
-      { id: prev.length, name: "", count: 0 },
+      { id: prev, name: "", count: 0 },
     ]);
   };
   const handleSave = async (values) => {
@@ -51,6 +42,23 @@ const ClassRoomCreate = ({ resource }: BaseComponentProps) => {
       notify("Không tạo thành công", { type: "error" });
     }
   };
+
+  useEffect(() => {
+    const fetchAssignments = async () => {
+      try {
+        const response = await baseDataProvider.getAll("assignments");
+        const formattedAssignments = response.data.map((assignment) => ({
+          id: assignment._id,
+          name: assignment.name,
+        }));
+        setAssignments(formattedAssignments);
+      } catch (error) {
+        console.error("Error fetching assignments:", error);
+      }
+    };
+
+    fetchAssignments();
+  }, []);
 
   return (
     <Create redirect="list" title="管理ユーザー管理　新規作成">
@@ -93,7 +101,7 @@ const ClassRoomCreate = ({ resource }: BaseComponentProps) => {
             overflowY: "auto",
           }}
         >
-          {assignmentCount &&
+          {assignmentCount && assignmentCount.length > 0 ? (
             assignmentCount.map((item, index) => {
               return (
                 <Box
@@ -122,7 +130,10 @@ const ClassRoomCreate = ({ resource }: BaseComponentProps) => {
                   />
                 </Box>
               );
-            })}
+            })
+          ) : (
+            <Box> Hãy nhấn nút Thêm để có thêm thêm Assignment </Box>
+          )}
         </Box>
       </CustomForm>
     </Create>

@@ -14,16 +14,44 @@ const ReadingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const record = useRecordContext();
   const resourcePath = `/${resource}`;
 
+  const handleCancel = () => {
+    navigate(resourcePath);
+  };
+
   const renderReadingPart = () => {
     switch (record?.data.questions.questionPart) {
       case "ONE":
-        return <ReadingPartOne dataReadingPartOne={record} statusHandler='edit' />;
+        return (
+          <ReadingPartOne
+            dataReadingPartOne={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "TWO":
-        return <ReadingPartTwo dataReadingPartTwo={record} statusHandler='edit'  />;
+        return (
+          <ReadingPartTwo
+            dataReadingPartTwo={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "THREE":
-        return <ReadingPartThree dataReadingPartThree={record} statusHandler='edit' />;
+        return (
+          <ReadingPartThree
+            dataReadingPartThree={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       case "FOUR":
-        return <ReadingPartFour dataReadingPartFour={record} statusHandler='edit' />;
+        return (
+          <ReadingPartFour
+            dataReadingPartFour={record}
+            statusHandler="edit"
+            handleCancel={handleCancel}
+          />
+        );
       default:
         return null;
     }

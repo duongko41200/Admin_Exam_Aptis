@@ -1,25 +1,21 @@
-import { ROLE_ACCOUNT, userRoles } from "../../consts/user";
-import {
-  TextInput,
-  SelectInput,
-  PasswordInput,
-  useNotify,
-  useRecordContext,
-  EditBase,
-  Title,
-  DateTimeInput,
-  Button,
-} from "react-admin";
-import CustomForm from "../../components/CustomForm";
-import { validateUserEdition } from "./formValidator";
-import { BaseComponentProps, RecordValue } from "../../types/general";
 import { Box } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import { boxStyles } from "../../styles";
 import { useEffect, useState } from "react";
-import { getClientCookieValue } from "../../utils/cookies";
-import { HEADER } from "../../consts/access";
+import {
+  Button,
+  DateTimeInput,
+  EditBase,
+  SelectInput,
+  TextInput,
+  Title,
+  useNotify,
+  useRecordContext
+} from "react-admin";
+import { useNavigate } from "react-router-dom";
+import CustomForm from "../../components/CustomForm";
 import { UPDATED_SUCCESS } from "../../consts/general";
+import baseDataProvider from "../../providers/dataProviders/baseDataProvider";
+import { boxStyles } from "../../styles";
+import { BaseComponentProps, RecordValue } from "../../types/general";
 
 const ClassRoomEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const resourcePath = `/${resource}`;
@@ -31,15 +27,7 @@ const ClassRoomEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const [isDisableName, setIsDisableName] = useState(false);
 
   // Fetch assigned api
-  const [assignments, setAssignments] = useState([
-    {
-      id: "677ead29826106165ca47945",
-      name: "Vội vàng",
-    },
-    { id: "677eaf2a826106165ca479c2", name: "travel" },
-    { id: "677eaf2a826106165ca479c2", name: "Activity" },
-    { id: "677fcd1acdf0d2a9b1a1dc2a", name: "Hobby" },
-  ]);
+  const [assignments, setAssignments] = useState([]);
 
   const [assignmentCount, setAssignmentCount] = useState([]);
 
@@ -95,6 +83,22 @@ const ClassRoomEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
       );
     }
   }, [record]);
+  useEffect(() => {
+    const fetchAssignments = async () => {
+      try {
+        const response = await baseDataProvider.getAll("assignments");
+        const formattedAssignments = response.data.map((assignment) => ({
+          id: assignment._id,
+          name: assignment.name,
+        }));
+        setAssignments(formattedAssignments);
+      } catch (error) {
+        console.error("Error fetching assignments:", error);
+      }
+    };
+
+    fetchAssignments();
+  }, []);
 
   return (
     <Box sx={boxStyles}>
