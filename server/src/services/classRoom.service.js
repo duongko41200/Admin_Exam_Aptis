@@ -31,7 +31,7 @@ class ClassRoomFactory {
   static updateOneById = async (id, data) => {
     console.log("data tesst:", data);
     return await baseRepo.findOneAndUpdate(
-      { _id: id, data: data },
+      { id: id, data: data },
       ClassRoomModel
     );
   };

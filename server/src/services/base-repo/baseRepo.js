@@ -97,7 +97,7 @@ const getOneByIdExtend = async ({ id, populate }, model) => {
 
 const findOneAndUpdate = async ({ id, data }, model) => {
   const options = { new: true };
-  const res = await model.findOneAndUpdate({ id }, { ...data }, options).exec();
+  const res = await model.findOneAndUpdate({ _id:id }, { ...data }, options).exec();
   return res;
 };
 
