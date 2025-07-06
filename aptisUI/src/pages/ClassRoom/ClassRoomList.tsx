@@ -181,7 +181,7 @@ const ClassRoomList = ({
 
         {/* ✅ Switch toggle có xác nhận */}
         <FunctionField
-          label="Trạng thái"
+          label="Trạng thái Public"
           render={(record) => (
             <ToggleSwitchWithConfirm
               record={record}

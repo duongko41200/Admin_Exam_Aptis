@@ -3,7 +3,7 @@
 import mongoose from "mongoose";
 import ClassRoomModel from "../models/classRoom.model.js";
 import baseRepo from "./base-repo/baseRepo.js";
-import { redisGetAll,redisSetField } from "./base-repo/baseRedis.js";
+import { redisGetAll,redisSetField, redisDeleteField } from "./base-repo/baseRedis.js";
 
 const convertAssignmentsToRedisObject = (assignments) => {
   const redisData = {};
@@ -59,20 +59,26 @@ class ClassRoomFactory {
 
     console.log("res:", res);
  if (res.isPublic === true) {
-    const hash = `classRoom-${res.nameRoom}-${res._id}`;
+  const hash = `classRoom-${res.nameRoom}-${res._id}`;
 
-    // Chuyển assignments thành object với key là assignment_<id>
-    const redisData = convertAssignmentsToRedisObject(res.assignments);
+  // Lấy danh sách tất cả field hiện có trong Redis
+  const currentFields = Object.keys(await redisGetAll({ hash }));
 
-    for (const [field, value] of Object.entries(redisData)) {
-      await redisSetField({
-        hash,    // ex: classRoom-103-66abc...
-        field,   // ex: assignment_9
-        value,   // full assignment object
-      });
+  // Tạo danh sách các field sẽ giữ lại dựa trên assignments hiện tại
+  const updatedAssignments = convertAssignmentsToRedisObject(res.assignments);
+  const updatedFields = Object.keys(updatedAssignments);
+
+  // Xóa các field cũ không còn trong assignments
+  for (const field of currentFields) {
+    if (field.startsWith("assignment_") && !updatedFields.includes(field)) {
+      await redisDeleteField({ hash, field });
     }
+  }
 
-    console.log(`Redis updated for hash: ${hash}`);
+  // Cập nhật lại các assignment hiện tại
+  for (const [field, value] of Object.entries(updatedAssignments)) {
+    await redisSetField({ hash, field, value });
+  }
   }
 
 
