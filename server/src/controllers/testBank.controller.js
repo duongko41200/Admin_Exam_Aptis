@@ -22,11 +22,23 @@ class TestBankController {
 			metadata: await TestBankFactory.getOneById(id),
 		}).send(res);
 	};
+
+	getOneExtendById = async (req, res, next) => {
+		const { id } = req.params;
+
+		console.log('id:', id);
+
+		new SuccessResponse({
+			message: 'creat new Reading success!',
+			metadata: await TestBankFactory.getOneExtendById(id),
+		}).send(res);
+	};
+
 	updateOneById = async (req, res, next) => {
 		const { id } = req.params;
 		const data = req.body;
 
-		console.log("data:", data);
+		console.log('data::::', data);
 
 		new SuccessResponse({
 			message: 'update new Reading success!',
@@ -45,7 +57,11 @@ class TestBankController {
 
 		new SuccessResponse({
 			message: 'creat new BO DE success!',
-			metadata: await TestBankFactory.getAllWithQuery({ filter, range, sort }),
+			metadata: await TestBankFactory.getAllWithQuery({
+				filter,
+				range,
+				sort,
+			}),
 		}).send(res);
 	};
 
@@ -65,17 +81,16 @@ class TestBankController {
 		}).send(res);
 	};
 
-	
-	  deleteById = async (req, res, next) => {
-		console.log(" data req:", req.params);
-	
+	deleteById = async (req, res, next) => {
+		console.log(' data req:', req.params);
+
 		new SuccessResponse({
-      message: "delete record success!",
-      metadata: await TestBankFactory.deleteTestBankById({
-        _id: req.params.id,
-      }),
-    }).send(res);
-	  };
+			message: 'delete record success!',
+			metadata: await TestBankFactory.deleteTestBankById({
+				_id: req.params.id,
+			}),
+		}).send(res);
+	};
 	// //QUERY//
 
 	//END QUERY

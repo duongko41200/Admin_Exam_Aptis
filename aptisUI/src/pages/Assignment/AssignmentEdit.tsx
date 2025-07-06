@@ -17,6 +17,7 @@ import { UPDATED_SUCCESS } from "../../consts/general";
 import { boxStyles } from "../../styles";
 import { BaseComponentProps, RecordValue } from "../../types/general";
 import { useFormContext } from "react-hook-form";
+import baseDataProvider from "../../providers/dataProviders/dataProvider";
 
 const skillList = [
   { id: "reading", name: "Reading" },
@@ -73,7 +74,7 @@ const AssignmentEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const handleOnChangeTestBank = async (event) => {
     const selectedBank = event.target.value;
     setSelectedTestBank(selectedBank);
-    const res = await dataProvider.getOne("test-banks", { id: selectedBank });
+    const res = await dataProvider.getOneExtend("test-banks", { id: selectedBank });
     setBoDe(res.data);
     setSelectedSkill("");
     setSelectedPart("");
@@ -172,7 +173,7 @@ const AssignmentEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
       setSelectedPart(record.partOfSkill.toString() || "");
       setPartList(parts);
       const fetchBoDe = async () => {
-        const res = await dataProvider.getOne("test-banks", {
+        const res = await dataProvider.getOneExtend("test-banks", {
           id: record.MaBoDe,
         });
         setBoDe(res.data);

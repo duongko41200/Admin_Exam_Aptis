@@ -126,7 +126,7 @@ const TestBankCreate = ({
   const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([
     {
       id: "",
-      name: "Chọn lớp học",
+      name: "Không có lớp học",
     },
   ]);
 

@@ -134,6 +134,7 @@ const ClassRoomEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
                 isRequired
                 label="Tên lớp học"
                 fullWidth
+                disabled
               />
               <DateTimeInput
                 source="dateStart"

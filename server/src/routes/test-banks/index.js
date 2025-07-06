@@ -17,16 +17,20 @@ router.post(
 	'/filters',
 	asyncHandle(TestBankController.getAllWithFilters)
 );
-router.get(
-	'/get-id/:id',
-	asyncHandle(TestBankController.getOneById)
-);
-
 router.put(
 	'/:id',
 	asyncHandle(TestBankController.updateOneById)
 );
 
+router.get(
+	'/get-id/:id',
+	asyncHandle(TestBankController.getOneById)
+);
+
+router.get(
+	'/extend/:id',
+	asyncHandle(TestBankController.getOneExtendById)
+);
 
 router.delete("/:id", asyncHandle(TestBankController.deleteById));
 // QUERY

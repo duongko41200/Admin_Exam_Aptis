@@ -79,10 +79,40 @@ const baseDataProvider: DataProvider = {
   // get a single record by id
   getOne: async (
     resource: string,
-    params: GetOneParams
+    params: GetOneParams,
   ): Promise<GetOneResult> => {
     console.log("param;", params);
     const url = `${apiUrlDesktopApp}/${resource}/get-id/${params.id}`;
+
+    console.log({ url });
+
+    const request = new Request(`${url}`, {
+      method: "GET",
+      headers: new Headers(HEADER),
+    });
+
+    const response = await fetch(request);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    console.log({ data });
+    data.metadata.id = data.metadata._id;
+    const resData = data.metadata;
+
+    return {
+      data: resData,
+    };
+  },
+
+    getOneExtend: async (
+    resource: string,
+    params: GetOneParams,
+  ): Promise<GetOneResult> => {
+    console.log("param;", params);
+    const url = `${apiUrlDesktopApp}/${resource}/extend/${params.id}`;
 
     console.log({ url });
 

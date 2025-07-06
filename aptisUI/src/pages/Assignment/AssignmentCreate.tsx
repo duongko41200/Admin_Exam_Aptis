@@ -75,7 +75,7 @@ const AssignmentCreate = ({ resource }: BaseComponentProps) => {
   ) => {
     const selectedBank = event.target.value;
     setSelectedTestBank(selectedBank);
-    const res = await dataProvider.getOne("test-banks", {
+    const res = await dataProvider.getOneExtend("test-banks", {
       id: selectedBank,
     });
 
