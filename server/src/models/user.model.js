@@ -52,7 +52,7 @@ const userSchema = new Schema(
       type: Array,
       default: [],
     },
-    classRoom: {
+    classRoomId: {
       type: Types.ObjectId,
       ref: "ClassRoom",
       required: false,
