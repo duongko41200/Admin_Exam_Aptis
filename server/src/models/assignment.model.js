@@ -8,11 +8,12 @@ const COLLECTION_NAME = "Assignments";
 const assignmentSchema = new Schema(
   {
     name: { type: String, required: true, trim: true },
-    description: { type: String },
+    description: { type: String, required: false, default: null },
     dueDate: {
       type: String,
       required: false,
       description: "Deadline for the assignment",
+      default: null,
     },
     MaBoDe: { type: Types.ObjectId, required: true, ref: "TestBank" },
 

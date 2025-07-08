@@ -38,6 +38,12 @@ const TestBankList = ({
         <TextField source="no" label="NO" />
         <TextField source="title" label="Bộ đề" />
 
+        <FunctionField
+          source="classRoomId"
+          label="Đề của Lớp học"
+          render={(record) =>record.classRoomId?.nameRoom || "Chưa có lớp học nào được gán"}
+        />
+
         {["speaking", "listening", "reading", "writing"].map((field) => (
           <FunctionField
             key={field}

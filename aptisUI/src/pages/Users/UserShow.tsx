@@ -1,11 +1,11 @@
-import CustomForm from '../../components/CustomForm'
-import { BaseComponentProps } from '@/types/general'
-import { Box } from '@mui/material'
-import { ShowBase, TextInput, Title } from 'react-admin'
-import { boxStyles, disabledInputBackgroundStyle } from '../../styles'
+import CustomForm from "../../components/CustomForm";
+import { BaseComponentProps } from "@/types/general";
+import { Box } from "@mui/material";
+import { ShowBase, TextInput, Title } from "react-admin";
+import { boxStyles, disabledInputBackgroundStyle } from "../../styles";
 
-const UserShow = ({  resource }: BaseComponentProps) => {
-  const resourcePath = `/${resource}`
+const UserShow = ({ resource }: BaseComponentProps) => {
+  const resourcePath = `/${resource}`;
 
   return (
     <Box sx={boxStyles}>
@@ -42,6 +42,21 @@ const UserShow = ({  resource }: BaseComponentProps) => {
               sx={disabledInputBackgroundStyle}
             />
             <TextInput
+              source="phone"
+              label="Số điện thoại"
+              fullWidth
+              disabled
+              sx={disabledInputBackgroundStyle}
+            />
+            <TextInput
+              source="identityCard"
+              label="số CMND/CCCD"
+              fullWidth
+              disabled
+              sx={disabledInputBackgroundStyle}
+            />
+
+            <TextInput
               source="roles"
               label="Vai trò"
               fullWidth
@@ -69,7 +84,7 @@ const UserShow = ({  resource }: BaseComponentProps) => {
         </>
       </ShowBase>
     </Box>
-  )
-}
+  );
+};
 
-export default UserShow
+export default UserShow;

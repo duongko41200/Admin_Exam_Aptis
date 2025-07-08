@@ -1,5 +1,5 @@
 {
-	"name": "ecommerce",
+	"name": "aptis",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
@@ -9,7 +9,10 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon server.js"
+		"start": "nodemon server.js",
+		"build": "webpack --config webpack.config.js"
+
+		
 	},
 	"keywords": [],
 	"author": "",
@@ -42,6 +45,7 @@
 		"node-localstorage": "^3.0.5",
 		"nodemon": "^3.0.3",
 		"process": "^0.11.10",
+		"redis": "^5.5.6",
 		"stream-browserify": "^3.0.0",
 		"telegraf": "^4.8.1",
 		"url": "^0.11.4",

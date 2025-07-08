@@ -1,84 +1,105 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
-import TestBankFactory from '../services/testBank.service.js';
+import { SuccessResponse } from "../cores/success.response.js";
+import TestBankFactory from "../services/testBank.service.js";
 
 class TestBankController {
-	create = async (req, res, next) => {
-		console.log('test data', req.body);
+  create = async (req, res, next) => {
+    console.log("test data", req.body);
 
-		new SuccessResponse({
-			message: 'creat new bo de success!',
-			metadata: await TestBankFactory.createTestBank(req.body),
-		}).send(res);
-	};
-	getOneById = async (req, res, next) => {
-		const { id } = req.params;
+    new SuccessResponse({
+      message: "creat new bo de success!",
+      metadata: await TestBankFactory.createTestBank(req.body),
+    }).send(res);
+  };
+  getOneById = async (req, res, next) => {
+    const { id } = req.params;
 
-		console.log('id:', id);
+    console.log("id:", id);
 
-		new SuccessResponse({
-			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getOneById(id),
-		}).send(res);
-	};
-	updateOneById = async (req, res, next) => {
-		const { id } = req.params;
-		const data = req.body;
+    new SuccessResponse({
+      message: "creat new Reading success!",
+      metadata: await TestBankFactory.getOneById(id),
+    }).send(res);
+  };
 
-		console.log("data:", data);
+  getOneExtendById = async (req, res, next) => {
+    const { id } = req.params;
 
-		new SuccessResponse({
-			message: 'update new Reading success!',
-			metadata: await TestBankFactory.updateOneById(id, data),
-		}).send(res);
-	};
+    console.log("id:", id);
 
-	getAllWithQuery = async (req, res, next) => {
-		const params = req.query;
+    new SuccessResponse({
+      message: "creat new Reading success!",
+      metadata: await TestBankFactory.getOneExtendById(id),
+    }).send(res);
+  };
 
-		const filter = JSON.parse(params.filter);
+  updateOneById = async (req, res, next) => {
+    const { id } = req.params;
+    const data = req.body;
 
-		const range = JSON.parse(params.range);
+    console.log("data::::", data);
 
-		const sort = JSON.parse(params.sort);
+    new SuccessResponse({
+      message: "update new Reading success!",
+      metadata: await TestBankFactory.updateOneById(id, data),
+    }).send(res);
+  };
 
-		new SuccessResponse({
-			message: 'creat new BO DE success!',
-			metadata: await TestBankFactory.getAllWithQuery({ filter, range, sort }),
-		}).send(res);
-	};
+  getAllWithQuery = async (req, res, next) => {
+    const params = req.query;
 
-	getAllWithFilters = async (req, res, next) => {
-		console.log('data req:', req.body);
+    const filter = JSON.parse(params.filter);
 
-		new SuccessResponse({
-			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getAllWithFilters(req.body),
-		}).send(res);
-	};
+    const range = JSON.parse(params.range);
 
-	getAll = async (req, res, next) => {
-		new SuccessResponse({
-			message: 'creat new Reading success!',
-			metadata: await TestBankFactory.getAll(),
-		}).send(res);
-	};
+    const sort = JSON.parse(params.sort);
 
-	
-	  deleteById = async (req, res, next) => {
-		console.log(" data req:", req.params);
-	
-		new SuccessResponse({
+    new SuccessResponse({
+      message: "creat new BO DE success!",
+      metadata: await TestBankFactory.getAllWithQuery({
+        filter,
+        range,
+        sort,
+      }),
+    }).send(res);
+  };
+
+  getAllWithFilters = async (req, res, next) => {
+    console.log("data req:", req.body);
+
+    new SuccessResponse({
+      message: "creat new Reading success!",
+      metadata: await TestBankFactory.getAllWithFilters(req.body),
+    }).send(res);
+  };
+
+  getAll = async (req, res, next) => {
+    new SuccessResponse({
+      message: "creat new Reading success!",
+      metadata: await TestBankFactory.getAll(),
+    }).send(res);
+  };
+
+  deleteById = async (req, res, next) => {
+    console.log(" data req:", req.params);
+
+    new SuccessResponse({
       message: "delete record success!",
       metadata: await TestBankFactory.deleteTestBankById({
         _id: req.params.id,
       }),
     }).send(res);
-	  };
-	// //QUERY//
+  };
+  findQuery = async (req, res, next) => {
+    new SuccessResponse({
+      message: "creat new Reading success!",
+      metadata: await TestBankFactory.findQuery(req.query),
+    }).send(res);
+  };
+  // //QUERY//
 
-	//END QUERY
+  //END QUERY
 }
 
 export default new TestBankController();

@@ -10,8 +10,10 @@ const router = express.Router();
 router.use(authenticationV2);
 
 router.get('/', asyncHandle(userController.getAllWithQuery));
+router.post("/", asyncHandle(userController.create));
 
 // QUERY
-router.get('/:id', asyncHandle(userController.getOneById));
+router.get("/get-id/:id", asyncHandle(userController.getOneById));
+router.delete("/:id", asyncHandle(userController.deleteOneById));
 
 export default router;

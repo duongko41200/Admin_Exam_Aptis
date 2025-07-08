@@ -1,48 +1,62 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
-import { createTopic, getAllTopc } from '../models/respositories/text.repo.js';
-import { getAllWithQuery, getOneById } from '../services/user.service.js';
+import { SuccessResponse } from "../cores/success.response.js";
+import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
+import {
+  getAllWithQuery,
+  getOneById,
+  create,
+  deleteById,
+} from "../services/user.service.js";
 
 class UserController {
-	createTopic = async (req, res, next) => {
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await createTopic({
-				name: req.body.name,
-				userId: req.user.userId,
-			}),
-		}).send(res);
-	};
+  create = async (req, res, next) => {
+    const body = req.body;
 
-	// //QUERY//
+    console.log({ body: req.body });
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await create(body),
+    }).send(res);
+  };
 
-	getAllWithQuery = async (req, res, next) => {
-		const params = req.query;
+  // //QUERY//
 
-		console.log({ params });
-		const filter = JSON.parse(params.filter);
+  getAllWithQuery = async (req, res, next) => {
+    const params = req.query;
 
-		const range = JSON.parse(params.range);
+    console.log({ params });
+    const filter = JSON.parse(params.filter);
 
-		const sort = JSON.parse(params.sort);
+    const range = JSON.parse(params.range);
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await getAllWithQuery({ filter, range, sort }),
-		}).send(res);
-	};
+    const sort = JSON.parse(params.sort);
 
-	getOneById = async (req, res, next) => {
-		const params = req.params.id;
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await getAllWithQuery({ filter, range, sort }),
+    }).send(res);
+  };
 
-		new SuccessResponse({
-			message: 'user find success!',
-			metadata: await getOneById(params),
-		}).send(res);
-	};
+  getOneById = async (req, res, next) => {
+    const params = req.params.id;
 
-	//END QUERY
+    new SuccessResponse({
+      message: "user find success!",
+      metadata: await getOneById(params),
+    }).send(res);
+  };
+
+  deleteOneById = async (req, res, next) => {
+    const { id } = req.params;
+
+    new SuccessResponse({
+      message: "delete user  success!",
+      metadata: await deleteById(id),
+    }).send(res);
+  };
+
+  //END QUERY
 }
 
 export default new UserController();

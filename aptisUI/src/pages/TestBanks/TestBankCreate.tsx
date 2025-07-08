@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -121,11 +121,12 @@ const TestBankCreate = ({
   const [isOpenModalFrame, setIsOpenModalFrame] = useState(false);
   const [partSkill, setPartSkill] = useState<number | null>(null);
   const [typeSkill, setTypeSkill] = useState<string | null>(null);
+  const [nameTestBank, setNameTestBank] = useState<string>("");
 
   const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([
     {
       id: "",
-      name: "Chọn lớp học",
+      name: "Không có lớp học",
     },
   ]);
 
@@ -133,7 +134,6 @@ const TestBankCreate = ({
 
   const handleChange = (event: SelectChangeEvent) => {
     const value = event.target.value;
-    console.log("Selected class ID:", value);
     setSelectedClassId(event.target.value);
   };
 
@@ -143,17 +143,15 @@ const TestBankCreate = ({
   const dispatch = useDispatch();
 
   const handleChooseTest = (partId: number, index: number) => {
-    console.log({ first: partId, second: index });
-
     setPartSkill(partId);
     setTypeSkill(skillLabels[index]);
     setIsOpenModalFrame(true);
   };
 
   const createWritingPartOne = async () => {
-
     const testBankDataClone = { ...testBankData };
     testBankDataClone.classRoomId = selectedClassId;
+    testBankDataClone.title = nameTestBank;
     try {
       await dataProvider.create("test-banks", { data: testBankDataClone });
       notify(UPDATED_SUCCESS, { type: "success" });
@@ -164,10 +162,7 @@ const TestBankCreate = ({
   const updateWritingPartOne = async () => {
     const testBankDataClone = { ...testBankData };
     testBankDataClone.classRoomId = selectedClassId;
-
-    // testBankDataClone.classRoomId = selectedClassId;
-
-    console.log("testBankDataClone:::::::::::", testBankDataClone);
+    testBankDataClone.title = nameTestBank;
 
     try {
       await dataProvider.update("test-banks", {
@@ -201,20 +196,20 @@ const TestBankCreate = ({
     }
   };
 
+  const handleCancel = () => {
+    navigate("/test-banks");
+  };
+
   const fetchClassrooms = async () => {
     try {
       const response = await dataProvider.getAll("classrooms");
 
       const classroomList = response.data ?? [];
 
-      console.log("classroomList:::::::::::", response);
-
       const formattedClassrooms = classroomList.map((classroom: any) => ({
         id: classroom._id,
         name: classroom.nameRoom,
       }));
-
-      console.log("formattedClassrooms:::::::::::", formattedClassrooms);
 
       setClassrooms(formattedClassrooms);
     } catch (error) {
@@ -229,8 +224,9 @@ const TestBankCreate = ({
     const { title, listening, reading, writing, speaking, classRoomId } =
       recordEdit;
 
-    console.log("recordEdit:::::::::::", recordEdit);
     setSelectedClassId(classRoomId || "");
+
+    setNameTestBank(title || "");
 
     const testBankData = {
       title,
@@ -249,6 +245,16 @@ const TestBankCreate = ({
   return (
     <Create redirect="list" title="管理ユーザー管理　新規作成">
       <Box>
+        <Box sx={{ minWidth: 120, marginBottom: 1 }}>
+          <TextField
+            id="filled-basic"
+            label="Tên Bộ Đề"
+            variant="filled"
+            value={nameTestBank}
+            onChange={(event) => setNameTestBank(event.target.value)}
+          />
+        </Box>
+
         <Box sx={{ minWidth: 120, marginBottom: 2 }}>
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Tên lớp học</InputLabel>
@@ -267,6 +273,7 @@ const TestBankCreate = ({
             </Select>
           </FormControl>
         </Box>
+
         <ModuleContainer>
           <Box sx={{ width: "150px" }}>
             <Typography
@@ -375,7 +382,12 @@ const TestBankCreate = ({
           <Button variant="contained" color="info" onClick={handleSaveTestBank}>
             <span>Submit</span>
           </Button>
-          <Button type="button" variant="contained" color="error">
+          <Button
+            type="button"
+            variant="contained"
+            color="error"
+            onClick={handleCancel}
+          >
             <span>Cancel</span>
           </Button>
         </Stack>

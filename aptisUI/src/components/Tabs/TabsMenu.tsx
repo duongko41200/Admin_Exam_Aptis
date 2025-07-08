@@ -7,6 +7,7 @@ import ReadingPartOne from "../../pages/Reading/ReadingPart/ReadingPartOne";
 import ReadingPartTwo from "../../pages/Reading/ReadingPart/ReadingPartTwo";
 import ReadingPartThree from "../../pages/Reading/ReadingPart/ReadingPartThree";
 import ReadingPartFour from "../../pages/Reading/ReadingPart/ReadingPartFour";
+import { useNavigate } from "react-router-dom";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,11 +40,13 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-
+  const navigate = useNavigate();
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const handleCancel = () => {
+    navigate("/readings");
+  };
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -59,16 +62,16 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <ReadingPartOne showDeleteButton={false} />
+        <ReadingPartOne showDeleteButton={false} handleCancel={handleCancel} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <ReadingPartTwo showDeleteButton={false} />
+        <ReadingPartTwo showDeleteButton={false} handleCancel={handleCancel} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <ReadingPartThree/>
+        <ReadingPartThree handleCancel={handleCancel} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <ReadingPartFour/>
+        <ReadingPartFour handleCancel={handleCancel} />
       </CustomTabPanel>
     </Box>
   );

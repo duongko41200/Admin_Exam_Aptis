@@ -1,4 +1,7 @@
-const getAllWithQuery = async ({ filter, range, sort }, model) => {
+const getAllWithQuery = async (
+  { filter, range, sort, populate = null },
+  model
+) => {
   const [sortField, sortOrder] = sort;
   const [start, end] = range;
 
@@ -7,6 +10,7 @@ const getAllWithQuery = async ({ filter, range, sort }, model) => {
     .sort({ _id: sortOrder === "ASC" ? 1 : -1 })
     .skip(start || 0)
     .limit((end || 0) - (start || 0) + 1)
+    .populate(populate)
     .exec();
 
   return res;
@@ -91,9 +95,21 @@ const getOneByIdExtend = async ({ id, populate }, model) => {
   return res;
 };
 
-const findOneAndUpdate = async ({ id, data }, model) => {
+const findOneAndUpdate = async ({ id, data, populate = null }, model) => {
   const options = { new: true };
-  const res = await model.findOneAndUpdate({ id }, { ...data }, options).exec();
+  const res = await model
+    .findOneAndUpdate({ _id: id }, { ...data }, options)
+    .populate([populate])
+    .exec();
+  return res;
+};
+
+const findQuery = async ({ populate= null, query }, model) => {
+  const res = await model
+    .find({ ...query })
+    .populate(populate)
+    .exec();
+
   return res;
 };
 
@@ -105,4 +121,5 @@ export default {
   getAllWithFiltersWritting,
   getOneByIdExtend,
   findOneAndUpdate,
+  findQuery,
 };
