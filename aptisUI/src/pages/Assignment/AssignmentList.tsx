@@ -1,81 +1,48 @@
-import { CustomButtonByRoleDelete } from '../../components/CustomButtonByRoleDelete'
-import { CustomButtonByRoleEdit } from '../../components/CustomButtonByRoleEdit'
-import { ListToolBar } from '../../components/ListToolBar'
-import { useState } from 'react'
+import { convertDate } from "../../utils/formatDate";
 import {
   Datagrid,
   DeleteWithConfirmButton,
   EditButton,
+  FunctionField,
   List,
   TextField,
-  useRefresh
-} from 'react-admin'
-import { validRole } from '../../core/role/permissions'
-import { BaseComponentProps } from '../../types/general'
+} from "react-admin";
+import { CustomButtonByRoleDelete } from "../../components/CustomButtonByRoleDelete";
+import { CustomButtonByRoleEdit } from "../../components/CustomButtonByRoleEdit";
+import { ListToolBar } from "../../components/ListToolBar";
+import { validRole } from "../../core/role/permissions";
+import { BaseComponentProps } from "../../types/general";
 
-const AssignmentList = ({ actions, resource, dataProvider }: BaseComponentProps) => {
-  const [userLogin, setUserLogin] = useState({})
-
-  const [dataTest, setDataTest] = useState('')
-  const refresh = useRefresh()
-
-
-
-  const getUserLogin = async () => {
-    try {
-      const userId = localStorage.getItem('userId')
-      const getUser = await dataProvider.getOne(resource, { id: userId })
-      setUserLogin({ id: getUser.data.id, role: getUser.data.role })
-      refresh()
-    } catch (error) {
-      console.log({ error })
-    }
-  }
-
-  const fetchapi = async () => {
-    const PORT = 3052 // Đặt PORT tại đây, ví dụ 3000
-
-    const data = await fetch(`http://localhost:${PORT}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-        return response.json()
-      })
-      // .then((data) => {
-      //   console.log('Dữ liệu từ API:', data)
-      //   // Xử lý dữ liệu ở đây
-      // })
-      .catch((error) => {
-        console.error('Lỗi khi gọi API:', error)
-        // Xử lý lỗi ở đây
-      })
-
-    console.log({ data })
-
-    setDataTest(data.data)
-  }
-
-  // useEffect(() => {
-  //   // getUserLogin()
-  //   // refresh()
-
-  //   fetchapi()
-  // }, [])
-
+const AssignmentList = ({
+  actions,
+  resource,
+  dataProvider,
+}: BaseComponentProps) => {
   return (
     <List
       title="管理ユーザー　一覧"
-      actions={<ListToolBar resource={resource} isShowCreate={validRole('create', actions)} />}
+      actions={
+        <ListToolBar
+          resource={resource}
+          isShowCreate={validRole("create", actions)}
+        />
+      }
     >
       <Datagrid rowClick="show" bulkActionButtons={false}>
         <TextField source="no" label="NO" />
         <TextField source="name" label="User" />
-        <TextField source="email" label="Email" />
-        <TextField source="roles" label="Role" />
+        <TextField source="skill" label="Kỹ năng" />
+        <TextField source="partOfSkill" label="Số Part " />
+        <TextField source="idQues.length" label="Số câu hỏi " />
 
-        {validRole('delete', actions) && (
-          <CustomButtonByRoleDelete source="role" label="Xóa" userLogin={userLogin}>
+        <FunctionField
+          source="createdAt"
+          label=" Ngày tạo"
+          render={(record) => convertDate(record?.createdAt)}
+        />
+
+        {validRole("delete", actions) && (
+          <CustomButtonByRoleDelete source="role" label="Xóa">
             <DeleteWithConfirmButton
               confirmContent="よろしいですか?"
               confirmTitle="削除"
@@ -85,7 +52,7 @@ const AssignmentList = ({ actions, resource, dataProvider }: BaseComponentProps)
           </CustomButtonByRoleDelete>
         )}
 
-        {validRole('edit', actions) && (
+        {validRole("edit", actions) && (
           <CustomButtonByRoleEdit
             source="role"
             label="Chỉnh Sửa"
@@ -96,7 +63,7 @@ const AssignmentList = ({ actions, resource, dataProvider }: BaseComponentProps)
         )}
       </Datagrid>
     </List>
-  )
-}
+  );
+};
 
-export default AssignmentList
+export default AssignmentList;

@@ -2,6 +2,12 @@
 
 import baseRepo from "./base-repo/baseRepo.js";
 import userModel from "../models/user.model.js";
+import { BadRequestError } from "../cores/Error.response.js";
+import bcrypt from "bcrypt";
+import crypto from "node:crypto";
+import { createTokenPair } from "../auth/authUtils.js";
+import { getIntoData } from "../utils/index.js";
+import keyTokenService from "./keyToken.service.js";
 
 export const findByEmail = async ({
   email,
@@ -14,7 +20,16 @@ export const findByEmail = async ({
     role: 1,
   },
 }) => {
-  return await userModel.findOne({ email }).select(select).lean();
+  const res = await userModel
+    .findOne({ email })
+    .select(select)
+    .populate({
+      path: "classRoomId",
+      select: "_id nameRoom",
+    })
+    .lean();
+
+  return res;
 };
 
 export const getAllWithQuery = async ({ filter, range, sort }) => {
@@ -31,5 +46,69 @@ export const getOneById = async (id) => {
     console.log("lỗi rồi:", error);
 
     return [];
+  }
+};
+
+export const deleteById = async (id) => {
+  return await userModel.deleteOne({ _id: id }).lean();
+};
+
+export const create = async (data) => {
+  try {
+    console.log("data: ", data);
+
+    const { email, password } = data;
+
+    const holeUser = await userModel.find({ email }).lean();
+    if (holeUser.length > 0) {
+      throw new BadRequestError("Error: user already registered");
+    }
+    const passwordHash = await bcrypt.hash(password, 10);
+
+    const newUser = await userModel.create({ ...data, password: passwordHash });
+
+    if (newUser) {
+      //create pivateKey, publicKey
+      const privateKey = crypto.randomBytes(64).toString("hex");
+      const publicKey = crypto.randomBytes(64).toString("hex");
+
+      console.log({ privateKey, publicKey }); //save collection KeyStore
+
+      //save collection KeyStore
+      const KeyStore = await keyTokenService.createKeyToken({
+        userId: newUser._id,
+        publicKey,
+        privateKey,
+      });
+
+      if (!KeyStore) {
+        return {
+          code: "xxx",
+          message: error.message,
+          status: "error",
+        };
+      }
+
+      // create token pair
+      const tokens = await createTokenPair(
+        {
+          userId: newUser._id,
+          email,
+        },
+        publicKey,
+        privateKey
+      );
+
+      return {
+        user: getIntoData({
+          fileds: ["_id", "name", "email"],
+          object: newUser,
+        }),
+        tokens,
+      };
+    }
+  } catch (error) {
+    console.log("error: là: ", error);
+    return error;
   }
 };

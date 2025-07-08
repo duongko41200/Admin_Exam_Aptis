@@ -31,12 +31,12 @@ const userSchema = new Schema(
       type: String,
       default: "",
     },
-    class: {
-      type: Number,
-      default: null,
+    phone: {
+      type: String,
+      default: "",
     },
     identityCard: {
-      type: Number,
+      type: String,
       default: null,
     },
     status: {
@@ -49,8 +49,9 @@ const userSchema = new Schema(
       default: false,
     },
     roles: {
-      type: Array,
-      default: [],
+      type: String,
+      default: "USER",
+      enum: ["USER", "TEACHER", "ADMIN"],
     },
     classRoomId: {
       type: Types.ObjectId,
