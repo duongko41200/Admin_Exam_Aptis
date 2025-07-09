@@ -15,5 +15,6 @@ router.post("/", asyncHandle(userController.create));
 // QUERY
 router.get("/get-id/:id", asyncHandle(userController.getOneById));
 router.delete("/:id", asyncHandle(userController.deleteOneById));
+router.put("/:id", asyncHandle(userController.updateOneById));
 
 export default router;

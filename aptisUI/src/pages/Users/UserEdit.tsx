@@ -1,71 +1,76 @@
-import { ROLE_ACCOUNT, userRoles } from '../../consts/user'
+import { Box } from "@mui/material";
+import { useEffect, useState } from "react";
 import {
-  TextInput,
-  SelectInput,
+  EditBase,
   PasswordInput,
+  SelectInput,
+  TextInput,
+  Title,
   useNotify,
   useRecordContext,
-  EditBase,
-  Title
-} from 'react-admin'
-import CustomForm from '../../components/CustomForm'
-import { validateUserEdition } from './formValidator'
-import { BaseComponentProps, RecordValue } from '../../types/general'
-import { Box } from '@mui/material'
-import { useNavigate } from 'react-router-dom'
-import { boxStyles } from '../../styles'
-import { useEffect, useState } from 'react'
-import { getClientCookieValue } from '../../utils/cookies'
-import { HEADER } from '../../consts/access'
-import { UPDATED_SUCCESS } from '../../consts/general'
+} from "react-admin";
+import { useNavigate } from "react-router-dom";
+import CustomForm from "../../components/CustomForm";
+import { UPDATED_SUCCESS } from "../../consts/general";
+import { userRoles } from "../../consts/user";
+import { boxStyles } from "../../styles";
+import { BaseComponentProps, RecordValue } from "../../types/general";
+import { validateUserEdition } from "./formValidator";
 
-const UserEditForm = ({  resource, dataProvider }: BaseComponentProps) => {
-  const resourcePath = `/${resource}`
-  const notify = useNotify()
-  const navigate = useNavigate()
-  const record = useRecordContext()
-  const [userLogin, setUserLogin] = useState({ id: null, role: null })
-  const [isAdmin, setIsAdmin] = useState(true)
-  const [isDisableName, setIsDisableName] = useState(false)
+const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
+  const resourcePath = `/${resource}`;
+  const notify = useNotify();
+  const navigate = useNavigate();
+  const record = useRecordContext();
 
-  const getUserLogin = async () => {
+  const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([
+    {
+      id: "",
+      name: "Không có lớp học",
+    },
+  ]);
+  const fetchClassrooms = async () => {
     try {
-      const userId = getClientCookieValue(HEADER.CLIENT_ID)
-      const getUser = await dataProvider.getOne(resource, { id: userId })
-      setUserLogin({ id: getUser.data.id, role: getUser.data.role })
+      const response = await dataProvider.getAll("classrooms");
 
-      const checkRole = getUser.data.role === ROLE_ACCOUNT['admin']
-      const isDisableName = getUser.data.role === ROLE_ACCOUNT['view']
+      console.log("Classrooms response:", response);
 
-      setIsAdmin(checkRole)
-      setIsDisableName(isDisableName)
+      const classroomList = response.data ?? [];
+
+      const formattedClassrooms = classroomList.map((classroom: any) => ({
+        id: classroom._id,
+        name: classroom.nameRoom,
+      }));
+
+      setClassrooms(formattedClassrooms);
     } catch (error) {
-      console.log({ error })
+      console.error("Error fetching classrooms:", error);
+      notify("Call api class room lỗi", { type: "error" });
     }
-  }
-
-  useEffect(() => {
-    getUserLogin()
-  }, [])
+  };
 
   const handleUpdate = async (values: RecordValue) => {
     try {
       await dataProvider.update(resource, {
         id: record?.id,
         data: values,
-        previousData: record
-      })
+        previousData: record,
+      });
 
       await notify(UPDATED_SUCCESS, {
-        type: 'success'
-      })
-      navigate(resourcePath)
+        type: "success",
+      });
+      navigate(resourcePath);
     } catch (error) {
-      notify('エラー: 生産管理の更新に失敗しました: ' + error, {
-        type: 'warning'
-      })
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
-  }
+  };
+
+  useEffect(() => {
+    fetchClassrooms();
+  }, []);
 
   return (
     <Box sx={boxStyles}>
@@ -73,33 +78,43 @@ const UserEditForm = ({  resource, dataProvider }: BaseComponentProps) => {
         <Title title="ユーザ登録　編集" />
         <CustomForm
           pathTo={resourcePath}
-          validate={validateUserEdition}
+          // validate={validateUserEdition}
           showDeleteButton={false}
           showSaveButton={true}
           showCancelButton={true}
           handleSave={handleUpdate}
         >
-          <TextInput source="userName" label="ユーザー名" isRequired fullWidth disabled />
+          <TextInput
+            source="name"
+            fullWidth
+            isRequired
+            label="Tên người dùng"
+          />
+          <TextInput source="email" fullWidth isRequired label="Email" />
+          <TextInput source="phone" fullWidth label="Số điện thoại" />
+          <TextInput source="identityCard" fullWidth label="Số CMND/CCCD" />
+
+          <PasswordInput source="newPassword" fullWidth label="Mật khẩu mới" />
+          <SelectInput
+            source="classRoomId"
+            choices={classrooms}
+            isRequired
+            label="lớp học "
+            fullWidth
+          />
 
           <SelectInput
             source="role"
             choices={userRoles}
-            isRequired
-            label="椎限(*)"
-            disabled={!isAdmin}
+            defaultValue={"USER"}
+            label="Vai trò"
+            fullWidth
           />
-          {userLogin?.role === ROLE_ACCOUNT['admin'] || record?.id === userLogin?.id ? (
-            <PasswordInput source="newPassword" label="パスワード(*)" fullWidth />
-          ) : (
-            <></>
-          )}
-
-          <TextInput source="name" label="名前(*)" fullWidth isRequired disabled={isDisableName} />
         </CustomForm>
       </EditBase>
     </Box>
-  )
-}
+  );
+};
 
 const UserEdit = (props: BaseComponentProps) => {
   return (
@@ -108,7 +123,7 @@ const UserEdit = (props: BaseComponentProps) => {
         <UserEditForm {...props} />
       </EditBase>
     </Box>
-  )
-}
+  );
+};
 
-export default UserEdit
+export default UserEdit;

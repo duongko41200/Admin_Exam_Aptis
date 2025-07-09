@@ -7,6 +7,7 @@ import {
   getOneById,
   create,
   deleteById,
+  updateOneById,
 } from "../services/user.service.js";
 
 class UserController {
@@ -53,6 +54,17 @@ class UserController {
     new SuccessResponse({
       message: "delete user  success!",
       metadata: await deleteById(id),
+    }).send(res);
+  };
+  updateOneById = async (req, res, next) => {
+    const { id } = req.params;
+    const data = req.body;
+
+    console.log("data:", data);
+
+    new SuccessResponse({
+      message: "update new user success!",
+      metadata: await updateOneById(id, data),
     }).send(res);
   };
 

@@ -112,3 +112,26 @@ export const create = async (data) => {
     return error;
   }
 };
+
+export const updateOneById = async (id, data) => {
+  try {
+    const user = await userModel.findById(id).lean();
+    if (!user) {
+      throw new BadRequestError("User not found");
+    }
+    const updatedData = { ...data };
+    if (data.newPassword) {
+      updatedData.password = await bcrypt.hash(data.newPassword, 10);
+    }
+    const updatedUser = await userModel
+      .findByIdAndUpdate(id, updatedData, { new: true })
+      .lean();
+    return getIntoData({
+      fileds: ["_id", "name", "email", "classRoomId", "status", "roles"],
+      object: updatedUser,
+    });
+  } catch (error) {
+    console.error("Error updating user:", error);
+    throw new BadRequestError("Error updating user");
+  }
+};
