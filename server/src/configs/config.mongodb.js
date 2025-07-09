@@ -12,14 +12,14 @@ const dev = {
 };
 
 const pro = {
-	app: {
-		port: process.env.PRO_APP_PORT || 3000,
-	},
-	db: {
-		host: process.env.PRO_DB_HOST || '127.0.0.1',
-		port: process.env.PRO_DB_PORT || '27017', 
-		name: process.env.PRO_DB_NAME || 'aptisProduct',
-	},
+  app: {
+    port: process.env.PRO_APP_PORT || 3000,
+  },
+  db: {
+    host: process.env.PRO_DB_HOST || "127.0.0.1",
+    port: process.env.PRO_DB_PORT || "27017",
+    name: process.env.PRO_DB_NAME || "aptisDev",
+  },
 };
 
 const config = { dev, pro };

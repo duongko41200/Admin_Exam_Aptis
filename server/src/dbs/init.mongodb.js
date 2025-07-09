@@ -37,7 +37,7 @@ const instanceMongodb = new (class Database {
 	}
 
 	connect() {
-		if (process.env.NODE_ENV === 'dev') {
+		if (process.env.NODE_ENV === 'pro') {
 			mongoose.set('debug', true);
 			mongoose.set('debug', { color: true });
 		}

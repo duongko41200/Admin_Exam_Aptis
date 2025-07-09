@@ -32,6 +32,10 @@ export const findByEmail = async ({
   return res;
 };
 
+export const findAll = async () => {
+  return await userModel.find({}).lean();
+};
+
 export const getAllWithQuery = async ({ filter, range, sort }) => {
   return await baseRepo.getAllWithQuery({ filter, range, sort }, userModel);
 };

@@ -10,7 +10,7 @@ import {
   AuthFailureError,
   ForbiddenError,
 } from "../cores/Error.response.js";
-import { findByEmail } from "./user.service.js";
+import { findByEmail, findAll } from "./user.service.js";
 import keytokenModel from "../models/keytoken.model.js";
 import { SESSION_TOKEN_SECRET } from "../const/key.js";
 
@@ -151,6 +151,13 @@ class AccessService {
   static login = async ({ email, password, refreshToken = null }) => {
     //1
     const foundShop = await findByEmail({ email });
+
+    const dataAll = await findAll()
+
+
+    console.log({ dataAll });
+
+    console.log({ foundShop });
     if (!foundShop) throw new BadRequestError("shop not registered");
 
     //2
