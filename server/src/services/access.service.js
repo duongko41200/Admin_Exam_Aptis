@@ -152,12 +152,6 @@ class AccessService {
     //1
     const foundShop = await findByEmail({ email });
 
-    const dataAll = await findAll()
-
-
-    console.log({ dataAll });
-
-    console.log({ foundShop });
     if (!foundShop) throw new BadRequestError("shop not registered");
 
     //2
@@ -181,8 +175,6 @@ class AccessService {
 
     console.log({ tokens });
 
-
-
     await keyTokenService.createKeyToken({
       refreshToken: tokens.refreshToken,
       privateKey,
@@ -192,13 +184,11 @@ class AccessService {
 
     const user = {
       user: getIntoData({
-        fileds: ["_id", "name", "email", "classRoomId"],
+        fileds: ["_id", "name", "email", "classRoomId", " phone", "createdAt"],
         object: foundShop,
       }),
       tokens,
     };
-
-	console.log({testuser: user });
 
     return user;
   };

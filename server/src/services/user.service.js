@@ -16,6 +16,8 @@ export const findByEmail = async ({
     password: 2,
     name: 1,
     classRoomId: 1,
+    phone: 1,
+    createdAt: 1,
     status: 1,
     role: 1,
   },
