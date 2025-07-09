@@ -33,7 +33,8 @@ import { validUrlApi } from "../..//consts/text";
 import { pushId } from "../..//utils/pushId";
 
 const apiUrlApp = `https://bot-app-english-apiss.vercel.app/v1/api`;
-const apiUrlDesktopApp = `http://localhost:3333/v1/api`;
+// const apiUrlDesktopApp = `http://localhost:3333/v1/api`;
+const apiUrlDesktopApp = `http://api.aptisacademy.com.vn/v1/api`;
 const httpClient = fetchUtils.fetchJson;
 
 const baseDataProvider: DataProvider = {
