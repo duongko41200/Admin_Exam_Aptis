@@ -4,10 +4,14 @@
     "src/**/*",
     "src/**/*.tsx",
     "src/preload/*.d.ts",
-    "src/shared/**/*"
-, "../server/src/utils/uploadFile"  ],
+    "src/shared/**/*",
+    "../server/src/utils/uploadFile"
+  ],
   "compilerOptions": {
     "types": ["node"],
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
     "composite": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",

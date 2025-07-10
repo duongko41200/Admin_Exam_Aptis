@@ -22,19 +22,15 @@ import type {
   UpdateResult,
 } from "react-admin";
 import { fetchUtils } from "react-admin";
-// import removeEmptyProperties from '@repo/utils/removeEmptyProperties';
-// import { exclude } from '@repo/utils/excludeKey';
+
 import {
   GetPutPresignedUrlparams,
   PutObjectViaPresignedUrlParams,
 } from "@/types/dataProvider";
-import { HEADER_FORMAT, HEADER } from "../../consts/header";
-import { validUrlApi } from "../..//consts/text";
 import { pushId } from "../..//utils/pushId";
+import { HEADER, HEADER_FORMAT } from "../../consts/header";
 
-const apiUrlApp = `https://bot-app-english-apiss.vercel.app/v1/api`;
-// const apiUrlDesktopApp = `http://localhost:3333/v1/api`;
-const apiUrlDesktopApp = `http://api.aptisacademy.com.vn/v1/api`;
+const apiUrlDesktopApp = import.meta.env.VITE_API_URL;
 const httpClient = fetchUtils.fetchJson;
 
 const baseDataProvider: DataProvider = {
@@ -80,7 +76,7 @@ const baseDataProvider: DataProvider = {
   // get a single record by id
   getOne: async (
     resource: string,
-    params: GetOneParams,
+    params: GetOneParams
   ): Promise<GetOneResult> => {
     console.log("param;", params);
     const url = `${apiUrlDesktopApp}/${resource}/get-id/${params.id}`;
@@ -108,9 +104,9 @@ const baseDataProvider: DataProvider = {
     };
   },
 
-    getOneExtend: async (
+  getOneExtend: async (
     resource: string,
-    params: GetOneParams,
+    params: GetOneParams
   ): Promise<GetOneResult> => {
     console.log("param;", params);
     const url = `${apiUrlDesktopApp}/${resource}/extend/${params.id}`;
@@ -669,7 +665,6 @@ const baseDataProvider: DataProvider = {
   },
 
   getAllWithFiltersCourseType: async (resource: string, params: any) => {
-
     console.log({ resource, params });
     const url = `${apiUrlDesktopApp}/${resource}/course-type/${params.courseType}`;
 

@@ -1,33 +1,31 @@
-import type { AuthProvider } from 'react-admin'
-import { fetchUtils } from 'react-admin'
-import { generateRole } from '../core/role/permissions'
+import type { AuthProvider } from "react-admin";
+import { fetchUtils } from "react-admin";
+import { generateRole } from "../core/role/permissions";
 
-// const apiUrl = `${process.env.NEXT_PUBLIC_API_URL ?? 'http:local: 3000'}/api/cms`;
-
-// const apiUrl = `http://localhost:3333/v1/api`
-const apiUrl = `http://api.aptisacademy.com.vn/v1/api`
-const httpClient = fetchUtils.fetchJson
+const apiUrl = import.meta.env.VITE_API_URL;
+const httpClient = fetchUtils.fetchJson;
 const API_KEY =
   "4379e3b406e606110a01e8fbe364120fdc58be39a9f30431476dd53ad14b20fe66f52423a3e4546dfa272f4c389822299709414bb44b6b3ffce7f04292be2556";
 
 const authProvider: AuthProvider = {
   // authentication
   login: async (params) => {
-    const { username, password } = params
+    const { username, password } = params;
 
     try {
       const request = new Request(`${apiUrl}/access/login`, {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify({ email: username, password }),
-        headers: new Headers({ 'Content-Type': 'application/json', 'x-api-key': API_KEY })
-      })
-      const response = await fetch(request)
-      
+        headers: new Headers({
+          "Content-Type": "application/json",
+          "x-api-key": API_KEY,
+        }),
+      });
+      const response = await fetch(request);
 
-      const data = await response.json()
+      const data = await response.json();
 
-      console.log('data', data)
-
+      console.log("data", data);
 
       // const {
       //   metadata: {
@@ -43,49 +41,43 @@ const authProvider: AuthProvider = {
       // document.cookie = `${HEADER.AUTHORIZATION}=${accessToken}; path=/`
       // document.cookie = `${HEADER.REFRESHTOKEN}= ${refreshToken}; path=/`
       // let { password, ...userToPersist } = user;
-      localStorage.setItem('userId', data.metadata?.user?._id)
-      localStorage.setItem('accessToken', data.metadata?.tokens?.accessToken)
-      localStorage.setItem('refreshToken', data.metadata?.tokens?.refreshToken)
-      localStorage.setItem('user', JSON.stringify(data.metadata.user))
+      localStorage.setItem("userId", data.metadata?.user?._id);
+      localStorage.setItem("accessToken", data.metadata?.tokens?.accessToken);
+      localStorage.setItem("refreshToken", data.metadata?.tokens?.refreshToken);
+      localStorage.setItem("user", JSON.stringify(data.metadata.user));
 
-      return Promise.resolve()
+      return Promise.resolve();
     } catch (error) {
-      return Promise.reject(error)
+      return Promise.reject(error);
     }
   },
   logout: () => {
-    localStorage.removeItem('user')
-    localStorage.removeItem('userId')
-    localStorage.removeItem('accessToken')
-    localStorage.removeItem('refreshToken')
-    return Promise.resolve()
+    localStorage.removeItem("user");
+    localStorage.removeItem("userId");
+    localStorage.removeItem("accessToken");
+    localStorage.removeItem("refreshToken");
+    return Promise.resolve();
   },
   checkError: () => Promise.resolve(),
-  checkAuth: () => (localStorage.getItem('user') ? Promise.resolve() : Promise.reject()),
+  checkAuth: () =>
+    localStorage.getItem("user") ? Promise.resolve() : Promise.reject(),
   getPermissions: () => {
-    return Promise.resolve(generateRole(1))
+    return Promise.resolve(generateRole(1));
   },
   getIdentity: () => {
-    const persistedUser = localStorage.getItem('user')
-    const user = persistedUser ? JSON.parse(persistedUser) : null
+    const persistedUser = localStorage.getItem("user");
+    const user = persistedUser ? JSON.parse(persistedUser) : null;
 
-    console.log('user', user)
+    console.log("user", user);
 
     return Promise.resolve({
       id: user._id,
       fullName: user.name,
-    })
-  }
+    });
+  },
+};
 
-
-  
-
-}
-
-export default authProvider
-
-
-
+export default authProvider;
 
 // import { AuthProvider, HttpError } from "react-admin";
 // import data from "./users.json";
