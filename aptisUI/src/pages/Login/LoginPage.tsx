@@ -10,6 +10,7 @@ import {
   CardActions,
   CircularProgress,
   TextField,
+  Typography,
 } from "@mui/material";
 import Box from "@mui/material/Box";
 import Dialog from "@mui/material/Dialog";
@@ -53,6 +54,8 @@ const Login = () => {
 
     try {
       const res = await authProvider.login(auth);
+
+      console.log("Login response:", res);
 
       navigate("/");
     } catch {
@@ -230,6 +233,7 @@ const Login = () => {
       </Dialog>
 
       <Form onSubmit={handleSubmit} noValidate>
+        
         <Box
           sx={{
             display: "flex",
@@ -253,7 +257,9 @@ const Login = () => {
               <Avatar sx={{ bgcolor: "secondary.main" }}>
                 <LockIcon />
               </Avatar>
+
             </Box>
+
             <Box
               sx={{
                 marginTop: "1em",
@@ -267,7 +273,7 @@ const Login = () => {
                 <TextInput
                   autoFocus
                   source="username"
-                  label="メールアドレス"
+                  label="email"
                   disabled={loading}
                   validate={required()}
                   fullWidth

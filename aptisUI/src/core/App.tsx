@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 import authProvider from "../providers/authProvider";
 import dataProvider from "../providers/dataProviders/dataProvider";
 import { checkRole } from "./role/permissions";
-import LoginPage from "../pages/Login/LoginPage";
 
 // Define resources
 import { ResourceIF } from "@/types/general";
@@ -18,7 +17,6 @@ const App = () => (
   <Admin
     dataProvider={dataProvider}
     authProvider={authProvider}
-    loginPage={LoginPage}
     requireAuth
     layout={CustomLayout}
   >
