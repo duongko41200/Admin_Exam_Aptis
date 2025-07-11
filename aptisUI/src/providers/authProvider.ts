@@ -27,6 +27,17 @@ const authProvider: AuthProvider = {
 
       console.log("data", data);
 
+      const user = data.metadata?.user;
+      const tokens = data.metadata?.tokens;
+      localStorage.setItem("userId", data.metadata?.user?._id);
+      localStorage.setItem("accessToken", data.metadata?.tokens?.accessToken);
+      localStorage.setItem("refreshToken", data.metadata?.tokens?.refreshToken);
+      localStorage.setItem("user", JSON.stringify(data.metadata.user));
+
+      if (!user || !tokens?.accessToken) {
+        return Promise.reject("Invalid response");
+      }
+  
       // const {
       //   metadata: {
       //     user: { _id },
@@ -41,12 +52,10 @@ const authProvider: AuthProvider = {
       // document.cookie = `${HEADER.AUTHORIZATION}=${accessToken}; path=/`
       // document.cookie = `${HEADER.REFRESHTOKEN}= ${refreshToken}; path=/`
       // let { password, ...userToPersist } = user;
-      localStorage.setItem("userId", data.metadata?.user?._id);
-      localStorage.setItem("accessToken", data.metadata?.tokens?.accessToken);
-      localStorage.setItem("refreshToken", data.metadata?.tokens?.refreshToken);
-      localStorage.setItem("user", JSON.stringify(data.metadata.user));
 
-      return Promise.resolve();
+      // window.location.reload();
+
+      return Promise.resolve(data.metadata);
     } catch (error) {
       return Promise.reject(error);
     }
