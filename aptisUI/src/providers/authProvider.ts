@@ -37,7 +37,7 @@ const authProvider: AuthProvider = {
       if (!user || !tokens?.accessToken) {
         return Promise.reject("Invalid response");
       }
-  
+
       // const {
       //   metadata: {
       //     user: { _id },
@@ -53,8 +53,7 @@ const authProvider: AuthProvider = {
       // document.cookie = `${HEADER.REFRESHTOKEN}= ${refreshToken}; path=/`
       // let { password, ...userToPersist } = user;
 
-      // window.location.reload();
-
+      window.location.reload();
       return Promise.resolve(data.metadata);
     } catch (error) {
       return Promise.reject(error);
