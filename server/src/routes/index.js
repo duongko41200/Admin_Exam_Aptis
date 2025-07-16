@@ -8,7 +8,7 @@ import speakingRouter from "./speaking/index.js";
 import testBanksRouter from "./test-banks/index.js"; // Thay đổi require bằng import
 import userRouter from "./user/index.js"; // Thay đổi require bằng import
 import writingRouter from "./writing/index.js"; // Thay đổi require bằng import
-
+import redisDataRouter from "./redis-data/index.js"; // Thay đổi require bằng import
 import assignmentRouter from "./assignment/index.js"; // Thay đổi require bằng import
 import classRoomRouter from "./class-room/index.js"; // Thay đổi require bằng import
 import courseRouter from "./courses/index.js"; // Thay đổi require bằng import
@@ -37,5 +37,7 @@ router.use("/v1/api/courses", courseRouter);
 router.use("/v1/api/lectures", lectureRouter);
 router.use("/v1/api/assignments", assignmentRouter);
 router.use("/v1/api/classrooms", classRoomRouter);
+router.use("/v1/api/cache-data", redisDataRouter);
+
 
 export default router;
