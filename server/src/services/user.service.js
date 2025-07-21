@@ -18,6 +18,7 @@ export const findByEmail = async ({
     classRoomId: 1,
     phone: 1,
     createdAt: 1,
+    phone: 1,
     status: 1,
     role: 1,
   },

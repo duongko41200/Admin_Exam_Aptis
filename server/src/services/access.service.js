@@ -184,7 +184,7 @@ class AccessService {
 
     const user = {
       user: getIntoData({
-        fileds: ["_id", "name", "email", "classRoomId", " phone", "createdAt"],
+        fileds: ["_id", "name", "email", "classRoomId", "phone", "createdAt"],
         object: foundShop,
       }),
       tokens,
