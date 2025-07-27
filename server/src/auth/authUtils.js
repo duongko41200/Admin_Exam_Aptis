@@ -4,6 +4,7 @@ import JWT from "jsonwebtoken";
 import asyncHandle from "../helpers/asyncHandle.js";
 import { AuthFailureError, NotFoundError } from "../cores/Error.response.js";
 import keyTokenService from "../services/keyToken.service.js";
+import { decryptAES } from "../lib/cryptoUtils.js";
 
 const HEADER = {
   API_KEY: "x-api-key",
@@ -84,11 +85,16 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
    * 6_OK all => return next()
    */
 
-  const userId = req.headers[HEADER.CLIENT_ID];
+
+
+
+  const userIdDecoded = await decryptAES(req.headers[HEADER.CLIENT_ID]);
+
+  const userId = userIdDecoded;
   if (!userId) throw new AuthFailureError("Invalid request: missing client id");
 
   //2
-  const KeyStore = await keyTokenService.findByUserId(userId);
+  const KeyStore = await keyTokenService.findByUserId(userIdDecoded);
   if (!KeyStore) throw new NotFoundError("Not found KeyStore");
 
   //3
@@ -107,8 +113,8 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
       throw error;
     }
   }
-
-  const accessToken = req.headers[HEADER.AUTHORIZATION];
+  const accessTokenDecoded = await decryptAES(req.headers[HEADER.AUTHORIZATION]);
+  const accessToken = accessTokenDecoded;
   if (!accessToken) throw new AuthFailureError("Invalid Request");
 
   //4

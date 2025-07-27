@@ -1,9 +1,8 @@
 "use strict";
 
-import mongoose from "mongoose";
 import ClassRoomModel from "../models/classRoom.model.js";
+import { redisDeleteField, redisGetAll, redisSetField } from "./base-repo/baseRedis.js";
 import baseRepo from "./base-repo/baseRepo.js";
-import { redisGetAll,redisSetField, redisDeleteField } from "./base-repo/baseRedis.js";
 
 const convertAssignmentsToRedisObject = (assignments) => {
   const redisData = {};

@@ -1,13 +1,13 @@
 "use strict";
 import express from "express";
-import AssignmentController from "../../controllers/assignment.controller.js";
+import { authenticationV2 } from '../../auth/authUtils.js';
 import { asyncHandle } from "../../auth/checkAuth.js";
-// import { authentication, authenticationV2 } from '../../auth/authUtils.js';
+import AssignmentController from "../../controllers/assignment.controller.js";
 
 const router = express.Router();
 
-//Authen//
-// router.use(authenticationV2);
+// Authen//
+router.use(authenticationV2);
 
 router.post("/", asyncHandle(AssignmentController.create));
 router.get("/", asyncHandle(AssignmentController.getAllWithQuery));

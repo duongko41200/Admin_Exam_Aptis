@@ -8,6 +8,8 @@ const router = express.Router();
 
 //Authen//
 router.use(authenticationV2);
+
+// api 
 router.post("/", asyncHandle(TestBankController.create));
 router.get("/", asyncHandle(TestBankController.getAllWithQuery));
 router.get("/batch", asyncHandle(TestBankController.getAll));
