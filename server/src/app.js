@@ -1,21 +1,28 @@
-import compression from 'compression';
-import dotenv from 'dotenv';
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import morgan from 'morgan';
-import bodyParser from 'body-parser';
-import initDb from './dbs/init.mongodb.js';
-import { checkOverload } from './helpers/check.connect.js';
-import routes from './routes/index.js';
+import compression from "compression";
+import dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import morgan from "morgan";
+import bodyParser from "body-parser";
+import initDb from "./dbs/init.mongodb.js";
+import { checkOverload } from "./helpers/check.connect.js";
+import routes from "./routes/index.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3833", "https://app.aptisacademy.com.vn"],
+    credentials: true,
+  })
+);
+app.use(cookieParser());
 //init middleware
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
@@ -30,25 +37,25 @@ app.use(bodyParser.urlencoded({ extended: true }));
 checkOverload();
 
 // init router
-app.use('/', routes);
+app.use("/", routes);
 
 //handling errors
 app.use((req, res, next) => {
-	const error = new Error('Not Found');
-	error.status = 404;
-	next(error);
+  const error = new Error("Not Found");
+  error.status = 404;
+  next(error);
 });
 
 app.use((err, req, res, next) => {
-	const statusCode = err.status || 500;
+  const statusCode = err.status || 500;
 
-	console.log('looix', err);
-	return res.status(statusCode).json({
-		status: 'err',
-		code: statusCode,
-		stack: err.stack,
-		message: err.message || 'Internal Server Error',
-	});
+  console.log("looix", err);
+  return res.status(statusCode).json({
+    status: "err",
+    code: statusCode,
+    stack: err.stack,
+    message: err.message || "Internal Server Error",
+  });
 });
 
 export default app;

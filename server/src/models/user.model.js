@@ -1,12 +1,10 @@
 "use strict";
 
-//!mdbgum: create model partent
+import { model, Schema, Types } from "mongoose";
 
-import { model, Schema, Types } from "mongoose"; // Erase if already required
-
-// Declare the Schema of the Mongo model
 const DOCUMENT_NAME = "User";
 const COLLECTION_NAME = "Users";
+
 const userSchema = new Schema(
   {
     name: {
@@ -58,6 +56,32 @@ const userSchema = new Schema(
       ref: "ClassRoom",
       required: false,
     },
+    operationMobile: {
+      type: {
+        ua: { type: String },
+        browser: {
+          name: { type: String },
+          version: { type: String },
+          major: { type: String },
+        },
+        cpu: {
+          architecture: { type: String },
+        },
+        device: {
+          type: Object,
+          default: {},
+        },
+        engine: {
+          name: { type: String },
+          version: { type: String },
+        },
+        os: {
+          name: { type: String },
+          version: { type: String },
+        },
+      },
+      default: null,
+    },
   },
   {
     timestamps: true,
@@ -65,5 +89,4 @@ const userSchema = new Schema(
   }
 );
 
-// Export the model
 export default model(DOCUMENT_NAME, userSchema);

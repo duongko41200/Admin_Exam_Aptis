@@ -54,8 +54,8 @@ class AccessService {
       holderToken.privateKey
     );
 
-    const foundShop = await findByEmail({ email });
-    if (!foundShop) throw new AuthFailureError("User not registerted");
+    const findUser = await findByEmail({ email });
+    if (!findUser) throw new AuthFailureError("User not registerted");
 
     //create 1 cap moi
     const tokens = await createTokenPair(
@@ -103,8 +103,8 @@ class AccessService {
       throw new AuthFailureError("User not registered");
     }
 
-    const foundShop = await findByEmail({ email });
-    if (!foundShop) throw new AuthFailureError("User not registerted");
+    const findUser = await findByEmail({ email });
+    if (!findUser) throw new AuthFailureError("User not registerted");
 
     //create 1 cap moi
     const tokens = await createTokenPair(
@@ -148,44 +148,80 @@ class AccessService {
   // 4 - generate tokens
   // 5- get data return login
 
-  static login = async ({ email, password, refreshToken = null }) => {
+  static login = async ({
+    email,
+    password,
+    refreshToken = null,
+    operationAgent,
+  }) => {
     //1
-    const foundShop = await findByEmail({ email });
+    const findUser = await findByEmail({ email });
 
-    if (!foundShop) throw new BadRequestError("shop not registered");
+    if (!findUser) throw new BadRequestError("user not exist");
 
     //2
-    const match = await bcrypt.compare(password, foundShop.password);
+    const match = await bcrypt.compare(password, findUser.password);
     if (!match) throw new AuthFailureError("Authentication failed");
 
-    //3
-    //create pivateKey, publicKey
+    /**
+     *
+     * 3 - check operation agent
+     * khi web login  thì sẽ kèm theo gái tri  web_agent  thì sẽ không check  thiết bị
+     * 3- nếu vào điện thoại chỉ cần check ios, phiên bản
+     * - laptop cũng thế
+     */
+    if (process.env.NODE_ENV != "dev") {
+      if (!findUser.operationMobile) {
+        await userModel.updateOne(
+          { _id: findUser._id },
+          { $set: { operationMobile: operationAgent } }
+        );
+      } else {
+        const isSameDevice =
+          findUser.operationMobile.ua === operationAgent.ua &&
+          findUser.operationMobile.browser?.name ===
+            operationAgent.browser?.name &&
+          findUser.operationMobile.browser?.version ===
+            operationAgent.browser?.version &&
+          findUser.operationMobile.os?.name === operationAgent.os?.name &&
+          findUser.operationMobile.os?.version === operationAgent.os?.version;
+
+        if (!isSameDevice) {
+          throw new BadRequestError(
+            "Access from a different device is not allowed"
+          );
+        }
+      }
+    }
+
+    /**
+     * 3 - create pivateKey, publicKey
+     */
     const privateKey = crypto.randomBytes(64).toString("hex");
     const publicKey = SESSION_TOKEN_SECRET;
 
     //4
     const tokens = await createTokenPair(
       {
-        userId: foundShop._id,
+        userId: findUser._id,
         email,
       },
       publicKey,
       privateKey
     );
 
-    console.log({ tokens });
 
     await keyTokenService.createKeyToken({
       refreshToken: tokens.refreshToken,
       privateKey,
       publicKey,
-      userId: foundShop._id,
+      userId: findUser._id,
     });
 
     const user = {
       user: getIntoData({
         fileds: ["_id", "name", "email", "classRoomId", "phone", "createdAt"],
-        object: foundShop,
+        object: findUser,
       }),
       tokens,
     };

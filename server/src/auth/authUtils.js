@@ -85,9 +85,6 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
    * 6_OK all => return next()
    */
 
-
-
-
   const userIdDecoded = await decryptAES(req.headers[HEADER.CLIENT_ID]);
 
   const userId = userIdDecoded;
@@ -113,7 +110,9 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
       throw error;
     }
   }
-  const accessTokenDecoded = await decryptAES(req.headers[HEADER.AUTHORIZATION]);
+
+  const accessTokenDecoded = req.cookies.accessToken;
+
   const accessToken = accessTokenDecoded;
   if (!accessToken) throw new AuthFailureError("Invalid Request");
 

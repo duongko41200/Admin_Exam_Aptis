@@ -21,6 +21,7 @@ export const findByEmail = async ({
     phone: 1,
     status: 1,
     role: 1,
+    operationMobile: 1,
   },
 }) => {
   const res = await userModel
