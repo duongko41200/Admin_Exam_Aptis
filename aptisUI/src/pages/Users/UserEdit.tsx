@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import {
   EditBase,
+  FunctionField,
   PasswordInput,
   SelectInput,
   TextInput,
@@ -93,6 +94,15 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
           <TextInput source="email" fullWidth isRequired label="Email" />
           <TextInput source="phone" fullWidth label="Số điện thoại" />
           <TextInput source="identityCard" fullWidth label="Số CMND/CCCD" />
+
+          <TextInput
+            source="operationMobile"
+            fullWidth
+            label="Thông tin thiết bị min app"
+            multiline
+            rows={10}
+          />
+
 
           <PasswordInput source="newPassword" fullWidth label="Mật khẩu mới" />
           <SelectInput

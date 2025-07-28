@@ -1,6 +1,7 @@
 import { withLifecycleCallbacks } from 'react-admin'
 
 import baseDataProvider from './baseDataProvider'
+import userCallbackHandler from './userCallbackHandlers'
 
 /**
  * NOTE:Limitation of withLifecycleCallbacks
@@ -8,7 +9,7 @@ import baseDataProvider from './baseDataProvider'
  * For some cases, withLifecycleCallbacks is hard to handle errors and can not guarantee data consistency. If needed, we can change business logic to handleSave function of Form: See `src\views\Animals\AnimalEdit.tsx`
  */
 const dataProvider = withLifecycleCallbacks(baseDataProvider, [
-  // userCallbackHandler,
+  userCallbackHandler,
   // productsCallbackHandler,
 ])
 

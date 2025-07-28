@@ -1,6 +1,7 @@
 import type { AuthProvider } from "react-admin";
 import { fetchUtils } from "react-admin";
 import { generateRole } from "../core/role/permissions";
+import { encryptAES } from "../utils/cryptoUtils";
 
 const apiUrl = import.meta.env.VITE_API_URL;
 const httpClient = fetchUtils.fetchJson;
@@ -20,6 +21,7 @@ const authProvider: AuthProvider = {
           "Content-Type": "application/json",
           "x-api-key": API_KEY,
         }),
+        credentials: "include",
       });
       const response = await fetch(request);
 
@@ -29,7 +31,9 @@ const authProvider: AuthProvider = {
 
       const user = data.metadata?.user;
       const tokens = data.metadata?.tokens;
-      localStorage.setItem("userId", data.metadata?.user?._id);
+
+      const userID = await encryptAES(data.metadata?.user?._id);
+      localStorage.setItem("userId", userID);
       localStorage.setItem("accessToken", data.metadata?.tokens?.accessToken);
       localStorage.setItem("refreshToken", data.metadata?.tokens?.refreshToken);
       localStorage.setItem("user", JSON.stringify(data.metadata.user));

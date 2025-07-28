@@ -54,6 +54,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const response = await fetch(request);
 
@@ -86,6 +87,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
 
     const response = await fetch(request);
@@ -116,6 +118,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
 
     const response = await fetch(request);
@@ -154,6 +157,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
 
     const response = await fetch(request);
@@ -201,6 +205,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "POST",
       headers: new Headers(HEADER),
+      credentials: "include",
       body,
     });
 
@@ -263,6 +268,7 @@ const baseDataProvider: DataProvider = {
     const response = await fetch(url, {
       method: "PUT",
       headers: new Headers(HEADER),
+      credentials: "include",
       body,
     });
 
@@ -320,6 +326,7 @@ const baseDataProvider: DataProvider = {
     const response = await httpClient(url, {
       method: "DELETE",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const {
       json: { metadata },
@@ -361,6 +368,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "POST",
       headers: new Headers(HEADER),
+      credentials: "include",
       body,
     });
 
@@ -416,6 +424,7 @@ const baseDataProvider: DataProvider = {
       headers: {
         "Content-Type": type,
       },
+      credentials: "include",
       body,
     });
     console.log(":::response", response);
@@ -432,6 +441,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -453,6 +463,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const response = await fetch(request);
     if (!response.ok) {
@@ -476,6 +487,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const response = await fetch(request);
     console.log({ response });
@@ -591,6 +603,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
     const response = await fetch(request);
     console.log({ response });
@@ -671,6 +684,7 @@ const baseDataProvider: DataProvider = {
     const request = new Request(`${url}`, {
       method: "GET",
       headers: new Headers(HEADER),
+      credentials: "include",
     });
 
     const response = await fetch(request);
