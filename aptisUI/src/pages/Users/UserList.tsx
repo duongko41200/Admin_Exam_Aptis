@@ -1,5 +1,6 @@
 import {
   CheckCircle,
+  Edit,
   Headphones,
   KeyboardArrowRight,
   MenuBook,
@@ -54,6 +55,7 @@ import { CustomButtonByRoleEdit } from "../../components/CustomButtonByRoleEdit"
 import { ListToolBar } from "../../components/ListToolBar";
 import { validRole } from "../../core/role/permissions";
 import { BaseComponentProps } from "../../types/general";
+import { transformCountDetailToTreeData } from "../../utils/tranformTreeData";
 
 // Fake data cho biểu đồ
 const generateChartData = (details) => {
@@ -286,21 +288,106 @@ function StudyProgressChart({ details }: { details }) {
   );
 }
 
+//// TRee Item Component
+
+const TreeItem = ({ item, isLast }) => {
+	const [expanded, setExpanded] = useState(false);
+
+	return (
+		<div className="relative pl-2 pb-4">
+			{/* Vertical connector from parent */}
+			{/* {!isLast && (
+        <div className="absolute top-0 left-[10px] bottom-0 w-px bg-gray-400"></div>
+      )} */}
+
+			<div
+				className="flex items-center cursor-pointer relative"
+				onClick={() => item.children.length && setExpanded(!expanded)}
+			>
+				{/* Horizontal line to circle */}
+				<div className="absolute left-0 top-1/2 w-[10px] h-px bg-gray-400"></div>
+
+				{/* Circle icon */}
+				<div
+					className={`w-4 h-4 rounded-full text-white text-xs font-bold flex items-center justify-center ${
+						item.children.length
+							? expanded
+								? 'bg-blue-500'
+								: 'bg-purple-500'
+							: 'bg-gray-400'
+					}`}
+				>
+					{item.children.length ? (expanded ? '-' : '+') : ''}
+				</div>
+
+				<div className="flex gap-2 items-center ml-2">
+					<div className="font-bold text-blue-800">{item.date}:</div>
+					<div>{item.name}</div>
+				</div>
+
+				{/* <span className="ml-2">{item.name}</span> */}
+			</div>
+
+			{expanded && item.children.length > 0 && (
+				<ul className="pl-4 mt-1">
+					{item.children.map((child, index) => (
+						<li key={index} className="relative pl-6">
+							{/* vertical line before text */}
+							{index !== item.children.length - 1 && (
+								<div className="absolute top-0 left-[0] bottom-0 w-px bg-gray-300"></div>
+							)}
+							{/* horizontal line to item */}
+							<div className="absolute left-[5px] top-2 w-[10px] h-px bg-gray-300"></div>
+
+							<span className="ml-2 text-gray-500">{child}</span>
+						</li>
+					))}
+				</ul>
+			)}
+		</div>
+	);
+};
+
 function StudyDetailRow({ detail }: { detail: any }) {
   const [open, setOpen] = useState(false);
+  const treeData = detail
+    ? transformCountDetailToTreeData(detail.countDetail)
+    : [];
+  console.log("Transformed Tree Data:", treeData);
 
   const getSkillConfig = (skill: string) => {
-    return skill === "listening"
-      ? {
-          color: "primary" as const,
+    switch (skill) {
+      case "listening":
+        return {
+          color: "success" as const,
           icon: <Headphones fontSize="small" />,
           label: "Listening",
-        }
-      : {
+        };
+      case "reading":
+        return {
           color: "secondary" as const,
           icon: <MenuBook fontSize="small" />,
           label: "Reading",
         };
+      case "writing":
+        return {
+          color: "error" as const,
+          icon: <Edit fontSize="small" />, // Or use another icon for writing
+          label: "Writing",
+        };
+      case "speaking":
+        return {
+          color: "warning" as const,
+          icon: <PlayArrow fontSize="small" />, // Or use another icon for speaking
+          label: "Speaking",
+        };
+      default:
+        return {
+          color: "default" as const,
+          icon: null,
+          label: skill,
+        };
+    }
   };
 
   const getStatusConfig = (status: string) => {
@@ -386,6 +473,13 @@ function StudyDetailRow({ detail }: { detail: any }) {
         <TableCell>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <Typography variant="body2" fontWeight="medium">
+              {detail.count}
+            </Typography>
+          </Box>
+        </TableCell>
+        {/* <TableCell>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <Typography variant="body2" fontWeight="medium">
               {detail.score.split("/")[0]}/{detail.score.split("/")[1]}
             </Typography>
             <LinearProgress
@@ -400,7 +494,7 @@ function StudyDetailRow({ detail }: { detail: any }) {
               }}
             />
           </Box>
-        </TableCell>
+        </TableCell> */}
         <TableCell>
           <Chip
             {...getStatusConfig(detail.status)}
@@ -450,128 +544,22 @@ function StudyDetailRow({ detail }: { detail: any }) {
                     color="primary.main"
                     sx={{ mb: 2 }}
                   >
-                    Chi tiết bài học: {detail.lessonName}
+                    Chi tiết bài học: {detail.name}
                   </Typography>
 
-                  {detail.details ? (
-                    <Grid container spacing={3}>
-                      <Grid item xs={12} md={6}>
-                        <Stack spacing={2}>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Tổng số câu hỏi:
-                            </Typography>
-                            <Typography variant="body2" fontWeight="medium">
-                              {detail.details.questions} câu
-                            </Typography>
-                          </Box>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Số câu đúng:
-                            </Typography>
-                            <Typography
-                              variant="body2"
-                              fontWeight="medium"
-                              color="success.main"
-                            >
-                              {detail.details.correctAnswers} câu
-                            </Typography>
-                          </Box>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Thời gian làm bài:
-                            </Typography>
-                            <Typography variant="body2" fontWeight="medium">
-                              {detail.details.timeSpent}
-                            </Typography>
-                          </Box>
-                        </Stack>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <Stack spacing={2}>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Độ khó:
-                            </Typography>
-                            <Chip
-                              label={detail.details.difficulty}
-                              size="small"
-                              color={
-                                getDifficultyColor(
-                                  detail.details.difficulty
-                                ) as any
-                              }
-                              variant="filled"
-                            />
-                          </Box>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Lần làm cuối:
-                            </Typography>
-                            <Typography variant="body2" fontWeight="medium">
-                              {detail.lastAttempt
-                                ? new Date(
-                                    detail.lastAttempt
-                                  ).toLocaleDateString("vi-VN")
-                                : "--"}
-                            </Typography>
-                          </Box>
-                          <Box
-                            sx={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <Typography variant="body2" color="text.secondary">
-                              Tỷ lệ chính xác:
-                            </Typography>
-                            <Typography
-                              variant="body2"
-                              fontWeight="medium"
-                              color="primary.main"
-                            >
-                              {Math.round(
-                                (detail.details.correctAnswers /
-                                  detail.details.questions) *
-                                  100
-                              )}
-                              %
-                            </Typography>
-                          </Box>
-                        </Stack>
-                      </Grid>
-                    </Grid>
+                  {treeData.length > 0 ? (
+                    <>
+                		<div className="py-2 bg-white max-h-[calc(100vh-400px)] overflow-y-auto">
+			{treeData &&
+				treeData.map((item, index) => (
+					<TreeItem
+						key={item.id}
+						item={item}
+						isLast={index === treeData.length - 1}
+					/>
+				))}
+		</div>
+                    </>
                   ) : (
                     <Typography
                       variant="body2"
@@ -594,7 +582,7 @@ function StudyDetailRow({ detail }: { detail: any }) {
 const StudyProcess = () => {
   const record = useRecordContext();
   const [open, setOpen] = useState(false);
-    const [viewMode, setViewMode] = useState<"table" | "chart">("table");
+  const [viewMode, setViewMode] = useState<"table" | "chart">("table");
 
   if (!record) return null;
   console.log("Study Process Record:", record?.studyProcess?.processData);
@@ -603,14 +591,14 @@ const StudyProcess = () => {
 
   const processDatas = record.studyProcess.processData;
 
-    const handleViewModeChange = (
-      event: React.MouseEvent<HTMLElement>,
-      newViewMode: "table" | "chart"
-    ) => {
-      if (newViewMode !== null) {
-        setViewMode(newViewMode);
-      }
-    };
+  const handleViewModeChange = (
+    event: React.MouseEvent<HTMLElement>,
+    newViewMode: "table" | "chart"
+  ) => {
+    if (newViewMode !== null) {
+      setViewMode(newViewMode);
+    }
+  };
   return (
     <>
       {/* Add your study process details here */}
@@ -746,6 +734,14 @@ const StudyProcess = () => {
                             >
                               Số lượt làm
                             </TableCell>
+                            {/* <TableCell
+                              sx={{
+                                fontWeight: "bold",
+                                color: "primary.main",
+                              }}
+                            >
+                              Điểm số
+                            </TableCell> */}
                             <TableCell
                               sx={{
                                 fontWeight: "bold",
@@ -760,23 +756,22 @@ const StudyProcess = () => {
                                 color: "primary.main",
                               }}
                             >
-                              Điểm số
+                              Tiến độ
                             </TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
-                          {processDatas.map((processData, index) => (
-                            <StudyDetailRow key={index} detail={processData} />
-                          ))}
-
                           {viewMode === "table" ? (
-                                  {processDatas.map((processData, index) => (
-                            <StudyDetailRow key={index} detail={processData} />
-                          ))}
+                            <>
+                              {processDatas.map((processData, index) => (
+                                <StudyDetailRow
+                                  detail={processData}
+                                  key={index}
+                                />
+                              ))}
+                            </>
                           ) : (
-                            <StudyProgressChart
-                              details={user.studyProgress.details}
-                            />
+                            <StudyProgressChart details={processData} />
                           )}
                         </TableBody>
                       </Table>

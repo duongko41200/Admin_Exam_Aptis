@@ -13,6 +13,7 @@
     "@ckeditor/ckeditor5-react": "^9.4.0",
     "@cloudinary/react": "^1.13.1",
     "@cloudinary/url-gen": "^1.21.0",
+    "@mui/lab": "^7.0.0-beta.14",
     "@mui/x-data-grid": "^7.22.0",
     "@reduxjs/toolkit": "^2.3.0",
     "@types/crypto-js": "^4.2.2",
