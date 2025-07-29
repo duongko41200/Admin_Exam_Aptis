@@ -41,7 +41,10 @@ export const findAll = async () => {
 };
 
 export const getAllWithQuery = async ({ filter, range, sort }) => {
-  return await baseRepo.getAllWithQuery({ filter, range, sort }, userModel);
+  return await baseRepo.getAllWithQuery(
+    { filter, range, sort, populate: "studyProcess" },
+    userModel
+  );
 };
 
 export const getOneById = async (id) => {

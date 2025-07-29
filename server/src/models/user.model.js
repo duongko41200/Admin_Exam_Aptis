@@ -86,7 +86,16 @@ const userSchema = new Schema(
   {
     timestamps: true,
     collection: COLLECTION_NAME,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
   }
 );
+// Virtual populate: 1 user ↔ 1 StadyProcess
+userSchema.virtual("studyProcess", {
+  ref: "StadyProcess",
+  localField: "_id",
+  foreignField: "userId",
+  justOne: true,
+});
 
 export default model(DOCUMENT_NAME, userSchema);
