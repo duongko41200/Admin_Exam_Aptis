@@ -104,13 +104,24 @@ const findOneAndUpdate = async ({ id, data, populate = null }, model) => {
   return res;
 };
 
-const findQuery = async ({ populate= null, query }, model) => {
+const findQuery = async ({ populate = null, query }, model) => {
   const res = await model
     .find({ ...query })
     .populate(populate)
     .exec();
 
   return res;
+};
+
+const createOrUpdate = async ({ filter, update, options = {} }, model) => {
+  const finalOptions = {
+    upsert: true,
+    new: true,
+    ...options,
+  };
+
+  const result = await model.updateOne(filter, update, finalOptions);
+  return result;
 };
 
 export default {
@@ -122,4 +133,5 @@ export default {
   getOneByIdExtend,
   findOneAndUpdate,
   findQuery,
+  createOrUpdate,
 };

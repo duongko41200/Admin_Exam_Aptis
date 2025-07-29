@@ -174,7 +174,8 @@ class AccessService {
       if (!findUser.operationMobile) {
         await userModel.updateOne(
           { _id: findUser._id },
-          { $set: { operationMobile: operationAgent } }
+          { $set: { operationMobile: operationAgent } },
+          { upsert: true }
         );
       } else {
         const isSameDevice =
@@ -209,7 +210,6 @@ class AccessService {
       publicKey,
       privateKey
     );
-
 
     await keyTokenService.createKeyToken({
       refreshToken: tokens.refreshToken,

@@ -1,19 +1,19 @@
 "use strict";
 import express from "express";
 import { apiKey, permission } from "../auth/checkAuth.js";
-import accessRouter from "./access/index.js"; 
+import accessRouter from "./access/index.js";
 import listeningRouter from "./listening/index.js";
-import readingRouter from "./reading/index.js"; 
+import readingRouter from "./reading/index.js";
 import speakingRouter from "./speaking/index.js";
-import testBanksRouter from "./test-banks/index.js"; 
-import userRouter from "./user/index.js"; 
-import writingRouter from "./writing/index.js"; 
-import redisDataRouter from "./redis-data/index.js"; 
-import assignmentRouter from "./assignment/index.js"; 
-import classRoomRouter from "./class-room/index.js"; 
-import courseRouter from "./courses/index.js"; 
-import lectureRouter from "./lectures/index.js"; 
-// import googleSheetsRouter from "./google-sheet/index.js";
+import testBanksRouter from "./test-banks/index.js";
+import userRouter from "./user/index.js";
+import writingRouter from "./writing/index.js";
+import redisDataRouter from "./redis-data/index.js";
+import assignmentRouter from "./assignment/index.js";
+import classRoomRouter from "./class-room/index.js";
+import courseRouter from "./courses/index.js";
+import lectureRouter from "./lectures/index.js";
+import studyProcessRouter from "./study-process/index.js";
 
 const router = express.Router();
 
@@ -39,7 +39,6 @@ router.use("/v1/api/lectures", lectureRouter);
 router.use("/v1/api/assignments", assignmentRouter);
 router.use("/v1/api/classrooms", classRoomRouter);
 router.use("/v1/api/cache-data", redisDataRouter);
-// router.use("/v1/api/update-process", googleSheetsRouter);
-
+router.use("/v1/api/study-process", studyProcessRouter);
 
 export default router;

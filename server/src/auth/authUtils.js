@@ -90,6 +90,8 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
   const userId = userIdDecoded;
   if (!userId) throw new AuthFailureError("Invalid request: missing client id");
 
+  req.userIdGlobal = userId;
+
   //2
   const KeyStore = await keyTokenService.findByUserId(userIdDecoded);
   if (!KeyStore) throw new NotFoundError("Not found KeyStore");
