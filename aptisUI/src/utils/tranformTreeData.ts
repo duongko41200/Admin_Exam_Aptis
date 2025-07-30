@@ -28,7 +28,7 @@ export const transformCountDetailToTreeData = (countDetails) => {
 
     return {
       id: idCounter++,
-      name: `số lần: ${items.length} - Max score: ${maxScore} / ${total}`,
+      name: `số lượt làm: ${items.length} - Max score: ${maxScore} / ${total}`,
       children,
       date,
     };
