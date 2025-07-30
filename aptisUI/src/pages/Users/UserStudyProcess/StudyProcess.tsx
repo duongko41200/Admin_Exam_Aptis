@@ -12,13 +12,23 @@ import {
   Star,
 } from "@mui/icons-material";
 
+import { Box, Card, IconButton, Typography } from "@mui/material";
+import { useState } from "react";
 import {
-  Box,
-  Card,
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  Tooltip as RechartsTooltip,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from "recharts";
+
+import {
   CardContent,
   Chip,
   Collapse,
-  IconButton,
   Paper,
   Table,
   TableBody,
@@ -28,13 +38,12 @@ import {
   TableRow,
   ToggleButton,
   ToggleButtonGroup,
-  Typography,
 } from "@mui/material";
 import { GridExpandMoreIcon } from "@mui/x-data-grid";
-import { useState } from "react";
 import { useRecordContext } from "react-admin";
 import { transformCountDetailToTreeData } from "../../../utils/tranformTreeData";
 
+import { checkStudyProgress } from "../../../utils/checkStudyProgress";
 import LessonProgressCharts from "./LessionProgressCharts";
 
 // các thành phần con để hiển thị chi tiết bài học
@@ -103,12 +112,18 @@ const TreeItem = ({ item, isLast }) => {
 };
 
 function StudyDetailRow({ detail }: { detail: any }) {
+  if (!detail) {
+    throw new TypeError("Expected detail to be defined");
+  }
   const [open, setOpen] = useState(false);
   const [viewMode, setViewMode] = useState<"details" | "charts">("details");
   const treeData = detail
     ? transformCountDetailToTreeData(detail.countDetail)
     : [];
   console.log("Transformed Tree Data:", treeData);
+
+  const result = checkStudyProgress([detail]);
+  console.log({ result });
 
   const getSkillConfig = (skill: string) => {
     switch (skill) {
@@ -127,13 +142,13 @@ function StudyDetailRow({ detail }: { detail: any }) {
       case "writing":
         return {
           color: "error" as const,
-          icon: <Edit fontSize="small" />, // Or use another icon for writing
+          icon: <Edit fontSize="small" />,
           label: "Writing",
         };
       case "speaking":
         return {
           color: "warning" as const,
-          icon: <PlayArrow fontSize="small" />, // Or use another icon for speaking
+          icon: <PlayArrow fontSize="small" />,
           label: "Speaking",
         };
       default:
@@ -145,19 +160,32 @@ function StudyDetailRow({ detail }: { detail: any }) {
     }
   };
 
-  const getStatusConfig = (status: string) => {
-    switch (status) {
-      case "completed":
+  const getStatusConfig = (status: any) => {
+    switch (status.code) {
+      case 0:
         return {
           color: "success" as const,
-          label: "Hoàn thành",
+          label: "Đạt",
           icon: <CheckCircle fontSize="small" />,
         };
-      case "in-progress":
+      case 1:
         return {
           color: "warning" as const,
-          label: "Đang học",
-          icon: <PlayArrow fontSize="small" />,
+          label: "1. cần học đều đặn",
+          icon: <Info fontSize="small" />,
+        };
+      case 2:
+        return {
+          color: "warning" as const,
+          label: "2. Làm ít nhất 10 lượt",
+          icon: <Info fontSize="small" />,
+        };
+
+      case 3:
+        return {
+          color: "warning" as const,
+          label: "3. Chưa đạt điểm tối đa",
+          icon: <Info fontSize="small" />,
         };
       default:
         return {
@@ -165,19 +193,6 @@ function StudyDetailRow({ detail }: { detail: any }) {
           label: "Chưa bắt đầu",
           icon: <Schedule fontSize="small" />,
         };
-    }
-  };
-
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case "easy":
-        return "success";
-      case "medium":
-        return "warning";
-      case "hard":
-        return "error";
-      default:
-        return "default";
     }
   };
 
@@ -189,6 +204,21 @@ function StudyDetailRow({ detail }: { detail: any }) {
       setViewMode(newViewMode);
     }
   };
+
+  const avgScorePerDay = treeData.map((item) => {
+    const scores = item.children.map((entry: string) => {
+      const [_, scorePart] = entry.split(" - điểm:");
+      const [scoreStr, maxStr] = scorePart.trim().split("/");
+      return parseInt(scoreStr, 10);
+    });
+    const average = scores.reduce((a, b) => a + b, 0) / scores.length;
+
+    return {
+      date: item.date,
+      dailyAverageScore: average,
+      children: item.children,
+    };
+  });
 
   return (
     <>
@@ -261,30 +291,38 @@ function StudyDetailRow({ detail }: { detail: any }) {
         </TableCell> */}
         <TableCell>
           <Chip
-            {...getStatusConfig(detail.status)}
-            label={getStatusConfig(detail.status).label}
+            {...getStatusConfig(result)}
+            label={getStatusConfig(result).label}
             size="small"
             variant="filled"
-            icon={getStatusConfig(detail.status).icon}
+            icon={getStatusConfig(result).icon}
           />
         </TableCell>
+
         <TableCell>
-          {detail.score ? (
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <Star fontSize="small" color="warning" />
-              <Typography
-                variant="body2"
-                fontWeight="bold"
-                color="warning.main"
-              >
-                {detail.score}%
-              </Typography>
-            </Box>
-          ) : (
-            <Typography variant="body2" color="text.secondary">
-              --
-            </Typography>
-          )}
+          <Box
+            sx={{
+              width: 80,
+              height: 28,
+              bgcolor: "grey.100",
+              borderRadius: 2,
+            }}
+          >
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={avgScorePerDay}>
+                <XAxis dataKey="date" hide />
+                <YAxis hide domain={[0, 5]} />
+                <Line
+                  type="monotone"
+                  dataKey="dailyAverageScore"
+                  stroke="#2e7d32"
+                  strokeWidth={1}
+                  dot={{ r: 0.5 }}
+                  activeDot={false}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </Box>
         </TableCell>
       </TableRow>
 

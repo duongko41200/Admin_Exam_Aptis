@@ -60,7 +60,7 @@ const CustomForm = ({
         width: '100%',
         minHeight: 'calc(100vh - 100px)',
         // padding: '10px',
-        position: 'relative'
+        position: 'relative',
       }}
     >
       {/* {showDeleteButton ? <DeleteButtonFlexEnd /> : null} */}

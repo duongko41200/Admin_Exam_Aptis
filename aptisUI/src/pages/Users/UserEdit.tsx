@@ -74,7 +74,7 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   }, []);
 
   return (
-    <Box sx={boxStyles}>
+    <Box sx={{ ...boxStyles}}>
       <EditBase>
         <Title title="ユーザ登録　編集" />
         <CustomForm
@@ -103,7 +103,6 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
             rows={10}
           />
 
-
           <PasswordInput source="newPassword" fullWidth label="Mật khẩu mới" />
           <SelectInput
             source="classRoomId"
@@ -120,6 +119,13 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
             label="Vai trò"
             fullWidth
           />
+
+          <Box
+            sx={{
+              width: "100%",
+              height: "50px",
+            }}
+          ></Box>
         </CustomForm>
       </EditBase>
     </Box>

@@ -5,8 +5,20 @@ const getAllWithQuery = async (
   const [sortField, sortOrder] = sort;
   const [start, end] = range;
 
+  const fuzzyFields = ["name", "email"];
+
+  const processedFilter = {};
+  for (const key in filter) {
+    const value = filter[key];
+
+    if (typeof value === "string" && fuzzyFields.includes(key)) {
+      processedFilter[key] = { $regex: value, $options: "i" };
+    } else {
+      processedFilter[key] = value;
+    }
+  }
   const res = await model
-    .find()
+    .find(processedFilter)
     .sort({ _id: sortOrder === "ASC" ? 1 : -1 })
     .skip(start || 0)
     .limit((end || 0) - (start || 0) + 1)

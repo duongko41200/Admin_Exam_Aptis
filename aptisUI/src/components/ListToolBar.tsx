@@ -1,71 +1,71 @@
-import { Button } from '@mui/material'
-import { UPDATED_SUCCESS } from '../consts/general'
-import dataProvider from '../providers/dataProviders/dataProvider'
-import { CreateButton, TopToolbar, useNotify } from 'react-admin'
+import { Button } from "@mui/material";
+import { UPDATED_SUCCESS } from "../consts/general";
+import dataProvider from "../providers/dataProviders/dataProvider";
+import { CreateButton, TopToolbar, useNotify } from "react-admin";
 
 export const ListToolBar = ({
   isShowCreate,
-  resource
+  resource,
 }: {
-  isShowCreate: boolean
-  resource?: any
+  isShowCreate: boolean;
+  resource?: any;
 }) => {
-  const notify = useNotify()
+  const notify = useNotify();
 
   const handleReset = async () => {
     try {
-      const data = await dataProvider.resetData('text', {})
+      const data = await dataProvider.resetData("text", {});
 
       await notify(UPDATED_SUCCESS, {
-        type: 'success'
-      })
+        type: "success",
+      });
     } catch (error) {
-      notify('エラー: 生産管理の更新に失敗しました: ' + error, {
-        type: 'warning'
-      })
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
-  }
+  };
 
   const handleExport = async () => {
     try {
-      const data = await dataProvider.exportDataByJson('writting', {})
-      await notify('Export thành công', {
-        type: 'success'
-      })
+      const data = await dataProvider.exportDataByJson("writting", {});
+      await notify("Export thành công", {
+        type: "success",
+      });
     } catch (error) {
-      notify('エラー: 生産管理の更新に失敗しました: ' + error, {
-        type: 'warning'
-      })
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
-  }
+  };
 
   const handleSynch = async () => {
     try {
-      const data = await dataProvider.synchData('text')
+      const data = await dataProvider.synchData("text");
 
       await notify(UPDATED_SUCCESS, {
-        type: 'success'
-      })
+        type: "success",
+      });
     } catch (error) {
-      notify('エラー: 生産管理の更新に失敗しました: ' + error, {
-        type: 'warning'
-      })
+      notify("エラー: 生産管理の更新に失敗しました: " + error, {
+        type: "warning",
+      });
     }
-  }
+  };
   return (
     <TopToolbar>
-      {resource && (resource == 'text' || resource == 'writting') && (
+      {resource && (resource == "text" || resource == "writting") && (
         <>
-          {resource == 'text' && (
+          {resource == "text" && (
             <>
-              {' '}
+              {" "}
               <Button
                 variant="text"
                 sx={{
-                  '&.MuiButton-root': {
-                    lineHeight: 'inherit !important',
-                    padding: '4px 5px !important'
-                  }
+                  "&.MuiButton-root": {
+                    lineHeight: "inherit !important",
+                    padding: "4px 5px !important",
+                  },
                 }}
                 onClick={handleSynch}
               >
@@ -74,10 +74,10 @@ export const ListToolBar = ({
               <Button
                 variant="text"
                 sx={{
-                  '&.MuiButton-root': {
-                    lineHeight: 'inherit !important',
-                    padding: '4px 5px !important'
-                  }
+                  "&.MuiButton-root": {
+                    lineHeight: "inherit !important",
+                    padding: "4px 5px !important",
+                  },
                 }}
                 onClick={handleReset}
               >
@@ -86,14 +86,14 @@ export const ListToolBar = ({
             </>
           )}
 
-          {resource == 'writting' && (
+          {resource == "writting" && (
             <Button
               variant="text"
               sx={{
-                '&.MuiButton-root': {
-                  lineHeight: 'inherit !important',
-                  padding: '4px 5px !important'
-                }
+                "&.MuiButton-root": {
+                  lineHeight: "inherit !important",
+                  padding: "4px 5px !important",
+                },
               }}
               onClick={handleExport}
             >
@@ -105,5 +105,5 @@ export const ListToolBar = ({
 
       {isShowCreate && <CreateButton label="新規登録" />}
     </TopToolbar>
-  )
-}
+  );
+};
