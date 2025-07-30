@@ -306,6 +306,7 @@ function StudyDetailRow({ detail }: { detail: any }) {
               height: 28,
               bgcolor: "grey.100",
               borderRadius: 2,
+              paddingBottom: 0.5,
             }}
           >
             <ResponsiveContainer width="100%" height="100%">

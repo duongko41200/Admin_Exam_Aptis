@@ -1,11 +1,4 @@
-
-import {
-    Box,
-    Card,
-    Typography
-} from "@mui/material";
-
-
+import { Box, Card, Typography } from "@mui/material";
 
 export default function CustomChartTooltip({ active, payload, label }: any) {
   if (active && payload && payload.length) {
@@ -32,11 +25,18 @@ export default function CustomChartTooltip({ active, payload, label }: any) {
         {dataPoint.children && dataPoint.children.length > 0 && (
           <Box>
             <Typography variant="body2" fontWeight="bold" sx={{ mb: 0.5 }}>
-              Chi tiết từng lượt làm:
+              Chi tiết từng lượt làm
+            </Typography>
+
+            <Typography
+              variant="body2"
+              sx={{ mb: 0.5, textDecorationLine: "underline" }}
+            >
+              Tổng số lượt làm: {dataPoint.children.length}
             </Typography>
             {dataPoint.children.map((entry: string, index: number) => (
               <Typography variant="body2" key={index}>
-                {entry}
+                - {entry}
               </Typography>
             ))}
           </Box>
