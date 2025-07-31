@@ -120,7 +120,6 @@ function StudyDetailRow({ detail }: { detail: any }) {
   const treeData = detail
     ? transformCountDetailToTreeData(detail.countDetail)
     : [];
-  console.log("Transformed Tree Data:", treeData);
 
   const result = checkStudyProgress([detail]);
   console.log({ result });

@@ -67,7 +67,7 @@ const SpeakingList = ({
 
   return (
     <List
-      title="管理ユーザー　一覧"
+      title=""
       actions={
         <ListToolBar
           resource={resource}
@@ -78,7 +78,10 @@ const SpeakingList = ({
       <Datagrid rowClick="show" bulkActionButtons={false}>
         <TextField source="no" label="NO" />
         <TextField source="title" label="Chủ đề Reading" />
-        <TextField source="questions[0].questionTitle" label="Chủ đề từng phần" />
+        <TextField
+          source="questions[0].questionTitle"
+          label="Chủ đề từng phần"
+        />
         <TextField source="questionPart" label="Reading Part" />
         <TextField source="createdAt" label="Ngày tạo" />
         <TextField source="updatedAt" label="Ngày Cập nhập" />

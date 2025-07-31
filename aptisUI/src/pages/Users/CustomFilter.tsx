@@ -33,10 +33,10 @@ const ProductFilterForm = ({
     <FormProvider {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <Box
-          width="60%"
+          width="40%"
           display="flex"
           sx={{
-            margin: "10px 0",
+            margin: "10px 0 0",
             columnGap: "1%",
             alignItems: "start",
           }}
@@ -51,6 +51,7 @@ const ProductFilterForm = ({
 
               "& .MuiInputBase-root": {
                 height: "48px !important",
+                margin: "0 !important",
               },
             }}
           />
@@ -65,9 +66,11 @@ const ProductFilterForm = ({
               // Giảm margin của FormControl (phần bao ngoài)
               "& .MuiFormControl-root": {
                 margin: "0 !important",
+                width: "100px !important",
               },
               // Hoặc dùng chính root luôn (tùy mục tiêu)
               margin: 0,
+              width: "100px !important",
             }}
           />
 

@@ -72,7 +72,7 @@ const UserList = ({ actions, resource, dataProvider }: BaseComponentProps) => {
   }, []);
   return (
     <List
-      title="管理ユーザー　一覧"
+      title="Quản Lý Thành Viên"
       actions={
         <ListToolBar
           isShowCreate={validRole("create", actions)}

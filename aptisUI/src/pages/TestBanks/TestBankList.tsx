@@ -26,7 +26,7 @@ const TestBankList = ({
 
   return (
     <List
-      title="管理ユーザー　一覧"
+      title=""
       actions={
         <ListToolBar
           resource={resource}
@@ -41,7 +41,9 @@ const TestBankList = ({
         <FunctionField
           source="classRoomId"
           label="Đề của Lớp học"
-          render={(record) =>record.classRoomId?.nameRoom || "Chưa có lớp học nào được gán"}
+          render={(record) =>
+            record.classRoomId?.nameRoom || "Chưa có lớp học nào được gán"
+          }
         />
 
         {["speaking", "listening", "reading", "writing"].map((field) => (

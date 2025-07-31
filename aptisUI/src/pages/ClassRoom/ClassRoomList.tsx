@@ -149,7 +149,7 @@ const ClassRoomList = ({
 }: BaseComponentProps) => {
   return (
     <List
-      title="管理ユーザー　一覧"
+      title=""
       actions={
         <ListToolBar
           resource={resource}

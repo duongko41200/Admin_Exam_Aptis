@@ -20,7 +20,6 @@ const CourseList = ({
   resource,
   dataProvider,
 }: BaseComponentProps) => {
-
   const fetchapi = async () => {
     const PORT = 3052;
 
@@ -41,7 +40,6 @@ const CourseList = ({
       });
 
     console.log({ data });
-
   };
 
   // useEffect(() => {
@@ -53,7 +51,7 @@ const CourseList = ({
 
   return (
     <List
-      title="管理ユーザー　一覧"
+      title=""
       actions={
         <ListToolBar
           resource={resource}
@@ -64,10 +62,7 @@ const CourseList = ({
       <Datagrid rowClick="show" bulkActionButtons={false}>
         <TextField source="no" label="NO" />
         <TextField source="courseTitle" label="Chủ đề khoa hoc" />
-        <TextField
-          source="subTitle"
-          label="subTitle"
-        />
+        <TextField source="subTitle" label="subTitle" />
         <TextField source="courseType" label="the loai khoa hoc" />
         <FunctionField
           source="createdAt"
@@ -80,18 +75,18 @@ const CourseList = ({
           render={(record) => convertDate(record?.createdAt)}
         />
 
-          <CustomButtonByRoleDelete
-            source="role"
+        <CustomButtonByRoleDelete
+          source="role"
+          label="Xóa"
+          // userLogin={userLogin}
+        >
+          <DeleteWithConfirmButton
+            confirmContent="よろしいですか?"
+            confirmTitle="削除"
             label="Xóa"
-            // userLogin={userLogin}
-          >
-            <DeleteWithConfirmButton
-              confirmContent="よろしいですか?"
-              confirmTitle="削除"
-              label="Xóa"
-              confirmColor="warning"
-            ></DeleteWithConfirmButton>
-          </CustomButtonByRoleDelete>
+            confirmColor="warning"
+          ></DeleteWithConfirmButton>
+        </CustomButtonByRoleDelete>
 
         {validRole("edit", actions) && (
           <CustomButtonByRoleEdit

@@ -5,8 +5,6 @@ export default function CustomChartTooltip({ active, payload, label }: any) {
     const dataPoint = payload[0].payload;
     const date = dataPoint.date;
 
-    console.log("CustomChartTooltip Data Point:", dataPoint);
-
     return (
       <Card
         sx={{ p: 2, boxShadow: 3, border: "1px solid", borderColor: "divider" }}
