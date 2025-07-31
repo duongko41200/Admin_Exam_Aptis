@@ -14,7 +14,7 @@ const authProvider: AuthProvider = {
     const { username, password } = params;
 
     try {
-      const request = new Request(`${apiUrl}/access/login`, {
+      const request = new Request(`${apiUrl}/admin/access/login`, {
         method: "POST",
         body: JSON.stringify({ email: username, password }),
         headers: new Headers({

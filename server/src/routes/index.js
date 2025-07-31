@@ -14,6 +14,7 @@ import classRoomRouter from "./class-room/index.js";
 import courseRouter from "./courses/index.js";
 import lectureRouter from "./lectures/index.js";
 import studyProcessRouter from "./study-process/index.js";
+import adminAccessRouter from "./admin/access/index.js";
 
 const router = express.Router();
 
@@ -23,6 +24,10 @@ router.use(apiKey);
 //check permission
 
 router.unsubscribe(String(permission("000")));
+
+router.use("/v1/api/admin", adminAccessRouter);
+
+
 
 // Các route
 router.use("/v1/api", accessRouter);
