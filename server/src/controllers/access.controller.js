@@ -58,7 +58,9 @@ class AccessController {
     res.cookie("accessToken", data.tokens.accessToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV != "dev",
-      sameSite: "strict",
+      sameSite: "none",
+      domain:
+        process.env.NODE_ENV != "dev" ? ".aptisacademy.com.vn" : "localhost",
       maxAge: 7 * 60 * 60 * 1000,
     });
 
