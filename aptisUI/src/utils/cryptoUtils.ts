@@ -1,7 +1,7 @@
 import AES from "crypto-js/aes.js";
 import Utf8 from "crypto-js/enc-utf8.js";
 
-const secretKey = "encrypted_learning_update_timestamp";
+const secretKey = "aptis-academy-ADU-2025";
 
 /**
  * Mã hoá một chuỗi văn bản bằng AES

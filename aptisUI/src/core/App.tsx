@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import authProvider from "../providers/authProvider";
 import dataProvider from "../providers/dataProviders/dataProvider";
 import { checkRole } from "./role/permissions";
+import "../assets/index.css"; // Import Tailwind CSS
 
 // Define resources
 import { ResourceIF } from "@/types/general";
