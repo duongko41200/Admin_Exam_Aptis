@@ -1,11 +1,7 @@
-import { Create, PasswordInput, SelectInput, TextInput } from "react-admin";
-import { userRoles } from "../../consts/user";
+import { Create } from "react-admin";
 
-import CustomForm from "../../components/CustomForm";
-import { BaseComponentProps } from "../../types/general";
-import { validateUserCreation } from "./formValidator";
-import dataProvider from "../../providers/dataProviders/dataProvider";
 import CustomTabPanel from "../../components/Tabs/TabsMenuSpeaking";
+import { BaseComponentProps } from "../../types/general";
 
 const SpeakingCreate = ({ resource }: BaseComponentProps) => {
   const resourcePath = `/${resource}`;

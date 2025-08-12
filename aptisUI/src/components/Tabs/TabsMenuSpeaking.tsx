@@ -11,6 +11,9 @@ import SpeakingPartFour from "../../pages/Speaking/SpeakingPart/SpeakingPartFour
 import FrameRoomExam from "../FrameRoomExam";
 import ModalBasic from "../Modal/ModalBasic";
 import { useNavigate } from "react-router-dom";
+import ExamSpeaking from "../ExamTest/Speaking/ExamSpeaking";
+import { useDispatch } from "react-redux";
+import { SET_NUMBER_OF_QUESTIONS } from "../../store/feature/speaking";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,9 +48,22 @@ export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
   const [previewModalOpen, setPreviewModalOpen] = React.useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    if (newValue === 0) {
+      dispatch(SET_NUMBER_OF_QUESTIONS(1));
+    }
+    if (newValue === 1) {
+      dispatch(SET_NUMBER_OF_QUESTIONS(2));
+    }
+    if (newValue === 2) {
+      dispatch(SET_NUMBER_OF_QUESTIONS(3));
+    }
+    if (newValue === 3) {
+      dispatch(SET_NUMBER_OF_QUESTIONS(4));
+    }
   };
 
   const handleCancel = () => {
@@ -64,7 +80,13 @@ export default function BasicTabs() {
 
   return (
     <>
-      <Box sx={{ width: "100%" }}>
+      <Box
+        sx={{
+          width: "100%",
+          overflow: "auto",
+          maxHeight: "calc(100vh - 70px)",
+        }}
+      >
         <Box
           sx={{
             borderBottom: 1,
@@ -129,12 +151,20 @@ export default function BasicTabs() {
         draggable={true}
         resizable={true}
       >
-        <div style={{ width: "100%", height: "100%", overflow: "auto", background: "#fff" }}>
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            overflow: "auto",
+            background: "#fff",
+            position: "relative",
+          }}
+        >
           <FrameRoomExam
             currentExamPart="speaking"
             isDisabled={false}
             hours={0}
-            minutes={30}
+            minutes={0}
             seconds={0}
             isSpeakingTaiLieu={true}
             isScreenTaiLieu={false}
@@ -142,51 +172,8 @@ export default function BasicTabs() {
             stopRecording={() => console.log("Stop recording")}
             finishRecording={() => console.log("Finish recording")}
           >
-            {/* <div
-              style={{
-                padding: "20px",
-                marginTop: "60px",
-                background: "#f5f5f5",
-                borderRadius: "8px",
-              }}
-            >
-              <h3 style={{ marginBottom: "16px", color: "#333" }}>
-                Nội dung bài thi Speaking
-              </h3>
-              <p style={{ lineHeight: "1.6", color: "#666" }}>
-                Đây là nơi hiển thị nội dung bài thi speaking cho học sinh. Giao
-                diện này sẽ bao gồm timer, nút record, và các chức năng khác mà
-                học sinh sẽ sử dụng trong quá trình làm bài.
-              </p>
-              <div
-                style={{
-                  marginTop: "20px",
-                  padding: "16px",
-                  background: "#e8f4fd",
-                  borderRadius: "4px",
-                }}
-              >
-                <h4 style={{ margin: "0 0 8px 0", color: "#1976d2" }}>
-                  Hướng dẫn:
-                </h4>
-                <ul style={{ margin: 0, paddingLeft: "20px", color: "#555" }}>
-                  <li>Nhấn nút Record để bắt đầu ghi âm</li>
-                  <li>Theo dõi thời gian còn lại ở góc trên</li>
-                  <li>Sử dụng các nút điều hướng để chuyển câu hỏi</li>
-                </ul>
-              </div>
-            </div> */}
+            <ExamSpeaking />
           </FrameRoomExam>
-        </div>
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleClosePreview}
-            sx={{ px: 4 }}
-          >
-            Đóng xem trước
-          </Button>
         </div>
       </ModalBasic>
     </>

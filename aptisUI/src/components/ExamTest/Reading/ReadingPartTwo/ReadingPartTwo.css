@@ -1,0 +1,37 @@
+.lrn_widget  {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+.lrn  {
+    font-family: Inter, sans-serif !important;
+}
+.lrn_widget .lrn_response_input_wrapper, .lrn_widget .lrn_response_container, .lrn_widget.lrn_choicematrix .lrn_response_input {
+    margin-top: -0.35714286em;
+    border-collapse: separate;
+}
+.lrn .lrn_response_innerbody.lrn_horizontal_list {
+    display: table;
+    height: 1px;
+    direction: ltr;
+}
+
+.lrn_widget.lrn_clozeassociation .lrn_response_input, .lrn_widget.lrn_imageclozeassociation .lrn_response_input, .lrn_widget.lrn_imageclozeassociationV2 .lrn_response_input {
+    margin-bottom: 1.4em;
+    padding-top: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0;
+    padding-left: 1.2em;
+    overflow-x: auto;
+}
+.lrn_widget .lrn_response.lrn_cloze:not(.lrn_formulaV2) .lrn_response_input p {
+    line-height: 2.7;
+}
+.box-right{
+    margin-bottom: 1.4em;
+    padding-top: 1.2em;
+    padding-right: 1.2em;
+    padding-bottom: 0;
+    padding-left: 1.2em;
+    /* overflow-x: auto; */
+}

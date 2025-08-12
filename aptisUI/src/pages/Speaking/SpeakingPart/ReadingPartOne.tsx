@@ -3,11 +3,18 @@ import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import {
+  UPDATE_SPEAKING_MAIN_DATA,
+  UPDATE_SUB_QUESTION,
+  UPDATE_SUB_QUESTION_SUGGESTION,
+  RESET_SPEAKING_DATA,
+} from "../../../store/feature/speaking";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -126,6 +133,9 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const dispatch = useDispatch();
+  const speakingStore = useSelector((state: any) => state.speakingStore);
+
   const {
     register,
     handleSubmit,
@@ -133,11 +143,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     control,
     setValue,
     reset,
+    watch,
   } = useForm<FormData>();
+
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [imageUpload, setImageUpload] = useState();
   const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
+  const [showDebugPanel, setShowDebugPanel] = useState(false); // State cho debug panel
+
+  // Watch form values để update store
+  const watchedValues = watch();
 
   const handleSuggestionChange = (index: number, value: string) => {
     setSuggestions((prev) => {
@@ -145,29 +161,74 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       newSuggestions[index] = value;
       return newSuggestions;
     });
+
+    // Update store
+    dispatch(
+      UPDATE_SUB_QUESTION_SUGGESTION({
+        index: index - 1, // Convert to 0-based index
+        value: value,
+      })
+    );
+  };
+
+  // Function to update main form data in store
+  const updateMainDataInStore = (field: string, value: string) => {
+    dispatch(
+      UPDATE_SPEAKING_MAIN_DATA({
+        field,
+        value,
+      })
+    );
+  };
+
+  // Function to update sub question data in store
+  const updateSubQuestionInStore = (
+    index: number,
+    field: string,
+    value: string
+  ) => {
+    dispatch(
+      UPDATE_SUB_QUESTION({
+        index: index - 1, // Convert to 0-based index
+        field,
+        value,
+      })
+    );
   };
 
   const onSubmit = async (values: FormData) => {
+    // Sử dụng dữ liệu từ store để đảm bảo đồng bộ
+    const storeData = speakingStore.currentSpeakingData;
+
     const data = {
-      title: values.title,
+      title: storeData.title || values.title,
       timeToDo: 50,
-      description: values.subTitle,
+      description: storeData.subTitle || values.subTitle,
       questions: [
         {
-          questionTitle: values.subTitle,
-          content: values.content,
+          questionTitle: storeData.subTitle || values.subTitle,
+          content: storeData.content || values.content,
           answerList: [],
           correctAnswer: "",
-          file: values.file,
+          file: storeData.file || values.file,
           subQuestionAnswerList: [],
-          suggestion: "",
+          suggestion: storeData.suggestion || values.suggestion,
           subQuestion: [1, 2, 3].map((num) => ({
-            content: values[`subContent${num}`],
+            content:
+              storeData.subQuestions[num - 1]?.content ||
+              values[`subContent${num}`] ||
+              "",
             correctAnswer: null,
-            file: values[`subFile${num}`],
+            file:
+              storeData.subQuestions[num - 1]?.file ||
+              values[`subFile${num}`] ||
+              "",
             answerList: null,
             image: null,
-            suggestion: suggestions[num],
+            suggestion:
+              storeData.subQuestions[num - 1]?.suggestion ||
+              suggestions[num - 1] ||
+              "",
           })),
           isExample: "",
           image: null,
@@ -177,6 +238,8 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       questionPart: "ONE",
     };
 
+    console.log("Data from store:", storeData);
+    console.log("Final submit data:", data);
 
     if (statusHandler === "create") {
       createWritingPartOne(data);
@@ -232,10 +295,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
           `subContent${num}` as keyof FormData,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
         );
-        // setValue(
-        //   `suggestion${num}` as keyof FormData,
-        //   dataSpeakingPartOne.questions[0].subQuestion[num - 1].suggestion
-        // );
 
         handleSuggestionChange(
           num,
@@ -249,11 +308,111 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     }
   }, [dataSpeakingPartOne, setValue]);
 
+  // Effect để theo dõi thay đổi form và update store
+  useEffect(() => {
+    if (watchedValues) {
+      // Update main data
+      if (watchedValues.title !== undefined) {
+        updateMainDataInStore("title", watchedValues.title || "");
+      }
+      if (watchedValues.subTitle !== undefined) {
+        updateMainDataInStore("subTitle", watchedValues.subTitle || "");
+      }
+      if (watchedValues.content !== undefined) {
+        updateMainDataInStore("content", watchedValues.content || "");
+      }
+      if (watchedValues.suggestion !== undefined) {
+        updateMainDataInStore("suggestion", watchedValues.suggestion || "");
+      }
+      if (watchedValues.file !== undefined) {
+        updateMainDataInStore("file", watchedValues.file || "");
+      }
+
+      // Update sub questions
+      [1, 2, 3].forEach((num) => {
+        const subContentKey = `subContent${num}` as keyof FormData;
+        const subFileKey = `subFile${num}` as keyof FormData;
+
+        if (watchedValues[subContentKey] !== undefined) {
+          updateSubQuestionInStore(
+            num,
+            "content",
+            watchedValues[subContentKey] || ""
+          );
+        }
+        if (watchedValues[subFileKey] !== undefined) {
+          updateSubQuestionInStore(
+            num,
+            "file",
+            watchedValues[subFileKey] || ""
+          );
+        }
+      });
+    }
+  }, [watchedValues]);
+
+  // Effect để reset store khi component unmount
+  useEffect(() => {
+    return () => {
+      if (statusHandler === "create") {
+        dispatch(RESET_SPEAKING_DATA());
+      }
+    };
+  }, [statusHandler, dispatch]);
+
   return (
     <div>
+      {/* Debug panel - luôn hiển thị nhưng nội dung thay đổi theo state */}
+      <Box
+        sx={{
+          background: "#f0f0f0",
+          padding: "10px",
+          marginBottom: "20px",
+          borderRadius: "4px",
+          fontSize: "12px",
+          border: "2px solid #ddd",
+          position: "relative",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: showDebugPanel ? "10px" : "0px",
+          }}
+        >
+          <h4 style={{ margin: 0 }}>Store Data (Real-time):</h4>
+          <button
+            onClick={() => setShowDebugPanel(!showDebugPanel)}
+            color="primary"
+            className="hover:bg-gray-200 p-1"
+          >
+            <span>{showDebugPanel ? "🔼 Thu gọn" : "🔽 Xem chi tiết"}</span>
+          </button>
+        </Box>
+
+        {/* Nội dung JSON chỉ hiển thị khi showDebugPanel = true */}
+        {showDebugPanel && (
+          <Box
+            sx={{
+              maxHeight: "300px",
+              overflow: "auto",
+              background: "#fff",
+              padding: "8px",
+              borderRadius: "4px",
+            }}
+          >
+            <pre>
+              {JSON.stringify(speakingStore.currentSpeakingData, null, 2)}
+            </pre>
+          </Box>
+        )}
+      </Box>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="form sign-up-form relative"
+        className="form sign-up-form relative overflow-auto"
       >
         <h2 className="title">Speaking Part 1</h2>
         <div>

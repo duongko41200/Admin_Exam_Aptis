@@ -42,7 +42,7 @@ export default function ModalBasic({
         width: `${dimensions.width}px`,
         height: `${dimensions.height}px`,
         minWidth: "300px",
-        minHeight: "200px",
+        minHeight: "350px",
         maxWidth: "95vw",
         maxHeight: "95vh",
       };
@@ -233,7 +233,7 @@ export default function ModalBasic({
 
         {/* Content */}
         <div
-          className="p-6 overflow-auto"
+          className="px-8 bg-[#fff]"
           style={{
             height: resizable ? `${dimensions.height - 120}px` : "auto",
             maxHeight:

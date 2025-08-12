@@ -84,6 +84,14 @@ const UserList = ({ actions, resource, dataProvider }: BaseComponentProps) => {
         rowClick="show"
         bulkActionButtons={false}
         expand={<StudyProcess />}
+        sx={{
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+
+          },
+          maxHeight: "calc(100vh - 200px)",
+          overflow: "auto",
+        }}
       >
         <TextField source="no" label="NO" />
         <TextField source="name" label="User" />
