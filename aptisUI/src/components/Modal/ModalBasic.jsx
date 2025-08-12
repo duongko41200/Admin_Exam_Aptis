@@ -26,7 +26,7 @@ export default function ModalBasic({
   const getInitialSize = () => {
     switch (size) {
       case "medium":
-        return { width: 600, height: 400 };
+        return { width: 800, height: 400 };
       case "large":
         return { width: 800, height: 600 };
       case "fullscreen":
@@ -43,7 +43,7 @@ export default function ModalBasic({
         height: `${dimensions.height}px`,
         minWidth: "300px",
         minHeight: "350px",
-        maxWidth: "95vw",
+        maxWidth: "100vw",
         maxHeight: "95vh",
       };
     }
@@ -118,7 +118,7 @@ export default function ModalBasic({
       const deltaY = e.clientY - resizeStart.y;
 
       const newWidth = Math.max(
-        300,
+        800,
         Math.min(window.innerWidth * 0.95, resizeStart.width + deltaX)
       );
       const newHeight = Math.max(
@@ -154,110 +154,122 @@ export default function ModalBasic({
   if (!open) return null;
 
   return (
-    <div
-      className="fixed inset-0 flex items-center justify-center  "
-      onClick={handleClose}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        zIndex: 999999, // Z-index cực cao
-      }}
-    >
+    <>
+      {/* Overlay nhẹ không chặn sự kiện */}
       <div
-        ref={modalRef}
-        className={` rounded-lg shadow-2xl relative ${
-          size === "fullscreen" ? "overflow-auto" : "overflow-hidden"
-        } ${
-          (draggable || resizable) && size !== "fullscreen"
-            ? "transition-none"
-            : ""
-        }`}
-        onClick={(e) => e.stopPropagation()}
+        className="fixed inset-0"
         style={{
-          ...getSizeStyle(),
-          padding: size === "fullscreen" ? "24px" : "0",
-          transform:
+          zIndex: 999998,
+          // background: "rgba(0,0,0,0.1)",
+          pointerEvents: "none", // Không chặn sự kiện
+        }}
+      />
+
+      {/* Modal content floating */}
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          zIndex: 999999,
+          transform: `translate(-50%, -50%)${
             (draggable || resizable) && size !== "fullscreen"
-              ? `translate(${position.x}px, ${position.y}px)`
-              : "none",
-          cursor: isDragging
-            ? "grabbing"
-            : isResizing
-            ? "nw-resize"
-            : "default",
-          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
+              ? ` translate(${position.x}px, ${position.y}px)`
+              : ""
+          }`,
+          pointerEvents: "auto", // Modal có thể tương tác
+          
         }}
       >
-        {/* Header với tính năng drag */}
         <div
-          className={`${
-            draggable && size !== "fullscreen"
-              ? "cursor-grab active:cursor-grabbing"
+          ref={modalRef}
+          className={` rounded-lg shadow-2xl relative ${
+            size === "fullscreen" ? "overflow-auto" : "overflow-hidden"
+          } ${
+            (draggable || resizable) && size !== "fullscreen"
+              ? "transition-none"
               : ""
-          } px-6 py-4 border-b border-gray-200 bg-[#fff] rounded-t-lg`}
-          onMouseDown={handleMouseDown}
-        >
-          <h2
-            className="text-xl font-semibold select-none flex items-center justify-between"
-            id="modal-modal-title"
-          >
-            <span>{label}</span>
-            <div className="flex items-center space-x-2">
-              {draggable && size !== "fullscreen" && (
-                <span className="text-xs text-gray-400">🖱️ Kéo</span>
-              )}
-              {resizable && size !== "fullscreen" && (
-                <span className="text-xs text-gray-400">📐 Resize</span>
-              )}
-              <button
-                onClick={handleClose}
-                className="text-gray-400 hover:text-gray-600 text-xl font-bold w-6 h-6 flex items-center justify-center"
-              >
-                ×
-              </button>
-            </div>
-          </h2>
-          {subLabel && (
-            <p
-              className="text-sm text-gray-600 mt-1"
-              id="modal-modal-description"
-            >
-              {subLabel}
-            </p>
-          )}
-        </div>
-
-        {/* Content */}
-        <div
-          className="px-8 bg-[#fff]"
+          }`}
+          onClick={(e) => e.stopPropagation()}
           style={{
-            height: resizable ? `${dimensions.height - 120}px` : "auto",
-            maxHeight:
-              size === "fullscreen"
-                ? "calc(100vh - 120px)"
-                : "calc(95vh - 120px)",
+            ...getSizeStyle(),
+            padding: size === "fullscreen" ? "24px" : "0",
+            cursor: isDragging
+              ? "grabbing"
+              : isResizing
+              ? "nw-resize"
+              : "default",
+            boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
           }}
         >
-          {children}
-        </div>
-
-        {/* Resize handle */}
-        {resizable && size !== "fullscreen" && (
+          {/* Header với tính năng drag */}
           <div
-            className="absolute bottom-0 right-0 w-4 h-4 cursor-nw-resize bg-gray-300 hover:bg-gray-400"
+            className={`${
+              draggable && size !== "fullscreen"
+                ? "cursor-grab active:cursor-grabbing"
+                : ""
+            } px-6 py-4 border-b border-gray-200 bg-[#fff] rounded-t-lg`}
+            onMouseDown={handleMouseDown}
+          >
+            <h2
+              className="text-xl font-semibold select-none flex items-center justify-between"
+              id="modal-modal-title"
+            >
+              <span>{label}</span>
+              <div className="flex items-center space-x-2">
+                {draggable && size !== "fullscreen" && (
+                  <span className="text-xs text-gray-400">🖱️ Kéo</span>
+                )}
+                {resizable && size !== "fullscreen" && (
+                  <span className="text-xs text-gray-400">📐 Resize</span>
+                )}
+                <button
+                  onClick={handleClose}
+                  className="text-gray-400 hover:text-gray-600 text-4xl font-bold w-8 h-8 flex items-center justify-center"
+                >
+                  ×
+                </button>
+              </div>
+            </h2>
+            {subLabel && (
+              <p
+                className="text-sm text-gray-600 mt-1"
+                id="modal-modal-description"
+              >
+                {subLabel}
+              </p>
+            )}
+          </div>
+
+          {/* Content */}
+          <div
+            className="px-8 bg-[#fff]"
             style={{
-              // background:
-              //   "linear-gradient(-45deg, transparent 30%, #9ca3af 30%, #9ca3af 60%, transparent 60%)",
-              borderRadius: "0 0 8px 0",
+              height: resizable ? `${dimensions.height - 120}px` : "auto",
+              maxHeight:
+                size === "fullscreen"
+                  ? "calc(100vh - 120px)"
+                  : "calc(95vh - 120px)",
             }}
-            onMouseDown={handleResizeMouseDown}
-          />
-        )}
+          >
+            {children}
+          </div>
+
+          {/* Resize handle */}
+          {resizable && size !== "fullscreen" && (
+            <div
+              className="absolute bottom-0 right-0 w-4 h-4 cursor-nw-resize bg-gray-300 hover:bg-gray-400"
+              style={{
+                // background:
+                //   "linear-gradient(-45deg, transparent 30%, #9ca3af 30%, #9ca3af 60%, transparent 60%)",
+                borderRadius: "0 0 8px 0",
+              }}
+              onMouseDown={handleResizeMouseDown}
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

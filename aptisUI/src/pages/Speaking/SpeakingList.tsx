@@ -75,7 +75,10 @@ const SpeakingList = ({
         />
       }
     >
-      <Datagrid rowClick="show" bulkActionButtons={false}>
+      <Datagrid rowClick="show" bulkActionButtons={false} sx={{
+        maxHeight: "calc(100vh - 200px)",
+        overflowY: "auto"
+      }}>
         <TextField source="no" label="NO" />
         <TextField source="title" label="Chủ đề Reading" />
         <TextField

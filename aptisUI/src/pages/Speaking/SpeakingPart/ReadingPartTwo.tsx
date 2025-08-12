@@ -3,12 +3,19 @@ import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 import { stylesInpection } from "../../../styles/product-inspection";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import {
+  UPDATE_SPEAKING_MAIN_DATA,
+  UPDATE_SUB_QUESTION,
+  UPDATE_SUB_QUESTION_SUGGESTION,
+  RESET_SPEAKING_DATA,
+} from "../../../store/feature/speaking";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -127,6 +134,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const dispatch = useDispatch();
+  const speakingStore = useSelector((state: any) => state.speakingStore);
+
   const {
     register,
     handleSubmit,
@@ -134,46 +144,163 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     control,
     setValue,
     reset,
+    watch,
   } = useForm<FormData>();
 
   const [imageUpload, setImageUpload] = useState();
-
   const [images, setImages] = useState([]);
   const [previewUrls, setPreviewUrls] = useState([]);
   const [rangeUpload, setRangeUpload] = useState(false);
   const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
-  
-    const handleSuggestionChange = (index: number, value: string) => {
-      setSuggestions((prev) => {
-        const newSuggestions = [...prev];
-        newSuggestions[index] = value;
-        return newSuggestions;
-      });
-    };
+  const [showDebugPanel, setShowDebugPanel] = useState(false); // State cho debug panel
+  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
+  const [isDraggingDebug, setIsDraggingDebug] = useState(false);
+  const [debugDragStart, setDebugDragStart] = useState({ x: 0, y: 0 });
 
-  ////////////////////////////////////////////////////////////////////////////
+  // Watch form values để update store
+  const watchedValues = watch();
+
+  const handleSuggestionChange = (index: number, value: string) => {
+    setSuggestions((prev) => {
+      const newSuggestions = [...prev];
+      newSuggestions[index] = value;
+      return newSuggestions;
+    });
+    // Update Redux store khi suggestion thay đổi
+    dispatch(UPDATE_SUB_QUESTION_SUGGESTION({ index: index, value }));
+  };
+
+  // Helper functions để update Redux store
+  const updateMainDataInStore = (field: string, value: any) => {
+    dispatch(UPDATE_SPEAKING_MAIN_DATA({ field, value }));
+  };
+
+  const updateSubQuestionInStore = (
+    index: number,
+    field: string,
+    value: any
+  ) => {
+    dispatch(UPDATE_SUB_QUESTION({ index: index - 1, field, value }));
+  };
+
+  // Debug panel drag handlers
+  const handleDebugMouseDown = (e: React.MouseEvent) => {
+    setIsDraggingDebug(true);
+    setDebugDragStart({
+      x: e.clientX - debugPanelPosition.x,
+      y: e.clientY - debugPanelPosition.y,
+    });
+  };
+
+  const handleDebugMouseMove = (e: MouseEvent) => {
+    if (isDraggingDebug) {
+      const newX = e.clientX - debugDragStart.x;
+      const newY = e.clientY - debugDragStart.y;
+
+      setDebugPanelPosition({
+        x: newX,
+        y: newY,
+      });
+    }
+  };
+
+  const handleDebugMouseUp = () => {
+    setIsDraggingDebug(false);
+  };
+
+  // Effect để update Redux store khi form thay đổi
+  useEffect(() => {
+    if (watchedValues && Object.keys(watchedValues).length > 0) {
+      // Update main data
+      if (watchedValues.title !== undefined) {
+        updateMainDataInStore("title", watchedValues.title || "");
+      }
+      if (watchedValues.subTitle !== undefined) {
+        updateMainDataInStore("subTitle", watchedValues.subTitle || "");
+      }
+      if (watchedValues.content !== undefined) {
+        updateMainDataInStore("content", watchedValues.content || "");
+      }
+      if (watchedValues.suggestion !== undefined) {
+        updateMainDataInStore("suggestion", watchedValues.suggestion || "");
+      }
+      if (watchedValues.file !== undefined) {
+        updateMainDataInStore("file", watchedValues.file || "");
+      }
+
+      // Update sub questions
+      [1, 2, 3].forEach((num) => {
+        const subContentKey = `subContent${num}` as keyof FormData;
+        const subFileKey = `subFile${num}` as keyof FormData;
+
+        if (watchedValues[subContentKey] !== undefined) {
+          updateSubQuestionInStore(
+            num,
+            "content",
+            watchedValues[subContentKey] || ""
+          );
+        }
+        if (watchedValues[subFileKey] !== undefined) {
+          updateSubQuestionInStore(
+            num,
+            "file",
+            watchedValues[subFileKey] || ""
+          );
+        }
+      });
+    }
+  }, [watchedValues]);
+
+  // Effect để reset store khi component unmount
+  useEffect(() => {
+    return () => {
+      dispatch(RESET_SPEAKING_DATA());
+    };
+  }, []);
+
+  // Effect cho debug panel drag
+  useEffect(() => {
+    if (isDraggingDebug) {
+      document.addEventListener("mousemove", handleDebugMouseMove);
+      document.addEventListener("mouseup", handleDebugMouseUp);
+    }
+
+    return () => {
+      document.removeEventListener("mousemove", handleDebugMouseMove);
+      document.removeEventListener("mouseup", handleDebugMouseUp);
+    };
+  }, [isDraggingDebug, debugDragStart, debugPanelPosition]); ////////////////////////////////////////////////////////////////////////////
 
   const onSubmit = async (values: any) => {
+    // Sử dụng data từ Redux store thay vì form values trực tiếp
+    const storeData = speakingStore.currentSpeakingData;
+
     const data = {
-      title: values.title,
+      title: storeData.title || values.title,
       timeToDo: 50,
-      description: values.subTitle,
+      description: storeData.subTitle || values.subTitle,
       questions: [
         {
-          questionTitle: values.subTitle,
-          content: values.content,
+          questionTitle: storeData.subTitle || values.subTitle,
+          content: storeData.content || values.content,
           answerList: [],
           correctAnswer: "",
-          file: values.file,
+          file: storeData.file || values.file,
           subQuestionAnswerList: [],
-          suggestion: "",
+          suggestion: storeData.suggestion || "",
           subQuestion: [1, 2, 3].map((num) => ({
-            content: values[`subContent${num}`],
+            content:
+              storeData.subQuestions[num - 1]?.content ||
+              values[`subContent${num}`] ||
+              "",
             correctAnswer: null,
-            file: values[`subFile${num}`],
+            file:
+              storeData.subQuestions[num - 1]?.file ||
+              values[`subFile${num}`] ||
+              "",
             answerList: null,
             image: values[`imgUrl`],
-            suggestion:suggestions[num],
+            suggestion: storeData.subQuestions[num - 1]?.suggestion || "",
           })),
           isExample: "",
           image: null,
@@ -183,7 +310,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       questionPart: "TWO",
     };
 
-    console.log({ dataForm: data });
+    console.log({ dataForm: data, storeData });
 
     if (statusHandler === "create") {
       const uploadData = new FormData();
@@ -263,17 +390,38 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartTwo.title);
       setValue("content", dataReadingPartTwo.questions[0].content);
       setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
-      setValue('imgUrl', dataReadingPartTwo.questions[0].subQuestion[0].image);
+      setValue("imgUrl", dataReadingPartTwo.questions[0].subQuestion[0].image);
+
+      // Update Redux store với data từ edit
+      updateMainDataInStore("title", dataReadingPartTwo.title);
+      updateMainDataInStore("content", dataReadingPartTwo.questions[0].content);
+      updateMainDataInStore(
+        "subTitle",
+        dataReadingPartTwo.questions[0].questionTitle
+      );
+      updateMainDataInStore(
+        "suggestion",
+        dataReadingPartTwo.questions[0].suggestion || ""
+      );
+      updateMainDataInStore("file", dataReadingPartTwo.questions[0].file || "");
 
       [1, 2, 3].map((num) => {
         setValue(
           `subContent${num}` as keyof FormData,
           dataReadingPartTwo.questions[0].subQuestion[num - 1].content
         );
-        // setValue(
-        //   `suggestion${num}` as keyof FormData,
-        //   dataReadingPartTwo.questions[0].subQuestion[num - 1].suggestion
-        // );
+
+        // Update Redux store cho sub questions
+        updateSubQuestionInStore(
+          num,
+          "content",
+          dataReadingPartTwo.questions[0].subQuestion[num - 1].content
+        );
+        updateSubQuestionInStore(
+          num,
+          "file",
+          dataReadingPartTwo.questions[0].subQuestion[num - 1].file
+        );
 
         handleSuggestionChange(
           num,
@@ -306,11 +454,89 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
 
   return (
     <div>
+      <Box
+        sx={{
+          position: "fixed",
+          top: "140px",
+          right: "20px",
+          width: showDebugPanel ? "400px" : "auto",
+          maxHeight: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          color: "white",
+          borderRadius: "8px",
+          zIndex: 1000,
+          border: "1px solid #333",
+          transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
+          cursor: isDraggingDebug ? "grabbing" : "default",
+          userSelect: "none",
+        }}
+      >
+        {/* Header luôn hiển thị */}
+        <Box
+          sx={{
+            padding: "8px 12px",
+            borderBottom: showDebugPanel ? "1px solid #333" : "none",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            borderRadius: showDebugPanel ? "8px 8px 0 0" : "8px",
+            cursor: "grab",
+            "&:active": {
+              cursor: "grabbing",
+            },
+          }}
+          onMouseDown={handleDebugMouseDown}
+        >
+          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
+            Redux Store Debug 🖱️
+          </span>
+          <button
+            onClick={() => setShowDebugPanel(!showDebugPanel)}
+            style={{
+              background: "none",
+              border: "1px solid #666",
+              color: "white",
+              borderRadius: "4px",
+              padding: "4px 8px",
+              cursor: "pointer",
+              fontSize: "12px",
+            }}
+          >
+            <span>{showDebugPanel ? "▼" : "▶"}</span>
+          </button>
+        </Box>
+
+        {/* Nội dung JSON chỉ hiển thị khi expanded */}
+        {showDebugPanel && (
+          <Box
+            sx={{
+              padding: "12px",
+              maxHeight: "350px",
+              overflow: "auto",
+            }}
+          >
+            <pre
+              style={{
+                margin: 0,
+                fontSize: "10px",
+                lineHeight: "1.2",
+                wordWrap: "break-word",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {JSON.stringify(speakingStore.currentSpeakingData, null, 2)}
+            </pre>
+          </Box>
+        )}
+      </Box>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
       >
         <h2 className="title">Speaking Part 2</h2>
+        {/* Debug Panel */}
+
         <div>
           <TextField
             type="title"
@@ -487,8 +713,10 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
               questionNumber={num}
               register={register}
               errors={errors}
-              suggestion={suggestions[num]}
-              setSuggestion={(value: any) => handleSuggestionChange(num, value)}
+              suggestion={suggestions[num - 1]}
+              setSuggestion={(value: any) =>
+                handleSuggestionChange(num - 1, value)
+              }
               num={num}
             />
           ))}

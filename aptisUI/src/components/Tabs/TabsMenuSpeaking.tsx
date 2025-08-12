@@ -10,10 +10,13 @@ import SpeakingPartThree from "../../pages/Speaking/SpeakingPart/SpeakingPartThr
 import SpeakingPartFour from "../../pages/Speaking/SpeakingPart/SpeakingPartFour";
 import FrameRoomExam from "../FrameRoomExam";
 import ModalBasic from "../Modal/ModalBasic";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ExamSpeaking from "../ExamTest/Speaking/ExamSpeaking";
 import { useDispatch } from "react-redux";
-import { SET_NUMBER_OF_QUESTIONS } from "../../store/feature/speaking";
+import {
+  SET_NUMBER_OF_QUESTIONS,
+  SET_RESET_NUMBER_QUESTION_SPEAKING,
+} from "../../store/feature/speaking";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,7 +51,13 @@ export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
   const [previewModalOpen, setPreviewModalOpen] = React.useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const dispatch = useDispatch();
+
+  // Đóng modal khi chuyển route
+  React.useEffect(() => {
+    setPreviewModalOpen(false);
+  }, [location.pathname]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -71,6 +80,7 @@ export default function BasicTabs() {
   };
 
   const handleOpenPreview = () => {
+    dispatch(SET_RESET_NUMBER_QUESTION_SPEAKING());
     setPreviewModalOpen(true);
   };
 

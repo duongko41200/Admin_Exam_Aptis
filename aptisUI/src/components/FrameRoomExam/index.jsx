@@ -58,9 +58,9 @@ export default function FrameRoomExam({
           <div>
             <>
               <div
-                className={`flex justify-end items-center p-4 h-[3.75rem] w-full bg-white fixed z-10 `}
+                className={`flex justify-end items-center p-4 h-[3.75rem] w-[calc(100%-3rem)] bg-white fixed z-10 `}
               >
-                <div className="fixed px-8">
+                <div className="px-8">
                   <div className="text-[#161616] font-bold text-[20px] 2xl:text-2xl mt-1">
                     <span>{hours.toString().padStart(2, "0")}</span>:
                     <span>{minutes.toString().padStart(2, "0")}</span>:

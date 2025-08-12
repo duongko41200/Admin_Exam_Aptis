@@ -13,9 +13,15 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   const currentNumberQuestion = useSelector(
     (state) => state.taiLieuStore.currentNumberQuestion
   );
+  const numberQuestion = useSelector(
+    (state) => state.speakingStore.numberQuestion
+  );
 
   const subQuestionSpeaking = useSelector(
     (state) => state.speakingStore.currentSpeakingData?.subQuestions
+  );
+  const currentSpeakingData = useSelector(
+    (state) => state.speakingStore.currentSpeakingData
   );
 
   const numberQuestionEachPart = useSelector(
@@ -43,11 +49,12 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
     }
 
     if (currentExamPart === "speaking") {
-
-		console.log("Speaking part detected");
       const subQuestion = subQuestionSpeaking[numberQuestionEachPart - 1];
 
-	  console.log("Sub question:", subQuestion);
+      if (numberQuestion === 4) {
+        setSuggestion(currentSpeakingData?.suggestion || null);
+        return;
+      }
       if (subQuestion && subQuestion.suggestion) {
         setSuggestion(subQuestion.suggestion);
       } else {

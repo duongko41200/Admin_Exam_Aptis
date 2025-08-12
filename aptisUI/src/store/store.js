@@ -18,3 +18,7 @@ export const store = configureStore({
     listeningStore: listeningReducer,
   },
 });
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export const getRootState = () => store.getState();
+export const getAppDispatch = () => store.dispatch;
