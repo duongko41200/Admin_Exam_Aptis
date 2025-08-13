@@ -1,12 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler, set } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import {
+  UPDATE_WRITING_MAIN_DATA,
+  UPDATE_WRITING_SUB_QUESTION,
+  RESET_WRITING_DATA,
+  INIT_SUB_QUESTIONS,
+} from "../../../store/feature/writing";
 
 interface WritingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -122,7 +129,17 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const dispatch = useDispatch();
+  const writingStore = useSelector((state: any) => state.writingStore);
+
+  // State for debug panel
+  const [isDragging, setIsDragging] = useState(false);
+  const [isDebugPanelOpen, setIsDebugPanelOpen] = useState(false);
+  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [suggestion, setSuggestion] = useState("");
+  const [content, setContent] = useState("");
+  const [isTypingTimeOut, setIsTypingTimeOut] = useState<any>(null);
 
   const {
     register,
@@ -131,24 +148,170 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
     control,
     setValue,
     reset,
+    watch,
   } = useForm<FormData>();
 
+  // Watch all form fields for real-time Redux sync
+  const watchedFields = watch();
+
+  // Sync form data to Redux store in real-time
+  useEffect(() => {
+    // Initialize store with 2 sub questions for Writing Part 4
+    if (!writingStore?.currentWritingData) {
+      dispatch(RESET_WRITING_DATA());
+      dispatch(INIT_SUB_QUESTIONS({ count: 2 }));
+      return;
+    }
+
+    // Ensure we have 2 sub questions
+    if (writingStore.currentWritingData.subQuestions.length !== 2) {
+      dispatch(INIT_SUB_QUESTIONS({ count: 2 }));
+    }
+
+    // Update Redux when form fields change
+    if (
+      watchedFields.title !== undefined &&
+      watchedFields.title !== writingStore.currentWritingData.title
+    ) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "title",
+          value: watchedFields.title || "",
+        })
+      );
+    }
+    // Update content from state (not form field - using TextEditor)
+    if (content !== writingStore?.currentWritingData?.content) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "content",
+          value: content || "",
+        })
+      );
+    }
+    if (
+      watchedFields.subTitle !== undefined &&
+      watchedFields.subTitle !== writingStore.currentWritingData.subTitle
+    ) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "subTitle",
+          value: watchedFields.subTitle || "",
+        })
+      );
+    }
+
+    // Update suggestion from state (not form field)
+    if (suggestion !== writingStore?.currentWritingData?.suggestion) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "suggestion",
+          value: suggestion || "",
+        })
+      );
+    }
+
+    // Update sub questions (2 questions for Writing Part 4)
+    [1, 2].forEach((num) => {
+      const questionKey = `question${num}` as keyof FormData;
+      const answerKey = `answerPartFour${num}` as keyof FormData;
+
+      if (watchedFields[questionKey] !== undefined) {
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value: watchedFields[questionKey] || "",
+          })
+        );
+      }
+      if (watchedFields[answerKey] !== undefined) {
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "correctAnswer",
+            value: watchedFields[answerKey] || "",
+          })
+        );
+      }
+    });
+  }, [
+    watchedFields,
+    suggestion,
+    content,
+    dispatch,
+    writingStore?.currentWritingData,
+  ]);
+
+  // Debug panel drag handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+    setDragOffset({
+      x: e.clientX - debugPanelPosition.x,
+      y: e.clientY - debugPanelPosition.y,
+    });
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (isDragging) {
+      setDebugPanelPosition({
+        x: e.clientX - dragOffset.x,
+        y: e.clientY - dragOffset.y,
+      });
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const debouncedUpdate = useCallback(
+    (value: string) => {
+      if (isTypingTimeOut) {
+        clearTimeout(isTypingTimeOut);
+      }
+      setIsTypingTimeOut(
+        setTimeout(() => {
+          setSuggestion(value || "");
+        }, 300)
+      );
+    },
+    [isTypingTimeOut]
+  );
+
+  const debouncedContentUpdate = useCallback((value: string) => {
+    setContent(value || "");
+  }, []);
+
   const onSubmit = async (values: any) => {
+    // Use data from Redux store instead of form values directly
     const data = {
-      title: values.title,
+      title: writingStore?.currentWritingData?.title || values.title,
       timeToDo: 50,
       questions: [
         {
-          questionTitle: values.subTitle,
-          content: values.content,
+          questionTitle:
+            writingStore?.currentWritingData?.subTitle || values.subTitle,
+          content: writingStore?.currentWritingData?.content || values.content,
           answerList: [],
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion:suggestion,
+          suggestion:
+            writingStore?.currentWritingData?.suggestion || suggestion,
+          // Writing Part 4 có đúng 2 subQuestion với correctAnswer
           subQuestion: [1, 2].map((num) => ({
-            content: values[`question${num}`],
-            correctAnswer: values[`answerPartFour${num}`],
+            content:
+              writingStore?.currentWritingData?.subQuestions?.[num - 1]
+                ?.content ||
+              values[`question${num}`] ||
+              "",
+            correctAnswer:
+              writingStore?.currentWritingData?.subQuestions?.[num - 1]
+                ?.correctAnswer ||
+              values[`answerPartFour${num}`] ||
+              "",
             file: null,
             answerList: null,
             image: null,
@@ -207,8 +370,36 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
     if (dataWritingPartFour) {
       setValue("title", dataWritingPartFour.title);
       setValue("subTitle", dataWritingPartFour.questions[0].questionTitle);
-      setValue("content", dataWritingPartFour.questions[0].content);
+      // Don't set content to form anymore, use state instead
+      setContent(dataWritingPartFour.questions[0].content);
       setSuggestion(dataWritingPartFour.questions[0].suggestion);
+
+      // Also update Redux store
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "title",
+          value: dataWritingPartFour.title,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "subTitle",
+          value: dataWritingPartFour.questions[0].questionTitle,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "content",
+          value: dataWritingPartFour.questions[0].content,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "suggestion",
+          value: dataWritingPartFour.questions[0].suggestion || "",
+        })
+      );
+
       [1, 2].map((num) => {
         setValue(
           `question${num}`,
@@ -218,12 +409,150 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
           `answerPartFour${num}`,
           dataWritingPartFour.questions[0].subQuestion[num - 1].correctAnswer
         );
+
+        // Update Redux store for sub questions
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value:
+              dataWritingPartFour.questions[0].subQuestion[num - 1].content,
+          })
+        );
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "correctAnswer",
+            value:
+              dataWritingPartFour.questions[0].subQuestion[num - 1]
+                .correctAnswer,
+          })
+        );
       });
     }
-  }, [dataWritingPartFour, setValue]);
+  }, [dataWritingPartFour, setValue, dispatch]);
 
   return (
-    <div>
+    <div
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      style={{ position: "relative", height: "100vh" }}
+    >
+      {/* Draggable Debug Panel - JSON Format */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: "140px",
+          right: "20px",
+          width: isDebugPanelOpen ? "400px" : "auto",
+          maxHeight: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          color: "white",
+          borderRadius: "8px",
+          zIndex: 1000,
+          border: "1px solid #333",
+          transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
+          cursor: isDragging ? "grabbing" : "default",
+          userSelect: "none",
+        }}
+      >
+        {/* Header luôn hiển thị */}
+        <Box
+          sx={{
+            padding: "8px 12px",
+            borderBottom: isDebugPanelOpen ? "1px solid #333" : "none",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            borderRadius: isDebugPanelOpen ? "8px 8px 0 0" : "8px",
+            cursor: "grab",
+            "&:active": {
+              cursor: "grabbing",
+            },
+          }}
+          onMouseDown={handleMouseDown}
+        >
+          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
+            Redux Store Debug 🖱️
+          </span>
+          <button
+            onClick={() => setIsDebugPanelOpen(!isDebugPanelOpen)}
+            style={{
+              background: "none",
+              border: "1px solid #666",
+              color: "white",
+              borderRadius: "4px",
+              padding: "4px 8px",
+              cursor: "pointer",
+              fontSize: "12px",
+            }}
+          >
+            <span>{isDebugPanelOpen ? "▼" : "▶"}</span>
+          </button>
+        </Box>
+
+        {/* Nội dung JSON chỉ hiển thị khi expanded */}
+        {isDebugPanelOpen && (
+          <Box
+            sx={{
+              padding: "12px",
+              maxHeight: "350px",
+              overflow: "auto",
+            }}
+          >
+            <pre
+              style={{
+                margin: 0,
+                fontSize: "10px",
+                lineHeight: "1.2",
+                wordWrap: "break-word",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {JSON.stringify(
+                {
+                  title: writingStore?.currentWritingData?.title || "",
+                  timeToDo: 50,
+                  questions: [
+                    {
+                      questionTitle:
+                        writingStore?.currentWritingData?.subTitle || "",
+                      content: writingStore?.currentWritingData?.content || "",
+                      answerList: [],
+                      correctAnswer: "",
+                      file: null,
+                      subQuestionAnswerList: [],
+                      suggestion:
+                        writingStore?.currentWritingData?.suggestion || "",
+                      subQuestion: [1, 2].map((num) => ({
+                        content:
+                          writingStore?.currentWritingData?.subQuestions?.[
+                            num - 1
+                          ]?.content || "",
+                        correctAnswer:
+                          writingStore?.currentWritingData?.subQuestions?.[
+                            num - 1
+                          ]?.correctAnswer || "",
+                        file: null,
+                        answerList: null,
+                        image: null,
+                        suggestion: null,
+                      })),
+                    },
+                  ],
+                  questionType: "WRITING",
+                  questionPart: "FOUR",
+                  image: null,
+                },
+                null,
+                2
+              )}
+            </pre>
+          </Box>
+        )}
+      </Box>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
@@ -252,21 +581,21 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
           />
         </div>
         <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Đề bài"
+            suggestion={content || ""}
+            setSuggestion={(value: string) =>
+              debouncedContentUpdate(value || "")
+            }
+            editorId="content-editor"
           />
         </div>
         <div>
           <TextEditor
-            placeholder="Write something or insert a star ★"
-            suggestion={suggestion}
-            setSuggestion={setSuggestion}
+            placeholder="Gợi ý "
+            suggestion={suggestion || ""}
+            setSuggestion={(value: string) => debouncedUpdate(value || "")}
+            editorId="suggestion-editor"
           />
         </div>
 

@@ -3,10 +3,17 @@ import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import {
+  UPDATE_WRITING_MAIN_DATA,
+  UPDATE_WRITING_SUB_QUESTION,
+  RESET_WRITING_DATA,
+  INIT_SUB_QUESTIONS,
+} from "../../../store/feature/writing";
 
 interface WritingPartThree {
   children?: JSX.Element | JSX.Element[];
@@ -87,6 +94,13 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const dispatch = useDispatch();
+  const writingStore = useSelector((state: any) => state.writingStore);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isDebugPanelOpen, setIsDebugPanelOpen] = useState(false);
+  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+
   const {
     register,
     handleSubmit,
@@ -94,26 +108,126 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
     control,
     setValue,
     reset,
+    watch,
   } = useForm<FormData>();
+
+  // Watch all form fields for real-time Redux sync
+  const watchedFields = watch();
+
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
 
+  // Sync form data to Redux store in real-time
+  useEffect(() => {
+    // Initialize store with 5 sub questions for Writing Part 1
+    if (!writingStore?.currentWritingData) {
+      dispatch(RESET_WRITING_DATA());
+      dispatch(INIT_SUB_QUESTIONS({ count: 5 }));
+      return;
+    }
+
+    // Ensure we have 5 sub questions
+    if (writingStore.currentWritingData.subQuestions.length !== 5) {
+      dispatch(INIT_SUB_QUESTIONS({ count: 5 }));
+    }
+
+    if (watchedFields.title !== undefined) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "title",
+          value: watchedFields.title || "",
+        })
+      );
+    }
+    if (watchedFields.content !== undefined) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "content",
+          value: watchedFields.content || "",
+        })
+      );
+    }
+    if (watchedFields.subTitle !== undefined) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "subTitle",
+          value: watchedFields.subTitle || "",
+        })
+      );
+    }
+
+    // Update suggestion from state (not form field)
+    if (suggestion !== writingStore?.currentWritingData?.suggestion) {
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "suggestion",
+          value: suggestion || "",
+        })
+      );
+    }
+
+    // Update sub questions (5 questions for Writing Part 1)
+    [1, 2, 3, 4, 5].forEach((num) => {
+      const subContentKey = `subContent${num}` as keyof FormData;
+
+      if (watchedFields[subContentKey] !== undefined) {
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value: watchedFields[subContentKey] || "",
+          })
+        );
+      }
+    });
+  }, [watchedFields, suggestion, dispatch, writingStore]);
+
+  // Debug panel drag handlers (like SpeakingPartThree)
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+    setDragOffset({
+      x: e.clientX - debugPanelPosition.x,
+      y: e.clientY - debugPanelPosition.y,
+    });
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (isDragging) {
+      setDebugPanelPosition({
+        x: e.clientX - dragOffset.x,
+        y: e.clientY - dragOffset.y,
+      });
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
   const onSubmit = async (values: FormData) => {
+    // Use data from Redux store instead of form values
     const data = {
-      title: values.title,
+      title: writingStore?.currentWritingData?.title || values.title,
       timeToDo: 50,
       questions: [
         {
-          questionTitle: values.subTitle,
-          content: values.content,
+          questionTitle:
+            writingStore?.currentWritingData?.subTitle || values.subTitle,
+          content: writingStore?.currentWritingData?.content || values.content,
           answerList: [],
           correctAnswer: "",
           file: null,
           subQuestionAnswerList: [],
-          suggestion: suggestion,
+          suggestion:
+            writingStore?.currentWritingData?.suggestion || suggestion,
           subQuestion: [1, 2, 3, 4, 5].map((num) => ({
-            content: values[`subContent${num}`],
+            content:
+              writingStore?.currentWritingData?.subQuestions?.[num - 1]
+                ?.content ||
+              values[`subContent${num}`] ||
+              "",
             correctAnswer: null,
             file: null,
             answerList: null,
@@ -152,7 +266,6 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
 
   //tentisspace
   const updateWritingPartOne = async (values: any) => {
-
     console.log({ values });
     try {
       await dataProvider.update("writings", {
@@ -180,21 +293,135 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
       setValue("subTitle", dataWritingPartOne.questions[0].questionTitle);
       setSuggestion(dataWritingPartOne.questions[0].suggestion);
 
+      // Also update Redux store
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "title",
+          value: dataWritingPartOne.title,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "content",
+          value: dataWritingPartOne.questions[0].content,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "subTitle",
+          value: dataWritingPartOne.questions[0].questionTitle,
+        })
+      );
+      dispatch(
+        UPDATE_WRITING_MAIN_DATA({
+          field: "suggestion",
+          value: dataWritingPartOne.questions[0].suggestion || "",
+        })
+      );
+
       [1, 2, 3, 4, 5].map((num) => {
-        setValue(
-          `subContent${num}` as keyof FormData,
-          dataWritingPartOne.questions[0].subQuestion[num - 1].content
+        const subContent =
+          dataWritingPartOne.questions[0].subQuestion[num - 1]?.content || "";
+        setValue(`subContent${num}` as keyof FormData, subContent);
+
+        // Update Redux store
+        dispatch(
+          UPDATE_WRITING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value: subContent,
+          })
         );
       });
     }
-  }, [dataWritingPartOne, setValue]);
+  }, [dataWritingPartOne, setValue, dispatch]);
 
-  useEffect(() => {
-
-  }, []);
+  useEffect(() => {}, []);
 
   return (
-    <div>
+    <div
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      style={{ position: "relative", height: "100vh" }}
+    >
+      {/* Draggable Debug Panel - JSON Format like SpeakingPartThree */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: "140px",
+          right: "20px",
+          width: isDebugPanelOpen ? "400px" : "auto",
+          maxHeight: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          color: "white",
+          borderRadius: "8px",
+          zIndex: 1000,
+          border: "1px solid #333",
+          transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
+          cursor: isDragging ? "grabbing" : "default",
+          userSelect: "none",
+        }}
+      >
+        {/* Header luôn hiển thị */}
+        <Box
+          sx={{
+            padding: "8px 12px",
+            borderBottom: isDebugPanelOpen ? "1px solid #333" : "none",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            borderRadius: isDebugPanelOpen ? "8px 8px 0 0" : "8px",
+            cursor: "grab",
+            "&:active": {
+              cursor: "grabbing",
+            },
+          }}
+          onMouseDown={handleMouseDown}
+        >
+          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
+            Redux Store Debug 🖱️
+          </span>
+          <button
+            onClick={() => setIsDebugPanelOpen(!isDebugPanelOpen)}
+            style={{
+              background: "none",
+              border: "1px solid #666",
+              color: "white",
+              borderRadius: "4px",
+              padding: "4px 8px",
+              cursor: "pointer",
+              fontSize: "12px",
+            }}
+          >
+            <span>{isDebugPanelOpen ? "▼" : "▶"}</span>
+          </button>
+        </Box>
+
+        {/* Nội dung JSON chỉ hiển thị khi expanded */}
+        {isDebugPanelOpen && (
+          <Box
+            sx={{
+              padding: "12px",
+              maxHeight: "350px",
+              overflow: "auto",
+            }}
+          >
+            <pre
+              style={{
+                margin: 0,
+                fontSize: "10px",
+                lineHeight: "1.2",
+                wordWrap: "break-word",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {JSON.stringify(writingStore?.currentWritingData || {}, null, 2)}
+            </pre>
+          </Box>
+        )}
+      </Box>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative"
@@ -211,17 +438,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
             helperText={errors.title ? "This field is required" : ""}
           />
         </div>
-        <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
+
         <div>
           <TextField
             type="subTitle"
@@ -231,6 +448,17 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
             fullWidth
             error={!!errors.subTitle}
             helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            type="content"
+            {...register("content", { required: true })}
+            placeholder="Đề bài"
+            variant="outlined"
+            fullWidth
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
           />
         </div>
         <div>

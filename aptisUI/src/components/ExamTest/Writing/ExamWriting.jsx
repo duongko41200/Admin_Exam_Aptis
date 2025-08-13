@@ -6,23 +6,26 @@ import WritingPartOne from "./WritingPartOne/WritingPartOne";
 import WritingPartThree from "./WritingPartThree/WritingPartThree";
 import WritingPartTwo from "./WritingPartTwo/WritingPartTwo";
 
-const ExamReading = () => {
+const ExamWriting = () => {
   const numberQuestion = useSelector(
     (state) => state.writingStore.numberQuestion
   );
 
+  const numberQuestionEachPart = useSelector(
+    (state) => state.writingStore.numberQuestionEachPart
+  );
+
   return (
     <>
-      <div className="flex flex-col justify-center items-center mb-20">
-        <div
-          className="flex flex-col justify-start mt-[3.25rem] p-4 mb-[calc(3rem+1.5vw)]"
-          style={{ width: "calc(100% - 500px)" }}
-        >
-          <div className="font-semibold text-[1.275rem]">Writing</div>
+      <div className="flex flex-col justify-center items-center mb-16 fluid">
+        <div className="flex flex-col justify-start mt-16 px-4 w-full">
+          <div className="font-semibold text-md">
+            Writing - Part {numberQuestion}
+          </div>
           <div>
             <div className="row">
-              <div className="mb-[1.5em] mt-0 font-semibold text-[1.275rem]">
-                Question {numberQuestion} of 4
+              <div className="mb-6 mt-0 font-semibold text-md">
+                Question {numberQuestionEachPart} of 4
               </div>
             </div>
           </div>
@@ -36,4 +39,4 @@ const ExamReading = () => {
   );
 };
 
-export default memo(ExamReading);
+export default memo(ExamWriting);

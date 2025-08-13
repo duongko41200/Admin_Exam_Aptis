@@ -37,7 +37,7 @@ export default function TextareaInput({
       defaultValue={formattedValue}
       style={{
         width: '100%',
-        height: `${!isEdit ? 'calc(100% - 70px)' : '300px'}`,
+        height: `${!isEdit ? 'calc(100% - 70px)' : '10px'}`,
         border: '1px solid #222242',
         backgroundColor: `${bgColor ? bgColor : '#ffffff1a'}  `,
         color: '#fff',

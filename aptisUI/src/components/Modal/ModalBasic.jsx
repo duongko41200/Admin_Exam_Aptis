@@ -178,7 +178,9 @@ export default function ModalBasic({
               : ""
           }`,
           pointerEvents: "auto", // Modal có thể tương tác
+          background: '#fff'
           
+
         }}
       >
         <div
@@ -244,9 +246,9 @@ export default function ModalBasic({
 
           {/* Content */}
           <div
-            className="px-8 bg-[#fff]"
+            className="px-8 bg-[#fff] mb-10"
             style={{
-              height: resizable ? `${dimensions.height - 120}px` : "auto",
+              height: resizable ? `${dimensions.height - 200}px` : "auto",
               maxHeight:
                 size === "fullscreen"
                   ? "calc(100vh - 120px)"

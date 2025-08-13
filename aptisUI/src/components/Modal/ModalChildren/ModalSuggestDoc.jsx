@@ -23,6 +23,10 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   const currentSpeakingData = useSelector(
     (state) => state.speakingStore.currentSpeakingData
   );
+  const currentWritingData = useSelector(
+    (state) => state.writingStore.currentWritingData
+  );
+  
 
   const numberQuestionEachPart = useSelector(
     (state) => state.speakingStore.numberQuestionEachPart
@@ -60,6 +64,9 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
       } else {
         setSuggestion(null);
       }
+    }
+    if(currentExamPart === "writing") {
+      setSuggestion(currentWritingData?.suggestion || null);
     }
   }, [currentNumberQuestion]);
   return (
