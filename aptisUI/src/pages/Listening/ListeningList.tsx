@@ -75,7 +75,17 @@ const ListeningList = ({
         />
       }
     >
-      <Datagrid rowClick="show" bulkActionButtons={false}>
+      <Datagrid
+        rowClick="show"
+        bulkActionButtons={false}
+        sx={{
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+          },
+          maxHeight: "calc(100vh - 200px)",
+          overflow: "auto",
+        }}
+      >
         <TextField source="no" label="NO" />
         <TextField source="title" label="Chủ đề Reading" />
         <TextField

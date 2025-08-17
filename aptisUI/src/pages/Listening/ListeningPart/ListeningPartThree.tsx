@@ -3,10 +3,18 @@ import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import {
+  UPDATE_LISTENING_MAIN_DATA,
+  UPDATE_LISTENING_SUB_QUESTION,
+  UPDATE_LISTENING_SUB_QUESTION_SUGGESTION,
+  RESET_LISTENING_DATA,
+  INIT_LISTENING_SUB_QUESTIONS,
+} from "../../../store/feature/listening";
 
 interface ListeningPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -24,27 +32,21 @@ interface FormData {
   title: string;
   subTitle: string;
   content: string;
-  subContent1: string;
-  correctAnswer1: string;
-  answerOneSub1: string;
-  answerTwoSub1: string;
-  answerThreeSub1: string;
-  subContent2: string;
-  correctAnswer2: string;
-  answerOneSub2: string;
-  answerTwoSub2: string;
-  answerThreeSub2: string;
-  subContent3: string;
-  correctAnswer3: string;
-  answerOneSub3: string;
-  answerTwoSub3: string;
-  answerThreeSub3: string;
+  file: string;
+  suggestion: string;
+  // Person options (3 persons for Part 3)
   optionPerson1: string;
   optionPerson2: string;
   optionPerson3: string;
-  optionPerson4: string;
-  suggestion: string;
-  file: string;
+  // Sub questions (4 questions for Part 3)
+  questionPerson1: string;
+  questionPerson2: string;
+  questionPerson3: string;
+  questionPerson4: string;
+  personMatch1: string;
+  personMatch2: string;
+  personMatch3: string;
+  personMatch4: string;
 }
 
 const QuestionBox = ({
@@ -58,13 +60,22 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "160px",
+      minHeight: "200px",
       height: "fit-content",
-      border: "1px solid",
-      padding: "10px",
+      border: "1px solid #ddd",
+      borderRadius: "8px",
+      padding: "16px",
+      backgroundColor: "#fafafa",
     }}
   >
-    <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
+    <Box
+      sx={{
+        fontSize: "18px",
+        fontWeight: "bold",
+        marginBottom: "12px",
+        color: "#1976d2",
+      }}
+    >
       Nội Dung Câu {questionNumber}
     </Box>
     <Box>
@@ -81,9 +92,25 @@ const QuestionBox = ({
               ? "This field is required"
               : ""
           }
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              backgroundColor: "white",
+            },
+          }}
         />
       </div>
-      <div>
+      <Box>
+        <Box
+          sx={{
+            fontSize: "14px",
+            fontWeight: "500",
+            marginBottom: "8px",
+            color: "#666",
+            marginTop: "12px",
+          }}
+        >
+          Đáp án đúng:
+        </Box>
         <TextField
           type="text"
           {...register(`personMatch${questionNumber}`, { required: true })}
@@ -95,10 +122,18 @@ const QuestionBox = ({
           helperText={
             errors[`personMatch${questionNumber}`]
               ? "This field is required"
-              : ""
+              : "Ví dụ: A, B, C hoặc nội dung đáp án"
           }
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              backgroundColor: "#fff3e0",
+              "&:hover": {
+                backgroundColor: "#ffe0b2",
+              },
+            },
+          }}
         />
-      </div>
+      </Box>
     </Box>
   </Box>
 );
@@ -118,6 +153,15 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
   const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
+  const dispatch = useDispatch();
+  const listeningStore = useSelector((state: any) => state.listeningStore);
+
+  // Debug panel states
+  const [isDragging, setIsDragging] = useState(false);
+  const [isDebugPanelOpen, setIsDebugPanelOpen] = useState(false);
+  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+
   const {
     register,
     handleSubmit,
@@ -125,28 +169,244 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
     control,
     setValue,
     reset,
+    watch,
   } = useForm<FormData>();
+
+  // Watch all form fields for real-time Redux sync
+  const watchedFields = watch();
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
 
+  // Debug panel drag handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+    setDragOffset({
+      x: e.clientX - debugPanelPosition.x,
+      y: e.clientY - debugPanelPosition.y,
+    });
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (isDragging) {
+      setDebugPanelPosition({
+        x: e.clientX - dragOffset.x,
+        y: e.clientY - dragOffset.y,
+      });
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  // Sync form data to Redux store in real-time
+  useEffect(() => {
+    // Initialize store with 4 sub questions for Listening Part 3
+    if (!listeningStore?.currentListeningData) {
+      dispatch(RESET_LISTENING_DATA());
+      dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 4 }));
+      return;
+    }
+
+    // Ensure we have 4 sub questions
+    if (listeningStore.currentListeningData.subQuestions.length !== 4) {
+      dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 4 }));
+      return;
+    }
+  }, [dispatch, listeningStore?.currentListeningData]);
+
+  // Separate useEffect for form field sync to avoid infinite loops
+  useEffect(() => {
+    if (!listeningStore?.currentListeningData) return;
+
+    // Update main data fields only if they're different
+    if (
+      watchedFields.title !== undefined &&
+      watchedFields.title !== listeningStore.currentListeningData.title
+    ) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "title",
+          value: watchedFields.title || "",
+        })
+      );
+    }
+    if (
+      watchedFields.content !== undefined &&
+      watchedFields.content !== listeningStore.currentListeningData.content
+    ) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "content",
+          value: watchedFields.content || "",
+        })
+      );
+    }
+    if (
+      watchedFields.subTitle !== undefined &&
+      watchedFields.subTitle !== listeningStore.currentListeningData.subTitle
+    ) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "subTitle",
+          value: watchedFields.subTitle || "",
+        })
+      );
+    }
+    if (
+      watchedFields.file !== undefined &&
+      watchedFields.file !== listeningStore.currentListeningData.file
+    ) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "file",
+          value: watchedFields.file || "",
+        })
+      );
+    }
+  }, [
+    watchedFields.title,
+    watchedFields.content,
+    watchedFields.subTitle,
+    watchedFields.file,
+    dispatch,
+    listeningStore?.currentListeningData,
+  ]);
+
+  // Separate useEffect for suggestion
+  useEffect(() => {
+    if (suggestion !== listeningStore?.currentListeningData?.suggestion) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "suggestion",
+          value: suggestion || "",
+        })
+      );
+    }
+  }, [suggestion, dispatch, listeningStore?.currentListeningData?.suggestion]);
+
+  // Separate useEffect for sub questions
+  useEffect(() => {
+    if (
+      !listeningStore?.currentListeningData?.subQuestions ||
+      listeningStore.currentListeningData.subQuestions.length !== 4
+    )
+      return;
+
+    [1, 2, 3, 4].forEach((num) => {
+      const questionPersonKey = `questionPerson${num}` as keyof FormData;
+      const personMatchKey = `personMatch${num}` as keyof FormData;
+
+      const currentSubQuestion =
+        listeningStore.currentListeningData.subQuestions[num - 1];
+
+      if (
+        watchedFields[questionPersonKey] !== undefined &&
+        watchedFields[questionPersonKey] !== currentSubQuestion?.content
+      ) {
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value: watchedFields[questionPersonKey] || "",
+          })
+        );
+      }
+
+      if (
+        watchedFields[personMatchKey] !== undefined &&
+        watchedFields[personMatchKey] !== currentSubQuestion?.correctAnswer
+      ) {
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "correctAnswer",
+            value: watchedFields[personMatchKey] || "",
+          })
+        );
+      }
+    });
+  }, [
+    watchedFields.questionPerson1,
+    watchedFields.questionPerson2,
+    watchedFields.questionPerson3,
+    watchedFields.questionPerson4,
+    watchedFields.personMatch1,
+    watchedFields.personMatch2,
+    watchedFields.personMatch3,
+    watchedFields.personMatch4,
+    dispatch,
+    listeningStore?.currentListeningData?.subQuestions,
+  ]);
+
+  // Separate useEffect for person options
+  useEffect(() => {
+    if (!listeningStore?.currentListeningData) return;
+
+    const currentAnswerList =
+      listeningStore.currentListeningData.answerList || [];
+    const newPersonOptions = [1, 2, 3].map((num) => {
+      const personKey = `optionPerson${num}` as keyof FormData;
+      return {
+        content: watchedFields[personKey] || "",
+      };
+    });
+
+    // Only update if the content has actually changed
+    const hasChanged = newPersonOptions.some((option, index) => {
+      const currentOption = currentAnswerList[index];
+      return !currentOption || currentOption.content !== option.content;
+    });
+
+    if (hasChanged) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "answerList",
+          value: newPersonOptions,
+        })
+      );
+    }
+  }, [
+    watchedFields.optionPerson1,
+    watchedFields.optionPerson2,
+    watchedFields.optionPerson3,
+    dispatch,
+    listeningStore?.currentListeningData?.answerList,
+  ]);
+
   const onSubmit = async (values: any) => {
+    // Use data from Redux store instead of form values
     const data = {
-      title: values.title,
+      title: listeningStore?.currentListeningData?.title || values.title,
       timeToDo: 35,
       questions: {
-        questionTitle: values.subTitle,
-        content: values.content,
-        answerList: [1, 2, 3].map((num) => ({
-          content: values[`optionPerson${num}`],
-        })),
+        questionTitle:
+          listeningStore?.currentListeningData?.subTitle || values.subTitle,
+        content:
+          listeningStore?.currentListeningData?.content || values.content,
+        answerList:
+          listeningStore?.currentListeningData?.answerList ||
+          [1, 2, 3].map((num) => ({
+            content: values[`optionPerson${num}`] || "",
+          })),
         correctAnswer: "",
-        file:values.file,
+        file: listeningStore?.currentListeningData?.file || values.file,
         subQuestionAnswerList: [],
-        suggestion: suggestion,
+        suggestion:
+          listeningStore?.currentListeningData?.suggestion || suggestion,
         subQuestion: [1, 2, 3, 4].map((num) => ({
-          content: values[`questionPerson${num}`],
-          correctAnswer: values[`personMatch${num}`],
+          content:
+            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+              ?.content ||
+            values[`questionPerson${num}`] ||
+            "",
+          correctAnswer:
+            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+              ?.correctAnswer ||
+            values[`personMatch${num}`] ||
+            "",
           file: null,
           answerList: null,
           image: null,
@@ -156,10 +416,11 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
         image: null,
       },
 
-      questionType: "READING",
+      questionType: "LISTENING", // Note: Was "READING" in original, changed to "LISTENING"
       questionPart: "THREE",
       description: null,
     };
+
     if (statusHandler === "create") {
       createListeningPartThree(data);
     }
@@ -206,38 +467,183 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       setValue("title", dataListeningPartThree.title);
       setValue("content", dataListeningPartThree.questions[0].content);
       setValue("subTitle", dataListeningPartThree.questions[0].questionTitle);
-      setValue('file', dataListeningPartThree.questions[0].file);
+      setValue("file", dataListeningPartThree.questions[0].file);
       setSuggestion(dataListeningPartThree.questions[0].suggestion);
 
-      // [1, 2, 3, 4, 5, 6, 7].map((num) => {
-      //   setValue(
-      //     `questionPerson${num}` as keyof FormData,
-      //     dataListeningPartThree.data.questions.subQuestion[num - 1].content
-      //   );
-      //   setValue(
-      //     `personMatch${num}` as keyof FormData,
-      //     dataListeningPartThree.data.questions.subQuestion[num - 1].correctAnswer
-      //   );
-      // });
+      // Also update Redux store
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "title",
+          value: dataListeningPartThree.title,
+        })
+      );
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "content",
+          value: dataListeningPartThree.questions[0].content,
+        })
+      );
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "subTitle",
+          value: dataListeningPartThree.questions[0].questionTitle,
+        })
+      );
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "file",
+          value: dataListeningPartThree.questions[0].file,
+        })
+      );
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "suggestion",
+          value: dataListeningPartThree.questions[0].suggestion || "",
+        })
+      );
 
       [1, 2, 3, 4].map((num) => {
-        setValue(
-          `questionPerson${num}` as keyof FormData,
-          dataListeningPartThree.questions[0].subQuestion[num - 1].content
+        const questionContent =
+          dataListeningPartThree.questions[0].subQuestion[num - 1]?.content ||
+          "";
+        const correctAnswer =
+          dataListeningPartThree.questions[0].subQuestion[num - 1]
+            ?.correctAnswer || "";
+
+        setValue(`questionPerson${num}` as keyof FormData, questionContent);
+        setValue(`personMatch${num}` as keyof FormData, correctAnswer);
+
+        // Update Redux store
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "content",
+            value: questionContent,
+          })
         );
-        setValue(
-          `personMatch${num}` as keyof FormData,
-          dataListeningPartThree.questions[0].subQuestion[num - 1].correctAnswer
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "correctAnswer",
+            value: correctAnswer,
+          })
         );
       });
+
+      // Update person options
+      [1, 2, 3].map((num) => {
+        const personContent =
+          dataListeningPartThree.questions[0].answerList[num - 1]?.content ||
+          "";
+        setValue(`optionPerson${num}` as keyof FormData, personContent);
+      });
+
+      // Update Redux store with answerList
+      const answerList = [1, 2, 3].map((num) => ({
+        content:
+          dataListeningPartThree.questions[0].answerList[num - 1]?.content ||
+          "",
+      }));
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "answerList",
+          value: answerList,
+        })
+      );
     }
-  }, [dataListeningPartThree, setValue]);
+  }, [dataListeningPartThree, setValue, dispatch]);
 
   return (
-    <div>
+    <div
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      style={{ position: "relative", height: "100vh" }}
+    >
+      {/* Draggable Debug Panel - JSON Format */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: "140px",
+          right: "20px",
+          width: isDebugPanelOpen ? "400px" : "auto",
+          maxHeight: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          color: "white",
+          borderRadius: "8px",
+          zIndex: 1000,
+          border: "1px solid #333",
+          transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
+          cursor: isDragging ? "grabbing" : "default",
+          userSelect: "none",
+        }}
+      >
+        {/* Header luôn hiển thị */}
+        <Box
+          sx={{
+            padding: "8px 12px",
+            borderBottom: isDebugPanelOpen ? "1px solid #333" : "none",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            borderRadius: isDebugPanelOpen ? "8px 8px 0 0" : "8px",
+            cursor: "grab",
+            "&:active": {
+              cursor: "grabbing",
+            },
+          }}
+          onMouseDown={handleMouseDown}
+        >
+          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
+            Redux Store Debug 🖱️ (Part 3)
+          </span>
+          <button
+            onClick={() => setIsDebugPanelOpen(!isDebugPanelOpen)}
+            style={{
+              background: "none",
+              border: "1px solid #666",
+              color: "white",
+              borderRadius: "4px",
+              padding: "4px 8px",
+              cursor: "pointer",
+              fontSize: "12px",
+            }}
+          >
+            <span>{isDebugPanelOpen ? "▼" : "▶"}</span>
+          </button>
+        </Box>
+
+        {/* Nội dung JSON chỉ hiển thị khi expanded */}
+        {isDebugPanelOpen && (
+          <Box
+            sx={{
+              padding: "12px",
+              maxHeight: "350px",
+              overflow: "auto",
+            }}
+          >
+            <pre
+              style={{
+                margin: 0,
+                fontSize: "10px",
+                lineHeight: "1.2",
+                wordWrap: "break-word",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {JSON.stringify(
+                listeningStore?.currentListeningData || {},
+                null,
+                2
+              )}
+            </pre>
+          </Box>
+        )}
+      </Box>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="form sign-up-form relative"
+        className="form sign-up-form relative  max-h-[calc(100vh-200px)] overflow-auto"
       >
         <h2 className="title">Listening Part 3</h2>
         <div>
