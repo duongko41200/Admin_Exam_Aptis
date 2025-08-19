@@ -66,11 +66,13 @@ const SubMenu = ({
     <div className="w-full">
       <button
         onClick={handleToggle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         className="w-full flex items-center justify-between px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-200"
       >
-        <div className="flex items-center gap-3">
+        <div
+          className="flex items-center gap-3"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="w-6 h-6 flex items-center justify-center text-[#5B6A99]">
             {icon}
           </div>
@@ -97,11 +99,8 @@ const SubMenu = ({
   );
 
   if (!open) {
-    return (
-      <Tooltip title={name} placement="right" arrow>
-        {content}
-      </Tooltip>
-    );
+    // Không sử dụng Tooltip nữa, chỉ return content
+    return content;
   }
 
   return content;
@@ -120,6 +119,7 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
 
   const [hoverAnchor, setHoverAnchor] = useState<HTMLElement | null>(null);
   const [hoverMenu, setHoverMenu] = useState<MenuName | null>(null);
+  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const handleToggle = (menu: MenuName) => {
     setState((state) => ({ ...state, [menu]: !state[menu] }));
@@ -129,16 +129,39 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
     event: React.MouseEvent<HTMLElement>,
     menuKey: MenuName
   ) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
     setHoverAnchor(event.currentTarget);
     setHoverMenu(menuKey);
   };
 
   const handleMenuLeave = () => {
+    const timeout = setTimeout(() => {
+      setHoverAnchor(null);
+      setHoverMenu(null);
+    }, 300);
+    setHoverTimeout(timeout);
+  };
+
+  const handlePopupEnter = () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+  };
+
+  const handlePopupLeave = () => {
     setHoverAnchor(null);
     setHoverMenu(null);
   };
 
   const handleClickAway = () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
     setHoverAnchor(null);
     setHoverMenu(null);
   };
@@ -337,34 +360,40 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
               </span>
             </div>
           ) : (
-            <Tooltip title="© 2025 APTIS Academy" placement="right" arrow>
-              <div className="flex justify-center">
-                <div className="w-6 h-6 rounded-full border border-gray-500"></div>
-              </div>
-            </Tooltip>
+            <div className="flex justify-center">
+              <div className="w-6 h-6 rounded-full border border-gray-500"></div>
+            </div>
           )}
         </div>
       </div>
 
       {/* Hover popup */}
       <Popper
-        open={Boolean(hoverAnchor && hoverMenu)}
+        open={Boolean(hoverAnchor && hoverMenu && !open)}
         anchorEl={hoverAnchor}
         placement="right-start"
         sx={{ zIndex: 1300 }}
+        modifiers={[
+          {
+            name: "offset",
+            options: {
+              offset: [-10, 8],
+            },
+          },
+        ]}
       >
-        <ClickAwayListener onClickAway={handleClickAway}>
+        <div onMouseEnter={handlePopupEnter} onMouseLeave={handlePopupLeave}>
           <Paper
             sx={{
               backgroundColor: "#1F263E",
               border: "1px solid #374151",
               boxShadow: "4px 0 12px rgba(0, 0, 0, 0.4)",
-              ml: 1,
+              ml: 2,
             }}
           >
             {hoverMenu && renderPopupMenu(hoverMenu)}
           </Paper>
-        </ClickAwayListener>
+        </div>
       </Popper>
     </>
   );
