@@ -36,23 +36,7 @@ export const listeningReducer = createSlice({
       state.numberQuestionEachPart = 1;
     },
     SET_NUMBER_QUESTION_LISTENING: (state, action) => {
-      let numberQuestionPart = action.payload.numberQuestionPart;
-
-      const numberQuestion = action.payload.numberQuestion.question;
-
-      if (numberQuestion === 2) {
-        numberQuestionPart = 13;
-      }
-      if (numberQuestion === 3) {
-        numberQuestionPart = 14;
-      }
-      if (numberQuestion === 4) {
-        numberQuestionPart = 15 + numberQuestionPart;
-      }
-
-      state.numberQuestion = numberQuestion;
-
-      state.numberQuestionEachPart = numberQuestionPart + 1;
+      state.numberQuestion = action.payload;
     },
     SET_URL_FILE: (state, action) => {
       state.urlFile = action.payload;
@@ -105,6 +89,18 @@ export const listeningReducer = createSlice({
         })
       );
     },
+    UPDATE_LISTENING_SUB_QUESTION_ANSWER: (state, action) => {
+      const { subIndex, answerIndex, value } = action.payload;
+      if (
+        state.currentListeningData.subQuestions[subIndex]?.answerList?.[
+          answerIndex
+        ]
+      ) {
+        state.currentListeningData.subQuestions[subIndex].answerList[
+          answerIndex
+        ].content = value;
+      }
+    },
 
     //Actiona
   },
@@ -124,6 +120,7 @@ export const {
   UPDATE_LISTENING_SUB_QUESTION_SUGGESTION,
   RESET_LISTENING_DATA,
   INIT_LISTENING_SUB_QUESTIONS,
+  UPDATE_LISTENING_SUB_QUESTION_ANSWER,
 } = listeningReducer.actions;
 
 export default listeningReducer.reducer;

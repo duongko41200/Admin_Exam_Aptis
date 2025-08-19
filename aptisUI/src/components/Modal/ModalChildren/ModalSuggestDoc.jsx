@@ -26,6 +26,9 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   const currentWritingData = useSelector(
     (state) => state.writingStore.currentWritingData
   );
+  const currentListeningData = useSelector(
+    (state) => state.listeningStore.currentListeningData?.subQuestions
+  );
   
 
   const numberQuestionEachPart = useSelector(
@@ -39,16 +42,27 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   useEffect(() => {
     if (listening && currentExamPart === "listening") {
       const extractedJson =
-        listening[currentNumberQuestion].suggestion.match(/\[.*\]/s)[0];
-      const jsonArray = JSON.parse(extractedJson) || [];
+        listening[currentNumberQuestion]?.suggestion?.match(/\[.*\]/s)[0];
+      const jsonArray = extractedJson ? JSON.parse(extractedJson) || [] : [];
       console.log({ jsonArray });
 
       let fileAudio = "";
 
-      fileAudio = listening[currentNumberQuestion].file;
+      fileAudio = listening[currentNumberQuestion]?.file;
 
       setContentSugesstion(jsonArray);
       setFile(fileAudio);
+
+      if (jsonArray.length === 0) {
+
+        console.log(
+          "No suggestion available for this question",
+          currentListeningData
+        );
+        setSuggestion(
+          currentListeningData[currentNumberQuestion].suggestion || null
+        );
+      }
       return;
     }
 
@@ -73,7 +87,8 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
     <>
       {currentExamPart === "listening" &&
       contentSugesstion &&
-      Array.isArray(contentSugesstion) ? (
+      Array.isArray(contentSugesstion) &&
+      contentSugesstion.length > 0 ? (
         <>
           <div className="mb-4">
             <audio

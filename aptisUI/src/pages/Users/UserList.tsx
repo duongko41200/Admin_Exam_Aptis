@@ -38,7 +38,7 @@ import {
 } from "@mui/icons-material";
 import { ProductFilterForm } from "./CustomFilter";
 import { useEffect, useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 //// TRee Item Component
 
 export const ListToolBar = ({
@@ -50,7 +50,8 @@ export const ListToolBar = ({
   classrooms: { id: string; name: string }[];
 }) => {
   const theme = useTheme();
-  const [isFilterExpanded, setIsFilterExpanded] = useState(true);
+  const [isFilterExpanded, setIsFilterExpanded] = useState(false);
+  const router = useNavigate();
 
   return (
     <Box sx={{ width: "100%", mb: 3 }}>
@@ -132,6 +133,7 @@ export const ListToolBar = ({
                   },
                   transition: "all 0.2s ease-in-out",
                 }}
+                onClick={() => {router("/users/create")}}
               >
                 Thêm thành viên mới
               </Button>

@@ -17,6 +17,8 @@ export default function FooterTest({
   isDisabled,
   currentExamPart,
   isSpeakingTaiLieu,
+  nextQuestion,
+  previousQuestion,
 }) {
   const dispatch = useDispatch();
   const { isModalList } = useSelector((state) => state.generalStore);
@@ -25,12 +27,17 @@ export default function FooterTest({
   const { isModalInfo } = useSelector((state) => state.generalStore);
   const { isAiScore } = useSelector((state) => state.generalStore);
 
-  const nextQuestion = () => {
+  // Default navigation functions for Speaking if not provided
+  const defaultNextQuestion = () => {
     dispatch(SET_INCREMENT_SPEAKING_EACH_PART());
   };
-  const previousQuestion = () => {
+  const defaultPreviousQuestion = () => {
     dispatch(SET_DECREMENT_SPEAKING_EACH_PART());
   };
+
+  // Use provided navigation functions or defaults
+  const handleNextQuestion = nextQuestion || defaultNextQuestion;
+  const handlePreviousQuestion = previousQuestion || defaultPreviousQuestion;
 
   const isCheckResult = useSelector(
     (state) => state.taiLieuStore.isCheckResult
@@ -183,7 +190,7 @@ export default function FooterTest({
               <>
                 <button
                   className="text-[#45368f]  px-2 md:px-4 py-2 border border-[#45368f] rounded hover:bg-[#45368f] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                  onClick={previousQuestion}
+                  onClick={handlePreviousQuestion}
                 >
                   <div className="flex items-center gap-1 w-full">
                     <div>
@@ -202,7 +209,7 @@ export default function FooterTest({
                 </button>
                 <button
                   className="bg-[#45368f] text-white px-2 md:px-4 py-2 pt-3 shadow mr-1 rounded hover:bg-[#45368f] hover:opacity-80 disabled:opacity-50 disabled:cursor-not-allowed"
-                  onClick={nextQuestion}
+                  onClick={handleNextQuestion}
                 >
                   <div className="flex items-center gap-1">
                     <div className="hidden  md:block">Next</div>

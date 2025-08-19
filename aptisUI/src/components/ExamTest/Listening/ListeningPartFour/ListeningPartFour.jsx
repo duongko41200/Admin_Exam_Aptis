@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "../../Reading/ExamReading.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
   SET_ATTEMPTED_QUESTION,
   SET_RESPONSE_RESULT_LISTENING,
-} from "@/store/feature/testBank";
+} from "../../../../store/feature/testBank";
 
 const convertToWord = {
   1: "A",
@@ -16,16 +16,26 @@ const convertToWord = {
 const ListeningPartFour = () => {
   const audioRef = useRef(null);
   const testBankData = useSelector((state) => state.testBankStore.testBankData);
+  const isCheckResult = useSelector(
+    (state) => state.taiLieuStore.isCheckResult
+  );
 
   const numberQuestionEachPart = useSelector(
     (state) => state.listeningStore.numberQuestionEachPart
   );
 
   const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedAnswers, setSelectedAnswers] = useState({});
 
   const dispatch = useDispatch();
 
   const handleClick = (item, indexAnswer, indexSubQuestion) => {
+    // Store selected answer for this sub question
+    setSelectedAnswers((prev) => ({
+      ...prev,
+      [indexSubQuestion]: item.content,
+    }));
+
     dispatch(
       SET_RESPONSE_RESULT_LISTENING({
         part: 4,
@@ -55,6 +65,42 @@ const ListeningPartFour = () => {
   };
   const handleAudioEnd = () => {
     setIsPlaying(false);
+  };
+
+  // Reset selected answers when question part changes
+  useEffect(() => {
+    setSelectedAnswers({});
+  }, [numberQuestionEachPart]);
+
+  // Function to get background color for answer option
+  const getAnswerBackgroundColor = (answerContent, subQuestionIndex) => {
+    if (!isCheckResult) {
+      return "bg-[#eef0f3]"; // Default background when auto check is off
+    }
+
+    // Get current sub question data
+    const currentQuestion =
+      testBankData.listening.part4[numberQuestionEachPart - 16];
+    const subQuestion =
+      currentQuestion?.questions[0]?.subQuestion?.[subQuestionIndex];
+    const correctAnswer = subQuestion?.correctAnswer;
+
+    // When auto check is enabled, show correct answer in green
+    if (answerContent === correctAnswer) {
+      return "bg-green-200"; // Green background for correct answer
+    }
+
+    // If user has selected a wrong answer, show it in red
+    const selectedAnswer = selectedAnswers[subQuestionIndex];
+    if (
+      selectedAnswer &&
+      selectedAnswer === answerContent &&
+      answerContent !== correctAnswer
+    ) {
+      return "bg-red-200"; // Red background for wrong selected answer
+    }
+
+    return "bg-[#eef0f3]"; // Default background for other answers
   };
 
   return (
@@ -160,11 +206,10 @@ const ListeningPartFour = () => {
                       </div>
 
                       <div
-                        className={`w-full bg-[#eef0f3] p-[0.7rem] text-sm md:text-md h-full flex items-center   ${
-                          item.responseUser === answer.content
-                            ? "bg-[#fefac7]"
-                            : "hover:bg-[#f8f9fa]"
-                        }`}
+                        className={`w-full p-[0.7rem] text-sm md:text-md h-full flex items-center ${getAnswerBackgroundColor(
+                          answer?.content,
+                          index
+                        )}`}
                       >
                         <div>{answer?.content}</div>
                       </div>

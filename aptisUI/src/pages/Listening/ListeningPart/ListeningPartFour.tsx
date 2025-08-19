@@ -581,7 +581,8 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
           })
         );
 
-        [1, 2, 3].map((ansNum) => {
+        // Collect all answers for this question first
+        const answerList = [1, 2, 3].map((ansNum) => {
           const answerContent =
             dataListeningPartFour.questions[0].subQuestion[num - 1]
               ?.answerList?.[ansNum - 1]?.content || "";
@@ -589,23 +590,17 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
 
           setValue(answerKey, answerContent);
 
-          // Update Redux store answerList
-          const currentAnswerList = listeningStore?.currentListeningData
-            ?.subQuestions?.[num - 1]?.answerList || [
-            { content: "" },
-            { content: "" },
-            { content: "" },
-          ];
-          currentAnswerList[ansNum - 1] = { content: answerContent };
-
-          dispatch(
-            UPDATE_LISTENING_SUB_QUESTION({
-              index: num - 1,
-              field: "answerList",
-              value: currentAnswerList,
-            })
-          );
+          return { content: answerContent };
         });
+
+        // Update Redux store with complete answerList for this question
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "answerList",
+            value: answerList,
+          })
+        );
       });
     }
   }, [dataListeningPartFour, setValue, dispatch]);

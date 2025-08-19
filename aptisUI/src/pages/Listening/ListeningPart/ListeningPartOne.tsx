@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler, set } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
@@ -75,45 +75,45 @@ interface FormData {
   subFile12: string;
   subFile13: string;
   // Answer fields for each question (3 answers per question, 13 questions)
-  answerOneSub1: string;
-  answerTwoSub1: string;
-  answerThreeSub1: string;
-  answerOneSub2: string;
-  answerTwoSub2: string;
-  answerThreeSub2: string;
-  answerOneSub3: string;
-  answerTwoSub3: string;
-  answerThreeSub3: string;
-  answerOneSub4: string;
-  answerTwoSub4: string;
-  answerThreeSub4: string;
-  answerOneSub5: string;
-  answerTwoSub5: string;
-  answerThreeSub5: string;
-  answerOneSub6: string;
-  answerTwoSub6: string;
-  answerThreeSub6: string;
-  answerOneSub7: string;
-  answerTwoSub7: string;
-  answerThreeSub7: string;
-  answerOneSub8: string;
-  answerTwoSub8: string;
-  answerThreeSub8: string;
-  answerOneSub9: string;
-  answerTwoSub9: string;
-  answerThreeSub9: string;
-  answerOneSub10: string;
-  answerTwoSub10: string;
-  answerThreeSub10: string;
-  answerOneSub11: string;
-  answerTwoSub11: string;
-  answerThreeSub11: string;
-  answerOneSub12: string;
-  answerTwoSub12: string;
-  answerThreeSub12: string;
-  answerOneSub13: string;
-  answerTwoSub13: string;
-  answerThreeSub13: string;
+  answer1Sub1: string;
+  answer2Sub1: string;
+  answer3Sub1: string;
+  answer1Sub2: string;
+  answer2Sub2: string;
+  answer3Sub2: string;
+  answer1Sub3: string;
+  answer2Sub3: string;
+  answer3Sub3: string;
+  answer1Sub4: string;
+  answer2Sub4: string;
+  answer3Sub4: string;
+  answer1Sub5: string;
+  answer2Sub5: string;
+  answer3Sub5: string;
+  answer1Sub6: string;
+  answer2Sub6: string;
+  answer3Sub6: string;
+  answer1Sub7: string;
+  answer2Sub7: string;
+  answer3Sub7: string;
+  answer1Sub8: string;
+  answer2Sub8: string;
+  answer3Sub8: string;
+  answer1Sub9: string;
+  answer2Sub9: string;
+  answer3Sub9: string;
+  answer1Sub10: string;
+  answer2Sub10: string;
+  answer3Sub10: string;
+  answer1Sub11: string;
+  answer2Sub11: string;
+  answer3Sub11: string;
+  answer1Sub12: string;
+  answer2Sub12: string;
+  answer3Sub12: string;
+  answer1Sub13: string;
+  answer2Sub13: string;
+  answer3Sub13: string;
 }
 
 const QuestionBox = ({
@@ -369,113 +369,109 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
     setIsDragging(false);
   };
 
-  // Sync form data to Redux store in real-time
+  // Sync form data to Redux store in real-time, but avoid infinite update loop
+  // Only dispatch when values actually change
+  const prevFieldsRef = React.useRef<any>({});
+  const prevSubQuestionsRef = React.useRef<any[]>([]);
+
   useEffect(() => {
-    // Initialize store with 13 sub questions for Listening Part 1
+    // Only initialize store if not ready
     if (!listeningStore?.currentListeningData) {
       dispatch(RESET_LISTENING_DATA());
       dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 13 }));
       return;
     }
-
-    // Ensure we have 13 sub questions
     if (listeningStore.currentListeningData.subQuestions.length !== 13) {
       dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 13 }));
+      return;
     }
 
-    // Update main data fields
-    if (watchedFields.title !== undefined) {
-      dispatch(
-        UPDATE_LISTENING_MAIN_DATA({
-          field: "title",
-          value: watchedFields.title || "",
-        })
-      );
-    }
-    if (watchedFields.content !== undefined) {
-      dispatch(
-        UPDATE_LISTENING_MAIN_DATA({
-          field: "content",
-          value: watchedFields.content || "",
-        })
-      );
-    }
-    if (watchedFields.subTitle !== undefined) {
-      dispatch(
-        UPDATE_LISTENING_MAIN_DATA({
-          field: "subTitle",
-          value: watchedFields.subTitle || "",
-        })
-      );
-    }
+    // Only update main fields if changed
+    [
+      { key: "title", action: UPDATE_LISTENING_MAIN_DATA },
+      { key: "content", action: UPDATE_LISTENING_MAIN_DATA },
+      { key: "subTitle", action: UPDATE_LISTENING_MAIN_DATA },
+    ].forEach(({ key, action }) => {
+      if (
+        watchedFields[key] !== undefined &&
+        prevFieldsRef.current[key] !== watchedFields[key]
+      ) {
+        dispatch(
+          action({
+            field: key,
+            value: watchedFields[key] || "",
+          })
+        );
+      }
+    });
 
-    // Update sub questions (13 questions for Listening Part 1)
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].forEach((num) => {
+    // Update sub questions only if changed
+    for (let i = 0; i < 13; i++) {
+      const num = i + 1;
       const subContentKey = `subContent${num}` as keyof FormData;
       const correctAnswerKey = `correctAnswer${num}` as keyof FormData;
       const subFileKey = `subFile${num}` as keyof FormData;
+      const subQ = listeningStore.currentListeningData.subQuestions[i] || {};
+      const prevSubQ = prevSubQuestionsRef.current[i] || {};
 
-      if (watchedFields[subContentKey] !== undefined) {
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "content",
-            value: watchedFields[subContentKey] || "",
-          })
-        );
-      }
+      [
+        { key: subContentKey, field: "content" },
+        { key: correctAnswerKey, field: "correctAnswer" },
+        { key: subFileKey, field: "file" },
+      ].forEach(({ key, field }) => {
+        if (
+          watchedFields[key] !== undefined &&
+          prevSubQ[field] !== watchedFields[key]
+        ) {
+          dispatch(
+            UPDATE_LISTENING_SUB_QUESTION({
+              index: i,
+              field,
+              value: watchedFields[key] || "",
+            })
+          );
+        }
+      });
 
-      if (watchedFields[correctAnswerKey] !== undefined) {
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "correctAnswer",
-            value: watchedFields[correctAnswerKey] || "",
-          })
-        );
-      }
-
-      if (watchedFields[subFileKey] !== undefined) {
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "file",
-            value: watchedFields[subFileKey] || "",
-          })
-        );
-      }
-
-      // Update answer options
-      [1, 2, 3].forEach((ansNum) => {
-        const answerKey = `answer${
-          ansNum === 1 ? "One" : ansNum === 2 ? "Two" : "Three"
-        }Sub${num}` as keyof FormData;
-
-        if (watchedFields[answerKey] !== undefined) {
-          // Update answer in answerList array
+      // Update answer options only if changed
+      if (subQ?.answerList) {
+        const currentAnswerList = [...subQ.answerList];
+        let changed = false;
+        [1, 2, 3].forEach((ansNum) => {
+          const answerKey = `answer${ansNum}Sub${num}` as keyof FormData;
           if (
-            listeningStore.currentListeningData.subQuestions[num - 1]
-              ?.answerList
+            watchedFields[answerKey] !== undefined &&
+            currentAnswerList[ansNum - 1]?.content !== watchedFields[answerKey]
           ) {
-            const currentAnswerList = [
-              ...listeningStore.currentListeningData.subQuestions[num - 1]
-                .answerList,
-            ];
             currentAnswerList[ansNum - 1] = {
               content: watchedFields[answerKey] || "",
             };
-
-            dispatch(
-              UPDATE_LISTENING_SUB_QUESTION({
-                index: num - 1,
-                field: "answerList",
-                value: currentAnswerList,
-              })
-            );
+            changed = true;
           }
+        });
+        if (changed) {
+          dispatch(
+            UPDATE_LISTENING_SUB_QUESTION({
+              index: i,
+              field: "answerList",
+              value: currentAnswerList,
+            })
+          );
         }
-      });
-    });
+      }
+    }
+
+    // Save current fields and subQuestions for next comparison
+    prevFieldsRef.current = { ...watchedFields };
+    prevSubQuestionsRef.current =
+      listeningStore.currentListeningData.subQuestions.map((q: any) => ({
+        content: q.content,
+        correctAnswer: q.correctAnswer,
+        file: q.file,
+        answerList: q.answerList
+          ? q.answerList.map((a: any) => ({ ...a }))
+          : [],
+      }));
   }, [watchedFields, dispatch, listeningStore]);
 
   const onSubmit = async (values: any) => {
@@ -513,12 +509,7 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
             listeningStore?.currentListeningData?.subQuestions?.[num - 1]
               ?.answerList ||
             [1, 2, 3].map((ansNum) => ({
-              content:
-                values[
-                  `answer${
-                    ansNum === 1 ? "One" : ansNum === 2 ? "Two" : "Three"
-                  }Sub${num}`
-                ] || "",
+              content: values[`answer${ansNum}Sub${num}`] || "",
             })),
           image: null,
           suggestion: suggestions[num] || "",
@@ -576,6 +567,15 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
   useEffect(() => {
     console.log({ dataListeningPartOne });
     if (dataListeningPartOne) {
+      console.log("Loading edit data...");
+      console.log("Data structure:", {
+        questions: dataListeningPartOne.questions,
+        subQuestions: dataListeningPartOne.questions[0]?.subQuestion,
+        firstSubQuestion: dataListeningPartOne.questions[0]?.subQuestion[0],
+        firstAnswerList:
+          dataListeningPartOne.questions[0]?.subQuestion[0]?.answerList,
+      });
+
       setValue("title", dataListeningPartOne.title);
       setValue("content", dataListeningPartOne.questions[0].content);
       setValue("subTitle", dataListeningPartOne.questions[0].questionTitle);
@@ -641,33 +641,27 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
 
         handleSuggestionChange(num, suggestion);
 
-        [1, 2, 3].map((ansNum) => {
+        // Collect all answers for this question first
+        const answerList = [1, 2, 3].map((ansNum) => {
           const answerContent =
             dataListeningPartOne.questions[0].subQuestion[num - 1]
               ?.answerList?.[ansNum - 1]?.content || "";
-          const answerKey = `answer${
-            ansNum === 1 ? "One" : ansNum === 2 ? "Two" : "Three"
-          }Sub${num}` as keyof FormData;
+          const answerKey = `answer${ansNum}Sub${num}` as keyof FormData;
 
+          console.log(`Setting ${answerKey} = "${answerContent}"`);
           setValue(answerKey, answerContent);
 
-          // Update Redux store answerList
-          const currentAnswerList = listeningStore?.currentListeningData
-            ?.subQuestions?.[num - 1]?.answerList || [
-            { content: "" },
-            { content: "" },
-            { content: "" },
-          ];
-          currentAnswerList[ansNum - 1] = { content: answerContent };
-
-          dispatch(
-            UPDATE_LISTENING_SUB_QUESTION({
-              index: num - 1,
-              field: "answerList",
-              value: currentAnswerList,
-            })
-          );
+          return { content: answerContent };
         });
+
+        // Update Redux store with complete answerList for this question
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION({
+            index: num - 1,
+            field: "answerList",
+            value: answerList,
+          })
+        );
       });
     }
   }, [dataListeningPartOne, setValue, dispatch]);
