@@ -9,10 +9,13 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   const audioRef = useRef(null);
   const listening = useSelector((state) => state.taiLieuStore.listening);
 
+
   const [suggestion, setSuggestion] = useState(null);
   const currentNumberQuestion = useSelector(
     (state) => state.taiLieuStore.currentNumberQuestion
   );
+
+  // speaking
   const numberQuestion = useSelector(
     (state) => state.speakingStore.numberQuestion
   );
@@ -23,46 +26,81 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
   const currentSpeakingData = useSelector(
     (state) => state.speakingStore.currentSpeakingData
   );
-  const currentWritingData = useSelector(
-    (state) => state.writingStore.currentWritingData
-  );
-  const currentListeningData = useSelector(
-    (state) => state.listeningStore.currentListeningData?.subQuestions
-  );
-  
 
   const numberQuestionEachPart = useSelector(
     (state) => state.speakingStore.numberQuestionEachPart
   );
 
+  //writing
+  const currentWritingData = useSelector(
+    (state) => state.writingStore.currentWritingData
+  );
+
+  // listening
+  const currentListeningData = useSelector(
+    (state) => state.listeningStore.currentListeningData
+  );
+
+  const numberPartListening = useSelector(
+    (state) => state.listeningStore.numberQuestion
+  );
+
+  const numberQuestionEachPartListening = useSelector(
+    (state) => state.listeningStore.numberQuestionEachPart
+  );
   const MoveToTime = (time) => {
     audioRef.current.currentTime = time;
     audioRef.current.play();
   };
   useEffect(() => {
     if (listening && currentExamPart === "listening") {
-      const extractedJson =
-        listening[currentNumberQuestion]?.suggestion?.match(/\[.*\]/s)[0];
+      if (numberPartListening === 1) {
+        const extractedJson =
+          currentListeningData.subQuestions[
+            numberQuestionEachPartListening - 1
+          ]?.suggestion?.match(/\[.*\]/s);
+        const jsonArray = extractedJson ? JSON.parse(extractedJson) || [] : [];
+        console.log({ jsonArray });
+
+        if (jsonArray.length === 0) {
+          setSuggestion(
+            currentListeningData?.subQuestions[
+              numberQuestionEachPartListening - 1
+            ].suggestion || null
+          );
+        }
+        let fileAudio = "";
+
+        fileAudio =
+          currentListeningData.subQuestions[numberQuestionEachPartListening]
+            ?.file;
+
+        setContentSugesstion(jsonArray);
+        setFile(fileAudio);
+
+        return;
+      }
+
+      console.log("currentListeningData", currentListeningData);
+
+      const extractedJson = currentListeningData.suggestion?.match(/\[.*\]/s);
       const jsonArray = extractedJson ? JSON.parse(extractedJson) || [] : [];
       console.log({ jsonArray });
 
-      let fileAudio = "";
-
-      fileAudio = listening[currentNumberQuestion]?.file;
-
-      setContentSugesstion(jsonArray);
-      setFile(fileAudio);
-
       if (jsonArray.length === 0) {
-
         console.log(
           "No suggestion available for this question",
           currentListeningData
         );
-        setSuggestion(
-          currentListeningData[currentNumberQuestion].suggestion || null
-        );
+        setSuggestion(currentListeningData?.suggestion || null);
       }
+      let fileAudio = "";
+
+      fileAudio = currentListeningData?.file;
+
+      setContentSugesstion(jsonArray);
+      setFile(fileAudio);
+
       return;
     }
 
@@ -79,7 +117,7 @@ const ModalSuggestDoc = ({ currentExamPart }) => {
         setSuggestion(null);
       }
     }
-    if(currentExamPart === "writing") {
+    if (currentExamPart === "writing") {
       setSuggestion(currentWritingData?.suggestion || null);
     }
   }, [currentNumberQuestion]);

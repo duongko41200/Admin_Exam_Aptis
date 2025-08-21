@@ -1,10 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import "../../Reading/ExamReading.css";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  SET_ATTEMPTED_QUESTION,
-  SET_RESPONSE_RESULT_LISTENING,
-} from "../../../../store/feature/testBank";
 
 const convertToWord = {
   1: "A",
@@ -19,40 +15,18 @@ const ListeningPartFour = () => {
   const isCheckResult = useSelector(
     (state) => state.taiLieuStore.isCheckResult
   );
+  const currentListeningData = useSelector(
+    (state) => state.listeningStore.currentListeningData
+  );
+
+  console.log({ currentListeningData });
 
   const numberQuestionEachPart = useSelector(
     (state) => state.listeningStore.numberQuestionEachPart
   );
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
 
-  const dispatch = useDispatch();
-
-  const handleClick = (item, indexAnswer, indexSubQuestion) => {
-    // Store selected answer for this sub question
-    setSelectedAnswers((prev) => ({
-      ...prev,
-      [indexSubQuestion]: item.content,
-    }));
-
-    dispatch(
-      SET_RESPONSE_RESULT_LISTENING({
-        part: 4,
-        index: indexSubQuestion,
-        value: item.content,
-        number: numberQuestionEachPart - 16,
-      })
-    );
-
-    dispatch(
-      SET_ATTEMPTED_QUESTION({
-        part: numberQuestionEachPart,
-        numberQuestion: 4,
-        currentExamPart: "listening",
-      })
-    );
-  };
   const toggleAudio = () => {
     if (audioRef.current.paused) {
       setIsPlaying(true);
@@ -67,53 +41,9 @@ const ListeningPartFour = () => {
     setIsPlaying(false);
   };
 
-  // Reset selected answers when question part changes
-  useEffect(() => {
-    setSelectedAnswers({});
-  }, [numberQuestionEachPart]);
-
-  // Function to get background color for answer option
-  const getAnswerBackgroundColor = (answerContent, subQuestionIndex) => {
-    if (!isCheckResult) {
-      return "bg-[#eef0f3]"; // Default background when auto check is off
-    }
-
-    // Get current sub question data
-    const currentQuestion =
-      testBankData.listening.part4[numberQuestionEachPart - 16];
-    const subQuestion =
-      currentQuestion?.questions[0]?.subQuestion?.[subQuestionIndex];
-    const correctAnswer = subQuestion?.correctAnswer;
-
-    // When auto check is enabled, show correct answer in green
-    if (answerContent === correctAnswer) {
-      return "bg-green-200"; // Green background for correct answer
-    }
-
-    // If user has selected a wrong answer, show it in red
-    const selectedAnswer = selectedAnswers[subQuestionIndex];
-    if (
-      selectedAnswer &&
-      selectedAnswer === answerContent &&
-      answerContent !== correctAnswer
-    ) {
-      return "bg-red-200"; // Red background for wrong selected answer
-    }
-
-    return "bg-[#eef0f3]"; // Default background for other answers
-  };
-
   return (
     <div className="flex flex-col gap-4">
-      <div className=" mb-2">
-        {numberQuestionEachPart >= 16 &&
-          numberQuestionEachPart <= 17 &&
-          testBankData.listening.part4[numberQuestionEachPart - 16] &&
-          testBankData.listening.part4[numberQuestionEachPart - 16]
-            .questions[0] &&
-          testBankData.listening.part4[numberQuestionEachPart - 16].questions[0]
-            .content}
-      </div>
+      <div className=" mb-2">{currentListeningData.content}</div>
 
       <div
         onClick={toggleAudio}
@@ -177,15 +107,10 @@ const ListeningPartFour = () => {
       </audio>
       <div>
         <div className="flex flex-col gap-8">
-          {numberQuestionEachPart >= 16 &&
-            numberQuestionEachPart <= 17 &&
-            testBankData.listening.part4[numberQuestionEachPart - 16]
-              .questions[0].subQuestion.length > 0 &&
-            testBankData.listening.part4[
-              numberQuestionEachPart - 16
-            ].questions[0].subQuestion.map((item, index) => (
+          {currentListeningData &&
+            currentListeningData?.subQuestions.map((item, index) => (
               <div className="flex flex-col gap-2" key={index}>
-                <div>{item.content}</div>
+                <div>{item.content ? item.content : "..."}</div>
                 <div className="flex flex-col gap-1">
                   {item.answerList.map((answer, idx) => (
                     <div
@@ -197,8 +122,10 @@ const ListeningPartFour = () => {
                     >
                       <div
                         className={`text-[2rem] w-[4.5rem]  text-center h-full flex items-center border border-r-2 border-[#d4d4d4] justify-center ${
-                          item.responseUser === answer.content
-                            ? "bg-[#fefac7]"
+                          isCheckResult &&
+                          item.correctAnswer === answer.content &&
+                          item.correctAnswer
+                            ? "bg-green-200"
                             : "hover:bg-[#f8f9fa]"
                         }`}
                       >
@@ -206,10 +133,13 @@ const ListeningPartFour = () => {
                       </div>
 
                       <div
-                        className={`w-full p-[0.7rem] text-sm md:text-md h-full flex items-center ${getAnswerBackgroundColor(
-                          answer?.content,
-                          index
-                        )}`}
+                        className={`w-full p-[0.7rem] text-sm md:text-md h-full flex items-center ${
+                          isCheckResult &&
+                          item.correctAnswer === answer.content &&
+                          item.correctAnswer
+                            ? "bg-green-200"
+                            : "hover:bg-[#f8f9fa]"
+                        }`}
                       >
                         <div>{answer?.content}</div>
                       </div>

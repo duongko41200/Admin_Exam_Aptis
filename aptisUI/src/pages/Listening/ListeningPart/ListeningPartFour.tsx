@@ -1,19 +1,18 @@
+import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
+import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 import {
+  INIT_LISTENING_SUB_QUESTIONS,
+  RESET_LISTENING_DATA,
   UPDATE_LISTENING_MAIN_DATA,
   UPDATE_LISTENING_SUB_QUESTION,
-  UPDATE_LISTENING_SUB_QUESTION_SUGGESTION,
-  RESET_LISTENING_DATA,
-  INIT_LISTENING_SUB_QUESTIONS,
 } from "../../../store/feature/listening";
 
 interface ListeningPartOneProps {
@@ -561,9 +560,6 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
         const answerPartFour =
           dataListeningPartFour.questions[0].subQuestion[num - 1]
             ?.correctAnswer || "";
-
-        setValue(`contentPartFour${num}` as keyof FormData, contentPartFour);
-        setValue(`answerPartFour${num}` as keyof FormData, answerPartFour);
 
         // Update Redux store
         dispatch(

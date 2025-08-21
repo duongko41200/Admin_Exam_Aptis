@@ -27,7 +27,7 @@ const ExamListening = () => {
                   if (numberQuestion === 1) return 13;
                   if (numberQuestion === 2) return 1;
                   if (numberQuestion === 3) return 1;
-                  if (numberQuestion === 4) return 2;
+                  if (numberQuestion === 4) return 1;
                   return 0;
                 })()}
               </div>

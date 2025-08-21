@@ -1,30 +1,23 @@
-import React, { useEffect, useRef, useState } from "react";
-import "../../Reading/ExamReading.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import { RES_DATA } from "../../../../consts/global";
-import {
-  SET_ATTEMPTED_QUESTION,
-  SET_RESPONSE_RESULT_LISTENING,
-} from "../../../../store/feature/testBank";
+import "../../Reading/ExamReading.css";
 
 const ListeningPartThree = () => {
-  const testBankData = useSelector((state) => state.testBankStore.testBankData);
   const isCheckResult = useSelector(
     (state) => state.taiLieuStore.isCheckResult
   );
-  const audioRef = useRef(null);
-  const numberQuestionEachPart = useSelector(
-    (state) => state.listeningStore.numberQuestionEachPart
+
+  const currentListeningData = useSelector(
+    (state) => state.listeningStore.currentListeningData
   );
+
+  const audioRef = useRef(null);
 
   // const [resSpeakingPartTwo, setResSpeakingPartTwo] = useState();
   const [contentPartTwo, setContentPartTwo] = useState();
-  const [subQuestions, setSubQuestions] = useState([]);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
   // const navigate = useNavigate();
-
-  const dispatch = useDispatch();
 
   const selectOption = (e, index) => {
     const selectedValue = e.target.value;
@@ -34,23 +27,6 @@ const ListeningPartThree = () => {
       ...prev,
       [index]: selectedValue,
     }));
-
-    dispatch(
-      SET_RESPONSE_RESULT_LISTENING({
-        part: 3,
-        index: index,
-        value: selectedValue,
-        number: 0,
-      })
-    );
-
-    dispatch(
-      SET_ATTEMPTED_QUESTION({
-        part: numberQuestionEachPart,
-        numberQuestion: 3,
-        currentExamPart: "listening",
-      })
-    );
   };
   const toggleAudio = () => {
     if (audioRef.current.paused) {
@@ -63,63 +39,8 @@ const ListeningPartThree = () => {
     }
   };
 
-  useEffect(() => {
-    if (testBankData.speaking.part1.length <= 0) {
-      // navigate("/");
-      return;
-    }
-
-    const ListeningPartThree = testBankData.listening.part3[RES_DATA];
-
-    // setResSpeakingPartTwo(ListeningPartThree);
-    setContentPartTwo(ListeningPartThree?.questions);
-
-    setSubQuestions(ListeningPartThree?.questions[RES_DATA].subQuestion);
-
-    // Reset selected answers when part changes
-    setSelectedAnswers({});
-  }, [testBankData]);
-
   const handleAudioEnd = () => {
     setIsPlaying(false);
-  };
-
-  // Function to get select styling based on answer correctness
-  const getSelectStyle = (questionIndex) => {
-    if (!isCheckResult) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium";
-    }
-
-    // When auto check is enabled, highlight correct answer
-    const selectedAnswer = selectedAnswers[questionIndex];
-    const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
-
-    // If user selected the correct answer
-    if (selectedAnswer === correctAnswer && selectedAnswer) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-green-500 bg-green-50";
-    }
-    // If user selected wrong answer
-    else if (selectedAnswer && selectedAnswer !== correctAnswer) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-red-500 bg-red-50";
-    }
-    // Default style when auto check is enabled but no answer selected yet
-    else {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-blue-300";
-    }
-  };
-
-  // Function to get visual indicator for correct answer when auto check is enabled
-  const getCorrectAnswerIndicator = (questionIndex) => {
-    if (!isCheckResult) return null;
-
-    const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
-    if (!correctAnswer) return null;
-
-    return (
-      <div className="ml-2 px-2 py-1 bg-green-100 text-green-800 text-sm rounded border border-green-300">
-        Đáp án đúng: {correctAnswer}
-      </div>
-    );
   };
 
   return (
@@ -176,9 +97,9 @@ const ListeningPartThree = () => {
         />
       </audio>
       <div className="flex flex-col gap-6">
-        <div className="font-medium">Who expresses which opinion?</div>
-        {subQuestions.length > 0 &&
-          subQuestions.map((item, index) => (
+        <div className="font-medium">{currentListeningData.content}</div>
+        {currentListeningData?.subQuestions.length > 0 &&
+          currentListeningData?.subQuestions.map((item, index) => (
             <div key={index}>
               <div className="flex h-[40px] w-full cursor-pointer">
                 <div className="w-fit text-[15px] h-full flex items-center font-medium justify-start">
@@ -190,7 +111,7 @@ const ListeningPartThree = () => {
                 <div className="w-fit px-[0.8rem] flex items-center text-md">
                   <select
                     aria-label="Response input area"
-                    className={getSelectStyle(index)}
+                    className="min-w-[100px] w-fit"
                     data-inputid="1"
                     onChange={(e) => {
                       selectOption(e, index);
@@ -202,16 +123,21 @@ const ListeningPartThree = () => {
                       value=""
                       aria-label="Please select an option - "
                     ></option>
-                    {contentPartTwo[RES_DATA] &&
-                      contentPartTwo[RES_DATA].answerList.map((answer, idx) => (
+                    {currentListeningData &&
+                      currentListeningData.answerList.map((answer, idx) => (
                         <option key={idx} role="option" value={answer.content}>
                           {answer.content}
                         </option>
                       ))}
                   </select>
                 </div>
+
+                {isCheckResult && (
+                  <div className="min-w-[50px] w-fit px-[0.8rem] flex items-center text-md bg-green-200">
+                    {item.correctAnswer}
+                  </div>
+                )}
               </div>
-              {getCorrectAnswerIndicator(index)}
             </div>
           ))}
       </div>

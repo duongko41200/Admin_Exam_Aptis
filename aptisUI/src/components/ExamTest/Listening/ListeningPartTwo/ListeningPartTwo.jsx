@@ -1,11 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import { useSelector } from "react-redux";
 import "../../Reading/ExamReading.css";
-import { useDispatch, useSelector } from "react-redux";
-import { RES_DATA } from "../../../../consts/global";
-import {
-  SET_ATTEMPTED_QUESTION,
-  SET_RESPONSE_RESULT_LISTENING,
-} from "../../../../store/feature/testBank";
 
 const convertToWord = {
   1: "A",
@@ -15,51 +10,16 @@ const convertToWord = {
 };
 
 const ListeningPartTwo = () => {
-  const testBankData = useSelector((state) => state.testBankStore.testBankData);
+  const currentListeningData = useSelector(
+    (state) => state.listeningStore.currentListeningData
+  );
   const isCheckResult = useSelector(
     (state) => state.taiLieuStore.isCheckResult
   );
+
+
   const audioRef = useRef(null);
 
-  const numberQuestionEachPart = useSelector(
-    (state) => state.listeningStore.numberQuestionEachPart
-  );
-
-  // const [resSpeakingPartTwo, setResSpeakingPartTwo] = useState();
-  const [contentPartTwo, setContentPartTwo] = useState();
-  const [subQuestions, setSubQuestions] = useState([]);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
-
-  // const navigate = useNavigate();
-
-  const dispatch = useDispatch();
-
-  const selectOption = (e, index) => {
-    const selectedValue = e.target.value;
-
-    // Update selected answers state
-    setSelectedAnswers((prev) => ({
-      ...prev,
-      [index]: selectedValue,
-    }));
-
-    dispatch(
-      SET_RESPONSE_RESULT_LISTENING({
-        part: 2,
-        index: index,
-        value: selectedValue,
-        number: 0,
-      })
-    );
-    dispatch(
-      SET_ATTEMPTED_QUESTION({
-        part: numberQuestionEachPart,
-        numberQuestion: 2,
-        currentExamPart: "listening",
-      })
-    );
-  };
   const toggleAudio = () => {
     if (audioRef.current.paused) {
       setIsPlaying(true);
@@ -71,76 +31,58 @@ const ListeningPartTwo = () => {
     }
   };
 
-  useEffect(() => {
-    if (testBankData.speaking.part1.length <= 0) {
-      // navigate("/");
-      return;
-    }
-
-    const ListeningPartTwo = testBankData.listening.part2[RES_DATA];
-
-    setContentPartTwo(ListeningPartTwo?.questions);
-
-    setSubQuestions(ListeningPartTwo?.questions[RES_DATA].subQuestion);
-
-    // Reset selected answers when part changes
-    setSelectedAnswers({});
-  }, [testBankData]);
   const handleAudioEnd = () => {
     setIsPlaying(false);
   };
 
   // Function to get select styling based on answer correctness
-  const getSelectStyle = (questionIndex) => {
-    if (!isCheckResult) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium";
-    }
+  // const getSelectStyle = (questionIndex) => {
+  //   if (!isCheckResult) {
+  //     return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium";
+  //   }
 
-    // When auto check is enabled, highlight correct answer
-    const selectedAnswer = selectedAnswers[questionIndex];
-    const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
+  //   // When auto check is enabled, highlight correct answer
+  //   const selectedAnswer = selectedAnswers[questionIndex];
+  //   const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
 
-    // If user selected the correct answer
-    if (selectedAnswer === correctAnswer && selectedAnswer) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-green-500 bg-green-50";
-    }
-    // If user selected wrong answer
-    else if (selectedAnswer && selectedAnswer !== correctAnswer) {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-red-500 bg-red-50";
-    }
-    // Default style when auto check is enabled but no answer selected yet
-    else {
-      return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-blue-300";
-    }
-  };
+  //   // If user selected the correct answer
+  //   if (selectedAnswer === correctAnswer && selectedAnswer) {
+  //     return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-green-500 bg-green-50";
+  //   }
+  //   // If user selected wrong answer
+  //   else if (selectedAnswer && selectedAnswer !== correctAnswer) {
+  //     return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-red-500 bg-red-50";
+  //   }
+  //   // Default style when auto check is enabled but no answer selected yet
+  //   else {
+  //     return "lrn-cloze-select lrn_cloze_response h-full w-full font-medium border-2 border-blue-300";
+  //   }
+  // };
 
   // Function to get visual indicator for correct answer when auto check is enabled
-  const getCorrectAnswerIndicator = (questionIndex) => {
-    if (!isCheckResult) return null;
+  // const getCorrectAnswerIndicator = (questionIndex) => {
+  //   // if (!isCheckResult) return null;
 
-    const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
-    if (!correctAnswer) return null;
+  //   // const correctAnswer = subQuestions[questionIndex]?.correctAnswer;
+  //   // if (!correctAnswer) return null;
 
-    return (
-      <div className="ml-2 px-2 py-1 bg-green-100 text-green-800 text-sm rounded border border-green-300">
-        Đáp án đúng: {correctAnswer}
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="ml-2 px-2 py-1 bg-green-100 text-green-800 text-sm rounded border border-green-300">
+  //       Đáp án đúng: {correctAnswer}
+  //     </div>
+  //   );
+  // };
 
   return (
     <div className="flex flex-col gap-4">
       <div className=" mb-2">
-        {contentPartTwo &&
-          contentPartTwo[RES_DATA] &&
-          contentPartTwo[RES_DATA].content}
+        {currentListeningData && currentListeningData.content}
       </div>
-
       <div
         onClick={toggleAudio}
         className="hover:underline cursor-pointer flex gap-2 items-center w-fit"
       >
-        <div>
+        {/* <div>
           {!isPlaying ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,21 +121,22 @@ const ListeningPartTwo = () => {
             }
             type="audio/mp3"
           />
-        </audio>
+        </audio> */}
       </div>
       <div className="flex flex-col gap-6">
-        {subQuestions.length > 0 &&
-          subQuestions.map((item, index) => (
+        {currentListeningData.subQuestions.length > 0 &&
+          currentListeningData.subQuestions.map((item, index) => (
             <div key={index}>
               <div className="flex h-[40px] w-full cursor-pointer">
                 <div className="w-[7rem] text-[15px] h-full flex items-center justify-start">
                   <div> Speaker {convertToWord[index + 1]}</div>
                 </div>
 
-                <div className="w-1/2 px-[0.7rem] flex items-center text-md">
+                <div className="w-1/2 px-[0.7rem] flex items-center text-md text-black">
                   <select
                     aria-label="Response input area"
-                    className={getSelectStyle(index)}
+                    className="min-w-[150px] w-fit"
+                    // className={getSelectStyle(index)}
                     data-inputid="1"
                     onChange={(e) => {
                       selectOption(e, index);
@@ -205,19 +148,31 @@ const ListeningPartTwo = () => {
                       value=""
                       aria-label="Please select an option - "
                     ></option>
-                    {contentPartTwo[RES_DATA] &&
-                      contentPartTwo[RES_DATA].answerList.map((answer, idx) => (
+                    {currentListeningData &&
+                      currentListeningData.answerList.map((answer, idx) => (
                         <option key={idx} role="option" value={answer.content}>
-                          {answer.content}
+                          <div className="w-full border bg-black">
+                            {idx + 1}. {answer.content}
+                            {answer.content}
+                          </div>
                         </option>
                       ))}
                   </select>
                 </div>
               </div>
-              {getCorrectAnswerIndicator(index)}
             </div>
           ))}
       </div>
+      {isCheckResult && (
+        <div className="ml-2 px-2 py-1 bg-green-100 text-green-800 text-sm rounded border border-green-300">
+          {currentListeningData.subQuestions.map((item, index) => (
+            <div key={index}>
+              Speaker {convertToWord[index + 1]}:{" "}
+              {item.correctAnswer}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
