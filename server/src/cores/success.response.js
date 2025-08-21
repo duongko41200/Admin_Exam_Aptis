@@ -16,11 +16,13 @@ class SuccessResponse {
 		message,
 		statusCode = StatusCode.OK,
 		reasonStatus = ReasonStatusCode.OK,
-	
+		count = 0
+
 	}) {
 		this.status = statusCode;
 		this.message = !message ? reasonStatus : message;
 		this.metadata = metadata;
+		this.count = count;
 	}
 	send(res) {
 		return res.status(this.status).json(this);

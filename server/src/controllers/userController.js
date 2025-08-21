@@ -8,6 +8,7 @@ import {
   create,
   deleteById,
   updateOneById,
+  count,
 } from "../services/user.service.js";
 
 class UserController {
@@ -33,9 +34,11 @@ class UserController {
 
     const sort = JSON.parse(params.sort);
 
+
     new SuccessResponse({
-      message: "creat new textFrom success!",
+      message: "get users success!",
       metadata: await getAllWithQuery({ filter, range, sort }),
+      count: await count(),
     }).send(res);
   };
 

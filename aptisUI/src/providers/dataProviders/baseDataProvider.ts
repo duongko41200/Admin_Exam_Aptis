@@ -58,9 +58,6 @@ const baseDataProvider: DataProvider = {
     });
     const response = await fetch(request);
 
-    console.log("response.ok", response.ok);
-
-    console.log("response laf:", response);
     if (response.ok === false) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -69,9 +66,11 @@ const baseDataProvider: DataProvider = {
 
     const resData = pushId(data.metadata);
 
+    console.log("resData", resData);
+
     return {
-      data: resData.slice((page - 1) * perPage, page * perPage),
-      total: parseInt(data.metadata?.length, 10),
+      data: resData,
+      total: data.count ? data.count : data.metadata.length,
     };
   },
   // get a single record by id

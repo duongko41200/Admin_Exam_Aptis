@@ -47,6 +47,12 @@ export const getAllWithQuery = async ({ filter, range, sort }) => {
   );
 };
 
+export const count = async () => {
+  const res = await baseRepo.count(userModel);
+
+  return res;
+};
+
 export const getOneById = async (id) => {
   try {
     const res = await userModel.findOne({ _id: id }).lean();

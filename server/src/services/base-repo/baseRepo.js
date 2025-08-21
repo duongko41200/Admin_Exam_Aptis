@@ -25,6 +25,9 @@ const getAllWithQuery = async (
     .populate(populate)
     .exec();
 
+console.log("res:::", res)
+
+
   return res;
 };
 
@@ -135,6 +138,10 @@ const createOrUpdate = async ({ filter, update, options = {} }, model) => {
   const result = await model.updateOne(filter, update, finalOptions);
   return result;
 };
+const count = async (model) => {
+  const count = await model.countDocuments();
+  return count;
+};
 
 export default {
   getAllWithQuery,
@@ -146,4 +153,5 @@ export default {
   findOneAndUpdate,
   findQuery,
   createOrUpdate,
+  count,
 };
