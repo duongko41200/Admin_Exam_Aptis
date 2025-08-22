@@ -1,108 +1,140 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
-import {
-	createTopic,
-	getAllTopc,
-} from '../models/respositories/text.repo.js';
-import ListeningFactory from '../services/listening.service.js';
-import uploadImage from '../utils/uploadFile/cloudFlare-r2.js';
+import { SuccessResponse } from "../cores/success.response.js";
+import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
+import ListeningFactory from "../services/listening.service.js";
+import r2Service from "../services/r2.service.js";
 
 class listeningController {
-	create = async (req, res, next) => {
-		console.log('data req:', req.body);
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await ListeningFactory.create(req.body),
-		}).send(res);
-	};
-	createImage = async (req, res, next) => {
-		const data = JSON.parse(req.body.data);
-		data.questions[0].image = req.files;
+  create = async (req, res, next) => {
+    console.log("data req:", req.body);
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await ListeningFactory.create(req.body),
+    }).send(res);
+  };
+  createImage = async (req, res, next) => {
+    try {
+      const data = JSON.parse(req.body.data);
 
-		// const upload_image_cloudflare = await uploadImage(req.file);
+      if (!req.files || req.files.length === 0) {
+        return res.status(400).json({
+          success: false,
+          message: "No files uploaded",
+        });
+      }
 
-		// console.log('upload_image_cloudflare:', upload_image_cloudflare);
+      // Upload files to R2
+      const files = req.files.map((file) => ({
+        buffer: file.buffer,
+        originalName: file.originalname,
+        mimeType: file.mimetype,
+      }));
 
-		if (!req.files) {
-			return res.status(400).send('No file uploaded');
-		}
+      const uploadResult = await r2Service.uploadMultipleFiles(
+        files,
+        "listening"
+      );
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await ListeningFactory.create(data),
-		}).send(res);
-	};
+      if (!uploadResult.success) {
+        return res.status(500).json({
+          success: false,
+          message: "File upload failed",
+          error: uploadResult.error,
+        });
+      }
 
-	getAllWithQuery = async (req, res, next) => {
-		const params = req.query;
+      // Add uploaded file URLs to data
+      data.questions[0].image = uploadResult.data.successful.map((file) => ({
+        url: file.url,
+        key: file.key,
+        originalName: file.originalName,
+        size: file.size,
+      }));
 
-		const filter = JSON.parse(params.filter);
+      new SuccessResponse({
+        message: "Create new listening with images success!",
+        metadata: await ListeningFactory.create(data),
+      }).send(res);
+    } catch (error) {
+      console.error("Create Listening with Image Error:", error);
+      return res.status(500).json({
+        success: false,
+        message: "Internal server error",
+        error: error.message,
+      });
+    }
+  };
 
-		const range = JSON.parse(params.range);
+  getAllWithQuery = async (req, res, next) => {
+    const params = req.query;
 
-		const sort = JSON.parse(params.sort);
+    const filter = JSON.parse(params.filter);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await ListeningFactory.getAllWithQuery({
-				filter,
-				range,
-				sort,
-			}),
-		}).send(res);
-	};
-	getOneById = async (req, res, next) => {
-		const { id } = req.params;
+    const range = JSON.parse(params.range);
 
-		console.log('id:', id);
+    const sort = JSON.parse(params.sort);
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await ListeningFactory.getOneById(id),
-		}).send(res);
-	};
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await ListeningFactory.getAllWithQuery({
+        filter,
+        range,
+        sort,
+      }),
+    }).send(res);
+  };
+  getOneById = async (req, res, next) => {
+    const { id } = req.params;
 
-	updateOneById = async (req, res, next) => {
-		const { id } = req.params;
-		const data = req.body;
+    console.log("id:", id);
 
-		new SuccessResponse({
-			message: 'update new writing success!',
-			metadata: await ListeningFactory.updateListening(id, data),
-		}).send(res);
-	};
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await ListeningFactory.getOneById(id),
+    }).send(res);
+  };
 
-	getAllWithFilters = async (req, res, next) => {
-		console.log('data req:', req.body);
+  updateOneById = async (req, res, next) => {
+    const { id } = req.params;
+    const data = req.body;
 
-		new SuccessResponse({
-			message: 'creat new writing success!',
-			metadata: await ListeningFactory.getAllWithFilters(req.body),
-		}).send(res);
-	};
-	// //QUERY//
+    new SuccessResponse({
+      message: "update new writing success!",
+      metadata: await ListeningFactory.updateListening(id, data),
+    }).send(res);
+  };
 
-	getAllTopic = async (req, res, next) => {
-		// console.log('data req:', req.body);
+  getAllWithFilters = async (req, res, next) => {
+    console.log("data req:", req.body);
 
-		new SuccessResponse({
-			message: 'creat new textFrom success!',
-			metadata: await ListeningFactory.getAllTopc(),
-		}).send(res);
-	};
+    new SuccessResponse({
+      message: "creat new writing success!",
+      metadata: await ListeningFactory.getAllWithFilters(req.body),
+    }).send(res);
+  };
+  // //QUERY//
 
-	deleteById = async (req, res, next) => {
-		console.log(' data req:', req.params);
+  getAllTopic = async (req, res, next) => {
+    // console.log('data req:', req.body);
 
-		new SuccessResponse({
-			message: 'delete record success!',
-			metadata: await ListeningFactory.deleteListeningById({
-				_id: req.params.id,
-			}),
-		}).send(res);
-	};
-	//END QUERY
+    new SuccessResponse({
+      message: "creat new textFrom success!",
+      metadata: await ListeningFactory.getAllTopc(),
+    }).send(res);
+  };
+
+  deleteById = async (req, res, next) => {
+    console.log(" data req:", req.params);
+
+    new SuccessResponse({
+      message: "delete record success!",
+      metadata: await ListeningFactory.deleteListeningById({
+        _id: req.params.id,
+      }),
+    }).send(res);
+  };
+  //END QUERY
 }
 
 export default new listeningController();

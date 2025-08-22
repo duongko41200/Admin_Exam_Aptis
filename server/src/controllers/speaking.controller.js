@@ -3,7 +3,7 @@
 import { SuccessResponse } from "../cores/success.response.js";
 import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
 import SpeakingFactory from "../services/speaking.service.js";
-import uploadImage from "../utils/uploadFile/cloudFlare-r2.js";
+import r2Service from "../services/r2.service.js";
 
 class speakingController {
   create = async (req, res, next) => {
@@ -14,21 +14,56 @@ class speakingController {
     }).send(res);
   };
   createImage = async (req, res, next) => {
-    const data = JSON.parse(req.body.data);
-    data.questions[0].image = req.files;
+    try {
+      const data = JSON.parse(req.body.data);
 
-    // const upload_image_cloudflare = await uploadImage(req.file);
+      if (!req.files || req.files.length === 0) {
+        return res.status(400).json({
+          success: false,
+          message: "No files uploaded",
+        });
+      }
 
-    // console.log('upload_image_cloudflare:', upload_image_cloudflare);
+      // Upload files to R2
+      const files = req.files.map((file) => ({
+        buffer: file.buffer,
+        originalName: file.originalname,
+        mimeType: file.mimetype,
+      }));
 
-    if (!req.files) {
-      return res.status(400).send("No file uploaded");
+      const uploadResult = await r2Service.uploadMultipleFiles(
+        files,
+        "speaking"
+      );
+
+      if (!uploadResult.success) {
+        return res.status(500).json({
+          success: false,
+          message: "File upload failed",
+          error: uploadResult.error,
+        });
+      }
+
+      // Add uploaded file URLs to data
+      data.questions[0].image = uploadResult.data.successful.map((file) => ({
+        url: file.url,
+        key: file.key,
+        originalName: file.originalName,
+        size: file.size,
+      }));
+
+      new SuccessResponse({
+        message: "Create new speaking with images success!",
+        metadata: await SpeakingFactory.create(data),
+      }).send(res);
+    } catch (error) {
+      console.error("Create Speaking with Image Error:", error);
+      return res.status(500).json({
+        success: false,
+        message: "Internal server error",
+        error: error.message,
+      });
     }
-
-    new SuccessResponse({
-      message: "creat new textFrom success!",
-      metadata: await SpeakingFactory.create(data),
-    }).send(res);
   };
 
   getAllWithQuery = async (req, res, next) => {
