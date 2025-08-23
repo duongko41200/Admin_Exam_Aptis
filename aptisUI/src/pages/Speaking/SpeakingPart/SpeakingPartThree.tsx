@@ -2,7 +2,29 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
+import {
+  Stack,
+  Box,
+  TextField,
+  Paper,
+  Typography,
+  Card,
+  CardContent,
+  Grow,
+  Fade,
+  Chip,
+  Divider,
+  Grid,
+} from "@mui/material";
+import {
+  QuestionAnswer,
+  Save,
+  Cancel,
+  Assignment,
+  CloudUpload,
+  Image as ImageIcon,
+  Audiotrack,
+} from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
@@ -69,65 +91,147 @@ const QuestionBox = ({
   setSuggestion: any;
   num: number;
 }) => (
-  <Box
-    sx={{
-      minHeight: "100px",
-      height: "fit-content",
-      border: "1px solid",
-      padding: "10px",
-    }}
-  >
-    <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
-    </Box>
-    <Box>
-      <div>
-        <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
-          variant="outlined"
-          fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
-          helperText={
-            errors[`subContent${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      {/* <div>
-              <TextField
-                type="suggestion"
-                {...register(`suggestion${questionNumber}`)}
-                placeholder="Gợi ý câu trả lời"
-                variant="outlined"
-                fullWidth
-                error={!!errors.subTitle}
-                helperText={errors.subTitle ? "This field is required" : ""}
-              />
-      </div> */}
-      <div>
-        <TextEditor
-          placeholder="Write something or insert a star ★"
-          suggestion={suggestion}
-          setSuggestion={setSuggestion}
-          editorId={`editor${num}`}
-        />
-      </div>
-      <div>
-        <TextField
-          // type="file âm thanh câu hỏi "
-          {...register(`subFile${questionNumber}`)}
-          placeholder="file âm thanh câu hỏi"
-          variant="outlined"
-          fullWidth
-          error={!!errors.subTitle}
-          helperText={errors.subTitle ? "This field is required" : ""}
-        />
-      </div>
-    </Box>
-  </Box>
+  <Grow in={true} timeout={600 + num * 150}>
+    <Card
+      elevation={3}
+      sx={{
+        borderRadius: 2,
+        background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+        border: "1px solid",
+        borderColor: "grey.200",
+        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "&:hover": {
+          transform: "translateY(-2px)",
+          boxShadow: "0 8px 25px rgba(0, 0, 0, 0.1)",
+          borderColor: "primary.main",
+        },
+      }}
+    >
+      <CardContent sx={{ p: 2.5 }}>
+        {/* Question Header */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            mb: 2,
+            pb: 1.5,
+            borderBottom: "1px solid",
+            borderColor: "grey.100",
+          }}
+        >
+          <QuestionAnswer
+            sx={{
+              color: "primary.main",
+              fontSize: 24,
+              mr: 1.5,
+            }}
+          />
+          <Typography
+            variant="subtitle1"
+            sx={{
+              fontWeight: 600,
+              background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Question {questionNumber}
+          </Typography>
+          <Chip
+            label={`Q${questionNumber}`}
+            color="primary"
+            size="small"
+            sx={{ ml: "auto", fontWeight: 500 }}
+          />
+        </Box>
+
+        {/* Question Content Field */}
+        <Box sx={{ mb: 2 }}>
+          <Typography
+            variant="body2"
+            sx={{ mb: 1, fontWeight: 500, color: "text.secondary" }}
+          >
+            Content
+          </Typography>
+          <TextField
+            {...register(`subContent${questionNumber}`, { required: true })}
+            placeholder={`Enter question ${questionNumber} content...`}
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={2}
+            error={!!errors[`subContent${questionNumber}`]}
+            helperText={
+              errors[`subContent${questionNumber}`]
+                ? "Required"
+                : "Question content"
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 1.5,
+                fontSize: "0.875rem",
+                background: "rgba(255, 255, 255, 0.8)",
+              },
+            }}
+          />
+        </Box>
+
+        {/* Text Editor Section */}
+        <Box sx={{ mb: 2 }}>
+          <Typography
+            variant="body2"
+            sx={{ mb: 1, fontWeight: 500, color: "text.secondary" }}
+          >
+            Instructions
+          </Typography>
+          <Box
+            sx={{
+              border: "1px solid",
+              borderColor: "grey.300",
+              borderRadius: 1.5,
+              p: 1.5,
+              backgroundColor: "rgba(248, 250, 252, 0.5)",
+              minHeight: "80px",
+            }}
+          >
+            <TextEditor
+              placeholder="Write instructions or insert special characters ★"
+              suggestion={suggestion}
+              setSuggestion={setSuggestion}
+              editorId={`editor${num}`}
+            />
+          </Box>
+        </Box>
+
+        {/* Audio File Field */}
+        <Box>
+          <Typography
+            variant="body2"
+            sx={{ mb: 1, fontWeight: 500, color: "text.secondary" }}
+          >
+            <Audiotrack
+              sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }}
+            />
+            Audio File
+          </Typography>
+          <TextField
+            {...register(`subFile${questionNumber}`)}
+            placeholder="Audio file URL..."
+            variant="outlined"
+            fullWidth
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 1.5,
+                fontSize: "0.875rem",
+                background: "rgba(255, 255, 255, 0.8)",
+              },
+            }}
+          />
+        </Box>
+      </CardContent>
+    </Card>
+  </Grow>
 );
 
 const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({

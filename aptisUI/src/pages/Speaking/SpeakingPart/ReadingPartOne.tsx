@@ -2,7 +2,21 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
+import {
+  Stack,
+  Box,
+  TextField,
+  Paper,
+  Typography,
+  Card,
+  CardContent,
+  Grow,
+  Fade,
+  Chip,
+  Divider,
+  LinearProgress,
+} from "@mui/material";
+import { QuestionAnswer, Save, Cancel, Assignment } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
@@ -67,55 +81,156 @@ const QuestionBox = ({
   setSuggestion: any;
   num: number;
 }) => (
-  <Box
-    sx={{
-      minHeight: "100px",
-      height: "fit-content",
-      border: "1px solid",
-      padding: "10px",
-    }}
-  >
-    <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Question {questionNumber}
-    </Box>
-    <Box>
-      <div>
-        <TextField
-          type={`subContent${questionNumber}`}
-          {...register(`subContent${questionNumber}`, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
-          variant="outlined"
-          fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
-          helperText={
-            errors[`subContent${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
+  <Grow in={true} timeout={800 + num * 200}>
+    <Card
+      elevation={4}
+      sx={{
+        borderRadius: 3,
+        background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+        border: "1px solid",
+        borderColor: "grey.200",
+        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "&:hover": {
+          transform: "translateY(-4px)",
+          boxShadow: "0 12px 30px rgba(0, 0, 0, 0.12)",
+          borderColor: "primary.main",
+        },
+      }}
+    >
+      <CardContent sx={{ p: 3 }}>
+        {/* Question Header */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
 
-      <div>
-        <TextEditor
-          placeholder="Write something or insert a star ★"
-          suggestion={suggestion}
-          setSuggestion={setSuggestion}
-          editorId={`editor${num}`}
-        />
-      </div>
-      <div>
-        <TextField
-          // type="file âm thanh câu hỏi "
-          {...register(`subFile${questionNumber}`)}
-          placeholder="file âm thanh câu hỏi"
-          variant="outlined"
-          fullWidth
-          error={!!errors.subTitle}
-          helperText={errors.subTitle ? "This field is required" : ""}
-        />
-      </div>
-    </Box>
-  </Box>
+            pb: 2,
+            borderBottom: "2px solid",
+            borderColor: "grey.100",
+          }}
+        >
+          <QuestionAnswer
+            sx={{
+              color: "primary.main",
+              fontSize: 28,
+              mr: 2,
+            }}
+          />
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 700,
+              background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Question {questionNumber}
+          </Typography>
+          <Chip
+            label={`Part ${questionNumber}`}
+            color="primary"
+            size="small"
+            sx={{ ml: "auto", fontWeight: 600 }}
+          />
+        </Box>
+
+        {/* Question Content Field */}
+        <Box sx={{ mb: 1 }}>
+          <Typography
+            variant="subtitle2"
+            sx={{ mb: 1, fontWeight: 600, color: "text.secondary" }}
+          >
+            Question Content
+          </Typography>
+          <TextField
+            {...register(`subContent${questionNumber}`, { required: true })}
+            placeholder={`Enter question ${questionNumber} content...`}
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={3}
+            error={!!errors[`subContent${questionNumber}`]}
+            helperText={
+              errors[`subContent${questionNumber}`]
+                ? "This field is required"
+                : "Provide clear and detailed question content"
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 2,
+                background: "rgba(255, 255, 255, 0.8)",
+                "&:hover": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "primary.main",
+                  },
+                },
+                "&.Mui-focused": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderWidth: 2,
+                  },
+                },
+              },
+            }}
+          />
+        </Box>
+
+        {/* Text Editor Section */}
+        <Box sx={{ mb: 1 }}>
+          <Typography
+            variant="subtitle2"
+            sx={{ mb: 1, fontWeight: 600, color: "text.secondary" }}
+          >
+            Additional Instructions
+          </Typography>
+          <Box
+            sx={{
+              border: "1px solid",
+              borderColor: "grey.300",
+              borderRadius: 2,
+              p: 2,
+              backgroundColor: "rgba(248, 250, 252, 0.5)",
+            }}
+          >
+            <TextEditor
+              placeholder="Write additional instructions or insert special characters ★"
+              suggestion={suggestion}
+              setSuggestion={setSuggestion}
+              editorId={`editor${num}`}
+            />
+          </Box>
+        </Box>
+
+        {/* Audio File Field */}
+        <Box>
+          <Typography
+            variant="subtitle2"
+            sx={{ fontWeight: 600, color: "text.secondary" }}
+          >
+            Audio File URL
+          </Typography>
+          <TextField
+            {...register(`subFile${questionNumber}`)}
+            placeholder="Enter audio file URL for this question..."
+            variant="outlined"
+            fullWidth
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 2,
+                background: "rgba(255, 255, 255, 0.8)",
+                "&:hover": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "primary.main",
+                  },
+                },
+              },
+            }}
+          />
+        </Box>
+      </CardContent>
+    </Card>
+  </Grow>
 );
 
 const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
@@ -361,191 +476,410 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   }, [statusHandler, dispatch]);
 
   return (
-    <div>
-      {/* Debug panel - luôn hiển thị nhưng nội dung thay đổi theo state */}
+    <Box sx={{ width: "100%", minHeight: "100vh" }}>
+      {/* Debug Panel - Modern style */}
       <Box
         sx={{
-          background: "#f0f0f0",
-          padding: "10px",
-          marginBottom: "20px",
-          borderRadius: "4px",
-          fontSize: "12px",
-          border: "2px solid #ddd",
-          position: "relative",
+          position: "fixed",
+          top: "120px",
+          right: "20px",
+          width: showDebugPanel ? "350px" : "auto",
+          maxHeight: "70vh",
+          backgroundColor: "rgba(0, 0, 0, 0.85)",
+          color: "white",
+          borderRadius: 3,
+          zIndex: 1000,
+          border: "1px solid rgba(255, 255, 255, 0.1)",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
         }}
       >
+        {/* Debug Header */}
         <Box
           sx={{
+            padding: "12px 16px",
+            borderBottom: showDebugPanel
+              ? "1px solid rgba(255, 255, 255, 0.1)"
+              : "none",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            marginBottom: showDebugPanel ? "10px" : "0px",
+            background:
+              "linear-gradient(135deg, rgba(25, 118, 210, 0.8), rgba(66, 165, 245, 0.6))",
+            borderRadius: showDebugPanel ? "12px 12px 0 0" : "12px",
+            cursor: "pointer",
           }}
+          onClick={() => setShowDebugPanel(!showDebugPanel)}
         >
-          <h4 style={{ margin: 0 }}>Store Data (Real-time):</h4>
-          <button
-            onClick={() => setShowDebugPanel(!showDebugPanel)}
-            color="primary"
-            className="hover:bg-gray-200 p-1"
-          >
-            <span>{showDebugPanel ? "🔼 Thu gọn" : "🔽 Xem chi tiết"}</span>
-          </button>
+          <Typography variant="body2" sx={{ fontWeight: 600 }}>
+            🔧 Redux Debug Panel
+          </Typography>
+          <Typography variant="body2">{showDebugPanel ? "▼" : "▶"}</Typography>
         </Box>
 
-        {/* Nội dung JSON chỉ hiển thị khi showDebugPanel = true */}
+        {/* Debug Content */}
         {showDebugPanel && (
           <Box
             sx={{
-              maxHeight: "300px",
+              padding: "16px",
+              maxHeight: "400px",
               overflow: "auto",
-              background: "#fff",
-              padding: "8px",
-              borderRadius: "4px",
+              fontSize: "11px",
+              fontFamily: "monospace",
             }}
           >
-            <pre>
+            <pre
+              style={{
+                margin: 0,
+                lineHeight: "1.4",
+                wordWrap: "break-word",
+                whiteSpace: "pre-wrap",
+                color: "#e0e0e0",
+              }}
+            >
               {JSON.stringify(speakingStore.currentSpeakingData, null, 2)}
             </pre>
           </Box>
         )}
       </Box>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="form sign-up-form relative overflow-auto"
-      >
-        <h2 className="title">Speaking Part 1</h2>
-        <div>
-          <TextField
-            type="title"
-            {...register("title", { required: true })}
-            placeholder="Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.title}
-            helperText={errors.title ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="subTitle"
-            {...register("subTitle", { required: true })}
-            placeholder="Sub Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion")}
-            placeholder="Gợi ý câu trả lời"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            // type="file"
-            {...register("file")}
-            placeholder="link file nghe de bai"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-
-        <Box
+      {/* Main Form Container */}
+      <Fade in={true} timeout={1000}>
+        <Paper
+          elevation={8}
           sx={{
+            borderRadius: 4,
+            background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+            boxShadow: "0 16px 40px rgba(0, 0, 0, 0.1)",
+            overflow: "hidden",
             width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
-            boxShadow:
-              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-            gap: "10px",
-            padding: "10px",
-            marginTop: "20px",
           }}
         >
-          {[1, 2, 3].map((num) => (
-            <QuestionBox
-              key={num}
-              questionNumber={num}
-              register={register}
-              errors={errors}
-              suggestion={suggestions[num]}
-              setSuggestion={(value: any) => handleSuggestionChange(num, value)}
-              num={num}
-            />
-          ))}
-        </Box>
-
-        <Box
-          sx={{
-            width: "100%",
-            minHeight: "100px",
-            position: "relative",
-          }}
-        >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}
-            width="100%"
+          <Typography
+            variant="h5"
             sx={{
-              backgroundColor: "#f1f1f1",
-              padding: "1rem",
-              borderRadius: "4px",
-              marginTop: "1rem",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
+              fontWeight: 700,
+              ml: 4,
+              p: 2,
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
             }}
-            {...props}
           >
-            <Button type="submit" variant="contained" color="info">
-              <span>Submit</span>
-            </Button>
+            Speaking Part 1
+          </Typography>
 
-            {showCancelButton && pathTo ? (
-              <NavLink to={pathTo}>
-                <Button type="button" variant="contained" color="error">
-                  <span>Cancel</span>
-                </Button>
-              </NavLink>
-            ) : (
-              <Button
-                type="button"
-                variant="contained"
-                color="error"
-                onClick={handleCancel}
-              >
-                <span>Cancel</span>
-              </Button>
-            )}
-          </Stack>
-        </Box>
-      </form>
-    </div>
+          {/* Form Content */}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Box sx={{ p: 2 }}>
+              {/* Basic Information Section */}
+              <Grow in={true} timeout={600}>
+                <Card
+                  elevation={2}
+                  sx={{
+                    mb: 4,
+                    borderRadius: 3,
+                    border: "1px solid",
+                    borderColor: "grey.200",
+                  }}
+                >
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                      }}
+                    >
+                      <Assignment sx={{ color: "primary.main" }} />
+                      Basic Information
+                    </Typography>
+
+                    <Box sx={{ display: "grid", gap: 3 }}>
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            fontWeight: 600,
+                            color: "text.secondary",
+                          }}
+                        >
+                          Title
+                        </Typography>
+                        <TextField
+                          {...register("title", { required: true })}
+                          placeholder="Enter speaking exercise title..."
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors.title}
+                          helperText={
+                            errors.title
+                              ? "Title is required"
+                              : "Give your exercise a clear, descriptive title"
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      </Box>
+
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            fontWeight: 600,
+                            color: "text.secondary",
+                          }}
+                        >
+                          Content
+                        </Typography>
+                        <TextField
+                          {...register("content", { required: true })}
+                          placeholder="Enter main content..."
+                          variant="outlined"
+                          fullWidth
+                          multiline
+                          rows={3}
+                          error={!!errors.content}
+                          helperText={
+                            errors.content
+                              ? "Content is required"
+                              : "Provide clear instructions for the speaking exercise"
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      </Box>
+
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            fontWeight: 600,
+                            color: "text.secondary",
+                          }}
+                        >
+                          Sub Title
+                        </Typography>
+                        <TextField
+                          {...register("subTitle", { required: true })}
+                          placeholder="Enter subtitle..."
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors.subTitle}
+                          helperText={
+                            errors.subTitle
+                              ? "Sub title is required"
+                              : "Add a subtitle to clarify the exercise"
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      </Box>
+
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            fontWeight: 600,
+                            color: "text.secondary",
+                          }}
+                        >
+                          Suggestion (Optional)
+                        </Typography>
+                        <TextField
+                          {...register("suggestion")}
+                          placeholder="Enter answer suggestions..."
+                          variant="outlined"
+                          fullWidth
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      </Box>
+
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            fontWeight: 600,
+                            color: "text.secondary",
+                          }}
+                        >
+                          Audio File URL
+                        </Typography>
+                        <TextField
+                          {...register("file")}
+                          placeholder="Enter listening audio file URL..."
+                          variant="outlined"
+                          fullWidth
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      </Box>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grow>
+
+              {/* Questions Section */}
+              <Grow in={true} timeout={1000}>
+                <Box sx={{ mb: 4 }}>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      mb: 3,
+                      fontWeight: 600,
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <QuestionAnswer sx={{ color: "primary.main" }} />
+                    Sub Questions
+                  </Typography>
+
+                  <Box
+                    sx={{
+                      display: "grid",
+                      gridTemplateColumns: {
+                        xs: "1fr",
+                        lg: "repeat(auto-fit, minmax(450px, 1fr))",
+                      },
+                      gap: 4,
+                    }}
+                  >
+                    {[1, 2, 3].map((num) => (
+                      <QuestionBox
+                        key={num}
+                        questionNumber={num}
+                        register={register}
+                        errors={errors}
+                        suggestion={suggestions[num - 1]}
+                        setSuggestion={(value: any) =>
+                          handleSuggestionChange(num, value)
+                        }
+                        num={num}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+              </Grow>
+
+              <Divider sx={{ my: 4 }} />
+
+              {/* Action Buttons */}
+              <Fade in={true} timeout={1200}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 2,
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    size="large"
+                    startIcon={<Save />}
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      borderRadius: 3,
+                      background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+                      boxShadow: "0 4px 15px rgba(25, 118, 210, 0.3)",
+                      "&:hover": {
+                        background: "linear-gradient(45deg, #1565c0, #1976d2)",
+                        transform: "translateY(-2px)",
+                        boxShadow: "0 6px 20px rgba(25, 118, 210, 0.4)",
+                      },
+                    }}
+                  >
+                    <Typography variant="button" component="span">
+                      Submit
+                    </Typography>
+                  </Button>
+
+                  {showCancelButton && (
+                    <>
+                      {pathTo ? (
+                        <NavLink to={pathTo}>
+                          <Button
+                            variant="outlined"
+                            size="large"
+                            startIcon={<Cancel />}
+                            sx={{
+                              px: 4,
+                              py: 1.5,
+                              borderRadius: 3,
+                              borderColor: "error.main",
+                              color: "error.main",
+                              "&:hover": {
+                                backgroundColor: "error.main",
+                                color: "white",
+                                transform: "translateY(-2px)",
+                              },
+                            }}
+                          >
+                            <Typography variant="button" component="span">
+                              Cancel
+                            </Typography>
+                          </Button>
+                        </NavLink>
+                      ) : (
+                        <Button
+                          variant="outlined"
+                          size="large"
+                          startIcon={<Cancel />}
+                          onClick={handleCancel}
+                          sx={{
+                            px: 4,
+                            py: 1.5,
+                            borderRadius: 3,
+                            borderColor: "error.main",
+                            color: "error.main",
+                            "&:hover": {
+                              backgroundColor: "error.main",
+                              color: "white",
+                              transform: "translateY(-2px)",
+                            },
+                          }}
+                        >
+                          <Typography variant="button" component="span">
+                            Cancel
+                          </Typography>
+                        </Button>
+                      )}
+                    </>
+                  )}
+                </Box>
+              </Fade>
+            </Box>
+          </form>
+        </Paper>
+      </Fade>
+    </Box>
   );
 };
 

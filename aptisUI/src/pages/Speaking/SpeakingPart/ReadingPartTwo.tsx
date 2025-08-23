@@ -1,48 +1,41 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { useNotify } from "react-admin";
 import {
-  Stack,
+  Assignment,
+  Cancel,
+  CloudUpload,
+  QuestionAnswer,
+  Save,
+} from "@mui/icons-material";
+import {
   Box,
-  TextField,
-  Paper,
-  Typography,
-  Container,
-  Divider,
+  Button,
   Card,
   CardContent,
+  Chip,
+  Divider,
   Fade,
   Grow,
   LinearProgress,
-  Chip,
-  Button,
+  Paper,
+  TextField,
+  Typography,
 } from "@mui/material";
-import {
-  Assignment,
-  QuestionAnswer,
-  Save,
-  Cancel,
-  CloudUpload,
-} from "@mui/icons-material";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { useNotify } from "react-admin";
+import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
-import { stylesInpection } from "../../../styles/product-inspection";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+import r2UploadHelper from "../../../services/r2UploadHelper";
 import {
+  RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
   UPDATE_SUB_QUESTION_SUGGESTION,
-  RESET_SPEAKING_DATA,
 } from "../../../store/feature/speaking";
-import {
-  R2FilePreview,
-  SimpleR2FilePreview,
-} from "../../../components/R2FileUpload";
-import r2UploadHelper from "../../../services/r2UploadHelper";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -117,7 +110,7 @@ const QuestionBox = ({
           sx={{
             display: "flex",
             alignItems: "center",
-            mb: 3,
+            mb: 1,
             pb: 2,
             borderBottom: "2px solid",
             borderColor: "grey.100",
@@ -640,7 +633,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   }, []);
 
   return (
-    <Box sx={{ width: "100%", minHeight: "100vh", py: 4 }}>
+    <Box sx={{ width: "100%", minHeight: "100vh" }}>
       {/* Loading Progress Bar */}
       {isUploading && (
         <Box
@@ -752,37 +745,24 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
             boxShadow: "0 16px 40px rgba(0, 0, 0, 0.1)",
             overflow: "hidden",
-            maxWidth: "1200px",
-            mx: "auto",
+            width: "100%",
           }}
         >
-          {/* Form Header */}
-          <Box
+          <Typography
+            variant="h5"
             sx={{
-              background: "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
-              color: "white",
-              p:1,
-              textAlign: "center",
+              fontWeight: 700,
+              ml: 4,
+              p: 2,
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
             }}
           >
-         
-            <Typography
-              variant="h4"
-              sx={{
-                fontWeight: 700,
-                mb: 1,
-                textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
-              }}
-            >
-                 <Assignment sx={{ fontSize:35, mb: 2, opacity: 0.9 }} />Speaking Part 2
-            </Typography>
-
-  
-          </Box>
+            Speaking Part 2
+          </Typography>
 
           {/* Form Content */}
           <form onSubmit={handleSubmit(onSubmit)}>
-            <Box sx={{ p: 4 }}>
+            <Box sx={{ p: 2 }}>
               {/* Basic Information Section */}
               <Grow in={true} timeout={600}>
                 <Card
@@ -808,7 +788,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                       📝 Basic Information
                     </Typography>
 
-                    <Box sx={{ display: "grid", gap: 3 }}>
+                    <Box sx={{ display: "grid", gap: 1 }}>
                       {/* Title Field */}
                       <Box>
                         <Typography
@@ -880,7 +860,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                         sx={{
                           display: "grid",
                           gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                          gap: 3,
+                          gap: 1,
                         }}
                       >
                         {/* Sub Title */}
@@ -945,7 +925,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                         sx={{
                           display: "grid",
                           gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                          gap: 3,
+                          gap: 1,
                         }}
                       >
                         {/* Audio File */}
@@ -1091,7 +1071,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                 <Box
                   sx={{
                     display: "flex",
-                    gap: 3,
+                    gap: 1,
                     justifyContent: "center",
                     flexWrap: "wrap",
                   }}

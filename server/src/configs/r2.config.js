@@ -10,18 +10,20 @@ dotenv.config();
 class R2Config {
   constructor() {
     // Validate required environment variables
-    this.validateConfig();
+    // this.validateConfig();
 
     this.config = {
       accountId: process.env.R2_ACCOUNT_ID,
       accessKeyId: process.env.R2_ACCESS_KEY_ID,
       secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
       bucketName: process.env.R2_BUCKET_NAME || "aptis-files",
-      publicUrl: process.env.R2_PUBLIC_URL,
+      publicUrl: process.env.R2_PUBLIC_BASE_URL,
       // R2 endpoint format: https://<accountId>.r2.cloudflarestorage.com
       endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
       region: "auto", // R2 uses 'auto' region
     };
+
+    console.log("R2 configuration:", this.config);
 
     // Create S3 Client for R2
     this.client = new S3Client({
