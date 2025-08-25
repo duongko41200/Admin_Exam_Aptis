@@ -760,7 +760,9 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                       },
                     }}
                   >
-                    Submit
+                    <span>
+                      <Save />
+                    </span>
                   </Button>
 
                   {showCancelButton && (
@@ -782,7 +784,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                               },
                             }}
                           >
-                            Cancel
+                            <span>Cancel</span>
                           </Button>
                         </NavLink>
                       ) : (
@@ -802,7 +804,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                             },
                           }}
                         >
-                          Cancel
+                          <span>Cancel</span>
                         </Button>
                       )}
                     </>

@@ -276,14 +276,8 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       newSuggestions[index] = value;
       return newSuggestions;
     });
-
-    // Update store
-    dispatch(
-      UPDATE_SUB_QUESTION_SUGGESTION({
-        index: index - 1, // Convert to 0-based index
-        value: value,
-      })
-    );
+    // Update Redux store khi suggestion thay đổi
+    dispatch(UPDATE_SUB_QUESTION_SUGGESTION({ index: index, value }));
   };
 
   // Function to update main form data in store
@@ -304,7 +298,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   ) => {
     dispatch(
       UPDATE_SUB_QUESTION({
-        index: index - 1, // Convert to 0-based index
+        index: index,
         field,
         value,
       })
@@ -405,14 +399,45 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       setValue("content", dataSpeakingPartOne.questions[0].content);
       setValue("subTitle", dataSpeakingPartOne.questions[0].questionTitle);
 
+      // Update Redux store với data từ edit
+      updateMainDataInStore("title", dataSpeakingPartOne.title);
+      updateMainDataInStore(
+        "content",
+        dataSpeakingPartOne.questions[0].content
+      );
+      updateMainDataInStore(
+        "subTitle",
+        dataSpeakingPartOne.questions[0].questionTitle
+      );
+      updateMainDataInStore(
+        "suggestion",
+        dataSpeakingPartOne.questions[0].suggestion || ""
+      );
+      updateMainDataInStore(
+        "file",
+        dataSpeakingPartOne.questions[0].file || ""
+      );
+
       [1, 2, 3].map((num) => {
         setValue(
           `subContent${num}` as keyof FormData,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
         );
 
+        // Update Redux store cho sub questions
+        updateSubQuestionInStore(
+          num - 1,
+          "content",
+          dataSpeakingPartOne.questions[0].subQuestion[num - 1].content
+        );
+        updateSubQuestionInStore(
+          num - 1,
+          "file",
+          dataSpeakingPartOne.questions[0].subQuestion[num - 1].file
+        );
+
         handleSuggestionChange(
-          num,
+          num - 1,
           dataSpeakingPartOne.questions[0].subQuestion[num - 1].suggestion
         );
         setValue(
@@ -450,14 +475,14 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
 
         if (watchedValues[subContentKey] !== undefined) {
           updateSubQuestionInStore(
-            num,
+            num - 1,
             "content",
             watchedValues[subContentKey] || ""
           );
         }
         if (watchedValues[subFileKey] !== undefined) {
           updateSubQuestionInStore(
-            num,
+            num - 1,
             "file",
             watchedValues[subFileKey] || ""
           );
@@ -595,14 +620,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                       Basic Information
                     </Typography>
 
-                    <Box sx={{ display: "grid", gap: 3 }}>
+                    <Box
+                      sx={{
+                        display: "grid",
+                        gap: 3,
+                        gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                      }}
+                    >
                       <Box>
                         <Typography
                           variant="subtitle2"
-                          sx={{
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
+                          sx={{ fontWeight: 600, color: "text.secondary" }}
                         >
                           Title
                         </Typography>
@@ -625,14 +653,36 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                           }}
                         />
                       </Box>
-
                       <Box>
                         <Typography
                           variant="subtitle2"
+                          sx={{ fontWeight: 600, color: "text.secondary" }}
+                        >
+                          Sub Title
+                        </Typography>
+                        <TextField
+                          {...register("subTitle", { required: true })}
+                          placeholder="Enter subtitle..."
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors.subTitle}
+                          helperText={
+                            errors.subTitle
+                              ? "Sub title is required"
+                              : "Add a subtitle to clarify the exercise"
+                          }
                           sx={{
-                            fontWeight: 600,
-                            color: "text.secondary",
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
                           }}
+                        />
+                      </Box>
+                      <Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{ fontWeight: 600, color: "text.secondary" }}
                         >
                           Content
                         </Typography>
@@ -657,44 +707,10 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                           }}
                         />
                       </Box>
-
                       <Box>
                         <Typography
                           variant="subtitle2"
-                          sx={{
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
-                        >
-                          Sub Title
-                        </Typography>
-                        <TextField
-                          {...register("subTitle", { required: true })}
-                          placeholder="Enter subtitle..."
-                          variant="outlined"
-                          fullWidth
-                          error={!!errors.subTitle}
-                          helperText={
-                            errors.subTitle
-                              ? "Sub title is required"
-                              : "Add a subtitle to clarify the exercise"
-                          }
-                          sx={{
-                            "& .MuiOutlinedInput-root": {
-                              borderRadius: 2,
-                              background: "rgba(255, 255, 255, 0.8)",
-                            },
-                          }}
-                        />
-                      </Box>
-
-                      <Box>
-                        <Typography
-                          variant="subtitle2"
-                          sx={{
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
+                          sx={{ fontWeight: 600, color: "text.secondary" }}
                         >
                           Suggestion (Optional)
                         </Typography>
@@ -711,14 +727,10 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                           }}
                         />
                       </Box>
-
                       <Box>
                         <Typography
                           variant="subtitle2"
-                          sx={{
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
+                          sx={{ fontWeight: 600, color: "text.secondary" }}
                         >
                           Audio File URL
                         </Typography>
@@ -777,7 +789,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                         errors={errors}
                         suggestion={suggestions[num - 1]}
                         setSuggestion={(value: any) =>
-                          handleSuggestionChange(num, value)
+                          handleSuggestionChange(num - 1, value)
                         }
                         num={num}
                       />
