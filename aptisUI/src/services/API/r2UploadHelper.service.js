@@ -31,28 +31,16 @@ const R2UploadService = {
   /**
    * Upload multiple files
    */
-  uploadMultipleFiles(files, fileType = "general") {
+  async uploadMultipleFiles(files, fileType = "general") {
     const formData = new FormData();
     files.forEach((file) => formData.append("files", file));
     formData.append("fileType", fileType);
 
-    return ApiService.post(`${serviceURL}/upload/multiple`, formData, {}, true)
-      .then((result) => ({
-        success: true,
-        successful: result.metadata.successful.map((file) => ({
-          url: file.url,
-          key: file.key,
-          originalName: file.originalName,
-          size: file.size,
-          mimeType: file.mimeType,
-        })),
-        failed: result.metadata.failed || [],
-      }))
-      .catch(() => ({
-        success: false,
-        successful: [],
-        failed: files.map((f) => f.name),
-      }));
+    const res = await ApiService.post(`${serviceURL}/upload/multiple`, formData, {}, true)
+
+    console.log({res});
+    return res[0]
+
   },
 
   /**

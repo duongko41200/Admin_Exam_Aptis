@@ -420,11 +420,11 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
 
         console.log({ uploadResults });
 
-        if (uploadResults.success) {
-          uploadedImageUrls = uploadResults.successful.map(
+        if (uploadResults.metadata.successful) {
+          uploadedImageUrls = uploadResults.metadata.successful.map(
             (result) => result.url
           );
-          uploadedImageKeys = uploadResults.successful.map(
+          uploadedImageKeys = uploadResults.metadata.successful.map(
             (result) => result.key
           );
 
@@ -464,7 +464,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
               suggestion: storeData.subQuestions[num - 1]?.suggestion || "",
             })),
             isExample: "",
-            image: uploadedImageUrls[0] || null, // Sử dụng image từ R2
+            image: uploadedImageKeys, // Sử dụng image từ R2
             imageKeys: uploadedImageKeys, // Lưu keys để có thể xóa sau này
           },
         ],
@@ -481,7 +481,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       if (statusHandler === "create") {
         // const uploadData = new FormData();
         // uploadData.append("data", JSON.stringify({ ...data }));
-        await createSpeakingPartOne({data});
+        await createSpeakingPartOne({ data });
       }
       if (statusHandler === "edit") {
         console.log("edit");
@@ -500,12 +500,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  const createSpeakingPartOne = async ({data}) => {
+  const createSpeakingPartOne = async ({ data }) => {
     try {
-      const CreateData = await baseDataProvider.create(
-        "speakings",
-        { data }
-      );
+      const CreateData = await baseDataProvider.create("speakings", { data });
 
       console.log({ CreateData });
 

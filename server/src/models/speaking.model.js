@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 
 
-const COLLECTION_NAME = "Speakngs";
+const COLLECTION_NAME = "Speakings";
 
 const SubQuestionSchema = new Schema({
   content: { type: String, required: true },
