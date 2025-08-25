@@ -116,6 +116,8 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
 
   const accessTokenDecoded = req.cookies.accessToken;
 
+  console.log({ accessTokenDecoded });
+
   const accessToken = accessTokenDecoded;
   if (!accessToken) throw new AuthFailureError("Invalid Request");
 

@@ -639,7 +639,7 @@ const baseDataProvider: DataProvider = {
     resource: string,
     params: CreateParams
   ): Promise<CreateResult> => {
-    const url = `${apiUrlDesktopApp}/${resource}/create-part-image`;
+    const url = `${apiUrlDesktopApp}/${resource}`;
 
     console.log({ params });
     let body: any;
@@ -656,6 +656,7 @@ const baseDataProvider: DataProvider = {
       method: "POST",
       headers: new Headers(HEADER_FORMAT),
       body,
+      credentials: "include",
     });
 
     const response = await fetch(request);

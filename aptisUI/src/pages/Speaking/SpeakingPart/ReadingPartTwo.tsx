@@ -479,9 +479,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       });
 
       if (statusHandler === "create") {
-        const uploadData = new FormData();
-        uploadData.append("data", JSON.stringify({ ...data }));
-        await createSpeakingPartOne(uploadData);
+        // const uploadData = new FormData();
+        // uploadData.append("data", JSON.stringify({ ...data }));
+        await createSpeakingPartOne({data});
       }
       if (statusHandler === "edit") {
         console.log("edit");
@@ -500,12 +500,14 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  const createSpeakingPartOne = async (data: any) => {
+  const createSpeakingPartOne = async ({data}) => {
     try {
-      const CreateData = await baseDataProvider.createAndUploadImage(
+      const CreateData = await baseDataProvider.create(
         "speakings",
         { data }
       );
+
+      console.log({ CreateData });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
