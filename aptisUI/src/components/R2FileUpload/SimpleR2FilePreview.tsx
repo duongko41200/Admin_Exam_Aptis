@@ -173,7 +173,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
             border: isDragActive ? "3px dashed" : "2px dashed",
             borderColor: isDragActive ? "primary.main" : "grey.300",
             borderRadius: 3,
-            padding: { xs: 3, md: 4 },
+            padding: { xs: 3, md: 2 },
             textAlign: "center",
             cursor: "pointer",
             position: "relative",
@@ -267,30 +267,6 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
             Supports JPG, PNG, GIF, WebP • Max {maxFiles} files • Up to 10MB
             each
           </Typography>
-
-          <Box
-            sx={{
-              position: "relative",
-              zIndex: 1,
-              mt: 2,
-              p: 1,
-              borderRadius: 2,
-              backgroundColor: "rgba(255, 152, 0, 0.1)",
-              border: "1px solid rgba(255, 152, 0, 0.3)",
-              display: "inline-block",
-            }}
-          >
-            <Typography
-              variant="body2"
-              color="warning.main"
-              sx={{
-                fontWeight: 500,
-                fontSize: "0.75rem",
-              }}
-            >
-              ⚠️ Images will be uploaded when you submit the form
-            </Typography>
-          </Box>
         </Paper>
       </Grow>
 
@@ -365,9 +341,12 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   xs: "1fr",
                   sm: "repeat(2, 1fr)",
                   md: "repeat(3, 1fr)",
-                  lg: "repeat(4, 1fr)",
+                  lg: "repeat(2, 1fr)",
                 },
                 gap: 3,
+                maxHeight: "200px",
+                minHeight: "200px",
+                overflowY: "auto",
               }}
             >
               {previewFiles.map((preview, index) => (
@@ -403,7 +382,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                     <Box
                       sx={{
                         width: "100%",
-                        height: "220px",
+                        height: "100px",
                         position: "relative",
                         display: "flex",
                         alignItems: "center",

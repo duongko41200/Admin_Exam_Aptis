@@ -10,7 +10,6 @@ const HEADER = {
 export const apiKey = async (req, res, next) => {
 	try {
 
-		console.log("req.headers", req.headers);
 		const key = req.headers[HEADER.API_KEY]?.toString();
 		console.log({ key });
 		if (!key) {

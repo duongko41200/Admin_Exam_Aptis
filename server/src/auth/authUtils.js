@@ -85,7 +85,6 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
    * 6_OK all => return next()
    */
 
-  console.log("req.headers[HEADER.CLIENT_ID]", req.headers[HEADER.CLIENT_ID]);
 
   const userIdDecoded = await decryptAES(req.headers[HEADER.CLIENT_ID]);
 

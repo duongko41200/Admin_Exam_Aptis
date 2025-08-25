@@ -69,7 +69,7 @@ const SubMenu = ({
         className="w-full flex items-center justify-between px-6 py-2 text-gray-300 hover:bg-gray-700 transition-colors duration-200"
       >
         <div
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 text-[#E7ECFF]"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -274,7 +274,11 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
         {/* Header */}
         <div className="flex items-center gap-2 px-4 py-4 border-b border-gray-700">
           <Zap className="w-6 h-6 text-blue-400" />
-          {open && <span className="text-lg font-bold">APTIS Academy</span>}
+          {open && (
+            <span className="text-lg text-[#E7ECFF] font-bold">
+              APTIS Academy
+            </span>
+          )}
         </div>
 
         {/* Navigation */}

@@ -1,9 +1,9 @@
 "use strict";
 import express from "express";
+import multer from "multer";
 import r2Controller from "../../controllers/r2.controller.js";
 import { asyncHandle } from "../../auth/checkAuth.js";
 import { authenticationV2 } from "../../auth/authUtils.js";
-import multer from "multer";
 
 // Configure multer for file uploads
 const storage = multer.memoryStorage(); // Store in memory for direct upload to R2
@@ -41,7 +41,7 @@ const upload = multer({
 const router = express.Router();
 
 // Authentication middleware
-router.use(authenticationV2);
+// router.use(authenticationV2);
 
 /**
  * @route POST /r2/upload/single

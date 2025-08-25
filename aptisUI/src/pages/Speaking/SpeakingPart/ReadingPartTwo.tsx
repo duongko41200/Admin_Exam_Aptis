@@ -1,10 +1,4 @@
-import {
-  Assignment,
-  Cancel,
-  CloudUpload,
-  QuestionAnswer,
-  Save,
-} from "@mui/icons-material";
+import { Cancel, QuestionAnswer, Save } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -29,13 +23,14 @@ import TextEditor from "../../../components/TextEditor/TextEditor";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
-import r2UploadHelper from "../../../services/r2UploadHelper";
+import r2UploadHelper from "../../../services/API/r2UploadHelper.service";
 import {
   RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
   UPDATE_SUB_QUESTION_SUGGESTION,
 } from "../../../store/feature/speaking";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -407,7 +402,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       document.removeEventListener("mousemove", handleDebugMouseMove);
       document.removeEventListener("mouseup", handleDebugMouseUp);
     };
-  }, [isDraggingDebug, debugDragStart, debugPanelPosition]); ////////////////////////////////////////////////////////////////////////////
+  }, [isDraggingDebug, debugDragStart, debugPanelPosition]);
 
   const onSubmit = async (values: any) => {
     try {
@@ -418,10 +413,12 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       let uploadedImageKeys = [];
 
       if (selectedFiles.length > 0) {
-        const uploadResults = await r2UploadHelper.uploadMultipleFiles(
+        const uploadResults = await R2UploadService.uploadMultipleFiles(
           selectedFiles,
           "speaking"
         );
+
+        console.log({ uploadResults });
 
         if (uploadResults.success) {
           uploadedImageUrls = uploadResults.successful.map(
@@ -522,7 +519,6 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  //tentisspace
   const updateReadingPartOne = async (values: any) => {
     try {
       await dataProvider.update("speakings", {
@@ -542,6 +538,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       throw error; // Re-throw để onSubmit có thể catch
     }
   };
+
   const handleFileUpload = async (e) => {
     setImageUpload(e.target.files[0]);
   };
@@ -614,6 +611,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       });
     }
   }, [dataReadingPartTwo, setValue]);
+
   const handleDragOver = (event: any) => {
     if (event.y >= 140 && event.y < 550) {
       setRangeUpload(true);
@@ -621,6 +619,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setRangeUpload(false);
     }
   };
+
   const handleDrop = () => {
     setRangeUpload(false);
   };
@@ -649,7 +648,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         </Box>
       )}
 
-      {/* Debug Panel - Repositioned */}
+      {/* Debug Panel */}
       <Box
         sx={{
           position: "fixed",
@@ -763,107 +762,43 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           {/* Form Content */}
           <form onSubmit={handleSubmit(onSubmit)}>
             <Box sx={{ p: 2 }}>
-              {/* Basic Information Section */}
-              <Grow in={true} timeout={600}>
-                <Card
-                  elevation={2}
-                  sx={{
-                    mb: 4,
-                    borderRadius: 3,
-                    border: "1px solid",
-                    borderColor: "grey.200",
-                  }}
-                >
-                  <CardContent sx={{ p: 3 }}>
-                    <Typography
-                      variant="h6"
-                      sx={{
-                        mb: 3,
-                        fontWeight: 600,
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 1,
-                      }}
-                    >
-                      📝 Basic Information
-                    </Typography>
-
-                    <Box sx={{ display: "grid", gap: 1 }}>
-                      {/* Title Field */}
-                      <Box>
-                        <Typography
-                          variant="subtitle2"
-                          sx={{
-                            mb: 1,
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
-                        >
-                          Title *
-                        </Typography>
-                        <TextField
-                          {...register("title", { required: true })}
-                          placeholder="Enter speaking exercise title..."
-                          variant="outlined"
-                          fullWidth
-                          error={!!errors.title}
-                          helperText={
-                            errors.title
-                              ? "Title is required"
-                              : "Give your exercise a clear, descriptive title"
-                          }
-                          sx={{
-                            "& .MuiOutlinedInput-root": {
-                              borderRadius: 2,
-                              background: "rgba(255, 255, 255, 0.8)",
-                            },
-                          }}
-                        />
-                      </Box>
-
-                      {/* Content Field */}
-                      <Box>
-                        <Typography
-                          variant="subtitle2"
-                          sx={{
-                            mb: 1,
-                            fontWeight: 600,
-                            color: "text.secondary",
-                          }}
-                        >
-                          Main Content *
-                        </Typography>
-                        <TextField
-                          {...register("content", { required: true })}
-                          placeholder="Enter the main content or instructions..."
-                          variant="outlined"
-                          fullWidth
-                          multiline
-                          rows={4}
-                          error={!!errors.content}
-                          helperText={
-                            errors.content
-                              ? "Content is required"
-                              : "Provide detailed instructions for the speaking exercise"
-                          }
-                          sx={{
-                            "& .MuiOutlinedInput-root": {
-                              borderRadius: 2,
-                              background: "rgba(255, 255, 255, 0.8)",
-                            },
-                          }}
-                        />
-                      </Box>
-
-                      {/* Two Column Layout */}
-                      <Box
+              {/* Basic Information và Image Upload Section - Cùng hàng */}
+              <Box
+                sx={{
+                  display: "grid",
+                  gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
+                  gap: 3,
+                  mb: 4,
+                  minHeight: "650px",
+                }}
+              >
+                {/* Basic Information Section */}
+                <Grow in={true} timeout={600}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "100%",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3, height: "100%" }}>
+                      <Typography
+                        variant="h6"
                         sx={{
-                          display: "grid",
-                          gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                          mb: 3,
+                          fontWeight: 600,
+                          display: "flex",
+                          alignItems: "center",
                           gap: 1,
                         }}
                       >
-                        {/* Sub Title */}
+                        📝 Basic Information
+                      </Typography>
+
+                      <Box sx={{ display: "grid", gap: 3 }}>
+                        {/* Title Field */}
                         <Box>
                           <Typography
                             variant="subtitle2"
@@ -873,16 +808,18 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                               color: "text.secondary",
                             }}
                           >
-                            Sub Title *
+                            Title *
                           </Typography>
                           <TextField
-                            {...register("subTitle", { required: true })}
-                            placeholder="Enter sub title..."
+                            {...register("title", { required: true })}
+                            placeholder="Enter speaking exercise title..."
                             variant="outlined"
                             fullWidth
-                            error={!!errors.subTitle}
+                            error={!!errors.title}
                             helperText={
-                              errors.subTitle ? "Sub title is required" : ""
+                              errors.title
+                                ? "Title is required"
+                                : "Give your exercise a clear, descriptive title"
                             }
                             sx={{
                               "& .MuiOutlinedInput-root": {
@@ -893,7 +830,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                           />
                         </Box>
 
-                        {/* Suggestion */}
+                        {/* Content Field */}
                         <Box>
                           <Typography
                             variant="subtitle2"
@@ -903,13 +840,21 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                               color: "text.secondary",
                             }}
                           >
-                            Answer Suggestion
+                            Main Content *
                           </Typography>
                           <TextField
-                            {...register("suggestion")}
-                            placeholder="Provide answer hints..."
+                            {...register("content", { required: true })}
+                            placeholder="Enter the main content or instructions..."
                             variant="outlined"
                             fullWidth
+                            multiline
+                            rows={4}
+                            error={!!errors.content}
+                            helperText={
+                              errors.content
+                                ? "Content is required"
+                                : "Provide detailed instructions for the speaking exercise"
+                            }
                             sx={{
                               "& .MuiOutlinedInput-root": {
                                 borderRadius: 2,
@@ -917,107 +862,133 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                               },
                             }}
                           />
+                        </Box>
+
+                        {/* Two Column Layout */}
+                        <Box
+                          sx={{
+                            display: "grid",
+                            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                            gap: 2,
+                          }}
+                        >
+                          {/* Sub Title */}
+                          <Box>
+                            <Typography
+                              variant="subtitle2"
+                              sx={{
+                                mb: 1,
+                                fontWeight: 600,
+                                color: "text.secondary",
+                              }}
+                            >
+                              Sub Title *
+                            </Typography>
+                            <TextField
+                              {...register("subTitle", { required: true })}
+                              placeholder="Enter sub title..."
+                              variant="outlined"
+                              fullWidth
+                              error={!!errors.subTitle}
+                              helperText={
+                                errors.subTitle ? "Sub title is required" : ""
+                              }
+                              sx={{
+                                "& .MuiOutlinedInput-root": {
+                                  borderRadius: 2,
+                                  background: "rgba(255, 255, 255, 0.8)",
+                                },
+                              }}
+                            />
+                          </Box>
+                        </Box>
+
+                        {/* Media URLs */}
+                        <Box
+                          sx={{
+                            display: "grid",
+                            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                            gap: 2,
+                          }}
+                        >
+                          {/* Audio File */}
+                          <Box>
+                            <Typography
+                              variant="subtitle2"
+                              sx={{
+                                mb: 1,
+                                fontWeight: 600,
+                                color: "text.secondary",
+                              }}
+                            >
+                              Audio File URL
+                            </Typography>
+                            <TextField
+                              {...register("file")}
+                              placeholder="Enter audio file URL..."
+                              variant="outlined"
+                              fullWidth
+                              sx={{
+                                "& .MuiOutlinedInput-root": {
+                                  borderRadius: 2,
+                                  background: "rgba(255, 255, 255, 0.8)",
+                                },
+                              }}
+                            />
+                          </Box>
+
+                          {/* Image URL */}
+                          <Box>
+                            <Typography
+                              variant="subtitle2"
+                              sx={{
+                                mb: 1,
+                                fontWeight: 600,
+                                color: "text.secondary",
+                              }}
+                            >
+                              Image URL
+                            </Typography>
+                            <TextField
+                              {...register("imgUrl")}
+                              placeholder="Enter image URL..."
+                              variant="outlined"
+                              fullWidth
+                              sx={{
+                                "& .MuiOutlinedInput-root": {
+                                  borderRadius: 2,
+                                  background: "rgba(255, 255, 255, 0.8)",
+                                },
+                              }}
+                            />
+                          </Box>
                         </Box>
                       </Box>
+                    </CardContent>
+                  </Card>
+                </Grow>
 
-                      {/* Media URLs */}
-                      <Box
-                        sx={{
-                          display: "grid",
-                          gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                          gap: 1,
-                        }}
-                      >
-                        {/* Audio File */}
-                        <Box>
-                          <Typography
-                            variant="subtitle2"
-                            sx={{
-                              mb: 1,
-                              fontWeight: 600,
-                              color: "text.secondary",
-                            }}
-                          >
-                            Audio File URL
-                          </Typography>
-                          <TextField
-                            {...register("file")}
-                            placeholder="Enter audio file URL..."
-                            variant="outlined"
-                            fullWidth
-                            sx={{
-                              "& .MuiOutlinedInput-root": {
-                                borderRadius: 2,
-                                background: "rgba(255, 255, 255, 0.8)",
-                              },
-                            }}
-                          />
-                        </Box>
-
-                        {/* Image URL */}
-                        <Box>
-                          <Typography
-                            variant="subtitle2"
-                            sx={{
-                              mb: 1,
-                              fontWeight: 600,
-                              color: "text.secondary",
-                            }}
-                          >
-                            Image URL
-                          </Typography>
-                          <TextField
-                            {...register("imgUrl")}
-                            placeholder="Enter image URL..."
-                            variant="outlined"
-                            fullWidth
-                            sx={{
-                              "& .MuiOutlinedInput-root": {
-                                borderRadius: 2,
-                                background: "rgba(255, 255, 255, 0.8)",
-                              },
-                            }}
-                          />
-                        </Box>
-                      </Box>
-                    </Box>
-                  </CardContent>
-                </Card>
-              </Grow>
-
-              {/* Image Upload Section */}
-              <Grow in={true} timeout={800}>
-                <Card
-                  elevation={2}
-                  sx={{
-                    mb: 4,
-                    borderRadius: 3,
-                    border: "1px solid",
-                    borderColor: "grey.200",
-                  }}
-                >
-                  <CardContent sx={{ p: 3 }}>
-                    <Typography
-                      variant="h6"
-                      sx={{
-                        mb: 3,
-                        fontWeight: 600,
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 1,
-                      }}
-                    >
-                      <CloudUpload /> Image Upload
-                    </Typography>
-
-                    <SimpleR2FilePreview
-                      onFilesChange={handleFilesChange}
-                      multiple={true}
-                      maxFiles={5}
-                    />
-                  </CardContent>
-                </Card>
-              </Grow>
+                {/* Image Upload Section */}
+                <Grow in={true} timeout={800}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "fit-content",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3 }}>
+                      <SimpleR2FilePreview
+                        onFilesChange={handleFilesChange}
+                        multiple={true}
+                        maxFiles={5}
+                      />
+                    </CardContent>
+                  </Card>
+                </Grow>
+              </Box>
 
               {/* Questions Section */}
               <Grow in={true} timeout={1000}>
@@ -1042,7 +1013,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                       display: "grid",
                       gridTemplateColumns: {
                         xs: "1fr",
-                        lg: "repeat(auto-fit, minmax(450px, 1fr))",
+                        lg: "1fr 1fr 1fr",
                       },
                       gap: 4,
                     }}
@@ -1071,7 +1042,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                 <Box
                   sx={{
                     display: "flex",
-                    gap: 1,
+                    gap: 3,
                     justifyContent: "center",
                     flexWrap: "wrap",
                   }}

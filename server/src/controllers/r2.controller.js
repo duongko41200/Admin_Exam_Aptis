@@ -54,6 +54,7 @@ class R2Controller {
    */
   uploadMultiple = async (req, res, next) => {
     try {
+      // SỬA ĐÚNG: Lấy file từ req.files
       if (!req.files || req.files.length === 0) {
         return res.status(400).json({
           success: false,
@@ -63,6 +64,7 @@ class R2Controller {
 
       const { fileType = "general" } = req.body;
 
+      // Chuẩn hóa files cho service
       const files = req.files.map((file) => ({
         buffer: file.buffer,
         originalName: file.originalname,

@@ -17,6 +17,9 @@ class speakingController {
     try {
       const data = JSON.parse(req.body.data);
 
+
+      console.log("data req:", req);
+
       if (!req.files || req.files.length === 0) {
         return res.status(400).json({
           success: false,

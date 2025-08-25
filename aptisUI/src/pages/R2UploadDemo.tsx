@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Button, Typography, Paper, Divider } from "@mui/material";
 import { R2FilePreview } from "../components/R2FileUpload";
-import r2UploadHelper from "../services/r2UploadHelper";
+import r2UploadHelper from "../services/API/r2UploadHelper.service";
 
 const R2UploadDemo: React.FC = () => {
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
