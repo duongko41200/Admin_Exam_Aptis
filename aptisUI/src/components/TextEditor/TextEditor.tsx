@@ -3,9 +3,18 @@ import { useEffect, useRef, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "./TextEditor.css";
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+} from "@mui/material";
+import { Cancel, Fullscreen, Save } from "@mui/icons-material";
 
-/* Custom "star" icon for the toolbar */
-const CustomButton = () => <span className="octicon octicon-star" />;
+
 
 interface PropType {
   placeholder: string;
@@ -13,6 +22,8 @@ interface PropType {
   suggestion: string;
   editorId?: number | string;
   key?: string | number;
+  enableFullscreen?: boolean; // Tùy chọn bật/tắt chức năng phóng to
+  modalTitle?: string; // Tiêu đề cho modal
 }
 
 /* Event handler to insert a star at the cursor position */
@@ -76,9 +87,17 @@ const TextEditor = ({
   setSuggestion,
   suggestion,
   editorId = 1,
+  enableFullscreen = true, // Mặc định bật chức năng phóng to
+  modalTitle = "Text Editor - Expanded View",
 }: PropType) => {
   const quillRef = useRef(null);
+  const modalQuillRef = useRef(null);
   const toolbarId = `toolbar-${editorId}`;
+  const modalToolbarId = `toolbar-modal-${editorId}`;
+  
+  // State cho modal phóng to
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(suggestion);
 
   useEffect(() => {
     if (quillRef.current) {
@@ -89,19 +108,155 @@ const TextEditor = ({
     }
   }, []);
 
+  // Sync modal content với suggestion khi suggestion thay đổi từ bên ngoài
+  useEffect(() => {
+    setModalContent(suggestion);
+  }, [suggestion]);
+
+  // Handler mở modal
+  const handleOpenModal = () => {
+    setModalContent(suggestion);
+    setIsModalOpen(true);
+  };
+
+  // Handler đóng modal và lưu content
+  const handleCloseModal = () => {
+    setSuggestion(modalContent);
+    setIsModalOpen(false);
+  };
+
+  // Handler hủy modal (không lưu thay đổi)
+  const handleCancelModal = () => {
+    setModalContent(suggestion); // Reset về giá trị ban đầu
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="text-editor">
-      <CustomToolbar toolbarId={toolbarId} />
-      <ReactQuill
-        // key={key}
-        ref={quillRef}
-        value={suggestion}
-        onChange={setSuggestion}
-        placeholder={placeholder}
-        modules={TextEditor.modules(toolbarId)}
-        formats={TextEditor.formats}
-        theme="snow"
-      />
+      <Box sx={{ position: "relative" }}>
+        {/* Nút phóng to */}
+        {enableFullscreen && (
+          <IconButton
+            onClick={handleOpenModal}
+            sx={{
+              position: "absolute",
+              top: 4,
+              right: 4,
+              zIndex: 10,
+              backgroundColor: "rgba(255, 255, 255, 0.9)",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+              "&:hover": {
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+              },
+              transition: "all 0.2s ease",
+            }}
+            size="small"
+          >
+            <Fullscreen fontSize="small" />
+          </IconButton>
+        )}
+
+        <CustomToolbar toolbarId={toolbarId} />
+        <ReactQuill
+          ref={quillRef}
+          value={suggestion}
+          onChange={setSuggestion}
+          placeholder={placeholder}
+          modules={TextEditor.modules(toolbarId)}
+          formats={TextEditor.formats}
+          theme="snow"
+        />
+      </Box>
+
+      {/* Modal phóng to */}
+      {enableFullscreen && (
+        <Dialog
+          open={isModalOpen}
+          onClose={handleCancelModal}
+          maxWidth="lg"
+          fullWidth
+          PaperProps={{
+            sx: {
+              minHeight: "70vh",
+              borderRadius: 3,
+            },
+          }}
+        >
+          <DialogTitle
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              fontWeight: 600,
+              borderBottom: "1px solid",
+              borderColor: "grey.200",
+              bgcolor: "grey.50",
+            }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <Fullscreen sx={{ color: "primary.main" }} />
+              {modalTitle}
+            </Box>
+            <IconButton
+              onClick={handleCancelModal}
+              sx={{ color: "grey.500" }}
+              size="small"
+            >
+              <Cancel />
+            </IconButton>
+          </DialogTitle>
+
+          <DialogContent sx={{ p: 3 }}>
+            <Box className="text-editor">
+              <CustomToolbar toolbarId={modalToolbarId} />
+              <ReactQuill
+                ref={modalQuillRef}
+                value={modalContent}
+                onChange={setModalContent}
+                placeholder={`${placeholder} (Expanded view)`}
+                modules={TextEditor.modules(modalToolbarId)}
+                formats={TextEditor.formats}
+                theme="snow"
+                style={{ minHeight: "300px" }}
+              />
+            </Box>
+          </DialogContent>
+
+          <DialogActions
+            sx={{
+              p: 2,
+              borderTop: "1px solid",
+              borderColor: "grey.200",
+              bgcolor: "grey.50",
+              gap: 1,
+            }}
+          >
+            <Button
+              onClick={handleCancelModal}
+              variant="outlined"
+              startIcon={<Cancel />}
+              sx={{ borderRadius: 2 }}
+            >
+              Cancel
+            </Button>
+            <Button
+              onClick={handleCloseModal}
+              variant="contained"
+              startIcon={<Save />}
+              sx={{
+                borderRadius: 2,
+                background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+                "&:hover": {
+                  background: "linear-gradient(45deg, #1565c0, #1976d2)",
+                },
+              }}
+            >
+              Save & Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      )}
     </div>
   );
 };

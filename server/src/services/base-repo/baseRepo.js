@@ -5,7 +5,7 @@ const getAllWithQuery = async (
   const [sortField, sortOrder] = sort;
   const [start, end] = range;
 
-  const fuzzyFields = ["name", "email"];
+  const fuzzyFields = ["name", "email", "title"];
 
   const processedFilter = {};
   for (const key in filter) {

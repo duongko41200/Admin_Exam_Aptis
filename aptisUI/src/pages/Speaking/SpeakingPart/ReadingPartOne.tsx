@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Button, useNotify } from "react-admin";
+import { useNotify } from "react-admin";
 import {
   Stack,
   Box,
@@ -15,6 +15,7 @@ import {
   Chip,
   Divider,
   LinearProgress,
+  Button,
 } from "@mui/material";
 import { QuestionAnswer, Save, Cancel, Assignment } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
@@ -834,56 +835,26 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                   </Button>
 
                   {showCancelButton && (
-                    <>
-                      {pathTo ? (
-                        <NavLink to={pathTo}>
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            startIcon={<Cancel />}
-                            sx={{
-                              px: 4,
-                              py: 1.5,
-                              borderRadius: 3,
-                              borderColor: "error.main",
-                              color: "error.main",
-                              "&:hover": {
-                                backgroundColor: "error.main",
-                                color: "white",
-                                transform: "translateY(-2px)",
-                              },
-                            }}
-                          >
-                            <Typography variant="button" component="span">
-                              Cancel
-                            </Typography>
-                          </Button>
-                        </NavLink>
-                      ) : (
-                        <Button
-                          variant="outlined"
-                          size="large"
-                          startIcon={<Cancel />}
-                          onClick={handleCancel}
-                          sx={{
-                            px: 4,
-                            py: 1.5,
-                            borderRadius: 3,
-                            borderColor: "error.main",
-                            color: "error.main",
-                            "&:hover": {
-                              backgroundColor: "error.main",
-                              color: "white",
-                              transform: "translateY(-2px)",
-                            },
-                          }}
-                        >
-                          <Typography variant="button" component="span">
-                            Cancel
-                          </Typography>
-                        </Button>
-                      )}
-                    </>
+                    <Button
+                      type="button"
+                      variant="contained"
+                      color="error"
+                      size="large"
+                      onClick={() => navigate("/speakings")}
+                      startIcon={<Cancel />}
+                      sx={{
+                        px: 4,
+                        py: 1.5,
+                        borderRadius: 3,
+                        boxShadow: "0 4px 15px rgba(211, 47, 47, 0.3)",
+                        "&:hover": {
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 6px 20px rgba(211, 47, 47, 0.4)",
+                        },
+                      }}
+                    >
+                      Cancel
+                    </Button>
                   )}
                 </Box>
               </Fade>

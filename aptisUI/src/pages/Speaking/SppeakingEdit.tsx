@@ -14,9 +14,6 @@ const SpeakingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const record = useRecordContext();
   const resourcePath = `/${resource}`;
 
-
-  console.log("record 213", record);
-
   const renderReadingPart = () => {
     switch (record?.questionPart) {
       case "ONE":
@@ -54,7 +51,7 @@ const SpeakingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
 };
 
 const SpeakingEdit = (props: BaseComponentProps) => (
-  <Box sx={boxStyles}>
+  <Box sx={{ ...boxStyles, maxHeight: "calc(100vh - 50px)" }}>
     <EditBase>
       <SpeakingEditForm {...props} />
     </EditBase>

@@ -29,20 +29,24 @@ interface SimpleR2FilePreviewProps {
   onFilesChange?: (files: File[]) => void;
   multiple?: boolean;
   maxFiles?: number;
+  initialImageUrls?: string[]; // Ảnh hiện tại từ server
+  onRemoveExistingImage?: (url: string) => void; // Callback khi xóa ảnh có sẵn
 }
 
 const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
   onFilesChange,
   multiple = true,
-  maxFiles = 5,
+  maxFiles = 2,
+  initialImageUrls = [],
+  onRemoveExistingImage,
 }) => {
   const [previewFiles, setPreviewFiles] = useState<SimplePreviewFile[]>([]);
+  const [existingImages, setExistingImages] =
+    useState<string[]>(initialImageUrls);
   const [error, setError] = useState<string | null>(null);
 
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
-      console.log("📁 Files dropped:", acceptedFiles);
-
       if (acceptedFiles.length === 0) return;
 
       setError(null);
@@ -51,7 +55,6 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
         const newPreviews: SimplePreviewFile[] = acceptedFiles.map(
           (file, index) => {
             const previewUrl = URL.createObjectURL(file);
-            console.log(`🖼️ Created preview for ${file.name}: ${previewUrl}`);
 
             return {
               file,
@@ -64,17 +67,22 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
         let updatedPreviews: SimplePreviewFile[];
 
         if (multiple) {
-          const totalCount = previewFiles.length + newPreviews.length;
+          const totalCount =
+            previewFiles.length + existingImages.length + newPreviews.length;
           if (totalCount > maxFiles) {
-            setError(`Maximum ${maxFiles} files allowed`);
+            setError(`Chúng tôi chỉ cần  ${maxFiles} files `);
             return;
           }
           updatedPreviews = [...previewFiles, ...newPreviews];
         } else {
+          // Nếu không phải multiple, xóa existing images khi thêm file mới
+          if (existingImages.length > 0) {
+            existingImages.forEach((url) => onRemoveExistingImage?.(url));
+            setExistingImages([]);
+          }
           updatedPreviews = newPreviews.slice(0, 1);
         }
 
-        console.log("📋 All previews:", updatedPreviews);
         setPreviewFiles(updatedPreviews);
 
         const allFiles = updatedPreviews.map((p) => p.file);
@@ -101,8 +109,6 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
   });
 
   const removeFile = (id: string) => {
-    console.log("🗑️ Removing file:", id);
-
     const fileToRemove = previewFiles.find((p) => p.id === id);
     if (fileToRemove) {
       URL.revokeObjectURL(fileToRemove.previewUrl);
@@ -115,6 +121,12 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
     onFilesChange?.(allFiles);
   };
 
+  const removeExistingImage = (url: string) => {
+    const updatedImages = existingImages.filter((img) => img !== url);
+    setExistingImages(updatedImages);
+    onRemoveExistingImage?.(url);
+  };
+
   // Cleanup on unmount
   React.useEffect(() => {
     return () => {
@@ -123,6 +135,11 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
       });
     };
   }, []);
+
+  // Update existing images when prop changes
+  React.useEffect(() => {
+    setExistingImages(initialImageUrls);
+  }, [initialImageUrls]);
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -143,9 +160,9 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
             >
               Image Upload
             </Typography>
-            {previewFiles.length > 0 && (
+            {(previewFiles.length > 0 || existingImages.length > 0) && (
               <Badge
-                badgeContent={previewFiles.length}
+                badgeContent={previewFiles.length + existingImages.length}
                 color="success"
                 sx={{
                   "& .MuiBadge-badge": {
@@ -288,7 +305,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
       )}
 
       {/* Preview Grid */}
-      {previewFiles.length > 0 && (
+      {(previewFiles.length > 0 || existingImages.length > 0) && (
         <Fade in={true} timeout={600}>
           <Box sx={{ mt: 4 }}>
             {/* Section Header */}
@@ -315,8 +332,10 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   Selected Images
                 </Typography>
                 <Chip
-                  label={`${previewFiles.length} ${
-                    previewFiles.length === 1 ? "file" : "files"
+                  label={`${previewFiles.length + existingImages.length} ${
+                    previewFiles.length + existingImages.length === 1
+                      ? "file"
+                      : "files"
                   }`}
                   color="primary"
                   size="small"
@@ -349,11 +368,221 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                 overflowY: "auto",
               }}
             >
+              {/* Existing Images */}
+              {existingImages.map((imageUrl, index) => (
+                <Grow
+                  key={`existing-${index}`}
+                  in={true}
+                  timeout={800 + index * 100}
+                  style={{ transformOrigin: "center center" }}
+                >
+                  <Paper
+                    elevation={4}
+                    sx={{
+                      position: "relative",
+                      borderRadius: 3,
+                      overflow: "hidden",
+                      background:
+                        "linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)",
+                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                      border: "2px solid #e3f2fd", // Blue border for existing images
+                      "&:hover": {
+                        transform: "translateY(-8px)",
+                        boxShadow: "0 12px 30px rgba(0, 0, 0, 0.15)",
+                        "& .image-overlay": {
+                          opacity: 1,
+                        },
+                        "& .action-buttons": {
+                          transform: "translateY(0)",
+                          opacity: 1,
+                        },
+                      },
+                    }}
+                  >
+                    {/* Image Container */}
+                    <Box
+                      sx={{
+                        width: "100%",
+                        height: "100px",
+                        position: "relative",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        background:
+                          "linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {/* Actual Image */}
+                      <img
+                        src={imageUrl}
+                        alt={`Existing image ${index + 1}`}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          transition: "transform 0.3s ease",
+                        }}
+                        onLoad={() => {
+                          console.log(`✅ Existing image loaded: ${imageUrl}`);
+                        }}
+                        onError={(e) => {
+                          console.error(
+                            `❌ Existing image failed: ${imageUrl}`,
+                            e
+                          );
+                        }}
+                      />
+
+                      {/* Hover Overlay */}
+                      <Box
+                        className="image-overlay"
+                        sx={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          background:
+                            "linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%)",
+                          opacity: 0,
+                          transition: "opacity 0.3s ease",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      />
+
+                      {/* Action Buttons */}
+                      <Box
+                        className="action-buttons"
+                        sx={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%) translateY(10px)",
+                          display: "flex",
+                          gap: 1,
+                          opacity: 0,
+                          transition: "all 0.3s ease",
+                        }}
+                      >
+                        <IconButton
+                          size="large"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.open(imageUrl, "_blank");
+                          }}
+                          sx={{
+                            backgroundColor: "rgba(255, 255, 255, 0.95)",
+                            color: "primary.main",
+                            "&:hover": {
+                              backgroundColor: "white",
+                              transform: "scale(1.1)",
+                            },
+                          }}
+                        >
+                          <Visibility />
+                        </IconButton>
+                        <IconButton
+                          size="large"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            removeExistingImage(imageUrl);
+                          }}
+                          sx={{
+                            backgroundColor: "rgba(255, 255, 255, 0.95)",
+                            color: "error.main",
+                            "&:hover": {
+                              backgroundColor: "white",
+                              transform: "scale(1.1)",
+                            },
+                          }}
+                        >
+                          <Delete />
+                        </IconButton>
+                      </Box>
+
+                      {/* File Index Badge - Blue for existing */}
+                      <Box
+                        sx={{
+                          position: "absolute",
+                          top: 12,
+                          left: 12,
+                          backgroundColor: "#1976d2",
+                          color: "white",
+                          borderRadius: "50%",
+                          width: 32,
+                          height: 32,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontWeight: "bold",
+                          fontSize: "0.875rem",
+                          boxShadow: "0 2px 8px rgba(25, 118, 210, 0.3)",
+                        }}
+                      >
+                        E{index + 1}
+                      </Box>
+                    </Box>
+
+                    {/* File Info Section */}
+                    <Box sx={{ p: 2.5 }}>
+                      <Typography
+                        variant="body2"
+                        fontWeight="600"
+                        noWrap
+                        sx={{
+                          mb: 1.5,
+                          color: "text.primary",
+                          fontSize: "0.875rem",
+                        }}
+                      >
+                        Existing Image {index + 1}
+                      </Typography>
+
+                      <Box
+                        sx={{
+                          display: "flex",
+                          gap: 1,
+                          flexWrap: "wrap",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Chip
+                          label="EXISTING"
+                          size="small"
+                          color="info"
+                          variant="filled"
+                          sx={{
+                            fontWeight: 600,
+                            fontSize: "0.7rem",
+                            height: 24,
+                          }}
+                        />
+                        <Chip
+                          label="R2 STORED"
+                          size="small"
+                          color="primary"
+                          variant="outlined"
+                          sx={{
+                            fontWeight: 600,
+                            fontSize: "0.7rem",
+                            height: 24,
+                          }}
+                        />
+                      </Box>
+                    </Box>
+                  </Paper>
+                </Grow>
+              ))}
+
+              {/* New Preview Files */}
               {previewFiles.map((preview, index) => (
                 <Grow
                   key={preview.id}
                   in={true}
-                  timeout={800 + index * 100}
+                  timeout={800 + (existingImages.length + index) * 100}
                   style={{ transformOrigin: "center center" }}
                 >
                   <Paper
@@ -501,7 +730,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                           boxShadow: "0 2px 8px rgba(25, 118, 210, 0.3)",
                         }}
                       >
-                        {index + 1}
+                        N{index + 1}
                       </Box>
                     </Box>
 
@@ -553,7 +782,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                           }}
                         />
                         <Chip
-                          label="Ready"
+                          label="NEW"
                           size="small"
                           color="success"
                           variant="filled"
@@ -591,7 +820,8 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   color: "#6c757d",
                 }}
               >
-                🔧 Debug Info ({previewFiles.length} files)
+                🔧 Debug Info ({previewFiles.length} new,{" "}
+                {existingImages.length} existing)
               </summary>
               <Box
                 sx={{
@@ -603,19 +833,53 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   fontSize: "0.75rem",
                 }}
               >
-                {previewFiles.map((p, i) => (
-                  <Box key={p.id} sx={{ mb: 1, color: "#495057" }}>
-                    <strong>File {i + 1}:</strong> {p.file.name}
-                    <br />
-                    <span style={{ color: "#6c757d" }}>
-                      Type: {p.file.type} | Size:{" "}
-                      {(p.file.size / 1024).toFixed(1)}KB
-                      <br />
-                      Preview: {p.previewUrl.substring(0, 60)}...
-                    </span>
+                {/* Existing Images Debug */}
+                {existingImages.length > 0 && (
+                  <Box sx={{ mb: 2 }}>
+                    <Typography
+                      variant="caption"
+                      sx={{ fontWeight: "bold", color: "#1976d2" }}
+                    >
+                      EXISTING IMAGES:
+                    </Typography>
+                    {existingImages.map((url, i) => (
+                      <Box key={i} sx={{ mb: 1, color: "#495057" }}>
+                        <strong>Existing {i + 1}:</strong>{" "}
+                        {url.substring(url.lastIndexOf("/") + 1)}
+                        <br />
+                        <span style={{ color: "#6c757d" }}>
+                          URL: {url.substring(0, 60)}...
+                        </span>
+                      </Box>
+                    ))}
                   </Box>
-                ))}
-                {previewFiles.length === 0 && (
+                )}
+
+                {/* New Files Debug */}
+                {previewFiles.length > 0 && (
+                  <Box>
+                    <Typography
+                      variant="caption"
+                      sx={{ fontWeight: "bold", color: "#2e7d32" }}
+                    >
+                      NEW FILES:
+                    </Typography>
+                    {previewFiles.map((p, i) => (
+                      <Box key={p.id} sx={{ mb: 1, color: "#495057" }}>
+                        <strong>New {i + 1}:</strong> {p.file.name}
+                        <br />
+                        <span style={{ color: "#6c757d" }}>
+                          Type: {p.file.type} | Size:{" "}
+                          {(p.file.size / 1024).toFixed(1)}KB
+                          <br />
+                          Preview: {p.previewUrl.substring(0, 60)}...
+                        </span>
+                      </Box>
+                    ))}
+                  </Box>
+                )}
+
+                {previewFiles.length === 0 && existingImages.length === 0 && (
                   <Typography variant="caption" color="text.secondary">
                     No files selected
                   </Typography>

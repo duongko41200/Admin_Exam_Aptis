@@ -17,7 +17,6 @@ class speakingController {
     try {
       const data = JSON.parse(req.body.data);
 
-
       console.log("data req:", req);
 
       if (!req.files || req.files.length === 0) {
@@ -85,12 +84,11 @@ class speakingController {
         range,
         sort,
       }),
+      count: await SpeakingFactory.count(),
     }).send(res);
   };
   getOneById = async (req, res, next) => {
     const { id } = req.params;
-
-    console.log("id:", id);
 
     new SuccessResponse({
       message: "creat new writing success!",

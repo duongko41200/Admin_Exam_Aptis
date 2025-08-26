@@ -17,20 +17,19 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import { useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
 import TextEditor from "../../../components/TextEditor/TextEditor";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
-import r2UploadHelper from "../../../services/API/r2UploadHelper.service";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
   RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
   UPDATE_SUB_QUESTION_SUGGESTION,
 } from "../../../store/feature/speaking";
-import R2UploadService from "../../../services/API/r2UploadHelper.service";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -276,6 +275,8 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   // New states for R2FilePreview
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [previewImageUrls, setPreviewImageUrls] = useState<string[]>([]);
+  const [existingImageUrls, setExistingImageUrls] = useState<string[]>([]);
+  const [removedImageUrls, setRemovedImageUrls] = useState<string[]>([]); // Track removed images
   const [isUploading, setIsUploading] = useState(false);
 
   // Handler để update Redux khi files được chọn
@@ -288,6 +289,15 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
 
     // Update Redux store với blob URLs
     updateMainDataInStore("img", blobUrls);
+  };
+
+  // Handler khi xóa ảnh hiện có
+  const handleRemoveExistingImage = (url: string) => {
+    // Thêm vào danh sách cần xóa
+    setRemovedImageUrls((prev) => [...prev, url]);
+
+    // Xóa khỏi danh sách hiện tại
+    setExistingImageUrls((prev) => prev.filter((imgUrl) => imgUrl !== url));
   };
 
   // Watch form values để update store
@@ -408,8 +418,25 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     try {
       setIsUploading(true);
 
+      // Xóa các ảnh cũ đã được đánh dấu xóa
+      if (removedImageUrls.length > 0) {
+        for (const imageUrl of removedImageUrls) {
+          try {
+            const key = imageUrl
+              .split("https://files.aptisacademy.com.vn/")
+              .pop();
+
+            if (key) {
+              await R2UploadService.deleteFile(key);
+            }
+          } catch (deleteError) {
+            console.error("❌ Failed to delete image:", imageUrl, deleteError);
+          }
+        }
+      }
+
       // Upload các file đã select lên R2 trước
-      let uploadedImageUrls = [];
+      let uploadedImageUrls = [...existingImageUrls];
       let uploadedImageKeys = [];
 
       if (selectedFiles.length > 0) {
@@ -418,18 +445,20 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           "speaking"
         );
 
-        console.log({ uploadResults });
-
         if (uploadResults.metadata.successful) {
-          uploadedImageUrls = uploadResults.metadata.successful.map(
-            (result) => result.url
+          const newImageUrls = uploadResults.metadata.successful.map(
+            (result) => `${import.meta.env.VITE_BASE_URL_FILE}/${result.key}`
           );
-          uploadedImageKeys = uploadResults.metadata.successful.map(
+          const newImageKeys = uploadResults.metadata.successful.map(
             (result) => result.key
           );
 
+          // Thêm ảnh mới vào danh sách
+          uploadedImageUrls = [...uploadedImageUrls, ...newImageUrls];
+          uploadedImageKeys = [...uploadedImageKeys, ...newImageKeys];
+
           // Cập nhật state với URLs đã upload
-          setPreviewImageUrls(uploadedImageUrls);
+          setPreviewImageUrls(newImageUrls);
         }
       }
 
@@ -460,12 +489,11 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                 values[`subFile${num}`] ||
                 "",
               answerList: null,
-              image: uploadedImageUrls[0] || values[`imgUrl`], // Sử dụng image từ R2
+              image: uploadedImageUrls[0] || null, // Sử dụng image URLs đã merge
               suggestion: storeData.subQuestions[num - 1]?.suggestion || "",
             })),
             isExample: "",
-            image: uploadedImageKeys, // Sử dụng image từ R2
-            imageKeys: uploadedImageKeys, // Lưu keys để có thể xóa sau này
+            image: uploadedImageKeys, // Keys của ảnh mới
           },
         ],
         questionType: "SPEAKING",
@@ -476,11 +504,10 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         dataForm: data,
         storeData,
         uploadedImages: uploadedImageUrls,
+        removedImages: removedImageUrls,
       });
 
       if (statusHandler === "create") {
-        // const uploadData = new FormData();
-        // uploadData.append("data", JSON.stringify({ ...data }));
         await createSpeakingPartOne({ data });
       }
       if (statusHandler === "edit") {
@@ -488,8 +515,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         await updateReadingPartOne(data);
       }
 
-      // Reset selected files sau khi upload thành công
+      // Reset selected files và removed images sau khi upload thành công
       setSelectedFiles([]);
+      setRemovedImageUrls([]);
     } catch (error) {
       console.error("Error uploading files:", error);
       await notify("Lỗi upload file: " + error, {
@@ -566,7 +594,18 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartTwo.title);
       setValue("content", dataReadingPartTwo.questions[0].content);
       setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
-      setValue("imgUrl", dataReadingPartTwo.questions[0].subQuestion[0].image);
+
+      // Set existing images từ data
+      const existingImages = [];
+      if (dataReadingPartTwo.questions[0].subQuestion[0]?.image) {
+        existingImages.push(
+          dataReadingPartTwo.questions[0].subQuestion[0].image
+        );
+      }
+
+      console.log("📸 Setting existing images:", existingImages);
+      setExistingImageUrls(existingImages);
+      setValue("imgUrl", existingImages[0] || "");
 
       // Update Redux store với data từ edit
       updateMainDataInStore("title", dataReadingPartTwo.title);
@@ -580,6 +619,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         dataReadingPartTwo.questions[0].suggestion || ""
       );
       updateMainDataInStore("file", dataReadingPartTwo.questions[0].file || "");
+      updateMainDataInStore("img", existingImages);
 
       [1, 2, 3].map((num) => {
         setValue(
@@ -600,7 +640,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         );
 
         handleSuggestionChange(
-          num,
+          num - 1,
           dataReadingPartTwo.questions[0].subQuestion[num - 1].suggestion
         );
         setValue(
@@ -728,7 +768,19 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                 color: "#e0e0e0",
               }}
             >
-              {JSON.stringify(speakingStore.currentSpeakingData, null, 2)}
+              {JSON.stringify(
+                {
+                  redux: speakingStore.currentSpeakingData,
+                  imageState: {
+                    existingImages: existingImageUrls,
+                    selectedFiles: selectedFiles.map((f) => f.name),
+                    removedImages: removedImageUrls,
+                    previewUrls: previewImageUrls,
+                  },
+                },
+                null,
+                2
+              )}
             </pre>
           </Box>
         )}
@@ -867,7 +919,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                         <Box
                           sx={{
                             display: "grid",
-                            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                            gridTemplateColumns: { xs: "1fr", md: "1fr" },
                             gap: 2,
                           }}
                         >
@@ -906,7 +958,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                         <Box
                           sx={{
                             display: "grid",
-                            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                            gridTemplateColumns: { xs: "1fr", md: "1fr" },
                             gap: 2,
                           }}
                         >
@@ -925,32 +977,6 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                             <TextField
                               {...register("file")}
                               placeholder="Enter audio file URL..."
-                              variant="outlined"
-                              fullWidth
-                              sx={{
-                                "& .MuiOutlinedInput-root": {
-                                  borderRadius: 2,
-                                  background: "rgba(255, 255, 255, 0.8)",
-                                },
-                              }}
-                            />
-                          </Box>
-
-                          {/* Image URL */}
-                          <Box>
-                            <Typography
-                              variant="subtitle2"
-                              sx={{
-                                mb: 1,
-                                fontWeight: 600,
-                                color: "text.secondary",
-                              }}
-                            >
-                              Image URL
-                            </Typography>
-                            <TextField
-                              {...register("imgUrl")}
-                              placeholder="Enter image URL..."
                               variant="outlined"
                               fullWidth
                               sx={{
@@ -981,8 +1007,10 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                     <CardContent sx={{ p: 3 }}>
                       <SimpleR2FilePreview
                         onFilesChange={handleFilesChange}
+                        onRemoveExistingImage={handleRemoveExistingImage}
+                        initialImageUrls={existingImageUrls}
                         multiple={true}
-                        maxFiles={5}
+                        maxFiles={1}
                       />
                     </CardContent>
                   </Card>
@@ -1012,9 +1040,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                       display: "grid",
                       gridTemplateColumns: {
                         xs: "1fr",
-                        lg: "1fr 1fr 1fr",
+                        lg: "repeat(auto-fit, minmax(350px, 1fr))",
                       },
-                      gap: 4,
+                      gap: 2,
                     }}
                   >
                     {[1, 2, 3].map((num) => (
@@ -1074,52 +1102,26 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                   </Button>
 
                   {showCancelButton && (
-                    <>
-                      {pathTo ? (
-                        <NavLink to={pathTo} style={{ textDecoration: "none" }}>
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            startIcon={<Cancel />}
-                            sx={{
-                              px: 4,
-                              py: 1.5,
-                              borderRadius: 3,
-                              borderWidth: 2,
-                              "&:hover": {
-                                borderWidth: 2,
-                                transform: "translateY(-2px)",
-                              },
-                            }}
-                          >
-                            <Typography variant="button" component="span">
-                              Cancel
-                            </Typography>
-                          </Button>
-                        </NavLink>
-                      ) : (
-                        <Button
-                          variant="outlined"
-                          size="large"
-                          onClick={handleCancel}
-                          startIcon={<Cancel />}
-                          sx={{
-                            px: 4,
-                            py: 1.5,
-                            borderRadius: 3,
-                            borderWidth: 2,
-                            "&:hover": {
-                              borderWidth: 2,
-                              transform: "translateY(-2px)",
-                            },
-                          }}
-                        >
-                          <Typography variant="button" component="span">
-                            Cancel
-                          </Typography>
-                        </Button>
-                      )}
-                    </>
+                    <Button
+                      type="button"
+                      variant="contained"
+                      color="error"
+                      size="large"
+                      onClick={() => navigate("/speakings")}
+                      startIcon={<Cancel />}
+                      sx={{
+                        px: 4,
+                        py: 1.5,
+                        borderRadius: 3,
+                        boxShadow: "0 4px 15px rgba(211, 47, 47, 0.3)",
+                        "&:hover": {
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 6px 20px rgba(211, 47, 47, 0.4)",
+                        },
+                      }}
+                    >
+                      Cancel
+                    </Button>
                   )}
                 </Box>
               </Fade>

@@ -1,45 +1,61 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { Button, useNotify } from "react-admin";
+import { Cancel, QuestionAnswer, Save } from "@mui/icons-material";
 import {
-  Stack,
   Box,
-  TextField,
-  Paper,
-  Typography,
+  Button,
   Card,
   CardContent,
-  Grow,
-  Fade,
   Chip,
   Divider,
-  Grid,
+  Fade,
+  Grow,
+  LinearProgress,
+  Paper,
+  Stack,
+  TextField,
+  Typography,
 } from "@mui/material";
-import {
-  QuestionAnswer,
-  Save,
-  Cancel,
-  Assignment,
-  CloudUpload,
-  Image as ImageIcon,
-  Audiotrack,
-} from "@mui/icons-material";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { useNotify } from "react-admin";
+import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
-import { stylesInpection } from "../../../styles/product-inspection";
+import { useNavigate, useParams } from "react-router-dom";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 import {
+  RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
   UPDATE_SUB_QUESTION_SUGGESTION,
-  RESET_SPEAKING_DATA,
 } from "../../../store/feature/speaking";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 
-interface ReadingPartOneProps {
+// Styles for old drag and drop (fallback)
+const stylesInpection = {
+  dropzone: {
+    border: "2px dashed #ccc",
+    borderRadius: "10px",
+    textAlign: "center" as const,
+    padding: "20px",
+    cursor: "pointer",
+    backgroundColor: "#f9f9f9",
+    position: "relative" as const,
+    minHeight: "200px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  dropzoneContent: {
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+};
+
+interface ReadingPartThreeProps {
   children?: JSX.Element | JSX.Element[];
   showDeleteButton?: boolean;
   showSaveButton?: boolean;
@@ -72,6 +88,10 @@ interface FormData {
   answerThreeSub3: string;
   suggestion?: string;
   file?: string;
+  imgUrl?: string;
+  subFile1?: string;
+  subFile2?: string;
+  subFile3?: string;
   imgUrl_1?: string;
   imgUrl_2?: string;
 }
@@ -200,6 +220,8 @@ const QuestionBox = ({
               suggestion={suggestion}
               setSuggestion={setSuggestion}
               editorId={`editor${num}`}
+              enableFullscreen={true}
+              modalTitle={`Question ${num} Instructions - Expanded View`}
             />
           </Box>
         </Box>
@@ -207,13 +229,10 @@ const QuestionBox = ({
         {/* Audio File Field */}
         <Box>
           <Typography
-            variant="body2"
-            sx={{ mb: 1, fontWeight: 500, color: "text.secondary" }}
+            variant="subtitle2"
+            sx={{ mb: 1, fontWeight: 600, color: "text.secondary" }}
           >
-            <Audiotrack
-              sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }}
-            />
-            Audio File
+            Audio File URL
           </Typography>
           <TextField
             {...register(`subFile${questionNumber}`)}
@@ -234,7 +253,7 @@ const QuestionBox = ({
   </Grow>
 );
 
-const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
+const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
   children,
   pathTo,
   showDeleteButton = true,
@@ -262,15 +281,44 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
     watch,
   } = useForm<FormData>();
 
-  const [imageUpload, setImageUpload] = useState();
   const [images, setImages] = useState([]);
   const [previewUrls, setPreviewUrls] = useState([]);
   const [rangeUpload, setRangeUpload] = useState(false);
   const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
-  const [showDebugPanel, setShowDebugPanel] = useState(false); // State cho debug panel
+  const [showDebugPanel, setShowDebugPanel] = useState(false);
   const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
   const [isDraggingDebug, setIsDraggingDebug] = useState(false);
   const [debugDragStart, setDebugDragStart] = useState({ x: 0, y: 0 });
+
+  // New states for R2FilePreview
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [previewImageUrls, setPreviewImageUrls] = useState<string[]>([]);
+  const [existingImageUrls, setExistingImageUrls] = useState<string[]>([]);
+  const [removedImageUrls, setRemovedImageUrls] = useState<string[]>([]);
+  const [isUploading, setIsUploading] = useState(false);
+
+  // Handler để update Redux khi files được chọn
+  const handleFilesChange = (files: File[]) => {
+    setSelectedFiles(files);
+
+    // Tạo blob URLs cho preview và update vào Redux
+    const blobUrls = files.map((file) => URL.createObjectURL(file));
+    setPreviewImageUrls(blobUrls);
+
+    // Update Redux store với blob URLs
+    updateMainDataInStore("img", blobUrls);
+  };
+
+  // Handler khi xóa ảnh hiện có
+  const handleRemoveExistingImage = (url: string) => {
+    console.log("🗑️ Marking existing image for removal:", url);
+
+    // Thêm vào danh sách cần xóa
+    setRemovedImageUrls((prev) => [...prev, url]);
+
+    // Xóa khỏi danh sách hiện tại
+    setExistingImageUrls((prev) => prev.filter((imgUrl) => imgUrl !== url));
+  };
 
   // Watch form values để update store
   const watchedValues = watch();
@@ -278,75 +326,155 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   ////////////////////////////////////////////////////////////////////////////
 
   const onSubmit = async (values: any) => {
-    // Sử dụng data từ Redux store thay vì form values trực tiếp
-    const storeData = speakingStore.currentSpeakingData;
+    try {
+      setIsUploading(true);
 
-    const data = {
-      title: storeData.title || values.title,
-      timeToDo: 50,
-      description: storeData.subTitle || values.subTitle,
-      questions: [
-        {
-          questionTitle: storeData.subTitle || values.subTitle,
-          content: storeData.content || values.content,
-          answerList: [],
-          correctAnswer: "",
-          file: storeData.file || values.file,
-          subQuestionAnswerList: [],
-          suggestion: storeData.suggestion || "",
-          subQuestion: [1, 2, 3].map((num) => ({
-            content:
-              storeData.subQuestions[num - 1]?.content ||
-              values[`subContent${num}`] ||
-              "",
-            correctAnswer: null,
-            file:
-              storeData.subQuestions[num - 1]?.file ||
-              values[`subFile${num}`] ||
-              "",
-            answerList: null,
-            image: null,
-            suggestion: storeData.subQuestions[num - 1]?.suggestion || "",
-          })),
-          isExample: "",
-          image: [values["imgUrl_1"], values["imgUrl_2"]],
-        },
-      ],
-      questionType: "SPEAKING",
-      questionPart: "THREE",
-    };
+      // Xóa các ảnh cũ đã được đánh dấu xóa
+      if (removedImageUrls.length > 0) {
+        for (const imageUrl of removedImageUrls) {
+          try {
+            const key = imageUrl
+              .split("https://files.aptisacademy.com.vn/")
+              .pop();
 
-    console.log({ dataForm: data, storeData });
-
-    if (statusHandler === "create") {
-      const uploadData = new FormData();
-
-      for (let i = 0; i < images.length; i++) {
-        uploadData.append("files", images[i]);
+            if (key) {
+              await R2UploadService.deleteFile(key);
+            }
+          } catch (deleteError) {
+            console.error("❌ Failed to delete image:", imageUrl, deleteError);
+          }
+        }
       }
-      uploadData.append("data", JSON.stringify({ ...data }));
-      createSpeakingPartOne(uploadData);
-    }
-    if (statusHandler === "edit") {
-      console.log("edit");
-      updateReadingPartOne(data);
+
+      // Upload các file đã select lên R2 trước
+      let uploadedImageUrls = [...existingImageUrls];
+      let uploadedImageKeys = [];
+
+      // Nếu có ảnh cũ, extract keys từ URLs
+      if (existingImageUrls.length > 0) {
+        uploadedImageKeys = existingImageUrls
+          .map((url) => {
+            // Extract key từ URL, ví dụ: https://files.aptisacademy.com.vn/speaking/abc.jpg -> speaking/abc.jpg
+            return (
+              url.split(`${import.meta.env.VITE_BASE_URL_FILE}/`).pop() || ""
+            );
+          })
+          .filter((key) => key); // Lọc bỏ empty strings
+      }
+
+      if (selectedFiles.length > 0) {
+        const uploadResults = await R2UploadService.uploadMultipleFiles(
+          selectedFiles,
+          "speaking"
+        );
+
+        console.log({ uploadResults });
+
+        if (uploadResults.metadata.successful) {
+          const newImageUrls = uploadResults.metadata.successful.map(
+            (result) => `${import.meta.env.VITE_BASE_URL_FILE}/${result.key}`
+          );
+          const newImageKeys = uploadResults.metadata.successful.map(
+            (result) => result.key
+          );
+
+          // Thêm ảnh mới vào danh sách
+          uploadedImageUrls = [...uploadedImageUrls, ...newImageUrls];
+          uploadedImageKeys = [...uploadedImageKeys, ...newImageKeys];
+
+          // Cập nhật state với URLs đã upload
+          setPreviewImageUrls(newImageUrls);
+        }
+      }
+
+      // Sử dụng data từ Redux store thay vì form values trực tiếp
+      const storeData = speakingStore.currentSpeakingData;
+
+      const data = {
+        title: storeData.title || values.title,
+        timeToDo: 50,
+        description: storeData.subTitle || values.subTitle,
+        questions: [
+          {
+            questionTitle: storeData.subTitle || values.subTitle,
+            content: storeData.content || values.content,
+            answerList: [],
+            correctAnswer: "",
+            file: storeData.file || values.file,
+            subQuestionAnswerList: [],
+            suggestion: storeData.suggestion || "",
+            subQuestion: [1, 2, 3].map((num) => ({
+              content:
+                storeData.subQuestions[num - 1]?.content ||
+                values[`subContent${num}`] ||
+                "",
+              correctAnswer: null,
+              file:
+                storeData.subQuestions[num - 1]?.file ||
+                values[`subFile${num}`] ||
+                "",
+              answerList: null,
+              image: null,
+              suggestion:
+                storeData.subQuestions[num - 1]?.suggestion ||
+                suggestions[num - 1] ||
+                "",
+            })),
+            isExample: "",
+            image: uploadedImageKeys, // Keys của ảnh mới
+          },
+        ],
+        questionType: "SPEAKING",
+        questionPart: "THREE",
+      };
+
+      console.log({
+        dataForm: data,
+        storeData,
+        uploadedImages: uploadedImageUrls,
+        uploadedImageKeys,
+        removedImages: removedImageUrls,
+        currentSuggestions: suggestions,
+        existingImageUrls,
+        selectedFiles: selectedFiles.map((f) => f.name),
+      });
+
+      if (statusHandler === "create") {
+        await createSpeakingPartOne({ data });
+      }
+      if (statusHandler === "edit") {
+        console.log("edit");
+        await updateReadingPartOne(data);
+      }
+
+      // Reset selected files và removed images sau khi upload thành công
+      setSelectedFiles([]);
+      setRemovedImageUrls([]);
+    } catch (error) {
+      console.error("Error uploading files:", error);
+      await notify("Lỗi upload file: " + error, {
+        type: "error",
+      });
+    } finally {
+      setIsUploading(false);
     }
   };
 
-  const createSpeakingPartOne = async (data: any) => {
+  const createSpeakingPartOne = async ({ data }) => {
     try {
-      const CreateData = await baseDataProvider.createAndUploadImage(
-        "speakings",
-        { data }
-      );
+      const CreateData = await baseDataProvider.create("speakings", { data });
+
+      console.log({ CreateData });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
       reset();
       setImages([]);
+      // Note: selectedFiles được reset trong onSubmit
     } catch (error) {
       console.log({ error });
+      throw error; // Re-throw để onSubmit có thể catch
     }
   };
 
@@ -367,21 +495,8 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
       });
+      throw error; // Re-throw để onSubmit có thể catch
     }
-  };
-  const handleFileUpload = async (e) => {
-    setImageUpload(e.target.files[0]);
-  };
-
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(e.target.files as unknown as File[]);
-
-    // Tạo preview URL
-    const newPreviewUrls = files.map((file: File) => URL.createObjectURL(file));
-    setPreviewUrls((prev) => [...prev, ...newPreviewUrls]);
-
-    // Lưu file trong state
-    setImages((prev) => [...prev, ...files]);
   };
 
   const handleRemoveImage = (index: any) => {
@@ -412,6 +527,15 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   ) => {
     dispatch(UPDATE_SUB_QUESTION({ index: index - 1, field, value }));
   };
+
+  // Effect để sync suggestions với Redux khi suggestions thay đổi
+  useEffect(() => {
+    suggestions.forEach((suggestion, index) => {
+      if (suggestion) {
+        updateSubQuestionInStore(index + 1, "suggestion", suggestion);
+      }
+    });
+  }, [suggestions]);
 
   // Debug panel drag handlers
   const handleDebugMouseDown = (e: React.MouseEvent) => {
@@ -477,9 +601,18 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
             watchedValues[subFileKey] || ""
           );
         }
+
+        // Sync suggestion từ local state vào Redux
+        if (suggestions[num - 1] !== undefined) {
+          updateSubQuestionInStore(
+            num,
+            "suggestion",
+            suggestions[num - 1] || ""
+          );
+        }
       });
     }
-  }, [watchedValues]);
+  }, [watchedValues, suggestions]);
 
   // Effect để reset store khi component unmount
   useEffect(() => {
@@ -507,8 +640,23 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
       setValue("title", dataReadingPartThree.title);
       setValue("content", dataReadingPartThree.questions[0].content);
       setValue("subTitle", dataReadingPartThree.questions[0].questionTitle);
-      setValue("imgUrl_1", dataReadingPartThree.questions[0].image[0]);
-      setValue("imgUrl_2", dataReadingPartThree.questions[0].image[1]);
+
+      // Set existing images từ data
+      const existingImages = [];
+      if (
+        dataReadingPartThree.questions[0].image &&
+        dataReadingPartThree.questions[0].image.length > 0
+      ) {
+        dataReadingPartThree.questions[0].image.forEach((img) => {
+          if (img)
+            existingImages.push(`${import.meta.env.VITE_BASE_URL_FILE}/${img}`);
+        });
+      }
+
+      console.log("📸 Setting existing images:", existingImages);
+      setExistingImageUrls(existingImages);
+      setValue("imgUrl_1", existingImages[0] || "");
+      setValue("imgUrl_2", existingImages[1] || "");
 
       // Update Redux store với data từ edit
       updateMainDataInStore("title", dataReadingPartThree.title);
@@ -528,6 +676,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
         "file",
         dataReadingPartThree.questions[0].file || ""
       );
+      updateMainDataInStore("img", existingImages);
 
       [1, 2, 3].map((num) => {
         setValue(
@@ -548,7 +697,7 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
         );
 
         handleSuggestionChange(
-          num,
+          num - 1,
           dataReadingPartThree.questions[0].subQuestion[num - 1].suggestion
         );
         setValue(
@@ -565,9 +714,6 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
       setRangeUpload(false);
     }
   };
-  const handleDrop = () => {
-    setRangeUpload(false);
-  };
 
   useEffect(() => {
     document.addEventListener("dragover", handleDragOver);
@@ -577,34 +723,55 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
   }, []);
 
   return (
-    <div>
+    <Box sx={{ width: "100%", minHeight: "100vh" }}>
+      {/* Loading Progress Bar */}
+      {isUploading && (
+        <Box
+          sx={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 9999 }}
+        >
+          <LinearProgress
+            color="primary"
+            sx={{
+              height: 4,
+              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+            }}
+          />
+        </Box>
+      )}
+
+      {/* Debug Panel */}
       <Box
         sx={{
           position: "fixed",
-          top: "140px",
+          top: "120px",
           right: "20px",
-          width: showDebugPanel ? "400px" : "auto",
-          maxHeight: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          width: showDebugPanel ? "350px" : "auto",
+          maxHeight: "70vh",
+          backgroundColor: "rgba(0, 0, 0, 0.85)",
           color: "white",
-          borderRadius: "8px",
+          borderRadius: 3,
           zIndex: 1000,
-          border: "1px solid #333",
+          border: "1px solid rgba(255, 255, 255, 0.1)",
           transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
           cursor: isDraggingDebug ? "grabbing" : "default",
           userSelect: "none",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
         }}
       >
-        {/* Header luôn hiển thị */}
+        {/* Debug Header */}
         <Box
           sx={{
-            padding: "8px 12px",
-            borderBottom: showDebugPanel ? "1px solid #333" : "none",
+            padding: "12px 16px",
+            borderBottom: showDebugPanel
+              ? "1px solid rgba(255, 255, 255, 0.1)"
+              : "none",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            borderRadius: showDebugPanel ? "8px 8px 0 0" : "8px",
+            background:
+              "linear-gradient(135deg, rgba(25, 118, 210, 0.8), rgba(66, 165, 245, 0.6))",
+            borderRadius: showDebugPanel ? "12px 12px 0 0" : "12px",
             cursor: "grab",
             "&:active": {
               cursor: "grabbing",
@@ -612,303 +779,354 @@ const SpeakingPartThree: React.FC<ReadingPartOneProps> = ({
           }}
           onMouseDown={handleDebugMouseDown}
         >
-          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
-            Redux Store Debug 🖱️
-          </span>
-          <button
+          <Typography variant="body2" sx={{ fontWeight: 600 }}>
+            🔧 Redux Debug Panel
+          </Typography>
+          <Button
+            size="small"
             onClick={() => setShowDebugPanel(!showDebugPanel)}
-            style={{
-              background: "none",
-              border: "1px solid #666",
+            sx={{
+              minWidth: "auto",
+              p: 0.5,
               color: "white",
-              borderRadius: "4px",
-              padding: "4px 8px",
-              cursor: "pointer",
-              fontSize: "12px",
+              "&:hover": {
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+              },
             }}
           >
-            <span>{showDebugPanel ? "▼" : "▶"}</span>
-          </button>
+            <Typography variant="body2">
+              {showDebugPanel ? "▼" : "▶"}
+            </Typography>
+          </Button>
         </Box>
 
-        {/* Nội dung JSON chỉ hiển thị khi expanded */}
+        {/* Debug Content */}
         {showDebugPanel && (
           <Box
             sx={{
-              padding: "12px",
-              maxHeight: "350px",
+              padding: "16px",
+              maxHeight: "400px",
               overflow: "auto",
+              fontSize: "11px",
+              fontFamily: "monospace",
             }}
           >
             <pre
               style={{
                 margin: 0,
-                fontSize: "10px",
-                lineHeight: "1.2",
+                lineHeight: "1.4",
                 wordWrap: "break-word",
                 whiteSpace: "pre-wrap",
+                color: "#e0e0e0",
               }}
             >
-              {JSON.stringify(speakingStore.currentSpeakingData, null, 2)}
+              {JSON.stringify(
+                {
+                  redux: speakingStore.currentSpeakingData,
+                  imageState: {
+                    existingImages: existingImageUrls,
+                    selectedFiles: selectedFiles.map((f) => f.name),
+                    removedImages: removedImageUrls,
+                    previewUrls: previewImageUrls,
+                  },
+                },
+                null,
+                2
+              )}
             </pre>
           </Box>
         )}
       </Box>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="form sign-up-form relative"
-      >
-        <h2 className="title">Speaking Part 3</h2>
 
-        {/* Debug Panel */}
-
-        <div>
-          <TextField
-            type="title"
-            {...register("title", { required: true })}
-            placeholder="Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.title}
-            helperText={errors.title ? "This field is required" : ""}
-          />
-        </div>
-
-        <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="subTitle"
-            {...register("subTitle", { required: true })}
-            placeholder="Sub Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="suggestion"
-            {...register("suggestion")}
-            placeholder="Gợi ý câu trả lời"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            // type="file"
-            {...register("file")}
-            placeholder="link file nghe de bai"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-
-        <div>
-          <TextField
-            // type="file"
-            {...register("imgUrl_1")}
-            placeholder="link image 1 "
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-
-        <div>
-          <TextField
-            // type="file"
-            {...register("imgUrl_2")}
-            placeholder="link image 2 "
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-
-        {/* ////////////////////// INUPT DRAG AND DROP ////////////////////// */}
-
-        <Box
+      {/* Main Form Container */}
+      <Fade in={true} timeout={1000}>
+        <Paper
+          elevation={8}
           sx={{
-            ...stylesInpection.dropzone,
+            borderRadius: 4,
+            background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+            boxShadow: "0 16px 40px rgba(0, 0, 0, 0.1)",
+            overflow: "hidden",
+            width: "100%",
           }}
         >
-          <Box
+          <Typography
+            variant="h5"
             sx={{
-              ...stylesInpection.dropzoneContent,
-              gap: "10px",
+              fontWeight: 700,
+              ml: 4,
+              p: 2,
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
             }}
           >
-            <Box fontSize="large">DRAG AND DROP TO UPLOAD YOUR IMAGES</Box>
-            <Box fontSize="small"> (Upload ít nhất 2 cái ảnh)</Box>
-          </Box>
-          <input
-            type="file"
-            multiple
-            value=""
-            onChange={handleFileChange}
-            onDrop={handleDrop}
-            style={{
-              opacity: "0",
-              width: "100%",
-              position: "absolute",
-              top: "0",
-              left: "0",
-              border: "1px solid",
-              cursor: "pointer",
-              backgroundColor: "red",
-              height: !rangeUpload ? "100%" : "370%",
-            }}
-          />
-        </Box>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(8, 1fr)", // Cố định 5 cột
-            gap: "10px",
-          }}
-        >
-          {previewUrls.map((url, index) => (
-            <div
-              key={index}
-              style={{
-                position: "relative",
-                width: "100%",
-                height: "150px",
-                border: "1px solid",
-              }}
-            >
-              <img
-                src={url}
-                alt={`Preview ${index}`}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  borderRadius: "4px",
-                }}
-              />
-              <button
-                type="button"
-                onClick={() => handleRemoveImage(index)}
-                style={{
-                  position: "absolute",
-                  top: "5px",
-                  right: "5px",
-                  background: "red",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "50%",
-                  width: "20px",
-                  height: "20px",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+            Speaking Part 3
+          </Typography>
+
+          {/* Form Content */}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Box sx={{ p: 2 }}>
+              {/* Basic Information và Image Upload Section - Cùng hàng */}
+              <Box
+                sx={{
+                  display: "grid",
+                  gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
+                  gap: 3,
+                  mb: 4,
+                  minHeight: "450px",
                 }}
               >
-                X
-              </button>
-            </div>
-          ))}
-        </div>
+                {/* Basic Information Section */}
+                <Grow in={true} timeout={600}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "100%",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3, height: "100%" }}>
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          mb: 3,
+                          fontWeight: 600,
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1,
+                        }}
+                      >
+                        <QuestionAnswer /> Basic Information
+                      </Typography>
 
-        {/* ////////////////////// INUPT DRAG AND DROP ////////////////////// */}
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: 3,
+                        }}
+                      >
+                        <TextField
+                          {...register("title", { required: true })}
+                          label="Title"
+                          placeholder="Enter exam title..."
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors.title}
+                          helperText={
+                            errors.title ? "This field is required" : ""
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                            },
+                          }}
+                        />
 
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
-            boxShadow:
-              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-            gap: "10px",
-            padding: "10px",
-            marginTop: "20px",
-          }}
-        >
-          {[1, 2, 3].map((num) => (
-            <QuestionBox
-              key={num}
-              questionNumber={num}
-              register={register}
-              errors={errors}
-              suggestion={suggestions[num - 1]}
-              setSuggestion={(value: any) =>
-                handleSuggestionChange(num - 1, value)
-              }
-              num={num}
-            />
-          ))}
-        </Box>
+                        <TextField
+                          {...register("subTitle", { required: true })}
+                          label="Sub Title"
+                          placeholder="Enter exam subtitle..."
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors.subTitle}
+                          helperText={
+                            errors.subTitle ? "This field is required" : ""
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                            },
+                          }}
+                        />
 
-        <Box
-          sx={{
-            width: "100%",
-            minHeight: "100px",
-            position: "relative",
-          }}
-        >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}
-            width="100%"
-            sx={{
-              backgroundColor: "#f1f1f1",
-              padding: "1rem",
-              borderRadius: "4px",
-              marginTop: "1rem",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-            }}
-            {...props}
-          >
-            <Button type="submit" variant="contained" color="info">
-              <span>Submit</span>
-            </Button>
+                        <TextField
+                          {...register("content", { required: true })}
+                          label="Content"
+                          placeholder="Enter main content..."
+                          variant="outlined"
+                          fullWidth
+                          multiline
+                          rows={3}
+                          error={!!errors.content}
+                          helperText={
+                            errors.content ? "This field is required" : ""
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                            },
+                          }}
+                        />
 
-            {showCancelButton && pathTo ? (
-              <NavLink to={pathTo}>
-                <Button type="button" variant="contained" color="error">
-                  <span>Cancel</span>
-                </Button>
-              </NavLink>
-            ) : (
-              <Button
-                type="button"
-                variant="contained"
-                color="error"
-                onClick={handleCancel}
-              >
-                <span>Cancel</span>
-              </Button>
-            )}
-          </Stack>
-        </Box>
-      </form>
-    </div>
+                        <TextField
+                          {...register("suggestion")}
+                          label="Suggestion"
+                          placeholder="Enter suggestion..."
+                          variant="outlined"
+                          fullWidth
+                          multiline
+                          rows={2}
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                            },
+                          }}
+                        />
+
+                        <TextField
+                          {...register("file")}
+                          label="Audio File URL"
+                          placeholder="Enter audio file URL..."
+                          variant="outlined"
+                          fullWidth
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                            },
+                          }}
+                        />
+                      </Box>
+                    </CardContent>
+                  </Card>
+                </Grow>
+
+                {/* Image Upload Section */}
+                <Grow in={true} timeout={800}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "fit-content",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3 }}>
+                      <SimpleR2FilePreview
+                        onFilesChange={handleFilesChange}
+                        onRemoveExistingImage={handleRemoveExistingImage}
+                        initialImageUrls={existingImageUrls}
+                        multiple={true}
+                        maxFiles={2}
+                      />
+                    </CardContent>
+                  </Card>
+                </Grow>
+              </Box>
+
+              {/* Questions Section */}
+              <Grow in={true} timeout={1000}>
+                <Box sx={{ mb: 4 }}>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      mb: 3,
+                      fontWeight: 600,
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <QuestionAnswer /> Sub Questions
+                  </Typography>
+
+                  <Box
+                    sx={{
+                      display: "grid",
+                      gridTemplateColumns: {
+                        xs: "1fr",
+                        lg: "repeat(auto-fit, minmax(350px, 1fr))",
+                      },
+                      gap: 2,
+                    }}
+                  >
+                    {[1, 2, 3].map((num) => (
+                      <QuestionBox
+                        key={num}
+                        questionNumber={num}
+                        register={register}
+                        errors={errors}
+                        suggestion={suggestions[num - 1]}
+                        setSuggestion={(value: any) =>
+                          handleSuggestionChange(num - 1, value)
+                        }
+                        num={num}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+              </Grow>
+
+              <Divider sx={{ my: 4 }} />
+
+              {/* Action Buttons */}
+              <Fade in={true} timeout={1200}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 3,
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    size="large"
+                    disabled={isUploading}
+                    startIcon={<Save />}
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      borderRadius: 3,
+                      background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+                      boxShadow: "0 4px 15px rgba(25, 118, 210, 0.3)",
+                      "&:hover": {
+                        background: "linear-gradient(45deg, #1565c0, #1976d2)",
+                        transform: "translateY(-2px)",
+                        boxShadow: "0 6px 20px rgba(25, 118, 210, 0.4)",
+                      },
+                      "&:disabled": {
+                        background: "linear-gradient(45deg, #bdbdbd, #e0e0e0)",
+                      },
+                    }}
+                  >
+                    {isUploading ? "Uploading..." : "Submit"}
+                  </Button>
+
+                  {showCancelButton && (
+                    <Button
+                      type="button"
+                      variant="contained"
+                      color="error"
+                      size="large"
+                      onClick={() => navigate("/speakings")}
+                      startIcon={<Cancel />}
+                      sx={{
+                        px: 4,
+                        py: 1.5,
+                        borderRadius: 3,
+                        boxShadow: "0 4px 15px rgba(211, 47, 47, 0.3)",
+                        "&:hover": {
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 6px 20px rgba(211, 47, 47, 0.4)",
+                        },
+                      }}
+                    >
+                      Cancel
+                    </Button>
+                  )}
+                </Box>
+              </Fade>
+            </Box>
+          </form>
+        </Paper>
+      </Fade>
+    </Box>
   );
 };
 

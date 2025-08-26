@@ -1,37 +1,37 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { Button, useNotify } from "react-admin";
 import {
-  Stack,
-  Box,
-  TextField,
-  Paper,
-  Typography,
-  Card,
-  CardContent,
-  Grow,
-  Fade,
-  Chip,
-  Divider,
-  Grid,
-} from "@mui/material";
-import {
-  QuestionAnswer,
-  Save,
-  Cancel,
   Assignment,
   Audiotrack,
+  Cancel,
+  QuestionAnswer,
+  Save,
 } from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import { InputFileUpload } from "../../../components/UploadFile/UploadFile";
 import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Chip,
+  Divider,
+  Fade,
+  Grid,
+  Grow,
+  Paper,
+  TextField,
+  Typography,
+} from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { useNotify } from "react-admin";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
+import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+import {
+  RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
-  RESET_SPEAKING_DATA,
 } from "../../../store/feature/speaking";
 
 interface ReadingPartOneProps {
@@ -220,6 +220,9 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     y: 140,
   });
 
+  // State cho suggestion và modal
+  const [suggestion, setSuggestion] = useState("");
+
   // Debug log to check store structure
   console.log("Speaking Store:", speakingStore);
 
@@ -311,6 +314,20 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     });
   }, [watchedFields, dispatch, speakingStore]);
 
+  // Sync suggestion với Redux store
+  useEffect(() => {
+    if (suggestion !== undefined) {
+      dispatch(
+        UPDATE_SPEAKING_MAIN_DATA({
+          field: "suggestion",
+          value: suggestion,
+        })
+      );
+      // Cũng update form value để đồng bộ
+      setValue("suggestion", suggestion);
+    }
+  }, [suggestion, dispatch, setValue]);
+
   const onSubmit = async (values: FormData) => {
     // Use data from Redux store instead of form values
     const data = {
@@ -401,6 +418,9 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
       setValue("file", dataReadingPartFour.questions[0].file);
       setValue("suggestion", dataReadingPartFour.questions[0].suggestion || "");
 
+      // Set suggestion state
+      setSuggestion(dataReadingPartFour.questions[0].suggestion || "");
+
       // Also update Redux store
       dispatch(
         UPDATE_SPEAKING_MAIN_DATA({
@@ -476,7 +496,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   };
 
   return (
-    <Box sx={{ width: "100%", minHeight: "100vh", p: 2 }}>
+    <Box sx={{ width: "100%", minHeight: "100vh" }}>
       {/* Debug Panel - Compact and Modern */}
       <Box
         sx={{
@@ -561,27 +581,26 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
       {/* Main Form Container */}
       <Fade in={true} timeout={800}>
         <Paper
-          elevation={6}
+          elevation={8}
           sx={{
-            borderRadius: 3,
+            borderRadius: 4,
             background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
-            boxShadow: "0 12px 30px rgba(0, 0, 0, 0.08)",
+            boxShadow: "0 16px 40px rgba(0, 0, 0, 0.1)",
             overflow: "hidden",
+            width: "100%",
           }}
         >
           <Typography
             variant="h5"
             sx={{
               fontWeight: 700,
-              p: 3,
-              background: "linear-gradient(135deg, #1976d2, #42a5f5)",
-              color: "white",
-              textAlign: "center",
+              ml: 4,
+              p: 2,
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
             }}
           >
             Speaking Part 4
           </Typography>
-
           <form onSubmit={handleSubmit(onSubmit)}>
             <Box sx={{ p: 3 }}>
               {/* Main Information Section - Compact Grid Layout */}
@@ -643,7 +662,7 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                         />
                       </Grid>
 
-                      <Grid item xs={12}>
+                      <Grid item xs={12} md={6}>
                         <Typography
                           variant="body2"
                           sx={{ mb: 1, fontWeight: 500 }}
@@ -660,31 +679,12 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                           error={!!errors.content}
                           helperText={errors.content ? "Required" : ""}
                           sx={{
-                            "& .MuiOutlinedInput-root": { borderRadius: 1.5 },
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 1.5,
+                            },
                           }}
                         />
-                      </Grid>
 
-                      <Grid item xs={12} md={6}>
-                        <Typography
-                          variant="body2"
-                          sx={{ mb: 1, fontWeight: 500 }}
-                        >
-                          Suggestion
-                        </Typography>
-                        <TextField
-                          {...register("suggestion")}
-                          placeholder="Answer suggestions..."
-                          variant="outlined"
-                          fullWidth
-                          size="small"
-                          sx={{
-                            "& .MuiOutlinedInput-root": { borderRadius: 1.5 },
-                          }}
-                        />
-                      </Grid>
-
-                      <Grid item xs={12} md={6}>
                         <Typography
                           variant="body2"
                           sx={{ mb: 1, fontWeight: 500 }}
@@ -698,9 +698,38 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                           fullWidth
                           size="small"
                           sx={{
-                            "& .MuiOutlinedInput-root": { borderRadius: 1.5 },
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 1.5,
+                            },
                           }}
                         />
+                      </Grid>
+                      <Grid item xs={12} md={6}>
+                        <Typography
+                          variant="body2"
+                          sx={{ mb: 1, fontWeight: 500 }}
+                        >
+                          Suggestion
+                        </Typography>
+
+                        <Box
+                          sx={{
+                            border: "1px solid",
+                            borderColor: "grey.300",
+                            borderRadius: 2,
+                            p: 2,
+                            backgroundColor: "rgba(248, 250, 252, 0.5)",
+                          }}
+                        >
+                          <TextEditor
+                            placeholder="Write answer suggestions or insert special characters ★"
+                            suggestion={suggestion}
+                            setSuggestion={setSuggestion}
+                            editorId="suggestionEditor"
+                            enableFullscreen={true}
+                            modalTitle="Suggestion Editor - Expanded View"
+                          />
+                        </Box>
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -760,54 +789,30 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
                       },
                     }}
                   >
-                    <span>
-                      <Save />
-                    </span>
+                    Submit
                   </Button>
 
                   {showCancelButton && (
-                    <>
-                      {pathTo ? (
-                        <NavLink to={pathTo}>
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            startIcon={<Cancel />}
-                            sx={{
-                              px: 4,
-                              borderRadius: 2,
-                              borderColor: "error.main",
-                              color: "error.main",
-                              "&:hover": {
-                                backgroundColor: "error.main",
-                                color: "white",
-                              },
-                            }}
-                          >
-                            <span>Cancel</span>
-                          </Button>
-                        </NavLink>
-                      ) : (
-                        <Button
-                          variant="outlined"
-                          size="large"
-                          startIcon={<Cancel />}
-                          onClick={handleCancel}
-                          sx={{
-                            px: 4,
-                            borderRadius: 2,
-                            borderColor: "error.main",
-                            color: "error.main",
-                            "&:hover": {
-                              backgroundColor: "error.main",
-                              color: "white",
-                            },
-                          }}
-                        >
-                          <span>Cancel</span>
-                        </Button>
-                      )}
-                    </>
+                    <Button
+                      type="button"
+                      variant="contained"
+                      color="error"
+                      size="large"
+                      onClick={() => navigate("/speakings")}
+                      startIcon={<Cancel />}
+                      sx={{
+                        px: 4,
+                        py: 1.5,
+                        borderRadius: 3,
+                        boxShadow: "0 4px 15px rgba(211, 47, 47, 0.3)",
+                        "&:hover": {
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 6px 20px rgba(211, 47, 47, 0.4)",
+                        },
+                      }}
+                    >
+                      Cancel
+                    </Button>
                   )}
                 </Box>
               </Fade>

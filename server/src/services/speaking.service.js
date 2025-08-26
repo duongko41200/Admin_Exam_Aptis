@@ -20,9 +20,17 @@ class SpeakingFactory {
       SpeakingModel
     );
   };
+  static count = async () => {
+    const res = await baseRepo.count(SpeakingModel);
 
+    return res;
+  };
   static getOneById = async (id) => {
-    return await baseRepo.getOneById({ id }, SpeakingModel);
+    const res = await baseRepo.getOneById({ id }, SpeakingModel);
+
+    console.log("res:", res);
+
+    return res;
   };
 
   static getAllWithFilters = async ({ partSkill }) => {
