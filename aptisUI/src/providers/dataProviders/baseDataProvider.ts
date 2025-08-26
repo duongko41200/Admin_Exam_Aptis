@@ -64,13 +64,15 @@ const baseDataProvider: DataProvider = {
 
     const data = await response.json();
 
-    const resData = pushId(data.metadata);
+    console.log("data", data);
+
+    const resData = pushId(data.metadata.data);
 
     console.log("resData", resData);
 
     return {
       data: resData,
-      total: data.count ? data.count : data.metadata.length,
+      total: data.metadata.total || resData.length,
     };
   },
   // get a single record by id

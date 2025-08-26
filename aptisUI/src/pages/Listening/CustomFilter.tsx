@@ -42,7 +42,7 @@ const ProductFilterForm = ({
               <SearchInput
                 source="title"
                 alwaysOn
-                placeholder="Tìm kiếm theo tiêu đề ...."
+                placeholder="Tìm kiếm theo tên, email hoặc số điện thoại..."
                 sx={{
                   width: "100%",
                   "& .MuiFormHelperText-root": {

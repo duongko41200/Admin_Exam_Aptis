@@ -33,12 +33,16 @@ import { PlusCircle } from "lucide-react";
 
 export const ListToolBar = ({
   isShowCreate,
+  isFilterExpanded,
+  onFilterExpandToggle,
 }: {
   isShowCreate: boolean;
   isShowFilter?: boolean;
+  isFilterExpanded: boolean;
+  onFilterExpandToggle: () => void;
 }) => {
   const theme = useTheme();
-  const [isFilterExpanded, setIsFilterExpanded] = useState(false);
+
   const router = useNavigate();
 
   return (
@@ -79,7 +83,7 @@ export const ListToolBar = ({
                 startIcon={
                   isFilterExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />
                 }
-                onClick={() => setIsFilterExpanded(!isFilterExpanded)}
+                onClick={onFilterExpandToggle}
                 sx={{
                   textTransform: "none",
                   fontWeight: 500,
@@ -179,20 +183,36 @@ const SpeakingList = ({
   resource,
   dataProvider,
 }: BaseComponentProps) => {
+
+    const [isFilterExpanded, setIsFilterExpanded] = useState(false);
   return (
     <List
       title=""
-      actions={<ListToolBar isShowCreate={validRole("create", actions)} />}
+      actions={
+        <ListToolBar
+          isShowCreate={validRole("create", actions)}
+          isFilterExpanded={isFilterExpanded}
+          onFilterExpandToggle={() => setIsFilterExpanded(!isFilterExpanded)}
+        />
+      }
+      sx={{
+        mb: 10,
+        height: "calc(100vh - 50px)",
+        overflow: "auto",
+        pr: 2,
+      }}
     >
       <Datagrid
         rowClick="show"
         bulkActionButtons={false}
         sx={{
           backgroundColor: "white",
+          // mb: 10,
 
-          boxShadow: "0 4px 24px rgba(25, 118, 210, 0.08)",
-          maxHeight: "calc(100vh - 220px)",
+          boxShadow: "0 4px 10px #bed5e7ff",
+          maxHeight: `calc(100vh - ${isFilterExpanded ? 120 : 220}px)`,
           overflow: "auto",
+          border: `1px solid #accfecff`,
           "& .RaDatagrid-headerCell": {
             background: "#accfecff",
             color: "#0d47a1",
@@ -200,6 +220,13 @@ const SpeakingList = ({
             fontSize: "1rem",
             borderBottom: "2px solid #90caf9",
             py: 1.5,
+          },
+          "& .MuiTablePagination-root ": {
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            px: 2,
+            py: 2,
           },
           "& .RaDatagrid-row": {
             background: "#fff",

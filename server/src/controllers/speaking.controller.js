@@ -1,9 +1,8 @@
 "use strict";
 
 import { SuccessResponse } from "../cores/success.response.js";
-import { createTopic, getAllTopc } from "../models/respositories/text.repo.js";
-import SpeakingFactory from "../services/speaking.service.js";
 import r2Service from "../services/r2.service.js";
+import SpeakingFactory from "../services/speaking.service.js";
 
 class speakingController {
   create = async (req, res, next) => {
@@ -84,7 +83,6 @@ class speakingController {
         range,
         sort,
       }),
-      count: await SpeakingFactory.count(),
     }).send(res);
   };
   getOneById = async (req, res, next) => {

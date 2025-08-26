@@ -25,10 +25,13 @@ const getAllWithQuery = async (
     .populate(populate)
     .exec();
 
-console.log("res:::", res)
+  if (Object.keys(processedFilter).length === 0) {
+    const count = await model.countDocuments(processedFilter);
+    return { data: res, total: count };
+  }
+  const count = await model.countDocuments(processedFilter);
 
-
-  return res;
+  return { data: res, total: count };
 };
 
 const getAll = async (model) => {
