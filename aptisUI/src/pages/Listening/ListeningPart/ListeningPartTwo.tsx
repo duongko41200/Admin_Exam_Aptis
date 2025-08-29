@@ -1,13 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
+import { useNotify } from "react-admin";
+import {
+  Stack,
+  Box,
+  TextField,
+  Card,
+  CardContent,
+  Typography,
+  Chip,
+  Divider,
+  Fade,
+  Grow,
+  LinearProgress,
+  Paper,
+  Button,
+} from "@mui/material";
+import { Cancel, QuestionAnswer, Save, Headphones } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
   UPDATE_LISTENING_MAIN_DATA,
   UPDATE_LISTENING_SUB_QUESTION,
@@ -62,60 +79,143 @@ const QuestionBox = ({
   register: any;
   errors: any;
 }) => (
-  <Box
-    sx={{
-      minHeight: "200px",
-      height: "fit-content",
-      border: "1px solid #ddd",
-      borderRadius: "8px",
-      padding: "16px",
-      backgroundColor: "#fafafa",
-    }}
-  >
-    <Box
+  <Grow in={true} timeout={800 + questionNumber * 200}>
+    <Card
+      elevation={4}
       sx={{
-        fontSize: "18px",
-        fontWeight: "bold",
-        marginBottom: "12px",
-        color: "#1976d2",
+        borderRadius: 3,
+        background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+        border: "1px solid",
+        borderColor: "grey.200",
+        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "&:hover": {
+          transform: "translateY(-4px)",
+          boxShadow: "0 12px 30px rgba(0, 0, 0, 0.12)",
+          borderColor: "primary.main",
+        },
       }}
     >
-      Nội Dung Câu {questionNumber}
-    </Box>
-    <Box>
-      <div>
-        <TextField
-          type="text"
-          {...register(`numberOrder${questionNumber}`, { required: true })}
-          placeholder={`Số thứ tự nguoi noi`}
-          variant="outlined"
-          fullWidth
-          inputProps={{ min: 1, max: 5 }} // Added max value here
-          error={!!errors[`numberOrder${questionNumber}`]}
-          helperText={
-            errors[`numberOrder${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-      <div>
-        <TextField
-          type={`contentAnswer${questionNumber}`}
-          {...register(`correctAnswer${questionNumber}`, { required: true })}
-          placeholder={`Nội dung câu ${questionNumber}`}
-          variant="outlined"
-          fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
-          helperText={
-            errors[`correctAnswer${questionNumber}`]
-              ? "This field is required"
-              : ""
-          }
-        />
-      </div>
-    </Box>
-  </Box>
+      <CardContent sx={{ p: 3 }}>
+        {/* Question Header */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            mb: 2,
+            pb: 2,
+            borderBottom: "2px solid",
+            borderColor: "grey.100",
+          }}
+        >
+          <QuestionAnswer
+            sx={{
+              color: "primary.main",
+              fontSize: 28,
+              mr: 2,
+            }}
+          />
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: 700,
+              background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Question {questionNumber}
+          </Typography>
+          <Chip
+            label={`Part ${questionNumber}`}
+            color="primary"
+            size="small"
+            sx={{ ml: "auto", fontWeight: 600 }}
+          />
+        </Box>
+
+        {/* Number Order Field */}
+        <Box sx={{ mb: 3 }}>
+          <Typography
+            variant="subtitle2"
+            sx={{ mb: 1.5, fontWeight: 600, color: "text.secondary" }}
+          >
+            Speaker Order Number
+          </Typography>
+          <TextField
+            type="number"
+            {...register(`numberOrder${questionNumber}`, { required: true })}
+            placeholder={`Enter speaker order number...`}
+            variant="outlined"
+            fullWidth
+            inputProps={{ min: 1, max: 5 }}
+            error={!!errors[`numberOrder${questionNumber}`]}
+            helperText={
+              errors[`numberOrder${questionNumber}`]
+                ? "This field is required"
+                : "Enter the order number of the speaker (1-5)"
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 2,
+                background: "rgba(255, 255, 255, 0.8)",
+                "&:hover": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "primary.main",
+                  },
+                },
+                "&.Mui-focused": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderWidth: 2,
+                  },
+                },
+              },
+            }}
+          />
+        </Box>
+
+        {/* Correct Answer Field */}
+        <Box>
+          <Typography
+            variant="subtitle2"
+            sx={{ mb: 1.5, fontWeight: 600, color: "text.secondary" }}
+          >
+            Answer Content
+          </Typography>
+          <TextField
+            {...register(`correctAnswer${questionNumber}`, { required: true })}
+            placeholder={`Enter answer content for question ${questionNumber}...`}
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={3}
+            error={!!errors[`correctAnswer${questionNumber}`]}
+            helperText={
+              errors[`correctAnswer${questionNumber}`]
+                ? "This field is required"
+                : "Provide the correct answer content"
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                borderRadius: 2,
+                background: "rgba(255, 255, 255, 0.8)",
+                "&:hover": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "primary.main",
+                  },
+                },
+                "&.Mui-focused": {
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderWidth: 2,
+                  },
+                },
+              },
+            }}
+          />
+        </Box>
+      </CardContent>
+    </Card>
+  </Grow>
 );
 
 const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
@@ -143,6 +243,13 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
   const [suggestion, setSuggestion] = useState("");
+
+  // New states for audio file upload
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [existingAudioUrls, setExistingAudioUrls] = useState<string[]>([]);
+  const [removedAudioUrls, setRemovedAudioUrls] = useState<string[]>([]);
+  const [isUploading, setIsUploading] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -156,6 +263,25 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   // Watch all form fields for real-time Redux sync
   const watchedFields = watch();
   const [isShow, setIsShow] = useState(false);
+
+  // Handler để update Redux khi audio files được chọn
+  const handleFilesChange = (files: File[]) => {
+    setSelectedFiles(files);
+
+    // Update Redux store
+    dispatch(
+      UPDATE_LISTENING_MAIN_DATA({
+        field: "selectedAudioFiles",
+        value: files.map((f) => f.name),
+      })
+    );
+  };
+
+  // Handler khi xóa audio file hiện có
+  const handleRemoveExistingAudio = (url: string) => {
+    setRemovedAudioUrls((prev) => [...prev, url]);
+    setExistingAudioUrls((prev) => prev.filter((audioUrl) => audioUrl !== url));
+  };
 
   // Debug panel drag handlers
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -360,57 +486,111 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   ]);
 
   const onSubmit = async (values: any) => {
-    // Use data from Redux store instead of form values
-    const data = {
-      title: listeningStore?.currentListeningData?.title || values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle:
-          listeningStore?.currentListeningData?.subTitle || values.subTitle,
-        content:
-          listeningStore?.currentListeningData?.content || values.content,
-        answerList:
-          listeningStore?.currentListeningData?.answerList ||
-          [1, 2, 3, 4, 5, 6].map((num, idx) => ({
-            id: idx + 1,
-            content: values[`optionAnswer${num}`] || "",
-          })),
-        correctAnswer: null,
-        file: listeningStore?.currentListeningData?.file || values.file,
-        subQuestionAnswerList: [],
-        suggestion:
-          listeningStore?.currentListeningData?.suggestion || suggestion,
-        subQuestion: [1, 2, 3, 4].map((num) => ({
+    try {
+      setIsUploading(true);
+
+      // Xóa các audio files cũ đã được đánh dấu xóa
+      if (removedAudioUrls.length > 0) {
+        for (const audioUrl of removedAudioUrls) {
+          try {
+            const key = audioUrl
+              .split("https://files.aptisacademy.com.vn/")
+              .pop();
+
+            if (key) {
+              await R2UploadService.deleteFile(key);
+            }
+          } catch (deleteError) {
+            console.error("❌ Failed to delete audio:", audioUrl, deleteError);
+          }
+        }
+      }
+
+      // Upload các audio files đã select lên R2 trước
+      let uploadedAudioUrl = existingAudioUrls[0] || ""; // Chỉ lấy 1 file audio
+
+      if (selectedFiles.length > 0) {
+        const uploadResults = await R2UploadService.uploadMultipleFiles(
+          selectedFiles,
+          "listening"
+        );
+
+        if (
+          uploadResults.metadata.successful &&
+          uploadResults.metadata.successful.length > 0
+        ) {
+          uploadedAudioUrl = `${import.meta.env.VITE_BASE_URL_FILE}/${
+            uploadResults.metadata.successful[0].key
+          }`;
+        }
+      }
+
+      // Use data from Redux store instead of form values
+      const data = {
+        title: listeningStore?.currentListeningData?.title || values.title,
+        timeToDo: 35,
+        questions: {
+          questionTitle:
+            listeningStore?.currentListeningData?.subTitle || values.subTitle,
           content:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.content ||
-            values[`numberOrder${num}`] ||
-            "",
-          correctAnswer:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.correctAnswer ||
-            values[`correctAnswer${num}`] ||
-            "",
-          file: null,
-          answerList: null,
+            listeningStore?.currentListeningData?.content || values.content,
+          answerList:
+            listeningStore?.currentListeningData?.answerList ||
+            [1, 2, 3, 4, 5, 6].map((num, idx) => ({
+              id: idx + 1,
+              content: values[`optionAnswer${num}`] || "",
+            })),
+          correctAnswer: null,
+          file:
+            uploadedAudioUrl ||
+            listeningStore?.currentListeningData?.file ||
+            values.file,
+          subQuestionAnswerList: [],
+          suggestion:
+            listeningStore?.currentListeningData?.suggestion || suggestion,
+          subQuestion: [1, 2, 3, 4].map((num) => ({
+            content:
+              listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                ?.content ||
+              values[`numberOrder${num}`] ||
+              "",
+            correctAnswer:
+              listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                ?.correctAnswer ||
+              values[`correctAnswer${num}`] ||
+              "",
+            file: null,
+            answerList: null,
+            image: null,
+            suggestion: null,
+          })),
+          isExample: false,
           image: null,
-          suggestion: null,
-        })),
-        isExample: false,
-        image: null,
-      },
+        },
 
-      questionType: "LISTENING",
-      questionPart: "TWO",
-      description: null,
-    };
+        questionType: "LISTENING",
+        questionPart: "TWO",
+        description: null,
+      };
 
-    if (statusHandler === "create") {
-      createListeningPartOne(data);
-    }
-    if (statusHandler === "edit") {
-      console.log("edit");
-      updateListeningPartOne(data);
+      if (statusHandler === "create") {
+        await createListeningPartOne(data);
+      }
+      if (statusHandler === "edit") {
+        console.log("edit");
+        await updateListeningPartOne(data);
+      }
+
+      // Reset selected files và removed audio sau khi upload thành công
+      setSelectedFiles([]);
+      setRemovedAudioUrls([]);
+    } catch (error) {
+      console.error("Error uploading files:", error);
+      await notify("Lỗi upload file: " + error, {
+        type: "error",
+      });
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -424,10 +604,10 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       reset();
     } catch (error) {
       console.log({ error });
+      throw error;
     }
   };
 
-  //tentisspace
   const updateListeningPartOne = async (values: any) => {
     try {
       await dataProvider.update("Listenings", {
@@ -444,6 +624,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       notify("エラー: 生産管理の更新に失敗しました: " + error, {
         type: "warning",
       });
+      throw error;
     }
   };
 
@@ -454,6 +635,13 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
       setValue("subTitle", dataListeningPartTwo.questions[0].questionTitle);
       setValue("file", dataListeningPartTwo.questions[0].file);
       setSuggestion(dataListeningPartTwo.questions[0].suggestion);
+
+      // Set existing audio file
+      const existingAudio = [];
+      if (dataListeningPartTwo.questions[0].file) {
+        existingAudio.push(dataListeningPartTwo.questions[0].file);
+      }
+      setExistingAudioUrls(existingAudio);
 
       // Also update Redux store
       dispatch(
@@ -536,39 +724,57 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
   }, [dataListeningPartTwo, setValue, dispatch]);
 
   return (
-    <div
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      style={{ position: "relative", height: "100vh" }}
-    >
+    <Box sx={{ width: "100%", maxHeight: "90vh", overflowY: "auto", pb: 5 }}>
+      {/* Loading Progress Bar */}
+      {isUploading && (
+        <Box
+          sx={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 9999 }}
+        >
+          <LinearProgress
+            color="primary"
+            sx={{
+              height: 4,
+              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+            }}
+          />
+        </Box>
+      )}
+
       {/* Draggable Debug Panel - JSON Format */}
       <Box
         sx={{
           position: "fixed",
-          top: "140px",
+          top: "120px",
           right: "20px",
-          width: isDebugPanelOpen ? "400px" : "auto",
-          maxHeight: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.75)",
+          width: isDebugPanelOpen ? "350px" : "auto",
+          maxHeight: "70vh",
+          backgroundColor: "rgba(0, 0, 0, 0.85)",
           color: "white",
-          borderRadius: "8px",
+          borderRadius: 3,
           zIndex: 1000,
-          border: "1px solid #333",
+          border: "1px solid rgba(255, 255, 255, 0.1)",
           transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
           cursor: isDragging ? "grabbing" : "default",
           userSelect: "none",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
         }}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
       >
         {/* Header luôn hiển thị */}
         <Box
           sx={{
-            padding: "8px 12px",
-            borderBottom: isDebugPanelOpen ? "1px solid #333" : "none",
+            padding: "12px 16px",
+            borderBottom: isDebugPanelOpen
+              ? "1px solid rgba(255, 255, 255, 0.1)"
+              : "none",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            borderRadius: isDebugPanelOpen ? "8px 8px 0 0" : "8px",
+            background:
+              "linear-gradient(135deg, rgba(25, 118, 210, 0.8), rgba(66, 165, 245, 0.6))",
+            borderRadius: isDebugPanelOpen ? "12px 12px 0 0" : "12px",
             cursor: "grab",
             "&:active": {
               cursor: "grabbing",
@@ -576,45 +782,56 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
           }}
           onMouseDown={handleMouseDown}
         >
-          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
-            Redux Store Debug 🖱️ (Part 2)
-          </span>
-          <button
+          <Typography variant="body2" sx={{ fontWeight: 600 }}>
+            🔧 Redux Debug Panel (Part 2)
+          </Typography>
+          <Button
+            size="small"
             onClick={() => setIsDebugPanelOpen(!isDebugPanelOpen)}
-            style={{
-              background: "none",
-              border: "1px solid #666",
+            sx={{
+              minWidth: "auto",
+              p: 0.5,
               color: "white",
-              borderRadius: "4px",
-              padding: "4px 8px",
-              cursor: "pointer",
-              fontSize: "12px",
+              "&:hover": {
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+              },
             }}
           >
-            <span>{isDebugPanelOpen ? "▼" : "▶"}</span>
-          </button>
+            <Typography variant="body2">
+              {isDebugPanelOpen ? "▼" : "▶"}
+            </Typography>
+          </Button>
         </Box>
 
         {/* Nội dung JSON chỉ hiển thị khi expanded */}
         {isDebugPanelOpen && (
           <Box
             sx={{
-              padding: "12px",
-              maxHeight: "350px",
+              padding: "16px",
+              maxHeight: "400px",
               overflow: "auto",
+              fontSize: "11px",
+              fontFamily: "monospace",
             }}
           >
             <pre
               style={{
                 margin: 0,
-                fontSize: "10px",
-                lineHeight: "1.2",
+                lineHeight: "1.4",
                 wordWrap: "break-word",
                 whiteSpace: "pre-wrap",
+                color: "#e0e0e0",
               }}
             >
               {JSON.stringify(
-                listeningStore?.currentListeningData || {},
+                {
+                  redux: listeningStore?.currentListeningData || {},
+                  audioState: {
+                    existingAudio: existingAudioUrls,
+                    selectedFiles: selectedFiles.map((f) => f.name),
+                    removedAudio: removedAudioUrls,
+                  },
+                },
                 null,
                 2
               )}
@@ -623,201 +840,445 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
         )}
       </Box>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="form sign-up-form relative  max-h-[calc(100vh-200px)] overflow-auto"
-      >
-        <h2 className="title">Listening Part 2</h2>
-        <div>
-          <TextField
-            type="title"
-            {...register("title", { required: true })}
-            placeholder="Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.title}
-            helperText={errors.title ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="subTitle"
-            {...register("subTitle", { required: true })}
-            placeholder="Sub Title"
-            variant="outlined"
-            fullWidth
-            error={!!errors.subTitle}
-            helperText={errors.subTitle ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="mp3"
-            {...register("file", { required: true })}
-            placeholder="file am thanh"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextEditor
-            placeholder="Write something or insert a star ★"
-            suggestion={suggestion}
-            setSuggestion={setSuggestion}
-          />
-        </div>
-
-        <Box
+      {/* Main Form Container */}
+      <Fade in={true} timeout={1000}>
+        <Paper
+          elevation={8}
           sx={{
+            borderRadius: 4,
+            background: "linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)",
+            boxShadow: "0 16px 40px rgba(0, 0, 0, 0.1)",
+            overflow: "hidden",
             width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "flex",
-            justifyContent: "space-between",
-            gap: 2,
-            marginTop: "20px",
           }}
         >
-          <Box
+          <Typography
+            variant="h5"
             sx={{
-              minHeight: "200px",
-              height: "fit-content",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              padding: "16px",
-              backgroundColor: "#fafafa",
-              width: "100%",
+              fontWeight: 700,
+              ml: 4,
+              p: 2,
+              textShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
             }}
           >
-            <Box
-              sx={{
-                fontSize: "18px",
-                fontWeight: "bold",
-                marginBottom: "12px",
-                color: "#1976d2",
-              }}
-            >
-              Câu Trả Lời Chính
-            </Box>
-            <Box
-              sx={{
-                width: "100%",
-                height: "fit-content",
-                background: "#f3f3f3ad !important",
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-                boxShadow:
-                  "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-                gap: "10px",
-                padding: "10px",
-                marginTop: "20px",
-              }}
-            >
-              {[...Array(6)].map((_, index) => (
-                <TextField
-                  key={index}
-                  type={`optionAnswer${index + 1}`}
-                  {...register(`optionAnswer${index + 1}`, { required: true })}
-                  placeholder={`dap an so ${index + 1}`}
-                  variant="outlined"
-                  fullWidth
-                  error={!!errors[`optionAnswer${index + 1}`]}
-                  helperText={
-                    errors[`optionAnswer${index + 1}`]
-                      ? "This field is required"
-                      : ""
-                  }
-                />
-              ))}
-            </Box>
-          </Box>
-        </Box>
+            <Headphones sx={{ fontSize: 32, color: "primary.main" }} />
+            Listening Part 2
+          </Typography>
 
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
-            boxShadow:
-              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-            gap: "10px",
-            padding: "10px",
-            marginTop: "20px",
-          }}
-        >
-          {[1, 2, 3, 4].map((num) => (
-            <QuestionBox
-              key={num}
-              questionNumber={num}
-              register={register}
-              errors={errors}
-            />
-          ))}
-        </Box>
-
-        <Box
-          sx={{
-            width: "100%",
-            minHeight: "100px",
-            position: "relative",
-          }}
-        >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}
-            width="100%"
-            sx={{
-              backgroundColor: "#f1f1f1",
-              padding: "1rem",
-              borderRadius: "4px",
-              marginTop: "1rem",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-            }}
-            {...props}
-          >
-            <Button type="submit" variant="contained" color="info">
-              <span>Submit</span>
-            </Button>
-
-            {showCancelButton && pathTo ? (
-              <NavLink to={pathTo}>
-                <Button type="button" variant="contained" color="error">
-                  <span>Cancel</span>
-                </Button>
-              </NavLink>
-            ) : (
-              <Button
-                type="button"
-                variant="contained"
-                color="error"
-                onClick={handleCancel}
+          {/* Form Content */}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Box sx={{ p: 3 }}>
+              {/* Basic Information và Audio Upload Section - Cùng hàng */}
+              <Box
+                sx={{
+                  display: "grid",
+                  gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
+                  gap: 3,
+                  mb: 4,
+                  minHeight: "650px",
+                }}
               >
-                <span>Cancel</span>
-              </Button>
-            )}
-          </Stack>
-        </Box>
-      </form>
-    </div>
+                {/* Basic Information Section */}
+                <Grow in={true} timeout={600}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "100%",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3, height: "100%" }}>
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          mb: 3,
+                          fontWeight: 600,
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1,
+                        }}
+                      >
+                        📝 Basic Information
+                      </Typography>
+
+                      <Box sx={{ display: "grid", gap: 3 }}>
+                        {/* Title Field */}
+                        <Box>
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              mb: 1,
+                              fontWeight: 600,
+                              color: "text.secondary",
+                            }}
+                          >
+                            Title *
+                          </Typography>
+                          <TextField
+                            {...register("title", { required: true })}
+                            placeholder="Enter listening exercise title..."
+                            variant="outlined"
+                            fullWidth
+                            error={!!errors.title}
+                            helperText={
+                              errors.title
+                                ? "Title is required"
+                                : "Give your exercise a clear, descriptive title"
+                            }
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                borderRadius: 2,
+                                background: "rgba(255, 255, 255, 0.8)",
+                              },
+                            }}
+                          />
+                        </Box>
+
+                        {/* Sub Title */}
+                        <Box>
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              mb: 1,
+                              fontWeight: 600,
+                              color: "text.secondary",
+                            }}
+                          >
+                            Sub Title *
+                          </Typography>
+                          <TextField
+                            {...register("subTitle", { required: true })}
+                            placeholder="Enter sub title..."
+                            variant="outlined"
+                            fullWidth
+                            error={!!errors.subTitle}
+                            helperText={
+                              errors.subTitle ? "Sub title is required" : ""
+                            }
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                borderRadius: 2,
+                                background: "rgba(255, 255, 255, 0.8)",
+                              },
+                            }}
+                          />
+                        </Box>
+
+                        {/* Content Field */}
+                        <Box>
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              mb: 1,
+                              fontWeight: 600,
+                              color: "text.secondary",
+                            }}
+                          >
+                            Main Content *
+                          </Typography>
+                          <TextField
+                            {...register("content", { required: true })}
+                            placeholder="Enter the main content or instructions..."
+                            variant="outlined"
+                            fullWidth
+                            multiline
+                            rows={4}
+                            error={!!errors.content}
+                            helperText={
+                              errors.content
+                                ? "Content is required"
+                                : "Provide detailed instructions for the listening exercise"
+                            }
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                borderRadius: 2,
+                                background: "rgba(255, 255, 255, 0.8)",
+                              },
+                            }}
+                          />
+                        </Box>
+
+                        {/* Audio File URL (fallback) */}
+                        <Box>
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              mb: 1,
+                              fontWeight: 600,
+                              color: "text.secondary",
+                            }}
+                          >
+                            Audio File URL (Optional)
+                          </Typography>
+                          <TextField
+                            {...register("file")}
+                            placeholder="Enter audio file URL (if not uploading)..."
+                            variant="outlined"
+                            fullWidth
+                            sx={{
+                              "& .MuiOutlinedInput-root": {
+                                borderRadius: 2,
+                                background: "rgba(255, 255, 255, 0.8)",
+                              },
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                    </CardContent>
+                  </Card>
+                </Grow>
+
+                {/* Audio Upload Section */}
+                <Grow in={true} timeout={800}>
+                  <Card
+                    elevation={2}
+                    sx={{
+                      borderRadius: 3,
+                      border: "1px solid",
+                      borderColor: "grey.200",
+                      height: "fit-content",
+                    }}
+                  >
+                    <CardContent sx={{ p: 3 }}>
+                      <SimpleR2FilePreview
+                        onFilesChange={handleFilesChange}
+                        onRemoveExistingImage={handleRemoveExistingAudio}
+                        initialImageUrls={existingAudioUrls}
+                        multiple={false}
+                        maxFiles={1}
+                        acceptedFileTypes={[
+                          "audio/mp3",
+                          "audio/mpeg",
+                          "audio/wav",
+                          "audio/mp4",
+                          "audio/x-m4a",
+                        ]}
+                        fileTypeLabel="Audio File"
+                        icon="🎵"
+                      />
+                    </CardContent>
+                  </Card>
+                </Grow>
+              </Box>
+
+              {/* Text Editor Section */}
+              <Grow in={true} timeout={900}>
+                <Card
+                  elevation={2}
+                  sx={{
+                    borderRadius: 3,
+                    border: "1px solid",
+                    borderColor: "grey.200",
+                    mb: 4,
+                  }}
+                >
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        mb: 3,
+                        fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                      }}
+                    >
+                      ✨ Additional Instructions
+                    </Typography>
+                    <Box
+                      sx={{
+                        border: "1px solid",
+                        borderColor: "grey.300",
+                        borderRadius: 2,
+                        p: 2,
+                        backgroundColor: "rgba(248, 250, 252, 0.5)",
+                      }}
+                    >
+                      <TextEditor
+                        placeholder="Write additional instructions or insert special characters ★"
+                        suggestion={suggestion}
+                        setSuggestion={setSuggestion}
+                        editorId="listeningPart2Editor"
+                      />
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grow>
+
+              {/* Answer Options Section */}
+              <Grow in={true} timeout={1000}>
+                <Card
+                  elevation={2}
+                  sx={{
+                    borderRadius: 3,
+                    border: "1px solid",
+                    borderColor: "grey.200",
+                    mb: 4,
+                  }}
+                >
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        mb: 3,
+                        fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                      }}
+                    >
+                      📋 Answer Options
+                    </Typography>
+
+                    <Box
+                      sx={{
+                        display: "grid",
+                        gridTemplateColumns:
+                          "repeat(auto-fit, minmax(300px, 1fr))",
+                        gap: 2,
+                      }}
+                    >
+                      {[1, 2, 3, 4, 5, 6].map((num) => (
+                        <TextField
+                          key={num}
+                          {...register(`optionAnswer${num}`, {
+                            required: true,
+                          })}
+                          placeholder={`Option ${num}`}
+                          variant="outlined"
+                          fullWidth
+                          error={!!errors[`optionAnswer${num}`]}
+                          helperText={
+                            errors[`optionAnswer${num}`]
+                              ? "This field is required"
+                              : ""
+                          }
+                          sx={{
+                            "& .MuiOutlinedInput-root": {
+                              borderRadius: 2,
+                              background: "rgba(255, 255, 255, 0.8)",
+                            },
+                          }}
+                        />
+                      ))}
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grow>
+
+              {/* Questions Section */}
+              <Grow in={true} timeout={1100}>
+                <Box sx={{ mb: 4 }}>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      mb: 3,
+                      fontWeight: 600,
+                      textAlign: "center",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <QuestionAnswer /> Sub Questions
+                  </Typography>
+
+                  <Box
+                    sx={{
+                      display: "grid",
+                      gridTemplateColumns: {
+                        xs: "1fr",
+                        lg: "repeat(auto-fit, minmax(350px, 1fr))",
+                      },
+                      gap: 3,
+                    }}
+                  >
+                    {[1, 2, 3, 4].map((num) => (
+                      <QuestionBox
+                        key={num}
+                        questionNumber={num}
+                        register={register}
+                        errors={errors}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+              </Grow>
+
+              <Divider sx={{ my: 4 }} />
+
+              {/* Action Buttons */}
+              <Fade in={true} timeout={1200}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 3,
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    size="large"
+                    disabled={isUploading}
+                    startIcon={<Save />}
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      borderRadius: 3,
+                      background: "linear-gradient(45deg, #1976d2, #42a5f5)",
+                      boxShadow: "0 4px 15px rgba(25, 118, 210, 0.3)",
+                      "&:hover": {
+                        background: "linear-gradient(45deg, #1565c0, #1976d2)",
+                        transform: "translateY(-2px)",
+                        boxShadow: "0 6px 20px rgba(25, 118, 210, 0.4)",
+                      },
+                      "&:disabled": {
+                        background: "linear-gradient(45deg, #bdbdbd, #e0e0e0)",
+                      },
+                    }}
+                  >
+                    <Typography variant="button" component="span">
+                      {isUploading ? "Submitting..." : "Submit Exercise"}
+                    </Typography>
+                  </Button>
+
+                  {showCancelButton && (
+                    <Button
+                      type="button"
+                      variant="contained"
+                      color="error"
+                      size="large"
+                      onClick={() => navigate("/Listenings")}
+                      startIcon={<Cancel />}
+                      sx={{
+                        px: 4,
+                        py: 1.5,
+                        borderRadius: 3,
+                        boxShadow: "0 4px 15px rgba(211, 47, 47, 0.3)",
+                        "&:hover": {
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 6px 20px rgba(211, 47, 47, 0.4)",
+                        },
+                      }}
+                    >
+                      Cancel
+                    </Button>
+                  )}
+                </Box>
+              </Fade>
+            </Box>
+          </form>
+        </Paper>
+      </Fade>
+    </Box>
   );
 };
 
