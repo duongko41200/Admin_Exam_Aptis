@@ -8,10 +8,10 @@ const R2UploadService = {
    */
   uploadSingleFile(file, fileType = "general") {
     const formData = new FormData();
-    formData.append("files", file);
+    formData.append("file", file); // Sử dụng 'file' thay vì 'files' cho single upload
     formData.append("fileType", fileType);
 
-    return ApiService.post(`${serviceURL}/upload/single`, formData, {}, true) // `true` để ApiService không set Content-Type JSON
+    return ApiService.post(`${serviceURL}/upload/single`, formData, {}, true)
       .then((result) => ({
         success: true,
         data: {
@@ -36,11 +36,15 @@ const R2UploadService = {
     files.forEach((file) => formData.append("files", file));
     formData.append("fileType", fileType);
 
-    const res = await ApiService.post(`${serviceURL}/upload/multiple`, formData, {}, true)
+    const res = await ApiService.post(
+      `${serviceURL}/upload/multiple`,
+      formData,
+      {},
+      true
+    );
 
-    console.log({res});
-    return res[0]
-
+    console.log({ res });
+    return res[0];
   },
 
   /**

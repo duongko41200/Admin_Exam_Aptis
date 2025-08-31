@@ -1,5 +1,7 @@
 import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import { Button, useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -204,6 +206,27 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
   const [suggestion, setSuggestion] = useState("");
+  // Audio upload states (copied from Part Two)
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [existingAudioUrls, setExistingAudioUrls] = useState<string[]>([]);
+  const [removedAudioUrls, setRemovedAudioUrls] = useState<string[]>([]);
+  const [isUploading, setIsUploading] = useState(false);
+  // Handler to update Redux when audio files are selected
+  const handleFilesChange = (files: File[]) => {
+    setSelectedFiles(files);
+    dispatch(
+      UPDATE_LISTENING_MAIN_DATA({
+        field: "selectedAudioFiles",
+        value: files.map((f) => f.name),
+      })
+    );
+  };
+
+  // Handler to remove existing audio
+  const handleRemoveExistingAudio = (url: string) => {
+    setRemovedAudioUrls((prev) => [...prev, url]);
+    setExistingAudioUrls((prev) => prev.filter((audioUrl) => audioUrl !== url));
+  };
   const {
     register,
     handleSubmit,
@@ -427,56 +450,106 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
   ]);
 
   const onSubmit = async (values: any) => {
-    // Use data from Redux store instead of form values
-    const data = {
-      title: listeningStore?.currentListeningData?.title || values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle:
-          listeningStore?.currentListeningData?.subTitle || values.subTitle,
-        content:
-          listeningStore?.currentListeningData?.content || values.content,
-        answerList: null,
-        correctAnswer: "",
-        file: listeningStore?.currentListeningData?.file || values.file,
-        subQuestionAnswerList: [],
-        suggestion:
-          listeningStore?.currentListeningData?.suggestion || suggestion,
-        subQuestion: [1, 2].map((num) => ({
-          content:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.content ||
-            values[`contentPartFour${num}`] ||
-            "",
-          correctAnswer:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.correctAnswer ||
-            values[`answerPartFour${num}`] ||
-            "",
-          file: null,
-          answerList:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.answerList ||
-            [1, 2, 3].map((ansNum) => ({
-              content: values[`answer${ansNum}Sub${num}`] || "",
-            })),
-          image: null,
-          suggestion: null,
-        })),
-        isExample: false,
-        image: null,
-      },
-      questionType: "LISTENING",
-      questionPart: "FOUR",
-      description: null,
-    };
+    try {
+      setIsUploading(true);
 
-    if (statusHandler === "create") {
-      createListeningPartFour(data);
-    }
-    if (statusHandler === "edit") {
-      console.log("edit");
-      updateListeningPartFour(data);
+      // Delete removed audio files (if any)
+      if (removedAudioUrls.length > 0) {
+        for (const audioUrl of removedAudioUrls) {
+          try {
+            const key = audioUrl
+              .split("https://files.aptisacademy.com.vn/")
+              .pop();
+            if (key) {
+              await R2UploadService.deleteFile(key);
+            }
+          } catch (deleteError) {
+            console.error("❌ Failed to delete audio:", audioUrl, deleteError);
+          }
+        }
+      }
+
+      // Upload selected audio file (only 1 file for Part Four)
+      let uploadedAudioUrl = existingAudioUrls[0] || "";
+      if (selectedFiles.length > 0) {
+        const uploadResults = await R2UploadService.uploadMultipleFiles(
+          selectedFiles,
+          "listening"
+        );
+        if (
+          uploadResults.metadata.successful &&
+          uploadResults.metadata.successful.length > 0
+        ) {
+          uploadedAudioUrl = `${import.meta.env.VITE_BASE_URL_FILE}/${
+            uploadResults.metadata.successful[0].key
+          }`;
+        }
+      }
+
+      // Use data from Redux store instead of form values
+      const data = {
+        title: listeningStore?.currentListeningData?.title || values.title,
+        timeToDo: 35,
+        questions: {
+          questionTitle:
+            listeningStore?.currentListeningData?.subTitle || values.subTitle,
+          content:
+            listeningStore?.currentListeningData?.content || values.content,
+          answerList: null,
+          correctAnswer: "",
+          file:
+            uploadedAudioUrl ||
+            listeningStore?.currentListeningData?.file ||
+            values.file,
+          subQuestionAnswerList: [],
+          suggestion:
+            listeningStore?.currentListeningData?.suggestion || suggestion,
+          subQuestion: [1, 2].map((num) => ({
+            content:
+              listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                ?.content ||
+              values[`contentPartFour${num}`] ||
+              "",
+            correctAnswer:
+              listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                ?.correctAnswer ||
+              values[`answerPartFour${num}`] ||
+              "",
+            file: null,
+            answerList:
+              listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                ?.answerList ||
+              [1, 2, 3].map((ansNum) => ({
+                content: values[`answer${ansNum}Sub${num}`] || "",
+              })),
+            image: null,
+            suggestion: null,
+          })),
+          isExample: false,
+          image: null,
+        },
+        questionType: "LISTENING",
+        questionPart: "FOUR",
+        description: null,
+      };
+
+      if (statusHandler === "create") {
+        await createListeningPartFour(data);
+      }
+      if (statusHandler === "edit") {
+        await updateListeningPartFour(data);
+      }
+
+      // Reset upload states after submit
+      setSelectedFiles([]);
+      setRemovedAudioUrls([]);
+    } catch (error) {
+      console.error("Error uploading files:", error);
+      await notify("Lỗi upload file: " + error, {
+        type: "error",
+      });
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -520,6 +593,13 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       setValue("subTitle", dataListeningPartFour.questions[0].questionTitle);
       setValue("file", dataListeningPartFour.questions[0].file);
       setSuggestion(dataListeningPartFour.questions[0].suggestion);
+
+      // Set existing audio file
+      const existingAudio = [];
+      if (dataListeningPartFour.questions[0].file) {
+        existingAudio.push(dataListeningPartFour.questions[0].file);
+      }
+      setExistingAudioUrls(existingAudio);
 
       // Also update Redux store
       dispatch(
@@ -728,15 +808,17 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
           />
         </div>
 
-        <div>
-          <TextField
-            type="mp3"
-            {...register("file", { required: true })}
-            placeholder="file am thanh"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
+        {/* Audio Upload UI (copied from Part Two) */}
+        <div style={{ margin: "16px 0" }}>
+          <SimpleR2FilePreview
+            fileTypeLabel="Audio File (mp3) *"
+            onFilesChange={handleFilesChange}
+            initialImageUrls={existingAudioUrls}
+            onRemoveExistingImage={handleRemoveExistingAudio}
+            acceptedFileTypes={["audio/mp3", "audio/mpeg"]}
+            multiple={false}
+            maxFiles={1}
+            // isUploading is not a prop in SimpleR2FilePreview, so we omit it
           />
         </div>
 
