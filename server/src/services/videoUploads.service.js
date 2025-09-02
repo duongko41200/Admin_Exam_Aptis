@@ -245,7 +245,10 @@ class VideoUploadService {
           uploadSpeed: speedMBps,
           compressionStats,
           originalSize: fileBuffer.length,
-          finalSize: (typeof finalBuffer !== 'undefined' ? finalBuffer.length : fileBuffer.length),
+          finalSize:
+            typeof finalBuffer !== "undefined"
+              ? finalBuffer.length
+              : fileBuffer.length,
           // You can add more fields as needed
         },
       };
