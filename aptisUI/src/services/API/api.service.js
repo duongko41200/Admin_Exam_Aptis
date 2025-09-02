@@ -1,10 +1,10 @@
 import axiosBase from "axios";
 
-const apiUrl = "/v1/api";
+const apiUrl = "v1/api";
 
 const axios = axiosBase.create({
-  baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL || "http://localhost:3333/",
-  timeout: 10_000,
+  baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL || "http://localhost:3333",
+  timeout: 50000,
   withCredentials: true,
 });
 
@@ -53,9 +53,9 @@ axios.interceptors.response.use(
       (status === 401 || status === 500) &&
       window.location.pathname !== "/login"
     ) {
-      ToastError(
-        "Chúng tôi cần xác minh danh tính của bạn. Vui lòng đăng nhập lại."
-      );
+      // ToastError(
+      //   "Chúng tôi cần xác minh danh tính của bạn. Vui lòng đăng nhập lại."
+      // );
       localStorage.removeItem("accessToken");
       localStorage.removeItem("refreshToken");
       localStorage.removeItem("userId");

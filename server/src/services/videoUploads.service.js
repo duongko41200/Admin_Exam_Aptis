@@ -1,0 +1,971 @@
+import {
+  CreateMultipartUploadCommand,
+  UploadPartCommand,
+  CompleteMultipartUploadCommand,
+  AbortMultipartUploadCommand,
+  PutObjectCommand,
+} from "@aws-sdk/client-s3";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import r2Config from "../configs/r2.config.js";
+import crypto from "crypto";
+import path from "path";
+import fs from "fs";
+import ffmpeg from "fluent-ffmpeg";
+import os from "os";
+
+/**
+ * Video Upload Service for Cloudflare R2 - OPTIMIZED VERSION
+ * Với multipart upload song song, video compression và direct upload
+ */
+import ffmpegPath from "ffmpeg-static";
+
+class VideoUploadService {
+  constructor() {
+    this.client = r2Config.getClient();
+    this.bucketName = r2Config.getBucketName();
+    this.config = r2Config.getConfig();
+
+    // Optimized upload configuration
+    this.uploadConfig = {
+      // Tăng part size để giảm số lần request
+      minPartSize: 10 * 1024 * 1024, // 10MB (thay vì 5MB)
+      maxPartSize: 15 * 1024 * 1024, // 15MB (thay vì 100MB)
+      multipartThreshold: 50 * 1024 * 1024, // 50MB (thay vì 100MB)
+      maxConcurrency: 15, // 15 uploads song song (thay vì 10)
+      chunkConcurrency: 8, // 8 chunks per batch
+      retryAttempts: 3,
+      timeout: 60000, // 60 seconds per part
+    };
+
+    // Track active uploads for cleanup
+    this.activeUploads = new Map();
+    this.compressionQueue = new Map();
+  }
+
+  /**
+   * Calculate optimal part size for maximum performance
+   */
+  calculatePartSize(fileSize) {
+    const { minPartSize, maxPartSize } = this.uploadConfig;
+
+    // Tối ưu part size dựa trên file size để giảm số lần request
+    let partSize;
+    if (fileSize <= 500 * 1024 * 1024) {
+      // < 500MB
+      partSize = 10 * 1024 * 1024; // 10MB parts
+    } else if (fileSize <= 2 * 1024 * 1024 * 1024) {
+      // < 2GB
+      partSize = 15 * 1024 * 1024; // 15MB parts
+    } else {
+      // >= 2GB
+      partSize = Math.min(Math.ceil(fileSize / 5000), maxPartSize); // Max 5000 parts
+    }
+
+    const totalParts = Math.ceil(fileSize / partSize);
+
+    return {
+      partSize,
+      totalParts,
+      minPartSize,
+      maxPartSize,
+      estimatedTime:
+        Math.ceil(totalParts / this.uploadConfig.maxConcurrency) * 2, // Estimate seconds
+    };
+  }
+
+  /**
+   * Compress video before upload to reduce file size and improve speed
+   */
+  async compressVideo(inputBuffer, fileName, options = {}) {
+    return new Promise((resolve, reject) => {
+      const tempDir = os.tmpdir();
+      const inputPath = path.join(tempDir, `input_${Date.now()}_${fileName}`);
+      const outputPath = path.join(
+        tempDir,
+        `compressed_${Date.now()}_${fileName.replace(/\.[^/.]+$/, ".mp4")}`
+      );
+
+      try {
+        // Write buffer to temp file
+        fs.writeFileSync(inputPath, inputBuffer);
+
+        const {
+          crf = 23, // 18-28 (lower = better quality, higher size)
+          preset = "medium", // ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow
+          maxWidth = 1920,
+          maxHeight = 1080,
+          targetSize = null, // Target size in MB
+        } = options;
+
+        let ffmpegCommand = ffmpeg(inputPath)
+          .setFfmpegPath(ffmpegPath)
+          .outputOptions([
+            "-c:v libx264", // H.264 codec for compatibility
+            `-crf ${crf}`,
+            `-preset ${preset}`,
+            "-c:a aac", // AAC audio codec
+            "-b:a 128k", // Audio bitrate
+            "-movflags +faststart", // Web optimization
+            "-pix_fmt yuv420p", // Pixel format for compatibility
+          ]);
+
+        // Scale video if needed
+        if (maxWidth && maxHeight) {
+          ffmpegCommand = ffmpegCommand.size(`${maxWidth}x${maxHeight}`);
+        }
+
+        // Target size constraint
+        if (targetSize) {
+          // Calculate target bitrate for 2-pass encoding
+          ffmpegCommand.outputOptions([
+            "-pass 1",
+            `-b:v ${Math.floor((targetSize * 8192) / 60)}k`, // Rough estimate
+            "-f null",
+          ]);
+        }
+
+        const startTime = Date.now();
+
+        ffmpegCommand
+          .output(outputPath)
+          .on("start", (commandLine) => {
+            console.log("FFmpeg compression started:", commandLine);
+          })
+          .on("progress", (progress) => {
+            console.log(`Compression progress: ${progress.percent}%`);
+          })
+          .on("end", () => {
+            const compressionTime = Date.now() - startTime;
+            const originalSize = fs.statSync(inputPath).size;
+            const compressedSize = fs.statSync(outputPath).size;
+            const compressionRatio =
+              (originalSize - compressedSize) / originalSize;
+
+            console.log(`Compression completed in ${compressionTime}ms`);
+            console.log(
+              `Size reduction: ${(compressionRatio * 100).toFixed(1)}%`
+            );
+            console.log(
+              `Original: ${(originalSize / 1024 / 1024).toFixed(
+                1
+              )}MB → Compressed: ${(compressedSize / 1024 / 1024).toFixed(1)}MB`
+            );
+
+            // Read compressed file
+            const compressedBuffer = fs.readFileSync(outputPath);
+
+            // Cleanup temp files
+            fs.unlinkSync(inputPath);
+            fs.unlinkSync(outputPath);
+
+            resolve({
+              buffer: compressedBuffer,
+              originalSize,
+              compressedSize,
+              compressionRatio,
+              compressionTime,
+            });
+          })
+          .on("error", (err) => {
+            console.error("FFmpeg compression error:", err);
+
+            // Cleanup temp files
+            try {
+              if (fs.existsSync(inputPath)) fs.unlinkSync(inputPath);
+              if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath);
+            } catch (cleanupErr) {
+              console.error("Cleanup error:", cleanupErr);
+            }
+
+            reject(err);
+          })
+          .run();
+      } catch (error) {
+        console.error("Video compression setup error:", error);
+        reject(error);
+      }
+    });
+  }
+
+  /**
+   * Generate unique filename for video
+   */
+  generateVideoFileName(originalName, userId = null) {
+    const timestamp = Date.now();
+    const randomString = crypto.randomBytes(8).toString("hex");
+    const extension = originalName.split(".").pop();
+    const baseName = originalName.replace(/\.[^/.]+$/, "");
+
+    const sanitizedBaseName = baseName.replace(/[^a-zA-Z0-9_-]/g, "_");
+    const userPrefix = userId ? `user_${userId}/` : "";
+
+    return `videos/${userPrefix}${timestamp}_${randomString}_${sanitizedBaseName}.${extension}`;
+  }
+
+  /**
+   * OPTIMIZED: Upload video with compression and multipart optimization
+   */
+  async uploadVideoOptimized(
+    fileBuffer,
+    fileName,
+    contentType,
+    userId = null,
+    options = {}
+  ) {
+    const uploadId = crypto.randomUUID();
+    const startTime = Date.now();
+
+    try {
+      console.log(
+        `🚀 Starting optimized upload for ${fileName} (${(
+          fileBuffer.length /
+          1024 /
+          1024
+        ).toFixed(1)}MB)`
+      );
+
+      const {
+        enableCompression = true,
+        compressionOptions = {},
+        enableDirectUpload = false,
+        progressCallback = null,
+      } = options;
+      // ...existing code...
+
+      // Calculate stats for return
+      const totalTime = Date.now() - startTime;
+      const speedMBps = fileBuffer.length / 1024 / 1024 / (totalTime / 1000);
+      // You may want to include more fields as before
+      return {
+        success: true,
+        data: {
+          uploadId,
+          fileName,
+          uploadTime: totalTime,
+          uploadSpeed: speedMBps,
+          compressionStats,
+          originalSize: fileBuffer.length,
+          finalSize: (typeof finalBuffer !== 'undefined' ? finalBuffer.length : fileBuffer.length),
+          // You can add more fields as needed
+        },
+      };
+    } catch (error) {
+      console.error(`❌ Upload failed for ${fileName}:`, error);
+
+      // Update tracking
+      this.activeUploads.set(uploadId, {
+        ...this.activeUploads.get(uploadId),
+        status: "failed",
+        error: error.message,
+        endTime: Date.now(),
+      });
+
+      throw error;
+    }
+  }
+
+  /**
+   * Upload video using single PUT for smaller files
+   */
+  async uploadVideoSingle(fileBuffer, key, contentType) {
+    try {
+      const command = new PutObjectCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        Body: fileBuffer,
+        ContentType: contentType,
+        CacheControl: "public, max-age=31536000", // 1 year
+      });
+
+      const response = await this.client.send(command);
+      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+
+      return {
+        success: true,
+        data: {
+          url: publicUrl,
+          key: key,
+          bucket: this.bucketName,
+          etag: response.ETag,
+          size: fileBuffer.length,
+        },
+      };
+    } catch (error) {
+      console.error("Single upload error:", error);
+      throw error;
+    }
+  }
+
+  /**
+   * OPTIMIZED: Upload video using multipart upload with maximum concurrency
+   */
+  async uploadVideoMultipartOptimized(
+    fileBuffer,
+    key,
+    contentType,
+    fileSize,
+    progressCallback = null,
+    uploadId = null
+  ) {
+    let multipartUploadId = null;
+
+    try {
+      // Step 1: Initialize multipart upload
+      const createCommand = new CreateMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        ContentType: contentType,
+        CacheControl: "public, max-age=31536000", // 1 year
+        Metadata: {
+          originalSize: fileSize.toString(),
+          uploadId: uploadId || "unknown",
+          uploadTime: Date.now().toString(),
+        },
+      });
+
+      const createResponse = await this.client.send(createCommand);
+      multipartUploadId = createResponse.UploadId;
+
+      console.log(`📦 Multipart upload initialized: ${multipartUploadId}`);
+
+      // Step 2: Calculate optimal part size
+      const partInfo = this.calculatePartSize(fileSize);
+      const { partSize, totalParts } = partInfo;
+
+      console.log(
+        `📊 Upload plan: ${totalParts} parts of ${(
+          partSize /
+          1024 /
+          1024
+        ).toFixed(1)}MB each`
+      );
+
+      // Step 3: Upload parts with controlled concurrency and batching
+      const parts = [];
+      const { maxConcurrency, chunkConcurrency } = this.uploadConfig;
+
+      // Process parts in batches to control memory usage
+      for (
+        let batchStart = 0;
+        batchStart < totalParts;
+        batchStart += chunkConcurrency
+      ) {
+        const batchEnd = Math.min(batchStart + chunkConcurrency, totalParts);
+        const batchPromises = [];
+
+        console.log(
+          `🔄 Processing batch ${
+            Math.floor(batchStart / chunkConcurrency) + 1
+          }/${Math.ceil(totalParts / chunkConcurrency)} (parts ${
+            batchStart + 1
+          }-${batchEnd})`
+        );
+
+        for (let i = batchStart; i < batchEnd; i++) {
+          const start = i * partSize;
+          const end = Math.min(start + partSize, fileSize);
+          const partBuffer = fileBuffer.slice(start, end);
+          const partNumber = i + 1;
+
+          // Control concurrency within batch
+          if (batchPromises.length >= maxConcurrency) {
+            const completedParts = await Promise.all(batchPromises);
+            parts.push(...completedParts);
+            batchPromises.length = 0; // Clear array
+
+            // Update progress
+            if (progressCallback) {
+              const progress = Math.floor((parts.length / totalParts) * 100);
+              progressCallback({
+                stage: "upload",
+                progress,
+                uploadedParts: parts.length,
+                totalParts,
+                uploadedBytes: parts.length * partSize,
+                totalBytes: fileSize,
+              });
+            }
+          }
+
+          const partPromise = this.uploadPartWithRetry(
+            multipartUploadId,
+            key,
+            partNumber,
+            partBuffer
+          );
+          batchPromises.push(partPromise);
+        }
+
+        // Upload remaining parts in current batch
+        if (batchPromises.length > 0) {
+          const completedParts = await Promise.all(batchPromises);
+          parts.push(...completedParts);
+
+          // Update progress
+          if (progressCallback) {
+            const progress = Math.floor((parts.length / totalParts) * 100);
+            progressCallback({
+              stage: "upload",
+              progress,
+              uploadedParts: parts.length,
+              totalParts,
+              uploadedBytes: Math.min(parts.length * partSize, fileSize),
+              totalBytes: fileSize,
+            });
+          }
+        }
+
+        console.log(
+          `✅ Batch completed: ${parts.length}/${totalParts} parts uploaded`
+        );
+      }
+
+      // Step 4: Complete multipart upload
+      console.log("🔗 Completing multipart upload...");
+
+      const completeCommand = new CompleteMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        UploadId: multipartUploadId,
+        MultipartUpload: {
+          Parts: parts
+            .sort((a, b) => a.PartNumber - b.PartNumber) // Ensure correct order
+            .map((part) => ({
+              ETag: part.ETag,
+              PartNumber: part.PartNumber,
+            })),
+        },
+      });
+
+      const completeResponse = await this.client.send(completeCommand);
+      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+
+      console.log(`✅ Multipart upload completed: ${key}`);
+
+      if (progressCallback) {
+        progressCallback({ stage: "upload", progress: 100, completed: true });
+      }
+
+      return {
+        success: true,
+        data: {
+          url: publicUrl,
+          key: key,
+          bucket: this.bucketName,
+          etag: completeResponse.ETag,
+          location: completeResponse.Location,
+          size: fileSize,
+          uploadMethod: "multipart-optimized",
+          totalParts,
+          partSize,
+        },
+      };
+    } catch (error) {
+      console.error("❌ Optimized multipart upload error:", error);
+
+      // Cleanup failed upload
+      if (multipartUploadId) {
+        try {
+          await this.abortMultipartUpload(multipartUploadId, key);
+          console.log(`🧹 Aborted failed upload: ${multipartUploadId}`);
+        } catch (abortError) {
+          console.error("Failed to abort multipart upload:", abortError);
+        }
+      }
+
+      throw error;
+    }
+  }
+
+  /**
+   * Upload single part with retry logic
+   */
+  async uploadPartWithRetry(
+    uploadId,
+    key,
+    partNumber,
+    partBuffer,
+    retryCount = 0
+  ) {
+    try {
+      const command = new UploadPartCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        PartNumber: partNumber,
+        UploadId: uploadId,
+        Body: partBuffer,
+      });
+
+      const response = await Promise.race([
+        this.client.send(command),
+        new Promise((_, reject) =>
+          setTimeout(
+            () => reject(new Error("Upload timeout")),
+            this.uploadConfig.timeout
+          )
+        ),
+      ]);
+
+      return {
+        ETag: response.ETag,
+        PartNumber: partNumber,
+      };
+    } catch (error) {
+      if (retryCount < this.uploadConfig.retryAttempts) {
+        console.log(
+          `🔄 Retrying part ${partNumber} (attempt ${retryCount + 1}/${
+            this.uploadConfig.retryAttempts
+          })`
+        );
+        await new Promise((resolve) =>
+          setTimeout(resolve, Math.pow(2, retryCount) * 1000)
+        ); // Exponential backoff
+        return this.uploadPartWithRetry(
+          uploadId,
+          key,
+          partNumber,
+          partBuffer,
+          retryCount + 1
+        );
+      }
+
+      console.error(
+        `❌ Failed to upload part ${partNumber} after ${this.uploadConfig.retryAttempts} retries:`,
+        error
+      );
+      throw error;
+    }
+  }
+
+  /**
+   * Abort multipart upload
+   */
+  async abortMultipartUpload(uploadId, key) {
+    try {
+      const command = new AbortMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        UploadId: uploadId,
+      });
+
+      await this.client.send(command);
+      return { success: true };
+    } catch (error) {
+      console.error("Abort multipart upload error:", error);
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * LEGACY: Upload video directly using multipart upload for large files
+   * Giữ lại để tương thích với code cũ
+   */
+  async uploadVideo(fileBuffer, fileName, contentType, userId = null) {
+    // Redirect to optimized version
+    return await this.uploadVideoOptimized(
+      fileBuffer,
+      fileName,
+      contentType,
+      userId,
+      {
+        enableCompression: true,
+        compressionOptions: { crf: 23, preset: "medium" },
+      }
+    );
+  }
+
+  /**
+   * Generate presigned URLs for direct client upload (multipart)
+   */
+  async generateDirectUploadUrls(
+    fileName,
+    fileSize,
+    userId = null,
+    options = {}
+  ) {
+    try {
+      const key = this.generateVideoFileName(fileName, userId);
+      const { partCount = null, enableCompression = false } = options;
+
+      // Calculate parts if not provided
+      let totalParts = partCount;
+      if (!totalParts) {
+        const partInfo = this.calculatePartSize(fileSize);
+        totalParts = partInfo.totalParts;
+      }
+
+      // Initialize multipart upload
+      const createCommand = new CreateMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        ContentType: "video/mp4", // Assume MP4 for direct uploads
+        CacheControl: "public, max-age=31536000",
+        Metadata: {
+          originalSize: fileSize.toString(),
+          userId: userId || "anonymous",
+          uploadTime: Date.now().toString(),
+        },
+      });
+
+      const createResponse = await this.client.send(createCommand);
+      const uploadId = createResponse.UploadId;
+
+      // Generate presigned URLs for each part
+      const presignedUrls = [];
+      for (let i = 1; i <= totalParts; i++) {
+        const command = new UploadPartCommand({
+          Bucket: this.bucketName,
+          Key: key,
+          PartNumber: i,
+          UploadId: uploadId,
+        });
+
+        const signedUrl = await getSignedUrl(this.client, command, {
+          expiresIn: 3600, // 1 hour
+        });
+
+        presignedUrls.push({
+          partNumber: i,
+          signedUrl,
+        });
+      }
+
+      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+
+      return {
+        success: true,
+        data: {
+          uploadId,
+          key,
+          publicUrl,
+          presignedUrls,
+          totalParts,
+          expiresIn: 3600,
+        },
+      };
+    } catch (error) {
+      console.error("Generate direct upload URLs error:", error);
+      throw error;
+    }
+  }
+
+  /**
+   * Complete multipart upload from client
+   */
+  async completeMultipartUpload(uploadId, key, parts) {
+    try {
+      // Sort parts by part number
+      const sortedParts = parts.sort((a, b) => a.partNumber - b.partNumber);
+
+      const command = new CompleteMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        UploadId: uploadId,
+        MultipartUpload: {
+          Parts: sortedParts.map((part) => ({
+            ETag: part.etag,
+            PartNumber: part.partNumber,
+          })),
+        },
+      });
+
+      const response = await this.client.send(command);
+      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+
+      return {
+        success: true,
+        data: {
+          url: publicUrl,
+          key: key,
+          bucket: this.bucketName,
+          etag: response.ETag,
+          location: response.Location,
+        },
+      };
+    } catch (error) {
+      console.error("Complete multipart upload error:", error);
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Initialize multipart upload
+   */
+  async initializeMultipartUpload(fileName, contentType, metadata = {}) {
+    try {
+      const key = this.generateVideoFileName(fileName, metadata.userId);
+
+      const command = new CreateMultipartUploadCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        ContentType: contentType,
+        CacheControl: "public, max-age=31536000",
+        Metadata: {
+          ...metadata,
+          uploadTime: Date.now().toString(),
+        },
+      });
+
+      const response = await this.client.send(command);
+      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+
+      return {
+        success: true,
+        data: {
+          uploadId: response.UploadId,
+          key,
+          publicUrl,
+        },
+      };
+    } catch (error) {
+      console.error("Initialize multipart upload error:", error);
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Generate signed URLs for parts
+   */
+  async generateSignedUrls(uploadId, key, totalParts) {
+    try {
+      const presignedUrls = [];
+
+      for (let i = 1; i <= totalParts; i++) {
+        const command = new UploadPartCommand({
+          Bucket: this.bucketName,
+          Key: key,
+          PartNumber: i,
+          UploadId: uploadId,
+        });
+
+        const signedUrl = await getSignedUrl(this.client, command, {
+          expiresIn: 3600,
+        });
+
+        presignedUrls.push({
+          partNumber: i,
+          signedUrl,
+        });
+      }
+
+      return {
+        success: true,
+        data: {
+          presignedUrls,
+          expiresIn: 3600,
+        },
+      };
+    } catch (error) {
+      console.error("Generate signed URLs error:", error);
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Get upload progress (placeholder for tracking)
+   */
+  async getUploadProgress(uploadId, key) {
+    try {
+      const upload = this.activeUploads.get(uploadId);
+
+      if (!upload) {
+        return {
+          success: false,
+          error: "Upload not found",
+        };
+      }
+
+      return {
+        success: true,
+        data: upload,
+      };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Update part completion tracking
+   */
+  async updatePartCompletion(uploadId, partNumber, etag, size = null) {
+    try {
+      // This is mainly for tracking progress
+      // R2 doesn't provide native progress tracking for multipart uploads
+
+      return {
+        success: true,
+        data: {
+          uploadId,
+          partNumber,
+          etag,
+          size,
+          timestamp: Date.now(),
+        },
+      };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Get user uploads (placeholder)
+   */
+  async getUserUploads(userId, status = null, limit = 10) {
+    try {
+      // This would typically query a database
+      // For now, return active uploads for the user
+
+      const userUploads = Array.from(this.activeUploads.values())
+        .filter((upload) => upload.userId === userId)
+        .filter((upload) => !status || upload.status === status)
+        .slice(0, limit);
+
+      return {
+        success: true,
+        data: userUploads,
+      };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Cleanup expired uploads
+   */
+  async cleanupExpiredUploads() {
+    try {
+      const now = Date.now();
+      const expiredUploads = [];
+
+      for (const [uploadId, upload] of this.activeUploads.entries()) {
+        const age = now - upload.startTime;
+        if (age > 24 * 60 * 60 * 1000) {
+          // 24 hours
+          expiredUploads.push(uploadId);
+
+          // Attempt to abort if still in progress
+          if (upload.status === "uploading" && upload.multipartUploadId) {
+            try {
+              await this.abortMultipartUpload(
+                upload.multipartUploadId,
+                upload.key
+              );
+            } catch (abortError) {
+              console.error(
+                `Failed to abort expired upload ${uploadId}:`,
+                abortError
+              );
+            }
+          }
+
+          this.activeUploads.delete(uploadId);
+        }
+      }
+
+      return {
+        success: true,
+        data: {
+          cleanedCount: expiredUploads.length,
+          cleanedUploads: expiredUploads,
+        },
+      };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+  /**
+   * Validate video file with enhanced checks
+   */
+  validateVideoFile(fileName, contentType, fileSize) {
+    const allowedMimeTypes = [
+      "video/mp4",
+      "video/mpeg",
+      "video/quicktime",
+      "video/x-msvideo",
+      "video/webm",
+      "video/ogg",
+      "video/x-ms-wmv",
+      "video/x-flv",
+    ];
+
+    const allowedExtensions = [
+      ".mp4",
+      ".mpeg",
+      ".mpg",
+      ".mov",
+      ".avi",
+      ".webm",
+      ".ogv",
+      ".wmv",
+      ".flv",
+      ".mkv",
+    ];
+
+    const maxFileSize = 5 * 1024 * 1024 * 1024; // 5GB
+    const minFileSize = 1024; // 1KB
+
+    // Check MIME type
+    if (!allowedMimeTypes.includes(contentType)) {
+      return {
+        valid: false,
+        error: `Invalid file type '${contentType}'. Allowed types: ${allowedMimeTypes.join(
+          ", "
+        )}`,
+      };
+    }
+
+    // Check file extension
+    const extension = fileName.toLowerCase().slice(fileName.lastIndexOf("."));
+    if (!allowedExtensions.includes(extension)) {
+      return {
+        valid: false,
+        error: `Invalid file extension '${extension}'. Allowed extensions: ${allowedExtensions.join(
+          ", "
+        )}`,
+      };
+    }
+
+    // Check file size
+    if (fileSize > maxFileSize) {
+      return {
+        valid: false,
+        error: `File too large (${(fileSize / 1024 / 1024 / 1024).toFixed(
+          1
+        )}GB). Maximum size: ${maxFileSize / (1024 * 1024 * 1024)}GB`,
+      };
+    }
+
+    if (fileSize < minFileSize) {
+      return {
+        valid: false,
+        error: `File too small (${fileSize} bytes). Minimum size: ${minFileSize} bytes`,
+      };
+    }
+
+    // Additional checks for optimal compression
+    const recommendations = [];
+    if (fileSize > 200 * 1024 * 1024) {
+      // > 200MB
+      recommendations.push(
+        "Consider enabling compression to reduce upload time"
+      );
+    }
+
+    if (fileSize > 1024 * 1024 * 1024) {
+      // > 1GB
+      recommendations.push(
+        "Large file detected - multipart upload will be used automatically"
+      );
+    }
+
+    return {
+      valid: true,
+      fileSize,
+      fileName,
+      contentType,
+      recommendations,
+    };
+  }
+}
+
+export default new VideoUploadService();

@@ -1,7 +1,7 @@
 "use strict";
 
 import JWT from "jsonwebtoken";
-import asyncHandle from "../helpers/asyncHandle.js";
+import { asyncHandle } from "../helpers/asyncHandle.js";
 import { AuthFailureError, NotFoundError } from "../cores/Error.response.js";
 import keyTokenService from "../services/keyToken.service.js";
 import { decryptAES } from "../lib/cryptoUtils.js";
@@ -84,7 +84,6 @@ const authenticationV2 = asyncHandle(async (req, res, next) => {
    * 5_check Key store with this userId
    * 6_OK all => return next()
    */
-
 
   const userIdDecoded = await decryptAES(req.headers[HEADER.CLIENT_ID]);
 
