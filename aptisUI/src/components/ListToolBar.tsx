@@ -3,13 +3,17 @@ import { UPDATED_SUCCESS } from "../consts/general";
 import dataProvider from "../providers/dataProviders/dataProvider";
 import { CreateButton, TopToolbar, useNotify } from "react-admin";
 
+interface ListToolBarProps {
+  resource: string;
+  isShowCreate?: boolean;
+  customActions?: React.ReactNode; // ✅ Thêm prop cho custom actions
+}
+
 export const ListToolBar = ({
-  isShowCreate,
   resource,
-}: {
-  isShowCreate: boolean;
-  resource?: any;
-}) => {
+  isShowCreate = true,
+  customActions,
+}: ListToolBarProps) => {
   const notify = useNotify();
 
   const handleReset = async () => {
@@ -102,8 +106,8 @@ export const ListToolBar = ({
           )}
         </>
       )}
-
       {isShowCreate && <CreateButton label="新規登録" />}
+      {customActions} {/* ✅ Render custom actions */}
     </TopToolbar>
   );
 };

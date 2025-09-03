@@ -187,6 +187,11 @@ const VideoService = {
       size,
     });
   },
+
+  // Clean up videos folder and failed uploads
+  async cleanupVideos(options = {}) {
+    return ApiService.post(`${serviceURL}/cleanup`, options);
+  },
 };
 
 export default VideoService;

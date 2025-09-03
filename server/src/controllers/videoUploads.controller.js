@@ -464,6 +464,39 @@ class VideoUploadController {
         throw new InternalServerError(uploadResult.error || "Upload failed");
       }
 
+      // Validate compression results if enabled
+      if (
+        uploadResult.data.compressionStats &&
+        uploadResult.data.compressionStats.success
+      ) {
+        const { compressionStats } = uploadResult.data;
+        const actualReduction =
+          compressionStats.actualCompressionPercent ||
+          compressionStats.compressionRatio * 100;
+
+        if (actualReduction < 20) {
+          console.warn(
+            `⚠️ Low compression achieved: ${actualReduction.toFixed(1)}%`
+          );
+        }
+
+        // Add compression info to response
+        uploadResult.data.compressionInfo = {
+          originalSizeMB: (compressionStats.originalSize / 1024 / 1024).toFixed(
+            1
+          ),
+          compressedSizeMB: (
+            compressionStats.compressedSize /
+            1024 /
+            1024
+          ).toFixed(1),
+          reductionPercent: actualReduction.toFixed(1),
+          compressionTimeSeconds: (
+            compressionStats.compressionTime / 1000
+          ).toFixed(1),
+        };
+      }
+
       new SuccessResponse({
         message: "Video uploaded successfully with optimization",
         metadata: {
@@ -552,6 +585,54 @@ class VideoUploadController {
       }).send(res);
     } catch (error) {
       next(error);
+    }
+  };
+
+  /**
+   * Clean up videos folder and failed uploads
+   * POST /api/video/cleanup
+   */
+  cleanupVideos = async (req, res, next) => {
+    try {
+      console.log("🧹 Starting cleanup process...", req.body);
+
+      const {
+        deleteAllVideos = false,
+        abortOngoingUploads = true,
+        deleteExpiredOnly = true,
+        olderThanHours = 24,
+      } = req.body;
+
+      const result = await videoUploadService.cleanupVideosFolder({
+        deleteAllVideos,
+        abortOngoingUploads,
+        deleteExpiredOnly,
+        olderThanHours,
+      });
+
+      console.log("🧹 Cleanup result:", result);
+
+      if (!result.success) {
+        return res.status(500).json({
+          success: false,
+          message: "Cleanup failed",
+          error: result.error,
+          data: result.data,
+        });
+      }
+
+      res.status(200).json({
+        success: true,
+        message: "Cleanup completed successfully",
+        data: result.data,
+      });
+    } catch (error) {
+      console.error("❌ Cleanup controller error:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal server error during cleanup",
+        error: error.message,
+      });
     }
   };
 }

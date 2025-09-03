@@ -291,22 +291,29 @@ const VideoUpload = forwardRef<VideoUploadRef, VideoUploadProps>(
           ).toFixed(1)}MB)`
         );
 
-        // Get user ID from localStorage
         const userId = localStorage.getItem("userId") || null;
-
-        // Determine compression settings based on file size
         const fileSizeMB = file.size / 1024 / 1024;
+
+        // ✅ Enhanced compression settings based on file size
         const compressionOptions = {
-          enableCompression: fileSizeMB > 50, // Enable compression for files > 50MB
-          crf: fileSizeMB > 200 ? 25 : 23, // More compression for larger files
-          preset: fileSizeMB > 500 ? "fast" : "medium", // Faster preset for very large files
+          enableCompression: fileSizeMB > 20, // Enable for files > 20MB
+          crf: fileSizeMB > 200 ? 30 : fileSizeMB > 100 ? 28 : 25, // More aggressive for larger files
+          preset: fileSizeMB > 500 ? "fast" : "medium",
+          targetCompressionRatio: fileSizeMB > 200 ? 0.3 : 0.5, // ✅ 30% target for large files
           maxWidth: 1920,
           maxHeight: 1080,
+          codec: "libx264", // Could be libx265 if supported
+          audioBitrate: "96k", // Lower audio bitrate
         };
 
         console.log(`📊 Compression settings:`, compressionOptions);
+        console.log(
+          `🎯 Expected size reduction: ${fileSizeMB.toFixed(1)}MB → ${(
+            fileSizeMB * compressionOptions.targetCompressionRatio
+          ).toFixed(1)}MB`
+        );
 
-        // Upload video with optimization and progress tracking
+        // Upload with enhanced settings
         const [result, error] = await VideoService.uploadVideoWithProgress(
           file,
           userId,
@@ -315,9 +322,9 @@ const VideoUpload = forwardRef<VideoUploadRef, VideoUploadProps>(
             console.log(`Progress update:`, progress);
 
             if (progress.stage === "compression") {
-              setUploadProgress(Math.floor(progress.progress * 0.3)); // Compression = 30% of total
+              setUploadProgress(Math.floor(progress.progress * 0.4)); // Compression = 40% of total
             } else if (progress.stage === "upload") {
-              setUploadProgress(30 + Math.floor(progress.progress * 0.7)); // Upload = 70% of total
+              setUploadProgress(40 + Math.floor(progress.progress * 0.6)); // Upload = 60% of total
             }
           }
         );
@@ -327,26 +334,24 @@ const VideoUpload = forwardRef<VideoUploadRef, VideoUploadProps>(
         }
 
         console.log(`✅ Upload completed successfully:`, result);
-
         setUploadProgress(100);
 
-        // Show performance stats if available
-        if (result.metadata?.performance) {
-          const { uploadTime, uploadSpeed, compressionStats } =
-            result.metadata.performance;
-          console.log(`📈 Performance stats:
-            - Upload time: ${(uploadTime / 1000).toFixed(1)}s
-            - Upload speed: ${uploadSpeed.toFixed(1)} MB/s
-            ${
-              compressionStats
-                ? `- Compression: ${(
-                    compressionStats.compressionRatio * 100
-                  ).toFixed(1)}% reduction`
-                : ""
-            }`);
+        // ✅ Show enhanced performance stats
+        if (result.metadata?.compressionStats) {
+          const { compressionStats } = result.metadata;
+          console.log(`📈 Compression Performance:
+        - Original: ${(compressionStats.originalSize / 1024 / 1024).toFixed(
+          1
+        )}MB
+        - Final: ${(compressionStats.compressedSize / 1024 / 1024).toFixed(1)}MB
+        - Reduction: ${
+          compressionStats.actualCompressionPercent?.toFixed(1) ||
+          (compressionStats.compressionRatio * 100).toFixed(1)
+        }%
+        - Time: ${(compressionStats.compressionTime / 1000).toFixed(1)}s`);
         }
 
-        return result.metadata.url; // Return URL to parent component
+        return result.metadata.url;
       } catch (error) {
         console.error("❌ Upload error:", error);
         setError(error.message);

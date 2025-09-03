@@ -16,7 +16,7 @@ import lectureRouter from "./lectures/index.js";
 import studyProcessRouter from "./study-process/index.js";
 import adminAccessRouter from "./admin/access/index.js";
 import r2Router from "./r2/index.js";
-import videoRouter from "./videos-upload/index.js";
+import videoUploadRouter from "./videos-upload/index.js";
 
 const router = express.Router();
 
@@ -46,6 +46,6 @@ router.use("/v1/api/classrooms", classRoomRouter);
 router.use("/v1/api/cache-data", redisDataRouter);
 router.use("/v1/api/study-process", studyProcessRouter);
 router.use("/v1/api/r2", r2Router);
-router.use("/v1/api/video", videoRouter);
+router.use("/v1/api/video", videoUploadRouter); // ✅ Đảm bảo có dòng này
 
 export default router;

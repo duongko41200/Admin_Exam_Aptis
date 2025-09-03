@@ -39,4 +39,7 @@ router.post(
   videoUploadController.uploadVideo
 );
 
+// Clean up videos folder and failed uploads
+router.post("/cleanup", videoUploadController.cleanupVideos);
+
 export default router;

@@ -12,6 +12,11 @@ import path from "path";
 import fs from "fs";
 import ffmpeg from "fluent-ffmpeg";
 import os from "os";
+import {
+  ListMultipartUploadsCommand,
+  ListObjectsV2Command,
+  DeleteObjectCommand,
+} from "@aws-sdk/client-s3";
 
 /**
  * Video Upload Service for Cloudflare R2 - OPTIMIZED VERSION
@@ -90,36 +95,74 @@ class VideoUploadService {
         fs.writeFileSync(inputPath, inputBuffer);
 
         const {
-          crf = 23, // 18-28 (lower = better quality, higher size)
-          preset = "medium", // ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow
+          crf = 28, // Tăng từ 23 lên 28 để nén mạnh hơn
+          preset = "medium",
           maxWidth = 1920,
           maxHeight = 1080,
-          targetSize = null, // Target size in MB
+          targetCompressionRatio = 0.35, // ✅ Target nén xuống 35% (200MB → 70MB)
+          codec = "libx264", // Có thể chuyển sang libx265 nếu hỗ trợ
+          audioBitrate = "96k", // Giảm audio bitrate
+          videoBitrate = null, // Sẽ tính toán dựa trên target
         } = options;
+
+        // ✅ Tính toán target bitrate dựa trên compression ratio
+        const originalSizeMB = inputBuffer.length / (1024 * 1024);
+        const targetSizeMB = originalSizeMB * targetCompressionRatio;
+
+        // Estimate video duration (assume 2 minutes average, will be refined)
+        const estimatedDurationMinutes = 2;
+        const targetVideoBitrate = Math.floor(
+          ((targetSizeMB * 8 * 1024) / (estimatedDurationMinutes * 60)) * 0.9
+        ); // 90% for video, 10% for audio
+
+        console.log(`🎯 Compression targets:
+        - Original: ${originalSizeMB.toFixed(1)}MB
+        - Target: ${targetSizeMB.toFixed(1)}MB  
+        - Target video bitrate: ${targetVideoBitrate}kbps`);
 
         let ffmpegCommand = ffmpeg(inputPath)
           .setFfmpegPath(ffmpegPath)
           .outputOptions([
-            "-c:v libx264", // H.264 codec for compatibility
-            `-crf ${crf}`,
-            `-preset ${preset}`,
-            "-c:a aac", // AAC audio codec
-            "-b:a 128k", // Audio bitrate
+            `-c:v ${codec}`, // Video codec
+            `-crf ${crf}`, // Quality factor (higher = more compression)
+            `-preset ${preset}`, // Encoding speed vs compression
+            "-c:a aac", // Audio codec
+            `-b:a ${audioBitrate}`, // Audio bitrate
             "-movflags +faststart", // Web optimization
             "-pix_fmt yuv420p", // Pixel format for compatibility
+
+            // ✅ Additional compression options
+            "-profile:v high", // H.264 high profile
+            "-level 4.0", // H.264 level
+            "-refs 4", // Reference frames
+            "-bf 3", // B-frames
+            "-g 30", // GOP size
+            "-sc_threshold 0", // Scene change threshold
+            "-keyint_min 30", // Minimum keyframe interval
+
+            // ✅ Rate control for better compression
+            "-maxrate 2000k", // Maximum bitrate
+            "-bufsize 4000k", // Buffer size
           ]);
 
-        // Scale video if needed
+        // ✅ Scale video if too large
         if (maxWidth && maxHeight) {
-          ffmpegCommand = ffmpegCommand.size(`${maxWidth}x${maxHeight}`);
+          ffmpegCommand = ffmpegCommand.videoFilters([
+            `scale='if(gt(iw,ih),min(${maxWidth},iw),-2)':'if(gt(iw,ih),-2,min(${maxHeight},ih))'`,
+            "format=yuv420p",
+          ]);
         }
 
-        // Target size constraint
-        if (targetSize) {
-          // Calculate target bitrate for 2-pass encoding
+        // ✅ Two-pass encoding for better quality at target size
+        if (targetVideoBitrate && targetVideoBitrate > 100) {
+          console.log(
+            `🔄 Using two-pass encoding with target bitrate: ${targetVideoBitrate}kbps`
+          );
+
+          // First pass
           ffmpegCommand.outputOptions([
             "-pass 1",
-            `-b:v ${Math.floor((targetSize * 8192) / 60)}k`, // Rough estimate
+            `-b:v ${targetVideoBitrate}k`,
             "-f null",
           ]);
         }
@@ -129,34 +172,67 @@ class VideoUploadService {
         ffmpegCommand
           .output(outputPath)
           .on("start", (commandLine) => {
-            console.log("FFmpeg compression started:", commandLine);
+            console.log("🎬 FFmpeg compression started:", commandLine);
           })
           .on("progress", (progress) => {
-            console.log(`Compression progress: ${progress.percent}%`);
+            if (progress.percent) {
+              console.log(
+                `📊 Compression progress: ${Math.floor(progress.percent)}%`
+              );
+            }
           })
           .on("end", () => {
             const compressionTime = Date.now() - startTime;
+
+            if (!fs.existsSync(outputPath)) {
+              reject(new Error("Compressed file was not created"));
+              return;
+            }
+
             const originalSize = fs.statSync(inputPath).size;
             const compressedSize = fs.statSync(outputPath).size;
             const compressionRatio =
               (originalSize - compressedSize) / originalSize;
+            const actualCompressionPercent = compressionRatio * 100;
 
-            console.log(`Compression completed in ${compressionTime}ms`);
-            console.log(
-              `Size reduction: ${(compressionRatio * 100).toFixed(1)}%`
-            );
-            console.log(
-              `Original: ${(originalSize / 1024 / 1024).toFixed(
-                1
-              )}MB → Compressed: ${(compressedSize / 1024 / 1024).toFixed(1)}MB`
-            );
+            console.log(`✅ Compression completed in ${compressionTime}ms`);
+            console.log(`📈 Results:
+            - Original: ${(originalSize / 1024 / 1024).toFixed(1)}MB
+            - Compressed: ${(compressedSize / 1024 / 1024).toFixed(1)}MB  
+            - Reduction: ${actualCompressionPercent.toFixed(1)}%
+            - Target was: ${(targetCompressionRatio * 100).toFixed(1)}%`);
+
+            // ✅ Validate compression results
+            if (actualCompressionPercent < 30) {
+              console.warn(
+                `⚠️ Low compression ratio: ${actualCompressionPercent.toFixed(
+                  1
+                )}%. Consider adjusting settings.`
+              );
+            } else if (actualCompressionPercent > 80) {
+              console.warn(
+                `⚠️ Very high compression: ${actualCompressionPercent.toFixed(
+                  1
+                )}%. Quality may be affected.`
+              );
+            } else {
+              console.log(
+                `✅ Good compression achieved: ${actualCompressionPercent.toFixed(
+                  1
+                )}%`
+              );
+            }
 
             // Read compressed file
             const compressedBuffer = fs.readFileSync(outputPath);
 
             // Cleanup temp files
-            fs.unlinkSync(inputPath);
-            fs.unlinkSync(outputPath);
+            try {
+              fs.unlinkSync(inputPath);
+              fs.unlinkSync(outputPath);
+            } catch (cleanupErr) {
+              console.warn("⚠️ Cleanup warning:", cleanupErr.message);
+            }
 
             resolve({
               buffer: compressedBuffer,
@@ -164,25 +240,36 @@ class VideoUploadService {
               compressedSize,
               compressionRatio,
               compressionTime,
+              targetCompressionRatio,
+              actualCompressionPercent,
+              success: true,
             });
           })
           .on("error", (err) => {
-            console.error("FFmpeg compression error:", err);
+            console.error("❌ FFmpeg compression error:", err);
 
             // Cleanup temp files
             try {
               if (fs.existsSync(inputPath)) fs.unlinkSync(inputPath);
               if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath);
             } catch (cleanupErr) {
-              console.error("Cleanup error:", cleanupErr);
+              console.error("❌ Cleanup error:", cleanupErr);
             }
 
-            reject(err);
+            reject(new Error(`Video compression failed: ${err.message}`));
           })
           .run();
       } catch (error) {
-        console.error("Video compression setup error:", error);
-        reject(error);
+        console.error("❌ Video compression setup error:", error);
+
+        // Cleanup on setup error
+        try {
+          if (fs.existsSync(inputPath)) fs.unlinkSync(inputPath);
+        } catch (cleanupErr) {
+          console.error("❌ Setup cleanup error:", cleanupErr);
+        }
+
+        reject(new Error(`Compression setup failed: ${error.message}`));
       }
     });
   }
@@ -190,16 +277,23 @@ class VideoUploadService {
   /**
    * Generate unique filename for video
    */
-  generateVideoFileName(originalName, userId = null) {
+  generateVideoFileName(originalName, userId = null, fileType = "videos") {
     const timestamp = Date.now();
     const randomString = crypto.randomBytes(8).toString("hex");
     const extension = originalName.split(".").pop();
     const baseName = originalName.replace(/\.[^/.]+$/, "");
-
     const sanitizedBaseName = baseName.replace(/[^a-zA-Z0-9_-]/g, "_");
-    const userPrefix = userId ? `user_${userId}/` : "";
 
-    return `videos/${userPrefix}${timestamp}_${randomString}_${sanitizedBaseName}.${extension}`;
+    // Lấy ngày tháng hiện tại
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+
+    // Định dạng lại tên file
+    const filename = `${timestamp}_${randomString}_${sanitizedBaseName}.${extension}`;
+
+    // Trả về key theo định dạng yêu cầu
+    return `${fileType}/${year}/${month}/${filename}`;
   }
 
   /**
@@ -214,6 +308,7 @@ class VideoUploadService {
   ) {
     const uploadId = crypto.randomUUID();
     const startTime = Date.now();
+    let compressionStats = null; // ✅ Khởi tạo biến
 
     try {
       console.log(
@@ -230,26 +325,140 @@ class VideoUploadService {
         enableDirectUpload = false,
         progressCallback = null,
       } = options;
-      // ...existing code...
+
+      let finalBuffer = fileBuffer;
+      const key = this.generateVideoFileName(fileName, userId);
+
+      // Track upload
+      this.activeUploads.set(uploadId, {
+        uploadId,
+        userId,
+        fileName,
+        key,
+        status: "starting",
+        startTime,
+        originalSize: fileBuffer.length,
+      });
+
+      // ✅ Step 1: Video Compression (if enabled)
+      if (enableCompression) {
+        console.log("🎬 Compressing video before upload...");
+
+        if (progressCallback) {
+          progressCallback({
+            stage: "compression",
+            progress: 0,
+            message: "Starting video compression...",
+          });
+        }
+
+        try {
+          const compressionResult = await this.compressVideo(
+            fileBuffer,
+            fileName,
+            {
+              crf: 28, // Tăng CRF để nén mạnh hơn
+              preset: "medium",
+              targetCompressionRatio: 0.35, // ✅ Target nén xuống 35%
+              maxWidth: 1920,
+              maxHeight: 1080,
+              ...compressionOptions,
+            }
+          );
+
+          finalBuffer = compressionResult.buffer;
+          compressionStats = compressionResult; // ✅ Gán giá trị
+
+          console.log(`✅ Compression completed:
+          - Original size: ${(fileBuffer.length / 1024 / 1024).toFixed(1)}MB
+          - Compressed size: ${(finalBuffer.length / 1024 / 1024).toFixed(1)}MB
+          - Reduction: ${(compressionStats.compressionRatio * 100).toFixed(
+            1
+          )}%`);
+
+          if (progressCallback) {
+            progressCallback({
+              stage: "compression",
+              progress: 100,
+              message: "Video compression completed",
+            });
+          }
+        } catch (compressionError) {
+          console.warn(
+            "⚠️ Compression failed, uploading original file:",
+            compressionError
+          );
+          finalBuffer = fileBuffer;
+          compressionStats = {
+            compressionRatio: 0,
+            originalSize: fileBuffer.length,
+            compressedSize: fileBuffer.length,
+            compressionTime: 0,
+            error: compressionError.message,
+          };
+        }
+      }
+
+      // Update tracking
+      this.activeUploads.set(uploadId, {
+        ...this.activeUploads.get(uploadId),
+        status: "uploading",
+        finalSize: finalBuffer.length,
+        compressionStats,
+      });
+
+      // ✅ Step 2: Choose upload method based on file size
+      let uploadResult;
+      const uploadThreshold = this.uploadConfig.multipartThreshold;
+
+      if (finalBuffer.length <= uploadThreshold) {
+        console.log("📤 Using single upload for small file");
+        uploadResult = await this.uploadVideoSingle(
+          finalBuffer,
+          key,
+          contentType
+        );
+      } else {
+        console.log("📦 Using multipart upload for large file");
+        uploadResult = await this.uploadVideoMultipartOptimized(
+          finalBuffer,
+          key,
+          contentType,
+          finalBuffer.length,
+          progressCallback,
+          uploadId
+        );
+      }
+
+      if (!uploadResult.success) {
+        throw new Error(uploadResult.error || "Upload failed");
+      }
 
       // Calculate stats for return
       const totalTime = Date.now() - startTime;
       const speedMBps = fileBuffer.length / 1024 / 1024 / (totalTime / 1000);
-      // You may want to include more fields as before
+
+      // Update tracking
+      this.activeUploads.set(uploadId, {
+        ...this.activeUploads.get(uploadId),
+        status: "completed",
+        endTime: Date.now(),
+        uploadResult,
+      });
+
       return {
         success: true,
         data: {
           uploadId,
           fileName,
+          url: uploadResult.data.url,
+          key: uploadResult.data.key,
           uploadTime: totalTime,
           uploadSpeed: speedMBps,
-          compressionStats,
+          compressionStats, // ✅ Đã được khởi tạo
           originalSize: fileBuffer.length,
-          finalSize:
-            typeof finalBuffer !== "undefined"
-              ? finalBuffer.length
-              : fileBuffer.length,
-          // You can add more fields as needed
+          finalSize: finalBuffer.length,
+          uploadMethod: uploadResult.data.uploadMethod || "single",
         },
       };
     } catch (error) {
@@ -311,7 +520,6 @@ class VideoUploadService {
     uploadId = null
   ) {
     let multipartUploadId = null;
-
     try {
       // Step 1: Initialize multipart upload
       const createCommand = new CreateMultipartUploadCommand({
@@ -968,6 +1176,134 @@ class VideoUploadService {
       contentType,
       recommendations,
     };
+  }
+
+  /**
+   * Clean up videos folder and abort failed multipart uploads
+   */
+  async cleanupVideosFolder(options = {}) {
+    const {
+      deleteAllVideos = false,
+      abortOngoingUploads = true,
+      deleteExpiredOnly = true,
+      olderThanHours = 24,
+    } = options;
+
+    const results = {
+      deletedVideos: 0,
+      abortedUploads: 0,
+      errors: [],
+      details: {
+        deletedFiles: [],
+        abortedUploadIds: [],
+      },
+    };
+
+    try {
+      // 1. Abort ongoing/failed multipart uploads
+      if (abortOngoingUploads) {
+        console.log("🧹 Cleaning up ongoing multipart uploads...");
+
+        const listUploadsCommand = new ListMultipartUploadsCommand({
+          Bucket: this.bucketName,
+          Prefix: "videos/", // Chỉ cleanup trong folder videos
+        });
+
+        const uploadsResponse = await this.client.send(listUploadsCommand);
+
+        if (uploadsResponse.Uploads && uploadsResponse.Uploads.length > 0) {
+          const now = Date.now();
+
+          for (const upload of uploadsResponse.Uploads) {
+            const uploadAge = now - new Date(upload.Initiated).getTime();
+            const shouldAbort =
+              !deleteExpiredOnly || uploadAge > olderThanHours * 3600 * 1000;
+
+            if (shouldAbort) {
+              try {
+                await this.abortMultipartUpload(upload.UploadId, upload.Key);
+                results.abortedUploads++;
+                results.details.abortedUploadIds.push(upload.UploadId);
+                console.log(
+                  `✅ Aborted upload: ${upload.Key} (${upload.UploadId})`
+                );
+              } catch (error) {
+                console.error(
+                  `❌ Failed to abort upload ${upload.UploadId}:`,
+                  error
+                );
+                results.errors.push(
+                  `Failed to abort ${upload.UploadId}: ${error.message}`
+                );
+              }
+            }
+          }
+        }
+      }
+
+      // 2. Delete video files if requested
+      if (deleteAllVideos || deleteExpiredOnly) {
+        console.log("🗑️ Cleaning up video files...");
+
+        const listObjectsCommand = new ListObjectsV2Command({
+          Bucket: this.bucketName,
+          Prefix: "videos/",
+        });
+
+        const objectsResponse = await this.client.send(listObjectsCommand);
+
+        if (objectsResponse.Contents && objectsResponse.Contents.length > 0) {
+          const now = Date.now();
+
+          for (const object of objectsResponse.Contents) {
+            const objectAge = now - new Date(object.LastModified).getTime();
+            const shouldDelete =
+              deleteAllVideos ||
+              (deleteExpiredOnly && objectAge > olderThanHours * 3600 * 1000);
+
+            if (shouldDelete) {
+              try {
+                const deleteCommand = new DeleteObjectCommand({
+                  Bucket: this.bucketName,
+                  Key: object.Key,
+                });
+
+                await this.client.send(deleteCommand);
+                results.deletedVideos++;
+                results.details.deletedFiles.push(object.Key);
+                console.log(`✅ Deleted file: ${object.Key}`);
+              } catch (error) {
+                console.error(`❌ Failed to delete ${object.Key}:`, error);
+                results.errors.push(
+                  `Failed to delete ${object.Key}: ${error.message}`
+                );
+              }
+            }
+          }
+        }
+      }
+
+      // 3. Clean up local tracking
+      this.activeUploads.clear();
+      this.compressionQueue.clear();
+
+      console.log(`✅ Cleanup completed:
+        - Aborted uploads: ${results.abortedUploads}
+        - Deleted videos: ${results.deletedVideos}
+        - Errors: ${results.errors.length}`);
+
+      return {
+        success: true,
+        data: results,
+      };
+    } catch (error) {
+      console.error("❌ Cleanup operation failed:", error);
+      return {
+        success: false,
+        error: error.message,
+        data: results,
+      };
+    }
   }
 }
 
