@@ -39,6 +39,17 @@ router.post(
   videoUploadController.uploadVideo
 );
 
+// Direct upload routes
+router.post(
+  "/direct-upload/init",
+  videoUploadController.initializeDirectUpload
+);
+router.post(
+  "/direct-upload/complete",
+  videoUploadController.completeDirectUpload
+);
+router.post("/direct-upload/abort", videoUploadController.abortDirectUpload);
+
 // Clean up videos folder and failed uploads
 router.post("/cleanup", videoUploadController.cleanupVideos);
 

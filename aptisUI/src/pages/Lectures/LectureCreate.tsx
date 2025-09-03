@@ -141,24 +141,25 @@ const LectureCreate = ({
     setIsSubmitting(true);
 
     try {
-      // First, upload all videos that have been selected
+      // Process videos based on their upload method
       const videoUploadPromises = subLectures.map(async (subLecture, index) => {
-        if (subLecture.videoFile && videoUploadRefs.current[index]) {
+        const uploadRef = videoUploadRefs.current[index];
+
+        if (uploadRef && uploadRef.hasFile()) {
           try {
-            // Show progress for this video
             setUploadProgress((prev) => ({ ...prev, [index]: 0 }));
 
-            // Use the uploadVideo method from VideoUpload component ref
-            const videoUrl = await videoUploadRefs.current[index].uploadVideo();
+            // Get video URL (could be from server upload, direct upload, or manual URL)
+            const videoUrl = await uploadRef.uploadVideo();
 
             return { index, videoUrl };
           } catch (error) {
             console.error(
-              `Failed to upload video for lecture ${index + 1}:`,
+              `Failed to get video URL for lecture ${index + 1}:`,
               error
             );
             throw new Error(
-              `Failed to upload video for lecture ${index + 1}: ${
+              `Failed to process video for lecture ${index + 1}: ${
                 error.message
               }`
             );
@@ -167,10 +168,10 @@ const LectureCreate = ({
         return { index, videoUrl: subLecture.videoUrl };
       });
 
-      // Wait for all video uploads to complete
+      // Wait for all video processing to complete
       const uploadResults = await Promise.all(videoUploadPromises);
 
-      // Update subLectures with uploaded video URLs
+      // Update subLectures with final video URLs
       const updatedSubLectures = subLectures.map((subLecture, index) => {
         const uploadResult = uploadResults.find(
           (result) => result.index === index
@@ -178,7 +179,6 @@ const LectureCreate = ({
         return {
           ...subLecture,
           videoUrl: uploadResult?.videoUrl || subLecture.videoUrl,
-          // Remove file references after upload
           videoFile: null,
           videoFileInfo: null,
         };
@@ -192,24 +192,19 @@ const LectureCreate = ({
         subLectures: updatedSubLectures,
       };
 
-      console.log("data", data);
+      console.log("Final lecture data:", data);
 
       const CreateData = await dataProvider.create("lectures", { data });
 
       console.log({ CreateData });
 
-      await notify(UPDATED_SUCCESS, {
-        type: "success",
-      });
+      await notify(UPDATED_SUCCESS, { type: "success" });
 
       reset();
-      // Reset upload progress
       setUploadProgress({});
     } catch (error) {
       console.log({ error });
-      await notify("Lỗi tạo bài học: " + error.message, {
-        type: "error",
-      });
+      await notify("Lỗi tạo bài học: " + error.message, { type: "error" });
     } finally {
       setIsSubmitting(false);
     }

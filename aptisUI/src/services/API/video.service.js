@@ -70,13 +70,22 @@ const VideoService = {
   },
 
   // Initialize direct upload (client uploads directly to R2)
-  initializeDirectUpload({ fileName, fileSize, userId, partCount }) {
-    return ApiService.post(`${serviceURL}/direct/init`, {
-      fileName,
-      fileSize,
-      userId,
-      partCount,
-    });
+  async initializeDirectUpload({ fileName, fileSize, userId, partCount }) {
+    try {
+      const response = await ApiService.post(
+        `${serviceURL}/direct-upload/init`,
+        {
+          fileName,
+          fileSize,
+          userId,
+          partCount,
+        }
+      );
+      return [response.data, null];
+    } catch (error) {
+      console.error("❌ Initialize direct upload failed:", error);
+      return [null, error.response?.data || { message: error.message }];
+    }
   },
 
   // Upload part directly to R2 using presigned URL
@@ -91,39 +100,54 @@ const VideoService = {
       });
 
       if (!response.ok) {
-        throw new Error(
-          `Upload failed: ${response.status} ${response.statusText}`
-        );
+        throw new Error(`Upload failed: ${response.statusText}`);
       }
 
-      return {
-        success: true,
-        etag: response.headers.get("ETag"),
-      };
+      const etag = response.headers.get("ETag");
+      if (!etag) {
+        throw new Error("No ETag received from upload");
+      }
+
+      return etag.replace(/"/g, ""); // Remove quotes from ETag
     } catch (error) {
-      console.error("Direct upload error:", error);
-      return {
-        success: false,
-        error: error.message,
-      };
+      console.error("❌ Upload part to R2 failed:", error);
+      throw error;
     }
   },
 
   // Complete multipart upload
-  completeMultipartUpload({ uploadId, key, parts }) {
-    return ApiService.post(`${serviceURL}/complete`, {
-      uploadId,
-      key,
-      parts,
-    });
+  async completeMultipartUpload({ uploadId, key, parts }) {
+    try {
+      const response = await ApiService.post(
+        `${serviceURL}/direct-upload/complete`,
+        {
+          uploadId,
+          key,
+          parts,
+        }
+      );
+      return [response.data, null];
+    } catch (error) {
+      console.error("❌ Complete multipart upload failed:", error);
+      return [null, error.response?.data || { message: error.message }];
+    }
   },
 
   // Abort multipart upload
-  abortMultipartUpload({ uploadId, key }) {
-    return ApiService.post(`${serviceURL}/abort`, {
-      uploadId,
-      key,
-    });
+  async abortMultipartUpload({ uploadId, key }) {
+    try {
+      const response = await ApiService.post(
+        `${serviceURL}/direct-upload/abort`,
+        {
+          uploadId,
+          key,
+        }
+      );
+      return [response.data, null];
+    } catch (error) {
+      console.error("❌ Abort multipart upload failed:", error);
+      return [null, error.response?.data || { message: error.message }];
+    }
   },
 
   // Initialize multipart upload

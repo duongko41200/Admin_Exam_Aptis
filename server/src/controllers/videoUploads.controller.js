@@ -517,53 +517,120 @@ class VideoUploadController {
   };
 
   /**
-   * Initialize direct upload with presigned URLs
-   * POST /api/video/upload/direct/init
+   * Initialize direct upload from client to R2
+   * POST /api/video/direct-upload/init
    */
   initializeDirectUpload = async (req, res, next) => {
     try {
       const { fileName, fileSize, userId, partCount } = req.body;
 
-      if (!fileName || !fileSize) {
-        throw new BadRequestError(
-          "Missing required fields: fileName, fileSize"
-        );
-      }
-
-      const fileSizeNum = parseInt(fileSize);
-      if (isNaN(fileSizeNum) || fileSizeNum <= 0) {
-        throw new BadRequestError("Invalid file size");
-      }
-
-      // Validate file
-      const validation = videoUploadService.validateVideoFile(
+      console.log("🔗 Initializing direct upload:", {
         fileName,
-        "video/mp4", // Assume MP4 for direct uploads
-        fileSizeNum
-      );
+        fileSize,
+        userId,
+        partCount,
+      });
 
-      if (!validation.valid) {
-        throw new BadRequestError(validation.error);
-      }
-
-      // Generate direct upload URLs
       const result = await videoUploadService.generateDirectUploadUrls(
         fileName,
-        fileSizeNum,
+        fileSize,
         userId,
         { partCount }
       );
 
       if (!result.success) {
-        throw new InternalServerError(result.error);
+        return res.status(500).json({
+          success: false,
+          message: "Failed to initialize direct upload",
+          error: result.error,
+        });
       }
 
-      new SuccessResponse({
+      res.status(200).json({
+        success: true,
         message: "Direct upload initialized successfully",
-        metadata: result.data,
-      }).send(res);
+        data: result.data,
+      });
     } catch (error) {
-      next(error);
+      console.error("Direct upload initialization error:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal server error during direct upload initialization",
+        error: error.message,
+      });
+    }
+  };
+
+  /**
+   * Complete direct multipart upload
+   * POST /api/video/direct-upload/complete
+   */
+  completeDirectUpload = async (req, res, next) => {
+    try {
+      const { uploadId, key, parts } = req.body;
+
+      console.log("🔗 Completing direct upload:", {
+        uploadId,
+        key,
+        partsCount: parts?.length,
+      });
+
+      const result = await videoUploadService.completeMultipartUpload(
+        uploadId,
+        key,
+        parts
+      );
+
+      if (!result.success) {
+        return res.status(500).json({
+          success: false,
+          message: "Failed to complete direct upload",
+          error: result.error,
+        });
+      }
+
+      res.status(200).json({
+        success: true,
+        message: "Direct upload completed successfully",
+        data: result.data,
+      });
+    } catch (error) {
+      console.error("Direct upload completion error:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal server error during direct upload completion",
+        error: error.message,
+      });
+    }
+  };
+
+  /**
+   * Abort direct multipart upload
+   * POST /api/video/direct-upload/abort
+   */
+  abortDirectUpload = async (req, res, next) => {
+    try {
+      const { uploadId, key } = req.body;
+
+      console.log("🚫 Aborting direct upload:", { uploadId, key });
+
+      const result = await videoUploadService.abortMultipartUpload(
+        uploadId,
+        key
+      );
+
+      res.status(200).json({
+        success: true,
+        message: "Direct upload aborted successfully",
+        data: result,
+      });
+    } catch (error) {
+      console.error("Direct upload abort error:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal server error during direct upload abort",
+        error: error.message,
+      });
     }
   };
 
