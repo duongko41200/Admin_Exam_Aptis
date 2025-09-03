@@ -10,20 +10,29 @@ dotenv.config();
 class R2Config {
   constructor() {
     // Validate required environment variables
-    // this.validateConfig();
+    this.validateConfig();
 
     this.config = {
       accountId: process.env.R2_ACCOUNT_ID,
       accessKeyId: process.env.R2_ACCESS_KEY_ID,
       secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
       bucketName: process.env.R2_BUCKET_NAME || "aptis-files",
-      publicUrl: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
-      // R2 endpoint format: https://<accountId>.r2.cloudflarestorage.com
+      // Sử dụng custom domain thay vì domain mặc định
+      publicUrl:
+        process.env.R2_PUBLIC_BASE_URL || "https://files.aptisacademy.com.vn",
+      // R2 endpoint format: https://<accountId>.r2.cloudflarestorage.com (cho API calls)
       endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
       region: "auto", // R2 uses 'auto' region
     };
 
-    console.log("R2 configuration:", this.config);
+    console.log("🔧 R2 configuration loaded:", {
+      accountId: this.config.accountId ? "✅ Set" : "❌ Missing",
+      accessKeyId: this.config.accessKeyId ? "✅ Set" : "❌ Missing",
+      secretAccessKey: this.config.secretAccessKey ? "✅ Set" : "❌ Missing",
+      bucketName: this.config.bucketName,
+      publicUrl: this.config.publicUrl,
+      endpoint: this.config.endpoint,
+    });
 
     // Create S3 Client for R2
     this.client = new S3Client({
@@ -41,10 +50,9 @@ class R2Config {
   validateConfig() {
     const requiredEnvVars = [
       "R2_ACCOUNT_ID",
-      "R2_ACCESS_KEY_ID",
+      "R2_ACCESS_KEY_ID", 
       "R2_SECRET_ACCESS_KEY",
       "R2_BUCKET_NAME",
-      "R2_PUBLIC_URL",
     ];
 
     const missingVars = requiredEnvVars.filter(
@@ -52,10 +60,13 @@ class R2Config {
     );
 
     if (missingVars.length > 0) {
+      console.error("❌ Missing R2 environment variables:", missingVars);
       throw new Error(
         `Missing required R2 environment variables: ${missingVars.join(", ")}`
       );
     }
+
+    console.log("✅ All required R2 environment variables are set");
   }
 
   getClient() {

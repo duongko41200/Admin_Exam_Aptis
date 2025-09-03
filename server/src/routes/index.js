@@ -16,7 +16,7 @@ import lectureRouter from "./lectures/index.js";
 import studyProcessRouter from "./study-process/index.js";
 import adminAccessRouter from "./admin/access/index.js";
 import r2Router from "./r2/index.js";
-import videoUploadRouter from "./videos-upload/index.js";
+import videoUploadRouter from "./video-upload/index.js";
 
 const router = express.Router();
 

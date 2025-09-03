@@ -1,42 +1,49 @@
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  forwardRef,
-  useImperativeHandle,
-} from "react";
-import {
-  Box,
-  Button,
-  LinearProgress,
-  Typography,
-  Alert,
-  IconButton,
-  Paper,
-  Chip,
-  Card,
-  CardContent,
-  Fade,
-  Grow,
-  Switch,
-  FormControlLabel,
-  TextField,
-  Divider,
-  ButtonGroup,
-} from "@mui/material";
 import {
   CloudUpload,
-  PlayArrow,
-  Pause,
   Delete,
-  VideoFile,
   Info,
-  Schedule,
   Link as LinkIcon,
-  Upload as UploadIcon,
+  Schedule,
   Speed as SpeedIcon,
+  Upload as UploadIcon,
+  VideoFile,
 } from "@mui/icons-material";
+import {
+  Alert,
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Chip,
+  CircularProgress,
+  Divider,
+  Fade,
+  Grow,
+  IconButton,
+  LinearProgress,
+  Paper,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
+import {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
+import VideoService from "../../services/API/video.service";
+
+interface VideoUploadProps {
+  onFileSelected?: (file: File | null, fileInfo: any) => void;
+  onUrlChange?: (url: string) => void;
+  initialVideoUrl?: string;
+  maxSizeGB?: number;
+  acceptedFormats?: string;
+  disabled?: boolean;
+  index?: number;
+}
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -102,7 +109,7 @@ const UploadMethodCard = styled(Paper)(({ theme }) => ({
 /**
  * Video Upload Component với cả server upload và direct client upload
  */
-const VideoUpload = forwardRef(
+const VideoUpload = forwardRef<any, VideoUploadProps>(
   (
     {
       onFileSelected,
@@ -129,7 +136,9 @@ const VideoUpload = forwardRef(
     const [uploadMethod, setUploadMethod] = useState("server");
     const [manualUrl, setManualUrl] = useState(initialVideoUrl);
     const [directUploadUrl, setDirectUploadUrl] = useState("");
+    const [directUploadVideoUrl, setDirectUploadVideoUrl] = useState(""); // URL input cho direct upload
     const [showUrlInput, setShowUrlInput] = useState(false);
+    const [uploadStage, setUploadStage] = useState(""); // Thêm state cho stage
 
     const fileInputRef = useRef(null);
     const videoRef = useRef(null);
@@ -142,19 +151,21 @@ const VideoUpload = forwardRef(
           return manualUrl;
         }
         if (uploadMethod === "direct") {
-          return directUploadUrl;
+          return directUploadVideoUrl || directUploadUrl; // Ưu tiên URL từ input
         }
         if (!file) {
           throw new Error("No file selected");
         }
         return await uploadFileViaServer();
       },
-      hasFile: () => !!file || !!manualUrl || !!directUploadUrl,
+      hasFile: () =>
+        !!file || !!manualUrl || !!directUploadUrl || !!directUploadVideoUrl,
       getFile: () => file,
       getFileInfo: () => fileInfo,
       getVideoUrl: () => {
         if (uploadMethod === "manual") return manualUrl;
-        if (uploadMethod === "direct") return directUploadUrl;
+        if (uploadMethod === "direct")
+          return directUploadVideoUrl || directUploadUrl;
         return preview;
       },
     }));
@@ -174,11 +185,17 @@ const VideoUpload = forwardRef(
           uploadMethod === "manual"
             ? manualUrl
             : uploadMethod === "direct"
-            ? directUploadUrl
+            ? directUploadVideoUrl || directUploadUrl
             : "";
         onUrlChange(currentUrl);
       }
-    }, [manualUrl, directUploadUrl, uploadMethod, onUrlChange]);
+    }, [
+      manualUrl,
+      directUploadUrl,
+      directUploadVideoUrl,
+      uploadMethod,
+      onUrlChange,
+    ]);
 
     /**
      * Validate video file
@@ -345,10 +362,17 @@ const VideoUpload = forwardRef(
           userId,
           compressionOptions,
           (progress) => {
+            console.log("📊 Upload progress:", progress);
+
             if (progress.stage === "compression") {
-              setUploadProgress(Math.floor(progress.progress * 0.4));
+              setUploadStage("Đang nén video...");
+              setUploadProgress(Math.floor(progress.percent * 0.3)); // 30% cho compression
             } else if (progress.stage === "upload") {
-              setUploadProgress(40 + Math.floor(progress.progress * 0.6));
+              setUploadStage("Đang upload video...");
+              setUploadProgress(30 + Math.floor(progress.percent * 0.7)); // 70% cho upload
+            } else {
+              setUploadStage("Đang xử lý...");
+              setUploadProgress(progress.percent || 0);
             }
           }
         );
@@ -358,14 +382,17 @@ const VideoUpload = forwardRef(
         }
 
         setUploadProgress(100);
+        setUploadStage("Hoàn thành!");
         return result.metadata.url;
       } catch (error) {
         console.error("❌ Server upload error:", error);
         setError(error.message);
+        setUploadStage("Lỗi upload!");
         removeFile();
         throw error;
       } finally {
         setUploading(false);
+        setTimeout(() => setUploadStage(""), 2000); // Clear stage after 2s
       }
     };
 
@@ -380,6 +407,7 @@ const VideoUpload = forwardRef(
       setUploading(true);
       setUploadProgress(0);
       setError("");
+      setUploadStage("Đang kiểm tra kết nối R2...");
 
       try {
         console.log(
@@ -390,9 +418,31 @@ const VideoUpload = forwardRef(
           ).toFixed(1)}MB)`
         );
 
+        // Test R2 connection first
+        setUploadStage("Kiểm tra kết nối R2...");
+        const [testResult, testError] = await VideoService.testR2Connection();
+
+        if (testError || !testResult?.success) {
+          console.error("❌ R2 connection test failed:", testError);
+          throw new Error(
+            `R2 connection failed: ${testError?.message || "Unknown error"}`
+          );
+        }
+
+        console.log("✅ R2 connection test passed:", testResult);
+        setUploadProgress(5);
+
         const userId = localStorage.getItem("userId") || null;
 
         // Step 1: Initialize direct upload
+        setUploadStage("Khởi tạo upload...");
+        console.log("🔧 Initializing direct upload with params:", {
+          fileName: file.name,
+          fileSize: file.size,
+          userId,
+          partCount: Math.ceil(file.size / (10 * 1024 * 1024)),
+        });
+
         const [initResult, initError] =
           await VideoService.initializeDirectUpload({
             fileName: file.name,
@@ -401,16 +451,23 @@ const VideoUpload = forwardRef(
             partCount: Math.ceil(file.size / (10 * 1024 * 1024)), // 10MB parts
           });
 
+        console.log("🔧 Initialize result:", { initResult, initError });
+
         if (initError || !initResult) {
+          console.error("❌ Initialize error details:", initError);
           throw new Error(
-            initError?.message || "Failed to initialize direct upload"
+            initError?.message ||
+              initError?.error ||
+              "Failed to initialize direct upload"
           );
         }
 
         const { uploadId, key, presignedUrls, publicUrl } = initResult;
         console.log(`📦 Direct upload initialized: ${uploadId}`);
+        setUploadProgress(10);
 
         // Step 2: Upload parts directly to R2
+        setUploadStage("Đang upload file...");
         const uploadedParts = [];
         const partSize = 10 * 1024 * 1024; // 10MB
 
@@ -431,9 +488,11 @@ const VideoUpload = forwardRef(
               etag,
             });
 
-            // Update progress
-            const progress = Math.floor(((i + 1) / presignedUrls.length) * 100);
-            setUploadProgress(progress);
+            // Update progress (10% đã dùng cho init, 80% cho upload parts, 10% cho complete)
+            const partProgress = Math.floor(
+              ((i + 1) / presignedUrls.length) * 80
+            );
+            setUploadProgress(10 + partProgress);
           } catch (partError) {
             console.error(`❌ Failed to upload part ${partNumber}:`, partError);
             throw new Error(
@@ -443,6 +502,7 @@ const VideoUpload = forwardRef(
         }
 
         // Step 3: Complete multipart upload
+        setUploadStage("Hoàn thiện upload...");
         console.log("🔗 Completing direct multipart upload...");
         const [completeResult, completeError] =
           await VideoService.completeMultipartUpload({
@@ -459,19 +519,20 @@ const VideoUpload = forwardRef(
 
         console.log(`✅ Direct upload completed: ${completeResult.url}`);
         setDirectUploadUrl(completeResult.url);
+        setDirectUploadVideoUrl(completeResult.url); // Set vào input URL
         setUploadProgress(100);
+        setUploadStage("Hoàn thành!");
 
         return completeResult.url;
       } catch (error) {
         console.error("❌ Direct upload error:", error);
-        setError(error.message);
-
-        // Try to abort the upload if it was initialized
-        // This would require additional error handling
+        setError(`Upload failed: ${error.message}`);
+        setUploadStage("Lỗi upload!");
 
         throw error;
       } finally {
         setUploading(false);
+        setTimeout(() => setUploadStage(""), 3000); // Clear stage after 3s
       }
     };
 
@@ -502,6 +563,7 @@ const VideoUpload = forwardRef(
       setUploadProgress(0);
       setError("");
       setDirectUploadUrl("");
+      setDirectUploadVideoUrl(""); // Reset direct upload video URL
 
       if (preview && preview.startsWith("blob:")) {
         URL.revokeObjectURL(preview);
@@ -517,6 +579,21 @@ const VideoUpload = forwardRef(
       }
     };
 
+    /**
+     * Handle direct upload video URL change
+     */
+    const handleDirectUploadVideoUrlChange = (event) => {
+      const url = event.target.value;
+      setDirectUploadVideoUrl(url);
+
+      if (url) {
+        setPreview(url);
+      }
+
+      if (onUrlChange) {
+        onUrlChange(url);
+      }
+    };
     /**
      * Handle manual URL input
      */
@@ -656,7 +733,7 @@ const VideoUpload = forwardRef(
           {uploading && (
             <Box sx={{ mb: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                <Typography variant="body2" sx={{ minWidth: "100px" }}>
+                <Typography variant="body2" sx={{ minWidth: "120px" }}>
                   {uploadMethod === "direct"
                     ? "Direct Upload"
                     : "Server Upload"}
@@ -679,6 +756,23 @@ const VideoUpload = forwardRef(
                   }}
                 />
               </Box>
+
+              {/* Upload Stage Display */}
+              {uploadStage && (
+                <Box
+                  sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}
+                >
+                  <CircularProgress size={16} />
+                  <Typography
+                    variant="caption"
+                    color="primary.main"
+                    sx={{ fontWeight: 600 }}
+                  >
+                    {uploadStage}
+                  </Typography>
+                </Box>
+              )}
+
               <Typography variant="caption" color="text.secondary">
                 {uploadMethod === "direct"
                   ? "Uploading directly to cloud storage..."
@@ -711,6 +805,63 @@ const VideoUpload = forwardRef(
               {manualUrl && (
                 <Alert severity="info" sx={{ mt: 2 }}>
                   URL đã được thiết lập: {manualUrl}
+                </Alert>
+              )}
+            </Box>
+          )}
+
+          {/* Direct Upload URL Input và Upload Button */}
+          {uploadMethod === "direct" && (
+            <Box sx={{ mb: 3 }}>
+              <TextField
+                fullWidth
+                label="URL Video (sau khi upload)"
+                placeholder="URL sẽ hiển thị ở đây sau khi upload hoàn thành"
+                value={directUploadVideoUrl}
+                onChange={handleDirectUploadVideoUrlChange}
+                disabled={disabled}
+                sx={{
+                  mb: 2,
+                  "& .MuiOutlinedInput-root": {
+                    borderRadius: "12px",
+                  },
+                }}
+                InputProps={{
+                  startAdornment: (
+                    <LinkIcon sx={{ mr: 1, color: "text.secondary" }} />
+                  ),
+                }}
+              />
+
+              {/* Upload Button cho Direct Upload */}
+              {file && !directUploadUrl && !uploading && (
+                <Button
+                  variant="contained"
+                  startIcon={<CloudUpload />}
+                  onClick={uploadFileDirectly}
+                  disabled={disabled || uploading}
+                  sx={{
+                    borderRadius: "12px",
+                    px: 4,
+                    py: 1.5,
+                    textTransform: "none",
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    background:
+                      "linear-gradient(135deg, #4caf50 0%, #81c784 100%)",
+                    "&:hover": {
+                      background:
+                        "linear-gradient(135deg, #43a047 0%, #66bb6a 100%)",
+                    },
+                  }}
+                >
+                  Upload Video lên R2
+                </Button>
+              )}
+
+              {directUploadVideoUrl && (
+                <Alert severity="success" sx={{ mt: 2 }}>
+                  URL video đã được thiết lập: {directUploadVideoUrl}
                 </Alert>
               )}
             </Box>
@@ -750,7 +901,7 @@ const VideoUpload = forwardRef(
                         sx={{ mb: 3, maxWidth: 400, mx: "auto" }}
                       >
                         {uploadMethod === "direct"
-                          ? "Upload trực tiếp lên R2 - nhanh hơn, không qua server"
+                          ? "Chọn file và nhấn nút Upload để upload trực tiếp lên R2"
                           : "Upload qua server với tính năng nén video tự động"}
                       </Typography>
 
@@ -913,20 +1064,50 @@ const VideoUpload = forwardRef(
                   </Alert>
                 )}
 
-                {!uploading && !directUploadUrl && (
+                {uploadMethod === "direct" && !uploading && directUploadUrl && (
                   <Alert severity="success" sx={{ mt: 2 }}>
                     <Box>
                       <Typography variant="body2" sx={{ fontWeight: 600 }}>
-                        Video đã sẵn sàng!
+                        ✅ Direct Upload Hoàn Thành!
                       </Typography>
                       <Typography variant="caption">
-                        {uploadMethod === "direct"
-                          ? "Video sẽ được upload trực tiếp lên R2 khi tạo bài học"
-                          : "Video sẽ được upload qua server khi tạo bài học"}
+                        Video đã được upload lên R2 và URL đã được set vào input
                       </Typography>
                     </Box>
                   </Alert>
                 )}
+
+                {uploadMethod === "direct" &&
+                  !uploading &&
+                  !directUploadUrl &&
+                  file && (
+                    <Alert severity="warning" sx={{ mt: 2 }}>
+                      <Box>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                          File đã chọn - Sẵn sàng upload
+                        </Typography>
+                        <Typography variant="caption">
+                          Nhấn nút "Upload Video lên R2" để bắt đầu upload
+                        </Typography>
+                      </Box>
+                    </Alert>
+                  )}
+
+                {uploadMethod === "server" &&
+                  !uploading &&
+                  !directUploadUrl &&
+                  file && (
+                    <Alert severity="success" sx={{ mt: 2 }}>
+                      <Box>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                          Video đã sẵn sàng!
+                        </Typography>
+                        <Typography variant="caption">
+                          Video sẽ được upload qua server khi tạo bài học
+                        </Typography>
+                      </Box>
+                    </Alert>
+                  )}
               </Box>
             </Grow>
           )}
@@ -944,6 +1125,26 @@ const VideoUpload = forwardRef(
             >
               <VideoPreview
                 src={manualUrl}
+                controls
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
+              />
+            </Paper>
+          )}
+
+          {/* Direct Upload URL Preview */}
+          {uploadMethod === "direct" && directUploadVideoUrl && (
+            <Paper
+              elevation={3}
+              sx={{
+                borderRadius: "16px",
+                overflow: "hidden",
+                position: "relative",
+                mb: 2,
+              }}
+            >
+              <VideoPreview
+                src={directUploadVideoUrl}
                 controls
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}

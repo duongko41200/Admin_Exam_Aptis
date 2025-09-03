@@ -4,6 +4,9 @@ import {
   CompleteMultipartUploadCommand,
   AbortMultipartUploadCommand,
   PutObjectCommand,
+  ListMultipartUploadsCommand,
+  ListObjectsV2Command,
+  DeleteObjectCommand,
 } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import r2Config from "../configs/r2.config.js";
@@ -11,35 +14,38 @@ import crypto from "crypto";
 import path from "path";
 import fs from "fs";
 import ffmpeg from "fluent-ffmpeg";
-import os from "os";
-import {
-  ListMultipartUploadsCommand,
-  ListObjectsV2Command,
-  DeleteObjectCommand,
-} from "@aws-sdk/client-s3";
-
-/**
- * Video Upload Service for Cloudflare R2 - OPTIMIZED VERSION
- * Với multipart upload song song, video compression và direct upload
- */
 import ffmpegPath from "ffmpeg-static";
+import os from "os";
 
 class VideoUploadService {
   constructor() {
-    this.client = r2Config.getClient();
-    this.bucketName = r2Config.getBucketName();
-    this.config = r2Config.getConfig();
+    console.log("🔧 Initializing VideoUploadService...");
+
+    try {
+      this.client = r2Config.getClient();
+      this.bucketName = r2Config.getBucketName();
+      this.config = r2Config.getConfig();
+
+      console.log("✅ VideoUploadService initialized:", {
+        bucketName: this.bucketName,
+        hasClient: !!this.client,
+        hasConfig: !!this.config,
+      });
+    } catch (error) {
+      console.error("❌ Failed to initialize VideoUploadService:", error);
+      throw error;
+    }
 
     // Optimized upload configuration
     this.uploadConfig = {
-      // Tăng part size để giảm số lần request
-      minPartSize: 10 * 1024 * 1024, // 10MB (thay vì 5MB)
-      maxPartSize: 15 * 1024 * 1024, // 15MB (thay vì 100MB)
-      multipartThreshold: 50 * 1024 * 1024, // 50MB (thay vì 100MB)
-      maxConcurrency: 15, // 15 uploads song song (thay vì 10)
-      chunkConcurrency: 8, // 8 chunks per batch
-      retryAttempts: 3,
-      timeout: 60000, // 60 seconds per part
+      // Giảm part size để tăng song song cho file 200MB
+      minPartSize: 5 * 1024 * 1024, // 5MB
+      maxPartSize: 10 * 1024 * 1024, // 10MB (thay vì 15MB)
+      multipartThreshold: 20 * 1024 * 1024, // 20MB (thay vì 50MB) - ưu tiên multipart sớm hơn
+      maxConcurrency: 20, // 20 uploads song song (tăng từ 15)
+      chunkConcurrency: 10, // 10 chunks per batch (tăng từ 8)
+      retryAttempts: 5, // Tăng retry cho các part bị lỗi
+      timeout: 120000, // 2 minutes per part (tăng từ 60s)
     };
 
     // Track active uploads for cleanup
@@ -53,28 +59,49 @@ class VideoUploadService {
   calculatePartSize(fileSize) {
     const { minPartSize, maxPartSize } = this.uploadConfig;
 
-    // Tối ưu part size dựa trên file size để giảm số lần request
+    // Tối ưu part size dựa trên file size - đặc biệt cho 200MB
     let partSize;
-    if (fileSize <= 500 * 1024 * 1024) {
-      // < 500MB
+    const fileSizeMB = fileSize / (1024 * 1024);
+
+    if (fileSizeMB <= 50) {
+      // < 50MB - single upload thường nhanh hơn
+      partSize = Math.max(fileSize, minPartSize);
+    } else if (fileSizeMB <= 200) {
+      // 50-200MB - tối ưu cho file 200MB
+      partSize = 8 * 1024 * 1024; // 8MB parts cho upload song song tốt
+    } else if (fileSizeMB <= 500) {
+      // 200-500MB
       partSize = 10 * 1024 * 1024; // 10MB parts
-    } else if (fileSize <= 2 * 1024 * 1024 * 1024) {
-      // < 2GB
+    } else if (fileSizeMB <= 2048) {
+      // 500MB-2GB
       partSize = 15 * 1024 * 1024; // 15MB parts
     } else {
       // >= 2GB
       partSize = Math.min(Math.ceil(fileSize / 5000), maxPartSize); // Max 5000 parts
     }
 
+    // Đảm bảo part size trong giới hạn
+    partSize = Math.max(partSize, minPartSize);
+    partSize = Math.min(partSize, maxPartSize);
+
     const totalParts = Math.ceil(fileSize / partSize);
+    const concurrentBatches = Math.ceil(
+      totalParts / this.uploadConfig.maxConcurrency
+    );
+
+    console.log(`📊 Upload plan for ${fileSizeMB.toFixed(1)}MB file:
+    - Part size: ${(partSize / 1024 / 1024).toFixed(1)}MB
+    - Total parts: ${totalParts}
+    - Concurrent batches: ${concurrentBatches}
+    - Estimated time: ${concurrentBatches * 3}s`);
 
     return {
       partSize,
       totalParts,
       minPartSize,
       maxPartSize,
-      estimatedTime:
-        Math.ceil(totalParts / this.uploadConfig.maxConcurrency) * 2, // Estimate seconds
+      estimatedTime: concurrentBatches * 3, // 3 seconds per batch
+      concurrentBatches,
     };
   }
 
@@ -490,7 +517,8 @@ class VideoUploadService {
       });
 
       const response = await this.client.send(command);
-      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+      // Sử dụng custom domain, không cần bucket name trong URL
+      const publicUrl = `${this.config.publicUrl}/${key}`;
 
       return {
         success: true,
@@ -649,7 +677,8 @@ class VideoUploadService {
       });
 
       const completeResponse = await this.client.send(completeCommand);
-      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+      // Sử dụng custom domain, không cần bucket name trong URL
+      const publicUrl = `${this.config.publicUrl}/${key}`;
 
       console.log(`✅ Multipart upload completed: ${key}`);
 
@@ -795,6 +824,26 @@ class VideoUploadService {
     options = {}
   ) {
     try {
+      console.log("🔧 Generating direct upload URLs:", {
+        fileName,
+        fileSize,
+        userId,
+        options,
+      });
+
+      // Validate inputs
+      if (!fileName || !fileSize) {
+        throw new Error("fileName and fileSize are required");
+      }
+
+      if (!this.client) {
+        throw new Error("R2 client not initialized");
+      }
+
+      if (!this.bucketName) {
+        throw new Error("R2 bucket name not configured");
+      }
+
       const key = this.generateVideoFileName(fileName, userId);
       const { partCount = null, enableCompression = false } = options;
 
@@ -804,6 +853,8 @@ class VideoUploadService {
         const partInfo = this.calculatePartSize(fileSize);
         totalParts = partInfo.totalParts;
       }
+
+      console.log("📊 Upload plan:", { key, totalParts, fileSize });
 
       // Initialize multipart upload
       const createCommand = new CreateMultipartUploadCommand({
@@ -818,30 +869,56 @@ class VideoUploadService {
         },
       });
 
+      console.log("🔧 Creating multipart upload command...");
       const createResponse = await this.client.send(createCommand);
+
+      if (!createResponse.UploadId) {
+        throw new Error(
+          "Failed to create multipart upload - no UploadId received"
+        );
+      }
+
       const uploadId = createResponse.UploadId;
+      console.log("✅ Multipart upload created:", uploadId);
 
       // Generate presigned URLs for each part
       const presignedUrls = [];
+      console.log("🔧 Generating presigned URLs for", totalParts, "parts...");
+
       for (let i = 1; i <= totalParts; i++) {
-        const command = new UploadPartCommand({
-          Bucket: this.bucketName,
-          Key: key,
-          PartNumber: i,
-          UploadId: uploadId,
-        });
+        try {
+          const command = new UploadPartCommand({
+            Bucket: this.bucketName,
+            Key: key,
+            PartNumber: i,
+            UploadId: uploadId,
+          });
 
-        const signedUrl = await getSignedUrl(this.client, command, {
-          expiresIn: 3600, // 1 hour
-        });
+          const signedUrl = await getSignedUrl(this.client, command, {
+            expiresIn: 3600, // 1 hour
+          });
 
-        presignedUrls.push({
-          partNumber: i,
-          signedUrl,
-        });
+          if (!signedUrl) {
+            throw new Error(`Failed to generate signed URL for part ${i}`);
+          }
+
+          presignedUrls.push({
+            partNumber: i,
+            signedUrl,
+          });
+
+          console.log(`✅ Generated signed URL for part ${i}/${totalParts}`);
+        } catch (partError) {
+          console.error(`❌ Failed to generate URL for part ${i}:`, partError);
+          throw new Error(
+            `Failed to generate signed URL for part ${i}: ${partError.message}`
+          );
+        }
       }
 
-      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+      const publicUrl = `${this.config.publicUrl}/${key}`;
+
+      console.log("✅ Generated", presignedUrls.length, "presigned URLs");
 
       return {
         success: true,
@@ -855,8 +932,12 @@ class VideoUploadService {
         },
       };
     } catch (error) {
-      console.error("Generate direct upload URLs error:", error);
-      throw error;
+      console.error("❌ Generate direct upload URLs error:", error);
+      return {
+        success: false,
+        error: error.message,
+        details: error.stack,
+      };
     }
   }
 
@@ -881,7 +962,8 @@ class VideoUploadService {
       });
 
       const response = await this.client.send(command);
-      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+      // Sử dụng custom domain, không cần bucket name trong URL
+      const publicUrl = `${this.config.publicUrl}/${key}`;
 
       return {
         success: true,
@@ -918,7 +1000,8 @@ class VideoUploadService {
       });
 
       const response = await this.client.send(command);
-      const publicUrl = `${this.config.publicUrl}/${this.bucketName}/${key}`;
+      // Sử dụng custom domain, không cần bucket name trong URL
+      const publicUrl = `${this.config.publicUrl}/${key}`;
 
       return {
         success: true,
@@ -1037,6 +1120,64 @@ class VideoUploadService {
       };
     } catch (error) {
       return { success: false, error: error.message };
+    }
+  }
+
+  /**
+   * Test R2 connection and configuration
+   */
+  async testR2Connection() {
+    try {
+      console.log("🧪 Testing R2 connection...");
+
+      // Test 1: Check configuration
+      const configTest = {
+        hasClient: !!this.client,
+        hasBucketName: !!this.bucketName,
+        hasConfig: !!this.config,
+        bucketName: this.bucketName,
+        endpoint: this.config?.endpoint,
+        region: this.config?.region,
+      };
+
+      console.log("📋 Config test:", configTest);
+
+      // Test 2: Try to list objects (basic connectivity test)
+      try {
+        const listCommand = new ListObjectsV2Command({
+          Bucket: this.bucketName,
+          MaxKeys: 1,
+        });
+
+        const listResponse = await this.client.send(listCommand);
+        console.log("✅ R2 connectivity test passed");
+
+        return {
+          success: true,
+          config: configTest,
+          connectivity: {
+            canList: true,
+            response: "Connected successfully",
+          },
+        };
+      } catch (listError) {
+        console.error("❌ R2 connectivity test failed:", listError);
+
+        return {
+          success: false,
+          config: configTest,
+          connectivity: {
+            canList: false,
+            error: listError.message,
+          },
+        };
+      }
+    } catch (error) {
+      console.error("❌ R2 connection test error:", error);
+      return {
+        success: false,
+        error: error.message,
+      };
     }
   }
 

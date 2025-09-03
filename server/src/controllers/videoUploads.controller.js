@@ -334,6 +334,45 @@ class VideoUploadController {
   };
 
   /**
+   * Test R2 connection
+   * GET /api/video/test
+   */
+  testR2Connection = async (req, res, next) => {
+    try {
+      // Simple test to check R2 connection
+      const { ListObjectsV2Command } = await import("@aws-sdk/client-s3");
+
+      const testResult = await videoUploadService.client.send(
+        new ListObjectsV2Command({
+          Bucket: videoUploadService.bucketName,
+          MaxKeys: 1,
+        })
+      );
+
+      res.status(200).json({
+        success: true,
+        message: "R2 connection successful",
+        data: {
+          bucketName: videoUploadService.bucketName,
+          objectCount: testResult.KeyCount || 0,
+          hasConfig: !!videoUploadService.config,
+        },
+      });
+    } catch (error) {
+      console.error("❌ R2 connection test failed:", error);
+      res.status(500).json({
+        success: false,
+        message: "R2 connection failed",
+        error: error.message,
+        details: {
+          bucketName: videoUploadService.bucketName,
+          hasClient: !!videoUploadService.client,
+        },
+      });
+    }
+  };
+
+  /**
    * Update part completion
    * POST /api/video/upload/part-complete
    */
@@ -531,9 +570,28 @@ class VideoUploadController {
         partCount,
       });
 
+      // Validate input
+      if (!fileName || !fileSize) {
+        return res.status(400).json({
+          success: false,
+          message: "Missing required fields: fileName, fileSize",
+          error: "BAD_REQUEST",
+        });
+      }
+
+      // Validate file size
+      const fileSizeNum = parseInt(fileSize);
+      if (isNaN(fileSizeNum) || fileSizeNum <= 0) {
+        return res.status(400).json({
+          success: false,
+          message: "Invalid file size",
+          error: "INVALID_FILE_SIZE",
+        });
+      }
+
       const result = await videoUploadService.generateDirectUploadUrls(
         fileName,
-        fileSize,
+        fileSizeNum,
         userId,
         { partCount }
       );
@@ -552,11 +610,12 @@ class VideoUploadController {
         data: result.data,
       });
     } catch (error) {
-      console.error("Direct upload initialization error:", error);
+      console.error("❌ Direct upload initialization error:", error);
       res.status(500).json({
         success: false,
         message: "Internal server error during direct upload initialization",
         error: error.message,
+        stack: process.env.NODE_ENV === "development" ? error.stack : undefined,
       });
     }
   };
@@ -629,6 +688,31 @@ class VideoUploadController {
       res.status(500).json({
         success: false,
         message: "Internal server error during direct upload abort",
+        error: error.message,
+      });
+    }
+  };
+
+  /**
+   * Test R2 connection and configuration
+   * GET /api/video/test-r2
+   */
+  testR2Connection = async (req, res, next) => {
+    try {
+      console.log("🧪 Testing R2 connection...");
+
+      const result = await videoUploadService.testR2Connection();
+
+      res.status(200).json({
+        success: true,
+        message: "R2 connection test completed",
+        data: result,
+      });
+    } catch (error) {
+      console.error("❌ R2 connection test failed:", error);
+      res.status(500).json({
+        success: false,
+        message: "R2 connection test failed",
         error: error.message,
       });
     }

@@ -4,7 +4,7 @@ const apiUrl = "v1/api";
 
 const axios = axiosBase.create({
   baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL || "http://localhost:3333",
-  timeout: 50000,
+  timeout: 600000, // 10 minutes for large video uploads
   withCredentials: true,
 });
 
@@ -104,16 +104,42 @@ const ApiService = {
       .catch(catchError);
   },
 
-  post(resource, body, headers = {}, isFormData = false) {
+  post(
+    resource,
+    body,
+    headers = {},
+    isFormData = false,
+    onUploadProgress = null
+  ) {
     const config = { headers: { ...headers } };
 
     if (isFormData) {
       // để axios tự set Content-Type multipart/form-data
-      
+
       delete config.headers["Content-Type"];
     } else {
       config.headers["Content-Type"] =
         config.headers["Content-Type"] || "application/json";
+    }
+
+    // Add upload progress callback if provided
+    if (onUploadProgress) {
+      config.onUploadProgress = (progressEvent) => {
+        const percentCompleted = Math.round(
+          (progressEvent.loaded * 100) / progressEvent.total
+        );
+        onUploadProgress({
+          loaded: progressEvent.loaded,
+          total: progressEvent.total,
+          percent: percentCompleted,
+          stage: "upload",
+        });
+      };
+    }
+
+    // Increase timeout for large file uploads
+    if (isFormData) {
+      config.timeout = 1800000; // 30 minutes for file uploads
     }
 
     return axios

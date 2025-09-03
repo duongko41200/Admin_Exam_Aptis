@@ -72,6 +72,13 @@ const VideoService = {
   // Initialize direct upload (client uploads directly to R2)
   async initializeDirectUpload({ fileName, fileSize, userId, partCount }) {
     try {
+      console.log("🔧 Calling initializeDirectUpload API:", {
+        fileName,
+        fileSize,
+        userId,
+        partCount,
+      });
+
       const response = await ApiService.post(
         `${serviceURL}/direct-upload/init`,
         {
@@ -81,10 +88,24 @@ const VideoService = {
           partCount,
         }
       );
-      return [response.data, null];
+
+      console.log("📡 API Response:", response);
+
+      if (response && response.success) {
+        console.log("✅ Initialize direct upload successful:", response.data);
+        return [response.data, null];
+      } else {
+        console.error("❌ API returned unsuccessful response:", response);
+        return [null, { message: response?.message || "Unknown API error" }];
+      }
     } catch (error) {
       console.error("❌ Initialize direct upload failed:", error);
-      return [null, error.response?.data || { message: error.message }];
+      const errorMessage =
+        error.response?.data?.message ||
+        error.response?.data?.error ||
+        error.message ||
+        "Failed to initialize direct upload";
+      return [null, { message: errorMessage, details: error.response?.data }];
     }
   },
 
@@ -215,6 +236,17 @@ const VideoService = {
   // Clean up videos folder and failed uploads
   async cleanupVideos(options = {}) {
     return ApiService.post(`${serviceURL}/cleanup`, options);
+  },
+
+  // Test R2 connection
+  async testR2Connection() {
+    try {
+      const response = await ApiService.get(`${serviceURL}/test-r2`);
+      return [response, null];
+    } catch (error) {
+      console.error("❌ Test R2 connection failed:", error);
+      return [null, error.response?.data || { message: error.message }];
+    }
   },
 };
 

@@ -11,6 +11,8 @@ const upload = multer({
   limits: {
     fileSize: 5 * 1024 * 1024 * 1024, // 5GB limit
     fieldSize: 25 * 1024 * 1024, // 25MB for other fields
+    fields: 20, // Number of non-file fields
+    parts: 1000, // Total number of parts
   },
   fileFilter: (req, file, cb) => {
     // Allow video files only
@@ -30,6 +32,12 @@ const upload = multer({
 // Get upload configuration
 router.get("/config", asyncHandle(videoUploadController.getUploadConfig));
 
+// Test R2 connection
+router.get("/test-r2", asyncHandle(videoUploadController.testR2Connection));
+
+// Test R2 connection
+router.get("/test", asyncHandle(videoUploadController.testR2Connection));
+
 // Validate video file before upload
 router.post("/validate", asyncHandle(videoUploadController.validateVideoFile));
 
@@ -45,8 +53,16 @@ router.post(
 
 // Direct upload endpoints (client uploads directly to R2)
 router.post(
-  "/direct/init",
+  "/direct-upload/init",
   asyncHandle(videoUploadController.initializeDirectUpload)
+);
+router.post(
+  "/direct-upload/complete",
+  asyncHandle(videoUploadController.completeDirectUpload)
+);
+router.post(
+  "/direct-upload/abort",
+  asyncHandle(videoUploadController.abortDirectUpload)
 );
 
 // Multipart upload endpoints
