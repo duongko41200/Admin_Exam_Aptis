@@ -79,7 +79,7 @@ router.get("/file/info/:key(*)", asyncHandle(r2Controller.getFileInfo));
 
 /**
  * @route GET /r2/file/presigned/:key
- * @desc Generate presigned URL for file access
+ * @desc Generate presigned URL for file access (download)
  * @access Private
  * @param key - File key/path in R2
  * @query expiresIn - URL expiration in seconds (default: 3600)
@@ -87,6 +87,20 @@ router.get("/file/info/:key(*)", asyncHandle(r2Controller.getFileInfo));
 router.get(
   "/file/presigned/:key(*)",
   asyncHandle(r2Controller.getPresignedUrl)
+);
+
+/**
+ * @route POST /r2/get-presigned-upload-url
+ * @desc Generate presigned URL for direct file upload
+ * @access Private
+ * @body fileName - Original file name
+ * @body contentType - File MIME type
+ * @body expiresIn - URL expiration in seconds (optional, default: 3600)
+ * @body userId - User ID for file organization (optional)
+ */
+router.post(
+  "/get-presigned-upload-url",
+  asyncHandle(r2Controller.getPresignedUploadUrl)
 );
 
 /**

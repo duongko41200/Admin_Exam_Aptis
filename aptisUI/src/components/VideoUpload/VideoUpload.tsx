@@ -34,6 +34,7 @@ import {
   useState,
 } from "react";
 import VideoService from "../../services/API/video.service";
+import R2Service from "../../services/API/r2.service";
 
 interface VideoUploadProps {
   onFileSelected?: (file: File | null, fileInfo: any) => void;
@@ -397,7 +398,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     };
 
     /**
-     * Upload file directly from client to R2
+     * Upload file directly from client to R2 (Simple presigned URL approach)
      */
     const uploadFileDirectly = async () => {
       if (!file) {
@@ -407,7 +408,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
       setUploading(true);
       setUploadProgress(0);
       setError("");
-      setUploadStage("Đang kiểm tra kết nối R2...");
+      setUploadStage("Đang chuẩn bị upload...");
 
       try {
         console.log(
@@ -418,112 +419,36 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
           ).toFixed(1)}MB)`
         );
 
-        // Test R2 connection first
-        setUploadStage("Kiểm tra kết nối R2...");
-        const [testResult, testError] = await VideoService.testR2Connection();
-
-        if (testError || !testResult?.success) {
-          console.error("❌ R2 connection test failed:", testError);
-          throw new Error(
-            `R2 connection failed: ${testError?.message || "Unknown error"}`
-          );
-        }
-
-        console.log("✅ R2 connection test passed:", testResult);
-        setUploadProgress(5);
-
         const userId = localStorage.getItem("userId") || null;
 
-        // Step 1: Initialize direct upload
-        setUploadStage("Khởi tạo upload...");
-        console.log("🔧 Initializing direct upload with params:", {
-          fileName: file.name,
-          fileSize: file.size,
-          userId,
-          partCount: Math.ceil(file.size / (10 * 1024 * 1024)),
-        });
+        // Progress callback
+        const onProgress = (progressInfo) => {
+          setUploadProgress(progressInfo.percent);
+          setUploadStage(`Đang upload... ${progressInfo.percent}%`);
+        };
 
-        const [initResult, initError] =
-          await VideoService.initializeDirectUpload({
-            fileName: file.name,
-            fileSize: file.size,
-            userId,
-            partCount: Math.ceil(file.size / (10 * 1024 * 1024)), // 10MB parts
-          });
+        // Use R2Service direct upload
+        const [publicUrl, uploadError] = await R2Service.directUpload(
+          file,
+          onProgress,
+          userId
+        );
 
-        console.log("🔧 Initialize result:", { initResult, initError });
-
-        if (initError || !initResult) {
-          console.error("❌ Initialize error details:", initError);
-          throw new Error(
-            initError?.message ||
-              initError?.error ||
-              "Failed to initialize direct upload"
-          );
+        if (uploadError || !publicUrl) {
+          console.error("❌ Direct upload error:", uploadError);
+          throw new Error(uploadError?.message || "Upload failed");
         }
 
-        const { uploadId, key, presignedUrls, publicUrl } = initResult;
-        console.log(`📦 Direct upload initialized: ${uploadId}`);
-        setUploadProgress(10);
+        console.log(`✅ Direct upload completed: ${publicUrl}`);
 
-        // Step 2: Upload parts directly to R2
-        setUploadStage("Đang upload file...");
-        const uploadedParts = [];
-        const partSize = 10 * 1024 * 1024; // 10MB
-
-        for (let i = 0; i < presignedUrls.length; i++) {
-          const { partNumber, signedUrl } = presignedUrls[i];
-          const start = (partNumber - 1) * partSize;
-          const end = Math.min(start + partSize, file.size);
-          const partData = file.slice(start, end);
-
-          try {
-            console.log(
-              `⬆️ Uploading part ${partNumber}/${presignedUrls.length}`
-            );
-
-            const etag = await VideoService.uploadPartToR2(signedUrl, partData);
-            uploadedParts.push({
-              partNumber,
-              etag,
-            });
-
-            // Update progress (10% đã dùng cho init, 80% cho upload parts, 10% cho complete)
-            const partProgress = Math.floor(
-              ((i + 1) / presignedUrls.length) * 80
-            );
-            setUploadProgress(10 + partProgress);
-          } catch (partError) {
-            console.error(`❌ Failed to upload part ${partNumber}:`, partError);
-            throw new Error(
-              `Failed to upload part ${partNumber}: ${partError.message}`
-            );
-          }
-        }
-
-        // Step 3: Complete multipart upload
-        setUploadStage("Hoàn thiện upload...");
-        console.log("🔗 Completing direct multipart upload...");
-        const [completeResult, completeError] =
-          await VideoService.completeMultipartUpload({
-            uploadId,
-            key,
-            parts: uploadedParts,
-          });
-
-        if (completeError || !completeResult) {
-          throw new Error(
-            completeError?.message || "Failed to complete direct upload"
-          );
-        }
-
-        console.log(`✅ Direct upload completed: ${completeResult.url}`);
-        setDirectUploadUrl(completeResult.url);
-        setDirectUploadVideoUrl(completeResult.url); // Set vào input URL
+        // Set the public URL for video access
+        setDirectUploadUrl(publicUrl);
+        setDirectUploadVideoUrl(publicUrl); // Set vào input URL
+        setPreview(publicUrl); // Show video preview
         setUploadProgress(100);
         setUploadStage("Hoàn thành!");
 
-        return completeResult.url;
+        return publicUrl;
       } catch (error) {
         console.error("❌ Direct upload error:", error);
         setError(`Upload failed: ${error.message}`);

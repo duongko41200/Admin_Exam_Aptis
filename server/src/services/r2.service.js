@@ -177,7 +177,7 @@ class R2Service {
   }
 
   /**
-   * Generate presigned URL for direct file access
+   * Generate presigned URL for direct file access (download)
    * @param {string} key - File key/path
    * @param {number} expiresIn - URL expiration in seconds (default: 1 hour)
    * @returns {Promise<Object>} - Presigned URL
@@ -201,6 +201,64 @@ class R2Service {
       };
     } catch (error) {
       console.error("R2 Presigned URL Error:", error);
+      return {
+        success: false,
+        error: error.message,
+      };
+    }
+  }
+
+  /**
+   * Generate presigned URL for direct file upload
+   * @param {string} fileName - Original file name
+   * @param {string} contentType - File MIME type
+   * @param {number} expiresIn - URL expiration in seconds (default: 1 hour)
+   * @param {string} userId - User ID for file organization (optional)
+   * @returns {Promise<Object>} - Presigned upload URL and file info
+   */
+  async getPresignedUploadUrl(
+    fileName,
+    contentType,
+    expiresIn = 3600,
+    userId = null
+  ) {
+    try {
+      // Generate unique file key
+      const timestamp = Date.now();
+      const randomSuffix = crypto.randomBytes(8).toString("hex");
+      const fileExtension = path.extname(fileName);
+      const baseName = path.basename(fileName, fileExtension);
+      const sanitizedBaseName = baseName.replace(/[^a-zA-Z0-9-_]/g, "_");
+
+      // Create organized file path
+      const folderPath = userId ? `videos/users/${userId}` : "videos/uploads";
+      const key = `${folderPath}/${timestamp}_${sanitizedBaseName}_${randomSuffix}${fileExtension}`;
+
+      const command = new PutObjectCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        ContentType: contentType,
+      });
+
+      const uploadUrl = await getSignedUrl(this.client, command, { expiresIn });
+
+      // Generate public URL for accessing the file after upload
+      const publicUrl = `${this.publicUrl}/${key}`;
+
+      return {
+        success: true,
+        data: {
+          uploadUrl,
+          publicUrl,
+          key,
+          fileName,
+          contentType,
+          expiresIn,
+          expiresAt: new Date(Date.now() + expiresIn * 1000).toISOString(),
+        },
+      };
+    } catch (error) {
+      console.error("R2 Presigned Upload URL Error:", error);
       return {
         success: false,
         error: error.message,

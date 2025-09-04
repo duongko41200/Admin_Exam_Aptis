@@ -148,6 +148,33 @@ const ApiService = {
       .catch(catchError);
   },
 
+  // ✅ Method for direct upload to external URLs (like R2 presigned URLs)
+  putToExternalUrl(url, data, headers = {}, onUploadProgress = null) {
+    const config = { headers: { ...headers } };
+
+    // Add upload progress callback if provided
+    if (onUploadProgress) {
+      config.onUploadProgress = (progressEvent) => {
+        const percentCompleted = Math.round(
+          (progressEvent.loaded * 100) / progressEvent.total
+        );
+        onUploadProgress({
+          loaded: progressEvent.loaded,
+          total: progressEvent.total,
+          percent: percentCompleted,
+          stage: "upload",
+        });
+      };
+    }
+
+    config.timeout = 1800000; // 30 minutes for large file uploads
+
+    return axiosBase
+      .put(url, data, config)
+      .then(responseCallback)
+      .catch(catchError);
+  },
+
   patch(resource, body, headers = {}, isFormData = false) {
     const config = { headers: { ...headers } };
 

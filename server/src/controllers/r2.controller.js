@@ -134,7 +134,7 @@ class R2Controller {
   };
 
   /**
-   * Generate presigned URL for file access
+   * Generate presigned URL for file access (download)
    */
   getPresignedUrl = async (req, res, next) => {
     try {
@@ -164,6 +164,66 @@ class R2Controller {
       }).send(res);
     } catch (error) {
       console.error("Get Presigned URL Error:", error);
+      return res.status(500).json({
+        success: false,
+        message: "Internal server error",
+        error: error.message,
+      });
+    }
+  };
+
+  /**
+   * Generate presigned URL for file upload (direct upload)
+   */
+  getPresignedUploadUrl = async (req, res, next) => {
+    try {
+      const { fileName, contentType, expiresIn = 3600 } = req.body;
+      const userId = req.user?.id || req.body.userId; // Get from auth or request body
+
+      // Validate required fields
+      if (!fileName) {
+        return res.status(400).json({
+          success: false,
+          message: "fileName is required",
+        });
+      }
+
+      if (!contentType) {
+        return res.status(400).json({
+          success: false,
+          message: "contentType is required",
+        });
+      }
+
+      // Validate file type (only videos for this use case)
+      if (!contentType.startsWith("video/")) {
+        return res.status(400).json({
+          success: false,
+          message: "Only video files are allowed",
+        });
+      }
+
+      const result = await r2Service.getPresignedUploadUrl(
+        fileName,
+        contentType,
+        parseInt(expiresIn),
+        userId
+      );
+
+      if (!result.success) {
+        return res.status(500).json({
+          success: false,
+          message: "Failed to generate presigned upload URL",
+          error: result.error,
+        });
+      }
+
+      new SuccessResponse({
+        message: "Presigned upload URL generated successfully!",
+        metadata: result.data,
+      }).send(res);
+    } catch (error) {
+      console.error("Get Presigned Upload URL Error:", error);
       return res.status(500).json({
         success: false,
         message: "Internal server error",
