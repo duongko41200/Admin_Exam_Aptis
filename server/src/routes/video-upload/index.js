@@ -88,9 +88,6 @@ router.post(
 router.get("/user/:userId", asyncHandle(videoUploadController.getUserUploads));
 
 // Admin cleanup
-router.post(
-  "/cleanup",
-  asyncHandle(videoUploadController.cleanupExpiredUploads)
-);
+router.post("/cleanup", asyncHandle(videoUploadController.cleanupVideos));
 
 export default router;

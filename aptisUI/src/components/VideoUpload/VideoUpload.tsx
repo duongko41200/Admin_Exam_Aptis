@@ -16,8 +16,12 @@ import {
   CardContent,
   Chip,
   CircularProgress,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   Divider,
-  Fade,
   Grow,
   IconButton,
   LinearProgress,
@@ -25,6 +29,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Fade from "@mui/material/Fade";
 import { styled } from "@mui/material/styles";
 import {
   forwardRef,
@@ -138,8 +143,10 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     const [manualUrl, setManualUrl] = useState(initialVideoUrl);
     const [directUploadUrl, setDirectUploadUrl] = useState("");
     const [directUploadVideoUrl, setDirectUploadVideoUrl] = useState(""); // URL input cho direct upload
+    const [r2FileKey, setR2FileKey] = useState(""); // R2 file key for deletion
     const [showUrlInput, setShowUrlInput] = useState(false);
     const [uploadStage, setUploadStage] = useState(""); // Thêm state cho stage
+    const [showDeleteDialog, setShowDeleteDialog] = useState(false); // Dialog xác nhận xóa
 
     const fileInputRef = useRef(null);
     const videoRef = useRef(null);
@@ -428,22 +435,24 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
         };
 
         // Use R2Service direct upload
-        const [publicUrl, uploadError] = await R2Service.directUpload(
+        const [uploadResult, uploadError] = await R2Service.directUpload(
           file,
           onProgress,
           userId
         );
 
-        if (uploadError || !publicUrl) {
+        if (uploadError || !uploadResult) {
           console.error("❌ Direct upload error:", uploadError);
           throw new Error(uploadError?.message || "Upload failed");
         }
 
-        console.log(`✅ Direct upload completed: ${publicUrl}`);
+        const { publicUrl, key } = uploadResult;
+        console.log(`✅ Direct upload completed:`, { publicUrl, key });
 
-        // Set the public URL for video access
+        // Set the public URL for video access and save R2 key for deletion
         setDirectUploadUrl(publicUrl);
         setDirectUploadVideoUrl(publicUrl); // Set vào input URL
+        setR2FileKey(key); // Save R2 key for potential deletion
         setPreview(publicUrl); // Show video preview
         setUploadProgress(100);
         setUploadStage("Hoàn thành!");
@@ -480,15 +489,64 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     };
 
     /**
-     * Remove selected file and reset states
+     * Show delete confirmation dialog
      */
-    const removeFile = () => {
+    const showDeleteConfirmation = () => {
+      setShowDeleteDialog(true);
+    };
+
+    /**
+     * Handle delete confirmation
+     */
+    const handleDeleteConfirm = async () => {
+      setShowDeleteDialog(false);
+      await removeFile();
+    };
+
+    /**
+     * Handle delete cancel
+     */
+    const handleDeleteCancel = () => {
+      setShowDeleteDialog(false);
+    };
+
+    /**
+     * Remove selected file and reset states
+     * Also delete file from R2 if it was uploaded via direct upload
+     */
+    const removeFile = async () => {
+      // If file was uploaded to R2, delete it first
+      if (r2FileKey) {
+        try {
+          console.log("🗑️ Deleting file from R2:", r2FileKey);
+          const [deleteSuccess, deleteError] = await R2Service.deleteFile(
+            r2FileKey
+          );
+
+          if (deleteError) {
+            console.error("❌ Failed to delete file from R2:", deleteError);
+            // Show warning but continue with local cleanup
+            setError(
+              `Cảnh báo: Không thể xóa file trên R2. ${deleteError.message}`
+            );
+          } else {
+            console.log("✅ File deleted from R2 successfully");
+          }
+        } catch (error) {
+          console.error("❌ Error deleting file from R2:", error);
+          setError(`Cảnh báo: Lỗi khi xóa file trên R2. ${error.message}`);
+        }
+      }
+
+      // Reset all states
       setFile(null);
       setFileInfo(null);
       setUploadProgress(0);
       setError("");
       setDirectUploadUrl("");
       setDirectUploadVideoUrl(""); // Reset direct upload video URL
+      setR2FileKey(""); // Reset R2 key
+      setUploadStage("");
 
       if (preview && preview.startsWith("blob:")) {
         URL.revokeObjectURL(preview);
@@ -573,7 +631,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     };
 
     return (
-      <Fade in={true} timeout={800}>
+      <Fade in={true} timeout={500}>
         <Box sx={{ width: "100%" }}>
           {/* Error Display */}
           {error && (
@@ -913,7 +971,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
                       </Box>
                     </Box>
                     <IconButton
-                      onClick={removeFile}
+                      onClick={showDeleteConfirmation}
                       disabled={uploading}
                       sx={{
                         color: "error.main",
@@ -952,24 +1010,6 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
                 )}
 
                 {/* Upload Result URL Display */}
-                {directUploadUrl && uploadMethod === "direct" && (
-                  <Alert severity="success" sx={{ mt: 2 }}>
-                    <Typography variant="body2" sx={{ fontWeight: 600, mb: 1 }}>
-                      ✅ Direct Upload Completed!
-                    </Typography>
-                    <TextField
-                      fullWidth
-                      size="small"
-                      label="Video URL"
-                      value={directUploadUrl}
-                      InputProps={{
-                        readOnly: true,
-                        sx: { fontSize: "12px" },
-                      }}
-                      sx={{ mt: 1 }}
-                    />
-                  </Alert>
-                )}
 
                 {/* Status Messages */}
                 {uploading && (
@@ -1057,25 +1097,57 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
             </Paper>
           )}
 
-          {/* Direct Upload URL Preview */}
-          {uploadMethod === "direct" && directUploadVideoUrl && (
-            <Paper
-              elevation={3}
-              sx={{
-                borderRadius: "16px",
-                overflow: "hidden",
-                position: "relative",
-                mb: 2,
-              }}
-            >
-              <VideoPreview
-                src={directUploadVideoUrl}
-                controls
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
-              />
-            </Paper>
-          )}
+          {/* Delete Confirmation Dialog */}
+          <Dialog
+            open={showDeleteDialog}
+            onClose={handleDeleteCancel}
+            aria-labelledby="delete-dialog-title"
+            aria-describedby="delete-dialog-description"
+          >
+            <DialogTitle id="delete-dialog-title">
+              🗑️ Xác nhận xóa file
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="delete-dialog-description">
+                {r2FileKey ? (
+                  <>
+                    Bạn có chắc chắn muốn xóa file này không?
+                    <br />
+                    <strong>⚠️ Lưu ý:</strong> File này đã được upload lên R2
+                    Cloud Storage và sẽ bị xóa vĩnh viễn khỏi server.
+                    <br />
+                    <br />
+                    <strong>File:</strong> {fileInfo?.name}
+                    <br />
+                    <strong>Kích thước:</strong>{" "}
+                    {formatFileSize(fileInfo?.size || 0)}
+                  </>
+                ) : (
+                  <>
+                    Bạn có chắc chắn muốn xóa file này không?
+                    <br />
+                    <strong>File:</strong> {fileInfo?.name}
+                    <br />
+                    <strong>Kích thước:</strong>{" "}
+                    {formatFileSize(fileInfo?.size || 0)}
+                  </>
+                )}
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={handleDeleteCancel} color="primary">
+                Hủy
+              </Button>
+              <Button
+                onClick={handleDeleteConfirm}
+                color="error"
+                variant="contained"
+                startIcon={<Delete />}
+              >
+                {r2FileKey ? "Xóa khỏi R2 & Local" : "Xóa file"}
+              </Button>
+            </DialogActions>
+          </Dialog>
         </Box>
       </Fade>
     );

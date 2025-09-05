@@ -112,6 +112,14 @@ router.post(
 router.delete("/file/:key(*)", asyncHandle(r2Controller.deleteFile));
 
 /**
+ * @route DELETE /r2/delete/:key
+ * @desc Delete single file from R2 (Alternative endpoint)
+ * @access Private
+ * @param key - File key/path in R2
+ */
+router.delete("/delete/:key(*)", asyncHandle(r2Controller.deleteFile));
+
+/**
  * @route DELETE /r2/files/multiple
  * @desc Delete multiple files from R2
  * @access Private

@@ -139,7 +139,7 @@ const R2Service = {
         return [null, presignedError];
       }
 
-      const { uploadUrl, publicUrl } = presignedData;
+      const { uploadUrl, publicUrl, key } = presignedData;
 
       // Step 2: Upload file directly to R2
       const [uploadSuccess, uploadError] = await this.uploadToR2(
@@ -155,10 +155,50 @@ const R2Service = {
       }
 
       console.log("✅ Direct upload completed. Public URL:", publicUrl);
-      return [publicUrl, null];
+
+      // Return both public URL and key for potential deletion
+      return [{ publicUrl, key }, null];
     } catch (error) {
       console.error("❌ Direct upload process failed:", error);
       return [null, { message: error.message }];
+    }
+  },
+
+  /**
+   * Delete file from R2 storage
+   * @param {string} key - File key/path on R2
+   * @returns {Promise} - Returns [success, error]
+   */
+  async deleteFile(key) {
+    try {
+      console.log("🗑️ Deleting file from R2:", key);
+
+      const [data, error] = await ApiService.delete(
+        `${serviceURL}/delete/${encodeURIComponent(key)}`
+      );
+
+      console.log("📡 Delete Response:", { data, error });
+
+      if (error) {
+        console.error("❌ API returned delete error:", error);
+        return [false, error];
+      }
+
+      if (data.metadata) {
+        console.log("✅ Delete successful:", data.metadata);
+        return [true, null];
+      } else {
+        console.error("❌ API returned unsuccessful delete response:", data);
+        return [false, { message: data?.message || "Unknown delete error" }];
+      }
+    } catch (error) {
+      console.error("❌ Delete file failed:", error);
+      const errorMessage =
+        error.response?.data?.message ||
+        error.response?.data?.error ||
+        error.message ||
+        "Failed to delete file from R2";
+      return [false, { message: errorMessage, details: error.response?.data }];
     }
   },
 };

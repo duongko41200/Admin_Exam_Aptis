@@ -719,27 +719,6 @@ class VideoUploadController {
   };
 
   /**
-   * Cleanup expired uploads (admin only)
-   * POST /api/video/upload/cleanup
-   */
-  cleanupExpiredUploads = async (req, res, next) => {
-    try {
-      const result = await videoUploadService.cleanupExpiredUploads();
-
-      if (!result.success) {
-        throw new InternalServerError(result.error);
-      }
-
-      new SuccessResponse({
-        message: "Cleanup completed successfully",
-        metadata: result.data,
-      }).send(res);
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /**
    * Clean up videos folder and failed uploads
    * POST /api/video/cleanup
    */
