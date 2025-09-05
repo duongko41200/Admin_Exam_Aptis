@@ -150,7 +150,18 @@ const ApiService = {
 
   // ✅ Method for direct upload to external URLs (like R2 presigned URLs)
   putToExternalUrl(url, data, headers = {}, onUploadProgress = null) {
-    const config = { headers: { ...headers } };
+    // Create a clean axios instance for external uploads (no interceptors)
+    const externalAxios = axiosBase.create({
+      timeout: 1800000, // 30 minutes for large file uploads
+      withCredentials: false,
+    });
+
+    const config = {
+      headers: {
+        // Only set specific headers for R2 uploads
+        ...headers,
+      },
+    };
 
     // Add upload progress callback if provided
     if (onUploadProgress) {
@@ -167,12 +178,75 @@ const ApiService = {
       };
     }
 
-    config.timeout = 1800000; // 30 minutes for large file uploads
+    console.log("🚀 PUT to external URL:", {
+      url: url.substring(0, 100) + "...",
+      dataSize: data.size,
+      headers: config.headers,
+    });
 
-    return axiosBase
+    return externalAxios
       .put(url, data, config)
       .then(responseCallback)
       .catch(catchError);
+  },
+
+  // ✅ Alternative method using fetch for R2 uploads (to avoid CORS issues)
+  async putToExternalUrlWithFetch(
+    url,
+    data,
+    headers = {},
+    onUploadProgress = null
+  ) {
+    try {
+      console.log("🚀 FETCH PUT to external URL:", {
+        url: url.substring(0, 100) + "...",
+        dataSize: data.size,
+        headers,
+      });
+
+      // Create XMLHttpRequest to track progress
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.upload.addEventListener("progress", (event) => {
+          if (event.lengthComputable && onUploadProgress) {
+            const percentCompleted = Math.round(
+              (event.loaded * 100) / event.total
+            );
+            onUploadProgress({
+              loaded: event.loaded,
+              total: event.total,
+              percent: percentCompleted,
+              stage: "upload",
+            });
+          }
+        });
+
+        xhr.addEventListener("load", () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve([{ status: xhr.status, statusText: xhr.statusText }, null]);
+          } else {
+            reject(new Error(`HTTP ${xhr.status}: ${xhr.statusText}`));
+          }
+        });
+
+        xhr.addEventListener("error", () => {
+          reject(new Error("Upload failed"));
+        });
+
+        xhr.open("PUT", url);
+
+        // Set headers
+        Object.entries(headers).forEach(([key, value]) => {
+          xhr.setRequestHeader(key, value);
+        });
+
+        xhr.send(data);
+      });
+    } catch (error) {
+      console.error("❌ Fetch upload error:", error);
+      return [null, error];
+    }
   },
 
   patch(resource, body, headers = {}, isFormData = false) {

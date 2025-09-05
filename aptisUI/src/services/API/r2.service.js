@@ -47,7 +47,7 @@ const R2Service = {
         return [null, error];
       }
 
-      if (data?.success) {
+      if (data.metadata) {
         console.log("✅ Get presigned URL successful:", data.metadata);
         return [data.metadata, null];
       } else {
@@ -76,18 +76,22 @@ const R2Service = {
   async uploadToR2(presignedUrl, file, contentType, onProgress = null) {
     try {
       console.log("🚀 Uploading to R2:", {
-        url: presignedUrl,
+        url: presignedUrl.substring(0, 100) + "...",
         fileName: file.name,
         fileSize: file.size,
         contentType,
       });
 
-      const [data, error] = await ApiService.putToExternalUrl(
+      // For R2 presigned URLs, we need minimal headers
+      const headers = {
+        "Content-Type": contentType,
+      };
+
+      // Try using fetch method first (better CORS handling)
+      const [data, error] = await ApiService.putToExternalUrlWithFetch(
         presignedUrl,
         file,
-        {
-          "Content-Type": contentType,
-        },
+        headers,
         onProgress
       );
 

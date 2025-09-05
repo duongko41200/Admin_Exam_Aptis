@@ -223,6 +223,13 @@ class R2Service {
     userId = null
   ) {
     try {
+      console.log("🔧 Generating presigned upload URL:", {
+        fileName,
+        contentType,
+        expiresIn,
+        userId,
+      });
+
       // Generate unique file key
       const timestamp = Date.now();
       const randomSuffix = crypto.randomBytes(8).toString("hex");
@@ -234,16 +241,31 @@ class R2Service {
       const folderPath = userId ? `videos/users/${userId}` : "videos/uploads";
       const key = `${folderPath}/${timestamp}_${sanitizedBaseName}_${randomSuffix}${fileExtension}`;
 
+      console.log("📁 Generated file key:", key);
+
       const command = new PutObjectCommand({
         Bucket: this.bucketName,
         Key: key,
         ContentType: contentType,
+        // Add CORS-friendly metadata
+        Metadata: {
+          "upload-type": "direct",
+          "original-name": fileName,
+          "user-id": userId || "anonymous",
+        },
       });
 
       const uploadUrl = await getSignedUrl(this.client, command, { expiresIn });
 
       // Generate public URL for accessing the file after upload
       const publicUrl = `${this.publicUrl}/${key}`;
+
+      console.log("✅ Presigned URL generated:", {
+        uploadUrl: uploadUrl.substring(0, 100) + "...",
+        publicUrl,
+        key,
+        expiresIn,
+      });
 
       return {
         success: true,
@@ -258,7 +280,7 @@ class R2Service {
         },
       };
     } catch (error) {
-      console.error("R2 Presigned Upload URL Error:", error);
+      console.error("❌ R2 Presigned Upload URL Error:", error);
       return {
         success: false,
         error: error.message,
