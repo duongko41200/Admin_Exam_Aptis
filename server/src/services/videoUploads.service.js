@@ -946,17 +946,15 @@ class VideoUploadService {
    */
   async completeMultipartUpload(uploadId, key, parts) {
     try {
-      // Sort parts by part number
-      const sortedParts = parts.sort((a, b) => a.partNumber - b.partNumber);
-
+      // Parts should already be in AWS format with PartNumber and ETag
       const command = new CompleteMultipartUploadCommand({
         Bucket: this.bucketName,
         Key: key,
         UploadId: uploadId,
         MultipartUpload: {
-          Parts: sortedParts.map((part) => ({
-            ETag: part.etag,
-            PartNumber: part.partNumber,
+          Parts: parts.map((part) => ({
+            ETag: part.ETag,
+            PartNumber: part.PartNumber,
           })),
         },
       });
@@ -969,6 +967,7 @@ class VideoUploadService {
         success: true,
         data: {
           url: publicUrl,
+          publicUrl: publicUrl,
           key: key,
           bucket: this.bucketName,
           etag: response.ETag,

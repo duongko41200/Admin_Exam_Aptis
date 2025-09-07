@@ -250,8 +250,7 @@ const LectureCreate = ({
       >
         <Box
           sx={{
-            maxWidth: "1200px",
-            margin: "0 auto",
+            // maxWidth: "1200px",
             maxHeight: "90vh",
             overflowY: "auto",
             "&::-webkit-scrollbar": {
@@ -280,26 +279,7 @@ const LectureCreate = ({
             }}
           >
             {/* Header */}
-            <Box
-              sx={{
-                background: "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
-                color: "white",
-                textAlign: "center",
-                py: 4,
-                position: "relative",
-                overflow: "hidden",
-                "&::before": {
-                  content: '""',
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  background:
-                    'url(\'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>\')',
-                },
-              }}
-            >
+            <Box>
               <Typography
                 variant="h3"
                 sx={{
@@ -323,7 +303,7 @@ const LectureCreate = ({
               </Typography>
             </Box>
 
-            <Box sx={{ p: { xs: 3, md: 4 } }}>
+            <Box sx={{ p: { xs: 3, md: 2 } }}>
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="form sign-up-form relative"
@@ -550,6 +530,12 @@ const LectureCreate = ({
                     sx={{
                       maxHeight: "60vh",
                       overflowY: "auto",
+                      display: "grid",
+                      gridTemplateColumns: {
+                        xs: "1fr",
+                        md: `1fr ${subLectures.length > 1 ? "1fr" : ""}`,
+                      },
+                      gap: 3,
                       "&::-webkit-scrollbar": {
                         width: "6px",
                       },
@@ -572,6 +558,9 @@ const LectureCreate = ({
                           mb: 3,
                           borderRadius: "16px",
                           position: "relative",
+                          gridGap: 2,
+                          gridTemplateColumns: "1fr",
+                          display: "grid",
                           border: "1px solid rgba(25, 118, 210, 0.1)",
                           background:
                             "linear-gradient(135deg, #ffffff 0%, #fafbff 100%)",
@@ -588,7 +577,7 @@ const LectureCreate = ({
                           color="primary"
                           sx={{
                             position: "absolute",
-                            top: -10,
+                            top: 10,
                             left: 20,
                             fontWeight: "bold",
                             fontSize: "14px",

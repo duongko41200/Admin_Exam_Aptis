@@ -141,15 +141,26 @@ class VideoUploadController {
         throw new BadRequestError("Parts array cannot be empty");
       }
 
-      // Validate each part has required fields
+      // Validate each part has required fields and map to AWS format
+      const awsParts = [];
       for (const part of parts) {
-        if (!part.partNumber || !part.etag) {
-          throw new BadRequestError("Each part must have partNumber and etag");
+        const partNumber = part.PartNumber || part.partNumber;
+        const etag = part.ETag || part.etag;
+
+        if (!partNumber || !etag) {
+          throw new BadRequestError(
+            "Each part must have PartNumber/partNumber and ETag/etag"
+          );
         }
+
+        awsParts.push({
+          PartNumber: parseInt(partNumber),
+          ETag: etag.replace(/"/g, ""), // Remove quotes if present
+        });
       }
 
-      // Sort parts by partNumber to ensure correct order
-      const sortedParts = parts.sort((a, b) => a.partNumber - b.partNumber);
+      // Sort parts by PartNumber to ensure correct order
+      const sortedParts = awsParts.sort((a, b) => a.PartNumber - b.PartNumber);
 
       const result = await videoUploadService.completeMultipartUpload(
         uploadId,

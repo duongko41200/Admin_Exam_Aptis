@@ -161,6 +161,10 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
         if (uploadMethod === "direct") {
           return directUploadVideoUrl || directUploadUrl; // Ưu tiên URL từ input
         }
+        if (uploadMethod === "server") {
+          // For server mode, return the URL that was set after multipart upload
+          return directUploadVideoUrl || (await uploadFileViaServer());
+        }
         if (!file) {
           throw new Error("No file selected");
         }
@@ -172,7 +176,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
       getFileInfo: () => fileInfo,
       getVideoUrl: () => {
         if (uploadMethod === "manual") return manualUrl;
-        if (uploadMethod === "direct")
+        if (uploadMethod === "direct" || uploadMethod === "server")
           return directUploadVideoUrl || directUploadUrl;
         return preview;
       },
@@ -192,7 +196,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
         const currentUrl =
           uploadMethod === "manual"
             ? manualUrl
-            : uploadMethod === "direct"
+            : uploadMethod === "direct" || uploadMethod === "server"
             ? directUploadVideoUrl || directUploadUrl
             : "";
         onUrlChange(currentUrl);
@@ -331,7 +335,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     };
 
     /**
-     * Upload file via server (existing method)
+     * Upload file via server with multipart upload and compression
      */
     const uploadFileViaServer = async () => {
       if (!file) {
@@ -341,10 +345,14 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
       setUploading(true);
       setUploadProgress(0);
       setError("");
+      setUploadStage("Đang khởi tạo upload...");
+
+      let uploadId = null;
+      let key = null;
 
       try {
         console.log(
-          `🚀 Starting server upload for ${file.name} (${(
+          `🚀 Starting server multipart upload for ${file.name} (${(
             file.size /
             1024 /
             1024
@@ -353,6 +361,10 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
 
         const userId = localStorage.getItem("userId") || null;
         const fileSizeMB = file.size / 1024 / 1024;
+
+        // Step 1: Initialize multipart upload with compression options
+        setUploadStage("Đang khởi tạo multipart upload...");
+        setUploadProgress(5);
 
         const compressionOptions = {
           enableCompression: fileSizeMB > 20,
@@ -365,42 +377,149 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
           audioBitrate: "96k",
         };
 
-        const [result, error] = await VideoService.uploadVideoWithProgress(
-          file,
-          userId,
-          compressionOptions,
-          (progress) => {
-            console.log("📊 Upload progress:", progress);
+        const [initResult, initError] =
+          await VideoService.initializeDirectUpload({
+            fileName: file.name,
+            fileSize: file.size,
+            userId,
+            compressionOptions,
+            partCount: Math.ceil(file.size / (50 * 1024 * 1024)), // 50MB per part
+          });
 
-            if (progress.stage === "compression") {
-              setUploadStage("Đang nén video...");
-              setUploadProgress(Math.floor(progress.percent * 0.3)); // 30% cho compression
-            } else if (progress.stage === "upload") {
-              setUploadStage("Đang upload video...");
-              setUploadProgress(30 + Math.floor(progress.percent * 0.7)); // 70% cho upload
-            } else {
-              setUploadStage("Đang xử lý...");
-              setUploadProgress(progress.percent || 0);
-            }
-          }
-        );
-
-        if (error || !result) {
-          throw new Error(error?.message || "Failed to upload video");
+        if (initError || !initResult) {
+          throw new Error(initError?.message || "Failed to initialize upload");
         }
 
+        uploadId = initResult.uploadId;
+        key = initResult.key;
+        const presignedUrls = initResult.presignedUrls;
+
+        console.log(`✅ Multipart upload initialized:`, {
+          uploadId,
+          key,
+          partCount: presignedUrls.length,
+        });
+
+        // Step 2: Upload file in chunks with parallel processing
+        setUploadStage("Đang upload file chunks...");
+        const chunkSize = 50 * 1024 * 1024; // 50MB chunks
+        const totalChunks = Math.ceil(file.size / chunkSize);
+        const uploadPromises = [];
+        const parts = [];
+        let uploadedChunks = 0;
+
+        for (let i = 0; i < totalChunks; i++) {
+          const start = i * chunkSize;
+          const end = Math.min(start + chunkSize, file.size);
+          const chunk = file.slice(start, end);
+          const partNumber = i + 1;
+          const presignedUrl = presignedUrls[i];
+
+          const uploadPromise = (async () => {
+            try {
+              // Upload chunk to R2 using presigned URL
+
+              console.log("presignedUrl", presignedUrl);
+              const response = await fetch(presignedUrl.signedUrl, {
+                method: "PUT",
+                body: chunk,
+                headers: {
+                  "Content-Type": "application/octet-stream",
+                },
+              });
+
+              console.log("response upload chunk", response);
+
+              if (!response.ok) {
+                throw new Error(
+                  `Upload chunk ${partNumber} failed: ${response.statusText}`
+                );
+              }
+
+              const etag = response.headers.get("ETag");
+              if (!etag) {
+                throw new Error(`No ETag received for chunk ${partNumber}`);
+              }
+
+              uploadedChunks++;
+              const progress = Math.floor(
+                10 + (uploadedChunks / totalChunks) * 80
+              ); // 10-90%
+              setUploadProgress(progress);
+              setUploadStage(
+                `Đang upload chunk ${uploadedChunks}/${totalChunks}...`
+              );
+
+              console.log(`✅ Chunk ${partNumber} uploaded successfully`);
+
+              return {
+                PartNumber: partNumber,
+                ETag: etag.replace(/"/g, ""), // Remove quotes
+              };
+            } catch (error) {
+              console.error(`❌ Chunk ${partNumber} upload failed:`, error);
+              throw error;
+            }
+          })();
+
+          uploadPromises.push(uploadPromise);
+
+          // Limit concurrent uploads to 3 to avoid overwhelming the connection
+          if (uploadPromises.length >= 3 || i === totalChunks - 1) {
+            const results = await Promise.all(uploadPromises);
+            parts.push(...results);
+            uploadPromises.length = 0; // Clear array
+          }
+        }
+
+        console.log(`✅ All chunks uploaded. Parts:`, parts);
+
+        // Step 3: Complete multipart upload
+        setUploadStage("Đang hoàn tất upload...");
+        setUploadProgress(90);
+
+        const res = await VideoService.completeMultipartUpload({
+          uploadId,
+          key,
+          parts: parts.sort((a, b) => a.PartNumber - b.PartNumber), // Sort by part number
+        });
+
+        console.log("res", res);
+
+        const publicUrl = res[0].publicUrl || res[0].url;
+
+        console.log(`✅ Server multipart upload completed:`, {
+          publicUrl,
+          key,
+        });
+
+        setDirectUploadVideoUrl(publicUrl); // Gán vào input URL video
+        setR2FileKey(key); // Save R2 key for potential deletion
+        setPreview(publicUrl); // Show video preview
         setUploadProgress(100);
         setUploadStage("Hoàn thành!");
-        return result.metadata.url;
+
+        return publicUrl;
       } catch (error) {
-        console.error("❌ Server upload error:", error);
-        setError(error.message);
+        console.error("❌ Server multipart upload error:", error);
+
+        // Abort multipart upload if it was started
+        if (uploadId && key) {
+          try {
+            setUploadStage("Đang hủy upload...");
+            await VideoService.abortMultipartUpload({ uploadId, key });
+            console.log("✅ Multipart upload aborted successfully");
+          } catch (abortError) {
+            console.error("❌ Failed to abort multipart upload:", abortError);
+          }
+        }
+
+        setError(`Upload failed: ${error.message}`);
         setUploadStage("Lỗi upload!");
-        removeFile();
         throw error;
       } finally {
         setUploading(false);
-        setTimeout(() => setUploadStage(""), 2000); // Clear stage after 2s
+        setTimeout(() => setUploadStage(""), 3000); // Clear stage after 3s
       }
     };
 
@@ -664,7 +783,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
                       Server Upload
                     </Typography>
                     <Typography variant="caption" color="text.secondary">
-                      Upload qua backend với nén video
+                      Multipart upload với nén video & song song chunks
                     </Typography>
                   </Box>
                 </Box>
@@ -759,6 +878,8 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
               <Typography variant="caption" color="text.secondary">
                 {uploadMethod === "direct"
                   ? "Uploading directly to cloud storage..."
+                  : uploadMethod === "server"
+                  ? "Processing with multipart upload & compression..."
                   : "Processing and uploading video..."}
               </Typography>
             </Box>
@@ -788,6 +909,63 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
               {manualUrl && (
                 <Alert severity="info" sx={{ mt: 2 }}>
                   URL đã được thiết lập: {manualUrl}
+                </Alert>
+              )}
+            </Box>
+          )}
+
+          {/* Server Upload: Show Upload Button and URL Input after upload */}
+          {uploadMethod === "server" && (
+            <Box sx={{ mb: 3 }}>
+              <TextField
+                fullWidth
+                label="URL Video (sau khi upload)"
+                placeholder="URL sẽ hiển thị ở đây sau khi upload thành công"
+                value={directUploadVideoUrl}
+                onChange={handleDirectUploadVideoUrlChange}
+                disabled={false}
+                sx={{
+                  mb: 2,
+                  "& .MuiOutlinedInput-root": {
+                    borderRadius: "12px",
+                  },
+                }}
+                InputProps={{
+                  startAdornment: (
+                    <LinkIcon sx={{ mr: 1, color: "text.secondary" }} />
+                  ),
+                }}
+              />
+              {file && !directUploadVideoUrl && !uploading && (
+                <Button
+                  variant="contained"
+                  startIcon={<CloudUpload />}
+                  onClick={async () => {
+                    try {
+                      const publicUrl = await uploadFileViaServer();
+                      // URL and states are already set in uploadFileViaServer
+                    } catch (error) {
+                      // Error handling is already done in uploadFileViaServer
+                    }
+                  }}
+                  disabled={disabled || uploading}
+                  sx={{
+                    borderRadius: "12px",
+                    px: 4,
+                    py: 1.5,
+                    textTransform: "none",
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    background:
+                      "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
+                  }}
+                >
+                  Upload Video qua Server (Multipart)
+                </Button>
+              )}
+              {directUploadVideoUrl && (
+                <Alert severity="success" sx={{ mt: 2 }}>
+                  URL video đã được thiết lập: {directUploadVideoUrl}
                 </Alert>
               )}
             </Box>
@@ -1060,7 +1238,7 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
 
                 {uploadMethod === "server" &&
                   !uploading &&
-                  !directUploadUrl &&
+                  !directUploadVideoUrl &&
                   file && (
                     <Alert severity="success" sx={{ mt: 2 }}>
                       <Box>
@@ -1068,7 +1246,24 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
                           Video đã sẵn sàng!
                         </Typography>
                         <Typography variant="caption">
-                          Video sẽ được upload qua server khi tạo bài học
+                          Nhấn nút "Upload Video qua Server" để bắt đầu upload
+                        </Typography>
+                      </Box>
+                    </Alert>
+                  )}
+
+                {uploadMethod === "server" &&
+                  !uploading &&
+                  directUploadVideoUrl &&
+                  file && (
+                    <Alert severity="success" sx={{ mt: 2 }}>
+                      <Box>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                          ✅ Server Upload Hoàn Thành!
+                        </Typography>
+                        <Typography variant="caption">
+                          Video đã được upload qua server và URL đã được set vào
+                          input
                         </Typography>
                       </Box>
                     </Alert>

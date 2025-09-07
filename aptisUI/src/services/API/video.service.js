@@ -91,9 +91,9 @@ const VideoService = {
 
       console.log("📡 API Response:", response);
 
-      if (response && response.success) {
-        console.log("✅ Initialize direct upload successful:", response.data);
-        return [response.data, null];
+      if (response && response[0].success) {
+        console.log("✅ Initialize direct upload successful:", response[0].data);
+        return [response[0].data, null];
       } else {
         console.error("❌ API returned unsuccessful response:", response);
         return [null, { message: response?.message || "Unknown API error" }];
@@ -147,7 +147,8 @@ const VideoService = {
           parts,
         }
       );
-      return [response.data, null];
+
+      return [response[0].data, null];
     } catch (error) {
       console.error("❌ Complete multipart upload failed:", error);
       return [null, error.response?.data || { message: error.message }];
