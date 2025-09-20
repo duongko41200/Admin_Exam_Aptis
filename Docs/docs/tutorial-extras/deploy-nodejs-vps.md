@@ -173,7 +173,25 @@ yarn start      # Chạy thử
 ### 6.3. Quản lý tiến trình với PM2
 
 ```bash
-pm2 start --name=appName yarn -- start
+pm2 start --name=appName yarn -- start # start thay bang lenh chayj du an ( ex: dev)
+### nếu tắt liên kết với window thì phải tải lại 
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install yarn
+
+pm2 start yarn --name admin --cwd /mnt/c/Users/hp/Admin_Exam_Aptis/aptisUI -- dev
+`
+
+
+
+pm2 startup systemd # tu dong restart 
+
+###### khi chay xong thi se chay them lenh de xuat neu loi chay lenh ben duoi
+export PATH=$HOME/.nvm/versions/node/v22.19.0/bin:/usr/bin:/bin
+sudo env PATH=$PATH pm2 startup systemd -u duongko113 --hp /home/duongko113
+
+############################################################################
 pm2 ls
 pm2 save
 pm2 startup
