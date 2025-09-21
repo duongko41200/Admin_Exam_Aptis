@@ -217,6 +217,9 @@ sudo apt-get update && sudo apt-get install nginx
 ### 7.3. Cấu hình firewall
 
 ```bash
+sudo apt update
+sudo apt install ufw -y
+
 sudo ufw allow 'Nginx Full'
 sudo ufw allow ssh
 sudo ufw enable
