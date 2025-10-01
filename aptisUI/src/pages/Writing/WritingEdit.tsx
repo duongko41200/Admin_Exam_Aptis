@@ -40,7 +40,7 @@ const WritingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
 };
 
 const WritingEdit = (props: BaseComponentProps) => (
-  <Box sx={boxStyles}>
+  <Box sx={{ ...boxStyles, maxHeight: "calc(100vh - 50px)" }}>
     <EditBase>
       <WritingEditForm {...props} />
     </EditBase>

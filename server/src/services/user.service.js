@@ -20,7 +20,7 @@ export const findByEmail = async ({
     createdAt: 1,
     phone: 1,
     status: 1,
-    role: 1,
+    roles: 1,
     operationMobile: 1,
   },
 }) => {

@@ -57,22 +57,25 @@ const authProvider: AuthProvider = {
       // document.cookie = `${HEADER.REFRESHTOKEN}= ${refreshToken}; path=/`
       // let { password, ...userToPersist } = user;
 
-      window.location.reload();
+      // window.location.reload();
       return Promise.resolve(data.metadata);
     } catch (error) {
       return Promise.reject(error);
     }
   },
   logout: () => {
-    localStorage.removeItem("user");
-    localStorage.removeItem("userId");
-    localStorage.removeItem("accessToken");
-    localStorage.removeItem("refreshToken");
+    localStorage.clear();
     return Promise.resolve();
   },
   checkError: () => Promise.resolve(),
-  checkAuth: () =>
-    localStorage.getItem("user") ? Promise.resolve() : Promise.reject(),
+  checkAuth: () =>{
+
+    console.log("checkAuth", localStorage.getItem("user"));
+
+   return localStorage.getItem("user") ? Promise.resolve() : Promise.reject();
+
+  },
+
   getPermissions: () => {
     return Promise.resolve(generateRole(1));
   },

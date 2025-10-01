@@ -59,6 +59,8 @@ const baseDataProvider: DataProvider = {
     const response = await fetch(request);
 
     if (response.ok === false) {
+      localStorage.clear();
+      window.location.href = "/login";
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
@@ -154,6 +156,8 @@ const baseDataProvider: DataProvider = {
 
   getAll: async (resource: string): Promise<GetOneResult> => {
     const url = `${apiUrlDesktopApp}/${resource}/batch/`;
+
+    HEADER["x-client-id"] = localStorage.getItem("userId") as string;
 
     const request = new Request(`${url}`, {
       method: "GET",

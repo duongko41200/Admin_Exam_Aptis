@@ -170,7 +170,7 @@ class AccessService {
      * 3- nếu vào điện thoại chỉ cần check ios, phiên bản
      * - laptop cũng thế
      */
-    if (process.env.NODE_ENV != "dev") {
+    if (process.env.NODE_ENV != "dev" && findUser.roles != 'ADMIN') {
       if (!findUser.operationMobile) {
         await userModel.updateOne(
           { _id: findUser._id },

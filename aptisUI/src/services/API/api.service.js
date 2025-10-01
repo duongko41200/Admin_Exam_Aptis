@@ -49,16 +49,16 @@ axios.interceptors.response.use(
   function (error) {
     const status = error.response?.status;
 
+    console.log("ApiService Response Error:", { status, error });
+
     if (
       (status === 401 || status === 500) &&
       window.location.pathname !== "/login"
     ) {
-      // ToastError(
-      //   "Chúng tôi cần xác minh danh tính của bạn. Vui lòng đăng nhập lại."
-      // );
-      localStorage.removeItem("accessToken");
-      localStorage.removeItem("refreshToken");
-      localStorage.removeItem("userId");
+      ToastError(
+        "Chúng tôi cần xác minh danh tính của bạn. Vui lòng đăng nhập lại."
+      );
+      localStorage.clear();
       window.location.href = "/login";
     }
 

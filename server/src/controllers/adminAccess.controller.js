@@ -52,7 +52,7 @@ class AdminAccessController {
 
     res.cookie("accessToken", data.tokens.accessToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV != "dev",
+      secure: process.env.NODE_ENV != "dev",  
       sameSite: "strict",
       maxAge: 7 * 60 * 60 * 1000,
     });

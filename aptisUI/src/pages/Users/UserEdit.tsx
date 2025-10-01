@@ -74,7 +74,7 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   }, []);
 
   return (
-    <Box sx={{ ...boxStyles}}>
+    <Box sx={{ ...boxStyles, maxHeight: "calc(100vh - 100px)" }}>
       <EditBase>
         <Title title="ユーザ登録　編集" />
         <CustomForm
