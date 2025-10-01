@@ -53,10 +53,22 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const handleUpdate = async (values: RecordValue) => {
     try {
 
-      console.log("Updating user with values:", values);
-      if (values.operationMobile == 'null'){
-        values.operationMobile = null
+    if (
+      typeof values.operationMobile === "string" &&
+      values.operationMobile.trim() !== ""
+    ) {
+      try {
+        values.operationMobile = JSON.parse(values.operationMobile);
+      } catch (e) {
+        notify("Thông tin thiết bị không đúng định dạng JSON!", {
+          type: "error",
+        });
+        return;
       }
+    }
+    if (values.operationMobile === "null") {
+      values.operationMobile = null;
+    }
         await dataProvider.update(resource, {
           id: record?.id,
           data: values,
