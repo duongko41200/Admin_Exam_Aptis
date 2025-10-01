@@ -133,16 +133,21 @@ export const create = async (data) => {
 export const updateOneById = async (id, data) => {
   try {
     const user = await userModel.findById(id).lean();
+
+    console.log({ user });
     if (!user) {
       throw new BadRequestError("User not found");
     }
     const updatedData = { ...data };
+    console.log({ updatedData });
     if (data.newPassword) {
       updatedData.password = await bcrypt.hash(data.newPassword, 10);
     }
     const updatedUser = await userModel
       .findByIdAndUpdate(id, updatedData, { new: true })
       .lean();
+
+      console.log({ updatedUser });
     return getIntoData({
       fileds: ["_id", "name", "email", "classRoomId", "status", "roles"],
       object: updatedUser,

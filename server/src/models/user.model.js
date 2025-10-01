@@ -80,7 +80,7 @@ const userSchema = new Schema(
           version: { type: String },
         },
       },
-      default: null,
+      default: {} | null,
     },
   },
   {

@@ -52,11 +52,16 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
 
   const handleUpdate = async (values: RecordValue) => {
     try {
-      await dataProvider.update(resource, {
-        id: record?.id,
-        data: values,
-        previousData: record,
-      });
+
+      console.log("Updating user with values:", values);
+      if (values.operationMobile == 'null'){
+        values.operationMobile = null
+      }
+        await dataProvider.update(resource, {
+          id: record?.id,
+          data: values,
+          previousData: record,
+        });
 
       await notify(UPDATED_SUCCESS, {
         type: "success",
@@ -113,7 +118,7 @@ const UserEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
           />
 
           <SelectInput
-            source="role"
+            source="roles"
             choices={userRoles}
             defaultValue={"USER"}
             label="Vai trò"
