@@ -1,4 +1,11 @@
-import React, { useEffect, useState, useRef, useCallback, useMemo, memo } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useCallback,
+  useMemo,
+  memo,
+} from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useNotify } from "react-admin";
@@ -152,140 +159,155 @@ interface FormData {
 
 interface QuestionBoxProps {
   questionNumber: number;
-  register: ReturnType<typeof useForm<FormData>>['register'];
-  errors: ReturnType<typeof useForm<FormData>>['formState']['errors'];
+  register: ReturnType<typeof useForm<FormData>>["register"];
+  errors: ReturnType<typeof useForm<FormData>>["formState"]["errors"];
   suggestion: string;
   setSuggestion: (value: string) => void;
   num: number;
 }
 
 // Optimized QuestionBox component with memo
-const QuestionBox = memo(({
-  questionNumber,
-  register,
-  errors,
-  suggestion,
-  setSuggestion,
-  num,
-}: QuestionBoxProps) => (
-  <Box
-    sx={{
-      minHeight: "200px",
-      height: "fit-content",
-      border: "1px solid #ddd",
-      borderRadius: "8px",
-      padding: "16px",
-      backgroundColor: "#fafafa",
-    }}
-  >
+const QuestionBox = memo(
+  ({
+    questionNumber,
+    register,
+    errors,
+    suggestion,
+    setSuggestion,
+    num,
+  }: QuestionBoxProps) => (
     <Box
       sx={{
-        fontSize: "18px",
-        fontWeight: "bold",
-        marginBottom: "12px",
-        color: "#1976d2",
+        minHeight: "200px",
+        height: "fit-content",
+        border: "1px solid #ddd",
+        borderRadius: "8px",
+        padding: "16px",
+        backgroundColor: "#fafafa",
       }}
     >
-      Nội Dung Câu {questionNumber}
-    </Box>
-    <Box>
-      <div>
-        <TextField
-          {...register(`subContent${questionNumber}` as keyof FormData, { required: true })}
-          placeholder={`Question ${questionNumber} content`}
-          variant="outlined"
-          fullWidth
-          error={!!errors[`subContent${questionNumber}` as keyof FormData]}
-          helperText={
-            errors[`subContent${questionNumber}` as keyof FormData]
-              ? "This field is required"
-              : ""
-          }
-          sx={{
-            "& .MuiOutlinedInput-root": {
-              backgroundColor: "white",
-            },
-          }}
-        />
-      </div>
-      <Box sx={{ marginTop: "12px" }}>
-        <TextField
-          {...register(`correctAnswer${questionNumber}` as keyof FormData, { required: true })}
-          placeholder="Đáp án đúng"
-          variant="outlined"
-          fullWidth
-          error={!!errors[`correctAnswer${questionNumber}` as keyof FormData]}
-          helperText={
-            errors[`correctAnswer${questionNumber}` as keyof FormData]
-              ? "This field is required"
-              : ""
-          }
-          sx={{
-            "& .MuiOutlinedInput-root": {
-              backgroundColor: "#fff3e0",
-              "&:hover": {
-                backgroundColor: "#ffe0b2",
+      <Box
+        sx={{
+          fontSize: "18px",
+          fontWeight: "bold",
+          marginBottom: "12px",
+          color: "#1976d2",
+        }}
+      >
+        Nội Dung Câu {questionNumber}
+      </Box>
+      <Box>
+        <div>
+          <TextField
+            {...register(`subContent${questionNumber}` as keyof FormData, {
+              required: true,
+            })}
+            placeholder={`Question ${questionNumber} content`}
+            variant="outlined"
+            fullWidth
+            error={!!errors[`subContent${questionNumber}` as keyof FormData]}
+            helperText={
+              errors[`subContent${questionNumber}` as keyof FormData]
+                ? "This field is required"
+                : ""
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                backgroundColor: "white",
               },
-            },
-          }}
-        />
-      </Box>
-      <Box sx={{ marginTop: "12px" }}>
-        <TextEditor
-          placeholder="gợi ý câu trả lời"
-          suggestion={suggestion}
-          setSuggestion={setSuggestion}
-          editorId={`editor${num}`}
-        />
-      </Box>
-
-      <Box sx={{ marginTop: "12px" }}>
-        <TextField
-          {...register(`subFile${questionNumber}` as keyof FormData)}
-          placeholder="file âm thanh câu hỏi"
-          variant="outlined"
-          fullWidth
-          sx={{
-            "& .MuiOutlinedInput-root": {
-              backgroundColor: "white",
-            },
-          }}
-        />
-      </Box>
-      <Box sx={{ marginTop: "12px" }}>
-        {[1, 2, 3].map((answerNum) => (
-          <Box key={answerNum} sx={{ marginBottom: "8px" }}>
-            <TextField
-              {...register(`answer${answerNum}Sub${questionNumber}` as keyof FormData, {
-                required: true,
-              })}
-              placeholder={`Đáp án ${answerNum}`}
-              variant="outlined"
-              fullWidth
-              size="small"
-              error={!!errors[`answer${answerNum}Sub${questionNumber}` as keyof FormData]}
-              helperText={
-                errors[`answer${answerNum}Sub${questionNumber}` as keyof FormData]
-                  ? "This field is required"
-                  : ""
-              }
-              sx={{
-                "& .MuiOutlinedInput-root": {
-                  backgroundColor: "#f0f8ff",
-                  "&:hover": {
-                    backgroundColor: "#e6f3ff",
-                  },
+            }}
+          />
+        </div>
+        <Box sx={{ marginTop: "12px" }}>
+          <TextField
+            {...register(`correctAnswer${questionNumber}` as keyof FormData, {
+              required: true,
+            })}
+            placeholder="Đáp án đúng"
+            variant="outlined"
+            fullWidth
+            error={!!errors[`correctAnswer${questionNumber}` as keyof FormData]}
+            helperText={
+              errors[`correctAnswer${questionNumber}` as keyof FormData]
+                ? "This field is required"
+                : ""
+            }
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                backgroundColor: "#fff3e0",
+                "&:hover": {
+                  backgroundColor: "#ffe0b2",
                 },
-              }}
-            />
-          </Box>
-        ))}
+              },
+            }}
+          />
+        </Box>
+        <Box sx={{ marginTop: "12px" }}>
+          <TextEditor
+            placeholder="gợi ý câu trả lời"
+            suggestion={suggestion}
+            setSuggestion={setSuggestion}
+            editorId={`editor${num}`}
+          />
+        </Box>
+
+        <Box sx={{ marginTop: "12px" }}>
+          <TextField
+            {...register(`subFile${questionNumber}` as keyof FormData)}
+            placeholder="file âm thanh câu hỏi"
+            variant="outlined"
+            fullWidth
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                backgroundColor: "white",
+              },
+            }}
+          />
+        </Box>
+        <Box sx={{ marginTop: "12px" }}>
+          {[1, 2, 3].map((answerNum) => (
+            <Box key={answerNum} sx={{ marginBottom: "8px" }}>
+              <TextField
+                {...register(
+                  `answer${answerNum}Sub${questionNumber}` as keyof FormData,
+                  {
+                    required: true,
+                  }
+                )}
+                placeholder={`Đáp án ${answerNum}`}
+                variant="outlined"
+                fullWidth
+                size="small"
+                error={
+                  !!errors[
+                    `answer${answerNum}Sub${questionNumber}` as keyof FormData
+                  ]
+                }
+                helperText={
+                  errors[
+                    `answer${answerNum}Sub${questionNumber}` as keyof FormData
+                  ]
+                    ? "This field is required"
+                    : ""
+                }
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    backgroundColor: "#f0f8ff",
+                    "&:hover": {
+                      backgroundColor: "#e6f3ff",
+                    },
+                  },
+                }}
+              />
+            </Box>
+          ))}
+        </Box>
       </Box>
     </Box>
-  </Box>
-));
+  )
+);
 
-QuestionBox.displayName = 'QuestionBox';
+QuestionBox.displayName = "QuestionBox";
 
 const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   showDeleteButton = true,
@@ -298,27 +320,32 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   const navigate = useNavigate();
   const notify = useNotify();
   const dispatch = useDispatch();
-  const listeningStore = useSelector((state: RootState) => state.listeningStore);
+  const listeningStore = useSelector(
+    (state: RootState) => state.listeningStore
+  );
 
   const [suggestions, setSuggestions] = useState<string[]>(Array(14).fill(""));
 
-  const handleSuggestionChange = useCallback((index: number, value: string) => {
-    setSuggestions((prev) => {
-      const newSuggestions = [...prev];
-      newSuggestions[index] = value;
-      return newSuggestions;
-    });
+  const handleSuggestionChange = useCallback(
+    (index: number, value: string) => {
+      setSuggestions((prev) => {
+        const newSuggestions = [...prev];
+        newSuggestions[index] = value;
+        return newSuggestions;
+      });
 
-    // Update Redux store for suggestion
-    if (index > 0 && index <= 13) {
-      dispatch(
-        UPDATE_LISTENING_SUB_QUESTION_SUGGESTION({
-          index: index - 1,
-          value: value,
-        })
-      );
-    }
-  }, [dispatch]);
+      // Update Redux store for suggestion
+      if (index > 0 && index <= 13) {
+        dispatch(
+          UPDATE_LISTENING_SUB_QUESTION_SUGGESTION({
+            index: index - 1,
+            value: value,
+          })
+        );
+      }
+    },
+    [dispatch]
+  );
 
   const {
     register,
@@ -335,13 +362,16 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   // Sync form data to Redux store with optimization
   const prevFieldsRef = useRef<Partial<FormData>>({});
   const prevSubQuestionsRef = useRef<SubQuestionData[]>([]);
-  
+
   // Memoize field configurations to prevent recreation
-  const fieldConfigs = useMemo(() => [
-    { key: "title" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
-    { key: "content" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
-    { key: "subTitle" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
-  ], []);
+  const fieldConfigs = useMemo(
+    () => [
+      { key: "title" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
+      { key: "content" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
+      { key: "subTitle" as keyof FormData, action: UPDATE_LISTENING_MAIN_DATA },
+    ],
+    []
+  );
 
   // Debounced update function to prevent excessive Redux updates
   const debouncedUpdate = useCallback(
@@ -397,7 +427,8 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
         const subContentKey = `subContent${num}` as keyof FormData;
         const correctAnswerKey = `correctAnswer${num}` as keyof FormData;
         const subFileKey = `subFile${num}` as keyof FormData;
-        const currentSubQ = listeningStore.currentListeningData.subQuestions[i] || {};
+        const currentSubQ =
+          listeningStore.currentListeningData.subQuestions[i] || {};
         const prevSubQ = prevSubQuestionsRef.current[i] || {};
 
         // Check content, correctAnswer, file changes
@@ -423,14 +454,21 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
         });
 
         // Check answer list changes
-        if (currentSubQ && 'answerList' in currentSubQ && Array.isArray(currentSubQ.answerList)) {
-          const currentAnswerList = [...currentSubQ.answerList] as { content: string }[];
+        if (
+          currentSubQ &&
+          "answerList" in currentSubQ &&
+          Array.isArray(currentSubQ.answerList)
+        ) {
+          const currentAnswerList = [...currentSubQ.answerList] as {
+            content: string;
+          }[];
           let answerChanged = false;
           [1, 2, 3].forEach((ansNum) => {
             const answerKey = `answer${ansNum}Sub${num}` as keyof FormData;
             if (
               watchedFields[answerKey] !== undefined &&
-              currentAnswerList[ansNum - 1]?.content !== watchedFields[answerKey]
+              currentAnswerList[ansNum - 1]?.content !==
+                watchedFields[answerKey]
             ) {
               currentAnswerList[ansNum - 1] = {
                 content: watchedFields[answerKey] || "",
@@ -438,7 +476,7 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
               answerChanged = true;
             }
           });
-          
+
           if (answerChanged) {
             updates.push(() =>
               dispatch(
@@ -454,20 +492,20 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
       }
 
       // Execute all updates at once
-      updates.forEach(update => update());
+      updates.forEach((update) => update());
 
       // Save current state for next comparison
       prevFieldsRef.current = { ...watchedFields };
       prevSubQuestionsRef.current =
-        listeningStore.currentListeningData.subQuestions.map((q: SubQuestionData) => ({
-          content: q.content,
-          correctAnswer: q.correctAnswer,
-          file: q.file,
-          suggestion: q.suggestion,
-          answerList: q.answerList
-            ? q.answerList.map((a) => ({ ...a }))
-            : [],
-        }));
+        listeningStore.currentListeningData.subQuestions.map(
+          (q: SubQuestionData) => ({
+            content: q.content,
+            correctAnswer: q.correctAnswer,
+            file: q.file,
+            suggestion: q.suggestion,
+            answerList: q.answerList ? q.answerList.map((a) => ({ ...a })) : [],
+          })
+        );
     });
   }, [watchedFields, dispatch, listeningStore, fieldConfigs, debouncedUpdate]);
 
@@ -475,110 +513,122 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   const resetAllData = useCallback(() => {
     // Reset form
     reset();
-    
+
     // Reset suggestions
     setSuggestions(Array(14).fill(""));
-    
+
     // Reset Redux store
     dispatch(RESET_LISTENING_DATA());
     dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 13 }));
-    
+
     // Reset TextEditor components via events
     for (let i = 1; i <= 13; i++) {
       const editorElement = document.getElementById(`editor${i}`);
       if (editorElement) {
-        const event = new CustomEvent('editorReset');
+        const event = new CustomEvent("editorReset");
         editorElement.dispatchEvent(event);
       }
     }
   }, [reset, dispatch]);
 
-  const onSubmit = useCallback(async (values: FormData) => {
-    // Use data from Redux store instead of form values
-    const data = {
-      title: listeningStore?.currentListeningData?.title || values.title,
-      timeToDo: 35,
-      questions: {
-        questionTitle:
-          listeningStore?.currentListeningData?.subTitle || values.subTitle,
-        content:
-          listeningStore?.currentListeningData?.content || values.content,
-        answerList: [],
-        correctAnswer: "",
-        file: null,
-        subQuestionAnswerList: [],
-        suggestion: null,
-        subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => ({
+  const onSubmit = useCallback(
+    async (values: FormData) => {
+      // Use data from Redux store instead of form values
+      const data = {
+        title: listeningStore?.currentListeningData?.title || values.title,
+        timeToDo: 35,
+        questions: {
+          questionTitle:
+            listeningStore?.currentListeningData?.subTitle || values.subTitle,
           content:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.content ||
-            values[`subContent${num}` as keyof FormData] ||
-            "",
-          correctAnswer:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.correctAnswer ||
-            values[`correctAnswer${num}` as keyof FormData] ||
-            "",
-          file:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.file ||
-            values[`subFile${num}` as keyof FormData] ||
-            "",
-          answerList:
-            listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-              ?.answerList ||
-            [1, 2, 3].map((ansNum) => ({
-              content: values[`answer${ansNum}Sub${num}` as keyof FormData] || "",
-            })),
+            listeningStore?.currentListeningData?.content || values.content,
+          answerList: [],
+          correctAnswer: "",
+          file: null,
+          subQuestionAnswerList: [],
+          suggestion: null,
+          subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(
+            (num) => ({
+              content:
+                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                  ?.content ||
+                values[`subContent${num}` as keyof FormData] ||
+                "",
+              correctAnswer:
+                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                  ?.correctAnswer ||
+                values[`correctAnswer${num}` as keyof FormData] ||
+                "",
+              file:
+                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                  ?.file ||
+                values[`subFile${num}` as keyof FormData] ||
+                "",
+              answerList:
+                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                  ?.answerList ||
+                [1, 2, 3].map((ansNum) => ({
+                  content:
+                    values[`answer${ansNum}Sub${num}` as keyof FormData] || "",
+                })),
+              image: null,
+              suggestion: suggestions[num] || "",
+            })
+          ),
+          isExample: false,
           image: null,
-          suggestion: suggestions[num] || "",
-        })),
-        isExample: false,
-        image: null,
-      },
-      questionType: "LISTENING",
-      questionPart: "ONE",
-      description: null,
-    };
+        },
+        questionType: "LISTENING",
+        questionPart: "ONE",
+        description: null,
+      };
 
-    if (statusHandler === "create") {
-      await createListeningPartOne(data);
-      resetAllData();
-    }
-    if (statusHandler === "edit") {
-      await updateListeningPartOne(data);
-    }
-  }, [listeningStore, suggestions, statusHandler, resetAllData]);
+      if (statusHandler === "create") {
+        await createListeningPartOne(data);
+        resetAllData();
+      }
+      if (statusHandler === "edit") {
+        await updateListeningPartOne(data);
+      }
+    },
+    [listeningStore, suggestions, statusHandler, resetAllData]
+  );
 
-  const createListeningPartOne = useCallback(async (data: any) => {
-    try {
-      await baseDataProvider.create("listenings", { data });
-      await notify(UPDATED_SUCCESS, {
-        type: "success",
-      });
-    } catch (error) {
-      console.log({ error });
-    }
-  }, [notify]);
+  const createListeningPartOne = useCallback(
+    async (data: any) => {
+      try {
+        await baseDataProvider.create("listenings", { data });
+        await notify(UPDATED_SUCCESS, {
+          type: "success",
+        });
+      } catch (error) {
+        console.log({ error });
+      }
+    },
+    [notify]
+  );
 
-  const updateListeningPartOne = useCallback(async (values: any) => {
-    try {
-      await dataProvider.update("listenings", {
-        id: dataListeningPartOne?.id,
-        data: values,
-        previousData: dataListeningPartOne,
-      });
+  const updateListeningPartOne = useCallback(
+    async (values: any) => {
+      try {
+        await dataProvider.update("listenings", {
+          id: dataListeningPartOne?.id,
+          data: values,
+          previousData: dataListeningPartOne,
+        });
 
-      await notify(UPDATED_SUCCESS, {
-        type: "success",
-      });
-      navigate("/listenings");
-    } catch (error) {
-      notify("エラー: 生産管理の更新に失敗しました: " + error, {
-        type: "warning",
-      });
-    }
-  }, [dataListeningPartOne, notify, navigate]);
+        await notify(UPDATED_SUCCESS, {
+          type: "success",
+        });
+        navigate("/listenings");
+      } catch (error) {
+        notify("エラー: 生産管理の更新に失敗しました: " + error, {
+          type: "warning",
+        });
+      }
+    },
+    [dataListeningPartOne, notify, navigate]
+  );
 
   // Load data for edit mode
   useEffect(() => {
@@ -608,10 +658,14 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
       );
 
       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].forEach((num) => {
-        const subQuestion = dataListeningPartOne.questions[0].subQuestion[num - 1];
+        const subQuestion =
+          dataListeningPartOne.questions[0].subQuestion[num - 1];
         if (subQuestion) {
           setValue(`subContent${num}` as keyof FormData, subQuestion.content);
-          setValue(`correctAnswer${num}` as keyof FormData, subQuestion.correctAnswer);
+          setValue(
+            `correctAnswer${num}` as keyof FormData,
+            subQuestion.correctAnswer
+          );
           setValue(`subFile${num}` as keyof FormData, subQuestion.file);
 
           // Update Redux store
@@ -642,7 +696,10 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
           // Load answer options
           if (subQuestion.answerList) {
             subQuestion.answerList.forEach((answer, index) => {
-              setValue(`answer${index + 1}Sub${num}` as keyof FormData, answer.content);
+              setValue(
+                `answer${index + 1}Sub${num}` as keyof FormData,
+                answer.content
+              );
             });
 
             dispatch(
@@ -659,7 +716,10 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   }, [dataListeningPartOne, setValue, dispatch, handleSuggestionChange]);
 
   // Memoize questions array to prevent recreation
-  const questionNumbers = useMemo(() => Array.from({ length: 13 }, (_, i) => i + 1), []);
+  const questionNumbers = useMemo(
+    () => Array.from({ length: 13 }, (_, i) => i + 1),
+    []
+  );
 
   return (
     <div style={{ position: "relative", height: "100vh" }}>
@@ -668,7 +728,7 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
         className="form sign-up-form relative max-h-[calc(100vh-200px)] overflow-auto"
       >
         <h2 className="title">Listening Part 1 - Optimized</h2>
-        
+
         {/* Main form fields */}
         <div style={{ marginBottom: "16px" }}>
           <TextField
@@ -680,7 +740,7 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
             helperText={errors.title ? "This field is required" : ""}
           />
         </div>
-        
+
         <div style={{ marginBottom: "16px" }}>
           <TextField
             {...register("subTitle", { required: true })}
@@ -691,7 +751,7 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
-        
+
         <div style={{ marginBottom: "16px" }}>
           <TextField
             {...register("content", { required: true })}
@@ -721,7 +781,9 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
               register={register}
               errors={errors}
               suggestion={suggestions[num]}
-              setSuggestion={(value: string) => handleSuggestionChange(num, value)}
+              setSuggestion={(value: string) =>
+                handleSuggestionChange(num, value)
+              }
               num={num}
             />
           ))}
