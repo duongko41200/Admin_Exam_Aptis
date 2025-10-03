@@ -447,7 +447,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
 
         if (uploadResults.metadata.successful) {
           const newImageUrls = uploadResults.metadata.successful.map(
-            (result) => `${import.meta.env.VITE_BASE_URL_FILE}/${result.key}`
+            (result) => `https://files.aptisacademy.com.vn/${result.key}`
           );
           const newImageKeys = uploadResults.metadata.successful.map(
             (result) => result.key
@@ -471,8 +471,9 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         description: storeData.subTitle || values.subTitle,
         questions: [
           {
-            questionTitle: storeData.subTitle || values.subTitle,
-            content: storeData.content || values.content,
+            questionTitle:
+              storeData.subTitle || values.subTitle || "không có sub title",
+            content: storeData.content || values.content || "không có content",
             answerList: [],
             correctAnswer: "",
             file: storeData.file || values.file,
@@ -596,10 +597,11 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       setValue("subTitle", dataReadingPartTwo.questions[0].questionTitle);
 
       // Set existing images từ data
+
       const existingImages = [];
       if (dataReadingPartTwo.questions[0].subQuestion[0]?.image) {
         existingImages.push(
-          dataReadingPartTwo.questions[0].subQuestion[0].image
+          `${dataReadingPartTwo.questions[0].subQuestion[0].image}`
         );
       }
 
@@ -891,11 +893,11 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                               color: "text.secondary",
                             }}
                           >
-                            Main Content *
+                            Content ( cái này không nhất thiết cần thêm )
                           </Typography>
                           <TextField
-                            {...register("content", { required: true })}
-                            placeholder="Enter the main content or instructions..."
+                            {...register("content")}
+                            placeholder="mô tả cho title này "
                             variant="outlined"
                             fullWidth
                             multiline
@@ -916,43 +918,6 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
                         </Box>
 
                         {/* Two Column Layout */}
-                        <Box
-                          sx={{
-                            display: "grid",
-                            gridTemplateColumns: { xs: "1fr", md: "1fr" },
-                            gap: 2,
-                          }}
-                        >
-                          {/* Sub Title */}
-                          <Box>
-                            <Typography
-                              variant="subtitle2"
-                              sx={{
-                                mb: 1,
-                                fontWeight: 600,
-                                color: "text.secondary",
-                              }}
-                            >
-                              Sub Title *
-                            </Typography>
-                            <TextField
-                              {...register("subTitle", { required: true })}
-                              placeholder="Enter sub title..."
-                              variant="outlined"
-                              fullWidth
-                              error={!!errors.subTitle}
-                              helperText={
-                                errors.subTitle ? "Sub title is required" : ""
-                              }
-                              sx={{
-                                "& .MuiOutlinedInput-root": {
-                                  borderRadius: 2,
-                                  background: "rgba(255, 255, 255, 0.8)",
-                                },
-                              }}
-                            />
-                          </Box>
-                        </Box>
 
                         {/* Media URLs */}
                         <Box

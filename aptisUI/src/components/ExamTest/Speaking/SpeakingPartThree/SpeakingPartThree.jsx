@@ -22,15 +22,12 @@ const SpeakingPartThree = () => {
       {numberQuestionEachPart === 1 && contentPartThree && (
         <div className="flex gap-2">
           <div>
-            <img
-              src={contentPartThree.image && contentPartThree?.image[0]?.path}
-            />
+            <img src={contentPartThree.img && contentPartThree?.img[0]} width={300} />
+
           </div>
 
           <div>
-            <img
-              src={contentPartThree.image && contentPartThree?.image[1]?.path}
-            />
+            <img src={contentPartThree.img && contentPartThree?.img[1]} width={300} />
           </div>
         </div>
       )}

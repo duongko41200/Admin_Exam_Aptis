@@ -21,10 +21,8 @@ const SpeakingPartTwo = () => {
       </div>
       {numberQuestionEachPart === 1 && numberQuestionEachPart && (
         <img
-          src={
-            numberQuestionEachPart.image &&
-            numberQuestionEachPart?.image[0]?.path
-          }
+          src={subQuestionSpeaking.img && subQuestionSpeaking?.img[0]}
+          width={300}
         />
       )}
     </div>

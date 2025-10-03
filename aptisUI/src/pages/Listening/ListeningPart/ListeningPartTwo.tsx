@@ -519,9 +519,7 @@ const ListeningPartTwo: React.FC<ListeningPartOneProps> = ({
           uploadResults.metadata.successful &&
           uploadResults.metadata.successful.length > 0
         ) {
-          uploadedAudioUrl = `${import.meta.env.VITE_BASE_URL_FILE}/${
-            uploadResults.metadata.successful[0].key
-          }`;
+          uploadedAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.metadata.successful[0].key}`;
         }
       }
 

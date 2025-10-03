@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
@@ -176,21 +176,24 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
   const handleMouseUp = () => {
     setIsDragging(false);
   };
+const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const debouncedUpdate = useCallback(
-    (value: string) => {
-      if (isTypingTimeOut) {
-        clearTimeout(isTypingTimeOut);
+const debouncedUpdate = useCallback((value: string) => {
+  if (typingTimeoutRef.current) {
+    clearTimeout(typingTimeoutRef.current);
+  }
+  typingTimeoutRef.current = setTimeout(() => {
+    setSuggestion(value || "");
+  }, 300);
+}, []);
+
+  useEffect(() => {
+    return () => {
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
       }
-      setIsTypingTimeOut(
-        setTimeout(() => {
-          setSuggestion(value);
-        }, 10)
-      );
-    },
-    [isTypingTimeOut]
-  );
-
+    };
+  }, []);
   const onSubmit = async (values: FormData) => {
     // Use data from Redux store instead of form values directly
     const data = {

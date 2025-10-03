@@ -183,8 +183,7 @@ const SpeakingList = ({
   resource,
   dataProvider,
 }: BaseComponentProps) => {
-
-    const [isFilterExpanded, setIsFilterExpanded] = useState(false);
+  const [isFilterExpanded, setIsFilterExpanded] = useState(false);
   return (
     <List
       title=""
@@ -262,10 +261,6 @@ const SpeakingList = ({
       >
         <TextField source="no" label="NO" />
         <TextField source="title" label="Chủ đề Reading" />
-        <TextField
-          source="questions[0].questionTitle"
-          label="Chủ đề từng phần"
-        />
         <TextField source="questionPart" label="Reading Part" />
         <TextField source="createdAt" label="Ngày tạo" />
         <TextField source="updatedAt" label="Ngày Cập nhập" />

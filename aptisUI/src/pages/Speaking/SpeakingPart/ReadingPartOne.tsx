@@ -316,13 +316,14 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       description: storeData.subTitle || values.subTitle,
       questions: [
         {
-          questionTitle: storeData.subTitle || values.subTitle,
-          content: storeData.content || values.content,
+          questionTitle:
+            storeData.subTitle || values.subTitle || "không có tiêu đề",
+          content: storeData.content || values.content || "không có content",
           answerList: [],
           correctAnswer: "",
           file: storeData.file || values.file,
           subQuestionAnswerList: [],
-          suggestion: storeData.suggestion || values.suggestion,
+          suggestion: storeData.suggestion || values.suggestion || "",
           subQuestion: [1, 2, 3].map((num) => ({
             content:
               storeData.subQuestions[num - 1]?.content ||
@@ -654,24 +655,19 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                           }}
                         />
                       </Box>
+
                       <Box>
                         <Typography
                           variant="subtitle2"
                           sx={{ fontWeight: 600, color: "text.secondary" }}
                         >
-                          Sub Title
+                          Audio File URL
                         </Typography>
                         <TextField
-                          {...register("subTitle", { required: true })}
-                          placeholder="Enter subtitle..."
+                          {...register("file")}
+                          placeholder="Enter listening audio file URL..."
                           variant="outlined"
                           fullWidth
-                          error={!!errors.subTitle}
-                          helperText={
-                            errors.subTitle
-                              ? "Sub title is required"
-                              : "Add a subtitle to clarify the exercise"
-                          }
                           sx={{
                             "& .MuiOutlinedInput-root": {
                               borderRadius: 2,
@@ -680,6 +676,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                           }}
                         />
                       </Box>
+
                       <Box>
                         <Typography
                           variant="subtitle2"
@@ -700,46 +697,6 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
                               ? "Content is required"
                               : "Provide clear instructions for the speaking exercise"
                           }
-                          sx={{
-                            "& .MuiOutlinedInput-root": {
-                              borderRadius: 2,
-                              background: "rgba(255, 255, 255, 0.8)",
-                            },
-                          }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle2"
-                          sx={{ fontWeight: 600, color: "text.secondary" }}
-                        >
-                          Suggestion (Optional)
-                        </Typography>
-                        <TextField
-                          {...register("suggestion")}
-                          placeholder="Enter answer suggestions..."
-                          variant="outlined"
-                          fullWidth
-                          sx={{
-                            "& .MuiOutlinedInput-root": {
-                              borderRadius: 2,
-                              background: "rgba(255, 255, 255, 0.8)",
-                            },
-                          }}
-                        />
-                      </Box>
-                      <Box>
-                        <Typography
-                          variant="subtitle2"
-                          sx={{ fontWeight: 600, color: "text.secondary" }}
-                        >
-                          Audio File URL
-                        </Typography>
-                        <TextField
-                          {...register("file")}
-                          placeholder="Enter listening audio file URL..."
-                          variant="outlined"
-                          fullWidth
                           sx={{
                             "& .MuiOutlinedInput-root": {
                               borderRadius: 2,

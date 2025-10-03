@@ -355,9 +355,7 @@ const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
         uploadedImageKeys = existingImageUrls
           .map((url) => {
             // Extract key từ URL, ví dụ: https://files.aptisacademy.com.vn/speaking/abc.jpg -> speaking/abc.jpg
-            return (
-              url.split(`${import.meta.env.VITE_BASE_URL_FILE}/`).pop() || ""
-            );
+            return url.split(`https://files.aptisacademy.com.vn/`).pop() || "";
           })
           .filter((key) => key); // Lọc bỏ empty strings
       }
@@ -372,7 +370,7 @@ const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
 
         if (uploadResults.metadata.successful) {
           const newImageUrls = uploadResults.metadata.successful.map(
-            (result) => `${import.meta.env.VITE_BASE_URL_FILE}/${result.key}`
+            (result) => `https://files.aptisacademy.com.vn/${result.key}`
           );
           const newImageKeys = uploadResults.metadata.successful.map(
             (result) => result.key
@@ -649,7 +647,7 @@ const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
       ) {
         dataReadingPartThree.questions[0].image.forEach((img) => {
           if (img)
-            existingImages.push(`${import.meta.env.VITE_BASE_URL_FILE}/${img}`);
+            existingImages.push(`https://files.aptisacademy.com.vn/${img}`);
         });
       }
 

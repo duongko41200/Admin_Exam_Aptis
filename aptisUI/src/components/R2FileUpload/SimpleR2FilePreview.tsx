@@ -65,6 +65,8 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
   // Helper function to get file extension from URL
   const getFileExtension = (url: string) => {
     const pathname = new URL(url).pathname;
+
+    console.log("pathname", pathname);
     return pathname.split(".").pop()?.toLowerCase() || "";
   };
 
