@@ -19,7 +19,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -223,9 +223,6 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
   // State cho suggestion và modal
   const [suggestion, setSuggestion] = useState("");
 
-  // Debug log to check store structure
-  console.log("Speaking Store:", speakingStore);
-
   const {
     register,
     handleSubmit,
@@ -235,6 +232,51 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
     reset,
     watch,
   } = useForm<FormData>();
+
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      content: "",
+      subContent1: "",
+      subContent2: "",
+      subContent3: "",
+      correctAnswer1: "",
+      correctAnswer2: "",
+      correctAnswer3: "",
+      answerOneSub1: "",
+      answerTwoSub1: "",
+      answerThreeSub1: "",
+      answerOneSub2: "",
+      answerTwoSub2: "",
+      answerThreeSub2: "",
+      answerOneSub3: "",
+      answerTwoSub3: "",
+      answerThreeSub3: "",
+      suggestion: "",
+      file: "",
+    });
+
+    // Reset local states
+    setSuggestion("");
+
+    // Reset Redux store
+    dispatch(RESET_SPEAKING_DATA());
+
+    // Reset TextEditor
+    const editorElement = document.querySelector("#speaking-part-four-editor");
+    if (editorElement) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "speaking-part-four-editor" },
+      });
+      editorElement.dispatchEvent(event);
+    }
+  }, [reset, dispatch]);
+
+  // Debug log to check store structure
+  console.log("Speaking Store:", speakingStore);
 
   // Watch all form fields for real-time Redux sync
   const watchedFields = watch();
@@ -383,9 +425,12 @@ const SpeakingPartFour: React.FC<ReadingPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+
+      // Reset toàn bộ form và state sau khi submit thành công
+      resetAllData();
     } catch (error) {
       console.log({ error });
+      notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
 

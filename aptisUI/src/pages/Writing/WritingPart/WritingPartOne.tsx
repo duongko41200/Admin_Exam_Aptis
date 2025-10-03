@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useNavigate, NavLink, useParams } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
@@ -117,6 +117,38 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
+
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      content: "",
+      subContent1: "",
+      subContent2: "",
+      subContent3: "",
+      subContent4: "",
+      subContent5: "",
+      suggestion: "",
+    });
+
+    // Reset local states
+    setSuggestion("");
+
+    // Reset Redux store
+    dispatch(RESET_WRITING_DATA());
+    dispatch(INIT_SUB_QUESTIONS({ count: 5 }));
+
+    // Reset TextEditor
+    const editorElement = document.querySelector("#writing-part-one-editor");
+    if (editorElement) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "writing-part-one-editor" },
+      });
+      editorElement.dispatchEvent(event);
+    }
+  }, [reset, dispatch]);
 
   // Sync form data to Redux store in real-time
   useEffect(() => {
@@ -258,9 +290,12 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+
+      // Reset toàn bộ form và state sau khi submit thành công
+      resetAllData();
     } catch (error) {
       console.log({ error });
+      notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
 
@@ -466,6 +501,7 @@ const WritingPartOne: React.FC<WritingPartThree> = ({
             placeholder="Write something or insert a star ★"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
+            editorId="writing-part-one-editor"
           />
         </div>
 

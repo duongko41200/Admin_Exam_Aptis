@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback, useMemo, memo } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler, set } from "react-hook-form";
-import { Button, useNotify } from "react-admin";
+import { useNavigate, useParams } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useNotify } from "react-admin";
 import { Stack, Box, TextField } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
@@ -16,6 +16,7 @@ import {
   INIT_LISTENING_SUB_QUESTIONS,
 } from "../../../store/feature/listening";
 
+// Type definitions
 interface ListeningData {
   id: string;
   title: string;
@@ -158,6 +159,7 @@ interface QuestionBoxProps {
   num: number;
 }
 
+// Optimized QuestionBox component with memo
 const QuestionBox = memo(({
   questionNumber,
   register,
@@ -193,9 +195,9 @@ const QuestionBox = memo(({
           placeholder={`Question ${questionNumber} content`}
           variant="outlined"
           fullWidth
-          error={!!errors[`subContent${questionNumber}`]}
+          error={!!errors[`subContent${questionNumber}` as keyof FormData]}
           helperText={
-            errors[`subContent${questionNumber}`]
+            errors[`subContent${questionNumber}` as keyof FormData]
               ? "This field is required"
               : ""
           }
@@ -206,27 +208,15 @@ const QuestionBox = memo(({
           }}
         />
       </div>
-      <Box>
-        <Box
-          sx={{
-            fontSize: "14px",
-            fontWeight: "500",
-            marginBottom: "8px",
-            color: "#666",
-            marginTop: "12px",
-          }}
-        >
-          Đáp án đúng:
-        </Box>
+      <Box sx={{ marginTop: "12px" }}>
         <TextField
-          type={`correctAnswer${questionNumber}`}
           {...register(`correctAnswer${questionNumber}` as keyof FormData, { required: true })}
-          placeholder="Đán án đúng"
+          placeholder="Đáp án đúng"
           variant="outlined"
           fullWidth
-          error={!!errors[`correctAnswer${questionNumber}`]}
+          error={!!errors[`correctAnswer${questionNumber}` as keyof FormData]}
           helperText={
-            errors[`correctAnswer${questionNumber}`]
+            errors[`correctAnswer${questionNumber}` as keyof FormData]
               ? "This field is required"
               : ""
           }
@@ -240,81 +230,56 @@ const QuestionBox = memo(({
           }}
         />
       </Box>
-      {/* <div>
-        <TextField
-          type="suggestion"
-          {...register(`suggestion${questionNumber}`)}
-          placeholder="Gợi ý câu trả lời"
-          variant="outlined"
-          fullWidth
-          error={!!errors.subTitle}
-          helperText={errors.subTitle ? "This field is required" : ""}
-        />
-      </div> */}
-      <div>
+      <Box sx={{ marginTop: "12px" }}>
         <TextEditor
           placeholder="gợi ý câu trả lời"
           suggestion={suggestion}
           setSuggestion={setSuggestion}
           editorId={`editor${num}`}
         />
-      </div>
+      </Box>
 
-      <div>
+      <Box sx={{ marginTop: "12px" }}>
         <TextField
-          // type="file âm thanh câu hỏi "
           {...register(`subFile${questionNumber}` as keyof FormData)}
           placeholder="file âm thanh câu hỏi"
           variant="outlined"
           fullWidth
-          error={!!errors.subTitle}
-          helperText={errors.subTitle ? "This field is required" : ""}
           sx={{
             "& .MuiOutlinedInput-root": {
               backgroundColor: "white",
             },
           }}
         />
-      </div>
-      <Box sx={{ marginBottom: "16px" }}>
-        <Box
-          sx={{
-            fontSize: "14px",
-            fontWeight: "500",
-            marginBottom: "8px",
-            color: "#666",
-          }}
-        >
-          Các lựa chọn đáp án:
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: 1,
-          }}
-        >
-          {[1, 2, 3].map((num) => (
-            <div key={num}>
-              <TextField
-                type={`answer${num}Sub${questionNumber}`}
-                {...register(`answer${num}Sub${questionNumber}` as keyof FormData, {
-                  required: true,
-                })}
-                placeholder={`Đáp án ${num}`}
-                variant="outlined"
-                fullWidth
-                error={!!errors[`answer${num}Sub${questionNumber}`]}
-                helperText={
-                  errors[`answer${num}Sub${questionNumber}`]
-                    ? "This field is required"
-                    : ""
-                }
-              />
-            </div>
-          ))}
-        </Box>
+      </Box>
+      <Box sx={{ marginTop: "12px" }}>
+        {[1, 2, 3].map((answerNum) => (
+          <Box key={answerNum} sx={{ marginBottom: "8px" }}>
+            <TextField
+              {...register(`answer${answerNum}Sub${questionNumber}` as keyof FormData, {
+                required: true,
+              })}
+              placeholder={`Đáp án ${answerNum}`}
+              variant="outlined"
+              fullWidth
+              size="small"
+              error={!!errors[`answer${answerNum}Sub${questionNumber}` as keyof FormData]}
+              helperText={
+                errors[`answer${answerNum}Sub${questionNumber}` as keyof FormData]
+                  ? "This field is required"
+                  : ""
+              }
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  backgroundColor: "#f0f8ff",
+                  "&:hover": {
+                    backgroundColor: "#e6f3ff",
+                  },
+                },
+              }}
+            />
+          </Box>
+        ))}
       </Box>
     </Box>
   </Box>
@@ -322,29 +287,18 @@ const QuestionBox = memo(({
 
 QuestionBox.displayName = 'QuestionBox';
 
-const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
-  children,
-  pathTo,
+const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   showDeleteButton = true,
   showSaveButton = true,
   showCancelButton = true,
-  alwaysEnable = false,
   dataListeningPartOne = null,
   statusHandler = "create",
   handleCancel,
-  ...props
 }) => {
-  const { id } = useParams();
   const navigate = useNavigate();
   const notify = useNotify();
   const dispatch = useDispatch();
   const listeningStore = useSelector((state: RootState) => state.listeningStore);
-
-  // Debug panel states
-  const [isDragging, setIsDragging] = useState(false);
-  const [isDebugPanelOpen, setIsDebugPanelOpen] = useState(false);
-  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
-  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
   const [suggestions, setSuggestions] = useState<string[]>(Array(14).fill(""));
 
@@ -370,7 +324,6 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
     register,
     handleSubmit,
     formState: { errors },
-    control,
     setValue,
     reset,
     watch,
@@ -378,32 +331,6 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
 
   // Watch all form fields for real-time Redux sync
   const watchedFields = watch();
-
-  const [idTele, setIdTele] = useState("");
-  const [isShow, setIsShow] = useState(false);
-
-  // Debug panel drag handlers - memoized to prevent re-renders
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsDragging(true);
-    setDragOffset({
-      x: e.clientX - debugPanelPosition.x,
-      y: e.clientY - debugPanelPosition.y,
-    });
-  }, [debugPanelPosition.x, debugPanelPosition.y]);
-
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (isDragging) {
-      setDebugPanelPosition({
-        x: e.clientX - dragOffset.x,
-        y: e.clientY - dragOffset.y,
-      });
-    }
-  }, [isDragging, dragOffset.x, dragOffset.y]);
-
-  const handleMouseUp = useCallback(() => {
-    setIsDragging(false);
-  }, []);
 
   // Sync form data to Redux store with optimization
   const prevFieldsRef = useRef<Partial<FormData>>({});
@@ -625,18 +552,15 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
 
   const createListeningPartOne = useCallback(async (data: any) => {
     try {
-      const CreateData = await baseDataProvider.create("listenings", { data });
-
+      await baseDataProvider.create("listenings", { data });
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
     } catch (error) {
       console.log({ error });
     }
-  }, [notify, reset]);
+  }, [notify]);
 
-  //tentisspace
   const updateListeningPartOne = useCallback(async (values: any) => {
     try {
       await dataProvider.update("listenings", {
@@ -656,23 +580,14 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
     }
   }, [dataListeningPartOne, notify, navigate]);
 
+  // Load data for edit mode
   useEffect(() => {
-    console.log({ dataListeningPartOne });
     if (dataListeningPartOne) {
-      console.log("Loading edit data...");
-      console.log("Data structure:", {
-        questions: dataListeningPartOne.questions,
-        subQuestions: dataListeningPartOne.questions[0]?.subQuestion,
-        firstSubQuestion: dataListeningPartOne.questions[0]?.subQuestion[0],
-        firstAnswerList:
-          dataListeningPartOne.questions[0]?.subQuestion[0]?.answerList,
-      });
-
       setValue("title", dataListeningPartOne.title);
       setValue("content", dataListeningPartOne.questions[0].content);
       setValue("subTitle", dataListeningPartOne.questions[0].questionTitle);
 
-      // Also update Redux store
+      // Update Redux store
       dispatch(
         UPDATE_LISTENING_MAIN_DATA({
           field: "title",
@@ -692,168 +607,71 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
         })
       );
 
-      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => {
-        const subContent =
-          dataListeningPartOne.questions[0].subQuestion[num - 1]?.content || "";
-        const correctAnswer =
-          dataListeningPartOne.questions[0].subQuestion[num - 1]
-            ?.correctAnswer || "";
-        const file =
-          dataListeningPartOne.questions[0].subQuestion[num - 1]?.file || "";
-        const suggestion =
-          dataListeningPartOne.questions[0].subQuestion[num - 1]?.suggestion ||
-          "";
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].forEach((num) => {
+        const subQuestion = dataListeningPartOne.questions[0].subQuestion[num - 1];
+        if (subQuestion) {
+          setValue(`subContent${num}` as keyof FormData, subQuestion.content);
+          setValue(`correctAnswer${num}` as keyof FormData, subQuestion.correctAnswer);
+          setValue(`subFile${num}` as keyof FormData, subQuestion.file);
 
-        setValue(`subContent${num}` as keyof FormData, subContent);
-        setValue(`correctAnswer${num}` as keyof FormData, correctAnswer);
-        setValue(`subFile${num}` as keyof FormData, file);
+          // Update Redux store
+          dispatch(
+            UPDATE_LISTENING_SUB_QUESTION({
+              index: num - 1,
+              field: "content",
+              value: subQuestion.content,
+            })
+          );
+          dispatch(
+            UPDATE_LISTENING_SUB_QUESTION({
+              index: num - 1,
+              field: "correctAnswer",
+              value: subQuestion.correctAnswer,
+            })
+          );
+          dispatch(
+            UPDATE_LISTENING_SUB_QUESTION({
+              index: num - 1,
+              field: "file",
+              value: subQuestion.file,
+            })
+          );
 
-        // Update Redux store
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "content",
-            value: subContent,
-          })
-        );
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "correctAnswer",
-            value: correctAnswer,
-          })
-        );
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "file",
-            value: file,
-          })
-        );
+          handleSuggestionChange(num, subQuestion.suggestion);
 
-        handleSuggestionChange(num, suggestion);
+          // Load answer options
+          if (subQuestion.answerList) {
+            subQuestion.answerList.forEach((answer, index) => {
+              setValue(`answer${index + 1}Sub${num}` as keyof FormData, answer.content);
+            });
 
-        // Collect all answers for this question first
-        const answerList = [1, 2, 3].map((ansNum) => {
-          const answerContent =
-            dataListeningPartOne.questions[0].subQuestion[num - 1]
-              ?.answerList?.[ansNum - 1]?.content || "";
-          const answerKey = `answer${ansNum}Sub${num}` as keyof FormData;
-
-          console.log(`Setting ${answerKey} = "${answerContent}"`);
-          setValue(answerKey, answerContent);
-
-          return { content: answerContent };
-        });
-
-        // Update Redux store with complete answerList for this question
-        dispatch(
-          UPDATE_LISTENING_SUB_QUESTION({
-            index: num - 1,
-            field: "answerList",
-            value: answerList,
-          })
-        );
+            dispatch(
+              UPDATE_LISTENING_SUB_QUESTION({
+                index: num - 1,
+                field: "answerList",
+                value: subQuestion.answerList,
+              })
+            );
+          }
+        }
       });
     }
-  }, [dataListeningPartOne, setValue, dispatch]);
+  }, [dataListeningPartOne, setValue, dispatch, handleSuggestionChange]);
+
+  // Memoize questions array to prevent recreation
+  const questionNumbers = useMemo(() => Array.from({ length: 13 }, (_, i) => i + 1), []);
 
   return (
-    <div
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      style={{ position: "relative", height: "100vh" }}
-    >
-      {/* Draggable Debug Panel - JSON Format */}
-      <Box
-        sx={{
-          position: "fixed",
-          top: "140px",
-          right: "20px",
-          width: isDebugPanelOpen ? "400px" : "auto",
-          maxHeight: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.75)",
-          color: "white",
-          borderRadius: "8px",
-          zIndex: 1000,
-          border: "1px solid #333",
-          transform: `translate(${debugPanelPosition.x}px, ${debugPanelPosition.y}px)`,
-          cursor: isDragging ? "grabbing" : "default",
-          userSelect: "none",
-        }}
-      >
-        {/* Header luôn hiển thị */}
-        <Box
-          sx={{
-            padding: "8px 12px",
-            borderBottom: isDebugPanelOpen ? "1px solid #333" : "none",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            borderRadius: isDebugPanelOpen ? "8px 8px 0 0" : "8px",
-            cursor: "grab",
-            "&:active": {
-              cursor: "grabbing",
-            },
-          }}
-          onMouseDown={handleMouseDown}
-        >
-          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
-            Redux Store Debug 🖱️
-          </span>
-          <button
-            onClick={() => setIsDebugPanelOpen(!isDebugPanelOpen)}
-            style={{
-              background: "none",
-              border: "1px solid #666",
-              color: "white",
-              borderRadius: "4px",
-              padding: "4px 8px",
-              cursor: "pointer",
-              fontSize: "12px",
-            }}
-          >
-            <span>{isDebugPanelOpen ? "▼" : "▶"}</span>
-          </button>
-        </Box>
-
-        {/* Nội dung JSON chỉ hiển thị khi expanded */}
-        {isDebugPanelOpen && (
-          <Box
-            sx={{
-              padding: "12px",
-              maxHeight: "350px",
-              overflow: "auto",
-            }}
-          >
-            <pre
-              style={{
-                margin: 0,
-                fontSize: "10px",
-                lineHeight: "1.2",
-                wordWrap: "break-word",
-                whiteSpace: "pre-wrap",
-              }}
-            >
-              {JSON.stringify(
-                listeningStore?.currentListeningData || {},
-                null,
-                2
-              )}
-            </pre>
-          </Box>
-        )}
-      </Box>
-
+    <div style={{ position: "relative", height: "100vh" }}>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative max-h-[calc(100vh-200px)] overflow-auto"
       >
-        <h2 className="title">Listening Part 1</h2>
-        <div>
+        <h2 className="title">Listening Part 1 - Optimized</h2>
+        
+        {/* Main form fields */}
+        <div style={{ marginBottom: "16px" }}>
           <TextField
-            type="title"
             {...register("title", { required: true })}
             placeholder="Title"
             variant="outlined"
@@ -862,20 +680,9 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
             helperText={errors.title ? "This field is required" : ""}
           />
         </div>
-        <div>
+        
+        <div style={{ marginBottom: "16px" }}>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
-            type="subTitle"
             {...register("subTitle", { required: true })}
             placeholder="Sub Title"
             variant="outlined"
@@ -884,87 +691,79 @@ const ListeningPartOne: React.FC<ListeningPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+        
+        <div style={{ marginBottom: "16px" }}>
+          <TextField
+            {...register("content", { required: true })}
+            placeholder="Content"
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={4}
+            error={!!errors.content}
+            helperText={errors.content ? "This field is required" : ""}
+          />
+        </div>
 
-        <Box
-          sx={{
-            width: "100%",
-            height: "fit-content",
-            background: "#fff !important",
+        {/* Questions Grid - Optimized with memoized array */}
+        <div
+          style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
-            boxShadow:
-              "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-            gap: "10px",
-            padding: "10px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+            gap: "20px",
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => (
-            <>
-              <QuestionBox
-                key={num}
-                questionNumber={num}
-                register={register}
-                errors={errors}
-                suggestion={suggestions[num]}
-                setSuggestion={(value: any) =>
-                  handleSuggestionChange(num, value)
-                }
-                num={num}
-              />
-            </>
+          {questionNumbers.map((num) => (
+            <QuestionBox
+              key={num}
+              questionNumber={num}
+              register={register}
+              errors={errors}
+              suggestion={suggestions[num]}
+              setSuggestion={(value: string) => handleSuggestionChange(num, value)}
+              num={num}
+            />
           ))}
-        </Box>
+        </div>
 
-        <Box
-          sx={{
-            width: "100%",
-            minHeight: "100px",
-            position: "relative",
-          }}
-        >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}
-            width="100%"
-            sx={{
-              backgroundColor: "#f1f1f1",
-              padding: "1rem",
-              borderRadius: "4px",
-              marginTop: "1rem",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-            }}
-            {...props}
-          >
-            <Button type="submit" variant="contained" color="info">
-              <span>Submit</span>
-            </Button>
-
-            {showCancelButton && pathTo ? (
-              <NavLink to={pathTo}>
-                <Button type="button" variant="contained" color="error">
-                  <span>Cancel</span>
-                </Button>
-              </NavLink>
-            ) : (
-              <Button
-                type="button"
-                variant="contained"
-                color="error"
-                onClick={handleCancel}
-              >
-                <span>Cancel</span>
-              </Button>
-            )}
-          </Stack>
-        </Box>
+        {/* Action buttons */}
+        <Stack direction="row" spacing={2} sx={{ mt: 3 }}>
+          {showSaveButton && (
+            <button
+              type="submit"
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "#1976d2",
+                color: "white",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Save
+            </button>
+          )}
+          {showCancelButton && handleCancel && (
+            <button
+              type="button"
+              onClick={handleCancel}
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "#f44336",
+                color: "white",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Cancel
+            </button>
+          )}
+        </Stack>
       </form>
     </div>
   );
 };
 
-export default ListeningPartOne;
+export default ListeningPartOneOptimized;

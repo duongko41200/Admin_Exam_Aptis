@@ -1,5 +1,5 @@
 import { Box, Stack, TextField } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Button, useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
@@ -154,6 +154,44 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
 
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      content: "",
+      suggestion: "",
+      subContent1: "",
+      subContent2: "",
+      subContent3: "",
+      correctAnswer1: "",
+      correctAnswer2: "",
+      correctAnswer3: "",
+      answerOneSub1: "",
+      answerTwoSub1: "",
+      answerThreeSub1: "",
+      answerOneSub2: "",
+      answerTwoSub2: "",
+      answerThreeSub2: "",
+      answerOneSub3: "",
+      answerTwoSub3: "",
+      answerThreeSub3: "",
+    });
+
+    // Reset local states
+    setSuggestion("");
+
+    // Reset TextEditor
+    const editorElement = document.querySelector("#reading-part-one-editor");
+    if (editorElement) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "reading-part-one-editor" },
+      });
+      editorElement.dispatchEvent(event);
+    }
+  }, [reset]);
+
   const onSubmit = async (values: any) => {
     console.log("suggestion", suggestion);
     const data = {
@@ -202,9 +240,12 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+
+      // Reset toàn bộ form và state sau khi submit thành công
+      resetAllData();
     } catch (error) {
       console.log({ error });
+      notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
 
@@ -303,6 +344,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             placeholder="Write something or insert a star ★"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
+            editorId="reading-part-one-editor"
           />
         </div>
 

@@ -7,7 +7,7 @@ import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import ListeningPartFour from "../../pages/Listening/ListeningPart/ListeningPartFour";
-import ListeningPartOne from "../../pages/Listening/ListeningPart/ListeningPartOne";
+import ListeningPartOneOptimized from "../../pages/Listening/ListeningPart/ListeningPartOneOptimized";
 import ListeningPartThree from "../../pages/Listening/ListeningPart/ListeningPartThree";
 import ListeningPartTwo from "../../pages/Listening/ListeningPart/ListeningPartTwo";
 import {
@@ -179,7 +179,7 @@ export default function BasicTabs() {
           </Button>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          <ListeningPartOne
+          <ListeningPartOneOptimized
             showDeleteButton={false}
             handleCancel={handleCancel}
           />

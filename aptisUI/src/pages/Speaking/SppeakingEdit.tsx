@@ -1,4 +1,11 @@
-import { useNotify, useRecordContext, EditBase, Title } from "react-admin";
+import {
+  useNotify,
+  useRecordContext,
+  EditBase,
+  Title,
+  RaRecord,
+  Identifier,
+} from "react-admin";
 import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { boxStyles } from "../../styles";
@@ -8,14 +15,39 @@ import ReadingPartThree from "./SpeakingPart/SpeakingPartThree";
 import ReadingPartFour from "./SpeakingPart/SpeakingPartFour";
 import { BaseComponentProps } from "../../types/general";
 
+// Type definitions for Speaking data structure
+interface SubQuestion {
+  content: string;
+  file: string;
+  suggestion: string;
+  image?: string;
+}
+
+interface Question {
+  content: string;
+  questionTitle: string;
+  suggestion?: string;
+  file?: string;
+  subQuestion: SubQuestion[];
+}
+
+interface SpeakingData {
+  id: string;
+  title: string;
+  questionPart: string;
+  questions: Question[];
+}
+
 const SpeakingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   const notify = useNotify();
   const navigate = useNavigate();
-  const record = useRecordContext();
+  const record = useRecordContext<SpeakingData>();
   const resourcePath = `/${resource}`;
 
   const renderReadingPart = () => {
-    switch (record?.questionPart) {
+    if (!record) return null;
+
+    switch (record.questionPart) {
       case "ONE":
         return (
           <ReadingPartOne dataSpeakingPartOne={record} statusHandler="edit" />

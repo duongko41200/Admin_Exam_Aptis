@@ -73,6 +73,41 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
   // Watch all form fields for real-time Redux sync
   const watchedFields = watch();
   const [suggestion, setSuggestion] = useState("");
+
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      content: "",
+      subContent1: "",
+      subContent2: "",
+      subContent3: "",
+      optionPerson1: "",
+      optionPerson2: "",
+      optionPerson3: "",
+      optionPerson4: "",
+      optionPerson5: "",
+      suggestion: "",
+    });
+
+    // Reset local states
+    setSuggestion("");
+
+    // Reset Redux store
+    dispatch(RESET_WRITING_DATA());
+    dispatch(INIT_SUB_QUESTIONS({ count: 3 }));
+
+    // Reset TextEditor
+    const editorElement = document.querySelector("#writing-part-two-editor");
+    if (editorElement) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "writing-part-two-editor" },
+      });
+      editorElement.dispatchEvent(event);
+    }
+  }, [reset, dispatch]);
   const [isTypingTimeOut, setIsTypingTimeOut] = useState<any>(null);
 
   // Sync form data to Redux store in real-time
@@ -176,16 +211,16 @@ const WritingPartTwo: React.FC<WritingPartTwoProps> = ({
   const handleMouseUp = () => {
     setIsDragging(false);
   };
-const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-const debouncedUpdate = useCallback((value: string) => {
-  if (typingTimeoutRef.current) {
-    clearTimeout(typingTimeoutRef.current);
-  }
-  typingTimeoutRef.current = setTimeout(() => {
-    setSuggestion(value || "");
-  }, 300);
-}, []);
+  const debouncedUpdate = useCallback((value: string) => {
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setSuggestion(value || "");
+    }, 300);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -242,9 +277,12 @@ const debouncedUpdate = useCallback((value: string) => {
     try {
       await baseDataProvider.create("Writings", { data });
       notify(UPDATED_SUCCESS, { type: "success" });
-      reset();
+
+      // Reset toàn bộ form và state sau khi submit thành công
+      resetAllData();
     } catch (error) {
       console.error(error);
+      notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
 
@@ -460,7 +498,6 @@ const debouncedUpdate = useCallback((value: string) => {
           error={!!errors.content}
           helperText={errors.content ? "This field is required" : ""}
         />
-
 
         <div>
           <TextEditor

@@ -13,7 +13,13 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, {
+  ChangeEvent,
+  useEffect,
+  useState,
+  useCallback,
+  useRef,
+} from "react";
 import { useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -38,9 +44,30 @@ interface ReadingPartOneProps {
   showCancelButton?: boolean;
   alwaysEnable?: boolean;
   pathTo?: string;
-  dataReadingPartTwo?: any;
+  dataReadingPartTwo?: ReadingPartTwoData | null;
   statusHandler?: string;
   handleCancel?: () => void;
+}
+
+interface SubQuestion {
+  content: string;
+  file: string;
+  suggestion: string;
+  image?: string;
+}
+
+interface Question {
+  content: string;
+  questionTitle: string;
+  suggestion?: string;
+  file?: string;
+  subQuestion: SubQuestion[];
+}
+
+interface ReadingPartTwoData {
+  id: string;
+  title: string;
+  questions: Question[];
 }
 
 interface FormData {
@@ -62,9 +89,21 @@ interface FormData {
   answerOneSub3: string;
   answerTwoSub3: string;
   answerThreeSub3: string;
+  subFile1?: string;
+  subFile2?: string;
+  subFile3?: string;
   suggestion?: string;
   file?: string;
   imgUrl?: string;
+}
+
+interface QuestionBoxProps {
+  questionNumber: number;
+  register: any; // từ useForm
+  errors: any; // từ useForm
+  suggestion: string;
+  setSuggestion: (value: string) => void;
+  num: number;
 }
 
 const QuestionBox = ({
@@ -74,14 +113,7 @@ const QuestionBox = ({
   suggestion,
   setSuggestion,
   num,
-}: {
-  questionNumber: number;
-  register: any;
-  errors: any;
-  suggestion: any;
-  setSuggestion: any;
-  num: number;
-}) => (
+}: QuestionBoxProps) => (
   <Grow in={true} timeout={800 + num * 200}>
     <Card
       elevation={4}
@@ -262,15 +294,21 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     watch,
   } = useForm<FormData>();
 
-  const [imageUpload, setImageUpload] = useState();
-  const [images, setImages] = useState([]);
-  const [previewUrls, setPreviewUrls] = useState([]);
-  const [rangeUpload, setRangeUpload] = useState(false);
+  const [imageUpload, setImageUpload] = useState<File | undefined>();
+  const [images, setImages] = useState<string[]>([]);
+  const [previewUrls, setPreviewUrls] = useState<string[]>([]);
+  const [rangeUpload, setRangeUpload] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<string[]>(Array(3).fill(""));
-  const [showDebugPanel, setShowDebugPanel] = useState(false); // State cho debug panel
-  const [debugPanelPosition, setDebugPanelPosition] = useState({ x: 0, y: 0 });
-  const [isDraggingDebug, setIsDraggingDebug] = useState(false);
-  const [debugDragStart, setDebugDragStart] = useState({ x: 0, y: 0 });
+  const [showDebugPanel, setShowDebugPanel] = useState<boolean>(false);
+  const [debugPanelPosition, setDebugPanelPosition] = useState<{
+    x: number;
+    y: number;
+  }>({ x: 0, y: 0 });
+  const [isDraggingDebug, setIsDraggingDebug] = useState<boolean>(false);
+  const [debugDragStart, setDebugDragStart] = useState<{
+    x: number;
+    y: number;
+  }>({ x: 0, y: 0 });
 
   // New states for R2FilePreview
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
@@ -314,17 +352,73 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   };
 
   // Helper functions để update Redux store
-  const updateMainDataInStore = (field: string, value: any) => {
+  const updateMainDataInStore = (field: string, value: string | string[]) => {
     dispatch(UPDATE_SPEAKING_MAIN_DATA({ field, value }));
   };
 
   const updateSubQuestionInStore = (
     index: number,
     field: string,
-    value: any
+    value: string
   ) => {
     dispatch(UPDATE_SUB_QUESTION({ index: index - 1, field, value }));
   };
+
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      content: "",
+      subContent1: "",
+      subContent2: "",
+      subContent3: "",
+      correctAnswer1: "",
+      correctAnswer2: "",
+      correctAnswer3: "",
+      answerOneSub1: "",
+      answerTwoSub1: "",
+      answerThreeSub1: "",
+      answerOneSub2: "",
+      answerTwoSub2: "",
+      answerThreeSub2: "",
+      answerOneSub3: "",
+      answerTwoSub3: "",
+      answerThreeSub3: "",
+      subFile1: "",
+      subFile2: "",
+      subFile3: "",
+      suggestion: "",
+      file: "",
+      imgUrl: "",
+    });
+
+    // Reset local states
+    setImageUpload(undefined);
+    setImages([]);
+    setPreviewUrls([]);
+    setSelectedFiles([]);
+    setPreviewImageUrls([]);
+    setExistingImageUrls([]);
+    setRemovedImageUrls([]);
+    setSuggestions(Array(3).fill(""));
+    setRangeUpload(false);
+
+    // Reset Redux store
+    dispatch(RESET_SPEAKING_DATA());
+
+    // Reset TextEditor - trigger reset cho tất cả editors
+    [1, 2, 3].forEach((num) => {
+      const editorElement = document.querySelector(`#editor${num}`);
+      if (editorElement) {
+        const event = new CustomEvent("resetEditor", {
+          detail: { editorId: `editor${num}` },
+        });
+        editorElement.dispatchEvent(event);
+      }
+    });
+  }, [reset, dispatch]);
 
   // Debug panel drag handlers
   const handleDebugMouseDown = (e: React.MouseEvent) => {
@@ -567,22 +661,26 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     }
   };
 
-  const handleFileUpload = async (e) => {
-    setImageUpload(e.target.files[0]);
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setImageUpload(file);
+    }
   };
 
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(e.target.files as unknown as File[]);
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
 
     // Tạo preview URL
     const newPreviewUrls = files.map((file: File) => URL.createObjectURL(file));
     setPreviewUrls((prev) => [...prev, ...newPreviewUrls]);
 
-    // Lưu file trong state
-    setImages((prev) => [...prev, ...files]);
+    // Convert files to URLs cho state string[]
+    const fileUrls = files.map((file) => URL.createObjectURL(file));
+    setImages((prev) => [...prev, ...fileUrls]);
   };
 
-  const handleRemoveImage = (index) => {
+  const handleRemoveImage = (index: number) => {
     const newImages = images.filter((_, i) => i !== index);
     const newPreviewUrls = previewUrls.filter((_, i) => i !== index);
     setImages(newImages);

@@ -266,16 +266,16 @@ const WritingPartFour: React.FC<WritingPartOneProps> = ({
     setIsDragging(false);
   };
 
-const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-const debouncedUpdate = useCallback((value: string) => {
-  if (typingTimeoutRef.current) {
-    clearTimeout(typingTimeoutRef.current);
-  }
-  typingTimeoutRef.current = setTimeout(() => {
-    setSuggestion(value || "");
-  }, 300);
-}, []);
+  const debouncedUpdate = useCallback((value: string) => {
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setSuggestion(value || "");
+    }, 300);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -288,6 +288,54 @@ const debouncedUpdate = useCallback((value: string) => {
   const debouncedContentUpdate = useCallback((value: string) => {
     setContent(value || "");
   }, []);
+
+  // Reset function để clear toàn bộ form và state
+  const resetAllData = useCallback(() => {
+    // Reset react-hook-form
+    reset({
+      title: "",
+      subTitle: "",
+      question1: "",
+      question2: "",
+      answerPartFour1: "",
+      answerPartFour2: "",
+      optionAnswer1: "",
+      optionAnswer2: "",
+      optionAnswer3: "",
+      optionAnswer4: "",
+      optionAnswer5: "",
+      optionAnswer6: "",
+      optionAnswer7: "",
+      optionAnswer8: "",
+      suggestion: "",
+    });
+
+    // Reset local states
+    setSuggestion("");
+    setContent("");
+    setIsTypingTimeOut(null);
+
+    // Reset Redux store
+    dispatch(RESET_WRITING_DATA());
+    dispatch(INIT_SUB_QUESTIONS({ count: 2 }));
+
+    // Reset TextEditor
+    const contentEditor = document.querySelector("#content-editor");
+    if (contentEditor) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "content-editor" },
+      });
+      contentEditor.dispatchEvent(event);
+    }
+
+    const suggestionEditor = document.querySelector("#suggestion-editor");
+    if (suggestionEditor) {
+      const event = new CustomEvent("resetEditor", {
+        detail: { editorId: "suggestion-editor" },
+      });
+      suggestionEditor.dispatchEvent(event);
+    }
+  }, [reset, dispatch]);
 
   const onSubmit = async (values: any) => {
     // Use data from Redux store instead of form values directly
@@ -344,9 +392,12 @@ const debouncedUpdate = useCallback((value: string) => {
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
-      reset();
+
+      // Reset toàn bộ form và state sau khi submit thành công
+      resetAllData();
     } catch (error) {
       console.log({ error });
+      notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
 
