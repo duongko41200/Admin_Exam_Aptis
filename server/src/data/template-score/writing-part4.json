@@ -1,0 +1,31 @@
+{
+  "templateEmail": {
+    "typeEmail": "email informal",
+    "score": {
+      "A1": {
+        "content": "Performance below B1, or no meaningful language or the responses are completely off-topic (e.g. memorised script, guessing).",
+        "scoreNumber": "0-4"
+      },
+      "B1.1": {
+        "content": "Response not on-topic and task not fulfilled in terms of appropriateness of register. No evidence of awareness of register. Response shows the following features:\n- Control of simple grammatical structures. Errors occur when attempting complex structures.\n- Punctuation and spelling is mostly accurate. Errors do not impede understanding.\n- Limitations in vocabulary make it difficult to deal fully with the task. Errors impede understanding in most of the text.\n- Uses only simple cohesive devices. Links between ideas are not always clearly indicated.",
+        "scoreNumber": "5-8"
+      },
+      "B1.2": {
+        "content": "Response partially on-topic and task not fulfilled in terms of appropriateness of register: appropriate register not used consistently in either response. Response shows the following features:\n- Control of simple grammatical structures. Errors occur when attempting complex structures.\n- Punctuation and spelling is mostly accurate. Errors do not impede understanding.\n- Limitations in vocabulary make it difficult to deal fully with the task. Errors impede understanding in parts of the text.\n- Uses only simple cohesive devices. Links between ideas are not always clearly indicated.",
+        "scoreNumber": "9-11"
+      },
+      "B2.1": {
+        "content": "Response partially on-topic and task partially fulfilled in terms of appropriateness of register: appropriate register used consistently in one response. Response shows the following features:\n- Some complex grammar constructions used accurately. Errors do not lead to misunderstanding.\n- Minor errors in punctuation and spelling occur but do not impede understanding.\n- Sufficient range of vocabulary to discuss the topics required by the task. Inappropriate lexical choices do not lead to misunderstanding.\n- A limited number of cohesive devices are used to indicate the links between ideas.",
+        "scoreNumber": "12-14"
+      },
+      "B2.2": {
+        "content": "Response on-topic and task fulfilled in terms of appropriateness of register: appropriate register used consistently in both responses. Response shows the following features:\n- Some complex grammar constructions used accurately. Errors do not lead to misunderstanding.\n- Minor errors in punctuation and spelling occur but do not impede understanding.\n- Sufficient range of vocabulary to discuss the topics required by the task. Inappropriate lexical choices do not lead to misunderstanding.\n- A limited number of cohesive devices are used to indicate the links between ideas.",
+        "scoreNumber": "15-17"
+      },
+      "C1": {
+        "content": "Response shows the following features:\n- Response on-topic and task fulfilled in terms of appropriateness of register. Two clearly different registers.\n- Range of complex grammar constructions used accurately. Some minor errors occur but do not impede understanding.\n- Range of vocabulary used to discuss the topics required by the task. Some awkward usage or slightly inappropriate lexical choices.\n- A range of cohesive devices is used to clearly indicate the links between ideas.",
+        "scoreNumber": "18-20"
+      }
+    }
+  }
+}

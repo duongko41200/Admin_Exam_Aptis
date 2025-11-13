@@ -3,7 +3,9 @@ import axiosBase from "axios";
 const apiUrl = "v1/api";
 
 const axios = axiosBase.create({
-  baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL || "https://api.aptisacademy.com.vn",
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    "https://api.aptisacademy.com.vn",
   timeout: 600000, // 10 minutes for large video uploads
   withCredentials: true,
 });

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "aptis_general_task1",
+    "name": "Aptis General Writing Task 1 - Email/Letter",
+    "description": "Formal or informal email/letter responding to a given situation",
+    "task_type": "email",
+    "word_count": {
+      "min": 50,
+      "max": 120,
+      "recommended": 80
+    },
+    "criteria": {
+      "task_fulfillment": {
+        "weight": 0.25,
+        "description": "How well the candidate addresses all parts of the task",
+        "levels": {
+          "0-1": "Minimal attempt to address the task. Little or no relevant content.",
+          "2-3": "Limited attempt to address the task. Some relevant content but major gaps.",
+          "4-5": "Adequate attempt to address the task. Most requirements covered.",
+          "6-7": "Good attempt to address the task. All requirements clearly addressed.",
+          "8-9": "Excellent response. All requirements fully and effectively addressed."
+        }
+      },
+      "coherence": {
+        "weight": 0.25,
+        "description": "Organization and logical flow of ideas",
+        "levels": {
+          "0-1": "No clear organization. Ideas disconnected and confusing.",
+          "2-3": "Limited organization. Some attempt at structure but unclear progression.",
+          "4-5": "Generally organized. Clear beginning, middle, and end with some transitions.",
+          "6-7": "Well organized. Clear structure with good use of linking devices.",
+          "8-9": "Excellently organized. Seamless flow with sophisticated linking."
+        }
+      },
+      "vocabulary": {
+        "weight": 0.25,
+        "description": "Range and accuracy of vocabulary used",
+        "levels": {
+          "0-1": "Very limited vocabulary. Frequent errors that impede communication.",
+          "2-3": "Limited vocabulary. Some errors but basic meaning conveyed.",
+          "4-5": "Adequate vocabulary for the task. Some variety with minor errors.",
+          "6-7": "Good range of vocabulary. Effective word choice with few errors.",
+          "8-9": "Excellent vocabulary range. Sophisticated and precise word choice."
+        }
+      },
+      "grammar": {
+        "weight": 0.25,
+        "description": "Range and accuracy of grammatical structures",
+        "levels": {
+          "0-1": "Very limited grammar. Frequent errors that impede communication.",
+          "2-3": "Limited grammatical range. Some control but frequent errors.",
+          "4-5": "Adequate grammatical range. Generally accurate with some errors.",
+          "6-7": "Good grammatical range and accuracy. Complex structures attempted.",
+          "8-9": "Excellent grammatical control. Wide range used accurately and flexibly."
+        }
+      }
+    },
+    "prompts": [
+      {
+        "id": "email_complaint",
+        "text": "You recently bought an item online but when it arrived, it was damaged. Write an email to the customer service department describing the problem and asking for a replacement.",
+        "type": "complaint",
+        "register": "formal"
+      },
+      {
+        "id": "email_invitation",
+        "text": "Your English-speaking friend is visiting your city next week. Write an email inviting them to stay with you and suggesting some activities you could do together.",
+        "type": "invitation",
+        "register": "informal"
+      },
+      {
+        "id": "email_application",
+        "text": "You saw a job advertisement for a part-time position at a local bookstore. Write an email to the manager expressing your interest and explaining why you would be suitable for the job.",
+        "type": "application",
+        "register": "formal"
+      }
+    ]
+  },
+  {
+    "id": "aptis_general_task2",
+    "name": "Aptis General Writing Task 2 - Article/Report",
+    "description": "Article or report on a given topic expressing opinions and ideas",
+    "task_type": "article",
+    "word_count": {
+      "min": 120,
+      "max": 180,
+      "recommended": 150
+    },
+    "criteria": {
+      "task_fulfillment": {
+        "weight": 0.25,
+        "description": "How well the candidate addresses all parts of the task and develops ideas",
+        "levels": {
+          "0-1": "Minimal attempt to address the task. Little or no development of ideas.",
+          "2-3": "Limited attempt to address the task. Some ideas presented but underdeveloped.",
+          "4-5": "Adequate attempt to address the task. Ideas generally developed appropriately.",
+          "6-7": "Good attempt to address the task. Ideas well-developed and supported.",
+          "8-9": "Excellent response. Ideas fully developed with sophisticated reasoning."
+        }
+      },
+      "coherence": {
+        "weight": 0.25,
+        "description": "Organization, paragraphing, and logical development",
+        "levels": {
+          "0-1": "No clear organization. Ideas presented randomly without logical connection.",
+          "2-3": "Limited organization. Some attempt at paragraphing but unclear development.",
+          "4-5": "Generally organized. Clear paragraphs with adequate development.",
+          "6-7": "Well organized. Effective paragraphing with clear topic development.",
+          "8-9": "Excellently organized. Sophisticated structure with seamless progression."
+        }
+      },
+      "vocabulary": {
+        "weight": 0.25,
+        "description": "Range, accuracy, and appropriateness of vocabulary",
+        "levels": {
+          "0-1": "Very limited vocabulary. Frequent errors affecting meaning.",
+          "2-3": "Limited vocabulary. Some variety but frequent inaccuracies.",
+          "4-5": "Adequate vocabulary. Sufficient range with some effective word choice.",
+          "6-7": "Good vocabulary range. Effective and generally accurate usage.",
+          "8-9": "Excellent vocabulary. Wide range used precisely and effectively."
+        }
+      },
+      "grammar": {
+        "weight": 0.25,
+        "description": "Range, accuracy, and complexity of grammatical structures",
+        "levels": {
+          "0-1": "Very limited grammatical range. Errors impede communication.",
+          "2-3": "Limited grammatical structures. Some accuracy but frequent errors.",
+          "4-5": "Adequate range of structures. Generally accurate with some complexity.",
+          "6-7": "Good range of structures. Accurate use of complex grammar.",
+          "8-9": "Excellent grammatical control. Wide range used accurately and flexibly."
+        }
+      }
+    },
+    "prompts": [
+      {
+        "id": "article_technology",
+        "text": "Write an article for your school magazine about how technology has changed the way young people communicate. Include your opinion on whether these changes are positive or negative.",
+        "type": "opinion",
+        "register": "semi-formal"
+      },
+      {
+        "id": "report_environment",
+        "text": "Your local council is looking for ways to make your town more environmentally friendly. Write a report suggesting three practical changes and explaining why each would be beneficial.",
+        "type": "report",
+        "register": "formal"
+      },
+      {
+        "id": "article_travel",
+        "text": "Write an article for a travel website about the benefits of learning a foreign language before visiting another country. Share your personal experiences or observations.",
+        "type": "informative",
+        "register": "semi-formal"
+      }
+    ]
+  },
+  {
+    "id": "aptis_advanced_task1",
+    "name": "Aptis Advanced Writing Task 1 - Formal Letter/Email",
+    "description": "Formal correspondence addressing complex situations",
+    "task_type": "formal_letter",
+    "word_count": {
+      "min": 150,
+      "max": 200,
+      "recommended": 175
+    },
+    "criteria": {
+      "task_fulfillment": {
+        "weight": 0.25,
+        "description": "Complete and appropriate response to all task requirements",
+        "levels": {
+          "0-1": "Task barely attempted. Irrelevant or inadequate content.",
+          "2-3": "Limited response. Some task requirements addressed superficially.",
+          "4-5": "Adequate response. Most requirements addressed appropriately.",
+          "6-7": "Good response. All requirements addressed effectively.",
+          "8-9": "Excellent response. All requirements fully and skillfully addressed."
+        }
+      },
+      "coherence": {
+        "weight": 0.25,
+        "description": "Sophisticated organization and cohesive devices",
+        "levels": {
+          "0-1": "No apparent organization. Incoherent presentation of ideas.",
+          "2-3": "Limited organization. Some structure but poor cohesion.",
+          "4-5": "Generally well-organized. Clear structure with adequate cohesion.",
+          "6-7": "Well-organized. Effective use of cohesive devices.",
+          "8-9": "Excellently organized. Sophisticated and seamless cohesion."
+        }
+      },
+      "vocabulary": {
+        "weight": 0.25,
+        "description": "Advanced vocabulary usage and precision",
+        "levels": {
+          "0-1": "Very limited vocabulary inappropriate for level.",
+          "2-3": "Limited vocabulary. Some attempt at formal register.",
+          "4-5": "Adequate vocabulary. Generally appropriate formal language.",
+          "6-7": "Good vocabulary range. Effective formal register maintained.",
+          "8-9": "Excellent vocabulary. Sophisticated and precise formal language."
+        }
+      },
+      "grammar": {
+        "weight": 0.25,
+        "description": "Complex grammatical structures used accurately",
+        "levels": {
+          "0-1": "Very limited grammar. Frequent errors affect communication.",
+          "2-3": "Limited grammatical range. Some accuracy but many errors.",
+          "4-5": "Adequate range. Generally accurate with some complex structures.",
+          "6-7": "Good range and accuracy. Complex structures handled well.",
+          "8-9": "Excellent grammatical control. Complex structures used accurately."
+        }
+      }
+    },
+    "prompts": [
+      {
+        "id": "complaint_advanced",
+        "text": "You recently attended a professional development course that was poorly organized and did not meet the advertised standards. Write a formal letter to the training institute requesting a full refund and explaining your concerns about their service quality.",
+        "type": "complaint",
+        "register": "formal"
+      },
+      {
+        "id": "proposal_advanced",
+        "text": "Your company is considering implementing a flexible working policy. Write a formal proposal to the management team outlining the benefits and potential challenges of remote work arrangements, and provide specific recommendations.",
+        "type": "proposal",
+        "register": "formal"
+      }
+    ]
+  }
+]

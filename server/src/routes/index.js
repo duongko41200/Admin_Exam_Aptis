@@ -47,5 +47,6 @@ router.use("/v1/api/cache-data", redisDataRouter);
 router.use("/v1/api/study-process", studyProcessRouter);
 router.use("/v1/api/r2", r2Router);
 router.use("/v1/api/video", videoUploadRouter); // ✅ Đảm bảo có dòng này
+router.use("/v1/api/Ai", videoUploadRouter);
 
 export default router;

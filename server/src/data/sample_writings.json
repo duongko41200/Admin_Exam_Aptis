@@ -1,0 +1,254 @@
+[
+  {
+    "id": "writing_001",
+    "user_id": "user123",
+    "task_type": "email",
+    "prompt": "You recently bought an item online but when it arrived, it was damaged. Write an email to the customer service department describing the problem and asking for a replacement.",
+    "prompt_id": "email_complaint",
+    "rubric_id": "aptis_general_task1",
+    "text": "Dear Customer Service Team,\n\nI am writing to inform you about a problem with my recent order #12345. I ordered a laptop bag from your website last week, and it arrived yesterday. Unfortunately, when I opened the package, I discovered that the bag was severely damaged.\n\nThe zipper is completely broken, and there is a large tear on the side of the bag. The product is clearly not in the condition I expected when I made the purchase. I have attached photos of the damage for your reference.\n\nI would like to request a full replacement of this item as soon as possible. I need the bag for work next week, so I hope this can be resolved quickly.\n\nI look forward to hearing from you soon.\n\nYours sincerely,\nJohn Smith",
+    "word_count": 125,
+    "scores": {
+      "overall": 7.5,
+      "task_fulfillment": 8,
+      "coherence": 7,
+      "vocabulary": 7,
+      "grammar": 8
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 8,
+        "feedback": "Excellent task fulfillment. All required elements are clearly addressed: describes the problem (damaged bag), provides specific details (broken zipper, tear), and makes a clear request for replacement."
+      },
+      "coherence": {
+        "score": 7,
+        "feedback": "Well-organized structure with clear introduction, problem description, and conclusion. Good use of paragraphs and logical flow."
+      },
+      "vocabulary": {
+        "score": 7,
+        "feedback": "Appropriate vocabulary for formal email. Good use of formal expressions like 'I am writing to inform you' and 'I look forward to hearing from you'."
+      },
+      "grammar": {
+        "score": 8,
+        "feedback": "Strong grammatical control with accurate use of past tense, present perfect, and complex sentences. Minor areas for improvement in sentence variety."
+      },
+      "overall_comments": [
+        "This is a well-written formal complaint email that effectively communicates the problem and desired resolution.",
+        "The tone is appropriately formal and polite while being clear about the issue.",
+        "Consider adding more specific details about when the order was placed for even better clarity."
+      ]
+    },
+    "timestamp": "2024-01-15T10:30:00Z",
+    "processing_time": 2.34
+  },
+  {
+    "id": "writing_002",
+    "user_id": "user123",
+    "task_type": "email",
+    "prompt": "Your English-speaking friend is visiting your city next week. Write an email inviting them to stay with you and suggesting some activities you could do together.",
+    "prompt_id": "email_invitation",
+    "rubric_id": "aptis_general_task1",
+    "text": "Hi Sarah!\n\nGreat news that you're coming to Madrid next week! I'm so excited to see you again.\n\nWould you like to stay at my place? I have a spare room and it would be much cheaper than a hotel. Plus, we can catch up properly!\n\nI've been thinking about what we could do. How about visiting the Prado Museum? They have an amazing art collection. We could also go to Retiro Park for a picnic if the weather's nice. And of course, we have to try some tapas in the old town - I know the perfect place!\n\nLet me know if you want to stay here and what you think about these ideas. I can't wait to show you around my city!\n\nLove,\nMaria",
+    "word_count": 115,
+    "scores": {
+      "overall": 8.0,
+      "task_fulfillment": 8,
+      "coherence": 8,
+      "vocabulary": 8,
+      "grammar": 8
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 8,
+        "feedback": "Excellent task completion. Clearly invites friend to stay and provides several specific activity suggestions with good detail."
+      },
+      "coherence": {
+        "score": 8,
+        "feedback": "Very well-organized informal email with natural flow from invitation to activity suggestions to conclusion."
+      },
+      "vocabulary": {
+        "score": 8,
+        "feedback": "Excellent vocabulary range appropriate for informal register. Natural expressions like 'catch up properly' and 'I can't wait to show you around'."
+      },
+      "grammar": {
+        "score": 8,
+        "feedback": "Strong grammatical control with good variety of structures. Appropriate use of contractions and informal language."
+      },
+      "overall_comments": [
+        "This is an excellent informal email with a warm, friendly tone that is perfect for the context.",
+        "The activity suggestions are specific and well-developed, showing good cultural knowledge.",
+        "The language is natural and appropriate for writing to a close friend."
+      ]
+    },
+    "timestamp": "2024-01-16T14:22:00Z",
+    "processing_time": 2.12
+  },
+  {
+    "id": "writing_003",
+    "user_id": "user456",
+    "task_type": "article",
+    "prompt": "Write an article for your school magazine about how technology has changed the way young people communicate. Include your opinion on whether these changes are positive or negative.",
+    "prompt_id": "article_technology",
+    "rubric_id": "aptis_general_task2",
+    "text": "How Technology Has Transformed Teen Communication\n\nTechnology has completely revolutionized the way young people communicate today. From instant messaging to social media platforms, teenagers now have countless ways to stay connected with friends and family.\n\nThe most obvious change is the speed of communication. In the past, young people had to wait days for letters or rely on expensive phone calls. Now, with smartphones and apps like WhatsApp, Instagram, and TikTok, conversations happen instantly. This has made it much easier to maintain friendships and share experiences in real-time.\n\nAnother significant change is the variety of communication methods available. Young people can now express themselves through text, voice messages, photos, videos, and even emojis. This variety allows for more creative and personal forms of expression.\n\nHowever, these changes aren't entirely positive. Many teenagers now struggle with face-to-face communication skills. They may feel more comfortable texting than having a real conversation. Additionally, the constant connectivity can lead to anxiety and the fear of missing out.\n\nIn my opinion, while technology has made communication more convenient and creative, we must be careful not to lose our ability to connect with others in person. The key is finding the right balance between digital and real-world communication.",
+    "word_count": 180,
+    "scores": {
+      "overall": 7.25,
+      "task_fulfillment": 7,
+      "coherence": 8,
+      "vocabulary": 7,
+      "grammar": 7
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 7,
+        "feedback": "Good task completion. Addresses how technology has changed communication and includes personal opinion. Could benefit from more specific examples."
+      },
+      "coherence": {
+        "score": 8,
+        "feedback": "Excellent organization with clear introduction, body paragraphs covering different aspects, and a balanced conclusion with personal opinion."
+      },
+      "vocabulary": {
+        "score": 7,
+        "feedback": "Good vocabulary range with topic-specific terms like 'revolutionized', 'connectivity', and 'real-time'. Some repetition could be avoided."
+      },
+      "grammar": {
+        "score": 7,
+        "feedback": "Generally accurate grammar with good use of complex sentences. Some minor errors in article structure and punctuation."
+      },
+      "overall_comments": [
+        "This is a well-structured article that effectively addresses the topic from multiple angles.",
+        "The personal opinion is clearly stated and well-reasoned.",
+        "Consider adding more specific statistics or examples to strengthen arguments."
+      ]
+    },
+    "timestamp": "2024-01-17T09:45:00Z",
+    "processing_time": 3.21
+  },
+  {
+    "id": "writing_004",
+    "user_id": "user456",
+    "task_type": "report",
+    "prompt": "Your local council is looking for ways to make your town more environmentally friendly. Write a report suggesting three practical changes and explaining why each would be beneficial.",
+    "prompt_id": "report_environment",
+    "rubric_id": "aptis_general_task2",
+    "text": "Report: Environmental Improvements for Greenfield Town\n\nIntroduction\nThis report presents three practical recommendations to make Greenfield Town more environmentally sustainable, following the council's request for citizen input.\n\nRecommendation 1: Implement a Comprehensive Recycling Program\nCurrently, our town lacks proper recycling facilities. Installing recycling bins throughout the town center and residential areas would significantly reduce waste going to landfills. This change would decrease environmental pollution and could potentially generate revenue through recycled materials.\n\nRecommendation 2: Expand Public Transportation Network\nMany residents currently rely on private cars due to limited bus services. Increasing bus frequency and adding new routes would encourage people to use public transport instead of driving. This would reduce air pollution, traffic congestion, and carbon emissions while saving residents money on fuel and parking.\n\nRecommendation 3: Create More Green Spaces and Community Gardens\nConverting unused lots into parks and community gardens would improve air quality and provide spaces for residents to grow their own food. These areas would also support local wildlife and create opportunities for environmental education.\n\nConclusion\nThese three changes would make Greenfield Town more sustainable while improving quality of life for residents. Implementation should begin with the recycling program, as it requires the least infrastructure investment.",
+    "word_count": 185,
+    "scores": {
+      "overall": 8.5,
+      "task_fulfillment": 9,
+      "coherence": 9,
+      "vocabulary": 8,
+      "grammar": 8
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 9,
+        "feedback": "Excellent task completion. Provides exactly three practical suggestions with clear explanations of benefits for each. Report format is appropriate and professional."
+      },
+      "coherence": {
+        "score": 9,
+        "feedback": "Outstanding organization with proper report structure including introduction, numbered recommendations, and conclusion. Ideas flow logically with good transitions."
+      },
+      "vocabulary": {
+        "score": 8,
+        "feedback": "Very good vocabulary range appropriate for formal report writing. Good use of topic-specific terms like 'sustainable', 'infrastructure', and 'carbon emissions'."
+      },
+      "grammar": {
+        "score": 8,
+        "feedback": "Strong grammatical control with complex sentence structures. Appropriate use of formal register throughout the report."
+      },
+      "overall_comments": [
+        "This is an excellent example of report writing with professional structure and well-developed recommendations.",
+        "Each suggestion is practical and clearly linked to environmental benefits.",
+        "The conclusion effectively prioritizes the recommendations, showing good analytical thinking."
+      ]
+    },
+    "timestamp": "2024-01-18T16:10:00Z",
+    "processing_time": 2.89
+  },
+  {
+    "id": "writing_005",
+    "user_id": "user789",
+    "task_type": "email",
+    "prompt": "You saw a job advertisement for a part-time position at a local bookstore. Write an email to the manager expressing your interest and explaining why you would be suitable for the job.",
+    "prompt_id": "email_application",
+    "rubric_id": "aptis_general_task1",
+    "text": "Dear Manager,\n\nI saw your advertisement for a part-time position at your bookstore and I am very interested in applying for this job.\n\nI think I would be good for this job because I love reading books. I read many different types of books like novels, history books and science books. I also have experience working in shops because I helped my uncle in his store last summer.\n\nI am a student so I can work in the evenings and weekends. I am responsible and I always come to work on time. I also speak English and Spanish so I can help customers who speak different languages.\n\nI would be very happy to work in your bookstore and I can start immediately. Please let me know if you need more information.\n\nThank you for your time.\n\nSincerely,\nCarlos Martinez",
+    "word_count": 135,
+    "scores": {
+      "overall": 6.0,
+      "task_fulfillment": 6,
+      "coherence": 6,
+      "vocabulary": 6,
+      "grammar": 6
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 6,
+        "feedback": "Good attempt to address the task. Expresses interest and provides reasons for suitability, though some points could be developed more fully."
+      },
+      "coherence": {
+        "score": 6,
+        "feedback": "Generally well-organized with clear paragraphs. Good logical flow from interest to qualifications to availability."
+      },
+      "vocabulary": {
+        "score": 6,
+        "feedback": "Adequate vocabulary for the task. Some repetition ('books' appears frequently) and could benefit from more varied expressions."
+      },
+      "grammar": {
+        "score": 6,
+        "feedback": "Generally accurate grammar with some good complex sentences. Some minor errors and could use more sophisticated structures."
+      },
+      "overall_comments": [
+        "This is a solid job application email that covers all the necessary points.",
+        "The personal experiences and language skills are good selling points.",
+        "Consider using more formal expressions and expanding on relevant experience."
+      ]
+    },
+    "timestamp": "2024-01-19T11:20:00Z",
+    "processing_time": 2.67
+  },
+  {
+    "id": "writing_006",
+    "user_id": "user789",
+    "task_type": "article",
+    "prompt": "Write an article for a travel website about the benefits of learning a foreign language before visiting another country. Share your personal experiences or observations.",
+    "prompt_id": "article_travel",
+    "rubric_id": "aptis_general_task2",
+    "text": "Why Learning the Local Language Will Transform Your Travel Experience\n\nTraveling to a foreign country is always exciting, but learning even basic phrases in the local language can completely transform your experience. As someone who has traveled to several countries, I've learned that language skills make a huge difference.\n\nFirst, speaking the local language helps you connect with people on a much deeper level. When I visited France last year, my basic French allowed me to have real conversations with locals rather than just pointing at menus and maps. The shopkeepers were much more friendly and helpful when I made an effort to speak their language, even if my grammar wasn't perfect.\n\nSecond, knowing the language gives you access to authentic experiences that most tourists miss. In Italy, speaking Italian meant I could understand local recommendations for restaurants and attractions that weren't in guidebooks. I discovered amazing family-run trattorias that I would never have found otherwise.\n\nFinally, language skills provide practical benefits and can even save you money. You can negotiate better prices at markets, understand transportation announcements, and avoid tourist traps that target people who don't speak the language.\n\nWhile it might seem daunting to learn a new language before traveling, even basic conversational skills will enhance your journey immeasurably. Start with simple phrases and build from there – your future travel self will thank you!",
+    "word_count": 210,
+    "scores": {
+      "overall": 7.75,
+      "task_fulfillment": 8,
+      "coherence": 8,
+      "vocabulary": 7,
+      "grammar": 8
+    },
+    "detailed_feedback": {
+      "task_fulfillment": {
+        "score": 8,
+        "feedback": "Excellent task completion. Clearly discusses benefits of learning languages for travel and includes specific personal experiences from France and Italy trips."
+      },
+      "coherence": {
+        "score": 8,
+        "feedback": "Well-organized article with clear introduction, three main benefits as body paragraphs, and strong conclusion. Good use of transitions and examples."
+      },
+      "vocabulary": {
+        "score": 7,
+        "feedback": "Good vocabulary range appropriate for travel article. Effective use of travel-related terms and some sophisticated expressions like 'immeasurably'."
+      },
+      "grammar": {
+        "score": 8,
+        "feedback": "Strong grammatical control with good variety of complex structures. Appropriate register maintained throughout."
+      },
+      "overall_comments": [
+        "This is a well-written travel article that effectively uses personal anecdotes to support the main argument.",
+        "The specific examples from France and Italy make the benefits concrete and relatable.",
+        "The encouraging tone in the conclusion is perfect for motivating readers to learn languages."
+      ]
+    },
+    "timestamp": "2024-01-20T13:55:00Z",
+    "processing_time": 3.45
+  }
+]
