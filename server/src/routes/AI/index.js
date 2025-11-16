@@ -9,6 +9,6 @@ const router = express.Router();
 //Authen//
 router.use(authenticationV2);
 
-router.get("/writing", asyncHandle(AiController.getAllWithQuery));
+router.post("/writing", asyncHandle(AiController.submitWriting));
 
 export default router;

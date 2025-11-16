@@ -1,7 +1,6 @@
 import { Document } from "@langchain/core/documents";
-import { logger } from "../config/logger.js";
-import { addDocumentToChroma } from "../repo/chroma.js";
-import * as vectorStore from "./vectorStore.js";
+import { addDocumentToChroma } from "../base-repo/chroma.js";
+import * as vectorStore from "./vectorStore.service.js";
 import { calculateAndLogSimilarity } from "./writing.service.js";
 
 /**
@@ -41,7 +40,7 @@ export const findSimilarWritings = async (validatedData) => {
     // Step 4: Return success response
     return dataSimilar;
   } catch (error) {
-    logger.error("Error finding similar writings", error);
+   console.log("Error finding similar writings", error);
     throw new Error(`Failed to find similar writings: ${error.message}`);
   }
 };
@@ -102,7 +101,7 @@ export const searchSimilarWritings = async (searchParams) => {
 
     return results;
   } catch (error) {
-    logger.error("Error in searchSimilarWritings", error);
+    console.log("Error in searchSimilarWritings", error);
     throw new Error(`Failed to search similar writings: ${error.message}`);
   }
 };
@@ -143,7 +142,7 @@ export const getSimilarWritingsForRAG = async (writing, limit = 3) => {
 
     return results;
   } catch (error) {
-    logger.warn("Failed to get similar writings for RAG", error);
+    console.log("Failed to get similar writings for RAG", error);
     return []; // Return empty array if RAG context fails
   }
 };
@@ -217,7 +216,7 @@ const calculateSimilarityScore = (text1, text2) => {
     // Combine Jaccard similarity with length factor
     return jaccardSimilarity * 0.7 + lengthRatio * 0.3;
   } catch (error) {
-    logger.warn("Failed to calculate similarity score", error);
+    console.log("Failed to calculate similarity score", error);
     return 0.5; // Default similarity
   }
 };
@@ -252,7 +251,7 @@ export const analyzeWritingPatterns = async (userId, timeframe = "30d") => {
       ],
     };
   } catch (error) {
-    logger.error("Error analyzing writing patterns", error);
+    console.log("Error analyzing writing patterns", error);
     throw new Error(`Failed to analyze writing patterns: ${error.message}`);
   }
 };

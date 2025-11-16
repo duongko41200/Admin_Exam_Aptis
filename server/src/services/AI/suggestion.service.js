@@ -1,5 +1,4 @@
-import { initialize as initializeGemini } from "../config/gemini.js";
-import { logger } from "../config/logger.js";
+import { initialize as initializeGemini } from "../../configs/gemini.js";
 import * as retrievalService from "./retrieval.service.js";
 
 /**
@@ -39,16 +38,10 @@ export const generateSuggestions = async (
       recommendations,
     };
 
-    logger.info("Suggestions generated successfully", {
-      userId,
-      formSuggestionsCount: formSuggestions.length,
-      solutionReuseCount: solutionReuse.length,
-      recommendationsCount: recommendations.length,
-    });
 
     return suggestions;
   } catch (error) {
-    logger.error("Error generating suggestions", error);
+    console.log("Error generating suggestions", error);
     throw new Error(`Failed to generate suggestions: ${error.message}`);
   }
 };
@@ -81,7 +74,7 @@ export const getFormSuggestions = async (userId, type, context) => {
         generatePersonalizedRecommendations(patterns),
     };
   } catch (error) {
-    logger.error("Error getting form suggestions", error);
+    console.log("Error getting form suggestions", error);
     throw new Error(`Failed to get form suggestions: ${error.message}`);
   }
 };
@@ -130,7 +123,7 @@ export const analyzeWritingPatterns = async (params) => {
 
     return mockPatterns;
   } catch (error) {
-    logger.error("Error analyzing writing patterns", error);
+    console.log("Error analyzing writing patterns", error);
     throw error;
   }
 };
@@ -167,7 +160,7 @@ export const getPatternEffectiveness = async (patternId) => {
 
     return effectiveness;
   } catch (error) {
-    logger.error("Error getting pattern effectiveness", error);
+    console.log("Error getting pattern effectiveness", error);
     throw error;
   }
 };
@@ -214,10 +207,7 @@ Your response MUST be a valid JSON array. Do NOT include any explanation, markdo
     console.log({ convertTextByJson });
     return convertTextByJson;
   } catch (error) {
-    logger.warn(
-      "Failed to generate AI form suggestions, using fallbacks",
-      error
-    );
+
     return getDefaultFormSuggestions(currentWriting.type);
   }
 };
@@ -264,7 +254,6 @@ Your response MUST be a valid JSON array. Do NOT include any explanation, markdo
     console.log("solution reuse patterns generated: ", { convertTextByJson });
     return convertTextByJson;
   } catch (error) {
-    logger.warn("Failed to generate solution reuse patterns", error);
     return getDefaultSolutionReuse(currentWriting.type);
   }
 };
@@ -308,7 +297,7 @@ Your response MUST be a valid JSON array. Do NOT include any explanation, markdo
     return convertTextByJson;
   } catch (error) {
     console.error("AI response: ", response);
-    logger.warn("Failed to generate AI recommendations", error);
+    console.log("Failed to generate AI recommendations", error);
     return getDefaultRecommendations(currentWriting);
   }
 };
@@ -327,7 +316,7 @@ const getSuccessfulWritings = async (userId, type) => {
     // Filter for successful writings (score >= 7)
     return similarWritings.filter((writing) => writing.scores?.overall >= 7);
   } catch (error) {
-    logger.warn("Failed to get successful writings", error);
+    console.log("Failed to get successful writings", error);
     return [];
   }
 };
@@ -370,7 +359,7 @@ Your response MUST be a valid JSON object. Do NOT include any explanation, markd
     return convertTextByJson;
   } catch (error) {
     console.error("AI response: ", response);
-    logger.warn("Failed to extract patterns with AI", error);
+    console.log("Failed to extract patterns with AI", error);
     return extractPatternsManually(writings);
   }
 };
@@ -416,7 +405,7 @@ const parseFormSuggestions = (response) => {
       return JSON.parse(jsonMatch[0]);
     }
   } catch (error) {
-    logger.warn("Failed to parse AI form suggestions", error);
+    console.log("Failed to parse AI form suggestions", error);
   }
 
   return [];
@@ -429,7 +418,7 @@ const parseSolutionReuse = (response) => {
       return JSON.parse(jsonMatch[0]);
     }
   } catch (error) {
-    logger.warn("Failed to parse solution reuse", error);
+    console.log("Failed to parse solution reuse", error);
   }
 
   return [];
@@ -448,7 +437,7 @@ const parseRecommendations = (response) => {
 
     return lines.map((line) => line.replace(/^[-•\d.]\s*/, "").trim());
   } catch (error) {
-    logger.warn("Failed to parse recommendations", error);
+    console.log("Failed to parse recommendations", error);
   }
 
   return [];

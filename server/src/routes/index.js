@@ -17,6 +17,7 @@ import studyProcessRouter from "./study-process/index.js";
 import adminAccessRouter from "./admin/access/index.js";
 import r2Router from "./r2/index.js";
 import videoUploadRouter from "./video-upload/index.js";
+import AiCheck from './AI/index.js'
 
 const router = express.Router();
 
@@ -47,6 +48,6 @@ router.use("/v1/api/cache-data", redisDataRouter);
 router.use("/v1/api/study-process", studyProcessRouter);
 router.use("/v1/api/r2", r2Router);
 router.use("/v1/api/video", videoUploadRouter); // ✅ Đảm bảo có dòng này
-router.use("/v1/api/Ai", videoUploadRouter);
+router.use("/v1/api/Ai", AiCheck);
 
 export default router;

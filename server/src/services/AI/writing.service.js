@@ -2,23 +2,22 @@ import { Document } from "@langchain/core/documents";
 import cosineSimilarity from "compute-cosine-similarity";
 import fs from "fs/promises";
 import path from "path";
-import { initializeChromaDB } from "../config/chroma.js";
-import { logger } from "../../configs/logger.js";
-// import { WritingSubmissionSchema } from "../models/writing.model.js";
+import { WritingSubmissionSchema } from "../../../schema/writing.model.js";
+import { initializeChromaDB } from "../../configs/chroma.js";
+import { embedWithGemini } from "../../lib/embedding.util.js";
 import {
   addDocumentToChroma,
   deleteDocumentFromChroma,
   getAllDocumentsFromChroma,
   initializeChromaReferences,
-} from "../repo/chroma.js";
-import { embedWithGemini } from "../utils/embedding.util.js";
-import * as scoringPipeline from "./scoringPipeline.js";
+} from "../base-repo/chroma.js";
+import * as scoringPipeline from "./scoringPipeline.service.js";
 
-import { initialize as initializeGemini } from "../config/gemini.js";
+import { initialize as initializeGemini } from "../../configs/gemini.js";
 import {
   genPromptAIScore,
   genPromptFormEmailFormal,
-} from "../constant/prompt.js";
+} from "../../const/prompt.js";
 
 // In-memory storage for development (replace with database in production)
 let writingsDatabase = new Map();
@@ -140,7 +139,7 @@ export const submitWriting = async (writingData) => {
 
     return result;
   } catch (error) {
-    logger.error("Error in submitWriting", error);
+    console.log("Error in submitWriting", error);
     throw new Error(`Failed to submit writing: ${error.message}`);
   }
 };
@@ -343,7 +342,7 @@ export const findSimilarWritings = async (content, topK = 5) => {
 
     return topSimilar;
   } catch (error) {
-    logger.error("Error finding similar writings", error);
+    console.log("Error finding similar writings", error);
     throw new Error(`Failed to find similar writings: ${error.message}`);
   }
 };
@@ -499,7 +498,7 @@ const generateProgressAnalysis = async (userId, currentWriting) => {
       strengths: identifyStrengths(currentWriting),
     };
   } catch (error) {
-    logger.warn("Failed to generate progress analysis", error);
+    console.log("Failed to generate progress analysis", error);
     return {
       improvement: "Analysis unavailable",
       recurring_issues: [],
@@ -584,25 +583,25 @@ const loadWritingsFromStorage = async () => {
             await addDocumentToChroma(document, writing.embedding, writing.id);
           } catch (error) {
             // Document might already exist in ChromaDB, which is fine
-            logger.warn(
+            console.log(
               `Document ${writing.id} might already exist in ChromaDB`
             );
           }
         }
       } catch (error) {
-        logger.warn(`Failed to load writing from ${file}`, error);
+        console.log(`Failed to load writing from ${file}`, error);
       }
     }
 
     // Get count from ChromaDB
     const chromaDocuments = await getAllDocumentsFromChroma();
 
-    logger.info(`Loaded ${writingsDatabase.size} writings from storage`);
-    logger.info(
+    console.log(`Loaded ${writingsDatabase.size} writings from storage`);
+    console.log(
       `Loaded ${chromaDocuments.length} documents in ChromaDB for similarity comparison`
     );
   } catch (error) {
-    logger.warn("Failed to load writings from storage", error);
+    console.log("Failed to load writings from storage", error);
   }
 };
 
@@ -614,7 +613,7 @@ const removeFromStorage = async (writingId) => {
     const filePath = path.join(STORAGE_PATH, `${writingId}.json`);
     await fs.unlink(filePath);
   } catch (error) {
-    logger.warn(`Failed to remove writing ${writingId} from storage`, error);
+    console.log(`Failed to remove writing ${writingId} from storage`, error);
   }
 };
 
@@ -648,7 +647,7 @@ export const deleteWriting = async (writingId) => {
   // Remove from storage
   await removeFromStorage(writingId);
 
-  logger.info("Writing deleted", { writingId });
+  console.log("Writing deleted", { writingId });
 };
 
 /**
@@ -668,9 +667,9 @@ export const initialize = async () => {
     // Load existing writings
     await loadWritingsFromStorage();
 
-    logger.info("Writing service initialized successfully");
+    console.log("Writing service initialized successfully");
   } catch (error) {
-    logger.error("Failed to initialize writing service:", error);
+    console.log("Failed to initialize writing service:", error);
     throw error;
   }
 };

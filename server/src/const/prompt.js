@@ -1,4 +1,4 @@
-import part4 from "../../data/template-score/writing-part4.json" with { type: "json" };
+import part4 from "../data/template-score/writing-part4.json" with { type: "json" };
 
 export const genPromptFormEmailFormal = (writing) => {
   return (

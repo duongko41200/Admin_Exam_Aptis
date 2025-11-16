@@ -1,6 +1,10 @@
 "use strict";
 
 import { SuccessResponse } from "../cores/success.response.js";
+import * as retrievalService from "../services/AI/retrieval.service.js";
+import * as suggestionService from "../services/AI/suggestion.service.js";
+import * as writingService from "../services/AI/writing.service.js";
+import { v4 as uuidv4 } from "uuid";
 import {
   count,
   create,
@@ -9,9 +13,6 @@ import {
   getOneById,
   updateOneById,
 } from "../services/user.service.js";
-import * as writingService from "../services/AI/writing.service.js";
-import * as retrievalService from "../services/AI/retrieval.service.js";
-import * as suggestionService from "../services/AI/suggestion.service.js";
 
 class AiController {
   create = async (req, res, next) => {
@@ -78,7 +79,7 @@ class AiController {
    */
   submitWriting = async (req, res, next) => {
     try {
-      const { userId, prompt, type, content, metadata = {} } = req.body;
+      const { userId, prompt, part, type, content, metadata } = req.body;
 
       const writingId = uuidv4();
       const submittedAt = new Date().toISOString();
@@ -147,7 +148,7 @@ class AiController {
 
       res.status(201).json(response);
     } catch (error) {
-      logger.error("Error in submitWriting", error);
+      console.log("Error in submitWriting", error);
       res.status(500).json({
         error: "Failed to process writing submission",
         message: error.message,
