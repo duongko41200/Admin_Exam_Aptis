@@ -1,10 +1,14 @@
-import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import { Paper, Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import clsx from "clsx";
-import { GridColDef } from "@mui/x-data-grid";
+import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { SET_TESTBANK_DATA } from "../../store/feature/testBank";
+import { SET_TESTBANK_DATA_EDIT } from "../../store/feature/testBank";
+import {
+  DataTableProps,
+  RootState,
+  SetTestBankDataPayload,
+} from "../../types/testBank";
 
 const columns: GridColDef[] = [
   {
@@ -70,30 +74,47 @@ const columns: GridColDef[] = [
 
 const paginationModel = { page: 0, pageSize: 5 };
 
-export default function DataTableWriting({
-  rows,
-  partSkill,
-}: {
-  rows: any;
-  partSkill: any;
-}) {
-  const [selectionModel, setSelectionModel] = React.useState([]);
+export default function DataTableWriting({ rows, partSkill }: DataTableProps) {
+  const [selectionModel, setSelectionModel] = React.useState<number[]>([]);
 
   const dispatch = useDispatch();
   const testBankData = useSelector(
-    (state: any) => state.testBankStore.testBankData
+    (state: RootState) => state.testBankStore.testBankData
   );
 
-  const handleSelectionChange = (newSelection: any) => {
+  console.log("Rendering DataTableWriting component", testBankData);
+
+  const handleSelectionChange = (newSelection: number[]) => {
+    console.log("newSelection: ", newSelection);
     setSelectionModel(newSelection);
-    const payload = { type: "writing", newSelection, partSkill };
-    dispatch(SET_TESTBANK_DATA(payload));
+    const payload: SetTestBankDataPayload = {
+      type: "writing",
+      newSelection,
+      partSkill,
+    };
+    dispatch(SET_TESTBANK_DATA_EDIT(payload));
   };
 
   React.useEffect(() => {
-
     console.log("testBankData là: ", testBankData);
-    setSelectionModel(testBankData["writing"][`part${partSkill}`]);
+
+    // Add null safety checks
+    if (
+      testBankData &&
+      testBankData.writing &&
+      testBankData.writing[
+        `part${partSkill}` as keyof typeof testBankData.writing
+      ]
+    ) {
+      setSelectionModel(
+        testBankData.writing[
+          `part${partSkill}` as keyof typeof testBankData.writing
+        ]
+      );
+    } else {
+      console.log(`testBankData.writing.part${partSkill} is not available`);
+      setSelectionModel([]);
+    }
   }, []);
 
   return (

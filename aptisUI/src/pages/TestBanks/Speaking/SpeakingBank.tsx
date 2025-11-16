@@ -1,48 +1,53 @@
-import dataProvider from "../../../providers/dataProviders/dataProvider";
 import { useEffect, useState } from "react";
-
-import { converPartSpeakingSkill } from "../../../utils/convertPartSkill";
 import DataTableSpeaking from "../../../components/Table/DataTableSpeaking";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+import { ApiResponseItem, TestBankQuestion } from "../../../types/testBank";
+import { converPartSpeakingSkill } from "../../../utils/convertPartSkill";
 
-const SpeakingBank = ({ partSkill }) => {
+interface SpeakingBankProps {
+  partSkill: number;
+}
+
+const SpeakingBank = ({ partSkill }: SpeakingBankProps) => {
+  const [valueReading, setValueReading] = useState<TestBankQuestion[]>([]);
+
   const handleCallApi = async () => {
-    const { data } = await dataProvider.getFiltersRecord("Speakings", {
-      partSkill: converPartSpeakingSkill(partSkill),
-    });
+    try {
+      const { data } = await dataProvider.getFiltersRecord("Speakings", {
+        partSkill: converPartSpeakingSkill(partSkill),
+      });
 
-    console.log("data from SpeakingBank.tsx: ", data);
+      console.log("data from SpeakingBank.tsx: ", data);
 
-    let mappedData = data.map((data, index) => {
-      data = {
-        id: data._id,
-        title: data.title,
-        subTitle: data.questions[0].questionTitle,
-        timeToDo: data.timeToDo,
-        questionPart: data.questionPart,
-        createdAt: data.createdAt,
-        updatedAt: data.updatedAt,
-      };
+      const mappedData: TestBankQuestion[] = (data as ApiResponseItem[]).map(
+        (item: ApiResponseItem) => ({
+          _id: item._id,
+          id: item._id,
+          title: item.title,
+          subTitle: item.questions?.[0]?.questionTitle || "",
+          timeToDo: item.timeToDo,
+          questionPart: item.questionPart,
+          createdAt: item.createdAt,
+          updatedAt: item.updatedAt,
+          questions: item.questions,
+        })
+      );
 
-      return data;
-    });
-
-    console.log({ firstMappedData: mappedData });
-    setValueReading(mappedData);
+      console.log({ firstMappedData: mappedData });
+      setValueReading(mappedData);
+    } catch (error) {
+      console.error("Error fetching speaking data:", error);
+      setValueReading([]);
+    }
   };
 
   useEffect(() => {
     handleCallApi();
-  }, []);
-
-  const [valueReading, setValueReading] = useState([]);
+  }, [partSkill]);
 
   return (
     <>
-      <DataTableSpeaking
-        rows={valueReading}
-        partSkill={partSkill}
-      ></DataTableSpeaking>
-      {/* <CheckboxList values={valueReading}></CheckboxList> */}
+      <DataTableSpeaking rows={valueReading} partSkill={partSkill} />
     </>
   );
 };

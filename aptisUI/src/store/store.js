@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import listeningReducer from "./feature/listening";
+import readingReducer from "./feature/reading";
+import speakingReducer from "./feature/speaking";
 import testBankReducer from "./feature/testBank";
+import writingReducer from "./feature/writing";
 import generalReducer from "./general";
 import taiLieuReducer from "./taiLieu";
-import readingReducer from "./feature/reading";
-import writingReducer from "./feature/writing";
-import speakingReducer from "./feature/speaking";
-import listeningReducer from "./feature/listening";
 
 export const store = configureStore({
   reducer: {

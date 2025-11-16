@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   testBankData: {
@@ -35,10 +35,19 @@ export const testBankReducer = createSlice({
   name: "testBankStore",
   initialState,
   reducers: {
-    SET_TESTBANK_DATA: (state, action) => {
-      state.testBankData[action.payload.type][
-        `part${action.payload.partSkill}`
-      ] = action.payload.newSelection;
+    SET_TESTBANK_DATA_EDIT: (state, action) => {
+      const { type, partSkill, newSelection } = action.payload;
+      if (
+        typeof partSkill === "number" &&
+        partSkill >= 1 &&
+        state.testBankData[type] &&
+        state.testBankData[type][`part${partSkill}`] !== undefined
+      ) {
+        state.testBankData[type][`part${partSkill}`] = newSelection;
+      } else {
+        // Không thực hiện gì nếu partSkill không hợp lệ
+        console.warn("Invalid partSkill in SET_TESTBANK_DATA_EDIT:", partSkill);
+      }
     },
     RESET_TESTBANK_DATA: (state, action) => {
       state.testBankData = {
@@ -70,9 +79,6 @@ export const testBankReducer = createSlice({
         },
       };
     },
-    SET_TESTBANK_DATA_EDIT: (state, action) => {
-      state.testBankData = action.payload;
-    },
 
     SET_WORD: (state, action) => {
       state.wordObject[`${Object.keys(action.payload)}`] =
@@ -81,11 +87,6 @@ export const testBankReducer = createSlice({
     SET_TYPE_TEXT: (state, action) => {
       state.typeText = action.payload;
     },
-    // SET_TESTBANK_DATA: (state, action) => {
-    //   state.testBankData[action.payload.type][
-    //     `part${action.payload.partSkill}`
-    //   ] = action.payload.newSelection;
-    // },
     RESET_TESTBANK_DATA: (state) => {
       state.testBankData = {
         title: "đề mẫu",
@@ -363,6 +364,11 @@ export const testBankReducer = createSlice({
       state.dataOfModalList.numberQuestion = numberQuestionUpdate;
     },
 
+    SET_RAW_TESTBANK_DATA: (state, action) => {
+      const testBank = action.payload;
+      state.testBankData = testBank;
+    },
+
     SET_TESTBANK_DATA: (state, action) => {
       const testBank = action.payload;
 
@@ -483,6 +489,7 @@ export const {
   SET_TESTBANK_DATA,
   RESET_TESTBANK_DATA,
   SET_TESTBANK_DATA_EDIT,
+  SET_RAW_TESTBANK_DATA,
   SET_WORD,
   SET_TYPE_TEXT,
   SET_RESPONSE_RESULT_WRITING,

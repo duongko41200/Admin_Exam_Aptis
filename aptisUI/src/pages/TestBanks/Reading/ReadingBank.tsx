@@ -1,44 +1,56 @@
-import dataProvider from "../../../providers/dataProviders/dataProvider";
 import { useEffect, useState } from "react";
-
+import DataTableReading from "../../../components/Table/DataTableReading";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+import { ApiResponseItem, TestBankQuestion } from "../../../types/testBank";
 import { converPartReadingSkill } from "../../../utils/convertPartSkill";
-import DataTable from "../../../components/Table/DataTable";
 
-const ReadingBank = ({ partSkill }) => {
+interface ReadingBankProps {
+  partSkill: number;
+}
+
+const ReadingBank = ({ partSkill }: ReadingBankProps) => {
+  const [valueReading, setValueReading] = useState<TestBankQuestion[]>([]);
+
   const handleCallApi = async () => {
-    const { data } = await dataProvider.getFiltersRecord("readings", {
-      partSkill: converPartReadingSkill(partSkill),
-    });
+    try {
+      const { data } = await dataProvider.getFiltersRecord("readings", {
+        partSkill: converPartReadingSkill(partSkill),
+      });
 
-    console.log({ data });
+      console.log("data from ReadingBank.tsx: ", data);
 
-    let mappedData = data.map((data, index) => {
-      data = {
-        id: data._id,
-        title: data.data.title,
-        subTitle: data.data.questions.questionTitle,
-        timeToDo: data.data.timeToDo,
-        questionPart: data.data.questions.questionPart,
-        createdAt: data.createdAt,
-        updatedAt: data.updatedAt,
-      };
+      const mappedData: TestBankQuestion[] = (data as ApiResponseItem[]).map(
+        (item: ApiResponseItem) => ({
+          _id: item._id,
+          id: item._id,
+          title: item.data?.title || item.title || "",
+          subTitle: item.data?.questions?.questionTitle || "",
+          timeToDo: item.data?.timeToDo || item.timeToDo || "",
+          questionPart:
+            item.data?.questions?.questionPart || item.questionPart || "",
+          createdAt: item.createdAt,
+          updatedAt: item.updatedAt,
+          questions: item.data?.questions
+            ? [item.data.questions]
+            : item.questions,
+        })
+      );
 
-      return data;
-    });
-
-    setValueReading(mappedData);
+      console.log({ firstMappedData: mappedData });
+      setValueReading(mappedData);
+    } catch (error) {
+      console.error("Error fetching reading data:", error);
+      setValueReading([]);
+    }
   };
 
   useEffect(() => {
     handleCallApi();
-  }, []);
-
-  const [valueReading, setValueReading] = useState([]);
+  }, [partSkill]);
 
   return (
     <>
-      <DataTable rows={valueReading} partSkill={partSkill}></DataTable>
-      {/* <CheckboxList values={valueReading}></CheckboxList> */}
+      <DataTableReading rows={valueReading} partSkill={partSkill} />
     </>
   );
 };

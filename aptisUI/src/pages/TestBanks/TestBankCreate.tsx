@@ -17,8 +17,9 @@ import { UPDATED_SUCCESS } from "../../consts/general";
 import dataProvider from "../../providers/dataProviders/baseDataProvider";
 import {
   RESET_TESTBANK_DATA,
-  SET_TESTBANK_DATA_EDIT,
+  SET_RAW_TESTBANK_DATA,
 } from "../../store/feature/testBank";
+import { RootState } from "../../types/testBank";
 import ListeningBank from "./Listening/ListeningBank";
 import ReadingBank from "./Reading/ReadingBank";
 import SpeakingBank from "./Speaking/SpeakingBank";
@@ -109,13 +110,20 @@ const tests = [
 
 const skillLabels = ["Grammar", "Listening", "Writing", "Reading", "Speaking"];
 
+interface Classroom {
+  id: string;
+  name: string;
+}
+
+interface TestBankCreateProps {
+  recordEdit?: any;
+  statusHandler?: string;
+}
+
 const TestBankCreate = ({
   recordEdit = null,
   statusHandler = "create",
-}: {
-  recordEdit?: any;
-  statusHandler?: string;
-}) => {
+}: TestBankCreateProps) => {
   const navigate = useNavigate();
   const notify = useNotify();
   const [isOpenModalFrame, setIsOpenModalFrame] = useState(false);
@@ -123,22 +131,21 @@ const TestBankCreate = ({
   const [typeSkill, setTypeSkill] = useState<string | null>(null);
   const [nameTestBank, setNameTestBank] = useState<string>("");
 
-  const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([
+  const [classrooms, setClassrooms] = useState<Classroom[]>([
     {
       id: "",
       name: "Không có lớp học",
     },
   ]);
 
-  const [selectedClassId, setSelectedClassId] = useState<number | string>("");
+  const [selectedClassId, setSelectedClassId] = useState<string>("");
 
   const handleChange = (event: SelectChangeEvent) => {
-    const value = event.target.value;
     setSelectedClassId(event.target.value);
   };
 
   const testBankData = useSelector(
-    (state: any) => state.testBankStore.testBankData
+    (state: RootState) => state.testBankStore.testBankData
   );
   const dispatch = useDispatch();
 
@@ -206,10 +213,12 @@ const TestBankCreate = ({
 
       const classroomList = response.data ?? [];
 
-      const formattedClassrooms = classroomList.map((classroom: any) => ({
-        id: classroom._id,
-        name: classroom.nameRoom,
-      }));
+      const formattedClassrooms: Classroom[] = classroomList.map(
+        (classroom: { _id: string; nameRoom: string }) => ({
+          id: classroom._id,
+          name: classroom.nameRoom,
+        })
+      );
 
       setClassrooms(formattedClassrooms);
     } catch (error) {
@@ -224,19 +233,43 @@ const TestBankCreate = ({
     const { title, listening, reading, writing, speaking, classRoomId } =
       recordEdit;
 
-    setSelectedClassId(classRoomId || "");
+    console.log("recordEdit khi edit là: ", recordEdit);
 
+    setSelectedClassId(classRoomId || "");
     setNameTestBank(title || "");
 
-    const testBankData = {
-      title,
-      listening,
-      reading,
-      writing,
-      speaking,
+    // Đảm bảo structure đầy đủ cho testBankData
+    const testBankDataForEdit = {
+      title: title || "đề mẫu",
+      listening: listening || {
+        part1: [],
+        part2: [],
+        part3: [],
+        part4: [],
+      },
+      reading: reading || {
+        part1: [],
+        part2: [],
+        part3: [],
+        part4: [],
+        part5: [],
+      },
+      writing: writing || {
+        part1: [],
+        part2: [],
+        part3: [],
+        part4: [],
+      },
+      speaking: speaking || {
+        part1: [],
+        part2: [],
+        part3: [],
+        part4: [],
+      },
     };
-    dispatch(SET_TESTBANK_DATA_EDIT(testBankData));
-  }, [recordEdit]);
+
+    dispatch(SET_RAW_TESTBANK_DATA(testBankDataForEdit));
+  }, [recordEdit, dispatch]);
 
   useEffect(() => {
     fetchClassrooms();

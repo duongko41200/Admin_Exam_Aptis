@@ -1,10 +1,14 @@
-import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import { Paper, Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import clsx from "clsx";
-import { GridColDef } from "@mui/x-data-grid";
+import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { SET_TESTBANK_DATA } from "../../store/feature/testBank";
+import { SET_TESTBANK_DATA_EDIT } from "../../store/feature/testBank";
+import {
+  DataTableProps,
+  RootState,
+  SetTestBankDataPayload,
+} from "../../types/testBank";
 
 const columns: GridColDef[] = [
   {
@@ -73,28 +77,47 @@ const paginationModel = { page: 0, pageSize: 5 };
 export default function DataTableListening({
   rows,
   partSkill,
-}: {
-  rows: any;
-  partSkill: any;
-}) {
-  const [selectionModel, setSelectionModel] = React.useState([]);
+}: DataTableProps) {
+  const [selectionModel, setSelectionModel] = React.useState<number[]>([]);
 
   const dispatch = useDispatch();
   const testBankData = useSelector(
-    (state: any) => state.testBankStore.testBankData
+    (state: RootState) => state.testBankStore.testBankData
   );
 
-  console.log("testBankData: ádfsdfsd ", testBankData);
+  console.log("Rendering DataTableListening component", testBankData);
 
-  const handleSelectionChange = (newSelection: any) => {
+  const handleSelectionChange = (newSelection: number[]) => {
+    console.log("newSelection: ", newSelection);
     setSelectionModel(newSelection);
-    const payload = { type: "listening", newSelection, partSkill };
-    dispatch(SET_TESTBANK_DATA(payload));
+    const payload: SetTestBankDataPayload = {
+      type: "listening",
+      newSelection,
+      partSkill,
+    };
+    dispatch(SET_TESTBANK_DATA_EDIT(payload));
   };
 
   React.useEffect(() => {
     console.log("testBankData là: ", testBankData);
-    setSelectionModel(testBankData["listening"][`part${partSkill}`]);
+
+    // Add null safety checks
+    if (
+      testBankData &&
+      testBankData.listening &&
+      testBankData.listening[
+        `part${partSkill}` as keyof typeof testBankData.listening
+      ]
+    ) {
+      setSelectionModel(
+        testBankData.listening[
+          `part${partSkill}` as keyof typeof testBankData.listening
+        ]
+      );
+    } else {
+      console.log(`testBankData.listening.part${partSkill} is not available`);
+      setSelectionModel([]);
+    }
   }, []);
 
   return (
