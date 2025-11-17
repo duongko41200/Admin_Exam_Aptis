@@ -48,6 +48,9 @@ This is Monorepo using Turborepo as the management tool.
 
 ## Step4: Create user
 
+## Step5: create vector db:
+`docker compose -f docker-compose.chromadb.yml up -d`
+
 ### Find file `access.post.http` inside folder `postman` and Copy api Paste postman to creat the first user
 
 
