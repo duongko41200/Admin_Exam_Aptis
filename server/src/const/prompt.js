@@ -1,4 +1,4 @@
-import part4 from "../data/template-score/writing-part4.json" with { type: "json" };
+import * as ScoreRules from "../data/template-score/index.js";
 
 export const genPromptFormEmailFormal = (writing) => {
   return (
@@ -26,8 +26,16 @@ export const genPromptFormEmailFormal = (writing) => {
   );
 };
 
-export const genPromptAIScore = (writing, debai) => {
-  const writingContent = part4.templateEmail.score;
+export const genPromptAIScore = (writing, debai, part, typeEmail) => {
+  let writingContent = [];
+  if (part === 4) {
+    if (typeEmail === 1) {
+      writingContent = ScoreRules.writingPart4.templateEmail.find(
+        (item) => item.typeEmail === 1
+      ).score;
+    }
+  }
+
   return (
     "Hãy kiểm tra bài viết sau và chấm điểm theo các tiêu chí sau đây: \n\n" +
     writingContent +

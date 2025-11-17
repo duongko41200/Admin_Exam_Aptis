@@ -18,8 +18,45 @@ import {
   genPromptAIScore,
   genPromptFormEmailFormal,
 } from "../../const/prompt.js";
+import { validatePartWriting } from "../../const/writing.js";
+
+/**
+ * Retry utility with exponential backoff
+ */
+const retryWithBackoff = async (asyncFn, maxRetries = 3, baseDelay = 1000) => {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await asyncFn();
+    } catch (error) {
+      // Check if it's a retryable error (503, 429, network issues)
+      const isRetryable =
+        error.status === 503 || // Service Unavailable
+        error.status === 429 || // Rate Limited
+        error.message.includes("overloaded") ||
+        error.message.includes("network");
+
+      if (!isRetryable || attempt === maxRetries) {
+        throw error;
+      }
+
+      const delay = baseDelay * Math.pow(2, attempt - 1) + Math.random() * 1000;
+      console.log(
+        `🔄 Retry attempt ${attempt}/${maxRetries} after ${delay.toFixed(
+          0
+        )}ms...`
+      );
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    }
+  }
+};
 
 // In-memory storage for development (replace with database in production)
+
+const EMAIL_TYPE = {
+  FORMAL: 1,
+  INFORMAL: 0,
+};
+
 let writingsDatabase = new Map();
 
 // ChromaDB configuration
@@ -34,10 +71,27 @@ function cleanJsonResponse(response) {
  * Submit a new writing for scoring and storage
  * Implements the core Flow A from API_FLOW_GUIDE.md
  */
+// Track initialization status
+let isServiceInitialized = false;
+
+/**
+ * Ensure writing service is initialized
+ */
+const ensureInitialized = async () => {
+  if (!isServiceInitialized) {
+    console.log("🔧 Initializing writing service...");
+    await initialize();
+    isServiceInitialized = true;
+  }
+};
+
 export const submitWriting = async (writingData) => {
   const startTime = Date.now();
   console.log("writingData", writingData);
   try {
+    // Ensure service is initialized before processing
+    await ensureInitialized();
+
     // Validate input
     const validatedData = WritingSubmissionSchema.parse(writingData);
 
@@ -45,53 +99,69 @@ export const submitWriting = async (writingData) => {
     // const writingId = uuidv4();
     // const submittedAt = new Date().toISOString();
 
-    // Step 1: Score the writing
-    const scoringResult = await scoringPipeline.scoreWriting(
-      validatedData.content,
-      validatedData.type,
-      true // use detailed feedback
-    );
+    // Step 1: Tối ưu hóa - chạy parallel scoring và embedding, Gemini AI với retry
+    const [scoringResult, embedding, geminiResult] = await Promise.allSettled([
+      // Score the writing
+      scoringPipeline.scoreWriting(
+        validatedData.content,
+        validatedData.part,
+        true // use detailed feedback
+      ),
+      // Generate embedding
+      embedWithGemini(validatedData.content),
+      // Gemini AI scoring với retry mechanism
+      retryWithBackoff(
+        async () => {
+          const geminiModel = await initializeGemini();
+          const prompt = genPromptAIScore({
+            content: validatedData.content,
+            debai: validatedData.prompt,
+            part: validatedData.part,
+            typeEmail: validatedData.metadata?.typeEmail,
+          });
+          return await geminiModel.generateContent(prompt);
+        },
+        3,
+        2000
+      ),
+    ]);
 
-    /// Ai chấm điểm
+    // Process results with fallback handling
+    const finalScoringResult =
+      scoringResult.status === "fulfilled" ? scoringResult.value : null;
+    const finalEmbedding =
+      embedding.status === "fulfilled" ? embedding.value : null;
 
-    const geminiModel = await initializeGemini();
+    let convertTextByJson = null;
+    if (geminiResult.status === "fulfilled") {
+      try {
+        const response = geminiResult.value.response.text();
+        const cleanResponse = cleanJsonResponse(response);
+        convertTextByJson = JSON.parse(cleanResponse);
+        console.log("✅ Gemini AI review:", convertTextByJson);
+      } catch (parseError) {
+        console.warn("⚠️ Failed to parse Gemini response:", parseError.message);
+        convertTextByJson = { error: "Parse failed", fallback: true };
+      }
+    } else {
+      console.error("❌ Gemini AI failed:", geminiResult.reason.message);
+      // Fallback scoring
+      convertTextByJson = {
+        overall_score: finalScoringResult?.overall_score || 5,
+        error: "Gemini AI unavailable",
+        fallback: true,
+        message: "Using fallback scoring due to AI service unavailability",
+      };
+    }
 
-    const prompt = genPromptAIScore({
-      content: validatedData.content,
-      debai: validatedData.prompt,
-    });
-
-    const resultAi = await geminiModel.generateContent(prompt);
-
-    const response = resultAi.response.text();
-
-    const cleanResponse = cleanJsonResponse(response);
-
-    const convertTextByJson = JSON.parse(cleanResponse);
-
-    console.log("Ai review", convertTextByJson);
-
-    // Step 2: Create embedding for the writing content
-    const embedding = await embedWithGemini(validatedData.content);
-
-    // // Step 3: Create LangChain Document
-    // const document = new Document({
-    //   pageContent: validatedData.content,
-    //   metadata: {
-    //     id: writingId,
-    //     userId: validatedData.userId,
-    //     type: validatedData.type,
-    //     prompt: validatedData.prompt,
-    //     submittedAt,
-    //     taskId: validatedData.metadata?.taskId,
-    //   },
-    // });
-
-    // // Step 4: Calculate similarity with existing documents
-    // await calculateAndLogSimilarity(document, embedding, writingId);
-
-    // // Step 5: Store document in ChromaDB
-    // await addDocumentToChroma(document, embedding, writingId);
+    // Ensure we have valid data
+    if (!finalScoringResult || !finalEmbedding) {
+      throw new Error(
+        "Critical services failed: " +
+          (!finalScoringResult ? "scoring " : "") +
+          (!finalEmbedding ? "embedding" : "")
+      );
+    }
 
     // Step 6: Create complete writing object
     const writing = {
@@ -100,16 +170,18 @@ export const submitWriting = async (writingData) => {
       prompt: validatedData.prompt,
       type: validatedData.type,
       content: validatedData.content,
-      embedding: embedding,
+      embedding: finalEmbedding,
       scores: {
-        grammar: scoringResult.criteria_scores.grammatical_range_accuracy || 0,
-        vocabulary: scoringResult.criteria_scores.lexical_resource || 0,
-        coherence: scoringResult.criteria_scores.coherence_cohesion || 0,
-        task_fulfillment: scoringResult.criteria_scores.task_achievement || 0,
-        overall: scoringResult.overall_score || 0,
+        grammar:
+          finalScoringResult.criteria_scores.grammatical_range_accuracy || 0,
+        vocabulary: finalScoringResult.criteria_scores.lexical_resource || 0,
+        coherence: finalScoringResult.criteria_scores.coherence_cohesion || 0,
+        task_fulfillment:
+          finalScoringResult.criteria_scores.task_achievement || 0,
+        overall: finalScoringResult.overall_score || 0,
         Ai_Score: convertTextByJson || 0,
       },
-      detailedFeedback: scoringResult.detailed_feedback || {},
+      detailedFeedback: finalScoringResult.detailed_feedback || {},
       metadata: {
         submittedAt: validatedData.submittedAt,
         processingTime: (Date.now() - startTime) / 1000,
@@ -263,6 +335,9 @@ export const calculateAndLogSimilarity = async (
  */
 export const findSimilarWritings = async (content, topK = 5) => {
   try {
+    // Ensure service is initialized
+    await ensureInitialized();
+
     // Get all existing documents from ChromaDB
     const existingDocuments = await getAllDocumentsFromChroma();
 
@@ -387,49 +462,16 @@ export const getUserWritings = async (userId, options = {}) => {
   };
 };
 
-export async function validateAptisEmail(emailText) {
-  const parts = [
-    {
-      key: "greeting",
-      label: "Lời chào",
-      regex: /Dear\s+[\w\s,]+/,
-      suggestion:
-        "Thêm lời chào như 'Dear Sir,' hoặc 'Dear [Tên người nhận],' ở đầu email.",
-    },
-    {
-      key: "introduction",
-      label: "Giới thiệu bản thân",
-      regex: /My name is|I have been a member|I am/,
-      suggestion: "Giới thiệu tên, vai trò, thời gian tham gia câu lạc bộ.",
-    },
-    {
-      key: "purpose",
-      label: "Mục đích email",
-      regex: /I am writing|purpose|notice|announcement/,
-      suggestion:
-        "Nêu lý do viết email, ví dụ: cảm nhận, đề xuất về thông báo.",
-    },
-    {
-      key: "feelings",
-      label: "Cảm nhận",
-      regex: /I think|I felt|feel|problem|plan/,
-      suggestion: "Trình bày cảm nhận về thông báo/plan/problem.",
-    },
-    {
-      key: "suggestions",
-      label: "Đề xuất/giải pháp",
-      regex: /In my opinion|suggest|should|need to/,
-      suggestion:
-        "Đề xuất giải pháp hoặc ý kiến, ví dụ: 'In my opinion, we should...'",
-    },
-    {
-      key: "closing",
-      label: "Kết thúc",
-      regex: /I hope that|Sincerely|Best regards/,
-      suggestion:
-        "Kết thúc email bằng câu như 'I hope that my suggestions are useful...' và lời chào cuối 'Sincerely, [Tên người viết]'.",
-    },
-  ];
+export async function validateAptisEmail(emailText, part, metadata) {
+  let parts = [];
+
+  if (part === 4) {
+    if (metadata && metadata.typeEmail === EMAIL_TYPE.FORMAL) {
+      parts = validatePartWriting[4].find(
+        (p) => p.key === EMAIL_TYPE.FORMAL
+      ).requiredFields;
+    }
+  }
 
   const missing = [];
   const suggestions = {};
@@ -655,6 +697,13 @@ export const deleteWriting = async (writingId) => {
  */
 export const initialize = async () => {
   try {
+    if (isServiceInitialized) {
+      console.log("✅ Writing service already initialized");
+      return;
+    }
+
+    console.log("🔧 Starting writing service initialization...");
+
     // Ensure storage directory exists
     await fs.mkdir(STORAGE_PATH, { recursive: true });
 
@@ -664,12 +713,16 @@ export const initialize = async () => {
     // Initialize ChromaDB references in repo
     initializeChromaReferences(chromaClient, chromaCollection);
 
+    console.log("✅ ChromaDB initialized and references set");
+
     // Load existing writings
     await loadWritingsFromStorage();
 
-    console.log("Writing service initialized successfully");
+    isServiceInitialized = true;
+    console.log("✅ Writing service initialized successfully");
   } catch (error) {
-    console.log("Failed to initialize writing service:", error);
+    console.error("❌ Failed to initialize writing service:", error);
+    isServiceInitialized = false; // Reset on failure
     throw error;
   }
 };

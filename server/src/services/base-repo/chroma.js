@@ -18,7 +18,12 @@ export const initializeChromaReferences = (client, collection) => {
 export const addDocumentToChroma = async (document, embedding, writingId) => {
   try {
     if (!chromaCollection) {
-      throw new Error("ChromaDB collection not initialized");
+      console.error(
+        "❌ ChromaDB collection not initialized. Call initializeChromaReferences() first."
+      );
+      throw new Error(
+        "ChromaDB collection not initialized. Ensure writing service is properly initialized."
+      );
     }
 
     // Validate inputs

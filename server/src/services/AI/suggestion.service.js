@@ -2,6 +2,77 @@ import { initialize as initializeGemini } from "../../configs/gemini.js";
 import * as retrievalService from "./retrieval.service.js";
 
 /**
+ * Retry utility with exponential backoff for Gemini API
+ */
+const retryWithBackoff = async (asyncFn, maxRetries = 5, baseDelay = 2000) => {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await asyncFn();
+    } catch (error) {
+      // Check if it's a retryable error
+      const isRetryable =
+        error.status === 503 || // Service Unavailable
+        error.status === 429 || // Rate Limited
+        error.message.includes("overloaded") ||
+        error.message.includes("network") ||
+        error.message.includes("Service Unavailable");
+
+      if (!isRetryable || attempt === maxRetries) {
+        console.warn(
+          `⚠️ Gemini API failed after ${attempt} attempts:`,
+          error.message
+        );
+        throw error;
+      }
+
+      // Longer exponential backoff for overloaded API
+      const delay = baseDelay * Math.pow(2, attempt - 1) + Math.random() * 2000;
+      console.log(
+        `🔄 Retry Gemini attempt ${attempt}/${maxRetries} after ${delay.toFixed(
+          0
+        )}ms (API overloaded)...`
+      );
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    }
+  }
+};
+
+/**
+ * Safe Gemini call with retry and fallback
+ */
+const safeGeminiCall = async (prompt, fallbackResponse = null) => {
+  try {
+    return await retryWithBackoff(
+      async () => {
+        const geminiModel = await initializeGemini();
+        return await geminiModel.generateContent(prompt);
+      },
+      5, // Increased retries
+      3000 // Longer base delay
+    );
+  } catch (error) {
+    console.error(`❌ Gemini API completely failed: ${error.message}`);
+
+    // Always use fallback when API is overloaded
+    if (fallbackResponse) {
+      console.log(`🛡️ Using fallback response due to API overload`);
+      return { response: { text: () => JSON.stringify(fallbackResponse) } };
+    }
+
+    // If no fallback provided, create a generic one
+    console.log(`🛡️ Creating emergency fallback response`);
+    const emergencyFallback = {
+      error: "API temporarily unavailable",
+      message: "Service will retry automatically",
+      fallback: true,
+      timestamp: new Date().toISOString(),
+    };
+
+    return { response: { text: () => JSON.stringify(emergencyFallback) } };
+  }
+};
+
+/**
  * Generate comprehensive suggestions for a writing
  * Implements Flow D from API_FLOW_GUIDE.md
  */
@@ -37,7 +108,6 @@ export const generateSuggestions = async (
       solutionReuse,
       recommendations,
     };
-
 
     return suggestions;
   } catch (error) {
@@ -197,17 +267,30 @@ Important:
 Your response MUST be a valid JSON array. Do NOT include any explanation, markdown, or extra text.
 `;
 
-    const geminiModel = await initializeGemini();
+    const fallbackResponse = {
+      suggestions: [
+        "Structure your writing with clear sections",
+        "Use appropriate tone for the context",
+        "Include proper opening and closing",
+      ],
+      confidence: 0.5,
+      fallback: true,
+      source: "default_suggestions",
+    };
 
-    const result = await geminiModel.generateContent(prompt);
-
+    const result = await safeGeminiCall(prompt, fallbackResponse);
     const response = result.response.text();
 
     const convertTextByJson = JSON.parse(response);
+
+    if (!convertTextByJson.fallback) {
+      console.log("✅ Form suggestions generated via Gemini AI");
+    }
+
     console.log({ convertTextByJson });
     return convertTextByJson;
   } catch (error) {
-
+    console.error("❌ Form suggestions fallback:", error.message);
     return getDefaultFormSuggestions(currentWriting.type);
   }
 };
@@ -221,8 +304,8 @@ const generateSolutionReuse = async (currentWriting, similarWritings) => {
 Analyze this writing and identify reusable solution patterns:
 
 Current Writing:
-Type: ${currentWriting.type}
-Content: ${currentWriting.content}
+Type: ${currentWriting.type || "N/A"}
+Content: ${currentWriting.content || "No content"}
 Scores: ${JSON.stringify(currentWriting.scores)}
 
 Similar Successful Writings:
@@ -231,7 +314,7 @@ ${similarWritings
     (w) => `
 Type: ${w.type}
 Score: ${w.scores?.overall || "N/A"}
-Excerpt: ${w.content.substring(0, 200)}...
+Excerpt: ${w.content?.substring(0, 200) || "No content available"}...
 `
   )
   .join("\n---\n")}
@@ -247,13 +330,29 @@ Return ONLY a valid JSON array with: pattern_name, template, versatility_score, 
 Your response MUST be a valid JSON array. Do NOT include any explanation, markdown, or extra text. Do NOT use triple backticks or any introductory sentence.
 `;
 
-    const geminiModel = await initializeGemini();
-    const result = await geminiModel.generateContent(prompt);
+    const fallbackResponse = [
+      {
+        pattern_name: "structured_approach",
+        template: "Introduction → Main points → Conclusion",
+        versatility_score: 0.8,
+        applications: ["emails", "reports", "essays"],
+      },
+      {
+        pattern_name: "clear_communication",
+        template: "State purpose → Provide details → Call to action",
+        versatility_score: 0.9,
+        applications: ["business_communication", "formal_requests"],
+      },
+    ];
+
+    const result = await safeGeminiCall(prompt, fallbackResponse);
     const response = result.response.text();
     const convertTextByJson = JSON.parse(response);
-    console.log("solution reuse patterns generated: ", { convertTextByJson });
+
+    console.log("✅ Solution reuse patterns generated:", { convertTextByJson });
     return convertTextByJson;
   } catch (error) {
+    console.error("❌ Solution reuse fallback:", error.message);
     return getDefaultSolutionReuse(currentWriting.type);
   }
 };
@@ -267,10 +366,10 @@ const generateRecommendations = async (currentWriting, similarWritings) => {
 Generate personalized writing improvement recommendations:
 
 Current Writing Performance:
-- Grammar: ${currentWriting.scores.grammar}/9
-- Vocabulary: ${currentWriting.scores.vocabulary}/9  
-- Coherence: ${currentWriting.scores.coherence}/9
-- Task Fulfillment: ${currentWriting.scores.task_fulfillment}/9
+- Grammar: ${currentWriting.scores?.grammar || 0}/9
+- Vocabulary: ${currentWriting.scores?.vocabulary || 0}/9  
+- Coherence: ${currentWriting.scores?.coherence || 0}/9
+- Task Fulfillment: ${currentWriting.scores?.task_fulfillment || 0}/9
 
 Historical Context:
 ${
@@ -288,16 +387,22 @@ Important:
 Return ONLY a valid JSON array with: recommendation.
 Your response MUST be a valid JSON array. Do NOT include any explanation, markdown, or extra text. Do NOT use triple backticks or any introductory sentence.
 `;
-    const geminiModel = await initializeGemini();
-    const result = await geminiModel.generateContent(prompt);
+    const fallbackRecommendations = [
+      "Focus on improving your lowest-scoring writing criterion",
+      "Practice writing regularly to build consistency",
+      "Read examples of high-quality writing in your target style",
+      "Use varied sentence structures to improve flow",
+      "Proofread carefully for grammar and spelling errors",
+    ];
+
+    const result = await safeGeminiCall(prompt, fallbackRecommendations);
     const response = result.response.text();
     const convertTextByJson = JSON.parse(response);
-    console.log("recommendations generated: ", { convertTextByJson });
 
+    console.log("✅ AI recommendations generated:", { convertTextByJson });
     return convertTextByJson;
   } catch (error) {
-    console.error("AI response: ", response);
-    console.log("Failed to generate AI recommendations", error);
+    console.error("❌ Failed to generate AI recommendations:", error.message);
     return getDefaultRecommendations(currentWriting);
   }
 };
@@ -349,17 +454,24 @@ Return ONLY a valid JSON object with keys: structural_templates, reusable_phrase
 Your response MUST be a valid JSON object. Do NOT include any explanation, markdown, or extra text. Do NOT use triple backticks or any introductory sentence.
 `;
 
-    const geminiModel = await initializeGemini();
+    const fallbackPatterns = {
+      structural_patterns: [
+        { pattern: "clear_structure", frequency: 1.0, effectiveness: 0.7 },
+      ],
+      linguistic_patterns: [
+        { pattern: "formal_tone", frequency: 0.8, effectiveness: 0.8 },
+      ],
+      success_factors: ["clarity", "organization", "appropriateness"],
+    };
 
-    const result = await geminiModel.generateContent(prompt);
+    const result = await safeGeminiCall(prompt, fallbackPatterns);
     const response = result.response.text();
     const convertTextByJson = JSON.parse(response);
-    console.log({ convertTextByJson });
 
+    console.log("✅ Patterns extracted:", { convertTextByJson });
     return convertTextByJson;
   } catch (error) {
-    console.error("AI response: ", response);
-    console.log("Failed to extract patterns with AI", error);
+    console.error("❌ Failed to extract patterns with AI:", error.message);
     return extractPatternsManually(writings);
   }
 };
@@ -370,25 +482,25 @@ Your response MUST be a valid JSON object. Do NOT include any explanation, markd
 const buildSuggestionPrompt = (currentWriting, similarWritings) => {
   return `
 CURRENT WRITING ANALYSIS:
-Type: ${currentWriting.type}
-Prompt: ${currentWriting.prompt}
-Content Length: ${currentWriting.content.length} characters
+Type: ${currentWriting.type || "N/A"}
+Prompt: ${currentWriting.prompt || "No prompt"}
+Content Length: ${currentWriting.content?.length || 0} characters
 Scores: 
-- Grammar: ${currentWriting.scores.grammar}/9
-- Vocabulary: ${currentWriting.scores.vocabulary}/9
-- Coherence: ${currentWriting.scores.coherence}/9
-- Task Fulfillment: ${currentWriting.scores.task_fulfillment}/9
-- Overall: ${currentWriting.scores.overall}/9
+- Grammar: ${currentWriting.scores?.grammar || 0}/9
+- Vocabulary: ${currentWriting.scores?.vocabulary || 0}/9
+- Coherence: ${currentWriting.scores?.coherence || 0}/9
+- Task Fulfillment: ${currentWriting.scores?.task_fulfillment || 0}/9
+- Overall: ${currentWriting.scores?.overall || 0}/9
 
 SIMILAR WRITINGS CONTEXT:
 ${similarWritings
   .map(
     (w) => `
-ID: ${w.id}
-Type: ${w.type}
+ID: ${w.id || "N/A"}
+Type: ${w.type || "N/A"}
 Score: ${w.scores?.overall || "N/A"}/9
 Success Elements: ${w.successPatterns?.join(", ") || "N/A"}
-Excerpt: ${w.content.substring(0, 150)}...
+Excerpt: ${w.content?.substring(0, 150) || "No content available"}...
 `
   )
   .join("\n---\n")}
@@ -525,19 +637,19 @@ const getDefaultSolutionReuse = (type) => {
 const getDefaultRecommendations = (writing) => {
   const recommendations = [];
 
-  if (writing.scores.grammar < 6) {
+  if ((writing?.scores?.grammar || 0) < 6) {
     recommendations.push(
       "Focus on grammar practice, especially verb tenses and sentence structure"
     );
   }
 
-  if (writing.scores.vocabulary < 6) {
+  if ((writing?.scores?.vocabulary || 0) < 6) {
     recommendations.push(
       "Expand vocabulary with synonyms and varied expressions"
     );
   }
 
-  if (writing.scores.coherence < 6) {
+  if ((writing?.scores?.coherence || 0) < 6) {
     recommendations.push(
       "Use more connecting words and organize ideas in clear paragraphs"
     );

@@ -6,23 +6,12 @@ const criteria = [
   "grammatical_range_accuracy",
 ];
 
-// Initialize service
-export const initialize = async () => {
-  if (initialized) return;
-
-  console.log("Initializing ScoringPipelineService...");
-  // Add initialization logic here (API keys, models, etc.)
-  initialized = true;
-};
-
 // Score writing text
 export const scoreWriting = async (
   text,
   taskType = "general",
   useDetailedFeedback = false
 ) => {
-  await initialize();
-
   console.log(`Scoring text (${text.length} chars) for task type: ${taskType}`);
 
   // Simple scoring algorithm (replace with actual AI implementation)
@@ -44,6 +33,7 @@ export const scoreWriting = async (
   return result;
 };
 
+// TODO: Implement actual scoring logic using AI models
 // Calculate scores for each criterion
 const calculateScores = (text) => {
   const wordCount = text.split(/\s+/).length;

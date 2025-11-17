@@ -5,7 +5,6 @@
 
 import { ChromaClient } from "chromadb";
 import fs from "fs/promises";
-import path from "path";
 
 // In-memory storage for development (replace with database in production)
 let writingsDatabase = new Map();
@@ -15,23 +14,21 @@ const STORAGE_PATH = process.env.WRITING_STORAGE_PATH || "./data/writings";
 const CHROMA_COLLECTION_NAME = "writing_documents";
 export const initializeChromaDB = async () => {
   try {
-    // Initialize ChromaDB client with path configuration for v1.x
+    // Initialize ChromaDB client with v2 API support
     const chromaUrl = process.env.CHROMA_URL || "http://localhost:8001";
 
     const chromaClient = new ChromaClient({
-      host: "localhost",
-      port: 8001,
-      ssl: false,
+      path: chromaUrl, // Use path instead of host/port for v2 API
     });
 
-    // Test connection first
+    // Test connection with v2 heartbeat
     try {
       await chromaClient.heartbeat();
-      console.log("ChromaDB connection established");
+      console.log("ChromaDB v2 connection established successfully");
     } catch (error) {
       console.log("Failed to connect to ChromaDB:", error);
       throw new Error(
-        `Cannot connect to ChromaDB at ${chromaUrl}. Please ensure ChromaDB is running.`
+        `Cannot connect to ChromaDB at ${chromaUrl}. Please ensure ChromaDB is running with v2 API.`
       );
     }
 
@@ -59,10 +56,7 @@ export const initializeChromaDB = async () => {
           });
           console.log("Created new ChromaDB collection");
         } catch (recreateError) {
-          console.log(
-            "Failed to recreate ChromaDB collection:",
-            recreateError
-          );
+          console.log("Failed to recreate ChromaDB collection:", recreateError);
           throw recreateError;
         }
       }
@@ -76,18 +70,6 @@ export const initializeChromaDB = async () => {
     console.log("Failed to initialize ChromaDB:", error);
     throw error;
   }
-};
-
-/**
- * Store writing in persistent storage
- */
-export const storeWriting = async (writing) => {
-  // Store in memory
-  writingsDatabase.set(writing.id, writing);
-
-  // Store in file system (for development)
-  const filePath = path.join(STORAGE_PATH, `${writing.id}.json`);
-  await fs.writeFile(filePath, JSON.stringify(writing, null, 2));
 };
 
 /**

@@ -1,10 +1,10 @@
 "use strict";
 
+import { v4 as uuidv4 } from "uuid";
 import { SuccessResponse } from "../cores/success.response.js";
 import * as retrievalService from "../services/AI/retrieval.service.js";
 import * as suggestionService from "../services/AI/suggestion.service.js";
 import * as writingService from "../services/AI/writing.service.js";
-import { v4 as uuidv4 } from "uuid";
 import {
   count,
   create,
@@ -79,53 +79,58 @@ class AiController {
    */
   submitWriting = async (req, res, next) => {
     try {
-      const { userId, prompt, part, type, content, metadata } = req.body;
+      const {
+        userId,
+        prompt,
+        part,
+        content,
+        metadata,
+        type = "writing",
+      } = req.body;
 
       const writingId = uuidv4();
       const submittedAt = new Date().toISOString();
 
-      //Firt kiểm tra đúng format email
+      // Sequential execution: Chạy từng bước một
+      // Step 1: Validate email format trước
+      // const writingFormatValid = await writingService.validateAptisEmail(
+      //   content,
+      //   part,
+      //   metadata
+      // );
 
-      const writingFormatValid = await writingService.validateAptisEmail(
-        content
-      );
-
-      // console.log("validateAptisEmail:", writingFormatValid);
-
-      // Step 1: Submit and store writing
+      // Step 2: Submit and store writing sau khi validate xong
       const writingResult = await writingService.submitWriting({
         writingId,
         userId,
+        part,
         prompt,
-        type,
         content,
         metadata,
         submittedAt,
       });
 
-      // // Step 2: Find similar writings for RAG context
+      // Step 3: Find similar writings sau khi có writingResult
       const similarWritings = await retrievalService.findSimilarWritings(
         writingResult
       );
 
-      console.log("similarWritings:", similarWritings);
-
-      // // Step 3: Generate enhanced suggestions based on RAG
+      // Step 4: Generate suggestions sau khi có similarWritings
       const suggestions = await suggestionService.generateSuggestions(
         userId,
         type,
         writingResult,
-        similarWritings
+        similarWritings // Sử dụng similarWritings thật thay vì array rỗng
       );
 
-      // console.log("similarWritings:", similarWritings);
+      console.log("similarWritings:", similarWritings);
 
-      // // Step 4: Compile comprehensive response
+      // Step 5: Compile comprehensive response (suggestions đã có similarWritings)
       const response = {
         writingId: writingResult.id,
         score: writingResult.scores,
         detailedFeedback: writingResult.detailedFeedback,
-        formatValid: writingFormatValid,
+        // formatValid: writingFormatValid,
 
         ragInsights: {
           similarWritings: similarWritings,

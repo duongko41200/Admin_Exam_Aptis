@@ -5,15 +5,16 @@ export const WritingSubmissionSchema = z.object({
   userId: z.string().min(1, "User ID is required"),
   writingId: z.string().min(1, "Writing ID is required"),
   prompt: z.string().min(1, "Writing prompt is required"),
-  type: z.enum(["letter", "essay", "report", "email", "general"]),
   content: z.string().min(50, "Writing content must be at least 50 characters"),
   submittedAt: z.string().optional(),
+  part: z.number().optional(),
   metadata: z
     .object({
       taskId: z.string().optional(),
       submittedAt: z.string().optional(),
       timeLimit: z.number().optional(),
       wordLimit: z.number().optional(),
+      typeEmail: z.number().optional(),
     })
     .optional(),
 });

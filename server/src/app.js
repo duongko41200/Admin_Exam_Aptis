@@ -58,6 +58,9 @@ app.use(
 // initDb();
 checkOverload();
 
+// Note: Writing service will be auto-initialized on first use
+console.log("📝 Writing service will initialize automatically when first used");
+
 // init router
 app.use("/", routes);
 

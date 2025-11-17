@@ -114,7 +114,6 @@ export const searchSimilarDocumentsGemini = async (
 let vectorStore = null;
 let embeddings = null;
 let isInitialized = false;
-let embedder = null;
 
 // Initialize vector store service
 export const initialize = async () => {
@@ -224,146 +223,12 @@ export const getDocumentCount = async () => {
     if (!isInitialized || !vectorStore) {
       return 0;
     }
-    // Note: Not all vector stores support direct count
-    // This is an approximation for stores that don't support it
-    return 0; // Would need to be implemented based on specific vector store
+    // Return document count from vector store
+    return vectorStore.documents.length;
   } catch (error) {
     console.warn("Failed to get document count", error);
     return 0;
   }
-};
-
-// Create embeddings using Xenova Transformers
-const createEmbeddings = async () => {
-  if (!embedder) {
-    console.log(
-      "Using Xenova/all-mpnet-base-v2 for local embeddings (SBERT quality)"
-    );
-    embedder = await pipeline(
-      "feature-extraction",
-      "Xenova/paraphrase-MiniLM-L6-v2"
-    );
-  }
-
-  // Helper function to process embedding result
-  const processEmbedding = (embedding, context = "") => {
-    // Log raw embedding type and structure
-    console.log(`[${context}] Raw embedding type:`, typeof embedding);
-    console.log(`[${context}] Raw embedding structure:`, {
-      isArray: Array.isArray(embedding),
-      hasData: embedding && embedding.data,
-      keys:
-        embedding && typeof embedding === "object"
-          ? Object.keys(embedding)
-          : null,
-      firstElementType: Array.isArray(embedding) ? typeof embedding[0] : null,
-    });
-
-    // Handle different return formats from Xenova
-    let data = embedding;
-
-    // If it's a tensor-like object, get the data
-    if (embedding && embedding.data) {
-      data = Array.from(embedding.data);
-      console.log(`[${context}] Using .data property, length:`, data.length);
-    }
-
-    // If it's already a flat array, return as is
-    if (Array.isArray(data) && typeof data[0] === "number") {
-      console.log(`[${context}] Returning flat array, length:`, data.length);
-      // Log dimension and type
-      console.log(`[${context}] Embedding dimension:`, data.length);
-      console.log(`[${context}] Embedding type:`, typeof data[0]);
-      return Array.from(data);
-    }
-
-    // If it's a 2D array, mean pool over tokens
-    if (Array.isArray(data) && Array.isArray(data[0])) {
-      console.log(
-        `[${context}] Processing 2D array, dimensions:`,
-        data.length,
-        "x",
-        data[0].length
-      );
-      const vectors = data;
-      const dim = vectors[0].length;
-      const meanVector = new Array(dim).fill(0);
-
-      for (const vector of vectors) {
-        for (let i = 0; i < dim; i++) {
-          meanVector[i] += vector[i];
-        }
-      }
-
-      const result = meanVector.map((v) => v / vectors.length);
-      console.log(
-        `[${context}] Returning mean pooled vector, length:`,
-        result.length
-      );
-      // Log dimension and type
-      console.log(`[${context}] Embedding dimension:`, result.length);
-      console.log(`[${context}] Embedding type:`, typeof result[0]);
-      return result;
-    }
-
-    console.error(`[${context}] Unexpected embedding format:`, {
-      type: typeof data,
-      isArray: Array.isArray(data),
-      length: data?.length,
-      sample: Array.isArray(data) ? data.slice(0, 5) : data,
-    });
-    throw new Error("Unexpected embedding format");
-  };
-
-  // Adapter for LangChain vector store
-  return {
-    embedDocuments: async (texts) => {
-      console.log(`Embedding ${texts.length} documents...`);
-      const embeddings = await Promise.all(
-        texts.map(async (text, idx) => {
-          const embedding = await embedWithGemini(text);
-          const processed = processEmbedding(embedding, `Document[${idx}]`);
-          // Log after processing
-          console.log(
-            `[Document[${idx}]] Final embedding:`,
-            processed.slice(0, 5),
-            "...",
-            processed.length
-          );
-          return processed;
-        })
-      );
-      // Log all embedding dimensions
-      embeddings.forEach((emb, idx) => {
-        console.log(
-          `[Document[${idx}]] Embedding dimension:`,
-          emb.length,
-          "Type:",
-          typeof emb[0]
-        );
-      });
-      console.log(`Successfully embedded ${embeddings.length} documents`);
-      return embeddings;
-    },
-    embedQuery: async (text) => {
-      const embedding = await embedder(text);
-      const processed = processEmbedding(embedding, "Query");
-      // Log after processing
-      console.log(
-        `[Query] Final embedding:`,
-        processed.slice(0, 5),
-        "...",
-        processed.length
-      );
-      console.log(
-        `[Query] Embedding dimension:`,
-        processed.length,
-        "Type:",
-        typeof processed[0]
-      );
-      return processed;
-    },
-  };
 };
 
 // Ensure service is initialized
