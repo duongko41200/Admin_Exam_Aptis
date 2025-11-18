@@ -93,11 +93,11 @@ class AiController {
 
       // Sequential execution: Chạy từng bước một
       // Step 1: Validate email format trước
-      // const writingFormatValid = await writingService.validateAptisEmail(
-      //   content,
-      //   part,
-      //   metadata
-      // );
+      const writingFormatValid = await writingService.validateAptisEmail(
+        content,
+        part,
+        metadata
+      );
 
       // Step 2: Submit and store writing sau khi validate xong
       const writingResult = await writingService.submitWriting({
@@ -130,7 +130,7 @@ class AiController {
         writingId: writingResult.id,
         score: writingResult.scores,
         detailedFeedback: writingResult.detailedFeedback,
-        // formatValid: writingFormatValid,
+        formatValid: writingFormatValid,
 
         ragInsights: {
           similarWritings: similarWritings,
