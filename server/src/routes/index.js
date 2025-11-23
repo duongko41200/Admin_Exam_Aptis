@@ -2,22 +2,23 @@
 import express from "express";
 import { apiKey, permission } from "../auth/checkAuth.js";
 import accessRouter from "./access/index.js";
-import listeningRouter from "./listening/index.js";
-import readingRouter from "./reading/index.js";
-import speakingRouter from "./speaking/index.js";
-import testBanksRouter from "./test-banks/index.js";
-import userRouter from "./user/index.js";
-import writingRouter from "./writing/index.js";
-import redisDataRouter from "./redis-data/index.js";
+import adminAccessRouter from "./admin/access/index.js";
+import AiCheck from "./AI/index.js";
 import assignmentRouter from "./assignment/index.js";
 import classRoomRouter from "./class-room/index.js";
 import courseRouter from "./courses/index.js";
 import lectureRouter from "./lectures/index.js";
-import studyProcessRouter from "./study-process/index.js";
-import adminAccessRouter from "./admin/access/index.js";
+import listeningRouter from "./listening/index.js";
 import r2Router from "./r2/index.js";
+import readingRouter from "./reading/index.js";
+import redisDataRouter from "./redis-data/index.js";
+import speakingRouter from "./speaking/index.js";
+import studyProcessRouter from "./study-process/index.js";
+import testBanksRouter from "./test-banks/index.js";
+import userRouter from "./user/index.js";
 import videoUploadRouter from "./video-upload/index.js";
-import AiCheck from './AI/index.js'
+import writingRouter from "./writing/index.js";
+import writingSubmissionResultRouter from "./writingSubmissionResult/index.js";
 
 const router = express.Router();
 
@@ -49,5 +50,6 @@ router.use("/v1/api/study-process", studyProcessRouter);
 router.use("/v1/api/r2", r2Router);
 router.use("/v1/api/video", videoUploadRouter); // ✅ Đảm bảo có dòng này
 router.use("/v1/api/Ai", AiCheck);
+router.use("/v1/api/results", writingSubmissionResultRouter);
 
 export default router;
