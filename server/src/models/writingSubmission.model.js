@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
-import { model, Schema, Types } from "mongoose";
+import { model, Schema, Types } from 'mongoose';
 
-const DOCUMENT_NAME = "WritingSubmission";
-const COLLECTION_NAME = "WritingSubmissions";
+const DOCUMENT_NAME = 'WritingSubmission';
+const COLLECTION_NAME = 'WritingSubmissions';
 
 // Schema cho metadata của submission
 const submissionMetadataSchema = new Schema(
@@ -18,7 +18,6 @@ const submissionMetadataSchema = new Schema(
     },
     timeSpent: { type: Number }, // in seconds
     retryCount: { type: Number, default: 0 },
-    originalLanguage: { type: String, default: "vi" }, // source language
   },
   { _id: false }
 );
@@ -29,7 +28,7 @@ const writingSubmissionSchema = new Schema(
     // User information
     userId: {
       type: Types.ObjectId,
-      ref: "User",
+      ref: 'User',
       required: true,
       index: true,
     },
@@ -37,7 +36,7 @@ const writingSubmissionSchema = new Schema(
     // Assignment/Task information
     assignmentWritingId: {
       type: Types.ObjectId,
-      ref: "Writing",
+      ref: 'Writing',
       index: true,
     },
 
@@ -49,35 +48,15 @@ const writingSubmissionSchema = new Schema(
       index: true,
     },
 
-    prompt: {
-      type: String,
-      required: true,
-    },
-
     content: {
       type: String,
       required: true,
       maxlength: 5000, // Reasonable limit for writing tasks
     },
 
-    // Type classification
-    type: {
-      type: String,
-      enum: ["general", "academic", "email", "letter", "essay", "report"],
-      default: "general",
-      index: true,
-    },
-
-    // Language and proficiency
-    targetLanguage: {
-      type: String,
-      default: "en",
-      enum: ["en", "vi"],
-    },
-
     expectedLevel: {
       type: String,
-      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
+      enum: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
       index: true,
     },
 
@@ -87,8 +66,8 @@ const writingSubmissionSchema = new Schema(
     // Status tracking
     status: {
       type: String,
-      enum: ["draft", "submitted", "processing", "completed", "failed"],
-      default: "submitted",
+      enum: ['draft', 'submitted', 'processing', 'completed', 'failed'],
+      default: 'submitted',
       index: true,
     },
 
@@ -114,12 +93,6 @@ const writingSubmissionSchema = new Schema(
 
     // Version control
     version: { type: Number, default: 1 },
-
-    // Related result (populated after processing)
-    resultId: {
-      type: String, // references WritingResult.writingId
-      index: true,
-    },
   },
   {
     timestamps: true,
@@ -129,7 +102,7 @@ const writingSubmissionSchema = new Schema(
 
 // Indexes for performance optimization
 writingSubmissionSchema.index({ userId: 1, createdAt: -1 });
-writingSubmissionSchema.index({ assignmentId: 1, userId: 1 });
+writingSubmissionSchema.index({ assignmentWritingId: 1, userId: 1 });
 writingSubmissionSchema.index({ status: 1, createdAt: -1 });
 writingSubmissionSchema.index({ part: 1, type: 1 });
 writingSubmissionSchema.index({ submittedAt: -1 });
@@ -143,7 +116,7 @@ writingSubmissionSchema.index({
 });
 
 // Pre-save middleware to calculate analytics
-writingSubmissionSchema.pre("save", function (next) {
+writingSubmissionSchema.pre('save', function (next) {
   if (this.content) {
     // Calculate word count
     this.wordCount = this.content.trim().split(/\s+/).length;
@@ -162,10 +135,10 @@ writingSubmissionSchema.pre("save", function (next) {
 });
 
 // Virtual populate for getting the result
-writingSubmissionSchema.virtual("result", {
-  ref: "WritingResult",
-  localField: "writingId",
-  foreignField: "writingId",
+writingSubmissionSchema.virtual('result', {
+  ref: 'WritingResult',
+  localField: 'writingId',
+  foreignField: 'writingId',
   justOne: true,
 });
 
@@ -194,34 +167,34 @@ writingSubmissionSchema.statics.getByUserPaginated = function (
           { $limit: limit },
           {
             $lookup: {
-              from: "WritingResults",
-              localField: "writingId",
-              foreignField: "writingId",
-              as: "result",
+              from: 'WritingResults',
+              localField: 'writingId',
+              foreignField: 'writingId',
+              as: 'result',
             },
           },
           {
             $unwind: {
-              path: "$result",
+              path: '$result',
               preserveNullAndEmptyArrays: true,
             },
           },
         ],
-        totalCount: [{ $count: "count" }],
+        totalCount: [{ $count: 'count' }],
       },
     },
     {
       $project: {
         data: 1,
-        totalCount: { $arrayElemAt: ["$totalCount.count", 0] },
+        totalCount: { $arrayElemAt: ['$totalCount.count', 0] },
         totalPages: {
           $ceil: {
-            $divide: [{ $arrayElemAt: ["$totalCount.count", 0] }, limit],
+            $divide: [{ $arrayElemAt: ['$totalCount.count', 0] }, limit],
           },
         },
         currentPage: { $literal: page },
         hasNextPage: {
-          $gt: [{ $arrayElemAt: ["$totalCount.count", 0] }, page * limit],
+          $gt: [{ $arrayElemAt: ['$totalCount.count', 0] }, page * limit],
         },
       },
     },
@@ -245,30 +218,30 @@ writingSubmissionSchema.statics.getSubmissionStats = function (
     {
       $group: {
         _id: {
-          date: { $dateToString: { format: "%Y-%m-%d", date: "$submittedAt" } },
-          part: "$part",
+          date: { $dateToString: { format: '%Y-%m-%d', date: '$submittedAt' } },
+          part: '$part',
         },
         count: { $sum: 1 },
-        totalWords: { $sum: "$wordCount" },
-        avgWords: { $avg: "$wordCount" },
+        totalWords: { $sum: '$wordCount' },
+        avgWords: { $avg: '$wordCount' },
       },
     },
     {
-      $sort: { "_id.date": 1, "_id.part": 1 },
+      $sort: { '_id.date': 1, '_id.part': 1 },
     },
   ]);
 };
 
 // Method to mark as processing
 writingSubmissionSchema.methods.startProcessing = function () {
-  this.status = "processing";
+  this.status = 'processing';
   this.processingStartedAt = new Date();
   return this.save();
 };
 
 // Method to mark as completed
 writingSubmissionSchema.methods.completeProcessing = function (resultId) {
-  this.status = "completed";
+  this.status = 'completed';
   this.processingCompletedAt = new Date();
   this.resultId = resultId;
   return this.save();
@@ -276,7 +249,7 @@ writingSubmissionSchema.methods.completeProcessing = function (resultId) {
 
 // Method to mark as failed
 writingSubmissionSchema.methods.failProcessing = function (error) {
-  this.status = "failed";
+  this.status = 'failed';
   this.processingCompletedAt = new Date();
   // Could add error field if needed
   return this.save();

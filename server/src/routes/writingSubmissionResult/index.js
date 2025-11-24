@@ -20,8 +20,8 @@ router.use(authenticationV2);
  */
 
 router.post(
-  "/submissions-writing",
-  asyncHandle(writingSubmissionController.resultSubmissionAndWriting)
+  '/submissions-writing',
+  asyncHandle(writingResultController.resultSubmissionAndWriting)
 );
 
 // Create new submission
@@ -93,6 +93,12 @@ router.get(
   asyncHandle(writingResultController.getByWritingId)
 );
 
+router.post(
+  '/results/history',
+  asyncHandle(writingResultController.getByWritingId)
+);
+
+
 // Get result by ID
 router.get("/results/:id", asyncHandle(writingResultController.getById));
 
@@ -107,6 +113,7 @@ router.delete(
   "/results/writing/:writingId",
   asyncHandle(writingResultController.delete)
 );
+
 
 // Analytics routes
 router.get(

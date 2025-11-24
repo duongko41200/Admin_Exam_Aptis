@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
-import { SuccessResponse } from "../cores/success.response.js";
+import { SuccessResponse } from '../cores/success.response.js';
 import {
   WritingResultService,
   WritingSubmissionService,
-} from "../services/writingSubmissionResult.service.js";
+} from '../services/writingSubmissionResult.service.js';
 
 /**
  * Controller for WritingSubmission operations
@@ -126,7 +126,7 @@ class WritingSubmissionController {
       const queryParams = {
         filter: filter ? JSON.parse(filter) : {},
         range: range ? JSON.parse(range) : [0, 10],
-        sort: sort ? JSON.parse(sort) : ["createdAt", "DESC"],
+        sort: sort ? JSON.parse(sort) : ['createdAt', 'DESC'],
       };
 
       const result = await WritingSubmissionService.getAllSubmissions(
@@ -292,6 +292,29 @@ class WritingResultController {
   };
 
   /**
+   * Get result by writingId
+   * @param {Object} req - Request object
+   * @param {Object} res - Response object
+   * @param {Function} next - Next middleware
+   */
+  getByResultHistory = async (req, res, next) => {
+    try {
+      const { userId, writingSubmissionId } = req.body;
+      const result = await WritingResultService.getByResultHistory(userId, writingSubmissionId);
+
+
+      console.log('getByResultHistory::::', result);
+
+      new SuccessResponse({
+        message: result.message,
+        metadata: result.data,
+      }).send(res);
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /**
    * Get result by ID
    * @param {Object} req - Request object
    * @param {Object} res - Response object
@@ -366,7 +389,7 @@ class WritingResultController {
       const queryParams = {
         filter: filter ? JSON.parse(filter) : {},
         range: range ? JSON.parse(range) : [0, 10],
-        sort: sort ? JSON.parse(sort) : ["createdAt", "DESC"],
+        sort: sort ? JSON.parse(sort) : ['createdAt', 'DESC'],
       };
 
       const result = await WritingResultService.getAllResults(queryParams);
@@ -444,13 +467,18 @@ class WritingResultController {
     }
   };
 
-
   resultSubmissionAndWriting = async (req, res, next) => {
+    const { submission, result } = req.body;
+    const response = await WritingResultService.resultSubmissionAndWriting(
+      submission,
+      result
+    );
 
-    console.log("Hello from resultSubmissionAndWriting");
-    
-    return []
-  }
+    new SuccessResponse({
+      message: 'successfully processed submission and result',
+      metadata: response,
+    }).send(res);
+  };
 }
 
 export const writingSubmissionController = new WritingSubmissionController();

@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
-import { model, Schema, Types } from "mongoose";
+import { model, Schema, Types } from 'mongoose';
 
-const DOCUMENT_NAME = "WritingResult";
-const COLLECTION_NAME = "WritingResults";
+const DOCUMENT_NAME = 'WritingResult';
+const COLLECTION_NAME = 'WritingResults';
 
 // Schema cho AI Score detail
 const aiScoreSchema = new Schema(
@@ -12,7 +12,7 @@ const aiScoreSchema = new Schema(
     scoreWord: {
       type: String,
       required: true,
-      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
+      enum: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
     },
     review: { type: String, required: true },
     improve: { type: String, required: true },
@@ -132,7 +132,7 @@ const similarWritingSchema = new Schema(
     document: similarWritingDocumentSchema,
     level: {
       type: String,
-      enum: ["LOW", "MEDIUM", "HIGH", "VERY HIGH (Possible duplicate)"],
+      enum: ['LOW', 'MEDIUM', 'HIGH', 'VERY HIGH (Possible duplicate)'],
     },
   },
   { _id: false }
@@ -181,21 +181,33 @@ const ragInsightsSchema = new Schema(
   { _id: false }
 );
 
+// Schema cho metadata của submission
+const submissionMetadataSchema = new Schema(
+  {
+    typeEmail: { type: Number }, // 1 for formal, 2 for informal
+    deviceInfo: {
+      userAgent: { type: String },
+      platform: { type: String },
+    },
+  },
+  { _id: false }
+);
+
 // Main Writing Result Schema
 const writingResultSchema = new Schema(
   {
     // User information
     userId: {
       type: Types.ObjectId,
-      ref: "User",
+      ref: 'User',
       required: true,
       index: true,
     },
 
     // Assignment/Task information
-    assignmentWritingId: {
+    writingSubmissionId: {
       type: Types.ObjectId,
-      ref: "Writing",
+      ref: 'Writing',
       index: true,
     },
     taskId: { type: String, index: true },
@@ -204,10 +216,11 @@ const writingResultSchema = new Schema(
       required: true,
       enum: [1, 2, 3, 4],
     },
-
-    // Original content and prompt
-    content: { type: String, required: true },
-    prompt: { type: String, required: true },
+    content: {
+      type: String,
+      required: true,
+      maxlength: 5000, // Reasonable limit for writing tasks
+    },
 
     // Scoring results
     score: {
@@ -241,15 +254,14 @@ const writingResultSchema = new Schema(
     // Status and versioning
     status: {
       type: String,
-      enum: ["pending", "completed", "failed", "archived"],
-      default: "completed",
+      enum: ['pending', 'completed', 'failed', 'archived'],
+      default: 'completed',
     },
 
     version: { type: Number, default: 1 },
 
-    // Analytics fields
-    wordCount: { type: Number },
     submittedAt: { type: Date, required: true },
+    metadata: submissionMetadataSchema,
 
     // Soft delete
     isDeleted: { type: Boolean, default: false },
@@ -262,8 +274,8 @@ const writingResultSchema = new Schema(
     index: [
       { userId: 1, createdAt: -1 },
       { writingId: 1 },
-      { assignmentId: 1, userId: 1 },
-      { "score.overall": -1, createdAt: -1 },
+      { WritingSubmissionId: 1, userId: 1 },
+      { 'score.overall': -1, createdAt: -1 },
       { part: 1, createdAt: -1 },
       { status: 1 },
     ],
@@ -272,17 +284,17 @@ const writingResultSchema = new Schema(
 
 // Compound indexes for common queries
 writingResultSchema.index({ userId: 1, part: 1, createdAt: -1 });
-writingResultSchema.index({ assignmentId: 1, status: 1 });
-writingResultSchema.index({ "score.overall": -1, userId: 1 });
+writingResultSchema.index({ WritingSubmissionId: 1, status: 1 });
+writingResultSchema.index({ 'score.overall': -1, userId: 1 });
 
 // Virtual for calculating improvement over time
-writingResultSchema.virtual("scoreImprovement").get(function () {
+writingResultSchema.virtual('scoreImprovement').get(function () {
   // This would be calculated by comparing with previous submissions
   return null;
 });
 
 // Pre-save middleware to calculate word count
-writingResultSchema.pre("save", function (next) {
+writingResultSchema.pre('save', function (next) {
   if (this.content) {
     this.wordCount = this.content.split(/\s+/).length;
   }
@@ -306,11 +318,11 @@ writingResultSchema.statics.getAverageScoreByUser = function (
     {
       $group: {
         _id: null,
-        avgGrammar: { $avg: "$score.grammar" },
-        avgVocabulary: { $avg: "$score.vocabulary" },
-        avgCoherence: { $avg: "$score.coherence" },
-        avgTaskFulfillment: { $avg: "$score.task_fulfillment" },
-        avgOverall: { $avg: "$score.overall" },
+        avgGrammar: { $avg: '$score.grammar' },
+        avgVocabulary: { $avg: '$score.vocabulary' },
+        avgCoherence: { $avg: '$score.coherence' },
+        avgTaskFulfillment: { $avg: '$score.task_fulfillment' },
+        avgOverall: { $avg: '$score.overall' },
         totalSubmissions: { $sum: 1 },
       },
     },
@@ -333,11 +345,11 @@ writingResultSchema.statics.getScoreTrend = function (userId, part = null) {
     {
       $project: {
         createdAt: 1,
-        overall: "$score.overall",
-        grammar: "$score.grammar",
-        vocabulary: "$score.vocabulary",
-        coherence: "$score.coherence",
-        task_fulfillment: "$score.task_fulfillment",
+        overall: '$score.overall',
+        grammar: '$score.grammar',
+        vocabulary: '$score.vocabulary',
+        coherence: '$score.coherence',
+        task_fulfillment: '$score.task_fulfillment',
         part: 1,
       },
     },
