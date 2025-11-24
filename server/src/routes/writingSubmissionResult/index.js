@@ -19,70 +19,70 @@ router.use(authenticationV2);
  * WritingSubmission Routes
  */
 
-router.post(
-  '/submissions-writing',
-  asyncHandle(writingResultController.resultSubmissionAndWriting)
-);
+// router.post(
+//   "/submissions-writing",
+//   asyncHandle(writingResultController.resultSubmissionAndWriting)
+// );
 
-// Create new submission
-router.post("/submissions", asyncHandle(writingSubmissionController.create));
+// // Create new submission
+// router.post("/submissions", asyncHandle(writingSubmissionController.create));
 
-// Get all submissions with query parameters (for admin dashboard)
-router.get(
-  "/submissions",
-  asyncHandle(writingSubmissionController.getAllWithQuery)
-);
+// // Get all submissions with query parameters (for admin dashboard)
+// router.get(
+//   "/submissions",
+//   asyncHandle(writingSubmissionController.getAllWithQuery)
+// );
 
-// Get submission by writingId
-router.get(
-  "/submissions/writing/:writingId",
-  asyncHandle(writingSubmissionController.getByWritingId)
-);
+// // Get submission by writingId
+// router.get(
+//   "/submissions/writing/:writingId",
+//   asyncHandle(writingSubmissionController.getByWritingId)
+// );
 
-// Get submission by ID
-router.get(
-  "/submissions/:id",
-  asyncHandle(writingSubmissionController.getById)
-);
+// // Get submission by ID
+// router.get(
+//   "/submissions/:id",
+//   asyncHandle(writingSubmissionController.getById)
+// );
 
-// Get submissions by user
-router.get(
-  "/submissions/user/:userId",
-  asyncHandle(writingSubmissionController.getByUser)
-);
+// // Get submissions by user
+// router.get(
+//   "/submissions/user/:userId",
+//   asyncHandle(writingSubmissionController.getByUser)
+// );
 
-// Update submission by writingId
-router.put(
-  "/submissions/writing/:writingId",
-  asyncHandle(writingSubmissionController.update)
-);
+// // Update submission by writingId
+// router.put(
+//   "/submissions/writing/:writingId",
+//   asyncHandle(writingSubmissionController.update)
+// );
 
-// Delete submission by writingId
-router.delete(
-  "/submissions/writing/:writingId",
-  asyncHandle(writingSubmissionController.delete)
-);
+// // Delete submission by writingId
+// router.delete(
+//   "/submissions/writing/:writingId",
+//   asyncHandle(writingSubmissionController.delete)
+// );
 
-// Processing workflow routes
-router.post(
-  "/submissions/writing/:writingId/start-processing",
-  asyncHandle(writingSubmissionController.startProcessing)
-);
-router.post(
-  "/submissions/writing/:writingId/complete-processing",
-  asyncHandle(writingSubmissionController.completeProcessing)
-);
-router.post(
-  "/submissions/writing/:writingId/fail-processing",
-  asyncHandle(writingSubmissionController.failProcessing)
-);
+// // Processing workflow routes
+// router.post(
+//   "/submissions/writing/:writingId/start-processing",
+//   asyncHandle(writingSubmissionController.startProcessing)
+// );
+// router.post(
+//   "/submissions/writing/:writingId/complete-processing",
+//   asyncHandle(writingSubmissionController.completeProcessing)
+// );
+// router.post(
+//   "/submissions/writing/:writingId/fail-processing",
+//   asyncHandle(writingSubmissionController.failProcessing)
+// );
 
 /**
  * WritingResult Routes
  */
 
 // Create new result
-router.post("/results", asyncHandle(writingResultController.create));
+router.post("/", asyncHandle(writingResultController.create));
 
 // Get all results with query parameters (for admin dashboard)
 router.get("/results", asyncHandle(writingResultController.getAllWithQuery));
@@ -94,10 +94,9 @@ router.get(
 );
 
 router.post(
-  '/results/history',
-  asyncHandle(writingResultController.getByWritingId)
+  "/history",
+  asyncHandle(writingResultController.getByResultHistory)
 );
-
 
 // Get result by ID
 router.get("/results/:id", asyncHandle(writingResultController.getById));
@@ -113,7 +112,6 @@ router.delete(
   "/results/writing/:writingId",
   asyncHandle(writingResultController.delete)
 );
-
 
 // Analytics routes
 router.get(

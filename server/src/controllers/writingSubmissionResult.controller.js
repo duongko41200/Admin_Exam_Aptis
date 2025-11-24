@@ -1,11 +1,10 @@
-'use strict';
+"use strict";
 
-import { SuccessResponse } from '../cores/success.response.js';
+import { SuccessResponse } from "../cores/success.response.js";
 import {
   WritingResultService,
   WritingSubmissionService,
-} from '../services/writingSubmissionResult.service.js';
-
+} from "../services/writingSubmissionResult.service.js";
 /**
  * Controller for WritingSubmission operations
  */
@@ -126,7 +125,7 @@ class WritingSubmissionController {
       const queryParams = {
         filter: filter ? JSON.parse(filter) : {},
         range: range ? JSON.parse(range) : [0, 10],
-        sort: sort ? JSON.parse(sort) : ['createdAt', 'DESC'],
+        sort: sort ? JSON.parse(sort) : ["createdAt", "DESC"],
       };
 
       const result = await WritingSubmissionService.getAllSubmissions(
@@ -263,8 +262,8 @@ class WritingResultController {
       const result = await WritingResultService.createResult(req.body);
 
       new SuccessResponse({
-        message: result.message,
-        metadata: result.data,
+        message: "successfully created writing result",
+        metadata: result,
       }).send(res);
     } catch (error) {
       next(error);
@@ -300,14 +299,16 @@ class WritingResultController {
   getByResultHistory = async (req, res, next) => {
     try {
       const { userId, writingSubmissionId } = req.body;
-      const result = await WritingResultService.getByResultHistory(userId, writingSubmissionId);
+      const result = await WritingResultService.getByResultHistory(
+        userId,
+        writingSubmissionId
+      );
 
-
-      console.log('getByResultHistory::::', result);
+      console.log("getByResultHistory::::", result);
 
       new SuccessResponse({
-        message: result.message,
-        metadata: result.data,
+        message: "successfully retrieved writing result history",
+        metadata: result,
       }).send(res);
     } catch (error) {
       next(error);
@@ -389,7 +390,7 @@ class WritingResultController {
       const queryParams = {
         filter: filter ? JSON.parse(filter) : {},
         range: range ? JSON.parse(range) : [0, 10],
-        sort: sort ? JSON.parse(sort) : ['createdAt', 'DESC'],
+        sort: sort ? JSON.parse(sort) : ["createdAt", "DESC"],
       };
 
       const result = await WritingResultService.getAllResults(queryParams);
@@ -475,7 +476,7 @@ class WritingResultController {
     );
 
     new SuccessResponse({
-      message: 'successfully processed submission and result',
+      message: "successfully processed submission and result",
       metadata: response,
     }).send(res);
   };

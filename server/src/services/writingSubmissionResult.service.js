@@ -323,13 +323,12 @@ export class WritingResultService {
         submittedAt: resultData.submittedAt || new Date(),
       };
 
+
+      console.log('resultData service:', resultData);
+
       const newResult = await WritingResultRepository.create(resultPayload);
 
-      return {
-        success: true,
-        data: newResult,
-        message: 'Writing result created successfully',
-      };
+      return newResult; 
     } catch (error) {
       console.error('Error creating writing result:', error);
       throw error;

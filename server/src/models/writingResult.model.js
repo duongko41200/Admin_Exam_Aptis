@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-import { model, Schema, Types } from 'mongoose';
+import { model, Schema, Types } from "mongoose";
 
-const DOCUMENT_NAME = 'WritingResult';
-const COLLECTION_NAME = 'WritingResults';
+const DOCUMENT_NAME = "WritingResult";
+const COLLECTION_NAME = "WritingResults";
 
 // Schema cho AI Score detail
 const aiScoreSchema = new Schema(
@@ -12,7 +12,7 @@ const aiScoreSchema = new Schema(
     scoreWord: {
       type: String,
       required: true,
-      enum: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+      enum: ["A1", "A2", "B1", "B2", "C1", "C2"],
     },
     review: { type: String, required: true },
     improve: { type: String, required: true },
@@ -127,12 +127,11 @@ const similarWritingDocumentSchema = new Schema(
 
 const similarWritingSchema = new Schema(
   {
-    writingId: { type: String, required: true },
     similarity: { type: Number, required: true, min: 0, max: 1 },
     document: similarWritingDocumentSchema,
     level: {
       type: String,
-      enum: ['LOW', 'MEDIUM', 'HIGH', 'VERY HIGH (Possible duplicate)'],
+      enum: ["LOW", "MEDIUM", "HIGH", "VERY HIGH (Possible duplicate)"],
     },
   },
   { _id: false }
@@ -181,41 +180,23 @@ const ragInsightsSchema = new Schema(
   { _id: false }
 );
 
-// Schema cho metadata của submission
-const submissionMetadataSchema = new Schema(
-  {
-    typeEmail: { type: Number }, // 1 for formal, 2 for informal
-    deviceInfo: {
-      userAgent: { type: String },
-      platform: { type: String },
-    },
-  },
-  { _id: false }
-);
-
 // Main Writing Result Schema
 const writingResultSchema = new Schema(
   {
     // User information
     userId: {
       type: Types.ObjectId,
-      ref: 'User',
+      ref: "User",
       required: true,
-      index: true,
     },
 
     // Assignment/Task information
     writingSubmissionId: {
       type: Types.ObjectId,
-      ref: 'Writing',
-      index: true,
+      ref: "Writing",
     },
-    taskId: { type: String, index: true },
-    part: {
-      type: Number,
-      required: true,
-      enum: [1, 2, 3, 4],
-    },
+    taskName: { type: String },
+
     content: {
       type: String,
       required: true,
@@ -254,14 +235,13 @@ const writingResultSchema = new Schema(
     // Status and versioning
     status: {
       type: String,
-      enum: ['pending', 'completed', 'failed', 'archived'],
-      default: 'completed',
+      enum: ["pending", "completed", "failed", "archived"],
+      default: "completed",
     },
 
     version: { type: Number, default: 1 },
 
     submittedAt: { type: Date, required: true },
-    metadata: submissionMetadataSchema,
 
     // Soft delete
     isDeleted: { type: Boolean, default: false },
@@ -271,89 +251,79 @@ const writingResultSchema = new Schema(
     timestamps: true,
     collection: COLLECTION_NAME,
     // Add indexes for performance
-    index: [
-      { userId: 1, createdAt: -1 },
-      { writingId: 1 },
-      { WritingSubmissionId: 1, userId: 1 },
-      { 'score.overall': -1, createdAt: -1 },
-      { part: 1, createdAt: -1 },
-      { status: 1 },
-    ],
+   
   }
 );
 
 // Compound indexes for common queries
-writingResultSchema.index({ userId: 1, part: 1, createdAt: -1 });
-writingResultSchema.index({ WritingSubmissionId: 1, status: 1 });
-writingResultSchema.index({ 'score.overall': -1, userId: 1 });
 
 // Virtual for calculating improvement over time
-writingResultSchema.virtual('scoreImprovement').get(function () {
+writingResultSchema.virtual("scoreImprovement").get(function () {
   // This would be calculated by comparing with previous submissions
   return null;
 });
 
 // Pre-save middleware to calculate word count
-writingResultSchema.pre('save', function (next) {
+writingResultSchema.pre("save", function (next) {
   if (this.content) {
     this.wordCount = this.content.split(/\s+/).length;
   }
   next();
 });
 
-// Static methods for analytics
-writingResultSchema.statics.getAverageScoreByUser = function (
-  userId,
-  startDate,
-  endDate
-) {
-  return this.aggregate([
-    {
-      $match: {
-        userId: new Types.ObjectId(userId),
-        createdAt: { $gte: startDate, $lte: endDate },
-        isDeleted: false,
-      },
-    },
-    {
-      $group: {
-        _id: null,
-        avgGrammar: { $avg: '$score.grammar' },
-        avgVocabulary: { $avg: '$score.vocabulary' },
-        avgCoherence: { $avg: '$score.coherence' },
-        avgTaskFulfillment: { $avg: '$score.task_fulfillment' },
-        avgOverall: { $avg: '$score.overall' },
-        totalSubmissions: { $sum: 1 },
-      },
-    },
-  ]);
-};
+// // Static methods for analytics
+// writingResultSchema.statics.getAverageScoreByUser = function (
+//   userId,
+//   startDate,
+//   endDate
+// ) {
+//   return this.aggregate([
+//     {
+//       $match: {
+//         userId: new Types.ObjectId(userId),
+//         createdAt: { $gte: startDate, $lte: endDate },
+//         isDeleted: false,
+//       },
+//     },
+//     {
+//       $group: {
+//         _id: null,
+//         avgGrammar: { $avg: "$score.grammar" },
+//         avgVocabulary: { $avg: "$score.vocabulary" },
+//         avgCoherence: { $avg: "$score.coherence" },
+//         avgTaskFulfillment: { $avg: "$score.task_fulfillment" },
+//         avgOverall: { $avg: "$score.overall" },
+//         totalSubmissions: { $sum: 1 },
+//       },
+//     },
+//   ]);
+// };
 
-writingResultSchema.statics.getScoreTrend = function (userId, part = null) {
-  const match = {
-    userId: new Types.ObjectId(userId),
-    isDeleted: false,
-  };
+// writingResultSchema.statics.getScoreTrend = function (userId, part = null) {
+//   const match = {
+//     userId: new Types.ObjectId(userId),
+//     isDeleted: false,
+//   };
 
-  if (part) {
-    match.part = part;
-  }
+//   if (part) {
+//     match.part = part;
+//   }
 
-  return this.aggregate([
-    { $match: match },
-    { $sort: { createdAt: 1 } },
-    {
-      $project: {
-        createdAt: 1,
-        overall: '$score.overall',
-        grammar: '$score.grammar',
-        vocabulary: '$score.vocabulary',
-        coherence: '$score.coherence',
-        task_fulfillment: '$score.task_fulfillment',
-        part: 1,
-      },
-    },
-  ]);
-};
+//   return this.aggregate([
+//     { $match: match },
+//     { $sort: { createdAt: 1 } },
+//     {
+//       $project: {
+//         createdAt: 1,
+//         overall: "$score.overall",
+//         grammar: "$score.grammar",
+//         vocabulary: "$score.vocabulary",
+//         coherence: "$score.coherence",
+//         task_fulfillment: "$score.task_fulfillment",
+//         part: 1,
+//       },
+//     },
+//   ]);
+// };
 
 export default model(DOCUMENT_NAME, writingResultSchema);

@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-import { safetyCount } from '../../helpers/safetyCount.js';
-import WritingResultModel from '../writingResult.model.js';
-import WritingSubmissionModel from '../writingSubmission.model.js';
+import { safetyCount } from "../../helpers/safetyCount.js";
+import WritingResultModel from "../writingResult.model.js";
+import WritingSubmissionModel from "../writingSubmission.model.js";
 
 /**
  * Repository for WritingSubmission operations
@@ -24,8 +24,8 @@ export class WritingSubmissionRepository {
    */
   static async findByWritingId(writingId) {
     return await WritingSubmissionModel.findOne({ writingId, isDeleted: false })
-      .populate('userId')
-      .populate('assignmentWritingId')
+      .populate("userId")
+      .populate("assignmentWritingId")
       .lean();
   }
 
@@ -36,8 +36,8 @@ export class WritingSubmissionRepository {
    */
   static async findById(id) {
     return await WritingSubmissionModel.findById(id)
-      .populate('userId')
-      .populate('assignmentWritingId')
+      .populate("userId")
+      .populate("assignmentWritingId")
       .lean();
   }
 
@@ -80,7 +80,7 @@ export class WritingSubmissionRepository {
   static async getAllWithQuery({
     filter = {},
     range = [0, 10],
-    sort = ['createdAt', 'DESC'],
+    sort = ["createdAt", "DESC"],
   }) {
     const limit = range[1] - range[0] + 1;
     const page = Math.floor(range[0] / limit) + 1;
@@ -90,13 +90,13 @@ export class WritingSubmissionRepository {
       isDeleted: false,
     };
 
-    const sortOrder = sort[1] === 'ASC' ? 1 : -1;
+    const sortOrder = sort[1] === "ASC" ? 1 : -1;
     const sortObj = { [sort[0]]: sortOrder };
 
     const countPromise = safetyCount({ model: WritingSubmissionModel, query });
     const dataPromise = WritingSubmissionModel.find(query)
-      .populate('userId')
-      .populate('assignmentWritingId')
+      .populate("userId")
+      .populate("assignmentWritingId")
       .sort(sortObj)
       .skip((page - 1) * limit)
       .limit(limit)
@@ -152,8 +152,8 @@ export class WritingSubmissionRepository {
   static async findByCriteria(criteria) {
     const query = { ...criteria, isDeleted: false };
     return await WritingSubmissionModel.find(query)
-      .populate('userId')
-      .populate('assignmentWritingId')
+      .populate("userId")
+      .populate("assignmentWritingId")
       .sort({ createdAt: -1 })
       .lean();
   }
@@ -170,7 +170,7 @@ export class WritingSubmissionRepository {
       { $match: query },
       {
         $group: {
-          _id: '$status',
+          _id: "$status",
           count: { $sum: 1 },
         },
       },
@@ -188,7 +188,9 @@ export class WritingResultRepository {
    * @returns {Promise<Object>} Created result
    */
   static async create(data) {
-    return await WritingResultModel.create(data);
+    return (await WritingResultModel.create(data)).populate(
+      "writingSubmissionId"
+    );
   }
 
   /**
@@ -198,8 +200,8 @@ export class WritingResultRepository {
    */
   static async findByWritingId(writingId) {
     return await WritingResultModel.findOne({ writingId, isDeleted: false })
-      .populate('userId')
-      .populate('writingSubmissionId')
+      .populate("userId")
+      .populate("writingSubmissionId")
       .lean();
   }
 
@@ -209,7 +211,7 @@ export class WritingResultRepository {
       writingSubmissionId,
       isDeleted: false,
     })
-      .populate('writingSubmissionId')
+      .populate("writingSubmissionId")
       .lean();
   }
 
@@ -220,8 +222,8 @@ export class WritingResultRepository {
    */
   static async findById(id) {
     return await WritingResultModel.findById(id)
-      .populate('userId')
-      .populate('writingSubmissionId')
+      .populate("userId")
+      .populate("writingSubmissionId")
       .lean();
   }
 
@@ -264,7 +266,7 @@ export class WritingResultRepository {
   static async getAllWithQuery({
     filter = {},
     range = [0, 10],
-    sort = ['createdAt', 'DESC'],
+    sort = ["createdAt", "DESC"],
   }) {
     const limit = range[1] - range[0] + 1;
     const page = Math.floor(range[0] / limit) + 1;
@@ -274,13 +276,13 @@ export class WritingResultRepository {
       isDeleted: false,
     };
 
-    const sortOrder = sort[1] === 'ASC' ? 1 : -1;
+    const sortOrder = sort[1] === "ASC" ? 1 : -1;
     const sortObj = { [sort[0]]: sortOrder };
 
     const countPromise = safetyCount({ model: WritingResultModel, query });
     const dataPromise = WritingResultModel.find(query)
-      .populate('userId')
-      .populate('writingSubmissionId')
+      .populate("userId")
+      .populate("writingSubmissionId")
       .sort(sortObj)
       .skip((page - 1) * limit)
       .limit(limit)
@@ -329,8 +331,8 @@ export class WritingResultRepository {
   static async findByCriteria(criteria) {
     const query = { ...criteria, isDeleted: false };
     return await WritingResultModel.find(query)
-      .populate('userId')
-      .populate('writingSubmissionId')
+      .populate("userId")
+      .populate("writingSubmissionId")
       .sort({ createdAt: -1 })
       .lean();
   }
@@ -345,14 +347,14 @@ export class WritingResultRepository {
   static async getByScoreRange(minScore, maxScore, additionalFilters = {}) {
     const query = {
       ...additionalFilters,
-      'score.overall': { $gte: minScore, $lte: maxScore },
+      "score.overall": { $gte: minScore, $lte: maxScore },
       isDeleted: false,
     };
 
     return await WritingResultModel.find(query)
-      .populate('userId')
-      .populate('writingSubmissionId')
-      .sort({ 'score.overall': -1 })
+      .populate("userId")
+      .populate("writingSubmissionId")
+      .sort({ "score.overall": -1 })
       .lean();
   }
 
@@ -369,13 +371,13 @@ export class WritingResultRepository {
       {
         $group: {
           _id: null,
-          avgOverallScore: { $avg: '$score.overall' },
-          avgGrammar: { $avg: '$score.grammar' },
-          avgVocabulary: { $avg: '$score.vocabulary' },
-          avgCoherence: { $avg: '$score.coherence' },
-          avgTaskFulfillment: { $avg: '$score.task_fulfillment' },
-          maxScore: { $max: '$score.overall' },
-          minScore: { $min: '$score.overall' },
+          avgOverallScore: { $avg: "$score.overall" },
+          avgGrammar: { $avg: "$score.grammar" },
+          avgVocabulary: { $avg: "$score.vocabulary" },
+          avgCoherence: { $avg: "$score.coherence" },
+          avgTaskFulfillment: { $avg: "$score.task_fulfillment" },
+          maxScore: { $max: "$score.overall" },
+          minScore: { $min: "$score.overall" },
           totalResults: { $sum: 1 },
         },
       },
