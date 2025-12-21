@@ -52,6 +52,7 @@ export interface TestBankData {
   reading: TestBankPartData & { part5: number[] };
   writing: TestBankPartData;
   classRoomId: string | number;
+  status?: "free" | "premium";
 }
 
 export interface TestBankState {

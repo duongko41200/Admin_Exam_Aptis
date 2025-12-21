@@ -120,6 +120,8 @@ interface TestBankCreateProps {
   statusHandler?: string;
 }
 
+const classFreeId = "6947ef32828590b958c6fed5";
+
 const TestBankCreate = ({
   recordEdit = null,
   statusHandler = "create",
@@ -157,8 +159,12 @@ const TestBankCreate = ({
 
   const createWritingPartOne = async () => {
     const testBankDataClone = { ...testBankData };
-    testBankDataClone.classRoomId = selectedClassId;
+    testBankDataClone.classRoomId =
+      selectedClassId === "free" ? classFreeId : selectedClassId;
     testBankDataClone.title = nameTestBank;
+    testBankDataClone.status =
+      selectedClassId === classFreeId ? "free" : "premium";
+
     try {
       await dataProvider.create("test-banks", { data: testBankDataClone });
       notify(UPDATED_SUCCESS, { type: "success" });
@@ -168,8 +174,11 @@ const TestBankCreate = ({
   };
   const updateWritingPartOne = async () => {
     const testBankDataClone = { ...testBankData };
-    testBankDataClone.classRoomId = selectedClassId;
+    testBankDataClone.classRoomId =
+      selectedClassId === "free" ? classFreeId : selectedClassId;
     testBankDataClone.title = nameTestBank;
+    testBankDataClone.status =
+      selectedClassId === classFreeId ? "free" : "premium";
 
     try {
       await dataProvider.update("test-banks", {
@@ -294,7 +303,11 @@ const TestBankCreate = ({
             <Select
               labelId="classroom-select-label"
               id="classroom-select"
-              value={selectedClassId}
+              value={
+                selectedClassId === null || selectedClassId === ""
+                  ? "free"
+                  : selectedClassId
+              }
               label="Age"
               onChange={handleChange}
             >

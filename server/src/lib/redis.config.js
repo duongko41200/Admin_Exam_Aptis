@@ -8,7 +8,9 @@ const client = createClient({
   url: process.env.REDIS_URL || REDIS_URL, // Example: redis://default:<password>@<host>:<port>
 });
 
-client.on("error", (err) => console.error("Redis Client Error", err));
+client.on("error", (err) => {
+ return
+});
 
 if (!client.isOpen) {
   client.connect(); // Chỉ kết nối nếu chưa mở

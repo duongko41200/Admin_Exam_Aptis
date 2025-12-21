@@ -125,7 +125,12 @@ const testBankSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "ClassRoom",
       required: false,
-      default: [],
+      default: null,
+    },
+    status: {
+      type: String,
+      enum: ["free", "premium"],
+      default: "premium",
     },
   },
   {

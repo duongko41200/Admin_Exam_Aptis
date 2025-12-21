@@ -1,6 +1,5 @@
 "use strict";
 
-import mongoose from "mongoose";
 import TestBankModel from "../models/testBank.model.js";
 import baseRepo from "./base-repo/baseRepo.js";
 
