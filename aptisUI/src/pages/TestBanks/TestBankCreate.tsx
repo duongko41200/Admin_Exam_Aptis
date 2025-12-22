@@ -1,4 +1,18 @@
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Checkbox,
+  Divider,
+  List,
+  ListItemButton,
+  ListItemText,
+  Paper,
+  Stack,
+  Tab,
+  Tabs,
+  TextField,
+  Typography,
+} from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -12,7 +26,6 @@ import ListeningIcon from "../../assets/img/listening-icon.svg";
 import ReadingIcon from "../../assets/img/reading-icon.svg";
 import SpeakingIcon from "../../assets/img/speaking-icon.svg";
 import WritingIcon from "../../assets/img/writing-icon.svg";
-import ModalFrame from "../../components/ModalBase/ModalFrame";
 import { UPDATED_SUCCESS } from "../../consts/general";
 import dataProvider from "../../providers/dataProviders/baseDataProvider";
 import {
@@ -20,10 +33,16 @@ import {
   SET_RAW_TESTBANK_DATA,
 } from "../../store/feature/testBank";
 import { RootState } from "../../types/testBank";
-import ListeningBank from "./Listening/ListeningBank";
-import ReadingBank from "./Reading/ReadingBank";
-import SpeakingBank from "./Speaking/SpeakingBank";
-import WritingBank from "./Writing/WritingBank";
+import {
+  convertDataListeningBank,
+  convertDataReadingBank,
+  convertDataSpeakingBank,
+  convertDataWritingBank,
+} from "../../utils/convertDataTestBank";
+import {
+  converPartListeningSkill,
+  converPartReadingSkill,
+} from "../../utils/convertPartSkill";
 
 const ModuleContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
@@ -33,52 +52,61 @@ const ModuleContainer = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-const ModuleItem = styled(Box)(({ color }) => ({
-  width: "16.42%",
-  textAlign: "center",
+const ContentArea = styled(Box)(() => ({
   display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: "13px",
+  height: "calc(100vh - 300px)",
+  gap: 16,
 }));
 
-const TestContainer = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(2, 2),
+const Sidebar = styled(Paper)(({ theme }) => ({
+  width: 250,
+  padding: theme.spacing(1),
+  backgroundColor: "#f8f9fa",
+  borderRadius: theme.spacing(1),
+}));
+
+const MainContent = styled(Box)(() => ({
+  flex: 1,
   display: "flex",
-  gap: 4,
-  backgroundColor: "#fff",
-  "&:nth-of-type(odd)": {
-    backgroundColor: "#f3f3f3",
-  },
+  gap: 16,
 }));
 
-const TestTitle = styled(Typography)(({ theme }) => ({
-  color: "#284664",
-  fontSize: "1.3rem",
-  textTransform: "uppercase",
-  letterSpacing: "0.17px",
-  width: "fit-content",
-  paddingTop: theme.spacing(1.25),
-  paddingLeft: theme.spacing(2.5),
-  paddingRight: theme.spacing(2.5),
-  whiteSpace: "nowrap",
-  overflow: "hidden",
-  textOverflow: "ellipsis",
+const QuestionSection = styled(Paper)(({ theme }) => ({
+  flex: 1,
+  padding: theme.spacing(2),
+  maxHeight: "100%",
+  overflow: "auto",
 }));
 
-const TestButton = styled(Button)({
-  height: "32px",
-  width: "100px",
-  margin: "0 auto",
-  marginBottom: "14px",
-  fontSize: "0.875rem",
-  fontWeight: "bold",
-  letterSpacing: "0.5px",
-  color: "#fff",
+const SelectedSection = styled(Paper)(({ theme }) => ({
+  width: 300,
+  padding: theme.spacing(2),
+  maxHeight: "100%",
+  overflow: "auto",
+  backgroundColor: "#f8f9fa",
+}));
+
+const PartButton = styled(ListItemButton)(({ theme, selected }) => ({
+  borderRadius: theme.spacing(1),
+  marginBottom: theme.spacing(0.5),
+  backgroundColor: selected ? theme.palette.primary.light : "transparent",
   "&:hover": {
-    opacity: 0.9,
+    backgroundColor: selected
+      ? theme.palette.primary.light
+      : theme.palette.action.hover,
   },
-});
+}));
+
+const QuestionItem = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "flex-start",
+  gap: theme.spacing(2),
+  padding: theme.spacing(2),
+  border: "1px solid #e0e0e0",
+  borderRadius: theme.spacing(1),
+  marginBottom: theme.spacing(2),
+  backgroundColor: "#fff",
+}));
 
 const tests = [
   {
@@ -108,11 +136,26 @@ const tests = [
   },
 ];
 
-const skillLabels = ["Grammar", "Listening", "Writing", "Reading", "Speaking"];
+const skillTabs = [
+  // { color: "#d1e077", icon: ReadingIcon, label: "Grammar" },
+  { color: "#32b4c8", icon: ListeningIcon, label: "Listening" },
+  { color: "#faab5a", icon: ReadingIcon, label: "Reading" },
+  { color: "#327844", icon: WritingIcon, label: "Writing" },
+  { color: "#c86478", icon: SpeakingIcon, label: "Speaking" },
+];
 
 interface Classroom {
   id: string;
   name: string;
+}
+
+interface Question {
+  id: string;
+  text: string;
+  options?: string[];
+  type: string;
+  skill: string;
+  part: number;
 }
 
 interface TestBankCreateProps {
@@ -128,10 +171,14 @@ const TestBankCreate = ({
 }: TestBankCreateProps) => {
   const navigate = useNavigate();
   const notify = useNotify();
-  const [isOpenModalFrame, setIsOpenModalFrame] = useState(false);
-  const [partSkill, setPartSkill] = useState<number | null>(null);
-  const [typeSkill, setTypeSkill] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<number>(0);
+  const [selectedPart, setSelectedPart] = useState<number | null>(null);
   const [nameTestBank, setNameTestBank] = useState<string>("");
+  const [selectedQuestions, setSelectedQuestions] = useState<Set<string>>(
+    new Set()
+  );
+
+  const [questionList, setQuestionList] = useState<Question[]>([]);
 
   const [classrooms, setClassrooms] = useState<Classroom[]>([
     {
@@ -142,6 +189,34 @@ const TestBankCreate = ({
 
   const [selectedClassId, setSelectedClassId] = useState<string>("");
 
+  // Mock data cho questions - trong thực tế sẽ fetch từ API
+  const mockQuestions: Question[] = [
+    {
+      id: "q1",
+      text: "What is the capital of France?",
+      options: ["London", "Berlin", "Paris", "Madrid"],
+      type: "multiple-choice",
+      skill: skillTabs[activeTab]?.label || "Grammar",
+      part: selectedPart || 1,
+    },
+    {
+      id: "q2",
+      text: "Choose the correct answer: She _____ to the store yesterday.",
+      options: ["go", "goes", "went", "going"],
+      type: "multiple-choice",
+      skill: skillTabs[activeTab]?.label || "Grammar",
+      part: selectedPart || 1,
+    },
+    {
+      id: "q3",
+      text: "Fill in the blank: I have _____ finished my homework.",
+      options: ["already", "yet", "just", "never"],
+      type: "multiple-choice",
+      skill: skillTabs[activeTab]?.label || "Grammar",
+      part: selectedPart || 1,
+    },
+  ];
+
   const handleChange = (event: SelectChangeEvent) => {
     setSelectedClassId(event.target.value);
   };
@@ -151,10 +226,78 @@ const TestBankCreate = ({
   );
   const dispatch = useDispatch();
 
-  const handleChooseTest = (partId: number, index: number) => {
-    setPartSkill(partId);
-    setTypeSkill(skillLabels[index]);
-    setIsOpenModalFrame(true);
+  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+    setActiveTab(newValue);
+    setSelectedPart(null); // Reset selected part when changing tabs
+    setQuestionList([]); // Clear question list when changing tabs
+  };
+
+  const handlePartSelect = async (partId: number) => {
+    setSelectedPart(partId);
+
+    if (skillTabs[activeTab]?.label === "Reading") {
+      const { data } = await dataProvider.getFiltersRecord("readings", {
+        partSkill: converPartReadingSkill(partId),
+      });
+
+      const result = convertDataReadingBank(data, partId);
+
+      setQuestionList(result);
+    }
+    if (skillTabs[activeTab]?.label === "Listening") {
+      const { data } = await dataProvider.getFiltersRecord("listenings", {
+        partSkill: converPartListeningSkill(partId),
+      });
+
+      const result = convertDataListeningBank(data, partId);
+      setQuestionList(result);
+    }
+    if (skillTabs[activeTab]?.label === "Writing") {
+      const { data } = await dataProvider.getFiltersRecord("writings", {
+        partSkill: converPartListeningSkill(partId),
+      });
+      const result = convertDataWritingBank(data, partId);
+      setQuestionList(result);
+    }
+
+    if (skillTabs[activeTab]?.label === "Speaking") {
+      const { data } = await dataProvider.getFiltersRecord("Speakings", {
+        partSkill: converPartListeningSkill(partId),
+      });
+      const result = convertDataSpeakingBank(data, partId);
+      setQuestionList(result);
+    }
+  };
+
+  const handleQuestionToggle = (questionId: string) => {
+    const newSelected = new Set(selectedQuestions);
+    if (newSelected.has(questionId)) {
+      newSelected.delete(questionId);
+    } else {
+      newSelected.add(questionId);
+    }
+    setSelectedQuestions(newSelected);
+  };
+
+  const getPartsForCurrentTab = () => {
+    const currentSkill = skillTabs[activeTab]?.label;
+    if (currentSkill === "Reading" || currentSkill === "Grammar") {
+      return tests; // 5 parts
+    }
+    return tests.slice(0, 4); // 4 parts for other skills
+  };
+
+  const getQuestionsForCurrentSelection = () => {
+    if (!selectedPart) return [];
+
+    console.log("selectedPart", selectedPart);
+    return mockQuestions.filter(
+      (q) => q.skill === skillTabs[activeTab]?.label && q.part === selectedPart
+    );
+  };
+
+  const getSelectedQuestionsList = () => {
+    return questionList.filter((q) => selectedQuestions.has(q.id));
   };
 
   const createWritingPartOne = async () => {
@@ -335,80 +478,219 @@ const TestBankCreate = ({
               Bộ đề thi
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", flexGrow: 1, gap: 4 }}>
-            {[
-              { color: "#d1e077", icon: ReadingIcon, label: "Grammar" },
-              { color: "#32b4c8", icon: ListeningIcon, label: "Listening" },
-              { color: "#327844", icon: WritingIcon, label: "Writing" },
-              { color: "#faab5a", icon: ReadingIcon, label: "Reading" },
-              { color: "#c86478", icon: SpeakingIcon, label: "Speaking" },
-            ].map((module, index) => (
-              <ModuleItem key={index} color={module.color}>
-                <img
-                  alt={module.label.toLowerCase()}
-                  loading="lazy"
-                  width="38"
-                  height="30"
-                  src={module.icon}
-                />
-                <Typography
-                  variant="caption"
-                  component="div"
-                  sx={{
-                    color: module.color,
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                    letterSpacing: "2.75px",
-                  }}
-                >
-                  {module.label}
-                </Typography>
-              </ModuleItem>
+          <Tabs
+            value={activeTab}
+            onChange={handleTabChange}
+            variant="scrollable"
+            scrollButtons="auto"
+            sx={{ flexGrow: 1, minHeight: 60 }}
+          >
+            {skillTabs.map((tab, idx) => (
+              <Tab
+                key={tab.label}
+                label={
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <img
+                      alt={tab.label.toLowerCase()}
+                      loading="lazy"
+                      width="24"
+                      height="24"
+                      src={tab.icon}
+                    />
+                    <Typography
+                      variant="caption"
+                      component="div"
+                      sx={{
+                        color: tab.color,
+                        fontWeight: "bold",
+                        textTransform: "uppercase",
+                        letterSpacing: "2.75px",
+                      }}
+                    >
+                      {tab.label}
+                    </Typography>
+                  </Box>
+                }
+                sx={{ minWidth: 120 }}
+              />
             ))}
-          </Box>
+          </Tabs>
         </ModuleContainer>
 
-        <Box>
-          {tests.map((test) => (
-            <TestContainer key={test.partId}>
-              <Box sx={{ width: "140px" }}>
-                <TestTitle>{test.title}</TestTitle>
-              </Box>
-              {test.colors.map((color, index) => (
-                <Box
-                  key={index}
-                  sx={{ width: "16.42%", textAlign: "center", paddingX: 1 }}
-                >
-                  {!(skillLabels[index] === "Writing" && test.partId === 5) &&
-                    !(skillLabels[index] === "Speaking" && test.partId === 5) &&
-                    !(
-                      skillLabels[index] === "Listening" && test.partId === 5
-                    ) && (
-                      <TestButton
-                        variant="contained"
-                        sx={{ width: "fit-content", backgroundColor: color }}
-                        onClick={() => handleChooseTest(test.partId, index)}
-                      >
-                        Check Test
-                      </TestButton>
-                    )}
-                </Box>
-              ))}
-            </TestContainer>
-          ))}
-        </Box>
-        <ModalFrame
-          open={isOpenModalFrame}
-          closeModalEdit={() => setIsOpenModalFrame(false)}
-          label={`${typeSkill} - Part ${partSkill}`}
+        <ContentArea
+          sx={{
+            maxHeight: "calc(100vh - 430px)",
+            overflow: "auto",
+          }}
         >
-          {typeSkill === "Speaking" && <SpeakingBank partSkill={partSkill} />}
-          {typeSkill === "Reading" && <ReadingBank partSkill={partSkill} />}
-          {typeSkill === "Writing" && <WritingBank partSkill={partSkill} />}
-          {typeSkill === "Listening" && <ListeningBank partSkill={partSkill} />}
-        </ModalFrame>
+          <Sidebar>
+            <Typography variant="h6" gutterBottom>
+              Parts
+            </Typography>
+            <List>
+              {getPartsForCurrentTab().map((test) => (
+                <PartButton
+                  key={test.partId}
+                  selected={selectedPart === test.partId}
+                  onClick={() => handlePartSelect(test.partId)}
+                >
+                  <ListItemText
+                    primary={test.title}
+                    primaryTypographyProps={{
+                      fontWeight:
+                        selectedPart === test.partId ? "bold" : "normal",
+                      color:
+                        selectedPart === test.partId
+                          ? "primary"
+                          : "textPrimary",
+                    }}
+                  />
+                </PartButton>
+              ))}
+            </List>
+          </Sidebar>
+
+          <MainContent
+            sx={{
+              maxHeight: "100%",
+              overflow: "auto",
+              maxWidth: "calc(100% - 280px)",
+            }}
+          >
+            <QuestionSection>
+              <Typography variant="h6" gutterBottom>
+                Questions {selectedPart ? `- Part ${selectedPart}` : ""}
+              </Typography>
+              {selectedPart ? (
+                <Box>
+                  {questionList.length > 0 ? (
+                    questionList.map((question) => (
+                      <QuestionItem key={question.id}>
+                        <Checkbox
+                          checked={selectedQuestions.has(question.id)}
+                          onChange={() => handleQuestionToggle(question.id)}
+                          color="primary"
+                        />
+                        <Box flex={1}>
+                          <Box sx={{ width: "100%" }}>
+                            <Typography
+                              variant="body1"
+                              gutterBottom
+                              sx={{
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                                maxWidth: "850px",
+                                cursor: "pointer",
+                                display: "inline-block",
+                              }}
+                              title={question.text}
+                            >
+                              {question.text}
+                            </Typography>
+                          </Box>
+
+                          {question.options && (
+                            <Box ml={2}>
+                              {question.options.map((option, index) => (
+                                <Typography
+                                  key={index}
+                                  variant="body2"
+                                  color="textSecondary"
+                                  component="div"
+                                  sx={{
+                                    display: "-webkit-box",
+                                    WebkitLineClamp: 2,
+                                    WebkitBoxOrient: "vertical",
+                                    overflow: "hidden",
+                                    textOverflow: "ellipsis",
+                                    maxWidth: "100%",
+                                    cursor: "pointer",
+                                  }}
+                                  title={question.text}
+                                >
+                                  {String.fromCharCode(65 + index)}. {option}
+                                </Typography>
+                              ))}
+                            </Box>
+                          )}
+                        </Box>
+                      </QuestionItem>
+                    ))
+                  ) : (
+                    <Typography color="textSecondary" align="center" mt={4}>
+                      Chưa có câu hỏi cho Part {selectedPart}
+                    </Typography>
+                  )}
+                </Box>
+              ) : (
+                <Typography color="textSecondary" align="center" mt={4}>
+                  Vui lòng chọn một Part để xem câu hỏi
+                </Typography>
+              )}
+            </QuestionSection>
+
+            {/* phần câu hỏi đã chọn */}
+            <SelectedSection
+              sx={{
+                width: "300px",
+              }}
+            >
+              <Typography variant="h6" gutterBottom>
+                Selected Questions ({selectedQuestions.size})
+              </Typography>
+              <Divider sx={{ mb: 2 }} />
+              {getSelectedQuestionsList().length > 0 ? (
+                <Box>
+                  {getSelectedQuestionsList().map((question, index) => (
+                    <Box key={question.id} mb={2}>
+                      <Typography variant="body2" color="primary" gutterBottom>
+                        {question.skill} - Part {question.part} - Q{index + 1}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        gutterBottom
+                        sx={{
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          maxWidth: "100%",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {question.text}
+                      </Typography>
+                      <Button
+                        size="small"
+                        color="error"
+                        onClick={() => handleQuestionToggle(question.id)}
+                      >
+                        Remove
+                      </Button>
+                      <Divider sx={{ mt: 1 }} />
+                    </Box>
+                  ))}
+                </Box>
+              ) : (
+                <Typography color="textSecondary" align="center">
+                  Chưa có câu hỏi nào được chọn
+                </Typography>
+              )}
+            </SelectedSection>
+          </MainContent>
+        </ContentArea>
       </Box>
-      <Box sx={{ width: "100%", minHeight: "100px", position: "relative" }}>
+      <Box
+        sx={{
+          width: "100%",
+          minHeight: "100px",
+          position: "relative",
+          zIndex: 100000,
+          marginTop: 2,
+        }}
+      >
         <Stack
           direction="row"
           justifyContent="space-between"
@@ -420,7 +702,7 @@ const TestBankCreate = ({
             padding: "1rem",
             borderRadius: "4px",
             marginTop: "1rem",
-            position: "absolute",
+            position: "relative",
             bottom: 0,
             left: 0,
           }}
