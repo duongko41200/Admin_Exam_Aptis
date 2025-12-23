@@ -174,9 +174,10 @@ const TestBankCreate = ({
   const [activeTab, setActiveTab] = useState<number>(0);
   const [selectedPart, setSelectedPart] = useState<number | null>(null);
   const [nameTestBank, setNameTestBank] = useState<string>("");
-  const [selectedQuestions, setSelectedQuestions] = useState<Set<string>>(
-    new Set()
-  );
+  // selectedQuestions: { [skill]: { [part]: Set<questionId> } }
+  const [selectedQuestions, setSelectedQuestions] = useState<
+    Record<string, Record<string, Set<string>>>
+  >({});
 
   const [questionList, setQuestionList] = useState<Question[]>([]);
 
@@ -270,13 +271,22 @@ const TestBankCreate = ({
   };
 
   const handleQuestionToggle = (questionId: string) => {
-    const newSelected = new Set(selectedQuestions);
-    if (newSelected.has(questionId)) {
-      newSelected.delete(questionId);
-    } else {
-      newSelected.add(questionId);
-    }
-    setSelectedQuestions(newSelected);
+    if (!selectedPart) return;
+    const skill = skillTabs[activeTab]?.label?.toLowerCase();
+    const partKey = `part${selectedPart}`;
+    setSelectedQuestions((prev) => {
+      const updated = { ...prev };
+      if (!updated[skill]) updated[skill] = {};
+      if (!updated[skill][partKey]) updated[skill][partKey] = new Set();
+      const set = new Set(updated[skill][partKey]);
+      if (set.has(questionId)) {
+        set.delete(questionId);
+      } else {
+        set.add(questionId);
+      }
+      updated[skill][partKey] = set;
+      return { ...updated };
+    });
   };
 
   const getPartsForCurrentTab = () => {
@@ -295,21 +305,61 @@ const TestBankCreate = ({
       (q) => q.skill === skillTabs[activeTab]?.label && q.part === selectedPart
     );
   };
+  function mergeSection(baseSection, selectedSection = {}) {
+    const result = {};
 
+    for (const key in baseSection) {
+      const value = selectedSection[key];
+      result[key] = value instanceof Set ? Array.from(value) : [];
+    }
+
+    return result;
+  }
   const getSelectedQuestionsList = () => {
-    return questionList.filter((q) => selectedQuestions.has(q.id));
+    if (!selectedPart) return [];
+    const skill = skillTabs[activeTab]?.label?.toLowerCase();
+    const partKey = `part${selectedPart}`;
+    const set = selectedQuestions[skill]?.[partKey] || new Set();
+    return questionList.filter((q) => set.has(q.id));
   };
 
   const createWritingPartOne = async () => {
-    const testBankDataClone = { ...testBankData };
+    // Deep clone to avoid mutating redux state
+    const testBankDataClone = JSON.parse(JSON.stringify(testBankData));
+
+    console.log("testBankDataClone khi tạo mới là: ", testBankDataClone);
+    console.log("selectedQuestions khi tạo mới là: ", selectedQuestions);
+
     testBankDataClone.classRoomId =
       selectedClassId === "free" ? classFreeId : selectedClassId;
     testBankDataClone.title = nameTestBank;
     testBankDataClone.status =
       selectedClassId === classFreeId ? "free" : "premium";
 
+    const finalData = {
+      ...testBankDataClone,
+      listening: mergeSection(
+        testBankDataClone.listening,
+        selectedQuestions.listening
+      ),
+      reading: mergeSection(
+        testBankDataClone.reading,
+        selectedQuestions.reading
+      ),
+      writing: mergeSection(
+        testBankDataClone.writing,
+        selectedQuestions.writing
+      ),
+      speaking: mergeSection(
+        testBankDataClone.speaking,
+        selectedQuestions.speaking
+      ),
+    };
+
+    console.log("finalData khi tạo mới là: ", finalData);
+
     try {
-      await dataProvider.create("test-banks", { data: testBankDataClone });
+      await dataProvider.create("test-banks", { data: finalData });
       notify(UPDATED_SUCCESS, { type: "success" });
     } catch (error) {
       console.error(error);
@@ -567,7 +617,17 @@ const TestBankCreate = ({
                     questionList.map((question) => (
                       <QuestionItem key={question.id}>
                         <Checkbox
-                          checked={selectedQuestions.has(question.id)}
+                          checked={(() => {
+                            if (!selectedPart) return false;
+                            const skill =
+                              skillTabs[activeTab]?.label?.toLowerCase();
+                            const partKey = `part${selectedPart}`;
+                            return (
+                              selectedQuestions[skill]?.[partKey]?.has(
+                                question.id
+                              ) || false
+                            );
+                          })()}
                           onChange={() => handleQuestionToggle(question.id)}
                           color="primary"
                         />
