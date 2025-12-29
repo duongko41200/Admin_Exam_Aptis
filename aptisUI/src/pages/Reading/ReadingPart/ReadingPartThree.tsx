@@ -1,12 +1,12 @@
+import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
+import { useForm } from "react-hook-form";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -125,9 +125,12 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
     setValue,
     reset,
   } = useForm<FormData>();
-  const [idTele, setIdTele] = useState("");
-  const [isShow, setIsShow] = useState(false);
+
   const [suggestion, setSuggestion] = useState("");
+  const [content, setContent] = useState("");
+  const debouncedContentUpdate = (value: string) => {
+    setContent(value);
+  };
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -135,7 +138,7 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
       timeToDo: 35,
       questions: {
         questionTitle: values.subTitle,
-        content: values.content,
+        content: content,
         answerList: [1, 2, 3, 4].map((num) => ({
           content: values[`optionPerson${num}`],
         })),
@@ -204,9 +207,9 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
   useEffect(() => {
     if (dataReadingPartThree) {
       setValue("title", dataReadingPartThree.data.title);
-      setValue("content", dataReadingPartThree.data.questions.content);
       setValue("subTitle", dataReadingPartThree.data.questions.questionTitle);
       setSuggestion(dataReadingPartThree.data.questions.suggestion);
+      setContent(dataReadingPartThree.data.questions.content);
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
         setValue(
@@ -271,7 +274,18 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
 
         <div>
           <TextEditor
-            placeholder="Write something or insert a star ★"
+            placeholder="Đề bài"
+            suggestion={content || ""}
+            setSuggestion={(value: string) =>
+              debouncedContentUpdate(value || "")
+            }
+            editorId="content-editor"
+          />
+        </div>
+
+        <div>
+          <TextEditor
+            placeholder="gợi ý cho phần hướng dẫn"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
             editorId="editor1"

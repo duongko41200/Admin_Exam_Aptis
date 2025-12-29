@@ -23,6 +23,7 @@ app.use(
       "https://cmss.aptisacademy.com.vn",
       "http://localhost:3000",
       "https://aptisacademy.com.vn",
+      "http://192.168.2.103:4000",
     ],
     credentials: true,
   })

@@ -48,7 +48,13 @@ export default function BasicTabs() {
     navigate("/readings");
   };
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        width: "100%",
+        overflow: "auto",
+        maxHeight: "calc(100vh - 70px)",
+      }}
+    >
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}

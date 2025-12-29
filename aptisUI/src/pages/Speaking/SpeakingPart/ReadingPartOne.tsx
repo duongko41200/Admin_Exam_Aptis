@@ -503,7 +503,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   }, [statusHandler, dispatch]);
 
   return (
-    <Box sx={{ width: "100%", minHeight: "100vh" }}>
+    <Box sx={{ width: "100%"}}>
       {/* Debug Panel - Modern style */}
       <Box
         sx={{

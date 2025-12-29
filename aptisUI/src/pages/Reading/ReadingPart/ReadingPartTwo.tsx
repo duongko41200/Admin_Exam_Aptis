@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { Box, Stack, TextField } from "@mui/material";
+import React, { useCallback, useEffect, useState } from "react";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
+import { useForm } from "react-hook-form";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -123,6 +123,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
   } = useForm<FormData>();
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
+  const [content, setContent] = useState("");
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -130,7 +131,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       timeToDo: 35,
       questions: {
         questionTitle: values.subTitle,
-        content: values.content,
+        content: content,
         answerList: [1, 2, 3, 4, 5].map((num) => ({
           content: values[`correctAnswer${num}`],
           numberOrder: values[`numberOrder${num}`],
@@ -190,14 +191,16 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
       });
     }
   };
-
+  const debouncedContentUpdate = useCallback((value: string) => {
+    setContent(value || "");
+  }, []);
   useEffect(() => {
     if (dataReadingPartTwo) {
       setValue("title", dataReadingPartTwo.data.title);
-      setValue("content", dataReadingPartTwo.data.questions.content);
       setValue("subTitle", dataReadingPartTwo.data.questions.questionTitle);
       // setValue("suggestion", dataReadingPartTwo.data.questions.suggestion);
       setSuggestion(dataReadingPartTwo.data.questions.suggestion);
+      setContent(dataReadingPartTwo.data.questions.content);
 
       [1, 2, 3, 4, 5].map((num) => {
         setValue(
@@ -241,22 +244,23 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+
         <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
+          <TextEditor
+            placeholder="Đề bài"
+            suggestion={content || ""}
+            setSuggestion={(value: string) =>
+              debouncedContentUpdate(value || "")
+            }
+            editorId="content-editor"
           />
         </div>
         <div>
           <TextEditor
-            placeholder="Write something or insert a star ★"
+            placeholder="gợi ý đáp án"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
+            editorId="suggestion-editor"
           />
         </div>
 

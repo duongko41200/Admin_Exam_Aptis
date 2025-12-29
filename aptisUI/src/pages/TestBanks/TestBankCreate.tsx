@@ -696,9 +696,6 @@ const TestBankCreate = ({
                 width: "300px",
               }}
             >
-              <Typography variant="h6" gutterBottom>
-                Selected Questions ({selectedQuestions.size})
-              </Typography>
               <Divider sx={{ mb: 2 }} />
               {getSelectedQuestionsList().length > 0 ? (
                 <Box>

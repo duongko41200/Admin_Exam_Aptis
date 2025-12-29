@@ -58,7 +58,7 @@ const ReadingEditForm = ({ resource, dataProvider }: BaseComponentProps) => {
   };
 
   return (
-    <Box sx={boxStyles}>
+    <Box sx={{...boxStyles, maxHeight: 'calc(100vh - 70px)', overflow: 'auto'}}>
       <EditBase>
         <Title title="ユーザ登録　編集" />
         <Box sx={{ padding: "20px" }}>{renderReadingPart()}</Box>

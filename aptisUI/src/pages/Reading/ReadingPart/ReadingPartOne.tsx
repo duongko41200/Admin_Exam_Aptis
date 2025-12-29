@@ -1,5 +1,5 @@
 import { Box, Stack, TextField } from "@mui/material";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Button, useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
@@ -153,6 +153,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
+  const [content, setContent] = useState("");
 
   // Reset function để clear toàn bộ form và state
   const resetAllData = useCallback(() => {
@@ -193,19 +194,19 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
   }, [reset]);
 
   const onSubmit = async (values: any) => {
-    console.log("suggestion", suggestion);
+    console.log({ values });
     const data = {
       title: values.title,
       timeToDo: 35,
       questions: {
         questionTitle: values.subTitle,
-        content: values.content,
+        content: content,
         answerList: [],
         correctAnswer: "",
         file: null,
         subQuestionAnswerList: [],
         suggestion: suggestion,
-        subQuestion: [1, 2, 3, 4, 5, 6].map((num) => ({
+        subQuestion: [1, 2, 3, 4, 5].map((num) => ({
           content: values[`subContent${num}`],
           correctAnswer: values[`correctAnswer${num}`],
           file: null,
@@ -248,7 +249,9 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
       notify("Có lỗi xảy ra khi tạo bài thi!", { type: "error" });
     }
   };
-
+  const debouncedContentUpdate = useCallback((value: string) => {
+    setContent(value || "");
+  }, []);
   //tentisspace
   const updateReadingPartOne = async (values: any) => {
     try {
@@ -273,12 +276,12 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
     console.log({ dataReadingPartOne });
     if (dataReadingPartOne) {
       setValue("title", dataReadingPartOne.data.title);
-      setValue("content", dataReadingPartOne.data.questions.content);
       setValue("subTitle", dataReadingPartOne.data.questions.questionTitle);
       // setValue("suggestion", dataReadingPartOne.data.questions.suggestion);
       setSuggestion(dataReadingPartOne.data.questions.suggestion);
+      setContent(dataReadingPartOne.data.questions.content);
 
-      [1, 2, 3, 4, 5, 6].map((num) => {
+      [1, 2, 3, 4, 5].map((num) => {
         setValue(
           `subContent${num}` as keyof FormData,
           dataReadingPartOne.data.questions.subQuestion[num - 1].content
@@ -319,19 +322,8 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
-        <div>
-          <TextField
             type="subTitle"
-            {...register("subTitle", { required: true })}
+            {...register("subTitle", { required: false })}
             placeholder="Sub Title"
             variant="outlined"
             fullWidth
@@ -341,7 +333,17 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextEditor
-            placeholder="Write something or insert a star ★"
+            placeholder="Đề bài"
+            suggestion={content || ""}
+            setSuggestion={(value: string) =>
+              debouncedContentUpdate(value || "")
+            }
+            editorId="content-editor"
+          />
+        </div>
+        <div>
+          <TextEditor
+            placeholder="gợi ý cho phần đọc"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
             editorId="reading-part-one-editor"
@@ -362,7 +364,7 @@ const ReadingPartOne: React.FC<ReadingPartOneProps> = ({
             marginTop: "20px",
           }}
         >
-          {[1, 2, 3, 4, 5, 6].map((num) => (
+          {[1, 2, 3, 4, 5].map((num) => (
             <QuestionBox
               key={num}
               questionNumber={num}

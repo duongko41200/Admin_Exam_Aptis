@@ -1,12 +1,12 @@
+import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
+import { useForm } from "react-hook-form";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 
 interface ReadingPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -123,6 +123,12 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
   const navigate = useNavigate();
   const notify = useNotify();
   const [suggestion, setSuggestion] = useState("");
+  const [content, setContent] = useState("");
+
+  const debouncedContentUpdate = (value: string) => {
+    setContent(value);
+  };
+
   const {
     register,
     handleSubmit,
@@ -138,7 +144,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
       timeToDo: 35,
       questions: {
         questionTitle: values.subTitle,
-        content: values.content,
+        content: content,
         answerList: [1, 2, 3, 4, 5, 6, 7, 8].map((num) => ({
           content: values[`optionAnswer${num}`],
         })),
@@ -208,10 +214,9 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
   useEffect(() => {
     if (dataReadingPartFour) {
       setValue("title", dataReadingPartFour.data.title);
-      setValue("content", dataReadingPartFour.data.questions.content);
       setValue("subTitle", dataReadingPartFour.data.questions.questionTitle);
       setSuggestion(dataReadingPartFour.data.questions.suggestion);
-
+      setContent(dataReadingPartFour.data.questions.content);
 
       [1, 2, 3, 4, 5, 6, 7].map((num) => {
         setValue(
@@ -262,16 +267,15 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
+
         <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-            multiline
+          <TextEditor
+            placeholder="Đề bài"
+            suggestion={content || ""}
+            setSuggestion={(value: string) =>
+              debouncedContentUpdate(value || "")
+            }
+            editorId="content-editor"
           />
         </div>
         <div>

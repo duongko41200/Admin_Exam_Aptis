@@ -11,12 +11,13 @@ router.use(authenticationV2);
 
 router.post('/', asyncHandle(ReadingController.create));
 
+
 router.get('/', asyncHandle(ReadingController.getAllWithQuery));
 router.get('/get-id/:id', asyncHandle(ReadingController.getOneById));
 router.put('/:id', asyncHandle(ReadingController.updateOneById));
 
 router.post('/filters', asyncHandle(ReadingController.getAllWithFilters));
-
+router.delete("/:id", asyncHandle(ReadingController.deleteById));
 // QUERY
 // router.get('/all', asyncHandle(TopicController.getAllTopic));
 
