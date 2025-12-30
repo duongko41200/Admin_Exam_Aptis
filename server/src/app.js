@@ -1,13 +1,14 @@
-import bodyParser from 'body-parser';
-import compression from 'compression';
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import express from 'express';
-import helmet from 'helmet';
-import morgan from 'morgan';
-import { checkOverload } from './helpers/check.connect.js';
-import routes from './routes/index.js';
+import compression from "compression";
+import dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import morgan from "morgan";
+import bodyParser from "body-parser";
+import initDb from "./dbs/init.mongodb.js";
+import { checkOverload } from "./helpers/check.connect.js";
+import routes from "./routes/index.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -23,31 +24,30 @@ app.use(
       "http://localhost:3000",
       "https://aptisacademy.com.vn",
       "http://192.168.2.103:4000",
-      "https://admin-cms.aptisacademy.com.vn",
     ],
     credentials: true,
   })
 );
 app.use(cookieParser());
 //init middleware
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
 
 // Increase payload limits for video uploads
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({ limit: "50mb" }));
 app.use(
   express.urlencoded({
     extended: true,
-    limit: '50mb',
+    limit: "50mb",
     parameterLimit: 50000,
   })
 );
-app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.json({ limit: "50mb" }));
 app.use(
   bodyParser.urlencoded({
     extended: true,
-    limit: '50mb',
+    limit: "50mb",
     parameterLimit: 50000,
   })
 );
@@ -60,14 +60,14 @@ app.use(
 checkOverload();
 
 // Note: Writing service will be auto-initialized on first use
-console.log('📝 Writing service will initialize automatically when first used');
+console.log("📝 Writing service will initialize automatically when first used");
 
 // init router
-app.use('/', routes);
+app.use("/", routes);
 
 //handling errors
 app.use((req, res, next) => {
-  const error = new Error('Not Found');
+  const error = new Error("Not Found");
   error.status = 404;
   next(error);
 });
@@ -75,12 +75,12 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   const statusCode = err.status || 500;
 
-  console.log('looix', err);
+  console.log("looix", err);
   return res.status(statusCode).json({
-    status: 'err',
+    status: "err",
     code: statusCode,
     stack: err.stack,
-    message: err.message || 'Internal Server Error',
+    message: err.message || "Internal Server Error",
   });
 });
 

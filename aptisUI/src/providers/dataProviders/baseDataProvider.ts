@@ -60,7 +60,7 @@ const baseDataProvider: DataProvider = {
 
     if (response.ok === false) {
       localStorage.clear();
-      window.location.href = "/login";
+      // window.location.href = "/login";
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
