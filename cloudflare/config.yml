@@ -1,0 +1,12 @@
+tunnel: local-demo
+credentials-file: ./cloudflare/local-demo.json
+
+ingress:
+  - hostname: admin-cms.aptisacademy.com.vn 
+    path: /v1/api/*
+    service: http://localhost:3333
+
+  - hostname: admin-cms.aptisacademy.com.vn 
+    service: http://localhost:4000
+
+  - service: http_status:404
