@@ -1,13 +1,14 @@
-import bodyParser from 'body-parser';
 import compression from 'compression';
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
+import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
+import bodyParser from 'body-parser';
+import initDb from './dbs/init.mongodb.js';
 import { checkOverload } from './helpers/check.connect.js';
 import routes from './routes/index.js';
+import cookieParser from 'cookie-parser';
 
 dotenv.config();
 
@@ -16,14 +17,13 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:3833",
-      "https://app.aptisacademy.com.vn",
-      "http://localhost:4000",
-      "https://cmss.aptisacademy.com.vn",
-      "http://localhost:3000",
-      "https://aptisacademy.com.vn",
-      "http://192.168.2.103:4000",
-      "https://admin-cms.aptisacademy.com.vn",
+      'http://localhost:3833',
+      'https://app.aptisacademy.com.vn',
+      'http://localhost:4000',
+      'https://cmss.aptisacademy.com.vn',
+      'http://localhost:3000',
+      'https://aptisacademy.com.vn',
+      'http://192.168.2.103:4000',
     ],
     credentials: true,
   })
