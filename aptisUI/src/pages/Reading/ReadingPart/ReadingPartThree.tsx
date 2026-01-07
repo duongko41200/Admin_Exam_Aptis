@@ -260,17 +260,6 @@ const ReadingPartThree: React.FC<ReadingPartOneProps> = ({
             helperText={errors.subTitle ? "This field is required" : ""}
           />
         </div>
-        <div>
-          <TextField
-            type="content"
-            {...register("content", { required: true })}
-            placeholder="Content"
-            variant="outlined"
-            fullWidth
-            error={!!errors.content}
-            helperText={errors.content ? "This field is required" : ""}
-          />
-        </div>
 
         <div>
           <TextEditor
