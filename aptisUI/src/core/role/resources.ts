@@ -1,63 +1,64 @@
 import type { ResourceIF } from "@/types/general";
 import Group from "@mui/icons-material/Group";
 
-import { UserCreate, UserEdit, UserList, UserShow } from "../../pages/Users";
+import { Dashboard, Description as DescriptionIcon } from "@mui/icons-material";
 import {
-  ReadingList,
+  ListeningCreate,
+  ListeningEdit,
+  ListeningList,
+  ListeningShow,
+} from "../../pages/Listening";
+import {
   ReadingCreate,
   ReadingEdit,
+  ReadingList,
   ReadingShow,
 } from "../../pages/Reading";
-import { Dashboard } from "@mui/icons-material";
 import {
-  TestBankList,
-  TestBankCreate,
-  TestBankEdit,
-  TestBankShow,
-} from "../../pages/TestBanks";
-import {
-  WritingList,
-  WritingCreate,
-  WritingEdit,
-  WritingShow,
-} from "../../pages/Writing";
-import {
-  SpeakingList,
   SpeakingCreate,
   SpeakingEdit,
+  SpeakingList,
   SpeakingShow,
 } from "../../pages/Speaking";
 import {
-  ListeningList,
-  ListeningCreate,
-  ListeningEdit,
-  ListeningShow,
-} from "../../pages/Listening";
+  TestBankCreate,
+  TestBankEdit,
+  TestBankList,
+  TestBankShow,
+} from "../../pages/TestBanks";
+import { UserCreate, UserEdit, UserList, UserShow } from "../../pages/Users";
+import {
+  WritingCreate,
+  WritingEdit,
+  WritingList,
+  WritingShow,
+} from "../../pages/Writing";
 
 import {
-  CourseList,
-  CourseCreate,
-  CourseEdit,
-  CourseShow,
-} from "../../pages/Course";
-import {
-  LectureList,
-  LectureCreate,
-  LectureEdit,
-  LectureShow,
-} from "../../pages/Lectures";
-import {
-  AssignmentList,
   AssignmentCreate,
   AssignmentEdit,
+  AssignmentList,
   AssignmentShow,
 } from "../../pages/Assignment";
 import {
-  ClassRoomList,
   ClassRoomCreate,
   ClassRoomEdit,
+  ClassRoomList,
   ClassRoomShow,
 } from "../../pages/ClassRoom";
+import {
+  CourseCreate,
+  CourseEdit,
+  CourseList,
+  CourseShow,
+} from "../../pages/Course";
+import { KeyDocumentList } from "../../pages/KeyDocuments";
+import {
+  LectureCreate,
+  LectureEdit,
+  LectureList,
+  LectureShow,
+} from "../../pages/Lectures";
 
 const Resources: ResourceIF[] = [
   {
@@ -154,6 +155,15 @@ const Resources: ResourceIF[] = [
     icon: Dashboard,
     resource: "classrooms",
     label: "Lớp học",
+  },
+  {
+    list: KeyDocumentList,
+    edit: undefined,
+    create: undefined,
+    show: undefined,
+    icon: DescriptionIcon,
+    resource: "key-documents",
+    label: "Tài liệu KEY",
   },
 ];
 

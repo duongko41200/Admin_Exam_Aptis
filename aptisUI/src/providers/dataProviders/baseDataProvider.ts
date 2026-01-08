@@ -39,6 +39,19 @@ const baseDataProvider: DataProvider = {
     resource: string,
     params: GetListParams
   ): Promise<GetListResult> => {
+    // Handle key-documents resource with mock data
+    if (resource === "key-documents") {
+      // Return mock data to satisfy React Admin's requirements
+      return Promise.resolve({
+        data: [
+          { id: 1, name: "Key Document 1" },
+          { id: 2, name: "Key Document 2" },
+          { id: 3, name: "Key Document 3" },
+        ],
+        total: 3,
+      });
+    }
+
     const { page, perPage } = params.pagination as PaginationPayload;
     const { field, order } = params.sort as SortPayload;
     const query = {

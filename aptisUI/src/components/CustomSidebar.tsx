@@ -1,5 +1,19 @@
 "use client";
 
+import { Paper, Popper } from "@mui/material";
+import {
+  BookOpen,
+  ChevronDown,
+  ChevronRight,
+  FileSearch,
+  FileText,
+  GraduationCap,
+  MessageSquare,
+  Monitor,
+  Server,
+  Users,
+  Zap,
+} from "lucide-react";
 import type React from "react";
 import { useState } from "react";
 import {
@@ -9,21 +23,14 @@ import {
   useSidebarState,
   useTranslate,
 } from "react-admin";
-import {
-  Users,
-  MessageSquare,
-  Server,
-  Monitor,
-  ChevronDown,
-  ChevronRight,
-  BookOpen,
-  GraduationCap,
-  FileText,
-  Zap,
-} from "lucide-react";
-import { Tooltip, Popper, Paper, ClickAwayListener } from "@mui/material";
 
-type MenuName = "maintenance" | "users" | "notice" | "va" | "support";
+type MenuName =
+  | "maintenance"
+  | "users"
+  | "notice"
+  | "va"
+  | "support"
+  | "keyDocuments";
 
 interface SubMenuProps {
   handleToggle: () => void;
@@ -113,6 +120,7 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
     notice: true,
     va: true,
     support: true,
+    keyDocuments: true,
   });
   const translate = useTranslate();
   const [open] = useSidebarState();
@@ -245,6 +253,13 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
           icon: <FileText className="w-5 h-5 text-gray-200" />,
         },
       ],
+      keyDocuments: [
+        {
+          to: "/key-documents",
+          text: "Tài liệu KEY",
+          icon: <FileSearch className="w-5 h-5 text-gray-200" />,
+        },
+      ],
     };
 
     return (
@@ -352,6 +367,20 @@ const CustomSidebar = ({ dense = false }: MenuProps) => {
             onLeave={handleMenuLeave}
           >
             {renderPopupMenu("support")}
+          </SubMenu>
+
+          <SubMenu
+            handleToggle={() => handleToggle("keyDocuments")}
+            isOpen={state.keyDocuments}
+            name="Tài liệu KEY"
+            icon={<FileSearch className="w-6 h-6" />}
+            dense={dense}
+            open={open}
+            menuKey="keyDocuments"
+            onHover={handleMenuHover}
+            onLeave={handleMenuLeave}
+          >
+            {renderPopupMenu("keyDocuments")}
           </SubMenu>
         </div>
 
