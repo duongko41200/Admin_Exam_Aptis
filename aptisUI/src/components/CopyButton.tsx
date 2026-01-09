@@ -22,13 +22,36 @@ const CopyButton: React.FC<CopyButtonProps> = ({
   const handleCopy = async () => {
     if (!text) return;
 
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setShowSnackbar(true);
-      setTimeout(() => setCopied(false), 1000);
-    } catch (err) {
-      console.error("Failed to copy:", err);
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setShowSnackbar(true);
+        setTimeout(() => setCopied(false), 1000);
+      } catch (err) {
+        console.error("Failed to copy:", err);
+      }
+    } else {
+      // Fallback for browsers/environments without Clipboard API
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed"; // Prevent scrolling to bottom
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      try {
+        const successful = document.execCommand("copy");
+        if (successful) {
+          setCopied(true);
+          setShowSnackbar(true);
+          setTimeout(() => setCopied(false), 1000);
+        } else {
+          console.error("Fallback: Copy command was unsuccessful.");
+        }
+      } catch (err) {
+        console.error("Fallback: Failed to copy:", err);
+      }
+      document.body.removeChild(textarea);
     }
   };
 

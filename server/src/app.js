@@ -16,15 +16,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3833",
-      "https://app.aptisacademy.com.vn",
-      "http://localhost:4000",
-      "https://cmss.aptisacademy.com.vn",
-      "http://localhost:3000",
-      "https://aptisacademy.com.vn",
-      "http://192.168.2.103:4000",
-    ],
+    origin: (origin, callback) => callback(null, true),
     credentials: true,
   })
 );
