@@ -430,6 +430,14 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   sx={{ fontWeight: 600 }}
                 />
               </Box>
+
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ fontStyle: "italic" }}
+              >
+                Ready for upload
+              </Typography>
             </Box>
 
             {/* Files Grid */}
@@ -460,7 +468,19 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                         overflow: "hidden",
                         background:
                           "linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)",
+                        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                         border: "2px solid #e3f2fd",
+                        "&:hover": {
+                          transform: "translateY(-8px)",
+                          boxShadow: "0 12px 30px rgba(0, 0, 0, 0.15)",
+                          "& .file-overlay": {
+                            opacity: 1,
+                          },
+                          "& .action-buttons": {
+                            transform: "translateY(0)",
+                            opacity: 1,
+                          },
+                        },
                       }}
                     >
                       {/* File Container */}
@@ -770,7 +790,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                             transition: "opacity 0.3s ease",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
+                            justifyContent: "start",
                           }}
                         />
 
@@ -780,8 +800,6 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                           sx={{
                             position: "absolute",
                             top: "50%",
-                            left: "50%",
-                            transform: "translate(-50%, -50%) translateY(10px)",
                             display: "flex",
                             gap: 1,
                             alignItems: "center",

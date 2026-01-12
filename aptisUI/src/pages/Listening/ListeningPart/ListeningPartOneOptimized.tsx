@@ -266,7 +266,22 @@ const QuestionBox = memo(
             editorId={`editor${num}`}
           />
         </Box>
-
+        <div>
+          <TextField
+            // type="file âm thanh câu hỏi "
+            {...register(`subFile${questionNumber}` as keyof FormData)}
+            placeholder="file âm thanh câu hỏi"
+            variant="outlined"
+            fullWidth
+            error={!!errors.subTitle}
+            helperText={errors.subTitle ? "This field is required" : ""}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                backgroundColor: "white",
+              },
+            }}
+          />
+        </div>
         <Box sx={{ marginTop: "12px" }}>
           <Typography
             variant="body2"
