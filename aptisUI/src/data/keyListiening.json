@@ -118,7 +118,7 @@
               "suggestion": null,
               "subQuestion": [
                 {
-                  "content": "Cau hoi con 1 tentisspace",
+                  "content": "Cau hoi con 1 tienphongSpace",
                   "correctAnswer": "04ac9b9a-f34f-42b6-856e-7064f7ed9c56",
                   "file": null,
                   "answerList": null,
@@ -126,7 +126,7 @@
                   "suggestion": "\u003Cp\u003EGoi y 1\u003C/p\u003E"
                 },
                 {
-                  "content": "Cau hoi con 2 tentisspace",
+                  "content": "Cau hoi con 2 tienphongSpace",
                   "correctAnswer": "3c4f5b5f-ba1e-4025-b974-b6601ed742bb",
                   "file": null,
                   "answerList": null,
@@ -134,7 +134,7 @@
                   "suggestion": "\u003Cp\u003EGoi y 2\u003C/p\u003E"
                 },
                 {
-                  "content": "Cau hoi con 3 tentisspace",
+                  "content": "Cau hoi con 3 tienphongSpace",
                   "correctAnswer": "0aec77b2-1797-40de-b729-79a969d06b49",
                   "file": null,
                   "answerList": null,
@@ -708,7 +708,7 @@
               "suggestion": null,
               "subQuestion": [
                 {
-                  "content": "15.1  The school should provide better WIFI. tentisspace",
+                  "content": "15.1  The school should provide better WIFI. tienphongSpace",
                   "correctAnswer": "91b8203d-5b3e-43c9-a45a-90162273459f",
                   "file": null,
                   "answerList": null,
@@ -716,7 +716,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "15.2  Teachers need access to more classroom technology.\t tentisspace",
+                  "content": "15.2  Teachers need access to more classroom technology.\t tienphongSpace",
                   "correctAnswer": "91b8203d-5b3e-43c9-a45a-90162273459f",
                   "file": null,
                   "answerList": null,
@@ -724,7 +724,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "15.3  Online classes are exciting to teach.\t tentisspace",
+                  "content": "15.3  Online classes are exciting to teach.\t tienphongSpace",
                   "correctAnswer": "0bfd016c-5307-471b-b0c7-121817534bb5",
                   "file": null,
                   "answerList": null,
@@ -732,7 +732,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "15.4  Field trips are an essential part of the curriculum.\t tentisspace",
+                  "content": "15.4  Field trips are an essential part of the curriculum.\t tienphongSpace",
                   "correctAnswer": "8711bc86-4190-4a02-a16b-a894bfdb5a47",
                   "file": null,
                   "answerList": null,
@@ -1377,7 +1377,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : University B W M W - Nam nói trước﻿\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- technology helps make education more accessible: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Social interaction is important: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- The diverse curriculum is not an advantage: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- University competition should be encouraged: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "technology helps make education more accessible      tentisspace",
+                  "content": "technology helps make education more accessible      tienphongSpace",
                   "correctAnswer": "e9b1096f-758d-4bd5-9a99-45ca4ccaf170",
                   "file": null,
                   "answerList": null,
@@ -1385,7 +1385,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social interaction is important      tentisspace",
+                  "content": "Social interaction is important      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -1393,7 +1393,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The điverse curriculum is not an advantage      tentisspace",
+                  "content": "The điverse curriculum is not an advantage      tienphongSpace",
                   "correctAnswer": "8b2607c8-4bd3-42c2-878b-2ff19da655c2",
                   "file": null,
                   "answerList": null,
@@ -1401,7 +1401,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "University eompetition should be encouraged      tentisspace",
+                  "content": "University eompetition should be encouraged      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -2050,7 +2050,7 @@
               "suggestion": "\u003Col\u003E\u003Cli\u003Ewoman\u003C/li\u003E\u003Cli\u003Eboth\u003C/li\u003E\u003Cli\u003Ewoman\u003C/li\u003E\u003Cli\u003Eman\u003C/li\u003E\u003C/ol\u003E",
               "subQuestion": [
                 {
-                  "content": "The school should provide better WIFI. tentisspace",
+                  "content": "The school should provide better WIFI. tienphongSpace",
                   "correctAnswer": "31a05e4a-2d5b-45be-b071-e627e53ac1cf",
                   "file": null,
                   "answerList": null,
@@ -2058,7 +2058,7 @@
                   "suggestion": "\u003Cp\u003Ewoman\u003C/p\u003E"
                 },
                 {
-                  "content": "Teachers need access to more classroom technology.                                      tentisspace",
+                  "content": "Teachers need access to more classroom technology.                                      tienphongSpace",
                   "correctAnswer": "41a7a207-897e-4eff-b35f-169f557ebb7d",
                   "file": null,
                   "answerList": null,
@@ -2066,7 +2066,7 @@
                   "suggestion": "\u003Cp\u003Eboth\u003C/p\u003E"
                 },
                 {
-                  "content": "Online classes are exciting to teach.\t tentisspace",
+                  "content": "Online classes are exciting to teach.\t tienphongSpace",
                   "correctAnswer": "31a05e4a-2d5b-45be-b071-e627e53ac1cf",
                   "file": null,
                   "answerList": null,
@@ -2074,7 +2074,7 @@
                   "suggestion": "\u003Cp\u003Ewoman\u003C/p\u003E"
                 },
                 {
-                  "content": "Field trips are an essential part of the curriculum.\t tentisspace",
+                  "content": "Field trips are an essential part of the curriculum.\t tienphongSpace",
                   "correctAnswer": "cff33717-e975-4288-b1ee-61a8935efc9a",
                   "file": null,
                   "answerList": null,
@@ -2723,7 +2723,7 @@
               "suggestion": "\u003Col\u003E\u003Cli\u003Ewoman\u003C/li\u003E\u003Cli\u003Eman\u003C/li\u003E\u003Cli\u003Eman\u003C/li\u003E\u003Cli\u003Eboth\u003C/li\u003E\u003C/ol\u003E",
               "subQuestion": [
                 {
-                  "content": "Size is more important than location.\t tentisspace",
+                  "content": "Size is more important than location.\t tienphongSpace",
                   "correctAnswer": "381aceee-8ea9-4bab-8a7b-4e952ceb6a83",
                   "file": null,
                   "answerList": null,
@@ -2731,7 +2731,7 @@
                   "suggestion": "\u003Cp\u003Ewoman\u003C/p\u003E"
                 },
                 {
-                  "content": "It is essential to live in the city.\t tentisspace",
+                  "content": "It is essential to live in the city.\t tienphongSpace",
                   "correctAnswer": "b5d98260-16bf-445c-b446-4e31d5490550",
                   "file": null,
                   "answerList": null,
@@ -2739,7 +2739,7 @@
                   "suggestion": "\u003Cp\u003Eman\u003C/p\u003E"
                 },
                 {
-                  "content": "The budget is flexible.\t tentisspace",
+                  "content": "The budget is flexible.\t tienphongSpace",
                   "correctAnswer": "b5d98260-16bf-445c-b446-4e31d5490550",
                   "file": null,
                   "answerList": null,
@@ -2747,7 +2747,7 @@
                   "suggestion": "\u003Cp\u003Eman\u003C/p\u003E"
                 },
                 {
-                  "content": "The apartment must be pet-friendly.\t tentisspace",
+                  "content": "The apartment must be pet-friendly.\t tienphongSpace",
                   "correctAnswer": "f0f3983b-12bb-4592-aff4-0e40e1dbd300",
                   "file": null,
                   "answerList": null,
@@ -3424,7 +3424,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The new apartments are too high.\t tentisspace",
+                  "content": "The new apartments are too high.\t tienphongSpace",
                   "correctAnswer": "aa388244-344e-4b9b-a1e0-259811fafa77",
                   "file": null,
                   "answerList": null,
@@ -3432,7 +3432,7 @@
                   "suggestion": "\u003Cp\u003EBoth\u003C/p\u003E"
                 },
                 {
-                  "content": "Green space should be increased tentisspace",
+                  "content": "Green space should be increased tienphongSpace",
                   "correctAnswer": "aa388244-344e-4b9b-a1e0-259811fafa77",
                   "file": null,
                   "answerList": null,
@@ -3440,7 +3440,7 @@
                   "suggestion": "\u003Cp\u003EBoth\u003C/p\u003E"
                 },
                 {
-                  "content": "The building should include retail space. tentisspace",
+                  "content": "The building should include retail space. tienphongSpace",
                   "correctAnswer": "26a45b73-5cbf-4b1e-8d8e-f1daa878905b",
                   "file": null,
                   "answerList": null,
@@ -3448,7 +3448,7 @@
                   "suggestion": "\u003Cp\u003Ewoman\u003C/p\u003E"
                 },
                 {
-                  "content": "Construction should only be on weekdays. tentisspace",
+                  "content": "Construction should only be on weekdays. tienphongSpace",
                   "correctAnswer": "a428c372-f70c-4357-adc7-8b6d92874b09",
                   "file": null,
                   "answerList": null,
@@ -4097,7 +4097,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is little privacy when you live with family.  tentisspace",
+                  "content": "There is little privacy when you live with family.  tienphongSpace",
                   "correctAnswer": "36c1b0c7-a7b7-4e2d-902e-63c95c154310",
                   "file": null,
                   "answerList": null,
@@ -4105,7 +4105,7 @@
                   "suggestion": "\u003Cp\u003Eman\u003C/p\u003E"
                 },
                 {
-                  "content": "Living with house mates is economical.  tentisspace",
+                  "content": "Living with house mates is economical.  tienphongSpace",
                   "correctAnswer": "02b81c67-346e-4ff9-b7fa-4ccf7f41f4c5",
                   "file": null,
                   "answerList": null,
@@ -4113,7 +4113,7 @@
                   "suggestion": "\u003Cp\u003Eboth\u003C/p\u003E"
                 },
                 {
-                  "content": "Cleaning should be done together.  tentisspace",
+                  "content": "Cleaning should be done together.  tienphongSpace",
                   "correctAnswer": "20997222-8fa5-431c-8a1f-4b2bda4e0cdf",
                   "file": null,
                   "answerList": null,
@@ -4121,7 +4121,7 @@
                   "suggestion": "\u003Cp\u003Ewoman\u003C/p\u003E"
                 },
                 {
-                  "content": "It is important to live close to work.  tentisspace",
+                  "content": "It is important to live close to work.  tienphongSpace",
                   "correctAnswer": "20997222-8fa5-431c-8a1f-4b2bda4e0cdf",
                   "file": null,
                   "answerList": null,
@@ -4766,7 +4766,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "70132ac4-e96e-43a4-8be8-7fa204c26a18",
                   "file": null,
                   "answerList": null,
@@ -4774,7 +4774,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -4782,7 +4782,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "f34a8cc1-80e2-4c62-8898-b97872c11aab",
                   "file": null,
                   "answerList": null,
@@ -4790,7 +4790,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -5435,7 +5435,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic Actors : M W B B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.1. Auditions are the most important of casting: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.2. Actors respond best to a strong script: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.3. Theatre acting and movie acting require different skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.4. Actors need to be praised: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Auditions are the most important of casting     tentisspace",
+                  "content": "Auditions are the most important of casting     tienphongSpace",
                   "correctAnswer": "73da5053-a0d3-4e08-a95c-28536033fc56",
                   "file": null,
                   "answerList": null,
@@ -5443,7 +5443,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors respond best to a strong script     tentisspace",
+                  "content": "Actors respond best to a strong script     tienphongSpace",
                   "correctAnswer": "ec54f29d-5892-455c-980b-0ea065d6e35a",
                   "file": null,
                   "answerList": null,
@@ -5451,7 +5451,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Theatre acting and movie acting require different skills     tentisspace",
+                  "content": "Theatre acting and movie acting require different skills     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -5459,7 +5459,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors need to be praised     tentisspace",
+                  "content": "Actors need to be praised     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -6104,7 +6104,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nam nói trước WMBM \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.1. Art is only suitable for the privileged few: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.2. The government should invest more in arts: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.3. Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.4. In the future, art will become more accessible: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few        tentisspace",
+                  "content": "Art is only suitable for the privileged few        tienphongSpace",
                   "correctAnswer": "77a5ba50-98ac-4281-ad99-afa809e11ae1",
                   "file": null,
                   "answerList": null,
@@ -6112,7 +6112,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts        tentisspace",
+                  "content": "The government should invest more in arts        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -6120,7 +6120,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early        tentisspace",
+                  "content": "Children should be exposed to art early        tienphongSpace",
                   "correctAnswer": "bae1474b-67b5-4b03-9231-0a9fe0bf77a7",
                   "file": null,
                   "answerList": null,
@@ -6128,7 +6128,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible        tentisspace",
+                  "content": "In the future, art will become more accessible        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -6717,7 +6717,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: politics - Nam nói trước : BMWB\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- young people are becoming more interested in politics: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social media has changed political activism: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People are better informed political issues: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More women are likely to participate in politics: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "young people are becoming more interested in politics     tentisspace",
+                  "content": "young people are becoming more interested in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -6725,7 +6725,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social media has changed political activism     tentisspace",
+                  "content": "Social media has changed political activism     tienphongSpace",
                   "correctAnswer": "0c49dd06-cfdb-4ae2-8505-4b867be92fc0",
                   "file": null,
                   "answerList": null,
@@ -6733,7 +6733,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": " People are better informed political issues     tentisspace",
+                  "content": " People are better informed political issues     tienphongSpace",
                   "correctAnswer": "9b74cba1-c25e-4720-8145-7939e669bfb2",
                   "file": null,
                   "answerList": null,
@@ -6741,7 +6741,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More women are likely to participate in politics     tentisspace",
+                  "content": "More women are likely to participate in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -7218,7 +7218,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong\u003E15. Topic: urban farming - Nữ nói trước: MWWB \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E- Living space is more important than farming space: M\u003C/p\u003E\u003Cp\u003E- Urban farming sites can be visually appealing: B\u003C/p\u003E\u003Cp\u003E- Urban farming can benefit local economies: W\u003C/p\u003E\u003Cp\u003E- Urban farming cannot meet food needs: B\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Living space is more important than farming space     tentisspace",
+                  "content": "Living space is more important than farming space     tienphongSpace",
                   "correctAnswer": "580542eb-5b2f-4454-a9b5-0ed50c2f0704",
                   "file": null,
                   "answerList": null,
@@ -7226,7 +7226,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming sites can be visually appealing     tentisspace",
+                  "content": "Urban farming sites can be visually appealing     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -7234,7 +7234,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming can benefit local economics     tentisspace",
+                  "content": "Urban farming can benefit local economics     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -7242,7 +7242,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming cannot meet food needs     tentisspace",
+                  "content": "Urban farming cannot meet food needs     tienphongSpace",
                   "correctAnswer": "7cf0a6da-67b4-47ff-b077-f8522d7e8e71",
                   "file": null,
                   "answerList": null,
@@ -8277,7 +8277,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ECommunity design - BWMB ( 0120 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EBuilding design\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E can influence people’s behavior: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Creating community \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Ecan take time\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EWork\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E communities and social communities are the same: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETechnology \u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003Ehas changed how the community forms: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: You know, I believe building design can shape people’s behaviors and interactions from the start. When spaces are designed well, people feel comfortable and naturally start connecting.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: Of course, design matters, but there’s no shortcut to building real community connections. Creating community takes time and consistency, even in spaces that encourage interaction.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Really? But I also feel that work communities and social communities aren’t as different as we might think. Both require spaces that help people feel connected and valued, whether it’s at work or in social settings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Yes, I agree, but I think technology has really changed how communities form. It makes connecting so much easier, and people don’t always need to meet face-to-face to feel a sense of connection.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: I see that, but I don’t think online connections can fully replace in-person gatherings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETHIẾT KẾ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E 01 \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETÒA NHÀ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÓ THỂ MẤT THỜI GIAN\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E là 20 năm vì chưa có \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÔNG NGHỆ\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Building design can influence people’s behavior    tentisspace",
+                  "content": "Building design can influence people’s behavior    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -8285,7 +8285,7 @@
                   "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E"
                 },
                 {
-                  "content": "Creating community can take time    tentisspace",
+                  "content": "Creating community can take time    tienphongSpace",
                   "correctAnswer": "93fcab97-ca23-457d-a912-631bf0abff29",
                   "file": null,
                   "answerList": null,
@@ -8293,7 +8293,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Work communities and social communities are the same    tentisspace",
+                  "content": "Work communities and social communities are the same    tienphongSpace",
                   "correctAnswer": "1386d5a3-54f5-48a2-a734-b175437b03bd",
                   "file": null,
                   "answerList": null,
@@ -8301,7 +8301,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technology has changed how community forms    tentisspace",
+                  "content": "Technology has changed how community forms    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -8780,7 +8780,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : changes in the workplace - Nữ nói trước : WMBW\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Continuity is important when planning a career: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job security cannot be guaranteed: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job satisfaction is important for motivator: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Technological improvement is good for the economy: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Continuity is important when planning a career:      tentisspace",
+                  "content": "Continuity is important when planning a career:      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -8788,7 +8788,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job security cannot be guaranteed      tentisspace",
+                  "content": "Job security cannot be guaranteed      tienphongSpace",
                   "correctAnswer": "4c0919f3-6e62-4dc4-8e76-481bce1be771",
                   "file": null,
                   "answerList": null,
@@ -8796,7 +8796,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job satisfaction is important for motivator      tentisspace",
+                  "content": "Job satisfaction is important for motivator      tienphongSpace",
                   "correctAnswer": "759e291c-2cf5-4ef3-abc7-edffb8446bcb",
                   "file": null,
                   "answerList": null,
@@ -8804,7 +8804,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technological improvement is good for the economy      tentisspace",
+                  "content": "Technological improvement is good for the economy      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -9449,7 +9449,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15. Topic : internet. W B M B ( 1020 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.1. There is too much information on the internet: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.2. Using the internet requires skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.3. The internet is changing the way we think: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.4. The Internet has made people less patient: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is too much information on the internet             tentisspace",
+                  "content": "There is too much information on the internet             tienphongSpace",
                   "correctAnswer": "dd740832-5a08-4f91-ba1a-ad6d86b54cd4",
                   "file": null,
                   "answerList": null,
@@ -9457,7 +9457,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Using the internet requires skills             tentisspace",
+                  "content": "Using the internet requires skills             tienphongSpace",
                   "correctAnswer": "c051c8dd-38fc-4e45-ae86-910a1aaff7d5",
                   "file": null,
                   "answerList": null,
@@ -9465,7 +9465,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The internet is changing the way we think             tentisspace",
+                  "content": "The internet is changing the way we think             tienphongSpace",
                   "correctAnswer": "19a9da30-dfe8-45aa-817e-38ee500abace",
                   "file": null,
                   "answerList": null,
@@ -9473,7 +9473,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Internet has made people less patient             tentisspace",
+                  "content": "Internet has made people less patient             tienphongSpace",
                   "correctAnswer": "c051c8dd-38fc-4e45-ae86-910a1aaff7d5",
                   "file": null,
                   "answerList": null,
@@ -10118,7 +10118,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Emusic and singer : WBMB - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- singers play a good role for young people: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- taste in music is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a universal language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can minupulate people's feelings : B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people             tentisspace",
+                  "content": "Singers play a good role for young people             tienphongSpace",
                   "correctAnswer": "375aab5e-66ad-4e1f-babb-40ef74518945",
                   "file": null,
                   "answerList": null,
@@ -10126,7 +10126,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing             tentisspace",
+                  "content": "Taste in music is a highly personal thing             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -10134,7 +10134,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language             tentisspace",
+                  "content": "Music is a universal language             tienphongSpace",
                   "correctAnswer": "9b74d911-4556-4d3a-b45a-374e40f0e16d",
                   "file": null,
                   "answerList": null,
@@ -10142,7 +10142,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can minupulate people's feelings             tentisspace",
+                  "content": "Music can minupulate people's feelings             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -10870,7 +10870,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E15. Topic :\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E information and technology - Nữ nói trước\u003C/span\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E : WMMB\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The future generation will fail to cope with new information: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The information revolution will be good for the economy: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- No computer is superior to the human brain: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -10878,7 +10878,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -10886,7 +10886,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -10894,7 +10894,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -11622,7 +11622,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003EUniversity and technology\u003C/span\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E. B M W M - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Technology helps make education more accessible: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social interaction is important: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The diverse curriculum is not an advantage: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- University competition should be encouraged: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Technology helps make education more accessible     tentisspace",
+                  "content": "Technology helps make education more accessible     tienphongSpace",
                   "correctAnswer": "a687fcff-e1f3-4071-a275-198a649e8b01",
                   "file": null,
                   "answerList": null,
@@ -11630,7 +11630,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social interaction is important     tentisspace",
+                  "content": "Social interaction is important     tienphongSpace",
                   "correctAnswer": "f47a5005-798e-44b5-82f2-f91b8ee87567",
                   "file": null,
                   "answerList": null,
@@ -11638,7 +11638,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The diverse curriculum is not an advantage     tentisspace",
+                  "content": "The diverse curriculum is not an advantage     tienphongSpace",
                   "correctAnswer": "6518c0c7-0b4e-4222-8852-8acefbdc2e48",
                   "file": null,
                   "answerList": null,
@@ -11646,7 +11646,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "University competition should be encouraged     tentisspace",
+                  "content": "University competition should be encouraged     tienphongSpace",
                   "correctAnswer": "f47a5005-798e-44b5-82f2-f91b8ee87567",
                   "file": null,
                   "answerList": null,
@@ -12291,7 +12291,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15. Topic : internet. M B W B ( 1020 )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.1. There is too much information on the internet: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.2. Using the internet requires skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.3. The internet is changing the way we think: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.4. The Internet has made people less patient: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is too much information on the internet        tentisspace",
+                  "content": "There is too much information on the internet        tienphongSpace",
                   "correctAnswer": "a714181b-602a-4ddf-9cbb-40f17a5c0cfb",
                   "file": null,
                   "answerList": null,
@@ -12299,7 +12299,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Using internet requires skills        tentisspace",
+                  "content": "Using internet requires skills        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -12307,7 +12307,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The internet is changing the way we think        tentisspace",
+                  "content": "The internet is changing the way we think        tienphongSpace",
                   "correctAnswer": "0416b2b4-7603-4033-b1e6-2618a93a4914",
                   "file": null,
                   "answerList": null,
@@ -12315,7 +12315,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Internet has made people less patient        tentisspace",
+                  "content": "Internet has made people less patient        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -12849,7 +12849,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Einformation and technology - Nam nói trước: M W W B \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The future generation will fail to cope with new information: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The information revolution will be good for the economy: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- No computer is superior to the human brain: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -12857,7 +12857,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -12865,7 +12865,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -12873,7 +12873,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -15213,7 +15213,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nam nói trước WMBM \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.1. Art is only suitable for the privileged few: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.2. The government should invest more in arts: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.3. Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.4. In the future, art will become more accessible: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few        tentisspace",
+                  "content": "Art is only suitable for the privileged few        tienphongSpace",
                   "correctAnswer": "77a5ba50-98ac-4281-ad99-afa809e11ae1",
                   "file": null,
                   "answerList": null,
@@ -15221,7 +15221,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts        tentisspace",
+                  "content": "The government should invest more in arts        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -15229,7 +15229,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early        tentisspace",
+                  "content": "Children should be exposed to art early        tienphongSpace",
                   "correctAnswer": "bae1474b-67b5-4b03-9231-0a9fe0bf77a7",
                   "file": null,
                   "answerList": null,
@@ -15237,7 +15237,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible        tentisspace",
+                  "content": "In the future, art will become more accessible        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -18221,7 +18221,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(153, 0, 255);\"\u003Emusic and singer\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E : MBWB ( 2010 ) - Nam nói trước ( Mới đổi ngược lại phiên bản )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Singers play a good role \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Efor young people\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETaste in music\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Euniversal\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Emanipulate \u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003Epeople's \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Efeelings\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EÂm nhạc \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECHO NGƯỜI TRẺ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E ( sinh năm &gt; 2010 ) là \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EGU ÂM NHẠC PHỔ BIẾN THAO TÚNG CẢM XÚC\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people            tentisspace",
+                  "content": "Singers play a good role for young people            tienphongSpace",
                   "correctAnswer": "e73dff46-9692-4361-b224-8081a3b489fb",
                   "file": null,
                   "answerList": null,
@@ -18229,7 +18229,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing            tentisspace",
+                  "content": "Taste in music is a highly personal thing            tienphongSpace",
                   "correctAnswer": "411a7816-e5e4-4fd6-b78a-2027d155db95",
                   "file": null,
                   "answerList": null,
@@ -18237,7 +18237,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language            tentisspace",
+                  "content": "Music is a universal language            tienphongSpace",
                   "correctAnswer": "a8d17a11-9c96-4e85-862e-b802ca8f5bec",
                   "file": null,
                   "answerList": null,
@@ -18245,7 +18245,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can manipulate people's feelings            tentisspace",
+                  "content": "Music can manipulate people's feelings            tienphongSpace",
                   "correctAnswer": "411a7816-e5e4-4fd6-b78a-2027d155db95",
                   "file": null,
                   "answerList": null,
@@ -19954,7 +19954,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Emusic and singer : WBMB - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- singers play a good role for young people: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- taste in music is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a universal language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can minupulate people's feelings : B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people             tentisspace",
+                  "content": "Singers play a good role for young people             tienphongSpace",
                   "correctAnswer": "375aab5e-66ad-4e1f-babb-40ef74518945",
                   "file": null,
                   "answerList": null,
@@ -19962,7 +19962,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing             tentisspace",
+                  "content": "Taste in music is a highly personal thing             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -19970,7 +19970,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language             tentisspace",
+                  "content": "Music is a universal language             tienphongSpace",
                   "correctAnswer": "9b74d911-4556-4d3a-b45a-374e40f0e16d",
                   "file": null,
                   "answerList": null,
@@ -19978,7 +19978,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can minupulate people's feelings             tentisspace",
+                  "content": "Music can minupulate people's feelings             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -20259,7 +20259,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "70132ac4-e96e-43a4-8be8-7fa204c26a18",
                   "file": null,
                   "answerList": null,
@@ -20267,7 +20267,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -20275,7 +20275,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "f34a8cc1-80e2-4c62-8898-b97872c11aab",
                   "file": null,
                   "answerList": null,
@@ -20283,7 +20283,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -20486,7 +20486,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic Actors : M W B B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.1. Auditions are the most important of casting: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.2. Actors respond best to a strong script: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.3. Theatre acting and movie acting require different skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.4. Actors need to be praised: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Auditions are the most important of casting     tentisspace",
+                  "content": "Auditions are the most important of casting     tienphongSpace",
                   "correctAnswer": "73da5053-a0d3-4e08-a95c-28536033fc56",
                   "file": null,
                   "answerList": null,
@@ -20494,7 +20494,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors respond best to a strong script     tentisspace",
+                  "content": "Actors respond best to a strong script     tienphongSpace",
                   "correctAnswer": "ec54f29d-5892-455c-980b-0ea065d6e35a",
                   "file": null,
                   "answerList": null,
@@ -20502,7 +20502,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Theatre acting and movie acting require different skills     tentisspace",
+                  "content": "Theatre acting and movie acting require different skills     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -20510,7 +20510,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors need to be praised     tentisspace",
+                  "content": "Actors need to be praised     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -21211,7 +21211,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E15. Topic :\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E information and technology - Nữ nói trước\u003C/span\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E : WMMB\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The future generation will fail to cope with new information: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The information revolution will be good for the economy: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- No computer is superior to the human brain: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -21219,7 +21219,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -21227,7 +21227,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -21235,7 +21235,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -21783,7 +21783,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Echanges in the workplace - Nam nói trước: MWBM\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Continuity is important when planning a career: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Job security cannot be guaranteed: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Job satisfaction is important for motivator: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Technological improvement is good for the economy: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Continuity is important when planning a career      tentisspace",
+                  "content": "Continuity is important when planning a career      tienphongSpace",
                   "correctAnswer": "abacc0f4-0527-4467-94d9-95b05b795447",
                   "file": null,
                   "answerList": null,
@@ -21791,7 +21791,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job security cannot be guaranteed      tentisspace",
+                  "content": "Job security cannot be guaranteed      tienphongSpace",
                   "correctAnswer": "688c0606-77e9-4d75-8e86-e568770f5ffa",
                   "file": null,
                   "answerList": null,
@@ -21799,7 +21799,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job satisfaction is important for motivator      tentisspace",
+                  "content": "Job satisfaction is important for motivator      tienphongSpace",
                   "correctAnswer": "741bf8a7-91fe-49af-aa18-8918a0178052",
                   "file": null,
                   "answerList": null,
@@ -21807,7 +21807,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technological improvement is good for the economy      tentisspace",
+                  "content": "Technological improvement is good for the economy      tienphongSpace",
                   "correctAnswer": "abacc0f4-0527-4467-94d9-95b05b795447",
                   "file": null,
                   "answerList": null,
@@ -22034,7 +22034,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic Actors : M W B B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.1. Auditions are the most important of casting: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.2. Actors respond best to a strong script: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.3. Theatre acting and movie acting require different skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.4. Actors need to be praised: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Auditions are the most important of casting     tentisspace",
+                  "content": "Auditions are the most important of casting     tienphongSpace",
                   "correctAnswer": "73da5053-a0d3-4e08-a95c-28536033fc56",
                   "file": null,
                   "answerList": null,
@@ -22042,7 +22042,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors respond best to a strong script     tentisspace",
+                  "content": "Actors respond best to a strong script     tienphongSpace",
                   "correctAnswer": "ec54f29d-5892-455c-980b-0ea065d6e35a",
                   "file": null,
                   "answerList": null,
@@ -22050,7 +22050,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Theatre acting and movie acting require different skills     tentisspace",
+                  "content": "Theatre acting and movie acting require different skills     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -22058,7 +22058,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors need to be praised     tentisspace",
+                  "content": "Actors need to be praised     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -22675,7 +22675,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : University B W M W - Nam nói trước﻿\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- technology helps make education more accessible: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Social interaction is important: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- The diverse curriculum is not an advantage: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- University competition should be encouraged: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "technology helps make education more accessible      tentisspace",
+                  "content": "technology helps make education more accessible      tienphongSpace",
                   "correctAnswer": "e9b1096f-758d-4bd5-9a99-45ca4ccaf170",
                   "file": null,
                   "answerList": null,
@@ -22683,7 +22683,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social interaction is important      tentisspace",
+                  "content": "Social interaction is important      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -22691,7 +22691,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The điverse curriculum is not an advantage      tentisspace",
+                  "content": "The điverse curriculum is not an advantage      tienphongSpace",
                   "correctAnswer": "8b2607c8-4bd3-42c2-878b-2ff19da655c2",
                   "file": null,
                   "answerList": null,
@@ -22699,7 +22699,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "University eompetition should be encouraged      tentisspace",
+                  "content": "University eompetition should be encouraged      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -23840,7 +23840,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "70132ac4-e96e-43a4-8be8-7fa204c26a18",
                   "file": null,
                   "answerList": null,
@@ -23848,7 +23848,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -23856,7 +23856,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "f34a8cc1-80e2-4c62-8898-b97872c11aab",
                   "file": null,
                   "answerList": null,
@@ -23864,7 +23864,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -24814,7 +24814,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15. Topic : internet. M B W B ( 1020 )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.1. There is too much information on the internet: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.2. Using the internet requires skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.3. The internet is changing the way we think: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.4. The Internet has made people less patient: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is too much information on the internet        tentisspace",
+                  "content": "There is too much information on the internet        tienphongSpace",
                   "correctAnswer": "a714181b-602a-4ddf-9cbb-40f17a5c0cfb",
                   "file": null,
                   "answerList": null,
@@ -24822,7 +24822,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Using internet requires skills        tentisspace",
+                  "content": "Using internet requires skills        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -24830,7 +24830,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The internet is changing the way we think        tentisspace",
+                  "content": "The internet is changing the way we think        tienphongSpace",
                   "correctAnswer": "0416b2b4-7603-4033-b1e6-2618a93a4914",
                   "file": null,
                   "answerList": null,
@@ -24838,7 +24838,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Internet has made people less patient        tentisspace",
+                  "content": "Internet has made people less patient        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -24875,7 +24875,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nữ nói trước : M\u003C/span\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E W B W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Art is only suitable for the privileged few: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The government should invest more in arts: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- In the future, art will become more accessible: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few    tentisspace",
+                  "content": "Art is only suitable for the privileged few    tienphongSpace",
                   "correctAnswer": "3f14e517-920e-4fd8-a95f-ab4207b4b343",
                   "file": null,
                   "answerList": null,
@@ -24883,7 +24883,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts    tentisspace",
+                  "content": "The government should invest more in arts    tienphongSpace",
                   "correctAnswer": "a6651588-f1e3-477c-b3c5-bb708ce446fd",
                   "file": null,
                   "answerList": null,
@@ -24891,7 +24891,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early    tentisspace",
+                  "content": "Children should be exposed to art early    tienphongSpace",
                   "correctAnswer": "47ade225-ada3-4899-908c-c478759a3709",
                   "file": null,
                   "answerList": null,
@@ -24899,7 +24899,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible    tentisspace",
+                  "content": "In the future, art will become more accessible    tienphongSpace",
                   "correctAnswer": "a6651588-f1e3-477c-b3c5-bb708ce446fd",
                   "file": null,
                   "answerList": null,
@@ -25382,7 +25382,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "1. Parents should better manage their children’s diets. tentisspace",
+                  "content": "1. Parents should better manage their children’s diets. tienphongSpace",
                   "correctAnswer": "2f1a1efa-d173-4eda-930f-2500697a35cf",
                   "file": null,
                   "answerList": null,
@@ -25390,7 +25390,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "2. Parents should support their child’s interest in sport.  tentisspace",
+                  "content": "2. Parents should support their child’s interest in sport.  tienphongSpace",
                   "correctAnswer": "350a2151-4b06-4ed7-9857-049fd38495e3",
                   "file": null,
                   "answerList": null,
@@ -25398,7 +25398,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "3. Quiet time can promote children’s concentration abilities. tentisspace",
+                  "content": "3. Quiet time can promote children’s concentration abilities. tienphongSpace",
                   "correctAnswer": "2f1a1efa-d173-4eda-930f-2500697a35cf",
                   "file": null,
                   "answerList": null,
@@ -25406,7 +25406,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "4. Excessive sleep can be bad for young people. tentisspace",
+                  "content": "4. Excessive sleep can be bad for young people. tienphongSpace",
                   "correctAnswer": "7674ed51-2743-4658-b114-799383023ffc",
                   "file": null,
                   "answerList": null,
@@ -26120,7 +26120,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Einformation and technology - Nam nói trước: M W W B \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The future generation will fail to cope with new information: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The information revolution will be good for the economy: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- No computer is superior to the human brain: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -26128,7 +26128,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -26136,7 +26136,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -26144,7 +26144,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -27033,7 +27033,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: politics - Nam nói trước : BMWB\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- young people are becoming more interested in politics: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social media has changed political activism: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People are better informed political issues: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More women are likely to participate in politics: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "young people are becoming more interested in politics     tentisspace",
+                  "content": "young people are becoming more interested in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -27041,7 +27041,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social media has changed political activism     tentisspace",
+                  "content": "Social media has changed political activism     tienphongSpace",
                   "correctAnswer": "0c49dd06-cfdb-4ae2-8505-4b867be92fc0",
                   "file": null,
                   "answerList": null,
@@ -27049,7 +27049,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": " People are better informed political issues     tentisspace",
+                  "content": " People are better informed political issues     tienphongSpace",
                   "correctAnswer": "9b74cba1-c25e-4720-8145-7939e669bfb2",
                   "file": null,
                   "answerList": null,
@@ -27057,7 +27057,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More women are likely to participate in politics     tentisspace",
+                  "content": "More women are likely to participate in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -27177,7 +27177,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong\u003E15. Topic: urban farming - Nữ nói trước: MWWB \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E- Living space is more important than farming space: M\u003C/p\u003E\u003Cp\u003E- Urban farming sites can be visually appealing: B\u003C/p\u003E\u003Cp\u003E- Urban farming can benefit local economies: W\u003C/p\u003E\u003Cp\u003E- Urban farming cannot meet food needs: B\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Living space is more important than farming space     tentisspace",
+                  "content": "Living space is more important than farming space     tienphongSpace",
                   "correctAnswer": "580542eb-5b2f-4454-a9b5-0ed50c2f0704",
                   "file": null,
                   "answerList": null,
@@ -27185,7 +27185,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming sites can be visually appealing     tentisspace",
+                  "content": "Urban farming sites can be visually appealing     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -27193,7 +27193,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming can benefit local economics     tentisspace",
+                  "content": "Urban farming can benefit local economics     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -27201,7 +27201,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming cannot meet food needs     tentisspace",
+                  "content": "Urban farming cannot meet food needs     tienphongSpace",
                   "correctAnswer": "7cf0a6da-67b4-47ff-b077-f8522d7e8e71",
                   "file": null,
                   "answerList": null,
@@ -27487,7 +27487,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Emusic and singer : WBMB - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- singers play a good role for young people: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- taste in music is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a universal language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can minupulate people's feelings : B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people             tentisspace",
+                  "content": "Singers play a good role for young people             tienphongSpace",
                   "correctAnswer": "375aab5e-66ad-4e1f-babb-40ef74518945",
                   "file": null,
                   "answerList": null,
@@ -27495,7 +27495,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing             tentisspace",
+                  "content": "Taste in music is a highly personal thing             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -27503,7 +27503,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language             tentisspace",
+                  "content": "Music is a universal language             tienphongSpace",
                   "correctAnswer": "9b74d911-4556-4d3a-b45a-374e40f0e16d",
                   "file": null,
                   "answerList": null,
@@ -27511,7 +27511,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can minupulate people's feelings             tentisspace",
+                  "content": "Music can minupulate people's feelings             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -28471,7 +28471,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong\u003E15. Topic: urban farming - Nữ nói trước: MWWB \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E- Living space is more important than farming space: M\u003C/p\u003E\u003Cp\u003E- Urban farming sites can be visually appealing: B\u003C/p\u003E\u003Cp\u003E- Urban farming can benefit local economies: W\u003C/p\u003E\u003Cp\u003E- Urban farming cannot meet food needs: B\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Living space is more important than farming space     tentisspace",
+                  "content": "Living space is more important than farming space     tienphongSpace",
                   "correctAnswer": "580542eb-5b2f-4454-a9b5-0ed50c2f0704",
                   "file": null,
                   "answerList": null,
@@ -28479,7 +28479,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming sites can be visually appealing     tentisspace",
+                  "content": "Urban farming sites can be visually appealing     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -28487,7 +28487,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming can benefit local economics     tentisspace",
+                  "content": "Urban farming can benefit local economics     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -28495,7 +28495,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming cannot meet food needs     tentisspace",
+                  "content": "Urban farming cannot meet food needs     tienphongSpace",
                   "correctAnswer": "7cf0a6da-67b4-47ff-b077-f8522d7e8e71",
                   "file": null,
                   "answerList": null,
@@ -29000,7 +29000,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "70132ac4-e96e-43a4-8be8-7fa204c26a18",
                   "file": null,
                   "answerList": null,
@@ -29008,7 +29008,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -29016,7 +29016,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "f34a8cc1-80e2-4c62-8898-b97872c11aab",
                   "file": null,
                   "answerList": null,
@@ -29024,7 +29024,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -29227,7 +29227,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nam nói trước WMBM \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.1. Art is only suitable for the privileged few: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.2. The government should invest more in arts: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.3. Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.4. In the future, art will become more accessible: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few        tentisspace",
+                  "content": "Art is only suitable for the privileged few        tienphongSpace",
                   "correctAnswer": "77a5ba50-98ac-4281-ad99-afa809e11ae1",
                   "file": null,
                   "answerList": null,
@@ -29235,7 +29235,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts        tentisspace",
+                  "content": "The government should invest more in arts        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -29243,7 +29243,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early        tentisspace",
+                  "content": "Children should be exposed to art early        tienphongSpace",
                   "correctAnswer": "bae1474b-67b5-4b03-9231-0a9fe0bf77a7",
                   "file": null,
                   "answerList": null,
@@ -29251,7 +29251,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible        tentisspace",
+                  "content": "In the future, art will become more accessible        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -29537,7 +29537,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : changes in the workplace - Nữ nói trước : WMBW\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Continuity is important when planning a career: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job security cannot be guaranteed: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job satisfaction is important for motivator: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Technological improvement is good for the economy: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Continuity is important when planning a career:      tentisspace",
+                  "content": "Continuity is important when planning a career:      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -29545,7 +29545,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job security cannot be guaranteed      tentisspace",
+                  "content": "Job security cannot be guaranteed      tienphongSpace",
                   "correctAnswer": "4c0919f3-6e62-4dc4-8e76-481bce1be771",
                   "file": null,
                   "answerList": null,
@@ -29553,7 +29553,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job satisfaction is important for motivator      tentisspace",
+                  "content": "Job satisfaction is important for motivator      tienphongSpace",
                   "correctAnswer": "759e291c-2cf5-4ef3-abc7-edffb8446bcb",
                   "file": null,
                   "answerList": null,
@@ -29561,7 +29561,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technological improvement is good for the economy      tentisspace",
+                  "content": "Technological improvement is good for the economy      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -31754,7 +31754,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : politics: - Nữ nói trước: B W M B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- young people are becoming more interested in politics: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social media has changed political activism: W ( sẽ có từ change form để bắt Key )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People are better informed political issues: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More women are likely to participate in politics: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Young people are becoming more interested in politics      tentisspace",
+                  "content": "Young people are becoming more interested in politics      tienphongSpace",
                   "correctAnswer": "d9d8ed4e-eada-468e-a749-b21844f4661e",
                   "file": null,
                   "answerList": null,
@@ -31762,7 +31762,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social media has changed political activism      tentisspace",
+                  "content": "Social media has changed political activism      tienphongSpace",
                   "correctAnswer": "4747e261-b9d3-4ffa-9eab-03a4e7d77a12",
                   "file": null,
                   "answerList": null,
@@ -31770,7 +31770,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "People are better informed political issues      tentisspace",
+                  "content": "People are better informed political issues      tienphongSpace",
                   "correctAnswer": "6830902a-9393-4aea-aabf-b7ba3595031d",
                   "file": null,
                   "answerList": null,
@@ -31778,7 +31778,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More women are likely to participate in politics      tentisspace",
+                  "content": "More women are likely to participate in politics      tienphongSpace",
                   "correctAnswer": "d9d8ed4e-eada-468e-a749-b21844f4661e",
                   "file": null,
                   "answerList": null,
@@ -32326,7 +32326,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E15. Topic :\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E information and technology - Nữ nói trước\u003C/span\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E : WMMB\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The future generation will fail to cope with new information: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The information revolution will be good for the economy: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- No computer is superior to the human brain: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -32334,7 +32334,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -32342,7 +32342,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -32350,7 +32350,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -37763,7 +37763,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : University B W M W - Nam nói trước﻿\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- technology helps make education more accessible: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Social interaction is important: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- The diverse curriculum is not an advantage: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- University competition should be encouraged: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "technology helps make education more accessible      tentisspace",
+                  "content": "technology helps make education more accessible      tienphongSpace",
                   "correctAnswer": "e9b1096f-758d-4bd5-9a99-45ca4ccaf170",
                   "file": null,
                   "answerList": null,
@@ -37771,7 +37771,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social interaction is important      tentisspace",
+                  "content": "Social interaction is important      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -37779,7 +37779,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The điverse curriculum is not an advantage      tentisspace",
+                  "content": "The điverse curriculum is not an advantage      tienphongSpace",
                   "correctAnswer": "8b2607c8-4bd3-42c2-878b-2ff19da655c2",
                   "file": null,
                   "answerList": null,
@@ -37787,7 +37787,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "University eompetition should be encouraged      tentisspace",
+                  "content": "University eompetition should be encouraged      tienphongSpace",
                   "correctAnswer": "dfdb392e-3cb2-4686-8990-6cc12ca143ce",
                   "file": null,
                   "answerList": null,
@@ -37824,7 +37824,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic Actors : M W B B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.1. Auditions are the most important of casting: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.2. Actors respond best to a strong script: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.3. Theatre acting and movie acting require different skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.4. Actors need to be praised: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Auditions are the most important of casting     tentisspace",
+                  "content": "Auditions are the most important of casting     tienphongSpace",
                   "correctAnswer": "73da5053-a0d3-4e08-a95c-28536033fc56",
                   "file": null,
                   "answerList": null,
@@ -37832,7 +37832,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors respond best to a strong script     tentisspace",
+                  "content": "Actors respond best to a strong script     tienphongSpace",
                   "correctAnswer": "ec54f29d-5892-455c-980b-0ea065d6e35a",
                   "file": null,
                   "answerList": null,
@@ -37840,7 +37840,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Theatre acting and movie acting require different skills     tentisspace",
+                  "content": "Theatre acting and movie acting require different skills     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -37848,7 +37848,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors need to be praised     tentisspace",
+                  "content": "Actors need to be praised     tienphongSpace",
                   "correctAnswer": "6f2caaa5-6b39-4b84-9118-aea23d291d38",
                   "file": null,
                   "answerList": null,
@@ -37885,7 +37885,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nam nói trước WMBM \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.1. Art is only suitable for the privileged few: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.2. The government should invest more in arts: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.3. Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.4. In the future, art will become more accessible: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few        tentisspace",
+                  "content": "Art is only suitable for the privileged few        tienphongSpace",
                   "correctAnswer": "77a5ba50-98ac-4281-ad99-afa809e11ae1",
                   "file": null,
                   "answerList": null,
@@ -37893,7 +37893,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts        tentisspace",
+                  "content": "The government should invest more in arts        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -37901,7 +37901,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early        tentisspace",
+                  "content": "Children should be exposed to art early        tienphongSpace",
                   "correctAnswer": "bae1474b-67b5-4b03-9231-0a9fe0bf77a7",
                   "file": null,
                   "answerList": null,
@@ -37909,7 +37909,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible        tentisspace",
+                  "content": "In the future, art will become more accessible        tienphongSpace",
                   "correctAnswer": "ed17f4b0-eba8-4d78-ad23-a3629c49121d",
                   "file": null,
                   "answerList": null,
@@ -37946,7 +37946,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: politics - Nam nói trước : BMWB\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- young people are becoming more interested in politics: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social media has changed political activism: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People are better informed political issues: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More women are likely to participate in politics: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "young people are becoming more interested in politics     tentisspace",
+                  "content": "young people are becoming more interested in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -37954,7 +37954,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social media has changed political activism     tentisspace",
+                  "content": "Social media has changed political activism     tienphongSpace",
                   "correctAnswer": "0c49dd06-cfdb-4ae2-8505-4b867be92fc0",
                   "file": null,
                   "answerList": null,
@@ -37962,7 +37962,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": " People are better informed political issues     tentisspace",
+                  "content": " People are better informed political issues     tienphongSpace",
                   "correctAnswer": "9b74cba1-c25e-4720-8145-7939e669bfb2",
                   "file": null,
                   "answerList": null,
@@ -37970,7 +37970,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More women are likely to participate in politics     tentisspace",
+                  "content": "More women are likely to participate in politics     tienphongSpace",
                   "correctAnswer": "a1349cc7-f43e-4437-bbed-40fe041c00a2",
                   "file": null,
                   "answerList": null,
@@ -38007,7 +38007,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15. Topic : internet. W B M B ( 1020 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.1. There is too much information on the internet: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.2. Using the internet requires skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.3. The internet is changing the way we think: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.4. The Internet has made people less patient: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is too much information on the internet             tentisspace",
+                  "content": "There is too much information on the internet             tienphongSpace",
                   "correctAnswer": "dd740832-5a08-4f91-ba1a-ad6d86b54cd4",
                   "file": null,
                   "answerList": null,
@@ -38015,7 +38015,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Using the internet requires skills             tentisspace",
+                  "content": "Using the internet requires skills             tienphongSpace",
                   "correctAnswer": "c051c8dd-38fc-4e45-ae86-910a1aaff7d5",
                   "file": null,
                   "answerList": null,
@@ -38023,7 +38023,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The internet is changing the way we think             tentisspace",
+                  "content": "The internet is changing the way we think             tienphongSpace",
                   "correctAnswer": "19a9da30-dfe8-45aa-817e-38ee500abace",
                   "file": null,
                   "answerList": null,
@@ -38031,7 +38031,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Internet has made people less patient             tentisspace",
+                  "content": "Internet has made people less patient             tienphongSpace",
                   "correctAnswer": "c051c8dd-38fc-4e45-ae86-910a1aaff7d5",
                   "file": null,
                   "answerList": null,
@@ -38068,7 +38068,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Einformation and technology - Nam nói trước: M W W B \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The future generation will fail to cope with new information: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The information revolution will be good for the economy: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- No computer is superior to the human brain: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -38076,7 +38076,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -38084,7 +38084,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -38092,7 +38092,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -38129,7 +38129,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15.Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Eurban farming - Nam nói trước\u003C/span\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E WMMB\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Living space is more important than farming space: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Urban farming sites can be visually appealing: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Urban farming can benefit local economies: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Urban farming cannot meet food needs: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Living space is more important than farming space     tentisspace",
+                  "content": "Living space is more important than farming space     tienphongSpace",
                   "correctAnswer": "dbd9a5f7-a0bd-433e-a9b5-ea248e8fb8cd",
                   "file": null,
                   "answerList": null,
@@ -38137,7 +38137,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming sites can be visually appealing     tentisspace",
+                  "content": "Urban farming sites can be visually appealing     tienphongSpace",
                   "correctAnswer": "d8fcb863-f64a-420a-a2a2-a7063cc6dba7",
                   "file": null,
                   "answerList": null,
@@ -38145,7 +38145,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming can benefit local economics     tentisspace",
+                  "content": "Urban farming can benefit local economics     tienphongSpace",
                   "correctAnswer": "d8fcb863-f64a-420a-a2a2-a7063cc6dba7",
                   "file": null,
                   "answerList": null,
@@ -38153,7 +38153,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming cannot meet food needs     tentisspace",
+                  "content": "Urban farming cannot meet food needs     tienphongSpace",
                   "correctAnswer": "627f9185-4e9e-40b0-9b3e-181d4adfa129",
                   "file": null,
                   "answerList": null,
@@ -38190,7 +38190,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(153, 0, 255);\"\u003Emusic and singer\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E : MBWB ( 2010 ) - Nam nói trước ( Mới đổi ngược lại phiên bản )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Singers play a good role \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Efor young people\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETaste in music\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Euniversal\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Emanipulate \u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003Epeople's \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Efeelings\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EÂm nhạc \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECHO NGƯỜI TRẺ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E ( sinh năm &gt; 2010 ) là \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EGU ÂM NHẠC PHỔ BIẾN THAO TÚNG CẢM XÚC\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people            tentisspace",
+                  "content": "Singers play a good role for young people            tienphongSpace",
                   "correctAnswer": "e73dff46-9692-4361-b224-8081a3b489fb",
                   "file": null,
                   "answerList": null,
@@ -38198,7 +38198,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing            tentisspace",
+                  "content": "Taste in music is a highly personal thing            tienphongSpace",
                   "correctAnswer": "411a7816-e5e4-4fd6-b78a-2027d155db95",
                   "file": null,
                   "answerList": null,
@@ -38206,7 +38206,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language            tentisspace",
+                  "content": "Music is a universal language            tienphongSpace",
                   "correctAnswer": "a8d17a11-9c96-4e85-862e-b802ca8f5bec",
                   "file": null,
                   "answerList": null,
@@ -38214,7 +38214,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can manipulate people's feelings            tentisspace",
+                  "content": "Music can manipulate people's feelings            tienphongSpace",
                   "correctAnswer": "411a7816-e5e4-4fd6-b78a-2027d155db95",
                   "file": null,
                   "answerList": null,
@@ -38251,7 +38251,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Echanges in the workplace - Nam nói trước: MWBM\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Continuity is important when planning a career: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Job security cannot be guaranteed: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Job satisfaction is important for motivator: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(60, 64, 67);\"\u003E- Technological improvement is good for the economy: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Continuity is important when planning a career      tentisspace",
+                  "content": "Continuity is important when planning a career      tienphongSpace",
                   "correctAnswer": "abacc0f4-0527-4467-94d9-95b05b795447",
                   "file": null,
                   "answerList": null,
@@ -38259,7 +38259,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job security cannot be guaranteed      tentisspace",
+                  "content": "Job security cannot be guaranteed      tienphongSpace",
                   "correctAnswer": "688c0606-77e9-4d75-8e86-e568770f5ffa",
                   "file": null,
                   "answerList": null,
@@ -38267,7 +38267,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job satisfaction is important for motivator      tentisspace",
+                  "content": "Job satisfaction is important for motivator      tienphongSpace",
                   "correctAnswer": "741bf8a7-91fe-49af-aa18-8918a0178052",
                   "file": null,
                   "answerList": null,
@@ -38275,7 +38275,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technological improvement is good for the economy      tentisspace",
+                  "content": "Technological improvement is good for the economy      tienphongSpace",
                   "correctAnswer": "abacc0f4-0527-4467-94d9-95b05b795447",
                   "file": null,
                   "answerList": null,
@@ -38312,7 +38312,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic: \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Ethe subject of beauty. - Nam nói trước - WMBM \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People share the very similar ideas about beauty: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Views of beauty change over time: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Beauty can be found in unlikely places: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Traditional ideas of beauty are going to change: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "1d98f968-f7b7-46a6-93f6-d92fd653f263",
                   "file": null,
                   "answerList": null,
@@ -38320,7 +38320,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "a6845f72-28b1-4d59-a60f-61340770ff97",
                   "file": null,
                   "answerList": null,
@@ -38328,7 +38328,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "97dfb487-ea55-4c99-9480-e246d8b402cc",
                   "file": null,
                   "answerList": null,
@@ -38336,7 +38336,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "a6845f72-28b1-4d59-a60f-61340770ff97",
                   "file": null,
                   "answerList": null,
@@ -38373,7 +38373,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ECommunity design - BWMB ( 0120 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EBuilding design\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E can influence people’s behavior: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Creating community \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Ecan take time\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EWork\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E communities and social communities are the same: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETechnology \u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003Ehas changed how the community forms: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: You know, I believe building design can shape people’s behaviors and interactions from the start. When spaces are designed well, people feel comfortable and naturally start connecting.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: Of course, design matters, but there’s no shortcut to building real community connections. Creating community takes time and consistency, even in spaces that encourage interaction.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Really? But I also feel that work communities and social communities aren’t as different as we might think. Both require spaces that help people feel connected and valued, whether it’s at work or in social settings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Yes, I agree, but I think technology has really changed how communities form. It makes connecting so much easier, and people don’t always need to meet face-to-face to feel a sense of connection.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: I see that, but I don’t think online connections can fully replace in-person gatherings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETHIẾT KẾ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E 01 \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETÒA NHÀ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÓ THỂ MẤT THỜI GIAN\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E là 20 năm vì chưa có \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÔNG NGHỆ\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Building design can influence people’s behavior    tentisspace",
+                  "content": "Building design can influence people’s behavior    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -38381,7 +38381,7 @@
                   "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E"
                 },
                 {
-                  "content": "Creating community can take time    tentisspace",
+                  "content": "Creating community can take time    tienphongSpace",
                   "correctAnswer": "93fcab97-ca23-457d-a912-631bf0abff29",
                   "file": null,
                   "answerList": null,
@@ -38389,7 +38389,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Work communities and social communities are the same    tentisspace",
+                  "content": "Work communities and social communities are the same    tienphongSpace",
                   "correctAnswer": "1386d5a3-54f5-48a2-a734-b175437b03bd",
                   "file": null,
                   "answerList": null,
@@ -38397,7 +38397,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technology has changed how community forms    tentisspace",
+                  "content": "Technology has changed how community forms    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -38434,7 +38434,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Ethe local center - WBMM ( 1022 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E- Exhibitions \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eshould be different and diverse. : W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETraditional customs\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E are gradually losing their significance. : B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Local \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003Efestivals\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E will disappear in the near future. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ESchools \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eare important to shaping future generations. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003ETrung tâm địa phương thì có \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETRIỂN LÃM\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E về \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003EPHONG TỤC TRUYỀN THỐNG\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E tại các \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ELỄ HỘI TRƯỜNG HỌC cho 1022 học sinh\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Exhibitions should be different and diverse.    tentisspace",
+                  "content": "Exhibitions should be different and diverse.    tienphongSpace",
                   "correctAnswer": "4a2d6e35-6a06-469b-a047-dbb7737e0c88",
                   "file": null,
                   "answerList": null,
@@ -38442,7 +38442,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional customs are gradually losing their significance    tentisspace",
+                  "content": "Traditional customs are gradually losing their significance    tienphongSpace",
                   "correctAnswer": "9f2bd71a-b7f1-4d33-ba5e-0a624716dc16",
                   "file": null,
                   "answerList": null,
@@ -38450,7 +38450,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Local festivals will disappear in the near future    tentisspace",
+                  "content": "Local festivals will disappear in the near future    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,
@@ -38458,7 +38458,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Schools are important to shaping future generations.    tentisspace",
+                  "content": "Schools are important to shaping future generations.    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,
@@ -41104,7 +41104,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Einformation and technology - Nam nói trước: M W W B \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The future generation will fail to cope with new information: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The information revolution will be good for the economy: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- No computer is superior to the human brain: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -41112,7 +41112,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -41120,7 +41120,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -41128,7 +41128,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -41174,7 +41174,7 @@
               "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "People share the very similar ideas about beauty     tentisspace",
+                  "content": "People share the very similar ideas about beauty     tienphongSpace",
                   "correctAnswer": "70132ac4-e96e-43a4-8be8-7fa204c26a18",
                   "file": null,
                   "answerList": null,
@@ -41182,7 +41182,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Views of beauty change over time:      tentisspace",
+                  "content": "Views of beauty change over time:      tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -41190,7 +41190,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Beauty can be found in unlikely places:     tentisspace",
+                  "content": "Beauty can be found in unlikely places:     tienphongSpace",
                   "correctAnswer": "f34a8cc1-80e2-4c62-8898-b97872c11aab",
                   "file": null,
                   "answerList": null,
@@ -41198,7 +41198,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional ideas of beauty are going to change     tentisspace",
+                  "content": "Traditional ideas of beauty are going to change     tienphongSpace",
                   "correctAnswer": "13cd8d44-4ebb-49a7-97d3-aaa010f1b428",
                   "file": null,
                   "answerList": null,
@@ -41235,7 +41235,7 @@
               "suggestion": "\u003Cp\u003E\u003Cstrong\u003E15. Topic: urban farming - Nữ nói trước: MWWB \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E- Living space is more important than farming space: M\u003C/p\u003E\u003Cp\u003E- Urban farming sites can be visually appealing: B\u003C/p\u003E\u003Cp\u003E- Urban farming can benefit local economies: W\u003C/p\u003E\u003Cp\u003E- Urban farming cannot meet food needs: B\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Living space is more important than farming space     tentisspace",
+                  "content": "Living space is more important than farming space     tienphongSpace",
                   "correctAnswer": "580542eb-5b2f-4454-a9b5-0ed50c2f0704",
                   "file": null,
                   "answerList": null,
@@ -41243,7 +41243,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming sites can be visually appealing     tentisspace",
+                  "content": "Urban farming sites can be visually appealing     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -41251,7 +41251,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming can benefit local economics     tentisspace",
+                  "content": "Urban farming can benefit local economics     tienphongSpace",
                   "correctAnswer": "6f7197cc-9e32-4271-81ee-fd17886ad4ec",
                   "file": null,
                   "answerList": null,
@@ -41259,7 +41259,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Urban farming cannot meet food needs     tentisspace",
+                  "content": "Urban farming cannot meet food needs     tienphongSpace",
                   "correctAnswer": "7cf0a6da-67b4-47ff-b077-f8522d7e8e71",
                   "file": null,
                   "answerList": null,
@@ -41296,7 +41296,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : changes in the workplace - Nữ nói trước : WMBW\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Continuity is important when planning a career: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job security cannot be guaranteed: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Job satisfaction is important for motivator: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Technological improvement is good for the economy: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Continuity is important when planning a career:      tentisspace",
+                  "content": "Continuity is important when planning a career:      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -41304,7 +41304,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job security cannot be guaranteed      tentisspace",
+                  "content": "Job security cannot be guaranteed      tienphongSpace",
                   "correctAnswer": "4c0919f3-6e62-4dc4-8e76-481bce1be771",
                   "file": null,
                   "answerList": null,
@@ -41312,7 +41312,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Job satisfaction is important for motivator      tentisspace",
+                  "content": "Job satisfaction is important for motivator      tienphongSpace",
                   "correctAnswer": "759e291c-2cf5-4ef3-abc7-edffb8446bcb",
                   "file": null,
                   "answerList": null,
@@ -41320,7 +41320,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technological improvement is good for the economy      tentisspace",
+                  "content": "Technological improvement is good for the economy      tienphongSpace",
                   "correctAnswer": "054e0c55-98d0-4333-a517-c8fb7bd44580",
                   "file": null,
                   "answerList": null,
@@ -41357,7 +41357,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Emusic and singer : WBMB - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- singers play a good role for young people: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- taste in music is a highly personal thing: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music is a universal language: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Music can minupulate people's feelings : B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Singers play a good role for young people             tentisspace",
+                  "content": "Singers play a good role for young people             tienphongSpace",
                   "correctAnswer": "375aab5e-66ad-4e1f-babb-40ef74518945",
                   "file": null,
                   "answerList": null,
@@ -41365,7 +41365,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Taste in music is a highly personal thing             tentisspace",
+                  "content": "Taste in music is a highly personal thing             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -41373,7 +41373,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music is a universal language             tentisspace",
+                  "content": "Music is a universal language             tienphongSpace",
                   "correctAnswer": "9b74d911-4556-4d3a-b45a-374e40f0e16d",
                   "file": null,
                   "answerList": null,
@@ -41381,7 +41381,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Music can minupulate people's feelings             tentisspace",
+                  "content": "Music can minupulate people's feelings             tienphongSpace",
                   "correctAnswer": "d7f7abf3-6a24-4480-9b47-69bea2086121",
                   "file": null,
                   "answerList": null,
@@ -41418,7 +41418,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003EUniversity and technology\u003C/span\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E. B M W M - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Technology helps make education more accessible: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social interaction is important: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The diverse curriculum is not an advantage: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- University competition should be encouraged: M\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Technology helps make education more accessible     tentisspace",
+                  "content": "Technology helps make education more accessible     tienphongSpace",
                   "correctAnswer": "a687fcff-e1f3-4071-a275-198a649e8b01",
                   "file": null,
                   "answerList": null,
@@ -41426,7 +41426,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social interaction is important     tentisspace",
+                  "content": "Social interaction is important     tienphongSpace",
                   "correctAnswer": "f47a5005-798e-44b5-82f2-f91b8ee87567",
                   "file": null,
                   "answerList": null,
@@ -41434,7 +41434,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The diverse curriculum is not an advantage     tentisspace",
+                  "content": "The diverse curriculum is not an advantage     tienphongSpace",
                   "correctAnswer": "6518c0c7-0b4e-4222-8852-8acefbdc2e48",
                   "file": null,
                   "answerList": null,
@@ -41442,7 +41442,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "University competition should be encouraged     tentisspace",
+                  "content": "University competition should be encouraged     tienphongSpace",
                   "correctAnswer": "f47a5005-798e-44b5-82f2-f91b8ee87567",
                   "file": null,
                   "answerList": null,
@@ -41479,7 +41479,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15. Topic : internet. M B W B ( 1020 )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.1. There is too much information on the internet: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.2. Using the internet requires skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.3. The internet is changing the way we think: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E15.4. The Internet has made people less patient: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "There is too much information on the internet        tentisspace",
+                  "content": "There is too much information on the internet        tienphongSpace",
                   "correctAnswer": "a714181b-602a-4ddf-9cbb-40f17a5c0cfb",
                   "file": null,
                   "answerList": null,
@@ -41487,7 +41487,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Using internet requires skills        tentisspace",
+                  "content": "Using internet requires skills        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -41495,7 +41495,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The internet is changing the way we think        tentisspace",
+                  "content": "The internet is changing the way we think        tienphongSpace",
                   "correctAnswer": "0416b2b4-7603-4033-b1e6-2618a93a4914",
                   "file": null,
                   "answerList": null,
@@ -41503,7 +41503,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Internet has made people less patient        tentisspace",
+                  "content": "Internet has made people less patient        tienphongSpace",
                   "correctAnswer": "6f37ead7-ea08-4f63-a44d-a4988b0c4541",
                   "file": null,
                   "answerList": null,
@@ -41540,7 +41540,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E15. Topic :\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E information and technology - Nữ nói trước\u003C/span\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E : WMMB\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The future generation will fail to cope with new information: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- The information revolution will be good for the economy: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- No computer is superior to the human brain: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(67, 67, 67);\"\u003E- More should be done to protect individual privacy: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "The future generation will fail to cope with new information     tentisspace",
+                  "content": "The future generation will fail to cope with new information     tienphongSpace",
                   "correctAnswer": "73676488-cf6f-474a-a13e-7a66ed99fd7e",
                   "file": null,
                   "answerList": null,
@@ -41548,7 +41548,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The information revolution will be good for the economy     tentisspace",
+                  "content": "The information revolution will be good for the economy     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -41556,7 +41556,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "No computer is superior to the human brain     tentisspace",
+                  "content": "No computer is superior to the human brain     tienphongSpace",
                   "correctAnswer": "f318951f-9883-4986-9685-c7fdf5e663c0",
                   "file": null,
                   "answerList": null,
@@ -41564,7 +41564,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More should be done to protect individual privacy     tentisspace",
+                  "content": "More should be done to protect individual privacy     tienphongSpace",
                   "correctAnswer": "ab57bf9e-9b4d-447f-af94-7c458fb5eca7",
                   "file": null,
                   "answerList": null,
@@ -41601,7 +41601,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic Actors\u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003E : W M B B - Nữ nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.1. Auditions are the most important of casting: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.2. Actors respond best to a strong script: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.3. Theatre acting and movie acting require different skills: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15.4. Actors need to be praised: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Auditions are the most important of casting     tentisspace",
+                  "content": "Auditions are the most important of casting     tienphongSpace",
                   "correctAnswer": "f1d1cb11-9641-4ec1-bb7f-195b03aeb0ac",
                   "file": null,
                   "answerList": null,
@@ -41609,7 +41609,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": " Actors respond best to a strong script     tentisspace",
+                  "content": " Actors respond best to a strong script     tienphongSpace",
                   "correctAnswer": "b51108f9-a7f9-4b2c-8398-a8af4fe82e03",
                   "file": null,
                   "answerList": null,
@@ -41617,7 +41617,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Theatre acting and movie acting require different skills     tentisspace",
+                  "content": "Theatre acting and movie acting require different skills     tienphongSpace",
                   "correctAnswer": "8723876a-776f-450d-91be-53e944f4da84",
                   "file": null,
                   "answerList": null,
@@ -41625,7 +41625,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Actors need to be praised     tentisspace",
+                  "content": "Actors need to be praised     tienphongSpace",
                   "correctAnswer": "8723876a-776f-450d-91be-53e944f4da84",
                   "file": null,
                   "answerList": null,
@@ -41662,7 +41662,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ETopic : politics: - Nữ nói trước: B W M B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- young people are becoming more interested in politics: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Social media has changed political activism: W ( sẽ có từ change form để bắt Key )\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- People are better informed political issues: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- More women are likely to participate in politics: B\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Young people are becoming more interested in politics      tentisspace",
+                  "content": "Young people are becoming more interested in politics      tienphongSpace",
                   "correctAnswer": "d9d8ed4e-eada-468e-a749-b21844f4661e",
                   "file": null,
                   "answerList": null,
@@ -41670,7 +41670,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Social media has changed political activism      tentisspace",
+                  "content": "Social media has changed political activism      tienphongSpace",
                   "correctAnswer": "4747e261-b9d3-4ffa-9eab-03a4e7d77a12",
                   "file": null,
                   "answerList": null,
@@ -41678,7 +41678,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "People are better informed political issues      tentisspace",
+                  "content": "People are better informed political issues      tienphongSpace",
                   "correctAnswer": "6830902a-9393-4aea-aabf-b7ba3595031d",
                   "file": null,
                   "answerList": null,
@@ -41686,7 +41686,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "More women are likely to participate in politics      tentisspace",
+                  "content": "More women are likely to participate in politics      tienphongSpace",
                   "correctAnswer": "d9d8ed4e-eada-468e-a749-b21844f4661e",
                   "file": null,
                   "answerList": null,
@@ -41723,7 +41723,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Earts - Nữ nói trước : M\u003C/span\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E W B W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Art is only suitable for the privileged few: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- The government should invest more in arts: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Children should be exposed to art early: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- In the future, art will become more accessible: W\u003C/span\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Art is only suitable for the privileged few    tentisspace",
+                  "content": "Art is only suitable for the privileged few    tienphongSpace",
                   "correctAnswer": "3f14e517-920e-4fd8-a95f-ab4207b4b343",
                   "file": null,
                   "answerList": null,
@@ -41731,7 +41731,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "The government should invest more in arts    tentisspace",
+                  "content": "The government should invest more in arts    tienphongSpace",
                   "correctAnswer": "a6651588-f1e3-477c-b3c5-bb708ce446fd",
                   "file": null,
                   "answerList": null,
@@ -41739,7 +41739,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Children should be exposed to art early    tentisspace",
+                  "content": "Children should be exposed to art early    tienphongSpace",
                   "correctAnswer": "47ade225-ada3-4899-908c-c478759a3709",
                   "file": null,
                   "answerList": null,
@@ -41747,7 +41747,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "In the future, art will become more accessible    tentisspace",
+                  "content": "In the future, art will become more accessible    tienphongSpace",
                   "correctAnswer": "a6651588-f1e3-477c-b3c5-bb708ce446fd",
                   "file": null,
                   "answerList": null,
@@ -41784,7 +41784,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003ECommunity design - BWMB ( 0120 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EBuilding design\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E can influence people’s behavior: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- Creating community \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003Ecan take time\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E: W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003EWork\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E communities and social communities are the same: M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETechnology \u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003Ehas changed how the community forms: B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: You know, I believe building design can shape people’s behaviors and interactions from the start. When spaces are designed well, people feel comfortable and naturally start connecting.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: Of course, design matters, but there’s no shortcut to building real community connections. Creating community takes time and consistency, even in spaces that encourage interaction.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Really? But I also feel that work communities and social communities aren’t as different as we might think. Both require spaces that help people feel connected and valued, whether it’s at work or in social settings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EMan: Yes, I agree, but I think technology has really changed how communities form. It makes connecting so much easier, and people don’t always need to meet face-to-face to feel a sense of connection.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003EWoman: I see that, but I don’t think online connections can fully replace in-person gatherings.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETHIẾT KẾ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E 01 \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ETÒA NHÀ\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÓ THỂ MẤT THỜI GIAN\u003C/strong\u003E\u003Cspan style=\"color: rgb(0, 0, 0);\"\u003E là 20 năm vì chưa có \u003C/span\u003E\u003Cstrong style=\"color: rgb(0, 0, 0);\"\u003ECÔNG NGHỆ\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Building design can influence people’s behavior    tentisspace",
+                  "content": "Building design can influence people’s behavior    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -41792,7 +41792,7 @@
                   "suggestion": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E"
                 },
                 {
-                  "content": "Creating community can take time    tentisspace",
+                  "content": "Creating community can take time    tienphongSpace",
                   "correctAnswer": "93fcab97-ca23-457d-a912-631bf0abff29",
                   "file": null,
                   "answerList": null,
@@ -41800,7 +41800,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Work communities and social communities are the same    tentisspace",
+                  "content": "Work communities and social communities are the same    tienphongSpace",
                   "correctAnswer": "1386d5a3-54f5-48a2-a734-b175437b03bd",
                   "file": null,
                   "answerList": null,
@@ -41808,7 +41808,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Technology has changed how community forms    tentisspace",
+                  "content": "Technology has changed how community forms    tienphongSpace",
                   "correctAnswer": "f01f5de9-4afa-462c-a5d1-ec5fda7bc749",
                   "file": null,
                   "answerList": null,
@@ -41845,7 +41845,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Ethe local center - WBMM ( 1022 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E- Exhibitions \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eshould be different and diverse. : W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETraditional customs\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E are gradually losing their significance. : B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Local \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003Efestivals\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E will disappear in the near future. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ESchools \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eare important to shaping future generations. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003ETrung tâm địa phương thì có \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETRIỂN LÃM\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E về \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003EPHONG TỤC TRUYỀN THỐNG\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E tại các \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ELỄ HỘI TRƯỜNG HỌC cho 1022 học sinh\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Exhibitions should be different and diverse.    tentisspace",
+                  "content": "Exhibitions should be different and diverse.    tienphongSpace",
                   "correctAnswer": "4a2d6e35-6a06-469b-a047-dbb7737e0c88",
                   "file": null,
                   "answerList": null,
@@ -41853,7 +41853,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional customs are gradually losing their significance    tentisspace",
+                  "content": "Traditional customs are gradually losing their significance    tienphongSpace",
                   "correctAnswer": "9f2bd71a-b7f1-4d33-ba5e-0a624716dc16",
                   "file": null,
                   "answerList": null,
@@ -41861,7 +41861,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Local festivals will disappear in the near future    tentisspace",
+                  "content": "Local festivals will disappear in the near future    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,
@@ -41869,7 +41869,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Schools are important to shaping future generations.    tentisspace",
+                  "content": "Schools are important to shaping future generations.    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,
@@ -44706,7 +44706,7 @@
               "suggestion": "\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E15. Topic : \u003C/span\u003E\u003Cspan style=\"color: rgb(255, 0, 0);\"\u003Ethe local center - WBMM ( 1022 ) - Nam nói trước\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003E- Exhibitions \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eshould be different and diverse. : W\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETraditional customs\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E are gradually losing their significance. : B\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- Local \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003Efestivals\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E will disappear in the near future. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E- \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ESchools \u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003Eare important to shaping future generations. : M\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003EGiải thích:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003ETrung tâm địa phương thì có \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ETRIỂN LÃM\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E về \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003EPHONG TỤC TRUYỀN THỐNG\u003C/strong\u003E\u003Cspan style=\"color: rgb(5, 5, 5);\"\u003E tại các \u003C/span\u003E\u003Cstrong style=\"color: rgb(5, 5, 5);\"\u003ELỄ HỘI TRƯỜNG HỌC cho 1022 học sinh\u003C/strong\u003E\u003C/p\u003E",
               "subQuestion": [
                 {
-                  "content": "Exhibitions should be different and diverse.    tentisspace",
+                  "content": "Exhibitions should be different and diverse.    tienphongSpace",
                   "correctAnswer": "4a2d6e35-6a06-469b-a047-dbb7737e0c88",
                   "file": null,
                   "answerList": null,
@@ -44714,7 +44714,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Traditional customs are gradually losing their significance    tentisspace",
+                  "content": "Traditional customs are gradually losing their significance    tienphongSpace",
                   "correctAnswer": "9f2bd71a-b7f1-4d33-ba5e-0a624716dc16",
                   "file": null,
                   "answerList": null,
@@ -44722,7 +44722,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Local festivals will disappear in the near future    tentisspace",
+                  "content": "Local festivals will disappear in the near future    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,
@@ -44730,7 +44730,7 @@
                   "suggestion": null
                 },
                 {
-                  "content": "Schools are important to shaping future generations.    tentisspace",
+                  "content": "Schools are important to shaping future generations.    tienphongSpace",
                   "correctAnswer": "52751800-d251-4aa8-81b2-503935caba55",
                   "file": null,
                   "answerList": null,

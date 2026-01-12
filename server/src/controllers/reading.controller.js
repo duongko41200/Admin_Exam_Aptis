@@ -23,6 +23,10 @@ class ReadingController {
 
     const sort = JSON.parse(params.sort);
 
+    console.log("filter:", filter);
+    console.log("range:", range);
+    console.log("sort:", sort);
+
     new SuccessResponse({
       message: "creat new Reading success!",
       metadata: await ReadingFactory.getAllWithQuery({ filter, range, sort }),

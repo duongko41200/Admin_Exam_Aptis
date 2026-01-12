@@ -1,26 +1,26 @@
-import React, { useState, useCallback, useRef } from "react";
 import {
-  Box,
-  Typography,
-  Alert,
-  Chip,
-  IconButton,
-  Paper,
-  Fade,
-  Grow,
-  Badge,
-} from "@mui/material";
-import {
+  AudioFile,
+  CheckCircle,
   CloudUpload,
   Delete,
-  Visibility,
-  PhotoLibrary,
-  CheckCircle,
-  AudioFile,
-  VolumeUp,
-  PlayArrow,
   Pause,
+  PhotoLibrary,
+  PlayArrow,
+  Visibility,
+  VolumeUp,
 } from "@mui/icons-material";
+import {
+  Alert,
+  Badge,
+  Box,
+  Chip,
+  Fade,
+  Grow,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
+import React, { useCallback, useRef, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 interface SimplePreviewFile {
@@ -343,26 +343,6 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
           <input {...getInputProps()} />
 
           {/* Upload Icon with Animation */}
-          <Box
-            sx={{
-              position: "relative",
-              zIndex: 1,
-              animation: isDragActive ? "bounce 1s infinite" : "none",
-              "@keyframes bounce": {
-                "0%, 20%, 50%, 80%, 100%": {
-                  transform: "translateY(0)",
-                },
-                "40%": {
-                  transform: "translateY(-10px)",
-                },
-                "60%": {
-                  transform: "translateY(-5px)",
-                },
-              },
-            }}
-          >
-            {getDropZoneIcon()}
-          </Box>
 
           <Typography
             variant="h6"
@@ -450,26 +430,13 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                   sx={{ fontWeight: 600 }}
                 />
               </Box>
-
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ fontStyle: "italic" }}
-              >
-                Ready for upload
-              </Typography>
             </Box>
 
             {/* Files Grid */}
             <Box
               sx={{
                 display: "grid",
-                gridTemplateColumns: {
-                  xs: "1fr",
-                  sm: "repeat(2, 1fr)",
-                  md: "repeat(3, 1fr)",
-                  lg: "repeat(2, 1fr)",
-                },
+                gridTemplateColumns: "repeat(2, 1fr)",
                 gap: 3,
                 maxHeight: "400px",
                 overflowY: "auto",
@@ -493,19 +460,7 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
                         overflow: "hidden",
                         background:
                           "linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)",
-                        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                         border: "2px solid #e3f2fd",
-                        "&:hover": {
-                          transform: "translateY(-8px)",
-                          boxShadow: "0 12px 30px rgba(0, 0, 0, 0.15)",
-                          "& .file-overlay": {
-                            opacity: 1,
-                          },
-                          "& .action-buttons": {
-                            transform: "translateY(0)",
-                            opacity: 1,
-                          },
-                        },
                       }}
                     >
                       {/* File Container */}

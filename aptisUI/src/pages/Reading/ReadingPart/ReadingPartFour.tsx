@@ -62,17 +62,17 @@ const QuestionBox = ({
 }) => (
   <Box
     sx={{
-      minHeight: "160px",
+      minHeight: "80px",
       height: "fit-content",
       border: "1px solid",
       padding: "10px",
     }}
   >
     <Box sx={{ fontSize: "18px", fontWeight: "bold" }}>
-      Nội Dung Câu {questionNumber}
+    Đáp an Câu {questionNumber}
     </Box>
     <Box>
-      <div>
+      {/* <div>
         <TextField
           type={`contentPartFour${questionNumber}`}
           {...register(`contentPartFour${questionNumber}`, { required: true })}
@@ -86,7 +86,7 @@ const QuestionBox = ({
               : ""
           }
         />
-      </div>
+      </div> */}
       <div>
         <TextField
           type="text"
@@ -153,7 +153,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
         subQuestionAnswerList: [],
         suggestion: suggestion,
         subQuestion: [1, 2, 3, 4, 5, 6, 7].map((num) => ({
-          content: values[`contentPartFour${num}`],
+          content: 'aptis tien phong',
           correctAnswer: values[`answerPartFour${num}`],
           file: null,
           answerList: null,
@@ -280,7 +280,7 @@ const ReadingPartFour: React.FC<ReadingPartOneProps> = ({
         </div>
         <div>
           <TextEditor
-            placeholder="Write something or insert a star ★"
+            placeholder="Gợi ý giải"
             suggestion={suggestion}
             setSuggestion={setSuggestion}
           />

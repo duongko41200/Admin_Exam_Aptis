@@ -5,6 +5,8 @@ const getAllWithQuery = async (
   const [sortField, sortOrder] = sort;
   const [start, end] = range;
 
+  console.log("filter before process:", filter);
+
   const fuzzyFields = ["name", "email", "title"];
 
   const processedFilter = {};
@@ -17,6 +19,52 @@ const getAllWithQuery = async (
       processedFilter[key] = value;
     }
   }
+
+  console.log("processedFilter:", processedFilter);
+  const res = await model
+    .find(processedFilter)
+    .sort({ _id: sortOrder === "ASC" ? 1 : -1 })
+    .skip(start || 0)
+    .limit((end || 0) - (start || 0) + 1)
+    .populate(populate)
+    .exec();
+
+  if (Object.keys(processedFilter).length === 0) {
+    const count = await model.countDocuments(processedFilter);
+    return { data: res, total: count };
+  }
+  const count = await model.countDocuments(processedFilter);
+
+  return { data: res, total: count };
+};
+
+const getAllWithQueryReading = async (
+  { filter, range, sort, populate = null },
+  model
+) => {
+  const [sortField, sortOrder] = sort;
+  const [start, end] = range;
+
+  console.log("filter before process:", filter);
+
+  const fuzzyFields = ["name", "email", "title"];
+
+  const processedFilter = {};
+  for (const key in filter) {
+    const value = filter[key];
+
+    console.log("key:", key);
+    // Nếu key là questionPart, map sang đúng path trong schema
+    if (key === "questionPart") {
+      processedFilter["data.questions.questionPart"] = value;
+    } else if (typeof value === "string" && fuzzyFields.includes(key)) {
+      processedFilter[`data.title`] = { $regex: value, $options: "i" };
+    } else {
+      processedFilter[key] = value;
+    }
+  }
+
+  console.log("processedFilter:", processedFilter);
   const res = await model
     .find(processedFilter)
     .sort({ _id: sortOrder === "ASC" ? 1 : -1 })
@@ -157,4 +205,5 @@ export default {
   findQuery,
   createOrUpdate,
   count,
+  getAllWithQueryReading,
 };

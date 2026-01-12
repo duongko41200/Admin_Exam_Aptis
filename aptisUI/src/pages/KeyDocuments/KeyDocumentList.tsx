@@ -414,21 +414,19 @@ const KeyDocumentList: React.FC = () => {
         item.questions.forEach((question) => {
           const subDebai: SubQuestion[] | null =
             question.subQuestion && question.subQuestion.length > 0
-              ? question.subQuestion
-                  .map((subQ) => ({
-                    content: subQ.content,
-                    // If subQ.answerList is null, use the main question's answerList
-                    optionAnswer:
-                      subQ.answerList ||
-                      (question.answerList.length > 0
-                        ? question.answerList
-                        : null),
-                    correctAnswer: subQ.correctAnswer,
-                    suggestion: subQ.suggestion,
-                    file: subQ.file,
-                    image: subQ.image,
-                  }))
-                  .filter((sub) => sub.content.trim() !== "")
+              ? question.subQuestion.map((subQ) => ({
+                  content: subQ.content,
+                  // If subQ.answerList is null, use the main question's answerList
+                  optionAnswer:
+                    subQ.answerList ||
+                    (question.answerList.length > 0
+                      ? question.answerList
+                      : null),
+                  correctAnswer: subQ.correctAnswer,
+                  suggestion: subQ.suggestion,
+                  file: subQ.file,
+                  image: subQ.image,
+                }))
               : null;
 
           // Handle multiple images
@@ -575,6 +573,28 @@ const KeyDocumentList: React.FC = () => {
     return filteredData.slice(startIndex, startIndex + rowsPerPage);
   }, [filteredData, page, rowsPerPage]);
 
+  // Helper function to handle Part 2 comma-separated correct answers
+  const getPart2CorrectAnswers = useCallback(
+    (
+      correctAnswer: string,
+      optionAnswers?: { id: string; content: string }[]
+    ): string[] => {
+      if (!correctAnswer || !optionAnswers || optionAnswers.length === 0) {
+        return [];
+      }
+
+      // Split by comma and get content in order
+      const answerIds = correctAnswer.split(",").map((id) => id.trim());
+      return answerIds
+        .map((id) => {
+          const matchedOption = optionAnswers.find((opt) => opt.id === id);
+          return matchedOption ? matchedOption.content : null;
+        })
+        .filter(Boolean) as string[];
+    },
+    []
+  );
+
   // Helper function to get correct answer text from ID
   const getCorrectAnswerText = useCallback(
     (
@@ -590,6 +610,63 @@ const KeyDocumentList: React.FC = () => {
         (opt) => opt.id === correctAnswer
       );
       return matchedOption ? matchedOption.content : correctAnswer;
+    },
+    []
+  );
+
+  // Helper function to get correct answers for questions with subQuestions
+  const getSubQuestionCorrectAnswers = useCallback(
+    (
+      subQuestions?: SubQuestion[],
+      optionAnswers?: { id: string; content: string }[]
+    ): string[] => {
+      if (
+        !subQuestions ||
+        subQuestions.length === 0 ||
+        !optionAnswers ||
+        optionAnswers.length === 0
+      ) {
+        return [];
+      }
+
+      return subQuestions
+        .filter((sub) => sub.correctAnswer && sub.correctAnswer.trim() !== "")
+        .map((sub) => {
+          const foundAnswer = optionAnswers.find(
+            (opt) => opt.id === sub.correctAnswer
+          );
+          return foundAnswer ? foundAnswer.content : null;
+        })
+        .filter(Boolean) as string[];
+    },
+    []
+  );
+
+  // Helper function to get suggestion for questions (handles Part 3 special cases)
+  const getQuestionSuggestion = useCallback(
+    (row: GeneralQuestionSchema): string | null => {
+      // For Part 3 (THREE), always prioritize main question suggestion
+      if (row.part === "THREE" && row.suggestion) {
+        return row.suggestion;
+      }
+
+      // If main question has suggestion, use it
+      if (row.suggestion) {
+        return row.suggestion;
+      }
+
+      // For non-Part 3 questions, check subQuestion suggestions as fallback
+      if (row.part !== "THREE" && row.subDebai && row.subDebai.length > 0) {
+        // Get all non-empty suggestions from subQuestions
+        const suggestions = row.subDebai
+          .map((sub) => sub.suggestion)
+          .filter(Boolean);
+
+        // Return the first valid suggestion found
+        return suggestions.length > 0 ? suggestions[0] : null;
+      }
+
+      return null;
     },
     []
   );
@@ -1032,66 +1109,262 @@ const KeyDocumentList: React.FC = () => {
                                     justifyContent: "center",
                                   }}
                                 >
-                                  {row.correctAnswer ? (
-                                    <>
-                                      <Chip
-                                        label={
+                                  {(() => {
+                                    // Check if this question has subQuestions with correct answers
+                                    const hasSubQuestionAnswers =
+                                      row.subDebai &&
+                                      row.subDebai.length > 0 &&
+                                      row.subDebai.some(
+                                        (sub) =>
+                                          sub.correctAnswer &&
+                                          sub.correctAnswer.trim() !== ""
+                                      );
+
+                                    // If it has subQuestion answers and no main correctAnswer, show subQuestion answers
+                                    if (
+                                      hasSubQuestionAnswers &&
+                                      (!row.correctAnswer ||
+                                        row.correctAnswer.trim() === "")
+                                    ) {
+                                      const subQuestionAnswers =
+                                        getSubQuestionCorrectAnswers(
+                                          row.subDebai,
                                           row.optionAnswer
-                                            ? (() => {
-                                                const optIndex =
-                                                  row.optionAnswer.findIndex(
-                                                    (opt) =>
-                                                      opt.id ===
-                                                      row.correctAnswer
-                                                  );
-                                                if (optIndex >= 0) {
-                                                  const letter =
-                                                    String.fromCharCode(
-                                                      65 + optIndex
-                                                    );
-                                                  const text =
-                                                    row.optionAnswer[optIndex]
-                                                      .content;
-                                                  return text.length > 20
-                                                    ? `${letter}. ${text.slice(
+                                        );
+                                      return subQuestionAnswers.length > 0 ? (
+                                        <Box
+                                          sx={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            gap: 0.5,
+                                            alignItems: "center",
+                                          }}
+                                        >
+                                          {subQuestionAnswers.map(
+                                            (answer, index) => (
+                                              <Box
+                                                key={index}
+                                                sx={{
+                                                  display: "flex",
+                                                  alignItems: "center",
+                                                  gap: 0.5,
+                                                }}
+                                              >
+                                                <Chip
+                                                  label={
+                                                    row.optionAnswer
+                                                      ? (() => {
+                                                          const optIndex =
+                                                            row.optionAnswer.findIndex(
+                                                              (opt) =>
+                                                                opt.content ===
+                                                                answer
+                                                            );
+                                                          if (optIndex >= 0) {
+                                                            const letter =
+                                                              String.fromCharCode(
+                                                                65 + optIndex
+                                                              );
+                                                            return answer.length >
+                                                              20
+                                                              ? `${letter}. ${answer.slice(
+                                                                  0,
+                                                                  17
+                                                                )}...`
+                                                              : `${letter}. ${answer}`;
+                                                          }
+                                                          return answer.length >
+                                                            23
+                                                            ? `${answer.slice(
+                                                                0,
+                                                                20
+                                                              )}...`
+                                                            : answer;
+                                                        })()
+                                                      : answer.length > 23
+                                                      ? `${answer.slice(
+                                                          0,
+                                                          20
+                                                        )}...`
+                                                      : answer
+                                                  }
+                                                  color="success"
+                                                  size="small"
+                                                  variant="filled"
+                                                  sx={{
+                                                    minWidth: 40,
+                                                    maxWidth: 200,
+                                                    fontSize: "0.7rem",
+                                                    "& .MuiChip-label": {
+                                                      overflow: "hidden",
+                                                      textOverflow: "ellipsis",
+                                                      whiteSpace: "nowrap",
+                                                    },
+                                                  }}
+                                                />
+                                                <CopyButton
+                                                  text={answer}
+                                                  tooltip={`Copy correct answer ${
+                                                    index + 1
+                                                  }`}
+                                                />
+                                              </Box>
+                                            )
+                                          )}
+                                        </Box>
+                                      ) : (
+                                        <Typography
+                                          variant="body2"
+                                          color="text.secondary"
+                                        >
+                                          -
+                                        </Typography>
+                                      );
+                                    }
+
+                                    // Handle Part 2 comma-separated correct answers
+                                    if (
+                                      row.part === "TWO" &&
+                                      row.correctAnswer &&
+                                      row.correctAnswer.includes(",")
+                                    ) {
+                                      const part2Answers =
+                                        getPart2CorrectAnswers(
+                                          row.correctAnswer,
+                                          row.optionAnswer
+                                        );
+
+                                      return part2Answers.length > 0 ? (
+                                        <Box
+                                          sx={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            gap: 0.5,
+                                            alignItems: "center",
+                                          }}
+                                        >
+                                          {part2Answers.map((answer, index) => (
+                                            <Box
+                                              key={index}
+                                              sx={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: 0.5,
+                                              }}
+                                            >
+                                              <Chip
+                                                label={`${index + 1}. ${
+                                                  answer.length > 20
+                                                    ? `${answer.slice(
                                                         0,
                                                         17
                                                       )}...`
-                                                    : `${letter}. ${text}`;
-                                                }
-                                                return row.correctAnswer;
-                                              })()
-                                            : row.correctAnswer
-                                        }
-                                        color="success"
-                                        size="small"
-                                        variant="filled"
-                                        sx={{
-                                          minWidth: 40,
-                                          maxWidth: 200,
-                                          "& .MuiChip-label": {
-                                            overflow: "hidden",
-                                            textOverflow: "ellipsis",
-                                            whiteSpace: "nowrap",
-                                          },
-                                        }}
-                                      />
-                                      <CopyButton
-                                        text={getCorrectAnswerText(
-                                          row.correctAnswer,
-                                          row.optionAnswer
-                                        )}
-                                        tooltip="Copy correct answer"
-                                      />
-                                    </>
-                                  ) : (
-                                    <Typography
-                                      variant="body2"
-                                      color="text.secondary"
-                                    >
-                                      -
-                                    </Typography>
-                                  )}
+                                                    : answer
+                                                }`}
+                                                color="success"
+                                                size="small"
+                                                variant="filled"
+                                                sx={{
+                                                  minWidth: 40,
+                                                  maxWidth: 200,
+                                                  fontSize: "0.7rem",
+                                                  "& .MuiChip-label": {
+                                                    overflow: "hidden",
+                                                    textOverflow: "ellipsis",
+                                                    whiteSpace: "nowrap",
+                                                  },
+                                                }}
+                                              />
+                                              <CopyButton
+                                                text={answer}
+                                                tooltip={`Copy correct answer ${
+                                                  index + 1
+                                                }`}
+                                              />
+                                            </Box>
+                                          ))}
+                                        </Box>
+                                      ) : (
+                                        <Typography
+                                          variant="body2"
+                                          color="text.secondary"
+                                        >
+                                          -
+                                        </Typography>
+                                      );
+                                    }
+
+                                    // Handle regular questions with single correct answer
+                                    if (
+                                      row.correctAnswer &&
+                                      row.correctAnswer.trim() !== ""
+                                    ) {
+                                      return (
+                                        <>
+                                          <Chip
+                                            label={
+                                              row.optionAnswer
+                                                ? (() => {
+                                                    const optIndex =
+                                                      row.optionAnswer.findIndex(
+                                                        (opt) =>
+                                                          opt.id ===
+                                                          row.correctAnswer
+                                                      );
+                                                    if (optIndex >= 0) {
+                                                      const letter =
+                                                        String.fromCharCode(
+                                                          65 + optIndex
+                                                        );
+                                                      const text =
+                                                        row.optionAnswer[
+                                                          optIndex
+                                                        ].content;
+                                                      return text.length > 20
+                                                        ? `${letter}. ${text.slice(
+                                                            0,
+                                                            17
+                                                          )}...`
+                                                        : `${letter}. ${text}`;
+                                                    }
+                                                    return row.correctAnswer;
+                                                  })()
+                                                : row.correctAnswer
+                                            }
+                                            color="success"
+                                            size="small"
+                                            variant="filled"
+                                            sx={{
+                                              minWidth: 40,
+                                              maxWidth: 200,
+                                              "& .MuiChip-label": {
+                                                overflow: "hidden",
+                                                textOverflow: "ellipsis",
+                                                whiteSpace: "nowrap",
+                                              },
+                                            }}
+                                          />
+                                          <CopyButton
+                                            text={getCorrectAnswerText(
+                                              row.correctAnswer,
+                                              row.optionAnswer
+                                            )}
+                                            tooltip="Copy correct answer"
+                                          />
+                                        </>
+                                      );
+                                    }
+
+                                    // No correct answers found
+                                    return (
+                                      <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                      >
+                                        -
+                                      </Typography>
+                                    );
+                                  })()}
                                 </Box>
                               </TableCell>
 
@@ -1100,173 +1373,156 @@ const KeyDocumentList: React.FC = () => {
                                 <Box sx={{ maxWidth: 350 }}>
                                   {row.subDebai && row.subDebai.length > 0 ? (
                                     <Box>
-                                      {row.subDebai.map((sub, index) => (
-                                        <Box
-                                          key={index}
-                                          sx={{
-                                            mb: 1,
-                                            p: 1,
-                                            border: "1px solid",
-                                            borderColor: "divider",
-                                            borderRadius: 1,
-                                          }}
-                                        >
-                                          <Box
-                                            sx={{
-                                              display: "flex",
-                                              alignItems: "flex-start",
-                                              gap: 1,
-                                              mb: 0.5,
-                                            }}
-                                          >
-                                            <Typography
-                                              variant="body2"
+                                      {row.subDebai
+                                        .filter(
+                                          (sub, index) =>
+                                            // Show sub questions that have content OR correct answer OR suggestion
+                                            sub.content.trim() !== "" ||
+                                            sub.correctAnswer ||
+                                            sub.suggestion
+                                        )
+                                        .map((sub, filteredIndex) => {
+                                          // Get original index for display
+                                          const originalIndex =
+                                            row.subDebai!.indexOf(sub);
+
+                                          return (
+                                            <Box
+                                              key={originalIndex}
                                               sx={{
-                                                fontWeight: "bold",
-                                                minWidth: 20,
+                                                mb: 1,
+                                                p: 1,
+                                                border: "1px solid",
+                                                borderColor: "divider",
+                                                borderRadius: 1,
                                               }}
                                             >
-                                              {index + 1}.
-                                            </Typography>
-                                            <Typography
-                                              variant="body2"
-                                              sx={{ flexGrow: 1 }}
-                                            >
-                                              {renderHTMLContent(sub.content)}
-                                            </Typography>
-                                            <CopyButton
-                                              text={sub.content}
-                                              tooltip={`Copy sub question ${
-                                                index + 1
-                                              }`}
-                                            />
-                                          </Box>
-
-                                          {sub.optionAnswer &&
-                                            sub.optionAnswer.length > 0 && (
-                                              <Box sx={{ ml: 2, mt: 0.5 }}>
-                                                <Typography
-                                                  variant="caption"
-                                                  color="text.secondary"
+                                              {sub.content.trim() !== "" && (
+                                                <Box
+                                                  sx={{
+                                                    display: "flex",
+                                                    alignItems: "flex-start",
+                                                    gap: 1,
+                                                    mb: 0.5,
+                                                  }}
                                                 >
-                                                  Options:
-                                                </Typography>
-                                                {sub.optionAnswer.map(
-                                                  (opt, optIndex) => (
-                                                    <Box
-                                                      key={opt.id}
-                                                      sx={{
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                        gap: 0.5,
-                                                      }}
-                                                    >
-                                                      <Typography variant="caption">
-                                                        {String.fromCharCode(
-                                                          65 + optIndex
-                                                        )}
-                                                        . {opt.content}
-                                                      </Typography>
-                                                      <CopyButton
-                                                        text={opt.content}
-                                                        tooltip={`Copy sub option ${String.fromCharCode(
-                                                          65 + optIndex
-                                                        )}`}
-                                                      />
-                                                    </Box>
-                                                  )
-                                                )}
-                                              </Box>
-                                            )}
+                                                  <Typography
+                                                    variant="body2"
+                                                    sx={{
+                                                      fontWeight: "bold",
+                                                      minWidth: 20,
+                                                    }}
+                                                  >
+                                                    {originalIndex + 1}.
+                                                  </Typography>
+                                                  <Typography
+                                                    variant="body2"
+                                                    sx={{ flexGrow: 1 }}
+                                                  >
+                                                    {renderHTMLContent(
+                                                      sub.content
+                                                    )}
+                                                  </Typography>
+                                                  <CopyButton
+                                                    text={sub.content}
+                                                    tooltip={`Copy sub question ${
+                                                      originalIndex + 1
+                                                    }`}
+                                                  />
+                                                </Box>
+                                              )}
 
-                                          {sub.correctAnswer && (
-                                            <Box
-                                              sx={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: 1,
-                                                mt: 0.5,
-                                                ml: 2,
-                                              }}
-                                            >
-                                              <Typography
-                                                variant="caption"
-                                                color="success.main"
-                                                sx={{
-                                                  fontWeight: "bold",
-                                                  maxWidth: 250,
-                                                  overflow: "hidden",
-                                                  textOverflow: "ellipsis",
-                                                  whiteSpace: "nowrap",
-                                                }}
-                                              >
-                                                Correct:{" "}
-                                                {sub.optionAnswer &&
-                                                sub.optionAnswer.length > 0
-                                                  ? (() => {
-                                                      const optIndex =
-                                                        sub.optionAnswer.findIndex(
-                                                          (opt) =>
-                                                            opt.id ===
-                                                            sub.correctAnswer
-                                                        );
-                                                      if (optIndex >= 0) {
-                                                        const letter =
-                                                          String.fromCharCode(
-                                                            65 + optIndex
-                                                          );
-                                                        const text =
-                                                          sub.optionAnswer[
-                                                            optIndex
-                                                          ].content;
-                                                        return text.length > 30
-                                                          ? `${letter}. ${text.slice(
-                                                              0,
-                                                              27
-                                                            )}...`
-                                                          : `${letter}. ${text}`;
-                                                      }
-                                                      return sub.correctAnswer;
-                                                    })()
-                                                  : sub.correctAnswer}
-                                              </Typography>
-                                              <CopyButton
-                                                text={getCorrectAnswerText(
-                                                  sub.correctAnswer,
-                                                  sub.optionAnswer || undefined
-                                                )}
-                                                tooltip="Copy sub correct answer"
-                                              />
-                                            </Box>
-                                          )}
+                                              {sub.correctAnswer && (
+                                                <Box
+                                                  sx={{
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: 1,
+                                                    mt: 0.5,
+                                                    ml: 2,
+                                                  }}
+                                                >
+                                                  <Typography
+                                                    variant="caption"
+                                                    color="success.main"
+                                                    sx={{
+                                                      fontWeight: "bold",
+                                                      maxWidth: 250,
+                                                      overflow: "hidden",
+                                                      textOverflow: "ellipsis",
+                                                      whiteSpace: "nowrap",
+                                                    }}
+                                                  >
+                                                    Correct:{" "}
+                                                    {sub.optionAnswer &&
+                                                    sub.optionAnswer.length > 0
+                                                      ? (() => {
+                                                          const optIndex =
+                                                            sub.optionAnswer.findIndex(
+                                                              (opt) =>
+                                                                opt.id ===
+                                                                sub.correctAnswer
+                                                            );
+                                                          if (optIndex >= 0) {
+                                                            const letter =
+                                                              String.fromCharCode(
+                                                                65 + optIndex
+                                                              );
+                                                            const text =
+                                                              sub.optionAnswer[
+                                                                optIndex
+                                                              ].content;
+                                                            return text.length >
+                                                              30
+                                                              ? `${letter}. ${text.slice(
+                                                                  0,
+                                                                  27
+                                                                )}...`
+                                                              : `${letter}. ${text}`;
+                                                          }
+                                                          return sub.correctAnswer;
+                                                        })()
+                                                      : sub.correctAnswer}
+                                                  </Typography>
+                                                  <CopyButton
+                                                    text={getCorrectAnswerText(
+                                                      sub.correctAnswer,
+                                                      sub.optionAnswer ||
+                                                        undefined
+                                                    )}
+                                                    tooltip="Copy sub correct answer"
+                                                  />
+                                                </Box>
+                                              )}
 
-                                          {sub.suggestion && (
-                                            <Box
-                                              sx={{
-                                                display: "flex",
-                                                alignItems: "flex-start",
-                                                gap: 1,
-                                                mt: 0.5,
-                                                ml: 2,
-                                              }}
-                                            >
-                                              <Typography
-                                                variant="caption"
-                                                color="text.secondary"
-                                              >
-                                                Hint:{" "}
-                                                {renderHTMLContent(
-                                                  sub.suggestion
-                                                )}
-                                              </Typography>
-                                              <CopyButton
-                                                text={sub.suggestion}
-                                                tooltip="Copy sub suggestion"
-                                              />
+                                              {sub.suggestion && (
+                                                <Box
+                                                  sx={{
+                                                    display: "flex",
+                                                    alignItems: "flex-start",
+                                                    gap: 1,
+                                                    mt: 0.5,
+                                                    ml: 2,
+                                                  }}
+                                                >
+                                                  <Typography
+                                                    variant="caption"
+                                                    color="text.secondary"
+                                                  >
+                                                    Hint:{" "}
+                                                    {renderHTMLContent(
+                                                      sub.suggestion
+                                                    )}
+                                                  </Typography>
+                                                  <CopyButton
+                                                    text={sub.suggestion}
+                                                    tooltip="Copy sub suggestion"
+                                                  />
+                                                </Box>
+                                              )}
                                             </Box>
-                                          )}
-                                        </Box>
-                                      ))}
+                                          );
+                                        })}
                                     </Box>
                                   ) : (
                                     <Typography
@@ -1288,30 +1544,34 @@ const KeyDocumentList: React.FC = () => {
                                     gap: 1,
                                   }}
                                 >
-                                  {row.suggestion ? (
-                                    <>
-                                      <Box
-                                        sx={{
-                                          maxWidth: 250,
-                                          wordBreak: "break-word",
-                                          lineHeight: 1.4,
-                                        }}
+                                  {(() => {
+                                    const suggestion =
+                                      getQuestionSuggestion(row);
+                                    return suggestion ? (
+                                      <>
+                                        <Box
+                                          sx={{
+                                            maxWidth: 250,
+                                            wordBreak: "break-word",
+                                            lineHeight: 1.4,
+                                          }}
+                                        >
+                                          {renderHTMLContent(suggestion)}
+                                        </Box>
+                                        <CopyButton
+                                          text={suggestion}
+                                          tooltip="Copy suggestion"
+                                        />
+                                      </>
+                                    ) : (
+                                      <Typography
+                                        variant="body2"
+                                        color="text.secondary"
                                       >
-                                        {renderHTMLContent(row.suggestion)}
-                                      </Box>
-                                      <CopyButton
-                                        text={row.suggestion}
-                                        tooltip="Copy suggestion"
-                                      />
-                                    </>
-                                  ) : (
-                                    <Typography
-                                      variant="body2"
-                                      color="text.secondary"
-                                    >
-                                      -
-                                    </Typography>
-                                  )}
+                                        -
+                                      </Typography>
+                                    );
+                                  })()}
                                 </Box>
                               </TableCell>
 

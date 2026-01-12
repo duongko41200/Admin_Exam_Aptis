@@ -11,13 +11,14 @@ import ListeningPartOneOptimized from "../../pages/Listening/ListeningPart/Liste
 import ListeningPartThree from "../../pages/Listening/ListeningPart/ListeningPartThree";
 import ListeningPartTwo from "../../pages/Listening/ListeningPart/ListeningPartTwo";
 import {
-  SET_RESET_NUMBER_QUESTION_LISTENING,
-  SET_NUMBER_QUESTION_LISTENING,
-  SET_INCREMENT_LISTENING_EACH_PART,
   SET_DECREMENT_LISTENING_EACH_PART,
+  SET_INCREMENT_LISTENING_EACH_PART,
+  SET_NUMBER_QUESTION_LISTENING,
+  SET_RESET_NUMBER_QUESTION_LISTENING,
 } from "../../store/feature/listening";
 import ExamListening from "../ExamTest/Listening/ExamListening";
 import FrameRoomExam from "../FrameRoomExam";
+import JsonToStringConverter from "../Modal/JsonToStringConverter";
 import ModalBasic from "../Modal/ModalBasic";
 
 function CustomTabPanel(props) {
@@ -54,6 +55,8 @@ export default function BasicTabs() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [previewModalOpen, setPreviewModalOpen] = React.useState(false);
+  const [jsonConverterModalOpen, setJsonConverterModalOpen] =
+    React.useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -82,6 +85,14 @@ export default function BasicTabs() {
 
   const handleClosePreview = () => {
     setPreviewModalOpen(false);
+  };
+
+  const handleOpenJsonConverter = () => {
+    setJsonConverterModalOpen(true);
+  };
+
+  const handleCloseJsonConverter = () => {
+    setJsonConverterModalOpen(false);
   };
 
   // Navigation functions for Listening preview
@@ -177,6 +188,14 @@ export default function BasicTabs() {
           >
             Xem trước
           </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleOpenJsonConverter}
+            sx={{ mr: 2 }}
+          >
+            Format JSON TO STRING
+          </Button>
         </Box>
         <CustomTabPanel value={value} index={0}>
           <ListeningPartOneOptimized
@@ -240,6 +259,12 @@ export default function BasicTabs() {
           </FrameRoomExam>
         </div>
       </ModalBasic>
+
+      {/* JSON to String Converter Modal */}
+      <JsonToStringConverter
+        open={jsonConverterModalOpen}
+        handleClose={handleCloseJsonConverter}
+      />
     </>
   );
 }

@@ -1,26 +1,34 @@
-import React, {
-  useEffect,
-  useState,
-  useRef,
-  useCallback,
-  useMemo,
-  memo,
-} from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { useForm } from "react-hook-form";
-import { useNotify } from "react-admin";
-import { Stack, Box, TextField } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import TextEditor from "../../../components/TextEditor/TextEditor";
 import {
+  Box,
+  LinearProgress,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
+import React, {
+  memo,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+import { useNotify } from "react-admin";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
+import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
+import {
+  INIT_LISTENING_SUB_QUESTIONS,
+  RESET_LISTENING_DATA,
   UPDATE_LISTENING_MAIN_DATA,
   UPDATE_LISTENING_SUB_QUESTION,
   UPDATE_LISTENING_SUB_QUESTION_SUGGESTION,
-  RESET_LISTENING_DATA,
-  INIT_LISTENING_SUB_QUESTIONS,
 } from "../../../store/feature/listening";
 
 // Type definitions
@@ -164,6 +172,10 @@ interface QuestionBoxProps {
   suggestion: string;
   setSuggestion: (value: string) => void;
   num: number;
+  selectedFiles: File[];
+  existingAudioUrls: string[];
+  onFilesChange: (files: File[]) => void;
+  onRemoveExistingAudio: (url: string) => void;
 }
 
 // Optimized QuestionBox component with memo
@@ -175,6 +187,10 @@ const QuestionBox = memo(
     suggestion,
     setSuggestion,
     num,
+    selectedFiles,
+    existingAudioUrls,
+    onFilesChange,
+    onRemoveExistingAudio,
   }: QuestionBoxProps) => (
     <Box
       sx={{
@@ -252,16 +268,31 @@ const QuestionBox = memo(
         </Box>
 
         <Box sx={{ marginTop: "12px" }}>
-          <TextField
-            {...register(`subFile${questionNumber}` as keyof FormData)}
-            placeholder="file âm thanh câu hỏi"
-            variant="outlined"
-            fullWidth
+          <Typography
+            variant="body2"
             sx={{
-              "& .MuiOutlinedInput-root": {
-                backgroundColor: "white",
-              },
+              fontWeight: 500,
+              mb: 1,
+              color: "#666",
             }}
+          >
+            Upload file âm thanh câu hỏi:
+          </Typography>
+          <SimpleR2FilePreview
+            onFilesChange={onFilesChange}
+            multiple={false}
+            maxFiles={1}
+            initialImageUrls={existingAudioUrls}
+            onRemoveExistingImage={onRemoveExistingAudio}
+            acceptedFileTypes={[
+              "audio/mp3",
+              "audio/mpeg",
+              "audio/wav",
+              "audio/mp4",
+              "audio/x-m4a",
+            ]}
+            fileTypeLabel="Audio"
+            icon="🎵"
           />
         </Box>
         <Box sx={{ marginTop: "12px" }}>
@@ -326,6 +357,20 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
 
   const [suggestions, setSuggestions] = useState<string[]>(Array(14).fill(""));
 
+  // Audio file upload states for each sub question (13 questions)
+  const [selectedFilesPerQuestion, setSelectedFilesPerQuestion] = useState<{
+    [key: number]: File[];
+  }>({});
+  const [existingAudioUrlsPerQuestion, setExistingAudioUrlsPerQuestion] =
+    useState<{
+      [key: number]: string[];
+    }>({});
+  const [removedAudioUrlsPerQuestion, setRemovedAudioUrlsPerQuestion] =
+    useState<{
+      [key: number]: string[];
+    }>({});
+  const [isUploading, setIsUploading] = useState(false);
+
   const handleSuggestionChange = useCallback(
     (index: number, value: string) => {
       setSuggestions((prev) => {
@@ -345,6 +390,43 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
       }
     },
     [dispatch]
+  );
+
+  // File upload handlers for each sub question
+  const handleFilesChange = useCallback(
+    (questionNumber: number, files: File[]) => {
+      setSelectedFilesPerQuestion((prev) => ({
+        ...prev,
+        [questionNumber]: files,
+      }));
+
+      // Update Redux store
+      dispatch(
+        UPDATE_LISTENING_SUB_QUESTION({
+          index: questionNumber - 1,
+          field: "selectedAudioFiles",
+          value: files.map((f) => f.name),
+        })
+      );
+    },
+    [dispatch]
+  );
+
+  const handleRemoveExistingAudio = useCallback(
+    (questionNumber: number, url: string) => {
+      setRemovedAudioUrlsPerQuestion((prev) => ({
+        ...prev,
+        [questionNumber]: [...(prev[questionNumber] || []), url],
+      }));
+
+      setExistingAudioUrlsPerQuestion((prev) => ({
+        ...prev,
+        [questionNumber]: (prev[questionNumber] || []).filter(
+          (audioUrl) => audioUrl !== url
+        ),
+      }));
+    },
+    []
   );
 
   const {
@@ -517,6 +599,11 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
     // Reset suggestions
     setSuggestions(Array(14).fill(""));
 
+    // Reset file upload states
+    setSelectedFilesPerQuestion({});
+    setExistingAudioUrlsPerQuestion({});
+    setRemovedAudioUrlsPerQuestion({});
+
     // Reset Redux store
     dispatch(RESET_LISTENING_DATA());
     dispatch(INIT_LISTENING_SUB_QUESTIONS({ count: 13 }));
@@ -533,65 +620,136 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
 
   const onSubmit = useCallback(
     async (values: FormData) => {
-      // Use data from Redux store instead of form values
-      const data = {
-        title: listeningStore?.currentListeningData?.title || values.title,
-        timeToDo: 35,
-        questions: {
-          questionTitle:
-            listeningStore?.currentListeningData?.subTitle || values.subTitle,
-          content:
-            listeningStore?.currentListeningData?.content || values.content,
-          answerList: [],
-          correctAnswer: "",
-          file: null,
-          subQuestionAnswerList: [],
-          suggestion: null,
-          subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(
-            (num) => ({
-              content:
-                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-                  ?.content ||
-                values[`subContent${num}` as keyof FormData] ||
-                "",
-              correctAnswer:
-                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-                  ?.correctAnswer ||
-                values[`correctAnswer${num}` as keyof FormData] ||
-                "",
-              file:
-                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-                  ?.file ||
-                values[`subFile${num}` as keyof FormData] ||
-                "",
-              answerList:
-                listeningStore?.currentListeningData?.subQuestions?.[num - 1]
-                  ?.answerList ||
-                [1, 2, 3].map((ansNum) => ({
-                  content:
-                    values[`answer${ansNum}Sub${num}` as keyof FormData] || "",
-                })),
-              image: null,
-              suggestion: suggestions[num] || "",
-            })
-          ),
-          isExample: false,
-          image: null,
-        },
-        questionType: "LISTENING",
-        questionPart: "ONE",
-        description: null,
-      };
+      try {
+        setIsUploading(true);
 
-      if (statusHandler === "create") {
-        await createListeningPartOne(data);
-        resetAllData();
-      }
-      if (statusHandler === "edit") {
-        await updateListeningPartOne(data);
+        // Upload audio files cho từng sub question
+        const uploadedAudioUrls: { [key: number]: string } = {};
+
+        // Process each question's audio files
+        for (let questionNum = 1; questionNum <= 13; questionNum++) {
+          const removedUrls = removedAudioUrlsPerQuestion[questionNum] || [];
+          const selectedFiles = selectedFilesPerQuestion[questionNum] || [];
+          const existingUrls = existingAudioUrlsPerQuestion[questionNum] || [];
+
+          // Xóa các audio files cũ đã được đánh dấu xóa
+          if (removedUrls.length > 0) {
+            for (const audioUrl of removedUrls) {
+              try {
+                const key = audioUrl
+                  .split("https://files.aptisacademy.com.vn/")
+                  .pop();
+
+                if (key) {
+                  await R2UploadService.deleteFile(key);
+                }
+              } catch (deleteError) {
+                console.error(
+                  "❌ Failed to delete audio:",
+                  audioUrl,
+                  deleteError
+                );
+              }
+            }
+          }
+
+          // Upload new audio files nếu có
+          let finalAudioUrl = existingUrls[0] || ""; // Lấy existing file nếu có
+
+          if (selectedFiles.length > 0) {
+            const uploadResults = await R2UploadService.uploadMultipleFiles(
+              selectedFiles,
+              "listening"
+            );
+
+            if (
+              uploadResults.metadata.successful &&
+              uploadResults.metadata.successful.length > 0
+            ) {
+              finalAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.metadata.successful[0].key}`;
+            }
+          }
+
+          uploadedAudioUrls[questionNum] = finalAudioUrl;
+        }
+
+        // Use data from Redux store instead of form values
+        const data = {
+          title: listeningStore?.currentListeningData?.title || values.title,
+          timeToDo: 35,
+          questions: {
+            questionTitle:
+              listeningStore?.currentListeningData?.subTitle || values.subTitle,
+            content:
+              listeningStore?.currentListeningData?.content || values.content,
+            answerList: [],
+            correctAnswer: "",
+            file: null,
+            subQuestionAnswerList: [],
+            suggestion: null,
+            subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(
+              (num) => ({
+                content:
+                  listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                    ?.content ||
+                  values[`subContent${num}` as keyof FormData] ||
+                  "",
+                correctAnswer:
+                  listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                    ?.correctAnswer ||
+                  values[`correctAnswer${num}` as keyof FormData] ||
+                  "",
+                file: uploadedAudioUrls[num] || "",
+                answerList:
+                  listeningStore?.currentListeningData?.subQuestions?.[num - 1]
+                    ?.answerList ||
+                  [1, 2, 3].map((ansNum) => ({
+                    content:
+                      values[`answer${ansNum}Sub${num}` as keyof FormData] ||
+                      "",
+                  })),
+                image: null,
+                suggestion: suggestions[num] || "",
+              })
+            ),
+            isExample: false,
+            image: null,
+          },
+          questionType: "LISTENING",
+          questionPart: "ONE",
+          description: null,
+        };
+
+        if (statusHandler === "create") {
+          await createListeningPartOne(data);
+          resetAllData();
+        }
+        if (statusHandler === "edit") {
+          await updateListeningPartOne(data);
+        }
+
+        // Reset file upload states sau khi submit thành công
+        setSelectedFilesPerQuestion({});
+        setRemovedAudioUrlsPerQuestion({});
+      } catch (error) {
+        console.error("Error uploading files:", error);
+        await notify("Lỗi upload file: " + error, {
+          type: "error",
+        });
+      } finally {
+        setIsUploading(false);
       }
     },
-    [listeningStore, suggestions, statusHandler, resetAllData]
+    [
+      listeningStore,
+      suggestions,
+      statusHandler,
+      resetAllData,
+      selectedFilesPerQuestion,
+      existingAudioUrlsPerQuestion,
+      removedAudioUrlsPerQuestion,
+      notify,
+    ]
   );
 
   const createListeningPartOne = useCallback(
@@ -668,6 +826,14 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
           );
           setValue(`subFile${num}` as keyof FormData, subQuestion.file);
 
+          // Set existing audio URL if available
+          if (subQuestion.file) {
+            setExistingAudioUrlsPerQuestion((prev) => ({
+              ...prev,
+              [num]: [subQuestion.file],
+            }));
+          }
+
           // Update Redux store
           dispatch(
             UPDATE_LISTENING_SUB_QUESTION({
@@ -723,6 +889,21 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
 
   return (
     <div style={{ position: "relative", height: "100vh" }}>
+      {/* Loading Progress Bar */}
+      {isUploading && (
+        <Box
+          sx={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 9999 }}
+        >
+          <LinearProgress
+            color="primary"
+            sx={{
+              height: 4,
+              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+            }}
+          />
+        </Box>
+      )}
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="form sign-up-form relative max-h-[calc(100vh-200px)] overflow-auto"
@@ -785,6 +966,12 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
                 handleSuggestionChange(num, value)
               }
               num={num}
+              selectedFiles={selectedFilesPerQuestion[num] || []}
+              existingAudioUrls={existingAudioUrlsPerQuestion[num] || []}
+              onFilesChange={(files: File[]) => handleFilesChange(num, files)}
+              onRemoveExistingAudio={(url: string) =>
+                handleRemoveExistingAudio(num, url)
+              }
             />
           ))}
         </div>

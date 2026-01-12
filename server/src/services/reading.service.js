@@ -31,10 +31,10 @@ class ReadingFactory {
 		}
 	};
 	static getAllWithQuery = async ({ filter, range, sort }) => {
-		return await baseRepo.getAllWithQuery(
-			{ filter, range, sort },
-			ReadingModel
-		);
+		return await baseRepo.getAllWithQueryReading(
+      { filter, range, sort },
+      ReadingModel
+    );
 	};
 
 	static getOneById = async (id) => {
