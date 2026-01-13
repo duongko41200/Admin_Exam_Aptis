@@ -1,36 +1,33 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, NavLink, useParams } from "react-router-dom";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { useNotify } from "react-admin";
+import { Cancel, Headphones, QuestionAnswer, Save } from "@mui/icons-material";
 import {
-  Stack,
   Box,
-  TextField,
+  Button,
   Card,
   CardContent,
-  Typography,
   Chip,
   Divider,
   Fade,
   Grow,
-  LinearProgress,
   Paper,
-  Button,
+  TextField,
+  Typography,
 } from "@mui/material";
-import { Cancel, QuestionAnswer, Save, Headphones } from "@mui/icons-material";
+import React, { useEffect, useState } from "react";
+import { useNotify } from "react-admin";
+import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import dataProvider from "../../../providers/dataProviders/dataProvider";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
-import { UPDATED_SUCCESS } from "../../../consts/general";
-import TextEditor from "../../../components/TextEditor/TextEditor";
+import { useNavigate, useParams } from "react-router-dom";
 import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
+import TextEditor from "../../../components/TextEditor/TextEditor";
+import { UPDATED_SUCCESS } from "../../../consts/general";
+import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
+import dataProvider from "../../../providers/dataProviders/dataProvider";
 import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
+  INIT_LISTENING_SUB_QUESTIONS,
+  RESET_LISTENING_DATA,
   UPDATE_LISTENING_MAIN_DATA,
   UPDATE_LISTENING_SUB_QUESTION,
-  UPDATE_LISTENING_SUB_QUESTION_SUGGESTION,
-  RESET_LISTENING_DATA,
-  INIT_LISTENING_SUB_QUESTIONS,
 } from "../../../store/feature/listening";
 interface ListeningPartOneProps {
   children?: JSX.Element | JSX.Element[];
@@ -50,6 +47,7 @@ interface FormData {
   content: string;
   file: string;
   suggestion: string;
+  subSuggestion: string;
   // Person options (3 persons for Part 3)
   optionPerson1: string;
   optionPerson2: string;
@@ -225,6 +223,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
   const [idTele, setIdTele] = useState("");
   const [isShow, setIsShow] = useState(false);
   const [suggestion, setSuggestion] = useState("");
+  const [subSuggestion, setSubSuggestion] = useState("");
   // Audio upload states
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [existingAudioUrls, setExistingAudioUrls] = useState<string[]>([]);
@@ -355,6 +354,22 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       );
     }
   }, [suggestion, dispatch, listeningStore?.currentListeningData?.suggestion]);
+
+  // Separate useEffect for subSuggestion
+  useEffect(() => {
+    if (subSuggestion !== listeningStore?.currentListeningData?.subSuggestion) {
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "subSuggestion",
+          value: subSuggestion || "",
+        })
+      );
+    }
+  }, [
+    subSuggestion,
+    dispatch,
+    listeningStore?.currentListeningData?.subSuggestion,
+  ]);
 
   // Separate useEffect for sub questions
   useEffect(() => {
@@ -504,6 +519,9 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
           subQuestionAnswerList: [],
           suggestion:
             listeningStore?.currentListeningData?.suggestion || suggestion,
+          subSuggestion:
+            listeningStore?.currentListeningData?.subSuggestion ||
+            subSuggestion,
           subQuestion: [1, 2, 3, 4].map((num) => ({
             content:
               listeningStore?.currentListeningData?.subQuestions?.[num - 1]
@@ -587,6 +605,7 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
       setValue("subTitle", dataListeningPartThree.questions[0].questionTitle);
       setValue("file", dataListeningPartThree.questions[0].file);
       setSuggestion(dataListeningPartThree.questions[0].suggestion);
+      setSubSuggestion(dataListeningPartThree.questions[0].subSuggestion || "");
 
       // Set existing audio file
       const existingAudio = [];
@@ -624,6 +643,12 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
         UPDATE_LISTENING_MAIN_DATA({
           field: "suggestion",
           value: dataListeningPartThree.questions[0].suggestion || "",
+        })
+      );
+      dispatch(
+        UPDATE_LISTENING_MAIN_DATA({
+          field: "subSuggestion",
+          value: dataListeningPartThree.questions[0].subSuggestion || "",
         })
       );
 
@@ -1011,6 +1036,50 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
                         suggestion={suggestion}
                         setSuggestion={setSuggestion}
                         editorId="listeningPart3Editor"
+                      />
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grow>
+
+              {/* Sub Suggestion Text Editor Section */}
+              <Grow in={true} timeout={950}>
+                <Card
+                  elevation={2}
+                  sx={{
+                    borderRadius: 3,
+                    border: "1px solid",
+                    borderColor: "grey.200",
+                    mb: 4,
+                  }}
+                >
+                  <CardContent sx={{ p: 3 }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        mb: 3,
+                        fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 1,
+                      }}
+                    >
+                      💡 Sub Instructions
+                    </Typography>
+                    <Box
+                      sx={{
+                        border: "1px solid",
+                        borderColor: "grey.300",
+                        borderRadius: 2,
+                        p: 2,
+                        backgroundColor: "rgba(248, 250, 252, 0.5)",
+                      }}
+                    >
+                      <TextEditor
+                        placeholder="Write sub instructions or additional notes ★"
+                        suggestion={subSuggestion}
+                        setSuggestion={setSubSuggestion}
+                        editorId="listeningPart3SubEditor"
                       />
                     </Box>
                   </CardContent>
