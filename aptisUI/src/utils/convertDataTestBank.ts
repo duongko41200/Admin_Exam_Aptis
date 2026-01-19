@@ -3,7 +3,7 @@ export const convertDataReadingBank = (data: any, part: number) => {
     // Conversion logic for part 1
     return data.map((item: any) => ({
       id: item._id,
-      text: item.data.questions.content,
+      text: item.data.questions.questionTitle ,
       options: item.data.questions.subQuestion.map((subQ: any) => subQ.content),
       type: item.data.description,
       skill: "Reading",
@@ -14,7 +14,7 @@ export const convertDataReadingBank = (data: any, part: number) => {
     // Conversion logic for part 2 and 3
     return data.map((item: any) => ({
       id: item._id,
-      text: item.data.questions.content,
+      text: item.data.questions.questionTitle,
       options: item.data.questions.answerList.map((subQ: any) => subQ.content),
       type: item.data.description,
       skill: "Reading",
@@ -25,7 +25,7 @@ export const convertDataReadingBank = (data: any, part: number) => {
     // Conversion logic for part 4
     return data.map((item: any) => ({
       id: item._id,
-      text: item.data.questions.content,
+      text: item.data.questions.questionTitle,
       options: item.data.questions.answerList.map((subQ: any) => subQ.content),
       type: item.data.description,
       skill: "Reading",
@@ -36,7 +36,7 @@ export const convertDataReadingBank = (data: any, part: number) => {
     // Conversion logic for part 5
     return data.map((item: any) => ({
       id: item._id,
-      text: item.data.questions.content,
+      text: item.data.questions.questionTitle,
       options: item.data.questions.subQuestion.map((subQ: any) => subQ.content),
       type: item.data.description,
       skill: "Reading",
@@ -96,7 +96,7 @@ export const convertDataWritingBank = (data: any, part: number) => {
   if (part === 1) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Writing",
@@ -106,7 +106,7 @@ export const convertDataWritingBank = (data: any, part: number) => {
   if (part === 2) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Writing",
@@ -117,7 +117,7 @@ export const convertDataWritingBank = (data: any, part: number) => {
   if (part === 3) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Writing",
@@ -127,7 +127,7 @@ export const convertDataWritingBank = (data: any, part: number) => {
   if (part === 4) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Writing",
@@ -135,8 +135,6 @@ export const convertDataWritingBank = (data: any, part: number) => {
     }));
   }
 };
-
-
 
 export const convertDataSpeakingBank = (data: any, part: number) => {
   // Add conversion logic for Writing bank based on part

@@ -5,7 +5,6 @@ import {
   Divider,
   List,
   ListItemButton,
-  ListItemText,
   Paper,
   Stack,
   Tab,
@@ -18,7 +17,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { styled } from "@mui/system";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Create, useNotify } from "react-admin";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -158,6 +157,11 @@ interface Question {
   part: number;
 }
 
+interface FilterOptions {
+  text: string;
+  type: string;
+}
+
 interface TestBankCreateProps {
   recordEdit?: any;
   statusHandler?: string;
@@ -172,7 +176,7 @@ const TestBankCreate = ({
   const navigate = useNavigate();
   const notify = useNotify();
   const [activeTab, setActiveTab] = useState<number>(0);
-  const [selectedPart, setSelectedPart] = useState<number | null>(null);
+  const [selectedPart, setSelectedPart] = useState<number | null>(1);
   const [nameTestBank, setNameTestBank] = useState<string>("");
   // selectedQuestions: { [skill]: { [part]: Set<questionId> } }
   const [selectedQuestions, setSelectedQuestions] = useState<
@@ -180,6 +184,15 @@ const TestBankCreate = ({
   >({});
 
   const [questionList, setQuestionList] = useState<Question[]>([]);
+  const [filteredQuestionList, setFilteredQuestionList] = useState<Question[]>(
+    []
+  );
+  const [filterOptions, setFilterOptions] = useState<FilterOptions>({
+    text: "",
+    type: "",
+  });
+
+  console.log("questionList là: ", questionList);
 
   const [classrooms, setClassrooms] = useState<Classroom[]>([
     {
@@ -190,123 +203,172 @@ const TestBankCreate = ({
 
   const [selectedClassId, setSelectedClassId] = useState<string>("");
 
-  // Mock data cho questions - trong thực tế sẽ fetch từ API
-  const mockQuestions: Question[] = [
-    {
-      id: "q1",
-      text: "What is the capital of France?",
-      options: ["London", "Berlin", "Paris", "Madrid"],
-      type: "multiple-choice",
-      skill: skillTabs[activeTab]?.label || "Grammar",
-      part: selectedPart || 1,
-    },
-    {
-      id: "q2",
-      text: "Choose the correct answer: She _____ to the store yesterday.",
-      options: ["go", "goes", "went", "going"],
-      type: "multiple-choice",
-      skill: skillTabs[activeTab]?.label || "Grammar",
-      part: selectedPart || 1,
-    },
-    {
-      id: "q3",
-      text: "Fill in the blank: I have _____ finished my homework.",
-      options: ["already", "yet", "just", "never"],
-      type: "multiple-choice",
-      skill: skillTabs[activeTab]?.label || "Grammar",
-      part: selectedPart || 1,
-    },
-  ];
-
-  const handleChange = (event: SelectChangeEvent) => {
+  const handleChange = useCallback((event: SelectChangeEvent) => {
     setSelectedClassId(event.target.value);
-  };
+  }, []);
 
   const testBankData = useSelector(
     (state: RootState) => state.testBankStore.testBankData
   );
   const dispatch = useDispatch();
 
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
-    setActiveTab(newValue);
-    setSelectedPart(null); // Reset selected part when changing tabs
-    setQuestionList([]); // Clear question list when changing tabs
-  };
+  const handleFilterChange = useCallback(
+    (field: keyof FilterOptions, value: string) => {
+      setFilterOptions((prev) => ({
+        ...prev,
+        [field]: value,
+      }));
+    },
+    []
+  );
 
-  const handlePartSelect = async (partId: number) => {
-    setSelectedPart(partId);
+  const clearFilters = useCallback(() => {
+    setFilterOptions({ text: "", type: "" });
+  }, []);
 
-    if (skillTabs[activeTab]?.label === "Reading") {
-      const { data } = await dataProvider.getFiltersRecord("readings", {
-        partSkill: converPartReadingSkill(partId),
-      });
-
-      const result = convertDataReadingBank(data, partId);
-
-      setQuestionList(result);
-    }
-    if (skillTabs[activeTab]?.label === "Listening") {
-      const { data } = await dataProvider.getFiltersRecord("listenings", {
-        partSkill: converPartListeningSkill(partId),
-      });
-
-      const result = convertDataListeningBank(data, partId);
-      setQuestionList(result);
-    }
-    if (skillTabs[activeTab]?.label === "Writing") {
-      const { data } = await dataProvider.getFiltersRecord("writings", {
-        partSkill: converPartListeningSkill(partId),
-      });
-      const result = convertDataWritingBank(data, partId);
-      setQuestionList(result);
-    }
-
-    if (skillTabs[activeTab]?.label === "Speaking") {
-      const { data } = await dataProvider.getFiltersRecord("Speakings", {
-        partSkill: converPartListeningSkill(partId),
-      });
-      const result = convertDataSpeakingBank(data, partId);
-      setQuestionList(result);
-    }
-  };
-
-  const handleQuestionToggle = (questionId: string) => {
+  const handleSelectAll = useCallback(() => {
     if (!selectedPart) return;
     const skill = skillTabs[activeTab]?.label?.toLowerCase();
     const partKey = `part${selectedPart}`;
     setSelectedQuestions((prev) => {
       const updated = { ...prev };
       if (!updated[skill]) updated[skill] = {};
-      if (!updated[skill][partKey]) updated[skill][partKey] = new Set();
-      const set = new Set(updated[skill][partKey]);
-      if (set.has(questionId)) {
-        set.delete(questionId);
+      let questionsToSelect: Question[];
+      if (filterOptions.text.trim() || filterOptions.type.trim()) {
+        questionsToSelect = filteredQuestionList;
       } else {
-        set.add(questionId);
+        questionsToSelect = questionList;
       }
-      updated[skill][partKey] = set;
+      const questionIds = questionsToSelect.map((q) => q.id);
+      updated[skill][partKey] = new Set(questionIds);
       return { ...updated };
     });
-  };
+  }, [
+    selectedPart,
+    activeTab,
+    filteredQuestionList,
+    questionList,
+    filterOptions,
+  ]);
 
-  const getPartsForCurrentTab = () => {
+  const handleDeselectAll = useCallback(() => {
+    if (!selectedPart) return;
+    const skill = skillTabs[activeTab]?.label?.toLowerCase();
+    const partKey = `part${selectedPart}`;
+    setSelectedQuestions((prev) => {
+      const updated = { ...prev };
+      if (!updated[skill]) updated[skill] = {};
+      // Determine which questions to deselect based on filter state
+      let questionsToDeselect: Question[];
+      if (filterOptions.text.trim() || filterOptions.type.trim()) {
+        questionsToDeselect = filteredQuestionList;
+      } else {
+        questionsToDeselect = questionList;
+      }
+      const questionIds = new Set(questionsToDeselect.map((q) => q.id));
+      const existingSet = updated[skill][partKey] || new Set<string>();
+      // Remove only the filtered (or all) questions from the set
+      const newSet = new Set(
+        Array.from(existingSet).filter((id) => !questionIds.has(id))
+      );
+      updated[skill][partKey] = newSet;
+      return { ...updated };
+    });
+  }, [
+    selectedPart,
+    activeTab,
+    filteredQuestionList,
+    questionList,
+    filterOptions,
+  ]);
+
+  const handleTabChange = useCallback(
+    (event: React.SyntheticEvent, newValue: number) => {
+      setActiveTab(newValue);
+      setSelectedPart(1); // Reset to Part 1 when changing tabs
+      setQuestionList([]); // Clear question list when changing tabs
+      clearFilters(); // Clear filters when changing tabs
+    },
+    [clearFilters]
+  );
+
+  const handlePartSelect = useCallback(
+    async (partId: number) => {
+      setSelectedPart(partId);
+      // Clear filters when changing parts
+      clearFilters();
+
+      if (skillTabs[activeTab]?.label === "Reading") {
+        const { data } = await dataProvider.getFiltersRecord("readings", {
+          partSkill: converPartReadingSkill(partId),
+        });
+
+        const result = convertDataReadingBank(data, partId);
+
+        setQuestionList(result);
+      }
+      if (skillTabs[activeTab]?.label === "Listening") {
+        const { data } = await dataProvider.getFiltersRecord("listenings", {
+          partSkill: converPartListeningSkill(partId),
+        });
+
+        const result = convertDataListeningBank(data, partId);
+        setQuestionList(result);
+      }
+      if (skillTabs[activeTab]?.label === "Writing") {
+        const { data } = await dataProvider.getFiltersRecord("writings", {
+          partSkill: converPartListeningSkill(partId),
+        });
+        const result = convertDataWritingBank(data, partId);
+        setQuestionList(result);
+      }
+
+      if (skillTabs[activeTab]?.label === "Speaking") {
+        const { data } = await dataProvider.getFiltersRecord("Speakings", {
+          partSkill: converPartListeningSkill(partId),
+        });
+        const result = convertDataSpeakingBank(data, partId);
+        setQuestionList(result);
+      }
+    },
+    [activeTab, clearFilters]
+  );
+
+  const handleQuestionToggle = useCallback(
+    (questionId: string) => {
+      if (!selectedPart) return;
+      const skill = skillTabs[activeTab]?.label?.toLowerCase();
+      const partKey = `part${selectedPart}`;
+      setSelectedQuestions((prev) => {
+        const updated = { ...prev };
+        if (!updated[skill]) updated[skill] = {};
+        if (!updated[skill][partKey]) updated[skill][partKey] = new Set();
+        const set = new Set(updated[skill][partKey]);
+        if (set.has(questionId)) {
+          set.delete(questionId);
+        } else {
+          set.add(questionId);
+        }
+        updated[skill][partKey] = set;
+        return { ...updated };
+      });
+    },
+    [selectedPart, activeTab]
+  );
+
+  const getPartsForCurrentTab = useCallback(() => {
     const currentSkill = skillTabs[activeTab]?.label;
     if (currentSkill === "Reading" || currentSkill === "Grammar") {
       return tests; // 5 parts
     }
     return tests.slice(0, 4); // 4 parts for other skills
-  };
+  }, [activeTab]);
 
-  const getQuestionsForCurrentSelection = () => {
-    if (!selectedPart) return [];
-
-    console.log("selectedPart", selectedPart);
-    return mockQuestions.filter(
-      (q) => q.skill === skillTabs[activeTab]?.label && q.part === selectedPart
-    );
-  };
-  function mergeSection(baseSection, selectedSection = {}) {
-    const result = {};
+  function mergeSection(
+    baseSection: Record<string, string[]>,
+    selectedSection: Record<string, Set<string>> = {}
+  ): Record<string, string[]> {
+    const result: Record<string, string[]> = {};
 
     for (const key in baseSection) {
       const value = selectedSection[key];
@@ -315,15 +377,100 @@ const TestBankCreate = ({
 
     return result;
   }
-  const getSelectedQuestionsList = () => {
+  const getSelectedQuestionsList = useCallback(() => {
     if (!selectedPart) return [];
     const skill = skillTabs[activeTab]?.label?.toLowerCase();
     const partKey = `part${selectedPart}`;
     const set = selectedQuestions[skill]?.[partKey] || new Set();
     return questionList.filter((q) => set.has(q.id));
-  };
+  }, [selectedPart, activeTab, selectedQuestions, questionList]);
 
-  const createWritingPartOne = async () => {
+  // Filter questions based on filter options
+  useEffect(() => {
+    if (!questionList.length) {
+      setFilteredQuestionList([]);
+      return;
+    }
+
+    let filtered = questionList;
+
+    if (filterOptions.text.trim()) {
+      filtered = filtered.filter((q) =>
+        q.text.toLowerCase().includes(filterOptions.text.toLowerCase())
+      );
+    }
+
+    if (filterOptions.type.trim()) {
+      filtered = filtered.filter((q) =>
+        q.type.toLowerCase().includes(filterOptions.type.toLowerCase())
+      );
+    }
+
+    setFilteredQuestionList(filtered);
+  }, [questionList, filterOptions]);
+
+  // Populate selectedQuestions from recordEdit when in edit mode
+  useEffect(() => {
+    if (!recordEdit || statusHandler !== "edit") return;
+
+    const { listening, reading, writing, speaking } = recordEdit;
+    const newSelectedQuestions: Record<
+      string,
+      Record<string, Set<string>>
+    > = {};
+
+    // Process listening
+    if (listening) {
+      newSelectedQuestions.listening = {};
+      Object.entries(listening).forEach(
+        ([partKey, questionIds]: [string, string[]]) => {
+          if (Array.isArray(questionIds)) {
+            newSelectedQuestions.listening[partKey] = new Set(questionIds);
+          }
+        }
+      );
+    }
+
+    // Process reading
+    if (reading) {
+      newSelectedQuestions.reading = {};
+      Object.entries(reading).forEach(
+        ([partKey, questionIds]: [string, string[]]) => {
+          if (Array.isArray(questionIds)) {
+            newSelectedQuestions.reading[partKey] = new Set(questionIds);
+          }
+        }
+      );
+    }
+
+    // Process writing
+    if (writing) {
+      newSelectedQuestions.writing = {};
+      Object.entries(writing).forEach(
+        ([partKey, questionIds]: [string, string[]]) => {
+          if (Array.isArray(questionIds)) {
+            newSelectedQuestions.writing[partKey] = new Set(questionIds);
+          }
+        }
+      );
+    }
+
+    // Process speaking
+    if (speaking) {
+      newSelectedQuestions.speaking = {};
+      Object.entries(speaking).forEach(
+        ([partKey, questionIds]: [string, string[]]) => {
+          if (Array.isArray(questionIds)) {
+            newSelectedQuestions.speaking[partKey] = new Set(questionIds);
+          }
+        }
+      );
+    }
+
+    setSelectedQuestions(newSelectedQuestions);
+  }, [recordEdit, statusHandler]);
+
+  const createWritingPartOne = useCallback(async () => {
     // Deep clone to avoid mutating redux state
     const testBankDataClone = JSON.parse(JSON.stringify(testBankData));
 
@@ -364,8 +511,8 @@ const TestBankCreate = ({
     } catch (error) {
       console.error(error);
     }
-  };
-  const updateWritingPartOne = async () => {
+  }, [testBankData, selectedQuestions, selectedClassId, nameTestBank, notify]);
+  const updateWritingPartOne = useCallback(async () => {
     const testBankDataClone = { ...testBankData };
     testBankDataClone.classRoomId =
       selectedClassId === "free" ? classFreeId : selectedClassId;
@@ -388,28 +535,34 @@ const TestBankCreate = ({
         type: "warning",
       });
     }
-  };
+  }, [testBankData, selectedClassId, nameTestBank, recordEdit, notify]);
 
-  const handleSaveTestBank = async () => {
+  const handleSaveTestBank = useCallback(async () => {
     try {
       if (statusHandler === "create") {
-        createWritingPartOne();
+        await createWritingPartOne();
       }
       if (statusHandler === "edit") {
-        updateWritingPartOne();
+        await updateWritingPartOne();
       }
       navigate("/test-banks");
       dispatch(RESET_TESTBANK_DATA());
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [
+    statusHandler,
+    createWritingPartOne,
+    updateWritingPartOne,
+    navigate,
+    dispatch,
+  ]);
 
-  const handleCancel = () => {
+  const handleCancel = useCallback(() => {
     navigate("/test-banks");
-  };
+  }, [navigate]);
 
-  const fetchClassrooms = async () => {
+  const fetchClassrooms = useCallback(async () => {
     try {
       const response = await dataProvider.getAll("classrooms");
 
@@ -427,7 +580,7 @@ const TestBankCreate = ({
       console.error("Error fetching classrooms:", error);
       notify("Call api class room lỗi", { type: "error" });
     }
-  };
+  }, [notify]);
 
   useEffect(() => {
     if (!recordEdit) return;
@@ -475,7 +628,47 @@ const TestBankCreate = ({
 
   useEffect(() => {
     fetchClassrooms();
-  }, []);
+  }, [fetchClassrooms]);
+
+  // Auto-load Part 1 questions when component mounts or tab changes
+  useEffect(() => {
+    const loadInitialQuestions = async () => {
+      if (selectedPart !== 1) return;
+
+      clearFilters();
+
+      if (skillTabs[activeTab]?.label === "Reading") {
+        const { data } = await dataProvider.getFiltersRecord("readings", {
+          partSkill: converPartReadingSkill(1),
+        });
+        const result = convertDataReadingBank(data, 1);
+        setQuestionList(result);
+      }
+      if (skillTabs[activeTab]?.label === "Listening") {
+        const { data } = await dataProvider.getFiltersRecord("listenings", {
+          partSkill: converPartListeningSkill(1),
+        });
+        const result = convertDataListeningBank(data, 1);
+        setQuestionList(result);
+      }
+      if (skillTabs[activeTab]?.label === "Writing") {
+        const { data } = await dataProvider.getFiltersRecord("writings", {
+          partSkill: converPartListeningSkill(1),
+        });
+        const result = convertDataWritingBank(data, 1);
+        setQuestionList(result);
+      }
+      if (skillTabs[activeTab]?.label === "Speaking") {
+        const { data } = await dataProvider.getFiltersRecord("Speakings", {
+          partSkill: converPartListeningSkill(1),
+        });
+        const result = convertDataSpeakingBank(data, 1);
+        setQuestionList(result);
+      }
+    };
+
+    loadInitialQuestions();
+  }, [activeTab, selectedPart, clearFilters]); // Depend on activeTab, selectedPart, and clearFilters
 
   return (
     <Create redirect="list" title="管理ユーザー管理　新規作成">
@@ -584,20 +777,47 @@ const TestBankCreate = ({
                   selected={selectedPart === test.partId}
                   onClick={() => handlePartSelect(test.partId)}
                 >
-                  <ListItemText
-                    primary={test.title}
-                    primaryTypographyProps={{
+                  <Typography
+                    variant="body1"
+                    sx={{
                       fontWeight:
                         selectedPart === test.partId ? "bold" : "normal",
-                      color:
-                        selectedPart === test.partId
-                          ? "primary"
-                          : "textPrimary",
                     }}
-                  />
+                  >
+                    {test.title}
+                  </Typography>
                 </PartButton>
               ))}
             </List>
+            <Box sx={{ mt: 2, display: "flex", gap: 1 }}>
+              <Button
+                size="small"
+                variant="contained"
+                onClick={handleSelectAll}
+                disabled={
+                  filterOptions.text.trim() || filterOptions.type.trim()
+                    ? filteredQuestionList.length === 0
+                    : questionList.length === 0
+                }
+                sx={{ bgcolor: "primary.main" }}
+              >
+                Select All
+              </Button>
+              <Button
+                size="small"
+                variant="outlined"
+                color="error"
+                onClick={handleDeselectAll}
+                disabled={
+                  filterOptions.text.trim() || filterOptions.type.trim()
+                    ? filteredQuestionList.length === 0
+                    : questionList.length === 0
+                }
+                sx={{ ml: 1 }}
+              >
+                Deselect All
+              </Button>
+            </Box>
           </Sidebar>
 
           <MainContent
@@ -611,10 +831,72 @@ const TestBankCreate = ({
               <Typography variant="h6" gutterBottom>
                 Questions {selectedPart ? `- Part ${selectedPart}` : ""}
               </Typography>
+
+              {selectedPart && questionList.length > 0 && (
+                <Box sx={{ mb: 2, p: 2, bgcolor: "#f5f5f5", borderRadius: 1 }}>
+                  <Typography variant="subtitle2" gutterBottom>
+                    Filter Questions
+                  </Typography>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: 2,
+                      alignItems: "center",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <TextField
+                      size="small"
+                      label="Search by text"
+                      variant="outlined"
+                      value={filterOptions.text}
+                      onChange={(e) =>
+                        handleFilterChange("text", e.target.value)
+                      }
+                      sx={{ minWidth: 200 }}
+                    />
+                    <TextField
+                      size="small"
+                      label="Filter by type"
+                      variant="outlined"
+                      value={filterOptions.type}
+                      onChange={(e) =>
+                        handleFilterChange("type", e.target.value)
+                      }
+                      sx={{ minWidth: 200 }}
+                    />
+                    <Button
+                      size="small"
+                      variant="outlined"
+                      onClick={clearFilters}
+                      disabled={!filterOptions.text && !filterOptions.type}
+                    >
+                      Clear Filters
+                    </Button>
+                    <Button
+                      size="small"
+                      variant="contained"
+                      onClick={handleSelectAll}
+                      disabled={
+                        filterOptions.text.trim() || filterOptions.type.trim()
+                          ? filteredQuestionList.length === 0
+                          : questionList.length === 0
+                      }
+                      sx={{ bgcolor: "primary.main" }}
+                    >
+                      Select All
+                    </Button>
+                    <Typography variant="body2" color="textSecondary">
+                      Showing {filteredQuestionList.length} of{" "}
+                      {questionList.length} questions
+                    </Typography>
+                  </Box>
+                </Box>
+              )}
               {selectedPart ? (
                 <Box>
-                  {questionList.length > 0 ? (
-                    questionList.map((question) => (
+                  {filteredQuestionList.length > 0 ? (
+                    filteredQuestionList.map((question) => (
                       <QuestionItem key={question.id}>
                         <Checkbox
                           checked={(() => {
@@ -648,6 +930,21 @@ const TestBankCreate = ({
                             >
                               {question.text}
                             </Typography>
+                            <Typography
+                              variant="body1"
+                              gutterBottom
+                              sx={{
+                                whiteSpace: "nowrap",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                                maxWidth: "850px",
+                                cursor: "pointer",
+                                display: "inline-block",
+                              }}
+                              title={question.text}
+                            >
+                              {question.type}
+                            </Typography>
                           </Box>
 
                           {question.options && (
@@ -679,7 +976,9 @@ const TestBankCreate = ({
                     ))
                   ) : (
                     <Typography color="textSecondary" align="center" mt={4}>
-                      Chưa có câu hỏi cho Part {selectedPart}
+                      {questionList.length === 0
+                        ? `Chưa có câu hỏi cho Part ${selectedPart}`
+                        : "Không có câu hỏi nào phù hợp với bộ lọc"}
                     </Typography>
                   )}
                 </Box>
