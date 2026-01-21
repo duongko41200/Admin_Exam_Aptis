@@ -10,11 +10,10 @@ import {
   Grow,
   LinearProgress,
   Paper,
-  Stack,
   TextField,
-  Typography,
+  Typography
 } from "@mui/material";
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,13 +23,13 @@ import TextEditor from "../../../components/TextEditor/TextEditor";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
   RESET_SPEAKING_DATA,
   UPDATE_SPEAKING_MAIN_DATA,
   UPDATE_SUB_QUESTION,
   UPDATE_SUB_QUESTION_SUGGESTION,
 } from "../../../store/feature/speaking";
-import R2UploadService from "../../../services/API/r2UploadHelper.service";
 
 // Styles for old drag and drop (fallback)
 const stylesInpection = {
@@ -419,7 +418,7 @@ const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
                 "",
             })),
             isExample: "",
-            image: uploadedImageKeys, // Keys của ảnh mới
+            image: uploadedImageUrls, // Keys của ảnh mới
           },
         ],
         questionType: "SPEAKING",
@@ -646,8 +645,7 @@ const SpeakingPartThree: React.FC<ReadingPartThreeProps> = ({
         dataReadingPartThree.questions[0].image.length > 0
       ) {
         dataReadingPartThree.questions[0].image.forEach((img) => {
-          if (img)
-            existingImages.push(`https://files.aptisacademy.com.vn/${img}`);
+          if (img) existingImages.push(`${img}`);
         });
       }
 

@@ -1,24 +1,24 @@
-import { Document } from "@langchain/core/documents";
-import cosineSimilarity from "compute-cosine-similarity";
-import fs from "fs/promises";
-import path from "path";
-import { WritingSubmissionSchema } from "../../../schema/writing.model.js";
-import { initializeChromaDB } from "../../configs/chroma.js";
-import { embedWithGemini } from "../../lib/embedding.util.js";
+import { Document } from '@langchain/core/documents';
+import cosineSimilarity from 'compute-cosine-similarity';
+import fs from 'fs/promises';
+import path from 'path';
+import { WritingSubmissionSchema } from '../../../schema/writing.model.js';
+import { initializeChromaDB } from '../../configs/chroma.js';
+import { embedWithGemini } from '../../lib/embedding.util.js';
 import {
   addDocumentToChroma,
   deleteDocumentFromChroma,
   getAllDocumentsFromChroma,
   initializeChromaReferences,
-} from "../base-repo/chroma.js";
-import * as scoringPipeline from "./scoringPipeline.service.js";
+} from '../base-repo/chroma.js';
+import * as scoringPipeline from './scoringPipeline.service.js';
 
-import { initialize as initializeGemini } from "../../configs/gemini.js";
+import { initialize as initializeGemini } from '../../configs/gemini.js';
 import {
   genPromptAIScore,
   genPromptFormEmailFormal,
-} from "../../const/prompt.js";
-import { validatePartWriting } from "../../const/writing.js";
+} from '../../const/prompt.js';
+import { validatePartWriting } from '../../const/writing.js';
 
 /**
  * Retry utility with exponential backoff
@@ -32,8 +32,8 @@ const retryWithBackoff = async (asyncFn, maxRetries = 3, baseDelay = 1000) => {
       const isRetryable =
         error.status === 503 || // Service Unavailable
         error.status === 429 || // Rate Limited
-        error.message.includes("overloaded") ||
-        error.message.includes("network");
+        error.message.includes('overloaded') ||
+        error.message.includes('network');
 
       if (!isRetryable || attempt === maxRetries) {
         throw error;
@@ -42,8 +42,8 @@ const retryWithBackoff = async (asyncFn, maxRetries = 3, baseDelay = 1000) => {
       const delay = baseDelay * Math.pow(2, attempt - 1) + Math.random() * 1000;
       console.log(
         `🔄 Retry attempt ${attempt}/${maxRetries} after ${delay.toFixed(
-          0
-        )}ms...`
+          0,
+        )}ms...`,
       );
       await new Promise((resolve) => setTimeout(resolve, delay));
     }
@@ -62,10 +62,10 @@ let writingsDatabase = new Map();
 // ChromaDB configuration
 // let chromaCollection = null;
 
-const STORAGE_PATH = process.env.WRITING_STORAGE_PATH || "./data/writings";
+const STORAGE_PATH = process.env.WRITING_STORAGE_PATH || './data/writings';
 function cleanJsonResponse(response) {
   // Loại bỏ các đoạn markdown như ```json ... ```
-  return response.replace(/```json|```/g, "").trim();
+  return response.replace(/```json|```/g, '').trim();
 }
 /**
  * Submit a new writing for scoring and storage
@@ -79,7 +79,7 @@ let isServiceInitialized = false;
  */
 const ensureInitialized = async () => {
   if (!isServiceInitialized) {
-    console.log("🔧 Initializing writing service...");
+    console.log('🔧 Initializing writing service...');
     await initialize();
     isServiceInitialized = true;
   }
@@ -87,7 +87,7 @@ const ensureInitialized = async () => {
 
 export const submitWriting = async (writingData) => {
   const startTime = Date.now();
-  console.log("writingData", writingData);
+  console.log('writingData', writingData);
   try {
     // Ensure service is initialized before processing
     await ensureInitialized();
@@ -105,7 +105,7 @@ export const submitWriting = async (writingData) => {
       scoringPipeline.scoreWriting(
         validatedData.content,
         validatedData.part,
-        true // use detailed feedback
+        true, // use detailed feedback
       ),
       // Generate embedding
       embedWithGemini(validatedData.content),
@@ -122,44 +122,44 @@ export const submitWriting = async (writingData) => {
           return await geminiModel.generateContent(prompt);
         },
         3,
-        2000
+        2000,
       ),
     ]);
 
     // Process results with fallback handling
     const finalScoringResult =
-      scoringResult.status === "fulfilled" ? scoringResult.value : null;
+      scoringResult.status === 'fulfilled' ? scoringResult.value : null;
     const finalEmbedding =
-      embedding.status === "fulfilled" ? embedding.value : null;
+      embedding.status === 'fulfilled' ? embedding.value : null;
 
     let convertTextByJson = null;
-    if (geminiResult.status === "fulfilled") {
+    if (geminiResult.status === 'fulfilled') {
       try {
         const response = geminiResult.value.response.text();
         const cleanResponse = cleanJsonResponse(response);
         convertTextByJson = JSON.parse(cleanResponse);
-        console.log("✅ Gemini AI review:", convertTextByJson);
+        console.log('✅ Gemini AI review:', convertTextByJson);
       } catch (parseError) {
-        console.warn("⚠️ Failed to parse Gemini response:", parseError.message);
-        convertTextByJson = { error: "Parse failed", fallback: true };
+        console.warn('⚠️ Failed to parse Gemini response:', parseError.message);
+        convertTextByJson = { error: 'Parse failed', fallback: true };
       }
     } else {
-      console.error("❌ Gemini AI failed:", geminiResult.reason.message);
+      console.error('❌ Gemini AI failed:', geminiResult.reason.message);
       // Fallback scoring
       convertTextByJson = {
         overall_score: finalScoringResult?.overall_score || 5,
-        error: "Gemini AI unavailable",
+        error: 'Gemini AI unavailable',
         fallback: true,
-        message: "Using fallback scoring due to AI service unavailability",
+        message: 'Using fallback scoring due to AI service unavailability',
       };
     }
 
     // Ensure we have valid data
     if (!finalScoringResult || !finalEmbedding) {
       throw new Error(
-        "Critical services failed: " +
-          (!finalScoringResult ? "scoring " : "") +
-          (!finalEmbedding ? "embedding" : "")
+        'Critical services failed: ' +
+          (!finalScoringResult ? 'scoring ' : '') +
+          (!finalEmbedding ? 'embedding' : ''),
       );
     }
 
@@ -200,7 +200,7 @@ export const submitWriting = async (writingData) => {
     // Step 9: Generate progress analysis
     const progressAnalysis = await generateProgressAnalysis(
       validatedData.userId,
-      writing
+      writing,
     );
 
     const result = {
@@ -211,7 +211,7 @@ export const submitWriting = async (writingData) => {
 
     return result;
   } catch (error) {
-    console.log("Error in submitWriting", error);
+    console.log('Error in submitWriting', error);
     throw new Error(`Failed to submit writing: ${error.message}`);
   }
 };
@@ -222,7 +222,7 @@ export const submitWriting = async (writingData) => {
 export const calculateAndLogSimilarity = async (
   newDocument,
   newEmbedding,
-  newWritingId
+  newWritingId,
 ) => {
   // Get all existing documents from ChromaDB
   const existingDocuments = await getAllDocumentsFromChroma();
@@ -247,7 +247,7 @@ export const calculateAndLogSimilarity = async (
   for (let i = 0; i < existingDocuments.length; i++) {
     const existingDoc = existingDocuments[i];
 
-    console.log("existingDoc", existingDocuments[i]);
+    console.log('existingDoc', existingDocuments[i]);
 
     // Check embedding validity before calculating similarity
     if (
@@ -260,10 +260,10 @@ export const calculateAndLogSimilarity = async (
       console.log(`Existing Writing ID: ${existingDoc.writingId}`);
       console.log(`Skipping similarity calculation - invalid embedding data`);
       console.log(
-        `Existing embedding valid: ${Array.isArray(existingDoc.embedding)}`
+        `Existing embedding valid: ${Array.isArray(existingDoc.embedding)}`,
       );
       console.log(`New embedding valid: ${Array.isArray(newEmbedding)}`);
-      console.log("---");
+      console.log('---');
       continue;
     }
 
@@ -281,7 +281,7 @@ export const calculateAndLogSimilarity = async (
     // }
 
     try {
-      console.log("existingDoc.embedding:", existingDoc.embedding);
+      console.log('existingDoc.embedding:', existingDoc.embedding);
       const similarity = cosineSimilarity(existingDoc.embedding, newEmbedding);
 
       console.log(`--- Comparison ${i + 1} ---`);
@@ -289,18 +289,17 @@ export const calculateAndLogSimilarity = async (
       console.log(
         `Existing Content Preview: ${existingDoc.document.pageContent.substring(
           0,
-          100
-        )}...`
+          100,
+        )}...`,
       );
       console.log(
-        `User ID: ${existingDoc.document.metadata.userId} | Type: ${existingDoc.document.metadata.type}`
+        `User ID: ${existingDoc.document.metadata.userId} | Type: ${existingDoc.document.metadata.type}`,
       );
-      console.log(`Cosine Similarity: ${similarity.toFixed(4)}`);
 
       // Categorize similarity level
-      let similarityLevel = "";
+      let similarityLevel = '';
       if (similarity >= 0.7) {
-        similarityLevel = "VERY HIGH (Possible duplicate)";
+        similarityLevel = 'VERY HIGH (Possible duplicate)';
         similarityResults.push({
           writingId: existingDoc.writingId,
           similarity: similarity,
@@ -308,26 +307,26 @@ export const calculateAndLogSimilarity = async (
           level: similarityLevel,
         });
       } else if (similarity >= 0.5) {
-        similarityLevel = "MODERATE (Some similarities)";
+        similarityLevel = 'MODERATE (Some similarities)';
       } else if (similarity >= 0.3) {
-        similarityLevel = "LOW (Few similarities)";
+        similarityLevel = 'LOW (Few similarities)';
       } else {
-        similarityLevel = "VERY LOW (Minimal similarities)";
+        similarityLevel = 'VERY LOW (Minimal similarities)';
       }
 
       console.log(`Similarity Level: ${similarityLevel}`);
-      console.log("---");
+      console.log('---');
 
       return similarityResults;
     } catch (error) {
       console.log(`--- Comparison ${i + 1} ---`);
       console.log(`Existing Writing ID: ${existingDoc.writingId}`);
       console.log(`Error calculating similarity: ${error.message}`);
-      console.log("---");
+      console.log('---');
     }
   }
 
-  console.log("=== END SIMILARITY ANALYSIS ===\n");
+  console.log('=== END SIMILARITY ANALYSIS ===\n');
 };
 
 /**
@@ -359,7 +358,7 @@ export const findSimilarWritings = async (content, topK = 5) => {
           !Array.isArray(queryEmbedding)
         ) {
           console.log(
-            `Skipping document ${docItem.writingId} - invalid embedding`
+            `Skipping document ${docItem.writingId} - invalid embedding`,
           );
           return null;
         }
@@ -367,7 +366,7 @@ export const findSimilarWritings = async (content, topK = 5) => {
         // Check embedding lengths match
         if (docItem.embedding.length !== queryEmbedding.length) {
           console.log(
-            `Skipping document ${docItem.writingId} - embedding length mismatch`
+            `Skipping document ${docItem.writingId} - embedding length mismatch`,
           );
           console.log(`Document embedding length: ${docItem.embedding.length}`);
           console.log(`Query embedding length: ${queryEmbedding.length}`);
@@ -377,7 +376,7 @@ export const findSimilarWritings = async (content, topK = 5) => {
         try {
           const similarity = cosineSimilarity(
             docItem.embedding,
-            queryEmbedding
+            queryEmbedding,
           );
           return {
             writingId: docItem.writingId,
@@ -388,7 +387,7 @@ export const findSimilarWritings = async (content, topK = 5) => {
           };
         } catch (error) {
           console.log(
-            `Error calculating similarity for document ${docItem.writingId}: ${error.message}`
+            `Error calculating similarity for document ${docItem.writingId}: ${error.message}`,
           );
           return null;
         }
@@ -408,16 +407,16 @@ export const findSimilarWritings = async (content, topK = 5) => {
       console.log(`   Similarity: ${item.similarity.toFixed(4)}`);
       console.log(`   Content Preview: ${item.content.substring(0, 100)}...`);
       console.log(
-        `   User: ${item.metadata.userId} | Type: ${item.metadata.type}`
+        `   User: ${item.metadata.userId} | Type: ${item.metadata.type}`,
       );
-      console.log("---");
+      console.log('---');
     });
 
-    console.log("=== END SIMILAR WRITINGS SEARCH ===\n");
+    console.log('=== END SIMILAR WRITINGS SEARCH ===\n');
 
     return topSimilar;
   } catch (error) {
-    console.log("Error finding similar writings", error);
+    console.log('Error finding similar writings', error);
     throw new Error(`Failed to find similar writings: ${error.message}`);
   }
 };
@@ -468,7 +467,7 @@ export async function validateAptisEmail(emailText, part, metadata) {
   if (part === 4) {
     if (metadata && metadata.typeEmail === EMAIL_TYPE.FORMAL) {
       parts = validatePartWriting[4].find(
-        (p) => p.key === EMAIL_TYPE.FORMAL
+        (p) => p.key === EMAIL_TYPE.FORMAL,
       ).requiredFields;
     }
   }
@@ -496,7 +495,7 @@ export async function validateAptisEmail(emailText, part, metadata) {
 
     const convertTextByJson = JSON.parse(cleanResponse);
 
-    console.log("test:", convertTextByJson);
+    console.log('test:', convertTextByJson);
   }
 
   return {
@@ -517,9 +516,9 @@ const generateProgressAnalysis = async (userId, currentWriting) => {
 
     if (userWritings.length === 0) {
       return {
-        improvement: "First writing submission - baseline established",
+        improvement: 'First writing submission - baseline established',
         recurring_issues: [],
-        strengths: ["Getting started with writing practice"],
+        strengths: ['Getting started with writing practice'],
       };
     }
 
@@ -532,17 +531,17 @@ const generateProgressAnalysis = async (userId, currentWriting) => {
         improvement > 0
           ? `Improved by ${improvement.toFixed(1)} points from last writing`
           : improvement < 0
-          ? `Decreased by ${Math.abs(improvement).toFixed(
-              1
-            )} points from last writing`
-          : "Maintained same performance level",
+            ? `Decreased by ${Math.abs(improvement).toFixed(
+                1,
+              )} points from last writing`
+            : 'Maintained same performance level',
       recurring_issues: identifyRecurringIssues(userWritings),
       strengths: identifyStrengths(currentWriting),
     };
   } catch (error) {
-    console.log("Failed to generate progress analysis", error);
+    console.log('Failed to generate progress analysis', error);
     return {
-      improvement: "Analysis unavailable",
+      improvement: 'Analysis unavailable',
       recurring_issues: [],
       strengths: [],
     };
@@ -558,13 +557,13 @@ const identifyRecurringIssues = (writings) => {
   // Check for consistently low grammar scores
   const grammarScores = writings.map((w) => w.scores.grammar).slice(-5);
   if (grammarScores.every((score) => score < 6)) {
-    issues.push("Grammar consistency");
+    issues.push('Grammar consistency');
   }
 
   // Check for coherence issues
   const coherenceScores = writings.map((w) => w.scores.coherence).slice(-5);
   if (coherenceScores.every((score) => score < 6)) {
-    issues.push("Text coherence and flow");
+    issues.push('Text coherence and flow');
   }
 
   return issues;
@@ -577,18 +576,18 @@ const identifyStrengths = (writing) => {
   const strengths = [];
 
   if (writing.scores.vocabulary >= 7) {
-    strengths.push("Strong vocabulary usage");
+    strengths.push('Strong vocabulary usage');
   }
 
   if (writing.scores.task_fulfillment >= 7) {
-    strengths.push("Good task understanding");
+    strengths.push('Good task understanding');
   }
 
   if (writing.scores.coherence >= 7) {
-    strengths.push("Clear structure and organization");
+    strengths.push('Clear structure and organization');
   }
 
-  return strengths.length > 0 ? strengths : ["Consistent writing practice"];
+  return strengths.length > 0 ? strengths : ['Consistent writing practice'];
 };
 
 /**
@@ -597,12 +596,12 @@ const identifyStrengths = (writing) => {
 const loadWritingsFromStorage = async () => {
   try {
     const files = await fs.readdir(STORAGE_PATH);
-    const jsonFiles = files.filter((file) => file.endsWith(".json"));
+    const jsonFiles = files.filter((file) => file.endsWith('.json'));
 
     for (const file of jsonFiles) {
       try {
         const filePath = path.join(STORAGE_PATH, file);
-        const content = await fs.readFile(filePath, "utf8");
+        const content = await fs.readFile(filePath, 'utf8');
         const writing = JSON.parse(content);
         writingsDatabase.set(writing.id, writing);
 
@@ -626,7 +625,7 @@ const loadWritingsFromStorage = async () => {
           } catch (error) {
             // Document might already exist in ChromaDB, which is fine
             console.log(
-              `Document ${writing.id} might already exist in ChromaDB`
+              `Document ${writing.id} might already exist in ChromaDB`,
             );
           }
         }
@@ -640,10 +639,10 @@ const loadWritingsFromStorage = async () => {
 
     console.log(`Loaded ${writingsDatabase.size} writings from storage`);
     console.log(
-      `Loaded ${chromaDocuments.length} documents in ChromaDB for similarity comparison`
+      `Loaded ${chromaDocuments.length} documents in ChromaDB for similarity comparison`,
     );
   } catch (error) {
-    console.log("Failed to load writings from storage", error);
+    console.log('Failed to load writings from storage', error);
   }
 };
 
@@ -677,7 +676,7 @@ export const storeWriting = async (writing) => {
 export const deleteWriting = async (writingId) => {
   const writing = writingsDatabase.get(writingId);
   if (!writing) {
-    throw new Error("Writing not found");
+    throw new Error('Writing not found');
   }
 
   // Remove from database
@@ -689,7 +688,7 @@ export const deleteWriting = async (writingId) => {
   // Remove from storage
   await removeFromStorage(writingId);
 
-  console.log("Writing deleted", { writingId });
+  console.log('Writing deleted', { writingId });
 };
 
 /**
@@ -698,11 +697,11 @@ export const deleteWriting = async (writingId) => {
 export const initialize = async () => {
   try {
     if (isServiceInitialized) {
-      console.log("✅ Writing service already initialized");
+      console.log('✅ Writing service already initialized');
       return;
     }
 
-    console.log("🔧 Starting writing service initialization...");
+    console.log('🔧 Starting writing service initialization...');
 
     // Ensure storage directory exists
     await fs.mkdir(STORAGE_PATH, { recursive: true });
@@ -713,15 +712,15 @@ export const initialize = async () => {
     // Initialize ChromaDB references in repo
     initializeChromaReferences(chromaClient, chromaCollection);
 
-    console.log("✅ ChromaDB initialized and references set");
+    console.log('✅ ChromaDB initialized and references set');
 
     // Load existing writings
     await loadWritingsFromStorage();
 
     isServiceInitialized = true;
-    console.log("✅ Writing service initialized successfully");
+    console.log('✅ Writing service initialized successfully');
   } catch (error) {
-    console.error("❌ Failed to initialize writing service:", error);
+    console.error('❌ Failed to initialize writing service:', error);
     isServiceInitialized = false; // Reset on failure
     throw error;
   }

@@ -64,10 +64,16 @@ const SimpleR2FilePreview: React.FC<SimpleR2FilePreviewProps> = ({
 
   // Helper function to get file extension from URL
   const getFileExtension = (url: string) => {
-    const pathname = new URL(url).pathname;
-
-    console.log("pathname", pathname);
-    return pathname.split(".").pop()?.toLowerCase() || "";
+    if (!url || typeof url !== "string") return "";
+    try {
+      // Nếu là URL hợp lệ, lấy pathname
+      const pathname = new URL(url, window.location.origin).pathname;
+      return pathname.split(".").pop()?.toLowerCase() || "";
+    } catch (e) {
+      // Nếu không phải URL hợp lệ, xử lý như đường dẫn file
+      const parts = url.split(".");
+      return parts.length > 1 ? parts.pop()?.toLowerCase() : "";
+    }
   };
 
   // Helper function to determine if existing file is audio based on URL
