@@ -121,6 +121,15 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
         justifyContent: "center",
         gap: 1,
         mt: 2,
+        position: "absolute",
+        top: 50,
+        right: 100,
+        backgroundColor: "background.paper",
+        border: 10,
+        borderColor: "divider",
+        borderRadius: 1,
+       borderShadow: 1,
+        py: 1,
       }}
     >
       <IconButton
@@ -186,21 +195,30 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
 };
 
 interface SubQuestion {
-  content: string;
-  optionAnswer?: { id: string; content: string }[] | null;
-  correctAnswer?: string;
+  id: string;
+  title: string;
+  imageUrl?: string | null;
+  audioUrl?: string | null;
+  options?: Record<string, string>;
+  correctAnswer?: string | null;
   suggestion?: string | null;
-  file?: string | null;
-  image?: string | null;
+  listOptions?: unknown | null;
+  listeningScript?: string | null;
+  example: boolean;
 }
 
 interface GeneralQuestionSchema {
   // Thông tin cơ bản
-  id: number;
+  id: string;
   topic: string;
   debai: string;
-  skill: "READING" | "LISTENING" | "WRITING" | "SPEAKING";
-  part?: number | string;
+  skill:
+    | "READING"
+    | "LISTENING"
+    | "WRITING"
+    | "SPEAKING"
+    | "GRAMMAR_AND_VOCABULARY";
+  part?: string;
   timeToDo?: number;
 
   // Dữ liệu câu hỏi chính
@@ -214,10 +232,13 @@ interface GeneralQuestionSchema {
   // Media files
   file?: string | null;
   image?: string | string[] | null;
+  audioUrl?: string | null;
+  listeningScript?: string | null;
 
   // Metadata
   isExample?: boolean;
   questionType?: string;
+  questionName?: string;
 }
 
 interface FilterState {
@@ -227,45 +248,41 @@ interface FilterState {
 }
 
 interface AddedQuestionsState {
-  [questionId: number]: boolean;
+  [questionId: string]: boolean;
 }
 
 type TabType = "not-added" | "added";
-type MainTabType = "listening" | "reading" | "writing" | "speaking";
+type MainTabType =
+  | "listening"
+  | "reading"
+  | "writing"
+  | "speaking"
+  | "vocabulary";
 
 interface KeyDocumentResponse {
+  timestamp: string;
+  path: string;
+  success: boolean;
+  code: number;
+  message: string;
   data: {
-    data: {
-      items: {
-        id: number;
-        title: string;
-        timeToDo: number;
-        questions: {
-          id: number;
-          questionTitle: string;
-          content: string;
-          answerList: { id: string; content: string }[];
-          correctAnswer: string;
-          file: string | null;
-          subQuestionAnswerList: unknown[];
-          suggestion: string | null;
-          subQuestion: {
-            content: string;
-            correctAnswer: string;
-            file: string | null;
-            answerList: { id: string; content: string }[] | null;
-            image: string | null;
-            suggestion: string | null;
-          }[];
-          questionType: string;
-          isExample: boolean;
-          questionPart: string;
-          image: string | null;
-        }[];
-        skill: string;
-        description: string | null;
-      }[];
-    };
+    totalPages: number;
+    totalElements: number;
+    currentPage: number;
+    pageSize: number;
+    content: {
+      id: string;
+      title?: string;
+      imageUrl?: string;
+      audioUrl?: string;
+      questionType: string;
+      examType: string;
+      subQuestions: SubQuestion[];
+      questionName: string;
+      questionPart: string;
+      listeningScript?: string;
+    }[];
+    sortBy?: unknown;
   };
 }
 
@@ -299,11 +316,13 @@ const KeyDocumentList: React.FC = () => {
     reading: KeyDocumentResponse | null;
     writing: KeyDocumentResponse | null;
     speaking: KeyDocumentResponse | null;
+    vocabulary: KeyDocumentResponse | null;
   }>({
     listening: null,
     reading: null,
     writing: null,
     speaking: null,
+    vocabulary: null,
   });
   const [filters, setFilters] = useState<FilterState>({
     skill: "all",
@@ -317,11 +336,11 @@ const KeyDocumentList: React.FC = () => {
   }, []);
 
   const loadAddedQuestions = useCallback(
-    (skill: MainTabType): Set<number> => {
+    (skill: MainTabType): Set<string> => {
       try {
         const stored = localStorage.getItem(getStorageKey(skill));
         if (stored) {
-          const parsed = JSON.parse(stored) as number[];
+          const parsed = JSON.parse(stored) as string[];
           return new Set(parsed);
         }
       } catch (error) {
@@ -333,7 +352,7 @@ const KeyDocumentList: React.FC = () => {
   );
 
   const saveAddedQuestions = useCallback(
-    (skill: MainTabType, addedQuestions: Set<number>): void => {
+    (skill: MainTabType, addedQuestions: Set<string>): void => {
       try {
         localStorage.setItem(
           getStorageKey(skill),
@@ -347,15 +366,17 @@ const KeyDocumentList: React.FC = () => {
   );
 
   const [addedQuestions, setAddedQuestions] = useState<{
-    listening: Set<number>;
-    reading: Set<number>;
-    writing: Set<number>;
-    speaking: Set<number>;
+    listening: Set<string>;
+    reading: Set<string>;
+    writing: Set<string>;
+    speaking: Set<string>;
+    vocabulary: Set<string>;
   }>({
     listening: new Set(),
     reading: new Set(),
     writing: new Set(),
     speaking: new Set(),
+    vocabulary: new Set(),
   });
 
   // Load data on component mount
@@ -370,11 +391,13 @@ const KeyDocumentList: React.FC = () => {
           readingResponse,
           writingResponse,
           speakingResponse,
+          vocabularyResponse,
         ] = await Promise.all([
           fetch("/data/keyListiening.json").then((res) => res.json()),
           fetch("/data/keyReading.json").then((res) => res.json()),
           fetch("/data/keyWriting.json").then((res) => res.json()),
           fetch("/data/speaking.json").then((res) => res.json()),
+          fetch("/data/keyVocab.json").then((res) => res.json()),
         ]);
 
         setRawData({
@@ -382,6 +405,7 @@ const KeyDocumentList: React.FC = () => {
           reading: readingResponse as KeyDocumentResponse,
           writing: writingResponse as KeyDocumentResponse,
           speaking: speakingResponse as KeyDocumentResponse,
+          vocabulary: vocabularyResponse as KeyDocumentResponse,
         });
 
         // Load added questions from localStorage
@@ -390,6 +414,7 @@ const KeyDocumentList: React.FC = () => {
           reading: loadAddedQuestions("reading"),
           writing: loadAddedQuestions("writing"),
           speaking: loadAddedQuestions("speaking"),
+          vocabulary: loadAddedQuestions("vocabulary"),
         });
       } catch (error) {
         console.error("Error loading data:", error);
@@ -406,54 +431,51 @@ const KeyDocumentList: React.FC = () => {
   const convertToTableData = useCallback(
     (
       data: KeyDocumentResponse,
-      skillType: "READING" | "LISTENING" | "WRITING" | "SPEAKING"
+      skillType:
+        | "READING"
+        | "LISTENING"
+        | "WRITING"
+        | "SPEAKING"
+        | "GRAMMAR_AND_VOCABULARY"
     ): GeneralQuestionSchema[] => {
       const questions: GeneralQuestionSchema[] = [];
 
-      data.data.data.items.forEach((item) => {
-        item.questions.forEach((question) => {
-          const subDebai: SubQuestion[] | null =
-            question.subQuestion && question.subQuestion.length > 0
-              ? question.subQuestion.map((subQ) => ({
-                  content: subQ.content,
-                  // If subQ.answerList is null, use the main question's answerList
-                  optionAnswer:
-                    subQ.answerList ||
-                    (question.answerList.length > 0
-                      ? question.answerList
-                      : null),
-                  correctAnswer: subQ.correctAnswer,
-                  suggestion: subQ.suggestion,
-                  file: subQ.file,
-                  image: subQ.image,
-                }))
-              : null;
+      data.data.content.forEach((item) => {
+        const question: GeneralQuestionSchema = {
+          id: item.id,
+          topic: item.questionName || "",
+          debai: item.title || "",
+          skill: skillType,
+          part: item.questionPart,
+          questionType: item.questionType,
+          questionName: item.questionName,
+          file: item.audioUrl || null,
+          audioUrl: item.audioUrl || null,
+          image: item.imageUrl ? item.imageUrl.split(",") : null,
+          listeningScript: item.listeningScript || null,
+          subDebai: item.subQuestions || null,
+          isExample: item.subQuestions?.some((sub) => sub.example) || false,
+          // For main question level data
+          suggestion:
+            item.subQuestions?.length > 0
+              ? item.subQuestions[0].suggestion
+              : null,
+          correctAnswer:
+            item.subQuestions?.length > 0
+              ? item.subQuestions[0].correctAnswer
+              : null,
+          optionAnswer:
+            item.subQuestions?.length > 0 && item.subQuestions[0].options
+              ? Object.entries(item.subQuestions[0].options).map(
+                  ([id, content]) => ({
+                    id,
+                    content: content as string,
+                  })
+                )
+              : undefined,
+        };
 
-          // Handle multiple images
-          const imageUrls = question.image
-            ? question.image.includes(",")
-              ? question.image.split(",").map((url) => url.trim())
-              : question.image
-            : null;
-
-          questions.push({
-            id: question.id,
-            topic: question.questionTitle || item.title,
-            debai: question.content,
-            skill: skillType,
-            part: question.questionPart,
-            timeToDo: item.timeToDo,
-            optionAnswer:
-              question.answerList.length > 0 ? question.answerList : undefined,
-            correctAnswer: question.correctAnswer || undefined,
-            suggestion: question.suggestion,
-            subDebai: subDebai,
-            file: question.file,
-            image: imageUrls,
-            isExample: question.isExample,
-            questionType: question.questionType,
-          });
-        });
+        questions.push(question);
       });
 
       return questions;
@@ -467,13 +489,15 @@ const KeyDocumentList: React.FC = () => {
       !rawData.listening ||
       !rawData.reading ||
       !rawData.writing ||
-      !rawData.speaking
+      !rawData.speaking ||
+      !rawData.vocabulary
     ) {
       return {
         listening: [],
         reading: [],
         writing: [],
         speaking: [],
+        vocabulary: [],
         all: [],
       };
     }
@@ -482,13 +506,18 @@ const KeyDocumentList: React.FC = () => {
     const reading = convertToTableData(rawData.reading, "READING");
     const writing = convertToTableData(rawData.writing, "WRITING");
     const speaking = convertToTableData(rawData.speaking, "SPEAKING");
+    const vocabulary = convertToTableData(
+      rawData.vocabulary,
+      "GRAMMAR_AND_VOCABULARY"
+    );
 
     return {
       listening,
       reading,
       writing,
       speaking,
-      all: [...listening, ...reading, ...writing, ...speaking],
+      vocabulary,
+      all: [...listening, ...reading, ...writing, ...speaking, ...vocabulary],
     };
   }, [convertToTableData, rawData]);
 
@@ -499,6 +528,7 @@ const KeyDocumentList: React.FC = () => {
       "reading",
       "writing",
       "speaking",
+      "vocabulary",
     ];
     const currentSkill = skills[currentTab];
     const skillData = allData[currentSkill] || [];
@@ -516,12 +546,13 @@ const KeyDocumentList: React.FC = () => {
 
   // Handle question checkbox toggle
   const handleQuestionToggle = useCallback(
-    (questionId: number, isChecked: boolean) => {
+    (questionId: string, isChecked: boolean) => {
       const skills: MainTabType[] = [
         "listening",
         "reading",
         "writing",
         "speaking",
+        "vocabulary",
       ];
       const currentSkill = skills[currentTab];
 
@@ -616,26 +647,21 @@ const KeyDocumentList: React.FC = () => {
 
   // Helper function to get correct answers for questions with subQuestions
   const getSubQuestionCorrectAnswers = useCallback(
-    (
-      subQuestions?: SubQuestion[],
-      optionAnswers?: { id: string; content: string }[]
-    ): string[] => {
-      if (
-        !subQuestions ||
-        subQuestions.length === 0 ||
-        !optionAnswers ||
-        optionAnswers.length === 0
-      ) {
+    (subQuestions?: SubQuestion[]): string[] => {
+      if (!subQuestions || subQuestions.length === 0) {
         return [];
       }
 
       return subQuestions
         .filter((sub) => sub.correctAnswer && sub.correctAnswer.trim() !== "")
         .map((sub) => {
-          const foundAnswer = optionAnswers.find(
-            (opt) => opt.id === sub.correctAnswer
-          );
-          return foundAnswer ? foundAnswer.content : null;
+          if (sub.options && sub.correctAnswer) {
+            const foundAnswer = Object.entries(sub.options).find(
+              ([key]) => key === sub.correctAnswer
+            );
+            return foundAnswer ? foundAnswer[1] : sub.correctAnswer;
+          }
+          return sub.correctAnswer;
         })
         .filter(Boolean) as string[];
     },
@@ -743,6 +769,7 @@ const KeyDocumentList: React.FC = () => {
       sx={{
         maxHeight: "100vh",
         overflow: "auto",
+        position: "relative",
       }}
     >
       <Card elevation={1}>
@@ -850,6 +877,7 @@ const KeyDocumentList: React.FC = () => {
                   <Tab label="Reading" />
                   <Tab label="Writing" />
                   <Tab label="Speaking" />
+                  <Tab label="Vocabulary" />
                 </Tabs>
               </Box>
 
@@ -936,6 +964,7 @@ const KeyDocumentList: React.FC = () => {
                             "reading",
                             "writing",
                             "speaking",
+                            "vocabulary",
                           ];
                           const currentSkill = skills[currentTab];
                           const isAdded = addedQuestions[currentSkill].has(
@@ -1128,8 +1157,7 @@ const KeyDocumentList: React.FC = () => {
                                     ) {
                                       const subQuestionAnswers =
                                         getSubQuestionCorrectAnswers(
-                                          row.subDebai,
-                                          row.optionAnswer
+                                          row.subDebai
                                         );
                                       return subQuestionAnswers.length > 0 ? (
                                         <Box
@@ -1376,8 +1404,8 @@ const KeyDocumentList: React.FC = () => {
                                       {row.subDebai
                                         .filter(
                                           (sub, index) =>
-                                            // Show sub questions that have content OR correct answer OR suggestion
-                                            sub.content.trim() !== "" ||
+                                            // Show sub questions that have title OR correct answer OR suggestion
+                                            sub.title?.trim() !== "" ||
                                             sub.correctAnswer ||
                                             sub.suggestion
                                         )
@@ -1388,16 +1416,22 @@ const KeyDocumentList: React.FC = () => {
 
                                           return (
                                             <Box
-                                              key={originalIndex}
+                                              key={sub.id || originalIndex}
                                               sx={{
                                                 mb: 1,
                                                 p: 1,
                                                 border: "1px solid",
                                                 borderColor: "divider",
+                                                lineClamp: 1,
+                                                display: "-webkit-box",
+                                                WebkitBoxOrient: "vertical",
+                                                swapGap: 1,
+                                                // overflow: "hidden",
                                                 borderRadius: 1,
+                                                maxWidth: "300px",
                                               }}
                                             >
-                                              {sub.content.trim() !== "" && (
+                                              {sub.title?.trim() !== "" && (
                                                 <Box
                                                   sx={{
                                                     display: "flex",
@@ -1411,24 +1445,33 @@ const KeyDocumentList: React.FC = () => {
                                                     sx={{
                                                       fontWeight: "bold",
                                                       minWidth: 20,
+                                                      flexShrink: 0,
                                                     }}
                                                   >
                                                     {originalIndex + 1}.
                                                   </Typography>
                                                   <Typography
                                                     variant="body2"
-                                                    sx={{ flexGrow: 1 }}
+                                                    sx={{
+                                                      flexGrow: 1,
+                                                      wordBreak: "break-word",
+                                                      whiteSpace: "normal",
+                                                      lineHeight: 1.4,
+                                                      maxWidth: "200px",
+                                                    }}
                                                   >
                                                     {renderHTMLContent(
-                                                      sub.content
+                                                      sub.title
                                                     )}
                                                   </Typography>
-                                                  <CopyButton
-                                                    text={sub.content}
-                                                    tooltip={`Copy sub question ${
-                                                      originalIndex + 1
-                                                    }`}
-                                                  />
+                                                  <Box sx={{ flexShrink: 0 }}>
+                                                    <CopyButton
+                                                      text={sub.title}
+                                                      tooltip={`Copy sub question ${
+                                                        originalIndex + 1
+                                                      }`}
+                                                    />
+                                                  </Box>
                                                 </Box>
                                               )}
 
@@ -1454,42 +1497,62 @@ const KeyDocumentList: React.FC = () => {
                                                     }}
                                                   >
                                                     Correct:{" "}
-                                                    {sub.optionAnswer &&
-                                                    sub.optionAnswer.length > 0
+                                                    {sub.options
                                                       ? (() => {
-                                                          const optIndex =
-                                                            sub.optionAnswer.findIndex(
-                                                              (opt) =>
-                                                                opt.id ===
+                                                          const optEntry =
+                                                            Object.entries(
+                                                              sub.options
+                                                            ).find(
+                                                              ([key]) =>
+                                                                key ===
                                                                 sub.correctAnswer
                                                             );
-                                                          if (optIndex >= 0) {
-                                                            const letter =
-                                                              String.fromCharCode(
-                                                                65 + optIndex
+                                                          if (optEntry) {
+                                                            const optEntries =
+                                                              Object.entries(
+                                                                sub.options
                                                               );
-                                                            const text =
-                                                              sub.optionAnswer[
-                                                                optIndex
-                                                              ].content;
-                                                            return text.length >
-                                                              30
-                                                              ? `${letter}. ${text.slice(
-                                                                  0,
-                                                                  27
-                                                                )}...`
-                                                              : `${letter}. ${text}`;
+                                                            const optIndex =
+                                                              optEntries.findIndex(
+                                                                ([key]) =>
+                                                                  key ===
+                                                                  sub.correctAnswer
+                                                              );
+                                                            if (optIndex >= 0) {
+                                                              const letter =
+                                                                String.fromCharCode(
+                                                                  65 + optIndex
+                                                                );
+                                                              const text =
+                                                                optEntry[1];
+                                                              return text.length >
+                                                                30
+                                                                ? `${letter}. ${text.slice(
+                                                                    0,
+                                                                    27
+                                                                  )}...`
+                                                                : `${letter}. ${text}`;
+                                                            }
                                                           }
                                                           return sub.correctAnswer;
                                                         })()
                                                       : sub.correctAnswer}
                                                   </Typography>
                                                   <CopyButton
-                                                    text={getCorrectAnswerText(
-                                                      sub.correctAnswer,
-                                                      sub.optionAnswer ||
-                                                        undefined
-                                                    )}
+                                                    text={
+                                                      sub.options &&
+                                                      sub.correctAnswer
+                                                        ? Object.entries(
+                                                            sub.options
+                                                          ).find(
+                                                            ([key]) =>
+                                                              key ===
+                                                              sub.correctAnswer
+                                                          )?.[1] ||
+                                                          sub.correctAnswer
+                                                        : sub.correctAnswer ||
+                                                          ""
+                                                    }
                                                     tooltip="Copy sub correct answer"
                                                   />
                                                 </Box>
@@ -1584,7 +1647,7 @@ const KeyDocumentList: React.FC = () => {
                                     gap: 1,
                                   }}
                                 >
-                                  {row.file && (
+                                  {(row.file || row.audioUrl) && (
                                     <Box
                                       sx={{
                                         display: "flex",
@@ -1595,14 +1658,17 @@ const KeyDocumentList: React.FC = () => {
                                       <IconButton
                                         size="small"
                                         onClick={() =>
-                                          window.open(row.file!, "_blank")
+                                          window.open(
+                                            (row.audioUrl || row.file)!,
+                                            "_blank"
+                                          )
                                         }
                                         color="primary"
                                       >
                                         <AudioIcon />
                                       </IconButton>
                                       <CopyButton
-                                        text={row.file}
+                                        text={row.audioUrl || row.file || ""}
                                         tooltip="Copy audio file URL"
                                       />
                                     </Box>
@@ -1670,14 +1736,38 @@ const KeyDocumentList: React.FC = () => {
                                     </Box>
                                   )}
 
-                                  {!row.file && !row.image && (
-                                    <Typography
-                                      variant="body2"
-                                      color="text.secondary"
+                                  {row.listeningScript && (
+                                    <Box
+                                      sx={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: 1,
+                                      }}
                                     >
-                                      -
-                                    </Typography>
+                                      <Typography
+                                        variant="caption"
+                                        color="info.main"
+                                      >
+                                        Script
+                                      </Typography>
+                                      <CopyButton
+                                        text={row.listeningScript}
+                                        tooltip="Copy listening script"
+                                      />
+                                    </Box>
                                   )}
+
+                                  {!row.file &&
+                                    !row.audioUrl &&
+                                    !row.image &&
+                                    !row.listeningScript && (
+                                      <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                      >
+                                        -
+                                      </Typography>
+                                    )}
                                 </Box>
                               </TableCell>
 
