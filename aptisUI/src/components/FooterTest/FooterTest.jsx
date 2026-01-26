@@ -1,16 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
+  SET_DECREMENT_SPEAKING_EACH_PART,
+  SET_INCREMENT_SPEAKING_EACH_PART,
+} from "../../store/feature/speaking";
+import {
   SET_AI_SCORE,
   SET_IS_MODAL_INFO,
   SET_IS_MODAL_SETTING,
   SET_MODAL_LIST,
   SET_MODAL_LIST_SUGESTION,
 } from "../../store/general";
-import ButtonAiMobie from "../ButtonAiMobie";
-import {
-  SET_DECREMENT_SPEAKING_EACH_PART,
-  SET_INCREMENT_SPEAKING_EACH_PART,
-} from "../../store/feature/speaking";
 
 export default function FooterTest({
   moveExamSkill,
@@ -74,13 +73,13 @@ export default function FooterTest({
     dispatch(SET_AI_SCORE(false));
   };
 
-  const showModalAiScore = () => {
-    dispatch(SET_AI_SCORE(!isAiScore));
-    dispatch(SET_MODAL_LIST_SUGESTION(false));
-    dispatch(SET_MODAL_LIST(false));
-    dispatch(SET_IS_MODAL_SETTING(false));
-    dispatch(SET_IS_MODAL_INFO(false));
-  };
+  // const showModalAiScore = () => {
+  //   dispatch(SET_AI_SCORE(!isAiScore));
+  //   dispatch(SET_MODAL_LIST_SUGESTION(false));
+  //   dispatch(SET_MODAL_LIST(false));
+  //   dispatch(SET_IS_MODAL_SETTING(false));
+  //   dispatch(SET_IS_MODAL_INFO(false));
+  // };
 
   return (
     <>
@@ -138,17 +137,17 @@ export default function FooterTest({
               </svg>
             </IconBox>
 
-            {currentExamPart === "writing" && isCheckResult && !isAiScore && (
+            {/* {currentExamPart === "writing" && isCheckResult && !isAiScore && (
               <div className="hidden md:block">
                 <IconBox onClick={showModalAiScore}>Ai</IconBox>
               </div>
-            )}
+            )} */}
 
-            {currentExamPart === "writing" && isCheckResult && !isAiScore && (
+            {/* {currentExamPart === "writing" && isCheckResult && !isAiScore && (
               <ButtonAiMobie showModalAiScore={showModalAiScore}>
                 Ai
               </ButtonAiMobie>
-            )}
+            )} */}
           </div>
           <div className="flex items-center gap-1">
             {isSpeakingTaiLieu ? (
