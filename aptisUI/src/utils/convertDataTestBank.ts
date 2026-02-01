@@ -62,7 +62,7 @@ export const convertDataListeningBank = (data: any, part: number) => {
   if (part === 2) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].answerList.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Listening",
@@ -72,7 +72,7 @@ export const convertDataListeningBank = (data: any, part: number) => {
   if (part === 3) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Listening",
@@ -82,7 +82,7 @@ export const convertDataListeningBank = (data: any, part: number) => {
   if (part === 4) {
     return data.map((item: any) => ({
       id: item._id,
-      text: item.questions[0].content,
+      text: item.questions[0].questionTitle,
       options: item.questions[0].subQuestion.map((subQ: any) => subQ.content),
       type: item.description,
       skill: "Listening",

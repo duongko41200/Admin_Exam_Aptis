@@ -328,6 +328,8 @@ const TestBankCreate = ({
           partSkill: converPartListeningSkill(partId),
         });
         const result = convertDataSpeakingBank(data, partId);
+
+        console.log("result từ api Speaking: ", result);
         setQuestionList(result);
       }
     },
@@ -405,6 +407,8 @@ const TestBankCreate = ({
         q.type.toLowerCase().includes(filterOptions.type.toLowerCase())
       );
     }
+
+    console.log("Filtered Questions: ", filtered);
 
     setFilteredQuestionList(filtered);
   }, [questionList, filterOptions]);
@@ -513,17 +517,45 @@ const TestBankCreate = ({
     }
   }, [testBankData, selectedQuestions, selectedClassId, nameTestBank, notify]);
   const updateWritingPartOne = useCallback(async () => {
-    const testBankDataClone = { ...testBankData };
+    // Deep clone to avoid mutating redux state
+    const testBankDataClone = JSON.parse(JSON.stringify(testBankData));
+
+    console.log("testBankDataClone khi cập nhật là: ", testBankDataClone);
+    console.log("selectedQuestions khi cập nhật là: ", selectedQuestions);
+
     testBankDataClone.classRoomId =
       selectedClassId === "free" ? classFreeId : selectedClassId;
     testBankDataClone.title = nameTestBank;
     testBankDataClone.status =
       selectedClassId === classFreeId ? "free" : "premium";
 
+    // Merge selectedQuestions into the final data structure like in create function
+    const finalData = {
+      ...testBankDataClone,
+      listening: mergeSection(
+        testBankDataClone.listening,
+        selectedQuestions.listening
+      ),
+      reading: mergeSection(
+        testBankDataClone.reading,
+        selectedQuestions.reading
+      ),
+      writing: mergeSection(
+        testBankDataClone.writing,
+        selectedQuestions.writing
+      ),
+      speaking: mergeSection(
+        testBankDataClone.speaking,
+        selectedQuestions.speaking
+      ),
+    };
+
+    console.log("finalData khi cập nhật là: ", finalData);
+
     try {
       await dataProvider.update("test-banks", {
         id: recordEdit?.id,
-        data: testBankDataClone,
+        data: finalData,
         previousData: testBankData,
       });
 
@@ -535,7 +567,7 @@ const TestBankCreate = ({
         type: "warning",
       });
     }
-  }, [testBankData, selectedClassId, nameTestBank, recordEdit, notify]);
+  }, [testBankData, selectedQuestions, selectedClassId, nameTestBank, recordEdit, notify]);
 
   const handleSaveTestBank = useCallback(async () => {
     try {
@@ -928,7 +960,8 @@ const TestBankCreate = ({
                               }}
                               title={question.text}
                             >
-                              {question.text}
+                              {question.text} | {question.skill} - Part{" "}
+                              {question.part}
                             </Typography>
                             <Typography
                               variant="body1"
