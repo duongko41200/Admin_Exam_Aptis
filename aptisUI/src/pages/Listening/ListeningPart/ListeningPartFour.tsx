@@ -1,15 +1,15 @@
 import { Box, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
-import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import { Button, useNotify } from "react-admin";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
 import TextEditor from "../../../components/TextEditor/TextEditor";
 import { UPDATED_SUCCESS } from "../../../consts/general";
 import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
+import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
   INIT_LISTENING_SUB_QUESTIONS,
   RESET_LISTENING_DATA,
@@ -591,6 +591,22 @@ const ListeningPartFour: React.FC<ListeningPartOneProps> = ({
       setValue("subTitle", dataListeningPartFour.questions[0].questionTitle);
       setValue("file", dataListeningPartFour.questions[0].file);
       setSuggestion(dataListeningPartFour.questions[0].suggestion);
+      setValue(
+        "contentPartFour1",
+        dataListeningPartFour.questions[0].subQuestion[0]?.content || ""
+      );
+      setValue(
+        "contentPartFour2",
+        dataListeningPartFour.questions[0].subQuestion[1]?.content || ""
+      );
+      setValue(
+        "answerPartFour1",
+        dataListeningPartFour.questions[0].subQuestion[0]?.correctAnswer || ""
+      );
+      setValue(
+        "answerPartFour2",
+        dataListeningPartFour.questions[0].subQuestion[1]?.correctAnswer || ""
+      );
 
       // Set existing audio file
       const existingAudio = [];
