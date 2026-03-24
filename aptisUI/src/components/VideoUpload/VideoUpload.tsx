@@ -151,13 +151,21 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
     const fileInputRef = useRef(null);
     const videoRef = useRef(null);
 
+    // Ref để track initialVideoUrl đã được sync chưa
+    const lastSyncedUrlRef = useRef("");
+
     // Sync initialVideoUrl khi record thay đổi
     useEffect(() => {
-      if (initialVideoUrl) {
+      if (initialVideoUrl && initialVideoUrl !== lastSyncedUrlRef.current) {
         setPreview(initialVideoUrl);
         setManualUrl(initialVideoUrl);
+        // Chỉ tự động chuyển sang manual khi nhận được URL mới từ prop
+        if (uploadMethod === "direct" && !file) {
+          setUploadMethod("manual");
+        }
+        lastSyncedUrlRef.current = initialVideoUrl;
       }
-    }, [initialVideoUrl]);
+    }, [initialVideoUrl, uploadMethod, file]);
 
     // Sync existingR2Key
     useEffect(() => {
@@ -203,10 +211,13 @@ const VideoUpload = forwardRef<any, VideoUploadProps>(
         const currentUrl =
           uploadMethod === "manual"
             ? manualUrl
-            : directUploadUrl || "";
-        onUrlChange(currentUrl);
+            : directUploadUrl || initialVideoUrl || "";
+        // Tránh gọi onUrlChange nếu URL không thay đổi so với prop ban đầu
+        if (currentUrl !== initialVideoUrl) {
+           onUrlChange(currentUrl);
+        }
       }
-    }, [manualUrl, directUploadUrl, uploadMethod, onUrlChange]);
+    }, [manualUrl, directUploadUrl, uploadMethod, onUrlChange, initialVideoUrl]);
 
     /**
      * Validate video file

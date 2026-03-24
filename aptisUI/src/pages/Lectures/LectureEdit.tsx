@@ -112,9 +112,9 @@ const LectureEditForm = ({ resource, dataProvider }) => {
   };
 
   const handleSubLectureChange = (index: number, field: string, value: any) => {
-    const newSubLectures = [...subLectures];
-    newSubLectures[index][field] = value;
-    setSubLectures(newSubLectures);
+    setSubLectures((prev) =>
+      prev.map((item, i) => (i === index ? { ...item, [field]: value } : item))
+    );
   };
 
   const onSubmit = async (values: any) => {
@@ -202,19 +202,29 @@ const LectureEditForm = ({ resource, dataProvider }) => {
       setValue("lectureType", record.lectureType || "");
       setValue("numberLecture", record.numberLecture || "");
 
+      console.log("record::", record)
+
       if (record.subLectures && record.subLectures.length > 0) {
+
+        console.log("record.subLectures::", record.subLectures[0].videoUrl);
         const populatedSubLectures = record.subLectures.map(
-          (subLecture: any) => ({
+          (subLecture: any) => {
+
+            console.log("")
+            
+            return {
             subLectureTitle: subLecture.subLectureTitle || "",
             summaryLecture: subLecture.summaryLecture || "",
             note: subLecture.note || "",
             durationInMinutes: subLecture.durationInMinutes || "",
-            videoUrl: subLecture.videoUrl || "",
+            videoUrl: subLecture.videoUrl,
             videoFile: null as File | null,
             videoFileInfo: null,
             isPreviewFree: subLecture.isPreviewFree || false,
-          })
+          }}
         );
+
+        console.log("populatedSubLectures:::", populatedSubLectures);
         setSubLectures(populatedSubLectures);
       }
     }
@@ -468,9 +478,10 @@ const LectureEditForm = ({ resource, dataProvider }) => {
                         }
                       }}
                       onUrlChange={(url) => {
-                        const newSubLectures = [...subLectures];
-                        newSubLectures[index].videoUrl = url;
-                        setSubLectures(newSubLectures);
+                        // Tránh gọi onUrlChange nếu URL không thay đổi so với prop ban đầu
+                        if (url !== subLecture.videoUrl) {
+                          handleSubLectureChange(index, "videoUrl", url);
+                        }
                       }}
                       initialVideoUrl={subLecture.videoUrl}
                       maxSizeGB={10}
