@@ -1,4 +1,4 @@
-import { EditBase, Title, useNotify, useRecordContext } from "react-admin";
+import { EditBase, useNotify, useRecordContext } from "react-admin";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -7,14 +7,12 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  Stack,
   TextField,
   Typography,
   Paper,
   Divider,
   Chip,
   LinearProgress,
-  Alert,
   FormControlLabel,
   Switch,
   IconButton,
@@ -40,7 +38,6 @@ const boxStyles = {
   "&::-webkit-scrollbar": {
     width: "6px",
   },
-  // border: "2px solid #000",
 };
 
 interface SubLecture {
@@ -60,8 +57,9 @@ const LectureEditForm = ({ resource, dataProvider }) => {
   const resourcePath = `/${resource}`;
   const notify = useNotify();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  console.log("record", record);
+  const [uploadProgress, setUploadProgress] = useState<{
+    [key: number]: number;
+  }>({});
 
   const [subLectures, setSubLectures] = useState<SubLecture[]>([
     {
@@ -82,7 +80,6 @@ const LectureEditForm = ({ resource, dataProvider }) => {
     register,
     handleSubmit,
     formState: { errors },
-    control,
     setValue,
     reset,
   } = useForm<any>();
@@ -127,15 +124,55 @@ const LectureEditForm = ({ resource, dataProvider }) => {
     setIsSubmitting(true);
 
     try {
+      // Process videos – upload file mới lên R2 nếu có
+      const videoUploadPromises = subLectures.map(async (subLecture, index) => {
+        const uploadRef = videoUploadRefs.current[index];
+
+        if (uploadRef && uploadRef.hasFile()) {
+          try {
+            setUploadProgress((prev) => ({ ...prev, [index]: 0 }));
+            const videoUrl = await uploadRef.uploadVideo();
+            return { index, videoUrl };
+          } catch (uploadErr) {
+            console.error(
+              `Failed to get video URL for lecture ${index + 1}:`,
+              uploadErr
+            );
+            throw new Error(
+              `Failed to process video for lecture ${index + 1}: ${
+                uploadErr.message
+              }`
+            );
+          }
+        }
+        return { index, videoUrl: subLecture.videoUrl };
+      });
+
+      // Wait for all video processing to complete
+      const uploadResults = await Promise.all(videoUploadPromises);
+
+      // Update subLectures with final video URLs
+      const updatedSubLectures = subLectures.map((subLecture, index) => {
+        const uploadResult = uploadResults.find(
+          (result) => result.index === index
+        );
+        return {
+          ...subLecture,
+          videoUrl: uploadResult?.videoUrl || subLecture.videoUrl,
+          videoFile: null,
+          videoFileInfo: null,
+        };
+      });
+
       const data = {
         lectureTitle: values.lectureTitle,
         lectureDescription: values.lectureDescription,
         lectureType: values.lectureType,
         numberLecture: values.numberLecture,
-        subLectures: subLectures,
+        subLectures: updatedSubLectures,
       };
 
-      console.log("data", data);
+      console.log("Final update data:", data);
 
       await dataProvider.update("lectures", {
         id: record?.id,
@@ -143,21 +180,16 @@ const LectureEditForm = ({ resource, dataProvider }) => {
         previousData: record,
       });
 
-      record.lectureTitle = data.lectureTitle;
-      record.lectureDescription = data.lectureDescription;
-      record.lectureType = data.lectureType;
-      record.numberLecture = data.numberLecture;
-      record.subLectures = data.subLectures;
-
       await notify(UPDATED_SUCCESS, {
         type: "success",
       });
       reset();
+      setUploadProgress({});
 
       navigate(resourcePath);
-    } catch (error) {
-      console.log({ error });
-      notify("Update failed", { type: "error" });
+    } catch (submitErr) {
+      console.log({ submitErr });
+      notify("Update failed: " + submitErr.message, { type: "error" });
     } finally {
       setIsSubmitting(false);
     }
@@ -189,10 +221,37 @@ const LectureEditForm = ({ resource, dataProvider }) => {
   }, [record, setValue]);
 
   return (
-    <Box sx={boxStyles}>
-      <EditBase>
-        <Title title="Edit Bài học chi tiết" />
-        <Box sx={{ padding: "20px" }}>
+    <Box sx={{ padding: "20px" }}>
+          {/* Global upload progress */}
+          {isSubmitting && (
+            <Box
+              sx={{
+                position: "fixed",
+                top: 0,
+                left: 0,
+                right: 0,
+                zIndex: 9999,
+                backgroundColor: "rgba(255,255,255,0.95)",
+                backdropFilter: "blur(5px)",
+              }}
+            >
+              <LinearProgress
+                color="primary"
+                sx={{
+                  height: 6,
+                  "& .MuiLinearProgress-bar": {
+                    background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+                  },
+                }}
+              />
+              <Box sx={{ textAlign: "center", py: 2 }}>
+                <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                  Đang upload videos và cập nhật bài học...
+                </Typography>
+              </Box>
+            </Box>
+          )}
+
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="form sign-up-form relative"
@@ -402,11 +461,9 @@ const LectureEditForm = ({ resource, dataProvider }) => {
                       ref={(ref) => (videoUploadRefs.current[index] = ref)}
                       onFileSelected={(file, fileInfo) => {
                         if (file && fileInfo) {
-                          // Handle successful upload - the component will provide publicUrl via VideoService
                           const newSubLectures = [...subLectures];
                           newSubLectures[index].videoFile = file;
                           newSubLectures[index].videoFileInfo = fileInfo;
-                          // VideoUrl will be set by the component's internal upload process
                           setSubLectures(newSubLectures);
                         }
                       }}
@@ -416,9 +473,10 @@ const LectureEditForm = ({ resource, dataProvider }) => {
                         setSubLectures(newSubLectures);
                       }}
                       initialVideoUrl={subLecture.videoUrl}
-                      maxSizeGB={0.2}
+                      maxSizeGB={10}
                       acceptedFormats="video/*"
                       index={index}
+                      disabled={isSubmitting}
                     />
                   </Box>
 
@@ -507,8 +565,6 @@ const LectureEditForm = ({ resource, dataProvider }) => {
               </Button>
             </Box>
           </form>
-        </Box>
-      </EditBase>
     </Box>
   );
 };
