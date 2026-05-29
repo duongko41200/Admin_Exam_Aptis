@@ -1,0 +1,1082 @@
+[
+    {
+        "_id": "69529f3317d3f9f552a546a3",
+        "title": "Protect the environment ( phiên bản 1)",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Protect the environment ( phiên bản 1)",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "Does not use commercial cleaning products"
+                    },
+                    {
+                        "id": 2,
+                        "content": "Give away used items"
+                    },
+                    {
+                        "id": 3,
+                        "content": "Buy environmentally friendly products"
+                    },
+                    {
+                        "id": 4,
+                        "content": "Reuse containers for storing food"
+                    },
+                    {
+                        "id": 5,
+                        "content": "Plant trees in the backyard"
+                    },
+                    {
+                        "id": 6,
+                        "content": "Use solar panels for electricity"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2025/12/1767022387171_803c39e85f13b41a_audiotp_c14_01.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" Person A, I find the act of giving away old or second-hand items a bit hypocritical.\"},{\"timestamp\":[5.6,10.32],\"text\":\" Why do people give away their old things, only to go out and buy the same item, but brand new?\"},{\"timestamp\":[11.36,15.76],\"text\":\" Not only does this fail to protect the environment, but it also causes double the harm.\"},{\"timestamp\":[16.8,21.92],\"text\":\" Personally, I have a way of protecting the environment by not releasing harmful chemicals into it.\"},{\"timestamp\":[22.8,25.84],\"text\":\" I do this by not purchasing chemical cleaning solutions.\"},{\"timestamp\":[26.88,32.32],\"text\":\" Instead, I make use of natural products like lemons to create my own floor cleaning solutions.\"},{\"timestamp\":[32.32,37.36],\"text\":\" Person B, I often don't have time to think about how to reuse my belongings or clothes,\"},{\"timestamp\":[37.36,42.72],\"text\":\" but I don't want to throw them away because that would be wasteful. So, I think a better way\"},{\"timestamp\":[42.72,47],\"text\":\" is to donate them to charity organizations or give them to others.\"},{\"timestamp\":[47,54],\"text\":\" Many people are in need of these things, and giving away my old items also makes me feel happier because I'm helping others.\"},{\"timestamp\":[54,65.12],\"text\":\" Person C, a good way to protect the environment is by not using plastic bags or by bringing reusable bags when going to the market, which helps reduce the disposal of plastic bags, a material that\"},{\"timestamp\":[65.12,71.12],\"text\":\" is difficult to decompose. However, I'm a very busy person and rarely have time to prepare\"},{\"timestamp\":[71.12,76.4],\"text\":\" my own bags when going shopping, and I usually drive to buy groceries quickly instead of walking.\"},{\"timestamp\":[77.28,80],\"text\":\" I guess I can't protect the environment by not driving.\"},{\"timestamp\":[80.88,85.76],\"text\":\" But I have a principle of only buying eco-friendly products, so I think I'm still contributing\"},{\"timestamp\":[85.76,88],\"text\":\" in a small way to protecting the earth.\"},{\"timestamp\":[88,92.92],\"text\":\" Person D, I see that too many people are wasting food containers, as they often throw them\"},{\"timestamp\":[92.92,97.44],\"text\":\" away after use, such as glass jars or plastic bottles.\"},{\"timestamp\":[97.44,102.72],\"text\":\" I can reuse them to store food and neatly organize them in my refrigerator.\"},{\"timestamp\":[102.72,104.83],\"text\":\" Reusing these containers is a very easy way to protect the environment that anyone\"},{\"timestamp\":[104.83,105.47],\"text\":\" can do.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "Does not use commercial cleaning products",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1375b27e8fed251497a07"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "Give away used items",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1375b27e8fed251497a08"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "Buy environmentally friendly products",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1375b27e8fed251497a09"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "Reuse containers for storing food",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1375b27e8fed251497a0a"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1375b27e8fed251497a06"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "69529f3317d3f9f552a546a9",
+        "createdAt": "2025-12-29T15:33:07.928Z",
+        "updatedAt": "2026-03-11T09:35:23.578Z",
+        "__v": 0
+    },
+    {
+        "_id": "695686530731243929b0ce90",
+        "title": "Protect the environment (phiên bản 2)",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Protect the environment (phiên bản 2)",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "Using less electricity"
+                    },
+                    {
+                        "id": 2,
+                        "content": "Shopping online"
+                    },
+                    {
+                        "id": 3,
+                        "content": "Not driving to work"
+                    },
+                    {
+                        "id": 4,
+                        "content": "Buying imported goods"
+                    },
+                    {
+                        "id": 5,
+                        "content": "Using less water"
+                    },
+                    {
+                        "id": 6,
+                        "content": "Wasting more energy"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767278162101_9f568348a6001c78_audiotp_de2.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,5.04],\"text\":\" \\\"Personah, I usually shop online to reduce the need to drive to the supermarket,\"},{\"timestamp\":[5.04,8.88],\"text\":\" which produces harmful emissions for the environment. Additionally,\"},{\"timestamp\":[9.52,13.68],\"text\":\" I can avoid using plastic bags for groceries when shopping in person,\"},{\"timestamp\":[13.68,19.28],\"text\":\" by simply sitting at home. And clicking a few buttons, I can buy everything I want without\"},{\"timestamp\":[19.28,22.64],\"text\":\" emitting harmful gases from a car. Person B.\\\"\"},{\"timestamp\":[22.64,27.76],\"text\":\" \\\"I used to drive to work for a long period, but then I realized that the excessive use\"},{\"timestamp\":[27.76,33.88],\"text\":\" of personal cars contribute significantly to environmental pollution. Therefore, I chose\"},{\"timestamp\":[33.88,38.6],\"text\":\" to write a bicycle to work, which benefits both the environment and my health.\"},{\"timestamp\":[38.6,44],\"text\":\" Person C. I'm not that into environmental protection and usually just do what's convenient\"},{\"timestamp\":[44,45.08],\"text\":\" for me.\"},{\"timestamp\":[45.08,49.48],\"text\":\" But my electric bill last month shocked me because it was so expensive.\"},{\"timestamp\":[49.48,53.76],\"text\":\" And I realized that I needed to save money, so from now on.\"},{\"timestamp\":[53.76,57.52],\"text\":\" I'll have to manage my electricity use more efficiently.\"},{\"timestamp\":[57.52,58.52],\"text\":\" Person D.\"},{\"timestamp\":[58.52,63.04],\"text\":\" I think a lot of people overemphasize protecting the environment by cutting down on personal\"},{\"timestamp\":[63.04,70.34],\"text\":\" vehicles, avoiding plastic bags, planting a lot of trees, and so on. But I personally believe we should focus\"},{\"timestamp\":[70.34,76.42],\"text\":\" on protecting the environment through small, daily actions we often overlook. For example,\"},{\"timestamp\":[76.42,null],\"text\":\" turning off the water while brushing our teeth or washing our hands. If everyone saves a little water like that, it would add up to a huge amount saved globally.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "Shopping online",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1373227e8fed2514979de"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "Not driving to work",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1373227e8fed2514979df"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "Using less electricity",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1373227e8fed2514979e0"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "Using less water",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1373227e8fed2514979e1"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1373227e8fed2514979dd"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "695686530731243929b0ce96",
+        "createdAt": "2026-01-01T14:36:03.699Z",
+        "updatedAt": "2026-03-11T09:34:42.740Z",
+        "__v": 0
+    },
+    {
+        "_id": "695687630731243929b0ce9f",
+        "title": "Online shopping",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "subSuggestion": "",
+                "questionTitle": "Online shopping",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "The products are delivered"
+                    },
+                    {
+                        "id": 2,
+                        "content": "It saves time"
+                    },
+                    {
+                        "id": 3,
+                        "content": "It provides better customer service"
+                    },
+                    {
+                        "id": 4,
+                        "content": "There are more choices"
+                    },
+                    {
+                        "id": 5,
+                        "content": "It increases efficiency"
+                    },
+                    {
+                        "id": 6,
+                        "content": "It is cheaper"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767278435167_1dd7fdc132239714_audiotp_de3.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Ah, I used to be the person who didn't like shopping online, but ever since I experienced\"},{\"timestamp\":[5.36,9.04],\"text\":\" home delivery, I, no longer shop and stores.\"},{\"timestamp\":[9.04,14.08],\"text\":\" When I shop online, the delivery person brings the package right to my door, even up to\"},{\"timestamp\":[14.08,19.48],\"text\":\" my floor, and knocks on my apartment door, so I don't even need to step outside.\"},{\"timestamp\":[19.48,21.68],\"text\":\" I really enjoy this convenience.\"},{\"timestamp\":[21.68,25.84],\"text\":\" B. Shopping online has helped me save quite a bit of money.\"},{\"timestamp\":[25.84,31.08],\"text\":\" After a few months of online shopping, I was able to save enough to buy a new bicycle,\"},{\"timestamp\":[31.08,32.48],\"text\":\" but don't get me wrong.\"},{\"timestamp\":[32.48,36.8],\"text\":\" I haven't been eating any less or cutting back on the groceries I buy.\"},{\"timestamp\":[36.8,41.6],\"text\":\" It's just that online shopping allows me to compare prices and choose the store with\"},{\"timestamp\":[41.6,42.6],\"text\":\" the best deal.\"},{\"timestamp\":[42.6,48.56],\"text\":\" C. I'm a pretty busy person, and I often don't have enough time because of my hectic work schedule.\"},{\"timestamp\":[48.56,51.56],\"text\":\" That's why I always shop online to save time.\"},{\"timestamp\":[51.56,57.64],\"text\":\" This way, I don't need to go to the store in person, and someone will deliver the items directly to me.\"},{\"timestamp\":[57.64,67],\"text\":\" Additionally, online shopping is very convenient because, with just a few clicks, I can buy everything I want without having to go from one store to another.\"},{\"timestamp\":[67,72],\"text\":\" D. I don't shop online because it's cheaper, or because of the fast shipping.\"},{\"timestamp\":[72,78],\"text\":\" I shop online because, when browsing online stores, I have a wide range of choices.\"},{\"timestamp\":[78,82.45],\"text\":\" For the same item, there are many different types and brands for me to choose from and compare, which allows me to pick the one I like the most.\"}]</p>",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "The products are delivered",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "6965f0bde8ba510927b0b2bb"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "It is cheaper",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "6965f0bde8ba510927b0b2bc"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "It saves time",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "6965f0bde8ba510927b0b2bd"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "There are more choices",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "6965f0bde8ba510927b0b2be"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "6965f0bde8ba510927b0b2ba"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "695687630731243929b0cea5",
+        "createdAt": "2026-01-01T14:40:35.738Z",
+        "updatedAt": "2026-01-13T07:14:05.177Z",
+        "__v": 0
+    },
+    {
+        "_id": "695688450731243929b0ceae",
+        "title": "Listening to music",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Listening to music",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "After waking up"
+                    },
+                    {
+                        "id": 2,
+                        "content": "While studying"
+                    },
+                    {
+                        "id": 3,
+                        "content": "to complain"
+                    },
+                    {
+                        "id": 4,
+                        "content": "To relax"
+                    },
+                    {
+                        "id": 5,
+                        "content": "While singing"
+                    },
+                    {
+                        "id": 6,
+                        "content": "to discuss ideas"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767278661112_c61ea7d0dc16d8e9_audiotp_de4.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,4.88],\"text\":\" A) I see a lot of people listen to music right when they wake up to help them feel alert.\"},{\"timestamp\":[5.76,9.92],\"text\":\" But if I listen to music as soon as I wake up, it gives me a headache all day,\"},{\"timestamp\":[9.92,12.16],\"text\":\" and makes it hard for me to focus on anything.\"},{\"timestamp\":[13.2,18.16],\"text\":\" So, I just listen to music to relax when I'm feeling comfortable, not for any other reason.\"},{\"timestamp\":[19.2,23.6],\"text\":\" B) I usually listen to a pop or rock song as soon as I get out of bed in the morning\"},{\"timestamp\":[23.6,26.52],\"text\":\" because it helps me wake up instantly.\"},{\"timestamp\":[26.52,30.04],\"text\":\" If I don't listen to music at that moment, I don't know when I'll be able to get up\"},{\"timestamp\":[30.04,31.08],\"text\":\" and go to work.\"},{\"timestamp\":[31.08,35.64],\"text\":\" See, my brothers and friends often say that I have a beautiful voice, so I often sing\"},{\"timestamp\":[35.64,37.44],\"text\":\" when I meet them.\"},{\"timestamp\":[37.44,42.44],\"text\":\" I usually play music on the TV and hold the remote control, pretending it's a microphone\"},{\"timestamp\":[42.44,44.4],\"text\":\" so I can sing.\"},{\"timestamp\":[44.4,47.68],\"text\":\" D. I have a habit of listening to music while studying.\"},{\"timestamp\":[47.68,51.8],\"text\":\" It helps me stay motivated and alert while doing my assignments.\"},{\"timestamp\":[51.8,56.16],\"text\":\" If I don't play music, I could fall asleep at any moment, and I'll study in a discouraged\"},{\"timestamp\":[56.16,56.6],\"text\":\" mode.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "To relax",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137b127e8fed251497a76"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "After waking up",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137b127e8fed251497a77"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "While singing",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137b127e8fed251497a78"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "While studying",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137b127e8fed251497a79"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b137b127e8fed251497a75"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "695688450731243929b0ceb4",
+        "createdAt": "2026-01-01T14:44:21.910Z",
+        "updatedAt": "2026-03-11T09:36:49.307Z",
+        "__v": 0
+    },
+    {
+        "_id": "6956892b0731243929b0d147",
+        "title": "Outdoor activities",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Outdoor activities",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "going for a run"
+                    },
+                    {
+                        "id": 2,
+                        "content": "horse riding"
+                    },
+                    {
+                        "id": 3,
+                        "content": "mountain biking"
+                    },
+                    {
+                        "id": 4,
+                        "content": "to complain"
+                    },
+                    {
+                        "id": 5,
+                        "content": "to discuss ideas"
+                    },
+                    {
+                        "id": 6,
+                        "content": "climbing"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767278890805_d61baea4c4a0a416_audiotp_de5.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,4.56],\"text\":\" A) My hometown is in the countryside, and we have a very large and beautiful farm.\"},{\"timestamp\":[5.52,9.84],\"text\":\" I've been learning to ride horses since I was a child, and it's still my hobby to this day.\"},{\"timestamp\":[10.8,15.68],\"text\":\" Whenever I want to relax or enjoy the scenery, I ride my horse along the farm and across the\"},{\"timestamp\":[15.68,21.92],\"text\":\" meadows. B) My husband and I often wake up early and go to a nearby forest for exercise.\"},{\"timestamp\":[22.88,25.36],\"text\":\" We usually go jogging in the early morning to stay\"},{\"timestamp\":[25.36,29.68],\"text\":\" healthy, and we really enjoy the fresh air and natural scenery in the forest.\"},{\"timestamp\":[29.68,35.56],\"text\":\" See, I used to love mountain biking, enjoying the thrill of riding down steep slopes, it\"},{\"timestamp\":[35.56,41.56],\"text\":\" was really an amazing and adventurous feeling. However, after an injury from a fall, I became\"},{\"timestamp\":[41.56,45.56],\"text\":\" haunted by the fear of crashing, and now I'm scared of the sport.\"},{\"timestamp\":[45.56,51.08],\"text\":\" But I still love the mountains, so I decided to just go hiking every weekend instead.\"},{\"timestamp\":[51.08,57.04],\"text\":\" D. My father often encourages me to ride horses, because it's a sport he enjoys.\"},{\"timestamp\":[57.04,60.84],\"text\":\" But I'm very afraid of this animal, and never want to learn how to ride, even though\"},{\"timestamp\":[60.84,63.89],\"text\":\" there's a riding school near my house. Instead, I prefer mountain biking\"},{\"timestamp\":[63.89,65.81],\"text\":\" with my friends to conquer high peaks.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "horse riding",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137d327e8fed251497abb"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "going for a run",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137d327e8fed251497abc"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "climbing",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137d327e8fed251497abd"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "mountain biking",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137d327e8fed251497abe"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b137d327e8fed251497aba"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6956892b0731243929b0d14d",
+        "createdAt": "2026-01-01T14:48:11.717Z",
+        "updatedAt": "2026-03-11T09:37:23.012Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c4aec88028aa29a1af7d",
+        "title": "The place to run",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "The place to run",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "in the fitness centre"
+                    },
+                    {
+                        "id": 2,
+                        "content": "at the supermarket"
+                    },
+                    {
+                        "id": 3,
+                        "content": "on the running track"
+                    },
+                    {
+                        "id": 4,
+                        "content": "at the seaside"
+                    },
+                    {
+                        "id": 5,
+                        "content": "in the street"
+                    },
+                    {
+                        "id": 6,
+                        "content": "in the library"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767359661411_e2c3ef010090b33c_audiotp_de6.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,4.72],\"text\":\" A) My friends often invite me to go jogging on the street, but I find it too dangerous.\"},{\"timestamp\":[5.68,9.68],\"text\":\" There's a lot of traffic, which can be dangerous for people jogging on the street.\"},{\"timestamp\":[10.64,14.64],\"text\":\" So, I bought a one-year gym membership and go there to exercise every day.\"},{\"timestamp\":[15.6,20.08],\"text\":\" B) I see many people wake up early to go jogging and exercise to stay healthy.\"},{\"timestamp\":[21.04,25.84],\"text\":\" As for me, I usually walk along the beach simply to relax, because there's a beautiful\"},{\"timestamp\":[25.84,28.16],\"text\":\" beach near my house.\"},{\"timestamp\":[28.16,32.36],\"text\":\" Every morning, I spend time walking on the white sand, it really helps a lot with my\"},{\"timestamp\":[32.36,33.36],\"text\":\" mental well-being.\"},{\"timestamp\":[33.36,38.16],\"text\":\" See, I usually wake up early in the morning to exercise, and I choose to jog on the\"},{\"timestamp\":[38.16,40.92],\"text\":\" street because of its convenience.\"},{\"timestamp\":[40.92,45.04],\"text\":\" I just need to step out of the house, and I can start exercising.\"},{\"timestamp\":[45.04,49.68],\"text\":\" However, I have to go jogging early to avoid cyclists.\"},{\"timestamp\":[49.68,53.92],\"text\":\" My friends go to the gym to exercise a lot, but I find something artificial about the\"},{\"timestamp\":[53.92,54.92],\"text\":\" whole things.\"},{\"timestamp\":[54.92,60.8],\"text\":\" D. Near my house, there's a stadium where many people go to exercise.\"},{\"timestamp\":[60.8,66.08],\"text\":\" I often run on the track there, and it makes me feel like I'm running more professionally.\"},{\"timestamp\":[66.08,71.08],\"text\":\" My personality is quite competitive, so I also time myself and race with my friends there.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "in the fitness centre",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137ed27e8fed251497b0a"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "at the seaside",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137ed27e8fed251497b0b"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "in the street",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137ed27e8fed251497b0c"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "on the running track",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b137ed27e8fed251497b0d"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b137ed27e8fed251497b09"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c4aec88028aa29a1af83",
+        "createdAt": "2026-01-02T13:14:22.598Z",
+        "updatedAt": "2026-03-11T09:37:49.739Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c58bc88028aa29a1b068",
+        "title": "Do exercise",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Do exercise",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "help improve work performance"
+                    },
+                    {
+                        "id": 2,
+                        "content": "find exercise tiring"
+                    },
+                    {
+                        "id": 3,
+                        "content": "in the library"
+                    },
+                    {
+                        "id": 4,
+                        "content": "at the supermarket"
+                    },
+                    {
+                        "id": 5,
+                        "content": "has fun when exercising with friends"
+                    },
+                    {
+                        "id": 6,
+                        "content": "hate exercising"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767359882897_01d9bde4184e9ebd_audiotp_de7.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,5.04],\"text\":\" A, my friends often advise me to exercise to maintain a good physique and health.\"},{\"timestamp\":[5.04,9.1],\"text\":\" However, I am very busy with a tight work schedule.\"},{\"timestamp\":[9.1,13.04],\"text\":\" Even if I weren't busy, I still wouldn't like to exercise.\"},{\"timestamp\":[13.04,16.88],\"text\":\" I feel uncomfortable as soon as I put on workout clothes.\"},{\"timestamp\":[16.88,20.24],\"text\":\" I don't think exercise is something that suits me.\"},{\"timestamp\":[20.24,25.68],\"text\":\" B, I know that working at every day is good for my health, and helps me get in shape.\"},{\"timestamp\":[25.68,30.12],\"text\":\" But what I've found is that exercising actually boosts my productivity a lot, and really\"},{\"timestamp\":[30.12,31.68],\"text\":\" helps me focus better.\"},{\"timestamp\":[31.68,35.76],\"text\":\" So, I always try to squeeze in some exercise before heading to work.\"},{\"timestamp\":[35.76,38.28],\"text\":\" It definitely makes me more productive.\"},{\"timestamp\":[38.28,44.28],\"text\":\" C. We've all heard about the many benefits of exercising, and I know about them too.\"},{\"timestamp\":[44.28,49.34],\"text\":\" My friends often invite me to work out, but after I exercise, I end up feeling extremely\"},{\"timestamp\":[49.34,53.64],\"text\":\" exhausted and spend the rest of the day just lying around to recover.\"},{\"timestamp\":[53.64,58.6],\"text\":\" \\\"D. I often go to the gym to work out, but what really motivates me to work out is\"},{\"timestamp\":[58.6,62.44],\"text\":\" catching up with my friends there, not just for improving my health.\"},{\"timestamp\":[62.44,69],\"text\":\" Plus, it's a great way to meet and make new friends, for me, exercising is just another chance to socialize.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "hate exercising",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1380b27e8fed251497b44"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "help improve work performance",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1380b27e8fed251497b45"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "find exercise tiring",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1380b27e8fed251497b46"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "has fun when exercising with friends",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1380b27e8fed251497b47"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1380b27e8fed251497b43"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c58bc88028aa29a1b06e",
+        "createdAt": "2026-01-02T13:18:03.481Z",
+        "updatedAt": "2026-03-11T09:38:19.567Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c62bc88028aa29a1b077",
+        "title": "The internet",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "The internet",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "listen to the radio"
+                    },
+                    {
+                        "id": 2,
+                        "content": "complete assignments"
+                    },
+                    {
+                        "id": 3,
+                        "content": "watch films"
+                    },
+                    {
+                        "id": 4,
+                        "content": "find transport information"
+                    },
+                    {
+                        "id": 5,
+                        "content": "communicate with friends"
+                    },
+                    {
+                        "id": 6,
+                        "content": "buy groceries online"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360043059_c9a7cc67467b8e03_audiotp_de8.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" A. I am a big fan of newly released movies, but the cost of going to the cinema is too high.\"},{\"timestamp\":[6.32,11.12],\"text\":\" I'm just a student, so I can't afford to go to the cinema regularly to indulge in my hobby.\"},{\"timestamp\":[12.08,16.96],\"text\":\" Therefore, I think the internet is great because it allows me to watch movies for free at home.\"},{\"timestamp\":[17.92,21.68],\"text\":\" I say both the time of going to the cinema and a considerable amount of money.\"},{\"timestamp\":[22.64,29],\"text\":\" B. In today's digital age, the Internet helps us access social media to stay constantly connected with friends,\"},{\"timestamp\":[29,37],\"text\":\" especially since I have relatives mainly living abroad or in distant cities, the Internet has been a great help for my family to stay in touch.\"},{\"timestamp\":[37,41],\"text\":\" We often video call each other to share daily stories.\"},{\"timestamp\":[41,46.96],\"text\":\" C. The Internet is a great resource for research, finding materials, and useful information\"},{\"timestamp\":[46.96,48.78],\"text\":\" for studying.\"},{\"timestamp\":[48.78,53.16],\"text\":\" My friends and I often go to each other's houses to do homework together.\"},{\"timestamp\":[53.16,57.2],\"text\":\" Instead of spending hours trying to figure out how to do our homework, we quickly go\"},{\"timestamp\":[57.2,59.2],\"text\":\" online and find the answers.\"},{\"timestamp\":[59.2,64.24],\"text\":\" D. I see that people often use the Internet to watch movies, read newspapers, quickly\"},{\"timestamp\":[64.24,67.2],\"text\":\" update the news, and so on.\"},{\"timestamp\":[67.2,71.6],\"text\":\" But I usually use the internet to find directions and public transport to my friends and\"},{\"timestamp\":[71.6,73.68],\"text\":\" relatives' houses.\"},{\"timestamp\":[73.68,77.84],\"text\":\" I'm a forgetful person, and I often forget the way, even if I've been there a hundred\"},{\"timestamp\":[77.84,79.48],\"text\":\" times.\"},{\"timestamp\":[79.48,null],\"text\":\" So the internet helps me a lot in not getting lost and easily find nearby public transport.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "watch films",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1382227e8fed251497b7e"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "communicate with friends",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1382227e8fed251497b7f"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "complete assignments",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1382227e8fed251497b80"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "find transport information",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1382227e8fed251497b81"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1382227e8fed251497b7d"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c62bc88028aa29a1b07d",
+        "createdAt": "2026-01-02T13:20:43.726Z",
+        "updatedAt": "2026-03-11T09:38:42.594Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c6bbc88028aa29a1b086",
+        "title": "The Art",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "The Art",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "social activity"
+                    },
+                    {
+                        "id": 2,
+                        "content": "with children"
+                    },
+                    {
+                        "id": 3,
+                        "content": "as part of their job"
+                    },
+                    {
+                        "id": 4,
+                        "content": "together"
+                    },
+                    {
+                        "id": 5,
+                        "content": "alone"
+                    },
+                    {
+                        "id": 6,
+                        "content": "stay at home"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360187336_c4b5f6ae145c28d4_audiotp_de9.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Ah, I personally don't like and don't have a talent for fine arts, especially painting,\"},{\"timestamp\":[5.36,9.68],\"text\":\" but I see it as a great way to engage in social charity activities.\"},{\"timestamp\":[9.68,13.84],\"text\":\" I'm passionate about teaching children how to draw because I love kids.\"},{\"timestamp\":[13.84,19.84],\"text\":\" I'm also part of a volunteer organization that specializes in teaching art to poor children,\"},{\"timestamp\":[19.84,21.68],\"text\":\" which makes me very happy.\"},{\"timestamp\":[21.68,26.68],\"text\":\" B. I think drawing with my children is a great way to understand them better.\"},{\"timestamp\":[26.68,32.24],\"text\":\" No matter how busy my work is, I always make time to sit and draw with my kids.\"},{\"timestamp\":[32.24,36.16],\"text\":\" This helps us bond more and gives me the chance to talk with them more.\"},{\"timestamp\":[36.16,40.72],\"text\":\" C. I've loved literature, art and drawing since I was a child.\"},{\"timestamp\":[40.72,43.6],\"text\":\" Now, I'm a writer and a comic book creator.\"},{\"timestamp\":[43.6,49.12],\"text\":\" In my stories, I occasionally include some illustrations to make the book more vivid and lively.\"},{\"timestamp\":[49.12,54.52],\"text\":\" D. I'm currently taking a drawing course, and I really want to be serious about it.\"},{\"timestamp\":[54.52,null],\"text\":\" When practicing drawing, I prefer not to draw with friends, even though they often invite me to join them. I want to focus entirely on my work.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "social activity",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1384727e8fed251497be3"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "with children",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1384727e8fed251497be4"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "as part of their job",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1384727e8fed251497be5"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "alone",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1384727e8fed251497be6"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1384727e8fed251497be2"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c6bbc88028aa29a1b08c",
+        "createdAt": "2026-01-02T13:23:07.867Z",
+        "updatedAt": "2026-03-11T09:39:19.392Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c926c88028aa29a1b095",
+        "title": "Travel to work",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Travel to work",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "travel by car"
+                    },
+                    {
+                        "id": 2,
+                        "content": "walk with a friend"
+                    },
+                    {
+                        "id": 3,
+                        "content": "take a taxi"
+                    },
+                    {
+                        "id": 4,
+                        "content": "travel by bus"
+                    },
+                    {
+                        "id": 5,
+                        "content": "walk alone"
+                    },
+                    {
+                        "id": 6,
+                        "content": "ride a bicycle"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360805268_96b8632e72407b7f_audiotp_de10.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,10.12],\"text\":\" Ah, I'm concerned about the earth and the environment, so I always look for ways to use public transportation, like buses or trains, to reduce harmful emissions.\"},{\"timestamp\":[10.12,17.56],\"text\":\" I can't walk to work because it's too far from my home, but I always walk to the local market when I need to buy groceries.\"},{\"timestamp\":[17.56,21.64],\"text\":\" B. I had to take driving lessons to be able to drive to work.\"},{\"timestamp\":[21.64,25.1],\"text\":\" My mother works along the same route, so we often drive\"},{\"timestamp\":[25.1,30.34],\"text\":\" to work together. Occasionally, she takes over the driving, and I'm happy because driving\"},{\"timestamp\":[30.34,32.72],\"text\":\" together gives us more time to chat.\"},{\"timestamp\":[32.72,38.5],\"text\":\" See, I used to use my car a lot to get to work, but since I moved closer to the company,\"},{\"timestamp\":[38.5,44.24],\"text\":\" I always go there on foot. I have a friend who cycles for 20 minutes every day to work.\"},{\"timestamp\":[44.24,46.8],\"text\":\" Can you imagine? She must be super fit.\"},{\"timestamp\":[46.8,55.1],\"text\":\" D. I often choose to walk to work to save on gas money and to keep in shape. I usually walk to the company with a close friend.\"},{\"timestamp\":[55.1,59.2],\"text\":\" Sometimes we feel really tired but still push ourselves to walk.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "travel by bus",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1386127e8fed251497c28"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "travel by car",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1386127e8fed251497c29"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "walk alone",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1386127e8fed251497c2a"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "walk with a friend",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1386127e8fed251497c2b"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1386127e8fed251497c27"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c926c88028aa29a1b09b",
+        "createdAt": "2026-01-02T13:33:26.657Z",
+        "updatedAt": "2026-03-11T09:39:45.092Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957c9c0c88028aa29a1b0a4",
+        "title": "Studying",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Studying",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "Late at night"
+                    },
+                    {
+                        "id": 2,
+                        "content": "In a quiet place"
+                    },
+                    {
+                        "id": 3,
+                        "content": "Early in the morning"
+                    },
+                    {
+                        "id": 4,
+                        "content": "In various places"
+                    },
+                    {
+                        "id": 5,
+                        "content": "With music"
+                    },
+                    {
+                        "id": 6,
+                        "content": "With background noise"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360959536_34fd06dfea14a911_audiotp_de11.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,6],\"text\":\" A, I can study in different places, like coffee shops, libraries, or parks.\"},{\"timestamp\":[6,11.44],\"text\":\" For me, the location isn't that important because I have good concentration skills.\"},{\"timestamp\":[11.44,17.04],\"text\":\" B, I can't study in very noisy places because I can't focus on my homework.\"},{\"timestamp\":[17.04,21.28],\"text\":\" If I study in a cafe, I end up not getting anything done.\"},{\"timestamp\":[21.28,26],\"text\":\" So, I usually study in places such as my room in my house or in my office.\"},{\"timestamp\":[26,32.44],\"text\":\" See, I prefer listening to music while studying. I usually play motivational songs to\"},{\"timestamp\":[32.44,38.48],\"text\":\" help keep me alert, especially when studying in the morning. Music is like a cup of coffee,\"},{\"timestamp\":[38.48,43.32],\"text\":\" keeping me awake and motivated in my studies. D. I often can't focus on studying during\"},{\"timestamp\":[43.32,45.46],\"text\":\" the day. I feel tired and sleepy when I have to wake up early in study. So, I often can't focus on studying during the day, I feel tired and sleepy when\"},{\"timestamp\":[45.46,50.8],\"text\":\" I have to wake up early in study. So, I usually study at night, when everyone in the\"},{\"timestamp\":[50.8,56.36],\"text\":\" house is asleep. The quiet atmosphere at night allows me to focus the best and be the most\"},{\"timestamp\":[56.36,57.08],\"text\":\" productive.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "In various places",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1387d27e8fed251497c77"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "In a quiet place",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1387d27e8fed251497c78"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "With music",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1387d27e8fed251497c79"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "Late at night",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1387d27e8fed251497c7a"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1387d27e8fed251497c76"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957c9c0c88028aa29a1b0aa",
+        "createdAt": "2026-01-02T13:36:00.173Z",
+        "updatedAt": "2026-03-11T09:40:13.480Z",
+        "__v": 0
+    },
+    {
+        "_id": "6957ca55c88028aa29a1b0b3",
+        "title": "Studying (phiên bản 2)",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Studying (phiên bản 2)",
+                "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+                "answerList": [
+                    {
+                        "id": 1,
+                        "content": "In the coffee shop"
+                    },
+                    {
+                        "id": 2,
+                        "content": "On public transport"
+                    },
+                    {
+                        "id": 3,
+                        "content": "In the park"
+                    },
+                    {
+                        "id": 4,
+                        "content": "While traveling abroad"
+                    },
+                    {
+                        "id": 5,
+                        "content": "At home"
+                    },
+                    {
+                        "id": 6,
+                        "content": "In a shared workspace"
+                    }
+                ],
+                "correctAnswer": null,
+                "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361108209_ef15b5a244c3416d_audiotp_de12.mp3",
+                "subQuestionAnswerList": [],
+                "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" A. I don't like studying in very quiet places such as at home or in the library because\"},{\"timestamp\":[4.64,8],\"text\":\" I get sleepy easily and might even fall asleep while studying.\"},{\"timestamp\":[8.88,13.44],\"text\":\" There's a coffee shop near my house, and I often go there to study because the presence of\"},{\"timestamp\":[13.44,18.72],\"text\":\" other people makes me feel more motivated. I find that I achieve higher productivity and\"},{\"timestamp\":[18.72,24.56],\"text\":\" efficiency in my studies when I'm there. B. I notice that most people prefer doing their homework\"},{\"timestamp\":[24.56,25.96],\"text\":\" in the classroom, but for\"},{\"timestamp\":[25.96,29.56],\"text\":\" me, those chairs are way too hard and leave me sore all day.\"},{\"timestamp\":[29.56,35.24],\"text\":\" I prefer sitting under the trees in the park to study, it's cool, and the air is fresh.\"},{\"timestamp\":[35.24,39.44],\"text\":\" There's a famous coffee shop across from where I sit, and they serve really good coffee.\"},{\"timestamp\":[39.44,46.8],\"text\":\" C. The distance from my house to school is 20 kilometers, and it usually takes me an hour to get there.\"},{\"timestamp\":[46.8,52.56],\"text\":\" So, when I'm on the train, I use the time to do homework and review the lessons for the day.\"},{\"timestamp\":[52.56,58.32],\"text\":\" Some people say that studying like this can be distracting, but I find it very effective for me.\"},{\"timestamp\":[58.32,63.6],\"text\":\" D, I don't like studying in very crowded places, because I can't focus well.\"},{\"timestamp\":[63.6,66.96],\"text\":\" I usually sit on the sofa in the living room to study.\"},{\"timestamp\":[66.96,70.44],\"text\":\" My parents often travel for work, so my house is very quiet.\"}]</p>",
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "1",
+                        "correctAnswer": "In the coffee shop",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1389227e8fed251497cb0"
+                    },
+                    {
+                        "content": "2",
+                        "correctAnswer": "In the park",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1389227e8fed251497cb1"
+                    },
+                    {
+                        "content": "3",
+                        "correctAnswer": "On public transport",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1389227e8fed251497cb2"
+                    },
+                    {
+                        "content": "4",
+                        "correctAnswer": "At home",
+                        "file": null,
+                        "answerList": null,
+                        "image": null,
+                        "suggestion": null,
+                        "_id": "69b1389227e8fed251497cb3"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "69b1389227e8fed251497caf"
+            }
+        ],
+        "questionPart": "TWO",
+        "questionType": "LISTENING",
+        "id": "6957ca55c88028aa29a1b0b9",
+        "createdAt": "2026-01-02T13:38:29.069Z",
+        "updatedAt": "2026-03-11T09:40:34.276Z",
+        "__v": 0
+    }
+]

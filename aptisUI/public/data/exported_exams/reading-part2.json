@@ -1,0 +1,2602 @@
+[
+  {
+    "_id": "6955d4ed5723012229d3efa0",
+    "data": {
+      "title": "Films ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Films ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "In addition to these technical limitations, film producers also had a very low budget",
+            "_id": "69e6f172b8e618849a5751db",
+            "id": "69e6f172b8e618849a5751dc"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Things have changed over time, and some of them have earned millions of dollars after appearing in films",
+            "_id": "69e6f172b8e618849a5751dd",
+            "id": "69e6f172b8e618849a5751de"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The films in that period were different from the films of today.",
+            "_id": "69e6f172b8e618849a5751df",
+            "id": "69e6f172b8e618849a5751e0"
+          },
+          {
+            "numberOrder": 2,
+            "content": "This is because they were black and white, and there was no sound.",
+            "_id": "69e6f172b8e618849a5751e1",
+            "id": "69e6f172b8e618849a5751e2"
+          },
+          {
+            "numberOrder": 4,
+            "content": "This lack of money mostly affected actors, and they didn't earn much.",
+            "_id": "69e6f172b8e618849a5751e3",
+            "id": "69e6f172b8e618849a5751e4"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><br></p>",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f172b8e618849a5751da",
+        "id": "69e6f172b8e618849a5751e5"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T01:59:09.344Z",
+    "updatedAt": "2026-04-21T03:39:30.372Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955d53d5723012229d3efb3",
+    "data": {
+      "title": "The famous singer ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The famous singer ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "During his stage performances, he wore colorful clothes and painted his face.",
+            "_id": "69e6e947b8e618849a574c02",
+            "id": "69e6e947b8e618849a574c03"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Before becoming famous at a young age, he studied art and music at high school",
+            "_id": "69e6e947b8e618849a574c04",
+            "id": "69e6e947b8e618849a574c05"
+          },
+          {
+            "numberOrder": 5,
+            "content": "They started to follow him on social media and he is now very famous",
+            "_id": "69e6e947b8e618849a574c06",
+            "id": "69e6e947b8e618849a574c07"
+          },
+          {
+            "numberOrder": 2,
+            "content": "During this education, he started to perform on stage.",
+            "_id": "69e6e947b8e618849a574c08",
+            "id": "69e6e947b8e618849a574c09"
+          },
+          {
+            "numberOrder": 4,
+            "content": "This strange ways of dressing and his songs attracted people's attention",
+            "_id": "69e6e947b8e618849a574c0a",
+            "id": "69e6e947b8e618849a574c0b"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><br></p>",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6e947b8e618849a574c01",
+        "id": "69e6e947b8e618849a574c0c"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:00:29.947Z",
+    "updatedAt": "2026-04-21T03:04:39.218Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955dc9d5723012229d3fbcc",
+    "data": {
+      "title": "Healthy eating ( Phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Healthy eating ( Phiên bản 2)",
+        "content": "<p>The sentences below are from the Healthy Eating section. Put the sentences in the right order. The first sentence is done for you.</p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Nowadays, mobile apps help track calories and suggest healthy recipes to support a healthier lifestyle.",
+            "_id": "69e6f77cb8e618849a575785",
+            "id": "69e6f77cb8e618849a575786"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Limited access to fresh produce made healthy eating much more difficult years ago.",
+            "_id": "69e6f77cb8e618849a575787",
+            "id": "69e6f77cb8e618849a575788"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Nutritionists today educate people on how to plan balanced and nutritious meals.",
+            "_id": "69e6f77cb8e618849a575789",
+            "id": "69e6f77cb8e618849a57578a"
+          },
+          {
+            "numberOrder": 1,
+            "content": "In the past, meals were often filled with sugar and unhealthy fats.",
+            "_id": "69e6f77cb8e618849a57578b",
+            "id": "69e6f77cb8e618849a57578c"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Modern diets now focus on fresh, whole foods rather than processed ones.",
+            "_id": "69e6f77cb8e618849a57578d",
+            "id": "69e6f77cb8e618849a57578e"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f77cb8e618849a575784",
+        "id": "69e6f77cb8e618849a57578f"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:31:57.705Z",
+    "updatedAt": "2026-04-21T04:05:16.588Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955dceb5723012229d3fbdf",
+    "data": {
+      "title": "Neighborhood Festival",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Neighborhood Festival",
+        "content": "<p>The sentences below are from the Neighborhood Festival. Put the sentences in the right order. The first sentence is done for you.</p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Families stayed late, enjoying food and drinks under colorful lights.",
+            "_id": "69e6fe92b8e618849a576e5f",
+            "id": "69e6fe92b8e618849a576e60"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The festival was held on Friday evening, featuring live music performances.",
+            "_id": "69e6fe92b8e618849a576e61",
+            "id": "69e6fe92b8e618849a576e62"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Activities included dance workshops, art displays, and a pet parade.",
+            "_id": "69e6fe92b8e618849a576e63",
+            "id": "69e6fe92b8e618849a576e64"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Around 100 people attended, with Ms. Carter leading the organizing team.",
+            "_id": "69e6fe92b8e618849a576e65",
+            "id": "69e6fe92b8e618849a576e66"
+          },
+          {
+            "numberOrder": 3,
+            "content": "After the performances, awards were given for the best food stall.",
+            "_id": "69e6fe92b8e618849a576e67",
+            "id": "69e6fe92b8e618849a576e68"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fe92b8e618849a576e5e",
+        "id": "69e6fe92b8e618849a576e69"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:33:15.173Z",
+    "updatedAt": "2026-04-21T04:35:30.020Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955dd3f5723012229d3fbf2",
+    "data": {
+      "title": "Family Sport Day",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Family Sport Day",
+        "content": "<p>The sentences below are from Family Sport Day. Put the sentences in the right order. The first sentence is done for you.</p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "It started early on Saturday morning with a ten-mile race for adults.",
+            "_id": "69e830ad6bf1cd8e6a95af32",
+            "id": "69e830ad6bf1cd8e6a95af33"
+          },
+          {
+            "numberOrder": 5,
+            "content": "They were all very hungry after all these, so they enjoyed tasty food and drinks with their parents",
+            "_id": "69e830ad6bf1cd8e6a95af34",
+            "id": "69e830ad6bf1cd8e6a95af35"
+          },
+          {
+            "numberOrder": 3,
+            "content": "After receiving the prize, the children's activities and competitions began.",
+            "_id": "69e830ad6bf1cd8e6a95af36",
+            "id": "69e830ad6bf1cd8e6a95af37"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Sixty men and women ran in this, and Ms Kamur won with a very fast time",
+            "_id": "69e830ad6bf1cd8e6a95af38",
+            "id": "69e830ad6bf1cd8e6a95af39"
+          },
+          {
+            "numberOrder": 4,
+            "content": "These activities included football, jumping, and swimming, and they had lots of fun.",
+            "_id": "69e830ad6bf1cd8e6a95af3a",
+            "id": "69e830ad6bf1cd8e6a95af3b"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e830ad6bf1cd8e6a95af31",
+        "id": "69e830ad6bf1cd8e6a95af3c"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:34:39.656Z",
+    "updatedAt": "2026-04-22T02:21:33.731Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955e09a5723012229d3fd15",
+    "data": {
+      "title": "The first American woman in Space ( Phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The first American woman in Space ( Phiên bản 2)",
+        "content": "<p>The sentences below are from The First American Woman in Space. Put the sentences in the right order. The first sentence is done for you.</p><p>Mae Jemison was the first American woman to travel into space.</p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "With the support of her parents, she went to university to study science.",
+            "_id": "69e748c6b8e618849a578d2d",
+            "id": "69e748c6b8e618849a578d2e"
+          },
+          {
+            "numberOrder": 3,
+            "content": "This is about space, and it helps Mae to become a member of a research team.",
+            "_id": "69e748c6b8e618849a578d2f",
+            "id": "69e748c6b8e618849a578d30"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Her degree enabled her to get a place on the training course in the USA.",
+            "_id": "69e748c6b8e618849a578d31",
+            "id": "69e748c6b8e618849a578d32"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Some of those were about growing plants and some animals in a spaceship",
+            "_id": "69e748c6b8e618849a578d33",
+            "id": "69e748c6b8e618849a578d34"
+          },
+          {
+            "numberOrder": 4,
+            "content": "As part of this group, she traveled to space and did a lot of experiments.",
+            "_id": "69e748c6b8e618849a578d35",
+            "id": "69e748c6b8e618849a578d36"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e748c6b8e618849a578d2c",
+        "id": "69e748c6b8e618849a578d37"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:48:58.134Z",
+    "updatedAt": "2026-04-21T09:52:06.713Z",
+    "__v": 0
+  },
+  {
+    "_id": "6955e0e75723012229d3fd28",
+    "data": {
+      "title": "Music show at the park ( Phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Music show at the park ( Phiên bản 2)",
+        "content": "<p>The sentences below are from the Music show at the park. Put the sentences in the right order. The first sentence is done for you.</p><p>Last weekend, there was a big music show at the park.</p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "The staff there had a busy day, but they were able to close early and watch the famous singer perform.",
+            "_id": "69e75193b8e618849a579ba9",
+            "id": "69e75193b8e618849a579baa"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Many of them arrived early and visited nearby shops while they were waiting for it to begin.",
+            "_id": "69e75193b8e618849a579bab",
+            "id": "69e75193b8e618849a579bac"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The local authority planned, sponsored, and paid for everything.",
+            "_id": "69e75193b8e618849a579bad",
+            "id": "69e75193b8e618849a579bae"
+          },
+          {
+            "numberOrder": 5,
+            "content": "He performed for two hours, and everyone had great fun",
+            "_id": "69e75193b8e618849a579baf",
+            "id": "69e75193b8e618849a579bb0"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Because of this, it was free, and five thousand people attended it.",
+            "_id": "69e75193b8e618849a579bb1",
+            "id": "69e75193b8e618849a579bb2"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e75193b8e618849a579ba8",
+        "id": "69e75193b8e618849a579bb3"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-01T02:50:15.247Z",
+    "updatedAt": "2026-04-21T10:29:39.661Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a380b10b9d3fe9bd392ee",
+    "data": {
+      "title": "Films ( Phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Films ( Phiên bản 2)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "Due to the lack of money, actors also had few opportunities to earn money through acting.",
+            "_id": "69e6f17cb8e618849a57520f",
+            "id": "69e6f17cb8e618849a575210"
+          },
+          {
+            "numberOrder": 2,
+            "content": "That's because the movies were only in black and white, and sometimes without sound.",
+            "_id": "69e6f17cb8e618849a575211",
+            "id": "69e6f17cb8e618849a575212"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Now things have changed, actors and filmmakers can earn thousands of dollars from film production.",
+            "_id": "69e6f17cb8e618849a575213",
+            "id": "69e6f17cb8e618849a575214"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Old movies were very different from today's movies.",
+            "_id": "69e6f17cb8e618849a575215",
+            "id": "69e6f17cb8e618849a575216"
+          },
+          {
+            "numberOrder": 3,
+            "content": " Not only did these technological limitations exist, the movies were also low budget.",
+            "_id": "69e6f17cb8e618849a575217",
+            "id": "69e6f17cb8e618849a575218"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f17cb8e618849a57520e",
+        "id": "69e6f17cb8e618849a575219"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:51:07.954Z",
+    "updatedAt": "2026-04-21T03:39:40.199Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a384f10b9d3fe9bd39301",
+    "data": {
+      "title": "Weekend activities",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Weekend activities ",
+        "content": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 2,
+            "content": "There were 60 participants, in which Ms. Kamus kept the fastest speed and won.",
+            "_id": "698059dd83ed47779e050a57",
+            "id": "698059dd83ed47779e050a58"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Activities including football, swimming, skipping rope, and the children played together very happily.",
+            "_id": "698059dd83ed47779e050a59",
+            "id": "698059dd83ed47779e050a5a"
+          },
+          {
+            "numberOrder": 1,
+            "content": "It was held on Saturday morning, there was a 10 km race for adults.",
+            "_id": "698059dd83ed47779e050a5b",
+            "id": "698059dd83ed47779e050a5c"
+          },
+          {
+            "numberOrder": 5,
+            "content": "After playing, the children were very hungry and ate with their parents.",
+            "_id": "698059dd83ed47779e050a5d",
+            "id": "698059dd83ed47779e050a5e"
+          },
+          {
+            "numberOrder": 3,
+            "content": "After she received the prize, the following time was for children's activities.",
+            "_id": "698059dd83ed47779e050a5f",
+            "id": "698059dd83ed47779e050a60"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "698059dd83ed47779e050a56",
+        "id": "698059dd83ed47779e050a61"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:52:15.077Z",
+    "updatedAt": "2026-02-02T08:01:33.280Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a388d10b9d3fe9bd39314",
+    "data": {
+      "title": "The famous singer ( Phiên bản 4)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The famous singer ( Phiên bản 4)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "He is a famous singer who is loved by many fans.",
+            "_id": "69e6e969b8e618849a574cc2",
+            "id": "69e6e969b8e618849a574cc3"
+          },
+          {
+            "numberOrder": 4,
+            "content": "With his unique style and clothes, he soon attracted attention.",
+            "_id": "69e6e969b8e618849a574cc4",
+            "id": "69e6e969b8e618849a574cc5"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Before becoming famous, he had to practice very hard every day.",
+            "_id": "69e6e969b8e618849a574cc6",
+            "id": "69e6e969b8e618849a574cc7"
+          },
+          {
+            "numberOrder": 2,
+            "content": "At the age of fifteen, he studied music at a special school.",
+            "_id": "69e6e969b8e618849a574cc8",
+            "id": "69e6e969b8e618849a574cc9"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Thanks to his talent and personality, he became well-known to a large audience.",
+            "_id": "69e6e969b8e618849a574cca",
+            "id": "69e6e969b8e618849a574ccb"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6e969b8e618849a574cc1",
+        "id": "69e6e969b8e618849a574ccc"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:53:17.265Z",
+    "updatedAt": "2026-04-21T03:05:13.735Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a391c10b9d3fe9bd3933a",
+    "data": {
+      "title": "Writing about a place ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Writing about a place ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Such comparisons will make your writing more interesting and meaningful.",
+            "_id": "69e70465b8e618849a577e06",
+            "id": "69e70465b8e618849a577e07"
+          },
+          {
+            "numberOrder": 2,
+            "content": "It is important to learn about the people and the history there carefully.",
+            "_id": "69e70465b8e618849a577e08",
+            "id": "69e70465b8e618849a577e09"
+          },
+          {
+            "numberOrder": 4,
+            "content": "You should also compare that place with your own country.",
+            "_id": "69e70465b8e618849a577e0a",
+            "id": "69e70465b8e618849a577e0b"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Even if you can not visit the place, your writing will still look similar to real experiences.",
+            "_id": "69e70465b8e618849a577e0c",
+            "id": "69e70465b8e618849a577e0d"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Before writing about a place, you need to do some research on it.",
+            "_id": "69e70465b8e618849a577e0e",
+            "id": "69e70465b8e618849a577e0f"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e70465b8e618849a577e05",
+        "id": "69e70465b8e618849a577e10"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:55:40.764Z",
+    "updatedAt": "2026-04-21T05:00:21.124Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a398c10b9d3fe9bd39360",
+    "data": {
+      "title": "The history of transportation ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The history of transportation ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "These made traveling more accessible to everyone.",
+            "_id": "69e6f54bb8e618849a57541a",
+            "id": "69e6f54bb8e618849a57541b"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Eventually, buses and trains were introduced as affordable alternatives.",
+            "_id": "69e6f54bb8e618849a57541c",
+            "id": "69e6f54bb8e618849a57541d"
+          },
+          {
+            "numberOrder": 1,
+            "content": "In the past, transportation was primarily accessible to the wealthy.",
+            "_id": "69e6f54bb8e618849a57541e",
+            "id": "69e6f54bb8e618849a57541f"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Today, buses and trains are among the most common transportation options.",
+            "_id": "69e6f54bb8e618849a575420",
+            "id": "69e6f54bb8e618849a575421"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Later, air travel became popular among business professionals.",
+            "_id": "69e6f54bb8e618849a575422",
+            "id": "69e6f54bb8e618849a575423"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f54bb8e618849a575419",
+        "id": "69e6f54bb8e618849a575424"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:57:32.233Z",
+    "updatedAt": "2026-04-21T03:55:55.414Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a39d410b9d3fe9bd39373",
+    "data": {
+      "title": "New coffee shop ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "New coffee shop ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 2,
+            "content": "A waiter assisted me in finding a table and handed me the menu.",
+            "_id": "69e6fcf1b8e618849a57679c",
+            "id": "69e6fcf1b8e618849a57679d"
+          },
+          {
+            "numberOrder": 3,
+            "content": "The menu was not as good as expected and quite pricey, so I decided to order a sandwich.",
+            "_id": "69e6fcf1b8e618849a57679e",
+            "id": "69e6fcf1b8e618849a57679f"
+          },
+          {
+            "numberOrder": 1,
+            "content": "I arrived at the shop early in the morning, but it was crowded with people.",
+            "_id": "69e6fcf1b8e618849a5767a0",
+            "id": "69e6fcf1b8e618849a5767a1"
+          },
+          {
+            "numberOrder": 5,
+            "content": "I might return to try different types of drinks next time.",
+            "_id": "69e6fcf1b8e618849a5767a2",
+            "id": "69e6fcf1b8e618849a5767a3"
+          },
+          {
+            "numberOrder": 4,
+            "content": "The sandwich was both delicious and beautifully presented.",
+            "_id": "69e6fcf1b8e618849a5767a4",
+            "id": "69e6fcf1b8e618849a5767a5"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fcf1b8e618849a57679b",
+        "id": "69e6fcf1b8e618849a5767a6"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T09:58:44.141Z",
+    "updatedAt": "2026-04-21T04:28:33.141Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a3a2210b9d3fe9bd39386",
+    "data": {
+      "title": "AI - Artificial Intelligence ( Phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "AI - Artificial Intelligence ( Phiên bản 2)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "Over the past decade, artificial intelligence has revolutionized various industries.",
+            "_id": "69e831bf6bf1cd8e6a95b0c2",
+            "id": "69e831bf6bf1cd8e6a95b0c3"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Modern AI tools help businesses to analyze data and make better decisions.",
+            "_id": "69e831bf6bf1cd8e6a95b0c4",
+            "id": "69e831bf6bf1cd8e6a95b0c5"
+          },
+          {
+            "numberOrder": 2,
+            "content": "The early AI systems were limited to simple pattern recognition tasks.",
+            "_id": "69e831bf6bf1cd8e6a95b0c6",
+            "id": "69e831bf6bf1cd8e6a95b0c7"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Nowadays, AI engineers build advanced models for complex tasks such as language translation.",
+            "_id": "69e831bf6bf1cd8e6a95b0c8",
+            "id": "69e831bf6bf1cd8e6a95b0c9"
+          },
+          {
+            "numberOrder": 3,
+            "content": "High computational costs previously hindered the development of AI.",
+            "_id": "69e831bf6bf1cd8e6a95b0ca",
+            "id": "69e831bf6bf1cd8e6a95b0cb"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e831bf6bf1cd8e6a95b0c1",
+        "id": "69e831bf6bf1cd8e6a95b0cc"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T10:00:02.057Z",
+    "updatedAt": "2026-04-22T02:26:07.017Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a3a6b10b9d3fe9bd39399",
+    "data": {
+      "title": "Company wellness day",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Company wellness day ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 2,
+            "content": "More than 50 (con số bất kỳ) employees participated, with Mr.A (tên người) leading a workshop on stress relief.",
+            "_id": "69e82ffe6bf1cd8e6a95ac7c",
+            "id": "69e82ffe6bf1cd8e6a95ac7d"
+          },
+          {
+            "numberOrder": 1,
+            "content": "This month, the wellness day took place on Friday, focusing on work-life balance.",
+            "_id": "69e82ffe6bf1cd8e6a95ac7e",
+            "id": "69e82ffe6bf1cd8e6a95ac7f"
+          },
+          {
+            "numberOrder": 4,
+            "content": "After the workshops, awards were given for the most creative wellness ideas.",
+            "_id": "69e82ffe6bf1cd8e6a95ac80",
+            "id": "69e82ffe6bf1cd8e6a95ac81"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Activities included team yoga, time management seminars, and a group walk.",
+            "_id": "69e82ffe6bf1cd8e6a95ac82",
+            "id": "69e82ffe6bf1cd8e6a95ac83"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Employees enjoyed healthy snacks and exchanged tips for managing stress.",
+            "_id": "69e82ffe6bf1cd8e6a95ac84",
+            "id": "69e82ffe6bf1cd8e6a95ac85"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e82ffe6bf1cd8e6a95ac7b",
+        "id": "69e82ffe6bf1cd8e6a95ac86"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T10:01:15.215Z",
+    "updatedAt": "2026-04-22T02:18:38.184Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a3aa210b9d3fe9bd393ac",
+    "data": {
+      "title": "Workplace evolution ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Workplace evolution ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Managers now utilize software to monitor project progress remotely.",
+            "_id": "69e703cbb8e618849a577d46",
+            "id": "69e703cbb8e618849a577d47"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Flexible work models are becoming more common in modern workplaces.",
+            "_id": "69e703cbb8e618849a577d48",
+            "id": "69e703cbb8e618849a577d49"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Today, businesses are exploring shorter workweeks to boost productivity.",
+            "_id": "69e703cbb8e618849a577d4a",
+            "id": "69e703cbb8e618849a577d4b"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Technological restrictions once made remote work a challenge.",
+            "_id": "69e703cbb8e618849a577d4c",
+            "id": "69e703cbb8e618849a577d4d"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Previously, employees were confined to rigid nine-to-five work hours.",
+            "_id": "69e703cbb8e618849a577d4e",
+            "id": "69e703cbb8e618849a577d4f"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e703cbb8e618849a577d45",
+        "id": "69e703cbb8e618849a577d50"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T10:02:10.272Z",
+    "updatedAt": "2026-04-21T04:57:47.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a4ffc10b9d3fe9bd393bf",
+    "data": {
+      "title": "Music show at the park ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Music show at the park ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "The event was fully planned, financed, and supported by local authorities.",
+            "_id": "69e75099b8e618849a579b2a",
+            "id": "69e75099b8e618849a579b2b"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Many attendees arrived early and browsed local shops before the event began.",
+            "_id": "69e75099b8e618849a579b2c",
+            "id": "69e75099b8e618849a579b2d"
+          },
+          {
+            "numberOrder": 2,
+            "content": "As a result, entry was free, and around five thousand people attended.",
+            "_id": "69e75099b8e618849a579b2e",
+            "id": "69e75099b8e618849a579b2f"
+          },
+          {
+            "numberOrder": 5,
+            "content": "The two-hour performance thrilled the audience, leaving everyone in high spirits.",
+            "_id": "69e75099b8e618849a579b30",
+            "id": "69e75099b8e618849a579b31"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Despite the busy day, workers finished ahead of schedule and watched the famous singer perform.",
+            "_id": "69e75099b8e618849a579b32",
+            "id": "69e75099b8e618849a579b33"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e75099b8e618849a579b29",
+        "id": "69e75099b8e618849a579b34"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:33:16.065Z",
+    "updatedAt": "2026-04-21T10:25:29.911Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a507e10b9d3fe9bd393d2",
+    "data": {
+      "title": "Mae - The Math Girl",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Mae - The Math Girl ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "Mae’s father worked as a nurse, and her mother was a teacher.",
+            "_id": "69e75031b8e618849a5797b9",
+            "id": "69e75031b8e618849a5797ba"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Her parents motivated Mae to pursue higher education and focus on scientific studies.",
+            "_id": "69e75031b8e618849a5797bb",
+            "id": "69e75031b8e618849a5797bc"
+          },
+          {
+            "numberOrder": 4,
+            "content": "She later joined a team, contributing her skills and knowledge.",
+            "_id": "69e75031b8e618849a5797bd",
+            "id": "69e75031b8e618849a5797be"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Eventually, she had the opportunity to undergo a training program in the United States.",
+            "_id": "69e75031b8e618849a5797bf",
+            "id": "69e75031b8e618849a5797c0"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Mae worked diligently and achieved several remarkable milestones.",
+            "_id": "69e75031b8e618849a5797c1",
+            "id": "69e75031b8e618849a5797c2"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e75031b8e618849a5797b8",
+        "id": "69e75031b8e618849a5797c3"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:35:26.695Z",
+    "updatedAt": "2026-04-21T10:23:45.430Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a50d710b9d3fe9bd393e5",
+    "data": {
+      "title": "New coffee shop (Phiên bản 4)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "New coffee shop (Phiên bản 4)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "Even so, a staff member quickly noticed me and brought over the menu.",
+            "_id": "69e74d84b8e618849a579223",
+            "id": "69e74d84b8e618849a579224"
+          },
+          {
+            "numberOrder": 5,
+            "content": "In the end, I went for the most expensive salad on the menu.",
+            "_id": "69e74d84b8e618849a579225",
+            "id": "69e74d84b8e618849a579226"
+          },
+          {
+            "numberOrder": 1,
+            "content": "I decided to try a new café located at the end of the street.",
+            "_id": "69e74d84b8e618849a579227",
+            "id": "69e74d84b8e618849a579228"
+          },
+          {
+            "numberOrder": 4,
+            "content": "I was a bit surprised to see that there were only a few items to choose from.",
+            "_id": "69e74d84b8e618849a579229",
+            "id": "69e74d84b8e618849a57922a"
+          },
+          {
+            "numberOrder": 2,
+            "content": "The place was quite busy, with a lively atmosphere.",
+            "_id": "69e74d84b8e618849a57922b",
+            "id": "69e74d84b8e618849a57922c"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e74d84b8e618849a579222",
+        "id": "69e74d84b8e618849a57922d"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:36:55.474Z",
+    "updatedAt": "2026-04-21T10:12:20.652Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a510610b9d3fe9bd393f8",
+    "data": {
+      "title": "A group presentation ",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "A group presentation ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Finally, each group member took turns answering the questions.",
+            "_id": "69e74a93b8e618849a578e85",
+            "id": "69e74a93b8e618849a578e86"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Throughout the presentation, we used images to explain our ideas.",
+            "_id": "69e74a93b8e618849a578e87",
+            "id": "69e74a93b8e618849a578e88"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Then, we presented our topic for 10 minutes.",
+            "_id": "69e74a93b8e618849a578e89",
+            "id": "69e74a93b8e618849a578e8a"
+          },
+          {
+            "numberOrder": 4,
+            "content": "After the presentation, other students asked questions.",
+            "_id": "69e74a93b8e618849a578e8b",
+            "id": "69e74a93b8e618849a578e8c"
+          },
+          {
+            "numberOrder": 1,
+            "content": "First, we prepared the materials for our group presentation.",
+            "_id": "69e74a93b8e618849a578e8d",
+            "id": "69e74a93b8e618849a578e8e"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e74a93b8e618849a578e84",
+        "id": "69e74a93b8e618849a578e8f"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:37:42.009Z",
+    "updatedAt": "2026-04-21T09:59:47.847Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a515d10b9d3fe9bd3940b",
+    "data": {
+      "title": "Workplace evolution (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Workplace evolution (phiên bản 2) ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "Modern offices are now moving toward more flexible ways of working.",
+            "_id": "69e700bab8e618849a577205",
+            "id": "69e700bab8e618849a577206"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Managers now use digital tools to follow project progress remotely.",
+            "_id": "69e700bab8e618849a577207",
+            "id": "69e700bab8e618849a577208"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Many companies today are trying shorter workweeks to increase efficiency.",
+            "_id": "69e700bab8e618849a577209",
+            "id": "69e700bab8e618849a57720a"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Because technology was limited, working from home was almost impossible.",
+            "_id": "69e700bab8e618849a57720b",
+            "id": "69e700bab8e618849a57720c"
+          },
+          {
+            "numberOrder": 1,
+            "content": "In the past, most workers followed fixed schedules from nine to five.",
+            "_id": "69e700bab8e618849a57720d",
+            "id": "69e700bab8e618849a57720e"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e700bab8e618849a577204",
+        "id": "69e700bab8e618849a57720f"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:39:09.696Z",
+    "updatedAt": "2026-04-21T04:44:42.801Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a519b10b9d3fe9bd3941e",
+    "data": {
+      "title": "The first american woman in space ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The first american woman in space ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "Some of these experiments involved growing plants and observing animals aboard the spacecraft.",
+            "_id": "69e74865b8e618849a578ccf",
+            "id": "69e74865b8e618849a578cd0"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Encouraged by her parents, she decided to study science at university.",
+            "_id": "69e74865b8e618849a578cd1",
+            "id": "69e74865b8e618849a578cd2"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Her passion for space led Mae to join a dedicated research team.",
+            "_id": "69e74865b8e618849a578cd3",
+            "id": "69e74865b8e618849a578cd4"
+          },
+          {
+            "numberOrder": 4,
+            "content": "As a member of the team, she traveled into space and carried out numerous experiments.",
+            "_id": "69e74865b8e618849a578cd5",
+            "id": "69e74865b8e618849a578cd6"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Her strong academic record earned her a place in a training program in the United States.",
+            "_id": "69e74865b8e618849a578cd7",
+            "id": "69e74865b8e618849a578cd8"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e74865b8e618849a578cce",
+        "id": "69e74865b8e618849a578cd9"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:40:11.369Z",
+    "updatedAt": "2026-04-21T09:50:29.292Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a51ce10b9d3fe9bd39431",
+    "data": {
+      "title": "Social Media",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Social Media ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "In the past, slow internet speeds made streaming or uploading videos difficult.",
+            "_id": "69e74e2fb8e618849a579451",
+            "id": "69e74e2fb8e618849a579452"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Today’s platforms use complex algorithms to personalize and shape each user’s feed.",
+            "_id": "69e74e2fb8e618849a579453",
+            "id": "69e74e2fb8e618849a579454"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Many influencers now earn income primarily through brand sponsorships and online ads.",
+            "_id": "69e74e2fb8e618849a579455",
+            "id": "69e74e2fb8e618849a579456"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Over time, social media platforms have greatly evolved in both design and functionality.",
+            "_id": "69e74e2fb8e618849a579457",
+            "id": "69e74e2fb8e618849a579458"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Early platforms offered only basic features like text posts and simple images.",
+            "_id": "69e74e2fb8e618849a579459",
+            "id": "69e74e2fb8e618849a57945a"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e74e2fb8e618849a579450",
+        "id": "69e74e2fb8e618849a57945b"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:41:02.919Z",
+    "updatedAt": "2026-04-21T10:15:11.849Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a51fe10b9d3fe9bd39444",
+    "data": {
+      "title": "University open day",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "University open day",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "Every visitor will have the chance to join a Q&A session with current students.",
+            "_id": "69e746acb8e618849a57872d",
+            "id": "69e746acb8e618849a57872e"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Before the open day, please contact us by phone or email so we can record your personal details.",
+            "_id": "69e746acb8e618849a57872f",
+            "id": "69e746acb8e618849a578730"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Using this information, we’ll prepare an identification card for you to collect upon arrival.",
+            "_id": "69e746acb8e618849a578731",
+            "id": "69e746acb8e618849a578732"
+          },
+          {
+            "numberOrder": 5,
+            "content": "After the presentations, you’ll be able to explore different departments across the campus.",
+            "_id": "69e746acb8e618849a578733",
+            "id": "69e746acb8e618849a578734"
+          },
+          {
+            "numberOrder": 3,
+            "content": "You’ll need to show this card to enter the introductory talk and morning lectures.",
+            "_id": "69e746acb8e618849a578735",
+            "id": "69e746acb8e618849a578736"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e746acb8e618849a57872c",
+        "id": "69e746acb8e618849a578737"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:41:50.635Z",
+    "updatedAt": "2026-04-21T09:43:08.327Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a523610b9d3fe9bd39457",
+    "data": {
+      "title": "AI - Artificial Intelligence ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "AI - Artificial Intelligence ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "Today, AI engineers design sophisticated models for applications such as language translation.",
+            "_id": "69e831b76bf1cd8e6a95b08e",
+            "id": "69e831b76bf1cd8e6a95b08f"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Modern AI tools enable businesses to analyze vast amounts of data and make smarter decisions.",
+            "_id": "69e831b76bf1cd8e6a95b090",
+            "id": "69e831b76bf1cd8e6a95b091"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Early AI systems were capable of handling only simple pattern recognition tasks.",
+            "_id": "69e831b76bf1cd8e6a95b092",
+            "id": "69e831b76bf1cd8e6a95b093"
+          },
+          {
+            "numberOrder": 3,
+            "content": "In the past, high computational costs slowed down the progress of AI development.",
+            "_id": "69e831b76bf1cd8e6a95b094",
+            "id": "69e831b76bf1cd8e6a95b095"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Over the past decade, artificial intelligence has reshaped industries around the world.",
+            "_id": "69e831b76bf1cd8e6a95b096",
+            "id": "69e831b76bf1cd8e6a95b097"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e831b76bf1cd8e6a95b08d",
+        "id": "69e831b76bf1cd8e6a95b098"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:42:46.027Z",
+    "updatedAt": "2026-04-22T02:25:59.337Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a52ac10b9d3fe9bd3947d",
+    "data": {
+      "title": "Wellness Fair",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Wellness Fair",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "The fair also included activities like cooking demonstrations, mindfulness sessions, and a fun run.",
+            "_id": "69e70104b8e618849a57746b",
+            "id": "69e70104b8e618849a57746c"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Families enjoyed tasting healthy snacks and discovering practical tips for better overall wellness.",
+            "_id": "69e70104b8e618849a57746d",
+            "id": "69e70104b8e618849a57746e"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The wellness fair took place on Saturday afternoon, encouraging people to adopt healthier lifestyles.",
+            "_id": "69e70104b8e618849a57746f",
+            "id": "69e70104b8e618849a577470"
+          },
+          {
+            "numberOrder": 2,
+            "content": "More than 60 (con số bất kỳ) participants joined the event, with Dr. A (tên người) leading an engaging fitness workshop.",
+            "_id": "69e70104b8e618849a577471",
+            "id": "69e70104b8e618849a577472"
+          },
+          {
+            "numberOrder": 4,
+            "content": "After the workshops, prizes were awarded to participants who created the most creative health posters.",
+            "_id": "69e70104b8e618849a577473",
+            "id": "69e70104b8e618849a577474"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e70104b8e618849a57746a",
+        "id": "69e70104b8e618849a577475"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:44:44.589Z",
+    "updatedAt": "2026-04-21T04:45:56.503Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a52f110b9d3fe9bd39490",
+    "data": {
+      "title": "The famous singer (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The famous singer (phiên bản 2) ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "He eventually became famous among audiences around the world.",
+            "_id": "69e6e959b8e618849a574c42",
+            "id": "69e6e959b8e618849a574c43"
+          },
+          {
+            "numberOrder": 3,
+            "content": "His unique way of dressing and performing made him stand out from others.",
+            "_id": "69e6e959b8e618849a574c44",
+            "id": "69e6e959b8e618849a574c45"
+          },
+          {
+            "numberOrder": 1,
+            "content": "He is a famous singer.",
+            "_id": "69e6e959b8e618849a574c46",
+            "id": "69e6e959b8e618849a574c47"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Before becoming famous, he studied music at school when he was 15.",
+            "_id": "69e6e959b8e618849a574c48",
+            "id": "69e6e959b8e618849a574c49"
+          },
+          {
+            "numberOrder": 4,
+            "content": "This helped him receive many invitations for collaborations and performances.",
+            "_id": "69e6e959b8e618849a574c4a",
+            "id": "69e6e959b8e618849a574c4b"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6e959b8e618849a574c41",
+        "id": "69e6e959b8e618849a574c4c"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:45:53.153Z",
+    "updatedAt": "2026-04-21T03:04:57.371Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a532610b9d3fe9bd394a3",
+    "data": {
+      "title": "The famous singer (phiên bản 3)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The famous singer (phiên bản 3) ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "He is a famous singer who is loved by many people.",
+            "_id": "69e6e95db8e618849a574c82",
+            "id": "69e6e95db8e618849a574c83"
+          },
+          {
+            "numberOrder": 3,
+            "content": "He spent years practicing and improving his performance skills.",
+            "_id": "69e6e95db8e618849a574c84",
+            "id": "69e6e95db8e618849a574c85"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Before becoming famous, he studied music at school when he was 15 years old.",
+            "_id": "69e6e95db8e618849a574c86",
+            "id": "69e6e95db8e618849a574c87"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Because of this, more and more people began to recognize and admire him.",
+            "_id": "69e6e95db8e618849a574c88",
+            "id": "69e6e95db8e618849a574c89"
+          },
+          {
+            "numberOrder": 4,
+            "content": "His unique clothing style and stage presence made him stand out.",
+            "_id": "69e6e95db8e618849a574c8a",
+            "id": "69e6e95db8e618849a574c8b"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6e95db8e618849a574c81",
+        "id": "69e6e95db8e618849a574c8c"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:46:46.296Z",
+    "updatedAt": "2026-04-21T03:05:01.632Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a537010b9d3fe9bd394b6",
+    "data": {
+      "title": "Writing about a place (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Writing about a place (phiên bản 2) ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "Sometimes you may not be able to visit the place, but you can still find similar information from other sources.",
+            "_id": "69e7044fb8e618849a577dc6",
+            "id": "69e7044fb8e618849a577dc7"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Comparing that place with your own country can be very helpful.",
+            "_id": "69e7044fb8e618849a577dc8",
+            "id": "69e7044fb8e618849a577dc9"
+          },
+          {
+            "numberOrder": 5,
+            "content": "This comparison will help you gain a deeper understanding and write more effectively.",
+            "_id": "69e7044fb8e618849a577dca",
+            "id": "69e7044fb8e618849a577dcb"
+          },
+          {
+            "numberOrder": 2,
+            "content": "To prepare well, you should learn about the people and the history of the area.",
+            "_id": "69e7044fb8e618849a577dcc",
+            "id": "69e7044fb8e618849a577dcd"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Before writing, it is important to research the place thoroughly.",
+            "_id": "69e7044fb8e618849a577dce",
+            "id": "69e7044fb8e618849a577dcf"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e7044fb8e618849a577dc5",
+        "id": "69e7044fb8e618849a577dd0"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:48:00.580Z",
+    "updatedAt": "2026-04-21T04:59:59.616Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a545810b9d3fe9bd39905",
+    "data": {
+      "title": "New coffee shop ( Phiên bản 3)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "New coffee shop ( Phiên bản 3)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "It was my first time visiting a new local coffee shop.",
+            "_id": "69e6fcfeb8e618849a576810",
+            "id": "69e6fcfeb8e618849a576811"
+          },
+          {
+            "numberOrder": 4,
+            "content": "I chose one dish to try for myself.",
+            "_id": "69e6fcfeb8e618849a576812",
+            "id": "69e6fcfeb8e618849a576813"
+          },
+          {
+            "numberOrder": 5,
+            "content": "When I tasted it, I found it really delicious and knew I would come back again.",
+            "_id": "69e6fcfeb8e618849a576814",
+            "id": "69e6fcfeb8e618849a576815"
+          },
+          {
+            "numberOrder": 3,
+            "content": "I looked at the menu and saw many different kinds of food and drinks.",
+            "_id": "69e6fcfeb8e618849a576816",
+            "id": "69e6fcfeb8e618849a576817"
+          },
+          {
+            "numberOrder": 2,
+            "content": "At first, I didn’t think it would be good, but I decided to give it a try.",
+            "_id": "69e6fcfeb8e618849a576818",
+            "id": "69e6fcfeb8e618849a576819"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fcfeb8e618849a57680f",
+        "id": "69e6fcfeb8e618849a57681a"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:51:52.994Z",
+    "updatedAt": "2026-04-21T04:28:46.386Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a54cd10b9d3fe9bd3993c",
+    "data": {
+      "title": "Cultural festival",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Cultural festival ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 2,
+            "content": "About 60 (con số bất kỳ) participants took part, with Ms.A (tên người) leading a traditional dance group.",
+            "_id": "69e6fe69b8e618849a576e2d",
+            "id": "69e6fe69b8e618849a576e2e"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The cultural fair was held on Sunday, celebrating and showcasing local traditions.",
+            "_id": "69e6fe69b8e618849a576e2f",
+            "id": "69e6fe69b8e618849a576e30"
+          },
+          {
+            "numberOrder": 5,
+            "content": "At the end of the event, prizes were given to participants with the best costumes.",
+            "_id": "69e6fe69b8e618849a576e31",
+            "id": "69e6fe69b8e618849a576e32"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Families enjoyed taking photos and sharing delicious local dishes together.",
+            "_id": "69e6fe69b8e618849a576e33",
+            "id": "69e6fe69b8e618849a576e34"
+          },
+          {
+            "numberOrder": 3,
+            "content": "The event featured pottery workshops, folk music performances, and food tastings.",
+            "_id": "69e6fe69b8e618849a576e35",
+            "id": "69e6fe69b8e618849a576e36"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fe69b8e618849a576e2c",
+        "id": "69e6fe69b8e618849a576e37"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:53:49.165Z",
+    "updatedAt": "2026-04-21T04:34:49.689Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a550b10b9d3fe9bd3994f",
+    "data": {
+      "title": "Public Transportations",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Public Transportations",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "In the past, many cities had fewer bus routes because of budget limitations.",
+            "_id": "69e832ad6bf1cd8e6a95b3a5",
+            "id": "69e832ad6bf1cd8e6a95b3a6"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Modern buses often use electric power, helping to reduce pollution in urban areas.",
+            "_id": "69e832ad6bf1cd8e6a95b3a7",
+            "id": "69e832ad6bf1cd8e6a95b3a8"
+          },
+          {
+            "numberOrder": 3,
+            "content": "City buses today are much more efficient than those from ten years ago.",
+            "_id": "69e832ad6bf1cd8e6a95b3a9",
+            "id": "69e832ad6bf1cd8e6a95b3aa"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Older buses often didn’t have air conditioning or comfortable seating.",
+            "_id": "69e832ad6bf1cd8e6a95b3ab",
+            "id": "69e832ad6bf1cd8e6a95b3ac"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Drivers and staff now receive better training to provide improved passenger service.",
+            "_id": "69e832ad6bf1cd8e6a95b3ad",
+            "id": "69e832ad6bf1cd8e6a95b3ae"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e832ad6bf1cd8e6a95b3a4",
+        "id": "69e832ad6bf1cd8e6a95b3af"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:54:51.315Z",
+    "updatedAt": "2026-04-22T02:30:05.859Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a555510b9d3fe9bd39962",
+    "data": {
+      "title": "Tourism",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Tourism ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "Today, online platforms allow people to plan thoroughly and book their trips with ease.",
+            "_id": "69e6fd56b8e618849a576b9b",
+            "id": "69e6fd56b8e618849a576b9c"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Back then, limited technology also meant that booking options were quite restricted.",
+            "_id": "69e6fd56b8e618849a576b9d",
+            "id": "69e6fd56b8e618849a576b9e"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Modern tourism now provides far more choices than in the past.",
+            "_id": "69e6fd56b8e618849a576b9f",
+            "id": "69e6fd56b8e618849a576ba0"
+          },
+          {
+            "numberOrder": 2,
+            "content": "In earlier times, travelers mostly depended on guidebooks and paper maps.",
+            "_id": "69e6fd56b8e618849a576ba1",
+            "id": "69e6fd56b8e618849a576ba2"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Moreover, local guides now offer personalized tours that give visitors more authentic experiences.",
+            "_id": "69e6fd56b8e618849a576ba3",
+            "id": "69e6fd56b8e618849a576ba4"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fd56b8e618849a576b9a",
+        "id": "69e6fd56b8e618849a576ba5"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:56:05.244Z",
+    "updatedAt": "2026-04-21T04:30:14.223Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a558e10b9d3fe9bd39975",
+    "data": {
+      "title": "New coffee shop (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "New coffee shop (phiên bản 2)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "It tasted really good with melted cheese on top, and I’ll definitely come back to this place again.",
+            "_id": "69e6fcf5b8e618849a5767d6",
+            "id": "69e6fcf5b8e618849a5767d7"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Even though it was crowded, the staff still managed to find a table for me.",
+            "_id": "69e6fcf5b8e618849a5767d8",
+            "id": "69e6fcf5b8e618849a5767d9"
+          },
+          {
+            "numberOrder": 3,
+            "content": "They handed me the menu, and when I looked through it, I saw quite a variety of dishes.",
+            "_id": "69e6fcf5b8e618849a5767da",
+            "id": "69e6fcf5b8e618849a5767db"
+          },
+          {
+            "numberOrder": 4,
+            "content": "After checking them all, I decided to order the most expensive sandwich.",
+            "_id": "69e6fcf5b8e618849a5767dc",
+            "id": "69e6fcf5b8e618849a5767dd"
+          },
+          {
+            "numberOrder": 1,
+            "content": "When I arrived, the place was very crowded, and the staff were extremely busy on the first day.",
+            "_id": "69e6fcf5b8e618849a5767de",
+            "id": "69e6fcf5b8e618849a5767df"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fcf5b8e618849a5767d5",
+        "id": "69e6fcf5b8e618849a5767e0"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:57:02.642Z",
+    "updatedAt": "2026-04-21T04:28:37.745Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a55bc10b9d3fe9bd39988",
+    "data": {
+      "title": "Healthy eating ( Phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Healthy eating ( Phiên bản 1)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "In the past, many meals were high in sugar and unhealthy fats.",
+            "_id": "69e832e96bf1cd8e6a95b44a",
+            "id": "69e832e96bf1cd8e6a95b44b"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Nutritionists today teach people how to create balanced and nutritious meal plans.",
+            "_id": "69e832e96bf1cd8e6a95b44c",
+            "id": "69e832e96bf1cd8e6a95b44d"
+          },
+          {
+            "numberOrder": 3,
+            "content": "Modern diets now emphasize fresh, whole foods instead of processed ones.",
+            "_id": "69e832e96bf1cd8e6a95b44e",
+            "id": "69e832e96bf1cd8e6a95b44f"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Years ago, limited access to fresh produce made healthy eating much more challenging.",
+            "_id": "69e832e96bf1cd8e6a95b450",
+            "id": "69e832e96bf1cd8e6a95b451"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Nowadays, mobile apps help users track calories and discover healthy recipes to support better lifestyles.",
+            "_id": "69e832e96bf1cd8e6a95b452",
+            "id": "69e832e96bf1cd8e6a95b453"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e832e96bf1cd8e6a95b449",
+        "id": "69e832e96bf1cd8e6a95b454"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:57:48.595Z",
+    "updatedAt": "2026-04-22T02:31:05.037Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a55f110b9d3fe9bd3999b",
+    "data": {
+      "title": "Tech fair",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Tech fair",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 1,
+            "content": "The tech fair took place on Saturday morning, showcasing a variety of exciting new gadgets.",
+            "_id": "69e6fa81b8e618849a576507",
+            "id": "69e6fa81b8e618849a576508"
+          },
+          {
+            "numberOrder": 3,
+            "content": "The event featured engaging activities such as VR gaming, coding workshops, and thrilling drone races.",
+            "_id": "69e6fa81b8e618849a576509",
+            "id": "69e6fa81b8e618849a57650a"
+          },
+          {
+            "numberOrder": 2,
+            "content": "More than 60 (con số bất kỳ) exhibitors participated, with Mr. A (tên người) presenting an impressive robot demonstration.",
+            "_id": "69e6fa81b8e618849a57650b",
+            "id": "69e6fa81b8e618849a57650c"
+          },
+          {
+            "numberOrder": 5,
+            "content": "After the demonstrations, awards were given to the creators of the most innovative products.",
+            "_id": "69e6fa81b8e618849a57650d",
+            "id": "69e6fa81b8e618849a57650e"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Visitors enjoyed complimentary coffee and snacks while exploring the interactive exhibits.",
+            "_id": "69e6fa81b8e618849a57650f",
+            "id": "69e6fa81b8e618849a576510"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6fa81b8e618849a576506",
+        "id": "69e6fa81b8e618849a576511"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T11:58:41.162Z",
+    "updatedAt": "2026-04-21T04:18:09.836Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a564310b9d3fe9bd399ae",
+    "data": {
+      "title": "End of term project",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "End of term project",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 2,
+            "content": "It must include relevant pictures along with your own written text about the subject.",
+            "_id": "69e6f8cfb8e618849a576014",
+            "id": "69e6f8cfb8e618849a576015"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Your end-of-term project should focus on at least two of the given topics.",
+            "_id": "69e6f8cfb8e618849a576016",
+            "id": "69e6f8cfb8e618849a576017"
+          },
+          {
+            "numberOrder": 3,
+            "content": "You will then use these pictures and your written work to create a class presentation.",
+            "_id": "69e6f8cfb8e618849a576018",
+            "id": "69e6f8cfb8e618849a576019"
+          },
+          {
+            "numberOrder": 4,
+            "content": "During the presentation, you should summarize your main points, and it should last about five minutes.",
+            "_id": "69e6f8cfb8e618849a57601a",
+            "id": "69e6f8cfb8e618849a57601b"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Afterward, your classmates will have the opportunity to ask questions, and you will respond to them.",
+            "_id": "69e6f8cfb8e618849a57601c",
+            "id": "69e6f8cfb8e618849a57601d"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f8cfb8e618849a576013",
+        "id": "69e6f8cfb8e618849a57601e"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T12:00:03.529Z",
+    "updatedAt": "2026-04-21T04:10:55.675Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a569710b9d3fe9bd399c1",
+    "data": {
+      "title": "College Welcoming Day",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "College Welcoming Day",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 5,
+            "content": "This meal will be provided on the second floor of the engineering building.",
+            "_id": "69e6f86cb8e618849a575d98",
+            "id": "69e6f86cb8e618849a575d99"
+          },
+          {
+            "numberOrder": 3,
+            "content": "These staff members will take you on a tour of the school’s buildings and sports facilities in small groups.",
+            "_id": "69e6f86cb8e618849a575d9a",
+            "id": "69e6f86cb8e618849a575d9b"
+          },
+          {
+            "numberOrder": 4,
+            "content": "During this tour, you will need to stay with these students until lunchtime.",
+            "_id": "69e6f86cb8e618849a575d9c",
+            "id": "69e6f86cb8e618849a575d9d"
+          },
+          {
+            "numberOrder": 2,
+            "content": "At the end of the presentation, you will meet the heads of departments and lecturers.",
+            "_id": "69e6f86cb8e618849a575d9e",
+            "id": "69e6f86cb8e618849a575d9f"
+          },
+          {
+            "numberOrder": 1,
+            "content": "Today will begin at 10 a.m. with a short presentation.",
+            "_id": "69e6f86cb8e618849a575da0",
+            "id": "69e6f86cb8e618849a575da1"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f86cb8e618849a575d97",
+        "id": "69e6f86cb8e618849a575da2"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T12:01:27.916Z",
+    "updatedAt": "2026-04-21T04:09:16.107Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a57a210b9d3fe9bd39ea9",
+    "data": {
+      "title": "IoT - Internet of Things",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "IoT - Internet of Things ",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 4,
+            "content": "Nowadays, engineers create smart devices for both residential and industrial applications.",
+            "_id": "69e74e66b8e618849a57958b",
+            "id": "69e74e66b8e618849a57958c"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Modern IoT systems provide real-time data tracking and automation features.",
+            "_id": "69e74e66b8e618849a57958d",
+            "id": "69e74e66b8e618849a57958e"
+          },
+          {
+            "numberOrder": 2,
+            "content": "Early IoT devices faced limitations due to slow internet speeds and compatibility challenges.",
+            "_id": "69e74e66b8e618849a57958f",
+            "id": "69e74e66b8e618849a579590"
+          },
+          {
+            "numberOrder": 1,
+            "content": "The Internet of Things (IoT) links everyday devices to improve their capabilities.",
+            "_id": "69e74e66b8e618849a579591",
+            "id": "69e74e66b8e618849a579592"
+          },
+          {
+            "numberOrder": 3,
+            "content": "High development costs previously slowed the widespread adoption of IoT technology.",
+            "_id": "69e74e66b8e618849a579593",
+            "id": "69e74e66b8e618849a579594"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e74e66b8e618849a57958a",
+        "id": "69e74e66b8e618849a579595"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-01-04T12:05:54.638Z",
+    "updatedAt": "2026-04-21T10:16:06.240Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b12d2927e8fed25149469d",
+    "data": {
+      "title": "The history of transportation (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The history of transportation (phiên bản 2)",
+        "content": "<p><span style=\"color: rgb(33, 37, 41);\">Put the sentences below in the right order. The first sentence is done for you.</span></p>",
+        "correctAnswer": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "file": null,
+        "answerList": [
+          {
+            "numberOrder": 3,
+            "content": "Later on, airplanes also helped make traveling easier and more accessible.",
+            "_id": "69e6f561b8e618849a57548e",
+            "id": "69e6f561b8e618849a57548f"
+          },
+          {
+            "numberOrder": 1,
+            "content": "In the past, traveling was something only wealthy people could afford.",
+            "_id": "69e6f561b8e618849a575490",
+            "id": "69e6f561b8e618849a575491"
+          },
+          {
+            "numberOrder": 5,
+            "content": "Today, improvements in transportation make it easier to travel to many parts of the world.",
+            "_id": "69e6f561b8e618849a575492",
+            "id": "69e6f561b8e618849a575493"
+          },
+          {
+            "numberOrder": 4,
+            "content": "Because flying is very fast, it supports travel for both holidays and business purposes.",
+            "_id": "69e6f561b8e618849a575494",
+            "id": "69e6f561b8e618849a575495"
+          },
+          {
+            "numberOrder": 2,
+            "content": "The development of trains and cars made travel more convenient and affordable for the general public.",
+            "_id": "69e6f561b8e618849a575496",
+            "id": "69e6f561b8e618849a575497"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "TWO",
+        "image": null,
+        "_id": "69e6f561b8e618849a57548d",
+        "id": "69e6f561b8e618849a575498"
+      },
+      "skill": "READING",
+      "description": null
+    },
+    "createdAt": "2026-03-11T08:51:53.783Z",
+    "updatedAt": "2026-04-21T03:56:17.843Z",
+    "__v": 0
+  }
+]

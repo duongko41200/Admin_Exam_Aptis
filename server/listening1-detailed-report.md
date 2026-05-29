@@ -1,0 +1,4110 @@
+# So sánh chi tiết `listening-part1.json`
+
+- **File Cũ (A)**: `aptisUI/public/data/exams/listening-part1.json`
+- **File Mới từ DB (B)**: `aptisUI/public/data/exported_exams/listening-part1.json`
+
+## 1. Tổng quan số lượng
+- Số lượng đề (documents) trong File Cũ: **12**
+- Số lượng đề (documents) trong File Mới: **13**
+
+## 2. So sánh chi tiết (Mapping theo Index)
+
+> Lưu ý: Do các _id có thể khác nhau hoàn toàn, script thực hiện so sánh theo thứ tự vị trí (Index) trong mảng.
+
+### Đề số 1
+
+Phát hiện **113** sự khác biệt:
+
+- **Đề[0]._id**:
+  - Cũ: `"695634bd0731243929b0c8ed"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2a"`
+- **Đề[0].title**:
+  - Cũ: `"Đề 1"`
+  - Mới: `"Listening Aptis Part 1"`
+- **Đề[0].questions[0].questionTitle**:
+  - Cũ: `"Đề 1 (Q1-Q13)"`
+  - Mới: `"Listening Aptis Part 1"`
+- **Đề[0].questions[0].content**:
+  - Cũ: `"Đề 1 (Q1-Q13)"`
+  - Mới: `"De mau part 1"`
+- **Đề[0].questions[0].subSuggestion**: Bị thiếu trong File mới DB (Giá trị cũ: `""`)
+- **Đề[0].questions[0].subQuestion[0].content**:
+  - Cũ: `"What is not original?"`
+  - Mới: `"A doctor’s secretary calls about a change to an appointment. What is changing?"`
+- **Đề[0].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Furniture"`
+  - Mới: `"The date"`
+- **Đề[0].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004014668_6e003b6064f1fbb0_audiotp_q1.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Furniture"`
+  - Mới: `"The date"`
+- **Đề[0].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Home"`
+  - Mới: `"The time"`
+- **Đề[0].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Bicycle"`
+  - Mới: `"The place"`
+- **Đề[0].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.16],\"text\":\" Welcome. I'm so glad you are interested in this beautiful property.\"},{\"timestamp\":[4.16,8.96],\"text\":\" This house was built in the 1920s and has maintained much of its original charm.\"},{\"timestamp\":[9.6,14.8],\"text\":\" The hardwood floors you see here are completely original, and they've been carefully preserved\"},{\"timestamp\":[14.8,18.16],\"text\":\" over the years. The same goes for the architecture those high.\"},{\"timestamp\":[18.88,23.68],\"text\":\" Ceilings and detailed moldings are a testament to the craftsmanship of that era.\"},{\"timestamp\":[23.68,26.96],\"text\":\" However, the furniture you see is original.\"},{\"timestamp\":[26.96,31.48],\"text\":\" It was replaced a few years ago to give the home a more modern, functional feel.\"},{\"timestamp\":[31.48,35.92],\"text\":\" But don't worry, the updates blend well with the classic features.\"},{\"timestamp\":[35.92,39.28],\"text\":\" Giving you the best of both worlds historic charm with modern comfort.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970e2fa58cb12223e94286f"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2c"`
+- **Đề[0].questions[0].subQuestion[1].content**:
+  - Cũ: `"What did she advice for people who lack motivation at work?"`
+  - Mới: `"Listen to the message. Which days does the bank close?"`
+- **Đề[0].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Request a transfer"`
+  - Mới: `"Sunday and Monday"`
+- **Đề[0].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004016351_0d5e9ec515b4a58b_audiotp_q2.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Attend a time management workshop"`
+  - Mới: `"Saturday and Sunday"`
+- **Đề[0].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Request a transfer"`
+  - Mới: `"Monday and Friday"`
+- **Đề[0].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Take on additional responsibilities"`
+  - Mới: `"Sunday and Monday"`
+- **Đề[0].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Many people feel unhappy at work, and often they think a higher salary or less work will fix it.\"},{\"timestamp\":[6,9],\"text\":\" But that's not always the solution.\"},{\"timestamp\":[9,12],\"text\":\" Sometimes, the problem is the work environment.\"},{\"timestamp\":[12,15],\"text\":\" A change of place can help improve how we feel at work.\"},{\"timestamp\":[15,19],\"text\":\" However, looking for a new job can be stressful and take time.\"},{\"timestamp\":[19,24],\"text\":\" One option is to ask for a transfer to another branch within the same company.\"},{\"timestamp\":[24,29.42],\"text\":\" This can offer the same benefits as getting a new job, without the challenges of starting\"},{\"timestamp\":[29.42,30.54],\"text\":\" over somewhere new.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970e2fa58cb12223e942870"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2d"`
+- **Đề[0].questions[0].subQuestion[2].content**:
+  - Cũ: `"What time do they meet?"`
+  - Mới: `"Andrew calls Sue from his holiday. What present has he got her?"`
+- **Đề[0].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"6.30pm"`
+  - Mới: `"A cake"`
+- **Đề[0].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004018393_f3ccde5275d3b787_audiotp_q3.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"6.30pm"`
+  - Mới: `"Some coffee"`
+- **Đề[0].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"8.00pm"`
+  - Mới: `"Some tea"`
+- **Đề[0].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"7.00pm"`
+  - Mới: `"A cake"`
+- **Đề[0].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.56],\"text\":\" Hey, I was just checking in to confirm what time we're meeting up tonight.\"},{\"timestamp\":[4.56,8.48],\"text\":\" I know we've been talking about hanging out, but I wanted to make sure.\"},{\"timestamp\":[8.48,12.88],\"text\":\" Are we still on for 6.30? That time works great for me,\"},{\"timestamp\":[12.88,16.08],\"text\":\" so I just wanted to double check if it's good for you too.\"},{\"timestamp\":[16.08,19.44],\"text\":\" Alright. Looking forward to it. See you then?\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970e2fa58cb12223e942871"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2e"`
+- **Đề[0].questions[0].subQuestion[3].content**:
+  - Cũ: `"Where does she go shopping?"`
+  - Mới: `"There is a meeting with some new clients. What time do they want the meeting?"`
+- **Đề[0].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"at a new shopping mall"`
+  - Mới: `"2.00 p.m."`
+- **Đề[0].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004025193_6880cbe71605ef48_audiotp_q4.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"at a new shopping mall"`
+  - Mới: `"2.00 p.m."`
+- **Đề[0].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"at a department store"`
+  - Mới: `"12.00 p.m."`
+- **Đề[0].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"at a local market"`
+  - Mới: `"11.00 a.m."`
+- **Đề[0].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.04],\"text\":\" Hey, do you know where Sarah likes to go shopping?\"},{\"timestamp\":[3.04,7.76],\"text\":\" Oh, yeah, she usually goes to that new shopping mall that just opened.\"},{\"timestamp\":[7.76,10],\"text\":\" It's got a lot of cool stores.\"},{\"timestamp\":[10,12.36],\"text\":\" Really, I haven't been there yet.\"},{\"timestamp\":[12.36,13.44],\"text\":\" What's it like?\"},{\"timestamp\":[13.44,18.28],\"text\":\" It's amazing. It's really modern, and there's a big variety of shops.\"},{\"timestamp\":[18.28,24.44],\"text\":\" She loves it because she can find pretty much anything she needs from close to electronics.\"},{\"timestamp\":[24.44,25.8],\"text\":\" That sounds great.\"},{\"timestamp\":[25.8,27.76],\"text\":\" I should check it out sometime.\"},{\"timestamp\":[27.76,31.2],\"text\":\" Definitely, the food court is great too.\"},{\"timestamp\":[31.2,33.6],\"text\":\" She always grabs a bite thereafter shopping.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970e2fa58cb12223e942872"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2f"`
+- **Đề[0].questions[0].subQuestion[4].content**:
+  - Cũ: `"What is her favorite thing to do in her spare time?"`
+  - Mới: `"Sumatah tells her friend about an art club. When does the club meet?"`
+- **Đề[0].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"going to the theatre"`
+  - Mới: `"Thursday"`
+- **Đề[0].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004026639_d715bd18e5f88b49_audiotp_q5.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"watching a movie at home"`
+  - Mới: `"Tuesday"`
+- **Đề[0].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"going to the theatre"`
+  - Mới: `"Thursday"`
+- **Đề[0].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"playing sports"`
+  - Mới: `"Saturday"`
+- **Đề[0].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.08],\"text\":\" Whenever she has some free time, she loves going to the theater.\"},{\"timestamp\":[4.08,9.68],\"text\":\" There is something special about watching live performances that really captures her attention.\"},{\"timestamp\":[9.68,18],\"text\":\" Whether it's a play, musical, or even a stand-up comedy show, she enjoys the atmosphere and the excitement of being in a theater.\"},{\"timestamp\":[18,null],\"text\":\" It's her favorite way to unwind and escape into a different world for a few hours.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970e2fa58cb12223e942873"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc30"`
+- **Đề[0].questions[0].subQuestion[5].content**:
+  - Cũ: `"Which sports is she good at?"`
+  - Mới: `"Two friends are discussing the man’s holiday. What did the man think of the hotel owner?"`
+- **Đề[0].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Football"`
+  - Mới: `"He was not funny"`
+- **Đề[0].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004028001_ca27681b8c973258_audiotp_q6.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Running"`
+  - Mới: `"He was unfriendly."`
+- **Đề[0].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Swimming"`
+  - Mới: `"He was not funny"`
+- **Đề[0].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Football"`
+  - Mới: `"He was dishonest."`
+- **Đề[0].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" She's always enjoyed sports, and football is the one she's really good at.\"},{\"timestamp\":[5,8.5],\"text\":\" She has great control over the ball and is quick on her feet,\"},{\"timestamp\":[8.5,12],\"text\":\" whether she's playing with friends or in a competitive setting.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970e2fa58cb12223e942874"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc31"`
+- **Đề[0].questions[0].subQuestion[6].content**:
+  - Cũ: `"The woman is discussing her new exercise routine. How much time does she spend cycling?"`
+  - Mới: `"A lecturer is describing changes to a university. What makes the university special?"`
+- **Đề[0].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"35 minutes"`
+  - Mới: `"The garden"`
+- **Đề[0].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004029755_bc842752c83419d6_audiotp_q7.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"45 minutes"`
+  - Mới: `"The garden"`
+- **Đề[0].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"35 minutes"`
+  - Mới: `"The library"`
+- **Đề[0].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"60 minutes"`
+  - Mới: `"The car park"`
+- **Đề[0].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.08],\"text\":\" Lately, I've started a new routine that I'm really enjoying.\"},{\"timestamp\":[4.08,7.68],\"text\":\" I decided to involve more exercise into my life.\"},{\"timestamp\":[7.68,12.88],\"text\":\" So, I began by walking for about 15 minutes every day, just to get moving.\"},{\"timestamp\":[12.88,17.08],\"text\":\" After that, I hop on my bike and cycle for 35 minutes.\"},{\"timestamp\":[17.08,18.96],\"text\":\" It's been refreshing.\"},{\"timestamp\":[18.96,23.66],\"text\":\" I love how it helps me clear my mind after a busy day. I'm thinking of sticking with this habit for the long run.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970e2fa58cb12223e942875"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc32"`
+- **Đề[0].questions[0].subQuestion[7].content**:
+  - Cũ: `"When do they meet each other?"`
+  - Mới: `"Listen to a person talking about where to go. Which place is closest to them?"`
+- **Đề[0].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"On Thursday morning"`
+  - Mới: `"The pool"`
+- **Đề[0].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004031293_d370cbf736f15c48_audiotp_q8.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"On Thursday morning"`
+  - Mới: `"The seaside"`
+- **Đề[0].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"On Wednesday morning"`
+  - Mới: `"The pool"`
+- **Đề[0].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"On monday morning"`
+  - Mới: `"The park"`
+- **Đề[0].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi, Professor Smith. This is John Calling about our meeting for the assignment.\"},{\"timestamp\":[5,8],\"text\":\" I wanted to confirm our appointment time.\"},{\"timestamp\":[8,11],\"text\":\" I know we discussed a few options earlier.\"},{\"timestamp\":[11,17],\"text\":\" At first, I thought we agreed on Tuesday morning, but then I remembered that doesn't work with your schedule.\"},{\"timestamp\":[17,21],\"text\":\" Then I considered Thursday afternoon, but I have another class then.\"},{\"timestamp\":[21,25.36],\"text\":\" So, I'm pretty sure we settled on Thursday morning at 10 a.m.\"},{\"timestamp\":[25.36,29.68],\"text\":\" in your office. That's what I have written down. I'll bring my draft and\"},{\"timestamp\":[29.68,34.64],\"text\":\" notes for the project. If I've got the day or time wrong or if you need me to\"},{\"timestamp\":[34.64,null],\"text\":\" bring anything else please let me know. Looking forward to discussing the assignment with you. Have a great day.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970e2fa58cb12223e942876"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc33"`
+- **Đề[0].questions[0].subQuestion[8].content**:
+  - Cũ: `"A woman is calling her son. What time will the mother meet the son?"`
+  - Mới: `"A woman talks about her son’s birthday plans. What do they usually do?"`
+- **Đề[0].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Three o'clock"`
+  - Mới: `"Go out"`
+- **Đề[0].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004032449_4f7bc12317ffbc79_audiotp_q9.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Six o’clock"`
+  - Mới: `"Go out"`
+- **Đề[0].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Two o’clock"`
+  - Mới: `"Order food in"`
+- **Đề[0].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Three o'clock"`
+  - Mới: `"Cook Indian food"`
+- **Đề[0].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi, Sweetheart. I just wanted to tell you that we'll meet at 3 o'clock when you finish school.\"},{\"timestamp\":[7,11],\"text\":\" After that, I can take you to your soccer club at 4 o'clock.\"},{\"timestamp\":[11,15],\"text\":\" If you need anything, just let me know, and I can pick it up for you.\"},{\"timestamp\":[15,null],\"text\":\" Then, we can head out to dinner at 5 o'clock. Looking forward to seeing you.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970e2fa58cb12223e942877"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc34"`
+- **Đề[0].questions[0].subQuestion[9].content**:
+  - Cũ: `"Jack is calling to invite a friend to his house. What color is Jack’s house?"`
+  - Mới: `"Mohammed tells his secretary about his travel plans. What time is he going to travel?"`
+- **Đề[0].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Red"`
+  - Mới: `"9.00 a.m."`
+- **Đề[0].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004034354_ae85e8e257855768_audiotp_q10.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Black"`
+  - Mới: `"9.00 a.m."`
+- **Đề[0].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Red"`
+  - Mới: `"8.00 a.m."`
+- **Đề[0].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Green"`
+  - Mới: `"9.40 a.m."`
+- **Đề[0].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hey, it's Jack. I just moved to a new house in this busy neighbourhood, and it's really cool.\"},{\"timestamp\":[7,12],\"text\":\" There are so many houses here in different colours. Purple, blue and white.\"},{\"timestamp\":[12,18],\"text\":\" My house is big and red, I'd love for you to come over and check it out. Let me know when you're free.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970e2fa58cb12223e942878"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc35"`
+- **Đề[0].questions[0].subQuestion[10].content**:
+  - Cũ: `"A man is talking about his daily routine. What does he do after work?"`
+  - Mới: `"Listen to the man and woman talking about the weather. What does the woman like doing in the rainy weather?"`
+- **Đề[0].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"Play football"`
+  - Mới: `"Visiting a friend"`
+- **Đề[0].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004035964_d3c368861254712e_audiotp_q11.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Go home"`
+  - Mới: `"Going for a walk"`
+- **Đề[0].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Go to the coffee shop"`
+  - Mới: `"Cooking a meal"`
+- **Đề[0].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"Play football"`
+  - Mới: `"Visiting a friend"`
+- **Đề[0].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.84],\"text\":\" Every day, I wake up at 7 a.m. and have a quick breakfast before going to work.\"},{\"timestamp\":[5.84,10.88],\"text\":\" I usually take the bus, and it takes about 30 minutes to get to the office.\"},{\"timestamp\":[10.88,16.56],\"text\":\" At work, I spend most of my time on the computer, answering emails, and working on projects.\"},{\"timestamp\":[16.56,20.36],\"text\":\" I have lunch at noon, and get back to work until 5 p.m.\"},{\"timestamp\":[20.36,24.9],\"text\":\" After work, I like to relax by playing football with my friends. It's a great way to stay active and have fun.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970e2fa58cb12223e942879"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc36"`
+- **Đề[0].questions[0].subQuestion[11].content**:
+  - Cũ: `"A mom is talking to her son. What does the son like to study?"`
+  - Mới: `"Listen to a man giving a talk at a volunteer event. What kind of charity does he work for?"`
+- **Đề[0].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Art"`
+  - Mới: `"An environmental charity"`
+- **Đề[0].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004037341_421f27a890d90b31_audiotp_q12.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Art"`
+  - Mới: `"A children’s charity"`
+- **Đề[0].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Math"`
+  - Mới: `"An animal charity"`
+- **Đề[0].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Science"`
+  - Mới: `"An environmental charity"`
+- **Đề[0].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.88],\"text\":\" Hey Sweetheart, I'm so proud of you.\"},{\"timestamp\":[3.88,8.5],\"text\":\" Your art project looks amazing, you're really talented, I love how you used all those\"},{\"timestamp\":[8.5,10.14],\"text\":\" bright colors.\"},{\"timestamp\":[10.14,13.18],\"text\":\" You always do such a great job with your drawings.\"},{\"timestamp\":[13.18,18.38],\"text\":\" But remember, you also need to spend some time on your other subjects too, like math\"},{\"timestamp\":[18.38,19.38],\"text\":\" and science.\"},{\"timestamp\":[19.38,21.49],\"text\":\" I know you can do well in those if you try hard, just like you do with art. Let's work on it together.\"},{\"timestamp\":[21.49,21.79],\"text\":\" Okay?\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970e2fa58cb12223e94287a"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc37"`
+- **Đề[0].questions[0].subQuestion[12].content**:
+  - Cũ: `"How many weeks did they spend in India?"`
+  - Mới: `"Listen to a reporter talking about traffic problems. What was the main cause of morning traffic?"`
+- **Đề[0].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Two weeks"`
+  - Mới: `"A new road system"`
+- **Đề[0].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004038729_e4517bdf1b218aec_audiotp_q13.mp3"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Three weeks"`
+  - Mới: `"A new road system"`
+- **Đề[0].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Two weeks"`
+  - Mới: `"A public holiday"`
+- **Đề[0].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"One week"`
+  - Mới: `"Increased car ownership"`
+- **Đề[0].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.44],\"text\":\" They traveled to India for a short trip, and they spent two weeks there.\"},{\"timestamp\":[4.44,7.6],\"text\":\" During that time, they explored different cities,\"},{\"timestamp\":[7.6,11.68],\"text\":\" experienced the local culture, and visited some famous landmarks.\"},{\"timestamp\":[11.68,14.08],\"text\":\" It was a quick but memorable visit.\"}]</p>"`
+  - Mới: `null`
+- **Đề[0].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970e2fa58cb12223e94287b"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc38"`
+- **Đề[0].questions[0]._id**:
+  - Cũ: `"6970e2fa58cb12223e94286e"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc2b"`
+- **Đề[0].id**:
+  - Cũ: `"695634bd0731243929b0c8fc"`
+  - Mới: `"677fcd1acdf0d2a9b1a1dc39"`
+- **Đề[0].createdAt**:
+  - Cũ: `"2026-01-01T08:47:57.309Z"`
+  - Mới: `"2025-01-09T13:20:26.065Z"`
+- **Đề[0].updatedAt**:
+  - Cũ: `"2026-01-21T14:30:18.934Z"`
+  - Mới: `"2025-01-09T13:20:26.065Z"`
+
+### Đề số 2
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[1]._id**:
+  - Cũ: `"695639700731243929b0c902"`
+  - Mới: `"695634bd0731243929b0c8ed"`
+- **Đề[1].title**:
+  - Cũ: `"Đề 2"`
+  - Mới: `"Đề 1"`
+- **Đề[1].questions[0].questionTitle**:
+  - Cũ: `"Đề 2"`
+  - Mới: `"Đề 1 (Q1-Q13)"`
+- **Đề[1].questions[0].content**:
+  - Cũ: `"Đề 2"`
+  - Mới: `"Đề 1 (Q1-Q13)"`
+- **Đề[1].questions[0].subQuestion[0].content**:
+  - Cũ: `"Doctor’s office is calling about a change in the appointment. When is the new appointment?"`
+  - Mới: `"What is not original?"`
+- **Đề[1].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Thursday 13th"`
+  - Mới: `"Furniture"`
+- **Đề[1].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918978048_b5c86c35655bbd81_audiotp_de2_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004014668_6e003b6064f1fbb0_audiotp_q1.mp3"`
+- **Đề[1].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Thursday 13th"`
+  - Mới: `"Furniture"`
+- **Đề[1].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Friday 14th"`
+  - Mới: `"Home"`
+- **Đề[1].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Wednesday 12th"`
+  - Mới: `"Bicycle"`
+- **Đề[1].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.5],\"text\":\" Hello, this is the doctor's office calling to change your appointment.\"},{\"timestamp\":[6.5,11.5],\"text\":\" I wanted to let you know that the new appointment is on Thursday the 13th.\"},{\"timestamp\":[11.5,16.22],\"text\":\" I understand you might have been expecting it to be on Friday the 14th, but we're all off\"},{\"timestamp\":[16.22,null],\"text\":\" this day due to the National Dentist Holiday. Please let us know if that works for you.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.16],\"text\":\" Welcome. I'm so glad you are interested in this beautiful property.\"},{\"timestamp\":[4.16,8.96],\"text\":\" This house was built in the 1920s and has maintained much of its original charm.\"},{\"timestamp\":[9.6,14.8],\"text\":\" The hardwood floors you see here are completely original, and they've been carefully preserved\"},{\"timestamp\":[14.8,18.16],\"text\":\" over the years. The same goes for the architecture those high.\"},{\"timestamp\":[18.88,23.68],\"text\":\" Ceilings and detailed moldings are a testament to the craftsmanship of that era.\"},{\"timestamp\":[23.68,26.96],\"text\":\" However, the furniture you see is original.\"},{\"timestamp\":[26.96,31.48],\"text\":\" It was replaced a few years ago to give the home a more modern, functional feel.\"},{\"timestamp\":[31.48,35.92],\"text\":\" But don't worry, the updates blend well with the classic features.\"},{\"timestamp\":[35.92,39.28],\"text\":\" Giving you the best of both worlds historic charm with modern comfort.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[0]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9be"`
+  - Mới: `"6970e2fa58cb12223e94286f"`
+- **Đề[1].questions[0].subQuestion[1].content**:
+  - Cũ: `"A man is ordering a drink. What does he want?"`
+  - Mới: `"What did she advice for people who lack motivation at work?"`
+- **Đề[1].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Iced tea"`
+  - Mới: `"Request a transfer"`
+- **Đề[1].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918979865_7a8ffacd5e748628_audiotp_de2_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004016351_0d5e9ec515b4a58b_audiotp_q2.mp3"`
+- **Đề[1].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Water"`
+  - Mới: `"Attend a time management workshop"`
+- **Đề[1].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Iced tea"`
+  - Mới: `"Request a transfer"`
+- **Đề[1].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Beer"`
+  - Mới: `"Take on additional responsibilities"`
+- **Đề[1].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" Hi there, I'm really thirsty. Can I have a drink please?\"},{\"timestamp\":[4.7,8.4],\"text\":\" I was thinking about getting a beer, but it's a bit too early for that.\"},{\"timestamp\":[8.4,11.7],\"text\":\" Water sounds good, but I'm in the mood for something cooler.\"},{\"timestamp\":[11.7,13.9],\"text\":\" I'll go with an iced tea please.\"},{\"timestamp\":[13.9,16.2],\"text\":\" That sounds perfect for this weather.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Many people feel unhappy at work, and often they think a higher salary or less work will fix it.\"},{\"timestamp\":[6,9],\"text\":\" But that's not always the solution.\"},{\"timestamp\":[9,12],\"text\":\" Sometimes, the problem is the work environment.\"},{\"timestamp\":[12,15],\"text\":\" A change of place can help improve how we feel at work.\"},{\"timestamp\":[15,19],\"text\":\" However, looking for a new job can be stressful and take time.\"},{\"timestamp\":[19,24],\"text\":\" One option is to ask for a transfer to another branch within the same company.\"},{\"timestamp\":[24,29.42],\"text\":\" This can offer the same benefits as getting a new job, without the challenges of starting\"},{\"timestamp\":[29.42,30.54],\"text\":\" over somewhere new.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[1]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9bf"`
+  - Mới: `"6970e2fa58cb12223e942870"`
+- **Đề[1].questions[0].subQuestion[2].content**:
+  - Cũ: `"An author is talking about her daily routine. When does she usually write?"`
+  - Mới: `"What time do they meet?"`
+- **Đề[1].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"In the afternoons"`
+  - Mới: `"6.30pm"`
+- **Đề[1].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918980658_b7d200eec70fb09d_audiotp_de2_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004018393_f3ccde5275d3b787_audiotp_q3.mp3"`
+- **Đề[1].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"In the afternoons"`
+  - Mới: `"6.30pm"`
+- **Đề[1].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"In the mornings"`
+  - Mới: `"8.00pm"`
+- **Đề[1].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"At night"`
+  - Mới: `"7.00pm"`
+- **Đề[1].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Every morning, I start my day by going for a run.\"},{\"timestamp\":[5,8],\"text\":\" It helps me clear my mind and gives me energy.\"},{\"timestamp\":[8,14],\"text\":\" After lunch, at around 2 o'clock, I sit down at my working table, ready to write.\"},{\"timestamp\":[14,20],\"text\":\" My husband is my best critic, so I try to produce something before he gets home in the afternoon.\"},{\"timestamp\":[20,22],\"text\":\" I want to show him what I've been working on.\"},{\"timestamp\":[22,27],\"text\":\" At night, I seek motivation by watching movies or reading books.\"},{\"timestamp\":[27,30.5],\"text\":\" This helps me find new ideas for my stories.\"},{\"timestamp\":[30.5,35],\"text\":\" Writing is a journey, and each day brings something new.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.56],\"text\":\" Hey, I was just checking in to confirm what time we're meeting up tonight.\"},{\"timestamp\":[4.56,8.48],\"text\":\" I know we've been talking about hanging out, but I wanted to make sure.\"},{\"timestamp\":[8.48,12.88],\"text\":\" Are we still on for 6.30? That time works great for me,\"},{\"timestamp\":[12.88,16.08],\"text\":\" so I just wanted to double check if it's good for you too.\"},{\"timestamp\":[16.08,19.44],\"text\":\" Alright. Looking forward to it. See you then?\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[2]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c0"`
+  - Mới: `"6970e2fa58cb12223e942871"`
+- **Đề[1].questions[0].subQuestion[3].content**:
+  - Cũ: `"How does he travel?"`
+  - Mới: `"Where does she go shopping?"`
+- **Đề[1].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"By train"`
+  - Mới: `"at a new shopping mall"`
+- **Đề[1].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918981541_7f84622802ae31a0_audiotp_de2_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004025193_6880cbe71605ef48_audiotp_q4.mp3"`
+- **Đề[1].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"By car"`
+  - Mới: `"at a new shopping mall"`
+- **Đề[1].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"By plane"`
+  - Mới: `"at a department store"`
+- **Đề[1].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"By train"`
+  - Mới: `"at a local market"`
+- **Đề[1].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.72],\"text\":\" He travels most of the time, enjoying the convenience and comfort of his journeys,\"},{\"timestamp\":[4.72,8.8],\"text\":\" whether it's for work or leisure, he finds it the best way to get around,\"},{\"timestamp\":[8.8,14.08],\"text\":\" especially because of the scenic views. He travels by train.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.04],\"text\":\" Hey, do you know where Sarah likes to go shopping?\"},{\"timestamp\":[3.04,7.76],\"text\":\" Oh, yeah, she usually goes to that new shopping mall that just opened.\"},{\"timestamp\":[7.76,10],\"text\":\" It's got a lot of cool stores.\"},{\"timestamp\":[10,12.36],\"text\":\" Really, I haven't been there yet.\"},{\"timestamp\":[12.36,13.44],\"text\":\" What's it like?\"},{\"timestamp\":[13.44,18.28],\"text\":\" It's amazing. It's really modern, and there's a big variety of shops.\"},{\"timestamp\":[18.28,24.44],\"text\":\" She loves it because she can find pretty much anything she needs from close to electronics.\"},{\"timestamp\":[24.44,25.8],\"text\":\" That sounds great.\"},{\"timestamp\":[25.8,27.76],\"text\":\" I should check it out sometime.\"},{\"timestamp\":[27.76,31.2],\"text\":\" Definitely, the food court is great too.\"},{\"timestamp\":[31.2,33.6],\"text\":\" She always grabs a bite thereafter shopping.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[3]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c1"`
+  - Mới: `"6970e2fa58cb12223e942872"`
+- **Đề[1].questions[0].subQuestion[4].content**:
+  - Cũ: `"A woman is talking about her usual Saturday routine. What does she usually do on Saturdays?"`
+  - Mới: `"What is her favorite thing to do in her spare time?"`
+- **Đề[1].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"Sees her family"`
+  - Mới: `"going to the theatre"`
+- **Đề[1].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918983122_c775c42df6ab59e5_audiotp_de2_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004026639_d715bd18e5f88b49_audiotp_q5.mp3"`
+- **Đề[1].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"Goes shopping"`
+  - Mới: `"watching a movie at home"`
+- **Đề[1].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"Sees her family"`
+  - Mới: `"going to the theatre"`
+- **Đề[1].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"Goes to a birthday party"`
+  - Mới: `"playing sports"`
+- **Đề[1].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" Normally, on Saturdays, I spend the day with my family.\"},{\"timestamp\":[4.5,8.78],\"text\":\" We like to have brunch together and then do some fun activities, like playing board games\"},{\"timestamp\":[8.78,10.28],\"text\":\" or going for a walk.\"},{\"timestamp\":[10.28,12.68],\"text\":\" It's a nice way to relax and catch up.\"},{\"timestamp\":[12.68,15.36],\"text\":\" But this week, I have something different planned.\"},{\"timestamp\":[15.36,null],\"text\":\" I'm going to see a friend for her birthday and go shopping together instead. I'm looking forward to it, but I know I'll miss our usual family time.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.08],\"text\":\" Whenever she has some free time, she loves going to the theater.\"},{\"timestamp\":[4.08,9.68],\"text\":\" There is something special about watching live performances that really captures her attention.\"},{\"timestamp\":[9.68,18],\"text\":\" Whether it's a play, musical, or even a stand-up comedy show, she enjoys the atmosphere and the excitement of being in a theater.\"},{\"timestamp\":[18,null],\"text\":\" It's her favorite way to unwind and escape into a different world for a few hours.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[4]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c2"`
+  - Mới: `"6970e2fa58cb12223e942873"`
+- **Đề[1].questions[0].subQuestion[5].content**:
+  - Cũ: `"A man is talking about his family trip. What does the man’s wife enjoy?"`
+  - Mới: `"Which sports is she good at?"`
+- **Đề[1].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Photography"`
+  - Mới: `"Football"`
+- **Đề[1].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918984034_3180560d7bd99602_audiotp_de2_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004028001_ca27681b8c973258_audiotp_q6.mp3"`
+- **Đề[1].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Photography"`
+  - Mới: `"Running"`
+- **Đề[1].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Shopping"`
+  - Mới: `"Swimming"`
+- **Đề[1].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Hiking"`
+  - Mới: `"Football"`
+- **Đề[1].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" On our family trip last summer, we had such a great time.\"},{\"timestamp\":[5,10],\"text\":\" My wife really enjoys photography, so when we went walking together in the parks,\"},{\"timestamp\":[10,14],\"text\":\" she spent a lot of time taking pictures of the beautiful landscapes.\"},{\"timestamp\":[14,17],\"text\":\" Well, at least she is not crazy about shopping.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" She's always enjoyed sports, and football is the one she's really good at.\"},{\"timestamp\":[5,8.5],\"text\":\" She has great control over the ball and is quick on her feet,\"},{\"timestamp\":[8.5,12],\"text\":\" whether she's playing with friends or in a competitive setting.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[5]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c3"`
+  - Mới: `"6970e2fa58cb12223e942874"`
+- **Đề[1].questions[0].subQuestion[6].content**:
+  - Cũ: `"A woman is talking about her job. What encouraged her to become a scientist?"`
+  - Mới: `"The woman is discussing her new exercise routine. How much time does she spend cycling?"`
+- **Đề[1].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"A large stone"`
+  - Mới: `"35 minutes"`
+- **Đề[1].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918985316_2dd55d81938d1e5b_audiotp_de2_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004029755_bc842752c83419d6_audiotp_q7.mp3"`
+- **Đề[1].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Her computer"`
+  - Mới: `"45 minutes"`
+- **Đề[1].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"Her mother"`
+  - Mới: `"35 minutes"`
+- **Đề[1].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"A large stone"`
+  - Mới: `"60 minutes"`
+- **Đề[1].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've always loved science, but there was a moment that really encouraged me to become a scientist.\"},{\"timestamp\":[6,11],\"text\":\" I remember when I was a child, I found a large stone during a school trip.\"},{\"timestamp\":[11,14],\"text\":\" It sparked my curiosity about geology.\"},{\"timestamp\":[14,17],\"text\":\" My mother also inspired me to explore my interests in science.\"},{\"timestamp\":[17,null],\"text\":\" Of course, I used the computer a lot now for my research, but that stone was the beginning.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.08],\"text\":\" Lately, I've started a new routine that I'm really enjoying.\"},{\"timestamp\":[4.08,7.68],\"text\":\" I decided to involve more exercise into my life.\"},{\"timestamp\":[7.68,12.88],\"text\":\" So, I began by walking for about 15 minutes every day, just to get moving.\"},{\"timestamp\":[12.88,17.08],\"text\":\" After that, I hop on my bike and cycle for 35 minutes.\"},{\"timestamp\":[17.08,18.96],\"text\":\" It's been refreshing.\"},{\"timestamp\":[18.96,23.66],\"text\":\" I love how it helps me clear my mind after a busy day. I'm thinking of sticking with this habit for the long run.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[6]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c4"`
+  - Mới: `"6970e2fa58cb12223e942875"`
+- **Đề[1].questions[0].subQuestion[7].content**:
+  - Cũ: `"Listen to the speaker talking about their weekly schedule. When is the meeting scheduled?"`
+  - Mới: `"When do they meet each other?"`
+- **Đề[1].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"Wednesday afternoon"`
+  - Mới: `"On Thursday morning"`
+- **Đề[1].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918987055_116dcc9ed3fe4bf7_audiotp_de2_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004031293_d370cbf736f15c48_audiotp_q8.mp3"`
+- **Đề[1].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"Monday morning"`
+  - Mới: `"On Thursday morning"`
+- **Đề[1].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"Friday afternoon"`
+  - Mới: `"On Wednesday morning"`
+- **Đề[1].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"Wednesday afternoon"`
+  - Mới: `"On monday morning"`
+- **Đề[1].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" This week is pretty busy, but the most important thing is the meeting on Wednesday afternoon.\"},{\"timestamp\":[7,12.5],\"text\":\" We usually have it on Monday, but this time we had to change the day.\"},{\"timestamp\":[12.5,16],\"text\":\" Wednesday works better because everyone is free.\"},{\"timestamp\":[16,22],\"text\":\" I have a lot to prepare before then, so I'll spend Tuesday getting everything ready.\"},{\"timestamp\":[22,25.38],\"text\":\" It's a big meeting, and we need to finalize some\"},{\"timestamp\":[25.38,31.56],\"text\":\" plans. I'm just glad it's not on Friday where I'd be too tired.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi, Professor Smith. This is John Calling about our meeting for the assignment.\"},{\"timestamp\":[5,8],\"text\":\" I wanted to confirm our appointment time.\"},{\"timestamp\":[8,11],\"text\":\" I know we discussed a few options earlier.\"},{\"timestamp\":[11,17],\"text\":\" At first, I thought we agreed on Tuesday morning, but then I remembered that doesn't work with your schedule.\"},{\"timestamp\":[17,21],\"text\":\" Then I considered Thursday afternoon, but I have another class then.\"},{\"timestamp\":[21,25.36],\"text\":\" So, I'm pretty sure we settled on Thursday morning at 10 a.m.\"},{\"timestamp\":[25.36,29.68],\"text\":\" in your office. That's what I have written down. I'll bring my draft and\"},{\"timestamp\":[29.68,34.64],\"text\":\" notes for the project. If I've got the day or time wrong or if you need me to\"},{\"timestamp\":[34.64,null],\"text\":\" bring anything else please let me know. Looking forward to discussing the assignment with you. Have a great day.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[7]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c5"`
+  - Mới: `"6970e2fa58cb12223e942876"`
+- **Đề[1].questions[0].subQuestion[8].content**:
+  - Cũ: `"A man is reading the news about a housing development plan. How many new houses are going to be built?"`
+  - Mới: `"A woman is calling her son. What time will the mother meet the son?"`
+- **Đề[1].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"2000"`
+  - Mới: `"Three o'clock"`
+- **Đề[1].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918988058_f9af07d379a9c312_audiotp_de2_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004032449_4f7bc12317ffbc79_audiotp_q9.mp3"`
+- **Đề[1].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"1500"`
+  - Mới: `"Six o’clock"`
+- **Đề[1].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"2000"`
+  - Mới: `"Two o’clock"`
+- **Đề[1].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"2500"`
+  - Mới: `"Three o'clock"`
+- **Đề[1].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" I just heard the news that the local authority is planning to build 2,000 new houses.\"},{\"timestamp\":[5,9],\"text\":\" I remember they were initially saying it would only be 1,500.\"},{\"timestamp\":[9,13],\"text\":\" But then I heard someone mention 2,500.\"},{\"timestamp\":[13,15],\"text\":\" That's quite a jump.\"},{\"timestamp\":[15,18],\"text\":\" I wonder how this will affect the neighbourhood.\"},{\"timestamp\":[18,null],\"text\":\" Will it bring in more families or just more traffic? It'll be interesting to see how it all unfolds.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi, Sweetheart. I just wanted to tell you that we'll meet at 3 o'clock when you finish school.\"},{\"timestamp\":[7,11],\"text\":\" After that, I can take you to your soccer club at 4 o'clock.\"},{\"timestamp\":[11,15],\"text\":\" If you need anything, just let me know, and I can pick it up for you.\"},{\"timestamp\":[15,null],\"text\":\" Then, we can head out to dinner at 5 o'clock. Looking forward to seeing you.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[8]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c6"`
+  - Mới: `"6970e2fa58cb12223e942877"`
+- **Đề[1].questions[0].subQuestion[9].content**:
+  - Cũ: `"Listen to a writer talking about her job. What is her first job?"`
+  - Mới: `"Jack is calling to invite a friend to his house. What color is Jack’s house?"`
+- **Đề[1].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Teacher"`
+  - Mới: `"Red"`
+- **Đề[1].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918989133_3ec5e3e216d82d19_audiotp_de2_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004034354_ae85e8e257855768_audiotp_q10.mp3"`
+- **Đề[1].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Writer"`
+  - Mới: `"Black"`
+- **Đề[1].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Librarian"`
+  - Mới: `"Red"`
+- **Đề[1].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Teacher"`
+  - Mới: `"Green"`
+- **Đề[1].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" When I was younger, I didn't always dream of being a writer.\"},{\"timestamp\":[4.7,7.5],\"text\":\" My first job was actually as a teacher.\"},{\"timestamp\":[7.5,12.7],\"text\":\" I toured English to small children, and I loved helping them learn to read and write.\"},{\"timestamp\":[12.7,14.5],\"text\":\" It wasn't easy, though.\"},{\"timestamp\":[14.5,18.5],\"text\":\" I spent a lot of time grading papers and preparing lessons,\"},{\"timestamp\":[18.5,null],\"text\":\" but that job taught me how to use words well, and now I write stories for everyone to enjoy.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hey, it's Jack. I just moved to a new house in this busy neighbourhood, and it's really cool.\"},{\"timestamp\":[7,12],\"text\":\" There are so many houses here in different colours. Purple, blue and white.\"},{\"timestamp\":[12,18],\"text\":\" My house is big and red, I'd love for you to come over and check it out. Let me know when you're free.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[9]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c7"`
+  - Mới: `"6970e2fa58cb12223e942878"`
+- **Đề[1].questions[0].subQuestion[10].content**:
+  - Cũ: `"Listen to Marry talking to Jane while waiting for James. What did they decide to do?"`
+  - Mới: `"A man is talking about his daily routine. What does he do after work?"`
+- **Đề[1].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"Having the meeting without him"`
+  - Mới: `"Play football"`
+- **Đề[1].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918990472_0348939668919b81_audiotp_de2_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004035964_d3c368861254712e_audiotp_q11.mp3"`
+- **Đề[1].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Cancel the meeting"`
+  - Mới: `"Go home"`
+- **Đề[1].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Having the meeting without him"`
+  - Mới: `"Go to the coffee shop"`
+- **Đề[1].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"Wait for him longer"`
+  - Mới: `"Play football"`
+- **Đề[1].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7.44],\"text\":\" Hi, Jane. It looks like James is running late again. I'm starting to wonder if we should\"},{\"timestamp\":[7.44,13.34],\"text\":\" wait for him. I don't want to waste too much time. I feel like we could have the meeting\"},{\"timestamp\":[13.34,19.8],\"text\":\" without him. We have a lot to discuss and we can always update him later. I think it's\"},{\"timestamp\":[19.8,22.22],\"text\":\" better to move forward instead of just waiting. So let's go ahead.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.84],\"text\":\" Every day, I wake up at 7 a.m. and have a quick breakfast before going to work.\"},{\"timestamp\":[5.84,10.88],\"text\":\" I usually take the bus, and it takes about 30 minutes to get to the office.\"},{\"timestamp\":[10.88,16.56],\"text\":\" At work, I spend most of my time on the computer, answering emails, and working on projects.\"},{\"timestamp\":[16.56,20.36],\"text\":\" I have lunch at noon, and get back to work until 5 p.m.\"},{\"timestamp\":[20.36,24.9],\"text\":\" After work, I like to relax by playing football with my friends. It's a great way to stay active and have fun.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[10]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c8"`
+  - Mới: `"6970e2fa58cb12223e942879"`
+- **Đề[1].questions[0].subQuestion[11].content**:
+  - Cũ: `"A woman is talking to her coworker. When does the meeting start?"`
+  - Mới: `"A mom is talking to her son. What does the son like to study?"`
+- **Đề[1].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"10.15"`
+  - Mới: `"Art"`
+- **Đề[1].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918991498_b7c55b6fb647f889_audiotp_de2_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004037341_421f27a890d90b31_audiotp_q12.mp3"`
+- **Đề[1].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"10.15"`
+  - Mới: `"Art"`
+- **Đề[1].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"10.30"`
+  - Mới: `"Math"`
+- **Đề[1].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"9.45"`
+  - Mới: `"Science"`
+- **Đề[1].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" Hey, just wanted to give you a quick heads-up.\"},{\"timestamp\":[3.2,7.6],\"text\":\" I won't be able to join the meeting with the clients at 10-15 like we planned.\"},{\"timestamp\":[7.6,9.7],\"text\":\" I've got something that suddenly came up.\"},{\"timestamp\":[9.7,14.1],\"text\":\" I know it's last minute, but could you go ahead and handle the presentation on your own?\"},{\"timestamp\":[14.1,null],\"text\":\" You're familiar with everything, so I trust you've got this. Let me know how it goes afterward. Thanks. I really appreciate it.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.88],\"text\":\" Hey Sweetheart, I'm so proud of you.\"},{\"timestamp\":[3.88,8.5],\"text\":\" Your art project looks amazing, you're really talented, I love how you used all those\"},{\"timestamp\":[8.5,10.14],\"text\":\" bright colors.\"},{\"timestamp\":[10.14,13.18],\"text\":\" You always do such a great job with your drawings.\"},{\"timestamp\":[13.18,18.38],\"text\":\" But remember, you also need to spend some time on your other subjects too, like math\"},{\"timestamp\":[18.38,19.38],\"text\":\" and science.\"},{\"timestamp\":[19.38,21.49],\"text\":\" I know you can do well in those if you try hard, just like you do with art. Let's work on it together.\"},{\"timestamp\":[21.49,21.79],\"text\":\" Okay?\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[11]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9c9"`
+  - Mới: `"6970e2fa58cb12223e94287a"`
+- **Đề[1].questions[0].subQuestion[12].content**:
+  - Cũ: `"Vincent is calling James. Why does Vincent call James?"`
+  - Mới: `"How many weeks did they spend in India?"`
+- **Đề[1].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Suggest a drink"`
+  - Mới: `"Two weeks"`
+- **Đề[1].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918992312_cb8e40e205a50123_audiotp_de2_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1769004038729_e4517bdf1b218aec_audiotp_q13.mp3"`
+- **Đề[1].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Invite him to a party"`
+  - Mới: `"Three weeks"`
+- **Đề[1].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Suggest a drink"`
+  - Mới: `"Two weeks"`
+- **Đề[1].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"Ask for help"`
+  - Mới: `"One week"`
+- **Đề[1].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,2.76],\"text\":\" [MUSIC PLAYING]\"},{\"timestamp\":[2.76,3.4],\"text\":\" Hi, James.\"},{\"timestamp\":[3.4,4.32],\"text\":\" It's Vincent.\"},{\"timestamp\":[4.32,7.12],\"text\":\" I just wanted to check in and see how you're doing.\"},{\"timestamp\":[7.12,9.4],\"text\":\" It's been a while since we last caught up.\"},{\"timestamp\":[9.4,11.56],\"text\":\" How about we grab a drink later?\"},{\"timestamp\":[11.56,14.28],\"text\":\" I know a great new place that has very nice tea.\"},{\"timestamp\":[14.28,17],\"text\":\" You should definitely try it next time you visit me.\"},{\"timestamp\":[17,18.96],\"text\":\" Text me back.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.44],\"text\":\" They traveled to India for a short trip, and they spent two weeks there.\"},{\"timestamp\":[4.44,7.6],\"text\":\" During that time, they explored different cities,\"},{\"timestamp\":[7.6,11.68],\"text\":\" experienced the local culture, and visited some famous landmarks.\"},{\"timestamp\":[11.68,14.08],\"text\":\" It was a quick but memorable visit.\"}]</p>"`
+- **Đề[1].questions[0].subQuestion[12]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9ca"`
+  - Mới: `"6970e2fa58cb12223e94287b"`
+- **Đề[1].questions[0]._id**:
+  - Cũ: `"697054f8f5a181c9bea1f9bd"`
+  - Mới: `"6970e2fa58cb12223e94286e"`
+- **Đề[1].id**:
+  - Cũ: `"695639700731243929b0c911"`
+  - Mới: `"695634bd0731243929b0c8fc"`
+- **Đề[1].createdAt**:
+  - Cũ: `"2026-01-01T09:08:00.336Z"`
+  - Mới: `"2026-01-01T08:47:57.309Z"`
+- **Đề[1].updatedAt**:
+  - Cũ: `"2026-01-21T04:24:24.228Z"`
+  - Mới: `"2026-01-21T14:30:18.934Z"`
+
+### Đề số 3
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[2]._id**:
+  - Cũ: `"69563db80731243929b0c917"`
+  - Mới: `"695639700731243929b0c902"`
+- **Đề[2].title**:
+  - Cũ: `"Đề 3"`
+  - Mới: `"Đề 2"`
+- **Đề[2].questions[0].questionTitle**:
+  - Cũ: `"Đề 3"`
+  - Mới: `"Đề 2"`
+- **Đề[2].questions[0].content**:
+  - Cũ: `"Đề 3"`
+  - Mới: `"Đề 2"`
+- **Đề[2].questions[0].subQuestion[0].content**:
+  - Cũ: `"What did the mother call her daughter to help her buy?"`
+  - Mới: `"Doctor’s office is calling about a change in the appointment. When is the new appointment?"`
+- **Đề[2].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"eggs"`
+  - Mới: `"Thursday 13th"`
+- **Đề[2].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920068098_af90e96dbab15544_audio_de3_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918978048_b5c86c35655bbd81_audiotp_de2_q1.mp3"`
+- **Đề[2].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"eggs"`
+  - Mới: `"Thursday 13th"`
+- **Đề[2].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"bread"`
+  - Mới: `"Friday 14th"`
+- **Đề[2].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"milk"`
+  - Mới: `"Wednesday 12th"`
+- **Đề[2].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi Sally, it's Mom. How are you? I just wanted to remind you about dinner tonight.\"},{\"timestamp\":[5,10],\"text\":\" We're having your favorite spaghetti. Don't forget to pick up your brother from school at 4 o'clock.\"},{\"timestamp\":[10,16],\"text\":\" Oh, and can you stop by the store on your way home? We're out of eggs and I need some to finish baking the cake.\"},{\"timestamp\":[16,18],\"text\":\" Thanks, sweetie.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.5],\"text\":\" Hello, this is the doctor's office calling to change your appointment.\"},{\"timestamp\":[6.5,11.5],\"text\":\" I wanted to let you know that the new appointment is on Thursday the 13th.\"},{\"timestamp\":[11.5,16.22],\"text\":\" I understand you might have been expecting it to be on Friday the 14th, but we're all off\"},{\"timestamp\":[16.22,null],\"text\":\" this day due to the National Dentist Holiday. Please let us know if that works for you.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[0]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb29"`
+  - Mới: `"697054f8f5a181c9bea1f9be"`
+- **Đề[2].questions[0].subQuestion[1].content**:
+  - Cũ: `"Samia is going to meet her friend. What time are they going to meet?"`
+  - Mới: `"A man is ordering a drink. What does he want?"`
+- **Đề[2].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"10:00"`
+  - Mới: `"Iced tea"`
+- **Đề[2].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920069339_46685fc669dd9611_audio_de3_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918979865_7a8ffacd5e748628_audiotp_de2_q2.mp3"`
+- **Đề[2].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"9:30"`
+  - Mới: `"Water"`
+- **Đề[2].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"11:00"`
+  - Mới: `"Iced tea"`
+- **Đề[2].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"10:00"`
+  - Mới: `"Beer"`
+- **Đề[2].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.24],\"text\":\" Hey, I was thinking about our meet-up. We planned to meet at 9.30, but I just realized\"},{\"timestamp\":[6.24,11.2],\"text\":\" I have a class that finishes at 9.00. So I might not make it in time. How about we meet\"},{\"timestamp\":[11.2,16.28],\"text\":\" at 10.00. That should give me enough time to get there. Does that work for you?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" Hi there, I'm really thirsty. Can I have a drink please?\"},{\"timestamp\":[4.7,8.4],\"text\":\" I was thinking about getting a beer, but it's a bit too early for that.\"},{\"timestamp\":[8.4,11.7],\"text\":\" Water sounds good, but I'm in the mood for something cooler.\"},{\"timestamp\":[11.7,13.9],\"text\":\" I'll go with an iced tea please.\"},{\"timestamp\":[13.9,16.2],\"text\":\" That sounds perfect for this weather.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[1]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2a"`
+  - Mới: `"697054f8f5a181c9bea1f9bf"`
+- **Đề[2].questions[0].subQuestion[2].content**:
+  - Cũ: `"Anna is calling her brother Max. What does Anna do later in the afternoon?"`
+  - Mới: `"An author is talking about her daily routine. When does she usually write?"`
+- **Đề[2].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Stay late at the office"`
+  - Mới: `"In the afternoons"`
+- **Đề[2].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920071216_63b69d27b88b48c8_audio_de3_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918980658_b7d200eec70fb09d_audiotp_de2_q3.mp3"`
+- **Đề[2].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Pick up the kids"`
+  - Mới: `"In the afternoons"`
+- **Đề[2].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Stay late at the office"`
+  - Mới: `"In the mornings"`
+- **Đề[2].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Hang out with friends"`
+  - Mới: `"At night"`
+- **Đề[2].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.26],\"text\":\" Hey Max, it's Anna. I wanted to ask you for a favor this afternoon. I have to stay\"},{\"timestamp\":[6.26,10.26],\"text\":\" late at the office to finish some work. Could you please pick up my kids from\"},{\"timestamp\":[10.26,15.5],\"text\":\" school? After that, I know you'll want to hang out with your friends, so feel\"},{\"timestamp\":[15.5,20.67],\"text\":\" free to take them along. I really appreciate your help. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Every morning, I start my day by going for a run.\"},{\"timestamp\":[5,8],\"text\":\" It helps me clear my mind and gives me energy.\"},{\"timestamp\":[8,14],\"text\":\" After lunch, at around 2 o'clock, I sit down at my working table, ready to write.\"},{\"timestamp\":[14,20],\"text\":\" My husband is my best critic, so I try to produce something before he gets home in the afternoon.\"},{\"timestamp\":[20,22],\"text\":\" I want to show him what I've been working on.\"},{\"timestamp\":[22,27],\"text\":\" At night, I seek motivation by watching movies or reading books.\"},{\"timestamp\":[27,30.5],\"text\":\" This helps me find new ideas for my stories.\"},{\"timestamp\":[30.5,35],\"text\":\" Writing is a journey, and each day brings something new.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[2]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2b"`
+  - Mới: `"697054f8f5a181c9bea1f9c0"`
+- **Đề[2].questions[0].subQuestion[3].content**:
+  - Cũ: `"A woman is talking about her favorite film on the radio. What film did she recommend?"`
+  - Mới: `"How does he travel?"`
+- **Đề[2].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"Action film"`
+  - Mới: `"By train"`
+- **Đề[2].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920074259_b699b26856b55ac2_audio_de3_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918981541_7f84622802ae31a0_audiotp_de2_q4.mp3"`
+- **Đề[2].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"Action film"`
+  - Mới: `"By car"`
+- **Đề[2].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"Romantic film"`
+  - Mới: `"By plane"`
+- **Đề[2].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"Comedy film"`
+  - Mới: `"By train"`
+- **Đề[2].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Today, I want to recommend an action film that really impressed me.\"},{\"timestamp\":[5,11],\"text\":\" The lead actor, who is usually known for his romantic roles, delivered an outstanding performance.\"},{\"timestamp\":[11,16],\"text\":\" Of course, if you're in the moon for something lighter, there are plenty of comedies to enjoy as well.\"},{\"timestamp\":[16,null],\"text\":\" But if you're looking for excitement, this action film is definitely worth a watch.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.72],\"text\":\" He travels most of the time, enjoying the convenience and comfort of his journeys,\"},{\"timestamp\":[4.72,8.8],\"text\":\" whether it's for work or leisure, he finds it the best way to get around,\"},{\"timestamp\":[8.8,14.08],\"text\":\" especially because of the scenic views. He travels by train.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[3]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2c"`
+  - Mới: `"697054f8f5a181c9bea1f9c1"`
+- **Đề[2].questions[0].subQuestion[4].content**:
+  - Cũ: `"Where does Malik want to go?"`
+  - Mới: `"A woman is talking about her usual Saturday routine. What does she usually do on Saturdays?"`
+- **Đề[2].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"The town hall"`
+  - Mới: `"Sees her family"`
+- **Đề[2].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920075747_4e2c03fe03404768_audio_de3_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918983122_c775c42df6ab59e5_audiotp_de2_q5.mp3"`
+- **Đề[2].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"The town hall"`
+  - Mới: `"Goes shopping"`
+- **Đề[2].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"The library"`
+  - Mới: `"Sees her family"`
+- **Đề[2].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"The park"`
+  - Mới: `"Goes to a birthday party"`
+- **Đề[2].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3],\"text\":\" Malick has been hearing a lot about an important event.\"},{\"timestamp\":[3,5],\"text\":\" And the town hall is where he wants to go,\"},{\"timestamp\":[5,8],\"text\":\" because he believes it will give him a chance to learn more.\"},{\"timestamp\":[8,11],\"text\":\" Engage with the community and share his own ideas.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" Normally, on Saturdays, I spend the day with my family.\"},{\"timestamp\":[4.5,8.78],\"text\":\" We like to have brunch together and then do some fun activities, like playing board games\"},{\"timestamp\":[8.78,10.28],\"text\":\" or going for a walk.\"},{\"timestamp\":[10.28,12.68],\"text\":\" It's a nice way to relax and catch up.\"},{\"timestamp\":[12.68,15.36],\"text\":\" But this week, I have something different planned.\"},{\"timestamp\":[15.36,null],\"text\":\" I'm going to see a friend for her birthday and go shopping together instead. I'm looking forward to it, but I know I'll miss our usual family time.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[4]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2d"`
+  - Mới: `"697054f8f5a181c9bea1f9c2"`
+- **Đề[2].questions[0].subQuestion[5].content**:
+  - Cũ: `"Greg is talking about a working day in his life. How does he go to work?"`
+  - Mới: `"A man is talking about his family trip. What does the man’s wife enjoy?"`
+- **Đề[2].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"By bus"`
+  - Mới: `"Photography"`
+- **Đề[2].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920078891_d76047d2a948124b_audio_de3_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918984034_3180560d7bd99602_audiotp_de2_q6.mp3"`
+- **Đề[2].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"By bus"`
+  - Mới: `"Photography"`
+- **Đề[2].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"By car"`
+  - Mới: `"Shopping"`
+- **Đề[2].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"By bike"`
+  - Mới: `"Hiking"`
+- **Đề[2].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.84],\"text\":\" Hi everyone, I'm Greg and I want to tell you about a typical working day in my life.\"},{\"timestamp\":[5.84,11.68],\"text\":\" I usually wake up early, around 7 am, after a quick breakfast, I get ready for work.\"},{\"timestamp\":[11.68,14.96],\"text\":\" I like to wear smart clothes because I work in an office.\"},{\"timestamp\":[14.96,18.24],\"text\":\" I go by bus every day, which takes about 30 minutes.\"},{\"timestamp\":[18.24,22.24],\"text\":\" I enjoy looking out the window and listening to music on my way.\"},{\"timestamp\":[22.24,27.36],\"text\":\" When I arrive at the office, I start my day by checking emails and planning my tasks.\"},{\"timestamp\":[27.36,30.84],\"text\":\" I have meetings with my team, and we work together on projects.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" On our family trip last summer, we had such a great time.\"},{\"timestamp\":[5,10],\"text\":\" My wife really enjoys photography, so when we went walking together in the parks,\"},{\"timestamp\":[10,14],\"text\":\" she spent a lot of time taking pictures of the beautiful landscapes.\"},{\"timestamp\":[14,17],\"text\":\" Well, at least she is not crazy about shopping.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[5]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2e"`
+  - Mới: `"697054f8f5a181c9bea1f9c3"`
+- **Đề[2].questions[0].subQuestion[6].content**:
+  - Cũ: `"Listen to a nutrition expert. What time is the best for children to eat fruit?"`
+  - Mới: `"A woman is talking about her job. What encouraged her to become a scientist?"`
+- **Đề[2].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"In the morning"`
+  - Mới: `"A large stone"`
+- **Đề[2].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920080489_38c3397eb570068e_audio_de3_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918985316_2dd55d81938d1e5b_audiotp_de2_q7.mp3"`
+- **Đề[2].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"In the morning"`
+  - Mới: `"Her computer"`
+- **Đề[2].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"In the afternoon"`
+  - Mới: `"Her mother"`
+- **Đề[2].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"In the evening"`
+  - Mới: `"A large stone"`
+- **Đề[2].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,10],\"text\":\" Hello everyone. I'm here to talk about nutrition and how important it is for our health. Eating fruits is very beneficial, especially for children.\"},{\"timestamp\":[10,18],\"text\":\" Fruits have vitamins and minerals that help kids grow strong and stay healthy. The best time for children to eat fruit is in the morning.\"},{\"timestamp\":[18,27.7],\"text\":\" This gives them energy for the day ahead. You can add fruit to breakfast like in a smoothie or with yogurt. It's a delicious and healthy way to start the day.\"},{\"timestamp\":[27.7,31.3],\"text\":\" So let's encourage our kids to eat more fruit in the morning.\"},{\"timestamp\":[31.3,32.5],\"text\":\" Thank you.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've always loved science, but there was a moment that really encouraged me to become a scientist.\"},{\"timestamp\":[6,11],\"text\":\" I remember when I was a child, I found a large stone during a school trip.\"},{\"timestamp\":[11,14],\"text\":\" It sparked my curiosity about geology.\"},{\"timestamp\":[14,17],\"text\":\" My mother also inspired me to explore my interests in science.\"},{\"timestamp\":[17,null],\"text\":\" Of course, I used the computer a lot now for my research, but that stone was the beginning.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[6]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb2f"`
+  - Mới: `"697054f8f5a181c9bea1f9c4"`
+- **Đề[2].questions[0].subQuestion[7].content**:
+  - Cũ: `"Listen to a woman explaining her morning routine to her friend. Why do women get up early?"`
+  - Mới: `"Listen to the speaker talking about their weekly schedule. When is the meeting scheduled?"`
+- **Đề[2].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"To have some quiet time"`
+  - Mới: `"Wednesday afternoon"`
+- **Đề[2].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920081266_3eb062960402fadd_audio_de3_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918987055_116dcc9ed3fe4bf7_audiotp_de2_q8.mp3"`
+- **Đề[2].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"To go to work"`
+  - Mới: `"Monday morning"`
+- **Đề[2].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"To take care of their kids"`
+  - Mới: `"Friday afternoon"`
+- **Đề[2].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"To have some quiet time"`
+  - Mới: `"Wednesday afternoon"`
+- **Đề[2].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" I usually wake up early each day before anyone else.\"},{\"timestamp\":[4.7,8.74],\"text\":\" Some people get up early to get to work on time or to take care of their kids, but for\"},{\"timestamp\":[8.74,12.82],\"text\":\" me, it's all about enjoying that calm before the business begins.\"},{\"timestamp\":[12.82,16.88],\"text\":\" I enjoy this quiet time because it helps me start my day peacefully.\"},{\"timestamp\":[16.88,null],\"text\":\" It's nice to have a few moments to myself, sipping coffee and planning my day ahead.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" This week is pretty busy, but the most important thing is the meeting on Wednesday afternoon.\"},{\"timestamp\":[7,12.5],\"text\":\" We usually have it on Monday, but this time we had to change the day.\"},{\"timestamp\":[12.5,16],\"text\":\" Wednesday works better because everyone is free.\"},{\"timestamp\":[16,22],\"text\":\" I have a lot to prepare before then, so I'll spend Tuesday getting everything ready.\"},{\"timestamp\":[22,25.38],\"text\":\" It's a big meeting, and we need to finalize some\"},{\"timestamp\":[25.38,31.56],\"text\":\" plans. I'm just glad it's not on Friday where I'd be too tired.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[7]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb30"`
+  - Mới: `"697054f8f5a181c9bea1f9c5"`
+- **Đề[2].questions[0].subQuestion[8].content**:
+  - Cũ: `"A man is talking to his friend. Why does he need to learn to drive?"`
+  - Mới: `"A man is reading the news about a housing development plan. How many new houses are going to be built?"`
+- **Đề[2].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"He has to drive to work"`
+  - Mới: `"2000"`
+- **Đề[2].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920081964_a2bd9b29bc484320_audio_de3_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918988058_f9af07d379a9c312_audiotp_de2_q9.mp3"`
+- **Đề[2].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"To go on a road trip"`
+  - Mới: `"1500"`
+- **Đề[2].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"To take his family on vacations"`
+  - Mới: `"2000"`
+- **Đề[2].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"He has to drive to work"`
+  - Mới: `"2500"`
+- **Đề[2].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hey Sarah, I've got some news. I'm moving to a new place.\"},{\"timestamp\":[4,7],\"text\":\" Oh really? That sounds exciting. Where's your new place?\"},{\"timestamp\":[7,12],\"text\":\" It's actually pretty far from my workplace and the public transport there isn't great.\"},{\"timestamp\":[12,16],\"text\":\" So I've been thinking, I need to learn how to drive.\"},{\"timestamp\":[16,21],\"text\":\" Yeah, that makes sense. It's hard to rely on public transport if it's not reliable.\"},{\"timestamp\":[21,23],\"text\":\" Have you ever driven before?\"},{\"timestamp\":[23,25.96],\"text\":\" Not really. I've always used buses and\"},{\"timestamp\":[25.96,30.2],\"text\":\" trains, but now it looks like I don't have a choice. I need to get a license.\"},{\"timestamp\":[30.2,34.28],\"text\":\" You'll get the hang of it. Driving will definitely make your commute easier.\"},{\"timestamp\":[34.28,39.2],\"text\":\" Are you planning to take lessons soon? Yeah, I'm gonna sign up for a\"},{\"timestamp\":[39.2,null],\"text\":\" driving school next week. Hopefully I can get it done quickly.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" I just heard the news that the local authority is planning to build 2,000 new houses.\"},{\"timestamp\":[5,9],\"text\":\" I remember they were initially saying it would only be 1,500.\"},{\"timestamp\":[9,13],\"text\":\" But then I heard someone mention 2,500.\"},{\"timestamp\":[13,15],\"text\":\" That's quite a jump.\"},{\"timestamp\":[15,18],\"text\":\" I wonder how this will affect the neighbourhood.\"},{\"timestamp\":[18,null],\"text\":\" Will it bring in more families or just more traffic? It'll be interesting to see how it all unfolds.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[8]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb31"`
+  - Mới: `"697054f8f5a181c9bea1f9c6"`
+- **Đề[2].questions[0].subQuestion[9].content**:
+  - Cũ: `"Two friends are talking with each other. What did they both buy?"`
+  - Mới: `"Listen to a writer talking about her job. What is her first job?"`
+- **Đề[2].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Clothes"`
+  - Mới: `"Teacher"`
+- **Đề[2].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920083200_147487bea22c7b5a_audio_de3_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918989133_3ec5e3e216d82d19_audiotp_de2_q10.mp3"`
+- **Đề[2].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Clothes"`
+  - Mới: `"Writer"`
+- **Đề[2].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Shoes"`
+  - Mới: `"Librarian"`
+- **Đề[2].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Books"`
+  - Mới: `"Teacher"`
+- **Đề[2].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I just got back from shopping. I found a great jacket and also picked up some tea.\"},{\"timestamp\":[6,9],\"text\":\" Nice. What kind of jacket did you get?\"},{\"timestamp\":[9,15],\"text\":\" It's a stylish leather jacket. I think it'll be perfect for the fall. What about you?\"},{\"timestamp\":[15,19],\"text\":\" I bought a cozy sweater and also grabbed a delicious cake.\"},{\"timestamp\":[19,23],\"text\":\" Sounds great. Those are perfect for this weather.\"},{\"timestamp\":[23,25.68],\"text\":\" Thanks. I'm excited to try the cake layer.\"},{\"timestamp\":[25.68,28.84],\"text\":\" Looks like we both made good choices today.\"},{\"timestamp\":[28.84,30],\"text\":\" Absolutely.\"},{\"timestamp\":[30,34],\"text\":\" New clothes and tasty treats for the chilly days ahead.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" When I was younger, I didn't always dream of being a writer.\"},{\"timestamp\":[4.7,7.5],\"text\":\" My first job was actually as a teacher.\"},{\"timestamp\":[7.5,12.7],\"text\":\" I toured English to small children, and I loved helping them learn to read and write.\"},{\"timestamp\":[12.7,14.5],\"text\":\" It wasn't easy, though.\"},{\"timestamp\":[14.5,18.5],\"text\":\" I spent a lot of time grading papers and preparing lessons,\"},{\"timestamp\":[18.5,null],\"text\":\" but that job taught me how to use words well, and now I write stories for everyone to enjoy.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[9]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb32"`
+  - Mới: `"697054f8f5a181c9bea1f9c7"`
+- **Đề[2].questions[0].subQuestion[10].content**:
+  - Cũ: `"What area is he describing?"`
+  - Mới: `"Listen to Marry talking to Jane while waiting for James. What did they decide to do?"`
+- **Đề[2].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"A university area"`
+  - Mới: `"Having the meeting without him"`
+- **Đề[2].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920084299_930c9bd9b49e9ff9_audio_de3_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918990472_0348939668919b81_audiotp_de2_q11.mp3"`
+- **Đề[2].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"A shopping district"`
+  - Mới: `"Cancel the meeting"`
+- **Đề[2].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"A university area"`
+  - Mới: `"Having the meeting without him"`
+- **Đề[2].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"A residential neighborhood"`
+  - Mới: `"Wait for him longer"`
+- **Đề[2].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.36],\"text\":\" He's describing a place with a vibrant atmosphere, full of students and professors.\"},{\"timestamp\":[5.36,10.66],\"text\":\" The university area is where he's talking about, known for its lively campus, beautiful\"},{\"timestamp\":[10.66,14.5],\"text\":\" buildings, and the mix of academic and social life that surrounds it.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7.44],\"text\":\" Hi, Jane. It looks like James is running late again. I'm starting to wonder if we should\"},{\"timestamp\":[7.44,13.34],\"text\":\" wait for him. I don't want to waste too much time. I feel like we could have the meeting\"},{\"timestamp\":[13.34,19.8],\"text\":\" without him. We have a lot to discuss and we can always update him later. I think it's\"},{\"timestamp\":[19.8,22.22],\"text\":\" better to move forward instead of just waiting. So let's go ahead.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[10]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb33"`
+  - Mới: `"697054f8f5a181c9bea1f9c8"`
+- **Đề[2].questions[0].subQuestion[11].content**:
+  - Cũ: `"A man wants to buy a new house. What is his biggest problem?"`
+  - Mới: `"A woman is talking to her coworker. When does the meeting start?"`
+- **Đề[2].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Persuading his family"`
+  - Mới: `"10.15"`
+- **Đề[2].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920085494_e0167b1cc776907e_audio_de3_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918991498_b7c55b6fb647f889_audiotp_de2_q12.mp3"`
+- **Đề[2].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Finding the right house"`
+  - Mới: `"10.15"`
+- **Đề[2].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Persuading his family"`
+  - Mới: `"10.30"`
+- **Đề[2].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Getting the financing"`
+  - Mới: `"9.45"`
+- **Đề[2].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3],\"text\":\" I've been having a tough time lately.\"},{\"timestamp\":[3,8],\"text\":\" I really want to move abroad for a new job, but my family isn't on board with it.\"},{\"timestamp\":[8,13],\"text\":\" They're worried about me leaving and don't understand why I want to go so far away.\"},{\"timestamp\":[13,18],\"text\":\" I've tried to explain all the benefits, but they just don't seem to get it.\"},{\"timestamp\":[18,null],\"text\":\" It's really frustrating because I want their support, but it feels like I'm not getting through to them.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" Hey, just wanted to give you a quick heads-up.\"},{\"timestamp\":[3.2,7.6],\"text\":\" I won't be able to join the meeting with the clients at 10-15 like we planned.\"},{\"timestamp\":[7.6,9.7],\"text\":\" I've got something that suddenly came up.\"},{\"timestamp\":[9.7,14.1],\"text\":\" I know it's last minute, but could you go ahead and handle the presentation on your own?\"},{\"timestamp\":[14.1,null],\"text\":\" You're familiar with everything, so I trust you've got this. Let me know how it goes afterward. Thanks. I really appreciate it.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[11]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb34"`
+  - Mới: `"697054f8f5a181c9bea1f9c9"`
+- **Đề[2].questions[0].subQuestion[12].content**:
+  - Cũ: `"Listening to a tour guide talking about Rock City. How old is the city?"`
+  - Mới: `"Vincent is calling James. Why does Vincent call James?"`
+- **Đề[2].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"1500 years"`
+  - Mới: `"Suggest a drink"`
+- **Đề[2].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920087091_2d9dd238945b811f_audio_de3_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768918992312_cb8e40e205a50123_audiotp_de2_q13.mp3"`
+- **Đề[2].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"1000 years"`
+  - Mới: `"Invite him to a party"`
+- **Đề[2].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"2000 years"`
+  - Mới: `"Suggest a drink"`
+- **Đề[2].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"1500 years"`
+  - Mới: `"Ask for help"`
+- **Đề[2].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.26],\"text\":\" Welcome to Rock City everyone. I'm excited to show you around this amazing place.\"},{\"timestamp\":[5.26,8.78],\"text\":\" Rock City has a very long and interesting history.\"},{\"timestamp\":[8.78,14.06],\"text\":\" People first started living here about 1500 years ago. Can you believe how old that is?\"},{\"timestamp\":[14.06,17.28],\"text\":\" It's older than many famous cities in the world.\"},{\"timestamp\":[17.28,21.64],\"text\":\" The city got its name because of all the big rocks you can see around us.\"},{\"timestamp\":[21.64,25.68],\"text\":\" Over time people built houses and roads between these rocks.\"},{\"timestamp\":[26.4,30.64],\"text\":\" Today, we can still see many old buildings from long ago.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,2.76],\"text\":\" [MUSIC PLAYING]\"},{\"timestamp\":[2.76,3.4],\"text\":\" Hi, James.\"},{\"timestamp\":[3.4,4.32],\"text\":\" It's Vincent.\"},{\"timestamp\":[4.32,7.12],\"text\":\" I just wanted to check in and see how you're doing.\"},{\"timestamp\":[7.12,9.4],\"text\":\" It's been a while since we last caught up.\"},{\"timestamp\":[9.4,11.56],\"text\":\" How about we grab a drink later?\"},{\"timestamp\":[11.56,14.28],\"text\":\" I know a great new place that has very nice tea.\"},{\"timestamp\":[14.28,17],\"text\":\" You should definitely try it next time you visit me.\"},{\"timestamp\":[17,18.96],\"text\":\" Text me back.\"}]</p>"`
+- **Đề[2].questions[0].subQuestion[12]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb35"`
+  - Mới: `"697054f8f5a181c9bea1f9ca"`
+- **Đề[2].questions[0]._id**:
+  - Cũ: `"69705931f5a181c9bea1fb28"`
+  - Mới: `"697054f8f5a181c9bea1f9bd"`
+- **Đề[2].id**:
+  - Cũ: `"69563db80731243929b0c926"`
+  - Mới: `"695639700731243929b0c911"`
+- **Đề[2].createdAt**:
+  - Cũ: `"2026-01-01T09:26:16.483Z"`
+  - Mới: `"2026-01-01T09:08:00.336Z"`
+- **Đề[2].updatedAt**:
+  - Cũ: `"2026-01-21T04:42:25.127Z"`
+  - Mới: `"2026-01-21T04:24:24.228Z"`
+
+### Đề số 4
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[3]._id**:
+  - Cũ: `"695651040731243929b0c97f"`
+  - Mới: `"69563db80731243929b0c917"`
+- **Đề[3].title**:
+  - Cũ: `"Đề 4"`
+  - Mới: `"Đề 3"`
+- **Đề[3].questions[0].questionTitle**:
+  - Cũ: `"Đề 4"`
+  - Mới: `"Đề 3"`
+- **Đề[3].questions[0].content**:
+  - Cũ: `"Đề 4"`
+  - Mới: `"Đề 3"`
+- **Đề[3].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to the instructions of a university. Where is the main office?"`
+  - Mới: `"What did the mother call her daughter to help her buy?"`
+- **Đề[3].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"on the first floor"`
+  - Mới: `"eggs"`
+- **Đề[3].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920230635_a939bf7e63ecc503_audio_de4_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920068098_af90e96dbab15544_audio_de3_q1.mp3"`
+- **Đề[3].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"in the basement"`
+  - Mới: `"eggs"`
+- **Đề[3].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"on the first floor"`
+  - Mới: `"bread"`
+- **Đề[3].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"on the second floor"`
+  - Mới: `"milk"`
+- **Đề[3].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,8],\"text\":\" Welcome to our university. When you enter the campus, you'll see the library on your left and the cafeteria on your right.\"},{\"timestamp\":[8,14],\"text\":\" If you need help with anything, the main office is on the first floor of the center campus building.\"},{\"timestamp\":[14,18],\"text\":\" There you can ask about classes, schedules, or anything else.\"},{\"timestamp\":[18,22],\"text\":\" Behind the main building, you'll find the gym and sports area.\"},{\"timestamp\":[22,26.08],\"text\":\" For quiet study, there are some nice spots in the garden near the\"},{\"timestamp\":[26.08,30],\"text\":\" science building. Make sure to explore and enjoy your time here.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi Sally, it's Mom. How are you? I just wanted to remind you about dinner tonight.\"},{\"timestamp\":[5,10],\"text\":\" We're having your favorite spaghetti. Don't forget to pick up your brother from school at 4 o'clock.\"},{\"timestamp\":[10,16],\"text\":\" Oh, and can you stop by the store on your way home? We're out of eggs and I need some to finish baking the cake.\"},{\"timestamp\":[16,18],\"text\":\" Thanks, sweetie.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[0]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbef"`
+  - Mới: `"69705931f5a181c9bea1fb29"`
+- **Đề[3].questions[0].subQuestion[1].content**:
+  - Cũ: `"How much can Max pay for the computer?"`
+  - Mới: `"Samia is going to meet her friend. What time are they going to meet?"`
+- **Đề[3].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"250 pounds"`
+  - Mới: `"10:00"`
+- **Đề[3].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920231513_a6ab422e47d2a77a_audio_de4_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920069339_46685fc669dd9611_audio_de3_q2.mp3"`
+- **Đề[3].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"200 pounds"`
+  - Mới: `"9:30"`
+- **Đề[3].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"250 pounds"`
+  - Mới: `"11:00"`
+- **Đề[3].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"300 pounds"`
+  - Mới: `"10:00"`
+- **Đề[3].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.16],\"text\":\" Hi, it's me Max. I'm calling about the computer that you are selling.\"},{\"timestamp\":[5.16,12.24],\"text\":\" You see, my computer is old and slow. I can't play any games on it anymore, and would like to replace it with a new one.\"},{\"timestamp\":[12.24,null],\"text\":\" How much do you offer? I can pay £250 this afternoon, I am busy, but we can discuss this tomorrow morning. Is that okay? Call me back soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.24],\"text\":\" Hey, I was thinking about our meet-up. We planned to meet at 9.30, but I just realized\"},{\"timestamp\":[6.24,11.2],\"text\":\" I have a class that finishes at 9.00. So I might not make it in time. How about we meet\"},{\"timestamp\":[11.2,16.28],\"text\":\" at 10.00. That should give me enough time to get there. Does that work for you?\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[1]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf0"`
+  - Mới: `"69705931f5a181c9bea1fb2a"`
+- **Đề[3].questions[0].subQuestion[2].content**:
+  - Cũ: `"Where does he want to go tomorrow?"`
+  - Mới: `"Anna is calling her brother Max. What does Anna do later in the afternoon?"`
+- **Đề[3].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"The town hall"`
+  - Mới: `"Stay late at the office"`
+- **Đề[3].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920232112_f25c6aaa476db381_audio_de4_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920071216_63b69d27b88b48c8_audio_de3_q3.mp3"`
+- **Đề[3].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"The park"`
+  - Mới: `"Pick up the kids"`
+- **Đề[3].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"The cinema"`
+  - Mới: `"Stay late at the office"`
+- **Đề[3].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"The town hall"`
+  - Mới: `"Hang out with friends"`
+- **Đề[3].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.2],\"text\":\" He has some important things to discuss tomorrow, and the town hall is where he wants to go.\"},{\"timestamp\":[5.2,8.8],\"text\":\" As it's the perfect place for the meeting and gathering more information,\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.26],\"text\":\" Hey Max, it's Anna. I wanted to ask you for a favor this afternoon. I have to stay\"},{\"timestamp\":[6.26,10.26],\"text\":\" late at the office to finish some work. Could you please pick up my kids from\"},{\"timestamp\":[10.26,15.5],\"text\":\" school? After that, I know you'll want to hang out with your friends, so feel\"},{\"timestamp\":[15.5,20.67],\"text\":\" free to take them along. I really appreciate your help. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[2]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf1"`
+  - Mới: `"69705931f5a181c9bea1fb2b"`
+- **Đề[3].questions[0].subQuestion[3].content**:
+  - Cũ: `"What will they bring to the picnic?"`
+  - Mới: `"A woman is talking about her favorite film on the radio. What film did she recommend?"`
+- **Đề[3].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"Food"`
+  - Mới: `"Action film"`
+- **Đề[3].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920235494_a2b411e62ad5f2d3_audio_de4_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920074259_b699b26856b55ac2_audio_de3_q4.mp3"`
+- **Đề[3].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"Drinks"`
+  - Mới: `"Action film"`
+- **Đề[3].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"Food"`
+  - Mới: `"Romantic film"`
+- **Đề[3].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"Snacks"`
+  - Mới: `"Comedy film"`
+- **Đề[3].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.52],\"text\":\" Hey, Emma, are you ready for the picnic this weekend?\"},{\"timestamp\":[3.52,6.8],\"text\":\" Definitely. I'm really looking forward to it.\"},{\"timestamp\":[6.8,8.76],\"text\":\" Do you know what everyone's bringing?\"},{\"timestamp\":[8.76,14.96],\"text\":\" Yeah, I spoke with a few people. Sarah's bringing cups and bowls, and Tom said he'll take care of drinks.\"},{\"timestamp\":[14.96,17.64],\"text\":\" He's got some lemonade and iced tea ready.\"},{\"timestamp\":[17.64,21.64],\"text\":\" Sounds great. I think Clara mentioned she's making a fruit salad, right?\"},{\"timestamp\":[21.64,26.56],\"text\":\" Yep, and Leo's bringing chips and dips. I guess we're pretty covered on snacks.\"},{\"timestamp\":[26.56,27.68],\"text\":\" - Awesome.\"},{\"timestamp\":[27.68,29.12],\"text\":\" So what should we bring?\"},{\"timestamp\":[29.12,31.36],\"text\":\" Maybe some food in case we might get hungry.\"},{\"timestamp\":[31.36,32.84],\"text\":\" - That's a good idea.\"},{\"timestamp\":[32.84,35.68],\"text\":\" How about we prepare some chicken and french fries?\"},{\"timestamp\":[35.68,38.32],\"text\":\" - Perfect, this picnic is going to be amazing.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Today, I want to recommend an action film that really impressed me.\"},{\"timestamp\":[5,11],\"text\":\" The lead actor, who is usually known for his romantic roles, delivered an outstanding performance.\"},{\"timestamp\":[11,16],\"text\":\" Of course, if you're in the moon for something lighter, there are plenty of comedies to enjoy as well.\"},{\"timestamp\":[16,null],\"text\":\" But if you're looking for excitement, this action film is definitely worth a watch.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[3]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf2"`
+  - Mới: `"69705931f5a181c9bea1fb2c"`
+- **Đề[3].questions[0].subQuestion[4].content**:
+  - Cũ: `"How many people live in the town?"`
+  - Mới: `"Where does Malik want to go?"`
+- **Đề[3].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"10,000"`
+  - Mới: `"The town hall"`
+- **Đề[3].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920236202_a5572a3600ab1822_audio_de4_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920075747_4e2c03fe03404768_audio_de3_q5.mp3"`
+- **Đề[3].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"5,000"`
+  - Mới: `"The town hall"`
+- **Đề[3].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"10,000"`
+  - Mới: `"The library"`
+- **Đề[3].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"20,000"`
+  - Mới: `"The park"`
+- **Đề[3].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Welcome everyone! Today, I'm excited to introduce you to our charming small town.\"},{\"timestamp\":[6,14],\"text\":\" Right here in the town square, you'll find local shops, cozy cafes, and a beautiful fountain where people gather to relax.\"},{\"timestamp\":[14,21],\"text\":\" This square is the heart of our community, often filled with cool events like farmers' markets and live music.\"},{\"timestamp\":[21,26],\"text\":\" Currently, there are 10,000 people living in this town. As we explore, you'll\"},{\"timestamp\":[26,33.16],\"text\":\" see the unique blend of history and modern life that makes our town so special.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3],\"text\":\" Malick has been hearing a lot about an important event.\"},{\"timestamp\":[3,5],\"text\":\" And the town hall is where he wants to go,\"},{\"timestamp\":[5,8],\"text\":\" because he believes it will give him a chance to learn more.\"},{\"timestamp\":[8,11],\"text\":\" Engage with the community and share his own ideas.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[4]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf3"`
+  - Mới: `"69705931f5a181c9bea1fb2d"`
+- **Đề[3].questions[0].subQuestion[5].content**:
+  - Cũ: `"Where are they going to meet?"`
+  - Mới: `"Greg is talking about a working day in his life. How does he go to work?"`
+- **Đề[3].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"at the park"`
+  - Mới: `"By bus"`
+- **Đề[3].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920237500_33a743b32c9c294d_audio_de4_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920078891_d76047d2a948124b_audio_de3_q6.mp3"`
+- **Đề[3].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"at the park"`
+  - Mới: `"By bus"`
+- **Đề[3].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"at the station"`
+  - Mới: `"By car"`
+- **Đề[3].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"at the university"`
+  - Mới: `"By bike"`
+- **Đề[3].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi, it's me. I wanted to confirm where we're meeting today. I thought we agreed to meet at the park, right?\"},{\"timestamp\":[8,15],\"text\":\" It's a nice place to relax and catch up. The station would be too crowded and the university is a bit far for me.\"},{\"timestamp\":[15,21.82],\"text\":\" Let's stick to the park so we can enjoy the weather. What time should I meet you there?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.84],\"text\":\" Hi everyone, I'm Greg and I want to tell you about a typical working day in my life.\"},{\"timestamp\":[5.84,11.68],\"text\":\" I usually wake up early, around 7 am, after a quick breakfast, I get ready for work.\"},{\"timestamp\":[11.68,14.96],\"text\":\" I like to wear smart clothes because I work in an office.\"},{\"timestamp\":[14.96,18.24],\"text\":\" I go by bus every day, which takes about 30 minutes.\"},{\"timestamp\":[18.24,22.24],\"text\":\" I enjoy looking out the window and listening to music on my way.\"},{\"timestamp\":[22.24,27.36],\"text\":\" When I arrive at the office, I start my day by checking emails and planning my tasks.\"},{\"timestamp\":[27.36,30.84],\"text\":\" I have meetings with my team, and we work together on projects.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[5]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf4"`
+  - Mới: `"69705931f5a181c9bea1fb2e"`
+- **Đề[3].questions[0].subQuestion[6].content**:
+  - Cũ: `"What color top is he going to buy?"`
+  - Mới: `"Listen to a nutrition expert. What time is the best for children to eat fruit?"`
+- **Đề[3].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"Black"`
+  - Mới: `"In the morning"`
+- **Đề[3].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920238430_b89a3ec573e97ef4_audio_de4_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920080489_38c3397eb570068e_audio_de3_q7.mp3"`
+- **Đề[3].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Green"`
+  - Mới: `"In the morning"`
+- **Đề[3].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"Red"`
+  - Mới: `"In the afternoon"`
+- **Đề[3].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"Black"`
+  - Mới: `"In the evening"`
+- **Đề[3].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.56],\"text\":\" Hello, I would like to buy a top please.\"},{\"timestamp\":[3.56,7],\"text\":\" Sure, do you have anything particular in mind?\"},{\"timestamp\":[7,9.8],\"text\":\" I like the design of that green one over there.\"},{\"timestamp\":[9.8,11.5],\"text\":\" Do you have it in blue?\"},{\"timestamp\":[11.5,13.5],\"text\":\" Maybe. What size are you?\"},{\"timestamp\":[13.5,15],\"text\":\" I am wearing large.\"},{\"timestamp\":[15,16.5],\"text\":\" Let me see.\"},{\"timestamp\":[16.5,19],\"text\":\" Oh, we have that one in blue but small.\"},{\"timestamp\":[19,22],\"text\":\" The red and black ones however are available in large.\"},{\"timestamp\":[22,25.43],\"text\":\" Red is not my cup of tea. Well, I will go with the other option then.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,10],\"text\":\" Hello everyone. I'm here to talk about nutrition and how important it is for our health. Eating fruits is very beneficial, especially for children.\"},{\"timestamp\":[10,18],\"text\":\" Fruits have vitamins and minerals that help kids grow strong and stay healthy. The best time for children to eat fruit is in the morning.\"},{\"timestamp\":[18,27.7],\"text\":\" This gives them energy for the day ahead. You can add fruit to breakfast like in a smoothie or with yogurt. It's a delicious and healthy way to start the day.\"},{\"timestamp\":[27.7,31.3],\"text\":\" So let's encourage our kids to eat more fruit in the morning.\"},{\"timestamp\":[31.3,32.5],\"text\":\" Thank you.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[6]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf5"`
+  - Mới: `"69705931f5a181c9bea1fb2f"`
+- **Đề[3].questions[0].subQuestion[7].content**:
+  - Cũ: `"What career did he choose?"`
+  - Mới: `"Listen to a woman explaining her morning routine to her friend. Why do women get up early?"`
+- **Đề[3].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"to work in business"`
+  - Mới: `"To have some quiet time"`
+- **Đề[3].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920239455_fda2c7280deac382_audio_de4_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920081266_3eb062960402fadd_audio_de3_q8.mp3"`
+- **Đề[3].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"to work in business"`
+  - Mới: `"To go to work"`
+- **Đề[3].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"to become a teacher"`
+  - Mới: `"To take care of their kids"`
+- **Đề[3].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"to become a researcher"`
+  - Mới: `"To have some quiet time"`
+- **Đề[3].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,2.5],\"text\":\" Welcome, how may I help you?\"},{\"timestamp\":[2.5,6.5],\"text\":\" Yes, I would like to have some advice for my future job.\"},{\"timestamp\":[6.5,10],\"text\":\" I majored in mathematics. Is there anything that I could do?\"},{\"timestamp\":[10,14],\"text\":\" Well, there are a variety of career paths you can take.\"},{\"timestamp\":[14,17],\"text\":\" Let's say becoming a teacher, a businessman,\"},{\"timestamp\":[17,20],\"text\":\" or continue to study higher to become a researcher.\"},{\"timestamp\":[20,24],\"text\":\" I have a friend who also majors in mathematics,\"},{\"timestamp\":[24,27],\"text\":\" and he is now a businessman with his own company.\"},{\"timestamp\":[27,30],\"text\":\" I guess that would be my choice then.\"},{\"timestamp\":[30,35],\"text\":\" I am not suitable to become a teacher, since I think I am a bit impatient.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" I usually wake up early each day before anyone else.\"},{\"timestamp\":[4.7,8.74],\"text\":\" Some people get up early to get to work on time or to take care of their kids, but for\"},{\"timestamp\":[8.74,12.82],\"text\":\" me, it's all about enjoying that calm before the business begins.\"},{\"timestamp\":[12.82,16.88],\"text\":\" I enjoy this quiet time because it helps me start my day peacefully.\"},{\"timestamp\":[16.88,null],\"text\":\" It's nice to have a few moments to myself, sipping coffee and planning my day ahead.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[7]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf6"`
+  - Mới: `"69705931f5a181c9bea1fb30"`
+- **Đề[3].questions[0].subQuestion[8].content**:
+  - Cũ: `"When is the assignment due?"`
+  - Mới: `"A man is talking to his friend. Why does he need to learn to drive?"`
+- **Đề[3].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"on Saturday"`
+  - Mới: `"He has to drive to work"`
+- **Đề[3].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920240577_602f7fd8efe780f7_audio_de4_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920081964_a2bd9b29bc484320_audio_de3_q9.mp3"`
+- **Đề[3].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"on Friday"`
+  - Mới: `"To go on a road trip"`
+- **Đề[3].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"on Saturday"`
+  - Mới: `"To take his family on vacations"`
+- **Đề[3].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"on Sunday"`
+  - Mới: `"He has to drive to work"`
+- **Đề[3].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.32],\"text\":\" The assignment needs to be submitted soon, and it's due on Saturday.\"},{\"timestamp\":[4.32,8.32],\"text\":\" Make sure to finish it by then to avoid any last-minute stress.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hey Sarah, I've got some news. I'm moving to a new place.\"},{\"timestamp\":[4,7],\"text\":\" Oh really? That sounds exciting. Where's your new place?\"},{\"timestamp\":[7,12],\"text\":\" It's actually pretty far from my workplace and the public transport there isn't great.\"},{\"timestamp\":[12,16],\"text\":\" So I've been thinking, I need to learn how to drive.\"},{\"timestamp\":[16,21],\"text\":\" Yeah, that makes sense. It's hard to rely on public transport if it's not reliable.\"},{\"timestamp\":[21,23],\"text\":\" Have you ever driven before?\"},{\"timestamp\":[23,25.96],\"text\":\" Not really. I've always used buses and\"},{\"timestamp\":[25.96,30.2],\"text\":\" trains, but now it looks like I don't have a choice. I need to get a license.\"},{\"timestamp\":[30.2,34.28],\"text\":\" You'll get the hang of it. Driving will definitely make your commute easier.\"},{\"timestamp\":[34.28,39.2],\"text\":\" Are you planning to take lessons soon? Yeah, I'm gonna sign up for a\"},{\"timestamp\":[39.2,null],\"text\":\" driving school next week. Hopefully I can get it done quickly.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[8]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf7"`
+  - Mới: `"69705931f5a181c9bea1fb31"`
+- **Đề[3].questions[0].subQuestion[9].content**:
+  - Cũ: `"What course did he take? / Listen to a student talking about his study. What course is the student going to take this year?"`
+  - Mới: `"Two friends are talking with each other. What did they both buy?"`
+- **Đề[3].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Computer"`
+  - Mới: `"Clothes"`
+- **Đề[3].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920241794_f8797e9a7820e386_audio_de4_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920083200_147487bea22c7b5a_audio_de3_q10.mp3"`
+- **Đề[3].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"English"`
+  - Mới: `"Clothes"`
+- **Đề[3].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Math"`
+  - Mới: `"Shoes"`
+- **Đề[3].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Computer"`
+  - Mới: `"Books"`
+- **Đề[3].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.96],\"text\":\" Hi, I'm Ben, and I want to share a bit about my studies.\"},{\"timestamp\":[4.96,8.22],\"text\":\" Last term, I took English, Math, and Science.\"},{\"timestamp\":[8.22,11.24],\"text\":\" They were all interesting, but Math was a bit tough for me.\"},{\"timestamp\":[11.24,15.72],\"text\":\" I worked hard, though, and got good results in the end.\"},{\"timestamp\":[15.72,null],\"text\":\" This year, I'm really excited because I'm going to take a computer course. I've always wanted to learn more about technology, So I'm looking forward to it.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I just got back from shopping. I found a great jacket and also picked up some tea.\"},{\"timestamp\":[6,9],\"text\":\" Nice. What kind of jacket did you get?\"},{\"timestamp\":[9,15],\"text\":\" It's a stylish leather jacket. I think it'll be perfect for the fall. What about you?\"},{\"timestamp\":[15,19],\"text\":\" I bought a cozy sweater and also grabbed a delicious cake.\"},{\"timestamp\":[19,23],\"text\":\" Sounds great. Those are perfect for this weather.\"},{\"timestamp\":[23,25.68],\"text\":\" Thanks. I'm excited to try the cake layer.\"},{\"timestamp\":[25.68,28.84],\"text\":\" Looks like we both made good choices today.\"},{\"timestamp\":[28.84,30],\"text\":\" Absolutely.\"},{\"timestamp\":[30,34],\"text\":\" New clothes and tasty treats for the chilly days ahead.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[9]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf8"`
+  - Mới: `"69705931f5a181c9bea1fb32"`
+- **Đề[3].questions[0].subQuestion[10].content**:
+  - Cũ: `"What did she like best about the film?"`
+  - Mới: `"What area is he describing?"`
+- **Đề[3].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"the mountain scenes"`
+  - Mới: `"A university area"`
+- **Đề[3].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920243088_d52b01ebc15fe7e8_audio_de4_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920084299_930c9bd9b49e9ff9_audio_de3_q11.mp3"`
+- **Đề[3].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"the mountain scenes"`
+  - Mới: `"A shopping district"`
+- **Đề[3].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"the action scenes"`
+  - Mới: `"A university area"`
+- **Đề[3].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"the ending"`
+  - Mới: `"A residential neighborhood"`
+- **Đề[3].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.24],\"text\":\" The fall is one of my favourite films, which I saw last weekend.\"},{\"timestamp\":[5.24,9.8],\"text\":\" The film was so terrific that it kept me on the edge of my seat all the time.\"},{\"timestamp\":[9.8,14.8],\"text\":\" I usually don't like watching action movies as they all feel the same and repetitive\"},{\"timestamp\":[14.8,20.72],\"text\":\" with those dull racing car scenes and meaningless fights that go on for hours.\"},{\"timestamp\":[20.72,23.32],\"text\":\" The mountain scenes were rather unusual.\"},{\"timestamp\":[23.32,28.34],\"text\":\" The sequencing, fascinating high-ups are the most captivating parts for me.\"},{\"timestamp\":[28.34,31.44],\"text\":\" The ending, however, was a bit sad.\"},{\"timestamp\":[31.44,33.48],\"text\":\" Many people wish it was a happy ending.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.36],\"text\":\" He's describing a place with a vibrant atmosphere, full of students and professors.\"},{\"timestamp\":[5.36,10.66],\"text\":\" The university area is where he's talking about, known for its lively campus, beautiful\"},{\"timestamp\":[10.66,14.5],\"text\":\" buildings, and the mix of academic and social life that surrounds it.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[10]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbf9"`
+  - Mới: `"69705931f5a181c9bea1fb33"`
+- **Đề[3].questions[0].subQuestion[11].content**:
+  - Cũ: `"What elements of the film do they agree on?"`
+  - Mới: `"A man wants to buy a new house. What is his biggest problem?"`
+- **Đề[3].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"the ending"`
+  - Mới: `"Persuading his family"`
+- **Đề[3].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920244135_6de5483b45c1db5a_audio_de4_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920085494_e0167b1cc776907e_audio_de3_q12.mp3"`
+- **Đề[3].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"the soundtrack"`
+  - Mới: `"Finding the right house"`
+- **Đề[3].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"the characters"`
+  - Mới: `"Persuading his family"`
+- **Đề[3].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"the ending"`
+  - Mới: `"Getting the financing"`
+- **Đề[3].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" I just finished watching that film we talked about. What did you think?\"},{\"timestamp\":[5,9],\"text\":\" I loved it. The ending was so satisfying.\"},{\"timestamp\":[9,15],\"text\":\" Absolutely. It wrapped everything up perfectly, but I wasn't really sold on the characters.\"},{\"timestamp\":[15,20],\"text\":\" Really? I thought the characters were great and well developed.\"},{\"timestamp\":[20,26],\"text\":\" I felt they were a bit cliche, especially the main character, but I really love the soundtrack.\"},{\"timestamp\":[27,31],\"text\":\" Honestly, I didn't like the music at all. It felt out of place.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3],\"text\":\" I've been having a tough time lately.\"},{\"timestamp\":[3,8],\"text\":\" I really want to move abroad for a new job, but my family isn't on board with it.\"},{\"timestamp\":[8,13],\"text\":\" They're worried about me leaving and don't understand why I want to go so far away.\"},{\"timestamp\":[13,18],\"text\":\" I've tried to explain all the benefits, but they just don't seem to get it.\"},{\"timestamp\":[18,null],\"text\":\" It's really frustrating because I want their support, but it feels like I'm not getting through to them.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[11]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbfa"`
+  - Mới: `"69705931f5a181c9bea1fb34"`
+- **Đề[3].questions[0].subQuestion[12].content**:
+  - Cũ: `"Why does Douglas call Kay?"`
+  - Mới: `"Listening to a tour guide talking about Rock City. How old is the city?"`
+- **Đề[3].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"to say thank you"`
+  - Mới: `"1500 years"`
+- **Đề[3].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920244912_1b6606798944e110_audio_de4_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920087091_2d9dd238945b811f_audio_de3_q13.mp3"`
+- **Đề[3].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"to ask for a favor"`
+  - Mới: `"1000 years"`
+- **Đề[3].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"to say thank you"`
+  - Mới: `"2000 years"`
+- **Đề[3].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"to discuss ideas"`
+  - Mới: `"1500 years"`
+- **Đề[3].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,8.56],\"text\":\" Hi Kay! It's Douglas. I hope you are doing well. I wanted to call you today to say thank\"},{\"timestamp\":[8.56,14.36],\"text\":\" you for all your help with the project. Your advice was really valuable and it made a big\"},{\"timestamp\":[14.36,20.6],\"text\":\" difference. I also wanted to ask for a favour. If you have some time, I would love to meet\"},{\"timestamp\":[20.6,22.98],\"text\":\" and discuss a few ideas I have. Let me know when you are free.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.26],\"text\":\" Welcome to Rock City everyone. I'm excited to show you around this amazing place.\"},{\"timestamp\":[5.26,8.78],\"text\":\" Rock City has a very long and interesting history.\"},{\"timestamp\":[8.78,14.06],\"text\":\" People first started living here about 1500 years ago. Can you believe how old that is?\"},{\"timestamp\":[14.06,17.28],\"text\":\" It's older than many famous cities in the world.\"},{\"timestamp\":[17.28,21.64],\"text\":\" The city got its name because of all the big rocks you can see around us.\"},{\"timestamp\":[21.64,25.68],\"text\":\" Over time people built houses and roads between these rocks.\"},{\"timestamp\":[26.4,30.64],\"text\":\" Today, we can still see many old buildings from long ago.\"}]</p>"`
+- **Đề[3].questions[0].subQuestion[12]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbfb"`
+  - Mới: `"69705931f5a181c9bea1fb35"`
+- **Đề[3].questions[0]._id**:
+  - Cũ: `"69705e08f5a181c9bea1fbee"`
+  - Mới: `"69705931f5a181c9bea1fb28"`
+- **Đề[3].id**:
+  - Cũ: `"695651040731243929b0c98e"`
+  - Mới: `"69563db80731243929b0c926"`
+- **Đề[3].createdAt**:
+  - Cũ: `"2026-01-01T10:48:36.418Z"`
+  - Mới: `"2026-01-01T09:26:16.483Z"`
+- **Đề[3].updatedAt**:
+  - Cũ: `"2026-01-21T05:03:04.736Z"`
+  - Mới: `"2026-01-21T04:42:25.127Z"`
+
+### Đề số 5
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[4]._id**:
+  - Cũ: `"695653de0731243929b0c994"`
+  - Mới: `"695651040731243929b0c97f"`
+- **Đề[4].title**:
+  - Cũ: `"Đề 5"`
+  - Mới: `"Đề 4"`
+- **Đề[4].questions[0].questionTitle**:
+  - Cũ: `"Đề 5"`
+  - Mới: `"Đề 4"`
+- **Đề[4].questions[0].content**:
+  - Cũ: `"Đề 5"`
+  - Mới: `"Đề 4"`
+- **Đề[4].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to the director talking about sales of his company. How many copies of Freeze Frame magazine were sold?"`
+  - Mới: `"Listen to the instructions of a university. Where is the main office?"`
+- **Đề[4].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Over 300,000 copies"`
+  - Mới: `"on the first floor"`
+- **Đề[4].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920734997_f613462a984b738a_audio_de5_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920230635_a939bf7e63ecc503_audio_de4_q1.mp3"`
+- **Đề[4].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Over 200,000 copies"`
+  - Mới: `"in the basement"`
+- **Đề[4].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Over 300,000 copies"`
+  - Mới: `"on the first floor"`
+- **Đề[4].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Over 500,000 copies"`
+  - Mới: `"on the second floor"`
+- **Đề[4].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.8],\"text\":\" I am excited to share the latest sales figures for our company.\"},{\"timestamp\":[4.8,10],\"text\":\" This month, we had a fantastic response to our magazine, Freeze Frame.\"},{\"timestamp\":[10,14.6],\"text\":\" I'm proud to announce that we sold over 300,000 copies.\"},{\"timestamp\":[14.6,17.2],\"text\":\" This is a big increase from last month.\"},{\"timestamp\":[17.2,21.2],\"text\":\" Many people are buying our magazine, and we are very happy.\"},{\"timestamp\":[21.2,22.02],\"text\":\" Thank you for your support. We hope to sell even more in the future.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,8],\"text\":\" Welcome to our university. When you enter the campus, you'll see the library on your left and the cafeteria on your right.\"},{\"timestamp\":[8,14],\"text\":\" If you need help with anything, the main office is on the first floor of the center campus building.\"},{\"timestamp\":[14,18],\"text\":\" There you can ask about classes, schedules, or anything else.\"},{\"timestamp\":[18,22],\"text\":\" Behind the main building, you'll find the gym and sports area.\"},{\"timestamp\":[22,26.08],\"text\":\" For quiet study, there are some nice spots in the garden near the\"},{\"timestamp\":[26.08,30],\"text\":\" science building. Make sure to explore and enjoy your time here.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970e5f158cb12223e942bc9"`
+  - Mới: `"69705e08f5a181c9bea1fbef"`
+- **Đề[4].questions[0].subQuestion[1].content**:
+  - Cũ: `"Where will they meet to take a bus to home? / Anna is calling her friend. Where will they meet?"`
+  - Mới: `"How much can Max pay for the computer?"`
+- **Đề[4].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"At the marketplace"`
+  - Mới: `"250 pounds"`
+- **Đề[4].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920735731_ef83c5f093b2a383_audio_de5_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920231513_a6ab422e47d2a77a_audio_de4_q2.mp3"`
+- **Đề[4].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"At the bus stop"`
+  - Mới: `"200 pounds"`
+- **Đề[4].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"At the park"`
+  - Mới: `"250 pounds"`
+- **Đề[4].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"At the marketplace"`
+  - Mới: `"300 pounds"`
+- **Đề[4].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi Nia, it's Anna, I hope you're having a great day.\"},{\"timestamp\":[5,8.6],\"text\":\" I wanted to see if we are still meeting at the marketplace later.\"},{\"timestamp\":[8.6,13],\"text\":\" I'm really excited because I want to try that new ice cream shop we talked about.\"},{\"timestamp\":[13,18],\"text\":\" I heard they have some amazing flavors. I'll be there around 3pm.\"},{\"timestamp\":[18,null],\"text\":\" Let's also check out the fresh fruits and vegetables. It's always fun to shop together. See you soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.16],\"text\":\" Hi, it's me Max. I'm calling about the computer that you are selling.\"},{\"timestamp\":[5.16,12.24],\"text\":\" You see, my computer is old and slow. I can't play any games on it anymore, and would like to replace it with a new one.\"},{\"timestamp\":[12.24,null],\"text\":\" How much do you offer? I can pay £250 this afternoon, I am busy, but we can discuss this tomorrow morning. Is that okay? Call me back soon.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970e5f158cb12223e942bca"`
+  - Mới: `"69705e08f5a181c9bea1fbf0"`
+- **Đề[4].questions[0].subQuestion[2].content**:
+  - Cũ: `"What did he leave at a friend’s house? / What did the man lose?"`
+  - Mới: `"Where does he want to go tomorrow?"`
+- **Đề[4].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Glasses"`
+  - Mới: `"The town hall"`
+- **Đề[4].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920736663_e251d2659ec43615_audio_de5_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920232112_f25c6aaa476db381_audio_de4_q3.mp3"`
+- **Đề[4].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Wallet"`
+  - Mới: `"The park"`
+- **Đề[4].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Phone"`
+  - Mới: `"The cinema"`
+- **Đề[4].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Glasses"`
+  - Mới: `"The town hall"`
+- **Đề[4].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.04],\"text\":\" I was at my friend's house the other day, and I just realized I left my glasses there.\"},{\"timestamp\":[5.04,10.64],\"text\":\" I didn't notice until later, so now I'll have to give them a call and ask if I can swing by to\"},{\"timestamp\":[10.64,11.44],\"text\":\" pick them up.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.2],\"text\":\" He has some important things to discuss tomorrow, and the town hall is where he wants to go.\"},{\"timestamp\":[5.2,8.8],\"text\":\" As it's the perfect place for the meeting and gathering more information,\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970e5f158cb12223e942bcb"`
+  - Mới: `"69705e08f5a181c9bea1fbf1"`
+- **Đề[4].questions[0].subQuestion[3].content**:
+  - Cũ: `"Listen to the conversation. Who is she taking a photo of?"`
+  - Mới: `"What will they bring to the picnic?"`
+- **Đề[4].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"The girl's team"`
+  - Mới: `"Food"`
+- **Đề[4].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920737334_c3d37ec315535404_audio_de5_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920235494_a2b411e62ad5f2d3_audio_de4_q4.mp3"`
+- **Đề[4].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"The girl's team"`
+  - Mới: `"Drinks"`
+- **Đề[4].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"The boys' team"`
+  - Mới: `"Food"`
+- **Đề[4].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"The coaches"`
+  - Mới: `"Snacks"`
+- **Đề[4].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" I'm just about to take a photo of the girls team now.\"},{\"timestamp\":[4,8],\"text\":\" They're all lined up and ready, smiling for the camera.\"},{\"timestamp\":[8,13],\"text\":\" I've already taken pictures of the boys earlier, so it's their turn.\"},{\"timestamp\":[13,16],\"text\":\" The coaches will have their photo taken after this.\"},{\"timestamp\":[16,21.73],\"text\":\" The girls are excited because this picture will be in the school magazine. Alright everyone say cheese!\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.52],\"text\":\" Hey, Emma, are you ready for the picnic this weekend?\"},{\"timestamp\":[3.52,6.8],\"text\":\" Definitely. I'm really looking forward to it.\"},{\"timestamp\":[6.8,8.76],\"text\":\" Do you know what everyone's bringing?\"},{\"timestamp\":[8.76,14.96],\"text\":\" Yeah, I spoke with a few people. Sarah's bringing cups and bowls, and Tom said he'll take care of drinks.\"},{\"timestamp\":[14.96,17.64],\"text\":\" He's got some lemonade and iced tea ready.\"},{\"timestamp\":[17.64,21.64],\"text\":\" Sounds great. I think Clara mentioned she's making a fruit salad, right?\"},{\"timestamp\":[21.64,26.56],\"text\":\" Yep, and Leo's bringing chips and dips. I guess we're pretty covered on snacks.\"},{\"timestamp\":[26.56,27.68],\"text\":\" - Awesome.\"},{\"timestamp\":[27.68,29.12],\"text\":\" So what should we bring?\"},{\"timestamp\":[29.12,31.36],\"text\":\" Maybe some food in case we might get hungry.\"},{\"timestamp\":[31.36,32.84],\"text\":\" - That's a good idea.\"},{\"timestamp\":[32.84,35.68],\"text\":\" How about we prepare some chicken and french fries?\"},{\"timestamp\":[35.68,38.32],\"text\":\" - Perfect, this picnic is going to be amazing.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970e5f158cb12223e942bcc"`
+  - Mới: `"69705e08f5a181c9bea1fbf2"`
+- **Đề[4].questions[0].subQuestion[4].content**:
+  - Cũ: `"Listen to David talking about the conference. How long did he talk in the speech?"`
+  - Mới: `"How many people live in the town?"`
+- **Đề[4].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"15 minutes"`
+  - Mới: `"10,000"`
+- **Đề[4].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920737894_f9264ae912c8673c_audio_de5_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920236202_a5572a3600ab1822_audio_de4_q5.mp3"`
+- **Đề[4].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"10 minutes"`
+  - Mới: `"5,000"`
+- **Đề[4].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"15 minutes"`
+  - Mới: `"10,000"`
+- **Đề[4].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"20 minutes"`
+  - Mới: `"20,000"`
+- **Đề[4].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,2],\"text\":\" Hello everyone.\"},{\"timestamp\":[2,7],\"text\":\" Today, I want to tell you about the conference that took place last week.\"},{\"timestamp\":[7,10],\"text\":\" It was very interesting and many people attended.\"},{\"timestamp\":[10,13],\"text\":\" I spoke about new ideas in business.\"},{\"timestamp\":[13,17],\"text\":\" My presentation wasn't very long, but I had a lot to say.\"},{\"timestamp\":[17,21],\"text\":\" The other speakers talked about technology and education.\"},{\"timestamp\":[21,24],\"text\":\" After the talks, there were some questions from the audience.\"},{\"timestamp\":[24,25.68],\"text\":\" My speech\"},{\"timestamp\":[25.68,31],\"text\":\" lasted about 15 minutes shorter than expected. However, the audience was very\"},{\"timestamp\":[31,35.12],\"text\":\" attentive and I was happy to see that.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Welcome everyone! Today, I'm excited to introduce you to our charming small town.\"},{\"timestamp\":[6,14],\"text\":\" Right here in the town square, you'll find local shops, cozy cafes, and a beautiful fountain where people gather to relax.\"},{\"timestamp\":[14,21],\"text\":\" This square is the heart of our community, often filled with cool events like farmers' markets and live music.\"},{\"timestamp\":[21,26],\"text\":\" Currently, there are 10,000 people living in this town. As we explore, you'll\"},{\"timestamp\":[26,33.16],\"text\":\" see the unique blend of history and modern life that makes our town so special.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970e5f158cb12223e942bcd"`
+  - Mới: `"69705e08f5a181c9bea1fbf3"`
+- **Đề[4].questions[0].subQuestion[5].content**:
+  - Cũ: `"A woman is talking about her family’s weekend. What does the family do most weekends?"`
+  - Mới: `"Where are they going to meet?"`
+- **Đề[4].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Go for a walk"`
+  - Mới: `"at the park"`
+- **Đề[4].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920738593_55053ddb44819206_audio_de5_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920237500_33a743b32c9c294d_audio_de4_q6.mp3"`
+- **Đề[4].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Go for a walk"`
+  - Mới: `"at the park"`
+- **Đề[4].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Go to the beach"`
+  - Mới: `"at the station"`
+- **Đề[4].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Visit relatives"`
+  - Mới: `"at the university"`
+- **Đề[4].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.14],\"text\":\" Hello everyone. I want to share what my family usually does on weekends. We love\"},{\"timestamp\":[6.14,10.44],\"text\":\" spending time together and often go for a walk in the park. It's a nice way\"},{\"timestamp\":[10.44,14.88],\"text\":\" to relax and enjoy nature. We like to see the flowers and sometimes have a\"},{\"timestamp\":[14.88,20.16],\"text\":\" picnic. However, this weekend is different. My sister is visiting us and we have\"},{\"timestamp\":[20.16,26.88],\"text\":\" planned a small family gathering at home. We will cook a big meal together and play some games.\"},{\"timestamp\":[26.88,29.94],\"text\":\" It will be fun to catch up and spend quality time as a family.\"},{\"timestamp\":[29.94,31.38],\"text\":\" I'm really looking forward to it.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi, it's me. I wanted to confirm where we're meeting today. I thought we agreed to meet at the park, right?\"},{\"timestamp\":[8,15],\"text\":\" It's a nice place to relax and catch up. The station would be too crowded and the university is a bit far for me.\"},{\"timestamp\":[15,21.82],\"text\":\" Let's stick to the park so we can enjoy the weather. What time should I meet you there?\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970e5f158cb12223e942bce"`
+  - Mới: `"69705e08f5a181c9bea1fbf4"`
+- **Đề[4].questions[0].subQuestion[6].content**:
+  - Cũ: `"A girl is calling her mother. Which dress does she want?"`
+  - Mới: `"What color top is he going to buy?"`
+- **Đề[4].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"Long and red"`
+  - Mới: `"Black"`
+- **Đề[4].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920739596_5cbc41804a0b2d85_audio_de5_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920238430_b89a3ec573e97ef4_audio_de4_q7.mp3"`
+- **Đề[4].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Short and blue"`
+  - Mới: `"Green"`
+- **Đề[4].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"Long and white"`
+  - Mới: `"Red"`
+- **Đề[4].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"Long and red"`
+  - Mới: `"Black"`
+- **Đề[4].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.52],\"text\":\" I want to tell you about something special I just bought.\"},{\"timestamp\":[3.52,5.12],\"text\":\" It's a beautiful dress.\"},{\"timestamp\":[5.12,8.32],\"text\":\" The dress is long and red, just like a sunset.\"},{\"timestamp\":[8.32,10.64],\"text\":\" I feel so happy when I wear it.\"},{\"timestamp\":[10.64,13.52],\"text\":\" The fabric is soft and it flows nicely when I walk.\"},{\"timestamp\":[13.52,15.76],\"text\":\" I can wear it to a party or a nice dinner.\"},{\"timestamp\":[15.76,16.96],\"text\":\" I love my new dress.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.56],\"text\":\" Hello, I would like to buy a top please.\"},{\"timestamp\":[3.56,7],\"text\":\" Sure, do you have anything particular in mind?\"},{\"timestamp\":[7,9.8],\"text\":\" I like the design of that green one over there.\"},{\"timestamp\":[9.8,11.5],\"text\":\" Do you have it in blue?\"},{\"timestamp\":[11.5,13.5],\"text\":\" Maybe. What size are you?\"},{\"timestamp\":[13.5,15],\"text\":\" I am wearing large.\"},{\"timestamp\":[15,16.5],\"text\":\" Let me see.\"},{\"timestamp\":[16.5,19],\"text\":\" Oh, we have that one in blue but small.\"},{\"timestamp\":[19,22],\"text\":\" The red and black ones however are available in large.\"},{\"timestamp\":[22,25.43],\"text\":\" Red is not my cup of tea. Well, I will go with the other option then.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970e5f158cb12223e942bcf"`
+  - Mới: `"69705e08f5a181c9bea1fbf5"`
+- **Đề[4].questions[0].subQuestion[7].content**:
+  - Cũ: `"Soobin is talking about his favorite room. What is Soobin's favorite room?"`
+  - Mới: `"What career did he choose?"`
+- **Đề[4].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"Bathroom"`
+  - Mới: `"to work in business"`
+- **Đề[4].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920744243_643d3d9b5d4871fe_audio_de5_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920239455_fda2c7280deac382_audio_de4_q8.mp3"`
+- **Đề[4].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"Kitchen"`
+  - Mới: `"to work in business"`
+- **Đề[4].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"Living room"`
+  - Mới: `"to become a teacher"`
+- **Đề[4].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"Bathroom"`
+  - Mới: `"to become a researcher"`
+- **Đề[4].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" You know, when I think about my favorite room in the house, it's kind of hard to choose.\"},{\"timestamp\":[6,10.56],\"text\":\" I mean, I really enjoy the kitchen since I love cooking, and the living room is great\"},{\"timestamp\":[10.56,12.96],\"text\":\" for hanging out with friends.\"},{\"timestamp\":[12.96,16.88],\"text\":\" But honestly, I have to say the bathroom is my favorite.\"},{\"timestamp\":[16.88,null],\"text\":\" It might sound strange, but it's the one place where I can truly relax.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,2.5],\"text\":\" Welcome, how may I help you?\"},{\"timestamp\":[2.5,6.5],\"text\":\" Yes, I would like to have some advice for my future job.\"},{\"timestamp\":[6.5,10],\"text\":\" I majored in mathematics. Is there anything that I could do?\"},{\"timestamp\":[10,14],\"text\":\" Well, there are a variety of career paths you can take.\"},{\"timestamp\":[14,17],\"text\":\" Let's say becoming a teacher, a businessman,\"},{\"timestamp\":[17,20],\"text\":\" or continue to study higher to become a researcher.\"},{\"timestamp\":[20,24],\"text\":\" I have a friend who also majors in mathematics,\"},{\"timestamp\":[24,27],\"text\":\" and he is now a businessman with his own company.\"},{\"timestamp\":[27,30],\"text\":\" I guess that would be my choice then.\"},{\"timestamp\":[30,35],\"text\":\" I am not suitable to become a teacher, since I think I am a bit impatient.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd0"`
+  - Mới: `"69705e08f5a181c9bea1fbf6"`
+- **Đề[4].questions[0].subQuestion[8].content**:
+  - Cũ: `"A woman is talking about her weekends. What did she do last week?"`
+  - Mới: `"When is the assignment due?"`
+- **Đề[4].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Stayed at home"`
+  - Mới: `"on Saturday"`
+- **Đề[4].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920745371_873676e54682ecb5_audio_de5_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920240577_602f7fd8efe780f7_audio_de4_q9.mp3"`
+- **Đề[4].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Went out with friends"`
+  - Mới: `"on Friday"`
+- **Đề[4].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Stayed at home"`
+  - Mới: `"on Saturday"`
+- **Đề[4].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Visited a café"`
+  - Mới: `"on Sunday"`
+- **Đề[4].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" My weekends are not always the same. This week has been busy, but I always look forward to my free time.\"},{\"timestamp\":[7,12],\"text\":\" Last weekend, I stayed at home and enjoyed some quiet moments with a good book.\"},{\"timestamp\":[12,16],\"text\":\" I also watched a few movies and cooked a nice dinner for myself.\"},{\"timestamp\":[16,19],\"text\":\" This weekend, I plan to go out with friends.\"},{\"timestamp\":[19,26.01],\"text\":\" We might visit a new cafe or go for a walk in the park. I love spending time with my friends and relaxing after a busy week.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.32],\"text\":\" The assignment needs to be submitted soon, and it's due on Saturday.\"},{\"timestamp\":[4.32,8.32],\"text\":\" Make sure to finish it by then to avoid any last-minute stress.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd1"`
+  - Mới: `"69705e08f5a181c9bea1fbf7"`
+- **Đề[4].questions[0].subQuestion[9].content**:
+  - Cũ: `"Listen to a saleswoman talking about a property. Which room is the largest?"`
+  - Mới: `"What course did he take? / Listen to a student talking about his study. What course is the student going to take this year?"`
+- **Đề[4].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Kitchen"`
+  - Mới: `"Computer"`
+- **Đề[4].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920746711_6acc2f2cbc54e0cd_audio_de5_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920241794_f8797e9a7820e386_audio_de4_q10.mp3"`
+- **Đề[4].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Living room"`
+  - Mới: `"English"`
+- **Đề[4].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Bedroom"`
+  - Mới: `"Math"`
+- **Đề[4].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Kitchen"`
+  - Mới: `"Computer"`
+- **Đề[4].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.48],\"text\":\" Hello and welcome. Let me tell you about this lovely property. It has two spacious bedrooms,\"},{\"timestamp\":[6.48,15],\"text\":\" both with big windows that lead in lots of natural light. The bathroom is modern, with a large shower, and plenty of storage space.\"},{\"timestamp\":[15,19],\"text\":\" The living room is cozy, perfect for relaxing after a long day.\"},{\"timestamp\":[19,24.38],\"text\":\" But the kitchen is the star of the house. It's the largest room with lots of counter space for cooking\"},{\"timestamp\":[24.38,27.58],\"text\":\" and it's great for hosting dinners. You'll love it here!\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.96],\"text\":\" Hi, I'm Ben, and I want to share a bit about my studies.\"},{\"timestamp\":[4.96,8.22],\"text\":\" Last term, I took English, Math, and Science.\"},{\"timestamp\":[8.22,11.24],\"text\":\" They were all interesting, but Math was a bit tough for me.\"},{\"timestamp\":[11.24,15.72],\"text\":\" I worked hard, though, and got good results in the end.\"},{\"timestamp\":[15.72,null],\"text\":\" This year, I'm really excited because I'm going to take a computer course. I've always wanted to learn more about technology, So I'm looking forward to it.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd2"`
+  - Mới: `"69705e08f5a181c9bea1fbf8"`
+- **Đề[4].questions[0].subQuestion[10].content**:
+  - Cũ: `"Two friends are talking about their trip. What will the weather be like?"`
+  - Mới: `"What did she like best about the film?"`
+- **Đề[4].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"Cold and wet"`
+  - Mới: `"the mountain scenes"`
+- **Đề[4].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920748820_def625d8506263df_audio_de5_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920243088_d52b01ebc15fe7e8_audio_de4_q11.mp3"`
+- **Đề[4].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Cold and wet"`
+  - Mới: `"the mountain scenes"`
+- **Đề[4].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Hot and sunny"`
+  - Mới: `"the action scenes"`
+- **Đề[4].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"Mild and dry"`
+  - Mới: `"the ending"`
+- **Đề[4].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" Hey Sarah, are you excited about our trip next week?\"},{\"timestamp\":[4.5,9],\"text\":\" Hi Mike, yes, I can't wait. I've been looking forward to it for a long time.\"},{\"timestamp\":[9,15],\"text\":\" Me too. But I heard the weather is gonna be cold and wet. We should prepare for that.\"},{\"timestamp\":[15,21],\"text\":\" Oh no, I hope it doesn't rain too much. We need to pack our rain jackets and warm clothes.\"},{\"timestamp\":[21,24],\"text\":\" Definitely. I'll also bring an umbrella just in case.\"},{\"timestamp\":[24,28],\"text\":\" Good idea. Let's plan some fun indoor activities if the weather is bad.\"},{\"timestamp\":[28,34],\"text\":\" Yes, we can visit museums or try some local food. It will still be a great trip.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.24],\"text\":\" The fall is one of my favourite films, which I saw last weekend.\"},{\"timestamp\":[5.24,9.8],\"text\":\" The film was so terrific that it kept me on the edge of my seat all the time.\"},{\"timestamp\":[9.8,14.8],\"text\":\" I usually don't like watching action movies as they all feel the same and repetitive\"},{\"timestamp\":[14.8,20.72],\"text\":\" with those dull racing car scenes and meaningless fights that go on for hours.\"},{\"timestamp\":[20.72,23.32],\"text\":\" The mountain scenes were rather unusual.\"},{\"timestamp\":[23.32,28.34],\"text\":\" The sequencing, fascinating high-ups are the most captivating parts for me.\"},{\"timestamp\":[28.34,31.44],\"text\":\" The ending, however, was a bit sad.\"},{\"timestamp\":[31.44,33.48],\"text\":\" Many people wish it was a happy ending.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd3"`
+  - Mới: `"69705e08f5a181c9bea1fbf9"`
+- **Đề[4].questions[0].subQuestion[11].content**:
+  - Cũ: `"A customer is calling the hotline of a department store. Which number to press in order to buy a computer?"`
+  - Mới: `"What elements of the film do they agree on?"`
+- **Đề[4].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Three"`
+  - Mới: `"the ending"`
+- **Đề[4].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920749960_7284448d80c2507b_audio_de5_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920244135_6de5483b45c1db5a_audio_de4_q12.mp3"`
+- **Đề[4].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"One"`
+  - Mới: `"the soundtrack"`
+- **Đề[4].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Two"`
+  - Mới: `"the characters"`
+- **Đề[4].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Three"`
+  - Mới: `"the ending"`
+- **Đề[4].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Thank you for calling our customer service hotline. To file a complaint about a recent purchase, please press 1.\"},{\"timestamp\":[7,11],\"text\":\" For assistance with maintenance or repairs, press 2.\"},{\"timestamp\":[11,16],\"text\":\" If you'd like a free consultation on buying a new computer, press 3.\"},{\"timestamp\":[16,null],\"text\":\" For all other inquiries, please stay on the line and a representative will assist you shortly.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" I just finished watching that film we talked about. What did you think?\"},{\"timestamp\":[5,9],\"text\":\" I loved it. The ending was so satisfying.\"},{\"timestamp\":[9,15],\"text\":\" Absolutely. It wrapped everything up perfectly, but I wasn't really sold on the characters.\"},{\"timestamp\":[15,20],\"text\":\" Really? I thought the characters were great and well developed.\"},{\"timestamp\":[20,26],\"text\":\" I felt they were a bit cliche, especially the main character, but I really love the soundtrack.\"},{\"timestamp\":[27,31],\"text\":\" Honestly, I didn't like the music at all. It felt out of place.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd4"`
+  - Mới: `"69705e08f5a181c9bea1fbfa"`
+- **Đề[4].questions[0].subQuestion[12].content**:
+  - Cũ: `"How does she go to school?"`
+  - Mới: `"Why does Douglas call Kay?"`
+- **Đề[4].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"She walks"`
+  - Mới: `"to say thank you"`
+- **Đề[4].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920750591_0b14f4ed9ce2ce6c_audio_de5_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920244912_1b6606798944e110_audio_de4_q13.mp3"`
+- **Đề[4].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"She drives"`
+  - Mới: `"to ask for a favor"`
+- **Đề[4].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"She takes the bus"`
+  - Mới: `"to say thank you"`
+- **Đề[4].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"She walks"`
+  - Mới: `"to discuss ideas"`
+- **Đề[4].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.8],\"text\":\" She prefers to stay active, so instead of taking a bus or driving, she walks to school every day.\"},{\"timestamp\":[6.8,11.28],\"text\":\" It's a nice way for her to get some fresh air and clear her mind before starting the day.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,8.56],\"text\":\" Hi Kay! It's Douglas. I hope you are doing well. I wanted to call you today to say thank\"},{\"timestamp\":[8.56,14.36],\"text\":\" you for all your help with the project. Your advice was really valuable and it made a big\"},{\"timestamp\":[14.36,20.6],\"text\":\" difference. I also wanted to ask for a favour. If you have some time, I would love to meet\"},{\"timestamp\":[20.6,22.98],\"text\":\" and discuss a few ideas I have. Let me know when you are free.\"}]</p>"`
+- **Đề[4].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970e5f158cb12223e942bd5"`
+  - Mới: `"69705e08f5a181c9bea1fbfb"`
+- **Đề[4].questions[0]._id**:
+  - Cũ: `"6970e5f158cb12223e942bc8"`
+  - Mới: `"69705e08f5a181c9bea1fbee"`
+- **Đề[4].id**:
+  - Cũ: `"695653de0731243929b0c9a3"`
+  - Mới: `"695651040731243929b0c98e"`
+- **Đề[4].createdAt**:
+  - Cũ: `"2026-01-01T11:00:46.987Z"`
+  - Mới: `"2026-01-01T10:48:36.418Z"`
+- **Đề[4].updatedAt**:
+  - Cũ: `"2026-01-21T14:42:57.024Z"`
+  - Mới: `"2026-01-21T05:03:04.736Z"`
+
+### Đề số 6
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[5]._id**:
+  - Cũ: `"6956576a0731243929b0c9a9"`
+  - Mới: `"695653de0731243929b0c994"`
+- **Đề[5].title**:
+  - Cũ: `"Đề 6"`
+  - Mới: `"Đề 5"`
+- **Đề[5].questions[0].questionTitle**:
+  - Cũ: `"Đề 6"`
+  - Mới: `"Đề 5"`
+- **Đề[5].questions[0].content**:
+  - Cũ: `"Đề 6"`
+  - Mới: `"Đề 5"`
+- **Đề[5].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to the announcement. When does the train leave the station?"`
+  - Mới: `"Listen to the director talking about sales of his company. How many copies of Freeze Frame magazine were sold?"`
+- **Đề[5].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"9:15"`
+  - Mới: `"Over 300,000 copies"`
+- **Đề[5].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920916115_6d6e52744e20e078_audio_de6_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920734997_f613462a984b738a_audio_de5_q1.mp3"`
+- **Đề[5].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"9:30"`
+  - Mới: `"Over 200,000 copies"`
+- **Đề[5].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"9:00"`
+  - Mới: `"Over 300,000 copies"`
+- **Đề[5].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"9:15"`
+  - Mới: `"Over 500,000 copies"`
+- **Đề[5].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Good morning everyone. This is an important announcement about a change in the train schedule.\"},{\"timestamp\":[5,11],\"text\":\" The train to London will now leave at 915, not 930 as planned.\"},{\"timestamp\":[11,20.54],\"text\":\" Please listen carefully to this information. If you are taking this train, please go to platform 3 now. Thank you for your attention and have a good day. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.8],\"text\":\" I am excited to share the latest sales figures for our company.\"},{\"timestamp\":[4.8,10],\"text\":\" This month, we had a fantastic response to our magazine, Freeze Frame.\"},{\"timestamp\":[10,14.6],\"text\":\" I'm proud to announce that we sold over 300,000 copies.\"},{\"timestamp\":[14.6,17.2],\"text\":\" This is a big increase from last month.\"},{\"timestamp\":[17.2,21.2],\"text\":\" Many people are buying our magazine, and we are very happy.\"},{\"timestamp\":[21.2,22.02],\"text\":\" Thank you for your support. We hope to sell even more in the future.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f5"`
+  - Mới: `"6970e5f158cb12223e942bc9"`
+- **Đề[5].questions[0].subQuestion[1].content**:
+  - Cũ: `"Jana is talking to her friend. What does Jana’s sister look like?"`
+  - Mới: `"Where will they meet to take a bus to home? / Anna is calling her friend. Where will they meet?"`
+- **Đề[5].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Short"`
+  - Mới: `"At the marketplace"`
+- **Đề[5].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920916872_2e44da87756b0865_audio_de6_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920735731_ef83c5f093b2a383_audio_de5_q2.mp3"`
+- **Đề[5].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Blonde"`
+  - Mới: `"At the bus stop"`
+- **Đề[5].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Tall"`
+  - Mới: `"At the park"`
+- **Đề[5].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Short"`
+  - Mới: `"At the marketplace"`
+- **Đề[5].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.22],\"text\":\" Hey, could you do me a favor? My sister is waiting outside and I need you to give her my book.\"},{\"timestamp\":[6.84,10.54],\"text\":\" She's the one who is short and has straight hair, so you can't miss her.\"},{\"timestamp\":[10.54,16.64],\"text\":\" I also think she's wearing a blue jacket today if you see her, just hand it to her and I'll be so grateful.\"},{\"timestamp\":[17.08,19.08],\"text\":\" Thanks for helping me out.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi Nia, it's Anna, I hope you're having a great day.\"},{\"timestamp\":[5,8.6],\"text\":\" I wanted to see if we are still meeting at the marketplace later.\"},{\"timestamp\":[8.6,13],\"text\":\" I'm really excited because I want to try that new ice cream shop we talked about.\"},{\"timestamp\":[13,18],\"text\":\" I heard they have some amazing flavors. I'll be there around 3pm.\"},{\"timestamp\":[18,null],\"text\":\" Let's also check out the fresh fruits and vegetables. It's always fun to shop together. See you soon.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f6"`
+  - Mới: `"6970e5f158cb12223e942bca"`
+- **Đề[5].questions[0].subQuestion[2].content**:
+  - Cũ: `"What does her sister drink? / Linda is talking about what she likes to eat. What does she have for lunch?"`
+  - Mới: `"What did he leave at a friend’s house? / What did the man lose?"`
+- **Đề[5].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Tea"`
+  - Mới: `"Glasses"`
+- **Đề[5].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920917710_2841079c2f245c7a_audio_de6_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920736663_e251d2659ec43615_audio_de5_q3.mp3"`
+- **Đề[5].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Tea"`
+  - Mới: `"Wallet"`
+- **Đề[5].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Juice"`
+  - Mới: `"Phone"`
+- **Đề[5].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Coffee"`
+  - Mới: `"Glasses"`
+- **Đề[5].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,8],\"text\":\" When it comes to lunch, I have a simple pleasure. I really enjoy a warm cup of tea. It's my favorite drink to have while I eat.\"},{\"timestamp\":[8,null],\"text\":\" I find it calming, and it makes my meal feel special. Sometimes people ask me why I don't choose coffee or juice, but for me, tea is just perfect. It warms my heart and gives me a moment to relax.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.04],\"text\":\" I was at my friend's house the other day, and I just realized I left my glasses there.\"},{\"timestamp\":[5.04,10.64],\"text\":\" I didn't notice until later, so now I'll have to give them a call and ask if I can swing by to\"},{\"timestamp\":[10.64,11.44],\"text\":\" pick them up.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f7"`
+  - Mới: `"6970e5f158cb12223e942bcb"`
+- **Đề[5].questions[0].subQuestion[3].content**:
+  - Cũ: `"A man is calling his wife. Where do the couple meet?"`
+  - Mới: `"Listen to the conversation. Who is she taking a photo of?"`
+- **Đề[5].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"Outside a shop"`
+  - Mới: `"The girl's team"`
+- **Đề[5].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920918911_721f408afe586203_audio_de6_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920737334_c3d37ec315535404_audio_de5_q4.mp3"`
+- **Đề[5].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"At the restaurant"`
+  - Mới: `"The girl's team"`
+- **Đề[5].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"At the station"`
+  - Mới: `"The boys' team"`
+- **Đề[5].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"Outside a shop"`
+  - Mới: `"The coaches"`
+- **Đề[5].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi honey, it's me, just a reminder that the train leaves at 5 so you should arrive around 6 o'clock.\"},{\"timestamp\":[7,10],\"text\":\" I'll be there to pick you up at the train station.\"},{\"timestamp\":[10,15],\"text\":\" Let's meet outside the shop opposite the station. I can't wait to have dinner together.\"},{\"timestamp\":[15,17],\"text\":\" See you soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" I'm just about to take a photo of the girls team now.\"},{\"timestamp\":[4,8],\"text\":\" They're all lined up and ready, smiling for the camera.\"},{\"timestamp\":[8,13],\"text\":\" I've already taken pictures of the boys earlier, so it's their turn.\"},{\"timestamp\":[13,16],\"text\":\" The coaches will have their photo taken after this.\"},{\"timestamp\":[16,21.73],\"text\":\" The girls are excited because this picture will be in the school magazine. Alright everyone say cheese!\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f8"`
+  - Mới: `"6970e5f158cb12223e942bcc"`
+- **Đề[5].questions[0].subQuestion[4].content**:
+  - Cũ: `"A man is talking about his eating habit. What time does he usually eat?"`
+  - Mới: `"Listen to David talking about the conference. How long did he talk in the speech?"`
+- **Đề[5].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"7 o'clock"`
+  - Mới: `"15 minutes"`
+- **Đề[5].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920920018_2dfc678a551b8ec5_audio_de6_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920737894_f9264ae912c8673c_audio_de5_q5.mp3"`
+- **Đề[5].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"8 o'clock"`
+  - Mới: `"10 minutes"`
+- **Đề[5].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"7 o'clock"`
+  - Mới: `"15 minutes"`
+- **Đề[5].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"5 o'clock"`
+  - Mới: `"20 minutes"`
+- **Đề[5].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" I usually have dinner every evening. It's become a habit for me to enjoy a meal at that time after a long day.\"},{\"timestamp\":[7,14],\"text\":\" I find it's the perfect time to unwind and relax. Plus, I love to spend time with my family during dinner.\"},{\"timestamp\":[14,18],\"text\":\" It's our chance to catch up and enjoy some good food together.\"},{\"timestamp\":[18,null],\"text\":\" We usually have dinner at 7 o'clock and it is definitely my favorite meal of the day.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,2],\"text\":\" Hello everyone.\"},{\"timestamp\":[2,7],\"text\":\" Today, I want to tell you about the conference that took place last week.\"},{\"timestamp\":[7,10],\"text\":\" It was very interesting and many people attended.\"},{\"timestamp\":[10,13],\"text\":\" I spoke about new ideas in business.\"},{\"timestamp\":[13,17],\"text\":\" My presentation wasn't very long, but I had a lot to say.\"},{\"timestamp\":[17,21],\"text\":\" The other speakers talked about technology and education.\"},{\"timestamp\":[21,24],\"text\":\" After the talks, there were some questions from the audience.\"},{\"timestamp\":[24,25.68],\"text\":\" My speech\"},{\"timestamp\":[25.68,31],\"text\":\" lasted about 15 minutes shorter than expected. However, the audience was very\"},{\"timestamp\":[31,35.12],\"text\":\" attentive and I was happy to see that.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f9"`
+  - Mới: `"6970e5f158cb12223e942bcd"`
+- **Đề[5].questions[0].subQuestion[5].content**:
+  - Cũ: `"A professor is talking to his student. What does the professor ask his student to do?"`
+  - Mới: `"A woman is talking about her family’s weekend. What does the family do most weekends?"`
+- **Đề[5].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Speak at the conference"`
+  - Mới: `"Go for a walk"`
+- **Đề[5].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920921313_783974b0fec68fea_audio_de6_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920738593_55053ddb44819206_audio_de5_q6.mp3"`
+- **Đề[5].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Submit a report"`
+  - Mới: `"Go for a walk"`
+- **Đề[5].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Speak at the conference"`
+  - Mới: `"Go to the beach"`
+- **Đề[5].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Write an essay"`
+  - Mới: `"Visit relatives"`
+- **Đề[5].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Good morning, Alex. I've just finished reading your thesis and I must say it's very well done.\"},{\"timestamp\":[6,8],\"text\":\" You've put a lot of effort into it.\"},{\"timestamp\":[8,12],\"text\":\" Thank you, Professor. I'm glad you liked it. I worked hard on it.\"},{\"timestamp\":[12,16],\"text\":\" Your research is good and your arguments are clear.\"},{\"timestamp\":[16,20],\"text\":\" I actually think you should consider presenting it at the upcoming student conference.\"},{\"timestamp\":[20,23],\"text\":\" Wow, really? That sounds exciting.\"},{\"timestamp\":[23,27],\"text\":\" But I'm not sure how that works. Could you tell me more about it?\"},{\"timestamp\":[27,33],\"text\":\" Of course. The conference is a great opportunity to share your findings with a wider audience.\"},{\"timestamp\":[33,40],\"text\":\" You would prepare a short presentation around 10 to 15 minutes, and then answer some questions from the audience.\"},{\"timestamp\":[40,46.94],\"text\":\" It's a good way to get feedback and gain experience speaking publicly. That sounds interesting. I will check it out. Thank you so much.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.14],\"text\":\" Hello everyone. I want to share what my family usually does on weekends. We love\"},{\"timestamp\":[6.14,10.44],\"text\":\" spending time together and often go for a walk in the park. It's a nice way\"},{\"timestamp\":[10.44,14.88],\"text\":\" to relax and enjoy nature. We like to see the flowers and sometimes have a\"},{\"timestamp\":[14.88,20.16],\"text\":\" picnic. However, this weekend is different. My sister is visiting us and we have\"},{\"timestamp\":[20.16,26.88],\"text\":\" planned a small family gathering at home. We will cook a big meal together and play some games.\"},{\"timestamp\":[26.88,29.94],\"text\":\" It will be fun to catch up and spend quality time as a family.\"},{\"timestamp\":[29.94,31.38],\"text\":\" I'm really looking forward to it.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970e87a58cb12223e9438fa"`
+  - Mới: `"6970e5f158cb12223e942bce"`
+- **Đề[5].questions[0].subQuestion[6].content**:
+  - Cũ: `"A man and a woman are talking about their old school days. What was the man's favorite thing about school?"`
+  - Mới: `"A girl is calling her mother. Which dress does she want?"`
+- **Đề[5].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"History classes"`
+  - Mới: `"Long and red"`
+- **Đề[5].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920923219_82ffc8661b5a8be1_audio_de6_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920739596_5cbc41804a0b2d85_audio_de5_q7.mp3"`
+- **Đề[5].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Math classes"`
+  - Mới: `"Short and blue"`
+- **Đề[5].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"History classes"`
+  - Mới: `"Long and white"`
+- **Đề[5].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"Sports"`
+  - Mới: `"Long and red"`
+- **Đề[5].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" What do you remember most about our school days?\"},{\"timestamp\":[4.5,7],\"text\":\" Honestly, I don't remember much.\"},{\"timestamp\":[7,9.1],\"text\":\" I remember that I was terrible at math.\"},{\"timestamp\":[9.1,10.9],\"text\":\" It was my worst subject.\"},{\"timestamp\":[10.9,14.5],\"text\":\" Also, I remember that you were really good at history.\"},{\"timestamp\":[14.5,15.7],\"text\":\" That's right.\"},{\"timestamp\":[15.7,17.3],\"text\":\" I loved history.\"},{\"timestamp\":[17.3,20.1],\"text\":\" Actually, those classes were the ones I remember the most.\"},{\"timestamp\":[20.1,null],\"text\":\" All those stories and events were so fascinating.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.52],\"text\":\" I want to tell you about something special I just bought.\"},{\"timestamp\":[3.52,5.12],\"text\":\" It's a beautiful dress.\"},{\"timestamp\":[5.12,8.32],\"text\":\" The dress is long and red, just like a sunset.\"},{\"timestamp\":[8.32,10.64],\"text\":\" I feel so happy when I wear it.\"},{\"timestamp\":[10.64,13.52],\"text\":\" The fabric is soft and it flows nicely when I walk.\"},{\"timestamp\":[13.52,15.76],\"text\":\" I can wear it to a party or a nice dinner.\"},{\"timestamp\":[15.76,16.96],\"text\":\" I love my new dress.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970e87a58cb12223e9438fb"`
+  - Mới: `"6970e5f158cb12223e942bcf"`
+- **Đề[5].questions[0].subQuestion[7].content**:
+  - Cũ: `"Where did she go for the holiday? / Listen to the woman talking about her holiday plans. Where is she going next?"`
+  - Mới: `"Soobin is talking about his favorite room. What is Soobin's favorite room?"`
+- **Đề[5].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"The south"`
+  - Mới: `"Bathroom"`
+- **Đề[5].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920924704_9214b9a821eb5f83_audio_de6_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920744243_643d3d9b5d4871fe_audio_de5_q8.mp3"`
+- **Đề[5].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"The east"`
+  - Mới: `"Kitchen"`
+- **Đề[5].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"The north"`
+  - Mới: `"Living room"`
+- **Đề[5].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"The south"`
+  - Mới: `"Bathroom"`
+- **Đề[5].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" I can't wait for my next holiday. This time I'm heading to the south where the mountains are.\"},{\"timestamp\":[7,14],\"text\":\" I've never been there before, but I've heard it's beautiful. I'm looking forward to hacking and seeing the snow covered beaks.\"},{\"timestamp\":[14,19],\"text\":\" It's going to be an ice change from the city. Hopefully the weather will be perfect.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" You know, when I think about my favorite room in the house, it's kind of hard to choose.\"},{\"timestamp\":[6,10.56],\"text\":\" I mean, I really enjoy the kitchen since I love cooking, and the living room is great\"},{\"timestamp\":[10.56,12.96],\"text\":\" for hanging out with friends.\"},{\"timestamp\":[12.96,16.88],\"text\":\" But honestly, I have to say the bathroom is my favorite.\"},{\"timestamp\":[16.88,null],\"text\":\" It might sound strange, but it's the one place where I can truly relax.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970e87a58cb12223e9438fc"`
+  - Mới: `"6970e5f158cb12223e942bd0"`
+- **Đề[5].questions[0].subQuestion[8].content**:
+  - Cũ: `"Listen to a radio man talking about a new popular song. Which is the most attractive part of the song?"`
+  - Mới: `"A woman is talking about her weekends. What did she do last week?"`
+- **Đề[5].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"The words"`
+  - Mới: `"Stayed at home"`
+- **Đề[5].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920925696_61496e5c66aff26a_audio_de6_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920745371_873676e54682ecb5_audio_de5_q9.mp3"`
+- **Đề[5].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"The melody"`
+  - Mới: `"Went out with friends"`
+- **Đề[5].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"The rhythm"`
+  - Mới: `"Stayed at home"`
+- **Đề[5].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"The words"`
+  - Mới: `"Visited a café"`
+- **Đề[5].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good evening listeners.\"},{\"timestamp\":[4,8],\"text\":\" Today, I want to talk about a new song that's quickly becoming popular.\"},{\"timestamp\":[8,14],\"text\":\" You're my everything. The tune is really catchy, and it makes you want to dance right away.\"},{\"timestamp\":[14,18],\"text\":\" The instruments used are simple, but create a great rhythm.\"},{\"timestamp\":[18,21],\"text\":\" However, the most attractive part of all is the words.\"},{\"timestamp\":[21,24],\"text\":\" The lyrics tell a beautiful story that everyone can relate to.\"},{\"timestamp\":[24,30],\"text\":\" It's no wonder so many people are loving this song. If you haven't heard it yet, make\"},{\"timestamp\":[30,33.08],\"text\":\" sure to give it a listen soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" My weekends are not always the same. This week has been busy, but I always look forward to my free time.\"},{\"timestamp\":[7,12],\"text\":\" Last weekend, I stayed at home and enjoyed some quiet moments with a good book.\"},{\"timestamp\":[12,16],\"text\":\" I also watched a few movies and cooked a nice dinner for myself.\"},{\"timestamp\":[16,19],\"text\":\" This weekend, I plan to go out with friends.\"},{\"timestamp\":[19,26.01],\"text\":\" We might visit a new cafe or go for a walk in the park. I love spending time with my friends and relaxing after a busy week.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970e87a58cb12223e9438fd"`
+  - Mới: `"6970e5f158cb12223e942bd1"`
+- **Đề[5].questions[0].subQuestion[9].content**:
+  - Cũ: `"A man is talking about the environment of the countryside. What is the main cause of poor air quality?"`
+  - Mới: `"Listen to a saleswoman talking about a property. Which room is the largest?"`
+- **Đề[5].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Fires from the countryside"`
+  - Mới: `"Kitchen"`
+- **Đề[5].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920926436_5a05657b520e7e07_audio_de6_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920746711_6acc2f2cbc54e0cd_audio_de5_q10.mp3"`
+- **Đề[5].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Factories"`
+  - Mới: `"Living room"`
+- **Đề[5].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Cars"`
+  - Mới: `"Bedroom"`
+- **Đề[5].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Fires from the countryside"`
+  - Mới: `"Kitchen"`
+- **Đề[5].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.08],\"text\":\" I really like living in the countryside.\"},{\"timestamp\":[3.08,6.84],\"text\":\" There are many green fields, tall trees and small rivers.\"},{\"timestamp\":[6.84,12.04],\"text\":\" The air usually smells fresh and clean, but sometimes the air becomes dirty and hard to\"},{\"timestamp\":[12.04,13.12],\"text\":\" breathe.\"},{\"timestamp\":[13.12,16.64],\"text\":\" Many people think cars on the roads make the air bad.\"},{\"timestamp\":[16.64,20.48],\"text\":\" Others say the smoke from big factories is the problem.\"},{\"timestamp\":[20.48,24.96],\"text\":\" These things can make the air dirty, but in the countryside there's a bigger issue.\"},{\"timestamp\":[24.96,27.58],\"text\":\" Farmers often start fires to clean their fields.\"},{\"timestamp\":[27.58,29.68],\"text\":\" They burn old plants and grass.\"},{\"timestamp\":[29.68,33.04],\"text\":\" These fires make a lot of smoke that goes into the air.\"},{\"timestamp\":[33.04,null],\"text\":\" It's sad because the smoke can hurt animals and make people sick. We need to find better ways to clean fields without using fire.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.48],\"text\":\" Hello and welcome. Let me tell you about this lovely property. It has two spacious bedrooms,\"},{\"timestamp\":[6.48,15],\"text\":\" both with big windows that lead in lots of natural light. The bathroom is modern, with a large shower, and plenty of storage space.\"},{\"timestamp\":[15,19],\"text\":\" The living room is cozy, perfect for relaxing after a long day.\"},{\"timestamp\":[19,24.38],\"text\":\" But the kitchen is the star of the house. It's the largest room with lots of counter space for cooking\"},{\"timestamp\":[24.38,27.58],\"text\":\" and it's great for hosting dinners. You'll love it here!\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970e87a58cb12223e9438fe"`
+  - Mới: `"6970e5f158cb12223e942bd2"`
+- **Đề[5].questions[0].subQuestion[10].content**:
+  - Cũ: `"A person calls a friend about his new car. What is the price of the small car?"`
+  - Mới: `"Two friends are talking about their trip. What will the weather be like?"`
+- **Đề[5].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"3,250 pounds"`
+  - Mới: `"Cold and wet"`
+- **Đề[5].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920927116_3db8f005cfbfede3_audio_de6_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920748820_def625d8506263df_audio_de5_q11.mp3"`
+- **Đề[5].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"3,250 pounds"`
+  - Mới: `"Cold and wet"`
+- **Đề[5].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"3,550 pounds"`
+  - Mới: `"Hot and sunny"`
+- **Đề[5].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"3,000 pounds"`
+  - Mới: `"Mild and dry"`
+- **Đề[5].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hey, I just wanted to tell you about my new car. It's a small one. Perfect for my needs.\"},{\"timestamp\":[6,11],\"text\":\" I got it for a great price, only 3,250 pounds. Can you believe it?\"},{\"timestamp\":[11,null],\"text\":\" I was looking at bigger models too, but they were way more expensive, around 3,550 pounds, or even 4,250 pounds. I'm really happy with my choice.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" Hey Sarah, are you excited about our trip next week?\"},{\"timestamp\":[4.5,9],\"text\":\" Hi Mike, yes, I can't wait. I've been looking forward to it for a long time.\"},{\"timestamp\":[9,15],\"text\":\" Me too. But I heard the weather is gonna be cold and wet. We should prepare for that.\"},{\"timestamp\":[15,21],\"text\":\" Oh no, I hope it doesn't rain too much. We need to pack our rain jackets and warm clothes.\"},{\"timestamp\":[21,24],\"text\":\" Definitely. I'll also bring an umbrella just in case.\"},{\"timestamp\":[24,28],\"text\":\" Good idea. Let's plan some fun indoor activities if the weather is bad.\"},{\"timestamp\":[28,34],\"text\":\" Yes, we can visit museums or try some local food. It will still be a great trip.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970e87a58cb12223e9438ff"`
+  - Mới: `"6970e5f158cb12223e942bd3"`
+- **Đề[5].questions[0].subQuestion[11].content**:
+  - Cũ: `"Which room will they study in? / Where will the first lesson of computer science take place?"`
+  - Mới: `"A customer is calling the hotline of a department store. Which number to press in order to buy a computer?"`
+- **Đề[5].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Room 301"`
+  - Mới: `"Three"`
+- **Đề[5].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920927767_35b93e5a54269b5f_audio_de6_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920749960_7284448d80c2507b_audio_de5_q12.mp3"`
+- **Đề[5].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Room 301"`
+  - Mới: `"One"`
+- **Đề[5].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Room 101"`
+  - Mới: `"Two"`
+- **Đề[5].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Room 203"`
+  - Mới: `"Three"`
+- **Đề[5].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.76],\"text\":\" They've decided to meet up for their study session, and room 301 is where they'll study.\"},{\"timestamp\":[4.76,9.52],\"text\":\" It's a quiet space with plenty of desks, so it's perfect for focusing and getting some work done.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Thank you for calling our customer service hotline. To file a complaint about a recent purchase, please press 1.\"},{\"timestamp\":[7,11],\"text\":\" For assistance with maintenance or repairs, press 2.\"},{\"timestamp\":[11,16],\"text\":\" If you'd like a free consultation on buying a new computer, press 3.\"},{\"timestamp\":[16,null],\"text\":\" For all other inquiries, please stay on the line and a representative will assist you shortly.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970e87a58cb12223e943900"`
+  - Mới: `"6970e5f158cb12223e942bd4"`
+- **Đề[5].questions[0].subQuestion[12].content**:
+  - Cũ: `"Stephanie is looking for a job taking care of children. How old is she?"`
+  - Mới: `"How does she go to school?"`
+- **Đề[5].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"21"`
+  - Mới: `"She walks"`
+- **Đề[5].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920928529_5b0f187629c8226b_audio_de6_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920750591_0b14f4ed9ce2ce6c_audio_de5_q13.mp3"`
+- **Đề[5].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"21"`
+  - Mới: `"She drives"`
+- **Đề[5].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"25"`
+  - Mới: `"She takes the bus"`
+- **Đề[5].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"30"`
+  - Mới: `"She walks"`
+- **Đề[5].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.72],\"text\":\" Stephanie is eager to start a career and is looking for a job-taking care of children.\"},{\"timestamp\":[4.72,10.16],\"text\":\" She's 21 years old, and believes this is the perfect age to begin working in child care and\"},{\"timestamp\":[10.16,11.48],\"text\":\" gaining experience.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.8],\"text\":\" She prefers to stay active, so instead of taking a bus or driving, she walks to school every day.\"},{\"timestamp\":[6.8,11.28],\"text\":\" It's a nice way for her to get some fresh air and clear her mind before starting the day.\"}]</p>"`
+- **Đề[5].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970e87a58cb12223e943901"`
+  - Mới: `"6970e5f158cb12223e942bd5"`
+- **Đề[5].questions[0]._id**:
+  - Cũ: `"6970e87a58cb12223e9438f4"`
+  - Mới: `"6970e5f158cb12223e942bc8"`
+- **Đề[5].id**:
+  - Cũ: `"6956576a0731243929b0c9b8"`
+  - Mới: `"695653de0731243929b0c9a3"`
+- **Đề[5].createdAt**:
+  - Cũ: `"2026-01-01T11:15:54.321Z"`
+  - Mới: `"2026-01-01T11:00:46.987Z"`
+- **Đề[5].updatedAt**:
+  - Cũ: `"2026-01-21T14:53:46.257Z"`
+  - Mới: `"2026-01-21T14:42:57.024Z"`
+
+### Đề số 7
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[6]._id**:
+  - Cũ: `"69565b1c0731243929b0c9be"`
+  - Mới: `"6956576a0731243929b0c9a9"`
+- **Đề[6].title**:
+  - Cũ: `"Đề 7"`
+  - Mới: `"Đề 6"`
+- **Đề[6].questions[0].questionTitle**:
+  - Cũ: `"Đề 7"`
+  - Mới: `"Đề 6"`
+- **Đề[6].questions[0].content**:
+  - Cũ: `"Đề 7"`
+  - Mới: `"Đề 6"`
+- **Đề[6].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to a voice message. How does Evan feel?"`
+  - Mới: `"Listen to the announcement. When does the train leave the station?"`
+- **Đề[6].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Sick"`
+  - Mới: `"9:15"`
+- **Đề[6].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921093756_9871c3d3f7cb9b54_audio_de7_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920916115_6d6e52744e20e078_audio_de6_q1.mp3"`
+- **Đề[6].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Happy"`
+  - Mới: `"9:30"`
+- **Đề[6].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Tired"`
+  - Mới: `"9:00"`
+- **Đề[6].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Sick"`
+  - Mới: `"9:15"`
+- **Đề[6].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Evan. This is Mom. I just wanted to leave you a message to check on you.\"},{\"timestamp\":[6,9],\"text\":\" I heard you're not feeling well and I'm really worried about you.\"},{\"timestamp\":[9,14],\"text\":\" Make sure you're resting and drinking plenty of fluids. Do you need anything?\"},{\"timestamp\":[14,null],\"text\":\" I can bring you some soup or your favorite snacks. Please take care of yourself. I love you and hope you feel better soon. Call me back when you can.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Good morning everyone. This is an important announcement about a change in the train schedule.\"},{\"timestamp\":[5,11],\"text\":\" The train to London will now leave at 915, not 930 as planned.\"},{\"timestamp\":[11,20.54],\"text\":\" Please listen carefully to this information. If you are taking this train, please go to platform 3 now. Thank you for your attention and have a good day. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c19"`
+  - Mới: `"6970e87a58cb12223e9438f5"`
+- **Đề[6].questions[0].subQuestion[1].content**:
+  - Cũ: `"The train was delayed. What time does the train leave? / Listen to a man talking about their train journey. What time did the train depart?"`
+  - Mới: `"Jana is talking to her friend. What does Jana’s sister look like?"`
+- **Đề[6].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"9:30"`
+  - Mới: `"Short"`
+- **Đề[6].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921094436_f7903b555ab5a7e2_audio_de7_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920916872_2e44da87756b0865_audio_de6_q2.mp3"`
+- **Đề[6].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"9:00"`
+  - Mới: `"Blonde"`
+- **Đề[6].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"9:15"`
+  - Mới: `"Tall"`
+- **Đề[6].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"9:30"`
+  - Mới: `"Short"`
+- **Đề[6].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" This morning was rough at the station.\"},{\"timestamp\":[4,8],\"text\":\" I thought the train would leave around 9 o'clock, but I heard it would be delayed.\"},{\"timestamp\":[8,14],\"text\":\" It finally departed at 9.30, though some people said it might be even later.\"},{\"timestamp\":[14,21.01],\"text\":\" Usually, if it's delayed, it could leave as late as 10 o'clock. I'm glad it didn't take that long today. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.22],\"text\":\" Hey, could you do me a favor? My sister is waiting outside and I need you to give her my book.\"},{\"timestamp\":[6.84,10.54],\"text\":\" She's the one who is short and has straight hair, so you can't miss her.\"},{\"timestamp\":[10.54,16.64],\"text\":\" I also think she's wearing a blue jacket today if you see her, just hand it to her and I'll be so grateful.\"},{\"timestamp\":[17.08,19.08],\"text\":\" Thanks for helping me out.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1a"`
+  - Mới: `"6970e87a58cb12223e9438f6"`
+- **Đề[6].questions[0].subQuestion[2].content**:
+  - Cũ: `"A man and woman are discussing their plans for the evening. What do the man and woman decide to do in the evening?"`
+  - Mới: `"What does her sister drink? / Linda is talking about what she likes to eat. What does she have for lunch?"`
+- **Đề[6].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Make plans later"`
+  - Mới: `"Tea"`
+- **Đề[6].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921095532_4e95ecb55ab0b0c1_audio_de7_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920917710_2841079c2f245c7a_audio_de6_q3.mp3"`
+- **Đề[6].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Go to the movies"`
+  - Mới: `"Tea"`
+- **Đề[6].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Make plans later"`
+  - Mới: `"Juice"`
+- **Đề[6].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Stay at home"`
+  - Mới: `"Coffee"`
+- **Đề[6].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" I'm thinking about what to do this evening. I could go to the movies, but I'm not sure if that's the best idea.\"},{\"timestamp\":[7,13],\"text\":\" I might prefer to stay at home and relax. However, I want to discuss this with my friend first.\"},{\"timestamp\":[13,null],\"text\":\" It might be better to plan when we can decide together. I believe keeping our options open is a good idea. So for now, I'll wait and see what we want to do.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,8],\"text\":\" When it comes to lunch, I have a simple pleasure. I really enjoy a warm cup of tea. It's my favorite drink to have while I eat.\"},{\"timestamp\":[8,null],\"text\":\" I find it calming, and it makes my meal feel special. Sometimes people ask me why I don't choose coffee or juice, but for me, tea is just perfect. It warms my heart and gives me a moment to relax.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1b"`
+  - Mới: `"6970e87a58cb12223e9438f7"`
+- **Đề[6].questions[0].subQuestion[3].content**:
+  - Cũ: `"A woman is talking about her holiday plan. Where is she going on holidays?"`
+  - Mới: `"A man is calling his wife. Where do the couple meet?"`
+- **Đề[6].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"The mountains"`
+  - Mới: `"Outside a shop"`
+- **Đề[6].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921096550_f4746a6f7dacef9b_audio_de7_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920918911_721f408afe586203_audio_de6_q4.mp3"`
+- **Đề[6].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"The beach"`
+  - Mới: `"At the restaurant"`
+- **Đề[6].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"The mountains"`
+  - Mới: `"At the station"`
+- **Đề[6].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"The city"`
+  - Mới: `"Outside a shop"`
+- **Đề[6].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I'm so excited about my upcoming holiday. I've been thinking about where to go for a long time.\"},{\"timestamp\":[6,12],\"text\":\" Some of my friends suggested going to a nice beach. Others talked about exploring interesting caves,\"},{\"timestamp\":[12,19],\"text\":\" but I've made up my mind. I'm going to the mountains. The mountains are so beautiful with their green forests.\"},{\"timestamp\":[19,21.31],\"text\":\" I can't wait to breed the fresh air up there. They are perfect for relaxing and enjoying nature.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi honey, it's me, just a reminder that the train leaves at 5 so you should arrive around 6 o'clock.\"},{\"timestamp\":[7,10],\"text\":\" I'll be there to pick you up at the train station.\"},{\"timestamp\":[10,15],\"text\":\" Let's meet outside the shop opposite the station. I can't wait to have dinner together.\"},{\"timestamp\":[15,17],\"text\":\" See you soon.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1c"`
+  - Mới: `"6970e87a58cb12223e9438f8"`
+- **Đề[6].questions[0].subQuestion[4].content**:
+  - Cũ: `"A tour guide is talking about the group's traveling schedule. Where will the group wait for the bus?"`
+  - Mới: `"A man is talking about his eating habit. What time does he usually eat?"`
+- **Đề[6].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"By the hotel's main entrance"`
+  - Mới: `"7 o'clock"`
+- **Đề[6].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921097340_842223d42cffafe9_audio_de7_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920920018_2dfc678a551b8ec5_audio_de6_q5.mp3"`
+- **Đề[6].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"By the hotel's main entrance"`
+  - Mới: `"8 o'clock"`
+- **Đề[6].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"In the lobby"`
+  - Mới: `"7 o'clock"`
+- **Đề[6].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"At the train station"`
+  - Mới: `"5 o'clock"`
+- **Đề[6].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good morning everyone, let me walk you through today's schedule.\"},{\"timestamp\":[4,12],\"text\":\" First, we'll start the day at 9 a.m. with a visit to the City Museum, where you'll have about 2 hours to explore the exhibits.\"},{\"timestamp\":[12,19],\"text\":\" After that, at 12.30 p.m. we'll head to the Central Park for a picnic lunch and a relaxing stroll.\"},{\"timestamp\":[19,27],\"text\":\" Around 3 p.m. we'll make our way to the Old Town Market, where you can shop for souvenirs and enjoy some local treats.\"},{\"timestamp\":[27,33],\"text\":\" We'll wrap up our activities by 6pm, giving you a little free time back at the hotel.\"},{\"timestamp\":[33,null],\"text\":\" Finally, at 8pm, we'll meet at the hotel's main entrance to catch the bus to the airport. Make sure to be on time and we'll head to the airport together.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" I usually have dinner every evening. It's become a habit for me to enjoy a meal at that time after a long day.\"},{\"timestamp\":[7,14],\"text\":\" I find it's the perfect time to unwind and relax. Plus, I love to spend time with my family during dinner.\"},{\"timestamp\":[14,18],\"text\":\" It's our chance to catch up and enjoy some good food together.\"},{\"timestamp\":[18,null],\"text\":\" We usually have dinner at 7 o'clock and it is definitely my favorite meal of the day.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1d"`
+  - Mới: `"6970e87a58cb12223e9438f9"`
+- **Đề[6].questions[0].subQuestion[5].content**:
+  - Cũ: `"Listen to a tour guide introducing the tour. Where will tea be served?"`
+  - Mới: `"A professor is talking to his student. What does the professor ask his student to do?"`
+- **Đề[6].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"The river boat"`
+  - Mới: `"Speak at the conference"`
+- **Đề[6].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921097895_c2c6c3e8362f3192_audio_de7_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920921313_783974b0fec68fea_audio_de6_q6.mp3"`
+- **Đề[6].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"In the park"`
+  - Mới: `"Submit a report"`
+- **Đề[6].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"The hotel"`
+  - Mới: `"Speak at the conference"`
+- **Đề[6].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"The river boat"`
+  - Mới: `"Write an essay"`
+- **Đề[6].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7.4],\"text\":\" Welcome to our scenic tour. I'm excited to show you this beautiful area. We'll start with a\"},{\"timestamp\":[7.4,13.24],\"text\":\" drive along the coast to enjoy the amazing ocean views. Then, we'll go up to the mountain\"},{\"timestamp\":[13.24,18.72],\"text\":\" looking for some breathtaking views. After that, we'll head down to the harbour and take\"},{\"timestamp\":[18.72,26],\"text\":\" a relaxing riverboat cruise. While on the boat, you can enjoy afternoon tea and see the charming riverside scenery.\"},{\"timestamp\":[26,30],\"text\":\" After the boat trip, we'll end the day with a walk on the beach.\"},{\"timestamp\":[30,36],\"text\":\" Don't forget your camera, there will be lots of chances for great photos.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Good morning, Alex. I've just finished reading your thesis and I must say it's very well done.\"},{\"timestamp\":[6,8],\"text\":\" You've put a lot of effort into it.\"},{\"timestamp\":[8,12],\"text\":\" Thank you, Professor. I'm glad you liked it. I worked hard on it.\"},{\"timestamp\":[12,16],\"text\":\" Your research is good and your arguments are clear.\"},{\"timestamp\":[16,20],\"text\":\" I actually think you should consider presenting it at the upcoming student conference.\"},{\"timestamp\":[20,23],\"text\":\" Wow, really? That sounds exciting.\"},{\"timestamp\":[23,27],\"text\":\" But I'm not sure how that works. Could you tell me more about it?\"},{\"timestamp\":[27,33],\"text\":\" Of course. The conference is a great opportunity to share your findings with a wider audience.\"},{\"timestamp\":[33,40],\"text\":\" You would prepare a short presentation around 10 to 15 minutes, and then answer some questions from the audience.\"},{\"timestamp\":[40,46.94],\"text\":\" It's a good way to get feedback and gain experience speaking publicly. That sounds interesting. I will check it out. Thank you so much.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1e"`
+  - Mới: `"6970e87a58cb12223e9438fa"`
+- **Đề[6].questions[0].subQuestion[6].content**:
+  - Cũ: `"A man is talking about the city concert. How will the concert end?"`
+  - Mới: `"A man and a woman are talking about their old school days. What was the man's favorite thing about school?"`
+- **Đề[6].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"With the city's favorite group"`
+  - Mới: `"History classes"`
+- **Đề[6].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921098925_293a15a85ae3cad2_audio_de7_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920923219_82ffc8661b5a8be1_audio_de6_q7.mp3"`
+- **Đề[6].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"With a fireworks display"`
+  - Mới: `"Math classes"`
+- **Đề[6].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"With a famous singer"`
+  - Mới: `"History classes"`
+- **Đề[6].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"With the city's favorite group"`
+  - Mới: `"Sports"`
+- **Đề[6].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I can't wait for the concert this weekend. It's gonna be such an exciting event.\"},{\"timestamp\":[6,11],\"text\":\" The highlight ending will be the city's favourite group performing on stage.\"},{\"timestamp\":[11,17],\"text\":\" I've heard they have some amazing songs planned. There will also be a fireworks performance to celebrate before that.\"},{\"timestamp\":[17,null],\"text\":\" And I'm sure the orchestra will do some singing as well. It's gonna be a night to remember.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" What do you remember most about our school days?\"},{\"timestamp\":[4.5,7],\"text\":\" Honestly, I don't remember much.\"},{\"timestamp\":[7,9.1],\"text\":\" I remember that I was terrible at math.\"},{\"timestamp\":[9.1,10.9],\"text\":\" It was my worst subject.\"},{\"timestamp\":[10.9,14.5],\"text\":\" Also, I remember that you were really good at history.\"},{\"timestamp\":[14.5,15.7],\"text\":\" That's right.\"},{\"timestamp\":[15.7,17.3],\"text\":\" I loved history.\"},{\"timestamp\":[17.3,20.1],\"text\":\" Actually, those classes were the ones I remember the most.\"},{\"timestamp\":[20.1,null],\"text\":\" All those stories and events were so fascinating.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c1f"`
+  - Mới: `"6970e87a58cb12223e9438fb"`
+- **Đề[6].questions[0].subQuestion[7].content**:
+  - Cũ: `"What is the phone number of the store? (0080...) / A man calls the teleshop. What is the teleshop number?"`
+  - Mới: `"Where did she go for the holiday? / Listen to the woman talking about her holiday plans. Where is she going next?"`
+- **Đề[6].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"201030"`
+  - Mới: `"The south"`
+- **Đề[6].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921100456_ebd4b0ebeb3cb7b8_audio_de7_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920924704_9214b9a821eb5f83_audio_de6_q8.mp3"`
+- **Đề[6].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"201030"`
+  - Mới: `"The east"`
+- **Đề[6].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"102030"`
+  - Mới: `"The north"`
+- **Đề[6].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"301020"`
+  - Mới: `"The south"`
+- **Đề[6].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hello, I need to call the teleshop for some information.\"},{\"timestamp\":[4,7],\"text\":\" My phone is not working. Can you remind me of the number?\"},{\"timestamp\":[7,16],\"text\":\" I think it starts with 2, 0, or 1, 0, or 3, 0, something. Is it 1, 0, 2, 0, 3, 0, 1, 0, 2, 0?\"},{\"timestamp\":[16,null],\"text\":\" No, wait, I remember now. It's 2, 0, 1, 0, 3, 0. I really need to order that new gadget. Thanks for your help.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" I can't wait for my next holiday. This time I'm heading to the south where the mountains are.\"},{\"timestamp\":[7,14],\"text\":\" I've never been there before, but I've heard it's beautiful. I'm looking forward to hacking and seeing the snow covered beaks.\"},{\"timestamp\":[14,19],\"text\":\" It's going to be an ice change from the city. Hopefully the weather will be perfect.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c20"`
+  - Mới: `"6970e87a58cb12223e9438fc"`
+- **Đề[6].questions[0].subQuestion[8].content**:
+  - Cũ: `"Alice is calling her friend. What did she lose?"`
+  - Mới: `"Listen to a radio man talking about a new popular song. Which is the most attractive part of the song?"`
+- **Đề[6].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Phone"`
+  - Mới: `"The words"`
+- **Đề[6].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921101257_f457c14355616b59_audio_de7_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920925696_61496e5c66aff26a_audio_de6_q9.mp3"`
+- **Đề[6].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Book"`
+  - Mới: `"The melody"`
+- **Đề[6].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Phone"`
+  - Mới: `"The rhythm"`
+- **Đề[6].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Laptop"`
+  - Mới: `"The words"`
+- **Đề[6].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" Hey, it's Alice. I think I might have left something at your house. I had my book with me. It's in my backpack.\"},{\"timestamp\":[6.52,11],\"text\":\" My laptop's here too, but I can't find my phone anywhere.\"},{\"timestamp\":[11,16],\"text\":\" Did you happen to see it after I left? I think I might have left it on the table.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good evening listeners.\"},{\"timestamp\":[4,8],\"text\":\" Today, I want to talk about a new song that's quickly becoming popular.\"},{\"timestamp\":[8,14],\"text\":\" You're my everything. The tune is really catchy, and it makes you want to dance right away.\"},{\"timestamp\":[14,18],\"text\":\" The instruments used are simple, but create a great rhythm.\"},{\"timestamp\":[18,21],\"text\":\" However, the most attractive part of all is the words.\"},{\"timestamp\":[21,24],\"text\":\" The lyrics tell a beautiful story that everyone can relate to.\"},{\"timestamp\":[24,30],\"text\":\" It's no wonder so many people are loving this song. If you haven't heard it yet, make\"},{\"timestamp\":[30,33.08],\"text\":\" sure to give it a listen soon.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c21"`
+  - Mới: `"6970e87a58cb12223e9438fd"`
+- **Đề[6].questions[0].subQuestion[9].content**:
+  - Cũ: `"What time should they meet at the library? What time do men and women meet? / Two people are talking about meeting for dinner. What time does Ahmed meet Rose?"`
+  - Mới: `"A man is talking about the environment of the countryside. What is the main cause of poor air quality?"`
+- **Đề[6].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Quarter to eight"`
+  - Mới: `"Fires from the countryside"`
+- **Đề[6].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921101796_bb1c291d8e17b8b3_audio_de7_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920926436_5a05657b520e7e07_audio_de6_q10.mp3"`
+- **Đề[6].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"8:00 PM"`
+  - Mới: `"Factories"`
+- **Đề[6].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Quarter to eight"`
+  - Mới: `"Cars"`
+- **Đề[6].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"7:30 PM"`
+  - Mới: `"Fires from the countryside"`
+- **Đề[6].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7.34],\"text\":\" Hi Rose. It's Ahmed. What time should we meet for dinner tonight? How about we meet at quarter past 7?\"},{\"timestamp\":[7.34,20.31],\"text\":\" Oh wait, I just remembered. I have a meeting ending at a half past 7. Let's make it quarter to 8 instead, so we could have 15 minutes to travel. Does that work for you? [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.08],\"text\":\" I really like living in the countryside.\"},{\"timestamp\":[3.08,6.84],\"text\":\" There are many green fields, tall trees and small rivers.\"},{\"timestamp\":[6.84,12.04],\"text\":\" The air usually smells fresh and clean, but sometimes the air becomes dirty and hard to\"},{\"timestamp\":[12.04,13.12],\"text\":\" breathe.\"},{\"timestamp\":[13.12,16.64],\"text\":\" Many people think cars on the roads make the air bad.\"},{\"timestamp\":[16.64,20.48],\"text\":\" Others say the smoke from big factories is the problem.\"},{\"timestamp\":[20.48,24.96],\"text\":\" These things can make the air dirty, but in the countryside there's a bigger issue.\"},{\"timestamp\":[24.96,27.58],\"text\":\" Farmers often start fires to clean their fields.\"},{\"timestamp\":[27.58,29.68],\"text\":\" They burn old plants and grass.\"},{\"timestamp\":[29.68,33.04],\"text\":\" These fires make a lot of smoke that goes into the air.\"},{\"timestamp\":[33.04,null],\"text\":\" It's sad because the smoke can hurt animals and make people sick. We need to find better ways to clean fields without using fire.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c22"`
+  - Mới: `"6970e87a58cb12223e9438fe"`
+- **Đề[6].questions[0].subQuestion[10].content**:
+  - Cũ: `"A woman is talking about her family’s holidays. What did the family do last year?"`
+  - Mới: `"A person calls a friend about his new car. What is the price of the small car?"`
+- **Đề[6].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"Camping"`
+  - Mới: `"3,250 pounds"`
+- **Đề[6].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921102683_b087f45aa691ecd4_audio_de7_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920927116_3db8f005cfbfede3_audio_de6_q11.mp3"`
+- **Đề[6].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Camping"`
+  - Mới: `"3,250 pounds"`
+- **Đề[6].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Beach trip"`
+  - Mới: `"3,550 pounds"`
+- **Đề[6].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"Road trip"`
+  - Mới: `"3,000 pounds"`
+- **Đề[6].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" This year, my family and I are going to the beach for our holiday.\"},{\"timestamp\":[5,9],\"text\":\" I'm really excited because I love swimming and relaxing by the sea.\"},{\"timestamp\":[9,13],\"text\":\" Last year, we went camping on the mountain, which was fun.\"},{\"timestamp\":[13,16],\"text\":\" But this time, we wanted to do something different.\"},{\"timestamp\":[16,22],\"text\":\" We're staying in a small house near the beach, and I can't wait to watch the sunset every evening.\"},{\"timestamp\":[22,24.74],\"text\":\" My kids are excited too. They want to build sand castles\"},{\"timestamp\":[24.74,27.66],\"text\":\" and play in the water. I think it's going to be a great holiday.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hey, I just wanted to tell you about my new car. It's a small one. Perfect for my needs.\"},{\"timestamp\":[6,11],\"text\":\" I got it for a great price, only 3,250 pounds. Can you believe it?\"},{\"timestamp\":[11,null],\"text\":\" I was looking at bigger models too, but they were way more expensive, around 3,550 pounds, or even 4,250 pounds. I'm really happy with my choice.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c23"`
+  - Mới: `"6970e87a58cb12223e9438ff"`
+- **Đề[6].questions[0].subQuestion[11].content**:
+  - Cũ: `"The woman is walking into a local store. How much are the cleaning products?"`
+  - Mới: `"Which room will they study in? / Where will the first lesson of computer science take place?"`
+- **Đề[6].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"One pound fifty"`
+  - Mới: `"Room 301"`
+- **Đề[6].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921103926_4558675bde47a18d_audio_de7_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920927767_35b93e5a54269b5f_audio_de6_q12.mp3"`
+- **Đề[6].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Two pounds"`
+  - Mới: `"Room 301"`
+- **Đề[6].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"One pound fifty"`
+  - Mới: `"Room 101"`
+- **Đề[6].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Three pounds"`
+  - Mới: `"Room 203"`
+- **Đề[6].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" As I walk into the store, I notice that the cleaning products are on sale.\"},{\"timestamp\":[4.7,10.4],\"text\":\" They're usually a bit more expensive, but today they're only £1.50.\"},{\"timestamp\":[10.4,16.2],\"text\":\" I was expecting to pay £3.50, so it's a nice surprise.\"},{\"timestamp\":[16.2,19.7],\"text\":\" I grab a few items, since I know I'll need them later.\"},{\"timestamp\":[19.7,22.69],\"text\":\" It's a small store, but the deals are always good here. Time to check out.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.76],\"text\":\" They've decided to meet up for their study session, and room 301 is where they'll study.\"},{\"timestamp\":[4.76,9.52],\"text\":\" It's a quiet space with plenty of desks, so it's perfect for focusing and getting some work done.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c24"`
+  - Mới: `"6970e87a58cb12223e943900"`
+- **Đề[6].questions[0].subQuestion[12].content**:
+  - Cũ: `"What advice do they need for decorating their living room? / Mary is talking to her friend about her new home. What does she ask her friend about?"`
+  - Mới: `"Stephanie is looking for a job taking care of children. How old is she?"`
+- **Đề[6].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Where to buy a new table"`
+  - Mới: `"21"`
+- **Đề[6].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921104594_f9e08e900697b58a_audio_de7_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768920928529_5b0f187629c8226b_audio_de6_q13.mp3"`
+- **Đề[6].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Where to buy a new table"`
+  - Mới: `"21"`
+- **Đề[6].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Where to buy a sofa"`
+  - Mới: `"25"`
+- **Đề[6].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"Where to buy curtains"`
+  - Mới: `"30"`
+- **Đề[6].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" <span style=\"color: rgb(33, 37, 41);\">Hi Ivan</span>, it's Mary. I just moved into my new house. I want something nice for the dining area.\"},{\"timestamp\":[7,13],\"text\":\" I also saw a cute coffee shop nearby and I'm thinking about getting a mirror for the living room.\"},{\"timestamp\":[13,19],\"text\":\" I need to get some furniture, especially a coffee table. Do you know where to buy one?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.72],\"text\":\" Stephanie is eager to start a career and is looking for a job-taking care of children.\"},{\"timestamp\":[4.72,10.16],\"text\":\" She's 21 years old, and believes this is the perfect age to begin working in child care and\"},{\"timestamp\":[10.16,11.48],\"text\":\" gaining experience.\"}]</p>"`
+- **Đề[6].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c25"`
+  - Mới: `"6970e87a58cb12223e943901"`
+- **Đề[6].questions[0]._id**:
+  - Cũ: `"6970eb8f58cb12223e943c18"`
+  - Mới: `"6970e87a58cb12223e9438f4"`
+- **Đề[6].id**:
+  - Cũ: `"69565b1c0731243929b0c9cd"`
+  - Mới: `"6956576a0731243929b0c9b8"`
+- **Đề[6].createdAt**:
+  - Cũ: `"2026-01-01T11:31:40.146Z"`
+  - Mới: `"2026-01-01T11:15:54.321Z"`
+- **Đề[6].updatedAt**:
+  - Cũ: `"2026-01-21T15:06:55.956Z"`
+  - Mới: `"2026-01-21T14:53:46.257Z"`
+
+### Đề số 8
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[7]._id**:
+  - Cũ: `"69565e420731243929b0ca64"`
+  - Mới: `"69565b1c0731243929b0c9be"`
+- **Đề[7].title**:
+  - Cũ: `"Đề 8"`
+  - Mới: `"Đề 7"`
+- **Đề[7].questions[0].questionTitle**:
+  - Cũ: `"Đề 8"`
+  - Mới: `"Đề 7"`
+- **Đề[7].questions[0].content**:
+  - Cũ: `"Đề 8"`
+  - Mới: `"Đề 7"`
+- **Đề[7].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to a weather forecast. Where will the weather be best?"`
+  - Mới: `"Listen to a voice message. How does Evan feel?"`
+- **Đề[7].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"In the east"`
+  - Mới: `"Sick"`
+- **Đề[7].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921289732_33635b3072b8e3f5_audio_de8_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921093756_9871c3d3f7cb9b54_audio_de7_q1.mp3"`
+- **Đề[7].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"In the west"`
+  - Mới: `"Happy"`
+- **Đề[7].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"In the south"`
+  - Mới: `"Tired"`
+- **Đề[7].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"In the east"`
+  - Mới: `"Sick"`
+- **Đề[7].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7.4],\"text\":\" Good evening everyone. Here's your weather update for today. Unfortunately, the weather down south isn't looking too great.\"},{\"timestamp\":[7.76,15.2],\"text\":\" Strong winds and heavy rain are expected throughout the day, so it might be best to avoid any outdoor plans in that region.\"},{\"timestamp\":[15.2,24.4],\"text\":\" On a brighter note, the west will have decent weather with clear skies and mild temperatures, making it a nice option if you're looking for some fresh air.\"},{\"timestamp\":[25.04,31.04],\"text\":\" and mild temperatures, making it a nice option if you're looking for some fresh air. However, the best weather can be found in the east, port where we're expecting sunny skies\"},{\"timestamp\":[31.04,35.92],\"text\":\" and perfect temperatures for any outdoor activities. If you're planning to travel,\"},{\"timestamp\":[35.92,38.72],\"text\":\" I'd highly recommend heading east for the best conditions.\"},{\"timestamp\":[39.76,null],\"text\":\" Save travels and make sure to check local forecasts for any changes.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Evan. This is Mom. I just wanted to leave you a message to check on you.\"},{\"timestamp\":[6,9],\"text\":\" I heard you're not feeling well and I'm really worried about you.\"},{\"timestamp\":[9,14],\"text\":\" Make sure you're resting and drinking plenty of fluids. Do you need anything?\"},{\"timestamp\":[14,null],\"text\":\" I can bring you some soup or your favorite snacks. Please take care of yourself. I love you and hope you feel better soon. Call me back when you can.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970ee3858cb12223e943cdf"`
+  - Mới: `"6970eb8f58cb12223e943c19"`
+- **Đề[7].questions[0].subQuestion[1].content**:
+  - Cũ: `"Listen to the announcement from a travel agent representative. Why is the air travel cancelled?"`
+  - Mới: `"The train was delayed. What time does the train leave? / Listen to a man talking about their train journey. What time did the train depart?"`
+- **Đề[7].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Poor weather conditions"`
+  - Mới: `"9:30"`
+- **Đề[7].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921291057_bfa490353054783d_audio_de8_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921094436_f7903b555ab5a7e2_audio_de7_q2.mp3"`
+- **Đề[7].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Staff shortage"`
+  - Mới: `"9:00"`
+- **Đề[7].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Poor weather conditions"`
+  - Mới: `"9:15"`
+- **Đề[7].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Technical issues"`
+  - Mới: `"9:30"`
+- **Đề[7].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,2],\"text\":\" Good afternoon, everyone.\"},{\"timestamp\":[2,8],\"text\":\" I'd like to start by saying that we're doing everything we can to assist you with your travel plans today.\"},{\"timestamp\":[8,13],\"text\":\" Unfortunately, due to poor weather conditions, our flight has been cancelled.\"},{\"timestamp\":[13,18],\"text\":\" I know this isn't the news you were hoping for, but your safety comes first.\"},{\"timestamp\":[18,21],\"text\":\" That said, we do have alternatives available.\"},{\"timestamp\":[21,27],\"text\":\" The train services are still running, and buses are also operating operating so you have options to continue your journey.\"},{\"timestamp\":[27,33],\"text\":\" If you'd like to explore these alternatives, please come see us and we'll help with the arrangements.\"},{\"timestamp\":[33,36],\"text\":\" Thank you for your patience and understanding.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" This morning was rough at the station.\"},{\"timestamp\":[4,8],\"text\":\" I thought the train would leave around 9 o'clock, but I heard it would be delayed.\"},{\"timestamp\":[8,14],\"text\":\" It finally departed at 9.30, though some people said it might be even later.\"},{\"timestamp\":[14,21.01],\"text\":\" Usually, if it's delayed, it could leave as late as 10 o'clock. I'm glad it didn't take that long today. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce0"`
+  - Mới: `"6970eb8f58cb12223e943c1a"`
+- **Đề[7].questions[0].subQuestion[2].content**:
+  - Cũ: `"Which platform do you need to take if you want to travel to Edinburgh? / Listen to an announcement. Which platform to wait for the train?"`
+  - Mới: `"A man and woman are discussing their plans for the evening. What do the man and woman decide to do in the evening?"`
+- **Đề[7].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Platform Two"`
+  - Mới: `"Make plans later"`
+- **Đề[7].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921292175_d34053b7050d282e_audio_de8_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921095532_4e95ecb55ab0b0c1_audio_de7_q3.mp3"`
+- **Đề[7].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Platform One"`
+  - Mới: `"Go to the movies"`
+- **Đề[7].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Platform Two"`
+  - Mới: `"Make plans later"`
+- **Đề[7].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Platform Three"`
+  - Mới: `"Stay at home"`
+- **Đề[7].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Attention, all passengers. The 1030 train to Greenfield is now arriving at Platform 2.\"},{\"timestamp\":[7,11],\"text\":\" Please make sure you have your ticket ready before boarding.\"},{\"timestamp\":[11,16],\"text\":\" This train will stop at River Station and Oakwood before reaching its final destination.\"},{\"timestamp\":[16,19],\"text\":\" Be careful when stepping onto the train and mind the gap.\"},{\"timestamp\":[19,24.31],\"text\":\" For your safety, please keep your belongings close, and follow all instructions from the staff.\"},{\"timestamp\":[24.31,25.99],\"text\":\" Thank you for traveling with us today.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" I'm thinking about what to do this evening. I could go to the movies, but I'm not sure if that's the best idea.\"},{\"timestamp\":[7,13],\"text\":\" I might prefer to stay at home and relax. However, I want to discuss this with my friend first.\"},{\"timestamp\":[13,null],\"text\":\" It might be better to plan when we can decide together. I believe keeping our options open is a good idea. So for now, I'll wait and see what we want to do.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce1"`
+  - Mới: `"6970eb8f58cb12223e943c1b"`
+- **Đề[7].questions[0].subQuestion[3].content**:
+  - Cũ: `"When will Anna meet her friend? / A man is calling his friend, Maria. When will he see her?"`
+  - Mới: `"A woman is talking about her holiday plan. Where is she going on holidays?"`
+- **Đề[7].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"9am on Sunday"`
+  - Mới: `"The mountains"`
+- **Đề[7].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921293066_6098e97da370dd66_audio_de8_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921096550_f4746a6f7dacef9b_audio_de7_q4.mp3"`
+- **Đề[7].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"10am on Saturday"`
+  - Mới: `"The beach"`
+- **Đề[7].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"8pm on Sunday"`
+  - Mới: `"The mountains"`
+- **Đề[7].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"9am on Sunday"`
+  - Mới: `"The city"`
+- **Đề[7].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hey Maria, it's me. I wanted to give you a quick call to let you know that I'll be visiting your town this weekend.\"},{\"timestamp\":[7,13],\"text\":\" I've got a few things planned, going to check out the local market and maybe explore some of the nearby parks.\"},{\"timestamp\":[13,null],\"text\":\" But the best part, I'll finally get to see you. I'll be at your place at 9am on Sunday so we can catch up. Can't wait to hang out.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I'm so excited about my upcoming holiday. I've been thinking about where to go for a long time.\"},{\"timestamp\":[6,12],\"text\":\" Some of my friends suggested going to a nice beach. Others talked about exploring interesting caves,\"},{\"timestamp\":[12,19],\"text\":\" but I've made up my mind. I'm going to the mountains. The mountains are so beautiful with their green forests.\"},{\"timestamp\":[19,21.31],\"text\":\" I can't wait to breed the fresh air up there. They are perfect for relaxing and enjoying nature.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce2"`
+  - Mới: `"6970eb8f58cb12223e943c1c"`
+- **Đề[7].questions[0].subQuestion[4].content**:
+  - Cũ: `"How long does it take to get to the station?"`
+  - Mới: `"A tour guide is talking about the group's traveling schedule. Where will the group wait for the bus?"`
+- **Đề[7].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"20 minutes"`
+  - Mới: `"By the hotel's main entrance"`
+- **Đề[7].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921293562_9abc900e6429fbb1_audio_de8_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921097340_842223d42cffafe9_audio_de7_q5.mp3"`
+- **Đề[7].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"20 minutes"`
+  - Mới: `"By the hotel's main entrance"`
+- **Đề[7].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"15 minutes"`
+  - Mới: `"In the lobby"`
+- **Đề[7].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"25 minutes"`
+  - Mới: `"At the train station"`
+- **Đề[7].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" It usually takes about 20 minutes to get to the station, depending on traffic.\"},{\"timestamp\":[4.5,8],\"text\":\" It's not too far, so it's a convenient trip to catch the train.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good morning everyone, let me walk you through today's schedule.\"},{\"timestamp\":[4,12],\"text\":\" First, we'll start the day at 9 a.m. with a visit to the City Museum, where you'll have about 2 hours to explore the exhibits.\"},{\"timestamp\":[12,19],\"text\":\" After that, at 12.30 p.m. we'll head to the Central Park for a picnic lunch and a relaxing stroll.\"},{\"timestamp\":[19,27],\"text\":\" Around 3 p.m. we'll make our way to the Old Town Market, where you can shop for souvenirs and enjoy some local treats.\"},{\"timestamp\":[27,33],\"text\":\" We'll wrap up our activities by 6pm, giving you a little free time back at the hotel.\"},{\"timestamp\":[33,null],\"text\":\" Finally, at 8pm, we'll meet at the hotel's main entrance to catch the bus to the airport. Make sure to be on time and we'll head to the airport together.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce3"`
+  - Mới: `"6970eb8f58cb12223e943c1d"`
+- **Đề[7].questions[0].subQuestion[5].content**:
+  - Cũ: `"Why was the trip to the museum delayed? / A tour guide is making an announcement. Why was the tour canceled?"`
+  - Mới: `"Listen to a tour guide introducing the tour. Where will tea be served?"`
+- **Đề[7].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Not enough people"`
+  - Mới: `"The river boat"`
+- **Đề[7].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921294134_68683bd0a1ff727a_audio_de8_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921097895_c2c6c3e8362f3192_audio_de7_q6.mp3"`
+- **Đề[7].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Not enough people"`
+  - Mới: `"In the park"`
+- **Đề[7].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Bad weather"`
+  - Mới: `"The hotel"`
+- **Đề[7].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Transportation issue"`
+  - Mới: `"The river boat"`
+- **Đề[7].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hello everyone, I hope you're all having a good day.\"},{\"timestamp\":[4,9],\"text\":\" I'm your tour guide, and I was really looking forward to showing you around the city today.\"},{\"timestamp\":[9,12],\"text\":\" However, there is a small issue.\"},{\"timestamp\":[12,16],\"text\":\" The weather is perfect, and transportation is not a problem.\"},{\"timestamp\":[16,18],\"text\":\" Everything is ready for our trip.\"},{\"timestamp\":[18,20],\"text\":\" Certainly, these are not the problems.\"},{\"timestamp\":[20,24],\"text\":\" Unfortunately, we don't have enough people for the tour today.\"},{\"timestamp\":[24,26.34],\"text\":\" Because of this, we have to cancel the tour.\"},{\"timestamp\":[26.34,30.44],\"text\":\" I'm really sorry for the inconvenience, and I hope we can see you next time.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7.4],\"text\":\" Welcome to our scenic tour. I'm excited to show you this beautiful area. We'll start with a\"},{\"timestamp\":[7.4,13.24],\"text\":\" drive along the coast to enjoy the amazing ocean views. Then, we'll go up to the mountain\"},{\"timestamp\":[13.24,18.72],\"text\":\" looking for some breathtaking views. After that, we'll head down to the harbour and take\"},{\"timestamp\":[18.72,26],\"text\":\" a relaxing riverboat cruise. While on the boat, you can enjoy afternoon tea and see the charming riverside scenery.\"},{\"timestamp\":[26,30],\"text\":\" After the boat trip, we'll end the day with a walk on the beach.\"},{\"timestamp\":[30,36],\"text\":\" Don't forget your camera, there will be lots of chances for great photos.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce4"`
+  - Mới: `"6970eb8f58cb12223e943c1e"`
+- **Đề[7].questions[0].subQuestion[6].content**:
+  - Cũ: `"A man is talking about his trip. What did he enjoy last year?"`
+  - Mới: `"A man is talking about the city concert. How will the concert end?"`
+- **Đề[7].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"Cycling"`
+  - Mới: `"With the city's favorite group"`
+- **Đề[7].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921295103_e1c543fe230fca6b_audio_de8_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921098925_293a15a85ae3cad2_audio_de7_q7.mp3"`
+- **Đề[7].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Hiking"`
+  - Mới: `"With a fireworks display"`
+- **Đề[7].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"Cycling"`
+  - Mới: `"With a famous singer"`
+- **Đề[7].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"Swimming"`
+  - Mới: `"With the city's favorite group"`
+- **Đề[7].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.36],\"text\":\" Last year, I had an amazing trip.\"},{\"timestamp\":[4.36,8.16],\"text\":\" One of the best things I enjoyed was going cycling in the countryside.\"},{\"timestamp\":[8.16,11.6],\"text\":\" The views were stunning, and it felt great to be outdoors.\"},{\"timestamp\":[11.6,20.8],\"text\":\" I also went for a walk a few times, but cycling really allowed me to explore more areas. We even had a picnic one day, which was lovely too. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I can't wait for the concert this weekend. It's gonna be such an exciting event.\"},{\"timestamp\":[6,11],\"text\":\" The highlight ending will be the city's favourite group performing on stage.\"},{\"timestamp\":[11,17],\"text\":\" I've heard they have some amazing songs planned. There will also be a fireworks performance to celebrate before that.\"},{\"timestamp\":[17,null],\"text\":\" And I'm sure the orchestra will do some singing as well. It's gonna be a night to remember.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce5"`
+  - Mới: `"6970eb8f58cb12223e943c1f"`
+- **Đề[7].questions[0].subQuestion[7].content**:
+  - Cũ: `"Where is the girl's office? / Listen to a tour guide. Where is the office located?"`
+  - Mới: `"What is the phone number of the store? (0080...) / A man calls the teleshop. What is the teleshop number?"`
+- **Đề[7].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"Opposite the hotel"`
+  - Mới: `"201030"`
+- **Đề[7].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921295856_0acc4593ffb86ce3_audio_de8_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921100456_ebd4b0ebeb3cb7b8_audio_de7_q8.mp3"`
+- **Đề[7].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"Opposite the hotel"`
+  - Mới: `"201030"`
+- **Đề[7].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"Next to the park"`
+  - Mới: `"102030"`
+- **Đề[7].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"In the shopping mall"`
+  - Mới: `"301020"`
+- **Đề[7].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.36],\"text\":\" Hello everyone, welcome to our tour. My name is Sam and I'm your tour guide today.\"},{\"timestamp\":[5.36,8.56],\"text\":\" I'm excited to show you around this beautiful city.\"},{\"timestamp\":[8.56,14.08],\"text\":\" We will visit many interesting places, including parks, museums, and local markets.\"},{\"timestamp\":[14.08,18.24],\"text\":\" As we walk, I'll share fun facts and stories about each location.\"},{\"timestamp\":[18.24,21.32],\"text\":\" If you have any questions, feel free to ask.\"},{\"timestamp\":[21.32,26.3],\"text\":\" Now before we start, I want to let you know that our office is opposite the hotel where\"},{\"timestamp\":[26.3,27.3],\"text\":\" you are staying.\"},{\"timestamp\":[27.3,32.06],\"text\":\" If you need any help or information during your stay, you can always come to us.\"},{\"timestamp\":[32.06,35.34],\"text\":\" Let's begin our adventure and enjoy exploring together.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hello, I need to call the teleshop for some information.\"},{\"timestamp\":[4,7],\"text\":\" My phone is not working. Can you remind me of the number?\"},{\"timestamp\":[7,16],\"text\":\" I think it starts with 2, 0, or 1, 0, or 3, 0, something. Is it 1, 0, 2, 0, 3, 0, 1, 0, 2, 0?\"},{\"timestamp\":[16,null],\"text\":\" No, wait, I remember now. It's 2, 0, 1, 0, 3, 0. I really need to order that new gadget. Thanks for your help.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce6"`
+  - Mới: `"6970eb8f58cb12223e943c20"`
+- **Đề[7].questions[0].subQuestion[8].content**:
+  - Cũ: `"A man is talking about how he goes to work. Why does he prefer traveling by train?"`
+  - Mới: `"Alice is calling her friend. What did she lose?"`
+- **Đề[7].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Practical"`
+  - Mới: `"Phone"`
+- **Đề[7].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921297212_16a6fce5a43568a9_audio_de8_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921101257_f457c14355616b59_audio_de7_q9.mp3"`
+- **Đề[7].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"It’s cheaper"`
+  - Mới: `"Book"`
+- **Đề[7].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"It’s comfortable"`
+  - Mới: `"Phone"`
+- **Đề[7].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Practical"`
+  - Mới: `"Laptop"`
+- **Đề[7].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.6],\"text\":\" I've been thinking about how to get to work every day.\"},{\"timestamp\":[3.6,8.4],\"text\":\" At first, I considered driving, but the traffic is always really bad in the morning.\"},{\"timestamp\":[8.4,14.4],\"text\":\" Then, I thought about riding my bike, but it's too far, and I'd be tired before I even start my day.\"},{\"timestamp\":[14.4,17.8],\"text\":\" The bus is another option, but it's often late.\"},{\"timestamp\":[17.8,21.6],\"text\":\" After thinking about all the choices I decided to travel by train.\"},{\"timestamp\":[21.6,26],\"text\":\" It's practical because it's on time time and I can relax during the trip.\"},{\"timestamp\":[26,28.24],\"text\":\" Plus the station is close to my office.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" Hey, it's Alice. I think I might have left something at your house. I had my book with me. It's in my backpack.\"},{\"timestamp\":[6.52,11],\"text\":\" My laptop's here too, but I can't find my phone anywhere.\"},{\"timestamp\":[11,16],\"text\":\" Did you happen to see it after I left? I think I might have left it on the table.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce7"`
+  - Mới: `"6970eb8f58cb12223e943c21"`
+- **Đề[7].questions[0].subQuestion[9].content**:
+  - Cũ: `"A man is calling his friend to meet for coffee. Where is the coffee shop located?"`
+  - Mới: `"What time should they meet at the library? What time do men and women meet? / Two people are talking about meeting for dinner. What time does Ahmed meet Rose?"`
+- **Đề[7].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Opposite the gift shop"`
+  - Mới: `"Quarter to eight"`
+- **Đề[7].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921298514_a387e59058da07f9_audio_de8_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921101796_bb1c291d8e17b8b3_audio_de7_q10.mp3"`
+- **Đề[7].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Opposite the gift shop"`
+  - Mới: `"8:00 PM"`
+- **Đề[7].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"In the shopping center"`
+  - Mới: `"Quarter to eight"`
+- **Đề[7].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Next to the bookstore"`
+  - Mới: `"7:30 PM"`
+- **Đề[7].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3],\"text\":\" Hey, are you free for coffee later?\"},{\"timestamp\":[3,7],\"text\":\" I found a great new place in town. It's not hard to find at all.\"},{\"timestamp\":[7,9],\"text\":\" You know, the big gift shop on Main Street?\"},{\"timestamp\":[9,11],\"text\":\" Well, the coffee shop is right across from it.\"},{\"timestamp\":[11,14],\"text\":\" Just look for the gift shop, then cross the street.\"},{\"timestamp\":[14,17],\"text\":\" You'll see the coffee shop right there, opposite the gift shop.\"},{\"timestamp\":[17,null],\"text\":\" They have amazing pastries too. Let's meet there at 3pm, okay?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7.34],\"text\":\" Hi Rose. It's Ahmed. What time should we meet for dinner tonight? How about we meet at quarter past 7?\"},{\"timestamp\":[7.34,20.31],\"text\":\" Oh wait, I just remembered. I have a meeting ending at a half past 7. Let's make it quarter to 8 instead, so we could have 15 minutes to travel. Does that work for you? [BLANK_AUDIO]\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce8"`
+  - Mới: `"6970eb8f58cb12223e943c22"`
+- **Đề[7].questions[0].subQuestion[10].content**:
+  - Cũ: `"Tom is calling his mom. Who is visiting Tom this weekend?"`
+  - Mới: `"A woman is talking about her family’s holidays. What did the family do last year?"`
+- **Đề[7].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"His sister and her children"`
+  - Mới: `"Camping"`
+- **Đề[7].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921299254_7a613840af7c6268_audio_de8_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921102683_b087f45aa691ecd4_audio_de7_q11.mp3"`
+- **Đề[7].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"His aunt and uncle"`
+  - Mới: `"Camping"`
+- **Đề[7].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"His sister and her children"`
+  - Mới: `"Beach trip"`
+- **Đề[7].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"His cousin"`
+  - Mới: `"Road trip"`
+- **Đề[7].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.38],\"text\":\" Hey, Mom. Are you coming over this weekend?\"},{\"timestamp\":[4.38,6.62],\"text\":\" I'd really love to see you.\"},{\"timestamp\":[6.62,9.1],\"text\":\" What? You're busy?\"},{\"timestamp\":[9.1,11],\"text\":\" That's too bad.\"},{\"timestamp\":[11,14.1],\"text\":\" But at least my sister is visiting with her kids.\"},{\"timestamp\":[14.1,16.3],\"text\":\" I'm excited about that.\"},{\"timestamp\":[16.3,18.7],\"text\":\" Is Uncle coming with her too?\"},{\"timestamp\":[18.7,20.3],\"text\":\" Oh, his not?\"},{\"timestamp\":[20.3,null],\"text\":\" That's a shame. Hopefully you can all get together next time.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" This year, my family and I are going to the beach for our holiday.\"},{\"timestamp\":[5,9],\"text\":\" I'm really excited because I love swimming and relaxing by the sea.\"},{\"timestamp\":[9,13],\"text\":\" Last year, we went camping on the mountain, which was fun.\"},{\"timestamp\":[13,16],\"text\":\" But this time, we wanted to do something different.\"},{\"timestamp\":[16,22],\"text\":\" We're staying in a small house near the beach, and I can't wait to watch the sunset every evening.\"},{\"timestamp\":[22,24.74],\"text\":\" My kids are excited too. They want to build sand castles\"},{\"timestamp\":[24.74,27.66],\"text\":\" and play in the water. I think it's going to be a great holiday.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970ee3858cb12223e943ce9"`
+  - Mới: `"6970eb8f58cb12223e943c23"`
+- **Đề[7].questions[0].subQuestion[11].content**:
+  - Cũ: `"Who does she live with? / A woman is talking about her vacation. What is the relationship between Lisa and the speaker?"`
+  - Mới: `"The woman is walking into a local store. How much are the cleaning products?"`
+- **Đề[7].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Best friends"`
+  - Mới: `"One pound fifty"`
+- **Đề[7].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921300704_be71804d25d9b6c9_audio_de8_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921103926_4558675bde47a18d_audio_de7_q12.mp3"`
+- **Đề[7].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Best friends"`
+  - Mới: `"Two pounds"`
+- **Đề[7].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Cousins"`
+  - Mới: `"One pound fifty"`
+- **Đề[7].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Sisters"`
+  - Mới: `"Three pounds"`
+- **Đề[7].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.56],\"text\":\" I just got back from an amazing vacation with Lisa. We've been friends for years\"},{\"timestamp\":[5.56,11],\"text\":\" and this trip really brought us closer. I can't imagine going with anyone else.\"},{\"timestamp\":[11,15.28],\"text\":\" Some people think we look like mother and daughter because we care for each\"},{\"timestamp\":[15.28,20.31],\"text\":\" other so much, but it's really just best friends hanging out.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" As I walk into the store, I notice that the cleaning products are on sale.\"},{\"timestamp\":[4.7,10.4],\"text\":\" They're usually a bit more expensive, but today they're only £1.50.\"},{\"timestamp\":[10.4,16.2],\"text\":\" I was expecting to pay £3.50, so it's a nice surprise.\"},{\"timestamp\":[16.2,19.7],\"text\":\" I grab a few items, since I know I'll need them later.\"},{\"timestamp\":[19.7,22.69],\"text\":\" It's a small store, but the deals are always good here. Time to check out.\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970ee3858cb12223e943cea"`
+  - Mới: `"6970eb8f58cb12223e943c24"`
+- **Đề[7].questions[0].subQuestion[12].content**:
+  - Cũ: `"A woman shares her job with her friend. Why does she want to become a writer?"`
+  - Mới: `"What advice do they need for decorating their living room? / Mary is talking to her friend about her new home. What does she ask her friend about?"`
+- **Đề[7].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Help people"`
+  - Mới: `"Where to buy a new table"`
+- **Đề[7].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921301303_dd0a29d3b51cbde7_audio_de8_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921104594_f9e08e900697b58a_audio_de7_q13.mp3"`
+- **Đề[7].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Help people"`
+  - Mới: `"Where to buy a new table"`
+- **Đề[7].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Become famous"`
+  - Mới: `"Where to buy a sofa"`
+- **Đề[7].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"Earn money"`
+  - Mới: `"Where to buy curtains"`
+- **Đề[7].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.96],\"text\":\" I have been thinking a lot about my job, and I really want to become a writer.\"},{\"timestamp\":[4.96,9.68],\"text\":\" It's not just about earning a lot of money or becoming famous for me.\"},{\"timestamp\":[9.68,13.64],\"text\":\" My main reason is to help people improve themselves.\"},{\"timestamp\":[13.64,18.52],\"text\":\" I believe stories can inspire and support others during hard times.\"},{\"timestamp\":[18.52,null],\"text\":\" I hope my writing can make a difference in their lives, and that's why I'm choosing this path.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" <span style=\"color: rgb(33, 37, 41);\">Hi Ivan</span>, it's Mary. I just moved into my new house. I want something nice for the dining area.\"},{\"timestamp\":[7,13],\"text\":\" I also saw a cute coffee shop nearby and I'm thinking about getting a mirror for the living room.\"},{\"timestamp\":[13,19],\"text\":\" I need to get some furniture, especially a coffee table. Do you know where to buy one?\"}]</p>"`
+- **Đề[7].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970ee3858cb12223e943ceb"`
+  - Mới: `"6970eb8f58cb12223e943c25"`
+- **Đề[7].questions[0]._id**:
+  - Cũ: `"6970ee3858cb12223e943cde"`
+  - Mới: `"6970eb8f58cb12223e943c18"`
+- **Đề[7].id**:
+  - Cũ: `"69565e420731243929b0ca73"`
+  - Mới: `"69565b1c0731243929b0c9cd"`
+- **Đề[7].createdAt**:
+  - Cũ: `"2026-01-01T11:45:06.375Z"`
+  - Mới: `"2026-01-01T11:31:40.146Z"`
+- **Đề[7].updatedAt**:
+  - Cũ: `"2026-01-21T15:18:16.193Z"`
+  - Mới: `"2026-01-21T15:06:55.956Z"`
+
+### Đề số 9
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[8]._id**:
+  - Cũ: `"69567b620731243929b0cab7"`
+  - Mới: `"69565e420731243929b0ca64"`
+- **Đề[8].title**:
+  - Cũ: `"Đề 10"`
+  - Mới: `"Đề 8"`
+- **Đề[8].questions[0].questionTitle**:
+  - Cũ: `"Đề 10"`
+  - Mới: `"Đề 8"`
+- **Đề[8].questions[0].content**:
+  - Cũ: `"Đề 10"`
+  - Mới: `"Đề 8"`
+- **Đề[8].questions[0].subQuestion[0].content**:
+  - Cũ: `"A woman is talking about her plan for the holiday. What will she do during the holiday?"`
+  - Mới: `"Listen to a weather forecast. Where will the weather be best?"`
+- **Đề[8].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Go for a walk"`
+  - Mới: `"In the east"`
+- **Đề[8].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921456112_daf8e60eea137a0f_audio_de10_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921289732_33635b3072b8e3f5_audio_de8_q1.mp3"`
+- **Đề[8].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Go for a run"`
+  - Mới: `"In the west"`
+- **Đề[8].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Go for a bike ride"`
+  - Mới: `"In the south"`
+- **Đề[8].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Go for a walk"`
+  - Mới: `"In the east"`
+- **Đề[8].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" I'm really excited about the holiday. I think I'll go for a walk every day to enjoy the fresh air.\"},{\"timestamp\":[6.52,11],\"text\":\" I also considered going for a run, but walking sounds more relaxing.\"},{\"timestamp\":[11,17],\"text\":\" Maybe I'll even try to go for a bike ride later. It'll be nice to spend some time outdoors.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7.4],\"text\":\" Good evening everyone. Here's your weather update for today. Unfortunately, the weather down south isn't looking too great.\"},{\"timestamp\":[7.76,15.2],\"text\":\" Strong winds and heavy rain are expected throughout the day, so it might be best to avoid any outdoor plans in that region.\"},{\"timestamp\":[15.2,24.4],\"text\":\" On a brighter note, the west will have decent weather with clear skies and mild temperatures, making it a nice option if you're looking for some fresh air.\"},{\"timestamp\":[25.04,31.04],\"text\":\" and mild temperatures, making it a nice option if you're looking for some fresh air. However, the best weather can be found in the east, port where we're expecting sunny skies\"},{\"timestamp\":[31.04,35.92],\"text\":\" and perfect temperatures for any outdoor activities. If you're planning to travel,\"},{\"timestamp\":[35.92,38.72],\"text\":\" I'd highly recommend heading east for the best conditions.\"},{\"timestamp\":[39.76,null],\"text\":\" Save travels and make sure to check local forecasts for any changes.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[0]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4a"`
+  - Mới: `"6970ee3858cb12223e943cdf"`
+- **Đề[8].questions[0].subQuestion[1].content**:
+  - Cũ: `"Two colleagues talk about meeting. When do they want to meet?"`
+  - Mới: `"Listen to the announcement from a travel agent representative. Why is the air travel cancelled?"`
+- **Đề[8].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Tuesday"`
+  - Mới: `"Poor weather conditions"`
+- **Đề[8].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921458006_eedefb2097fd322b_audio_de10_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921291057_bfa490353054783d_audio_de8_q2.mp3"`
+- **Đề[8].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Monday"`
+  - Mới: `"Staff shortage"`
+- **Đề[8].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Wednesday"`
+  - Mới: `"Poor weather conditions"`
+- **Đề[8].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Tuesday"`
+  - Mới: `"Technical issues"`
+- **Đề[8].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.64],\"text\":\" Hey, we've been meaning to sit down and discuss the project.\"},{\"timestamp\":[3.64,5.84],\"text\":\" When would be a good time for you to meet?\"},{\"timestamp\":[5.84,10.28],\"text\":\" I've got a few things lined up this week, but Tuesday should work for me.\"},{\"timestamp\":[10.28,12.36],\"text\":\" I have some free time in the afternoon.\"},{\"timestamp\":[12.36,14.64],\"text\":\" Tuesday afternoon sounds great.\"},{\"timestamp\":[14.64,16.8],\"text\":\" I'll clear my schedule as well.\"},{\"timestamp\":[16.8,18.52],\"text\":\" Let's aim for round to PM.\"},{\"timestamp\":[18.52,22.42],\"text\":\" Perfect. I'll make a note of it. See you on Tuesday at 2pm. Looking forward to it. See you then.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,2],\"text\":\" Good afternoon, everyone.\"},{\"timestamp\":[2,8],\"text\":\" I'd like to start by saying that we're doing everything we can to assist you with your travel plans today.\"},{\"timestamp\":[8,13],\"text\":\" Unfortunately, due to poor weather conditions, our flight has been cancelled.\"},{\"timestamp\":[13,18],\"text\":\" I know this isn't the news you were hoping for, but your safety comes first.\"},{\"timestamp\":[18,21],\"text\":\" That said, we do have alternatives available.\"},{\"timestamp\":[21,27],\"text\":\" The train services are still running, and buses are also operating operating so you have options to continue your journey.\"},{\"timestamp\":[27,33],\"text\":\" If you'd like to explore these alternatives, please come see us and we'll help with the arrangements.\"},{\"timestamp\":[33,36],\"text\":\" Thank you for your patience and understanding.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[1]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4b"`
+  - Mới: `"6970ee3858cb12223e943ce0"`
+- **Đề[8].questions[0].subQuestion[2].content**:
+  - Cũ: `"A woman is talking about her job. How is being a writer different from other jobs?"`
+  - Mới: `"Which platform do you need to take if you want to travel to Edinburgh? / Listen to an announcement. Which platform to wait for the train?"`
+- **Đề[8].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"She works at irregular times"`
+  - Mới: `"Platform Two"`
+- **Đề[8].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921459195_a7becdb144a5e7f8_audio_de10_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921292175_d34053b7050d282e_audio_de8_q3.mp3"`
+- **Đề[8].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"She works 9 to 5"`
+  - Mới: `"Platform One"`
+- **Đề[8].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"She works at irregular times"`
+  - Mới: `"Platform Two"`
+- **Đề[8].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"She works at a desk all day"`
+  - Mới: `"Platform Three"`
+- **Đề[8].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.48],\"text\":\" Hello, my name is Sarah and I'm an artist.\"},{\"timestamp\":[3.48,7.68],\"text\":\" I paint pictures of nature like trees, rivers, and animals.\"},{\"timestamp\":[7.68,11.56],\"text\":\" I love using bright colors to make my art happy and full of life.\"},{\"timestamp\":[11.56,17.2],\"text\":\" My job is very fun, but I work irregular hours, sometimes late at night or on weekends.\"},{\"timestamp\":[17.2,20.96],\"text\":\" When I have inspiration, I paint for many hours without a break.\"},{\"timestamp\":[20.96,26],\"text\":\" I sell my paintings and galleries and online, and it makes me really happy when people like my work.\"},{\"timestamp\":[26,29],\"text\":\" Creating art is the best job for me.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Attention, all passengers. The 1030 train to Greenfield is now arriving at Platform 2.\"},{\"timestamp\":[7,11],\"text\":\" Please make sure you have your ticket ready before boarding.\"},{\"timestamp\":[11,16],\"text\":\" This train will stop at River Station and Oakwood before reaching its final destination.\"},{\"timestamp\":[16,19],\"text\":\" Be careful when stepping onto the train and mind the gap.\"},{\"timestamp\":[19,24.31],\"text\":\" For your safety, please keep your belongings close, and follow all instructions from the staff.\"},{\"timestamp\":[24.31,25.99],\"text\":\" Thank you for traveling with us today.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[2]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4c"`
+  - Mới: `"6970ee3858cb12223e943ce1"`
+- **Đề[8].questions[0].subQuestion[3].content**:
+  - Cũ: `"A woman is talking about shopping places. Where is she going to go shopping?"`
+  - Mới: `"When will Anna meet her friend? / A man is calling his friend, Maria. When will he see her?"`
+- **Đề[8].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"At a new shopping center"`
+  - Mới: `"9am on Sunday"`
+- **Đề[8].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921459941_030311a77e8e4079_audio_de10_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921293066_6098e97da370dd66_audio_de8_q4.mp3"`
+- **Đề[8].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"At the mall"`
+  - Mới: `"10am on Saturday"`
+- **Đề[8].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"At a boutique"`
+  - Mới: `"8pm on Sunday"`
+- **Đề[8].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"At a new shopping center"`
+  - Mới: `"9am on Sunday"`
+- **Đề[8].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.6],\"text\":\" I love shopping and there are so many places to choose from in our city.\"},{\"timestamp\":[5.6,10.12],\"text\":\" The downtown market is great for fresh fruit and vegetables and there are lots of small\"},{\"timestamp\":[10.12,12],\"text\":\" shops there too.\"},{\"timestamp\":[12,17.08],\"text\":\" If I need clothes, I usually go to the mall, but it can get very crowded on weekends.\"},{\"timestamp\":[17.08,21.84],\"text\":\" There's also a little boutique near my house with some unique items, but it's a bit\"},{\"timestamp\":[21.84,23.68],\"text\":\" expensive.\"},{\"timestamp\":[23.68,28.04],\"text\":\" This time, I'm excited to check out the new shopping centre that just opened.\"},{\"timestamp\":[28.04,30.44],\"text\":\" I've heard it has everything I need in one place.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hey Maria, it's me. I wanted to give you a quick call to let you know that I'll be visiting your town this weekend.\"},{\"timestamp\":[7,13],\"text\":\" I've got a few things planned, going to check out the local market and maybe explore some of the nearby parks.\"},{\"timestamp\":[13,null],\"text\":\" But the best part, I'll finally get to see you. I'll be at your place at 9am on Sunday so we can catch up. Can't wait to hang out.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[3]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4d"`
+  - Mới: `"6970ee3858cb12223e943ce2"`
+- **Đề[8].questions[0].subQuestion[4].content**:
+  - Cũ: `"Jorge is calling his friend about their plan for the weekend. What time does the football match start?"`
+  - Mới: `"How long does it take to get to the station?"`
+- **Đề[8].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"1pm"`
+  - Mới: `"20 minutes"`
+- **Đề[8].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921460636_bfb95c66df0ad85d_audio_de10_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921293562_9abc900e6429fbb1_audio_de8_q5.mp3"`
+- **Đề[8].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"3pm"`
+  - Mới: `"20 minutes"`
+- **Đề[8].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"5pm"`
+  - Mới: `"15 minutes"`
+- **Đề[8].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"1pm"`
+  - Mới: `"25 minutes"`
+- **Đề[8].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hey, it's Jorge. I wanted to check in about our plans for the weekend.\"},{\"timestamp\":[5,10],\"text\":\" I'll be busy in the morning, but how about we meet at 11.30 for lunch?\"},{\"timestamp\":[10,16],\"text\":\" The football match starts at 1pm, and since it takes about 30 minutes to drive there,\"},{\"timestamp\":[16,19],\"text\":\" we'll have just enough time to grab something to eat.\"},{\"timestamp\":[19,24],\"text\":\" After the match, we can head back to my place and play some video games.\"},{\"timestamp\":[24,29.36],\"text\":\" It's going to be a fun day. Let me know if that works for you. Can't wait!\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" It usually takes about 20 minutes to get to the station, depending on traffic.\"},{\"timestamp\":[4.5,8],\"text\":\" It's not too far, so it's a convenient trip to catch the train.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[4]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4e"`
+  - Mới: `"6970ee3858cb12223e943ce3"`
+- **Đề[8].questions[0].subQuestion[5].content**:
+  - Cũ: `"What does her sister drink? / Linda is talking about what she likes to eat. What does she have for lunch?"`
+  - Mới: `"Why was the trip to the museum delayed? / A tour guide is making an announcement. Why was the tour canceled?"`
+- **Đề[8].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"Tea"`
+  - Mới: `"Not enough people"`
+- **Đề[8].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921461429_c404c6258140e22e_audio_de10_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921294134_68683bd0a1ff727a_audio_de8_q6.mp3"`
+- **Đề[8].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"Coffee"`
+  - Mới: `"Not enough people"`
+- **Đề[8].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Juice"`
+  - Mới: `"Bad weather"`
+- **Đề[8].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"Tea"`
+  - Mới: `"Transportation issue"`
+- **Đề[8].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,8],\"text\":\" When it comes to lunch, I have a simple pleasure. I really enjoy a warm cup of tea. It's my favorite drink to have while I eat.\"},{\"timestamp\":[8,null],\"text\":\" I find it calming, and it makes my meal feel special. Sometimes people ask me why I don't choose coffee or juice, but for me, tea is just perfect. It warms my heart and gives me a moment to relax.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hello everyone, I hope you're all having a good day.\"},{\"timestamp\":[4,9],\"text\":\" I'm your tour guide, and I was really looking forward to showing you around the city today.\"},{\"timestamp\":[9,12],\"text\":\" However, there is a small issue.\"},{\"timestamp\":[12,16],\"text\":\" The weather is perfect, and transportation is not a problem.\"},{\"timestamp\":[16,18],\"text\":\" Everything is ready for our trip.\"},{\"timestamp\":[18,20],\"text\":\" Certainly, these are not the problems.\"},{\"timestamp\":[20,24],\"text\":\" Unfortunately, we don't have enough people for the tour today.\"},{\"timestamp\":[24,26.34],\"text\":\" Because of this, we have to cancel the tour.\"},{\"timestamp\":[26.34,30.44],\"text\":\" I'm really sorry for the inconvenience, and I hope we can see you next time.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[5]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e4f"`
+  - Mới: `"6970ee3858cb12223e943ce4"`
+- **Đề[8].questions[0].subQuestion[6].content**:
+  - Cũ: `"A man is describing his school. What color is the teacher's building?"`
+  - Mới: `"A man is talking about his trip. What did he enjoy last year?"`
+- **Đề[8].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"White"`
+  - Mới: `"Cycling"`
+- **Đề[8].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921462648_6584bd495732a487_audio_de10_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921295103_e1c543fe230fca6b_audio_de8_q7.mp3"`
+- **Đề[8].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"Green"`
+  - Mới: `"Hiking"`
+- **Đề[8].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"Blue"`
+  - Mới: `"Cycling"`
+- **Đề[8].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"White"`
+  - Mới: `"Swimming"`
+- **Đề[8].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.88],\"text\":\" You know, I've been spending a lot of time at school lately.\"},{\"timestamp\":[4.88,7.56],\"text\":\" I really like how a campus.\"},{\"timestamp\":[7.56,10.76],\"text\":\" One thing that stands out is the teacher's building.\"},{\"timestamp\":[10.76,14],\"text\":\" It's really nice and has a bright, white colour.\"},{\"timestamp\":[14,17.12],\"text\":\" I love how it looks against the blue sky.\"},{\"timestamp\":[17.12,null],\"text\":\" It's kind of a central point of the school and it feels welcoming. I think it adds a lot to the overall atmosphere here.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.36],\"text\":\" Last year, I had an amazing trip.\"},{\"timestamp\":[4.36,8.16],\"text\":\" One of the best things I enjoyed was going cycling in the countryside.\"},{\"timestamp\":[8.16,11.6],\"text\":\" The views were stunning, and it felt great to be outdoors.\"},{\"timestamp\":[11.6,20.8],\"text\":\" I also went for a walk a few times, but cycling really allowed me to explore more areas. We even had a picnic one day, which was lovely too. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[6]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e50"`
+  - Mới: `"6970ee3858cb12223e943ce5"`
+- **Đề[8].questions[0].subQuestion[7].content**:
+  - Cũ: `"How much are the eggs?"`
+  - Mới: `"Where is the girl's office? / Listen to a tour guide. Where is the office located?"`
+- **Đề[8].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"2.50 pounds"`
+  - Mới: `"Opposite the hotel"`
+- **Đề[8].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921463495_b4393b204711a0c5_audio_de10_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921295856_0acc4593ffb86ce3_audio_de8_q8.mp3"`
+- **Đề[8].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"3.50 pounds"`
+  - Mới: `"Opposite the hotel"`
+- **Đề[8].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"1.50 pounds"`
+  - Mới: `"Next to the park"`
+- **Đề[8].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"2.50 pounds"`
+  - Mới: `"In the shopping mall"`
+- **Đề[8].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.04],\"text\":\" Hey, I just saw that the eggs are on sale today.\"},{\"timestamp\":[3.04,8.32],\"text\":\" Normally, they're 2.5 O pounds, but right now, they're discounted.\"},{\"timestamp\":[8.32,9.52],\"text\":\" It's a great deal.\"},{\"timestamp\":[9.52,12.12],\"text\":\" So, I decided to pick up a few extra cartons.\"},{\"timestamp\":[12.12,14.96],\"text\":\" If you're planning to buy eggs, today's the perfect day.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.36],\"text\":\" Hello everyone, welcome to our tour. My name is Sam and I'm your tour guide today.\"},{\"timestamp\":[5.36,8.56],\"text\":\" I'm excited to show you around this beautiful city.\"},{\"timestamp\":[8.56,14.08],\"text\":\" We will visit many interesting places, including parks, museums, and local markets.\"},{\"timestamp\":[14.08,18.24],\"text\":\" As we walk, I'll share fun facts and stories about each location.\"},{\"timestamp\":[18.24,21.32],\"text\":\" If you have any questions, feel free to ask.\"},{\"timestamp\":[21.32,26.3],\"text\":\" Now before we start, I want to let you know that our office is opposite the hotel where\"},{\"timestamp\":[26.3,27.3],\"text\":\" you are staying.\"},{\"timestamp\":[27.3,32.06],\"text\":\" If you need any help or information during your stay, you can always come to us.\"},{\"timestamp\":[32.06,35.34],\"text\":\" Let's begin our adventure and enjoy exploring together.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[7]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e51"`
+  - Mới: `"6970ee3858cb12223e943ce6"`
+- **Đề[8].questions[0].subQuestion[8].content**:
+  - Cũ: `"What is the way to exercise? / What is she going to do? / What does she do on her holidays?"`
+  - Mới: `"A man is talking about how he goes to work. Why does he prefer traveling by train?"`
+- **Đề[8].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Walking"`
+  - Mới: `"Practical"`
+- **Đề[8].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921464110_bf9450f97d2fe0f2_audio_de10_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921297212_16a6fce5a43568a9_audio_de8_q9.mp3"`
+- **Đề[8].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Cycling"`
+  - Mới: `"It’s cheaper"`
+- **Đề[8].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Running"`
+  - Mới: `"It’s comfortable"`
+- **Đề[8].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Walking"`
+  - Mới: `"Practical"`
+- **Đề[8].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.4],\"text\":\" One of the easiest and most accessible ways to exercise is by walking,\"},{\"timestamp\":[4.4,8.16],\"text\":\" it's simple, doesn't require any special equipment,\"},{\"timestamp\":[8.16,12.24],\"text\":\" and you can do it anywhere whether it's around your neighborhood or at a park.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.6],\"text\":\" I've been thinking about how to get to work every day.\"},{\"timestamp\":[3.6,8.4],\"text\":\" At first, I considered driving, but the traffic is always really bad in the morning.\"},{\"timestamp\":[8.4,14.4],\"text\":\" Then, I thought about riding my bike, but it's too far, and I'd be tired before I even start my day.\"},{\"timestamp\":[14.4,17.8],\"text\":\" The bus is another option, but it's often late.\"},{\"timestamp\":[17.8,21.6],\"text\":\" After thinking about all the choices I decided to travel by train.\"},{\"timestamp\":[21.6,26],\"text\":\" It's practical because it's on time time and I can relax during the trip.\"},{\"timestamp\":[26,28.24],\"text\":\" Plus the station is close to my office.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[8]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e52"`
+  - Mới: `"6970ee3858cb12223e943ce7"`
+- **Đề[8].questions[0].subQuestion[9].content**:
+  - Cũ: `"Two friends are talking with each other. What did they both buy?"`
+  - Mới: `"A man is calling his friend to meet for coffee. Where is the coffee shop located?"`
+- **Đề[8].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Clothes"`
+  - Mới: `"Opposite the gift shop"`
+- **Đề[8].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921465687_e8d527250a3f9dc1_audio_de10_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921298514_a387e59058da07f9_audio_de8_q10.mp3"`
+- **Đề[8].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Books"`
+  - Mới: `"Opposite the gift shop"`
+- **Đề[8].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Clothes"`
+  - Mới: `"In the shopping center"`
+- **Đề[8].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Shoes"`
+  - Mới: `"Next to the bookstore"`
+- **Đề[8].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I just got back from shopping, I found a great jacket, and also picked up some tea.\"},{\"timestamp\":[6,9],\"text\":\" Nice, what kind of jacket did you get?\"},{\"timestamp\":[9,11],\"text\":\" It's a stylish leather jacket.\"},{\"timestamp\":[11,13],\"text\":\" I think it'll be perfect for the fall.\"},{\"timestamp\":[13,15],\"text\":\" What about you?\"},{\"timestamp\":[15,19],\"text\":\" I bought a cozy sweater, and also grabbed a delicious cake.\"},{\"timestamp\":[19,23],\"text\":\" Sounds great, those are perfect for this weather.\"},{\"timestamp\":[23,26.52],\"text\":\" Thanks, I'm excited to try the cake layer.\"},{\"timestamp\":[26.52,29.2],\"text\":\" Looks like we both made good choices today.\"},{\"timestamp\":[29.2,30.2],\"text\":\" Absolutely.\"},{\"timestamp\":[30.2,33.48],\"text\":\" New clothes and tasty treats for the chilly days ahead.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3],\"text\":\" Hey, are you free for coffee later?\"},{\"timestamp\":[3,7],\"text\":\" I found a great new place in town. It's not hard to find at all.\"},{\"timestamp\":[7,9],\"text\":\" You know, the big gift shop on Main Street?\"},{\"timestamp\":[9,11],\"text\":\" Well, the coffee shop is right across from it.\"},{\"timestamp\":[11,14],\"text\":\" Just look for the gift shop, then cross the street.\"},{\"timestamp\":[14,17],\"text\":\" You'll see the coffee shop right there, opposite the gift shop.\"},{\"timestamp\":[17,null],\"text\":\" They have amazing pastries too. Let's meet there at 3pm, okay?\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[9]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e53"`
+  - Mới: `"6970ee3858cb12223e943ce8"`
+- **Đề[8].questions[0].subQuestion[10].content**:
+  - Cũ: `"James is talking about his family members. In what way does his mother and his aunt alike?"`
+  - Mới: `"Tom is calling his mom. Who is visiting Tom this weekend?"`
+- **Đề[8].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"They were thin"`
+  - Mới: `"His sister and her children"`
+- **Đề[8].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921466545_9aa5144bb034e600_audio_de10_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921299254_7a613840af7c6268_audio_de8_q11.mp3"`
+- **Đề[8].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"They had similar hair styles"`
+  - Mới: `"His aunt and uncle"`
+- **Đề[8].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"They had similar eye colors"`
+  - Mới: `"His sister and her children"`
+- **Đề[8].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"They were thin"`
+  - Mới: `"His cousin"`
+- **Đề[8].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,12],\"text\":\" <span style=\"color: rgb(33, 37, 41);\">This </span>picture is of my aunt and my mom. Many people say they look alike. I find it funny though because when they were teenagers, my mom had long hair while my aunt had short hair.\"},{\"timestamp\":[12,23],\"text\":\" They were both equally thin back then, but their eyes were different. My mom has lovely brown eyes and my aunt has strikingly beautiful blue eyes.\"},{\"timestamp\":[23,30],\"text\":\" Even with their differences, they share a special bond that makes them so similar in spirit.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.38],\"text\":\" Hey, Mom. Are you coming over this weekend?\"},{\"timestamp\":[4.38,6.62],\"text\":\" I'd really love to see you.\"},{\"timestamp\":[6.62,9.1],\"text\":\" What? You're busy?\"},{\"timestamp\":[9.1,11],\"text\":\" That's too bad.\"},{\"timestamp\":[11,14.1],\"text\":\" But at least my sister is visiting with her kids.\"},{\"timestamp\":[14.1,16.3],\"text\":\" I'm excited about that.\"},{\"timestamp\":[16.3,18.7],\"text\":\" Is Uncle coming with her too?\"},{\"timestamp\":[18.7,20.3],\"text\":\" Oh, his not?\"},{\"timestamp\":[20.3,null],\"text\":\" That's a shame. Hopefully you can all get together next time.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[10]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e54"`
+  - Mới: `"6970ee3858cb12223e943ce9"`
+- **Đề[8].questions[0].subQuestion[11].content**:
+  - Cũ: `"A receptionist is checking the client list of a clinic. How many American clients are there?"`
+  - Mới: `"Who does she live with? / A woman is talking about her vacation. What is the relationship between Lisa and the speaker?"`
+- **Đề[8].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"One"`
+  - Mới: `"Best friends"`
+- **Đề[8].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921467521_3bc2d2dd40d9d451_audio_de10_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921300704_be71804d25d9b6c9_audio_de8_q12.mp3"`
+- **Đề[8].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Two"`
+  - Mới: `"Best friends"`
+- **Đề[8].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"One"`
+  - Mới: `"Cousins"`
+- **Đề[8].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"Three"`
+  - Mới: `"Sisters"`
+- **Đề[8].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Alright, let me go over the list of clients for today. We've got Carl, Harry, and Matthew all from the UK.\"},{\"timestamp\":[7,14],\"text\":\" Leslie, who's from the US, is also scheduled for an appointment. Then we have two more clients coming in from France.\"},{\"timestamp\":[14,null],\"text\":\" So that gives us one American, a few from the UK, and the rest from France. It looks like everything's in order.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.56],\"text\":\" I just got back from an amazing vacation with Lisa. We've been friends for years\"},{\"timestamp\":[5.56,11],\"text\":\" and this trip really brought us closer. I can't imagine going with anyone else.\"},{\"timestamp\":[11,15.28],\"text\":\" Some people think we look like mother and daughter because we care for each\"},{\"timestamp\":[15.28,20.31],\"text\":\" other so much, but it's really just best friends hanging out.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[11]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e55"`
+  - Mới: `"6970ee3858cb12223e943cea"`
+- **Đề[8].questions[0].subQuestion[12].content**:
+  - Cũ: `"How many weeks have they been in India?"`
+  - Mới: `"A woman shares her job with her friend. Why does she want to become a writer?"`
+- **Đề[8].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"2 weeks"`
+  - Mới: `"Help people"`
+- **Đề[8].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921468631_697dc31d64209d16_audio_de10_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921301303_dd0a29d3b51cbde7_audio_de8_q13.mp3"`
+- **Đề[8].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"2 weeks"`
+  - Mới: `"Help people"`
+- **Đề[8].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"4 weeks"`
+  - Mới: `"Become famous"`
+- **Đề[8].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"3 weeks"`
+  - Mới: `"Earn money"`
+- **Đề[8].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.44],\"text\":\" They traveled to India for a short trip, and they spent two weeks there.\"},{\"timestamp\":[4.44,7.6],\"text\":\" During that time, they explored different cities,\"},{\"timestamp\":[7.6,11.68],\"text\":\" experienced the local culture, and visited some famous landmarks.\"},{\"timestamp\":[11.68,14.08],\"text\":\" It was a quick but memorable visit.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.96],\"text\":\" I have been thinking a lot about my job, and I really want to become a writer.\"},{\"timestamp\":[4.96,9.68],\"text\":\" It's not just about earning a lot of money or becoming famous for me.\"},{\"timestamp\":[9.68,13.64],\"text\":\" My main reason is to help people improve themselves.\"},{\"timestamp\":[13.64,18.52],\"text\":\" I believe stories can inspire and support others during hard times.\"},{\"timestamp\":[18.52,null],\"text\":\" I hope my writing can make a difference in their lives, and that's why I'm choosing this path.\"}]</p>"`
+- **Đề[8].questions[0].subQuestion[12]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e56"`
+  - Mới: `"6970ee3858cb12223e943ceb"`
+- **Đề[8].questions[0]._id**:
+  - Cũ: `"6970f0bd58cb12223e943e49"`
+  - Mới: `"6970ee3858cb12223e943cde"`
+- **Đề[8].id**:
+  - Cũ: `"69567b620731243929b0cac6"`
+  - Mới: `"69565e420731243929b0ca73"`
+- **Đề[8].createdAt**:
+  - Cũ: `"2026-01-01T13:49:22.887Z"`
+  - Mới: `"2026-01-01T11:45:06.375Z"`
+- **Đề[8].updatedAt**:
+  - Cũ: `"2026-01-21T15:29:01.254Z"`
+  - Mới: `"2026-01-21T15:18:16.193Z"`
+
+### Đề số 10
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[9]._id**:
+  - Cũ: `"69567e6c0731243929b0cacc"`
+  - Mới: `"69567b620731243929b0cab7"`
+- **Đề[9].title**:
+  - Cũ: `"Đề 11"`
+  - Mới: `"Đề 10"`
+- **Đề[9].questions[0].questionTitle**:
+  - Cũ: `"Đề 11"`
+  - Mới: `"Đề 10"`
+- **Đề[9].questions[0].content**:
+  - Cũ: `"Đề 11"`
+  - Mới: `"Đề 10"`
+- **Đề[9].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to Sarah talking about her hobby. What does she do in her free time?"`
+  - Mới: `"A woman is talking about her plan for the holiday. What will she do during the holiday?"`
+- **Đề[9].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Go to theater and play sports"`
+  - Mới: `"Go for a walk"`
+- **Đề[9].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921683448_12a83f10b744f579_audio_de11_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921456112_daf8e60eea137a0f_audio_de10_q1.mp3"`
+- **Đề[9].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Go to the beach and swim"`
+  - Mới: `"Go for a run"`
+- **Đề[9].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Go to theater and play sports"`
+  - Mới: `"Go for a bike ride"`
+- **Đề[9].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Watch TV and read books"`
+  - Mới: `"Go for a walk"`
+- **Đề[9].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" In my free time, I love to go to the theater.\"},{\"timestamp\":[3.2,6.68],\"text\":\" There is something magical about watching a live performance.\"},{\"timestamp\":[6.68,8.8],\"text\":\" It makes me feel alive and happy.\"},{\"timestamp\":[8.8,11.44],\"text\":\" I also enjoy playing sports with my friends.\"},{\"timestamp\":[11.44,15.4],\"text\":\" We have so much fun together, whether it's soccer or basketball.\"},{\"timestamp\":[15.4,18.52],\"text\":\" These activities help me relax and make my days brighter.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" I'm really excited about the holiday. I think I'll go for a walk every day to enjoy the fresh air.\"},{\"timestamp\":[6.52,11],\"text\":\" I also considered going for a run, but walking sounds more relaxing.\"},{\"timestamp\":[11,17],\"text\":\" Maybe I'll even try to go for a bike ride later. It'll be nice to spend some time outdoors.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[0]._id**:
+  - Cũ: `"69718f32d158761fc1003dac"`
+  - Mới: `"6970f0bd58cb12223e943e4a"`
+- **Đề[9].questions[0].subQuestion[1].content**:
+  - Cũ: `"Where do they go when they travel to India?"`
+  - Mới: `"Two colleagues talk about meeting. When do they want to meet?"`
+- **Đề[9].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Go to the park"`
+  - Mới: `"Tuesday"`
+- **Đề[9].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921685988_0bae9495881d8617_audio_de11_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921458006_eedefb2097fd322b_audio_de10_q2.mp3"`
+- **Đề[9].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Go to the mountains"`
+  - Mới: `"Monday"`
+- **Đề[9].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Go to the park"`
+  - Mới: `"Wednesday"`
+- **Đề[9].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Go to the beach"`
+  - Mới: `"Tuesday"`
+- **Đề[9].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" When they travel to India, they explore many different places.\"},{\"timestamp\":[4,7],\"text\":\" And one of the spots they always visit is the park.\"},{\"timestamp\":[7,13],\"text\":\" It's a great place to relax, enjoy the local scenery, and experience the vibrant culture.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.64],\"text\":\" Hey, we've been meaning to sit down and discuss the project.\"},{\"timestamp\":[3.64,5.84],\"text\":\" When would be a good time for you to meet?\"},{\"timestamp\":[5.84,10.28],\"text\":\" I've got a few things lined up this week, but Tuesday should work for me.\"},{\"timestamp\":[10.28,12.36],\"text\":\" I have some free time in the afternoon.\"},{\"timestamp\":[12.36,14.64],\"text\":\" Tuesday afternoon sounds great.\"},{\"timestamp\":[14.64,16.8],\"text\":\" I'll clear my schedule as well.\"},{\"timestamp\":[16.8,18.52],\"text\":\" Let's aim for round to PM.\"},{\"timestamp\":[18.52,22.42],\"text\":\" Perfect. I'll make a note of it. See you on Tuesday at 2pm. Looking forward to it. See you then.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[1]._id**:
+  - Cũ: `"69718f32d158761fc1003dad"`
+  - Mới: `"6970f0bd58cb12223e943e4b"`
+- **Đề[9].questions[0].subQuestion[2].content**:
+  - Cũ: `"A tour guide is talking about the vacation list of activities. What can people do in the afternoon?"`
+  - Mới: `"A woman is talking about her job. How is being a writer different from other jobs?"`
+- **Đề[9].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Play golf"`
+  - Mới: `"She works at irregular times"`
+- **Đề[9].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921687704_02ca8dea6ad59eb6_audio_de11_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921459195_a7becdb144a5e7f8_audio_de10_q3.mp3"`
+- **Đề[9].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Visit museums"`
+  - Mới: `"She works 9 to 5"`
+- **Đề[9].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Play golf"`
+  - Mới: `"She works at irregular times"`
+- **Đề[9].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Go swimming"`
+  - Mới: `"She works at a desk all day"`
+- **Đề[9].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,8],\"text\":\" Now let's talk about the afternoon activities. For those interested we have a golf course available where you can spend your afternoon playing golf.\"},{\"timestamp\":[8,14],\"text\":\" If golf isn't your thing, don't worry, there's also a dance class scheduled in the evening.\"},{\"timestamp\":[14,null],\"text\":\" And of course, you can always go shopping in the nearby stores later on, but bear in mind the store will only open in the morning.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.48],\"text\":\" Hello, my name is Sarah and I'm an artist.\"},{\"timestamp\":[3.48,7.68],\"text\":\" I paint pictures of nature like trees, rivers, and animals.\"},{\"timestamp\":[7.68,11.56],\"text\":\" I love using bright colors to make my art happy and full of life.\"},{\"timestamp\":[11.56,17.2],\"text\":\" My job is very fun, but I work irregular hours, sometimes late at night or on weekends.\"},{\"timestamp\":[17.2,20.96],\"text\":\" When I have inspiration, I paint for many hours without a break.\"},{\"timestamp\":[20.96,26],\"text\":\" I sell my paintings and galleries and online, and it makes me really happy when people like my work.\"},{\"timestamp\":[26,29],\"text\":\" Creating art is the best job for me.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[2]._id**:
+  - Cũ: `"69718f32d158761fc1003dae"`
+  - Mới: `"6970f0bd58cb12223e943e4c"`
+- **Đề[9].questions[0].subQuestion[3].content**:
+  - Cũ: `"Where does she walk every night? / Listen to Anna talking about her routine. Where does Anna go for a walk every morning?"`
+  - Mới: `"A woman is talking about shopping places. Where is she going to go shopping?"`
+- **Đề[9].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"The college"`
+  - Mới: `"At a new shopping center"`
+- **Đề[9].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921688799_98099afc9575f939_audio_de11_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921459941_030311a77e8e4079_audio_de10_q4.mp3"`
+- **Đề[9].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"The park"`
+  - Mới: `"At the mall"`
+- **Đề[9].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"The college"`
+  - Mới: `"At a boutique"`
+- **Đề[9].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"The beach"`
+  - Mới: `"At a new shopping center"`
+- **Đề[9].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I really like to walk in the mornings. Every day I take a nice walk before my classes start.\"},{\"timestamp\":[6,10],\"text\":\" I could walk around my neighbourhood, but I prefer going to college.\"},{\"timestamp\":[10,16],\"text\":\" It's a great way for me to get a bit of exercise and clear my mind before the day begins.\"},{\"timestamp\":[16,19],\"text\":\" The campus is so peaceful in the mornings.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.6],\"text\":\" I love shopping and there are so many places to choose from in our city.\"},{\"timestamp\":[5.6,10.12],\"text\":\" The downtown market is great for fresh fruit and vegetables and there are lots of small\"},{\"timestamp\":[10.12,12],\"text\":\" shops there too.\"},{\"timestamp\":[12,17.08],\"text\":\" If I need clothes, I usually go to the mall, but it can get very crowded on weekends.\"},{\"timestamp\":[17.08,21.84],\"text\":\" There's also a little boutique near my house with some unique items, but it's a bit\"},{\"timestamp\":[21.84,23.68],\"text\":\" expensive.\"},{\"timestamp\":[23.68,28.04],\"text\":\" This time, I'm excited to check out the new shopping centre that just opened.\"},{\"timestamp\":[28.04,30.44],\"text\":\" I've heard it has everything I need in one place.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[3]._id**:
+  - Cũ: `"69718f32d158761fc1003daf"`
+  - Mới: `"6970f0bd58cb12223e943e4d"`
+- **Đề[9].questions[0].subQuestion[4].content**:
+  - Cũ: `"A woman is discussing with her team. How many chairs does she need?"`
+  - Mới: `"Jorge is calling his friend about their plan for the weekend. What time does the football match start?"`
+- **Đề[9].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"20"`
+  - Mới: `"1pm"`
+- **Đề[9].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921690139_912c20d9b374dbd0_audio_de11_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921460636_bfb95c66df0ad85d_audio_de10_q5.mp3"`
+- **Đề[9].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"25"`
+  - Mới: `"3pm"`
+- **Đề[9].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"15"`
+  - Mới: `"5pm"`
+- **Đề[9].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"20"`
+  - Mới: `"1pm"`
+- **Đề[9].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi everyone. As we get ready for the meeting, I need to confirm how many seats we need.\"},{\"timestamp\":[7,12],\"text\":\" I've counted 12 people on the list, so I was thinking of setting up 15 chairs.\"},{\"timestamp\":[12,18],\"text\":\" Oh, wait. I just remembered there might be a few guests joining us.\"},{\"timestamp\":[18,20.18],\"text\":\" Let's go ahead and set up 20 chairs to be safe. Does that work for everyone?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hey, it's Jorge. I wanted to check in about our plans for the weekend.\"},{\"timestamp\":[5,10],\"text\":\" I'll be busy in the morning, but how about we meet at 11.30 for lunch?\"},{\"timestamp\":[10,16],\"text\":\" The football match starts at 1pm, and since it takes about 30 minutes to drive there,\"},{\"timestamp\":[16,19],\"text\":\" we'll have just enough time to grab something to eat.\"},{\"timestamp\":[19,24],\"text\":\" After the match, we can head back to my place and play some video games.\"},{\"timestamp\":[24,29.36],\"text\":\" It's going to be a fun day. Let me know if that works for you. Can't wait!\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[4]._id**:
+  - Cũ: `"69718f32d158761fc1003db0"`
+  - Mới: `"6970f0bd58cb12223e943e4e"`
+- **Đề[9].questions[0].subQuestion[5].content**:
+  - Cũ: `"Listen to a girl calling the cafe. Where did she ask the coffee shop to look for her lost item?"`
+  - Mới: `"What does her sister drink? / Linda is talking about what she likes to eat. What does she have for lunch?"`
+- **Đề[9].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"In the corner"`
+  - Mới: `"Tea"`
+- **Đề[9].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921690894_b7b8dce07dfa000a_audio_de11_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921461429_c404c6258140e22e_audio_de10_q6.mp3"`
+- **Đề[9].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"On the counter"`
+  - Mới: `"Coffee"`
+- **Đề[9].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"Near the door"`
+  - Mới: `"Juice"`
+- **Đề[9].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"In the corner"`
+  - Mới: `"Tea"`
+- **Đề[9].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi, I was at your cafe this afternoon, and I think I left something there.\"},{\"timestamp\":[5,9],\"text\":\" I remember having it when I sat at a small table in the corner.\"},{\"timestamp\":[9,14],\"text\":\" I checked the counter and near the door before I left, but I must have forgotten it in the corner after all.\"},{\"timestamp\":[14,16],\"text\":\" Could you please look there?\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,8],\"text\":\" When it comes to lunch, I have a simple pleasure. I really enjoy a warm cup of tea. It's my favorite drink to have while I eat.\"},{\"timestamp\":[8,null],\"text\":\" I find it calming, and it makes my meal feel special. Sometimes people ask me why I don't choose coffee or juice, but for me, tea is just perfect. It warms my heart and gives me a moment to relax.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[5]._id**:
+  - Cũ: `"69718f32d158761fc1003db1"`
+  - Mới: `"6970f0bd58cb12223e943e4f"`
+- **Đề[9].questions[0].subQuestion[6].content**:
+  - Cũ: `"Where did they meet?"`
+  - Mới: `"A man is describing his school. What color is the teacher's building?"`
+- **Đề[9].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"The front entrance"`
+  - Mới: `"White"`
+- **Đề[9].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921692545_cb55d92346b28ddf_audio_de11_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921462648_6584bd495732a487_audio_de10_q7.mp3"`
+- **Đề[9].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"The back entrance"`
+  - Mới: `"Green"`
+- **Đề[9].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"The front entrance"`
+  - Mới: `"Blue"`
+- **Đề[9].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"The side entrance"`
+  - Mới: `"White"`
+- **Đề[9].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.84],\"text\":\" They were both running a bit late, but they met at the front entrance.\"},{\"timestamp\":[3.84,9.24],\"text\":\" It was the easiest spot to find each other, and they knew it would be easy to spot each other there.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.88],\"text\":\" You know, I've been spending a lot of time at school lately.\"},{\"timestamp\":[4.88,7.56],\"text\":\" I really like how a campus.\"},{\"timestamp\":[7.56,10.76],\"text\":\" One thing that stands out is the teacher's building.\"},{\"timestamp\":[10.76,14],\"text\":\" It's really nice and has a bright, white colour.\"},{\"timestamp\":[14,17.12],\"text\":\" I love how it looks against the blue sky.\"},{\"timestamp\":[17.12,null],\"text\":\" It's kind of a central point of the school and it feels welcoming. I think it adds a lot to the overall atmosphere here.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[6]._id**:
+  - Cũ: `"69718f32d158761fc1003db2"`
+  - Mới: `"6970f0bd58cb12223e943e50"`
+- **Đề[9].questions[0].subQuestion[7].content**:
+  - Cũ: `"The daughter is calling her father. What did she buy?"`
+  - Mới: `"How much are the eggs?"`
+- **Đề[9].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"A dress"`
+  - Mới: `"2.50 pounds"`
+- **Đề[9].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921694942_624e36efd0cef800_audio_de11_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921463495_b4393b204711a0c5_audio_de10_q8.mp3"`
+- **Đề[9].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"A dress"`
+  - Mới: `"3.50 pounds"`
+- **Đề[9].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"A pair of shoes"`
+  - Mới: `"1.50 pounds"`
+- **Đề[9].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"A blouse"`
+  - Mới: `"2.50 pounds"`
+- **Đề[9].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.56],\"text\":\" I just went shopping because I'm getting ready for a trip.\"},{\"timestamp\":[4.56,9.6],\"text\":\" At first, I wanted to buy a hat, but then I realised I could borrow one from a friend.\"},{\"timestamp\":[9.6,12.56],\"text\":\" I was really torn between a dress and a blouse.\"},{\"timestamp\":[12.56,20.78],\"text\":\" I love the style of the blouse, but in the end, I chose the dress because it fits me better. I can't wait to wear it on my trip. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.04],\"text\":\" Hey, I just saw that the eggs are on sale today.\"},{\"timestamp\":[3.04,8.32],\"text\":\" Normally, they're 2.5 O pounds, but right now, they're discounted.\"},{\"timestamp\":[8.32,9.52],\"text\":\" It's a great deal.\"},{\"timestamp\":[9.52,12.12],\"text\":\" So, I decided to pick up a few extra cartons.\"},{\"timestamp\":[12.12,14.96],\"text\":\" If you're planning to buy eggs, today's the perfect day.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[7]._id**:
+  - Cũ: `"69718f32d158761fc1003db3"`
+  - Mới: `"6970f0bd58cb12223e943e51"`
+- **Đề[9].questions[0].subQuestion[8].content**:
+  - Cũ: `"Listen to a teacher talking about meeting preparations. What is the teacher preparing for the meeting now?"`
+  - Mới: `"What is the way to exercise? / What is she going to do? / What does she do on her holidays?"`
+- **Đề[9].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"Order the food"`
+  - Mới: `"Walking"`
+- **Đề[9].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921695846_96b285b3ad36f1c2_audio_de11_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921464110_bf9450f97d2fe0f2_audio_de10_q9.mp3"`
+- **Đề[9].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Order the food"`
+  - Mới: `"Cycling"`
+- **Đề[9].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Print the documents"`
+  - Mới: `"Running"`
+- **Đề[9].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"Arrange the seating"`
+  - Mới: `"Walking"`
+- **Đề[9].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" We have a big meeting coming up next week. There are a few things I still need to do to get ready.\"},{\"timestamp\":[6,13],\"text\":\" For example, I need to set up the chairs for everyone. Then, of course, I have to order the food so we can eat during the break.\"},{\"timestamp\":[13,20.8],\"text\":\" I'll also organize the documents that will need for the discussion, but food is the priority right now. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.4],\"text\":\" One of the easiest and most accessible ways to exercise is by walking,\"},{\"timestamp\":[4.4,8.16],\"text\":\" it's simple, doesn't require any special equipment,\"},{\"timestamp\":[8.16,12.24],\"text\":\" and you can do it anywhere whether it's around your neighborhood or at a park.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[8]._id**:
+  - Cũ: `"69718f32d158761fc1003db4"`
+  - Mới: `"6970f0bd58cb12223e943e52"`
+- **Đề[9].questions[0].subQuestion[9].content**:
+  - Cũ: `"Adam is calling his friend. When will he need the computer?"`
+  - Mới: `"Two friends are talking with each other. What did they both buy?"`
+- **Đề[9].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"Friday"`
+  - Mới: `"Clothes"`
+- **Đề[9].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921696915_92f131d60c5a51fa_audio_de11_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921465687_e8d527250a3f9dc1_audio_de10_q10.mp3"`
+- **Đề[9].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"Friday"`
+  - Mới: `"Books"`
+- **Đề[9].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"Thursday"`
+  - Mới: `"Clothes"`
+- **Đề[9].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"Tuesday"`
+  - Mới: `"Shoes"`
+- **Đề[9].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.94],\"text\":\" Hey James, it's Adam. I just wanted to give you a quick call. I know you need a\"},{\"timestamp\":[5.94,10.92],\"text\":\" computer for your project so I'm happy to let you borrow mine on Tuesday. Just\"},{\"timestamp\":[10.92,14.76],\"text\":\" make sure to take good care of it, but I need it back by Friday because I have a\"},{\"timestamp\":[14.76,20.16],\"text\":\" group presentation on Saturday. I really appreciate it and I'm sure you'll get a\"},{\"timestamp\":[20.16,null],\"text\":\" lot done with it. Let me know if that works for you. See you soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I just got back from shopping, I found a great jacket, and also picked up some tea.\"},{\"timestamp\":[6,9],\"text\":\" Nice, what kind of jacket did you get?\"},{\"timestamp\":[9,11],\"text\":\" It's a stylish leather jacket.\"},{\"timestamp\":[11,13],\"text\":\" I think it'll be perfect for the fall.\"},{\"timestamp\":[13,15],\"text\":\" What about you?\"},{\"timestamp\":[15,19],\"text\":\" I bought a cozy sweater, and also grabbed a delicious cake.\"},{\"timestamp\":[19,23],\"text\":\" Sounds great, those are perfect for this weather.\"},{\"timestamp\":[23,26.52],\"text\":\" Thanks, I'm excited to try the cake layer.\"},{\"timestamp\":[26.52,29.2],\"text\":\" Looks like we both made good choices today.\"},{\"timestamp\":[29.2,30.2],\"text\":\" Absolutely.\"},{\"timestamp\":[30.2,33.48],\"text\":\" New clothes and tasty treats for the chilly days ahead.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[9]._id**:
+  - Cũ: `"69718f32d158761fc1003db5"`
+  - Mới: `"6970f0bd58cb12223e943e53"`
+- **Đề[9].questions[0].subQuestion[10].content**:
+  - Cũ: `"What country will they study next semester?"`
+  - Mới: `"James is talking about his family members. In what way does his mother and his aunt alike?"`
+- **Đề[9].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"France"`
+  - Mới: `"They were thin"`
+- **Đề[9].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921697673_b0c21e4acd0e4bfb_audio_de11_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921466545_9aa5144bb034e600_audio_de10_q11.mp3"`
+- **Đề[9].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Germany"`
+  - Mới: `"They had similar hair styles"`
+- **Đề[9].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Spain"`
+  - Mới: `"They had similar eye colors"`
+- **Đề[9].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"France"`
+  - Mới: `"They were thin"`
+- **Đề[9].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p><strong>Paragraph:</strong></p><p><span style=\"color: rgb(33, 37, 41);\">They've been planning their study abroad program for a while, and next semester, they will study in France. It’s an exciting opportunity to immerse themselves in the culture and improve their language skills.</span></p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,12],\"text\":\" <span style=\"color: rgb(33, 37, 41);\">This </span>picture is of my aunt and my mom. Many people say they look alike. I find it funny though because when they were teenagers, my mom had long hair while my aunt had short hair.\"},{\"timestamp\":[12,23],\"text\":\" They were both equally thin back then, but their eyes were different. My mom has lovely brown eyes and my aunt has strikingly beautiful blue eyes.\"},{\"timestamp\":[23,30],\"text\":\" Even with their differences, they share a special bond that makes them so similar in spirit.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[10]._id**:
+  - Cũ: `"69718f32d158761fc1003db6"`
+  - Mới: `"6970f0bd58cb12223e943e54"`
+- **Đề[9].questions[0].subQuestion[11].content**:
+  - Cũ: `"What do they need to repair for the building? / A woman is talking about her house. What is she going to change in their house?"`
+  - Mới: `"A receptionist is checking the client list of a clinic. How many American clients are there?"`
+- **Đề[9].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"The windows"`
+  - Mới: `"One"`
+- **Đề[9].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921698437_6ea4fea42be38fb9_audio_de11_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921467521_3bc2d2dd40d9d451_audio_de10_q12.mp3"`
+- **Đề[9].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"The roof"`
+  - Mới: `"Two"`
+- **Đề[9].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"The windows"`
+  - Mới: `"One"`
+- **Đề[9].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"The doors"`
+  - Mới: `"Three"`
+- **Đề[9].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.6],\"text\":\" They've been planning their study abroad program for a while, and next semester they will study in France.\"},{\"timestamp\":[5.6,10.64],\"text\":\" It's an exciting opportunity to immerse themselves in the culture and improve their language skills.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Alright, let me go over the list of clients for today. We've got Carl, Harry, and Matthew all from the UK.\"},{\"timestamp\":[7,14],\"text\":\" Leslie, who's from the US, is also scheduled for an appointment. Then we have two more clients coming in from France.\"},{\"timestamp\":[14,null],\"text\":\" So that gives us one American, a few from the UK, and the rest from France. It looks like everything's in order.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[11]._id**:
+  - Cũ: `"69718f32d158761fc1003db7"`
+  - Mới: `"6970f0bd58cb12223e943e55"`
+- **Đề[9].questions[0].subQuestion[12].content**:
+  - Cũ: `"Listen to an actor discussing his hobbies. What does the actor like to do in his free time?"`
+  - Mới: `"How many weeks have they been in India?"`
+- **Đề[9].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Drawing"`
+  - Mới: `"2 weeks"`
+- **Đề[9].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921700572_120142a89612cabc_audio_de11_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921468631_697dc31d64209d16_audio_de10_q13.mp3"`
+- **Đề[9].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Drawing"`
+  - Mới: `"2 weeks"`
+- **Đề[9].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Watching movies"`
+  - Mới: `"4 weeks"`
+- **Đề[9].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"Playing video games"`
+  - Mới: `"3 weeks"`
+- **Đề[9].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.48],\"text\":\" I don't have much free time with my acting schedule, but when I do, I like to relax.\"},{\"timestamp\":[6.48,10.6],\"text\":\" Many people think I spend my free time watching movies, but that's not my favourite\"},{\"timestamp\":[10.6,11.6],\"text\":\" hobby.\"},{\"timestamp\":[11.6,13.88],\"text\":\" Actually, I love drawing.\"},{\"timestamp\":[13.88,16.98],\"text\":\" It helps me clear my mind and get creative.\"},{\"timestamp\":[16.98,null],\"text\":\" I sometimes play sports too, but drawing is what I enjoy most.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.44],\"text\":\" They traveled to India for a short trip, and they spent two weeks there.\"},{\"timestamp\":[4.44,7.6],\"text\":\" During that time, they explored different cities,\"},{\"timestamp\":[7.6,11.68],\"text\":\" experienced the local culture, and visited some famous landmarks.\"},{\"timestamp\":[11.68,14.08],\"text\":\" It was a quick but memorable visit.\"}]</p>"`
+- **Đề[9].questions[0].subQuestion[12]._id**:
+  - Cũ: `"69718f32d158761fc1003db8"`
+  - Mới: `"6970f0bd58cb12223e943e56"`
+- **Đề[9].questions[0]._id**:
+  - Cũ: `"69718f31d158761fc1003dab"`
+  - Mới: `"6970f0bd58cb12223e943e49"`
+- **Đề[9].id**:
+  - Cũ: `"69567e6c0731243929b0cadb"`
+  - Mới: `"69567b620731243929b0cac6"`
+- **Đề[9].createdAt**:
+  - Cũ: `"2026-01-01T14:02:20.487Z"`
+  - Mới: `"2026-01-01T13:49:22.887Z"`
+- **Đề[9].updatedAt**:
+  - Cũ: `"2026-01-22T02:45:05.997Z"`
+  - Mới: `"2026-01-21T15:29:01.254Z"`
+
+### Đề số 11
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[10]._id**:
+  - Cũ: `"695682170731243929b0cae1"`
+  - Mới: `"69567e6c0731243929b0cacc"`
+- **Đề[10].title**:
+  - Cũ: `"Đề 12"`
+  - Mới: `"Đề 11"`
+- **Đề[10].questions[0].questionTitle**:
+  - Cũ: `"Đề 12"`
+  - Mới: `"Đề 11"`
+- **Đề[10].questions[0].content**:
+  - Cũ: `"Đề 12"`
+  - Mới: `"Đề 11"`
+- **Đề[10].questions[0].subQuestion[0].content**:
+  - Cũ: `"Listen to a principal talking about new school facilities. What new facility will the school have?"`
+  - Mới: `"Listen to Sarah talking about her hobby. What does she do in her free time?"`
+- **Đề[10].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"A Performance space"`
+  - Mới: `"Go to theater and play sports"`
+- **Đề[10].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921990119_ca36630e51a9f1d4_audio_de12_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921683448_12a83f10b744f579_audio_de11_q1.mp3"`
+- **Đề[10].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"A new library"`
+  - Mới: `"Go to the beach and swim"`
+- **Đề[10].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"A sports field"`
+  - Mới: `"Go to theater and play sports"`
+- **Đề[10].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"A Performance space"`
+  - Mới: `"Watch TV and read books"`
+- **Đề[10].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" Our school is getting some exciting new facilities.\"},{\"timestamp\":[3.2,6],\"text\":\" We already have a library and a sports field,\"},{\"timestamp\":[6,8.4],\"text\":\" but we're adding something different now.\"},{\"timestamp\":[8.4,13.6],\"text\":\" The school will have a new performance space for plays, concerts and other events.\"},{\"timestamp\":[13.6,16.6],\"text\":\" It's going to be a great addition for the students.\"},{\"timestamp\":[16.6,19.2],\"text\":\" We're really looking forward to seeing it finished.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" In my free time, I love to go to the theater.\"},{\"timestamp\":[3.2,6.68],\"text\":\" There is something magical about watching a live performance.\"},{\"timestamp\":[6.68,8.8],\"text\":\" It makes me feel alive and happy.\"},{\"timestamp\":[8.8,11.44],\"text\":\" I also enjoy playing sports with my friends.\"},{\"timestamp\":[11.44,15.4],\"text\":\" We have so much fun together, whether it's soccer or basketball.\"},{\"timestamp\":[15.4,18.52],\"text\":\" These activities help me relax and make my days brighter.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[0]._id**:
+  - Cũ: `"697190efd158761fc1003e53"`
+  - Mới: `"69718f32d158761fc1003dac"`
+- **Đề[10].questions[0].subQuestion[1].content**:
+  - Cũ: `"What does he advise young people to do to save money?"`
+  - Mới: `"Where do they go when they travel to India?"`
+- **Đề[10].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Cook for yourself"`
+  - Mới: `"Go to the park"`
+- **Đề[10].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921991919_b573e16235ebb613_audio_de12_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921685988_0bae9495881d8617_audio_de11_q2.mp3"`
+- **Đề[10].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Use public transportation"`
+  - Mới: `"Go to the mountains"`
+- **Đề[10].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Buy second-hand items"`
+  - Mới: `"Go to the park"`
+- **Đề[10].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Cook for yourself"`
+  - Mới: `"Go to the beach"`
+- **Đề[10].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" He often tells young people that the best way to save money is by creating a budget and sticking to it.\"},{\"timestamp\":[6.52,13.5],\"text\":\" He advises them to track their spending, avoid unnecessary purchases, and prioritize saving for the future.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" When they travel to India, they explore many different places.\"},{\"timestamp\":[4,7],\"text\":\" And one of the spots they always visit is the park.\"},{\"timestamp\":[7,13],\"text\":\" It's a great place to relax, enjoy the local scenery, and experience the vibrant culture.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[1]._id**:
+  - Cũ: `"697190efd158761fc1003e54"`
+  - Mới: `"69718f32d158761fc1003dad"`
+- **Đề[10].questions[0].subQuestion[2].content**:
+  - Cũ: `"Listening to a man talking about his business trip. What does he like in Dubai?"`
+  - Mới: `"A tour guide is talking about the vacation list of activities. What can people do in the afternoon?"`
+- **Đề[10].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"He enjoys his job here"`
+  - Mới: `"Play golf"`
+- **Đề[10].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921992679_a005ff368537794d_audio_de12_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921687704_02ca8dea6ad59eb6_audio_de11_q3.mp3"`
+- **Đề[10].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"He enjoys shopping"`
+  - Mới: `"Visit museums"`
+- **Đề[10].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"He enjoys his job here"`
+  - Mới: `"Play golf"`
+- **Đề[10].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"He enjoys the weather"`
+  - Mới: `"Go swimming"`
+- **Đề[10].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've been living in Dubai for about two years now, and I really enjoy my work here.\"},{\"timestamp\":[6,9],\"text\":\" It's challenging, but that's what makes it exciting.\"},{\"timestamp\":[9,15],\"text\":\" The company I work for is great, and I get to meet people from all over the world.\"},{\"timestamp\":[15,21],\"text\":\" The food is also amazing, but the work itself is what keeps me happy.\"},{\"timestamp\":[21,27.05],\"text\":\" I can see myself staying here for a long time because I feel lucky to do what I love.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,8],\"text\":\" Now let's talk about the afternoon activities. For those interested we have a golf course available where you can spend your afternoon playing golf.\"},{\"timestamp\":[8,14],\"text\":\" If golf isn't your thing, don't worry, there's also a dance class scheduled in the evening.\"},{\"timestamp\":[14,null],\"text\":\" And of course, you can always go shopping in the nearby stores later on, but bear in mind the store will only open in the morning.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[2]._id**:
+  - Cũ: `"697190efd158761fc1003e55"`
+  - Mới: `"69718f32d158761fc1003dae"`
+- **Đề[10].questions[0].subQuestion[3].content**:
+  - Cũ: `"Listen to a conversation between the teacher and a parent. What will the father do?"`
+  - Mới: `"Where does she walk every night? / Listen to Anna talking about her routine. Where does Anna go for a walk every morning?"`
+- **Đề[10].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"Arrange private classes"`
+  - Mới: `"The college"`
+- **Đề[10].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921993364_922f913b522de792_audio_de12_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921688799_98099afc9575f939_audio_de11_q4.mp3"`
+- **Đề[10].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"Change schools"`
+  - Mới: `"The park"`
+- **Đề[10].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"Arrange private classes"`
+  - Mới: `"The college"`
+- **Đề[10].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"Enroll in after-school programs"`
+  - Mới: `"The beach"`
+- **Đề[10].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hello Mr. Johnson. Thank you for coming in today. I wanted to talk about your son, Jake.\"},{\"timestamp\":[6,10],\"text\":\" Hi Mrs. Lee. Yes, I've noticed he's been struggling a bit lately.\"},{\"timestamp\":[10,17],\"text\":\" Yes, his performance is not so good in math and reading. He seems to have some difficulties understanding the lessons.\"},{\"timestamp\":[17,20],\"text\":\" I'm worried about that. What can we do to help him?\"},{\"timestamp\":[20,25.68],\"text\":\" I know a private tutor who works well with children. She can provide extra help and support.\"},{\"timestamp\":[25.68,29.16],\"text\":\" That sounds like a good idea. Can you give me her contact information?\"},{\"timestamp\":[29.16,33.76],\"text\":\" Of course. I will write it down for you. I think Jake will really benefit from it.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I really like to walk in the mornings. Every day I take a nice walk before my classes start.\"},{\"timestamp\":[6,10],\"text\":\" I could walk around my neighbourhood, but I prefer going to college.\"},{\"timestamp\":[10,16],\"text\":\" It's a great way for me to get a bit of exercise and clear my mind before the day begins.\"},{\"timestamp\":[16,19],\"text\":\" The campus is so peaceful in the mornings.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[3]._id**:
+  - Cũ: `"697190efd158761fc1003e56"`
+  - Mới: `"69718f32d158761fc1003daf"`
+- **Đề[10].questions[0].subQuestion[4].content**:
+  - Cũ: `"A woman is talking about her job. What encouraged her to become a scientist?"`
+  - Mới: `"A woman is discussing with her team. How many chairs does she need?"`
+- **Đề[10].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"A large stone"`
+  - Mới: `"20"`
+- **Đề[10].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921994129_50855cd655cfe62a_audio_de12_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921690139_912c20d9b374dbd0_audio_de11_q5.mp3"`
+- **Đề[10].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"Her mother's support"`
+  - Mới: `"25"`
+- **Đề[10].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"A large stone"`
+  - Mới: `"15"`
+- **Đề[10].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"A book she read"`
+  - Mới: `"20"`
+- **Đề[10].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've always loved science, but there was a moment that really encouraged me to become a scientist.\"},{\"timestamp\":[6,11],\"text\":\" I remember when I was a child I found a large stone during a school trip.\"},{\"timestamp\":[11,14],\"text\":\" It sparked my curiosity about geology.\"},{\"timestamp\":[14,17],\"text\":\" My mother also inspired me to explore my interests in science.\"},{\"timestamp\":[17,null],\"text\":\" Of course, I used the computer a lot now for my research, but that stone was the beginning.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,7],\"text\":\" Hi everyone. As we get ready for the meeting, I need to confirm how many seats we need.\"},{\"timestamp\":[7,12],\"text\":\" I've counted 12 people on the list, so I was thinking of setting up 15 chairs.\"},{\"timestamp\":[12,18],\"text\":\" Oh, wait. I just remembered there might be a few guests joining us.\"},{\"timestamp\":[18,20.18],\"text\":\" Let's go ahead and set up 20 chairs to be safe. Does that work for everyone?\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[4]._id**:
+  - Cũ: `"697190efd158761fc1003e57"`
+  - Mới: `"69718f32d158761fc1003db0"`
+- **Đề[10].questions[0].subQuestion[5].content**:
+  - Cũ: `"Listen to David talking about the conference. How long did he talk in the speech?"`
+  - Mới: `"Listen to a girl calling the cafe. Where did she ask the coffee shop to look for her lost item?"`
+- **Đề[10].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"15 minutes"`
+  - Mới: `"In the corner"`
+- **Đề[10].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921995376_d8601ab12e6b6d1e_audio_de12_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921690894_b7b8dce07dfa000a_audio_de11_q6.mp3"`
+- **Đề[10].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"20 minutes"`
+  - Mới: `"On the counter"`
+- **Đề[10].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"10 minutes"`
+  - Mới: `"Near the door"`
+- **Đề[10].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"15 minutes"`
+  - Mới: `"In the corner"`
+- **Đề[10].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,2],\"text\":\" Hello everyone.\"},{\"timestamp\":[2,7],\"text\":\" Today, I want to tell you about the conference that took place last week.\"},{\"timestamp\":[7,10],\"text\":\" It was very interesting and many people attended.\"},{\"timestamp\":[10,13],\"text\":\" I spoke about new ideas in business.\"},{\"timestamp\":[13,17],\"text\":\" My presentation wasn't very long, but I had a lot to say.\"},{\"timestamp\":[17,21],\"text\":\" The other speakers talked about technology and education.\"},{\"timestamp\":[21,24],\"text\":\" After the talks, there were some questions from the audience.\"},{\"timestamp\":[24,26.8],\"text\":\" My speech lasted about 15\"},{\"timestamp\":[26.8,34.64],\"text\":\" minutes shorter than expected. However, the audience was very attentive and I was happy to see that.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hi, I was at your cafe this afternoon, and I think I left something there.\"},{\"timestamp\":[5,9],\"text\":\" I remember having it when I sat at a small table in the corner.\"},{\"timestamp\":[9,14],\"text\":\" I checked the counter and near the door before I left, but I must have forgotten it in the corner after all.\"},{\"timestamp\":[14,16],\"text\":\" Could you please look there?\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[5]._id**:
+  - Cũ: `"697190efd158761fc1003e58"`
+  - Mới: `"69718f32d158761fc1003db1"`
+- **Đề[10].questions[0].subQuestion[6].content**:
+  - Cũ: `"A man is talking about his holiday. How is he going to travel to the city?"`
+  - Mới: `"Where did they meet?"`
+- **Đề[10].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"By bus"`
+  - Mới: `"The front entrance"`
+- **Đề[10].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921996444_b072db4ea0133226_audio_de12_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921692545_cb55d92346b28ddf_audio_de11_q7.mp3"`
+- **Đề[10].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"By car"`
+  - Mới: `"The back entrance"`
+- **Đề[10].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"By bus"`
+  - Mới: `"The front entrance"`
+- **Đề[10].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"By train"`
+  - Mới: `"The side entrance"`
+- **Đề[10].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p><strong>Paragraph:</strong></p><p><span style=\"color: rgb(33, 37, 41);\">Hello, everyone! I want to share my plans for the holiday. This year, I’m going to travel to the city for a few days. I’m very excited because I love exploring new places. I plan to visit some interesting museums and try different foods at local restaurants. The best part is that I will travel by bus, which is fun and also very cheap! I will leave early in the morning to enjoy the day. I can’t wait to see all the sights and take lots of pictures! It will be an amazing holiday!</span></p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.84],\"text\":\" They were both running a bit late, but they met at the front entrance.\"},{\"timestamp\":[3.84,9.24],\"text\":\" It was the easiest spot to find each other, and they knew it would be easy to spot each other there.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[6]._id**:
+  - Cũ: `"697190efd158761fc1003e59"`
+  - Mới: `"69718f32d158761fc1003db2"`
+- **Đề[10].questions[0].subQuestion[7].content**:
+  - Cũ: `"Lily is talking about her daily routine. What does she do in the evening?"`
+  - Mới: `"The daughter is calling her father. What did she buy?"`
+- **Đề[10].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"Goes for a walk"`
+  - Mới: `"A dress"`
+- **Đề[10].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921997365_b36ced544e21356c_audio_de12_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921694942_624e36efd0cef800_audio_de11_q8.mp3"`
+- **Đề[10].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"Does yoga"`
+  - Mới: `"A dress"`
+- **Đề[10].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"Goes for a walk"`
+  - Mới: `"A pair of shoes"`
+- **Đề[10].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"Watches TV"`
+  - Mới: `"A blouse"`
+- **Đề[10].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.24],\"text\":\" Hello everyone, I want to share my plans for the holiday.\"},{\"timestamp\":[4.24,7.6],\"text\":\" This year, I'm going to travel to the city for a few days.\"},{\"timestamp\":[7.6,11.08],\"text\":\" I'm very excited because I love exploring new places.\"},{\"timestamp\":[11.08,16.64],\"text\":\" I plan to visit some interesting museums and try different foods at local restaurants.\"},{\"timestamp\":[16.64,22.28],\"text\":\" The best part is that I will travel by bus, which is fun and also very cheap.\"},{\"timestamp\":[22.28,25.76],\"text\":\" I will leave early in the morning to enjoy the day. I can't\"},{\"timestamp\":[25.76,30.44],\"text\":\" wait to see all the sights and take lots of pictures. It will be an amazing holiday.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.56],\"text\":\" I just went shopping because I'm getting ready for a trip.\"},{\"timestamp\":[4.56,9.6],\"text\":\" At first, I wanted to buy a hat, but then I realised I could borrow one from a friend.\"},{\"timestamp\":[9.6,12.56],\"text\":\" I was really torn between a dress and a blouse.\"},{\"timestamp\":[12.56,20.78],\"text\":\" I love the style of the blouse, but in the end, I chose the dress because it fits me better. I can't wait to wear it on my trip. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[7]._id**:
+  - Cũ: `"697190efd158761fc1003e5a"`
+  - Mới: `"69718f32d158761fc1003db3"`
+- **Đề[10].questions[0].subQuestion[8].content**:
+  - Cũ: `"A man and a woman are talking about their old school days. What was the man's favorite thing about school?"`
+  - Mới: `"Listen to a teacher talking about meeting preparations. What is the teacher preparing for the meeting now?"`
+- **Đề[10].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"History classes"`
+  - Mới: `"Order the food"`
+- **Đề[10].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921998824_317839b0afa50f32_audio_de12_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921695846_96b285b3ad36f1c2_audio_de11_q9.mp3"`
+- **Đề[10].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"Math classes"`
+  - Mới: `"Order the food"`
+- **Đề[10].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"Sports"`
+  - Mới: `"Print the documents"`
+- **Đề[10].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"History classes"`
+  - Mới: `"Arrange the seating"`
+- **Đề[10].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" What do you remember most about our school days?\"},{\"timestamp\":[4.5,7],\"text\":\" Honestly, I don't remember much.\"},{\"timestamp\":[7,9.1],\"text\":\" I remember that I was terrible at math.\"},{\"timestamp\":[9.1,10.9],\"text\":\" It was my worst subject.\"},{\"timestamp\":[10.9,14.5],\"text\":\" Also, I remember that you were really good at history.\"},{\"timestamp\":[14.5,15.7],\"text\":\" That's right.\"},{\"timestamp\":[15.7,17.3],\"text\":\" I loved history.\"},{\"timestamp\":[17.3,20.1],\"text\":\" Actually, those classes were the ones I remember the most.\"},{\"timestamp\":[20.1,null],\"text\":\" All those stories and events were so fascinating.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" We have a big meeting coming up next week. There are a few things I still need to do to get ready.\"},{\"timestamp\":[6,13],\"text\":\" For example, I need to set up the chairs for everyone. Then, of course, I have to order the food so we can eat during the break.\"},{\"timestamp\":[13,20.8],\"text\":\" I'll also organize the documents that will need for the discussion, but food is the priority right now. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[8]._id**:
+  - Cũ: `"697190efd158761fc1003e5b"`
+  - Mới: `"69718f32d158761fc1003db4"`
+- **Đề[10].questions[0].subQuestion[9].content**:
+  - Cũ: `"Listen to a radio man talking about a new popular song. Which is the most attractive part of the song?"`
+  - Mới: `"Adam is calling his friend. When will he need the computer?"`
+- **Đề[10].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"The words"`
+  - Mới: `"Friday"`
+- **Đề[10].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921999586_70f563c7382ba9e0_audio_de12_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921696915_92f131d60c5a51fa_audio_de11_q10.mp3"`
+- **Đề[10].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"The words"`
+  - Mới: `"Friday"`
+- **Đề[10].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"The beat"`
+  - Mới: `"Thursday"`
+- **Đề[10].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"The instruments"`
+  - Mới: `"Tuesday"`
+- **Đề[10].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good evening listeners.\"},{\"timestamp\":[4,8],\"text\":\" Today, I want to talk about a new song that's quickly becoming popular.\"},{\"timestamp\":[8,14],\"text\":\" You're my everything. The tune is really catchy, and it makes you want to dance right away.\"},{\"timestamp\":[14,18],\"text\":\" The instruments used are simple, but create a great rhythm.\"},{\"timestamp\":[18,21],\"text\":\" However, the most attractive part of all is the words.\"},{\"timestamp\":[21,24],\"text\":\" The lyrics tell a beautiful story that everyone can relate to.\"},{\"timestamp\":[24,30],\"text\":\" It's no wonder so many people are loving this song. If you haven't heard it yet, make\"},{\"timestamp\":[30,33.08],\"text\":\" sure to give it a listen soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.94],\"text\":\" Hey James, it's Adam. I just wanted to give you a quick call. I know you need a\"},{\"timestamp\":[5.94,10.92],\"text\":\" computer for your project so I'm happy to let you borrow mine on Tuesday. Just\"},{\"timestamp\":[10.92,14.76],\"text\":\" make sure to take good care of it, but I need it back by Friday because I have a\"},{\"timestamp\":[14.76,20.16],\"text\":\" group presentation on Saturday. I really appreciate it and I'm sure you'll get a\"},{\"timestamp\":[20.16,null],\"text\":\" lot done with it. Let me know if that works for you. See you soon.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[9]._id**:
+  - Cũ: `"697190efd158761fc1003e5c"`
+  - Mới: `"69718f32d158761fc1003db5"`
+- **Đề[10].questions[0].subQuestion[10].content**:
+  - Cũ: `"Listen to the announcement. When does the train leave the station?"`
+  - Mới: `"What country will they study next semester?"`
+- **Đề[10].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"9:15"`
+  - Mới: `"France"`
+- **Đề[10].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922000265_a64eccbbb1eeac5c_audio_de12_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921697673_b0c21e4acd0e4bfb_audio_de11_q11.mp3"`
+- **Đề[10].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"9:15"`
+  - Mới: `"Germany"`
+- **Đề[10].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"9:30"`
+  - Mới: `"Spain"`
+- **Đề[10].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"9:00"`
+  - Mới: `"France"`
+- **Đề[10].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Good morning everyone. This is an important announcement about a change in the train schedule.\"},{\"timestamp\":[5,11],\"text\":\" The train to London will now leave at 915, not 930 as planned.\"},{\"timestamp\":[11,20.54],\"text\":\" Please listen carefully to this information. If you are taking this train, please go to platform 3 now. Thank you for your attention and have a good day. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p><strong>Paragraph:</strong></p><p><span style=\"color: rgb(33, 37, 41);\">They've been planning their study abroad program for a while, and next semester, they will study in France. It’s an exciting opportunity to immerse themselves in the culture and improve their language skills.</span></p>"`
+- **Đề[10].questions[0].subQuestion[10]._id**:
+  - Cũ: `"697190efd158761fc1003e5d"`
+  - Mới: `"69718f32d158761fc1003db6"`
+- **Đề[10].questions[0].subQuestion[11].content**:
+  - Cũ: `"Lucy is calling her friend. What is her sister like?"`
+  - Mới: `"What do they need to repair for the building? / A woman is talking about her house. What is she going to change in their house?"`
+- **Đề[10].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"They have similar characters"`
+  - Mới: `"The windows"`
+- **Đề[10].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922000923_7e5564accf1dfbe7_audio_de12_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921698437_6ea4fea42be38fb9_audio_de11_q12.mp3"`
+- **Đề[10].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"They have different hair colors"`
+  - Mới: `"The roof"`
+- **Đề[10].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"They have similar characters"`
+  - Mới: `"The windows"`
+- **Đề[10].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"They are very different"`
+  - Mới: `"The doors"`
+- **Đề[10].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Emma, it's Lucy. I hope you're doing well. I need a small favor for me today.\"},{\"timestamp\":[6,11],\"text\":\" Could you pick up my sister after school? She'll be standing at the school gate at 3 p.m.\"},{\"timestamp\":[11,15],\"text\":\" She looks just like me, so you'll recognize her easily.\"},{\"timestamp\":[15,null],\"text\":\" I have a meeting and I won't make it in time. Thank you so much. Let me know if that's okay with you.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5.6],\"text\":\" They've been planning their study abroad program for a while, and next semester they will study in France.\"},{\"timestamp\":[5.6,10.64],\"text\":\" It's an exciting opportunity to immerse themselves in the culture and improve their language skills.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[11]._id**:
+  - Cũ: `"697190efd158761fc1003e5e"`
+  - Mới: `"69718f32d158761fc1003db7"`
+- **Đề[10].questions[0].subQuestion[12].content**:
+  - Cũ: `"An expert is talking about lack of satisfaction at work. What should be the solution?"`
+  - Mới: `"Listen to an actor discussing his hobbies. What does the actor like to do in his free time?"`
+- **Đề[10].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"Request a transfer"`
+  - Mới: `"Drawing"`
+- **Đề[10].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922002085_ed318bb8c5d0efe0_audio_de12_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921700572_120142a89612cabc_audio_de11_q13.mp3"`
+- **Đề[10].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"Request a transfer"`
+  - Mới: `"Drawing"`
+- **Đề[10].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"Take a vacation"`
+  - Mới: `"Watching movies"`
+- **Đề[10].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"Find a new job"`
+  - Mới: `"Playing video games"`
+- **Đề[10].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Many people feel unhappy at work, and often they think a higher salary or less work will fix it.\"},{\"timestamp\":[6,9],\"text\":\" But that's not always the solution.\"},{\"timestamp\":[9,12],\"text\":\" Sometimes, the problem is the work environment.\"},{\"timestamp\":[12,15],\"text\":\" A change of place can help improve how we feel at work.\"},{\"timestamp\":[15,19],\"text\":\" However, looking for a new job can be stressful and take time.\"},{\"timestamp\":[19,24],\"text\":\" One option is to ask for a transfer to another branch within the same company.\"},{\"timestamp\":[24,29.42],\"text\":\" This can offer the same benefits as getting a new job, without the challenges of starting\"},{\"timestamp\":[29.42,30.54],\"text\":\" over somewhere new.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.48],\"text\":\" I don't have much free time with my acting schedule, but when I do, I like to relax.\"},{\"timestamp\":[6.48,10.6],\"text\":\" Many people think I spend my free time watching movies, but that's not my favourite\"},{\"timestamp\":[10.6,11.6],\"text\":\" hobby.\"},{\"timestamp\":[11.6,13.88],\"text\":\" Actually, I love drawing.\"},{\"timestamp\":[13.88,16.98],\"text\":\" It helps me clear my mind and get creative.\"},{\"timestamp\":[16.98,null],\"text\":\" I sometimes play sports too, but drawing is what I enjoy most.\"}]</p>"`
+- **Đề[10].questions[0].subQuestion[12]._id**:
+  - Cũ: `"697190efd158761fc1003e5f"`
+  - Mới: `"69718f32d158761fc1003db8"`
+- **Đề[10].questions[0]._id**:
+  - Cũ: `"697190efd158761fc1003e52"`
+  - Mới: `"69718f31d158761fc1003dab"`
+- **Đề[10].id**:
+  - Cũ: `"695682170731243929b0caf0"`
+  - Mới: `"69567e6c0731243929b0cadb"`
+- **Đề[10].createdAt**:
+  - Cũ: `"2026-01-01T14:17:59.753Z"`
+  - Mới: `"2026-01-01T14:02:20.487Z"`
+- **Đề[10].updatedAt**:
+  - Cũ: `"2026-01-22T02:52:31.591Z"`
+  - Mới: `"2026-01-22T02:45:05.997Z"`
+
+### Đề số 12
+
+Phát hiện **112** sự khác biệt:
+
+- **Đề[11]._id**:
+  - Cũ: `"696fa2e05f30844cf4a950a3"`
+  - Mới: `"695682170731243929b0cae1"`
+- **Đề[11].title**:
+  - Cũ: `"Đề 9"`
+  - Mới: `"Đề 12"`
+- **Đề[11].questions[0].questionTitle**:
+  - Cũ: `"Đề 9 (Aptis Key)"`
+  - Mới: `"Đề 12"`
+- **Đề[11].questions[0].content**:
+  - Cũ: `"Đề 9 (Aptis Key)"`
+  - Mới: `"Đề 12"`
+- **Đề[11].questions[0].subQuestion[0].content**:
+  - Cũ: `"A man is talking about his jobs. What does the man want to do next?"`
+  - Mới: `"Listen to a principal talking about new school facilities. What new facility will the school have?"`
+- **Đề[11].questions[0].subQuestion[0].correctAnswer**:
+  - Cũ: `"Become a writer"`
+  - Mới: `"A Performance space"`
+- **Đề[11].questions[0].subQuestion[0].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923860333_27ec372109ebfcee_audio_de9_q1.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921990119_ca36630e51a9f1d4_audio_de12_q1.mp3"`
+- **Đề[11].questions[0].subQuestion[0].answerList[0].content**:
+  - Cũ: `"Become a history teacher"`
+  - Mới: `"A new library"`
+- **Đề[11].questions[0].subQuestion[0].answerList[1].content**:
+  - Cũ: `"Become a writer"`
+  - Mới: `"A sports field"`
+- **Đề[11].questions[0].subQuestion[0].answerList[2].content**:
+  - Cũ: `"Become a chef"`
+  - Mới: `"A Performance space"`
+- **Đề[11].questions[0].subQuestion[0].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.04],\"text\":\" I used to be a chef and I loved cooking different dishes for people.\"},{\"timestamp\":[5.04,10.04],\"text\":\" It was exciting to create new recipes, but it was also very hard work.\"},{\"timestamp\":[10.04,14.52],\"text\":\" After that, I became a history teacher, where I enjoyed sharing stories about the past\"},{\"timestamp\":[14.52,16.08],\"text\":\" with my students.\"},{\"timestamp\":[16.08,19.56],\"text\":\" Teaching was rewarding, but I wanted to try something new.\"},{\"timestamp\":[19.56,21.92],\"text\":\" Now, I want to become a writer.\"},{\"timestamp\":[21.92,23.07],\"text\":\" I have many ideas for stories in my mind, and I can't wait to put them on paper.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,3.2],\"text\":\" Our school is getting some exciting new facilities.\"},{\"timestamp\":[3.2,6],\"text\":\" We already have a library and a sports field,\"},{\"timestamp\":[6,8.4],\"text\":\" but we're adding something different now.\"},{\"timestamp\":[8.4,13.6],\"text\":\" The school will have a new performance space for plays, concerts and other events.\"},{\"timestamp\":[13.6,16.6],\"text\":\" It's going to be a great addition for the students.\"},{\"timestamp\":[16.6,19.2],\"text\":\" We're really looking forward to seeing it finished.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[0]._id**:
+  - Cũ: `"697192b3d158761fc1003efa"`
+  - Mới: `"697190efd158761fc1003e53"`
+- **Đề[11].questions[0].subQuestion[1].content**:
+  - Cũ: `"Lucy is calling her brother. What does the brother have to drink?"`
+  - Mới: `"What does he advise young people to do to save money?"`
+- **Đề[11].questions[0].subQuestion[1].correctAnswer**:
+  - Cũ: `"Water"`
+  - Mới: `"Cook for yourself"`
+- **Đề[11].questions[0].subQuestion[1].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923861515_c49b65355c022fd2_audio_de9_q2.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921991919_b573e16235ebb613_audio_de12_q2.mp3"`
+- **Đề[11].questions[0].subQuestion[1].answerList[0].content**:
+  - Cũ: `"Tea"`
+  - Mới: `"Use public transportation"`
+- **Đề[11].questions[0].subQuestion[1].answerList[1].content**:
+  - Cũ: `"Water"`
+  - Mới: `"Buy second-hand items"`
+- **Đề[11].questions[0].subQuestion[1].answerList[2].content**:
+  - Cũ: `"Coffee"`
+  - Mới: `"Cook for yourself"`
+- **Đề[11].questions[0].subQuestion[1].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Jake, it's Lucy. I just wanted to check in on you. How are you doing?\"},{\"timestamp\":[6,9],\"text\":\" I know you've been busy with work and school lately.\"},{\"timestamp\":[9,12],\"text\":\" I'm worried that you're not drinking enough water.\"},{\"timestamp\":[12,16],\"text\":\" Staying hydrated is really important, especially when you're working hard.\"},{\"timestamp\":[16,18],\"text\":\" Remember to keep a bottle with you.\"},{\"timestamp\":[18,null],\"text\":\" Anyway, I hope you're taking care of yourself. Let's catch up soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6.52],\"text\":\" He often tells young people that the best way to save money is by creating a budget and sticking to it.\"},{\"timestamp\":[6.52,13.5],\"text\":\" He advises them to track their spending, avoid unnecessary purchases, and prioritize saving for the future.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[1]._id**:
+  - Cũ: `"697192b3d158761fc1003efb"`
+  - Mới: `"697190efd158761fc1003e54"`
+- **Đề[11].questions[0].subQuestion[2].content**:
+  - Cũ: `"What will she do?"`
+  - Mới: `"Listening to a man talking about his business trip. What does he like in Dubai?"`
+- **Đề[11].questions[0].subQuestion[2].correctAnswer**:
+  - Cũ: `"Go for a drive"`
+  - Mới: `"He enjoys his job here"`
+- **Đề[11].questions[0].subQuestion[2].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923862738_fe08d648fa1fc1bb_audio_de9_q3.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921992679_a005ff368537794d_audio_de12_q3.mp3"`
+- **Đề[11].questions[0].subQuestion[2].answerList[0].content**:
+  - Cũ: `"Go to work"`
+  - Mới: `"He enjoys shopping"`
+- **Đề[11].questions[0].subQuestion[2].answerList[1].content**:
+  - Cũ: `"Go for a drive"`
+  - Mới: `"He enjoys his job here"`
+- **Đề[11].questions[0].subQuestion[2].answerList[2].content**:
+  - Cũ: `"Stay home"`
+  - Mới: `"He enjoys the weather"`
+- **Đề[11].questions[0].subQuestion[2].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" She's planning to spend some time relaxing, so she will go for a drive.\"},{\"timestamp\":[4.7,10],\"text\":\" It's a great way for her to unwind, enjoy some fresh air, and clear her mind.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've been living in Dubai for about two years now, and I really enjoy my work here.\"},{\"timestamp\":[6,9],\"text\":\" It's challenging, but that's what makes it exciting.\"},{\"timestamp\":[9,15],\"text\":\" The company I work for is great, and I get to meet people from all over the world.\"},{\"timestamp\":[15,21],\"text\":\" The food is also amazing, but the work itself is what keeps me happy.\"},{\"timestamp\":[21,27.05],\"text\":\" I can see myself staying here for a long time because I feel lucky to do what I love.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[2]._id**:
+  - Cũ: `"697192b3d158761fc1003efc"`
+  - Mới: `"697190efd158761fc1003e55"`
+- **Đề[11].questions[0].subQuestion[3].content**:
+  - Cũ: `"Lucy is calling her friend. What is her sister like?"`
+  - Mới: `"Listen to a conversation between the teacher and a parent. What will the father do?"`
+- **Đề[11].questions[0].subQuestion[3].correctAnswer**:
+  - Cũ: `"They have similar characters"`
+  - Mới: `"Arrange private classes"`
+- **Đề[11].questions[0].subQuestion[3].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923863608_37a0c1d891f074eb_audio_de9_q4.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921993364_922f913b522de792_audio_de12_q4.mp3"`
+- **Đề[11].questions[0].subQuestion[3].answerList[0].content**:
+  - Cũ: `"She is taller than Lucy"`
+  - Mới: `"Change schools"`
+- **Đề[11].questions[0].subQuestion[3].answerList[1].content**:
+  - Cũ: `"They have similar characters"`
+  - Mới: `"Arrange private classes"`
+- **Đề[11].questions[0].subQuestion[3].answerList[2].content**:
+  - Cũ: `"She is very different from Lucy"`
+  - Mới: `"Enroll in after-school programs"`
+- **Đề[11].questions[0].subQuestion[3].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Emma, it's Lucy. I hope you're doing well. I need a small favor for me today.\"},{\"timestamp\":[6,11],\"text\":\" Could you pick up my sister after school? She'll be standing at the school gate at 3 p.m.\"},{\"timestamp\":[11,15],\"text\":\" She looks just like me, so you'll recognize her easily.\"},{\"timestamp\":[15,null],\"text\":\" I have a meeting and I won't make it in time. Thank you so much. Let me know if that's okay with you.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hello Mr. Johnson. Thank you for coming in today. I wanted to talk about your son, Jake.\"},{\"timestamp\":[6,10],\"text\":\" Hi Mrs. Lee. Yes, I've noticed he's been struggling a bit lately.\"},{\"timestamp\":[10,17],\"text\":\" Yes, his performance is not so good in math and reading. He seems to have some difficulties understanding the lessons.\"},{\"timestamp\":[17,20],\"text\":\" I'm worried about that. What can we do to help him?\"},{\"timestamp\":[20,25.68],\"text\":\" I know a private tutor who works well with children. She can provide extra help and support.\"},{\"timestamp\":[25.68,29.16],\"text\":\" That sounds like a good idea. Can you give me her contact information?\"},{\"timestamp\":[29.16,33.76],\"text\":\" Of course. I will write it down for you. I think Jake will really benefit from it.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[3]._id**:
+  - Cũ: `"697192b3d158761fc1003efd"`
+  - Mới: `"697190efd158761fc1003e56"`
+- **Đề[11].questions[0].subQuestion[4].content**:
+  - Cũ: `"A man and a woman are going shopping. What does he buy in the store?"`
+  - Mới: `"A woman is talking about her job. What encouraged her to become a scientist?"`
+- **Đề[11].questions[0].subQuestion[4].correctAnswer**:
+  - Cũ: `"A suit for the office"`
+  - Mới: `"A large stone"`
+- **Đề[11].questions[0].subQuestion[4].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923864391_0d6b1387c9b80148_audio_de9_q5.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921994129_50855cd655cfe62a_audio_de12_q5.mp3"`
+- **Đề[11].questions[0].subQuestion[4].answerList[0].content**:
+  - Cũ: `"A T-shirt"`
+  - Mới: `"Her mother's support"`
+- **Đề[11].questions[0].subQuestion[4].answerList[1].content**:
+  - Cũ: `"A suit for the office"`
+  - Mới: `"A large stone"`
+- **Đề[11].questions[0].subQuestion[4].answerList[2].content**:
+  - Cũ: `"A hat"`
+  - Mới: `"A book she read"`
+- **Đề[11].questions[0].subQuestion[4].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5],\"text\":\" Hey Sarah, let's check out this store. I need something for work.\"},{\"timestamp\":[5,8],\"text\":\" Sure John, how about this t-shirt? It looks nice.\"},{\"timestamp\":[8,12],\"text\":\" Hey Sarah, let's check out this store. I need something for work.\"},{\"timestamp\":[12,16],\"text\":\" Oh, okay, what about this hat? It would look great on you.\"},{\"timestamp\":[16,20],\"text\":\" Aha, maybe, but not today. I really need a suit for the office.\"},{\"timestamp\":[20,22],\"text\":\" Look, this one seems perfect.\"},{\"timestamp\":[22,25.36],\"text\":\" That's a good choice. It's smart and looks\"},{\"timestamp\":[25.36,32.58],\"text\":\" comfortable. Great. I'll buy the suit. Let's keep looking for other things we might need.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" I've always loved science, but there was a moment that really encouraged me to become a scientist.\"},{\"timestamp\":[6,11],\"text\":\" I remember when I was a child I found a large stone during a school trip.\"},{\"timestamp\":[11,14],\"text\":\" It sparked my curiosity about geology.\"},{\"timestamp\":[14,17],\"text\":\" My mother also inspired me to explore my interests in science.\"},{\"timestamp\":[17,null],\"text\":\" Of course, I used the computer a lot now for my research, but that stone was the beginning.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[4]._id**:
+  - Cũ: `"697192b3d158761fc1003efe"`
+  - Mới: `"697190efd158761fc1003e57"`
+- **Đề[11].questions[0].subQuestion[5].content**:
+  - Cũ: `"A tour guide is talking about birds' behaviors. What do birds do in the winter?"`
+  - Mới: `"Listen to David talking about the conference. How long did he talk in the speech?"`
+- **Đề[11].questions[0].subQuestion[5].correctAnswer**:
+  - Cũ: `"They stay together in groups for protection"`
+  - Mới: `"15 minutes"`
+- **Đề[11].questions[0].subQuestion[5].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923864944_a3d27cd04df34793_audio_de9_q6.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921995376_d8601ab12e6b6d1e_audio_de12_q6.mp3"`
+- **Đề[11].questions[0].subQuestion[5].answerList[0].content**:
+  - Cũ: `"They stay together in groups for protection"`
+  - Mới: `"20 minutes"`
+- **Đề[11].questions[0].subQuestion[5].answerList[1].content**:
+  - Cũ: `"They fly south"`
+  - Mới: `"10 minutes"`
+- **Đề[11].questions[0].subQuestion[5].answerList[2].content**:
+  - Cũ: `"They hunt for food"`
+  - Mới: `"15 minutes"`
+- **Đề[11].questions[0].subQuestion[5].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,7],\"text\":\" Welcome everyone, today we'll explore some interesting bird behaviors throughout the year.\"},{\"timestamp\":[7,11.56],\"text\":\" In spring, birds are busy building nests and finding mates, preparing for the arrival\"},{\"timestamp\":[11.56,12.56],\"text\":\" of their young.\"},{\"timestamp\":[12.56,17.52],\"text\":\" During summer, they're focused on feeding their chicks and teaching them how to fly.\"},{\"timestamp\":[17.52,22.3],\"text\":\" As autumn approaches, many birds begin to migrate, gathering food and energy for their long\"},{\"timestamp\":[22.3,24.12],\"text\":\" trip south.\"},{\"timestamp\":[24.12,25.54],\"text\":\" In winter, birds tend to\"},{\"timestamp\":[25.54,30.22],\"text\":\" stay together in groups for protection from predators. Each season brings\"},{\"timestamp\":[30.22,35.36],\"text\":\" out different survival strategies in these amazing creatures.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,2],\"text\":\" Hello everyone.\"},{\"timestamp\":[2,7],\"text\":\" Today, I want to tell you about the conference that took place last week.\"},{\"timestamp\":[7,10],\"text\":\" It was very interesting and many people attended.\"},{\"timestamp\":[10,13],\"text\":\" I spoke about new ideas in business.\"},{\"timestamp\":[13,17],\"text\":\" My presentation wasn't very long, but I had a lot to say.\"},{\"timestamp\":[17,21],\"text\":\" The other speakers talked about technology and education.\"},{\"timestamp\":[21,24],\"text\":\" After the talks, there were some questions from the audience.\"},{\"timestamp\":[24,26.8],\"text\":\" My speech lasted about 15\"},{\"timestamp\":[26.8,34.64],\"text\":\" minutes shorter than expected. However, the audience was very attentive and I was happy to see that.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[5]._id**:
+  - Cũ: `"697192b3d158761fc1003eff"`
+  - Mới: `"697190efd158761fc1003e58"`
+- **Đề[11].questions[0].subQuestion[6].content**:
+  - Cũ: `"How much are the eggs?"`
+  - Mới: `"A man is talking about his holiday. How is he going to travel to the city?"`
+- **Đề[11].questions[0].subQuestion[6].correctAnswer**:
+  - Cũ: `"1.50 pounds"`
+  - Mới: `"By bus"`
+- **Đề[11].questions[0].subQuestion[6].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923866230_d6e339dbd956e7c2_audio_de9_q7.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921996444_b072db4ea0133226_audio_de12_q7.mp3"`
+- **Đề[11].questions[0].subQuestion[6].answerList[0].content**:
+  - Cũ: `"2 pounds"`
+  - Mới: `"By car"`
+- **Đề[11].questions[0].subQuestion[6].answerList[1].content**:
+  - Cũ: `"3 pounds"`
+  - Mới: `"By bus"`
+- **Đề[11].questions[0].subQuestion[6].answerList[2].content**:
+  - Cũ: `"1.50 pounds"`
+  - Mới: `"By train"`
+- **Đề[11].questions[0].subQuestion[6].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.18],\"text\":\" The eggs are a bit more expensive than usual, but they cost 1.5 O pounds.\"},{\"timestamp\":[5.18,7.96],\"text\":\" They're from a local farm, so the quality is great.\"}]</p>"`
+  - Mới: `"<p><strong>Paragraph:</strong></p><p><span style=\"color: rgb(33, 37, 41);\">Hello, everyone! I want to share my plans for the holiday. This year, I’m going to travel to the city for a few days. I’m very excited because I love exploring new places. I plan to visit some interesting museums and try different foods at local restaurants. The best part is that I will travel by bus, which is fun and also very cheap! I will leave early in the morning to enjoy the day. I can’t wait to see all the sights and take lots of pictures! It will be an amazing holiday!</span></p>"`
+- **Đề[11].questions[0].subQuestion[6]._id**:
+  - Cũ: `"697192b3d158761fc1003f00"`
+  - Mới: `"697190efd158761fc1003e59"`
+- **Đề[11].questions[0].subQuestion[7].content**:
+  - Cũ: `"A woman is calling her husband. What time is lunch ready?"`
+  - Mới: `"Lily is talking about her daily routine. What does she do in the evening?"`
+- **Đề[11].questions[0].subQuestion[7].correctAnswer**:
+  - Cũ: `"2pm"`
+  - Mới: `"Goes for a walk"`
+- **Đề[11].questions[0].subQuestion[7].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923867129_a45763cda34e5225_audio_de9_q8.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921997365_b36ced544e21356c_audio_de12_q8.mp3"`
+- **Đề[11].questions[0].subQuestion[7].answerList[0].content**:
+  - Cũ: `"3pm"`
+  - Mới: `"Does yoga"`
+- **Đề[11].questions[0].subQuestion[7].answerList[1].content**:
+  - Cũ: `"1pm"`
+  - Mới: `"Goes for a walk"`
+- **Đề[11].questions[0].subQuestion[7].answerList[2].content**:
+  - Cũ: `"2pm"`
+  - Mới: `"Watches TV"`
+- **Đề[11].questions[0].subQuestion[7].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" Hi, just wanted to let you know that lunch will be ready at 2pm.\"},{\"timestamp\":[4.7,7.96],\"text\":\" I've just finished cooking and everything is set.\"},{\"timestamp\":[7.96,11],\"text\":\" So whenever you're ready, we can sit down and eat.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.24],\"text\":\" Hello everyone, I want to share my plans for the holiday.\"},{\"timestamp\":[4.24,7.6],\"text\":\" This year, I'm going to travel to the city for a few days.\"},{\"timestamp\":[7.6,11.08],\"text\":\" I'm very excited because I love exploring new places.\"},{\"timestamp\":[11.08,16.64],\"text\":\" I plan to visit some interesting museums and try different foods at local restaurants.\"},{\"timestamp\":[16.64,22.28],\"text\":\" The best part is that I will travel by bus, which is fun and also very cheap.\"},{\"timestamp\":[22.28,25.76],\"text\":\" I will leave early in the morning to enjoy the day. I can't\"},{\"timestamp\":[25.76,30.44],\"text\":\" wait to see all the sights and take lots of pictures. It will be an amazing holiday.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[7]._id**:
+  - Cũ: `"697192b3d158761fc1003f01"`
+  - Mới: `"697190efd158761fc1003e5a"`
+- **Đề[11].questions[0].subQuestion[8].content**:
+  - Cũ: `"What time is the meeting?"`
+  - Mới: `"A man and a woman are talking about their old school days. What was the man's favorite thing about school?"`
+- **Đề[11].questions[0].subQuestion[8].correctAnswer**:
+  - Cũ: `"2pm"`
+  - Mới: `"History classes"`
+- **Đề[11].questions[0].subQuestion[8].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923867833_b0a9d1e56220c549_audio_de9_q9.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921998824_317839b0afa50f32_audio_de12_q9.mp3"`
+- **Đề[11].questions[0].subQuestion[8].answerList[0].content**:
+  - Cũ: `"4pm"`
+  - Mới: `"Math classes"`
+- **Đề[11].questions[0].subQuestion[8].answerList[1].content**:
+  - Cũ: `"3pm"`
+  - Mới: `"Sports"`
+- **Đề[11].questions[0].subQuestion[8].answerList[2].content**:
+  - Cũ: `"2pm"`
+  - Mới: `"History classes"`
+- **Đề[11].questions[0].subQuestion[8].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,5.36],\"text\":\" The meeting was originally scheduled for 1.30 pm, but it's been moved to 2 pm now.\"},{\"timestamp\":[5.36,8.56],\"text\":\" I'll adjust my schedule to make sure I'm ready for the new time.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4.5],\"text\":\" What do you remember most about our school days?\"},{\"timestamp\":[4.5,7],\"text\":\" Honestly, I don't remember much.\"},{\"timestamp\":[7,9.1],\"text\":\" I remember that I was terrible at math.\"},{\"timestamp\":[9.1,10.9],\"text\":\" It was my worst subject.\"},{\"timestamp\":[10.9,14.5],\"text\":\" Also, I remember that you were really good at history.\"},{\"timestamp\":[14.5,15.7],\"text\":\" That's right.\"},{\"timestamp\":[15.7,17.3],\"text\":\" I loved history.\"},{\"timestamp\":[17.3,20.1],\"text\":\" Actually, those classes were the ones I remember the most.\"},{\"timestamp\":[20.1,null],\"text\":\" All those stories and events were so fascinating.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[8]._id**:
+  - Cũ: `"697192b3d158761fc1003f02"`
+  - Mới: `"697190efd158761fc1003e5b"`
+- **Đề[11].questions[0].subQuestion[9].content**:
+  - Cũ: `"A man is giving directions to a friend about how to get to the football club. The football club is near?"`
+  - Mới: `"Listen to a radio man talking about a new popular song. Which is the most attractive part of the song?"`
+- **Đề[11].questions[0].subQuestion[9].correctAnswer**:
+  - Cũ: `"A park"`
+  - Mới: `"The words"`
+- **Đề[11].questions[0].subQuestion[9].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923869190_e965bcbbfa517cff_audio_de9_q10.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768921999586_70f563c7382ba9e0_audio_de12_q10.mp3"`
+- **Đề[11].questions[0].subQuestion[9].answerList[0].content**:
+  - Cũ: `"A river"`
+  - Mới: `"The words"`
+- **Đề[11].questions[0].subQuestion[9].answerList[1].content**:
+  - Cũ: `"A park"`
+  - Mới: `"The beat"`
+- **Đề[11].questions[0].subQuestion[9].answerList[2].content**:
+  - Cũ: `"A shopping mall"`
+  - Mới: `"The instruments"`
+- **Đề[11].questions[0].subQuestion[9].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" To get to the football club, you just need to head down Main Street.\"},{\"timestamp\":[4,9],\"text\":\" Go past the grocery store on your left and then take a right at the traffic light.\"},{\"timestamp\":[9,13],\"text\":\" You'll see the library on your right, just keep going straight.\"},{\"timestamp\":[13,20.22],\"text\":\" The football club is right after that, next to the park. It's pretty easy to find. [BLANK_AUDIO]\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,4],\"text\":\" Good evening listeners.\"},{\"timestamp\":[4,8],\"text\":\" Today, I want to talk about a new song that's quickly becoming popular.\"},{\"timestamp\":[8,14],\"text\":\" You're my everything. The tune is really catchy, and it makes you want to dance right away.\"},{\"timestamp\":[14,18],\"text\":\" The instruments used are simple, but create a great rhythm.\"},{\"timestamp\":[18,21],\"text\":\" However, the most attractive part of all is the words.\"},{\"timestamp\":[21,24],\"text\":\" The lyrics tell a beautiful story that everyone can relate to.\"},{\"timestamp\":[24,30],\"text\":\" It's no wonder so many people are loving this song. If you haven't heard it yet, make\"},{\"timestamp\":[30,33.08],\"text\":\" sure to give it a listen soon.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[9]._id**:
+  - Cũ: `"697192b3d158761fc1003f03"`
+  - Mới: `"697190efd158761fc1003e5c"`
+- **Đề[11].questions[0].subQuestion[10].content**:
+  - Cũ: `"A boy is talking about his cat. What does he feed the cat?"`
+  - Mới: `"Listen to the announcement. When does the train leave the station?"`
+- **Đề[11].questions[0].subQuestion[10].correctAnswer**:
+  - Cũ: `"Fish"`
+  - Mới: `"9:15"`
+- **Đề[11].questions[0].subQuestion[10].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923869860_a0d6a8831ec725d3_audio_de9_q11.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922000265_a64eccbbb1eeac5c_audio_de12_q11.mp3"`
+- **Đề[11].questions[0].subQuestion[10].answerList[0].content**:
+  - Cũ: `"Mice"`
+  - Mới: `"9:15"`
+- **Đề[11].questions[0].subQuestion[10].answerList[1].content**:
+  - Cũ: `"Fish"`
+  - Mới: `"9:30"`
+- **Đề[11].questions[0].subQuestion[10].answerList[2].content**:
+  - Cũ: `"Birds"`
+  - Mới: `"9:00"`
+- **Đề[11].questions[0].subQuestion[10].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4.7],\"text\":\" Hi, I'm Alex, and I want to tell you about my cat, whiskers.\"},{\"timestamp\":[4.7,7.1],\"text\":\" He's really friendly and loves to play.\"},{\"timestamp\":[7.1,9.5],\"text\":\" Whiskers is a bit picky about food, though.\"},{\"timestamp\":[9.5,13],\"text\":\" He doesn't like eating mice or insects, which is funny for a cat,\"},{\"timestamp\":[13,15.2],\"text\":\" but he absolutely loves fish.\"},{\"timestamp\":[15.2,18.1],\"text\":\" Every time I give him some, he gets so excited.\"},{\"timestamp\":[18.1,null],\"text\":\" He also enjoys sleeping by the window and watching the birds outside. is the best pet ever.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,5],\"text\":\" Good morning everyone. This is an important announcement about a change in the train schedule.\"},{\"timestamp\":[5,11],\"text\":\" The train to London will now leave at 915, not 930 as planned.\"},{\"timestamp\":[11,20.54],\"text\":\" Please listen carefully to this information. If you are taking this train, please go to platform 3 now. Thank you for your attention and have a good day. [BLANK_AUDIO]\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[10]._id**:
+  - Cũ: `"697192b3d158761fc1003f04"`
+  - Mới: `"697190efd158761fc1003e5d"`
+- **Đề[11].questions[0].subQuestion[11].content**:
+  - Cũ: `"Jack is phoning his mom. What does Jack need to buy for his sister?"`
+  - Mới: `"Lucy is calling her friend. What is her sister like?"`
+- **Đề[11].questions[0].subQuestion[11].correctAnswer**:
+  - Cũ: `"Chocolates"`
+  - Mới: `"They have similar characters"`
+- **Đề[11].questions[0].subQuestion[11].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923870557_1e29ed8592680bce_audio_de9_q12.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922000923_7e5564accf1dfbe7_audio_de12_q12.mp3"`
+- **Đề[11].questions[0].subQuestion[11].answerList[0].content**:
+  - Cũ: `"Clothes"`
+  - Mới: `"They have different hair colors"`
+- **Đề[11].questions[0].subQuestion[11].answerList[1].content**:
+  - Cũ: `"Chocolates"`
+  - Mới: `"They have similar characters"`
+- **Đề[11].questions[0].subQuestion[11].answerList[2].content**:
+  - Cũ: `"A toy"`
+  - Mới: `"They are very different"`
+- **Đề[11].questions[0].subQuestion[11].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,4],\"text\":\" Hi mom, it's Jack. I hope you're doing well.\"},{\"timestamp\":[4,8],\"text\":\" I'm out shopping and I need to buy some chocolates for my sister's birthday.\"},{\"timestamp\":[8,12],\"text\":\" She loves dark chocolate, so I want to get her some nice ones.\"},{\"timestamp\":[12,14],\"text\":\" By the way, do you need anything while I'm here?\"},{\"timestamp\":[14,17],\"text\":\" I can pick up some milk or fruit if you want.\"},{\"timestamp\":[17,19],\"text\":\" Let me know. I'll talk to you soon.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Hi Emma, it's Lucy. I hope you're doing well. I need a small favor for me today.\"},{\"timestamp\":[6,11],\"text\":\" Could you pick up my sister after school? She'll be standing at the school gate at 3 p.m.\"},{\"timestamp\":[11,15],\"text\":\" She looks just like me, so you'll recognize her easily.\"},{\"timestamp\":[15,null],\"text\":\" I have a meeting and I won't make it in time. Thank you so much. Let me know if that's okay with you.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[11]._id**:
+  - Cũ: `"697192b3d158761fc1003f05"`
+  - Mới: `"697190efd158761fc1003e5e"`
+- **Đề[11].questions[0].subQuestion[12].content**:
+  - Cũ: `"Why does she like the manager?"`
+  - Mới: `"An expert is talking about lack of satisfaction at work. What should be the solution?"`
+- **Đề[11].questions[0].subQuestion[12].correctAnswer**:
+  - Cũ: `"He taught her a lot"`
+  - Mới: `"Request a transfer"`
+- **Đề[11].questions[0].subQuestion[12].file**:
+  - Cũ: `"https://files.aptisacademy.com.vn/listening/2026/01/1768923871547_3deada43fc972ae9_audio_de9_q13.mp3"`
+  - Mới: `"https://files.aptisacademy.com.vn/listening/2026/01/1768922002085_ed318bb8c5d0efe0_audio_de12_q13.mp3"`
+- **Đề[11].questions[0].subQuestion[12].answerList[0].content**:
+  - Cũ: `"He was always strict"`
+  - Mới: `"Request a transfer"`
+- **Đề[11].questions[0].subQuestion[12].answerList[1].content**:
+  - Cũ: `"He taught her a lot"`
+  - Mới: `"Take a vacation"`
+- **Đề[11].questions[0].subQuestion[12].answerList[2].content**:
+  - Cũ: `"He was very friendly"`
+  - Mới: `"Find a new job"`
+- **Đề[11].questions[0].subQuestion[12].suggestion**:
+  - Cũ: `"<p>[{\"timestamp\":[0,3.52],\"text\":\" You know, I want to talk about my old manager, George.\"},{\"timestamp\":[3.52,7.32],\"text\":\" He was a very smart man, and he taught me a lot about work.\"},{\"timestamp\":[7.32,10],\"text\":\" I remember the first time I joined the team.\"},{\"timestamp\":[10,12.56],\"text\":\" He showed me how to do my job well.\"},{\"timestamp\":[12.56,16.24],\"text\":\" George was not very strict, but he had high expectations.\"},{\"timestamp\":[16.24,18.84],\"text\":\" I learned to be better because of him.\"},{\"timestamp\":[18.84,null],\"text\":\" Overall, I am thankful for his guidance and support during my early days.\"}]</p>"`
+  - Mới: `"<p>[{\"timestamp\":[0,6],\"text\":\" Many people feel unhappy at work, and often they think a higher salary or less work will fix it.\"},{\"timestamp\":[6,9],\"text\":\" But that's not always the solution.\"},{\"timestamp\":[9,12],\"text\":\" Sometimes, the problem is the work environment.\"},{\"timestamp\":[12,15],\"text\":\" A change of place can help improve how we feel at work.\"},{\"timestamp\":[15,19],\"text\":\" However, looking for a new job can be stressful and take time.\"},{\"timestamp\":[19,24],\"text\":\" One option is to ask for a transfer to another branch within the same company.\"},{\"timestamp\":[24,29.42],\"text\":\" This can offer the same benefits as getting a new job, without the challenges of starting\"},{\"timestamp\":[29.42,30.54],\"text\":\" over somewhere new.\"}]</p>"`
+- **Đề[11].questions[0].subQuestion[12]._id**:
+  - Cũ: `"697192b3d158761fc1003f06"`
+  - Mới: `"697190efd158761fc1003e5f"`
+- **Đề[11].questions[0]._id**:
+  - Cũ: `"697192b3d158761fc1003ef9"`
+  - Mới: `"697190efd158761fc1003e52"`
+- **Đề[11].id**:
+  - Cũ: `"696fa2e05f30844cf4a950b2"`
+  - Mới: `"695682170731243929b0caf0"`
+- **Đề[11].createdAt**:
+  - Cũ: `"2026-01-20T15:44:32.616Z"`
+  - Mới: `"2026-01-01T14:17:59.753Z"`
+- **Đề[11].updatedAt**:
+  - Cũ: `"2026-01-22T03:00:03.986Z"`
+  - Mới: `"2026-01-22T02:52:31.591Z"`
+
+### Đề số 13
+
+✅ Đề này là dữ liệu MỚI, chỉ có trong Database.
+

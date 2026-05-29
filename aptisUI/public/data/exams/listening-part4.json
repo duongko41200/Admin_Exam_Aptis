@@ -1,0 +1,3687 @@
+[
+  {
+    "_id": "6957e8efc88028aa29a1cfa7",
+    "title": "A break from studying",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A break from studying (16-1)",
+        "content": "k có audio",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why hasn't he gone to college?\n",
+            "correctAnswer": "He wasn't ready to start higher education",
+            "file": null,
+            "answerList": [
+              {
+                "content": "He didn't get good enough grades"
+              },
+              {
+                "content": "He wasn't ready to start higher education"
+              },
+              {
+                "content": "He couldn't afford the tuition fees."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957e8efc88028aa29a1cfa9"
+          },
+          {
+            "content": "Why did he decide to travel for 2 years?",
+            "correctAnswer": "To gain life experience.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "To gain life experience."
+              },
+              {
+                "content": "To avoid studying."
+              },
+              {
+                "content": "To travelling."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957e8efc88028aa29a1cfaa"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957e8efc88028aa29a1cfa8"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957e8efc88028aa29a1cfab",
+    "createdAt": "2026-01-02T15:49:03.877Z",
+    "updatedAt": "2026-01-02T15:49:03.877Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957e94bc88028aa29a1cfb1",
+    "title": "A book about a life of a scientist",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A book about a life of a scientist",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is the book so popular?",
+            "correctAnswer": "It uses simple language to describe complex ideas",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It contains many colorful illustrations"
+              },
+              {
+                "content": "It uses simple language to describe complex ideas"
+              },
+              {
+                "content": "It was endorsed by a famous celebrity"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c1136be521b65aeedbe4db"
+          },
+          {
+            "content": "What do people criticize about the book?",
+            "correctAnswer": "It is similar to the previous book about the scientist",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is too short to be meaningful"
+              },
+              {
+                "content": "It focuses too much on entertainment rather than facts"
+              },
+              {
+                "content": "It is similar to the previous book about the scientist"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c1136be521b65aeedbe4dc"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c1136be521b65aeedbe4da"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957e94bc88028aa29a1cfb5",
+    "createdAt": "2026-01-02T15:50:35.919Z",
+    "updatedAt": "2026-03-23T10:18:19.338Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957e9b2c88028aa29a1cfbb",
+    "title": "The sport",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "The sport (16.2)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is this person's opinion on sports?",
+            "correctAnswer": "They have a harmful effect",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They have a harmful effect"
+              },
+              {
+                "content": "They bring people together"
+              },
+              {
+                "content": "They improve concentration"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957e9b2c88028aa29a1cfbd"
+          },
+          {
+            "content": "What is the importance of sports for students?",
+            "correctAnswer": "It helps balance student's lives.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is only useful for professional athletes."
+              },
+              {
+                "content": "It distracts students from studying."
+              },
+              {
+                "content": "It helps balance student's lives."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957e9b2c88028aa29a1cfbe"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957e9b2c88028aa29a1cfbc"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957e9b2c88028aa29a1cfbf",
+    "createdAt": "2026-01-02T15:52:18.341Z",
+    "updatedAt": "2026-01-02T15:52:18.341Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ea28c88028aa29a1cfc5",
+    "title": "Television series",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Television series (17.2)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is this series so popular?",
+            "correctAnswer": "It has the consistent quality throughout.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It was only available for a short time."
+              },
+              {
+                "content": "It features unknown actors."
+              },
+              {
+                "content": "It has the consistent quality throughout."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ea28c88028aa29a1cfc7"
+          },
+          {
+            "content": "What is the current series industry affected by?",
+            "correctAnswer": "Viewer habits influence the way that series are made.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Actors now write most of the scripts themselves."
+              },
+              {
+                "content": "Series are no longer produced for online platforms."
+              },
+              {
+                "content": "Viewer habits influence the way that series are made."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ea28c88028aa29a1cfc8"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ea28c88028aa29a1cfc6"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ea28c88028aa29a1cfc9",
+    "createdAt": "2026-01-02T15:54:16.624Z",
+    "updatedAt": "2026-01-02T15:54:16.624Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ea81c88028aa29a1cfcf",
+    "title": "Advertising and sponsoring",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Advertising and sponsoring (16.3)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the importance of advertising?",
+            "correctAnswer": "It can help reach new customers",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It increases the product price"
+              },
+              {
+                "content": "It can build brand recognition"
+              },
+              {
+                "content": "It can help reach new customers"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ec08c88028aa29a1d146"
+          },
+          {
+            "content": "Why shouldn't we sponsor sports tournaments?",
+            "correctAnswer": "They can generate negative publicity for the sport",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are too expensive"
+              },
+              {
+                "content": "They can generate negative publicity for the sport"
+              },
+              {
+                "content": "They can create unfair competition"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ec08c88028aa29a1d147"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ec08c88028aa29a1d145"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ea81c88028aa29a1cfd3",
+    "createdAt": "2026-01-02T15:55:45.708Z",
+    "updatedAt": "2026-01-02T16:02:16.739Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ec69c88028aa29a1d159",
+    "title": "Famous writers",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Famous writers (17.3)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do these two famous writers have in common?",
+            "correctAnswer": "They both make references to each other in their work",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They both wrote in the same genre"
+              },
+              {
+                "content": "They both make references to each other in their work"
+              },
+              {
+                "content": "They both were born in the same country"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ec69c88028aa29a1d15b"
+          },
+          {
+            "content": "What is special about their works?",
+            "correctAnswer": "The meaning of their work is not always easily identified",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The meaning of their work is not always easily identified"
+              },
+              {
+                "content": "They use simple language and structure"
+              },
+              {
+                "content": "Their works are all based on real events"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ec69c88028aa29a1d15c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ec69c88028aa29a1d15a"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ec69c88028aa29a1d15d",
+    "createdAt": "2026-01-02T16:03:53.455Z",
+    "updatedAt": "2026-01-02T16:03:53.455Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ecbec88028aa29a1d163",
+    "title": "A regional development plan",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A regional development plan (16.4)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why do residents oppose this plan?",
+            "correctAnswer": "It doesn't do enough to promote alternatives to driving",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It doesn't do enough to promote alternatives to driving"
+              },
+              {
+                "content": "It provides free public transportation for all residents"
+              },
+              {
+                "content": "It increases the number of public parks in the area"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ecbec88028aa29a1d165"
+          },
+          {
+            "content": "What difficulties is the city council having with this plan?",
+            "correctAnswer": "The plan is not making efficient use of existing land",
+            "file": null,
+            "answerList": [
+              {
+                "content": "There is too much public support, making it hard to manage expectations"
+              },
+              {
+                "content": "The plan is not making efficient use of existing land"
+              },
+              {
+                "content": "The plan has already exceeded its budget by a large margin"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ecbec88028aa29a1d166"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ecbec88028aa29a1d164"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ecbec88028aa29a1d167",
+    "createdAt": "2026-01-02T16:05:18.601Z",
+    "updatedAt": "2026-01-02T16:05:18.601Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ed0fc88028aa29a1d16d",
+    "title": "Life after university",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Life after university (17.4)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What should students do when choosing a career?",
+            "correctAnswer": "Be flexible and open minded",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Be flexible and open minded"
+              },
+              {
+                "content": "Focus only on the salary offered"
+              },
+              {
+                "content": "Choose the same career as their friends"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ed0fc88028aa29a1d16f"
+          },
+          {
+            "content": "What should students pay attention to when applying for jobs these days?",
+            "correctAnswer": "They are becoming more competitive",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are becoming more competitive"
+              },
+              {
+                "content": "Companies prefer handwritten applications"
+              },
+              {
+                "content": "Most jobs no longer require any qualifications"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ed0fc88028aa29a1d170"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ed0fc88028aa29a1d16e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ed0fc88028aa29a1d171",
+    "createdAt": "2026-01-02T16:06:39.742Z",
+    "updatedAt": "2026-01-02T16:06:39.742Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ed6ec88028aa29a1d177",
+    "title": "Security cameras",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Security cameras (16.5)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "How should people feel about cameras in the workplace?",
+            "correctAnswer": "Employees probably worry unnecessarily",
+            "file": null,
+            "answerList": [
+              {
+                "content": "People should feel uneasy"
+              },
+              {
+                "content": "Cameras should be banned"
+              },
+              {
+                "content": "Employees probably worry unnecessarily"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ed6ec88028aa29a1d179"
+          },
+          {
+            "content": "How should people feel about cameras in general?",
+            "correctAnswer": "People should feel reassured",
+            "file": null,
+            "answerList": [
+              {
+                "content": "People should feel paranoid"
+              },
+              {
+                "content": "People should feel reassured"
+              },
+              {
+                "content": "Cameras invade personal space"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ed6ec88028aa29a1d17a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ed6ec88028aa29a1d178"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ed6ec88028aa29a1d17b",
+    "createdAt": "2026-01-02T16:08:14.342Z",
+    "updatedAt": "2026-01-02T16:08:14.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957edb6c88028aa29a1d181",
+    "title": "A new novel of a famous writer",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A new novel of a famous writer (17.5)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is special about his new novel?",
+            "correctAnswer": "It is quite different compared to his previous works",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is quite different compared to his previous works"
+              },
+              {
+                "content": "It is shorter and easier to read"
+              },
+              {
+                "content": "It has been written in a different genre"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957edb6c88028aa29a1d183"
+          },
+          {
+            "content": "What is the speaker's opinion of this writer?",
+            "correctAnswer": "He should listen to the critics before writing next novel",
+            "file": null,
+            "answerList": [
+              {
+                "content": "He should listen to the critics before writing next novel"
+              },
+              {
+                "content": "He is a brilliant but slow writer"
+              },
+              {
+                "content": "He needs to change his writing style"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957edb6c88028aa29a1d184"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957edb6c88028aa29a1d182"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957edb6c88028aa29a1d185",
+    "createdAt": "2026-01-02T16:09:26.848Z",
+    "updatedAt": "2026-01-02T16:09:26.848Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957edf5c88028aa29a1d18b",
+    "title": "A musician's life",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A musician's life (16.6)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What will this musician do in the near future?",
+            "correctAnswer": "He will probably retire from singing",
+            "file": null,
+            "answerList": [
+              {
+                "content": "He plans to release a new album"
+              },
+              {
+                "content": "He will probably retire from singing"
+              },
+              {
+                "content": "He wants to collaborate with younger artists"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957edf5c88028aa29a1d18d"
+          },
+          {
+            "content": "What does the speaker think about his career in general?",
+            "correctAnswer": "He could have been more successful",
+            "file": null,
+            "answerList": [
+              {
+                "content": "He could have been more successful"
+              },
+              {
+                "content": "He believes he reached the peak too early"
+              },
+              {
+                "content": "He regrets choosing his profession"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957edf5c88028aa29a1d18e"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957edf5c88028aa29a1d18c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957edf5c88028aa29a1d18f",
+    "createdAt": "2026-01-02T16:10:29.048Z",
+    "updatedAt": "2026-01-02T16:10:29.048Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ee3bc88028aa29a1d195",
+    "title": "A new guide",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A new guide (17.6)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the advantage of this new guide?",
+            "correctAnswer": "It creates a sense of adventure",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It focuses mainly on luxury travel"
+              },
+              {
+                "content": "It creates a sense of adventure"
+              },
+              {
+                "content": "It includes detailed hotel reviews"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ee3bc88028aa29a1d197"
+          },
+          {
+            "content": "What is the limitation of this new guide?",
+            "correctAnswer": "It is only suitable for a particular generation",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It doesn’t cover popular tourist attractions"
+              },
+              {
+                "content": "It is too expensive for most travelers"
+              },
+              {
+                "content": "It is only suitable for a particular generation"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ee3bc88028aa29a1d198"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ee3bc88028aa29a1d196"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ee3bc88028aa29a1d199",
+    "createdAt": "2026-01-02T16:11:39.941Z",
+    "updatedAt": "2026-01-02T16:11:39.941Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ee83c88028aa29a1d19f",
+    "title": "A research into happiness",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "A research into happiness (16.7)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "How has this research into happiness been responded to?",
+            "correctAnswer": "It has not been accurately reported by the media",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It has led to immediate changes in government policy"
+              },
+              {
+                "content": "It has not been accurately reported by the media"
+              },
+              {
+                "content": "It has been completely ignored by the public"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ee83c88028aa29a1d1a1"
+          },
+          {
+            "content": "What is the speaker's opinion on this research in general?",
+            "correctAnswer": "The research is unlikely to find a conclusive answer",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The research has already changed public attitudes"
+              },
+              {
+                "content": "The researchers are biased in their approach"
+              },
+              {
+                "content": "The research is unlikely to find a conclusive answer"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ee83c88028aa29a1d1a2"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ee83c88028aa29a1d1a0"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ee83c88028aa29a1d1a3",
+    "createdAt": "2026-01-02T16:12:51.496Z",
+    "updatedAt": "2026-01-02T16:12:51.496Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957eed0c88028aa29a1d1a9",
+    "title": "Criticism of the new novel",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Criticism of the new novel (17.7)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What attracts readers to this novel?",
+            "correctAnswer": "The characters were interesting",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The characters were interesting"
+              },
+              {
+                "content": "The book includes detailed historical facts"
+              },
+              {
+                "content": "The chapters are very short and easy to read"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957eed0c88028aa29a1d1ab"
+          },
+          {
+            "content": "What is the speaker's opinion about this novel?",
+            "correctAnswer": "It will establish the author's popularity",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It needs major editing before publication"
+              },
+              {
+                "content": "It’s unlikely to appeal to international readers"
+              },
+              {
+                "content": "It will establish the author's popularity"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957eed0c88028aa29a1d1ac"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957eed0c88028aa29a1d1aa"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957eed0c88028aa29a1d1ad",
+    "createdAt": "2026-01-02T16:14:08.872Z",
+    "updatedAt": "2026-01-02T16:14:08.872Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ef19c88028aa29a1d1b3",
+    "title": "Writer's block",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Writer's block (16.8)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What helps writers focus more on writing?",
+            "correctAnswer": "Create dedicated periods",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Work in noisy environments"
+              },
+              {
+                "content": "Rely entirely on inspiration"
+              },
+              {
+                "content": "Create dedicated periods"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ef19c88028aa29a1d1b5"
+          },
+          {
+            "content": "What is a common mistake writers make when generating ideas?",
+            "correctAnswer": "Refusing to seek the advice of other people",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Writing ideas only in digital format"
+              },
+              {
+                "content": "Refusing to seek the advice of other people"
+              },
+              {
+                "content": "Spending too much time researching grammar rules"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ef19c88028aa29a1d1b6"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ef19c88028aa29a1d1b4"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ef19c88028aa29a1d1b7",
+    "createdAt": "2026-01-02T16:15:21.737Z",
+    "updatedAt": "2026-01-02T16:15:21.737Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ef66c88028aa29a1d1bd",
+    "title": "Professionalism at work",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Professionalism at work (17.8)",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "How is professionalism demonstrated at work?",
+            "correctAnswer": "Maintain the positive attitude",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Maintain the positive attitude"
+              },
+              {
+                "content": "Avoid giving feedback to colleagues"
+              },
+              {
+                "content": "Always agree with your manager"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ef66c88028aa29a1d1bf"
+          },
+          {
+            "content": "What is the public's view of current professionalism?",
+            "correctAnswer": "Change its definition",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Change its definition"
+              },
+              {
+                "content": "Increase working hours"
+              },
+              {
+                "content": "Reduce opportunities for remote work"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6957ef66c88028aa29a1d1c0"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957ef66c88028aa29a1d1be"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ef66c88028aa29a1d1c1",
+    "createdAt": "2026-01-02T16:16:38.622Z",
+    "updatedAt": "2026-01-02T16:16:38.622Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c113ffe521b65aeedbe51e",
+    "title": "Cycling expedition",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Cycling expedition",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the speaker's advice?",
+            "correctAnswer": "Be well informed of the places you are going to visit.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Always carry extra water and food supplies."
+              },
+              {
+                "content": "Be well informed of the places you are going to visit."
+              },
+              {
+                "content": "Avoid cycling on rough terrain."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113ffe521b65aeedbe520"
+          },
+          {
+            "content": "What is the speaker's advice in general?",
+            "correctAnswer": "Knowing the people and cultures in the different countries.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Only visit places with good weather conditions."
+              },
+              {
+                "content": "Cycle at your own pace without worrying about the destination."
+              },
+              {
+                "content": "Knowing the people and cultures in the different countries."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113ffe521b65aeedbe521"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c113ffe521b65aeedbe51f"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c113ffe521b65aeedbe522",
+    "createdAt": "2026-03-23T10:20:47.154Z",
+    "updatedAt": "2026-03-23T10:20:47.154Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c113a6e521b65aeedbe4f4",
+    "title": "Nutritionist",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Nutritionist",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "When did she become a Nutritionist?",
+            "correctAnswer": "When she did a biology degree.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "When she worked at a healthcare center."
+              },
+              {
+                "content": "When she did a biology degree."
+              },
+              {
+                "content": "After working in a hospital."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113a6e521b65aeedbe4f6"
+          },
+          {
+            "content": "When did she become famous?",
+            "correctAnswer": "After solving people's problems in a helpline.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "After appearing on a famous TV show."
+              },
+              {
+                "content": "After solving people's problems in a helpline."
+              },
+              {
+                "content": "After inventing a new type of food."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113a6e521b65aeedbe4f7"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c113a6e521b65aeedbe4f5"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c113a6e521b65aeedbe4f8",
+    "createdAt": "2026-03-23T10:19:18.468Z",
+    "updatedAt": "2026-03-23T10:19:18.468Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c112c7e521b65aeedbe4b6",
+    "title": "The importance of sleep",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The importance of sleep",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the way to have a good sleep according to the speaker?",
+            "correctAnswer": "Blocking out noise and light is key",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Blocking out noise and light is key"
+              },
+              {
+                "content": "Drinking coffee before bed helps relax the mind"
+              },
+              {
+                "content": "Sleeping fewer hours increases deep sleep quality"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c112c7e521b65aeedbe4b8"
+          },
+          {
+            "content": "What is the speaker's view on insomnia in general?",
+            "correctAnswer": "People can't always recognize the symptoms of tiredness",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Most people with insomnia actually sleep too much"
+              },
+              {
+                "content": "Insomnia is caused only by physical health problems"
+              },
+              {
+                "content": "People can't always recognize the symptoms of tiredness"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c112c7e521b65aeedbe4b9"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c112c7e521b65aeedbe4b7"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c112c7e521b65aeedbe4ba",
+    "createdAt": "2026-03-23T10:15:35.859Z",
+    "updatedAt": "2026-03-23T10:15:35.859Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11275e521b65aeedbe49d",
+    "title": "Managing financial spending",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Managing financial spending",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What should you do to better control your short-term spending?",
+            "correctAnswer": "Monitor your spending for a weekly plan",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Avoid all unnecessary purchases entirely"
+              },
+              {
+                "content": "Monitor your spending for a weekly plan"
+              },
+              {
+                "content": "Use only cash instead of cards"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11275e521b65aeedbe49f"
+          },
+          {
+            "content": "What should you do to better control your long-term spending?",
+            "correctAnswer": "Seek advice from someone who have experience",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Seek advice from someone who have experience"
+              },
+              {
+                "content": "Stop spending on entertainment altogether"
+              },
+              {
+                "content": "Track every single expense daily"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11275e521b65aeedbe4a0"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11275e521b65aeedbe49e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11275e521b65aeedbe4a1",
+    "createdAt": "2026-03-23T10:14:13.990Z",
+    "updatedAt": "2026-03-23T10:14:13.990Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11227e521b65aeedbe484",
+    "title": "Work from home",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work from home",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How does she feel about working from home?",
+            "correctAnswer": "It wasn't as good as she expected",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It gave her more free time than expected"
+              },
+              {
+                "content": "It helped her become more productive"
+              },
+              {
+                "content": "It wasn't as good as she expected"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11227e521b65aeedbe486"
+          },
+          {
+            "content": "What is her opinion on working from home in general?",
+            "correctAnswer": "It depends on your situation and personality",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It's better than working in an office for everyone"
+              },
+              {
+                "content": "It should be avoided whenever possible"
+              },
+              {
+                "content": "It depends on your situation and personality"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11227e521b65aeedbe487"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11227e521b65aeedbe485"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11227e521b65aeedbe488",
+    "createdAt": "2026-03-23T10:12:55.257Z",
+    "updatedAt": "2026-03-23T10:12:55.257Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c111e5e521b65aeedbe46b",
+    "title": "A new restaurant",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A new restaurant",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How is this restaurant reviewed by customers?",
+            "correctAnswer": "The standard of service wasn’t good",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The food was too exotic for locals"
+              },
+              {
+                "content": "The standard of service wasn’t good"
+              },
+              {
+                "content": "The location is difficult to find"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111e5e521b65aeedbe46d"
+          },
+          {
+            "content": "What should this restaurant do?",
+            "correctAnswer": "They need to make the customers feel valued and welcome",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They need to make the customers feel valued and welcome"
+              },
+              {
+                "content": "They should increase their prices for profit"
+              },
+              {
+                "content": "They need to focus only on online orders"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111e5e521b65aeedbe46e"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c111e5e521b65aeedbe46c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c111e5e521b65aeedbe46f",
+    "createdAt": "2026-03-23T10:11:49.777Z",
+    "updatedAt": "2026-03-23T10:11:49.777Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c111a3e521b65aeedbe449",
+    "title": "Script production",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Script production",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the speaker's opinion on this script?",
+            "correctAnswer": "The characters' background are not adequately explored",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The dialogue is too complex for viewers"
+              },
+              {
+                "content": "The setting feels too unrealistic"
+              },
+              {
+                "content": "The characters' background are not adequately explored"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111a3e521b65aeedbe44b"
+          },
+          {
+            "content": "How do industries impact script production?",
+            "correctAnswer": "The new industry demands have a negative influence.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They increase audience engagement significantly"
+              },
+              {
+                "content": "They provide more creative freedom to writers"
+              },
+              {
+                "content": "The new industry demands have a negative influence."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111a3e521b65aeedbe44c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c111a3e521b65aeedbe44a"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c111a3e521b65aeedbe44d",
+    "createdAt": "2026-03-23T10:10:43.061Z",
+    "updatedAt": "2026-03-23T10:10:43.061Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11138e521b65aeedbe41f",
+    "title": "A promotion campaign for a product",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A promotion campaign for a product",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><br></p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do people think about this promotion campaign?",
+            "correctAnswer": "It is making exaggerated claims",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is making exaggerated claims"
+              },
+              {
+                "content": "It is being ignored completely"
+              },
+              {
+                "content": "It is too simple to be effective"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11138e521b65aeedbe421"
+          },
+          {
+            "content": "What does the speaker think about this campaign?",
+            "correctAnswer": "It costs too much to make to be profitable",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is reaching the wrong audience"
+              },
+              {
+                "content": "It costs too much to make to be profitable"
+              },
+              {
+                "content": "It lacks creativity"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11138e521b65aeedbe422"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11138e521b65aeedbe420"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11138e521b65aeedbe423",
+    "createdAt": "2026-03-23T10:08:56.278Z",
+    "updatedAt": "2026-03-23T10:08:56.278Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c110d7e521b65aeedbe3fd",
+    "title": "Making plans",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Making plans",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How does creating each small plan help you?",
+            "correctAnswer": "They help you make decisions",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They delay overall progress"
+              },
+              {
+                "content": "They increase your workload"
+              },
+              {
+                "content": "They help you make decisions"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c110d7e521b65aeedbe3ff"
+          },
+          {
+            "content": "How does creating a plan help you in general?",
+            "correctAnswer": "It requires you to set yourself certain limits",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It requires you to set yourself certain limits"
+              },
+              {
+                "content": "It removes all risks from the process"
+              },
+              {
+                "content": "It guarantees immediate success"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c110d7e521b65aeedbe400"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c110d7e521b65aeedbe3fe"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c110d7e521b65aeedbe401",
+    "createdAt": "2026-03-23T10:07:19.938Z",
+    "updatedAt": "2026-03-23T10:07:19.938Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8e9575e1769f65cd38e97",
+    "title": "A book about a life of a scientist ( Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A book about a life of a scientist ( Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776871765673_87ffb87b4f99468b_3_scientist_biography_verson2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What does the speaker say about the way of writing?",
+            "correctAnswer": "It is exciting to read",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is exciting to read"
+              },
+              {
+                "content": "It employs a very outdated narrative style."
+              },
+              {
+                "content": "It focuses exclusively on the scientist's childhood."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8e9575e1769f65cd38e99"
+          },
+          {
+            "content": "What does the speaker say about the overall content of the book?",
+            "correctAnswer": "It has been written for a general audience",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It mainly summarizes the scientist's previous publications."
+              },
+              {
+                "content": "It has been written for a general audience"
+              },
+              {
+                "content": "It is intended primarily for advanced research purposes."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8e9575e1769f65cd38e9a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8e9575e1769f65cd38e98"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8e9575e1769f65cd38e9b",
+    "createdAt": "2026-04-22T15:29:27.691Z",
+    "updatedAt": "2026-04-22T15:29:27.691Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8ea515e1769f65cd38ef4",
+    "title": "The sport (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The sport (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872015254_ee6f096c4b9ecbf9_5_the_sport_verson2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the expert’s opinion about sports competitions?",
+            "correctAnswer": "Prepare students for a competitive work environment",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Identify and recruit professional athletes for national teams."
+              },
+              {
+                "content": "Attract significant funding from international sponsors."
+              },
+              {
+                "content": "Prepare students for a competitive work environment"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ea515e1769f65cd38ef6"
+          },
+          {
+            "content": "What is the expert’s advice for schools?",
+            "correctAnswer": "Provides them with a balance in their lives",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Restrict physical activities to ensure academic excellence."
+              },
+              {
+                "content": "Enforce athletic participation as a strict graduation requirement."
+              },
+              {
+                "content": "Provides them with a balance in their lives"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ea515e1769f65cd38ef7"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8ea515e1769f65cd38ef5"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8ea515e1769f65cd38ef8",
+    "createdAt": "2026-04-22T15:33:37.293Z",
+    "updatedAt": "2026-04-22T15:33:37.293Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8eac45e1769f65cd38f19",
+    "title": "The Sport (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The Sport (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872131309_813bf160ea3ef895_6_the_sport_verson3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "According to the reviewer, what is one benefit of school sports?",
+            "correctAnswer": "They help promote students’ overall health.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They help promote students’ overall health."
+              },
+              {
+                "content": "They primarily focus on academic competition."
+              },
+              {
+                "content": "They are designed to limit physical exertion."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8eac45e1769f65cd38f1b"
+          },
+          {
+            "content": "What else do school sports provide for students?",
+            "correctAnswer": "It provides balance.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It provides balance."
+              },
+              {
+                "content": "It encourages extreme specialization."
+              },
+              {
+                "content": "It prioritizes individual over team success."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8eac45e1769f65cd38f1c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8eac45e1769f65cd38f1a"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8eac45e1769f65cd38f1d",
+    "createdAt": "2026-04-22T15:35:32.509Z",
+    "updatedAt": "2026-04-22T15:35:32.509Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8eb905e1769f65cd38f8a",
+    "title": "Television series (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Television series (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872334797_7cb1bc3fe13e45a1_8_television_series_verson2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What happened to the TV series?",
+            "correctAnswer": "It caught the audience's attention from the start.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It struggled to secure a prime-time slot."
+              },
+              {
+                "content": "It faced significant backlash from local viewers."
+              },
+              {
+                "content": "It caught the audience's attention from the start."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8eb905e1769f65cd38f8c"
+          },
+          {
+            "content": "According to the expert, what is the series' potential?",
+            "correctAnswer": "It can help reach new customers.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It can help reach new customers."
+              },
+              {
+                "content": "It will dominate the international award season."
+              },
+              {
+                "content": "It primarily focuses on educational content for kids."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8eb905e1769f65cd38f8d"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8eb905e1769f65cd38f8b"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8eb905e1769f65cd38f8e",
+    "createdAt": "2026-04-22T15:38:56.544Z",
+    "updatedAt": "2026-04-22T15:38:56.544Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8ebfa5e1769f65cd38fa3",
+    "title": "Television Series (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Television Series (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872440188_4da9fd23cea240d9_9_television_series_verson3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What made the TV series attract viewers from the beginning?",
+            "correctAnswer": "It failed to engage the audience from the start",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The plot was based on a globally famous novel"
+              },
+              {
+                "content": "It utilized a massive celebrity marketing budget"
+              },
+              {
+                "content": "It failed to engage the audience from the start"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ebfa5e1769f65cd38fa5"
+          },
+          {
+            "content": "What problem does the reviewer mention about the series?",
+            "correctAnswer": "Series are damaged by overexposure",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Series are damaged by overexposure"
+              },
+              {
+                "content": "The production quality is inconsistent between episodes"
+              },
+              {
+                "content": "There is a lack of diversity in the casting"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ebfa5e1769f65cd38fa6"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8ebfa5e1769f65cd38fa4"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8ebfa5e1769f65cd38fa7",
+    "createdAt": "2026-04-22T15:40:42.381Z",
+    "updatedAt": "2026-04-22T15:40:42.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8ecce5e1769f65cd39003",
+    "title": "Advertising and sponsoring ( Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Advertising and sponsoring ( Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872652354_6cfcab11f864aa39_11_advertising_sponsoring_verson2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What does the expert say about the negative side of advertising?",
+            "correctAnswer": "Series are damaged by overexposure",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It significantly increases the retail price of essential goods"
+              },
+              {
+                "content": "Series are damaged by overexposure"
+              },
+              {
+                "content": "Small businesses are unable to compete with global brands"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ecce5e1769f65cd39005"
+          },
+          {
+            "content": "In what way can advertising affect sports?",
+            "correctAnswer": "They can generate negative publicity for the sport",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They improve the physical performance of the athletes"
+              },
+              {
+                "content": "They can generate negative publicity for the sport"
+              },
+              {
+                "content": "They eliminate the need for traditional stadium ticket sales"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ecce5e1769f65cd39006"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8ecce5e1769f65cd39004"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8ecce5e1769f65cd39007",
+    "createdAt": "2026-04-22T15:44:14.437Z",
+    "updatedAt": "2026-04-22T15:44:14.437Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8ed255e1769f65cd39010",
+    "title": "Advertising And Sponsoring (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Advertising And Sponsoring (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872739547_fe21166659722650_12_advertising_sponsoring_verson3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What does the expert say about advertising?",
+            "correctAnswer": "It helps to reach new customers",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It helps to reach new customers"
+              },
+              {
+                "content": "It primarily focuses on reducing production costs"
+              },
+              {
+                "content": "It has become less effective due to digital media"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ed255e1769f65cd39012"
+          },
+          {
+            "content": "In what way can advertising affect sports?",
+            "correctAnswer": "They are not always good for sports fans",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are not always good for sports fans"
+              },
+              {
+                "content": "They guarantee a win for the sponsored teams"
+              },
+              {
+                "content": "They focus exclusively on amateur local events"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8ed255e1769f65cd39013"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8ed255e1769f65cd39011"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8ed255e1769f65cd39014",
+    "createdAt": "2026-04-22T15:45:41.008Z",
+    "updatedAt": "2026-04-22T15:45:41.008Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8f0845e1769f65cd390d1",
+    "title": "Regional Development Plan (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Regional Development Plan (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776873602567_10719a0788d13242_15_regional_development_plan_verson2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is one of the main criticisms of the Regional Development Plan?",
+            "correctAnswer": "It doesn't provide enough alternatives to driving.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It focuses exclusively on urban areas while ignoring rural zones."
+              },
+              {
+                "content": "It doesn't provide enough alternatives to driving."
+              },
+              {
+                "content": "The proposed budget relies too heavily on international loans."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f0845e1769f65cd390d3"
+          },
+          {
+            "content": "What challenge is the Regional Development Plan likely to face?",
+            "correctAnswer": "It is likely to meet resistance from local communities.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is likely to meet resistance from local communities."
+              },
+              {
+                "content": "The legal framework for the plan has not been finalized yet."
+              },
+              {
+                "content": "A shortage of skilled engineers might stall the infrastructure phase."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f0845e1769f65cd390d4"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8f0845e1769f65cd390d2"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8f0845e1769f65cd390d5",
+    "createdAt": "2026-04-22T16:00:04.007Z",
+    "updatedAt": "2026-04-22T16:00:04.007Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8f7cf5e1769f65cd39193",
+    "title": "Learning And Development",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Learning And Development",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875469706_36fdf3d0a398920b_19_learn_and_dev.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "According to the speaker, how should we learn to work?",
+            "correctAnswer": "Effectively",
+            "file": null,
+            "answerList": [
+              {
+                "content": "By following strictly fixed instructions"
+              },
+              {
+                "content": "Independently without any guidance"
+              },
+              {
+                "content": "Effectively"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f7cf5e1769f65cd39195"
+          },
+          {
+            "content": "What should people be willing to do in order to make progress?",
+            "correctAnswer": "Experiment",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Experiment"
+              },
+              {
+                "content": "Maintain a predictable daily routine"
+              },
+              {
+                "content": "Avoid any risks in the workplace"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f7cf5e1769f65cd39196"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8f7cf5e1769f65cd39194"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8f7cf5e1769f65cd39197",
+    "createdAt": "2026-04-22T16:31:11.803Z",
+    "updatedAt": "2026-04-22T16:31:11.803Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8f82e5e1769f65cd391af",
+    "title": "Work And Books",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work And Books",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875564864_239be30b0399c189_20_work_and_book.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "According to the passage, how does work benefit an individual beyond just earning money?",
+            "correctAnswer": "It helps develop skills, contribute to society, and provide a sense of purpose.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It focuses on maximizing leisure time during the weekends"
+              },
+              {
+                "content": "It primarily serves as a way to avoid social interactions"
+              },
+              {
+                "content": "It helps develop skills, contribute to society, and provide a sense of purpose."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f82e5e1769f65cd391b1"
+          },
+          {
+            "content": "What is the main result of balancing both work and books?",
+            "correctAnswer": "Growth in every area of a person's life",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Growth in every area of a person's life"
+              },
+              {
+                "content": "The complete separation of professional and private interests"
+              },
+              {
+                "content": "A decrease in the need for formal education over time"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f82e5e1769f65cd391b2"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8f82e5e1769f65cd391b0"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8f82e5e1769f65cd391b3",
+    "createdAt": "2026-04-22T16:32:46.208Z",
+    "updatedAt": "2026-04-22T16:32:46.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8f89e5e1769f65cd391d1",
+    "title": "The History Of Railways",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The History Of Railways",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875677550_655e3490d596296d_21_history_railways.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What was one major problem the railways faced?",
+            "correctAnswer": "Not making enough money",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Not making enough money"
+              },
+              {
+                "content": "The lack of qualified engineers and staff"
+              },
+              {
+                "content": "Extreme weather damaging the tracks"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f89e5e1769f65cd391d3"
+          },
+          {
+            "content": "What did the leader in charge decide to do during this period?",
+            "correctAnswer": "Continuing policies that had already been implemented",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Selling the assets to international investors"
+              },
+              {
+                "content": "Continuing policies that had already been implemented"
+              },
+              {
+                "content": "Suspending all operations for a total restructure"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f89e5e1769f65cd391d4"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8f89e5e1769f65cd391d2"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8f89e5e1769f65cd391d5",
+    "createdAt": "2026-04-22T16:34:38.991Z",
+    "updatedAt": "2026-04-22T16:34:38.991Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8f8ea5e1769f65cd391f0",
+    "title": "The Environment",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The Environment",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875790048_7154b90785b834bf_22_the_environment.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What should people do to maintain a healthy environment?",
+            "correctAnswer": "Make a daily effort to recycle, reduce waste, and use energy carefully.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Replace all personal vehicles with electric bicycles"
+              },
+              {
+                "content": "Limit industrial production to strictly rural areas"
+              },
+              {
+                "content": "Make a daily effort to recycle, reduce waste, and use energy carefully."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f9105e1769f65cd3920f"
+          },
+          {
+            "content": "According to the text, how do human activities like deforestation affect us?",
+            "correctAnswer": "They harm nature and cause problems like climate change and health issues.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They create more resilient ecosystems for the future"
+              },
+              {
+                "content": "They harm nature and cause problems like climate change and health issues."
+              },
+              {
+                "content": "They primarily benefit the local economy in the short term"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8f9105e1769f65cd39210"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8f9105e1769f65cd3920e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8f8ea5e1769f65cd391f4",
+    "createdAt": "2026-04-22T16:35:54.034Z",
+    "updatedAt": "2026-04-22T16:36:32.360Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8fa435e1769f65cd392bd",
+    "title": "Building Design",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Building Design",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876097977_11bc138669d99bff_26_building_design.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why do modern buildings stand out?",
+            "correctAnswer": "They associate with modern cityscapes",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are primarily built in rural environments"
+              },
+              {
+                "content": "They prioritize traditional materials over steel"
+              },
+              {
+                "content": "They associate with modern cityscapes"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fa435e1769f65cd392bf"
+          },
+          {
+            "content": "What does the speaker say about many new buildings?",
+            "correctAnswer": "They often display a lack of ambition.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They often display a lack of ambition."
+              },
+              {
+                "content": "They represent the peak of architectural innovation"
+              },
+              {
+                "content": "They focus on maximizing public green spaces"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fa435e1769f65cd392c0"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8fa435e1769f65cd392be"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8fa435e1769f65cd392c1",
+    "createdAt": "2026-04-22T16:41:39.989Z",
+    "updatedAt": "2026-04-22T16:41:39.989Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8fae15e1769f65cd39328",
+    "title": "Criticism of the new novel (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Criticism of the new novel (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876255474_cbba36d41b0e8d02_28_criticism_new_novel_ver2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How did the writer finish his book?",
+            "correctAnswer": "The plot was very strong",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It was completed much faster than his previous work"
+              },
+              {
+                "content": "By incorporating feedback from a famous editor"
+              },
+              {
+                "content": "The plot was very strong"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fae15e1769f65cd3932a"
+          },
+          {
+            "content": "What do some readers criticize about the book?",
+            "correctAnswer": "It is very similar to the author's other books",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is very similar to the author's other books"
+              },
+              {
+                "content": "The vocabulary used is far too academic"
+              },
+              {
+                "content": "The physical quality of the hardback edition"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fae15e1769f65cd3932b"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8fae15e1769f65cd39329"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8fae15e1769f65cd3932c",
+    "createdAt": "2026-04-22T16:44:17.574Z",
+    "updatedAt": "2026-04-22T16:44:17.574Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e8fb415e1769f65cd39335",
+    "title": "Criticism Of The New Novel (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Criticism Of The New Novel (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876351743_468399ff9a333ec4_29_criticism_new_novel_ver3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why do some readers struggle to connect with the characters in the novel?",
+            "correctAnswer": "They are difficult to relate to.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are difficult to relate to."
+              },
+              {
+                "content": "Their motivations are explained too clearly."
+              },
+              {
+                "content": "There are too many main characters to follow."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fb415e1769f65cd39337"
+          },
+          {
+            "content": "What criticism do readers have about the storyline?",
+            "correctAnswer": "It lacks originality.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The plot twists are too predictable for experts."
+              },
+              {
+                "content": "It is too complex for a general audience."
+              },
+              {
+                "content": "It lacks originality."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69e8fb415e1769f65cd39338"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69e8fb415e1769f65cd39336"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69e8fb415e1769f65cd39339",
+    "createdAt": "2026-04-22T16:45:53.603Z",
+    "updatedAt": "2026-04-22T16:45:53.603Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea2fad94821544ed40fb61",
+    "title": "A promotion campaign for a product ( Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A promotion campaign for a product ( Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955305460_6fb637a7d413f258_34_promotion_product_ver2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do people think about this promotion campaign?",
+            "correctAnswer": "It is making exaggerated claims",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is making exaggerated claims"
+              },
+              {
+                "content": "It focuses too much on environmental issues"
+              },
+              {
+                "content": "It uses celebrity endorsements ineffectively"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea2fc794821544ed40fb92"
+          },
+          {
+            "content": "What does the speaker think about this campaign?",
+            "correctAnswer": "It costs too much to make to be profitable",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The visual design is not professional enough"
+              },
+              {
+                "content": "It is reaching the wrong audience"
+              },
+              {
+                "content": "It costs too much to make to be profitable"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea2fc794821544ed40fb93"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea2fc794821544ed40fb91"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea2fad94821544ed40fb65",
+    "createdAt": "2026-04-23T14:41:49.729Z",
+    "updatedAt": "2026-04-23T14:42:15.193Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea30ce94821544ed40fbe1",
+    "title": "Script Production (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Script Production (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955596047_8990f174236f17a1_36_script_production_ver2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the producer’s opinion on the dialogue in the new show?",
+            "correctAnswer": "They seem unrealistic",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They seem unrealistic"
+              },
+              {
+                "content": "They appear somewhat exaggerated and overly dramatic"
+              },
+              {
+                "content": "They are too formal compared to everyday speech"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea30ce94821544ed40fbe3"
+          },
+          {
+            "content": "How does current industry demand have an effect on script quality?",
+            "correctAnswer": "It is negatively influencing script production.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It has little effect on how scripts are developed."
+              },
+              {
+                "content": "It is negatively influencing script production."
+              },
+              {
+                "content": "It has a positive effect by improving production speed."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea30ce94821544ed40fbe4"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea30ce94821544ed40fbe2"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea30ce94821544ed40fbe5",
+    "createdAt": "2026-04-23T14:46:38.948Z",
+    "updatedAt": "2026-04-23T14:46:38.948Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea313b94821544ed40fbee",
+    "title": "Script Production (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Script Production (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955704964_e13c631b4e6cbba0_37_script_production_ver3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What criticism does the reviewer make about the series storytelling?",
+            "correctAnswer": "The dialogues seems unrealistic",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The pacing feels inconsistent throughout the episodes"
+              },
+              {
+                "content": "The storyline lacks emotional depth"
+              },
+              {
+                "content": "The dialogues seems unrealistic"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea313b94821544ed40fbf0"
+          },
+          {
+            "content": "What problem is pointed out regarding the series writing?",
+            "correctAnswer": "The new industry demand is negatively influencing script production",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The writing fails to maintain audience interest over time"
+              },
+              {
+                "content": "The scripts rely too heavily on predictable patterns"
+              },
+              {
+                "content": "The new industry demand is negatively influencing script production"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea313b94821544ed40fbf1"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea313b94821544ed40fbef"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea313b94821544ed40fbf2",
+    "createdAt": "2026-04-23T14:48:27.960Z",
+    "updatedAt": "2026-04-23T14:48:27.960Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea321a94821544ed40fc0d",
+    "title": "Concentration",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Concentration",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955976491_7b6ce7329470d0be_38_concentration.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What does the speaker say mostly affects concentration?",
+            "correctAnswer": "Concentration depends mostly on environment.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Concentration depends mostly on environment."
+              },
+              {
+                "content": "Concentration depends mainly on external distractions."
+              },
+              {
+                "content": "Concentration is primarily influenced by individual effort."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea324e94821544ed40fc2c"
+          },
+          {
+            "content": "What is it that people often don't realize about focus?",
+            "correctAnswer": "People often fail to consider the limits of concentration.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "People frequently excel at managing the limits of concentration."
+              },
+              {
+                "content": "People often fail to consider the limits of concentration."
+              },
+              {
+                "content": "People often recognize the limits of concentration."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea324e94821544ed40fc2d"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea324e94821544ed40fc2b"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea321a94821544ed40fc11",
+    "createdAt": "2026-04-23T14:52:10.450Z",
+    "updatedAt": "2026-04-23T14:53:02.018Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea32a994821544ed40fc48",
+    "title": "Modern Society",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Modern Society",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956070662_81bc69de7fd1a8e7_39_modern_society.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is one of the strong qualities of these modern works?",
+            "correctAnswer": "Have something to say about modern society",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Strictly adhere to classical artistic conventions"
+              },
+              {
+                "content": "Have something to say about modern society"
+              },
+              {
+                "content": "Focus exclusively on historical events and figures"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea32a994821544ed40fc4a"
+          },
+          {
+            "content": "What does the speaker say about the meanings of these works?",
+            "correctAnswer": "The meanings are not easily identified",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The meanings are not easily identified"
+              },
+              {
+                "content": "They provide direct and simplified moral lessons"
+              },
+              {
+                "content": "The core message is usually stated in the opening"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea32a994821544ed40fc4b"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea32a994821544ed40fc49"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea32a994821544ed40fc4c",
+    "createdAt": "2026-04-23T14:54:33.760Z",
+    "updatedAt": "2026-04-23T14:54:33.760Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea334394821544ed40fc75",
+    "title": "Customers In Business",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Customers In Business",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956224056_6f574b905b1507c2_40_customers_in_business.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is an 'important customer' valuable to a company?",
+            "correctAnswer": "Because they provide steady money, influence others, and help improve services.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Because they guarantee the company's stock prices will never fall."
+              },
+              {
+                "content": "Because they are responsible for hiring and training new employees."
+              },
+              {
+                "content": "Because they provide steady money, influence others, and help improve services."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea334394821544ed40fc77"
+          },
+          {
+            "content": "What should a business do because customer behavior is unpredictable?",
+            "correctAnswer": "Stay flexible, adapt to new demands, and keep improving.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Stay flexible, adapt to new demands, and keep improving."
+              },
+              {
+                "content": "Reduce the marketing budget to avoid financial risks."
+              },
+              {
+                "content": "Standardize all products to ignore individual customer preferences."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea334394821544ed40fc78"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea334394821544ed40fc76"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea334394821544ed40fc79",
+    "createdAt": "2026-04-23T14:57:07.043Z",
+    "updatedAt": "2026-04-23T14:57:07.043Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea334e94821544ed40fc8b",
+    "title": "Customers In Business",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Customers In Business",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956234226_998b9a782e8a12c8_40_customers_in_business.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is an 'important customer' valuable to a company?",
+            "correctAnswer": "Because they provide steady money, influence others, and help improve services.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Because they guarantee the company's stock prices will never fall."
+              },
+              {
+                "content": "Because they are responsible for hiring and training new employees."
+              },
+              {
+                "content": "Because they provide steady money, influence others, and help improve services."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea334e94821544ed40fc8d"
+          },
+          {
+            "content": "What should a business do because customer behavior is unpredictable?",
+            "correctAnswer": "Stay flexible, adapt to new demands, and keep improving.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Stay flexible, adapt to new demands, and keep improving."
+              },
+              {
+                "content": "Reduce the marketing budget to avoid financial risks."
+              },
+              {
+                "content": "Standardize all products to ignore individual customer preferences."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea334e94821544ed40fc8e"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea334e94821544ed40fc8c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea334e94821544ed40fc8f",
+    "createdAt": "2026-04-23T14:57:18.435Z",
+    "updatedAt": "2026-04-23T14:57:18.435Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea33fb94821544ed40fc9e",
+    "title": "Creating Motivation Within A Team",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Creating Motivation Within A Team",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956407401_87848b3555d9ec8e_41_creating_otivation_Team.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What occurs when things don’t go according to plan in a team?",
+            "correctAnswer": "The team members lose confidence.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The team members lose confidence."
+              },
+              {
+                "content": "The team members become more assured."
+              },
+              {
+                "content": "The team members start again from the beginning."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea33fb94821544ed40fca0"
+          },
+          {
+            "content": "In the speaker’s view, what helps a leader maintain team motivation?",
+            "correctAnswer": "Set a realistic goal",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Increase the project budget significantly"
+              },
+              {
+                "content": "Focus on individual performance only"
+              },
+              {
+                "content": "Set a realistic goal"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea33fb94821544ed40fca1"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea33fb94821544ed40fc9f"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea33fb94821544ed40fca2",
+    "createdAt": "2026-04-23T15:00:11.310Z",
+    "updatedAt": "2026-04-23T15:00:11.310Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea347894821544ed40fcba",
+    "title": "Traveling",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Traveling",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956532841_9db2a5fcb2c8df48_42_traveling.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why does the brother find traveling meaningful?",
+            "correctAnswer": "Because it brings him joy and chances to learn about different cultures.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Because he wants to document his trips for social media influence."
+              },
+              {
+                "content": "Because it allows him to escape his professional responsibilities."
+              },
+              {
+                "content": "Because it brings him joy and chances to learn about different cultures."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea347894821544ed40fcbc"
+          },
+          {
+            "content": "How is traveling similar to reading a book?",
+            "correctAnswer": "Both help people discover new worlds and grow as a person.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Both require a high level of physical endurance and preparation."
+              },
+              {
+                "content": "Both help people discover new worlds and grow as a person."
+              },
+              {
+                "content": "Both are considered mandatory activities for academic success."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea347894821544ed40fcbd"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea347894821544ed40fcbb"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea347894821544ed40fcbe",
+    "createdAt": "2026-04-23T15:02:16.317Z",
+    "updatedAt": "2026-04-23T15:02:16.317Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea379a94821544ed40fd5c",
+    "title": "Managing Financial Spending (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Managing Financial Spending (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776957422426_00e666f9aba6f556_46_managing_financial_spending_ver2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What method does the speaker suggest for saving money efficiently?",
+            "correctAnswer": "Organizing their resources more effectively",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Organizing their resources more effectively"
+              },
+              {
+                "content": "Relying on credit cards to control spending"
+              },
+              {
+                "content": "Putting aside a large sum every single day only"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea37fd94821544ed40fdc7"
+          },
+          {
+            "content": "According to the speaker, who is most likely to save money successfully?",
+            "correctAnswer": "Get advice from people who have experience",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Get advice from people who have experience"
+              },
+              {
+                "content": "Keeping all savings in just one account"
+              },
+              {
+                "content": "Not creating any long-term financial strategies"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea37fd94821544ed40fdc8"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea37fd94821544ed40fdc6"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea379a94821544ed40fd60",
+    "createdAt": "2026-04-23T15:15:38.816Z",
+    "updatedAt": "2026-04-23T15:17:17.507Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea386c94821544ed40fde0",
+    "title": "Managing Financial Spending (Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Managing Financial Spending (Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776957536250_49c4b67e366f5f04_47_managing_financial_spending_ver3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What does the speaker mention about handling personal finances?",
+            "correctAnswer": "Organize their resources more effectively",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Eliminate all spending on leisure activities completely"
+              },
+              {
+                "content": "Track every expense in detail on a daily basis"
+              },
+              {
+                "content": "Organize their resources more effectively"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea386c94821544ed40fde2"
+          },
+          {
+            "content": "What does the speaker suggest for improving financial management?",
+            "correctAnswer": "Seek advice from someone who is experienced",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Seek advice from someone who is experienced"
+              },
+              {
+                "content": "Rely on financial software to make decisions independently"
+              },
+              {
+                "content": "Avoid seeking advice and manage finances on your own"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea386c94821544ed40fde3"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea386c94821544ed40fde1"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea386c94821544ed40fde4",
+    "createdAt": "2026-04-23T15:19:08.026Z",
+    "updatedAt": "2026-04-23T15:19:08.026Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea3cb494821544ed40fe4e",
+    "title": "The importance of sleep (Phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The importance of sleep (Phiên bản 2)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776958640817_e972758932246c4e_49_importance_sleep_ver2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "The most important Of Sleep",
+            "correctAnswer": "Blocking noise and light is the key",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Maintaining a strict high-protein diet"
+              },
+              {
+                "content": "Investing in expensive orthopedic mattresses"
+              },
+              {
+                "content": "Blocking noise and light is the key"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea3cb494821544ed40fe50"
+          },
+          {
+            "content": "According to the expert, what is the public attitude towards sleeping?",
+            "correctAnswer": "The media overemphasize the subject",
+            "file": null,
+            "answerList": [
+              {
+                "content": "People are generally ignoring the benefits of rest"
+              },
+              {
+                "content": "The media overemphasize the subject"
+              },
+              {
+                "content": "There is a global movement to reduce working hours"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea3cb494821544ed40fe51"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea3cb494821544ed40fe4f"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea3cb494821544ed40fe52",
+    "createdAt": "2026-04-23T15:37:24.266Z",
+    "updatedAt": "2026-04-23T15:37:24.266Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea3f1494821544ed40feef",
+    "title": "A book about a life of a scientist ( Phiên bản 3)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A book about a life of a scientist ( Phiên bản 3)",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776959249854_f1e99e1d478bea87_50_life_of_scientist.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is the book so popular?",
+            "correctAnswer": "It uses simple language to describe complex ideas",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It uses simple language to describe complex ideas"
+              },
+              {
+                "content": "It contains many colorful illustrations"
+              },
+              {
+                "content": "It was endorsed by a famous celebrity"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea3f1494821544ed40fef1"
+          },
+          {
+            "content": "What do people criticize about the book?",
+            "correctAnswer": "It is similar to the previous book about the scientist",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is similar to the previous book about the scientist"
+              },
+              {
+                "content": "It focuses too much on entertainment rather than facts"
+              },
+              {
+                "content": "It is too short to be meaningful"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea3f1494821544ed40fef2"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea3f1494821544ed40fef0"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea3f1494821544ed40fef3",
+    "createdAt": "2026-04-23T15:47:32.914Z",
+    "updatedAt": "2026-04-23T15:47:32.914Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea401494821544ed40ffa0",
+    "title": "Viral Video",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Viral Video",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776959560988_5899d9b5eeaa81e0_53_viral_video.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What makes the video stand out from others?",
+            "correctAnswer": "Its production techniques.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Its production techniques."
+              },
+              {
+                "content": "The high marketing budget involved."
+              },
+              {
+                "content": "The participation of famous celebrities."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea404a94821544ed40ffdc"
+          },
+          {
+            "content": "According to the reviewer, when can videos become more successful?",
+            "correctAnswer": "They should be released at the right time.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They should be released at the right time."
+              },
+              {
+                "content": "If they are translated into multiple languages."
+              },
+              {
+                "content": "When they strictly follow long-term trends."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea404a94821544ed40ffdd"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea404a94821544ed40ffdb"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea401494821544ed40ffa4",
+    "createdAt": "2026-04-23T15:51:48.188Z",
+    "updatedAt": "2026-04-23T15:52:42.478Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ea40a594821544ed40fff8",
+    "title": "Business Strategy",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Business Strategy",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776959650436_e6dc4ba62fc39e18_54_business_strategy.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why is identifying the correct market so important for a company?",
+            "correctAnswer": "It helps the company focus its resources and avoid wasting time on low-demand areas.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It helps the company focus its resources and avoid wasting time on low-demand areas."
+              },
+              {
+                "content": "It provides a justification for lowering product standards to maximize profit."
+              },
+              {
+                "content": "It guarantees that the business will operate without any rival firms."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea40a594821544ed40fffa"
+          },
+          {
+            "content": "According to the passage, what is the significance of 'profitability'?",
+            "correctAnswer": "It proves the company can cover costs and create opportunities for future growth.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It signals that the company has no further need for market research."
+              },
+              {
+                "content": "It suggests that the company can disregard the activities of its competitors."
+              },
+              {
+                "content": "It proves the company can cover costs and create opportunities for future growth."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ea40a594821544ed40fffb"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69ea40a594821544ed40fff9"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69ea40a594821544ed40fffc",
+    "createdAt": "2026-04-23T15:54:13.016Z",
+    "updatedAt": "2026-04-23T15:54:13.016Z",
+    "__v": 0
+  }
+]

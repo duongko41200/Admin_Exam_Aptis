@@ -1,0 +1,992 @@
+[
+  {
+    "_id": "68e4bfb453b4655eba3f0a9e",
+    "title": "Thứ mà bạn muốn nhưng không thể có",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Thứ mà bạn muốn nhưng không thể có",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please tell me about your family.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu ( PP gộp đề):</strong> <span style=\"color: rgb(0, 138, 0);\">(Giới thiệu bản thân, tên, tuổi, nghề nghiệp)</span> Sure. Let me introduce myself first. My name is Mia, who is living and working in Hanoi as an English teacher. <span style=\"color: rgb(153, 51, 255);\">(Giới thiệu sơ qua số lượng thành viên, nghề nghiệp</span>) Honestly, my family is not very big, only six people. My grandparents are retired civil servants. My parents are teachers. My older sister is a singer and an actress, who I consider my best friend.&nbsp;<span style=\"color: rgb(255, 153, 0);\">(Mô tả thành viên mình yêu nhất)</span> I’d love to tell you more about her because she’s the one I admire the most. She is really pretty, with a sweet face and fair skin. Besides, she sings beautifully and she helps me a lot, not only in my study but also in my life.</p>",
+            "_id": "69f03e573f75ce9b2a0bf37c"
+          },
+          {
+            "content": "Please tell me about a famous place in your country.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu (PP gộp đề):</strong></p><p class=\"ql-align-justify\">*Biến hóa nhẹ ở đầu&nbsp;</p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 138, 0);\">(Bạn sống ở thành thị hay nông thôn) </span>I'm not really keen on living in a city. I would rather live in the countryside because it's so peaceful. Currently, my family and I live in a small town in the countryside, also a famous place. <span style=\"color: rgb(255, 153, 0);\">(Tên, Vị trí) </span>It is Bac Ha town, which is 300 kilometers from Hanoi.&nbsp;<span style=\"color: rgb(0, 102, 204);\">(Mật độ dân cư) </span>Even though it's always crowded with tourists, we still love living there<span style=\"color: rgb(194, 133, 255);\"> (Thời tiết)</span> because the weather is so cool, (Con người) and the people are incredibly friendly. The most important reason is that<span style=\"color: rgb(178, 107, 0);\"> (Đồ ăn)</span> the food here is exceptionally delicious and cheap. That's why I always want to live here.</p>",
+            "_id": "69f03e573f75ce9b2a0bf37d"
+          },
+          {
+            "content": "Tell me about your hobby.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu: </strong>Well, my absolute favorite hobby is playing badminton with my close friends. To be honest, I am often up to my neck in work during the week, so hitting the court on weekends is my go-to way to let my hair down. It is not only extremely beneficial for my physical health, but the whole experience also really helps me recharge my batteries for a new week.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\" :</strong></p><ul><li><strong>Up to my neck in work</strong> (Idiom): Cực kỳ bận rộn, ngập đầu trong công việc.</li><li><strong>Let my hair down</strong> (Idiom): Thư giãn, xõa đi.</li><li><strong>Recharge my batteries</strong> (Idiom): Nạp lại năng lượng.</li></ul>",
+            "_id": "69f03e573f75ce9b2a0bf37e"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f03e573f75ce9b2a0bf37b"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4bfb453b4655eba3f0aa3",
+    "createdAt": "2025-10-07T07:22:28.844Z",
+    "updatedAt": "2026-04-28T04:57:59.562Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c0a353b4655eba3f0abf",
+    "title": "Chuyến du lịch",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Chuyến du lịch",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Which place should people visit in your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu: </strong>In my opinion, if people visit my country, they should definitely go to a peaceful countryside town called Bac Ha, which is about 300 kilometers from Hanoi. Although it is a famous spot and often crowded with tourists, it is absolutely worth exploring. The weather is pleasantly cool, and the locals are incredibly welcoming. But most importantly, the regional food is exceptionally mouth-watering and cost-effective. It is truly a wonderful place for anyone to visit.</p>",
+            "_id": "69f087a83f75ce9b2a0bfd1e"
+          },
+          {
+            "content": "What are you doing for the rest of today?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong> \"Well, as soon as I finish this Aptis test, I plan to treat myself to a nice meal with my friends. To be honest, I have been up to my ears in study lately, so completing this exam is a huge relief. Later this evening, I just want to sit back, watch a hilarious movie, and let my hair down. It’s definitely the perfect way to recharge my batteries after a stressful period.\"</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Up to my ears in study (Idiom):</strong> Cực kỳ bận rộn, ngập đầu trong việc học/ôn thi.</li><li><strong>Hilarious (Adjective):</strong> Rất hài hước, mang tính biểu cảm cao hơn nhiều so với những từ cơ bản.</li><li><strong>Let my hair down (Idiom):</strong> Thư giãn, xõa đi.</li><li><strong>Recharge my batteries (Idiom):</strong> Nạp lại năng lượng.</li></ul><p class=\"ql-align-justify\"><br></p>",
+            "_id": "69f087a83f75ce9b2a0bfd1f"
+          },
+          {
+            "content": "What sports do people in your country like?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu:</strong> Well, people in my country really love sports. Football is the most popular sport, and many people watch the matches or play it in their free time. Besides football, badminton and volleyball are also common. Sports bring people together, and they help everyone stay healthy and active.</p>",
+            "_id": "69f087a83f75ce9b2a0bfd20"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f087a83f75ce9b2a0bfd1d"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c0a353b4655eba3f0ac4",
+    "createdAt": "2025-10-07T07:26:27.723Z",
+    "updatedAt": "2026-04-28T10:10:48.929Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c23753b4655eba3f0ad5",
+    "title": "Đứng trước nhiều lựa chọn",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Đứng trước nhiều lựa chọn",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the city you live in?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu:</strong> Well, to be honest, I'm not really keen on city life, so I currently live in a peaceful countryside town called Bac Ha, which is about 300 kilometers from Hanoi. Although it is a famous spot and often crowded with tourists, I absolutely love living there. The weather is pleasantly cool, and the locals are incredibly welcoming. But most importantly, the regional food is exceptionally mouth-watering and cost-effective. It is truly a wonderful place to call home.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng \"ăn điểm\":</strong></p><ul><li><strong>Not really keen on:</strong> Không thực sự thích (cụm từ hay hơn rất nhiều so với <em>don't like</em>).</li><li><strong>Welcoming (Adjective):</strong> Hiếu khách, niềm nở (nâng cấp cho chữ <em>friendly</em>).</li><li><strong>Mouth-watering (Adjective):</strong> Tính từ miêu tả món ăn \"ngon chảy nước miếng\", thay thế hoàn toàn cho cụm \"very delicious\" ở mức độ cơ bản.</li><li><strong>Cost-effective (Adjective):</strong> Tiết kiệm chi phí (nghe mang tính học thuật và trang trọng hơn rất nhiều so với chữ <em>cheap</em>).</li></ul>",
+            "_id": "69f0c4123a68b34a21a91475"
+          },
+          {
+            "content": "Tell me about your first school.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong><strong style=\"color: rgb(230, 0, 0);\"> (Đó là ngôi trường nào) </strong>Well, let me tell you about my old primary school.&nbsp;<span style=\"color: rgb(153, 51, 255);\">(Vị trí ở đâu)</span> To the best of my recollection, it was right in the heart of my village, just a 15-minute walk from my house, so I was never late for class. <span style=\"color: rgb(0, 138, 0);\">(Trường có những phòng chức năng nào)</span> Additionally, there was a library, a computer room, and a big playground full of trees and flowers.<span style=\"color: rgb(255, 153, 0);\"> (Bạn có cảm xúc gì khi nghĩ về trường) </span>Honestly, that place holds so many special memories from my childhood. I will pay a visit to it when I have the chance.</p>",
+            "_id": "69f0c4123a68b34a21a91476"
+          },
+          {
+            "content": "Describe your typical day.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu:</strong> To be honest, my daily routine involves doing various activities. One of my favorite activities is going to the gym. My best friends and I usually spend around two hours working out together to improve our physical health. Later in the evening, we might hang out at a shopping mall just to let our hair down and enjoy ourselves.</p>",
+            "_id": "69f0c4123a68b34a21a91477"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f0c4123a68b34a21a91474"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c23753b4655eba3f0ada",
+    "createdAt": "2025-10-07T07:33:11.656Z",
+    "updatedAt": "2026-04-28T14:28:34.343Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4e61d53b4655eba3f0d80",
+    "title": "Mất nhiều công sức làm một món đồ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Mất nhiều công sức làm một món đồ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please describe the place where you live.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p>Well, to be honest, I'm not really keen on city life, so I currently live in a peaceful countryside town called Bac Ha, which is about 300 kilometers from Hanoi. Although it is a famous spot and often crowded with tourists, I absolutely love living there. The weather is pleasantly cool, and the locals are incredibly welcoming. But most importantly, the regional food is exceptionally mouth-watering and cost-effective. It is truly a wonderful place to call home.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng \"ăn điểm\":</strong></p><ul><li><strong>Not really keen on:</strong> Không thực sự thích</li><li><strong>Mouth-watering (Adjective):</strong> Tính từ miêu tả món ăn \"ngon chảy nước miếng\".</li><li><strong>Cost-effective (Adjective):</strong> Tiết kiệm chi phí.</li></ul>",
+            "_id": "69f0cd5e3a68b34a21a91677"
+          },
+          {
+            "content": "What do you like to do in your free time?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong> I always enjoy doing various activities. One of my favorites is going to the gym with my best friends, where we usually spend around two hours working out together because it helps improve our health day by day. In addition, my friends and I may go to some attractive destinations for sightseeing, or we hang out at the central shopping mall in the city, because these activities help us let our hair down and enjoy ourselves after a busy week.</p>",
+            "_id": "69f0cd5e3a68b34a21a91678"
+          },
+          {
+            "content": "Can you play a musical instrument?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu: </strong>Well, yes, I can play the guitar, and it is actually my absolute favorite hobby. To be honest, I am often up to my neck in work during the week, so playing some acoustic tunes in my room is my go-to way to let my hair down. It is incredibly entertaining, and whenever I feel overwhelmed, playing this instrument really helps me recharge my batteries for a new week.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li>Up to my neck in work (Idiom): Cực kỳ bận rộn, ngập đầu trong công việc.</li><li>Let my hair down (Idiom): Thư giãn, xõa đi.</li><li>Recharge my batteries (Idiom): Nạp lại năng lượng.</li></ul>",
+            "_id": "69f0cd5e3a68b34a21a91679"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f0cd5e3a68b34a21a91676"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4e61d53b4655eba3f0d85",
+    "createdAt": "2025-10-07T10:06:21.039Z",
+    "updatedAt": "2026-04-28T15:08:14.030Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4e69a53b4655eba3f0d8b",
+    "title": "Gặp gỡ người bạn mới",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Gặp gỡ người bạn mới",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please tell me about your friend.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e69a53b4655eba3f0d8d"
+          },
+          {
+            "content": "How do you relax in the evening?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e69a53b4655eba3f0d8e"
+          },
+          {
+            "content": "Tell me about your country.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e69a53b4655eba3f0d8f"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4e69a53b4655eba3f0d8c"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4e69a53b4655eba3f0d90",
+    "createdAt": "2025-10-07T10:08:26.697Z",
+    "updatedAt": "2025-10-07T10:08:26.697Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4e77353b4655eba3f0d96",
+    "title": "Sử dụng Internet",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Sử dụng Internet",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Would you like to live in the countryside?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e77353b4655eba3f0d98"
+          },
+          {
+            "content": "Please tell me what you do on the weekend.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e77353b4655eba3f0d99"
+          },
+          {
+            "content": "What's your favorite season? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e77353b4655eba3f0d9a"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4e77353b4655eba3f0d97"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4e77353b4655eba3f0d9b",
+    "createdAt": "2025-10-07T10:12:03.418Z",
+    "updatedAt": "2025-10-07T10:12:03.418Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4ecff53b4655eba3f0dcd",
+    "title": "Hòa mình vào thiên nhiên",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Hòa mình vào thiên nhiên",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Do you have a large family?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ecff53b4655eba3f0dcf"
+          },
+          {
+            "content": "Please tell me about your favorite place.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ecff53b4655eba3f0dd0"
+          },
+          {
+            "content": "Do you like walking?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ecff53b4655eba3f0dd1"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4ecff53b4655eba3f0dce"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4ecff53b4655eba3f0dd2",
+    "createdAt": "2025-10-07T10:35:43.969Z",
+    "updatedAt": "2025-10-07T10:35:43.969Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4bea153b4655eba3f0a88",
+    "title": "Vội vã",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Vội vã",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the room you are in.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><span style=\"color: rgb(153, 51, 255); background-color: transparent;\">(Bạn đang ở đâu)</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> At the moment, I am sitting inside the Aptis test room and taking the speaking section.</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 138, 0); background-color: transparent;\">(Mô tả nơi đó) </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Generally, The room is quite spacious, with bright white walls and rows of tables lined with computers and headphones. In addition, there are also partitions to prevent candidates from cheating.</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(255, 153, 0); background-color: transparent;\">(Cảm xúc của bạn hiện tại ra sao) </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Honestly, my emotions when sitting in this room include excitement and tension.</span></p>",
+            "_id": "69f036fb3f75ce9b2a0bf12c"
+          },
+          {
+            "content": "Please tell me about the last thing you saw on television.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\">The last thing I watched on television was a comedy show called 'Running Man' with my family last night. To be honest, I have been up to my neck in work lately, so sitting on the sofa and watching this hilarious program is my favorite way to let my hair down. It was incredibly entertaining and helped me recharge my batteries for a new day.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Up to my neck in work</strong> (Idiom): Cực kỳ bận rộn, ngập đầu trong công việc. (Có thể thay bằng <em>up to my ears in study/work</em>).</li><li><strong>Hilarious</strong> (Adjective): Rất hài hước (Thay thế cho chữ <em>very funny</em> ở mức độ cơ bản).</li><li><strong>Let my hair down</strong> (Idiom): Thư giãn, xõa đi. (Thay thế cho <em>relax</em>).</li><li><strong>Recharge my batteries</strong> (Idiom): Nạp lại năng lượng.</li></ul>",
+            "_id": "69f036fb3f75ce9b2a0bf12d"
+          },
+          {
+            "content": "What is the food like in your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu: </strong>Well, the food in my country is incredibly diverse and well-known for its rich flavors. We love to use lots of local spices. Take instant fried noodles as a typical example. It is a quick and easy dish, but we often add extra chili and special seasoning salts to make it absolutely mouth-watering. Actually, for us, food is more than just eating; it's a great way to bond. Whenever my friends come over, we usually share simple dishes like spicy noodles or some fast food, crack open a few beers, and just enjoy the moment together. It’s always an amazing time.</p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Diverse and well-known for its rich flavors (Cụm từ):</strong> Đa dạng và nổi tiếng với hương vị đậm đà (thể hiện vốn từ vựng phong phú hơn mức cơ bản).</li><li><strong>Mouth-watering (Adjective): </strong>Ngon chảy nước miếng. (Nâng cấp cực tốt cho chữ \"very delicious\" của bạn).</li><li><strong>More than just eating; </strong>it's a great way to bond (Cụm từ): Không chỉ là ăn uống, nó là cách để gắn kết.</li><li class=\"ql-align-justify\"><strong>Crack open a few beers (Idiom/Collocation):</strong> Bật nắp vài lon bia. (Nghe tự nhiên và \"Tây\" hơn rất nhiều so với \"cheer up with beer\").</li></ul>",
+            "_id": "69f036fb3f75ce9b2a0bf12e"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f036fb3f75ce9b2a0bf12b"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4bea153b4655eba3f0a8d",
+    "createdAt": "2025-10-07T07:17:53.177Z",
+    "updatedAt": "2026-04-28T04:26:35.860Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c00653b4655eba3f0aa9",
+    "title": "Công viên giải trí",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Công viên giải trí",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the way you went to the exam room.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong> Well, this morning I traveled to the exam room by motorbike. As my city is well-known for its narrow streets, riding a motorbike offered me the flexibility to avoid traffic jams and arrive on time. Moreover, the smooth ride and fresh air really helped me relax and recharge my batteries before this important test</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong><span style=\"background-color: rgb(255, 255, 0);\"> </span></p><ul><li><strong>Well-known for its narrow streets:</strong> Nổi tiếng với những con phố nhỏ hẹp.</li><li><strong>Recharge my batteries (Idiom):</strong> Nạp lại năng lượng.</li></ul><p class=\"ql-align-justify\"><br></p>",
+            "_id": "69f060633f75ce9b2a0bf984"
+          },
+          {
+            "content": "Tell me about your country’s weather.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p>Câu trả lời mẫu: Well, my country has a typical tropical climate with scorching hot summers. To be honest, the heat can be overwhelming since I'm usually up to my neck in work. But I absolutely love the sudden downpours in the afternoons. They cool everything down and give me a perfect chance to let my hair down and recharge my batteries.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong><span style=\"background-color: rgb(255, 255, 0);\"> </span></p><ul><li><strong>A sudden downpour:</strong> Một trận mưa rào bất chợt.</li><li><strong>Up to my neck in work (Idiom):</strong> Cực kỳ bận rộn, ngập đầu trong công việc.</li><li><strong>Let my hair down (Idiom):</strong> Thư giãn, xõa đi.</li><li><strong>Recharge my batteries (Idiom):</strong> Nạp lại năng lượng.</li></ul>",
+            "_id": "69f060633f75ce9b2a0bf985"
+          },
+          {
+            "content": "What is your favorite film? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu: </strong>Well, my absolute favorite film is a comedy called 'Running Man'. To be honest, I am usually up to my neck in work lately, so sitting on the sofa and watching this hilarious movie with my family is my go-to way to let my hair down. It is incredibly entertaining, and whenever I feel stressed, rewatching it really helps me recharge my batteries for a new week.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Hilarious (Adjective):</strong> Rất hài hước, mang tính biểu cảm cao hơn nhiều so với những từ cơ bản.</li><li><strong>Let my hair down (Idiom):</strong> Thư giãn, xõa đi.</li><li><strong>Recharge my batteries (Idiom):</strong> Nạp lại năng lượng.</li></ul>",
+            "_id": "69f060633f75ce9b2a0bf986"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f060633f75ce9b2a0bf983"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c00653b4655eba3f0aae",
+    "createdAt": "2025-10-07T07:23:50.699Z",
+    "updatedAt": "2026-04-28T07:23:15.813Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4eb3453b4655eba3f0db7",
+    "title": "Save money",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Save money",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about the person you love the most.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4eb3453b4655eba3f0db9"
+          },
+          {
+            "content": "What will you do next weekend?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4eb3453b4655eba3f0dba"
+          },
+          {
+            "content": "What's your favorite music?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4eb3453b4655eba3f0dbb"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4eb3453b4655eba3f0db8"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4eb3453b4655eba3f0dbc",
+    "createdAt": "2025-10-07T10:28:04.276Z",
+    "updatedAt": "2025-10-07T10:28:04.276Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4bf5f53b4655eba3f0a93",
+    "title": "Học một thứ mới",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Học một thứ mới",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about the last time you went to the cinema.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu: </strong>The last time I went to the cinema was just last weekend to watch a comedy with my close friends. To be honest, I had been up to my neck in work that whole week, so catching a movie on the big screen was the perfect way to let my hair down. The film was incredibly hilarious, and the whole experience really helped me recharge my batteries for a new week.</p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\" :</strong></p><ul><li class=\"ql-align-justify\"><strong>Up to my neck in work</strong> (Idiom): Cực kỳ bận rộn, ngập đầu trong công việc.</li><li class=\"ql-align-justify\"><strong>Let my hair down</strong> (Idiom): Thư giãn, xõa đi.</li><li class=\"ql-align-justify\"><strong>Recharge my batteries</strong> (Idiom): Nạp lại năng lượng.</li><li class=\"ql-align-justify\"><strong>Hilarious</strong> (Adjective): Rất hài hước, mang tính biểu cảm cao hơn nhiều so với những từ cơ bản.</li></ul>",
+            "_id": "69f039ab3f75ce9b2a0bf170"
+          },
+          {
+            "content": "Which dish is your favorite to cook?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu:</strong> Well, my absolute favorite dish to cook is spicy fried noodles. To be honest, I am often up to my neck in work, so making a quick and easy dish like this is my go-to way to let my hair down. I always add extra chili and some local spices to make it absolutely mouth-watering. Actually, for me, cooking this simple meal for my friends is more than just eating; it's a great way to bond after a long week.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Up to my neck in work</strong> (Idiom): Cực kỳ bận rộn, ngập đầu trong công việc.</li><li><strong>Let my hair down</strong> (Idiom): Thư giãn, xõa đi.</li><li><strong>Mouth-watering</strong> (Adjective): Tính từ miêu tả món ăn \"ngon chảy nước miếng\", thay thế hoàn toàn cho cụm \"very delicious\" ở mức độ cơ bản.</li><li><strong>More than just eating; it's a great way to bond</strong>: Cụm từ mang tính chất đúc kết, cho thấy bạn có khả năng mở rộng tư duy vượt ra ngoài nghĩa đen của đồ ăn.</li></ul>",
+            "_id": "69f039ab3f75ce9b2a0bf171"
+          },
+          {
+            "content": "Which is the best way to travel around your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p>Câu trả lời mẫu: In my opinion, traveling by motorbike is absolutely the best way to get around my country. To be honest, Vietnam is well-known for its narrow streets and stunning landscapes, so riding a motorbike offers you the ultimate freedom to explore hidden gems that cars cannot reach. Not to mention, it is incredibly cost-effective and allows you to completely immerse yourself in the local culture. It’s truly an unforgettable experience.</p><p><span style=\"background-color: rgb(255, 255, 0);\">Từ vựng \"ăn điểm\" :</span></p><ul><li><strong>Ultimate freedom</strong> (Collocation): Sự tự do tuyệt đối.</li><li><strong>Hidden gems</strong> (Idiom): Những viên ngọc ẩn (chỉ những địa điểm tuyệt đẹp nhưng chưa bị du lịch hóa, ít người biết đến).</li><li><strong>Immerse yourself in</strong> (Phrasal verb): Đắm chìm vào, hòa mình vào (văn hóa).</li><li><strong>Cost-effective</strong> (Adjective): Tiết kiệm chi phí (nghe mang tính học thuật và trang trọng hơn rất nhiều so với chữ <em>cheap</em>).</li></ul>",
+            "_id": "69f039ab3f75ce9b2a0bf172"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f039ab3f75ce9b2a0bf16f"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4bf5f53b4655eba3f0a98",
+    "createdAt": "2025-10-07T07:21:03.719Z",
+    "updatedAt": "2026-04-28T04:38:03.929Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c05853b4655eba3f0ab4",
+    "title": "Nỗ lực",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Nỗ lực",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about your childhood home.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong> \"Well, my childhood home was a cozy apartment in Hanoi. Although it wasn't very spacious, it holds my best memories. The flat was fully equipped with everything a family needed, including a compact kitchen where we used to bond over meals. Whenever I feel overwhelmed, thinking about that comfy bedroom where I used to listen to music helps me let my hair down and recharge my batteries.\"</p>",
+            "_id": "69f087a13f75ce9b2a0bfcb6"
+          },
+          {
+            "content": "Describe something you are planning to do in the future.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu:</strong> In the future, I am planning to travel to Bac Ha town. It is a famous place which is 300 kilometers from Hanoi. <span style=\"color: rgb(153, 51, 255);\">(Mật độ dân cư) </span>Even though it's always crowded with tourists, I still like to go there <span style=\"color: rgb(0, 138, 0);\">(Thời tiết) </span>because the weather is so cool,<span style=\"color: rgb(255, 153, 0);\"> (Con người)</span> and the people are incredibly friendly. The most important reason is that <span style=\"color: rgb(230, 0, 0);\">(Đồ ăn)</span> the food here is exceptionally delicious and cheap. That's why I always want to travel here.</p>",
+            "_id": "69f087a13f75ce9b2a0bfcb7"
+          },
+          {
+            "content": "Which dish is your favorite to cook?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu: </strong>My favorite dish to cook is fried noodles. It is an easy dish to cook but very delicious. I love to add in it chilly and Hao Hao salt so that it tastes spicier. Whenever my friends come to my house, I often order food for them like haburgers, and chicken and I cook fried noodles myself. We can cheer up with beer or coke. That is amazing.</p>",
+            "_id": "69f087a13f75ce9b2a0bfcb8"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f087a13f75ce9b2a0bfcb5"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c05853b4655eba3f0ab9",
+    "createdAt": "2025-10-07T07:25:12.981Z",
+    "updatedAt": "2026-04-28T10:10:41.844Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c29153b4655eba3f0ae0",
+    "title": "Gặp người ở thế hệ khác",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Gặp người ở thế hệ khác",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please tell me about your favorite film star/singer.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Câu trả lời mẫu: </em></strong><span style=\"color: rgb(255, 153, 0); background-color: transparent;\">(Giới thiệu bản thân, tên, tuổi, nghề nghiệp)</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> Sure. Let me introduce myself first. My name is Mia, who is living and working in Hanoi as an English teacher .</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 138, 0); background-color: transparent;\">(Giới thiệu sơ qua số lượng thành viên, nghề nghiệp)</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> Honestly, my family is not very big, only six people. My grandparents are retired civil servants. My parents are teachers. My older sister is a singer and an actress, who I consider my best friend.&nbsp;</span><span style=\"color: rgb(153, 51, 255); background-color: transparent;\">(Mô tả thành viên mình yêu nhất) </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I’d love to tell you more about her because she’s the one I admire the most. She is really pretty, with a sweet face and fair skin. Besides, she sings beautifully and she helps me a lot, not only in my study but also in my life.</span></p>",
+            "_id": "69f0c7c63a68b34a21a914fd"
+          },
+          {
+            "content": "Please describe your house.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Mẫu câu trả lời:</strong><strong style=\"color: rgb(230, 0, 0);\"> </strong><span style=\"color: rgb(230, 0, 0);\">(Bạn sống ở nhà hay căn hộ, vị trí ở đâu) </span>I currently live in an apartment in Hanoi.<span style=\"color: rgb(0, 138, 0);\"> (Diện tích nhà chật hay rộng) </span>It is not very spacious, but I like the convenience of living here. I can walk to the market or my workplace in just 5 minutes.<span style=\"color: rgb(0, 138, 0);\"> </span><span style=\"color: rgb(153, 51, 255);\">(Ngôi nhà có bao nhiêu phòng, có tiện nghi gì) </span>Furthermore, the room’s got everything I need including a small kitchen, a comfy bedroom, and a bathroom.<span style=\"color: rgb(240, 102, 102);\"> (Bạn thích làm gì khi ở nhà) </span>Whenever I have free time at home, I often relax by listening to music on my bed.</p>",
+            "_id": "69f0c7c63a68b34a21a914fe"
+          },
+          {
+            "content": "What sports do you like?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong style=\"background-color: rgba(248, 250, 252, 0.5);\">Mẫu câu trả lời: </strong>Well, I always enjoy doing various sports and physical activities. To be honest, I am usually up to my neck in work, so this is my favorite way to unwind. My absolute favorite is going to the gym with my best friends, where we usually spend around two hours working out together. This not only helps improve our physical health day by day, but it also helps us let our hair down and enjoy ourselves after a busy week.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Up to my neck in work (Idiom):</strong> Cực kỳ bận rộn, ngập đầu trong công việc.</li><li><strong>Let our hair down (Idiom):</strong> Thư giãn, xõa đi.</li><li><strong>Physical health:</strong> Sức khỏe thể chất.</li></ul>",
+            "_id": "69f0c7c63a68b34a21a914ff"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f0c7c63a68b34a21a914fc"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c29153b4655eba3f0ae5",
+    "createdAt": "2025-10-07T07:34:41.969Z",
+    "updatedAt": "2026-04-28T14:44:22.135Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4c3ec53b4655eba3f0b22",
+    "title": "Nhận một email hoặc thông báo",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có tiêu đề",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Nhận một email hoặc thông báo",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please tell me about yourself.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Câu trả lời mẫu: </strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 138, 0);\">(Giới thiệu bản thân, tên, tuổi, nghề nghiệp) </span><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Sure. Let me introduce myself first. My name is Mia, who is living and working in Hanoi as an English teacher.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(153, 51, 255);\">(Giới thiệu sơ qua số lượng thành viên, nghề nghiệp) </span><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Honestly, my family is not very big, only six people. My grandparents are retired civil servants. My parents are teachers. My older sister is a singer and an actress, who I consider my best friend.&nbsp;</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 153, 0);\">(Mô tả thành viên mình yêu nhất) </span><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I’d love to tell you more about her because she’s the one I admire the most. She is really pretty, with a sweet face and fair skin. Besides, she sings beautifully and she helps me a lot, not only in my study but also in my life.</span></p>",
+            "_id": "69f0cba13a68b34a21a915c1"
+          },
+          {
+            "content": "What do you find relaxing?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p class=\"ql-align-justify\"><strong>Câu trả lời mẫu: </strong>Well, honestly, my favorite way to relax is doing some physical activities with my close friends. After a long and tiring week, we usually hit the gym and spend around two hours working out together. It's not just about improving our physical health; it's also the perfect time for us to catch up. Afterwards, we often hang out at the central shopping mall. These simple activities really help me let my hair down and completely recharge my batteries.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng \"ăn điểm\":</strong></p><ul><li><strong>Hit the gym:</strong> Đi tập gym.</li><li><strong>Physical health:</strong> Sức khỏe thể chất.</li><li><strong>Catch up:</strong> Hàn huyên, cập nhật tình hình của nhau.</li><li><strong>Let my hair down (Idiom):</strong> Thư giãn, xõa đi.</li></ul><p class=\"ql-align-justify\"><br></p>",
+            "_id": "69f0cba13a68b34a21a915c2"
+          },
+          {
+            "content": "Can you describe your favorite dish?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><strong>Câu trả lời mẫu:</strong> Well, my absolute favorite dish is definitely spicy fried noodles. Since I am usually up to my neck in work, I really appreciate how quick and easy it is to prepare. I always add extra chili and a special seasoning called 'Hao Hao' salt to make it absolutely mouth-watering. Whenever my friends come over, I cook this signature dish for them, and we crack open a few cold beers. For me, it is more than just eating; it's a great way to bond and recharge our batteries.</p><p><strong style=\"background-color: rgb(255, 255, 0);\">Từ vựng và Thành ngữ \"ăn điểm\":</strong></p><ul><li><strong>Mouth-watering (Adjective):</strong> Tính từ \"ngon chảy nước miếng\", nâng cấp hoàn hảo cho cụm từ cơ bản <em>very delicious</em>.</li><li><strong>Crack open a few cold beers (Idiom/Collocation):</strong> Bật nắp vài lon bia lạnh (nghe tự nhiên và \"Tây\" hơn rất nhiều so với cụm <em>cheer up with beer</em> ban đầu).</li><li><strong>More than just eating; it's a great way to bond:</strong> Cụm đúc kết cho thấy bạn có khả năng mở rộng tư duy vượt ra ngoài nghĩa đen của việc ăn uống thông thường.</li></ul>",
+            "_id": "69f0cba13a68b34a21a915c3"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "69f0cba13a68b34a21a915c0"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4c3ec53b4655eba3f0b27",
+    "createdAt": "2025-10-07T07:40:28.136Z",
+    "updatedAt": "2026-04-28T15:00:49.217Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4e83c53b4655eba3f0da1",
+    "title": "Thành quả",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Thành quả",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What activities do you usually do with your friends?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e83c53b4655eba3f0da3"
+          },
+          {
+            "content": "Describe what makes you happy.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e83c53b4655eba3f0da4"
+          },
+          {
+            "content": "What’s your favorite kind of music?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e83c53b4655eba3f0da5"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4e83c53b4655eba3f0da2"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4e83c53b4655eba3f0da6",
+    "createdAt": "2025-10-07T10:15:24.752Z",
+    "updatedAt": "2025-10-07T10:15:24.752Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4e9e753b4655eba3f0dac",
+    "title": "Thể thao mạo hiểm",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Thể thao mạo hiểm",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Can you describe yourself?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e9e753b4655eba3f0dae"
+          },
+          {
+            "content": "What is your village/town/city like?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e9e753b4655eba3f0daf"
+          },
+          {
+            "content": "What do you like doing with your friends?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4e9e753b4655eba3f0db0"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4e9e753b4655eba3f0dad"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4e9e753b4655eba3f0db1",
+    "createdAt": "2025-10-07T10:22:31.601Z",
+    "updatedAt": "2025-10-07T10:22:31.601Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4ec1e53b4655eba3f0dc2",
+    "title": "Sự sáng tạo",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Sự sáng tạo",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please tell me what you do at the weekend.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ec1e53b4655eba3f0dc4"
+          },
+          {
+            "content": "Do you like shopping?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ec1e53b4655eba3f0dc5"
+          },
+          {
+            "content": "Will you go on holiday next summer?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ec1e53b4655eba3f0dc6"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4ec1e53b4655eba3f0dc3"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4ec1e53b4655eba3f0dc7",
+    "createdAt": "2025-10-07T10:31:58.900Z",
+    "updatedAt": "2025-10-07T10:31:58.900Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4ed3e53b4655eba3f0dd8",
+    "title": "Nhận quà",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có tiêu đề",
+        "content": "Nhận quà",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe a member of your family.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ed3e53b4655eba3f0dda"
+          },
+          {
+            "content": "What food do you like?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ed3e53b4655eba3f0ddb"
+          },
+          {
+            "content": "Tell me about a time you cooked for your family.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68e4ed3e53b4655eba3f0ddc"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4ed3e53b4655eba3f0dd9"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "SPEAKING",
+    "id": "68e4ed3e53b4655eba3f0ddd",
+    "createdAt": "2025-10-07T10:36:46.167Z",
+    "updatedAt": "2025-10-07T10:36:46.167Z",
+    "__v": 0
+  }
+]

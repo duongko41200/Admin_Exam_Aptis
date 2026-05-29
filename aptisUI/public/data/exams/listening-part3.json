@@ -1,0 +1,893 @@
+[
+  {
+    "_id": "6957cbcbc88028aa29a1b2c0",
+    "title": "Changes in the workplace",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "Changes in the workplace",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361482238_d7b6cffa9993584b_audiotpa3_q1.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,3],\"text\":\" I'm thinking about switching to another job.\"},{\"timestamp\":[3,5.68],\"text\":\" Why? Your current job is very stable.\"},{\"timestamp\":[5.68,8.12],\"text\":\" I think I should try my hand at different fields.\"},{\"timestamp\":[8.12,12.2],\"text\":\" The jobs I take should only last around one to two years.\"},{\"timestamp\":[12.2,15.88],\"text\":\" I don't like staying too long in one job or with one company.\"},{\"timestamp\":[15.88,17.16],\"text\":\" That would be really boring.\"},{\"timestamp\":[17.16,20.32],\"text\":\" Nowadays, many companies offer temporary jobs,\"},{\"timestamp\":[20.32,23.56],\"text\":\" which allows me to try out different fields.\"},{\"timestamp\":[23.56,26],\"text\":\" Oh, but if you stay longer at one company,\"},{\"timestamp\":[26,30],\"text\":\" they might offer you more opportunities for career advancement.\"},{\"timestamp\":[30,34],\"text\":\" I always want to stay long-term with a company that suits me.\"},{\"timestamp\":[34,37],\"text\":\" Nowadays, young people who have just graduated from university\"},{\"timestamp\":[37,40],\"text\":\" are very talented and have many qualifications.\"},{\"timestamp\":[40,43],\"text\":\" I'm afraid that if I stick with one job and don't change\"},{\"timestamp\":[43,46],\"text\":\" to accumulate knowledge in various fields,\"},{\"timestamp\":[46,49],\"text\":\" it will be hard to compete with these young, talented people.\"},{\"timestamp\":[49,52],\"text\":\" We also need to consider job satisfaction if we do well.\"},{\"timestamp\":[52,59],\"text\":\" We need to be encouraged and motivated that helps employees feel that their efforts and contributions to the company are worthwhile.\"},{\"timestamp\":[59,61],\"text\":\" You're absolutely right. I couldn't agree more.\"},{\"timestamp\":[61,65.2],\"text\":\" In this age of technological advancement, many jobs have been\"},{\"timestamp\":[65.2,69.92],\"text\":\" replaced by machines. More and more people are losing their jobs due to the development of\"},{\"timestamp\":[69.92,77.04],\"text\":\" technology and engineering. I think this is a concerning issue. I don't think so. Technology is\"},{\"timestamp\":[77.04,81.52],\"text\":\" helping us do our work more quickly, easily and conveniently than ever. If we know how to leverage\"},{\"timestamp\":[81.52,90],\"text\":\" technology in our jobs, productivity will increase significantly, which in turn helps develop the economy and society.\"}]</p>",
+        "subQuestion": [
+          {
+            "content": "ontinuity is important when planning a career",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965f395e8ba510927b0b7a2"
+          },
+          {
+            "content": "Job security cannot be guaranteed",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965f395e8ba510927b0b7a3"
+          },
+          {
+            "content": "Job satisfaction is important for motivator",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965f395e8ba510927b0b7a4"
+          },
+          {
+            "content": "Technological improvement is good for the economy",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965f395e8ba510927b0b7a5"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965f395e8ba510927b0b7a1"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957cbcbc88028aa29a1b2c6",
+    "createdAt": "2026-01-02T13:44:43.238Z",
+    "updatedAt": "2026-01-13T07:26:13.951Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ccb3c88028aa29a1b3e4",
+    "title": "Beauty",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Beauty",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361713956_ca6c7b3444dbb4f1_audiotpa3_q2.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,2.08],\"text\":\" Hi, what are you reading?\"},{\"timestamp\":[2.08,6.56],\"text\":\" I'm reading an article about the concept of beauty.\"},{\"timestamp\":[6.56,9.52],\"text\":\" Oh, really?\"},{\"timestamp\":[9.52,10.52],\"text\":\" That sounds interesting.\"},{\"timestamp\":[10.52,12.32],\"text\":\" Beauty is something that can't be defined\"},{\"timestamp\":[12.32,15.76],\"text\":\" because everyone has a different perspective on it, right?\"},{\"timestamp\":[15.76,18.6],\"text\":\" Actually, people have quite similar perspectives on beauty.\"},{\"timestamp\":[18.6,22.88],\"text\":\" We always prefer beautiful things and are drawn to them.\"},{\"timestamp\":[22.88,25],\"text\":\" Beauty in the past and now is very different.\"},{\"timestamp\":[25,29],\"text\":\" The older generation might see traditional things as beautiful,\"},{\"timestamp\":[29,35],\"text\":\" while the younger generation considers unique and unconventional things as beautiful.\"},{\"timestamp\":[35,39],\"text\":\" So not everyone has the same view on beauty.\"},{\"timestamp\":[39,44],\"text\":\" Beauty can be found in many places we wouldn't expect,\"},{\"timestamp\":[44,46.2],\"text\":\" or even within something considered\"},{\"timestamp\":[46.2,47.2],\"text\":\" ugly.\"},{\"timestamp\":[47.2,48.32],\"text\":\" There's always some beauty present.\"},{\"timestamp\":[48.32,52.12],\"text\":\" So nothing in the world is entirely ugly.\"},{\"timestamp\":[52.12,53.12],\"text\":\" Exactly.\"},{\"timestamp\":[53.12,57.12],\"text\":\" That's why the definition of beauty is constantly changing in a few decades.\"},{\"timestamp\":[57.12,null],\"text\":\" People might find things beautiful that we once considered ugly. That's one perspective. Let's wait and see how it changes.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>W: Hi, what are you reading?</p><p>M: I'm reading an article about the concept of beauty.</p><p>W: Oh really, that sounds interesting. Beauty is something that can't be defined because everyone has a different perspective on it, right?</p><p>M: Actually, people have quite similar perspectives on beauty. We always prefer beautiful things and are drawn to them.</p><p>W: Beauty in the past and now is very different. The older generation might see traditional things as beautiful, while the younger generation considers unique and unconventional things as beautiful. So, not everyone has the same view on beauty.</p><p>M: Beauty can be found in many places we wouldn't expect, or even within something considered ugly, there's always some beauty present. So, nothing in the world is entirely ugly.</p><p>W: Exactly. That's why the definition of beauty is constantly changing. In a few decades, people might find things beautiful that we once considered ugly.</p><p>M: That's one perspective. Let's wait and see how it changes.</p>",
+        "subQuestion": [
+          {
+            "content": "People share the very similar ideas about beauty",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fb8af7e3d004a0985c84"
+          },
+          {
+            "content": "Views of beauty change over time",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fb8af7e3d004a0985c85"
+          },
+          {
+            "content": "Beauty can be found in unlikely places",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fb8af7e3d004a0985c86"
+          },
+          {
+            "content": "raditional ideas of beauty are going to change",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fb8af7e3d004a0985c87"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fb8af7e3d004a0985c83"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957ccb3c88028aa29a1b3ea",
+    "createdAt": "2026-01-02T13:48:35.218Z",
+    "updatedAt": "2026-01-13T08:00:10.815Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957cd96c88028aa29a1b3f3",
+    "title": "Actors",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Actors (câu này nhiều phiên bản nên cứ chọn MWBB)",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?\n\n",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361942149_94cc89d3b414126c_audiotpa3_q3.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,2.44],\"text\":\" What do you think about casting actors?\"},{\"timestamp\":[2.44,4.92],\"text\":\" - I think it's absolutely necessary\"},{\"timestamp\":[4.92,7.76],\"text\":\" and the most important thing because it determines\"},{\"timestamp\":[7.76,11.84],\"text\":\" whether the actor is suitable for the role or not.\"},{\"timestamp\":[11.84,14.32],\"text\":\" - I understand that auditions are important,\"},{\"timestamp\":[14.32,17.58],\"text\":\" but if we only rely on a 15 to 20 minute audition\"},{\"timestamp\":[17.58,20.28],\"text\":\" that short period of time cannot really show us\"},{\"timestamp\":[20.28,22.2],\"text\":\" the actor's full potential.\"},{\"timestamp\":[23.52,24.36],\"text\":\" - That's a good point.\"},{\"timestamp\":[24.36,26.2],\"text\":\" So I think it's better to let\"},{\"timestamp\":[26.2,33.14],\"text\":\" actors perform freestyle, not relying on the script so that they can improvise thereby\"},{\"timestamp\":[33.14,39.48],\"text\":\" clearly showing their acting skills. But actors often respond best to a good script.\"},{\"timestamp\":[39.48,43.68],\"text\":\" And they also need a script provided by the director and directed to act according to\"},{\"timestamp\":[43.68,45.04],\"text\":\" the script, actors\"},{\"timestamp\":[45.04,47.2],\"text\":\" can't always act freely.\"},{\"timestamp\":[47.2,52.28],\"text\":\" What do you think about stage actors moving to film acting?\"},{\"timestamp\":[52.28,54.12],\"text\":\" I think there are two completely different fields.\"},{\"timestamp\":[54.12,58.82],\"text\":\" When I was studying acting in college, stage acting and film acting were two completely\"},{\"timestamp\":[58.82,60.28],\"text\":\" separate subjects.\"},{\"timestamp\":[60.28,63.72],\"text\":\" They were required different skills and qualities from the actor.\"},{\"timestamp\":[63.72,70.56],\"text\":\" So it's not easy to move from stage acting to film acting and advice versa. That's right. These are two very different forms\"},{\"timestamp\":[70.56,77.52],\"text\":\" of acting and they require different skills from the actor. However, as actors, I think we all\"},{\"timestamp\":[77.52,88.72],\"text\":\" need encouragement and support from the audience. I completely agree. Actors need praise and feedback to feel recognized\"},{\"timestamp\":[88.72,91.1],\"text\":\" for their efforts and contributions.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>W: What do you think about casting actors before casting them?</p><p>M: I think it's absolutely necessary and the most important thing because it determines whether the actor is suitable for the role or not.</p><p>W: I understand that auditions are important. But if we only rely on a 15 to 20 minute audition, that short period of time cannot really show us the actor's full potential.</p><p>M: That's a good point. So I think it's better to let actors perform freestyle, not relying on the script, so that they can improvise, thereby clearly showing their acting skills.</p><p>W: But actors often respond best to a good script. And they also need a script provided by the director and directed to act according to the script. Actors can’t always act freely.</p><p>M: What do you think about stage actors moving to film acting?</p><p>W: I think they are two completely different fields. When I was studying acting in college, stage acting and film acting were two completely separate subjects. They require different skills and qualities from the actor. So, it’s not easy to move from stage acting to film acting and vice versa.</p><p>M: That’s right. These are two very different forms of acting and they require different skills from the actor. However, as actors, I think we all need encouragement and support from the audience.</p><p>W: I completely agree. Actors need praise and feedback to feel recognized for their efforts and contributions.</p>",
+        "subQuestion": [
+          {
+            "content": "Auditions are the most important of casting",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fbd2f7e3d004a0985d17"
+          },
+          {
+            "content": "Actors respond best to a strong script",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fbd2f7e3d004a0985d18"
+          },
+          {
+            "content": "Theatre acting and movie acting require different skills",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fbd2f7e3d004a0985d19"
+          },
+          {
+            "content": "Actors need to be praised",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fbd2f7e3d004a0985d1a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fbd2f7e3d004a0985d16"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957cd96c88028aa29a1b3f9",
+    "createdAt": "2026-01-02T13:52:22.975Z",
+    "updatedAt": "2026-01-13T08:01:22.408Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ce41c88028aa29a1b402",
+    "title": "Information and technology",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Information and technology",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767362112270_560f8824f1551a58_audiotpa3_q4.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,2.28],\"text\":\" Hey, what have you been studying lately?\"},{\"timestamp\":[2.28,6.52],\"text\":\" Oh, I'm still studying technology and information systems\"},{\"timestamp\":[6.52,8.56],\"text\":\" to really hot topic these days.\"},{\"timestamp\":[8.56,10.12],\"text\":\" That's a fascinating field.\"},{\"timestamp\":[10.12,13.44],\"text\":\" I still can't imagine the future of humanity\"},{\"timestamp\":[13.44,15.24],\"text\":\" alongside technology.\"},{\"timestamp\":[15.24,17.64],\"text\":\" I think within the next 100 years,\"},{\"timestamp\":[17.64,19.44],\"text\":\" humans won't be able to keep up\"},{\"timestamp\":[19.44,22.88],\"text\":\" with the pace of information technology development.\"},{\"timestamp\":[22.88,24.76],\"text\":\" I believe that the younger generation\"},{\"timestamp\":[24.76,27.32],\"text\":\" and future generations will become increasingly smarter\"},{\"timestamp\":[27.32,31.84],\"text\":\" and they'll discover even more amazing things about information technology to benefit\"},{\"timestamp\":[31.84,33.5],\"text\":\" society.\"},{\"timestamp\":[33.5,38.12],\"text\":\" But if technology advances too quickly and becomes too sophisticated, won't that cause a lot\"},{\"timestamp\":[38.12,40.32],\"text\":\" of people to lose their jobs?\"},{\"timestamp\":[40.32,44.28],\"text\":\" Many industries could be replaced by machines and robots.\"},{\"timestamp\":[44.28,47.12],\"text\":\" And the future machines might even be smarter than humans.\"},{\"timestamp\":[48.16,52.24],\"text\":\" I think machines are just there to support humans in their work.\"},{\"timestamp\":[52.24,54.56],\"text\":\" They can't replace us or be smarter than us.\"},{\"timestamp\":[54.56,58.24],\"text\":\" If machines and robots are involved in the work process,\"},{\"timestamp\":[58.24,62.24],\"text\":\" they will make our jobs less strenuous and improve efficiency.\"},{\"timestamp\":[62.24,66.32],\"text\":\" This in turn will drive continuous economic and social development\"},{\"timestamp\":[66.8,72.32],\"text\":\" alongside technological advancements. What about the issue of personal data breaches? We should have\"},{\"timestamp\":[72.32,77.52],\"text\":\" more policies to protect personal information and prevent machines from leaking important personal\"},{\"timestamp\":[77.52,83.74],\"text\":\" data. I agree with you. A major issue with information technology is the potential for data breaches. If we can improve this, it will be fantastic.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>M: Hi, what have you been studying lately?</p><p>W: Oh, I'm still studying technology and information systems—it's a really hot topic these days.</p><p>M: That's a fascinating field. I still can't imagine the future of humanity alongside technology. I think within the next hundred years, humans won't be able to keep up with the pace of information technology development.</p><p>W: I believe that the younger generation and future generations will become increasingly smarter, and they'll discover even more amazing things about information technology to benefit society.</p><p>M: But if technology advances too quickly and becomes too sophisticated, won't that cause a lot of people to lose their jobs? Many industries could be replaced by machines and robots. In the future, machines might even be smarter than humans.</p><p>W: I think machines are just there to support humans in their work; they can't replace us or be smarter than us. If machines and robots are involved in the work process, they will make our jobs less strenuous and improve efficiency. This, in turn, will drive continuous economic and social development alongside technological advancements.</p><p>M: What about the issue of personal data breaches? We should have more policies to protect personal information and prevent machines from leaking important personal data.</p><p>W: I agree with you. A major issue with information technology is the potential for data breaches. If we can improve this, it would be fantastic.</p>",
+        "subQuestion": [
+          {
+            "content": "The future generation will fail to cope with new information",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc04f7e3d004a0985d68"
+          },
+          {
+            "content": "The information revolution will be good for the economy",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc04f7e3d004a0985d69"
+          },
+          {
+            "content": "No computer is superior to the human brain",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc04f7e3d004a0985d6a"
+          },
+          {
+            "content": "More should be done to protect individual privacy",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc04f7e3d004a0985d6b"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fc04f7e3d004a0985d67"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957ce41c88028aa29a1b408",
+    "createdAt": "2026-01-02T13:55:13.064Z",
+    "updatedAt": "2026-01-13T08:02:12.753Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d2efc88028aa29a1b7cc",
+    "title": "The Internet",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The Internet (câu này nhiều phiên bản nên cứ chọn BWBB)",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363309620_5a236875673a5faa_audiotpa3_q5.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.96],\"text\":\" These days, there is so much information on the internet that I feel overwhelmed.\"},{\"timestamp\":[4.96,5.96],\"text\":\" That's true.\"},{\"timestamp\":[5.96,10.32],\"text\":\" A lot of people feel the same way, especially with the mix of real and fake information.\"},{\"timestamp\":[10.32,13.88],\"text\":\" Sometimes we end up reading fake news.\"},{\"timestamp\":[13.88,19.28],\"text\":\" That's why using the internet requires both knowledge and skills.\"},{\"timestamp\":[19.28,23.32],\"text\":\" Without good information, teaching skills, we can waste a lot of time.\"},{\"timestamp\":[23.32,26.36],\"text\":\" There's so much content uploaded to the internet every day,\"},{\"timestamp\":[26.36,29.76],\"text\":\" and we have to be cautious because it might not be accurate.\"},{\"timestamp\":[29.76,31.88],\"text\":\" As a result, people are gradually changing\"},{\"timestamp\":[31.88,34.68],\"text\":\" how they perceive the information they encounter online.\"},{\"timestamp\":[34.68,37.4],\"text\":\" It's not like in the past, when we read newspapers\"},{\"timestamp\":[37.4,39.44],\"text\":\" and believed everything was true.\"},{\"timestamp\":[39.44,41.36],\"text\":\" - Additionally, the internet has made people\"},{\"timestamp\":[41.36,43.04],\"text\":\" much more impatient than before.\"},{\"timestamp\":[43.04,45.76],\"text\":\" They want everything to yield quick results.\"},{\"timestamp\":[46,50.64],\"text\":\" People are losing the ability to wait for outcomes like they used to.\"},{\"timestamp\":[51.2,55.18],\"text\":\" Exactly. Because the internet allows us to find millions of results in less\"},{\"timestamp\":[55.18,58.3],\"text\":\" than a second. We're getting used to that, which is leading to a decline in\"},{\"timestamp\":[58.3,59.88],\"text\":\" patients and tolerance.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>W: These days, there's so much information on the internet that I feel overwhelmed.</p><p><br></p><p>M: That's true. A lot of people feel the same way, especially with the mix of real and fake information. Sometimes we end up reading fake news.</p><p><br></p><p>W: That's why using the internet requires both knowledge and skills. Without good information-searching skills, we can waste a lot of time. There’s so much content uploaded to the internet every day, and we have to be cautious because it might not be accurate. As a result, people are gradually changing how they perceive the information they encounter online. It’s not like in the past when we read newspapers and believed everything was true.</p><p><br></p><p>M: Additionally, the internet has made people much more impatient than before. They want everything to yield quick results. People are losing the ability to wait for outcomes like they used to.</p><p><br></p><p>W: Exactly, because the internet allows us to find millions of results in less than a second. We're getting used to that, which is leading to a decline in patience and tolerance.</p>",
+        "subQuestion": [
+          {
+            "content": "There is too much information on the internet",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc3bf7e3d004a0985e4d"
+          },
+          {
+            "content": "Using internet requires skills",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc3bf7e3d004a0985e4e"
+          },
+          {
+            "content": "The internet is changing the way we think",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc3bf7e3d004a0985e4f"
+          },
+          {
+            "content": "Internet has made people less patient",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc3bf7e3d004a0985e50"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fc3bf7e3d004a0985e4c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d2efc88028aa29a1b7d2",
+    "createdAt": "2026-01-02T14:15:11.476Z",
+    "updatedAt": "2026-01-13T08:03:07.681Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d38dc88028aa29a1b7db",
+    "title": "The arts",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The arts",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363468231_08977030d500491f_audiotpa3_q6.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,2.52],\"text\":\" What magazine are you reading?\"},{\"timestamp\":[2.52,4.22],\"text\":\" I'm reading about art.\"},{\"timestamp\":[4.22,5.44],\"text\":\" That sounds interesting.\"},{\"timestamp\":[5.44,7],\"text\":\" I think art is only for the wealthy.\"},{\"timestamp\":[7,10.16],\"text\":\" Poor people don't have the opportunity or time\"},{\"timestamp\":[10.16,11.6],\"text\":\" to enjoy art.\"},{\"timestamp\":[11.6,14.72],\"text\":\" Actually, art isn't limited to any one group.\"},{\"timestamp\":[14.72,17.04],\"text\":\" If we have an interest, we can access art\"},{\"timestamp\":[17.04,19.76],\"text\":\" because it's all around us.\"},{\"timestamp\":[19.76,23.24],\"text\":\" I wish that when I was a child and in school,\"},{\"timestamp\":[23.24,26.08],\"text\":\" I had more exposure to the arts. I'm really glad that now when my child goes to school,, I had more exposure to the arts. I'm really glad that now\"},{\"timestamp\":[26.08,29.28],\"text\":\" when my child goes to school, they can have more exposure to the arts.\"},{\"timestamp\":[29.92,34.64],\"text\":\" Yes, that's great news. I hope that the authorities and the government will invest more\"},{\"timestamp\":[35.2,41.76],\"text\":\" in the arts and make them accessible to everyone, especially by adding more art classes\"},{\"timestamp\":[41.76,47.04],\"text\":\" in school so that students can be exposed to art early on.\"},{\"timestamp\":[48.08,52.72],\"text\":\" I agree. Children should be introduced to the arts early so they can develop their own\"},{\"timestamp\":[52.72,58.88],\"text\":\" sense of beauty sooner. I think with the development of technology where we just scroll a bit\"},{\"timestamp\":[58.88,65.96],\"text\":\" and see art videos and images flooding social media, art is becoming more accessible than ever.\"},{\"timestamp\":[66.48,69.92],\"text\":\" Really. Let's, let's wait and see how it unfolds. Um,\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>W: What magazine are you reading?</p><p><br></p><p>M: I'm reading about art.</p><p><br></p><p>W: That sounds interesting. I think art is only for the wealthy. Poor people don’t have the opportunity or time to enjoy art.</p><p><br></p><p>M: Actually, art isn’t limited to any one group. If we have an interest, we can access art because it’s all around us.</p><p><br></p><p>W: I wish that when I was a child and in school, I had more exposure to the arts. I'm really glad that now, when my child goes to school, they can have more exposure to the arts.</p><p><br></p><p>M: Yes, that's great news. I hope that the authorities and the government will invest more in the arts and make them accessible to everyone, especially by adding more art classes in schools so that students can be exposed to art early on.</p><p><br></p><p>W: I agree. Children should be introduced to the arts early so they can develop their own sense of beauty sooner.</p><p><br></p><p>M: I think with the development of technology, where we just scroll a bit and see art videos and images flooding social media, art is becoming more accessible than ever.</p><p><br></p><p>W: Really? Let's wait and see how it unfolds.</p>",
+        "subQuestion": [
+          {
+            "content": "Art is only suitable for the privileged few",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc79f7e3d004a0985e9e"
+          },
+          {
+            "content": "The government should invest more in arts",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc79f7e3d004a0985e9f"
+          },
+          {
+            "content": "Children should be exposed to art early",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc79f7e3d004a0985ea0"
+          },
+          {
+            "content": "In the future, art will become more accessible",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fc79f7e3d004a0985ea1"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fc79f7e3d004a0985e9d"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d38dc88028aa29a1b7e1",
+    "createdAt": "2026-01-02T14:17:49.741Z",
+    "updatedAt": "2026-01-13T08:04:09.828Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d526c88028aa29a1b992",
+    "title": "The music",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "The music",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363877298_f8f8092e1f8eb760_audiotpa3_q7.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong>Paragraph:</strong></p><p>M: Did you hear about the concert last night? A lot of young people attended.</p><p><br></p><p>W: Yes, I know about that concert; it was very popular. I don’t understand why so many young people are so eager to attend. They're blindly idolizing young singers, and these idols don’t really teach them anything good.</p><p><br></p><p>M: I see it differently. The young singers today are very talented, and they do a lot of charitable work for society. I think young people look up to them and follow their example.</p><p><br></p><p>W: Yes, they volunteer a lot, but they do it for the wrong reasons. They only want to boost their own fame.</p><p><br></p><p>M: Oh, I think you don't like young singers because you don't enjoy their music, right?</p><p><br></p><p>W: Exactly, I only like listening to classical music from previous generations. I think music preferences are very personal and each generation has its own unique taste in music. But music is always a universal language that conveys emotions everyone can understand.</p><p><br></p><p>M: I didn’t study music like you, so I don’t really have any ideas about this.</p><p><br></p><p>W: You don’t need to study music to understand it. Just think about why you cry during a sad movie scene when the music plays or why you feel energized when you hear a happy song. Isn’t that right?</p><p><br></p><p>M: Yes, I think that’s why films always try to include at least one piece of music.</p>",
+        "subQuestion": [
+          {
+            "content": "Singers play a good role for young people",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6957d526c88028aa29a1b994"
+          },
+          {
+            "content": "Taste in music is a highly personal thing",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6957d526c88028aa29a1b995"
+          },
+          {
+            "content": "Music is a universal language",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6957d526c88028aa29a1b996"
+          },
+          {
+            "content": "Music can manipulate people's feelings",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6957d526c88028aa29a1b997"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6957d526c88028aa29a1b993"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d526c88028aa29a1b998",
+    "createdAt": "2026-01-02T14:24:38.160Z",
+    "updatedAt": "2026-01-02T14:24:38.160Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d573c88028aa29a1b99e",
+    "title": "University and technology",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "University and technology",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776951562316_36497d61e37ef27d_audio_de8.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,1.96],\"text\":\" What course are you taking these days?\"},{\"timestamp\":[1.96,4.72],\"text\":\" I'm currently pursuing an online university degree.\"},{\"timestamp\":[4.72,6.56],\"text\":\" It's really suitable and convenient\"},{\"timestamp\":[6.56,8.36],\"text\":\" because I can study while working.\"},{\"timestamp\":[8.36,12.72],\"text\":\" Technology has truly made education much more accessible.\"},{\"timestamp\":[13.64,14.48],\"text\":\" That's amazing.\"},{\"timestamp\":[14.48,16.24],\"text\":\" I still remember the old days\"},{\"timestamp\":[16.24,18.44],\"text\":\" when you had to stand in long lines\"},{\"timestamp\":[18.44,20.04],\"text\":\" to borrow a book from the library,\"},{\"timestamp\":[20.04,21.4],\"text\":\" which took a lot of time.\"},{\"timestamp\":[21.4,23.12],\"text\":\" And by the time it was your turn,\"},{\"timestamp\":[23.12,25.64],\"text\":\" the book was often already gone.\"},{\"timestamp\":[25.64,27.32],\"text\":\" Now when we want to read a book,\"},{\"timestamp\":[27.32,29.36],\"text\":\" we just type the title online\"},{\"timestamp\":[29.36,30.96],\"text\":\" and have it immediately.\"},{\"timestamp\":[30.96,31.8],\"text\":\" - Exactly.\"},{\"timestamp\":[31.8,35.88],\"text\":\" Study materials were really scarce back then, unlike now.\"},{\"timestamp\":[35.88,36.64],\"text\":\" - That's why I'm thinking,\"},{\"timestamp\":[36.64,39.48],\"text\":\" why not make all school classes online?\"},{\"timestamp\":[39.48,41.88],\"text\":\" It would save a lot of costs.\"},{\"timestamp\":[41.88,48.52],\"text\":\" - I think attending school in person is still very necessary because meeting friends and\"},{\"timestamp\":[48.52,52.72],\"text\":\" socializing helps us gain more soft skills.\"},{\"timestamp\":[52.72,56.24],\"text\":\" Don't forget that young people do have a reputation for being less social.\"},{\"timestamp\":[56.24,60.72],\"text\":\" They often prefer talking on social media rather than meeting in person.\"},{\"timestamp\":[60.72,67],\"text\":\" Additionally, I think the variety of courses available nowadays is also a good way to improve education.\"},{\"timestamp\":[67,75],\"text\":\" I don't think so. Offering too many diverse courses can make traditional and course subjects seem less important and neglected.\"},{\"timestamp\":[75,85.44],\"text\":\" We should also consider competition among universities. It's essential for universities to continuously improve their programs and attract more funding, especially with\"},{\"timestamp\":[85.44,90.8],\"text\":\" the current trend of universities seeking financial autonomy.\"},{\"timestamp\":[90.8,96.2],\"text\":\" I don't think we should turn education into a race like competing businesses.\"},{\"timestamp\":[96.2,null],\"text\":\" If universities need funding, they can report it to the government and educational organizations.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>M: What course are you taking these days?</p><p><br></p><p>W: I'm currently pursuing an online university degree. It's really suitable and convenient because I can study while working. Technology has truly made education much more accessible.</p><p><br></p><p>M: That's amazing. I still remember the old days when you had to stand in long lines to borrow a book from the library, which took a lot of time. And by the time it was your turn, the book was often already gone. Now, when we want to read a book, we just type the title online and have it immediately.</p><p><br></p><p>W: Exactly, study materials were really scarce back then, unlike now.</p><p><br></p><p>M: That’s why I’m thinking, why not make all school classes online? It would save a lot of costs.</p><p><br></p><p>W: I think attending school in person is still very necessary because meeting friends and socializing helps us gain more soft skills.</p><p><br></p><p>M: Don’t forget that young people do have a reputation for being less social. They often prefer talking on social media rather than meeting in person.</p><p><br></p><p>W: Additionally, I think the variety of courses available nowadays is also a good way to improve education.</p><p><br></p><p>M: I don't think so. Offering too many diverse courses can make traditional and core subjects seem less important and neglected.</p><p><br></p><p>W: We should also consider competition among universities. It’s essential for universities to continuously improve their programs and attract more funding, especially with the current trend of universities seeking financial autonomy.</p><p><br></p><p>M: I don’t think we should turn education into a race like competing businesses. If universities need funding, they can report it to the government and educational organizations.</p>",
+        "subQuestion": [
+          {
+            "content": "Technology helps make education more accessible",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b13b6227e8fed251497ed9"
+          },
+          {
+            "content": "Social interaction is important",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b13b6227e8fed251497eda"
+          },
+          {
+            "content": "The diverse curriculum is not an advantage",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b13b6227e8fed251497edb"
+          },
+          {
+            "content": "University competition should be encouraged",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b13b6227e8fed251497edc"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69b13b6227e8fed251497ed8"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d573c88028aa29a1b9a4",
+    "createdAt": "2026-01-02T14:25:55.660Z",
+    "updatedAt": "2026-03-11T09:52:34.736Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d65ec88028aa29a1bc23",
+    "title": "The politics",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The politics",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364189458_583b282bf89a9a1b_audiotpa3_q9.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,2.04],\"text\":\" Have you heard about the upcoming presidential election?\"},{\"timestamp\":[2.04,3.56],\"text\":\" A lot of young people have already voted,\"},{\"timestamp\":[3.56,5.68],\"text\":\" which shows that they're becoming more interested\"},{\"timestamp\":[5.68,7.2],\"text\":\" in politics.\"},{\"timestamp\":[7.2,10.32],\"text\":\" - Yes, it's very different from our time.\"},{\"timestamp\":[10.32,13.6],\"text\":\" When I was 18, I never paid attention to politics.\"},{\"timestamp\":[14.64,16.92],\"text\":\" - The technology era now gives us so many ways\"},{\"timestamp\":[16.92,18.2],\"text\":\" to engage with politics.\"},{\"timestamp\":[18.2,20.64],\"text\":\" Politicians often post their political activities\"},{\"timestamp\":[20.64,22.96],\"text\":\" on social media much more than they did in the past.\"},{\"timestamp\":[23.92,29.1],\"text\":\" - Actually, politicians still carry out traditional political activities too. They\"},{\"timestamp\":[29.1,33.8],\"text\":\" still hand out flyers and participate in volunteer work.\"},{\"timestamp\":[33.8,38.32],\"text\":\" The development of information technology also overwhelms us with information. There's\"},{\"timestamp\":[38.32,42.76],\"text\":\" so much news online that we don't know what to read. This makes keeping up with political\"},{\"timestamp\":[42.76,45.2],\"text\":\" news much more challenging than before.\"},{\"timestamp\":[46.56,55.92],\"text\":\" I think that as technology advances, it becomes easier for us to stay updated on the news.\"},{\"timestamp\":[56.8,62.88],\"text\":\" Technology allows us to use advanced filters to easily sort out the news we need to know.\"},{\"timestamp\":[63.44,66.36],\"text\":\" There are also more women involved in politics now\"},{\"timestamp\":[66.36,67.36],\"text\":\" than before.\"},{\"timestamp\":[67.36,70.4],\"text\":\" It seems society has become more open to women.\"},{\"timestamp\":[70.4,71.72],\"text\":\" - Exactly.\"},{\"timestamp\":[71.72,76.4],\"text\":\" Women have the same education and learning abilities\"},{\"timestamp\":[76.4,81],\"text\":\" as men they even lead in many areas of life.\"},{\"timestamp\":[81,85.36],\"text\":\" In the future, more and more women will be participating in political activities.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>M: Have you heard about the upcoming presidential election? A lot of young people have already voted, which shows that they're becoming more interested in politics.</p><p><br></p><p>W: Yes, it's very different from our time. When I was 18, I never paid attention to politics.</p><p><br></p><p>M: The technology era now gives us so many ways to engage with politics. Politicians often post their political activities on social media much more than they did in the past.</p><p><br></p><p>W: Actually, politicians still carry out traditional political activities too. They still hand out flyers and participate in volunteer work.</p><p><br></p><p>M: The development of information technology also overwhelms us with information. There’s so much news online that we don't know what to read. This makes keeping up with political news much more challenging than before.</p><p><br></p><p>W: I think that as technology advances, it becomes easier for us to stay updated on the news. Technology allows us to use advanced filters to easily sort out the news we need to know.</p><p><br></p><p>M: There are also more women involved in politics now than before. It seems society has become more open to women.</p><p><br></p><p>W: Exactly. Women have the same education and learning abilities as men. They even lead in many areas of life. In the future, more and more women will be participating in political activities.</p>",
+        "subQuestion": [
+          {
+            "content": "Young people are becoming more interested in politics",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd01f7e3d004a0985fde"
+          },
+          {
+            "content": "Social media has changed political activism",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd01f7e3d004a0985fdf"
+          },
+          {
+            "content": "People are better informed political issues",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd01f7e3d004a0985fe0"
+          },
+          {
+            "content": "More women are likely to participate in politics",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd01f7e3d004a0985fe1"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fd01f7e3d004a0985fdd"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d65ec88028aa29a1bc29",
+    "createdAt": "2026-01-02T14:29:50.372Z",
+    "updatedAt": "2026-01-13T08:06:25.924Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d6e2c88028aa29a1bc32",
+    "title": "Urban farming",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Urban farming",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364320772_29a26864ae566205_audiotpa3_q10.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,3.64],\"text\":\" The government is discussing adding more farming space to big cities.\"},{\"timestamp\":[3.68,4.72],\"text\":\" What do you think about this?\"},{\"timestamp\":[6.28,7.92],\"text\":\" I think it's a bad idea.\"},{\"timestamp\":[8.04,12.24],\"text\":\" Cities are already too crowded and people don't even have enough land for\"},{\"timestamp\":[12.24,12.88],\"text\":\" housing.\"},{\"timestamp\":[12.88,19.28],\"text\":\" How can we take land for farming and raising livestock?\"},{\"timestamp\":[20.36,23.84],\"text\":\" We could use spaces like balconies or parks for farming.\"},{\"timestamp\":[24,27.6],\"text\":\" These farming areas would make the city more beautiful in a better place to live.\"},{\"timestamp\":[27.6,32.96],\"text\":\" Plus, it would benefit the local economy since the city could become more self-sufficient\"},{\"timestamp\":[32.96,37.76],\"text\":\" in food production without relying on imports from other regions.\"},{\"timestamp\":[37.76,42.48],\"text\":\" I agree that farming areas would make the landscape greener and more attractive.\"},{\"timestamp\":[42.48,46.52],\"text\":\" But adding farming space won't significantly\"},{\"timestamp\":[46.52,51.72],\"text\":\" boost the local economy. Farmers have been transporting food into cities for a long time,\"},{\"timestamp\":[51.72,58.6],\"text\":\" and we've never had issues with food supply or shortages.\"},{\"timestamp\":[58.6,66.72],\"text\":\" You make a good point. With limited farming space, it wouldn't be enough to meet the food demands of city residents.\"},{\"timestamp\":[66.72,72.36],\"text\":\" We would still rely on food supplies from suburban areas.\"},{\"timestamp\":[72.36,73.84],\"text\":\" Exactly.\"},{\"timestamp\":[73.84,null],\"text\":\" A few small farming spaces won't fulfill the food demand, but they would take up a lot of valuable land that could be used for housing.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>M: The government is discussing adding more farming space to big cities. What do you think about this?</p><p><br></p><p>W: I think it’s a bad idea. Cities are already too crowded, and people don’t even have enough land for housing. How can we take land for farming and raising livestock?</p><p><br></p><p>M: We could use spaces like balconies or parks for farming. These farming areas would make the city more beautiful and a better place to live. Plus, it would benefit the local economy since the city could become more self-sufficient in food production without relying on imports from other regions.</p><p><br></p><p>W: I agree that farming areas would make the landscape greener and more attractive. But adding farming space won’t significantly boost the local economy. Farmers have been transporting food into cities for a long time, and we’ve never had issues with food supply or shortages.</p><p><br></p><p>M: You make a good point. With limited farming space, it wouldn’t be enough to meet the food demands of city residents. We would still rely on food supplies from suburban areas.</p><p><br></p><p>W: Exactly. A few small farming spaces won’t fulfill the food demand, but they would take up a lot of valuable land that could be used for housing.</p>",
+        "subQuestion": [
+          {
+            "content": "Living space is more important than farming space",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd46f7e3d004a0986011"
+          },
+          {
+            "content": "Urban farming sites can be visually appealing",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd46f7e3d004a0986012"
+          },
+          {
+            "content": "Urban farming can benefit local economics",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd46f7e3d004a0986013"
+          },
+          {
+            "content": "Urban farming cannot meet food needs",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd46f7e3d004a0986014"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fd46f7e3d004a0986010"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d6e2c88028aa29a1bc38",
+    "createdAt": "2026-01-02T14:32:02.012Z",
+    "updatedAt": "2026-01-13T08:07:34.031Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d77ac88028aa29a1bc41",
+    "title": "Local festivals",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Local festivals",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364473792_1aca0fd48674bc4b_audiotpa3_q11.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,3.32],\"text\":\" Have you heard about the new local center opening next week?\"},{\"timestamp\":[3.32,6.32],\"text\":\" I think it will be a great place for exhibitions,\"},{\"timestamp\":[6.32,8.92],\"text\":\" but you know, I believe exhibitions should be different.\"},{\"timestamp\":[8.92,12.72],\"text\":\" They need to show new ideas, not just the same old things.\"},{\"timestamp\":[12.72,15.2],\"text\":\" - I agree that exhibitions should be interesting,\"},{\"timestamp\":[15.2,18.84],\"text\":\" but I'm not sure they need to be completely different.\"},{\"timestamp\":[18.84,23.16],\"text\":\" Sometimes it's nice to celebrate our traditions,\"},{\"timestamp\":[23.16,26.48],\"text\":\" even if they are losing significance.\"},{\"timestamp\":[26.48,31.96],\"text\":\" Yes, that's true, but if we keep doing the same things, we might forget why those\"},{\"timestamp\":[31.96,33.8],\"text\":\" traditions are important.\"},{\"timestamp\":[33.8,38.64],\"text\":\" The more we change things, the more people will remember them.\"},{\"timestamp\":[38.64,43.6],\"text\":\" I see your point, however, I worry that the local festivals will disappear soon.\"},{\"timestamp\":[43.6,45.68],\"text\":\" If people don't care about them,\"},{\"timestamp\":[45.68,48.2],\"text\":\" they might stop celebrating altogether.\"},{\"timestamp\":[48.2,49.12],\"text\":\" - That's a good point,\"},{\"timestamp\":[49.12,51.4],\"text\":\" but I think we can make the festivals more exciting\"},{\"timestamp\":[51.4,52.36],\"text\":\" to attract people.\"},{\"timestamp\":[52.36,55.16],\"text\":\" We should include activities that everyone can enjoy,\"},{\"timestamp\":[55.16,57.4],\"text\":\" not just the same old custom.\"},{\"timestamp\":[57.4,59.76],\"text\":\" - I understand that, but let's not forget\"},{\"timestamp\":[59.76,63.52],\"text\":\" how important schools are in keeping our traditions alive.\"},{\"timestamp\":[63.52,70.44],\"text\":\" They teach children about our culture and values if schools don't focus on traditions\"},{\"timestamp\":[70.44,72.24],\"text\":\" who will.\"},{\"timestamp\":[72.24,73.24],\"text\":\" That's true.\"},{\"timestamp\":[73.24,76.48],\"text\":\" Schools play a big role, but maybe parents should be the ones in charge of this.\"},{\"timestamp\":[76.48,null],\"text\":\" Keeping traditions is everyone's responsibility, not just schools or the education systems.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>Man: Have you heard about the new local center opening next week? I think it will be a great place for exhibitions. But you know, I believe exhibitions should be different. They need to show new ideas, not just the same old things.</p><p><br></p><p>Woman: I agree that exhibitions should be interesting, but I'm not sure they need to be completely different. Sometimes, it's nice to celebrate our traditions, even if they are losing significance.</p><p><br></p><p>Man: Yes, that's true. But if we keep doing the same things, we might forget why those traditions are important. The more we change things, the more people will remember them!</p><p><br></p><p>Woman: I see your point. However, I worry that the local festivals will disappear soon. If people don't care about them, they might stop celebrating altogether.</p><p><br></p><p>Man: That's a good point, but I think we can make the festivals more exciting to attract people. We should include activities that everyone can enjoy, not just the same old customs.</p><p><br></p><p>Woman: I understand that. But let's not forget how important schools are in keeping our traditions alive. They teach children about our culture and values. If schools don't focus on traditions, who will?</p><p><br></p><p>Man: That's true! Schools play a big role. But maybe parents should be the ones in charge of this. Keeping traditions is everyone's responsibility, not just schools or the education system.</p>",
+        "subQuestion": [
+          {
+            "content": "Exhibitions should be different and diverse",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd7df7e3d004a0986044"
+          },
+          {
+            "content": "Traditional customs are gradually losing their significance",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd7df7e3d004a0986045"
+          },
+          {
+            "content": "Local festivals will disappear soon in the near future",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd7df7e3d004a0986046"
+          },
+          {
+            "content": "Schools are important to shaping future generations",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fd7df7e3d004a0986047"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fd7df7e3d004a0986043"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d77ac88028aa29a1bc47",
+    "createdAt": "2026-01-02T14:34:34.446Z",
+    "updatedAt": "2026-01-13T08:08:29.776Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957d80fc88028aa29a1bc50",
+    "title": "Community design",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Community design",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364622133_f41c6ef18ac34301_audiotpa3_q12.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,5.68],\"text\":\" You know, I believe building design can shape people's behaviors and interactions from the start.\"},{\"timestamp\":[5.68,10.72],\"text\":\" When spaces are designed well, people feel comfortable and naturally start connecting.\"},{\"timestamp\":[10.72,15.64],\"text\":\" Of course, design matters, but there's no shortcut to building real community connections.\"},{\"timestamp\":[15.64,20.72],\"text\":\" Creating community takes time and consistency, even in spaces that encourage interaction.\"},{\"timestamp\":[20.72,26.12],\"text\":\" Really, but I also feel that work communities and social communities aren't as different\"},{\"timestamp\":[26.12,27.84],\"text\":\" as we might think.\"},{\"timestamp\":[27.84,32.76],\"text\":\" Both require spaces that help people feel connected and valued, whether it's at work\"},{\"timestamp\":[32.76,33.76],\"text\":\" or in social settings.\\\"\"},{\"timestamp\":[33.76,35.98],\"text\":\" \\\"I'm not sure I agree with that.\"},{\"timestamp\":[35.98,39.68],\"text\":\" Work communities and social communities serve very different purposes.\"},{\"timestamp\":[39.68,43.84],\"text\":\" In a social community, people gather out of personal interest and shared hobbies, but\"},{\"timestamp\":[43.84,47],\"text\":\" in work communities, people connect because of their job roles.\"},{\"timestamp\":[47,51],\"text\":\" That can affect how close they feel and how they interact with one another.\"},{\"timestamp\":[51,57],\"text\":\" I see your point, but even in work communities, people still find ways to connect on a personal level.\"},{\"timestamp\":[57,62],\"text\":\" A good work environment encourages friendships that might go beyond work topics.\"},{\"timestamp\":[62,63],\"text\":\" That's a good point.\"},{\"timestamp\":[63,67.4],\"text\":\" And with technology, people can now connect for both work and social reasons,\"},{\"timestamp\":[67.4,69.4],\"text\":\" even if they're not physically together.\"},{\"timestamp\":[69.4,73.5],\"text\":\" But I still think it's important to build spaces where people can gather in person.\"},{\"timestamp\":[73.5,75.2],\"text\":\" Yes, I agree.\"},{\"timestamp\":[75.2,79.2],\"text\":\" But I think technology has really changed how communities form.\"},{\"timestamp\":[79.2,81.6],\"text\":\" It makes connecting so much easier.\"},{\"timestamp\":[81.6,84.4],\"text\":\" And people don't always need to meet face-to-face,\"},{\"timestamp\":[84.4,86.16],\"text\":\" to feel a sense of community.\"},{\"timestamp\":[86.16,90.8],\"text\":\" I see that, but I don't think online connections can fully replace in-person gatherings.\"},{\"timestamp\":[90.8,96.48],\"text\":\" There's a different energy when people come together in real spaces, something technology just can't replicate.\"},{\"timestamp\":[96.48,100.72],\"text\":\" I understand, but I feel that virtual spaces can be just as meaningful.\"},{\"timestamp\":[101.36,106],\"text\":\" Technology adds a new layer, making it possible for communities to thrive,\"},{\"timestamp\":[106,109.28],\"text\":\" even across distances. And that's valuable in its own way.\"}]</p>",
+        "subSuggestion": "<p><strong>Paragraph:</strong></p><p>Man: You know, I believe building design can shape people’s behaviors and interactions from the start. When spaces are designed well, people feel comfortable and naturally start connecting.</p><p><br></p><p>Woman: Of course, design matters, but there’s no shortcut to building real community connections. Creating community takes time and consistency, even in spaces that encourage interaction.</p><p><br></p><p>Man: Really? But I also feel that work communities and social communities aren’t as different as we might think. Both require spaces that help people feel connected and valued, whether it’s at work or in social settings.</p><p><br></p><p>Woman: I’m not sure I agree with that. Work communities and social communities serve very different purposes. In a social community, people gather out of personal interest and shared hobbies, but in work communities, people connect because of their job roles. That can affect how close they feel and how they interact with one another.</p><p><br></p><p>Man: I see your point, but even in work communities, people still find ways to connect on a personal level. A good work environment encourages friendships that might go beyond work topics.</p><p><br></p><p>Woman: That’s a good point. And with technology, people can now connect for both work and social reasons, even if they’re not physically together. But I still think it’s important to build spaces where people can gather in person.</p><p><br></p><p>Man: Yes, I agree, but I think technology has really changed how communities form. It makes connecting so much easier, and people don’t always need to meet face-to-face to feel a sense of community.</p><p><br></p><p>Woman: I see that, but I don’t think online connections can fully replace in-person gatherings. There’s a different energy when people come together in real spaces—something technology just can’t replicate.</p><p><br></p><p>Man: I understand, but I feel that virtual spaces can be just as meaningful. Technology adds a new layer, making it possible for communities to thrive even across distances, and that’s valuable in its own way.</p>",
+        "subQuestion": [
+          {
+            "content": "Building design can influence people's behavior.",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fdd1f7e3d004a09860bf"
+          },
+          {
+            "content": "Creating community can take time",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fdd1f7e3d004a09860c0"
+          },
+          {
+            "content": "Work communities and social communities are the same.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fdd1f7e3d004a09860c1"
+          },
+          {
+            "content": "Technology has changed how community forms.",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6965fdd1f7e3d004a09860c2"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6965fdd1f7e3d004a09860be"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6957d80fc88028aa29a1bc56",
+    "createdAt": "2026-01-02T14:37:03.180Z",
+    "updatedAt": "2026-01-13T08:09:53.623Z",
+    "__v": 0
+  },
+  {
+    "_id": "b2c3d4e5f6a1b2c3d4e5f6a0",
+    "title": "homeschooling",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "homeschooling",
+        "content": "Bài nghe phần này sẽ là nữ nói trước",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Statement 1",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a1"
+          },
+          {
+            "content": "Statement 2",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a2"
+          },
+          {
+            "content": "Statement 3",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a3"
+          },
+          {
+            "content": "Statement 4",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a4"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "b2c3d4e5f6a1b2c3d4e5f6a5"
+      }
+    ]
+  }             
+]

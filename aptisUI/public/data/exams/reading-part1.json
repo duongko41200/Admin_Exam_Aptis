@@ -1,0 +1,3337 @@
+[
+  {
+    "data": {
+      "title": "Đề 2",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 2 ",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I always study in the tienphongSpace before school.",
+            "correctAnswer": "morning",
+            "file": null,
+            "answerList": [
+              {
+                "content": "morning",
+                "_id": "695a273610b9d3fe9bd389ea",
+                "id": "695a273610b9d3fe9bd389eb"
+              },
+              {
+                "content": "evening",
+                "_id": "695a273610b9d3fe9bd389ec",
+                "id": "695a273610b9d3fe9bd389ed"
+              },
+              {
+                "content": "night",
+                "_id": "695a273610b9d3fe9bd389ee",
+                "id": "695a273610b9d3fe9bd389ef"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a273610b9d3fe9bd389e9"
+          },
+          {
+            "content": "My tienphongSpace and I play football after class.",
+            "correctAnswer": "friends",
+            "file": null,
+            "answerList": [
+              {
+                "content": "friends",
+                "_id": "695a273610b9d3fe9bd389f1",
+                "id": "695a273610b9d3fe9bd389f2"
+              },
+              {
+                "content": "parents",
+                "_id": "695a273610b9d3fe9bd389f3",
+                "id": "695a273610b9d3fe9bd389f4"
+              },
+              {
+                "content": "teachers",
+                "_id": "695a273610b9d3fe9bd389f5",
+                "id": "695a273610b9d3fe9bd389f6"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a273610b9d3fe9bd389f0"
+          },
+          {
+            "content": "I always tienphongSpace my bag on the chair.",
+            "correctAnswer": "leave",
+            "file": null,
+            "answerList": [
+              {
+                "content": "leave",
+                "_id": "695a273610b9d3fe9bd389f8",
+                "id": "695a273610b9d3fe9bd389f9"
+              },
+              {
+                "content": "drive",
+                "_id": "695a273610b9d3fe9bd389fa",
+                "id": "695a273610b9d3fe9bd389fb"
+              },
+              {
+                "content": "take",
+                "_id": "695a273610b9d3fe9bd389fc",
+                "id": "695a273610b9d3fe9bd389fd"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a273610b9d3fe9bd389f7"
+          },
+          {
+            "content": "Apples are very tienphongSpace for your health.",
+            "correctAnswer": "good",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bad",
+                "_id": "695a273610b9d3fe9bd389ff",
+                "id": "695a273610b9d3fe9bd38a00"
+              },
+              {
+                "content": "boring",
+                "_id": "695a273610b9d3fe9bd38a01",
+                "id": "695a273610b9d3fe9bd38a02"
+              },
+              {
+                "content": "good",
+                "_id": "695a273610b9d3fe9bd38a03",
+                "id": "695a273610b9d3fe9bd38a04"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a273610b9d3fe9bd389fe"
+          },
+          {
+            "content": "We eat rice and tienphongSpace every day.",
+            "correctAnswer": "food",
+            "file": null,
+            "answerList": [
+              {
+                "content": "food",
+                "_id": "695a273610b9d3fe9bd38a06",
+                "id": "695a273610b9d3fe9bd38a07"
+              },
+              {
+                "content": "books",
+                "_id": "695a273610b9d3fe9bd38a08",
+                "id": "695a273610b9d3fe9bd38a09"
+              },
+              {
+                "content": "games",
+                "_id": "695a273610b9d3fe9bd38a0a",
+                "id": "695a273610b9d3fe9bd38a0b"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a273610b9d3fe9bd38a05"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a273610b9d3fe9bd389e8",
+        "id": "695a273610b9d3fe9bd38a0c"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a6e58"
+    },
+    "_id": "695a268f10b9d3fe9bd387a7",
+    "createdAt": "2026-01-04T08:36:31.042Z",
+    "updatedAt": "2026-01-04T08:39:18.210Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 3",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 3 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Where is your tienphongSpace?",
+            "correctAnswer": "home",
+            "file": null,
+            "answerList": [
+              {
+                "content": "home",
+                "_id": "695a28f110b9d3fe9bd38afd",
+                "id": "695a28f110b9d3fe9bd38afe"
+              },
+              {
+                "content": "office",
+                "_id": "695a28f110b9d3fe9bd38aff",
+                "id": "695a28f110b9d3fe9bd38b00"
+              },
+              {
+                "content": "park",
+                "_id": "695a28f110b9d3fe9bd38b01",
+                "id": "695a28f110b9d3fe9bd38b02"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a28f110b9d3fe9bd38afc"
+          },
+          {
+            "content": "Do you talk to tienphongSpace at work?",
+            "correctAnswer": "customers",
+            "file": null,
+            "answerList": [
+              {
+                "content": "customers",
+                "_id": "695a28f110b9d3fe9bd38b04",
+                "id": "695a28f110b9d3fe9bd38b05"
+              },
+              {
+                "content": "friends",
+                "_id": "695a28f110b9d3fe9bd38b06",
+                "id": "695a28f110b9d3fe9bd38b07"
+              },
+              {
+                "content": "colleagues",
+                "_id": "695a28f110b9d3fe9bd38b08",
+                "id": "695a28f110b9d3fe9bd38b09"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a28f110b9d3fe9bd38b03"
+          },
+          {
+            "content": "Is the task tienphongSpace for you?",
+            "correctAnswer": "easy",
+            "file": null,
+            "answerList": [
+              {
+                "content": "easy",
+                "_id": "695a28f110b9d3fe9bd38b0b",
+                "id": "695a28f110b9d3fe9bd38b0c"
+              },
+              {
+                "content": "hard",
+                "_id": "695a28f110b9d3fe9bd38b0d",
+                "id": "695a28f110b9d3fe9bd38b0e"
+              },
+              {
+                "content": "boring",
+                "_id": "695a28f110b9d3fe9bd38b0f",
+                "id": "695a28f110b9d3fe9bd38b10"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a28f110b9d3fe9bd38b0a"
+          },
+          {
+            "content": "What do you tienphongSpace in the morning?",
+            "correctAnswer": "prepare",
+            "file": null,
+            "answerList": [
+              {
+                "content": "prepare",
+                "_id": "695a28f110b9d3fe9bd38b12",
+                "id": "695a28f110b9d3fe9bd38b13"
+              },
+              {
+                "content": "eat",
+                "_id": "695a28f110b9d3fe9bd38b14",
+                "id": "695a28f110b9d3fe9bd38b15"
+              },
+              {
+                "content": "drink",
+                "_id": "695a28f110b9d3fe9bd38b16",
+                "id": "695a28f110b9d3fe9bd38b17"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a28f110b9d3fe9bd38b11"
+          },
+          {
+            "content": "What do you like to tienphongSpace on TV?",
+            "correctAnswer": "watch",
+            "file": null,
+            "answerList": [
+              {
+                "content": "watch",
+                "_id": "695a28f110b9d3fe9bd38b19",
+                "id": "695a28f110b9d3fe9bd38b1a"
+              },
+              {
+                "content": "read",
+                "_id": "695a28f110b9d3fe9bd38b1b",
+                "id": "695a28f110b9d3fe9bd38b1c"
+              },
+              {
+                "content": "listen",
+                "_id": "695a28f110b9d3fe9bd38b1d",
+                "id": "695a28f110b9d3fe9bd38b1e"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a28f110b9d3fe9bd38b18"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a28f110b9d3fe9bd38afb",
+        "id": "695a28f110b9d3fe9bd38b1f"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a28f110b9d3fe9bd38b20"
+    },
+    "_id": "695a28f110b9d3fe9bd38afa",
+    "createdAt": "2026-01-04T08:46:41.877Z",
+    "updatedAt": "2026-01-04T08:46:41.877Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 4",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 4 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Do you jog in the tienphongSpace in the morning?",
+            "correctAnswer": "park",
+            "file": null,
+            "answerList": [
+              {
+                "content": "park",
+                "_id": "695a29f510b9d3fe9bd38b29",
+                "id": "695a29f510b9d3fe9bd38b2a"
+              },
+              {
+                "content": "school",
+                "_id": "695a29f510b9d3fe9bd38b2b",
+                "id": "695a29f510b9d3fe9bd38b2c"
+              },
+              {
+                "content": "street",
+                "_id": "695a29f510b9d3fe9bd38b2d",
+                "id": "695a29f510b9d3fe9bd38b2e"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a29f510b9d3fe9bd38b28"
+          },
+          {
+            "content": "Does the gym offer tienphongSpace for yoga?",
+            "correctAnswer": "classes",
+            "file": null,
+            "answerList": [
+              {
+                "content": "classes",
+                "_id": "695a29f510b9d3fe9bd38b30",
+                "id": "695a29f510b9d3fe9bd38b31"
+              },
+              {
+                "content": "games",
+                "_id": "695a29f510b9d3fe9bd38b32",
+                "id": "695a29f510b9d3fe9bd38b33"
+              },
+              {
+                "content": "shops",
+                "_id": "695a29f510b9d3fe9bd38b34",
+                "id": "695a29f510b9d3fe9bd38b35"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a29f510b9d3fe9bd38b2f"
+          },
+          {
+            "content": "Is English tienphongSpace for you?",
+            "correctAnswer": "easy",
+            "file": null,
+            "answerList": [
+              {
+                "content": "easy",
+                "_id": "695a29f510b9d3fe9bd38b37",
+                "id": "695a29f510b9d3fe9bd38b38"
+              },
+              {
+                "content": "difficult",
+                "_id": "695a29f510b9d3fe9bd38b39",
+                "id": "695a29f510b9d3fe9bd38b3a"
+              },
+              {
+                "content": "boring",
+                "_id": "695a29f510b9d3fe9bd38b3b",
+                "id": "695a29f510b9d3fe9bd38b3c"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a29f510b9d3fe9bd38b36"
+          },
+          {
+            "content": "What do you eat for tienphongSpace every day?",
+            "correctAnswer": "breakfast",
+            "file": null,
+            "answerList": [
+              {
+                "content": "breakfast",
+                "_id": "695a29f510b9d3fe9bd38b3e",
+                "id": "695a29f510b9d3fe9bd38b3f"
+              },
+              {
+                "content": "lunch",
+                "_id": "695a29f510b9d3fe9bd38b40",
+                "id": "695a29f510b9d3fe9bd38b41"
+              },
+              {
+                "content": "dinner",
+                "_id": "695a29f510b9d3fe9bd38b42",
+                "id": "695a29f510b9d3fe9bd38b43"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a29f510b9d3fe9bd38b3d"
+          },
+          {
+            "content": "Do you practice tienphongSpace to relax?",
+            "correctAnswer": "meditation",
+            "file": null,
+            "answerList": [
+              {
+                "content": "meditation",
+                "_id": "695a29f510b9d3fe9bd38b45",
+                "id": "695a29f510b9d3fe9bd38b46"
+              },
+              {
+                "content": "football",
+                "_id": "695a29f510b9d3fe9bd38b47",
+                "id": "695a29f510b9d3fe9bd38b48"
+              },
+              {
+                "content": "painting",
+                "_id": "695a29f510b9d3fe9bd38b49",
+                "id": "695a29f510b9d3fe9bd38b4a"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a29f510b9d3fe9bd38b44"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a29f510b9d3fe9bd38b27",
+        "id": "695a29f510b9d3fe9bd38b4b"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a29f510b9d3fe9bd38b4c"
+    },
+    "_id": "695a29f510b9d3fe9bd38b26",
+    "createdAt": "2026-01-04T08:51:01.015Z",
+    "updatedAt": "2026-01-04T08:51:01.015Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 5",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 5 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Is your neighborhood tienphongSpace?",
+            "correctAnswer": "friendly",
+            "file": null,
+            "answerList": [
+              {
+                "content": "friendly",
+                "_id": "695a2afc10b9d3fe9bd38b55",
+                "id": "695a2afc10b9d3fe9bd38b56"
+              },
+              {
+                "content": "noisy",
+                "_id": "695a2afc10b9d3fe9bd38b57",
+                "id": "695a2afc10b9d3fe9bd38b58"
+              },
+              {
+                "content": "quiet",
+                "_id": "695a2afc10b9d3fe9bd38b59",
+                "id": "695a2afc10b9d3fe9bd38b5a"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a2afc10b9d3fe9bd38b54"
+          },
+          {
+            "content": "How do you usually tienphongSpace to work?",
+            "correctAnswer": "walk",
+            "file": null,
+            "answerList": [
+              {
+                "content": "run",
+                "_id": "695a2afc10b9d3fe9bd38b5c",
+                "id": "695a2afc10b9d3fe9bd38b5d"
+              },
+              {
+                "content": "walk",
+                "_id": "695a2afc10b9d3fe9bd38b5e",
+                "id": "695a2afc10b9d3fe9bd38b5f"
+              },
+              {
+                "content": "cycle",
+                "_id": "695a2afc10b9d3fe9bd38b60",
+                "id": "695a2afc10b9d3fe9bd38b61"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a2afc10b9d3fe9bd38b5b"
+          },
+          {
+            "content": "When did you meet your friend tienphongSpace?",
+            "correctAnswer": "first",
+            "file": null,
+            "answerList": [
+              {
+                "content": "first",
+                "_id": "695a2afc10b9d3fe9bd38b63",
+                "id": "695a2afc10b9d3fe9bd38b64"
+              },
+              {
+                "content": "last",
+                "_id": "695a2afc10b9d3fe9bd38b65",
+                "id": "695a2afc10b9d3fe9bd38b66"
+              },
+              {
+                "content": "next",
+                "_id": "695a2afc10b9d3fe9bd38b67",
+                "id": "695a2afc10b9d3fe9bd38b68"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a2afc10b9d3fe9bd38b62"
+          },
+          {
+            "content": "Can you tienphongSpace French?",
+            "correctAnswer": "speak",
+            "file": null,
+            "answerList": [
+              {
+                "content": "speak",
+                "_id": "695a2afc10b9d3fe9bd38b6a",
+                "id": "695a2afc10b9d3fe9bd38b6b"
+              },
+              {
+                "content": "read",
+                "_id": "695a2afc10b9d3fe9bd38b6c",
+                "id": "695a2afc10b9d3fe9bd38b6d"
+              },
+              {
+                "content": "write",
+                "_id": "695a2afc10b9d3fe9bd38b6e",
+                "id": "695a2afc10b9d3fe9bd38b6f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a2afc10b9d3fe9bd38b69"
+          },
+          {
+            "content": "Do you like going out tienphongSpace with your friends?",
+            "correctAnswer": "together",
+            "file": null,
+            "answerList": [
+              {
+                "content": "alone",
+                "_id": "695a2afc10b9d3fe9bd38b71",
+                "id": "695a2afc10b9d3fe9bd38b72"
+              },
+              {
+                "content": "together",
+                "_id": "695a2afc10b9d3fe9bd38b73",
+                "id": "695a2afc10b9d3fe9bd38b74"
+              },
+              {
+                "content": "separately",
+                "_id": "695a2afc10b9d3fe9bd38b75",
+                "id": "695a2afc10b9d3fe9bd38b76"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a2afc10b9d3fe9bd38b70"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a2afc10b9d3fe9bd38b53",
+        "id": "695a2afc10b9d3fe9bd38b77"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a2afc10b9d3fe9bd38b78"
+    },
+    "_id": "695a2afc10b9d3fe9bd38b52",
+    "createdAt": "2026-01-04T08:55:24.945Z",
+    "updatedAt": "2026-01-04T08:55:24.945Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 6",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 6 ",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I go to school by tienphongSpace.",
+            "correctAnswer": "bicycle",
+            "file": null,
+            "answerList": [
+              {
+                "content": "board",
+                "_id": "695a311210b9d3fe9bd38f0e",
+                "id": "695a311210b9d3fe9bd38f0f"
+              },
+              {
+                "content": "plane",
+                "_id": "695a311210b9d3fe9bd38f10",
+                "id": "695a311210b9d3fe9bd38f11"
+              },
+              {
+                "content": "bicycle",
+                "_id": "695a311210b9d3fe9bd38f12",
+                "id": "695a311210b9d3fe9bd38f13"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a311210b9d3fe9bd38f0d"
+          },
+          {
+            "content": "The buildings in my city are very tienphongSpace.",
+            "correctAnswer": "tall",
+            "file": null,
+            "answerList": [
+              {
+                "content": "hate",
+                "_id": "695a311210b9d3fe9bd38f15",
+                "id": "695a311210b9d3fe9bd38f16"
+              },
+              {
+                "content": "tall",
+                "_id": "695a311210b9d3fe9bd38f17",
+                "id": "695a311210b9d3fe9bd38f18"
+              },
+              {
+                "content": "busy",
+                "_id": "695a311210b9d3fe9bd38f19",
+                "id": "695a311210b9d3fe9bd38f1a"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a311210b9d3fe9bd38f14"
+          },
+          {
+            "content": "There are many green tienphongSpace near my home.",
+            "correctAnswer": "trees",
+            "file": null,
+            "answerList": [
+              {
+                "content": "land",
+                "_id": "695a311210b9d3fe9bd38f1c",
+                "id": "695a311210b9d3fe9bd38f1d"
+              },
+              {
+                "content": "sea",
+                "_id": "695a311210b9d3fe9bd38f1e",
+                "id": "695a311210b9d3fe9bd38f1f"
+              },
+              {
+                "content": "trees",
+                "_id": "695a311210b9d3fe9bd38f20",
+                "id": "695a311210b9d3fe9bd38f21"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a311210b9d3fe9bd38f1b"
+          },
+          {
+            "content": "I eat tienphongSpace with my family every morning.",
+            "correctAnswer": "breakfast",
+            "file": null,
+            "answerList": [
+              {
+                "content": "breakfast",
+                "_id": "695a311210b9d3fe9bd38f23",
+                "id": "695a311210b9d3fe9bd38f24"
+              },
+              {
+                "content": "lunch",
+                "_id": "695a311210b9d3fe9bd38f25",
+                "id": "695a311210b9d3fe9bd38f26"
+              },
+              {
+                "content": "dinner",
+                "_id": "695a311210b9d3fe9bd38f27",
+                "id": "695a311210b9d3fe9bd38f28"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a311210b9d3fe9bd38f22"
+          },
+          {
+            "content": "I do tienphongSpace to feel relaxed.",
+            "correctAnswer": "meditation",
+            "file": null,
+            "answerList": [
+              {
+                "content": "make",
+                "_id": "695a311210b9d3fe9bd38f2a",
+                "id": "695a311210b9d3fe9bd38f2b"
+              },
+              {
+                "content": "meditation",
+                "_id": "695a311210b9d3fe9bd38f2c",
+                "id": "695a311210b9d3fe9bd38f2d"
+              },
+              {
+                "content": "exercise",
+                "_id": "695a311210b9d3fe9bd38f2e",
+                "id": "695a311210b9d3fe9bd38f2f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a311210b9d3fe9bd38f29"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a311210b9d3fe9bd38f0c",
+        "id": "695a311210b9d3fe9bd38f30"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a311210b9d3fe9bd38f31"
+    },
+    "_id": "695a311210b9d3fe9bd38f0b",
+    "createdAt": "2026-01-04T09:21:22.213Z",
+    "updatedAt": "2026-01-04T09:21:22.213Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 7",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 7 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I want to tienphongSpace my grandparents this weekend.",
+            "correctAnswer": "visit",
+            "file": null,
+            "answerList": [
+              {
+                "content": "visit",
+                "_id": "695a323d10b9d3fe9bd38f3c",
+                "id": "695a323d10b9d3fe9bd38f3d"
+              },
+              {
+                "content": "clean",
+                "_id": "695a323d10b9d3fe9bd38f3e",
+                "id": "695a323d10b9d3fe9bd38f3f"
+              },
+              {
+                "content": "paint",
+                "_id": "695a323d10b9d3fe9bd38f40",
+                "id": "695a323d10b9d3fe9bd38f41"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323d10b9d3fe9bd38f3b"
+          },
+          {
+            "content": "My tienphongSpace is very clean and bright.",
+            "correctAnswer": "room",
+            "file": null,
+            "answerList": [
+              {
+                "content": "room",
+                "_id": "695a323d10b9d3fe9bd38f43",
+                "id": "695a323d10b9d3fe9bd38f44"
+              },
+              {
+                "content": "garden",
+                "_id": "695a323d10b9d3fe9bd38f45",
+                "id": "695a323d10b9d3fe9bd38f46"
+              },
+              {
+                "content": "kitchen",
+                "_id": "695a323d10b9d3fe9bd38f47",
+                "id": "695a323d10b9d3fe9bd38f48"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323d10b9d3fe9bd38f42"
+          },
+          {
+            "content": "The weather is tienphongSpace today.",
+            "correctAnswer": "hot",
+            "file": null,
+            "answerList": [
+              {
+                "content": "cold",
+                "_id": "695a323d10b9d3fe9bd38f4a",
+                "id": "695a323d10b9d3fe9bd38f4b"
+              },
+              {
+                "content": "hot",
+                "_id": "695a323d10b9d3fe9bd38f4c",
+                "id": "695a323d10b9d3fe9bd38f4d"
+              },
+              {
+                "content": "rainy",
+                "_id": "695a323d10b9d3fe9bd38f4e",
+                "id": "695a323d10b9d3fe9bd38f4f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323d10b9d3fe9bd38f49"
+          },
+          {
+            "content": "We went to the city by tienphongSpace.",
+            "correctAnswer": "train",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bus",
+                "_id": "695a323d10b9d3fe9bd38f51",
+                "id": "695a323d10b9d3fe9bd38f52"
+              },
+              {
+                "content": "car",
+                "_id": "695a323d10b9d3fe9bd38f53",
+                "id": "695a323d10b9d3fe9bd38f54"
+              },
+              {
+                "content": "train",
+                "_id": "695a323d10b9d3fe9bd38f55",
+                "id": "695a323d10b9d3fe9bd38f56"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323d10b9d3fe9bd38f50"
+          },
+          {
+            "content": "I can tienphongSpace English very well.",
+            "correctAnswer": "speak",
+            "file": null,
+            "answerList": [
+              {
+                "content": "read",
+                "_id": "695a323d10b9d3fe9bd38f58",
+                "id": "695a323d10b9d3fe9bd38f59"
+              },
+              {
+                "content": "speak",
+                "_id": "695a323d10b9d3fe9bd38f5a",
+                "id": "695a323d10b9d3fe9bd38f5b"
+              },
+              {
+                "content": "write",
+                "_id": "695a323d10b9d3fe9bd38f5c",
+                "id": "695a323d10b9d3fe9bd38f5d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323d10b9d3fe9bd38f57"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a323d10b9d3fe9bd38f3a",
+        "id": "695a323d10b9d3fe9bd38f5e"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a323d10b9d3fe9bd38f5f"
+    },
+    "_id": "695a323d10b9d3fe9bd38f39",
+    "createdAt": "2026-01-04T09:26:21.847Z",
+    "updatedAt": "2026-01-04T09:26:21.847Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 7",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 7 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I want to tienphongSpace my grandparents this weekend.",
+            "correctAnswer": "visit",
+            "file": null,
+            "answerList": [
+              {
+                "content": "visit",
+                "_id": "695a323e10b9d3fe9bd38f66",
+                "id": "695a323e10b9d3fe9bd38f67"
+              },
+              {
+                "content": "clean",
+                "_id": "695a323e10b9d3fe9bd38f68",
+                "id": "695a323e10b9d3fe9bd38f69"
+              },
+              {
+                "content": "paint",
+                "_id": "695a323e10b9d3fe9bd38f6a",
+                "id": "695a323e10b9d3fe9bd38f6b"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323e10b9d3fe9bd38f65"
+          },
+          {
+            "content": "My tienphongSpace is very clean and bright.",
+            "correctAnswer": "room",
+            "file": null,
+            "answerList": [
+              {
+                "content": "room",
+                "_id": "695a323e10b9d3fe9bd38f6d",
+                "id": "695a323e10b9d3fe9bd38f6e"
+              },
+              {
+                "content": "garden",
+                "_id": "695a323e10b9d3fe9bd38f6f",
+                "id": "695a323e10b9d3fe9bd38f70"
+              },
+              {
+                "content": "kitchen",
+                "_id": "695a323e10b9d3fe9bd38f71",
+                "id": "695a323e10b9d3fe9bd38f72"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323e10b9d3fe9bd38f6c"
+          },
+          {
+            "content": "The weather is tienphongSpace today.",
+            "correctAnswer": "hot",
+            "file": null,
+            "answerList": [
+              {
+                "content": "cold",
+                "_id": "695a323e10b9d3fe9bd38f74",
+                "id": "695a323e10b9d3fe9bd38f75"
+              },
+              {
+                "content": "hot",
+                "_id": "695a323e10b9d3fe9bd38f76",
+                "id": "695a323e10b9d3fe9bd38f77"
+              },
+              {
+                "content": "rainy",
+                "_id": "695a323e10b9d3fe9bd38f78",
+                "id": "695a323e10b9d3fe9bd38f79"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323e10b9d3fe9bd38f73"
+          },
+          {
+            "content": "We went to the city by tienphongSpace.",
+            "correctAnswer": "train",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bus",
+                "_id": "695a323e10b9d3fe9bd38f7b",
+                "id": "695a323e10b9d3fe9bd38f7c"
+              },
+              {
+                "content": "car",
+                "_id": "695a323e10b9d3fe9bd38f7d",
+                "id": "695a323e10b9d3fe9bd38f7e"
+              },
+              {
+                "content": "train",
+                "_id": "695a323e10b9d3fe9bd38f7f",
+                "id": "695a323e10b9d3fe9bd38f80"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323e10b9d3fe9bd38f7a"
+          },
+          {
+            "content": "I can tienphongSpace English very well.",
+            "correctAnswer": "speak",
+            "file": null,
+            "answerList": [
+              {
+                "content": "read",
+                "_id": "695a323e10b9d3fe9bd38f82",
+                "id": "695a323e10b9d3fe9bd38f83"
+              },
+              {
+                "content": "speak",
+                "_id": "695a323e10b9d3fe9bd38f84",
+                "id": "695a323e10b9d3fe9bd38f85"
+              },
+              {
+                "content": "write",
+                "_id": "695a323e10b9d3fe9bd38f86",
+                "id": "695a323e10b9d3fe9bd38f87"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a323e10b9d3fe9bd38f81"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a323e10b9d3fe9bd38f64",
+        "id": "695a323e10b9d3fe9bd38f88"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a323e10b9d3fe9bd38f89"
+    },
+    "_id": "695a323e10b9d3fe9bd38f63",
+    "createdAt": "2026-01-04T09:26:22.033Z",
+    "updatedAt": "2026-01-04T09:26:22.033Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 8",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 8 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "My uncle works on a tienphongSpace.",
+            "correctAnswer": "farm",
+            "file": null,
+            "answerList": [
+              {
+                "content": "farm",
+                "_id": "6980244b83ed47779e04f4ad",
+                "id": "6980244b83ed47779e04f4ae"
+              },
+              {
+                "content": "factory",
+                "_id": "6980244b83ed47779e04f4af",
+                "id": "6980244b83ed47779e04f4b0"
+              },
+              {
+                "content": "office",
+                "_id": "6980244b83ed47779e04f4b1",
+                "id": "6980244b83ed47779e04f4b2"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980244b83ed47779e04f4ac"
+          },
+          {
+            "content": "The children were very tienphongSpace about the trip.",
+            "correctAnswer": "excited",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bored",
+                "_id": "6980244b83ed47779e04f4b4",
+                "id": "6980244b83ed47779e04f4b5"
+              },
+              {
+                "content": "excited",
+                "_id": "6980244b83ed47779e04f4b6",
+                "id": "6980244b83ed47779e04f4b7"
+              },
+              {
+                "content": "tired",
+                "_id": "6980244b83ed47779e04f4b8",
+                "id": "6980244b83ed47779e04f4b9"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980244b83ed47779e04f4b3"
+          },
+          {
+            "content": "Turn tienphongSpace at the next corner.",
+            "correctAnswer": "left",
+            "file": null,
+            "answerList": [
+              {
+                "content": "right",
+                "_id": "6980244b83ed47779e04f4bb",
+                "id": "6980244b83ed47779e04f4bc"
+              },
+              {
+                "content": "left",
+                "_id": "6980244b83ed47779e04f4bd",
+                "id": "6980244b83ed47779e04f4be"
+              },
+              {
+                "content": "back",
+                "_id": "6980244b83ed47779e04f4bf",
+                "id": "6980244b83ed47779e04f4c0"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980244b83ed47779e04f4ba"
+          },
+          {
+            "content": "We walked along the tienphongSpace to the park.",
+            "correctAnswer": "street",
+            "file": null,
+            "answerList": [
+              {
+                "content": "river",
+                "_id": "6980244b83ed47779e04f4c2",
+                "id": "6980244b83ed47779e04f4c3"
+              },
+              {
+                "content": "street",
+                "_id": "6980244b83ed47779e04f4c4",
+                "id": "6980244b83ed47779e04f4c5"
+              },
+              {
+                "content": "mountain",
+                "_id": "6980244b83ed47779e04f4c6",
+                "id": "6980244b83ed47779e04f4c7"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980244b83ed47779e04f4c1"
+          },
+          {
+            "content": "I usually tienphongSpace milk in the morning.",
+            "correctAnswer": "drink",
+            "file": null,
+            "answerList": [
+              {
+                "content": "eat",
+                "_id": "6980244b83ed47779e04f4c9",
+                "id": "6980244b83ed47779e04f4ca"
+              },
+              {
+                "content": "drink",
+                "_id": "6980244b83ed47779e04f4cb",
+                "id": "6980244b83ed47779e04f4cc"
+              },
+              {
+                "content": "cook",
+                "_id": "6980244b83ed47779e04f4cd",
+                "id": "6980244b83ed47779e04f4ce"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980244b83ed47779e04f4c8"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6980244b83ed47779e04f4ab",
+        "id": "6980244b83ed47779e04f4cf"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a6ee5"
+    },
+    "_id": "695a334910b9d3fe9bd3923e",
+    "createdAt": "2026-01-04T09:30:49.157Z",
+    "updatedAt": "2026-02-02T04:12:59.227Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 9",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 9 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I usually stay at tienphongSpace on Sundays.",
+            "correctAnswer": "home",
+            "file": null,
+            "answerList": [
+              {
+                "content": "school",
+                "_id": "6980245f83ed47779e04f570",
+                "id": "6980245f83ed47779e04f571"
+              },
+              {
+                "content": "home",
+                "_id": "6980245f83ed47779e04f572",
+                "id": "6980245f83ed47779e04f573"
+              },
+              {
+                "content": "work",
+                "_id": "6980245f83ed47779e04f574",
+                "id": "6980245f83ed47779e04f575"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980245f83ed47779e04f56f"
+          },
+          {
+            "content": "My father can tienphongSpace very well.",
+            "correctAnswer": "drive",
+            "file": null,
+            "answerList": [
+              {
+                "content": "swim",
+                "_id": "6980245f83ed47779e04f577",
+                "id": "6980245f83ed47779e04f578"
+              },
+              {
+                "content": "drive",
+                "_id": "6980245f83ed47779e04f579",
+                "id": "6980245f83ed47779e04f57a"
+              },
+              {
+                "content": "cook",
+                "_id": "6980245f83ed47779e04f57b",
+                "id": "6980245f83ed47779e04f57c"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980245f83ed47779e04f576"
+          },
+          {
+            "content": "I like spending time with my tienphongSpace after school.",
+            "correctAnswer": "friends",
+            "file": null,
+            "answerList": [
+              {
+                "content": "pets",
+                "_id": "6980245f83ed47779e04f57e",
+                "id": "6980245f83ed47779e04f57f"
+              },
+              {
+                "content": "friends",
+                "_id": "6980245f83ed47779e04f580",
+                "id": "6980245f83ed47779e04f581"
+              },
+              {
+                "content": "teachers",
+                "_id": "6980245f83ed47779e04f582",
+                "id": "6980245f83ed47779e04f583"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980245f83ed47779e04f57d"
+          },
+          {
+            "content": "Let’s go for a tienphongSpace in the park.",
+            "correctAnswer": "walk",
+            "file": null,
+            "answerList": [
+              {
+                "content": "walk",
+                "_id": "6980245f83ed47779e04f585",
+                "id": "6980245f83ed47779e04f586"
+              },
+              {
+                "content": "run",
+                "_id": "6980245f83ed47779e04f587",
+                "id": "6980245f83ed47779e04f588"
+              },
+              {
+                "content": "ride",
+                "_id": "6980245f83ed47779e04f589",
+                "id": "6980245f83ed47779e04f58a"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980245f83ed47779e04f584"
+          },
+          {
+            "content": "Your sister looks very tienphongSpace today.",
+            "correctAnswer": "pretty",
+            "file": null,
+            "answerList": [
+              {
+                "content": "pretty",
+                "_id": "6980245f83ed47779e04f58c",
+                "id": "6980245f83ed47779e04f58d"
+              },
+              {
+                "content": "angry",
+                "_id": "6980245f83ed47779e04f58e",
+                "id": "6980245f83ed47779e04f58f"
+              },
+              {
+                "content": "sad",
+                "_id": "6980245f83ed47779e04f590",
+                "id": "6980245f83ed47779e04f591"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980245f83ed47779e04f58b"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6980245f83ed47779e04f56e",
+        "id": "6980245f83ed47779e04f592"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a6efa"
+    },
+    "_id": "695a350810b9d3fe9bd3926a",
+    "createdAt": "2026-01-04T09:38:16.241Z",
+    "updatedAt": "2026-02-02T04:13:19.754Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 10",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 10 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I want to travel to the tienphongSpace this summer.",
+            "correctAnswer": "country",
+            "file": null,
+            "answerList": [
+              {
+                "content": "country",
+                "_id": "6980247e83ed47779e04f6a0",
+                "id": "6980247e83ed47779e04f6a1"
+              },
+              {
+                "content": "sky",
+                "_id": "6980247e83ed47779e04f6a2",
+                "id": "6980247e83ed47779e04f6a3"
+              },
+              {
+                "content": "train",
+                "_id": "6980247e83ed47779e04f6a4",
+                "id": "6980247e83ed47779e04f6a5"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980247e83ed47779e04f69f"
+          },
+          {
+            "content": "Please keep your room tienphongSpace.",
+            "correctAnswer": "clean",
+            "file": null,
+            "answerList": [
+              {
+                "content": "dirty",
+                "_id": "6980247e83ed47779e04f6a7",
+                "id": "6980247e83ed47779e04f6a8"
+              },
+              {
+                "content": "messy",
+                "_id": "6980247e83ed47779e04f6a9",
+                "id": "6980247e83ed47779e04f6aa"
+              },
+              {
+                "content": "clean",
+                "_id": "6980247e83ed47779e04f6ab",
+                "id": "6980247e83ed47779e04f6ac"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980247e83ed47779e04f6a6"
+          },
+          {
+            "content": "We have English tienphongSpace on Monday.",
+            "correctAnswer": "class",
+            "file": null,
+            "answerList": [
+              {
+                "content": "class",
+                "_id": "6980247e83ed47779e04f6ae",
+                "id": "6980247e83ed47779e04f6af"
+              },
+              {
+                "content": "lunch",
+                "_id": "6980247e83ed47779e04f6b0",
+                "id": "6980247e83ed47779e04f6b1"
+              },
+              {
+                "content": "game",
+                "_id": "6980247e83ed47779e04f6b2",
+                "id": "6980247e83ed47779e04f6b3"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980247e83ed47779e04f6ad"
+          },
+          {
+            "content": "I like helping tienphongSpace people.",
+            "correctAnswer": "other",
+            "file": null,
+            "answerList": [
+              {
+                "content": "myself",
+                "_id": "6980247e83ed47779e04f6b5",
+                "id": "6980247e83ed47779e04f6b6"
+              },
+              {
+                "content": "alone",
+                "_id": "6980247e83ed47779e04f6b7",
+                "id": "6980247e83ed47779e04f6b8"
+              },
+              {
+                "content": "other",
+                "_id": "6980247e83ed47779e04f6b9",
+                "id": "6980247e83ed47779e04f6ba"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980247e83ed47779e04f6b4"
+          },
+          {
+            "content": "Can you spell these tienphongSpace for me?",
+            "correctAnswer": "words",
+            "file": null,
+            "answerList": [
+              {
+                "content": "numbers",
+                "_id": "6980247e83ed47779e04f6bc",
+                "id": "6980247e83ed47779e04f6bd"
+              },
+              {
+                "content": "pictures",
+                "_id": "6980247e83ed47779e04f6be",
+                "id": "6980247e83ed47779e04f6bf"
+              },
+              {
+                "content": "words",
+                "_id": "6980247e83ed47779e04f6c0",
+                "id": "6980247e83ed47779e04f6c1"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980247e83ed47779e04f6bb"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6980247e83ed47779e04f69e",
+        "id": "6980247e83ed47779e04f6c2"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a6f0f"
+    },
+    "_id": "695a35f710b9d3fe9bd39296",
+    "createdAt": "2026-01-04T09:42:15.660Z",
+    "updatedAt": "2026-02-02T04:13:50.045Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 11",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 11 ",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "My bedroom is very tienphongSpace.",
+            "correctAnswer": "small",
+            "file": null,
+            "answerList": [
+              {
+                "content": "big",
+                "_id": "695a36e010b9d3fe9bd392c5",
+                "id": "695a36e010b9d3fe9bd392c6"
+              },
+              {
+                "content": "small",
+                "_id": "695a36e010b9d3fe9bd392c7",
+                "id": "695a36e010b9d3fe9bd392c8"
+              },
+              {
+                "content": "wide",
+                "_id": "695a36e010b9d3fe9bd392c9",
+                "id": "695a36e010b9d3fe9bd392ca"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a36e010b9d3fe9bd392c4"
+          },
+          {
+            "content": "We usually tienphongSpace at a hotel on vacation.",
+            "correctAnswer": "stay",
+            "file": null,
+            "answerList": [
+              {
+                "content": "stay",
+                "_id": "695a36e010b9d3fe9bd392cc",
+                "id": "695a36e010b9d3fe9bd392cd"
+              },
+              {
+                "content": "move",
+                "_id": "695a36e010b9d3fe9bd392ce",
+                "id": "695a36e010b9d3fe9bd392cf"
+              },
+              {
+                "content": "travel",
+                "_id": "695a36e010b9d3fe9bd392d0",
+                "id": "695a36e010b9d3fe9bd392d1"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a36e010b9d3fe9bd392cb"
+          },
+          {
+            "content": "There are many flowers in the tienphongSpace.",
+            "correctAnswer": "garden",
+            "file": null,
+            "answerList": [
+              {
+                "content": "kitchen",
+                "_id": "695a36e010b9d3fe9bd392d3",
+                "id": "695a36e010b9d3fe9bd392d4"
+              },
+              {
+                "content": "garden",
+                "_id": "695a36e010b9d3fe9bd392d5",
+                "id": "695a36e010b9d3fe9bd392d6"
+              },
+              {
+                "content": "garage",
+                "_id": "695a36e010b9d3fe9bd392d7",
+                "id": "695a36e010b9d3fe9bd392d8"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a36e010b9d3fe9bd392d2"
+          },
+          {
+            "content": "Some tienphongSpace near my home are very tall.",
+            "correctAnswer": "trees",
+            "file": null,
+            "answerList": [
+              {
+                "content": "houses",
+                "_id": "695a36e010b9d3fe9bd392da",
+                "id": "695a36e010b9d3fe9bd392db"
+              },
+              {
+                "content": "trees",
+                "_id": "695a36e010b9d3fe9bd392dc",
+                "id": "695a36e010b9d3fe9bd392dd"
+              },
+              {
+                "content": "cars",
+                "_id": "695a36e010b9d3fe9bd392de",
+                "id": "695a36e010b9d3fe9bd392df"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a36e010b9d3fe9bd392d9"
+          },
+          {
+            "content": "My grandfather is very tienphongSpace but still strong.",
+            "correctAnswer": "old",
+            "file": null,
+            "answerList": [
+              {
+                "content": "young",
+                "_id": "695a36e010b9d3fe9bd392e1",
+                "id": "695a36e010b9d3fe9bd392e2"
+              },
+              {
+                "content": "old",
+                "_id": "695a36e010b9d3fe9bd392e3",
+                "id": "695a36e010b9d3fe9bd392e4"
+              },
+              {
+                "content": "busy",
+                "_id": "695a36e010b9d3fe9bd392e5",
+                "id": "695a36e010b9d3fe9bd392e6"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "695a36e010b9d3fe9bd392e0"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "695a36e010b9d3fe9bd392c3",
+        "id": "695a36e010b9d3fe9bd392e7"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "695a36e010b9d3fe9bd392e8"
+    },
+    "_id": "695a36e010b9d3fe9bd392c2",
+    "createdAt": "2026-01-04T09:46:08.889Z",
+    "updatedAt": "2026-01-04T09:46:08.889Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 13",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 13 (AK)",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "The supermarket is tienphongSpace  my house.",
+            "correctAnswer": "near",
+            "file": null,
+            "answerList": [
+              {
+                "content": "near",
+                "_id": "6980262a83ed47779e04f85a",
+                "id": "6980262a83ed47779e04f85b"
+              },
+              {
+                "content": "on",
+                "_id": "6980262a83ed47779e04f85c",
+                "id": "6980262a83ed47779e04f85d"
+              },
+              {
+                "content": "at",
+                "_id": "6980262a83ed47779e04f85e",
+                "id": "6980262a83ed47779e04f85f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980262a83ed47779e04f859"
+          },
+          {
+            "content": "This t-shirt is too tienphongSpace  .",
+            "correctAnswer": "small",
+            "file": null,
+            "answerList": [
+              {
+                "content": "big",
+                "_id": "6980262a83ed47779e04f861",
+                "id": "6980262a83ed47779e04f862"
+              },
+              {
+                "content": "small",
+                "_id": "6980262a83ed47779e04f863",
+                "id": "6980262a83ed47779e04f864"
+              },
+              {
+                "content": "run",
+                "_id": "6980262a83ed47779e04f865",
+                "id": "6980262a83ed47779e04f866"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980262a83ed47779e04f860"
+          },
+          {
+            "content": "She buys a dress at the tienphongSpace  .",
+            "correctAnswer": "shop",
+            "file": null,
+            "answerList": [
+              {
+                "content": "shop",
+                "_id": "6980262a83ed47779e04f868",
+                "id": "6980262a83ed47779e04f869"
+              },
+              {
+                "content": "school",
+                "_id": "6980262a83ed47779e04f86a",
+                "id": "6980262a83ed47779e04f86b"
+              },
+              {
+                "content": "supermarket",
+                "_id": "6980262a83ed47779e04f86c",
+                "id": "6980262a83ed47779e04f86d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980262a83ed47779e04f867"
+          },
+          {
+            "content": "I like to tienphongSpace   with my friends.",
+            "correctAnswer": "talk",
+            "file": null,
+            "answerList": [
+              {
+                "content": "hate",
+                "_id": "6980262a83ed47779e04f86f",
+                "id": "6980262a83ed47779e04f870"
+              },
+              {
+                "content": "bring",
+                "_id": "6980262a83ed47779e04f871",
+                "id": "6980262a83ed47779e04f872"
+              },
+              {
+                "content": "talk",
+                "_id": "6980262a83ed47779e04f873",
+                "id": "6980262a83ed47779e04f874"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980262a83ed47779e04f86e"
+          },
+          {
+            "content": "We tienphongSpace  our grandparents.",
+            "correctAnswer": "visit",
+            "file": null,
+            "answerList": [
+              {
+                "content": "buy",
+                "_id": "6980262a83ed47779e04f876",
+                "id": "6980262a83ed47779e04f877"
+              },
+              {
+                "content": "drink",
+                "_id": "6980262a83ed47779e04f878",
+                "id": "6980262a83ed47779e04f879"
+              },
+              {
+                "content": "visit",
+                "_id": "6980262a83ed47779e04f87a",
+                "id": "6980262a83ed47779e04f87b"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6980262a83ed47779e04f875"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6980262a83ed47779e04f858",
+        "id": "6980262a83ed47779e04f87c"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "6980262a83ed47779e04f87d"
+    },
+    "_id": "6980262a83ed47779e04f857",
+    "createdAt": "2026-02-02T04:20:58.969Z",
+    "updatedAt": "2026-02-02T04:20:58.969Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Mountain",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Mountain",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Where is the tienphongSpace in this town?",
+            "correctAnswer": "station",
+            "file": null,
+            "answerList": [
+              {
+                "content": "school",
+                "_id": "6955d3ee5723012229d3ee8b",
+                "id": "6955d3ee5723012229d3ee8c"
+              },
+              {
+                "content": "station",
+                "_id": "6955d3ee5723012229d3ee8d",
+                "id": "6955d3ee5723012229d3ee8e"
+              },
+              {
+                "content": "market",
+                "_id": "6955d3ee5723012229d3ee8f",
+                "id": "6955d3ee5723012229d3ee90"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955d3ee5723012229d3ee8a"
+          },
+          {
+            "content": "The bus tienphongSpace here every morning.",
+            "correctAnswer": "stops",
+            "file": null,
+            "answerList": [
+              {
+                "content": "runs",
+                "_id": "6955d3ee5723012229d3ee92",
+                "id": "6955d3ee5723012229d3ee93"
+              },
+              {
+                "content": "stops",
+                "_id": "6955d3ee5723012229d3ee94",
+                "id": "6955d3ee5723012229d3ee95"
+              },
+              {
+                "content": "files",
+                "_id": "6955d3ee5723012229d3ee96",
+                "id": "6955d3ee5723012229d3ee97"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955d3ee5723012229d3ee91"
+          },
+          {
+            "content": "The traffic light is tienphongSpace so you can go now.",
+            "correctAnswer": "green",
+            "file": null,
+            "answerList": [
+              {
+                "content": "red",
+                "_id": "6955d3ee5723012229d3ee99",
+                "id": "6955d3ee5723012229d3ee9a"
+              },
+              {
+                "content": "blue",
+                "_id": "6955d3ee5723012229d3ee9b",
+                "id": "6955d3ee5723012229d3ee9c"
+              },
+              {
+                "content": "green",
+                "_id": "6955d3ee5723012229d3ee9d",
+                "id": "6955d3ee5723012229d3ee9e"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955d3ee5723012229d3ee98"
+          },
+          {
+            "content": "We usually have tienphongSpace at 7 p.m.",
+            "correctAnswer": "dinner",
+            "file": null,
+            "answerList": [
+              {
+                "content": "breakfast",
+                "_id": "6955d3ee5723012229d3eea0",
+                "id": "6955d3ee5723012229d3eea1"
+              },
+              {
+                "content": "lunch",
+                "_id": "6955d3ee5723012229d3eea2",
+                "id": "6955d3ee5723012229d3eea3"
+              },
+              {
+                "content": "dinner",
+                "_id": "6955d3ee5723012229d3eea4",
+                "id": "6955d3ee5723012229d3eea5"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955d3ee5723012229d3ee9f"
+          },
+          {
+            "content": "Do you like watching tienphongSpace on weekends?",
+            "correctAnswer": "movies",
+            "file": null,
+            "answerList": [
+              {
+                "content": "books",
+                "_id": "6955d3ee5723012229d3eea7",
+                "id": "6955d3ee5723012229d3eea8"
+              },
+              {
+                "content": "movies",
+                "_id": "6955d3ee5723012229d3eea9",
+                "id": "6955d3ee5723012229d3eeaa"
+              },
+              {
+                "content": "games",
+                "_id": "6955d3ee5723012229d3eeab",
+                "id": "6955d3ee5723012229d3eeac"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955d3ee5723012229d3eea6"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6955d3ee5723012229d3ee89",
+        "id": "6955d3ee5723012229d3eead"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "6955d3ee5723012229d3eeae"
+    },
+    "_id": "6955d3ee5723012229d3ee88",
+    "createdAt": "2026-01-01T01:54:54.196Z",
+    "updatedAt": "2026-01-01T01:54:54.196Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Wellness Trends",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Wellness Trends",
+        "content": "<p>Choose the word that fits in the gap. the first one is done for you.</p><p>Hey Lewis,</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><br></p>",
+        "subQuestion": [
+          {
+            "content": "First, we visited a beautiful tienphongSpace in the city center.",
+            "correctAnswer": "park",
+            "file": null,
+            "answerList": [
+              {
+                "content": "umbrella",
+                "_id": "6955dbea5723012229d3fb4c",
+                "id": "6955dbea5723012229d3fb4d"
+              },
+              {
+                "content": "park",
+                "_id": "6955dbea5723012229d3fb4e",
+                "id": "6955dbea5723012229d3fb4f"
+              },
+              {
+                "content": "radio",
+                "_id": "6955dbea5723012229d3fb50",
+                "id": "6955dbea5723012229d3fb51"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955dbea5723012229d3fb4b"
+          },
+          {
+            "content": "There, many people joined yoga tienphongSpace",
+            "correctAnswer": "classes",
+            "file": null,
+            "answerList": [
+              {
+                "content": "classes ",
+                "_id": "6955dbea5723012229d3fb53",
+                "id": "6955dbea5723012229d3fb54"
+              },
+              {
+                "content": "potatoes",
+                "_id": "6955dbea5723012229d3fb55",
+                "id": "6955dbea5723012229d3fb56"
+              },
+              {
+                "content": "rivers",
+                "_id": "6955dbea5723012229d3fb57",
+                "id": "6955dbea5723012229d3fb58"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955dbea5723012229d3fb52"
+          },
+          {
+            "content": "My cousin showed me a ring made of pure tienphongSpace",
+            "correctAnswer": "silver",
+            "file": null,
+            "answerList": [
+              {
+                "content": "butter",
+                "_id": "6955dbea5723012229d3fb5a",
+                "id": "6955dbea5723012229d3fb5b"
+              },
+              {
+                "content": "silver",
+                "_id": "6955dbea5723012229d3fb5c",
+                "id": "6955dbea5723012229d3fb5d"
+              },
+              {
+                "content": "paper",
+                "_id": "6955dbea5723012229d3fb5e",
+                "id": "6955dbea5723012229d3fb5f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955dbea5723012229d3fb59"
+          },
+          {
+            "content": "Later, we had eggs and bread for tienphongSpace together.",
+            "correctAnswer": "breakfast",
+            "file": null,
+            "answerList": [
+              {
+                "content": "blanket",
+                "_id": "6955dbea5723012229d3fb61",
+                "id": "6955dbea5723012229d3fb62"
+              },
+              {
+                "content": "football",
+                "_id": "6955dbea5723012229d3fb63",
+                "id": "6955dbea5723012229d3fb64"
+              },
+              {
+                "content": "breakfast",
+                "_id": "6955dbea5723012229d3fb65",
+                "id": "6955dbea5723012229d3fb66"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955dbea5723012229d3fb60"
+          },
+          {
+            "content": "Finally, we relaxed by practicing tienphongSpace under the trees.",
+            "correctAnswer": "meditation",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bicycle",
+                "_id": "6955dbea5723012229d3fb68",
+                "id": "6955dbea5723012229d3fb69"
+              },
+              {
+                "content": "television",
+                "_id": "6955dbea5723012229d3fb6a",
+                "id": "6955dbea5723012229d3fb6b"
+              },
+              {
+                "content": "meditation",
+                "_id": "6955dbea5723012229d3fb6c",
+                "id": "6955dbea5723012229d3fb6d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955dbea5723012229d3fb67"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6955dbea5723012229d3fb4a",
+        "id": "6955dbea5723012229d3fb6e"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "6955dbea5723012229d3fb6f"
+    },
+    "_id": "6955dbea5723012229d3fb49",
+    "createdAt": "2026-01-01T02:28:58.154Z",
+    "updatedAt": "2026-01-01T02:28:58.154Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "The arrival of four-day week",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "The arrival of four-day week",
+        "content": "<h3>Choose the word that fits in the gap. the first one is done for you.</h3><p>Hey Lewis,</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Therefore, in the tienphongSpace , I started walking",
+            "correctAnswer": "morning",
+            "file": null,
+            "answerList": [
+              {
+                "content": "spring",
+                "_id": "6955e01d5723012229d3fcec",
+                "id": "6955e01d5723012229d3fced"
+              },
+              {
+                "content": "month",
+                "_id": "6955e01d5723012229d3fcee",
+                "id": "6955e01d5723012229d3fcef"
+              },
+              {
+                "content": "morning",
+                "_id": "6955e01d5723012229d3fcf0",
+                "id": "6955e01d5723012229d3fcf1"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955e01d5723012229d3fceb"
+          },
+          {
+            "content": "My tienphongSpace also love exercising and we usually come together.",
+            "correctAnswer": "friends",
+            "file": null,
+            "answerList": [
+              {
+                "content": "friends",
+                "_id": "6955e01d5723012229d3fcf3",
+                "id": "6955e01d5723012229d3fcf4"
+              },
+              {
+                "content": "class",
+                "_id": "6955e01d5723012229d3fcf5",
+                "id": "6955e01d5723012229d3fcf6"
+              },
+              {
+                "content": "company",
+                "_id": "6955e01d5723012229d3fcf7",
+                "id": "6955e01d5723012229d3fcf8"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955e01d5723012229d3fcf2"
+          },
+          {
+            "content": "I tienphongSpace my car at my house.",
+            "correctAnswer": "leave",
+            "file": null,
+            "answerList": [
+              {
+                "content": "bring",
+                "_id": "6955e01d5723012229d3fcfa",
+                "id": "6955e01d5723012229d3fcfb"
+              },
+              {
+                "content": "leave",
+                "_id": "6955e01d5723012229d3fcfc",
+                "id": "6955e01d5723012229d3fcfd"
+              },
+              {
+                "content": "drive",
+                "_id": "6955e01d5723012229d3fcfe",
+                "id": "6955e01d5723012229d3fcff"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955e01d5723012229d3fcf9"
+          },
+          {
+            "content": "I understand that exercising tienphongSpace or me.",
+            "correctAnswer": "good",
+            "file": null,
+            "answerList": [
+              {
+                "content": "good",
+                "_id": "6955e01d5723012229d3fd01",
+                "id": "6955e01d5723012229d3fd02"
+              },
+              {
+                "content": "friendly",
+                "_id": "6955e01d5723012229d3fd03",
+                "id": "6955e01d5723012229d3fd04"
+              },
+              {
+                "content": "harmful",
+                "_id": "6955e01d5723012229d3fd05",
+                "id": "6955e01d5723012229d3fd06"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955e01d5723012229d3fd00"
+          },
+          {
+            "content": "Then, I drink water and eat healthy tienphongSpace",
+            "correctAnswer": "food",
+            "file": null,
+            "answerList": [
+              {
+                "content": "cake",
+                "_id": "6955e01d5723012229d3fd08",
+                "id": "6955e01d5723012229d3fd09"
+              },
+              {
+                "content": "food",
+                "_id": "6955e01d5723012229d3fd0a",
+                "id": "6955e01d5723012229d3fd0b"
+              },
+              {
+                "content": "noodles",
+                "_id": "6955e01d5723012229d3fd0c",
+                "id": "6955e01d5723012229d3fd0d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6955e01d5723012229d3fd07"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "6955e01d5723012229d3fcea",
+        "id": "6955e01d5723012229d3fd0e"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "6955e01d5723012229d3fd0f"
+    },
+    "_id": "6955e01d5723012229d3fce9",
+    "createdAt": "2026-01-01T02:46:53.388Z",
+    "updatedAt": "2026-01-01T02:46:53.388Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ec457df89e08fdb549b83e",
+    "createdAt": "2026-04-25T04:39:25.752Z",
+    "updatedAt": "2026-04-25T04:39:25.753Z",
+    "__v": 0,
+    "data": {
+      "title": "Đề 14",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 14 (Aptis key - questions1_12)",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I tienphongSpace reading books in the library.",
+            "correctAnswer": "love",
+            "file": null,
+            "answerList": [
+              {
+                "content": "love",
+                "_id": "69ec457db93c973c395ed8cb",
+                "id": "69ec457da45200a59e77a4ac"
+              },
+              {
+                "content": "make",
+                "_id": "69ec457d9719955c16c6b3e9",
+                "id": "69ec457d978b47ad5d2f53ed"
+              },
+              {
+                "content": "run",
+                "_id": "69ec457d08156ff66af0795f",
+                "id": "69ec457d6d79acbae79b4bcb"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457dd214b98b52abc7af"
+          },
+          {
+            "content": "My bag is a bit tienphongSpace for my laptop.",
+            "correctAnswer": "small",
+            "file": null,
+            "answerList": [
+              {
+                "content": "mean",
+                "_id": "69ec457d5e94703a8beb2fe6",
+                "id": "69ec457dee1fdd6744aee2eb"
+              },
+              {
+                "content": "small",
+                "_id": "69ec457def2c3fc86cf53fc0",
+                "id": "69ec457d1792fcbe19ec13f1"
+              },
+              {
+                "content": "again",
+                "_id": "69ec457d3d453a9e321bb38f",
+                "id": "69ec457da223b1590b04d755"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457dd73f2473c3b8ccf7"
+          },
+          {
+            "content": "Can you go to the tienphongSpace to buy some milk?",
+            "correctAnswer": "shop",
+            "file": null,
+            "answerList": [
+              {
+                "content": "shop",
+                "_id": "69ec457d244f933a62944af8",
+                "id": "69ec457db38d55c53f1a68e8"
+              },
+              {
+                "content": "park",
+                "_id": "69ec457d67dcf3500a8a7aac",
+                "id": "69ec457d0da66b87f4e7e46b"
+              },
+              {
+                "content": "sea",
+                "_id": "69ec457d2df5c44312a37a3a",
+                "id": "69ec457d3c59d3e7fcd0aa21"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457d5ef47ad23e552aba"
+          },
+          {
+            "content": "There are many tienphongSpace in the class.",
+            "correctAnswer": "people",
+            "file": null,
+            "answerList": [
+              {
+                "content": "people",
+                "_id": "69ec457dd30ef19ab5d92eca",
+                "id": "69ec457d3c85c8f20340ae4c"
+              },
+              {
+                "content": "birds",
+                "_id": "69ec457d56d0a5fff347e963",
+                "id": "69ec457d1ea57da5f70da98f"
+              },
+              {
+                "content": "trees",
+                "_id": "69ec457d2eda18fd954709f4",
+                "id": "69ec457d558abb3860dd254c"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457d2bcf57314b611cea"
+          },
+          {
+            "content": "They want to tienphongSpace the class.",
+            "correctAnswer": "visit",
+            "file": null,
+            "answerList": [
+              {
+                "content": "room",
+                "_id": "69ec457d83c01f619476e244",
+                "id": "69ec457d7689262538cb78b8"
+              },
+              {
+                "content": "visit",
+                "_id": "69ec457d8bdba2f4f8ce83e2",
+                "id": "69ec457df26170531e7c01bb"
+              },
+              {
+                "content": "fly",
+                "_id": "69ec457d4044ccbd94e31431",
+                "id": "69ec457d22a17c37d9977be2"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457dfea97528a1f6e8e7"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "69ec457dbe58fc079a4fac43",
+        "id": "69ec457d1d20fe04beca7c56"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ec457d7d60acd0eda14e21"
+    }
+  },
+  {
+    "_id": "69ec457defedf4f1a227fe8e",
+    "createdAt": "2026-04-25T04:39:25.753Z",
+    "updatedAt": "2026-04-25T04:39:25.753Z",
+    "__v": 0,
+    "data": {
+      "title": "Đề 15",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 15 (Aptis key - questions1_13)",
+        "content": "<p>Choose the word that fits in the gap. The first one is done for you.</p><p><span style=\"color: rgb(33, 37, 41);\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I drink coffee in the tienphongSpace .",
+            "correctAnswer": "morning",
+            "file": null,
+            "answerList": [
+              {
+                "content": "morning",
+                "_id": "69ec457d6691d025ef266662",
+                "id": "69ec457dd116da0622b79ace"
+              },
+              {
+                "content": "sky",
+                "_id": "69ec457dfcef0b80487e30fd",
+                "id": "69ec457da68e6f392b806997"
+              },
+              {
+                "content": "free",
+                "_id": "69ec457dc949b476af9ec59f",
+                "id": "69ec457d983b5e99d287df78"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457ddb0b2ed56cdcfc24"
+          },
+          {
+            "content": "Children play in the tienphongSpace .",
+            "correctAnswer": "park",
+            "file": null,
+            "answerList": [
+              {
+                "content": "park",
+                "_id": "69ec457db2bbd6f0532e8596",
+                "id": "69ec457d9ac73b5a2858025a"
+              },
+              {
+                "content": "big",
+                "_id": "69ec457d43e6ba36ec4941a6",
+                "id": "69ec457d3554969bd7c73abe"
+              },
+              {
+                "content": "hot",
+                "_id": "69ec457d8b4faf86372b8d7c",
+                "id": "69ec457d3d2f3eca0cf3f5b7"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457d5c7f18f75319691b"
+          },
+          {
+            "content": "What time do you tienphongSpace home?",
+            "correctAnswer": "leave",
+            "file": null,
+            "answerList": [
+              {
+                "content": "leave",
+                "_id": "69ec457d0aad0d109faf2ce0",
+                "id": "69ec457d4193a140cca4e75c"
+              },
+              {
+                "content": "bring",
+                "_id": "69ec457dae22cd99236c419a",
+                "id": "69ec457d245d339363df6fe3"
+              },
+              {
+                "content": "stop",
+                "_id": "69ec457dcc5058b390c97eb6",
+                "id": "69ec457d663b93bf2568e2dc"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457db65fe0145ffc92fd"
+          },
+          {
+            "content": "We eat bread for tienphongSpace .",
+            "correctAnswer": "breakfast",
+            "file": null,
+            "answerList": [
+              {
+                "content": "breakfast",
+                "_id": "69ec457d496dbcf01b65f467",
+                "id": "69ec457d4ad55bb612b5d377"
+              },
+              {
+                "content": "train",
+                "_id": "69ec457d6e6a2a0d230a0af8",
+                "id": "69ec457d0c4cb4e912b5dbd3"
+              },
+              {
+                "content": "time",
+                "_id": "69ec457dd6f368ffd252e3d8",
+                "id": "69ec457d70f069ee69b10bed"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457da30a3b45c874aa4e"
+          },
+          {
+            "content": "Nice to tienphongSpace you.",
+            "correctAnswer": "meet",
+            "file": null,
+            "answerList": [
+              {
+                "content": "meet",
+                "_id": "69ec457d21bf8508db2bca93",
+                "id": "69ec457de0f4d8bc6f6c55a1"
+              },
+              {
+                "content": "hate",
+                "_id": "69ec457db9da0234d4d555c7",
+                "id": "69ec457d052127e0b68a99ae"
+              },
+              {
+                "content": "look",
+                "_id": "69ec457d55ce508380ec0e63",
+                "id": "69ec457d93db71b6055ddd50"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69ec457d7a76984deba8a046"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "69ec457d1140fb9366272021",
+        "id": "69ec457d549eb52c9b65febb"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ec457d0ed822aa7a5e63af"
+    }
+  },
+  {
+    "data": {
+      "title": "Đề 19",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 19 (Aptis Key bổ sung)",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I have a work meeting tienphongSpace 6:00pm.",
+            "correctAnswer": "at",
+            "file": null,
+            "answerList": [
+              {
+                "content": "at",
+                "_id": "ee4904e0b9883a47c558df25",
+                "id": "22a5c0bcc69d1e42c7fbd247"
+              },
+              {
+                "content": "on",
+                "_id": "c1899b81f324e3eabc13031d",
+                "id": "2547fcd4761fcfde1d210a9c"
+              },
+              {
+                "content": "in",
+                "_id": "acc34b8f727be987691e296f",
+                "id": "02a30c331ffb74e8ffb861c5"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "e82fd610b60f6b433b5c00ca"
+          },
+          {
+            "content": "I have tienphongSpace to Paris many times.",
+            "correctAnswer": "been",
+            "file": null,
+            "answerList": [
+              {
+                "content": "been",
+                "_id": "2608a3562ad1ea6f64612cd1",
+                "id": "f1565f7f4fe42db5ab3f622b"
+              },
+              {
+                "content": "gone",
+                "_id": "9c8a7cf0e9d98dbc65ae8421",
+                "id": "5e08f7a4a5ae973cdb08d641"
+              },
+              {
+                "content": "went",
+                "_id": "2ffb10a2422ddf6d3c7342a3",
+                "id": "c195297f10f9c7daf7cc224d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "9c9128f745410c5ca1fd70f0"
+          },
+          {
+            "content": "Yesterday we went on a tienphongSpace on the lake and caught some fish.",
+            "correctAnswer": "boat",
+            "file": null,
+            "answerList": [
+              {
+                "content": "boat",
+                "_id": "231a1d8f2b6e4553bf73956e",
+                "id": "27960f67698057e21fe684a3"
+              },
+              {
+                "content": "car",
+                "_id": "e1b91f2f0fba2de301294dde",
+                "id": "51ba92bebacb57d4e8f5b007"
+              },
+              {
+                "content": "bus",
+                "_id": "fc04e55cfd88efd2890e9111",
+                "id": "b24bd58d9a352d42f8abd9a1"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "e2679b017b14a8c3d7ba4a9d"
+          },
+          {
+            "content": "I went fishing with my tienphongSpace and we all had fun.",
+            "correctAnswer": "children",
+            "file": null,
+            "answerList": [
+              {
+                "content": "children",
+                "_id": "eb27608f01d3d348c4ac946e",
+                "id": "69a26d595e4777e6fd1d6995"
+              },
+              {
+                "content": "parents",
+                "_id": "ab33aa102717fee2ee84e4c5",
+                "id": "71817770441607b6caab3ffe"
+              },
+              {
+                "content": "friends",
+                "_id": "55b41fb6637f2df85fbd22d2",
+                "id": "c3656bff15e88712c26e8629"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "220289eb5cdfb37914c5a6d4"
+          },
+          {
+            "content": "After eating, we played outdoor tienphongSpace together.",
+            "correctAnswer": "games",
+            "file": null,
+            "answerList": [
+              {
+                "content": "games",
+                "_id": "8574839a1340410535613f46",
+                "id": "9310076a266dbb00cfab1cf5"
+              },
+              {
+                "content": "sports",
+                "_id": "1af813e6db35321c9f4c7abd",
+                "id": "fc092770187aeaf60a55c7dc"
+              },
+              {
+                "content": "matches",
+                "_id": "f77e2dca69d88f29c0c544bc",
+                "id": "4c054fcab3195c7f10e3c3df"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "c9af9ed4bdd55ac9c0b22d69"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "470d7c745074afafb7aa1941",
+        "id": "55c371644747434a2edda278"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "97d81ffc3784391d00691340"
+    },
+    "_id": "756184854aa85a7f9a914b4a",
+    "createdAt": "2026-04-30T11:03:54.289Z",
+    "updatedAt": "2026-04-30T11:03:54.290Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 20",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 20 (Aptis Key bổ sung)",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Do you want to tienphongSpace pizza for dinner?",
+            "correctAnswer": "get",
+            "file": null,
+            "answerList": [
+              {
+                "content": "get",
+                "_id": "acac6ef98764cf62389b9c26",
+                "id": "5ffe0bc00d1b1ad498e93b94"
+              },
+              {
+                "content": "make",
+                "_id": "ad3d567151472ac924c463b1",
+                "id": "ea0aaf3f744e777590fdc221"
+              },
+              {
+                "content": "eat",
+                "_id": "8603d90d2d9d147608ba9546",
+                "id": "7276e0ae08154ee58fc351eb"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "4ded4394c89a181588c5ec1b"
+          },
+          {
+            "content": "The weather is tienphongSpace and it’s really hot.",
+            "correctAnswer": "great",
+            "file": null,
+            "answerList": [
+              {
+                "content": "great",
+                "_id": "c42c370855dd783221b23b60",
+                "id": "3ae09c9d12c076138674af5c"
+              },
+              {
+                "content": "bad",
+                "_id": "b7e1c646595932d1a6968490",
+                "id": "b164fe9d30b1a84ef34c40e5"
+              },
+              {
+                "content": "cold",
+                "_id": "ee7c945b1f444404cb4a1274",
+                "id": "3d6d8bd2d48d7045ae74108f"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "845775fdd16eb9f61c283892"
+          },
+          {
+            "content": "My cousin’s wedding is tienphongSpace two weeks.",
+            "correctAnswer": "in",
+            "file": null,
+            "answerList": [
+              {
+                "content": "in",
+                "_id": "7ebbc7677c14603d50dd20a4",
+                "id": "68dd20889ea2c54de0095e2c"
+              },
+              {
+                "content": "on",
+                "_id": "d07e155dd4d4bfc9e0f7dfc8",
+                "id": "16ec9045b8a1da9ddce716e5"
+              },
+              {
+                "content": "at",
+                "_id": "2673a284f5e1621e7a9aa952",
+                "id": "1eae4923b75185a63443af3b"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "9dc3b83dcfdf68ccaec59ff9"
+          },
+          {
+            "content": "Let me tienphongSpace what you decide.",
+            "correctAnswer": "know",
+            "file": null,
+            "answerList": [
+              {
+                "content": "know",
+                "_id": "a0a01d83713a22fe7ace4556",
+                "id": "58250ca7fca0a1bc32ece52c"
+              },
+              {
+                "content": "see",
+                "_id": "ae16b2c0a87fea69ce3ce990",
+                "id": "064ad6c057804f3ff25e0947"
+              },
+              {
+                "content": "hear",
+                "_id": "d5ad3b7c25f7f0c1a45d46a8",
+                "id": "9ddd7a389f23ab4dca522991"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6fcb4a753c1f8f3381f1a9a4"
+          },
+          {
+            "content": "I won't be home on time to tienphongSpace dinner.",
+            "correctAnswer": "make",
+            "file": null,
+            "answerList": [
+              {
+                "content": "make",
+                "_id": "84dae6721fb5523519fb6f05",
+                "id": "02cfde091d20540c50ae7a9e"
+              },
+              {
+                "content": "take",
+                "_id": "0cf000829556ef92fe5674cf",
+                "id": "5519347c944d3e7e329c5fe7"
+              },
+              {
+                "content": "do",
+                "_id": "99fa187e4852cdc6d8da0e12",
+                "id": "2e0c4f7d3353c78b421752be"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "c7df0f6d3b1c897de8a18228"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "811c52a53decb8a834b0d110",
+        "id": "2a3948468cc0f924a9fd781e"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "29e32a19a256d4441c3f752f"
+    },
+    "_id": "ad2c4e269509fe481ba5a847",
+    "createdAt": "2026-04-30T11:03:54.290Z",
+    "updatedAt": "2026-04-30T11:03:54.290Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 21",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 21 (Aptis Key bổ sung)",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Do you tienphongSpace coming to the mall with me?",
+            "correctAnswer": "mind",
+            "file": null,
+            "answerList": [
+              {
+                "content": "mind",
+                "_id": "a1152a5f2f3ddf2b9752a832",
+                "id": "c650e6fc132bb2843462e1c2"
+              },
+              {
+                "content": "like",
+                "_id": "4b07acd82f5a5aa04ca15c51",
+                "id": "c4aaab4ef2cf28f58effd771"
+              },
+              {
+                "content": "want",
+                "_id": "35e20093d3771cd0d8d4d47c",
+                "id": "612068d50977616152d1d275"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "0a0c7ea360bbae701017baf5"
+          },
+          {
+            "content": "I hate trying clothes tienphongSpace without a second opinion.",
+            "correctAnswer": "on",
+            "file": null,
+            "answerList": [
+              {
+                "content": "on",
+                "_id": "90325fc1e5e7abd213456fdf",
+                "id": "2e0a19b120fbc03b255d1657"
+              },
+              {
+                "content": "in",
+                "_id": "d064fbabbc71fa92b4900db1",
+                "id": "11b3fa32bfbeac3513e51f7b"
+              },
+              {
+                "content": "off",
+                "_id": "af28c80639b56f0a7c0e99d5",
+                "id": "a01693cb93148a9e4b7a84f0"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "801a4ab0fcc37a6fbd5d7b83"
+          },
+          {
+            "content": "We could also eat tienphongSpace at that new Greek restaurant.",
+            "correctAnswer": "out",
+            "file": null,
+            "answerList": [
+              {
+                "content": "out",
+                "_id": "a6b669ce86524b3b21d38e02",
+                "id": "0c5b335703f2705cb215037b"
+              },
+              {
+                "content": "in",
+                "_id": "5cabe9da74445f3553d608f6",
+                "id": "3a21aa3bf7e1293c7bc4a76c"
+              },
+              {
+                "content": "up",
+                "_id": "8bbbb60f909cbcc1b63ee55a",
+                "id": "25185807fe3dbedaf13df854"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "c2ffcb9b8f39ad7930e470fa"
+          },
+          {
+            "content": "We are going to visit some tienphongSpace and buy clothes.",
+            "correctAnswer": "shops",
+            "file": null,
+            "answerList": [
+              {
+                "content": "shops",
+                "_id": "762c2393e07d214df43c6ec4",
+                "id": "9a6e9b1c9a9a1de974d46ee8"
+              },
+              {
+                "content": "parks",
+                "_id": "de16f0608cd2fe4c52bf6200",
+                "id": "e68b3471b09dbc096632b460"
+              },
+              {
+                "content": "museums",
+                "_id": "55c09b06165ae84b53ab4820",
+                "id": "5507ce211598fa26884aab91"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "5d6655816f6e4f74fac2a191"
+          },
+          {
+            "content": "The dress tienphongSpace be formal.",
+            "correctAnswer": "should",
+            "file": null,
+            "answerList": [
+              {
+                "content": "should",
+                "_id": "fb7c8add909e5d2280306b5a",
+                "id": "8eb97ac4e0387fdd1861e6ed"
+              },
+              {
+                "content": "would",
+                "_id": "86dc62fd40054fbd223cebc9",
+                "id": "e2dcf1014bd7c5165ff5a3ed"
+              },
+              {
+                "content": "could",
+                "_id": "82901b2d4280353f8d6c9e9a",
+                "id": "e14df05da8033188564f003e"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "019d43ff6c10e277cf811944"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "61e2ff8427a28f1367d6c643",
+        "id": "7390c6676b86eeff7c4f50c8"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "30bb7c4e1e34a4a53b67962b"
+    },
+    "_id": "9af06f7fde01dcff8088e388",
+    "createdAt": "2026-04-30T11:03:54.290Z",
+    "updatedAt": "2026-04-30T11:03:54.290Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 22",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 22 (Aptis Key bổ sung)",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Near the entrance, we bought food from a small tienphongSpace .",
+            "correctAnswer": "stalls",
+            "file": null,
+            "answerList": [
+              {
+                "content": "stalls",
+                "_id": "81bacfbeb5f6bb695db746d3",
+                "id": "0dc3bdcb0599f0abd146b3b2"
+              },
+              {
+                "content": "shops",
+                "_id": "b07236c9f56b25280c1d8e92",
+                "id": "59b6c941836f11ad6e7fdd69"
+              },
+              {
+                "content": "markets",
+                "_id": "ca96404f78df0db8d4a97ecd",
+                "id": "e3ef7c9fc8c137ff7b617ea0"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "10d3d5469b148fe19e70c22b"
+          },
+          {
+            "content": "We are tienphongSpace in a house in a small village.",
+            "correctAnswer": "staying",
+            "file": null,
+            "answerList": [
+              {
+                "content": "staying",
+                "_id": "32fe0c6fa42f84112cb0a374",
+                "id": "262f835d644f8edd24cf7ccd"
+              },
+              {
+                "content": "living",
+                "_id": "7f67507fe891e7668d919234",
+                "id": "f869c13a15a4cac0197747e9"
+              },
+              {
+                "content": "visiting",
+                "_id": "0111b5640a6725c4ed846bcd",
+                "id": "0b31c7d9d631b06163af397d"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "13bb894c7738cc0ebc9977b0"
+          },
+          {
+            "content": "I can tienphongSpace some places for you to go because",
+            "correctAnswer": "suggest",
+            "file": null,
+            "answerList": [
+              {
+                "content": "suggest",
+                "_id": "eb146441e29b4d6a0810fe03",
+                "id": "9b7ff4e3dd9fc09d6f871052"
+              },
+              {
+                "content": "tell",
+                "_id": "09c49977cb58ff5a4d1a191f",
+                "id": "c0a9a08d8342ce1de6f1734a"
+              },
+              {
+                "content": "say",
+                "_id": "cbb8c15c09332e487315fb63",
+                "id": "ad64a1aeb9872acfb3f37d4e"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "c6affb995bbbc45dece1cee3"
+          },
+          {
+            "content": "Remember to tienphongSpace a lot of photos.",
+            "correctAnswer": "take",
+            "file": null,
+            "answerList": [
+              {
+                "content": "take",
+                "_id": "1ca7e5578d7040fa018b5b20",
+                "id": "99a9fa2ae00cccf0810bd9f1"
+              },
+              {
+                "content": "make",
+                "_id": "737d4424aa31c2b00c2c13aa",
+                "id": "9fa15a73d98c849474668064"
+              },
+              {
+                "content": "get",
+                "_id": "348b3d32f699236ca25550c0",
+                "id": "07cd9aa64b4c2ddd2a8ea8cc"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "1077d2e33a3b1601c9ec57c7"
+          },
+          {
+            "content": "We had lunch and then we visited an old tienphongSpace",
+            "correctAnswer": "town.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "town.",
+                "_id": "c9e742744c7ca098669f37c6",
+                "id": "e9eb0b86feb534e3cec529b3"
+              },
+              {
+                "content": "city.",
+                "_id": "54cf24c9c2f502b1122bbb08",
+                "id": "8de046bacb53e6a941d2220e"
+              },
+              {
+                "content": "village.",
+                "_id": "6c970dcc444c8a42f43a9731",
+                "id": "d58aeacb66296a8f5bfdbfd0"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "91c775582341b5d26a8bfbb0"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "1a100aa7c89e9d70032b31a3",
+        "id": "ee6db64b135e6bfc6030c13a"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "b46d298e97de1287b6f3bf2a"
+    },
+    "_id": "73e5caa5c9124a183ee64308",
+    "createdAt": "2026-04-30T11:03:54.290Z",
+    "updatedAt": "2026-04-30T11:03:54.290Z",
+    "__v": 0
+  },
+  {
+    "data": {
+      "title": "Đề 23",
+      "timeToDo": 35,
+      "questions": {
+        "questionTitle": "Đề 23 (Aptis Key bổ sung)",
+        "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Hey Lewis,</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "I can pick you tienphongSpace at 4:00pm if you are free.",
+            "correctAnswer": "up",
+            "file": null,
+            "answerList": [
+              {
+                "content": "up",
+                "_id": "feb20012a1350cc2e155117d",
+                "id": "ac6b6fd89c79d1a274d51289"
+              },
+              {
+                "content": "out",
+                "_id": "cafab044beffe2010663d6e4",
+                "id": "6908d9a3449e1657d5b58ff0"
+              },
+              {
+                "content": "down",
+                "_id": "38165952bebceaa6fe9d0cf0",
+                "id": "c39a0f07610ef8b8b03d6e25"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "ab1e34f4a7b509792499f250"
+          },
+          {
+            "content": "I tienphongSpace like to see you before you go.",
+            "correctAnswer": "would",
+            "file": null,
+            "answerList": [
+              {
+                "content": "would",
+                "_id": "e267bec2853960877d98f835",
+                "id": "e1c35e32b75ea856eb17f37b"
+              },
+              {
+                "content": "should",
+                "_id": "826d29bcf013af320c3474fc",
+                "id": "832516fe441c5596d3a6d029"
+              },
+              {
+                "content": "could",
+                "_id": "133c41099deb1cba9fba2422",
+                "id": "e5f70bcfb13e8396ddc1d512"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "eeee0f0436cc340b424b0d34"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "ONE",
+        "image": null,
+        "_id": "5a0c945de90ddde29961b6ac",
+        "id": "4b6f68760c6417bcb38127e9"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "9d7a32459ac39f6857bd28a0"
+    },
+    "_id": "5d2af7208cf7130c6addb976",
+    "createdAt": "2026-04-30T11:03:54.290Z",
+    "updatedAt": "2026-04-30T11:03:54.290Z",
+    "__v": 0
+  }
+]

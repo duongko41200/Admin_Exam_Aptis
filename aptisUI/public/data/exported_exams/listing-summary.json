@@ -1,0 +1,122 @@
+[
+  {
+    "skillType": "LISTENING",
+    "skillLabel": "Listening - Nghe",
+    "parts": [
+      {
+        "partNumber": 1,
+        "partLabel": "Part 1",
+        "totalQuestions": 13,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 2,
+        "partLabel": "Part 2",
+        "totalQuestions": 12,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 3,
+        "partLabel": "Part 3",
+        "totalQuestions": 13,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 4,
+        "partLabel": "Part 4",
+        "totalQuestions": 55,
+        "freeQuestions": 3
+      }
+    ]
+  },
+  {
+    "skillType": "READING",
+    "skillLabel": "Reading - Đọc",
+    "parts": [
+      {
+        "partNumber": 1,
+        "partLabel": "Part 1",
+        "totalQuestions": 16,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 2,
+        "partLabel": "Part 2",
+        "totalQuestions": 40,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 3,
+        "partLabel": "Part 3",
+        "totalQuestions": 16,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 4,
+        "partLabel": "Part 4",
+        "totalQuestions": 14,
+        "freeQuestions": 3
+      }
+    ]
+  },
+  {
+    "skillType": "SPEAKING",
+    "skillLabel": "Speaking - Nói",
+    "parts": [
+      {
+        "partNumber": 1,
+        "partLabel": "Part 1",
+        "totalQuestions": 18,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 2,
+        "partLabel": "Part 2",
+        "totalQuestions": 51,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 3,
+        "partLabel": "Part 3",
+        "totalQuestions": 49,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 4,
+        "partLabel": "Part 4",
+        "totalQuestions": 40,
+        "freeQuestions": 3
+      }
+    ]
+  },
+  {
+    "skillType": "WRITING",
+    "skillLabel": "Writing - Viết",
+    "parts": [
+      {
+        "partNumber": 1,
+        "partLabel": "Part 1",
+        "totalQuestions": 34,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 2,
+        "partLabel": "Part 2",
+        "totalQuestions": 44,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 3,
+        "partLabel": "Part 3",
+        "totalQuestions": 47,
+        "freeQuestions": 3
+      },
+      {
+        "partNumber": 4,
+        "partLabel": "Part 4",
+        "totalQuestions": 49,
+        "freeQuestions": 3
+      }
+    ]
+  }
+]
