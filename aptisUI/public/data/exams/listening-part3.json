@@ -6,18 +6,24 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Changes in the workplace",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361482238_d7b6cffa9993584b_audiotpa3_q1.mp3",
         "subQuestionAnswerList": [],
         "suggestion": "<p>[{\"timestamp\":[0,3],\"text\":\" I'm thinking about switching to another job.\"},{\"timestamp\":[3,5.68],\"text\":\" Why? Your current job is very stable.\"},{\"timestamp\":[5.68,8.12],\"text\":\" I think I should try my hand at different fields.\"},{\"timestamp\":[8.12,12.2],\"text\":\" The jobs I take should only last around one to two years.\"},{\"timestamp\":[12.2,15.88],\"text\":\" I don't like staying too long in one job or with one company.\"},{\"timestamp\":[15.88,17.16],\"text\":\" That would be really boring.\"},{\"timestamp\":[17.16,20.32],\"text\":\" Nowadays, many companies offer temporary jobs,\"},{\"timestamp\":[20.32,23.56],\"text\":\" which allows me to try out different fields.\"},{\"timestamp\":[23.56,26],\"text\":\" Oh, but if you stay longer at one company,\"},{\"timestamp\":[26,30],\"text\":\" they might offer you more opportunities for career advancement.\"},{\"timestamp\":[30,34],\"text\":\" I always want to stay long-term with a company that suits me.\"},{\"timestamp\":[34,37],\"text\":\" Nowadays, young people who have just graduated from university\"},{\"timestamp\":[37,40],\"text\":\" are very talented and have many qualifications.\"},{\"timestamp\":[40,43],\"text\":\" I'm afraid that if I stick with one job and don't change\"},{\"timestamp\":[43,46],\"text\":\" to accumulate knowledge in various fields,\"},{\"timestamp\":[46,49],\"text\":\" it will be hard to compete with these young, talented people.\"},{\"timestamp\":[49,52],\"text\":\" We also need to consider job satisfaction if we do well.\"},{\"timestamp\":[52,59],\"text\":\" We need to be encouraged and motivated that helps employees feel that their efforts and contributions to the company are worthwhile.\"},{\"timestamp\":[59,61],\"text\":\" You're absolutely right. I couldn't agree more.\"},{\"timestamp\":[61,65.2],\"text\":\" In this age of technological advancement, many jobs have been\"},{\"timestamp\":[65.2,69.92],\"text\":\" replaced by machines. More and more people are losing their jobs due to the development of\"},{\"timestamp\":[69.92,77.04],\"text\":\" technology and engineering. I think this is a concerning issue. I don't think so. Technology is\"},{\"timestamp\":[77.04,81.52],\"text\":\" helping us do our work more quickly, easily and conveniently than ever. If we know how to leverage\"},{\"timestamp\":[81.52,90],\"text\":\" technology in our jobs, productivity will increase significantly, which in turn helps develop the economy and society.\"}]</p>",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "ontinuity is important when planning a career",
@@ -65,7 +71,7 @@
     "questionType": "LISTENING",
     "id": "6957cbcbc88028aa29a1b2c6",
     "createdAt": "2026-01-02T13:44:43.238Z",
-    "updatedAt": "2026-01-13T07:26:13.951Z",
+    "updatedAt": "2026-06-17T09:37:54.767Z",
     "__v": 0
   },
   {
@@ -78,9 +84,15 @@
         "questionTitle": "Beauty",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361713956_ca6c7b3444dbb4f1_audiotpa3_q2.mp3",
@@ -134,7 +146,7 @@
     "questionType": "LISTENING",
     "id": "6957ccb3c88028aa29a1b3ea",
     "createdAt": "2026-01-02T13:48:35.218Z",
-    "updatedAt": "2026-01-13T08:00:10.815Z",
+    "updatedAt": "2026-06-17T09:37:54.810Z",
     "__v": 0
   },
   {
@@ -147,9 +159,15 @@
         "questionTitle": "Actors (câu này nhiều phiên bản nên cứ chọn MWBB)",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?\n\n",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361942149_94cc89d3b414126c_audiotpa3_q3.mp3",
@@ -203,7 +221,7 @@
     "questionType": "LISTENING",
     "id": "6957cd96c88028aa29a1b3f9",
     "createdAt": "2026-01-02T13:52:22.975Z",
-    "updatedAt": "2026-01-13T08:01:22.408Z",
+    "updatedAt": "2026-06-17T09:37:54.853Z",
     "__v": 0
   },
   {
@@ -216,9 +234,15 @@
         "questionTitle": "Information and technology",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767362112270_560f8824f1551a58_audiotpa3_q4.mp3",
@@ -272,7 +296,7 @@
     "questionType": "LISTENING",
     "id": "6957ce41c88028aa29a1b408",
     "createdAt": "2026-01-02T13:55:13.064Z",
-    "updatedAt": "2026-01-13T08:02:12.753Z",
+    "updatedAt": "2026-06-17T09:37:54.895Z",
     "__v": 0
   },
   {
@@ -285,9 +309,15 @@
         "questionTitle": "The Internet (câu này nhiều phiên bản nên cứ chọn BWBB)",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363309620_5a236875673a5faa_audiotpa3_q5.mp3",
@@ -341,7 +371,7 @@
     "questionType": "LISTENING",
     "id": "6957d2efc88028aa29a1b7d2",
     "createdAt": "2026-01-02T14:15:11.476Z",
-    "updatedAt": "2026-01-13T08:03:07.681Z",
+    "updatedAt": "2026-06-17T09:37:54.937Z",
     "__v": 0
   },
   {
@@ -354,9 +384,15 @@
         "questionTitle": "The arts",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363468231_08977030d500491f_audiotpa3_q6.mp3",
@@ -410,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6957d38dc88028aa29a1b7e1",
     "createdAt": "2026-01-02T14:17:49.741Z",
-    "updatedAt": "2026-01-13T08:04:09.828Z",
+    "updatedAt": "2026-06-17T09:37:54.981Z",
     "__v": 0
   },
   {
@@ -420,18 +456,24 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "The music",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363877298_f8f8092e1f8eb760_audiotpa3_q7.mp3",
         "subQuestionAnswerList": [],
         "suggestion": "<p><strong>Paragraph:</strong></p><p>M: Did you hear about the concert last night? A lot of young people attended.</p><p><br></p><p>W: Yes, I know about that concert; it was very popular. I don’t understand why so many young people are so eager to attend. They're blindly idolizing young singers, and these idols don’t really teach them anything good.</p><p><br></p><p>M: I see it differently. The young singers today are very talented, and they do a lot of charitable work for society. I think young people look up to them and follow their example.</p><p><br></p><p>W: Yes, they volunteer a lot, but they do it for the wrong reasons. They only want to boost their own fame.</p><p><br></p><p>M: Oh, I think you don't like young singers because you don't enjoy their music, right?</p><p><br></p><p>W: Exactly, I only like listening to classical music from previous generations. I think music preferences are very personal and each generation has its own unique taste in music. But music is always a universal language that conveys emotions everyone can understand.</p><p><br></p><p>M: I didn’t study music like you, so I don’t really have any ideas about this.</p><p><br></p><p>W: You don’t need to study music to understand it. Just think about why you cry during a sad movie scene when the music plays or why you feel energized when you hear a happy song. Isn’t that right?</p><p><br></p><p>M: Yes, I think that’s why films always try to include at least one piece of music.</p>",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "Singers play a good role for young people",
@@ -479,7 +521,7 @@
     "questionType": "LISTENING",
     "id": "6957d526c88028aa29a1b998",
     "createdAt": "2026-01-02T14:24:38.160Z",
-    "updatedAt": "2026-01-02T14:24:38.160Z",
+    "updatedAt": "2026-06-17T09:37:55.023Z",
     "__v": 0
   },
   {
@@ -492,9 +534,15 @@
         "questionTitle": "University and technology",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776951562316_36497d61e37ef27d_audio_de8.mp3",
@@ -548,7 +596,7 @@
     "questionType": "LISTENING",
     "id": "6957d573c88028aa29a1b9a4",
     "createdAt": "2026-01-02T14:25:55.660Z",
-    "updatedAt": "2026-03-11T09:52:34.736Z",
+    "updatedAt": "2026-06-17T09:37:55.064Z",
     "__v": 0
   },
   {
@@ -561,9 +609,15 @@
         "questionTitle": "The politics",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364189458_583b282bf89a9a1b_audiotpa3_q9.mp3",
@@ -617,7 +671,7 @@
     "questionType": "LISTENING",
     "id": "6957d65ec88028aa29a1bc29",
     "createdAt": "2026-01-02T14:29:50.372Z",
-    "updatedAt": "2026-01-13T08:06:25.924Z",
+    "updatedAt": "2026-06-17T09:37:55.107Z",
     "__v": 0
   },
   {
@@ -630,9 +684,15 @@
         "questionTitle": "Urban farming",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364320772_29a26864ae566205_audiotpa3_q10.mp3",
@@ -686,7 +746,7 @@
     "questionType": "LISTENING",
     "id": "6957d6e2c88028aa29a1bc38",
     "createdAt": "2026-01-02T14:32:02.012Z",
-    "updatedAt": "2026-01-13T08:07:34.031Z",
+    "updatedAt": "2026-06-17T09:37:55.150Z",
     "__v": 0
   },
   {
@@ -699,9 +759,15 @@
         "questionTitle": "Local festivals",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364473792_1aca0fd48674bc4b_audiotpa3_q11.mp3",
@@ -755,7 +821,7 @@
     "questionType": "LISTENING",
     "id": "6957d77ac88028aa29a1bc47",
     "createdAt": "2026-01-02T14:34:34.446Z",
-    "updatedAt": "2026-01-13T08:08:29.776Z",
+    "updatedAt": "2026-06-17T09:37:55.194Z",
     "__v": 0
   },
   {
@@ -768,9 +834,15 @@
         "questionTitle": "Community design",
         "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
         "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
         ],
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767364622133_f41c6ef18ac34301_audiotpa3_q12.mp3",
@@ -824,70 +896,7 @@
     "questionType": "LISTENING",
     "id": "6957d80fc88028aa29a1bc56",
     "createdAt": "2026-01-02T14:37:03.180Z",
-    "updatedAt": "2026-01-13T08:09:53.623Z",
+    "updatedAt": "2026-06-17T09:37:55.236Z",
     "__v": 0
-  },
-  {
-    "_id": "b2c3d4e5f6a1b2c3d4e5f6a0",
-    "title": "homeschooling",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "subSuggestion": "",
-        "questionTitle": "homeschooling",
-        "content": "Bài nghe phần này sẽ là nữ nói trước",
-        "answerList": [
-          { "content": "Man" },
-          { "content": "Woman" },
-          { "content": "Both" }
-        ],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Statement 1",
-            "correctAnswer": "Man",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "b2c3d4e5f6a1b2c3d4e5f6a1"
-          },
-          {
-            "content": "Statement 2",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "b2c3d4e5f6a1b2c3d4e5f6a2"
-          },
-          {
-            "content": "Statement 3",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "b2c3d4e5f6a1b2c3d4e5f6a3"
-          },
-          {
-            "content": "Statement 4",
-            "correctAnswer": "Both",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "b2c3d4e5f6a1b2c3d4e5f6a4"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "b2c3d4e5f6a1b2c3d4e5f6a5"
-      }
-    ]
-  }             
+  }
 ]

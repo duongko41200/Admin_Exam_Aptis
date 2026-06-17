@@ -6,7 +6,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A break from studying (16-1)",
         "content": "k có audio",
         "answerList": null,
@@ -14,6 +13,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "Why hasn't he gone to college?\n",
@@ -63,7 +63,7 @@
     "questionType": "LISTENING",
     "id": "6957e8efc88028aa29a1cfab",
     "createdAt": "2026-01-02T15:49:03.877Z",
-    "updatedAt": "2026-01-02T15:49:03.877Z",
+    "updatedAt": "2026-06-17T09:37:55.323Z",
     "__v": 0
   },
   {
@@ -130,7 +130,7 @@
     "questionType": "LISTENING",
     "id": "6957e94bc88028aa29a1cfb5",
     "createdAt": "2026-01-02T15:50:35.919Z",
-    "updatedAt": "2026-03-23T10:18:19.338Z",
+    "updatedAt": "2026-06-17T09:37:55.364Z",
     "__v": 0
   },
   {
@@ -140,7 +140,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "The sport (16.2)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -148,6 +147,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What is this person's opinion on sports?",
@@ -197,7 +197,7 @@
     "questionType": "LISTENING",
     "id": "6957e9b2c88028aa29a1cfbf",
     "createdAt": "2026-01-02T15:52:18.341Z",
-    "updatedAt": "2026-01-02T15:52:18.341Z",
+    "updatedAt": "2026-06-17T09:37:55.407Z",
     "__v": 0
   },
   {
@@ -207,7 +207,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Television series (17.2)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -215,6 +214,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "Why is this series so popular?",
@@ -264,7 +264,7 @@
     "questionType": "LISTENING",
     "id": "6957ea28c88028aa29a1cfc9",
     "createdAt": "2026-01-02T15:54:16.624Z",
-    "updatedAt": "2026-01-02T15:54:16.624Z",
+    "updatedAt": "2026-06-17T09:37:55.449Z",
     "__v": 0
   },
   {
@@ -274,7 +274,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Advertising and sponsoring (16.3)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -282,6 +281,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What is the importance of advertising?",
@@ -331,7 +331,7 @@
     "questionType": "LISTENING",
     "id": "6957ea81c88028aa29a1cfd3",
     "createdAt": "2026-01-02T15:55:45.708Z",
-    "updatedAt": "2026-01-02T16:02:16.739Z",
+    "updatedAt": "2026-06-17T09:37:55.493Z",
     "__v": 0
   },
   {
@@ -341,7 +341,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Famous writers (17.3)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -349,6 +348,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What do these two famous writers have in common?",
@@ -398,7 +398,7 @@
     "questionType": "LISTENING",
     "id": "6957ec69c88028aa29a1d15d",
     "createdAt": "2026-01-02T16:03:53.455Z",
-    "updatedAt": "2026-01-02T16:03:53.455Z",
+    "updatedAt": "2026-06-17T09:37:55.538Z",
     "__v": 0
   },
   {
@@ -408,7 +408,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A regional development plan (16.4)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -416,6 +415,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "Why do residents oppose this plan?",
@@ -465,7 +465,7 @@
     "questionType": "LISTENING",
     "id": "6957ecbec88028aa29a1d167",
     "createdAt": "2026-01-02T16:05:18.601Z",
-    "updatedAt": "2026-01-02T16:05:18.601Z",
+    "updatedAt": "2026-06-17T09:37:55.582Z",
     "__v": 0
   },
   {
@@ -475,7 +475,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Life after university (17.4)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -483,6 +482,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What should students do when choosing a career?",
@@ -532,7 +532,7 @@
     "questionType": "LISTENING",
     "id": "6957ed0fc88028aa29a1d171",
     "createdAt": "2026-01-02T16:06:39.742Z",
-    "updatedAt": "2026-01-02T16:06:39.742Z",
+    "updatedAt": "2026-06-17T09:37:55.628Z",
     "__v": 0
   },
   {
@@ -542,7 +542,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Security cameras (16.5)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -550,6 +549,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "How should people feel about cameras in the workplace?",
@@ -599,7 +599,7 @@
     "questionType": "LISTENING",
     "id": "6957ed6ec88028aa29a1d17b",
     "createdAt": "2026-01-02T16:08:14.342Z",
-    "updatedAt": "2026-01-02T16:08:14.342Z",
+    "updatedAt": "2026-06-17T09:37:55.676Z",
     "__v": 0
   },
   {
@@ -609,7 +609,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A new novel of a famous writer (17.5)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -617,6 +616,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What is special about his new novel?",
@@ -666,7 +666,7 @@
     "questionType": "LISTENING",
     "id": "6957edb6c88028aa29a1d185",
     "createdAt": "2026-01-02T16:09:26.848Z",
-    "updatedAt": "2026-01-02T16:09:26.848Z",
+    "updatedAt": "2026-06-17T09:37:55.722Z",
     "__v": 0
   },
   {
@@ -676,7 +676,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A musician's life (16.6)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -684,6 +683,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What will this musician do in the near future?",
@@ -733,7 +733,7 @@
     "questionType": "LISTENING",
     "id": "6957edf5c88028aa29a1d18f",
     "createdAt": "2026-01-02T16:10:29.048Z",
-    "updatedAt": "2026-01-02T16:10:29.048Z",
+    "updatedAt": "2026-06-17T09:37:55.768Z",
     "__v": 0
   },
   {
@@ -743,7 +743,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A new guide (17.6)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -751,6 +750,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What is the advantage of this new guide?",
@@ -800,7 +800,7 @@
     "questionType": "LISTENING",
     "id": "6957ee3bc88028aa29a1d199",
     "createdAt": "2026-01-02T16:11:39.941Z",
-    "updatedAt": "2026-01-02T16:11:39.941Z",
+    "updatedAt": "2026-06-17T09:37:55.814Z",
     "__v": 0
   },
   {
@@ -810,7 +810,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "A research into happiness (16.7)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -818,6 +817,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "How has this research into happiness been responded to?",
@@ -867,7 +867,7 @@
     "questionType": "LISTENING",
     "id": "6957ee83c88028aa29a1d1a3",
     "createdAt": "2026-01-02T16:12:51.496Z",
-    "updatedAt": "2026-01-02T16:12:51.496Z",
+    "updatedAt": "2026-06-17T09:37:55.855Z",
     "__v": 0
   },
   {
@@ -877,7 +877,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Criticism of the new novel (17.7)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -885,6 +884,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What attracts readers to this novel?",
@@ -934,7 +934,7 @@
     "questionType": "LISTENING",
     "id": "6957eed0c88028aa29a1d1ad",
     "createdAt": "2026-01-02T16:14:08.872Z",
-    "updatedAt": "2026-01-02T16:14:08.872Z",
+    "updatedAt": "2026-06-17T09:37:55.900Z",
     "__v": 0
   },
   {
@@ -944,7 +944,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Writer's block (16.8)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -952,6 +951,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "What helps writers focus more on writing?",
@@ -1001,7 +1001,7 @@
     "questionType": "LISTENING",
     "id": "6957ef19c88028aa29a1d1b7",
     "createdAt": "2026-01-02T16:15:21.737Z",
-    "updatedAt": "2026-01-02T16:15:21.737Z",
+    "updatedAt": "2026-06-17T09:37:55.945Z",
     "__v": 0
   },
   {
@@ -1011,7 +1011,6 @@
     "description": null,
     "questions": [
       {
-        "subSuggestion": "",
         "questionTitle": "Professionalism at work (17.8)",
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
@@ -1019,6 +1018,7 @@
         "file": "",
         "subQuestionAnswerList": [],
         "suggestion": "",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "How is professionalism demonstrated at work?",
@@ -1068,543 +1068,7 @@
     "questionType": "LISTENING",
     "id": "6957ef66c88028aa29a1d1c1",
     "createdAt": "2026-01-02T16:16:38.622Z",
-    "updatedAt": "2026-01-02T16:16:38.622Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c113ffe521b65aeedbe51e",
-    "title": "Cycling expedition",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Cycling expedition",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What is the speaker's advice?",
-            "correctAnswer": "Be well informed of the places you are going to visit.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Always carry extra water and food supplies."
-              },
-              {
-                "content": "Be well informed of the places you are going to visit."
-              },
-              {
-                "content": "Avoid cycling on rough terrain."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c113ffe521b65aeedbe520"
-          },
-          {
-            "content": "What is the speaker's advice in general?",
-            "correctAnswer": "Knowing the people and cultures in the different countries.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Only visit places with good weather conditions."
-              },
-              {
-                "content": "Cycle at your own pace without worrying about the destination."
-              },
-              {
-                "content": "Knowing the people and cultures in the different countries."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c113ffe521b65aeedbe521"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c113ffe521b65aeedbe51f"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c113ffe521b65aeedbe522",
-    "createdAt": "2026-03-23T10:20:47.154Z",
-    "updatedAt": "2026-03-23T10:20:47.154Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c113a6e521b65aeedbe4f4",
-    "title": "Nutritionist",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Nutritionist",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "When did she become a Nutritionist?",
-            "correctAnswer": "When she did a biology degree.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "When she worked at a healthcare center."
-              },
-              {
-                "content": "When she did a biology degree."
-              },
-              {
-                "content": "After working in a hospital."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c113a6e521b65aeedbe4f6"
-          },
-          {
-            "content": "When did she become famous?",
-            "correctAnswer": "After solving people's problems in a helpline.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "After appearing on a famous TV show."
-              },
-              {
-                "content": "After solving people's problems in a helpline."
-              },
-              {
-                "content": "After inventing a new type of food."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c113a6e521b65aeedbe4f7"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c113a6e521b65aeedbe4f5"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c113a6e521b65aeedbe4f8",
-    "createdAt": "2026-03-23T10:19:18.468Z",
-    "updatedAt": "2026-03-23T10:19:18.468Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c112c7e521b65aeedbe4b6",
-    "title": "The importance of sleep",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "The importance of sleep",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What is the way to have a good sleep according to the speaker?",
-            "correctAnswer": "Blocking out noise and light is key",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Blocking out noise and light is key"
-              },
-              {
-                "content": "Drinking coffee before bed helps relax the mind"
-              },
-              {
-                "content": "Sleeping fewer hours increases deep sleep quality"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c112c7e521b65aeedbe4b8"
-          },
-          {
-            "content": "What is the speaker's view on insomnia in general?",
-            "correctAnswer": "People can't always recognize the symptoms of tiredness",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Most people with insomnia actually sleep too much"
-              },
-              {
-                "content": "Insomnia is caused only by physical health problems"
-              },
-              {
-                "content": "People can't always recognize the symptoms of tiredness"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c112c7e521b65aeedbe4b9"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c112c7e521b65aeedbe4b7"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c112c7e521b65aeedbe4ba",
-    "createdAt": "2026-03-23T10:15:35.859Z",
-    "updatedAt": "2026-03-23T10:15:35.859Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c11275e521b65aeedbe49d",
-    "title": "Managing financial spending",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Managing financial spending",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What should you do to better control your short-term spending?",
-            "correctAnswer": "Monitor your spending for a weekly plan",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Avoid all unnecessary purchases entirely"
-              },
-              {
-                "content": "Monitor your spending for a weekly plan"
-              },
-              {
-                "content": "Use only cash instead of cards"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11275e521b65aeedbe49f"
-          },
-          {
-            "content": "What should you do to better control your long-term spending?",
-            "correctAnswer": "Seek advice from someone who have experience",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Seek advice from someone who have experience"
-              },
-              {
-                "content": "Stop spending on entertainment altogether"
-              },
-              {
-                "content": "Track every single expense daily"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11275e521b65aeedbe4a0"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c11275e521b65aeedbe49e"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c11275e521b65aeedbe4a1",
-    "createdAt": "2026-03-23T10:14:13.990Z",
-    "updatedAt": "2026-03-23T10:14:13.990Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c11227e521b65aeedbe484",
-    "title": "Work from home",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Work from home",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "How does she feel about working from home?",
-            "correctAnswer": "It wasn't as good as she expected",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It gave her more free time than expected"
-              },
-              {
-                "content": "It helped her become more productive"
-              },
-              {
-                "content": "It wasn't as good as she expected"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11227e521b65aeedbe486"
-          },
-          {
-            "content": "What is her opinion on working from home in general?",
-            "correctAnswer": "It depends on your situation and personality",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It's better than working in an office for everyone"
-              },
-              {
-                "content": "It should be avoided whenever possible"
-              },
-              {
-                "content": "It depends on your situation and personality"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11227e521b65aeedbe487"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c11227e521b65aeedbe485"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c11227e521b65aeedbe488",
-    "createdAt": "2026-03-23T10:12:55.257Z",
-    "updatedAt": "2026-03-23T10:12:55.257Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c111e5e521b65aeedbe46b",
-    "title": "A new restaurant",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "A new restaurant",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "How is this restaurant reviewed by customers?",
-            "correctAnswer": "The standard of service wasn’t good",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The food was too exotic for locals"
-              },
-              {
-                "content": "The standard of service wasn’t good"
-              },
-              {
-                "content": "The location is difficult to find"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c111e5e521b65aeedbe46d"
-          },
-          {
-            "content": "What should this restaurant do?",
-            "correctAnswer": "They need to make the customers feel valued and welcome",
-            "file": null,
-            "answerList": [
-              {
-                "content": "They need to make the customers feel valued and welcome"
-              },
-              {
-                "content": "They should increase their prices for profit"
-              },
-              {
-                "content": "They need to focus only on online orders"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c111e5e521b65aeedbe46e"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c111e5e521b65aeedbe46c"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c111e5e521b65aeedbe46f",
-    "createdAt": "2026-03-23T10:11:49.777Z",
-    "updatedAt": "2026-03-23T10:11:49.777Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c111a3e521b65aeedbe449",
-    "title": "Script production",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Script production",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What is the speaker's opinion on this script?",
-            "correctAnswer": "The characters' background are not adequately explored",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The dialogue is too complex for viewers"
-              },
-              {
-                "content": "The setting feels too unrealistic"
-              },
-              {
-                "content": "The characters' background are not adequately explored"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c111a3e521b65aeedbe44b"
-          },
-          {
-            "content": "How do industries impact script production?",
-            "correctAnswer": "The new industry demands have a negative influence.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "They increase audience engagement significantly"
-              },
-              {
-                "content": "They provide more creative freedom to writers"
-              },
-              {
-                "content": "The new industry demands have a negative influence."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c111a3e521b65aeedbe44c"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c111a3e521b65aeedbe44a"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c111a3e521b65aeedbe44d",
-    "createdAt": "2026-03-23T10:10:43.061Z",
-    "updatedAt": "2026-03-23T10:10:43.061Z",
-    "__v": 0
-  },
-  {
-    "_id": "69c11138e521b65aeedbe41f",
-    "title": "A promotion campaign for a product",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "A promotion campaign for a product",
-        "content": "Không có audio, học viên học thuộc đáp án",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><br></p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What do people think about this promotion campaign?",
-            "correctAnswer": "It is making exaggerated claims",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It is making exaggerated claims"
-              },
-              {
-                "content": "It is being ignored completely"
-              },
-              {
-                "content": "It is too simple to be effective"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11138e521b65aeedbe421"
-          },
-          {
-            "content": "What does the speaker think about this campaign?",
-            "correctAnswer": "It costs too much to make to be profitable",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It is reaching the wrong audience"
-              },
-              {
-                "content": "It costs too much to make to be profitable"
-              },
-              {
-                "content": "It lacks creativity"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "69c11138e521b65aeedbe422"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69c11138e521b65aeedbe420"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69c11138e521b65aeedbe423",
-    "createdAt": "2026-03-23T10:08:56.278Z",
-    "updatedAt": "2026-03-23T10:08:56.278Z",
+    "updatedAt": "2026-06-17T09:37:55.988Z",
     "__v": 0
   },
   {
@@ -1671,7 +1135,543 @@
     "questionType": "LISTENING",
     "id": "69c110d7e521b65aeedbe401",
     "createdAt": "2026-03-23T10:07:19.938Z",
-    "updatedAt": "2026-03-23T10:07:19.938Z",
+    "updatedAt": "2026-06-17T09:37:56.412Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11138e521b65aeedbe41f",
+    "title": "A promotion campaign for a product",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A promotion campaign for a product",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><br></p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do people think about this promotion campaign?",
+            "correctAnswer": "It is making exaggerated claims",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is making exaggerated claims"
+              },
+              {
+                "content": "It is being ignored completely"
+              },
+              {
+                "content": "It is too simple to be effective"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11138e521b65aeedbe421"
+          },
+          {
+            "content": "What does the speaker think about this campaign?",
+            "correctAnswer": "It costs too much to make to be profitable",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It is reaching the wrong audience"
+              },
+              {
+                "content": "It costs too much to make to be profitable"
+              },
+              {
+                "content": "It lacks creativity"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11138e521b65aeedbe422"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11138e521b65aeedbe420"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11138e521b65aeedbe423",
+    "createdAt": "2026-03-23T10:08:56.278Z",
+    "updatedAt": "2026-06-17T09:37:56.367Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c111a3e521b65aeedbe449",
+    "title": "Script production",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Script production",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the speaker's opinion on this script?",
+            "correctAnswer": "The characters' background are not adequately explored",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The dialogue is too complex for viewers"
+              },
+              {
+                "content": "The setting feels too unrealistic"
+              },
+              {
+                "content": "The characters' background are not adequately explored"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111a3e521b65aeedbe44b"
+          },
+          {
+            "content": "How do industries impact script production?",
+            "correctAnswer": "The new industry demands have a negative influence.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They increase audience engagement significantly"
+              },
+              {
+                "content": "They provide more creative freedom to writers"
+              },
+              {
+                "content": "The new industry demands have a negative influence."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111a3e521b65aeedbe44c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c111a3e521b65aeedbe44a"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c111a3e521b65aeedbe44d",
+    "createdAt": "2026-03-23T10:10:43.061Z",
+    "updatedAt": "2026-06-17T09:37:56.324Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c111e5e521b65aeedbe46b",
+    "title": "A new restaurant",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A new restaurant",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How is this restaurant reviewed by customers?",
+            "correctAnswer": "The standard of service wasn’t good",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The food was too exotic for locals"
+              },
+              {
+                "content": "The standard of service wasn’t good"
+              },
+              {
+                "content": "The location is difficult to find"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111e5e521b65aeedbe46d"
+          },
+          {
+            "content": "What should this restaurant do?",
+            "correctAnswer": "They need to make the customers feel valued and welcome",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They need to make the customers feel valued and welcome"
+              },
+              {
+                "content": "They should increase their prices for profit"
+              },
+              {
+                "content": "They need to focus only on online orders"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c111e5e521b65aeedbe46e"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c111e5e521b65aeedbe46c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c111e5e521b65aeedbe46f",
+    "createdAt": "2026-03-23T10:11:49.777Z",
+    "updatedAt": "2026-06-17T09:37:56.277Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11227e521b65aeedbe484",
+    "title": "Work from home",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work from home",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How does she feel about working from home?",
+            "correctAnswer": "It wasn't as good as she expected",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It gave her more free time than expected"
+              },
+              {
+                "content": "It helped her become more productive"
+              },
+              {
+                "content": "It wasn't as good as she expected"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11227e521b65aeedbe486"
+          },
+          {
+            "content": "What is her opinion on working from home in general?",
+            "correctAnswer": "It depends on your situation and personality",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It's better than working in an office for everyone"
+              },
+              {
+                "content": "It should be avoided whenever possible"
+              },
+              {
+                "content": "It depends on your situation and personality"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11227e521b65aeedbe487"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11227e521b65aeedbe485"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11227e521b65aeedbe488",
+    "createdAt": "2026-03-23T10:12:55.257Z",
+    "updatedAt": "2026-06-17T09:37:56.231Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c11275e521b65aeedbe49d",
+    "title": "Managing financial spending",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Managing financial spending",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What should you do to better control your short-term spending?",
+            "correctAnswer": "Monitor your spending for a weekly plan",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Avoid all unnecessary purchases entirely"
+              },
+              {
+                "content": "Monitor your spending for a weekly plan"
+              },
+              {
+                "content": "Use only cash instead of cards"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11275e521b65aeedbe49f"
+          },
+          {
+            "content": "What should you do to better control your long-term spending?",
+            "correctAnswer": "Seek advice from someone who have experience",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Seek advice from someone who have experience"
+              },
+              {
+                "content": "Stop spending on entertainment altogether"
+              },
+              {
+                "content": "Track every single expense daily"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c11275e521b65aeedbe4a0"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c11275e521b65aeedbe49e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c11275e521b65aeedbe4a1",
+    "createdAt": "2026-03-23T10:14:13.990Z",
+    "updatedAt": "2026-06-17T09:37:56.170Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c112c7e521b65aeedbe4b6",
+    "title": "The importance of sleep",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The importance of sleep",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the way to have a good sleep according to the speaker?",
+            "correctAnswer": "Blocking out noise and light is key",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Blocking out noise and light is key"
+              },
+              {
+                "content": "Drinking coffee before bed helps relax the mind"
+              },
+              {
+                "content": "Sleeping fewer hours increases deep sleep quality"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c112c7e521b65aeedbe4b8"
+          },
+          {
+            "content": "What is the speaker's view on insomnia in general?",
+            "correctAnswer": "People can't always recognize the symptoms of tiredness",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Most people with insomnia actually sleep too much"
+              },
+              {
+                "content": "Insomnia is caused only by physical health problems"
+              },
+              {
+                "content": "People can't always recognize the symptoms of tiredness"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c112c7e521b65aeedbe4b9"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c112c7e521b65aeedbe4b7"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c112c7e521b65aeedbe4ba",
+    "createdAt": "2026-03-23T10:15:35.859Z",
+    "updatedAt": "2026-06-17T09:37:56.127Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c113a6e521b65aeedbe4f4",
+    "title": "Nutritionist",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Nutritionist",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "When did she become a Nutritionist?",
+            "correctAnswer": "When she did a biology degree.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "When she worked at a healthcare center."
+              },
+              {
+                "content": "When she did a biology degree."
+              },
+              {
+                "content": "After working in a hospital."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113a6e521b65aeedbe4f6"
+          },
+          {
+            "content": "When did she become famous?",
+            "correctAnswer": "After solving people's problems in a helpline.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "After appearing on a famous TV show."
+              },
+              {
+                "content": "After solving people's problems in a helpline."
+              },
+              {
+                "content": "After inventing a new type of food."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113a6e521b65aeedbe4f7"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c113a6e521b65aeedbe4f5"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c113a6e521b65aeedbe4f8",
+    "createdAt": "2026-03-23T10:19:18.468Z",
+    "updatedAt": "2026-06-17T09:37:56.080Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c113ffe521b65aeedbe51e",
+    "title": "Cycling expedition",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Cycling expedition",
+        "content": "Không có audio, học viên học thuộc đáp án",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the speaker's advice?",
+            "correctAnswer": "Be well informed of the places you are going to visit.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Always carry extra water and food supplies."
+              },
+              {
+                "content": "Be well informed of the places you are going to visit."
+              },
+              {
+                "content": "Avoid cycling on rough terrain."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113ffe521b65aeedbe520"
+          },
+          {
+            "content": "What is the speaker's advice in general?",
+            "correctAnswer": "Knowing the people and cultures in the different countries.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Only visit places with good weather conditions."
+              },
+              {
+                "content": "Cycle at your own pace without worrying about the destination."
+              },
+              {
+                "content": "Knowing the people and cultures in the different countries."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69c113ffe521b65aeedbe521"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69c113ffe521b65aeedbe51f"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69c113ffe521b65aeedbe522",
+    "createdAt": "2026-03-23T10:20:47.154Z",
+    "updatedAt": "2026-06-17T09:37:56.032Z",
     "__v": 0
   },
   {
@@ -1738,7 +1738,7 @@
     "questionType": "LISTENING",
     "id": "69e8e9575e1769f65cd38e9b",
     "createdAt": "2026-04-22T15:29:27.691Z",
-    "updatedAt": "2026-04-22T15:29:27.691Z",
+    "updatedAt": "2026-06-17T09:37:56.458Z",
     "__v": 0
   },
   {
@@ -1805,7 +1805,7 @@
     "questionType": "LISTENING",
     "id": "69e8ea515e1769f65cd38ef8",
     "createdAt": "2026-04-22T15:33:37.293Z",
-    "updatedAt": "2026-04-22T15:33:37.293Z",
+    "updatedAt": "2026-06-17T09:37:56.503Z",
     "__v": 0
   },
   {
@@ -1872,7 +1872,7 @@
     "questionType": "LISTENING",
     "id": "69e8eac45e1769f65cd38f1d",
     "createdAt": "2026-04-22T15:35:32.509Z",
-    "updatedAt": "2026-04-22T15:35:32.509Z",
+    "updatedAt": "2026-06-17T09:37:56.547Z",
     "__v": 0
   },
   {
@@ -1939,7 +1939,7 @@
     "questionType": "LISTENING",
     "id": "69e8eb905e1769f65cd38f8e",
     "createdAt": "2026-04-22T15:38:56.544Z",
-    "updatedAt": "2026-04-22T15:38:56.544Z",
+    "updatedAt": "2026-06-17T09:37:56.592Z",
     "__v": 0
   },
   {
@@ -2006,7 +2006,7 @@
     "questionType": "LISTENING",
     "id": "69e8ebfa5e1769f65cd38fa7",
     "createdAt": "2026-04-22T15:40:42.381Z",
-    "updatedAt": "2026-04-22T15:40:42.381Z",
+    "updatedAt": "2026-06-17T09:37:56.638Z",
     "__v": 0
   },
   {
@@ -2073,7 +2073,7 @@
     "questionType": "LISTENING",
     "id": "69e8ecce5e1769f65cd39007",
     "createdAt": "2026-04-22T15:44:14.437Z",
-    "updatedAt": "2026-04-22T15:44:14.437Z",
+    "updatedAt": "2026-06-17T09:37:56.687Z",
     "__v": 0
   },
   {
@@ -2140,7 +2140,7 @@
     "questionType": "LISTENING",
     "id": "69e8ed255e1769f65cd39014",
     "createdAt": "2026-04-22T15:45:41.008Z",
-    "updatedAt": "2026-04-22T15:45:41.008Z",
+    "updatedAt": "2026-06-17T09:37:56.736Z",
     "__v": 0
   },
   {
@@ -2207,7 +2207,7 @@
     "questionType": "LISTENING",
     "id": "69e8f0845e1769f65cd390d5",
     "createdAt": "2026-04-22T16:00:04.007Z",
-    "updatedAt": "2026-04-22T16:00:04.007Z",
+    "updatedAt": "2026-06-17T09:37:56.783Z",
     "__v": 0
   },
   {
@@ -2274,7 +2274,7 @@
     "questionType": "LISTENING",
     "id": "69e8f7cf5e1769f65cd39197",
     "createdAt": "2026-04-22T16:31:11.803Z",
-    "updatedAt": "2026-04-22T16:31:11.803Z",
+    "updatedAt": "2026-06-17T09:37:56.831Z",
     "__v": 0
   },
   {
@@ -2341,7 +2341,7 @@
     "questionType": "LISTENING",
     "id": "69e8f82e5e1769f65cd391b3",
     "createdAt": "2026-04-22T16:32:46.208Z",
-    "updatedAt": "2026-04-22T16:32:46.208Z",
+    "updatedAt": "2026-06-17T09:37:56.875Z",
     "__v": 0
   },
   {
@@ -2408,7 +2408,7 @@
     "questionType": "LISTENING",
     "id": "69e8f89e5e1769f65cd391d5",
     "createdAt": "2026-04-22T16:34:38.991Z",
-    "updatedAt": "2026-04-22T16:34:38.991Z",
+    "updatedAt": "2026-06-17T09:37:56.923Z",
     "__v": 0
   },
   {
@@ -2475,7 +2475,7 @@
     "questionType": "LISTENING",
     "id": "69e8f8ea5e1769f65cd391f4",
     "createdAt": "2026-04-22T16:35:54.034Z",
-    "updatedAt": "2026-04-22T16:36:32.360Z",
+    "updatedAt": "2026-06-17T09:37:56.969Z",
     "__v": 0
   },
   {
@@ -2542,7 +2542,7 @@
     "questionType": "LISTENING",
     "id": "69e8fa435e1769f65cd392c1",
     "createdAt": "2026-04-22T16:41:39.989Z",
-    "updatedAt": "2026-04-22T16:41:39.989Z",
+    "updatedAt": "2026-06-17T09:37:57.012Z",
     "__v": 0
   },
   {
@@ -2609,7 +2609,7 @@
     "questionType": "LISTENING",
     "id": "69e8fae15e1769f65cd3932c",
     "createdAt": "2026-04-22T16:44:17.574Z",
-    "updatedAt": "2026-04-22T16:44:17.574Z",
+    "updatedAt": "2026-06-17T09:37:57.056Z",
     "__v": 0
   },
   {
@@ -2676,7 +2676,7 @@
     "questionType": "LISTENING",
     "id": "69e8fb415e1769f65cd39339",
     "createdAt": "2026-04-22T16:45:53.603Z",
-    "updatedAt": "2026-04-22T16:45:53.603Z",
+    "updatedAt": "2026-06-17T09:37:57.104Z",
     "__v": 0
   },
   {
@@ -2743,7 +2743,7 @@
     "questionType": "LISTENING",
     "id": "69ea2fad94821544ed40fb65",
     "createdAt": "2026-04-23T14:41:49.729Z",
-    "updatedAt": "2026-04-23T14:42:15.193Z",
+    "updatedAt": "2026-06-17T09:37:57.149Z",
     "__v": 0
   },
   {
@@ -2810,7 +2810,7 @@
     "questionType": "LISTENING",
     "id": "69ea30ce94821544ed40fbe5",
     "createdAt": "2026-04-23T14:46:38.948Z",
-    "updatedAt": "2026-04-23T14:46:38.948Z",
+    "updatedAt": "2026-06-17T09:37:57.192Z",
     "__v": 0
   },
   {
@@ -2877,7 +2877,7 @@
     "questionType": "LISTENING",
     "id": "69ea313b94821544ed40fbf2",
     "createdAt": "2026-04-23T14:48:27.960Z",
-    "updatedAt": "2026-04-23T14:48:27.960Z",
+    "updatedAt": "2026-06-17T09:37:57.233Z",
     "__v": 0
   },
   {
@@ -2944,7 +2944,7 @@
     "questionType": "LISTENING",
     "id": "69ea321a94821544ed40fc11",
     "createdAt": "2026-04-23T14:52:10.450Z",
-    "updatedAt": "2026-04-23T14:53:02.018Z",
+    "updatedAt": "2026-06-17T09:37:57.274Z",
     "__v": 0
   },
   {
@@ -3011,7 +3011,7 @@
     "questionType": "LISTENING",
     "id": "69ea32a994821544ed40fc4c",
     "createdAt": "2026-04-23T14:54:33.760Z",
-    "updatedAt": "2026-04-23T14:54:33.760Z",
+    "updatedAt": "2026-06-17T09:37:57.317Z",
     "__v": 0
   },
   {
@@ -3078,7 +3078,7 @@
     "questionType": "LISTENING",
     "id": "69ea334394821544ed40fc79",
     "createdAt": "2026-04-23T14:57:07.043Z",
-    "updatedAt": "2026-04-23T14:57:07.043Z",
+    "updatedAt": "2026-06-17T09:37:57.359Z",
     "__v": 0
   },
   {
@@ -3145,7 +3145,7 @@
     "questionType": "LISTENING",
     "id": "69ea334e94821544ed40fc8f",
     "createdAt": "2026-04-23T14:57:18.435Z",
-    "updatedAt": "2026-04-23T14:57:18.435Z",
+    "updatedAt": "2026-06-17T09:37:57.400Z",
     "__v": 0
   },
   {
@@ -3212,7 +3212,7 @@
     "questionType": "LISTENING",
     "id": "69ea33fb94821544ed40fca2",
     "createdAt": "2026-04-23T15:00:11.310Z",
-    "updatedAt": "2026-04-23T15:00:11.310Z",
+    "updatedAt": "2026-06-17T09:37:57.442Z",
     "__v": 0
   },
   {
@@ -3279,7 +3279,7 @@
     "questionType": "LISTENING",
     "id": "69ea347894821544ed40fcbe",
     "createdAt": "2026-04-23T15:02:16.317Z",
-    "updatedAt": "2026-04-23T15:02:16.317Z",
+    "updatedAt": "2026-06-17T09:37:57.486Z",
     "__v": 0
   },
   {
@@ -3346,7 +3346,7 @@
     "questionType": "LISTENING",
     "id": "69ea379a94821544ed40fd60",
     "createdAt": "2026-04-23T15:15:38.816Z",
-    "updatedAt": "2026-04-23T15:17:17.507Z",
+    "updatedAt": "2026-06-17T09:37:57.532Z",
     "__v": 0
   },
   {
@@ -3413,7 +3413,7 @@
     "questionType": "LISTENING",
     "id": "69ea386c94821544ed40fde4",
     "createdAt": "2026-04-23T15:19:08.026Z",
-    "updatedAt": "2026-04-23T15:19:08.026Z",
+    "updatedAt": "2026-06-17T09:37:57.575Z",
     "__v": 0
   },
   {
@@ -3480,7 +3480,7 @@
     "questionType": "LISTENING",
     "id": "69ea3cb494821544ed40fe52",
     "createdAt": "2026-04-23T15:37:24.266Z",
-    "updatedAt": "2026-04-23T15:37:24.266Z",
+    "updatedAt": "2026-06-17T09:37:57.622Z",
     "__v": 0
   },
   {
@@ -3547,7 +3547,7 @@
     "questionType": "LISTENING",
     "id": "69ea3f1494821544ed40fef3",
     "createdAt": "2026-04-23T15:47:32.914Z",
-    "updatedAt": "2026-04-23T15:47:32.914Z",
+    "updatedAt": "2026-06-17T09:37:57.669Z",
     "__v": 0
   },
   {
@@ -3614,7 +3614,7 @@
     "questionType": "LISTENING",
     "id": "69ea401494821544ed40ffa4",
     "createdAt": "2026-04-23T15:51:48.188Z",
-    "updatedAt": "2026-04-23T15:52:42.478Z",
+    "updatedAt": "2026-06-17T09:37:57.715Z",
     "__v": 0
   },
   {
@@ -3681,14 +3681,17 @@
     "questionType": "LISTENING",
     "id": "69ea40a594821544ed40fffc",
     "createdAt": "2026-04-23T15:54:13.016Z",
-    "updatedAt": "2026-04-23T15:54:13.016Z",
+    "updatedAt": "2026-06-17T09:37:57.764Z",
     "__v": 0
   },
   {
     "_id": "69fb00000000000000000001",
-    "title": "The Music Industry",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "__v": 0,
+    "createdAt": "2026-06-17T09:37:57.810Z",
     "description": null,
+    "id": "69fb00000000000000000005",
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "The Music Industry",
@@ -3705,9 +3708,15 @@
             "correctAnswer": "Belief in her musical instincts",
             "file": null,
             "answerList": [
-              { "content": "Following the latest music trends" },
-              { "content": "Copying other successful artists" },
-              { "content": "Belief in her musical instincts" }
+              {
+                "content": "Following the latest music trends"
+              },
+              {
+                "content": "Copying other successful artists"
+              },
+              {
+                "content": "Belief in her musical instincts"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3718,9 +3727,15 @@
             "correctAnswer": "Performers find it difficult to start their careers",
             "file": null,
             "answerList": [
-              { "content": "The industry supports new artists very well" },
-              { "content": "Performers find it difficult to start their careers" },
-              { "content": "There are too many music genres today" }
+              {
+                "content": "The industry supports new artists very well"
+              },
+              {
+                "content": "Performers find it difficult to start their careers"
+              },
+              {
+                "content": "There are too many music genres today"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3732,18 +3747,18 @@
         "_id": "69fb00000000000000000004"
       }
     ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69fb00000000000000000005",
-    "createdAt": "2026-06-09T00:00:00.000Z",
-    "updatedAt": "2026-06-09T00:00:00.000Z",
-    "__v": 0
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "The Music Industry",
+    "updatedAt": "2026-06-17T09:37:57.810Z"
   },
   {
     "_id": "69fb00000000000000000006",
-    "title": "Productivity",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "__v": 0,
+    "createdAt": "2026-06-17T09:37:57.856Z",
     "description": null,
+    "id": "69fb0000000000000000000a",
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "Productivity",
@@ -3760,9 +3775,15 @@
             "correctAnswer": "By managing time effectively",
             "file": null,
             "answerList": [
-              { "content": "By working longer hours each day" },
-              { "content": "By managing time effectively" },
-              { "content": "By avoiding all distractions completely" }
+              {
+                "content": "By working longer hours each day"
+              },
+              {
+                "content": "By managing time effectively"
+              },
+              {
+                "content": "By avoiding all distractions completely"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3773,9 +3794,15 @@
             "correctAnswer": "Using them effectively requires effort",
             "file": null,
             "answerList": [
-              { "content": "They only work for certain types of people" },
-              { "content": "They are too expensive to implement" },
-              { "content": "Using them effectively requires effort" }
+              {
+                "content": "They only work for certain types of people"
+              },
+              {
+                "content": "They are too expensive to implement"
+              },
+              {
+                "content": "Using them effectively requires effort"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3787,18 +3814,18 @@
         "_id": "69fb00000000000000000009"
       }
     ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69fb0000000000000000000a",
-    "createdAt": "2026-06-09T00:00:00.000Z",
-    "updatedAt": "2026-06-09T00:00:00.000Z",
-    "__v": 0
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "Productivity",
+    "updatedAt": "2026-06-17T09:37:57.856Z"
   },
   {
     "_id": "69fb0000000000000000000b",
-    "title": "A Book Critic Talks About A Biography",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "__v": 0,
+    "createdAt": "2026-06-17T09:37:57.900Z",
     "description": null,
+    "id": "69fb0000000000000000000f",
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "A Book Critic Talks About A Biography",
@@ -3815,9 +3842,15 @@
             "correctAnswer": "The book describes a particular historical period very effectively",
             "file": null,
             "answerList": [
-              { "content": "The author is very well known in the field" },
-              { "content": "The book describes a particular historical period very effectively" },
-              { "content": "It is shorter than most other biographies" }
+              {
+                "content": "The author is very well known in the field"
+              },
+              {
+                "content": "The book describes a particular historical period very effectively"
+              },
+              {
+                "content": "It is shorter than most other biographies"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3828,9 +3861,15 @@
             "correctAnswer": "It is an unconventional biography",
             "file": null,
             "answerList": [
-              { "content": "It follows the typical style of most biographies" },
-              { "content": "It is too long and difficult to read" },
-              { "content": "It is an unconventional biography" }
+              {
+                "content": "It follows the typical style of most biographies"
+              },
+              {
+                "content": "It is too long and difficult to read"
+              },
+              {
+                "content": "It is an unconventional biography"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3842,18 +3881,18 @@
         "_id": "69fb0000000000000000000e"
       }
     ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69fb0000000000000000000f",
-    "createdAt": "2026-06-09T00:00:00.000Z",
-    "updatedAt": "2026-06-09T00:00:00.000Z",
-    "__v": 0
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "A Book Critic Talks About A Biography",
+    "updatedAt": "2026-06-17T09:37:57.900Z"
   },
   {
     "_id": "69fb00000000000000000010",
-    "title": "Podcasting",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "__v": 0,
+    "createdAt": "2026-06-17T09:37:57.950Z",
     "description": null,
+    "id": "69fb00000000000000000014",
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "Podcasting",
@@ -3870,9 +3909,15 @@
             "correctAnswer": "Content creators do not promote their shows",
             "file": null,
             "answerList": [
-              { "content": "Episodes are too long and boring" },
-              { "content": "The audio quality is too poor to attract listeners" },
-              { "content": "Content creators do not promote their shows" }
+              {
+                "content": "Episodes are too long and boring"
+              },
+              {
+                "content": "The audio quality is too poor to attract listeners"
+              },
+              {
+                "content": "Content creators do not promote their shows"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3883,9 +3928,15 @@
             "correctAnswer": "It is a great way to build a community",
             "file": null,
             "answerList": [
-              { "content": "It is a great way to build a community" },
-              { "content": "It is less popular than other media" },
-              { "content": "It is too expensive to produce" }
+              {
+                "content": "It is a great way to build a community"
+              },
+              {
+                "content": "It is less popular than other media"
+              },
+              {
+                "content": "It is too expensive to produce"
+              }
             ],
             "image": null,
             "suggestion": null,
@@ -3897,11 +3948,8 @@
         "_id": "69fb00000000000000000013"
       }
     ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "69fb00000000000000000014",
-    "createdAt": "2026-06-09T00:00:00.000Z",
-    "updatedAt": "2026-06-09T00:00:00.000Z",
-    "__v": 0
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "Podcasting",
+    "updatedAt": "2026-06-17T09:37:57.950Z"
   }
 ]
