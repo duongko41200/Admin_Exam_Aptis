@@ -3310,5 +3310,281 @@
         "createdAt": "2026-01-20T15:44:32.616Z",
         "updatedAt": "2026-01-22T03:00:03.986Z",
         "__v": 0
+    },
+    {
+        "_id": "697192b3d158761fc1003f07",
+        "title": "Đề mới bổ sung",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+            {
+                "questionTitle": "Phần thi mới thêm (Q36-Q54)",
+                "content": "Phần thi mới thêm (Q36-Q54)",
+                "answerList": [],
+                "correctAnswer": "",
+                "file": null,
+                "subQuestionAnswerList": [],
+                "suggestion": null,
+                "subSuggestion": "",
+                "subQuestion": [
+                    {
+                        "content": "What time does the party start?",
+                        "correctAnswer": "Three o’clock",
+                        "file": "/audio/question1_13/2026_T5/01_aptiskey_com_three_oclock.mp3",
+                        "answerList": [
+                            { "content": "Five o’clock" },
+                            { "content": "Four o’clock" },
+                            { "content": "Three o’clock" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004036"
+                    },
+                    {
+                        "content": "Where is she taking the staff to?",
+                        "correctAnswer": "To a different country",
+                        "file": "/audio/question1_13/2026_T5/02_aptiskey_com_different_country.mp3",
+                        "answerList": [
+                            { "content": "To a different city" },
+                            { "content": "To a different country" },
+                            { "content": "To a village" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004037"
+                    },
+                    {
+                        "content": "Which bus stop number is near the boy's house?",
+                        "correctAnswer": "Eight",
+                        "file": "/audio/question1_13/2026_T5/03_aptiskey_com_8minute.mp3",
+                        "answerList": [
+                            { "content": "Ten" },
+                            { "content": "Nine" },
+                            { "content": "Eight" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004038"
+                    },
+                    {
+                        "content": "Why can't he do that job today?",
+                        "correctAnswer": "He has another appointment",
+                        "file": "/audio/question1_13/2026_T5/04_aptiskey_com_another_appointment.mp3",
+                        "answerList": [
+                            { "content": "He has another appointment" },
+                            { "content": "He is sick" },
+                            { "content": "He has to eat" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004039"
+                    },
+                    {
+                        "content": "Which room will the director's presentation be in?",
+                        "correctAnswer": "The meeting room",
+                        "file": "/audio/question1_13/2026_T5/05_aptiskey_com_meeting_room.mp3",
+                        "answerList": [
+                            { "content": "The main hall" },
+                            { "content": "The lecture room" },
+                            { "content": "The meeting room" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004040"
+                    },
+                    {
+                        "content": "How much money is left in the kitchen?",
+                        "correctAnswer": "10 pounds",
+                        "file": "/audio/question1_13/2026_T5/06_aptiskey_com_10_pound.mp3",
+                        "answerList": [
+                            { "content": "20 pounds" },
+                            { "content": "10 pounds" },
+                            { "content": "30 pounds" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004041"
+                    },
+                    {
+                        "content": "What is the new medical center next to?",
+                        "correctAnswer": "Train station",
+                        "file": "/audio/question1_13/2026_T5/07_aptiskey_com_train_station.mp3",
+                        "answerList": [
+                            { "content": "A bus station" },
+                            { "content": "Train station" },
+                            { "content": "An airport" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004042"
+                    },
+                    {
+                        "content": "What time do they arrange the meeting?",
+                        "correctAnswer": "5:30 pm",
+                        "file": "/audio/question1_13/2026_T5/08_aptiskey_com_5h30.mp3",
+                        "answerList": [
+                            { "content": "5:30 pm" },
+                            { "content": "4:00 pm" },
+                            { "content": "4:30 pm" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004043"
+                    },
+                    {
+                        "content": "Which floor is the French class on?",
+                        "correctAnswer": "On the second floor",
+                        "file": "/audio/question1_13/2026_T5/09_aptiskey_com_second_floor.mp3",
+                        "answerList": [
+                            { "content": "On the ground floor" },
+                            { "content": "On the third floor" },
+                            { "content": "On the second floor" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004044"
+                    },
+                    {
+                        "content": "The man has a new job. How many days does he have to work?",
+                        "correctAnswer": "Three days",
+                        "file": "/audio/question1_13/2026_T5/10_aptiskey_com_3days.mp3",
+                        "answerList": [
+                            { "content": "Five days" },
+                            { "content": "Three days" },
+                            { "content": "Four days" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004045"
+                    },
+                    {
+                        "content": "What is this man going to do?",
+                        "correctAnswer": "Eat something",
+                        "file": "/audio/question1_13/2026_T5/11_aptiskey_com_get_something.mp3",
+                        "answerList": [
+                            { "content": "Eat something" },
+                            { "content": "Go to sleep" },
+                            { "content": "Get something to drink" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004046"
+                    },
+                    {
+                        "content": "What time is dinner?",
+                        "correctAnswer": "7:30 pm",
+                        "file": "/audio/question1_13/2026_T5/12_aptiskey_com_7h30.mp3",
+                        "answerList": [
+                            { "content": "8:30 pm" },
+                            { "content": "7:30 pm" },
+                            { "content": "9:30 pm" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004047"
+                    },
+                    {
+                        "content": "How much does a bus card cost?",
+                        "correctAnswer": "$20",
+                        "file": "/audio/question1_13/2026_T5/13_aptiskey_com_20usd.mp3",
+                        "answerList": [
+                            { "content": "$20" },
+                            { "content": "$10" },
+                            { "content": "$30" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004048"
+                    },
+                    {
+                        "content": "What will the student write about?",
+                        "correctAnswer": "Land",
+                        "file": "/audio/question1_13/2026_T5/14_aptiskey_com_land.mp3",
+                        "answerList": [
+                            { "content": "Famous people" },
+                            { "content": "Important events" },
+                            { "content": "Land" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004049"
+                    },
+                    {
+                        "content": "What do the students need to do every Tuesday?",
+                        "correctAnswer": "Write a report",
+                        "file": "/audio/question1_13/2026_T5/15_aptiskey_com_report.mp3",
+                        "answerList": [
+                            { "content": "Work in groups" },
+                            { "content": "Write a report" },
+                            { "content": "Have a discussion" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004050"
+                    },
+                    {
+                        "content": "What is she going to take with her?",
+                        "correctAnswer": "Games",
+                        "file": "/audio/question1_13/2026_T5/16_aptiskey_com_game.mp3",
+                        "answerList": [
+                            { "content": "A flashlight" },
+                            { "content": "Games" },
+                            { "content": "Food" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004051"
+                    },
+                    {
+                        "content": "What does the man complain about?",
+                        "correctAnswer": "The place was cold",
+                        "file": "/audio/question1_13/2026_T5/17_aptiskey_com_cold.mp3",
+                        "answerList": [
+                            { "content": "The food was bad" },
+                            { "content": "The service was slow" },
+                            { "content": "The place was cold" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004052"
+                    },
+                    {
+                        "content": "What do they decide to write about?",
+                        "correctAnswer": "A historian",
+                        "file": "/audio/question1_13/2026_T5/18_aptiskey_com_history.mp3",
+                        "answerList": [
+                            { "content": "A famous battle" },
+                            { "content": "A historian" },
+                            { "content": "Ancient culture" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004053"
+                    },
+                    {
+                        "content": "What does the teacher want the student to do?",
+                        "correctAnswer": "Complete the assignments on time",
+                        "file": "/audio/question1_13/2026_T5/19_aptiskey_com_homework.mp3",
+                        "answerList": [
+                            { "content": "Hand in more assignments" },
+                            { "content": "Study harder for exams" },
+                            { "content": "Complete the assignments on time" }
+                        ],
+                        "image": null,
+                        "suggestion": "",
+                        "_id": "697192b3d158761fc1004054"
+                    }
+                ],
+                "isExample": "false",
+                "image": null,
+                "_id": "697192b3d158761fc1003f08"
+            }
+        ],
+        "questionPart": "ONE",
+        "questionType": "LISTENING",
+        "id": "697192b3d158761fc1003f09",
+        "createdAt": "2026-06-09T00:00:00.000Z",
+        "updatedAt": "2026-06-09T00:00:00.000Z",
+        "__v": 0
     }
 ]

@@ -3683,5 +3683,225 @@
     "createdAt": "2026-04-23T15:54:13.016Z",
     "updatedAt": "2026-04-23T15:54:13.016Z",
     "__v": 0
+  },
+  {
+    "_id": "69fb00000000000000000001",
+    "title": "The Music Industry",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "The Music Industry",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "/audio/question16/2026_T5/01_aptiskey_com_music_industry.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the key to her enduring career?",
+            "correctAnswer": "Belief in her musical instincts",
+            "file": null,
+            "answerList": [
+              { "content": "Following the latest music trends" },
+              { "content": "Copying other successful artists" },
+              { "content": "Belief in her musical instincts" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000002"
+          },
+          {
+            "content": "What is the musician’s opinion of the current music industry?",
+            "correctAnswer": "Performers find it difficult to start their careers",
+            "file": null,
+            "answerList": [
+              { "content": "The industry supports new artists very well" },
+              { "content": "Performers find it difficult to start their careers" },
+              { "content": "There are too many music genres today" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000003"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69fb00000000000000000004"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69fb00000000000000000005",
+    "createdAt": "2026-06-09T00:00:00.000Z",
+    "updatedAt": "2026-06-09T00:00:00.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "69fb00000000000000000006",
+    "title": "Productivity",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Productivity",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "/audio/question16/2026_T5/04_aptiskey_com_time_effectively.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How can productivity be maximized?",
+            "correctAnswer": "By managing time effectively",
+            "file": null,
+            "answerList": [
+              { "content": "By working longer hours each day" },
+              { "content": "By managing time effectively" },
+              { "content": "By avoiding all distractions completely" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000007"
+          },
+          {
+            "content": "What is the problem with productivity strategies?",
+            "correctAnswer": "Using them effectively requires effort",
+            "file": null,
+            "answerList": [
+              { "content": "They only work for certain types of people" },
+              { "content": "They are too expensive to implement" },
+              { "content": "Using them effectively requires effort" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000008"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69fb00000000000000000009"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69fb0000000000000000000a",
+    "createdAt": "2026-06-09T00:00:00.000Z",
+    "updatedAt": "2026-06-09T00:00:00.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "69fb0000000000000000000b",
+    "title": "A Book Critic Talks About A Biography",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A Book Critic Talks About A Biography",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "/audio/question16/2026_T5/02_aptiskey_com_biography.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the main strength of the book?",
+            "correctAnswer": "The book describes a particular historical period very effectively",
+            "file": null,
+            "answerList": [
+              { "content": "The author is very well known in the field" },
+              { "content": "The book describes a particular historical period very effectively" },
+              { "content": "It is shorter than most other biographies" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb0000000000000000000c"
+          },
+          {
+            "content": "What is the critic’s overall opinion of the book?",
+            "correctAnswer": "It is an unconventional biography",
+            "file": null,
+            "answerList": [
+              { "content": "It follows the typical style of most biographies" },
+              { "content": "It is too long and difficult to read" },
+              { "content": "It is an unconventional biography" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb0000000000000000000d"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69fb0000000000000000000e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69fb0000000000000000000f",
+    "createdAt": "2026-06-09T00:00:00.000Z",
+    "updatedAt": "2026-06-09T00:00:00.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "69fb00000000000000000010",
+    "title": "Podcasting",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Podcasting",
+        "content": "Chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "/audio/question16/2026_T5/03_aptiskey_com_podcasting.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How does the speaker explain why new podcasts fail?",
+            "correctAnswer": "Content creators do not promote their shows",
+            "file": null,
+            "answerList": [
+              { "content": "Episodes are too long and boring" },
+              { "content": "The audio quality is too poor to attract listeners" },
+              { "content": "Content creators do not promote their shows" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000011"
+          },
+          {
+            "content": "What is the speaker's opinion of podcasting?",
+            "correctAnswer": "It is a great way to build a community",
+            "file": null,
+            "answerList": [
+              { "content": "It is a great way to build a community" },
+              { "content": "It is less popular than other media" },
+              { "content": "It is too expensive to produce" }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "69fb00000000000000000012"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69fb00000000000000000013"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "69fb00000000000000000014",
+    "createdAt": "2026-06-09T00:00:00.000Z",
+    "updatedAt": "2026-06-09T00:00:00.000Z",
+    "__v": 0
   }
 ]
