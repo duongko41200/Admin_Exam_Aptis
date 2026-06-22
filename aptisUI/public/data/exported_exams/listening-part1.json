@@ -1,280 +1,5 @@
 [
   {
-    "_id": "677fcd1acdf0d2a9b1a1dc2a",
-    "title": "Listening Aptis Part 1",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Listening Aptis Part 1",
-        "content": "De mau part 1",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": null,
-        "subQuestion": [
-          {
-            "content": "A doctor’s secretary calls about a change to an appointment. What is changing?",
-            "correctAnswer": "The date",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The date"
-              },
-              {
-                "content": "The time"
-              },
-              {
-                "content": "The place"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc2c"
-          },
-          {
-            "content": "Listen to the message. Which days does the bank close?",
-            "correctAnswer": "Sunday and Monday",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Saturday and Sunday"
-              },
-              {
-                "content": "Monday and Friday"
-              },
-              {
-                "content": "Sunday and Monday"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc2d"
-          },
-          {
-            "content": "Andrew calls Sue from his holiday. What present has he got her?",
-            "correctAnswer": "A cake",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Some coffee"
-              },
-              {
-                "content": "Some tea"
-              },
-              {
-                "content": "A cake"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc2e"
-          },
-          {
-            "content": "There is a meeting with some new clients. What time do they want the meeting?",
-            "correctAnswer": "2.00 p.m.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "2.00 p.m."
-              },
-              {
-                "content": "12.00 p.m."
-              },
-              {
-                "content": "11.00 a.m."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc2f"
-          },
-          {
-            "content": "Sumatah tells her friend about an art club. When does the club meet?",
-            "correctAnswer": "Thursday",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Tuesday"
-              },
-              {
-                "content": "Thursday"
-              },
-              {
-                "content": "Saturday"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc30"
-          },
-          {
-            "content": "Two friends are discussing the man’s holiday. What did the man think of the hotel owner?",
-            "correctAnswer": "He was not funny",
-            "file": null,
-            "answerList": [
-              {
-                "content": "He was unfriendly."
-              },
-              {
-                "content": "He was not funny"
-              },
-              {
-                "content": "He was dishonest."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc31"
-          },
-          {
-            "content": "A lecturer is describing changes to a university. What makes the university special?",
-            "correctAnswer": "The garden",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The garden"
-              },
-              {
-                "content": "The library"
-              },
-              {
-                "content": "The car park"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc32"
-          },
-          {
-            "content": "Listen to a person talking about where to go. Which place is closest to them?",
-            "correctAnswer": "The pool",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The seaside"
-              },
-              {
-                "content": "The pool"
-              },
-              {
-                "content": "The park"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc33"
-          },
-          {
-            "content": "A woman talks about her son’s birthday plans. What do they usually do?",
-            "correctAnswer": "Go out",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Go out"
-              },
-              {
-                "content": "Order food in"
-              },
-              {
-                "content": "Cook Indian food"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc34"
-          },
-          {
-            "content": "Mohammed tells his secretary about his travel plans. What time is he going to travel?",
-            "correctAnswer": "9.00 a.m.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "9.00 a.m."
-              },
-              {
-                "content": "8.00 a.m."
-              },
-              {
-                "content": "9.40 a.m."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc35"
-          },
-          {
-            "content": "Listen to the man and woman talking about the weather. What does the woman like doing in the rainy weather?",
-            "correctAnswer": "Visiting a friend",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Going for a walk"
-              },
-              {
-                "content": "Cooking a meal"
-              },
-              {
-                "content": "Visiting a friend"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc36"
-          },
-          {
-            "content": "Listen to a man giving a talk at a volunteer event. What kind of charity does he work for?",
-            "correctAnswer": "An environmental charity",
-            "file": null,
-            "answerList": [
-              {
-                "content": "A children’s charity"
-              },
-              {
-                "content": "An animal charity"
-              },
-              {
-                "content": "An environmental charity"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc37"
-          },
-          {
-            "content": "Listen to a reporter talking about traffic problems. What was the main cause of morning traffic?",
-            "correctAnswer": "A new road system",
-            "file": null,
-            "answerList": [
-              {
-                "content": "A new road system"
-              },
-              {
-                "content": "A public holiday"
-              },
-              {
-                "content": "Increased car ownership"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "677fcd1acdf0d2a9b1a1dc38"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "677fcd1acdf0d2a9b1a1dc2b"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "LISTENING",
-    "id": "677fcd1acdf0d2a9b1a1dc39",
-    "createdAt": "2025-01-09T13:20:26.065Z",
-    "updatedAt": "2025-01-09T13:20:26.065Z",
-    "__v": 0
-  },
-  {
     "_id": "695634bd0731243929b0c8ed",
     "title": "Đề 1",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -547,7 +272,7 @@
     "questionType": "LISTENING",
     "id": "695634bd0731243929b0c8fc",
     "createdAt": "2026-01-01T08:47:57.309Z",
-    "updatedAt": "2026-01-21T14:30:18.934Z",
+    "updatedAt": "2026-06-22T03:54:10.957Z",
     "__v": 0
   },
   {
@@ -823,7 +548,7 @@
     "questionType": "LISTENING",
     "id": "695639700731243929b0c911",
     "createdAt": "2026-01-01T09:08:00.336Z",
-    "updatedAt": "2026-01-21T04:24:24.228Z",
+    "updatedAt": "2026-06-22T03:54:11.272Z",
     "__v": 0
   },
   {
@@ -1099,7 +824,7 @@
     "questionType": "LISTENING",
     "id": "69563db80731243929b0c926",
     "createdAt": "2026-01-01T09:26:16.483Z",
-    "updatedAt": "2026-01-21T04:42:25.127Z",
+    "updatedAt": "2026-06-22T03:54:11.320Z",
     "__v": 0
   },
   {
@@ -1375,7 +1100,7 @@
     "questionType": "LISTENING",
     "id": "695651040731243929b0c98e",
     "createdAt": "2026-01-01T10:48:36.418Z",
-    "updatedAt": "2026-01-21T05:03:04.736Z",
+    "updatedAt": "2026-06-22T03:54:11.370Z",
     "__v": 0
   },
   {
@@ -1651,7 +1376,7 @@
     "questionType": "LISTENING",
     "id": "695653de0731243929b0c9a3",
     "createdAt": "2026-01-01T11:00:46.987Z",
-    "updatedAt": "2026-01-21T14:42:57.024Z",
+    "updatedAt": "2026-06-22T03:54:11.418Z",
     "__v": 0
   },
   {
@@ -1927,7 +1652,7 @@
     "questionType": "LISTENING",
     "id": "6956576a0731243929b0c9b8",
     "createdAt": "2026-01-01T11:15:54.321Z",
-    "updatedAt": "2026-01-21T14:53:46.257Z",
+    "updatedAt": "2026-06-22T03:54:11.465Z",
     "__v": 0
   },
   {
@@ -2203,7 +1928,7 @@
     "questionType": "LISTENING",
     "id": "69565b1c0731243929b0c9cd",
     "createdAt": "2026-01-01T11:31:40.146Z",
-    "updatedAt": "2026-01-21T15:06:55.956Z",
+    "updatedAt": "2026-06-22T03:54:11.510Z",
     "__v": 0
   },
   {
@@ -2479,7 +2204,7 @@
     "questionType": "LISTENING",
     "id": "69565e420731243929b0ca73",
     "createdAt": "2026-01-01T11:45:06.375Z",
-    "updatedAt": "2026-01-21T15:18:16.193Z",
+    "updatedAt": "2026-06-22T03:54:11.554Z",
     "__v": 0
   },
   {
@@ -2755,7 +2480,7 @@
     "questionType": "LISTENING",
     "id": "69567b620731243929b0cac6",
     "createdAt": "2026-01-01T13:49:22.887Z",
-    "updatedAt": "2026-01-21T15:29:01.254Z",
+    "updatedAt": "2026-06-22T03:54:11.600Z",
     "__v": 0
   },
   {
@@ -3031,7 +2756,7 @@
     "questionType": "LISTENING",
     "id": "69567e6c0731243929b0cadb",
     "createdAt": "2026-01-01T14:02:20.487Z",
-    "updatedAt": "2026-01-22T02:45:05.997Z",
+    "updatedAt": "2026-06-22T03:54:11.646Z",
     "__v": 0
   },
   {
@@ -3307,7 +3032,7 @@
     "questionType": "LISTENING",
     "id": "695682170731243929b0caf0",
     "createdAt": "2026-01-01T14:17:59.753Z",
-    "updatedAt": "2026-01-22T02:52:31.591Z",
+    "updatedAt": "2026-06-22T03:54:11.696Z",
     "__v": 0
   },
   {
@@ -3583,7 +3308,283 @@
     "questionType": "LISTENING",
     "id": "696fa2e05f30844cf4a950b2",
     "createdAt": "2026-01-20T15:44:32.616Z",
-    "updatedAt": "2026-01-22T03:00:03.986Z",
+    "updatedAt": "2026-06-22T03:54:11.741Z",
     "__v": 0
+  },
+  {
+    "_id": "697192b3d158761fc1003f07",
+    "__v": 0,
+    "createdAt": "2026-06-17T09:37:54.184Z",
+    "description": null,
+    "id": "697192b3d158761fc1003f09",
+    "questionPart": "ONE",
+    "questionType": "LISTENING",
+    "questions": [
+      {
+        "questionTitle": "Phần thi mới thêm (Q36-Q54)",
+        "content": "Phần thi mới thêm (Q36-Q54)",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": null,
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What time does the party start?",
+            "correctAnswer": "Three o’clock",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690049097_a15441a2b1638316_01_aptiskey_com_three_oclock.mp3",
+            "answerList": [
+              {
+                "content": "Five o’clock"
+              },
+              {
+                "content": "Four o’clock"
+              },
+              {
+                "content": "Three o’clock"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,5.28],\"text\":\" Hello everyone! Just a quick reminder about Anna's birthday party this Saturday.\"},{\"timestamp\":[5.28,8.96],\"text\":\" The party will start at 3 o'clock in the afternoon at her house.\"},{\"timestamp\":[8.96,14.32],\"text\":\" There will be music, games, and lots of food and drinks for everyone.\"},{\"timestamp\":[14.32,null],\"text\":\" Please try to arrive on time so we can begin the activities together. We hope to see you all there at three o'clock.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb13"
+          },
+          {
+            "content": "Where is she taking the staff to?",
+            "correctAnswer": "To a different country",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690362965_6bcb358cde1753d9_02_aptiskey_com_different_country.mp3",
+            "answerList": [
+              {
+                "content": "To a different city"
+              },
+              {
+                "content": "To a different country"
+              },
+              {
+                "content": "To a village"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.44],\"text\":\" I'd like to tell you about our company trip next month.\"},{\"timestamp\":[3.44,7.92],\"text\":\" This year we are not visiting another city in our country like before.\"},{\"timestamp\":[7.92,13.32],\"text\":\" Instead, we are taking all the staff to a different country for five days.\"},{\"timestamp\":[13.32,19.97],\"text\":\" It will be a great chance to relax, learn about a new culture, and spend time together outside work. More information about the trip will be sent by email next week.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb14"
+          },
+          {
+            "content": "Which bus stop number is near the boy's house?",
+            "correctAnswer": "Eight",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690363674_c0b36bd8701bbc2e_03_aptiskey_com_8minute.mp3",
+            "answerList": [
+              {
+                "content": "Ten"
+              },
+              {
+                "content": "Nine"
+              },
+              {
+                "content": "Eight"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.52],\"text\":\" To get to my house, you can take the bus from the city center.\"},{\"timestamp\":[3.52,8.16],\"text\":\" Several buses stop near my neighborhood, but the easiest one is bus number eight.\"},{\"timestamp\":[8.16,13.04],\"text\":\" It stops just across the street from my home, so you only need to walk for about two minutes\"},{\"timestamp\":[13.04,14.72],\"text\":\" after you get off the bus.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb15"
+          },
+          {
+            "content": "Why can't he do that job today?",
+            "correctAnswer": "He has another appointment",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690364424_67c778d0f15281f0_04_aptiskey_com_another_appointment.mp3",
+            "answerList": [
+              {
+                "content": "He has another appointment"
+              },
+              {
+                "content": "He is sick"
+              },
+              {
+                "content": "He has to eat"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.96],\"text\":\" Tom said he would like to help us with the job today, but unfortunately he can't come anymore.\"},{\"timestamp\":[4.96,9.36],\"text\":\" This morning, he remembered that he already has another appointment in the afternoon.\"},{\"timestamp\":[9.36,12.96],\"text\":\" It's something important, so he cannot cancel or change the time.\"},{\"timestamp\":[12.96,16.48],\"text\":\" He sounded sorry about it and asked if we could wait until tomorrow.\"},{\"timestamp\":[16.48,19.84],\"text\":\" If everything goes well, he will come and help us then.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb16"
+          },
+          {
+            "content": "Which room will the director's presentation be in?",
+            "correctAnswer": "The meeting room",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690365263_c4d664d9b1b5d9c5_05_aptiskey_com_meeting_room.mp3",
+            "answerList": [
+              {
+                "content": "The main hall"
+              },
+              {
+                "content": "The lecture room"
+              },
+              {
+                "content": "The meeting room"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.52],\"text\":\" There has been a small change to today's schedule.\"},{\"timestamp\":[3.52,8.16],\"text\":\" The director's presentation will not take place in the main hall as planned,\"},{\"timestamp\":[8.16,11.36],\"text\":\" because the room is being prepared for another event.\"},{\"timestamp\":[11.36,null],\"text\":\" Instead, everyone should go to the meeting room on the second floor at 2 o'clock, please arrive a few. Minutes early so the presentation can start on time.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb17"
+          },
+          {
+            "content": "How much money is left in the kitchen?",
+            "correctAnswer": "10 pounds",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690610811_fe5cec08ddf1f8a3_06_aptiskey_com_10_pound.mp3",
+            "answerList": [
+              {
+                "content": "20 pounds"
+              },
+              {
+                "content": "10 pounds"
+              },
+              {
+                "content": "30 pounds"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.48],\"text\":\" Before we go shopping, I checked the money we keep in the kitchen drawer.\"},{\"timestamp\":[4.48,7.68],\"text\":\" Yesterday evening, there were 15 pounds in it.\"},{\"timestamp\":[8.24,13.2],\"text\":\" But this morning my brother used five pounds to buy some bread and milk from the supermarket.\"},{\"timestamp\":[13.2,null],\"text\":\" That means there are only 10 pounds left now. We may need to get some more money before buying dinner. Tonight! dinner tonight.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb18"
+          },
+          {
+            "content": "What is the new medical center next to?",
+            "correctAnswer": "Train station",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690611670_f6aee363a0742563_07_aptiskey_com_train_station.mp3",
+            "answerList": [
+              {
+                "content": "A bus station"
+              },
+              {
+                "content": "Train station"
+              },
+              {
+                "content": "An airport"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.92],\"text\":\" The town has recently opened a new health center for local people.\"},{\"timestamp\":[3.92,9.44],\"text\":\" It is in a very convenient location, so it is easy for everyone to visit.\"},{\"timestamp\":[9.44,12.88],\"text\":\" The building is right next to the train station.\"},{\"timestamp\":[12.88,15.68],\"text\":\" Only a short walk from the main entrance.\"},{\"timestamp\":[15.68,null],\"text\":\" Patients can travel there quickly by public transport, which is especially helpful for older people and families with children.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb19"
+          },
+          {
+            "content": "What time do they arrange the meeting?",
+            "correctAnswer": "5:30 pm",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781690612448_4fc9761190494eec_08_aptiskey_com_5h30.mp3",
+            "answerList": [
+              {
+                "content": "5:30 pm"
+              },
+              {
+                "content": "4:00 pm"
+              },
+              {
+                "content": "4:30 pm"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,5.04],\"text\":\" We finally arranged a time for tomorrow's meeting after checking everyone's schedule.\"},{\"timestamp\":[5.04,11.2],\"text\":\" At first, we wanted to meet at 4 o'clock, but some team members were still busy at that time.\"},{\"timestamp\":[11.2,null],\"text\":\" After discussing a few different options, we agreed to begin the meeting at half past 5 in the evening. Please try to arrive a little early so we can start on time.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1a"
+          },
+          {
+            "content": "Which floor is the French class on?",
+            "correctAnswer": "On the second floor",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781691460818_567bf2a7765dd89b_09_aptiskey_com_second_floor.mp3",
+            "answerList": [
+              {
+                "content": "On the ground floor"
+              },
+              {
+                "content": "On the third floor"
+              },
+              {
+                "content": "On the second floor"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" Welcome to the Language Center. Today, all new students should check their classroom information carefully before lessons begin.\"},{\"timestamp\":[8,14],\"text\":\" The French class will not be on the ground floor like last week because those rooms are being.\"},{\"timestamp\":[14,null],\"text\":\" Repaired, instead. Students need to go to the second floor. There will be signs in the building to help you find there. Correct classroom more easily.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1b"
+          },
+          {
+            "content": "The man has a new job. How many days does he have to work?",
+            "correctAnswer": "Three days",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781691461733_f3456e8746f9b6ef_10_aptiskey_com_3days.mp3",
+            "answerList": [
+              {
+                "content": "Five days"
+              },
+              {
+                "content": "Three days"
+              },
+              {
+                "content": "Four days"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.16],\"text\":\" My brother has recently started a new job at a small restaurant in town.\"},{\"timestamp\":[4.16,10.16],\"text\":\" At first, he thought he would need to work every weekday, but the manager later explained the schedule more clearly.\"},{\"timestamp\":[10.16,14.8],\"text\":\" Because the restaurant is still new, he only has to work three days each week at the moment.\"},{\"timestamp\":[14.8,19.12],\"text\":\" He is happy about this because he still has enough free time to continue his studies.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1c"
+          },
+          {
+            "content": "What is this man going to do?",
+            "correctAnswer": "Eat something",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781691462418_d46ecb3d86991f89_11_aptiskey_com_get_something.mp3",
+            "answerList": [
+              {
+                "content": "Eat something"
+              },
+              {
+                "content": "Go to sleep"
+              },
+              {
+                "content": "Get something to drink"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.88],\"text\":\" After finishing work this evening, Daniel realized he had not eaten anything since lunch.\"},{\"timestamp\":[4.88,9.36],\"text\":\" He first thought about going straight home, but he felt to hungry to wait that long.\"},{\"timestamp\":[9.36,13.28],\"text\":\" Instead, he decided to stop somewhere in town before going back.\"},{\"timestamp\":[13.28,17.92],\"text\":\" He said he was going to get something to eat and then continue with the rest of his evening plants.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1d"
+          },
+          {
+            "content": "What time is dinner?",
+            "correctAnswer": "7:30 pm",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781691463166_2becad035c8993c5_12_aptiskey_com_7h30.mp3",
+            "answerList": [
+              {
+                "content": "8:30 pm"
+              },
+              {
+                "content": "7:30 pm"
+              },
+              {
+                "content": "9:30 pm"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,6.48],\"text\":\" Just a reminder about tonight's family dinner at my grandparents house, some people thought it would begin at 7 o'clock.\"},{\"timestamp\":[6.48,11.28],\"text\":\" But the time has changed slightly because a few family members will arrive later than expected.\"},{\"timestamp\":[11.28,18.16],\"text\":\" Dinner will now start at half past 7 in the evening. Please try not to be late because everyone will wait and eat together.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1e"
+          },
+          {
+            "content": "How much does a bus card cost?",
+            "correctAnswer": "$20",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/06/1781691464242_d7e66cdb421bb94e_13_aptiskey_com_20usd.mp3",
+            "answerList": [
+              {
+                "content": "$20"
+              },
+              {
+                "content": "$10"
+              },
+              {
+                "content": "$30"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,7.34],\"text\":\" If you travel around the city by bus every day, it is probably better to buy a bus cart instead of paying for single tickets.\"},{\"timestamp\":[7.34,11.76],\"text\":\" The cart can be used on all city buses and is valid for one month.\"},{\"timestamp\":[11.76,16.16],\"text\":\" Many students and workers use it because it saves both time and money.\"},{\"timestamp\":[16.16,null],\"text\":\" At the moment, a new bus cart costs $20 and you can buy one at the main bus station.\"}]</p>",
+            "_id": "6a3274488310fb441e6abb1f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3274488310fb441e6abb12"
+      }
+    ],
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "Đề mới bổ sung",
+    "updatedAt": "2026-06-22T03:54:11.788Z"
   }
 ]

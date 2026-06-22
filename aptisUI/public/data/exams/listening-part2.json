@@ -86,7 +86,7 @@
     "questionType": "LISTENING",
     "id": "69529f3317d3f9f552a546a9",
     "createdAt": "2025-12-29T15:33:07.928Z",
-    "updatedAt": "2026-06-17T09:37:54.232Z",
+    "updatedAt": "2026-06-22T03:54:11.836Z",
     "__v": 0
   },
   {
@@ -176,7 +176,7 @@
     "questionType": "LISTENING",
     "id": "695686530731243929b0ce96",
     "createdAt": "2026-01-01T14:36:03.699Z",
-    "updatedAt": "2026-06-17T09:37:54.274Z",
+    "updatedAt": "2026-06-22T03:54:11.881Z",
     "__v": 0
   },
   {
@@ -266,7 +266,7 @@
     "questionType": "LISTENING",
     "id": "695687630731243929b0cea5",
     "createdAt": "2026-01-01T14:40:35.738Z",
-    "updatedAt": "2026-06-17T09:37:54.316Z",
+    "updatedAt": "2026-06-22T03:54:11.928Z",
     "__v": 0
   },
   {
@@ -356,7 +356,7 @@
     "questionType": "LISTENING",
     "id": "695688450731243929b0ceb4",
     "createdAt": "2026-01-01T14:44:21.910Z",
-    "updatedAt": "2026-06-17T09:37:54.358Z",
+    "updatedAt": "2026-06-22T03:54:11.972Z",
     "__v": 0
   },
   {
@@ -446,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6956892b0731243929b0d14d",
     "createdAt": "2026-01-01T14:48:11.717Z",
-    "updatedAt": "2026-06-17T09:37:54.401Z",
+    "updatedAt": "2026-06-22T03:54:12.015Z",
     "__v": 0
   },
   {
@@ -536,7 +536,7 @@
     "questionType": "LISTENING",
     "id": "6957c4aec88028aa29a1af83",
     "createdAt": "2026-01-02T13:14:22.598Z",
-    "updatedAt": "2026-06-17T09:37:54.444Z",
+    "updatedAt": "2026-06-22T03:54:12.061Z",
     "__v": 0
   },
   {
@@ -626,7 +626,7 @@
     "questionType": "LISTENING",
     "id": "6957c58bc88028aa29a1b06e",
     "createdAt": "2026-01-02T13:18:03.481Z",
-    "updatedAt": "2026-06-17T09:37:54.487Z",
+    "updatedAt": "2026-06-22T03:54:12.109Z",
     "__v": 0
   },
   {
@@ -716,7 +716,7 @@
     "questionType": "LISTENING",
     "id": "6957c62bc88028aa29a1b07d",
     "createdAt": "2026-01-02T13:20:43.726Z",
-    "updatedAt": "2026-06-17T09:37:54.532Z",
+    "updatedAt": "2026-06-22T03:54:12.156Z",
     "__v": 0
   },
   {
@@ -806,7 +806,7 @@
     "questionType": "LISTENING",
     "id": "6957c6bbc88028aa29a1b08c",
     "createdAt": "2026-01-02T13:23:07.867Z",
-    "updatedAt": "2026-06-17T09:37:54.575Z",
+    "updatedAt": "2026-06-22T03:54:12.204Z",
     "__v": 0
   },
   {
@@ -896,7 +896,7 @@
     "questionType": "LISTENING",
     "id": "6957c926c88028aa29a1b09b",
     "createdAt": "2026-01-02T13:33:26.657Z",
-    "updatedAt": "2026-06-17T09:37:54.618Z",
+    "updatedAt": "2026-06-22T03:54:12.249Z",
     "__v": 0
   },
   {
@@ -986,7 +986,7 @@
     "questionType": "LISTENING",
     "id": "6957c9c0c88028aa29a1b0aa",
     "createdAt": "2026-01-02T13:36:00.173Z",
-    "updatedAt": "2026-06-17T09:37:54.663Z",
+    "updatedAt": "2026-06-22T03:54:12.297Z",
     "__v": 0
   },
   {
@@ -1076,7 +1076,97 @@
     "questionType": "LISTENING",
     "id": "6957ca55c88028aa29a1b0b9",
     "createdAt": "2026-01-02T13:38:29.069Z",
-    "updatedAt": "2026-06-17T09:37:54.720Z",
+    "updatedAt": "2026-06-22T03:54:12.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a38b38f9e4ccda11bf0df07",
+    "title": "A new museum",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A new museum",
+        "content": "Four people are talking about A new museum. Complete the sentence below.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "finished the visit quickly"
+          },
+          {
+            "id": 2,
+            "content": "got lost during the visit"
+          },
+          {
+            "id": 3,
+            "content": "wanted to visit again"
+          },
+          {
+            "id": 4,
+            "content": "enjoy the use of technology"
+          },
+          {
+            "id": 5,
+            "content": "đáp án nhiễu 1"
+          },
+          {
+            "id": 6,
+            "content": "đáp án nhiễu 2"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "got lost during the visit",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df09"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "finished the visit quickly",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0a"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "wanted to visit again",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0b"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "enjoy the use of technology",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a38b38f9e4ccda11bf0df08"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "6a38b38f9e4ccda11bf0df0d",
+    "createdAt": "2026-06-22T04:01:19.323Z",
+    "updatedAt": "2026-06-22T04:01:19.323Z",
     "__v": 0
   }
 ]

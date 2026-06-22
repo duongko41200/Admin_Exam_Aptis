@@ -71,7 +71,7 @@
     "questionType": "LISTENING",
     "id": "6957cbcbc88028aa29a1b2c6",
     "createdAt": "2026-01-02T13:44:43.238Z",
-    "updatedAt": "2026-06-17T09:37:54.767Z",
+    "updatedAt": "2026-06-22T03:54:12.384Z",
     "__v": 0
   },
   {
@@ -146,7 +146,7 @@
     "questionType": "LISTENING",
     "id": "6957ccb3c88028aa29a1b3ea",
     "createdAt": "2026-01-02T13:48:35.218Z",
-    "updatedAt": "2026-06-17T09:37:54.810Z",
+    "updatedAt": "2026-06-22T03:54:12.428Z",
     "__v": 0
   },
   {
@@ -221,7 +221,7 @@
     "questionType": "LISTENING",
     "id": "6957cd96c88028aa29a1b3f9",
     "createdAt": "2026-01-02T13:52:22.975Z",
-    "updatedAt": "2026-06-17T09:37:54.853Z",
+    "updatedAt": "2026-06-22T03:54:12.472Z",
     "__v": 0
   },
   {
@@ -296,7 +296,7 @@
     "questionType": "LISTENING",
     "id": "6957ce41c88028aa29a1b408",
     "createdAt": "2026-01-02T13:55:13.064Z",
-    "updatedAt": "2026-06-17T09:37:54.895Z",
+    "updatedAt": "2026-06-22T03:54:12.519Z",
     "__v": 0
   },
   {
@@ -371,7 +371,7 @@
     "questionType": "LISTENING",
     "id": "6957d2efc88028aa29a1b7d2",
     "createdAt": "2026-01-02T14:15:11.476Z",
-    "updatedAt": "2026-06-17T09:37:54.937Z",
+    "updatedAt": "2026-06-22T03:54:12.564Z",
     "__v": 0
   },
   {
@@ -446,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6957d38dc88028aa29a1b7e1",
     "createdAt": "2026-01-02T14:17:49.741Z",
-    "updatedAt": "2026-06-17T09:37:54.981Z",
+    "updatedAt": "2026-06-22T03:54:12.608Z",
     "__v": 0
   },
   {
@@ -521,7 +521,7 @@
     "questionType": "LISTENING",
     "id": "6957d526c88028aa29a1b998",
     "createdAt": "2026-01-02T14:24:38.160Z",
-    "updatedAt": "2026-06-17T09:37:55.023Z",
+    "updatedAt": "2026-06-22T03:54:12.652Z",
     "__v": 0
   },
   {
@@ -596,7 +596,7 @@
     "questionType": "LISTENING",
     "id": "6957d573c88028aa29a1b9a4",
     "createdAt": "2026-01-02T14:25:55.660Z",
-    "updatedAt": "2026-06-17T09:37:55.064Z",
+    "updatedAt": "2026-06-22T03:54:12.696Z",
     "__v": 0
   },
   {
@@ -671,7 +671,7 @@
     "questionType": "LISTENING",
     "id": "6957d65ec88028aa29a1bc29",
     "createdAt": "2026-01-02T14:29:50.372Z",
-    "updatedAt": "2026-06-17T09:37:55.107Z",
+    "updatedAt": "2026-06-22T03:54:12.743Z",
     "__v": 0
   },
   {
@@ -746,7 +746,7 @@
     "questionType": "LISTENING",
     "id": "6957d6e2c88028aa29a1bc38",
     "createdAt": "2026-01-02T14:32:02.012Z",
-    "updatedAt": "2026-06-17T09:37:55.150Z",
+    "updatedAt": "2026-06-22T03:54:12.791Z",
     "__v": 0
   },
   {
@@ -821,7 +821,7 @@
     "questionType": "LISTENING",
     "id": "6957d77ac88028aa29a1bc47",
     "createdAt": "2026-01-02T14:34:34.446Z",
-    "updatedAt": "2026-06-17T09:37:55.194Z",
+    "updatedAt": "2026-06-22T03:54:12.839Z",
     "__v": 0
   },
   {
@@ -896,7 +896,82 @@
     "questionType": "LISTENING",
     "id": "6957d80fc88028aa29a1bc56",
     "createdAt": "2026-01-02T14:37:03.180Z",
-    "updatedAt": "2026-06-17T09:37:55.236Z",
+    "updatedAt": "2026-06-22T03:54:12.886Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a38b3059e4ccda11bf0de7b",
+    "title": "Environmental volunteer",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Environmental volunteer",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782100740173_0221486f66ca0403_02_environmental_volunteer_program.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.6],\"text\":\" I watched a news report about the cleanup program yesterday, to be honest.\"},{\"timestamp\":[4.6,8.76],\"text\":\" I think the media made it sound much more successful than it really was.\"},{\"timestamp\":[8.76,13.4],\"text\":\" I agree. They only showed the best parts and ignored many problems.\"},{\"timestamp\":[13.4,16.56],\"text\":\" The benefits of the program were clearly exaggerated.\"},{\"timestamp\":[16.56,22.8],\"text\":\" Exactly. And even with programs like this, I still think littering will always be a problem.\"},{\"timestamp\":[22.8,26.4],\"text\":\" Some people just do not care enough about public places.\"},{\"timestamp\":[26.4,31.6],\"text\":\" Maybe, but I don't think we should give up. Volunteers can still make a difference.\"},{\"timestamp\":[31.6,35.52],\"text\":\" That's true, but the problem will never completely disappear.\"},{\"timestamp\":[35.52,41.76],\"text\":\" For me, the reason why volunteers join is not very important. Whether they do it because they care\"},{\"timestamp\":[41.76,45],\"text\":\" about the environment or because they want experience,\"},{\"timestamp\":[45,47.8],\"text\":\" the result can still be the same if they were card.\"},{\"timestamp\":[47.8,51.4],\"text\":\" I see your point, but I think we need stricter rules too.\"},{\"timestamp\":[51.4,56.6],\"text\":\" In my opinion, punishment is the most effective way to stop people from littering.\"},{\"timestamp\":[56.6,61],\"text\":\" I'm not sure it is the best way. Education is also important.\"},{\"timestamp\":[61,63.3],\"text\":\" Education helps, but without fines or punishment, many people will not change their\"},{\"timestamp\":[63.3,63.94],\"text\":\" behavior.\"}]</p>",
+        "subSuggestion": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: I watched a news report about the clean-up program yesterday. To be honest, I think the media made it sound much more successful than it really was.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: I agree. They only showed the best parts and ignored many problems. The benefits of the program were clearly exaggerated.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: Exactly. And even with programs like this, I still think littering will always be a problem. Some people just do not care enough about public places.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: Maybe, but I don't think we should give up. Volunteers can still make a difference.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: That's true, but the problem will never completely disappear.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: For me, the reason why volunteers join is not very important. Whether they do it because they care about the environment or because they want experience, the result can still be the same if they work hard.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: I see your point. But I think we need stricter rules too. In my opinion, punishment is the most effective way to stop people from littering.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: I'm not sure it is the best way. Education is also important.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: Education helps, but without fines or punishment, many people will not change their behavior.</span></p>",
+        "subQuestion": [
+          {
+            "content": "The media exaggerates the benefits of the program.",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7d"
+          },
+          {
+            "content": "Littering will always be a problem.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7e"
+          },
+          {
+            "content": "The motivation of volunteers does not affect the outcome of the program.",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7f"
+          },
+          {
+            "content": "Punishment is the most effective way to prevent littering.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de80"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a38b3059e4ccda11bf0de7c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a38b3059e4ccda11bf0de81",
+    "createdAt": "2026-06-22T03:59:01.579Z",
+    "updatedAt": "2026-06-22T03:59:01.579Z",
     "__v": 0
   }
 ]

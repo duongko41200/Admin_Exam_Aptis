@@ -1,79 +1,5 @@
 [
   {
-    "_id": "677eaf2a826106165ca479c2",
-    "title": "Listening Part 3",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Listening Part 3",
-        "content": "Listen to two parents discussing the issue of children’s health. Read the opinions below and decide whose opinion matches the statements: the man, the woman, or both the man and the woman. You can listen to the discussion twice.",
-        "answerList": [
-          {
-            "content": "Woman"
-          },
-          {
-            "content": "Man"
-          },
-          {
-            "content": "Both"
-          }
-        ],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": null,
-        "subQuestion": [
-          {
-            "content": "Parents should better manage their children’s diets.",
-            "correctAnswer": "Both",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6781d80dda413cce4a93f722"
-          },
-          {
-            "content": "Parents should support their child’s interest in sport.",
-            "correctAnswer": "Man",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6781d80dda413cce4a93f723"
-          },
-          {
-            "content": "Quiet time can promote children’s concentration abilities",
-            "correctAnswer": "Both",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6781d80dda413cce4a93f724"
-          },
-          {
-            "content": "Excessive sleep can be bad for young people",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6781d80dda413cce4a93f725"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6781d80dda413cce4a93f721"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "LISTENING",
-    "id": "677eaf2a826106165ca479c8",
-    "createdAt": "2025-01-08T17:00:26.319Z",
-    "updatedAt": "2025-01-11T02:31:41.608Z",
-    "__v": 0
-  },
-  {
     "_id": "6957cbcbc88028aa29a1b2c0",
     "title": "Changes in the workplace",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -97,6 +23,7 @@
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361482238_d7b6cffa9993584b_audiotpa3_q1.mp3",
         "subQuestionAnswerList": [],
         "suggestion": "<p>[{\"timestamp\":[0,3],\"text\":\" I'm thinking about switching to another job.\"},{\"timestamp\":[3,5.68],\"text\":\" Why? Your current job is very stable.\"},{\"timestamp\":[5.68,8.12],\"text\":\" I think I should try my hand at different fields.\"},{\"timestamp\":[8.12,12.2],\"text\":\" The jobs I take should only last around one to two years.\"},{\"timestamp\":[12.2,15.88],\"text\":\" I don't like staying too long in one job or with one company.\"},{\"timestamp\":[15.88,17.16],\"text\":\" That would be really boring.\"},{\"timestamp\":[17.16,20.32],\"text\":\" Nowadays, many companies offer temporary jobs,\"},{\"timestamp\":[20.32,23.56],\"text\":\" which allows me to try out different fields.\"},{\"timestamp\":[23.56,26],\"text\":\" Oh, but if you stay longer at one company,\"},{\"timestamp\":[26,30],\"text\":\" they might offer you more opportunities for career advancement.\"},{\"timestamp\":[30,34],\"text\":\" I always want to stay long-term with a company that suits me.\"},{\"timestamp\":[34,37],\"text\":\" Nowadays, young people who have just graduated from university\"},{\"timestamp\":[37,40],\"text\":\" are very talented and have many qualifications.\"},{\"timestamp\":[40,43],\"text\":\" I'm afraid that if I stick with one job and don't change\"},{\"timestamp\":[43,46],\"text\":\" to accumulate knowledge in various fields,\"},{\"timestamp\":[46,49],\"text\":\" it will be hard to compete with these young, talented people.\"},{\"timestamp\":[49,52],\"text\":\" We also need to consider job satisfaction if we do well.\"},{\"timestamp\":[52,59],\"text\":\" We need to be encouraged and motivated that helps employees feel that their efforts and contributions to the company are worthwhile.\"},{\"timestamp\":[59,61],\"text\":\" You're absolutely right. I couldn't agree more.\"},{\"timestamp\":[61,65.2],\"text\":\" In this age of technological advancement, many jobs have been\"},{\"timestamp\":[65.2,69.92],\"text\":\" replaced by machines. More and more people are losing their jobs due to the development of\"},{\"timestamp\":[69.92,77.04],\"text\":\" technology and engineering. I think this is a concerning issue. I don't think so. Technology is\"},{\"timestamp\":[77.04,81.52],\"text\":\" helping us do our work more quickly, easily and conveniently than ever. If we know how to leverage\"},{\"timestamp\":[81.52,90],\"text\":\" technology in our jobs, productivity will increase significantly, which in turn helps develop the economy and society.\"}]</p>",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "ontinuity is important when planning a career",
@@ -144,7 +71,7 @@
     "questionType": "LISTENING",
     "id": "6957cbcbc88028aa29a1b2c6",
     "createdAt": "2026-01-02T13:44:43.238Z",
-    "updatedAt": "2026-01-13T07:26:13.951Z",
+    "updatedAt": "2026-06-22T03:54:12.384Z",
     "__v": 0
   },
   {
@@ -219,7 +146,7 @@
     "questionType": "LISTENING",
     "id": "6957ccb3c88028aa29a1b3ea",
     "createdAt": "2026-01-02T13:48:35.218Z",
-    "updatedAt": "2026-01-13T08:00:10.815Z",
+    "updatedAt": "2026-06-22T03:54:12.428Z",
     "__v": 0
   },
   {
@@ -294,7 +221,7 @@
     "questionType": "LISTENING",
     "id": "6957cd96c88028aa29a1b3f9",
     "createdAt": "2026-01-02T13:52:22.975Z",
-    "updatedAt": "2026-01-13T08:01:22.408Z",
+    "updatedAt": "2026-06-22T03:54:12.472Z",
     "__v": 0
   },
   {
@@ -369,7 +296,7 @@
     "questionType": "LISTENING",
     "id": "6957ce41c88028aa29a1b408",
     "createdAt": "2026-01-02T13:55:13.064Z",
-    "updatedAt": "2026-01-13T08:02:12.753Z",
+    "updatedAt": "2026-06-22T03:54:12.519Z",
     "__v": 0
   },
   {
@@ -444,7 +371,7 @@
     "questionType": "LISTENING",
     "id": "6957d2efc88028aa29a1b7d2",
     "createdAt": "2026-01-02T14:15:11.476Z",
-    "updatedAt": "2026-01-13T08:03:07.681Z",
+    "updatedAt": "2026-06-22T03:54:12.564Z",
     "__v": 0
   },
   {
@@ -519,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6957d38dc88028aa29a1b7e1",
     "createdAt": "2026-01-02T14:17:49.741Z",
-    "updatedAt": "2026-01-13T08:04:09.828Z",
+    "updatedAt": "2026-06-22T03:54:12.608Z",
     "__v": 0
   },
   {
@@ -546,6 +473,7 @@
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767363877298_f8f8092e1f8eb760_audiotpa3_q7.mp3",
         "subQuestionAnswerList": [],
         "suggestion": "<p><strong>Paragraph:</strong></p><p>M: Did you hear about the concert last night? A lot of young people attended.</p><p><br></p><p>W: Yes, I know about that concert; it was very popular. I don’t understand why so many young people are so eager to attend. They're blindly idolizing young singers, and these idols don’t really teach them anything good.</p><p><br></p><p>M: I see it differently. The young singers today are very talented, and they do a lot of charitable work for society. I think young people look up to them and follow their example.</p><p><br></p><p>W: Yes, they volunteer a lot, but they do it for the wrong reasons. They only want to boost their own fame.</p><p><br></p><p>M: Oh, I think you don't like young singers because you don't enjoy their music, right?</p><p><br></p><p>W: Exactly, I only like listening to classical music from previous generations. I think music preferences are very personal and each generation has its own unique taste in music. But music is always a universal language that conveys emotions everyone can understand.</p><p><br></p><p>M: I didn’t study music like you, so I don’t really have any ideas about this.</p><p><br></p><p>W: You don’t need to study music to understand it. Just think about why you cry during a sad movie scene when the music plays or why you feel energized when you hear a happy song. Isn’t that right?</p><p><br></p><p>M: Yes, I think that’s why films always try to include at least one piece of music.</p>",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "Singers play a good role for young people",
@@ -593,7 +521,7 @@
     "questionType": "LISTENING",
     "id": "6957d526c88028aa29a1b998",
     "createdAt": "2026-01-02T14:24:38.160Z",
-    "updatedAt": "2026-01-02T14:24:38.160Z",
+    "updatedAt": "2026-06-22T03:54:12.652Z",
     "__v": 0
   },
   {
@@ -629,7 +557,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69ea212894821544ed40f791"
+            "_id": "69b13b6227e8fed251497ed9"
           },
           {
             "content": "Social interaction is important",
@@ -638,7 +566,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69ea212894821544ed40f792"
+            "_id": "69b13b6227e8fed251497eda"
           },
           {
             "content": "The diverse curriculum is not an advantage",
@@ -647,7 +575,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69ea212894821544ed40f793"
+            "_id": "69b13b6227e8fed251497edb"
           },
           {
             "content": "University competition should be encouraged",
@@ -656,19 +584,19 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69ea212894821544ed40f794"
+            "_id": "69b13b6227e8fed251497edc"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea212894821544ed40f790"
+        "_id": "69b13b6227e8fed251497ed8"
       }
     ],
     "questionPart": "THREE",
     "questionType": "LISTENING",
     "id": "6957d573c88028aa29a1b9a4",
     "createdAt": "2026-01-02T14:25:55.660Z",
-    "updatedAt": "2026-04-23T13:39:52.159Z",
+    "updatedAt": "2026-06-22T03:54:12.696Z",
     "__v": 0
   },
   {
@@ -717,7 +645,7 @@
           },
           {
             "content": "People are better informed political issues",
-            "correctAnswer": "Womanw",
+            "correctAnswer": "Woman",
             "file": null,
             "answerList": null,
             "image": null,
@@ -743,7 +671,7 @@
     "questionType": "LISTENING",
     "id": "6957d65ec88028aa29a1bc29",
     "createdAt": "2026-01-02T14:29:50.372Z",
-    "updatedAt": "2026-01-13T08:06:25.924Z",
+    "updatedAt": "2026-06-22T03:54:12.743Z",
     "__v": 0
   },
   {
@@ -818,7 +746,7 @@
     "questionType": "LISTENING",
     "id": "6957d6e2c88028aa29a1bc38",
     "createdAt": "2026-01-02T14:32:02.012Z",
-    "updatedAt": "2026-01-13T08:07:34.031Z",
+    "updatedAt": "2026-06-22T03:54:12.791Z",
     "__v": 0
   },
   {
@@ -893,7 +821,7 @@
     "questionType": "LISTENING",
     "id": "6957d77ac88028aa29a1bc47",
     "createdAt": "2026-01-02T14:34:34.446Z",
-    "updatedAt": "2026-01-13T08:08:29.776Z",
+    "updatedAt": "2026-06-22T03:54:12.839Z",
     "__v": 0
   },
   {
@@ -968,7 +896,82 @@
     "questionType": "LISTENING",
     "id": "6957d80fc88028aa29a1bc56",
     "createdAt": "2026-01-02T14:37:03.180Z",
-    "updatedAt": "2026-01-13T08:09:53.623Z",
+    "updatedAt": "2026-06-22T03:54:12.886Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a38b3059e4ccda11bf0de7b",
+    "title": "Environmental volunteer",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Environmental volunteer",
+        "content": "Listen to two people discussing potential modifications to the topic above. Read the statements and decide whose opinion matches best: the man's, the woman's, or both. Who expresses which opinion?",
+        "answerList": [
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782100740173_0221486f66ca0403_02_environmental_volunteer_program.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.6],\"text\":\" I watched a news report about the cleanup program yesterday, to be honest.\"},{\"timestamp\":[4.6,8.76],\"text\":\" I think the media made it sound much more successful than it really was.\"},{\"timestamp\":[8.76,13.4],\"text\":\" I agree. They only showed the best parts and ignored many problems.\"},{\"timestamp\":[13.4,16.56],\"text\":\" The benefits of the program were clearly exaggerated.\"},{\"timestamp\":[16.56,22.8],\"text\":\" Exactly. And even with programs like this, I still think littering will always be a problem.\"},{\"timestamp\":[22.8,26.4],\"text\":\" Some people just do not care enough about public places.\"},{\"timestamp\":[26.4,31.6],\"text\":\" Maybe, but I don't think we should give up. Volunteers can still make a difference.\"},{\"timestamp\":[31.6,35.52],\"text\":\" That's true, but the problem will never completely disappear.\"},{\"timestamp\":[35.52,41.76],\"text\":\" For me, the reason why volunteers join is not very important. Whether they do it because they care\"},{\"timestamp\":[41.76,45],\"text\":\" about the environment or because they want experience,\"},{\"timestamp\":[45,47.8],\"text\":\" the result can still be the same if they were card.\"},{\"timestamp\":[47.8,51.4],\"text\":\" I see your point, but I think we need stricter rules too.\"},{\"timestamp\":[51.4,56.6],\"text\":\" In my opinion, punishment is the most effective way to stop people from littering.\"},{\"timestamp\":[56.6,61],\"text\":\" I'm not sure it is the best way. Education is also important.\"},{\"timestamp\":[61,63.3],\"text\":\" Education helps, but without fines or punishment, many people will not change their\"},{\"timestamp\":[63.3,63.94],\"text\":\" behavior.\"}]</p>",
+        "subSuggestion": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: I watched a news report about the clean-up program yesterday. To be honest, I think the media made it sound much more successful than it really was.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: I agree. They only showed the best parts and ignored many problems. The benefits of the program were clearly exaggerated.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: Exactly. And even with programs like this, I still think littering will always be a problem. Some people just do not care enough about public places.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: Maybe, but I don't think we should give up. Volunteers can still make a difference.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: That's true, but the problem will never completely disappear.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: For me, the reason why volunteers join is not very important. Whether they do it because they care about the environment or because they want experience, the result can still be the same if they work hard.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: I see your point. But I think we need stricter rules too. In my opinion, punishment is the most effective way to stop people from littering.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Woman: I'm not sure it is the best way. Education is also important.</span></p><p><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(33, 37, 41);\">Man: Education helps, but without fines or punishment, many people will not change their behavior.</span></p>",
+        "subQuestion": [
+          {
+            "content": "The media exaggerates the benefits of the program.",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7d"
+          },
+          {
+            "content": "Littering will always be a problem.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7e"
+          },
+          {
+            "content": "The motivation of volunteers does not affect the outcome of the program.",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de7f"
+          },
+          {
+            "content": "Punishment is the most effective way to prevent littering.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b3059e4ccda11bf0de80"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a38b3059e4ccda11bf0de7c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a38b3059e4ccda11bf0de81",
+    "createdAt": "2026-06-22T03:59:01.579Z",
+    "updatedAt": "2026-06-22T03:59:01.579Z",
     "__v": 0
   }
 ]

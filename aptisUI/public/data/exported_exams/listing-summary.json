@@ -12,7 +12,7 @@
       {
         "partNumber": 2,
         "partLabel": "Part 2",
-        "totalQuestions": 12,
+        "totalQuestions": 13,
         "freeQuestions": 3
       },
       {
@@ -24,7 +24,7 @@
       {
         "partNumber": 4,
         "partLabel": "Part 4",
-        "totalQuestions": 55,
+        "totalQuestions": 59,
         "freeQuestions": 3
       }
     ]
@@ -36,25 +36,25 @@
       {
         "partNumber": 1,
         "partLabel": "Part 1",
-        "totalQuestions": 16,
+        "totalQuestions": 22,
         "freeQuestions": 3
       },
       {
         "partNumber": 2,
         "partLabel": "Part 2",
-        "totalQuestions": 40,
+        "totalQuestions": 48,
         "freeQuestions": 3
       },
       {
         "partNumber": 3,
         "partLabel": "Part 3",
-        "totalQuestions": 16,
+        "totalQuestions": 17,
         "freeQuestions": 3
       },
       {
         "partNumber": 4,
         "partLabel": "Part 4",
-        "totalQuestions": 14,
+        "totalQuestions": 16,
         "freeQuestions": 3
       }
     ]
@@ -66,7 +66,7 @@
       {
         "partNumber": 1,
         "partLabel": "Part 1",
-        "totalQuestions": 18,
+        "totalQuestions": 19,
         "freeQuestions": 3
       },
       {
@@ -84,7 +84,7 @@
       {
         "partNumber": 4,
         "partLabel": "Part 4",
-        "totalQuestions": 40,
+        "totalQuestions": 45,
         "freeQuestions": 3
       }
     ]
@@ -96,13 +96,13 @@
       {
         "partNumber": 1,
         "partLabel": "Part 1",
-        "totalQuestions": 34,
+        "totalQuestions": 35,
         "freeQuestions": 3
       },
       {
         "partNumber": 2,
         "partLabel": "Part 2",
-        "totalQuestions": 44,
+        "totalQuestions": 43,
         "freeQuestions": 3
       },
       {

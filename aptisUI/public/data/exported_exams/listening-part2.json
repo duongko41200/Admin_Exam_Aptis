@@ -86,7 +86,7 @@
     "questionType": "LISTENING",
     "id": "69529f3317d3f9f552a546a9",
     "createdAt": "2025-12-29T15:33:07.928Z",
-    "updatedAt": "2026-03-11T09:35:23.578Z",
+    "updatedAt": "2026-06-22T03:54:11.836Z",
     "__v": 0
   },
   {
@@ -150,7 +150,7 @@
           },
           {
             "content": "3",
-            "correctAnswer": "Using less electricity\n",
+            "correctAnswer": "Using less electricity",
             "file": null,
             "answerList": null,
             "image": null,
@@ -159,7 +159,7 @@
           },
           {
             "content": "4",
-            "correctAnswer": "Using less water\n",
+            "correctAnswer": "Using less water",
             "file": null,
             "answerList": null,
             "image": null,
@@ -176,7 +176,7 @@
     "questionType": "LISTENING",
     "id": "695686530731243929b0ce96",
     "createdAt": "2026-01-01T14:36:03.699Z",
-    "updatedAt": "2026-03-11T09:34:42.740Z",
+    "updatedAt": "2026-06-22T03:54:11.881Z",
     "__v": 0
   },
   {
@@ -218,6 +218,7 @@
         "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767278435167_1dd7fdc132239714_audiotp_de3.mp3",
         "subQuestionAnswerList": [],
         "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Ah, I used to be the person who didn't like shopping online, but ever since I experienced\"},{\"timestamp\":[5.36,9.04],\"text\":\" home delivery, I, no longer shop and stores.\"},{\"timestamp\":[9.04,14.08],\"text\":\" When I shop online, the delivery person brings the package right to my door, even up to\"},{\"timestamp\":[14.08,19.48],\"text\":\" my floor, and knocks on my apartment door, so I don't even need to step outside.\"},{\"timestamp\":[19.48,21.68],\"text\":\" I really enjoy this convenience.\"},{\"timestamp\":[21.68,25.84],\"text\":\" B. Shopping online has helped me save quite a bit of money.\"},{\"timestamp\":[25.84,31.08],\"text\":\" After a few months of online shopping, I was able to save enough to buy a new bicycle,\"},{\"timestamp\":[31.08,32.48],\"text\":\" but don't get me wrong.\"},{\"timestamp\":[32.48,36.8],\"text\":\" I haven't been eating any less or cutting back on the groceries I buy.\"},{\"timestamp\":[36.8,41.6],\"text\":\" It's just that online shopping allows me to compare prices and choose the store with\"},{\"timestamp\":[41.6,42.6],\"text\":\" the best deal.\"},{\"timestamp\":[42.6,48.56],\"text\":\" C. I'm a pretty busy person, and I often don't have enough time because of my hectic work schedule.\"},{\"timestamp\":[48.56,51.56],\"text\":\" That's why I always shop online to save time.\"},{\"timestamp\":[51.56,57.64],\"text\":\" This way, I don't need to go to the store in person, and someone will deliver the items directly to me.\"},{\"timestamp\":[57.64,67],\"text\":\" Additionally, online shopping is very convenient because, with just a few clicks, I can buy everything I want without having to go from one store to another.\"},{\"timestamp\":[67,72],\"text\":\" D. I don't shop online because it's cheaper, or because of the fast shipping.\"},{\"timestamp\":[72,78],\"text\":\" I shop online because, when browsing online stores, I have a wide range of choices.\"},{\"timestamp\":[78,82.45],\"text\":\" For the same item, there are many different types and brands for me to choose from and compare, which allows me to pick the one I like the most.\"}]</p>",
+        "subSuggestion": "",
         "subQuestion": [
           {
             "content": "1",
@@ -239,7 +240,7 @@
           },
           {
             "content": "3",
-            "correctAnswer": "It saves time\n",
+            "correctAnswer": "It saves time",
             "file": null,
             "answerList": null,
             "image": null,
@@ -265,7 +266,7 @@
     "questionType": "LISTENING",
     "id": "695687630731243929b0cea5",
     "createdAt": "2026-01-01T14:40:35.738Z",
-    "updatedAt": "2026-01-13T07:14:05.177Z",
+    "updatedAt": "2026-06-22T03:54:11.928Z",
     "__v": 0
   },
   {
@@ -355,7 +356,7 @@
     "questionType": "LISTENING",
     "id": "695688450731243929b0ceb4",
     "createdAt": "2026-01-01T14:44:21.910Z",
-    "updatedAt": "2026-03-11T09:36:49.307Z",
+    "updatedAt": "2026-06-22T03:54:11.972Z",
     "__v": 0
   },
   {
@@ -419,7 +420,7 @@
           },
           {
             "content": "3",
-            "correctAnswer": "climbing\n",
+            "correctAnswer": "climbing",
             "file": null,
             "answerList": null,
             "image": null,
@@ -445,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6956892b0731243929b0d14d",
     "createdAt": "2026-01-01T14:48:11.717Z",
-    "updatedAt": "2026-03-11T09:37:23.012Z",
+    "updatedAt": "2026-06-22T03:54:12.015Z",
     "__v": 0
   },
   {
@@ -535,7 +536,7 @@
     "questionType": "LISTENING",
     "id": "6957c4aec88028aa29a1af83",
     "createdAt": "2026-01-02T13:14:22.598Z",
-    "updatedAt": "2026-03-11T09:37:49.739Z",
+    "updatedAt": "2026-06-22T03:54:12.061Z",
     "__v": 0
   },
   {
@@ -625,7 +626,7 @@
     "questionType": "LISTENING",
     "id": "6957c58bc88028aa29a1b06e",
     "createdAt": "2026-01-02T13:18:03.481Z",
-    "updatedAt": "2026-03-11T09:38:19.567Z",
+    "updatedAt": "2026-06-22T03:54:12.109Z",
     "__v": 0
   },
   {
@@ -715,7 +716,7 @@
     "questionType": "LISTENING",
     "id": "6957c62bc88028aa29a1b07d",
     "createdAt": "2026-01-02T13:20:43.726Z",
-    "updatedAt": "2026-03-11T09:38:42.594Z",
+    "updatedAt": "2026-06-22T03:54:12.156Z",
     "__v": 0
   },
   {
@@ -805,7 +806,7 @@
     "questionType": "LISTENING",
     "id": "6957c6bbc88028aa29a1b08c",
     "createdAt": "2026-01-02T13:23:07.867Z",
-    "updatedAt": "2026-03-11T09:39:19.392Z",
+    "updatedAt": "2026-06-22T03:54:12.204Z",
     "__v": 0
   },
   {
@@ -895,17 +896,17 @@
     "questionType": "LISTENING",
     "id": "6957c926c88028aa29a1b09b",
     "createdAt": "2026-01-02T13:33:26.657Z",
-    "updatedAt": "2026-03-11T09:39:45.092Z",
+    "updatedAt": "2026-06-22T03:54:12.249Z",
     "__v": 0
   },
   {
     "_id": "6957c9c0c88028aa29a1b0a4",
-    "title": "Studying ( Phiên bản 1)",
+    "title": "Studying",
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "description": null,
     "questions": [
       {
-        "questionTitle": "Studying ( Phiên bản 1)",
+        "questionTitle": "Studying",
         "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
         "answerList": [
           {
@@ -946,7 +947,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69e8e3ef5e1769f65cd38391"
+            "_id": "69b1387d27e8fed251497c77"
           },
           {
             "content": "2",
@@ -955,7 +956,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69e8e3ef5e1769f65cd38392"
+            "_id": "69b1387d27e8fed251497c78"
           },
           {
             "content": "3",
@@ -964,7 +965,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69e8e3ef5e1769f65cd38393"
+            "_id": "69b1387d27e8fed251497c79"
           },
           {
             "content": "4",
@@ -973,19 +974,19 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69e8e3ef5e1769f65cd38394"
+            "_id": "69b1387d27e8fed251497c7a"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8e3ef5e1769f65cd38390"
+        "_id": "69b1387d27e8fed251497c76"
       }
     ],
     "questionPart": "TWO",
     "questionType": "LISTENING",
     "id": "6957c9c0c88028aa29a1b0aa",
     "createdAt": "2026-01-02T13:36:00.173Z",
-    "updatedAt": "2026-04-22T15:06:23.550Z",
+    "updatedAt": "2026-06-22T03:54:12.297Z",
     "__v": 0
   },
   {
@@ -1075,7 +1076,97 @@
     "questionType": "LISTENING",
     "id": "6957ca55c88028aa29a1b0b9",
     "createdAt": "2026-01-02T13:38:29.069Z",
-    "updatedAt": "2026-03-11T09:40:34.276Z",
+    "updatedAt": "2026-06-22T03:54:12.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a38b38f9e4ccda11bf0df07",
+    "title": "A new museum",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A new museum",
+        "content": "Four people are talking about A new museum. Complete the sentence below.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "finished the visit quickly"
+          },
+          {
+            "id": 2,
+            "content": "got lost during the visit"
+          },
+          {
+            "id": 3,
+            "content": "wanted to visit again"
+          },
+          {
+            "id": 4,
+            "content": "enjoy the use of technology"
+          },
+          {
+            "id": 5,
+            "content": "đáp án nhiễu 1"
+          },
+          {
+            "id": 6,
+            "content": "đáp án nhiễu 2"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "got lost during the visit",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df09"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "finished the visit quickly",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0a"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "wanted to visit again",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0b"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "enjoy the use of technology",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a38b38f9e4ccda11bf0df0c"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a38b38f9e4ccda11bf0df08"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "6a38b38f9e4ccda11bf0df0d",
+    "createdAt": "2026-06-22T04:01:19.323Z",
+    "updatedAt": "2026-06-22T04:01:19.323Z",
     "__v": 0
   }
 ]
