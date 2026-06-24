@@ -1,117 +1,5 @@
 [
   {
-    "_id": "68e4ee0953b4655eba3f0de6",
-    "title": "Vội vã",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Vội vã",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
-            "suggestion": "",
-            "_id": "68e4ee0953b4655eba3f0de8"
-          },
-          {
-            "content": "Do you prefer reading newspapers or watching the news?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
-            "suggestion": "",
-            "_id": "68e4ee0953b4655eba3f0de9"
-          },
-          {
-            "content": "Why do people need to watch the news?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
-            "suggestion": "",
-            "_id": "68e4ee0953b4655eba3f0dea"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg"
-        ],
-        "_id": "68e4ee0953b4655eba3f0de7"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e4ee0953b4655eba3f0deb",
-    "createdAt": "2025-10-07T10:40:09.092Z",
-    "updatedAt": "2026-06-22T03:54:21.089Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5d19853b4655eba3f0eb3",
-    "title": "Đi đâu đó với bạn bè",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Đi đâu đó với bạn bè",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
-            "suggestion": "",
-            "_id": "68f065a153b4655eba3f21db"
-          },
-          {
-            "content": "When was the last time you went somewhere with your friends?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
-            "suggestion": "",
-            "_id": "68f065a153b4655eba3f21dc"
-          },
-          {
-            "content": "Why do people enjoy doing things together?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
-            "suggestion": "",
-            "_id": "68f065a153b4655eba3f21dd"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f065a153b4655eba3f21da"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5d19853b4655eba3f0eb8",
-    "createdAt": "2025-10-08T02:51:04.933Z",
-    "updatedAt": "2026-06-22T03:54:21.130Z",
-    "__v": 0
-  },
-  {
     "_id": "68e5d3c053b4655eba3f0eeb",
     "title": "Làm việc trong văn phòng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -164,61 +52,6 @@
     "id": "68e5d3c053b4655eba3f0ef0",
     "createdAt": "2025-10-08T03:00:16.366Z",
     "updatedAt": "2026-06-22T03:54:21.172Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5d60c53b4655eba3f0f07",
-    "title": "1 người đọc sách, một người chơi game",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "1 người đọc sách, một người chơi game",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f069e553b4655eba3f22d1"
-          },
-          {
-            "content": "The last time you read the news.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f069e553b4655eba3f22d2"
-          },
-          {
-            "content": "Do you think that technological advancements and the Internet make people distant?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f069e553b4655eba3f22d3"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f069e553b4655eba3f22d0"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5d60c53b4655eba3f0f0c",
-    "createdAt": "2025-10-08T03:10:04.012Z",
-    "updatedAt": "2026-06-22T03:54:21.214Z",
     "__v": 0
   },
   {
@@ -332,14 +165,14 @@
     "__v": 0
   },
   {
-    "_id": "68e5db8653b4655eba3f0f5b",
-    "title": "Nấu ăn cho gia đình",
+    "_id": "68e5e52d53b4655eba3f1032",
+    "title": "Cô giáo và đám trẻ trong lớp học",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Nấu ăn cho gia đình",
+        "content": "Cô giáo và đám trẻ trong lớp học",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -351,331 +184,50 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
             "suggestion": "",
-            "_id": "68f0976c53b4655eba3f2485"
+            "_id": "68f09d5253b4655eba3f2665"
           },
           {
-            "content": "Why do people enjoy eating together?",
+            "content": "What kind of games did you play when you were a child?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
             "suggestion": "",
-            "_id": "68f0976c53b4655eba3f2486"
+            "_id": "68f09d5253b4655eba3f2666"
           },
           {
-            "content": "Young people are too busy to cook for their families?",
+            "content": "Why do children spend time playing?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
             "suggestion": "",
-            "_id": "68f0976c53b4655eba3f2487"
+            "_id": "68f09d5253b4655eba3f2667"
           }
         ],
         "isExample": "",
         "image": [],
-        "_id": "68f0976c53b4655eba3f2484"
+        "_id": "68f09d5253b4655eba3f2664"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68e5db8653b4655eba3f0f60",
-    "createdAt": "2025-10-08T03:33:26.620Z",
-    "updatedAt": "2026-06-22T03:54:21.339Z",
+    "id": "68e5e52d53b4655eba3f1037",
+    "createdAt": "2025-10-08T04:14:37.333Z",
+    "updatedAt": "2026-06-22T03:54:22.810Z",
     "__v": 0
   },
   {
-    "_id": "68e5e2ae53b4655eba3f0fde",
-    "title": "Đi du lịch theo nhóm",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Đi du lịch theo nhóm",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Please describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f09a2753b4655eba3f2523"
-          },
-          {
-            "content": "Tell me about the last time you traveled with a group.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f09a2753b4655eba3f2524"
-          },
-          {
-            "content": "What are the benefits of traveling with a group?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f09a2753b4655eba3f2525"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f09a2753b4655eba3f2522"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5e2ae53b4655eba3f0fe3",
-    "createdAt": "2025-10-08T04:03:58.755Z",
-    "updatedAt": "2026-06-22T03:54:21.381Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5e3e653b4655eba3f1008",
-    "title": "Mua sắm cùng bạn bè",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Mua sắm cùng bạn bè",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
-            "suggestion": "",
-            "_id": "68f09ba453b4655eba3f260a"
-          },
-          {
-            "content": "Tell me about a time you went shopping with your friend.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
-            "suggestion": "",
-            "_id": "68f09ba453b4655eba3f260b"
-          },
-          {
-            "content": "Some people are not interested in online shopping. How about you?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
-            "suggestion": "",
-            "_id": "68f09ba453b4655eba3f260c"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f09ba453b4655eba3f2609"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5e3e653b4655eba3f100d",
-    "createdAt": "2025-10-08T04:09:10.666Z",
-    "updatedAt": "2026-06-22T03:54:21.422Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0a60753b4655eba3f27f5",
-    "title": "3 người nằm trên cỏ đọc sách",
+    "_id": "68f0b9f353b4655eba3f2874",
+    "title": "Trẻ em đi xe bus",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "3 người nằm trên cỏ đọc sách",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f0a60753b4655eba3f27f7"
-          },
-          {
-            "content": "What books do you read?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f0a60753b4655eba3f27f8"
-          },
-          {
-            "content": "Why is reading books important to children?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
-            "suggestion": "",
-            "_id": "68f0a60753b4655eba3f27f9"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg"
-        ],
-        "_id": "68f0a60753b4655eba3f27f6"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0a60753b4655eba3f27fa",
-    "createdAt": "2025-10-16T08:00:07.534Z",
-    "updatedAt": "2026-06-22T03:54:21.464Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0bea153b4655eba3f28d6",
-    "title": "Mẹ và con đọc sách trên giường",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Mẹ và con đọc sách trên giường",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
-            "suggestion": "",
-            "_id": "68f0bea153b4655eba3f28d8"
-          },
-          {
-            "content": "What sorts of things help you sleep easily?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
-            "suggestion": "",
-            "_id": "68f0bea153b4655eba3f28d9"
-          },
-          {
-            "content": "Why is it important to sleep enough per night?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
-            "suggestion": "",
-            "_id": "68f0bea153b4655eba3f28da"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp"
-        ],
-        "_id": "68f0bea153b4655eba3f28d7"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0bea153b4655eba3f28db",
-    "createdAt": "2025-10-16T09:45:05.397Z",
-    "updatedAt": "2026-06-22T03:54:21.506Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0fbe053b4655eba3f2ac4",
-    "title": "Gia đình trong phòng khách",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Gia đình trong phòng khách",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0fbe053b4655eba3f2ac6"
-          },
-          {
-            "content": "Why is it important to play with children?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0fbe053b4655eba3f2ac7"
-          },
-          {
-            "content": "How should parents spend time together with their children?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0fbe053b4655eba3f2ac8"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg"
-        ],
-        "_id": "68f0fbe053b4655eba3f2ac5"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0fbe053b4655eba3f2ac9",
-    "createdAt": "2025-10-16T14:06:24.268Z",
-    "updatedAt": "2026-06-22T03:54:21.548Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0ff6653b4655eba3f2b90",
-    "title": "Người đàn ông viết thư",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Người đàn ông viết thư",
+        "content": "Trẻ em đi xe bus",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -687,52 +239,109 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
             "suggestion": "",
-            "_id": "68f0ffc453b4655eba3f2bb2"
+            "_id": "68f0b9f353b4655eba3f2876"
           },
           {
-            "content": "Have you ever written a hand letter?",
+            "content": "How do children go to school in your country?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
             "suggestion": "",
-            "_id": "68f0ffc453b4655eba3f2bb3"
+            "_id": "68f0b9f353b4655eba3f2877"
           },
           {
-            "content": "Do you plan to write handwritten letters in the future?",
+            "content": "Is it common to live far from school in your country? Why?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
             "suggestion": "",
-            "_id": "68f0ffc453b4655eba3f2bb4"
+            "_id": "68f0b9f353b4655eba3f2878"
           }
         ],
         "isExample": "",
         "image": [
-          "speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg"
+          "speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg"
         ],
-        "_id": "68f0ffc453b4655eba3f2bb1"
+        "_id": "68f0b9f353b4655eba3f2875"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0ff6653b4655eba3f2b95",
-    "createdAt": "2025-10-16T14:21:26.305Z",
-    "updatedAt": "2026-06-22T03:54:21.590Z",
+    "id": "68f0b9f353b4655eba3f2879",
+    "createdAt": "2025-10-16T09:25:07.044Z",
+    "updatedAt": "2026-06-22T03:54:23.027Z",
     "__v": 0
   },
   {
-    "_id": "68e5d4a953b4655eba3f0ef9",
-    "title": "Hai mẹ con cưỡi ngựa",
+    "_id": "68f1b5e753b4655eba3f2db8",
+    "title": "1 người đàn ông ngồi vẽ tranh",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "1 người đàn ông ngồi vẽ tranh",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
+            "suggestion": "",
+            "_id": "68f1b5e753b4655eba3f2dba"
+          },
+          {
+            "content": "Describe the last time you looked at some art.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
+            "suggestion": "",
+            "_id": "68f1b5e753b4655eba3f2dbb"
+          },
+          {
+            "content": "Why do people enjoy creating art?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
+            "suggestion": "",
+            "_id": "68f1b5e753b4655eba3f2dbc"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg"
+        ],
+        "_id": "68f1b5e753b4655eba3f2db9"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f1b5e753b4655eba3f2dbd",
+    "createdAt": "2025-10-17T03:20:07.772Z",
+    "updatedAt": "2026-06-22T03:54:23.248Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5d60c53b4655eba3f0f07",
+    "title": "1 người đọc sách, một người chơi game",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Hai mẹ con cưỡi ngựa",
+        "content": "1 người đọc sách, một người chơi game",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -744,94 +353,39 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
             "suggestion": "",
-            "_id": "68f0fc5f53b4655eba3f2b01"
+            "_id": "68f069e553b4655eba3f22d1"
           },
           {
-            "content": "Tell me about an animal that you like",
+            "content": "The last time you read the news.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
             "suggestion": "",
-            "_id": "68f0fc5f53b4655eba3f2b02"
+            "_id": "68f069e553b4655eba3f22d2"
           },
           {
-            "content": "How important are animals in our lives?",
+            "content": "Do you think that technological advancements and the Internet make people distant?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893003435_ee8c9b8cdf3afc84_istockphoto_840388290_170667a.jpg",
             "suggestion": "",
-            "_id": "68f0fc5f53b4655eba3f2b03"
+            "_id": "68f069e553b4655eba3f22d3"
           }
         ],
         "isExample": "",
         "image": [],
-        "_id": "68f0fc5f53b4655eba3f2b00"
+        "_id": "68f069e553b4655eba3f22d0"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68e5d4a953b4655eba3f0efe",
-    "createdAt": "2025-10-08T03:04:09.739Z",
-    "updatedAt": "2026-06-22T03:54:21.632Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5d89b53b4655eba3f0f31",
-    "title": "Cô gái đọc sách trên bãi cỏ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Cô gái đọc sách trên bãi cỏ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
-            "suggestion": "",
-            "_id": "68f07aa953b4655eba3f2387"
-          },
-          {
-            "content": "Tell me about a time you feel relaxing",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
-            "suggestion": "",
-            "_id": "68f07aa953b4655eba3f2388"
-          },
-          {
-            "content": "The reason making relaxing be an important part in our life.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
-            "suggestion": "",
-            "_id": "68f07aa953b4655eba3f2389"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f07aa953b4655eba3f2386"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5d89b53b4655eba3f0f36",
-    "createdAt": "2025-10-08T03:20:59.440Z",
-    "updatedAt": "2026-06-22T03:54:21.674Z",
+    "id": "68e5d60c53b4655eba3f0f0c",
+    "createdAt": "2025-10-08T03:10:04.012Z",
+    "updatedAt": "2026-06-22T03:54:21.214Z",
     "__v": 0
   },
   {
@@ -887,287 +441,6 @@
     "id": "68e5e33853b4655eba3f0ff1",
     "createdAt": "2025-10-08T04:06:16.526Z",
     "updatedAt": "2026-06-22T03:54:21.716Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5e46153b4655eba3f1016",
-    "title": "Ăn ở ngoài",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Ăn ở ngoài",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
-            "suggestion": "",
-            "_id": "68f09c4753b4655eba3f2630"
-          },
-          {
-            "content": "How difficult is it for young people to learn to cook these days?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
-            "suggestion": "",
-            "_id": "68f09c4753b4655eba3f2631"
-          },
-          {
-            "content": "When was the last time you went out to eat?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
-            "suggestion": "",
-            "_id": "68f09c4753b4655eba3f2632"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f09c4753b4655eba3f262f"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5e46153b4655eba3f101b",
-    "createdAt": "2025-10-08T04:11:13.068Z",
-    "updatedAt": "2026-06-22T03:54:21.757Z",
-    "__v": 0
-  },
-  {
-    "_id": "68ea011253b4655eba3f1710",
-    "title": "Gọi điện thoại",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Gọi điện thoại",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
-            "suggestion": "",
-            "_id": "68f0650453b4655eba3f21b5"
-          },
-          {
-            "content": "A time you talked on phone recently.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
-            "suggestion": "",
-            "_id": "68f0650453b4655eba3f21b6"
-          },
-          {
-            "content": "Will writing messages replace talking on the phone?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
-            "suggestion": "",
-            "_id": "68f0650453b4655eba3f21b7"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f0650453b4655eba3f21b4"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68ea011253b4655eba3f1715",
-    "createdAt": "2025-10-11T07:02:42.335Z",
-    "updatedAt": "2026-06-22T03:54:21.799Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0a49553b4655eba3f27cb",
-    "title": "2 vợ chồng dọn nhà",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "2 vợ chồng dọn nhà",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0a49553b4655eba3f27cd"
-          },
-          {
-            "content": "Tell me the time you did housework.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0a49553b4655eba3f27ce"
-          },
-          {
-            "content": "Why do people like to decorate their houses?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
-            "suggestion": "",
-            "_id": "68f0a49553b4655eba3f27cf"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg"
-        ],
-        "_id": "68f0a49553b4655eba3f27cc"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0a49553b4655eba3f27d0",
-    "createdAt": "2025-10-16T07:53:57.075Z",
-    "updatedAt": "2026-06-22T03:54:21.841Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0b73b53b4655eba3f2834",
-    "title": "Ảnh cưới",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Ảnh cưới",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Please describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
-            "suggestion": "",
-            "_id": "68f0b73b53b4655eba3f2836"
-          },
-          {
-            "content": " When did you last attend a wedding?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
-            "suggestion": "",
-            "_id": "68f0b73b53b4655eba3f2837"
-          },
-          {
-            "content": "Why are weddings important to the families involved?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
-            "suggestion": "",
-            "_id": "68f0b73b53b4655eba3f2838"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png"
-        ],
-        "_id": "68f0b73b53b4655eba3f2835"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0b73b53b4655eba3f2839",
-    "createdAt": "2025-10-16T09:13:31.555Z",
-    "updatedAt": "2026-06-22T03:54:21.885Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0bb4b53b4655eba3f2890",
-    "title": "Người đàn ông đang nhảy",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Người đàn ông đang nhảy",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
-            "suggestion": "",
-            "_id": "68f0bb4b53b4655eba3f2892"
-          },
-          {
-            "content": "Do you like dancing? Why? Why not?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
-            "suggestion": "",
-            "_id": "68f0bb4b53b4655eba3f2893"
-          },
-          {
-            "content": "On what occasions do people usually dance in your country?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
-            "suggestion": "",
-            "_id": "68f0bb4b53b4655eba3f2894"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp"
-        ],
-        "_id": "68f0bb4b53b4655eba3f2891"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0bb4b53b4655eba3f2895",
-    "createdAt": "2025-10-16T09:30:51.313Z",
-    "updatedAt": "2026-06-22T03:54:21.927Z",
     "__v": 0
   },
   {
@@ -1228,14 +501,14 @@
     "__v": 0
   },
   {
-    "_id": "68f0bd0253b4655eba3f28ba",
-    "title": "Gia đình đi picnic",
+    "_id": "68eb768a53b4655eba3f18f3",
+    "title": "Sử dụng máy tính",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
+    "description": "không có sub title",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Gia đình đi picnic",
+        "content": "Sử dụng máy tính",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1247,52 +520,50 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
             "suggestion": "",
-            "_id": "68f0bd0253b4655eba3f28bc"
+            "_id": "68f0997353b4655eba3f24b1"
           },
           {
-            "content": "Tell me how you and your family spend free time together.",
+            "content": "Your experience of using a computer.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
             "suggestion": "",
-            "_id": "68f0bd0253b4655eba3f28bd"
+            "_id": "68f0997353b4655eba3f24b2"
           },
           {
-            "content": "Do you think today’s parents should spend more quality time with their children and why?",
+            "content": "Do you think technology makes life easier?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
             "suggestion": "",
-            "_id": "68f0bd0253b4655eba3f28be"
+            "_id": "68f0997353b4655eba3f24b3"
           }
         ],
         "isExample": "",
-        "image": [
-          "speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg"
-        ],
-        "_id": "68f0bd0253b4655eba3f28bb"
+        "image": [],
+        "_id": "68f0997353b4655eba3f24b0"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0bd0253b4655eba3f28bf",
-    "createdAt": "2025-10-16T09:38:10.390Z",
-    "updatedAt": "2026-06-22T03:54:22.016Z",
+    "id": "68eb768a53b4655eba3f18f8",
+    "createdAt": "2025-10-12T09:36:10.888Z",
+    "updatedAt": "2026-06-22T03:54:22.336Z",
     "__v": 0
   },
   {
-    "_id": "68f0fa1f53b4655eba3f2a01",
-    "title": "4 người đàn ông leo núi",
+    "_id": "68e5d4a953b4655eba3f0ef9",
+    "title": "Hai mẹ con cưỡi ngựa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
+    "description": "không có sub title",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "4 người đàn ông leo núi",
+        "content": "Hai mẹ con cưỡi ngựa",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1300,102 +571,43 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Describe this picture.",
+            "content": "Describe the picture.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
             "suggestion": "",
-            "_id": "68f0fa1f53b4655eba3f2a03"
+            "_id": "68f0fc5f53b4655eba3f2b01"
           },
           {
-            "content": "Do you like to climb mountains?",
+            "content": "Tell me about an animal that you like",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
             "suggestion": "",
-            "_id": "68f0fa1f53b4655eba3f2a04"
+            "_id": "68f0fc5f53b4655eba3f2b02"
           },
           {
-            "content": "Do you think outdoor activities are important?",
+            "content": "How important are animals in our lives?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892649261_33a9bccd2d987d1f_1437535451_haho.jpg",
             "suggestion": "",
-            "_id": "68f0fa1f53b4655eba3f2a05"
+            "_id": "68f0fc5f53b4655eba3f2b03"
           }
         ],
         "isExample": "",
-        "image": [
-          "speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp"
-        ],
-        "_id": "68f0fa1f53b4655eba3f2a02"
+        "image": [],
+        "_id": "68f0fc5f53b4655eba3f2b00"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0fa1f53b4655eba3f2a06",
-    "createdAt": "2025-10-16T13:58:55.245Z",
-    "updatedAt": "2026-06-22T03:54:22.061Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f1014253b4655eba3f2c0b",
-    "title": "2 bố con ăn sáng",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "2 bố con ăn sáng",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
-            "suggestion": "",
-            "_id": "68f1014253b4655eba3f2c0d"
-          },
-          {
-            "content": "What do you usually eat for breakfast?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
-            "suggestion": "",
-            "_id": "68f1014253b4655eba3f2c0e"
-          },
-          {
-            "content": "Is it important to eat a good breakfast? Why?\n",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
-            "suggestion": "",
-            "_id": "68f1014253b4655eba3f2c0f"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp"
-        ],
-        "_id": "68f1014253b4655eba3f2c0c"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f1014253b4655eba3f2c10",
-    "createdAt": "2025-10-16T14:29:22.219Z",
-    "updatedAt": "2026-06-22T03:54:22.108Z",
+    "id": "68e5d4a953b4655eba3f0efe",
+    "createdAt": "2025-10-08T03:04:09.739Z",
+    "updatedAt": "2026-06-22T03:54:21.632Z",
     "__v": 0
   },
   {
@@ -1451,61 +663,6 @@
     "id": "68e4ef0353b4655eba3f0df9",
     "createdAt": "2025-10-07T10:44:19.372Z",
     "updatedAt": "2026-06-22T03:54:22.152Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5d96653b4655eba3f0f3f",
-    "title": "Người đi xe Bus",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Người đi xe Bus",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
-            "suggestion": "",
-            "_id": "68f096ec53b4655eba3f2413"
-          },
-          {
-            "content": "Tell me about a time when you used public transport?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
-            "suggestion": "",
-            "_id": "68f096ec53b4655eba3f2414"
-          },
-          {
-            "content": "People should use public transport more. Do you agree? Why, or why not?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
-            "suggestion": "",
-            "_id": "68f096ec53b4655eba3f2415"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f096ec53b4655eba3f2412"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5d96653b4655eba3f0f44",
-    "createdAt": "2025-10-08T03:24:22.210Z",
-    "updatedAt": "2026-06-22T03:54:22.194Z",
     "__v": 0
   },
   {
@@ -1618,61 +775,6 @@
     "id": "68e5e63c53b4655eba3f1053",
     "createdAt": "2025-10-08T04:19:08.723Z",
     "updatedAt": "2026-06-22T03:54:22.290Z",
-    "__v": 0
-  },
-  {
-    "_id": "68eb768a53b4655eba3f18f3",
-    "title": "Sử dụng máy tính",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Sử dụng máy tính",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
-            "suggestion": "",
-            "_id": "68f0997353b4655eba3f24b1"
-          },
-          {
-            "content": "Your experience of using a computer.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
-            "suggestion": "",
-            "_id": "68f0997353b4655eba3f24b2"
-          },
-          {
-            "content": "Do you think technology makes life easier?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760261769601_024130cae476ea94_lovepik_parents_sit_on_the_sofa_and_watch_their_children_picture_501802506.jpg",
-            "suggestion": "",
-            "_id": "68f0997353b4655eba3f24b3"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f0997353b4655eba3f24b0"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68eb768a53b4655eba3f18f8",
-    "createdAt": "2025-10-12T09:36:10.888Z",
-    "updatedAt": "2026-06-22T03:54:22.336Z",
     "__v": 0
   },
   {
@@ -1790,14 +892,14 @@
     "__v": 0
   },
   {
-    "_id": "68f0b90753b4655eba3f2866",
-    "title": "Người đàn ông đọc báo",
+    "_id": "68e5e74353b4655eba3f105c",
+    "title": "Ăn nhà hàng với gia đình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
+    "description": "không có sub title",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Người đàn ông đọc báo",
+        "content": "Ăn nhà hàng với gia đình",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1805,56 +907,54 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Describe this picture.",
+            "content": "Describe the picture.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
             "suggestion": "",
-            "_id": "68f0b90753b4655eba3f2868"
+            "_id": "68f09e8253b4655eba3f26f7"
           },
           {
-            "content": "How do most people in your country learn about world news?",
+            "content": "What makes a restaurant good?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
             "suggestion": "",
-            "_id": "68f0b90753b4655eba3f2869"
+            "_id": "68f09e8253b4655eba3f26f8"
           },
           {
-            "content": "How has the reporting of news changed in the last fifty years?",
+            "content": "Why do people choose to spend money in restaurants?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
             "suggestion": "",
-            "_id": "68f0b90753b4655eba3f286a"
+            "_id": "68f09e8253b4655eba3f26f9"
           }
         ],
         "isExample": "",
-        "image": [
-          "speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg"
-        ],
-        "_id": "68f0b90753b4655eba3f2867"
+        "image": [],
+        "_id": "68f09e8253b4655eba3f26f6"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0b90753b4655eba3f286b",
-    "createdAt": "2025-10-16T09:21:11.493Z",
-    "updatedAt": "2026-06-22T03:54:22.469Z",
+    "id": "68e5e74353b4655eba3f1061",
+    "createdAt": "2025-10-08T04:23:31.425Z",
+    "updatedAt": "2026-06-22T03:54:22.851Z",
     "__v": 0
   },
   {
-    "_id": "68f0bac253b4655eba3f2882",
-    "title": "Con tặng quà bố",
+    "_id": "68f0bdbf53b4655eba3f28c8",
+    "title": "Sử dụng máy tính - Version 2",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Con tặng quà bố",
+        "content": "Sử dụng máy tính - Version 2",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1866,52 +966,221 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
             "suggestion": "",
-            "_id": "68f0bac253b4655eba3f2884"
+            "_id": "68f0bdbf53b4655eba3f28ca"
           },
           {
-            "content": "Tell me about a time when you gave or received a gift.",
+            "content": "Tell me the last time you used a computer?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
             "suggestion": "",
-            "_id": "68f0bac253b4655eba3f2885"
+            "_id": "68f0bdbf53b4655eba3f28cb"
           },
           {
-            "content": "Why is it important to give people gifts on special occasions?",
+            "content": "Should children use computers?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
             "suggestion": "",
-            "_id": "68f0bac253b4655eba3f2886"
+            "_id": "68f0bdbf53b4655eba3f28cc"
           }
         ],
         "isExample": "",
         "image": [
-          "speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg"
+          "speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg"
         ],
-        "_id": "68f0bac253b4655eba3f2883"
+        "_id": "68f0bdbf53b4655eba3f28c9"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0bac253b4655eba3f2887",
-    "createdAt": "2025-10-16T09:28:34.388Z",
-    "updatedAt": "2026-06-22T03:54:22.512Z",
+    "id": "68f0bdbf53b4655eba3f28cd",
+    "createdAt": "2025-10-16T09:41:19.225Z",
+    "updatedAt": "2026-06-22T03:54:23.070Z",
     "__v": 0
   },
   {
-    "_id": "68f0bcb453b4655eba3f28ac",
-    "title": "Cô gái ăn đồ ăn nhanh",
+    "_id": "68f1b5af53b4655eba3f2daa",
+    "title": "1 người đàn ông mặc vest đứng đợi tàu",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
     "questions": [
       {
         "questionTitle": "không có sub title",
-        "content": "Cô gái ăn đồ ăn nhanh",
+        "content": "1 người đàn ông mặc vest đứng đợi tàu",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
+            "suggestion": "",
+            "_id": "68f1b5af53b4655eba3f2dac"
+          },
+          {
+            "content": "Tell me about the last time you used public transport.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
+            "suggestion": "",
+            "_id": "68f1b5af53b4655eba3f2dad"
+          },
+          {
+            "content": "How can we increase the number of people using public transport?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
+            "suggestion": "",
+            "_id": "68f1b5af53b4655eba3f2dae"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg"
+        ],
+        "_id": "68f1b5af53b4655eba3f2dab"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f1b5af53b4655eba3f2daf",
+    "createdAt": "2025-10-17T03:19:11.137Z",
+    "updatedAt": "2026-06-22T03:54:23.205Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5e2ae53b4655eba3f0fde",
+    "title": "Đi du lịch theo nhóm",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Đi du lịch theo nhóm",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f09a2753b4655eba3f2523"
+          },
+          {
+            "content": "Tell me about the last time you traveled with a group.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f09a2753b4655eba3f2524"
+          },
+          {
+            "content": "What are the benefits of traveling with a group?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896237374_dbb7a9aaaac524bb_istockphoto_1061230532_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f09a2753b4655eba3f2525"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f09a2753b4655eba3f2522"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5e2ae53b4655eba3f0fe3",
+    "createdAt": "2025-10-08T04:03:58.755Z",
+    "updatedAt": "2026-06-22T03:54:21.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0bea153b4655eba3f28d6",
+    "title": "Mẹ và con đọc sách trên giường",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Mẹ và con đọc sách trên giường",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
+            "suggestion": "",
+            "_id": "68f0bea153b4655eba3f28d8"
+          },
+          {
+            "content": "What sorts of things help you sleep easily?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
+            "suggestion": "",
+            "_id": "68f0bea153b4655eba3f28d9"
+          },
+          {
+            "content": "Why is it important to sleep enough per night?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp",
+            "suggestion": "",
+            "_id": "68f0bea153b4655eba3f28da"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760607904152_f5b00e3bdd3d9ebe_8_dieu_nen_doc_01.webp"
+        ],
+        "_id": "68f0bea153b4655eba3f28d7"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0bea153b4655eba3f28db",
+    "createdAt": "2025-10-16T09:45:05.397Z",
+    "updatedAt": "2026-06-22T03:54:21.506Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0ff6653b4655eba3f2b90",
+    "title": "Người đàn ông viết thư",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Người đàn ông viết thư",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1923,41 +1192,267 @@
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
             "suggestion": "",
-            "_id": "68f0bcb453b4655eba3f28ae"
+            "_id": "68f0ffc453b4655eba3f2bb2"
           },
           {
-            "content": "What kinds of food are not good for our health?",
+            "content": "Have you ever written a hand letter?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
             "suggestion": "",
-            "_id": "68f0bcb453b4655eba3f28af"
+            "_id": "68f0ffc453b4655eba3f2bb3"
           },
           {
-            "content": "What should we do to keep healthy?",
+            "content": "Do you plan to write handwritten letters in the future?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg",
             "suggestion": "",
-            "_id": "68f0bcb453b4655eba3f28b0"
+            "_id": "68f0ffc453b4655eba3f2bb4"
           }
         ],
         "isExample": "",
         "image": [
-          "speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp"
+          "speaking/2025/10/1760624579384_6ee52a601fb9a8db_inline_image_preview.jpg"
         ],
-        "_id": "68f0bcb453b4655eba3f28ad"
+        "_id": "68f0ffc453b4655eba3f2bb1"
       }
     ],
     "questionPart": "TWO",
     "questionType": "SPEAKING",
-    "id": "68f0bcb453b4655eba3f28b1",
-    "createdAt": "2025-10-16T09:36:52.372Z",
-    "updatedAt": "2026-06-22T03:54:22.553Z",
+    "id": "68f0ff6653b4655eba3f2b95",
+    "createdAt": "2025-10-16T14:21:26.305Z",
+    "updatedAt": "2026-06-22T03:54:21.590Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0a49553b4655eba3f27cb",
+    "title": "2 vợ chồng dọn nhà",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "2 vợ chồng dọn nhà",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0a49553b4655eba3f27cd"
+          },
+          {
+            "content": "Tell me the time you did housework.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0a49553b4655eba3f27ce"
+          },
+          {
+            "content": "Why do people like to decorate their houses?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0a49553b4655eba3f27cf"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760601235863_15c6ad7909d7e7d9_istockphoto_1217811794_612x612.jpg"
+        ],
+        "_id": "68f0a49553b4655eba3f27cc"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0a49553b4655eba3f27d0",
+    "createdAt": "2025-10-16T07:53:57.075Z",
+    "updatedAt": "2026-06-22T03:54:21.841Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0fa1f53b4655eba3f2a01",
+    "title": "4 người đàn ông leo núi",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "4 người đàn ông leo núi",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "suggestion": "",
+            "_id": "68f0fa1f53b4655eba3f2a03"
+          },
+          {
+            "content": "Do you like to climb mountains?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "suggestion": "",
+            "_id": "68f0fa1f53b4655eba3f2a04"
+          },
+          {
+            "content": "Do you think outdoor activities are important?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp",
+            "suggestion": "",
+            "_id": "68f0fa1f53b4655eba3f2a05"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760623133820_b82087656577c818_747c3a02cada70076a180a8709c1e988.webp"
+        ],
+        "_id": "68f0fa1f53b4655eba3f2a02"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0fa1f53b4655eba3f2a06",
+    "createdAt": "2025-10-16T13:58:55.245Z",
+    "updatedAt": "2026-06-22T03:54:22.061Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5db8653b4655eba3f0f5b",
+    "title": "Nấu ăn cho gia đình",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Nấu ăn cho gia đình",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "suggestion": "",
+            "_id": "68f0976c53b4655eba3f2485"
+          },
+          {
+            "content": "Why do people enjoy eating together?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "suggestion": "",
+            "_id": "68f0976c53b4655eba3f2486"
+          },
+          {
+            "content": "Young people are too busy to cook for their families?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894406074_775b8792507fedde_gettyimages_958682384_1552663649.webp",
+            "suggestion": "",
+            "_id": "68f0976c53b4655eba3f2487"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f0976c53b4655eba3f2484"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5db8653b4655eba3f0f60",
+    "createdAt": "2025-10-08T03:33:26.620Z",
+    "updatedAt": "2026-06-22T03:54:21.339Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0a60753b4655eba3f27f5",
+    "title": "3 người nằm trên cỏ đọc sách",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "3 người nằm trên cỏ đọc sách",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
+            "suggestion": "",
+            "_id": "68f0a60753b4655eba3f27f7"
+          },
+          {
+            "content": "What books do you read?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
+            "suggestion": "",
+            "_id": "68f0a60753b4655eba3f27f8"
+          },
+          {
+            "content": "Why is reading books important to children?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg",
+            "suggestion": "",
+            "_id": "68f0a60753b4655eba3f27f9"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760601606383_8b62b7dda7341015_istockphoto_503892523_170667a.jpg"
+        ],
+        "_id": "68f0a60753b4655eba3f27f6"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0a60753b4655eba3f27fa",
+    "createdAt": "2025-10-16T08:00:07.534Z",
+    "updatedAt": "2026-06-22T03:54:21.464Z",
     "__v": 0
   },
   {
@@ -2071,61 +1566,6 @@
     "__v": 0
   },
   {
-    "_id": "68e5d36453b4655eba3f0edd",
-    "title": "Treo tranh lên tường",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Treo tranh lên tường",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
-            "suggestion": "",
-            "_id": "68f0a43f53b4655eba3f27ac"
-          },
-          {
-            "content": "Tell me about a time you decorated your house.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
-            "suggestion": "",
-            "_id": "68f0a43f53b4655eba3f27ad"
-          },
-          {
-            "content": "In modern life, people pay more attention to home decoration than in the past. Do you agree? ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
-            "suggestion": "",
-            "_id": "68f0a43f53b4655eba3f27ae"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f0a43f53b4655eba3f27ab"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5d36453b4655eba3f0ee2",
-    "createdAt": "2025-10-08T02:58:44.847Z",
-    "updatedAt": "2026-06-22T03:54:22.680Z",
-    "__v": 0
-  },
-  {
     "_id": "68e5d73153b4655eba3f0f23",
     "title": "Hai bố con đang chơi bóng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2178,226 +1618,6 @@
     "id": "68e5d73153b4655eba3f0f28",
     "createdAt": "2025-10-08T03:14:57.732Z",
     "updatedAt": "2026-06-22T03:54:22.725Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5dd2b53b4655eba3f0f85",
-    "title": "Cười trong rạp chiếu phim",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Cười trong rạp chiếu phim",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
-            "suggestion": "",
-            "_id": "68f099f653b4655eba3f24fd"
-          },
-          {
-            "content": "Tell me a time you laughed a lot.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
-            "suggestion": "",
-            "_id": "68f099f653b4655eba3f24fe"
-          },
-          {
-            "content": "Do you think people from different countries laugh at different things?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
-            "suggestion": "",
-            "_id": "68f099f653b4655eba3f24ff"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f099f653b4655eba3f24fc"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5dd2b53b4655eba3f0f8a",
-    "createdAt": "2025-10-08T03:40:27.982Z",
-    "updatedAt": "2026-06-22T03:54:22.768Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5e52d53b4655eba3f1032",
-    "title": "Cô giáo và đám trẻ trong lớp học",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Cô giáo và đám trẻ trong lớp học",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
-            "suggestion": "",
-            "_id": "68f09d5253b4655eba3f2665"
-          },
-          {
-            "content": "What kind of games did you play when you were a child?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
-            "suggestion": "",
-            "_id": "68f09d5253b4655eba3f2666"
-          },
-          {
-            "content": "Why do children spend time playing?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896876661_e27a2db24e080947_ho_tro_giao_vien_mam_non.jpg",
-            "suggestion": "",
-            "_id": "68f09d5253b4655eba3f2667"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f09d5253b4655eba3f2664"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5e52d53b4655eba3f1037",
-    "createdAt": "2025-10-08T04:14:37.333Z",
-    "updatedAt": "2026-06-22T03:54:22.810Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e5e74353b4655eba3f105c",
-    "title": "Ăn nhà hàng với gia đình",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Ăn nhà hàng với gia đình",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
-            "suggestion": "",
-            "_id": "68f09e8253b4655eba3f26f7"
-          },
-          {
-            "content": "What makes a restaurant good?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
-            "suggestion": "",
-            "_id": "68f09e8253b4655eba3f26f8"
-          },
-          {
-            "content": "Why do people choose to spend money in restaurants?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759897398139_04ae9fd1281562c0_family_eating_lunch_together_restaurant_260nw_100355438.webp",
-            "suggestion": "",
-            "_id": "68f09e8253b4655eba3f26f9"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f09e8253b4655eba3f26f6"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68e5e74353b4655eba3f1061",
-    "createdAt": "2025-10-08T04:23:31.425Z",
-    "updatedAt": "2026-06-22T03:54:22.851Z",
-    "__v": 0
-  },
-  {
-    "_id": "68eb6ab553b4655eba3f18e5",
-    "title": "Ăn nhà hàng với bạn bè",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "không có sub title",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Ăn nhà hàng với bạn bè",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
-            "suggestion": "",
-            "_id": "68f0972153b4655eba3f2439"
-          },
-          {
-            "content": "Tell me the last time you went to a restaurant with your friends.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
-            "suggestion": "",
-            "_id": "68f0972153b4655eba3f243a"
-          },
-          {
-            "content": "Why do people enjoy eating out with their friends?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
-            "suggestion": "",
-            "_id": "68f0972153b4655eba3f243b"
-          }
-        ],
-        "isExample": "",
-        "image": [],
-        "_id": "68f0972153b4655eba3f2438"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68eb6ab553b4655eba3f18ea",
-    "createdAt": "2025-10-12T08:45:41.733Z",
-    "updatedAt": "2026-06-22T03:54:22.902Z",
     "__v": 0
   },
   {
@@ -2458,177 +1678,6 @@
     "__v": 0
   },
   {
-    "_id": "68f0b65453b4655eba3f281d",
-    "title": "Mẹ cõng con",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Mẹ cõng con",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
-            "suggestion": "",
-            "_id": "68f0b65453b4655eba3f281f"
-          },
-          {
-            "content": "Tell me a time that you visited a new place?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
-            "suggestion": "",
-            "_id": "68f0b65453b4655eba3f2820"
-          },
-          {
-            "content": "Why do people like to visit new places?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
-            "suggestion": "",
-            "_id": "68f0b65453b4655eba3f2821"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp"
-        ],
-        "_id": "68f0b65453b4655eba3f281e"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0b65453b4655eba3f2822",
-    "createdAt": "2025-10-16T09:09:40.658Z",
-    "updatedAt": "2026-06-22T03:54:22.985Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0b9f353b4655eba3f2874",
-    "title": "Trẻ em đi xe bus",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Trẻ em đi xe bus",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
-            "suggestion": "",
-            "_id": "68f0b9f353b4655eba3f2876"
-          },
-          {
-            "content": "How do children go to school in your country?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
-            "suggestion": "",
-            "_id": "68f0b9f353b4655eba3f2877"
-          },
-          {
-            "content": "Is it common to live far from school in your country? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg",
-            "suggestion": "",
-            "_id": "68f0b9f353b4655eba3f2878"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760606705782_6a5190cd37a4750f_istockphoto_185208032_1024x1024.jpg"
-        ],
-        "_id": "68f0b9f353b4655eba3f2875"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0b9f353b4655eba3f2879",
-    "createdAt": "2025-10-16T09:25:07.044Z",
-    "updatedAt": "2026-06-22T03:54:23.027Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f0bdbf53b4655eba3f28c8",
-    "title": "Sử dụng máy tính - Version 2",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "Sử dụng máy tính - Version 2",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe this picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
-            "suggestion": "",
-            "_id": "68f0bdbf53b4655eba3f28ca"
-          },
-          {
-            "content": "Tell me the last time you used a computer?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
-            "suggestion": "",
-            "_id": "68f0bdbf53b4655eba3f28cb"
-          },
-          {
-            "content": "Should children use computers?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg",
-            "suggestion": "",
-            "_id": "68f0bdbf53b4655eba3f28cc"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760607678038_69fcabdb22f6ac38_con_nghien_game_phu_huynh_nen_lam_gi_191633297.jpg"
-        ],
-        "_id": "68f0bdbf53b4655eba3f28c9"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f0bdbf53b4655eba3f28cd",
-    "createdAt": "2025-10-16T09:41:19.225Z",
-    "updatedAt": "2026-06-22T03:54:23.070Z",
-    "__v": 0
-  },
-  {
     "_id": "68f0fad953b4655eba3f2a70",
     "title": "Hoạt động làm bánh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2686,6 +1735,1071 @@
     "__v": 0
   },
   {
+    "_id": "68e4ee0953b4655eba3f0de6",
+    "title": "Vội vã",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Vội vã",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
+            "suggestion": "",
+            "_id": "68e4ee0953b4655eba3f0de8"
+          },
+          {
+            "content": "Do you prefer reading newspapers or watching the news?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
+            "suggestion": "",
+            "_id": "68e4ee0953b4655eba3f0de9"
+          },
+          {
+            "content": "Why do people need to watch the news?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg",
+            "suggestion": "",
+            "_id": "68e4ee0953b4655eba3f0dea"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1759833607835_d1df7b050dc39360_1_11.jpg"
+        ],
+        "_id": "68e4ee0953b4655eba3f0de7"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e4ee0953b4655eba3f0deb",
+    "createdAt": "2025-10-07T10:40:09.092Z",
+    "updatedAt": "2026-06-22T03:54:21.089Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0fbe053b4655eba3f2ac4",
+    "title": "Gia đình trong phòng khách",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Gia đình trong phòng khách",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0fbe053b4655eba3f2ac6"
+          },
+          {
+            "content": "Why is it important to play with children?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0fbe053b4655eba3f2ac7"
+          },
+          {
+            "content": "How should parents spend time together with their children?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0fbe053b4655eba3f2ac8"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760623583100_d9053db49ceabeb7_istockphoto_945104294_612x612.jpg"
+        ],
+        "_id": "68f0fbe053b4655eba3f2ac5"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0fbe053b4655eba3f2ac9",
+    "createdAt": "2025-10-16T14:06:24.268Z",
+    "updatedAt": "2026-06-22T03:54:21.548Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0bb4b53b4655eba3f2890",
+    "title": "Người đàn ông đang nhảy",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Người đàn ông đang nhảy",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
+            "suggestion": "",
+            "_id": "68f0bb4b53b4655eba3f2892"
+          },
+          {
+            "content": "Do you like dancing? Why? Why not?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
+            "suggestion": "",
+            "_id": "68f0bb4b53b4655eba3f2893"
+          },
+          {
+            "content": "On what occasions do people usually dance in your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp",
+            "suggestion": "",
+            "_id": "68f0bb4b53b4655eba3f2894"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760607050222_afae00f346c1c4e2_Hiring_Mojo2.webp"
+        ],
+        "_id": "68f0bb4b53b4655eba3f2891"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0bb4b53b4655eba3f2895",
+    "createdAt": "2025-10-16T09:30:51.313Z",
+    "updatedAt": "2026-06-22T03:54:21.927Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f1014253b4655eba3f2c0b",
+    "title": "2 bố con ăn sáng",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "2 bố con ăn sáng",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
+            "suggestion": "",
+            "_id": "68f1014253b4655eba3f2c0d"
+          },
+          {
+            "content": "What do you usually eat for breakfast?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
+            "suggestion": "",
+            "_id": "68f1014253b4655eba3f2c0e"
+          },
+          {
+            "content": "Is it important to eat a good breakfast? Why?\n",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp",
+            "suggestion": "",
+            "_id": "68f1014253b4655eba3f2c0f"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760624961001_95aff3ab3a752d40_thuc_pham_giup_tre_tang_can_7889_7188_png.webp"
+        ],
+        "_id": "68f1014253b4655eba3f2c0c"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f1014253b4655eba3f2c10",
+    "createdAt": "2025-10-16T14:29:22.219Z",
+    "updatedAt": "2026-06-22T03:54:22.108Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0bac253b4655eba3f2882",
+    "title": "Con tặng quà bố",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Con tặng quà bố",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "suggestion": "",
+            "_id": "68f0bac253b4655eba3f2884"
+          },
+          {
+            "content": "Tell me about a time when you gave or received a gift.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "suggestion": "",
+            "_id": "68f0bac253b4655eba3f2885"
+          },
+          {
+            "content": "Why is it important to give people gifts on special occasions?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg",
+            "suggestion": "",
+            "_id": "68f0bac253b4655eba3f2886"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760606913094_706aeea040f0d6c7_chon_tang_qua_cho_bo_theo_so_thich.jpg"
+        ],
+        "_id": "68f0bac253b4655eba3f2883"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0bac253b4655eba3f2887",
+    "createdAt": "2025-10-16T09:28:34.388Z",
+    "updatedAt": "2026-06-22T03:54:22.512Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5d89b53b4655eba3f0f31",
+    "title": "Cô gái đọc sách trên bãi cỏ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Cô gái đọc sách trên bãi cỏ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
+            "suggestion": "",
+            "_id": "68f07aa953b4655eba3f2387"
+          },
+          {
+            "content": "Tell me about a time you feel relaxing",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
+            "suggestion": "",
+            "_id": "68f07aa953b4655eba3f2388"
+          },
+          {
+            "content": "The reason making relaxing be an important part in our life.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893658721_4755dc0dc278c4d5_5163_jpg_wh1200.jpg",
+            "suggestion": "",
+            "_id": "68f07aa953b4655eba3f2389"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f07aa953b4655eba3f2386"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5d89b53b4655eba3f0f36",
+    "createdAt": "2025-10-08T03:20:59.440Z",
+    "updatedAt": "2026-06-22T03:54:21.674Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5e46153b4655eba3f1016",
+    "title": "Ăn ở ngoài",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Ăn ở ngoài",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
+            "suggestion": "",
+            "_id": "68f09c4753b4655eba3f2630"
+          },
+          {
+            "content": "How difficult is it for young people to learn to cook these days?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
+            "suggestion": "",
+            "_id": "68f09c4753b4655eba3f2631"
+          },
+          {
+            "content": "When was the last time you went out to eat?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896672257_e9f557439ba88e6f_1725789506337_file__1_.png",
+            "suggestion": "",
+            "_id": "68f09c4753b4655eba3f2632"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f09c4753b4655eba3f262f"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5e46153b4655eba3f101b",
+    "createdAt": "2025-10-08T04:11:13.068Z",
+    "updatedAt": "2026-06-22T03:54:21.757Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ea011253b4655eba3f1710",
+    "title": "Gọi điện thoại",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Gọi điện thoại",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
+            "suggestion": "",
+            "_id": "68f0650453b4655eba3f21b5"
+          },
+          {
+            "content": "A time you talked on phone recently.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
+            "suggestion": "",
+            "_id": "68f0650453b4655eba3f21b6"
+          },
+          {
+            "content": "Will writing messages replace talking on the phone?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760166161119_7b02bd06032407b9_portrait_elegant_financier_stylish_suit_sitting_cafe_with_open_laptop_front_him_while_talking_cellphone_about_work_business_plan_with_concentrated_look_verifying_info_screen_95891_4334.jpg",
+            "suggestion": "",
+            "_id": "68f0650453b4655eba3f21b7"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f0650453b4655eba3f21b4"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68ea011253b4655eba3f1715",
+    "createdAt": "2025-10-11T07:02:42.335Z",
+    "updatedAt": "2026-06-22T03:54:21.799Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0bd0253b4655eba3f28ba",
+    "title": "Gia đình đi picnic",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Gia đình đi picnic",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "suggestion": "",
+            "_id": "68f0bd0253b4655eba3f28bc"
+          },
+          {
+            "content": "Tell me how you and your family spend free time together.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "suggestion": "",
+            "_id": "68f0bd0253b4655eba3f28bd"
+          },
+          {
+            "content": "Do you think today’s parents should spend more quality time with their children and why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg",
+            "suggestion": "",
+            "_id": "68f0bd0253b4655eba3f28be"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760607489272_e5fda7c224217280_bai196.jpg"
+        ],
+        "_id": "68f0bd0253b4655eba3f28bb"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0bd0253b4655eba3f28bf",
+    "createdAt": "2025-10-16T09:38:10.390Z",
+    "updatedAt": "2026-06-22T03:54:22.016Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5d96653b4655eba3f0f3f",
+    "title": "Người đi xe Bus",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Người đi xe Bus",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
+            "suggestion": "",
+            "_id": "68f096ec53b4655eba3f2413"
+          },
+          {
+            "content": "Tell me about a time when you used public transport?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
+            "suggestion": "",
+            "_id": "68f096ec53b4655eba3f2414"
+          },
+          {
+            "content": "People should use public transport more. Do you agree? Why, or why not?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759893861654_67680f19045a257a_Serious_young_curly_girl_standing_in_a_bus_full_of_people__1023588506_1256x838.webp",
+            "suggestion": "",
+            "_id": "68f096ec53b4655eba3f2415"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f096ec53b4655eba3f2412"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5d96653b4655eba3f0f44",
+    "createdAt": "2025-10-08T03:24:22.210Z",
+    "updatedAt": "2026-06-22T03:54:22.194Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0b90753b4655eba3f2866",
+    "title": "Người đàn ông đọc báo",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Người đàn ông đọc báo",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0b90753b4655eba3f2868"
+          },
+          {
+            "content": "How do most people in your country learn about world news?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0b90753b4655eba3f2869"
+          },
+          {
+            "content": "How has the reporting of news changed in the last fifty years?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg",
+            "suggestion": "",
+            "_id": "68f0b90753b4655eba3f286a"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760606470278_b542b63482394e7a_istockphoto_108348850_612x612.jpg"
+        ],
+        "_id": "68f0b90753b4655eba3f2867"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0b90753b4655eba3f286b",
+    "createdAt": "2025-10-16T09:21:11.493Z",
+    "updatedAt": "2026-06-22T03:54:22.469Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0bcb453b4655eba3f28ac",
+    "title": "Cô gái ăn đồ ăn nhanh",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Cô gái ăn đồ ăn nhanh",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "suggestion": "",
+            "_id": "68f0bcb453b4655eba3f28ae"
+          },
+          {
+            "content": "What kinds of food are not good for our health?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "suggestion": "",
+            "_id": "68f0bcb453b4655eba3f28af"
+          },
+          {
+            "content": "What should we do to keep healthy?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp",
+            "suggestion": "",
+            "_id": "68f0bcb453b4655eba3f28b0"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760607411175_99bf0d07c5b65f8d_url.webp"
+        ],
+        "_id": "68f0bcb453b4655eba3f28ad"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0bcb453b4655eba3f28b1",
+    "createdAt": "2025-10-16T09:36:52.372Z",
+    "updatedAt": "2026-06-22T03:54:22.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5d36453b4655eba3f0edd",
+    "title": "Treo tranh lên tường",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Treo tranh lên tường",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
+            "suggestion": "",
+            "_id": "68f0a43f53b4655eba3f27ac"
+          },
+          {
+            "content": "Tell me about a time you decorated your house.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
+            "suggestion": "",
+            "_id": "68f0a43f53b4655eba3f27ad"
+          },
+          {
+            "content": "In modern life, people pay more attention to home decoration than in the past. Do you agree? ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759892324335_695ed921eefaa554____________________________________________________________________________________________________________________________198736218.webp",
+            "suggestion": "",
+            "_id": "68f0a43f53b4655eba3f27ae"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f0a43f53b4655eba3f27ab"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5d36453b4655eba3f0ee2",
+    "createdAt": "2025-10-08T02:58:44.847Z",
+    "updatedAt": "2026-06-22T03:54:22.680Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5d19853b4655eba3f0eb3",
+    "title": "Đi đâu đó với bạn bè",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Đi đâu đó với bạn bè",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
+            "suggestion": "",
+            "_id": "68f065a153b4655eba3f21db"
+          },
+          {
+            "content": "When was the last time you went somewhere with your friends?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
+            "suggestion": "",
+            "_id": "68f065a153b4655eba3f21dc"
+          },
+          {
+            "content": "Why do people enjoy doing things together?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759891864065_ab2e87afbdf8ab72_image_nepali_female_guide.jpg",
+            "suggestion": "",
+            "_id": "68f065a153b4655eba3f21dd"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f065a153b4655eba3f21da"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5d19853b4655eba3f0eb8",
+    "createdAt": "2025-10-08T02:51:04.933Z",
+    "updatedAt": "2026-06-22T03:54:21.130Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5e3e653b4655eba3f1008",
+    "title": "Mua sắm cùng bạn bè",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Mua sắm cùng bạn bè",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
+            "suggestion": "",
+            "_id": "68f09ba453b4655eba3f260a"
+          },
+          {
+            "content": "Tell me about a time you went shopping with your friend.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
+            "suggestion": "",
+            "_id": "68f09ba453b4655eba3f260b"
+          },
+          {
+            "content": "Some people are not interested in online shopping. How about you?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759896549930_62e11b044d43bd19_1725789038610_file.png",
+            "suggestion": "",
+            "_id": "68f09ba453b4655eba3f260c"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f09ba453b4655eba3f2609"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5e3e653b4655eba3f100d",
+    "createdAt": "2025-10-08T04:09:10.666Z",
+    "updatedAt": "2026-06-22T03:54:21.422Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0b73b53b4655eba3f2834",
+    "title": "Ảnh cưới",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Ảnh cưới",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
+            "suggestion": "",
+            "_id": "68f0b73b53b4655eba3f2836"
+          },
+          {
+            "content": " When did you last attend a wedding?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
+            "suggestion": "",
+            "_id": "68f0b73b53b4655eba3f2837"
+          },
+          {
+            "content": "Why are weddings important to the families involved?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png",
+            "suggestion": "",
+            "_id": "68f0b73b53b4655eba3f2838"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760606010311_e6580c313117f5ac_Screenshot_2025_10_16_161314.png"
+        ],
+        "_id": "68f0b73b53b4655eba3f2835"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0b73b53b4655eba3f2839",
+    "createdAt": "2025-10-16T09:13:31.555Z",
+    "updatedAt": "2026-06-22T03:54:21.885Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5dd2b53b4655eba3f0f85",
+    "title": "Cười trong rạp chiếu phim",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Cười trong rạp chiếu phim",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
+            "suggestion": "",
+            "_id": "68f099f653b4655eba3f24fd"
+          },
+          {
+            "content": "Tell me a time you laughed a lot.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
+            "suggestion": "",
+            "_id": "68f099f653b4655eba3f24fe"
+          },
+          {
+            "content": "Do you think people from different countries laugh at different things?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1759894827407_4f2ce0c54641b519_1725790743975_file__1_.png",
+            "suggestion": "",
+            "_id": "68f099f653b4655eba3f24ff"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f099f653b4655eba3f24fc"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68e5dd2b53b4655eba3f0f8a",
+    "createdAt": "2025-10-08T03:40:27.982Z",
+    "updatedAt": "2026-06-22T03:54:22.768Z",
+    "__v": 0
+  },
+  {
+    "_id": "68eb6ab553b4655eba3f18e5",
+    "title": "Ăn nhà hàng với bạn bè",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "không có sub title",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Ăn nhà hàng với bạn bè",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe this picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
+            "suggestion": "",
+            "_id": "68f0972153b4655eba3f2439"
+          },
+          {
+            "content": "Tell me the last time you went to a restaurant with your friends.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
+            "suggestion": "",
+            "_id": "68f0972153b4655eba3f243a"
+          },
+          {
+            "content": "Why do people enjoy eating out with their friends?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760258740487_460365fb1ee011bf_2_GettyImages_871544696.webp",
+            "suggestion": "",
+            "_id": "68f0972153b4655eba3f243b"
+          }
+        ],
+        "isExample": "",
+        "image": [],
+        "_id": "68f0972153b4655eba3f2438"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68eb6ab553b4655eba3f18ea",
+    "createdAt": "2025-10-12T08:45:41.733Z",
+    "updatedAt": "2026-06-22T03:54:22.902Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0b65453b4655eba3f281d",
+    "title": "Mẹ cõng con",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "",
+    "questions": [
+      {
+        "questionTitle": "không có sub title",
+        "content": "Mẹ cõng con",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
+            "suggestion": "",
+            "_id": "68f0b65453b4655eba3f281f"
+          },
+          {
+            "content": "Tell me a time that you visited a new place?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
+            "suggestion": "",
+            "_id": "68f0b65453b4655eba3f2820"
+          },
+          {
+            "content": "Why do people like to visit new places?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp",
+            "suggestion": "",
+            "_id": "68f0b65453b4655eba3f2821"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1760605779360_524c067465833b66_csm_Mutter_und_Kind_1693292837.webp"
+        ],
+        "_id": "68f0b65453b4655eba3f281e"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "SPEAKING",
+    "id": "68f0b65453b4655eba3f2822",
+    "createdAt": "2025-10-16T09:09:40.658Z",
+    "updatedAt": "2026-06-22T03:54:22.985Z",
+    "__v": 0
+  },
+  {
     "_id": "68f1b54753b4655eba3f2d9c",
     "title": " Cô gái ngồi trên du thuyền, ngắm cảnh biển",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2740,120 +2854,6 @@
     "id": "68f1b54753b4655eba3f2da1",
     "createdAt": "2025-10-17T03:17:27.328Z",
     "updatedAt": "2026-06-22T03:54:23.158Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f1b5af53b4655eba3f2daa",
-    "title": "1 người đàn ông mặc vest đứng đợi tàu",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "1 người đàn ông mặc vest đứng đợi tàu",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
-            "suggestion": "",
-            "_id": "68f1b5af53b4655eba3f2dac"
-          },
-          {
-            "content": "Tell me about the last time you used public transport.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
-            "suggestion": "",
-            "_id": "68f1b5af53b4655eba3f2dad"
-          },
-          {
-            "content": "How can we increase the number of people using public transport?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg",
-            "suggestion": "",
-            "_id": "68f1b5af53b4655eba3f2dae"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760671150660_e64263456c747426_2_3.jpg"
-        ],
-        "_id": "68f1b5af53b4655eba3f2dab"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f1b5af53b4655eba3f2daf",
-    "createdAt": "2025-10-17T03:19:11.137Z",
-    "updatedAt": "2026-06-22T03:54:23.205Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f1b5e753b4655eba3f2db8",
-    "title": "1 người đàn ông ngồi vẽ tranh",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "",
-    "questions": [
-      {
-        "questionTitle": "không có sub title",
-        "content": "1 người đàn ông ngồi vẽ tranh",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
-            "suggestion": "",
-            "_id": "68f1b5e753b4655eba3f2dba"
-          },
-          {
-            "content": "Describe the last time you looked at some art.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
-            "suggestion": "",
-            "_id": "68f1b5e753b4655eba3f2dbb"
-          },
-          {
-            "content": "Why do people enjoy creating art?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": "https://files.aptisacademy.com.vn/speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg",
-            "suggestion": "",
-            "_id": "68f1b5e753b4655eba3f2dbc"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1760671207144_6467501425e6d908_29122014155226491VTBM2.jpg"
-        ],
-        "_id": "68f1b5e753b4655eba3f2db9"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "SPEAKING",
-    "id": "68f1b5e753b4655eba3f2dbd",
-    "createdAt": "2025-10-17T03:20:07.772Z",
-    "updatedAt": "2026-06-22T03:54:23.248Z",
     "__v": 0
   }
 ]

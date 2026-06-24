@@ -1,237 +1,5 @@
 [
   {
-    "_id": "68e6657553b4655eba3f11bb",
-    "title": "Mua đồ xa xỉ, mua đồ bình dân",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Mua đồ xa xỉ, mua đồ bình dân",
-    "questions": [
-      {
-        "questionTitle": "Mua đồ xa xỉ, mua đồ bình dân",
-        "content": "Mua đồ xa xỉ, mua đồ bình dân",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Compare 2 pictures",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ce779e903cc0a1f3d69"
-          },
-          {
-            "content": "What is different about these two shopping experiences?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ce779e903cc0a1f3d6a"
-          },
-          {
-            "content": "Why are people people are attracted to expensive by expensive things?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ce779e903cc0a1f3d6b"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929716904_35cf342679946924_1725781582775_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929716906_7d52a6c402e62cf5_1725781584886_file.png"
-        ],
-        "_id": "69709ce779e903cc0a1f3d68"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e6657553b4655eba3f11c0",
-    "createdAt": "2025-10-08T13:21:57.756Z",
-    "updatedAt": "2026-06-22T03:54:23.294Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e6683153b4655eba3f11f3",
-    "title": "Sống 1 mình, sống với gia đình",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Sống 1 mình, sống với gia đình",
-    "questions": [
-      {
-        "questionTitle": "Sống 1 mình, sống với gia đình",
-        "content": "Sống 1 mình, sống với gia đình",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two photographs.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "68f1b9dc53b4655eba3f2fa7"
-          },
-          {
-            "content": "Do you prefer living alone or living with your family?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "68f1b9dc53b4655eba3f2fa8"
-          },
-          {
-            "content": "Is it necessary for young people to live independently from their families?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "68f1b9dc53b4655eba3f2fa9"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "speaking/2025/10/1759930619067_1503c100bb60aeac_1725783964508_file.png",
-          "speaking/2025/10/1759930619068_a2b767494b7dd360_1725783966825_file.png"
-        ],
-        "_id": "68f1b9dc53b4655eba3f2fa6"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e6683153b4655eba3f11f8",
-    "createdAt": "2025-10-08T13:33:37.441Z",
-    "updatedAt": "2026-06-22T03:54:23.337Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e66a4653b4655eba3f12e8",
-    "title": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
-    "questions": [
-      {
-        "questionTitle": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
-        "content": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d1479e903cc0a1f3faa"
-          },
-          {
-            "content": "Which means of transport do you prefer? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d1479e903cc0a1f3fab"
-          },
-          {
-            "content": "Why do people usually not choose to travel by plane?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d1479e903cc0a1f3fac"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930949154_99038b3452af423c_1725788172224_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930949155_b74b864813f4a079_1725788176715_file.png"
-        ],
-        "_id": "69709d1479e903cc0a1f3fa9"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e66a4653b4655eba3f12ed",
-    "createdAt": "2025-10-08T13:42:30.257Z",
-    "updatedAt": "2026-06-22T03:54:23.380Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e739c953b4655eba3f147e",
-    "title": "Nhóm người đi leo núi, bãi biển xanh",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhóm người đi leo núi, bãi biển xanh",
-    "questions": [
-      {
-        "questionTitle": "Nhóm người đi leo núi, bãi biển xanh",
-        "content": "Nhóm người đi leo núi, bãi biển xanh",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3a79e903cc0a1f4179"
-          },
-          {
-            "content": "What's so attractive about these two places?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3a79e903cc0a1f417a"
-          },
-          {
-            "content": "How to protect natural beauty?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3a79e903cc0a1f417b"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760266266724_a491f030f855d8d9_shutterstock_548961493.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760266266725_12538cf34bddf3c5_istockphoto_825026648_2048x2048.jpg"
-        ],
-        "_id": "69709d3a79e903cc0a1f4178"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e739c953b4655eba3f1483",
-    "createdAt": "2025-10-09T04:27:53.017Z",
-    "updatedAt": "2026-06-22T03:54:23.424Z",
-    "__v": 0
-  },
-  {
     "_id": "68e73b1853b4655eba3f14a8",
     "title": "bãi biển đông đúc, 1 cô gái đang ngồi ở một nơi yên tĩnh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -287,122 +55,6 @@
     "id": "68e73b1853b4655eba3f14ad",
     "createdAt": "2025-10-09T04:33:28.419Z",
     "updatedAt": "2026-06-22T03:54:23.468Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e73def53b4655eba3f14c4",
-    "title": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
-    "questions": [
-      {
-        "questionTitle": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
-        "content": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69c16338c68879da1b92c372"
-          },
-          {
-            "content": "What means of transport do you like to travel by?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69c16338c68879da1b92c373"
-          },
-          {
-            "content": "Why do some people like to travel by train?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69c16338c68879da1b92c374"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985135390_892de273836c2dc3_1725786741385_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985135391_1e650c0b3ff16308_1725786744713_file.png"
-        ],
-        "_id": "69c16338c68879da1b92c371"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e73def53b4655eba3f14c9",
-    "createdAt": "2025-10-09T04:45:35.972Z",
-    "updatedAt": "2026-06-22T03:54:23.510Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f20a6b53b4655eba3f372c",
-    "title": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
-    "questions": [
-      {
-        "questionTitle": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
-        "content": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the picture.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d8279e903cc0a1f4493"
-          },
-          {
-            "content": "What are the attractions of the two pictures?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d8279e903cc0a1f4494"
-          },
-          {
-            "content": "What is the appeal of growing plants and doing gardening?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d8279e903cc0a1f4495"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760692842496_c8003acc9b8d9255_Apple_Picking_Season_in_the_United_States1_1024x576.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760692842498_4cae473df594bdb9_istockphoto_984448864_2048x2048.jpg"
-        ],
-        "_id": "69709d8279e903cc0a1f4492"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68f20a6b53b4655eba3f3731",
-    "createdAt": "2025-10-17T09:20:43.896Z",
-    "updatedAt": "2026-06-22T03:54:23.554Z",
     "__v": 0
   },
   {
@@ -464,14 +116,14 @@
     "__v": 0
   },
   {
-    "_id": "68f345ee53b4655eba3f38b2",
-    "title": "Âm nhạc sôi động, âm nhạc du dương",
+    "_id": "68e7382553b4655eba3f1462",
+    "title": "đội tuyển đá bóng, vận động viên nhảy sào",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Âm nhạc sôi động, âm nhạc du dương",
+    "description": "đội tuyển đá bóng, vận động viên nhảy sào",
     "questions": [
       {
-        "questionTitle": "Âm nhạc sôi động, âm nhạc du dương",
-        "content": "Âm nhạc sôi động, âm nhạc du dương",
+        "questionTitle": "đội tuyển đá bóng, vận động viên nhảy sào",
+        "content": "đội tuyển đá bóng, vận động viên nhảy sào",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -479,57 +131,57 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Tell me what you can see in these two pictures.",
+            "content": "Compare 2 pictures.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dcd79e903cc0a1f47ad"
+            "_id": "6970e85b58cb12223e9438b9"
           },
           {
-            "content": "What sort of people go to these two events?",
+            "content": "The attractions of these different kinds of sport?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dcd79e903cc0a1f47ae"
+            "_id": "6970e85b58cb12223e9438ba"
           },
           {
-            "content": "Which of these two events would you prefer to go to? Why?",
+            "content": "Why are sports more popular than others?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dcd79e903cc0a1f47af"
+            "_id": "6970e85b58cb12223e9438bb"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760773613116_3571ce8eee1cd357_images__5_.jfif",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760773613117_ec336d21b7aaa52d_istockphoto_495237705_612x612.jpg"
+          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007193029_8e2ff3790805d56b_cap1.png",
+          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007193030_e175800e9d88e6ae_cap2.png"
         ],
-        "_id": "69709dcd79e903cc0a1f47ac"
+        "_id": "6970e85b58cb12223e9438b8"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68f345ee53b4655eba3f38b7",
-    "createdAt": "2025-10-18T07:46:54.412Z",
-    "updatedAt": "2026-06-22T03:54:23.640Z",
+    "id": "68e7382553b4655eba3f1467",
+    "createdAt": "2025-10-09T04:20:53.433Z",
+    "updatedAt": "2026-06-22T03:54:24.310Z",
     "__v": 0
   },
   {
-    "_id": "68e5e8c353b4655eba3f10cd",
-    "title": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+    "_id": "68e73e3c53b4655eba3f14d2",
+    "title": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+    "description": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
     "questions": [
       {
-        "questionTitle": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
-        "content": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+        "questionTitle": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
+        "content": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -537,46 +189,104 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Tell me what you see from the two pictures.",
+            "content": "Tell me what you see in the two pictures.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709c5e79e903cc0a1f3b70"
+            "_id": "69709d5979e903cc0a1f42fb"
           },
           {
-            "content": "Do you prefer reading printed books or e-books?",
+            "content": "What are the attractions of keeping these animals as pets?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709c5e79e903cc0a1f3b71"
+            "_id": "69709d5979e903cc0a1f42fc"
           },
           {
-            "content": "Does technology affect the way we read books?",
+            "content": "Some say animals should not be kept in the home. What do you think?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709c5e79e903cc0a1f3b72"
+            "_id": "69709d5979e903cc0a1f42fd"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759897785252_2d4df9a33b186449_1725769613614_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759897785254_5074f469a8d4f106_1725769616483_file.png"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985211491_0c8eca8202ed3c04_1725787131830_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985211492_16e27e6c436f4d3d_1725787134760_file.png"
         ],
-        "_id": "69709c5e79e903cc0a1f3b6f"
+        "_id": "69709d5979e903cc0a1f42fa"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68e5e8c353b4655eba3f10d2",
-    "createdAt": "2025-10-08T04:29:55.831Z",
-    "updatedAt": "2026-06-22T03:54:23.685Z",
+    "id": "68e73e3c53b4655eba3f14d7",
+    "createdAt": "2025-10-09T04:46:52.107Z",
+    "updatedAt": "2026-06-22T03:54:24.837Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f2132c53b4655eba3f3815",
+    "title": "chung cư, nhà mặt đất",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "chung cư, nhà mặt đất",
+    "questions": [
+      {
+        "questionTitle": "chung cư, nhà mặt đất",
+        "content": "chung cư, nhà mặt đất",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two pictures. ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db879e903cc0a1f469d"
+          },
+          {
+            "content": "What would it be like living in these two places?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db879e903cc0a1f469e"
+          },
+          {
+            "content": "Which of these two places would it be better for old people to live in? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db879e903cc0a1f469f"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760695084186_f23610f79e726bdf_interagency_mous.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760695084187_9d8d14d19d4c134f_4183ed124dc5403d9b06b388e59bd413_crop_576x384.webp"
+        ],
+        "_id": "69709db879e903cc0a1f469c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f2132c53b4655eba3f381a",
+    "createdAt": "2025-10-17T09:58:04.955Z",
+    "updatedAt": "2026-06-22T03:54:25.051Z",
     "__v": 0
   },
   {
@@ -638,180 +348,6 @@
     "__v": 0
   },
   {
-    "_id": "68e6679e53b4655eba3f11e5",
-    "title": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
-    "questions": [
-      {
-        "questionTitle": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
-        "content": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cfa79e903cc0a1f3e35"
-          },
-          {
-            "content": "Do you like to preserve memories by photo or writing?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cfa79e903cc0a1f3e36"
-          },
-          {
-            "content": "Why do people today like to use photos to save memories?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cfa79e903cc0a1f3e37"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930269920_a640f50ec3118184_1725782955283_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930269922_7a750704d25a049c_1725782959096_file.png"
-        ],
-        "_id": "69709cfa79e903cc0a1f3e34"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e6679e53b4655eba3f11ea",
-    "createdAt": "2025-10-08T13:31:10.774Z",
-    "updatedAt": "2026-06-22T03:54:23.787Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e6698753b4655eba3f12cc",
-    "title": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
-    "questions": [
-      {
-        "questionTitle": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
-        "content": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Compare 2 pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0979e903cc0a1f3f22"
-          },
-          {
-            "content": "Which would you prefer to be in?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0979e903cc0a1f3f23"
-          },
-          {
-            "content": "What are the benefits of listening to music?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0979e903cc0a1f3f24"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930758410_9b171971cfe6c08d_1725785884651_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930758412_deb38972c5c91c44_1725785888339_file.png"
-        ],
-        "_id": "69709d0979e903cc0a1f3f21"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e6698753b4655eba3f12d1",
-    "createdAt": "2025-10-08T13:39:19.268Z",
-    "updatedAt": "2026-06-22T03:54:23.834Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e7387553b4655eba3f1470",
-    "title": "Ăn đồ ăn nhanh, nấu ăn healthy",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ăn đồ ăn nhanh, nấu ăn healthy",
-    "questions": [
-      {
-        "questionTitle": "Ăn đồ ăn nhanh, nấu ăn healthy",
-        "content": "Ăn đồ ăn nhanh, nấu ăn healthy",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3579e903cc0a1f4135"
-          },
-          {
-            "content": "Which kind of food in those pictures is healthier?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3579e903cc0a1f4136"
-          },
-          {
-            "content": "What are the benefits of them?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d3579e903cc0a1f4137"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759983732671_6da2fa86448466ce_1725790470669_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759983732673_ae7ad0428723e657_1725790475751_file.png"
-        ],
-        "_id": "69709d3579e903cc0a1f4134"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e7387553b4655eba3f1475",
-    "createdAt": "2025-10-09T04:22:13.978Z",
-    "updatedAt": "2026-06-22T03:54:23.875Z",
-    "__v": 0
-  },
-  {
     "_id": "68e73d7b53b4655eba3f14b6",
     "title": "Thành thị đông đúc, vùng quê thanh tĩnh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -867,528 +403,6 @@
     "id": "68e73d7b53b4655eba3f14bb",
     "createdAt": "2025-10-09T04:43:39.606Z",
     "updatedAt": "2026-06-22T03:54:23.918Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e73e9553b4655eba3f14e0",
-    "title": "1 cặp đôi trò chuyện dưới tuyết, 2 cô gái đang tắm nắng",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cười về một điều gì đó",
-    "questions": [
-      {
-        "questionTitle": "Cười về một điều gì đó",
-        "content": "1 cặp đôi trò chuyện dưới tuyết, 2 cô gái đang tắm nắng",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures. ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d5f79e903cc0a1f433f"
-          },
-          {
-            "content": "Between the two locations, where do you prefer to go? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d5f79e903cc0a1f4340"
-          },
-          {
-            "content": "Do you think the weather affects people’s emotions on trips?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d5f79e903cc0a1f4341"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985301379_35c9818c70d4c91c_1725787448623_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985301380_414821f507b1b3d3_1725787452611_file.png"
-        ],
-        "_id": "69709d5f79e903cc0a1f433e"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e73e9553b4655eba3f14e5",
-    "createdAt": "2025-10-09T04:48:21.997Z",
-    "updatedAt": "2026-06-22T03:54:23.963Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e73ef253b4655eba3f14ee",
-    "title": "1 người đàn ông tập gym, 2 người đi leo núi",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 người đàn ông tập gym, 2 người đi leo núi",
-    "questions": [
-      {
-        "questionTitle": "1 người đàn ông tập gym, 2 người đi leo núi",
-        "content": "1 người đàn ông tập gym, 2 người đi leo núi",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Please describe the 2 pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d6479e903cc0a1f4383"
-          },
-          {
-            "content": "What the difference of these two exercises?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "<p><br></p>",
-            "_id": "69709d6479e903cc0a1f4384"
-          },
-          {
-            "content": "How important is it to do daily exercises?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d6479e903cc0a1f4385"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985393555_6cf279d3b4560fd3_1725783436659_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985393557_01ad1a461c031028_1725783439232_file.png"
-        ],
-        "_id": "69709d6479e903cc0a1f4382"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e73ef253b4655eba3f14f3",
-    "createdAt": "2025-10-09T04:49:54.144Z",
-    "updatedAt": "2026-06-22T03:54:24.006Z",
-    "__v": 0
-  },
-  {
-    "_id": "68ea019e53b4655eba3f171e",
-    "title": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
-    "questions": [
-      {
-        "questionTitle": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
-        "content": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Please describe the 2 pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d6e79e903cc0a1f43c7"
-          },
-          {
-            "content": "How are these experiences of sport different?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d6e79e903cc0a1f43c8"
-          },
-          {
-            "content": "What kinds of sports are popular in your country? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d6e79e903cc0a1f43c9"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760166301348_87ca25d8ca4c3e8c_Screen_Shot_2018_09_13_at_5_27_58_PM_300x182.webp",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760166301349_28a14f785519987c_basketball_players_sit_bench_and_footage_010857158_iconl.webp"
-        ],
-        "_id": "69709d6e79e903cc0a1f43c6"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68ea019e53b4655eba3f1723",
-    "createdAt": "2025-10-11T07:05:02.555Z",
-    "updatedAt": "2026-06-22T03:54:24.048Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f20ca353b4655eba3f3766",
-    "title": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
-    "questions": [
-      {
-        "questionTitle": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
-        "content": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in these two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709da079e903cc0a1f458d"
-          },
-          {
-            "content": "What are the benefits of two ways of traveling?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709da079e903cc0a1f458e"
-          },
-          {
-            "content": "Why do some people like traveling by car?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709da079e903cc0a1f458f"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760693410701_f8334d0b0b5bdcf1_1415246439734_wps_21_EGYPT_MAY_05_Outriders_cl.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760693410702_58c7d10624a97e77_man_going_inside_a_posh_car_3BK7MH1.jpg"
-        ],
-        "_id": "69709da079e903cc0a1f458c"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68f20ca353b4655eba3f376b",
-    "createdAt": "2025-10-17T09:30:11.809Z",
-    "updatedAt": "2026-06-22T03:54:24.091Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e663aa53b4655eba3f1191",
-    "title": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
-    "questions": [
-      {
-        "questionTitle": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
-        "content": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cd579e903cc0a1f3c9d"
-          },
-          {
-            "content": "What are the benefits of indoor and outdoor sports?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cd579e903cc0a1f3c9e"
-          },
-          {
-            "content": "Playing a game is to win. What do you think ?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709cd579e903cc0a1f3c9f"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929256986_15fbe2e086274b10_1725780539830_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929256987_602f7fd3fa8c80ad_1725780543359_file.png"
-        ],
-        "_id": "69709cd579e903cc0a1f3c9c"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e663aa53b4655eba3f1196",
-    "createdAt": "2025-10-08T13:14:18.407Z",
-    "updatedAt": "2026-06-22T03:54:24.134Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e665d653b4655eba3f11c9",
-    "title": "Trèo thuyền theo team, đạp xe một mình",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Trèo thuyền theo team, đạp xe một mình",
-    "questions": [
-      {
-        "questionTitle": "Trèo thuyền theo team, đạp xe một mình",
-        "content": "Trèo thuyền theo team, đạp xe một mình",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe these two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ced79e903cc0a1f3dad"
-          },
-          {
-            "content": "What are the difficulties of each sport?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ced79e903cc0a1f3dae"
-          },
-          {
-            "content": "Why do some people prefer team sports to individual sports?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709ced79e903cc0a1f3daf"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929814083_5a4d18f47d1dd922_Shayok.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929814084_ee55d585091a0790_Cyclist_in_the_mountains_listing.jpg"
-        ],
-        "_id": "69709ced79e903cc0a1f3dac"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e665d653b4655eba3f11ce",
-    "createdAt": "2025-10-08T13:23:34.899Z",
-    "updatedAt": "2026-06-22T03:54:24.176Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e6673c53b4655eba3f11d7",
-    "title": "Cưỡi lạc đà, cưỡi ngựa",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cưỡi lạc đà, cưỡi ngựa",
-    "questions": [
-      {
-        "questionTitle": "Cưỡi lạc đà, cưỡi ngựa",
-        "content": "Cưỡi lạc đà, cưỡi ngựa",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see from the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e8ba58cb12223e943b79"
-          },
-          {
-            "content": "Have you ever ridden a camel or a horse before?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e8ba58cb12223e943b7a"
-          },
-          {
-            "content": "Is riding animals popular in your country?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e8ba58cb12223e943b7b"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007289830_c49d1486bf98e545_capp1.webp",
-          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007289831_e7f5746e2487ec7a_1759930172162_3d69becf7f98b187_cuoi_ngua_925596.jpg"
-        ],
-        "_id": "6970e8ba58cb12223e943b78"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e6673c53b4655eba3f11dc",
-    "createdAt": "2025-10-08T13:29:32.935Z",
-    "updatedAt": "2026-06-22T03:54:24.221Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e669ed53b4655eba3f12da",
-    "title": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
-    "questions": [
-      {
-        "questionTitle": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
-        "content": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0f79e903cc0a1f3f66"
-          },
-          {
-            "content": "What are the benefits for children doing these two activities?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0f79e903cc0a1f3f67"
-          },
-          {
-            "content": "It is easier to learn something if you enjoy doing it. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d0f79e903cc0a1f3f68"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930860609_fd7bed6632e3cabd_1725787805324_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930860610_2e2f6d92897f6617_1725787811952_file.png"
-        ],
-        "_id": "69709d0f79e903cc0a1f3f65"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e669ed53b4655eba3f12df",
-    "createdAt": "2025-10-08T13:41:01.439Z",
-    "updatedAt": "2026-06-22T03:54:24.266Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e7382553b4655eba3f1462",
-    "title": "đội tuyển đá bóng, vận động viên nhảy sào",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "đội tuyển đá bóng, vận động viên nhảy sào",
-    "questions": [
-      {
-        "questionTitle": "đội tuyển đá bóng, vận động viên nhảy sào",
-        "content": "đội tuyển đá bóng, vận động viên nhảy sào",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Compare 2 pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e85b58cb12223e9438b9"
-          },
-          {
-            "content": "The attractions of these different kinds of sport?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e85b58cb12223e9438ba"
-          },
-          {
-            "content": "Why are sports more popular than others?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "6970e85b58cb12223e9438bb"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007193029_8e2ff3790805d56b_cap1.png",
-          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007193030_e175800e9d88e6ae_cap2.png"
-        ],
-        "_id": "6970e85b58cb12223e9438b8"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68e7382553b4655eba3f1467",
-    "createdAt": "2025-10-09T04:20:53.433Z",
-    "updatedAt": "2026-06-22T03:54:24.310Z",
     "__v": 0
   },
   {
@@ -1505,6 +519,122 @@
     "id": "68f20da653b4655eba3f37a8",
     "createdAt": "2025-10-17T09:34:30.961Z",
     "updatedAt": "2026-06-22T03:54:24.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e6698753b4655eba3f12cc",
+    "title": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
+    "questions": [
+      {
+        "questionTitle": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
+        "content": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Compare 2 pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d0979e903cc0a1f3f22"
+          },
+          {
+            "content": "Which would you prefer to be in?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d0979e903cc0a1f3f23"
+          },
+          {
+            "content": "What are the benefits of listening to music?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d0979e903cc0a1f3f24"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930758410_9b171971cfe6c08d_1725785884651_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930758412_deb38972c5c91c44_1725785888339_file.png"
+        ],
+        "_id": "69709d0979e903cc0a1f3f21"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e6698753b4655eba3f12d1",
+    "createdAt": "2025-10-08T13:39:19.268Z",
+    "updatedAt": "2026-06-22T03:54:23.834Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e663aa53b4655eba3f1191",
+    "title": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
+    "questions": [
+      {
+        "questionTitle": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
+        "content": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cd579e903cc0a1f3c9d"
+          },
+          {
+            "content": "What are the benefits of indoor and outdoor sports?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cd579e903cc0a1f3c9e"
+          },
+          {
+            "content": "Playing a game is to win. What do you think ?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cd579e903cc0a1f3c9f"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929256986_15fbe2e086274b10_1725780539830_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929256987_602f7fd3fa8c80ad_1725780543359_file.png"
+        ],
+        "_id": "69709cd579e903cc0a1f3c9c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e663aa53b4655eba3f1196",
+    "createdAt": "2025-10-08T13:14:18.407Z",
+    "updatedAt": "2026-06-22T03:54:24.134Z",
     "__v": 0
   },
   {
@@ -1682,14 +812,14 @@
     "__v": 0
   },
   {
-    "_id": "68f34e0d53b4655eba3f38dc",
-    "title": "Bãi biển, thảo nguyên xanh",
+    "_id": "68e739c953b4655eba3f147e",
+    "title": "Nhóm người đi leo núi, bãi biển xanh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Bãi biển, thảo nguyên xanh",
+    "description": "Nhóm người đi leo núi, bãi biển xanh",
     "questions": [
       {
-        "questionTitle": "Bãi biển, thảo nguyên xanh",
-        "content": "Bãi biển, thảo nguyên xanh",
+        "questionTitle": "Nhóm người đi leo núi, bãi biển xanh",
+        "content": "Nhóm người đi leo núi, bãi biển xanh",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1697,46 +827,104 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "What do you see in the two pictures?",
+            "content": "Tell me what you see in the two pictures.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ddb79e903cc0a1f4853"
+            "_id": "69709d3a79e903cc0a1f4179"
           },
           {
-            "content": "Which of these two places do you think children would prefer? Why?",
+            "content": "What's so attractive about these two places?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ddb79e903cc0a1f4854"
+            "_id": "69709d3a79e903cc0a1f417a"
           },
           {
-            "content": "Which of these two places would you prefer to go on holiday? Why?",
+            "content": "How to protect natural beauty?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ddb79e903cc0a1f4855"
+            "_id": "69709d3a79e903cc0a1f417b"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760775692721_9bca4c01f92b2160_Tropical_Paradise_Seychelles_Tropics_Islands_Indian_Ocean_Beach_Wallpaper_Hd_1920x1200_840x525.webp",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760775692722_0f721338d30eebb7_wall_murals_far_west_spirit.jpg"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760266266724_a491f030f855d8d9_shutterstock_548961493.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760266266725_12538cf34bddf3c5_istockphoto_825026648_2048x2048.jpg"
         ],
-        "_id": "69709ddb79e903cc0a1f4852"
+        "_id": "69709d3a79e903cc0a1f4178"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68f34e0d53b4655eba3f38e1",
-    "createdAt": "2025-10-18T08:21:33.437Z",
-    "updatedAt": "2026-06-22T03:54:24.585Z",
+    "id": "68e739c953b4655eba3f1483",
+    "createdAt": "2025-10-09T04:27:53.017Z",
+    "updatedAt": "2026-06-22T03:54:23.424Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e7387553b4655eba3f1470",
+    "title": "Ăn đồ ăn nhanh, nấu ăn healthy",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ăn đồ ăn nhanh, nấu ăn healthy",
+    "questions": [
+      {
+        "questionTitle": "Ăn đồ ăn nhanh, nấu ăn healthy",
+        "content": "Ăn đồ ăn nhanh, nấu ăn healthy",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d3579e903cc0a1f4135"
+          },
+          {
+            "content": "Which kind of food in those pictures is healthier?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d3579e903cc0a1f4136"
+          },
+          {
+            "content": "What are the benefits of them?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d3579e903cc0a1f4137"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759983732671_6da2fa86448466ce_1725790470669_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759983732673_ae7ad0428723e657_1725790475751_file.png"
+        ],
+        "_id": "69709d3579e903cc0a1f4134"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e7387553b4655eba3f1475",
+    "createdAt": "2025-10-09T04:22:13.978Z",
+    "updatedAt": "2026-06-22T03:54:23.875Z",
     "__v": 0
   },
   {
@@ -1798,14 +986,14 @@
     "__v": 0
   },
   {
-    "_id": "68e664f553b4655eba3f11ad",
-    "title": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+    "_id": "68e66a4653b4655eba3f12e8",
+    "title": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+    "description": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
     "questions": [
       {
-        "questionTitle": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
-        "content": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+        "questionTitle": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
+        "content": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1813,46 +1001,220 @@
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Tell me what you see in the two photographs.",
+            "content": "Tell me what you see in the two pictures.",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ce179e903cc0a1f3d25"
+            "_id": "69709d1479e903cc0a1f3faa"
           },
           {
-            "content": "Which one do you prefer: eating out or eating at home?",
+            "content": "Which means of transport do you prefer? Why?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ce179e903cc0a1f3d26"
+            "_id": "69709d1479e903cc0a1f3fab"
           },
           {
-            "content": "Why do people prefer eating out to eating at home?",
+            "content": "Why do people usually not choose to travel by plane?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709ce179e903cc0a1f3d27"
+            "_id": "69709d1479e903cc0a1f3fac"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929589108_0a7dce445a9d22d7_1725781316047_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929589109_175ec4a3ea23b306_1725781319435_file.png"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930949154_99038b3452af423c_1725788172224_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930949155_b74b864813f4a079_1725788176715_file.png"
         ],
-        "_id": "69709ce179e903cc0a1f3d24"
+        "_id": "69709d1479e903cc0a1f3fa9"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68e664f553b4655eba3f11b2",
-    "createdAt": "2025-10-08T13:19:49.850Z",
-    "updatedAt": "2026-06-22T03:54:24.669Z",
+    "id": "68e66a4653b4655eba3f12ed",
+    "createdAt": "2025-10-08T13:42:30.257Z",
+    "updatedAt": "2026-06-22T03:54:23.380Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e73def53b4655eba3f14c4",
+    "title": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
+    "questions": [
+      {
+        "questionTitle": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
+        "content": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69c16338c68879da1b92c372"
+          },
+          {
+            "content": "What means of transport do you like to travel by?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69c16338c68879da1b92c373"
+          },
+          {
+            "content": "Why do some people like to travel by train?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69c16338c68879da1b92c374"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985135390_892de273836c2dc3_1725786741385_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985135391_1e650c0b3ff16308_1725786744713_file.png"
+        ],
+        "_id": "69c16338c68879da1b92c371"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e73def53b4655eba3f14c9",
+    "createdAt": "2025-10-09T04:45:35.972Z",
+    "updatedAt": "2026-06-22T03:54:23.510Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e665d653b4655eba3f11c9",
+    "title": "Trèo thuyền theo team, đạp xe một mình",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Trèo thuyền theo team, đạp xe một mình",
+    "questions": [
+      {
+        "questionTitle": "Trèo thuyền theo team, đạp xe một mình",
+        "content": "Trèo thuyền theo team, đạp xe một mình",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe these two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ced79e903cc0a1f3dad"
+          },
+          {
+            "content": "What are the difficulties of each sport?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ced79e903cc0a1f3dae"
+          },
+          {
+            "content": "Why do some people prefer team sports to individual sports?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ced79e903cc0a1f3daf"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929814083_5a4d18f47d1dd922_Shayok.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929814084_ee55d585091a0790_Cyclist_in_the_mountains_listing.jpg"
+        ],
+        "_id": "69709ced79e903cc0a1f3dac"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e665d653b4655eba3f11ce",
+    "createdAt": "2025-10-08T13:23:34.899Z",
+    "updatedAt": "2026-06-22T03:54:24.176Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f34e0d53b4655eba3f38dc",
+    "title": "Bãi biển, thảo nguyên xanh",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Bãi biển, thảo nguyên xanh",
+    "questions": [
+      {
+        "questionTitle": "Bãi biển, thảo nguyên xanh",
+        "content": "Bãi biển, thảo nguyên xanh",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do you see in the two pictures?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ddb79e903cc0a1f4853"
+          },
+          {
+            "content": "Which of these two places do you think children would prefer? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ddb79e903cc0a1f4854"
+          },
+          {
+            "content": "Which of these two places would you prefer to go on holiday? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ddb79e903cc0a1f4855"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760775692721_9bca4c01f92b2160_Tropical_Paradise_Seychelles_Tropics_Islands_Indian_Ocean_Beach_Wallpaper_Hd_1920x1200_840x525.webp",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760775692722_0f721338d30eebb7_wall_murals_far_west_spirit.jpg"
+        ],
+        "_id": "69709ddb79e903cc0a1f4852"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f34e0d53b4655eba3f38e1",
+    "createdAt": "2025-10-18T08:21:33.437Z",
+    "updatedAt": "2026-06-22T03:54:24.585Z",
     "__v": 0
   },
   {
@@ -1972,14 +1334,72 @@
     "__v": 0
   },
   {
-    "_id": "68e73ab753b4655eba3f149a",
-    "title": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+    "_id": "68f212b953b4655eba3f3807",
+    "title": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+    "description": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
     "questions": [
       {
-        "questionTitle": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
-        "content": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+        "questionTitle": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
+        "content": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe these two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db279e903cc0a1f4659"
+          },
+          {
+            "content": "Which place in these two pictures do you prefer to go?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db279e903cc0a1f465a"
+          },
+          {
+            "content": "Do you prefer spending time with your family or your friends?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709db279e903cc0a1f465b"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694968699_85d9ad55f8868dd4_family_tours.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694968700_04c751d8e348bdc9_istockphoto_941249992_2048x2048.jpg"
+        ],
+        "_id": "69709db279e903cc0a1f4658"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f212b953b4655eba3f380c",
+    "createdAt": "2025-10-17T09:56:09.533Z",
+    "updatedAt": "2026-06-22T03:54:25.006Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f2177c53b4655eba3f3831",
+    "title": "Làm việc trong văn phòng, làm việc trong nhà máy",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Làm việc trong văn phòng, làm việc trong nhà máy",
+    "questions": [
+      {
+        "questionTitle": "Làm việc trong văn phòng, làm việc trong nhà máy",
+        "content": "Làm việc trong văn phòng, làm việc trong nhà máy",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -1993,51 +1413,341 @@
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d4079e903cc0a1f41bd"
+            "_id": "69709dc479e903cc0a1f4725"
           },
           {
-            "content": "What are the attractions of eating in these different places?",
+            "content": "What would it be like to work in these two places?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d4079e903cc0a1f41be"
+            "_id": "69709dc479e903cc0a1f4726"
           },
           {
-            "content": "Why do some people like to eat out on special occasions?",
+            "content": "Which of these two places would you prefer to work in? Why?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d4079e903cc0a1f41bf"
+            "_id": "69709dc479e903cc0a1f4727"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759984309883_2d305000373950c9_1725773228290_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759984309884_e6f6e99c661ffdb6_1725773230931_file.png"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760696185456_11c74473d1733a4d_images.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760696185458_462fc15a5a303628_istockphoto_135456139_1024x1024.jpg"
         ],
-        "_id": "69709d4079e903cc0a1f41bc"
+        "_id": "69709dc479e903cc0a1f4724"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68e73ab753b4655eba3f149f",
-    "createdAt": "2025-10-09T04:31:51.004Z",
-    "updatedAt": "2026-06-22T03:54:24.794Z",
+    "id": "68f2177c53b4655eba3f3836",
+    "createdAt": "2025-10-17T10:16:28.279Z",
+    "updatedAt": "2026-06-22T03:54:25.148Z",
     "__v": 0
   },
   {
-    "_id": "68e73e3c53b4655eba3f14d2",
-    "title": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
+    "_id": "68f20a6b53b4655eba3f372c",
+    "title": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
+    "description": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
     "questions": [
       {
-        "questionTitle": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
-        "content": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
+        "questionTitle": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
+        "content": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the picture.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d8279e903cc0a1f4493"
+          },
+          {
+            "content": "What are the attractions of the two pictures?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d8279e903cc0a1f4494"
+          },
+          {
+            "content": "What is the appeal of growing plants and doing gardening?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d8279e903cc0a1f4495"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760692842496_c8003acc9b8d9255_Apple_Picking_Season_in_the_United_States1_1024x576.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760692842498_4cae473df594bdb9_istockphoto_984448864_2048x2048.jpg"
+        ],
+        "_id": "69709d8279e903cc0a1f4492"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f20a6b53b4655eba3f3731",
+    "createdAt": "2025-10-17T09:20:43.896Z",
+    "updatedAt": "2026-06-22T03:54:23.554Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e5e8c353b4655eba3f10cd",
+    "title": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+    "questions": [
+      {
+        "questionTitle": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+        "content": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see from the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709c5e79e903cc0a1f3b70"
+          },
+          {
+            "content": "Do you prefer reading printed books or e-books?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709c5e79e903cc0a1f3b71"
+          },
+          {
+            "content": "Does technology affect the way we read books?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709c5e79e903cc0a1f3b72"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759897785252_2d4df9a33b186449_1725769613614_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759897785254_5074f469a8d4f106_1725769616483_file.png"
+        ],
+        "_id": "69709c5e79e903cc0a1f3b6f"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e5e8c353b4655eba3f10d2",
+    "createdAt": "2025-10-08T04:29:55.831Z",
+    "updatedAt": "2026-06-22T03:54:23.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e73e9553b4655eba3f14e0",
+    "title": "1 cặp đôi trò chuyện dưới tuyết, 2 cô gái đang tắm nắng",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cười về một điều gì đó",
+    "questions": [
+      {
+        "questionTitle": "Cười về một điều gì đó",
+        "content": "1 cặp đôi trò chuyện dưới tuyết, 2 cô gái đang tắm nắng",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two pictures. ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d5f79e903cc0a1f433f"
+          },
+          {
+            "content": "Between the two locations, where do you prefer to go? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d5f79e903cc0a1f4340"
+          },
+          {
+            "content": "Do you think the weather affects people’s emotions on trips?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d5f79e903cc0a1f4341"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985301379_35c9818c70d4c91c_1725787448623_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985301380_414821f507b1b3d3_1725787452611_file.png"
+        ],
+        "_id": "69709d5f79e903cc0a1f433e"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e73e9553b4655eba3f14e5",
+    "createdAt": "2025-10-09T04:48:21.997Z",
+    "updatedAt": "2026-06-22T03:54:23.963Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e73ef253b4655eba3f14ee",
+    "title": "1 người đàn ông tập gym, 2 người đi leo núi",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 người đàn ông tập gym, 2 người đi leo núi",
+    "questions": [
+      {
+        "questionTitle": "1 người đàn ông tập gym, 2 người đi leo núi",
+        "content": "1 người đàn ông tập gym, 2 người đi leo núi",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please describe the 2 pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d6479e903cc0a1f4383"
+          },
+          {
+            "content": "What the difference of these two exercises?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "<p><br></p>",
+            "_id": "69709d6479e903cc0a1f4384"
+          },
+          {
+            "content": "How important is it to do daily exercises?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d6479e903cc0a1f4385"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985393555_6cf279d3b4560fd3_1725783436659_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985393557_01ad1a461c031028_1725783439232_file.png"
+        ],
+        "_id": "69709d6479e903cc0a1f4382"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e73ef253b4655eba3f14f3",
+    "createdAt": "2025-10-09T04:49:54.144Z",
+    "updatedAt": "2026-06-22T03:54:24.006Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e6673c53b4655eba3f11d7",
+    "title": "Cưỡi lạc đà, cưỡi ngựa",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cưỡi lạc đà, cưỡi ngựa",
+    "questions": [
+      {
+        "questionTitle": "Cưỡi lạc đà, cưỡi ngựa",
+        "content": "Cưỡi lạc đà, cưỡi ngựa",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see from the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "6970e8ba58cb12223e943b79"
+          },
+          {
+            "content": "Have you ever ridden a camel or a horse before?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "6970e8ba58cb12223e943b7a"
+          },
+          {
+            "content": "Is riding animals popular in your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "6970e8ba58cb12223e943b7b"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007289830_c49d1486bf98e545_capp1.webp",
+          "https://files.aptisacademy.com.vn/speaking/2026/01/1769007289831_e7f5746e2487ec7a_1759930172162_3d69becf7f98b187_cuoi_ngua_925596.jpg"
+        ],
+        "_id": "6970e8ba58cb12223e943b78"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e6673c53b4655eba3f11dc",
+    "createdAt": "2025-10-08T13:29:32.935Z",
+    "updatedAt": "2026-06-22T03:54:24.221Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e669ed53b4655eba3f12da",
+    "title": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
+    "questions": [
+      {
+        "questionTitle": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
+        "content": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -2051,98 +1761,40 @@
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d5979e903cc0a1f42fb"
+            "_id": "69709d0f79e903cc0a1f3f66"
           },
           {
-            "content": "What are the attractions of keeping these animals as pets?",
+            "content": "What are the benefits for children doing these two activities?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d5979e903cc0a1f42fc"
+            "_id": "69709d0f79e903cc0a1f3f67"
           },
           {
-            "content": "Some say animals should not be kept in the home. What do you think?",
+            "content": "It is easier to learn something if you enjoy doing it. What do you think?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709d5979e903cc0a1f42fd"
+            "_id": "69709d0f79e903cc0a1f3f68"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985211491_0c8eca8202ed3c04_1725787131830_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1759985211492_16e27e6c436f4d3d_1725787134760_file.png"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930860609_fd7bed6632e3cabd_1725787805324_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930860610_2e2f6d92897f6617_1725787811952_file.png"
         ],
-        "_id": "69709d5979e903cc0a1f42fa"
+        "_id": "69709d0f79e903cc0a1f3f65"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68e73e3c53b4655eba3f14d7",
-    "createdAt": "2025-10-09T04:46:52.107Z",
-    "updatedAt": "2026-06-22T03:54:24.837Z",
-    "__v": 0
-  },
-  {
-    "_id": "68eb7e3653b4655eba3f1901",
-    "title": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
-    "questions": [
-      {
-        "questionTitle": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
-        "content": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in two the pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d7c79e903cc0a1f444f"
-          },
-          {
-            "content": "What would it be like to eat in two places?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d7c79e903cc0a1f4450"
-          },
-          {
-            "content": "Which of the two places would be healthier to eat in? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709d7c79e903cc0a1f4451"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760263733329_77c06fd36a860bd1_1725790916466_file.png",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760263733330_a7d7376f0858e7da_Screenshot_15.png"
-        ],
-        "_id": "69709d7c79e903cc0a1f444e"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68eb7e3653b4655eba3f1906",
-    "createdAt": "2025-10-12T10:08:54.779Z",
-    "updatedAt": "2026-06-22T03:54:24.880Z",
+    "id": "68e669ed53b4655eba3f12df",
+    "createdAt": "2025-10-08T13:41:01.439Z",
+    "updatedAt": "2026-06-22T03:54:24.266Z",
     "__v": 0
   },
   {
@@ -2204,180 +1856,6 @@
     "__v": 0
   },
   {
-    "_id": "68f211b553b4655eba3f37b1",
-    "title": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
-    "questions": [
-      {
-        "questionTitle": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
-        "content": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see from the two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709dad79e903cc0a1f4615"
-          },
-          {
-            "content": "What are the problems of giving a presentation in these situations?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709dad79e903cc0a1f4616"
-          },
-          {
-            "content": "Technology has improved the ability to communicate with other people. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709dad79e903cc0a1f4617"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694708008_215633b703917ad3_photo_1627653126.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694708009_70ce06edad2e70d0_laser_projector_landing_fg_office.png"
-        ],
-        "_id": "69709dad79e903cc0a1f4614"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68f211b553b4655eba3f37b6",
-    "createdAt": "2025-10-17T09:51:49.019Z",
-    "updatedAt": "2026-06-22T03:54:24.965Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f212b953b4655eba3f3807",
-    "title": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
-    "questions": [
-      {
-        "questionTitle": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
-        "content": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Describe these two pictures.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db279e903cc0a1f4659"
-          },
-          {
-            "content": "Which place in these two pictures do you prefer to go?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db279e903cc0a1f465a"
-          },
-          {
-            "content": "Do you prefer spending time with your family or your friends?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db279e903cc0a1f465b"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694968699_85d9ad55f8868dd4_family_tours.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694968700_04c751d8e348bdc9_istockphoto_941249992_2048x2048.jpg"
-        ],
-        "_id": "69709db279e903cc0a1f4658"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68f212b953b4655eba3f380c",
-    "createdAt": "2025-10-17T09:56:09.533Z",
-    "updatedAt": "2026-06-22T03:54:25.006Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f2132c53b4655eba3f3815",
-    "title": "chung cư, nhà mặt đất",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "chung cư, nhà mặt đất",
-    "questions": [
-      {
-        "questionTitle": "chung cư, nhà mặt đất",
-        "content": "chung cư, nhà mặt đất",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me what you see in the two pictures. ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db879e903cc0a1f469d"
-          },
-          {
-            "content": "What would it be like living in these two places?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db879e903cc0a1f469e"
-          },
-          {
-            "content": "Which of these two places would it be better for old people to live in? Why?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": "",
-            "_id": "69709db879e903cc0a1f469f"
-          }
-        ],
-        "isExample": "",
-        "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760695084186_f23610f79e726bdf_interagency_mous.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760695084187_9d8d14d19d4c134f_4183ed124dc5403d9b06b388e59bd413_crop_576x384.webp"
-        ],
-        "_id": "69709db879e903cc0a1f469c"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "SPEAKING",
-    "id": "68f2132c53b4655eba3f381a",
-    "createdAt": "2025-10-17T09:58:04.955Z",
-    "updatedAt": "2026-06-22T03:54:25.051Z",
-    "__v": 0
-  },
-  {
     "_id": "68f2145a53b4655eba3f3823",
     "title": "Mua sắm trong siêu thị, mua sắm trong chợ ( Version 2)",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2436,14 +1914,420 @@
     "__v": 0
   },
   {
-    "_id": "68f2177c53b4655eba3f3831",
-    "title": "Làm việc trong văn phòng, làm việc trong nhà máy",
+    "_id": "68e6657553b4655eba3f11bb",
+    "title": "Mua đồ xa xỉ, mua đồ bình dân",
     "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Làm việc trong văn phòng, làm việc trong nhà máy",
+    "description": "Mua đồ xa xỉ, mua đồ bình dân",
     "questions": [
       {
-        "questionTitle": "Làm việc trong văn phòng, làm việc trong nhà máy",
-        "content": "Làm việc trong văn phòng, làm việc trong nhà máy",
+        "questionTitle": "Mua đồ xa xỉ, mua đồ bình dân",
+        "content": "Mua đồ xa xỉ, mua đồ bình dân",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Compare 2 pictures",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce779e903cc0a1f3d69"
+          },
+          {
+            "content": "What is different about these two shopping experiences?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce779e903cc0a1f3d6a"
+          },
+          {
+            "content": "Why are people people are attracted to expensive by expensive things?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce779e903cc0a1f3d6b"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929716904_35cf342679946924_1725781582775_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929716906_7d52a6c402e62cf5_1725781584886_file.png"
+        ],
+        "_id": "69709ce779e903cc0a1f3d68"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e6657553b4655eba3f11c0",
+    "createdAt": "2025-10-08T13:21:57.756Z",
+    "updatedAt": "2026-06-22T03:54:23.294Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e6683153b4655eba3f11f3",
+    "title": "Sống 1 mình, sống với gia đình",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Sống 1 mình, sống với gia đình",
+    "questions": [
+      {
+        "questionTitle": "Sống 1 mình, sống với gia đình",
+        "content": "Sống 1 mình, sống với gia đình",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two photographs.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68f1b9dc53b4655eba3f2fa7"
+          },
+          {
+            "content": "Do you prefer living alone or living with your family?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68f1b9dc53b4655eba3f2fa8"
+          },
+          {
+            "content": "Is it necessary for young people to live independently from their families?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "68f1b9dc53b4655eba3f2fa9"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "speaking/2025/10/1759930619067_1503c100bb60aeac_1725783964508_file.png",
+          "speaking/2025/10/1759930619068_a2b767494b7dd360_1725783966825_file.png"
+        ],
+        "_id": "68f1b9dc53b4655eba3f2fa6"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e6683153b4655eba3f11f8",
+    "createdAt": "2025-10-08T13:33:37.441Z",
+    "updatedAt": "2026-06-22T03:54:23.337Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f345ee53b4655eba3f38b2",
+    "title": "Âm nhạc sôi động, âm nhạc du dương",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Âm nhạc sôi động, âm nhạc du dương",
+    "questions": [
+      {
+        "questionTitle": "Âm nhạc sôi động, âm nhạc du dương",
+        "content": "Âm nhạc sôi động, âm nhạc du dương",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you can see in these two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dcd79e903cc0a1f47ad"
+          },
+          {
+            "content": "What sort of people go to these two events?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dcd79e903cc0a1f47ae"
+          },
+          {
+            "content": "Which of these two events would you prefer to go to? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dcd79e903cc0a1f47af"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760773613116_3571ce8eee1cd357_images__5_.jfif",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760773613117_ec336d21b7aaa52d_istockphoto_495237705_612x612.jpg"
+        ],
+        "_id": "69709dcd79e903cc0a1f47ac"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f345ee53b4655eba3f38b7",
+    "createdAt": "2025-10-18T07:46:54.412Z",
+    "updatedAt": "2026-06-22T03:54:23.640Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e6679e53b4655eba3f11e5",
+    "title": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
+    "questions": [
+      {
+        "questionTitle": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
+        "content": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Describe the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cfa79e903cc0a1f3e35"
+          },
+          {
+            "content": "Do you like to preserve memories by photo or writing?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cfa79e903cc0a1f3e36"
+          },
+          {
+            "content": "Why do people today like to use photos to save memories?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709cfa79e903cc0a1f3e37"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930269920_a640f50ec3118184_1725782955283_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759930269922_7a750704d25a049c_1725782959096_file.png"
+        ],
+        "_id": "69709cfa79e903cc0a1f3e34"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e6679e53b4655eba3f11ea",
+    "createdAt": "2025-10-08T13:31:10.774Z",
+    "updatedAt": "2026-06-22T03:54:23.787Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ea019e53b4655eba3f171e",
+    "title": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
+    "questions": [
+      {
+        "questionTitle": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
+        "content": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Please describe the 2 pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d6e79e903cc0a1f43c7"
+          },
+          {
+            "content": "How are these experiences of sport different?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d6e79e903cc0a1f43c8"
+          },
+          {
+            "content": "What kinds of sports are popular in your country? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d6e79e903cc0a1f43c9"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760166301348_87ca25d8ca4c3e8c_Screen_Shot_2018_09_13_at_5_27_58_PM_300x182.webp",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760166301349_28a14f785519987c_basketball_players_sit_bench_and_footage_010857158_iconl.webp"
+        ],
+        "_id": "69709d6e79e903cc0a1f43c6"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68ea019e53b4655eba3f1723",
+    "createdAt": "2025-10-11T07:05:02.555Z",
+    "updatedAt": "2026-06-22T03:54:24.048Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f20ca353b4655eba3f3766",
+    "title": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
+    "questions": [
+      {
+        "questionTitle": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
+        "content": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in these two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709da079e903cc0a1f458d"
+          },
+          {
+            "content": "What are the benefits of two ways of traveling?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709da079e903cc0a1f458e"
+          },
+          {
+            "content": "Why do some people like traveling by car?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709da079e903cc0a1f458f"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760693410701_f8334d0b0b5bdcf1_1415246439734_wps_21_EGYPT_MAY_05_Outriders_cl.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760693410702_58c7d10624a97e77_man_going_inside_a_posh_car_3BK7MH1.jpg"
+        ],
+        "_id": "69709da079e903cc0a1f458c"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f20ca353b4655eba3f376b",
+    "createdAt": "2025-10-17T09:30:11.809Z",
+    "updatedAt": "2026-06-22T03:54:24.091Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e664f553b4655eba3f11ad",
+    "title": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+    "questions": [
+      {
+        "questionTitle": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+        "content": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in the two photographs.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce179e903cc0a1f3d25"
+          },
+          {
+            "content": "Which one do you prefer: eating out or eating at home?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce179e903cc0a1f3d26"
+          },
+          {
+            "content": "Why do people prefer eating out to eating at home?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709ce179e903cc0a1f3d27"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929589108_0a7dce445a9d22d7_1725781316047_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759929589109_175ec4a3ea23b306_1725781319435_file.png"
+        ],
+        "_id": "69709ce179e903cc0a1f3d24"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68e664f553b4655eba3f11b2",
+    "createdAt": "2025-10-08T13:19:49.850Z",
+    "updatedAt": "2026-06-22T03:54:24.669Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e73ab753b4655eba3f149a",
+    "title": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+    "questions": [
+      {
+        "questionTitle": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+        "content": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
         "answerList": [],
         "correctAnswer": "",
         "file": "",
@@ -2457,40 +2341,156 @@
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dc479e903cc0a1f4725"
+            "_id": "69709d4079e903cc0a1f41bd"
           },
           {
-            "content": "What would it be like to work in these two places?",
+            "content": "What are the attractions of eating in these different places?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dc479e903cc0a1f4726"
+            "_id": "69709d4079e903cc0a1f41be"
           },
           {
-            "content": "Which of these two places would you prefer to work in? Why?",
+            "content": "Why do some people like to eat out on special occasions?",
             "correctAnswer": null,
             "file": "",
             "answerList": null,
             "image": null,
             "suggestion": "",
-            "_id": "69709dc479e903cc0a1f4727"
+            "_id": "69709d4079e903cc0a1f41bf"
           }
         ],
         "isExample": "",
         "image": [
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760696185456_11c74473d1733a4d_images.jpg",
-          "https://files.aptisacademy.com.vn/speaking/2025/10/1760696185458_462fc15a5a303628_istockphoto_135456139_1024x1024.jpg"
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759984309883_2d305000373950c9_1725773228290_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1759984309884_e6f6e99c661ffdb6_1725773230931_file.png"
         ],
-        "_id": "69709dc479e903cc0a1f4724"
+        "_id": "69709d4079e903cc0a1f41bc"
       }
     ],
     "questionPart": "THREE",
     "questionType": "SPEAKING",
-    "id": "68f2177c53b4655eba3f3836",
-    "createdAt": "2025-10-17T10:16:28.279Z",
-    "updatedAt": "2026-06-22T03:54:25.148Z",
+    "id": "68e73ab753b4655eba3f149f",
+    "createdAt": "2025-10-09T04:31:51.004Z",
+    "updatedAt": "2026-06-22T03:54:24.794Z",
+    "__v": 0
+  },
+  {
+    "_id": "68eb7e3653b4655eba3f1901",
+    "title": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
+    "questions": [
+      {
+        "questionTitle": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
+        "content": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see in two the pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d7c79e903cc0a1f444f"
+          },
+          {
+            "content": "What would it be like to eat in two places?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d7c79e903cc0a1f4450"
+          },
+          {
+            "content": "Which of the two places would be healthier to eat in? Why?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709d7c79e903cc0a1f4451"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760263733329_77c06fd36a860bd1_1725790916466_file.png",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760263733330_a7d7376f0858e7da_Screenshot_15.png"
+        ],
+        "_id": "69709d7c79e903cc0a1f444e"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68eb7e3653b4655eba3f1906",
+    "createdAt": "2025-10-12T10:08:54.779Z",
+    "updatedAt": "2026-06-22T03:54:24.880Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f211b553b4655eba3f37b1",
+    "title": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
+    "questions": [
+      {
+        "questionTitle": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
+        "content": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me what you see from the two pictures.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dad79e903cc0a1f4615"
+          },
+          {
+            "content": "What are the problems of giving a presentation in these situations?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dad79e903cc0a1f4616"
+          },
+          {
+            "content": "Technology has improved the ability to communicate with other people. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": "",
+            "_id": "69709dad79e903cc0a1f4617"
+          }
+        ],
+        "isExample": "",
+        "image": [
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694708008_215633b703917ad3_photo_1627653126.jpg",
+          "https://files.aptisacademy.com.vn/speaking/2025/10/1760694708009_70ce06edad2e70d0_laser_projector_landing_fg_office.png"
+        ],
+        "_id": "69709dad79e903cc0a1f4614"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "SPEAKING",
+    "id": "68f211b553b4655eba3f37b6",
+    "createdAt": "2025-10-17T09:51:49.019Z",
+    "updatedAt": "2026-06-22T03:54:24.965Z",
     "__v": 0
   },
   {
