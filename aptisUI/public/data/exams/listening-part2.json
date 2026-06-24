@@ -1115,9 +1115,9 @@
           }
         ],
         "correctAnswer": null,
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782292124602_484831d1f88b5e41_F___14_150526170930.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,4.08],\"text\":\" four people are talking about a new museum. Complete the sentence below.\"},{\"timestamp\":[7.36,11.6],\"text\":\" I was excited to visit the new museum because everyone in town had been talking about it.\"},{\"timestamp\":[12.32,17.44],\"text\":\" The building was much larger than I expected, with several different exhibition areas connected by\"},{\"timestamp\":[17.44,22.24],\"text\":\" long corridors. I actually planned to finish the visit quickly since I had another appointment later\"},{\"timestamp\":[22.24,29.28],\"text\":\" that afternoon. But things didn't go as expected. at one point, I took a wrong turn while looking for the art section and\"},{\"timestamp\":[29.28,34.8],\"text\":\" completely lost track of where I was. The digital maps were useful, though, and eventually\"},{\"timestamp\":[34.8,39.24],\"text\":\" I found my way back to the main entrance after wandering around for quite a while.\"},{\"timestamp\":[39.24,46.92],\"text\":\" A history museum always sounds interesting to me. So I was looking forward to seeing the new one in town.\"},{\"timestamp\":[46.92,50.8],\"text\":\" The exhibitions themselves were quite impressive.\"},{\"timestamp\":[50.8,55.36],\"text\":\" Especially the interactive displays and touch screens that explained historical events\"},{\"timestamp\":[55.36,56.36],\"text\":\" in detail.\"},{\"timestamp\":[56.36,61.4],\"text\":\" In fact, I enjoyed the technology more than I expected.\"},{\"timestamp\":[61.4,66.48],\"text\":\" However, I didn't have much free time that day because I needed to meet some friends\"},{\"timestamp\":[66.48,72.68],\"text\":\" afterwards. As a result, I moved through most sections fairly quickly and didn't spend\"},{\"timestamp\":[72.68,78.72],\"text\":\" long reading the information. I'd still say it was worth visiting, even though my trip\"},{\"timestamp\":[78.72,82.4],\"text\":\" there ended sooner than I had originally planned.\"},{\"timestamp\":[82.4,86.28],\"text\":\" I thought it would be a brief visit because museums usually don't\"},{\"timestamp\":[86.28,92.6],\"text\":\" keep my attention for very long. However, this place turned out to be far more interesting\"},{\"timestamp\":[92.6,99.48],\"text\":\" than I expected. I especially liked the way technology was used to create interactive experiences\"},{\"timestamp\":[99.48,107.04],\"text\":\" for visitors. At one stage, I even got a bit confused trying to find the correct exhibition hall because\"},{\"timestamp\":[107.04,109.48],\"text\":\" the museum was so large.\"},{\"timestamp\":[109.48,114.96],\"text\":\" Even so, I enjoyed exploring the building and ended up staying for hours.\"},{\"timestamp\":[114.96,119.84],\"text\":\" There were still several sections I didn't manage to see properly, so I definitely\"},{\"timestamp\":[119.84,123.08],\"text\":\" liked to return again sometime soon.\"},{\"timestamp\":[123.08,127.96],\"text\":\" My visit to the museum was surprisingly enjoyable because it felt very modern compared to other\"},{\"timestamp\":[127.96,130.48],\"text\":\" museums I visited before.\"},{\"timestamp\":[130.48,136.32],\"text\":\" Instead of simply reading information on walls, visitors could use virtual reality headsets,\"},{\"timestamp\":[136.32,140.92],\"text\":\" interactive screens, and even audio guides connected to mobile apps.\"},{\"timestamp\":[140.92,145.6],\"text\":\" I understand why some people might rush through the museum or even get lost. Since\"},{\"timestamp\":[145.6,151],\"text\":\" the building is quite large and there's a lot to see. Personally, though, the technology\"},{\"timestamp\":[151,156],\"text\":\" was what impressed me the most. It made the exhibitions feel more alive and engaging rather\"},{\"timestamp\":[156,157.24],\"text\":\" than just educational.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1127,7 +1127,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6a38b38f9e4ccda11bf0df09"
+            "_id": "6a3b9e9e22eb5bbd6925bf19"
           },
           {
             "content": "2",
@@ -1136,7 +1136,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6a38b38f9e4ccda11bf0df0a"
+            "_id": "6a3b9e9e22eb5bbd6925bf1a"
           },
           {
             "content": "3",
@@ -1145,7 +1145,7 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6a38b38f9e4ccda11bf0df0b"
+            "_id": "6a3b9e9e22eb5bbd6925bf1b"
           },
           {
             "content": "4",
@@ -1154,19 +1154,19 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6a38b38f9e4ccda11bf0df0c"
+            "_id": "6a3b9e9e22eb5bbd6925bf1c"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6a38b38f9e4ccda11bf0df08"
+        "_id": "6a3b9e9e22eb5bbd6925bf18"
       }
     ],
     "questionPart": "TWO",
     "questionType": "LISTENING",
     "id": "6a38b38f9e4ccda11bf0df0d",
     "createdAt": "2026-06-22T04:01:19.323Z",
-    "updatedAt": "2026-06-22T04:01:19.323Z",
+    "updatedAt": "2026-06-24T09:08:46.365Z",
     "__v": 0
   }
 ]

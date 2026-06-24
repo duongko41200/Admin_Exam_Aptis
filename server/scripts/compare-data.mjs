@@ -8,10 +8,10 @@ import ReadingModel from '../src/models/reading.model.js';
 import ListeningModel from '../src/models/listening.model.js';
 import WritingModel from '../src/models/writing.model.js';
 
-dotenv.config();
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, '../.env') });
 const EXAMS_DIR = path.join(__dirname, '../aptisUI/public/data/exams');
 const EXPORT_DIR = path.join(__dirname, 'exported_exams');
 const REPORT_FILE = path.join(__dirname, 'comparison-report.md');
@@ -48,7 +48,7 @@ async function fetchDbData() {
     const readings = await ReadingModel.find().lean();
     const listenings = await ListeningModel.find().lean();
     const writings = await WritingModel.find().lean();
-    
+
     return {
         speaking: speakings,
         reading: readings,
@@ -79,7 +79,7 @@ function compareObjects(obj1, obj2, path = '') {
             diffs.push(`Array length mismatch at ${path}: DB len ${obj1.length} vs JSON len ${obj2.length}`);
         }
         const minLen = Math.min(obj1.length, obj2.length);
-        for(let i=0; i<minLen; i++) {
+        for (let i = 0; i < minLen; i++) {
             diffs.push(...compareObjects(obj1[i], obj2[i], `${path}[${i}]`));
         }
         return diffs;
@@ -89,7 +89,7 @@ function compareObjects(obj1, obj2, path = '') {
         const ignored = ['_id', 'id', 'createdAt', 'updatedAt', '__v'];
         const keys1 = Object.keys(obj1).filter(k => !ignored.includes(k));
         const keys2 = Object.keys(obj2).filter(k => !ignored.includes(k));
-        
+
         for (const k of keys1) {
             diffs.push(...compareObjects(obj1[k], obj2[k], path ? `${path}.${k}` : k));
         }
@@ -100,7 +100,7 @@ function compareObjects(obj1, obj2, path = '') {
         }
         return diffs;
     }
-    
+
     if (obj1 !== obj2) {
         diffs.push(`Value mismatch at ${path}: DB '${obj1}' vs JSON '${obj2}'`);
     }
@@ -110,17 +110,17 @@ function compareObjects(obj1, obj2, path = '') {
 async function runComparisonAndExport() {
     await connectDB();
     const dbDataAll = await fetchDbData();
-    
+
     // Ensure export directory exists
     if (!fs.existsSync(EXPORT_DIR)) {
         fs.mkdirSync(EXPORT_DIR, { recursive: true });
     }
-    
+
     let reportContent = `# Database vs JSON Files Comparison Report\n\nGenerated at: ${new Date().toISOString()}\n\n`;
     reportContent += `## 1. Count Comparison\n\n| Skill | Part | DB Count | JSON Count | Match? |\n|---|---|---|---|---|\n`;
-    
+
     const detailedDiffs = [];
-    
+
     // For listing-summary.json
     const summaryData = [
         { skillType: "LISTENING", skillLabel: "Listening - Nghe", parts: [] },
@@ -131,15 +131,15 @@ async function runComparisonAndExport() {
 
     for (const skill of SKILLS) {
         const summarySkillIndex = summaryData.findIndex(s => s.skillType === skill.toUpperCase());
-        
+
         for (const part of PARTS) {
             const partNum = PART_NUMBERS[part];
             const dbData = filterByPart(dbDataAll[skill], skill, part);
-            
+
             // 1. Export Data to JSON
             const exportPath = getJsonPath(EXPORT_DIR, skill, partNum);
             fs.writeFileSync(exportPath, JSON.stringify(dbData, null, 2), 'utf8');
-            
+
             // Add to summary data
             summaryData[summarySkillIndex].parts.push({
                 partNumber: partNum,
@@ -147,24 +147,24 @@ async function runComparisonAndExport() {
                 totalQuestions: dbData.length,
                 freeQuestions: 3 // Default business logic
             });
-            
+
             // 2. Compare with existing JSON
             const jsonPath = getJsonPath(EXAMS_DIR, skill, partNum);
             const jsonData = readJsonFile(jsonPath) || [];
-            
+
             const dbCount = dbData.length;
             const jsonCount = jsonData.length;
             const match = dbCount === jsonCount ? '✅' : '❌';
-            
+
             reportContent += `| ${skill.toUpperCase()} | ${partNum} | ${dbCount} | ${jsonCount} | ${match} |\n`;
-            
+
             const dbMap = new Map(dbData.map(item => [item._id.toString(), item]));
             const jsonMap = new Map(jsonData.map(item => [item._id.toString(), item]));
-            
+
             const dbOnlyIds = [];
             const jsonOnlyIds = [];
             const matchedIds = [];
-            
+
             for (const id of dbMap.keys()) {
                 if (jsonMap.has(id)) matchedIds.push(id);
                 else dbOnlyIds.push(id);
@@ -172,12 +172,12 @@ async function runComparisonAndExport() {
             for (const id of jsonMap.keys()) {
                 if (!dbMap.has(id)) jsonOnlyIds.push(id);
             }
-            
+
             let partDetail = `\n### ${skill.toUpperCase()} Part ${partNum}\n\n`;
             partDetail += `- ✅ Matched IDs: ${matchedIds.length}\n`;
             if (dbOnlyIds.length > 0) partDetail += `- ❌ Only in DB (${dbOnlyIds.length}): ${dbOnlyIds.join(', ')}\n`;
             if (jsonOnlyIds.length > 0) partDetail += `- ❌ Only in JSON (${jsonOnlyIds.length}): ${jsonOnlyIds.join(', ')}\n`;
-            
+
             const itemDiffs = [];
             for (const id of matchedIds) {
                 const dbObj = dbMap.get(id);
@@ -187,27 +187,27 @@ async function runComparisonAndExport() {
                     itemDiffs.push(`#### Document ${id}\n${diffs.map(d => `- ${d}`).join('\n')}`);
                 }
             }
-            
+
             if (itemDiffs.length > 0) {
                 partDetail += `\n**Content Differences:**\n\n${itemDiffs.join('\n\n')}\n`;
             } else if (matchedIds.length > 0) {
                 partDetail += `\n**Content Differences:** None ✅\n`;
             }
-            
+
             detailedDiffs.push(partDetail);
         }
     }
-    
+
     // Write listing-summary.json to export dir
     fs.writeFileSync(path.join(EXPORT_DIR, 'listing-summary.json'), JSON.stringify(summaryData, null, 2), 'utf8');
     console.log(`Successfully exported JSON files to ${EXPORT_DIR}`);
-    
+
     reportContent += `\n## 2. Detailed Comparison\n\n`;
     reportContent += detailedDiffs.join('\n');
-    
+
     fs.writeFileSync(REPORT_FILE, reportContent);
     console.log(`Report generated successfully at: ${REPORT_FILE}`);
-    
+
     mongoose.disconnect();
 }
 

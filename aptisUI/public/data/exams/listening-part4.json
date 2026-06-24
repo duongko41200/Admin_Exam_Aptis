@@ -10,9 +10,9 @@
         "content": "k có audio",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293016853_29aa0c4cf2641f90_1_study_break.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.04],\"text\":\" After completing high school, many of my friends chose to go directly to university, while\"},{\"timestamp\":[6.04,8.4],\"text\":\" I opted for a different direction.\"},{\"timestamp\":[8.4,12.64],\"text\":\" Honestly, I didn't feel prepared to begin higher education at that time.\"},{\"timestamp\":[12.64,16.24],\"text\":\" I needed some time away from studying to refresh my mind.\"},{\"timestamp\":[16.24,20.24],\"text\":\" Rather than signing up for courses, I spent the following two years traveling throughout\"},{\"timestamp\":[20.24,21.72],\"text\":\" Asia and Europe.\"},{\"timestamp\":[21.72,26.6],\"text\":\" For me, it wasn't simply a holiday. I wanted to gain practical experience\"},{\"timestamp\":[26.6,28.64],\"text\":\" and explore different perspectives\"},{\"timestamp\":[28.64,31.36],\"text\":\" before eventually returning to my studies.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -32,7 +32,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957e8efc88028aa29a1cfa9"
+            "_id": "6a3ba21922eb5bbd6925c17f"
           },
           {
             "content": "Why did he decide to travel for 2 years?",
@@ -51,19 +51,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957e8efc88028aa29a1cfaa"
+            "_id": "6a3ba21922eb5bbd6925c180"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957e8efc88028aa29a1cfa8"
+        "_id": "6a3ba21922eb5bbd6925c17e"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957e8efc88028aa29a1cfab",
     "createdAt": "2026-01-02T15:49:03.877Z",
-    "updatedAt": "2026-06-17T09:37:55.323Z",
+    "updatedAt": "2026-06-24T09:23:37.917Z",
     "__v": 0
   },
   {
@@ -74,12 +74,12 @@
     "questions": [
       {
         "questionTitle": "A book about a life of a scientist",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293261658_c6d3df30c8503142_2_scientist_biography_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.32],\"text\":\" I've just completed a new biography about a well-known physicist, and it's truly impressive.\"},{\"timestamp\":[6.32,11.52],\"text\":\" What makes it engaging is the author's style, which explains complicated ideas in a clear\"},{\"timestamp\":[11.52,16.76],\"text\":\" and simple way, allowing even readers without a scientific background to understand it.\"},{\"timestamp\":[16.76,19.8],\"text\":\" The book has already become a bestseller.\"},{\"timestamp\":[19.8,23.96],\"text\":\" Many specialists think its popularity comes from its similarity to the earlier book about\"},{\"timestamp\":[23.96,27.24],\"text\":\" the same scientist, which was also highly successful.\"},{\"timestamp\":[27.24,31.36],\"text\":\" If you liked the previous one, you'll certainly find this new book worth reading.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -99,7 +99,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c1136be521b65aeedbe4db"
+            "_id": "6a3ba30e22eb5bbd6925c1e5"
           },
           {
             "content": "What do people criticize about the book?",
@@ -118,19 +118,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c1136be521b65aeedbe4dc"
+            "_id": "6a3ba30e22eb5bbd6925c1e6"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c1136be521b65aeedbe4da"
+        "_id": "6a3ba30e22eb5bbd6925c1e4"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957e94bc88028aa29a1cfb5",
     "createdAt": "2026-01-02T15:50:35.919Z",
-    "updatedAt": "2026-06-17T09:37:55.364Z",
+    "updatedAt": "2026-06-24T09:27:42.203Z",
     "__v": 0
   },
   {
@@ -144,9 +144,9 @@
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293338635_713594afed5f9558_4_the_sport_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.28],\"text\":\" While most people praise the benefits of exercise, I have a somewhat different view on professional\"},{\"timestamp\":[5.28,10.48],\"text\":\" competitive sports. In my experience, when sports become too intense or commercialized,\"},{\"timestamp\":[10.48,15.36],\"text\":\" they can actually have a harmful effect on both the player's health and the spirit of fair play.\"},{\"timestamp\":[15.36,20.48],\"text\":\" However, my opinion changes when it comes to education. I believe that engaging in physical\"},{\"timestamp\":[20.48,25.12],\"text\":\" activity is essential for those in school because it helps balance students' lives.\"},{\"timestamp\":[25.12,29.96],\"text\":\" It provides a much needed break from long hours of academic pressure and keeps them mentally\"},{\"timestamp\":[29.96,30.6],\"text\":\" grounded.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -166,7 +166,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957e9b2c88028aa29a1cfbd"
+            "_id": "6a3ba35b22eb5bbd6925c21f"
           },
           {
             "content": "What is the importance of sports for students?",
@@ -185,19 +185,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957e9b2c88028aa29a1cfbe"
+            "_id": "6a3ba35b22eb5bbd6925c220"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957e9b2c88028aa29a1cfbc"
+        "_id": "6a3ba35b22eb5bbd6925c21e"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957e9b2c88028aa29a1cfbf",
     "createdAt": "2026-01-02T15:52:18.341Z",
-    "updatedAt": "2026-06-17T09:37:55.407Z",
+    "updatedAt": "2026-06-24T09:28:59.144Z",
     "__v": 0
   },
   {
@@ -208,12 +208,12 @@
     "questions": [
       {
         "questionTitle": "Television series (17.2)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293445981_42983ef2203c9131_7_television_series_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" In the world of entertainment, very few shows manage to capture the public's imagination,\"},{\"timestamp\":[5.52,10.96],\"text\":\" like the one we are discussing today. While many shows start with a great premise,\"},{\"timestamp\":[10.96,17.52],\"text\":\" but fail to keep the momentum. The reason this particular show has become a global phenomenon\"},{\"timestamp\":[17.52,26.12],\"text\":\" is that it has the consistent quality throughout every single season. From the very first episode to the Grand finale, the\"},{\"timestamp\":[26.12,32.04],\"text\":\" writing, acting, and production values never drop, ensuring that fans stay\"},{\"timestamp\":[32.04,37.28],\"text\":\" engaged for years. However, this success doesn't happen in a vacuum. If we look\"},{\"timestamp\":[37.28,41.72],\"text\":\" at bigger picture, the entire television landscape is undergoing a massive\"},{\"timestamp\":[41.72,45.84],\"text\":\" transformation. Experts have noted that the current series industry\"},{\"timestamp\":[45.84,52.64],\"text\":\" is heavily affected by how audiences consume content. In fact, viewer habits influence the way that\"},{\"timestamp\":[52.64,58.4],\"text\":\" series are made more than ever before. With the rise of streaming platforms and the trend of binge\"},{\"timestamp\":[58.4,64.4],\"text\":\" watching, producers and directors are now forced to adapt their storytelling techniques and release.\"},{\"timestamp\":[64.75,69.25],\"text\":\" Schedules to match the specific preferences and behaviors of the modern viewer.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -233,7 +233,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ea28c88028aa29a1cfc7"
+            "_id": "6a3ba3c622eb5bbd6925c259"
           },
           {
             "content": "What is the current series industry affected by?",
@@ -252,19 +252,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ea28c88028aa29a1cfc8"
+            "_id": "6a3ba3c622eb5bbd6925c25a"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ea28c88028aa29a1cfc6"
+        "_id": "6a3ba3c622eb5bbd6925c258"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ea28c88028aa29a1cfc9",
     "createdAt": "2026-01-02T15:54:16.624Z",
-    "updatedAt": "2026-06-17T09:37:55.449Z",
+    "updatedAt": "2026-06-24T09:30:46.578Z",
     "__v": 0
   },
   {
@@ -278,9 +278,9 @@
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293523280_c398bfbbb37812c0_10_advertising_sponsoring_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.52],\"text\":\" In the competitive world of business today, many companies struggle to find the most effective way to grow their presence.\"},{\"timestamp\":[6.52,10.96],\"text\":\" While some argue that marketing budgets are getting out of control,\"},{\"timestamp\":[10.96,15.76],\"text\":\" most experts agree on the fundamental importance of traditional methods.\"},{\"timestamp\":[15.76,23.56],\"text\":\" The primary advantage of a well-executed campaign is that it can help reach new customers who might otherwise never hear of the brand.\"},{\"timestamp\":[23.56,29.52],\"text\":\" By expanding the target audience, businesses can ensure long-term growth and stability.\"},{\"timestamp\":[29.52,35.04],\"text\":\" However, when it comes to specific strategies like sponsoring major events, companies must\"},{\"timestamp\":[35.04,36.96],\"text\":\" be extremely cautious.\"},{\"timestamp\":[36.96,41.76],\"text\":\" For example, while sponsoring sports tournaments might seem like a great way to gain visibility,\"},{\"timestamp\":[41.76,44.36],\"text\":\" there are significant risks involved.\"},{\"timestamp\":[44.36,48.84],\"text\":\" Critics argue that if a brand is linked to an event that experiences a scandal or unethical\"},{\"timestamp\":[48.84,53.36],\"text\":\" behavior, it can generate negative publicity for the sport as a whole.\"},{\"timestamp\":[53.36,null],\"text\":\" Instead of promoting a healthy image, the sponsorship might end up damaging the reputation of both the company and the athletic community involved. Community Involved.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -300,7 +300,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ec08c88028aa29a1d146"
+            "_id": "6a3ba41322eb5bbd6925c293"
           },
           {
             "content": "Why shouldn't we sponsor sports tournaments?",
@@ -319,19 +319,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ec08c88028aa29a1d147"
+            "_id": "6a3ba41322eb5bbd6925c294"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ec08c88028aa29a1d145"
+        "_id": "6a3ba41322eb5bbd6925c292"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ea81c88028aa29a1cfd3",
     "createdAt": "2026-01-02T15:55:45.708Z",
-    "updatedAt": "2026-06-17T09:37:55.493Z",
+    "updatedAt": "2026-06-24T09:32:03.930Z",
     "__v": 0
   },
   {
@@ -345,9 +345,9 @@
         "content": "Bài văn này không có audio (học thuộc đáp án).",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293599320_3006d7c1a494b8da_13_famous_writers.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,7.84],\"text\":\" Today we are exploring the lives of tyconic authors who significantly shape the literary landscape of the 20th century.\"},{\"timestamp\":[7.84,12.88],\"text\":\" Although they belong to different generations and came from diverse backgrounds,\"},{\"timestamp\":[12.88,17.84],\"text\":\" they share to profound mutual respect that deeply influenced their writing style.\"},{\"timestamp\":[17.84,30.96],\"text\":\" One of the most fascinating aspects of their professional relationship is that they both make references to each other in their works subtly weaving their colleagues' ideas' themes, or even names into their own narratives\"},{\"timestamp\":[30.96,36.56],\"text\":\" as a form of literary tribute. However, their writing is certainly not for the casual reader.\"},{\"timestamp\":[36.56,41.76],\"text\":\" These authors are famous for their layers of symbolism and philosophical depth. Many literary\"},{\"timestamp\":[41.76,53],\"text\":\" critics have noted that the meaning of their work is not always easily identified as it usually requires deep reflection and multiple readings to truly grasp the underlying messages.\"},{\"timestamp\":[53,null],\"text\":\" This inherent complexity is exactly what has kept scholars and fans debating the true intento. Their stories for decades.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -367,7 +367,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ec69c88028aa29a1d15b"
+            "_id": "6a3ba45f22eb5bbd6925c2cd"
           },
           {
             "content": "What is special about their works?",
@@ -386,19 +386,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ec69c88028aa29a1d15c"
+            "_id": "6a3ba45f22eb5bbd6925c2ce"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ec69c88028aa29a1d15a"
+        "_id": "6a3ba45f22eb5bbd6925c2cc"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ec69c88028aa29a1d15d",
     "createdAt": "2026-01-02T16:03:53.455Z",
-    "updatedAt": "2026-06-17T09:37:55.538Z",
+    "updatedAt": "2026-06-24T09:33:19.910Z",
     "__v": 0
   },
   {
@@ -408,13 +408,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "A regional development plan (16.4)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "A regional development plan ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293664519_195988edb579cd3c_14_regional_development_plan_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,3.4],\"text\":\" Welcome back to our community forum.\"},{\"timestamp\":[3.4,11.04],\"text\":\" We've been receiving a lot of letters regarding the proposed development project in our area.\"},{\"timestamp\":[11.04,16.6],\"text\":\" Residents oppose this plan, primarily because of its narrow focus.\"},{\"timestamp\":[16.6,23],\"text\":\" Many are disappointed that it doesn't do enough to promote alternatives to driving,\"},{\"timestamp\":[23,28],\"text\":\" such as better cycling lanes or expanded bus routes.\"},{\"timestamp\":[28,34.76],\"text\":\" Beyond the public's reaction, the City Council is also hitting some major roadblocks.\"},{\"timestamp\":[34.76,40.72],\"text\":\" The main difficulty the City Council is having with this plan is their realization that\"},{\"timestamp\":[40.72,49],\"text\":\" it is not making efficient use of existing land. Instead of revitalizing the empty spaces in the city centre,\"},{\"timestamp\":[49,54],\"text\":\" the proposal unnecessarily pushes into the outskirts,\"},{\"timestamp\":[54,58],\"text\":\" which many officials believe is a strategic mistake.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -434,7 +434,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ecbec88028aa29a1d165"
+            "_id": "6a3ba54d22eb5bbd6925c3b2"
           },
           {
             "content": "What difficulties is the city council having with this plan?",
@@ -453,19 +453,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ecbec88028aa29a1d166"
+            "_id": "6a3ba54d22eb5bbd6925c3b3"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ecbec88028aa29a1d164"
+        "_id": "6a3ba54d22eb5bbd6925c3b1"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ecbec88028aa29a1d167",
     "createdAt": "2026-01-02T16:05:18.601Z",
-    "updatedAt": "2026-06-17T09:37:55.582Z",
+    "updatedAt": "2026-06-24T09:37:17.915Z",
     "__v": 0
   },
   {
@@ -475,13 +475,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "Life after university (17.4)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "Life after university ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293751081_f834266844676242_16_life_after_uni_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,10],\"text\":\" Transitioning from the structured environment of academic life to the professional world is often one of the most significant shifts a young adult will ever experience.\"},{\"timestamp\":[10.5,17.4],\"text\":\" When standing at this crossroads, many graduates feel immense pressure to find the perfect role immediately.\"},{\"timestamp\":[17.5,30.48],\"text\":\" However, most career counselors suggest that the best approach for students is to be flexible and open-minded during the initial stages of their journey. Instead of limiting themselves to a narrow path or a specific\"},{\"timestamp\":[30.48,36.32],\"text\":\" job title, they should be willing to explore various industries, as their first job is rarely their\"},{\"timestamp\":[36.32,42.72],\"text\":\" last, but rather a valuable learning opportunity. Furthermore, it is vital for graduates to have a\"},{\"timestamp\":[42.72,47],\"text\":\" realistic understanding of the current economic landscape.\"},{\"timestamp\":[47,51.68],\"text\":\" When applying for positions in the modern market, students must pay close attention to the\"},{\"timestamp\":[51.68,55.92],\"text\":\" fact that jobs are becoming more competitive than ever before.\"},{\"timestamp\":[55.92,61.4],\"text\":\" With a global pool of talent and the rise of automation, simply having a degree is often\"},{\"timestamp\":[61.4,64.32],\"text\":\" just the baseline requirement.\"},{\"timestamp\":[64.32,69.04],\"text\":\" To succeed, applicants need to go beyond their formal qualifications by highlighting their\"},{\"timestamp\":[69.04,75.64],\"text\":\" soft skills, unique experiences, and a strong work ethic to distinguish themselves in an increasingly\"},{\"timestamp\":[75.64,77.44],\"text\":\" crowded field of candidates.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -501,7 +501,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ed0fc88028aa29a1d16f"
+            "_id": "6a3ba4f722eb5bbd6925c341"
           },
           {
             "content": "What should students pay attention to when applying for jobs these days?",
@@ -520,19 +520,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ed0fc88028aa29a1d170"
+            "_id": "6a3ba4f722eb5bbd6925c342"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ed0fc88028aa29a1d16e"
+        "_id": "6a3ba4f722eb5bbd6925c340"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ed0fc88028aa29a1d171",
     "createdAt": "2026-01-02T16:06:39.742Z",
-    "updatedAt": "2026-06-17T09:37:55.628Z",
+    "updatedAt": "2026-06-24T09:35:51.636Z",
     "__v": 0
   },
   {
@@ -542,13 +542,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "Security cameras (16.5)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "Security cameras ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293817521_44a6760fe3b491b3_17_security_cameras.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,7.12],\"text\":\" The widespread use of surveillance technology often sparks intense debates regarding the balance between privacy and safety.\"},{\"timestamp\":[7.12,15.52],\"text\":\" When looking specifically at the professional environment, many staff members express a certain level of anxiety about being observed throughout their shifts.\"},{\"timestamp\":[15.52,18],\"text\":\" However, perspective is key.\"},{\"timestamp\":[18,29.16],\"text\":\" In reality, employees probably worry unnecessarily about these devices. Most systems are installed primarily for insurance purposes or to ensure workplace safety\"},{\"timestamp\":[29.16,30.96],\"text\":\" in case of emergencies.\"},{\"timestamp\":[30.96,36.04],\"text\":\" Rather than for the constant, minute by minute monitoring of staff behavior that many fear,\"},{\"timestamp\":[36.04,40.76],\"text\":\" furthermore, when shifting the focus to our broader society, the presence of digital\"},{\"timestamp\":[40.76,45.84],\"text\":\" eyes in public spaces is becoming a standard feature of modern life.\"},{\"timestamp\":[45.84,51.6],\"text\":\" While it is true that some individuals feel their personal space is being invaded, the overarching\"},{\"timestamp\":[51.6,57.32],\"text\":\" consensus among security experts is that people should feel reassured by their existence.\"},{\"timestamp\":[57.32,62.32],\"text\":\" These cameras play a vital role in deterring criminal activity, aiding emergency services\"},{\"timestamp\":[62.32,66.56],\"text\":\" in real time and providing objective evidence in legal disputes,\"},{\"timestamp\":[66.56,72.48],\"text\":\" ultimately. The peace of mind that comes from knowing a public area is monitored significantly\"},{\"timestamp\":[72.48,74.88],\"text\":\" contributes to a sense of collective security.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -568,7 +568,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ed6ec88028aa29a1d179"
+            "_id": "6a3ba55822eb5bbd6925c3e9"
           },
           {
             "content": "How should people feel about cameras in general?",
@@ -587,19 +587,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ed6ec88028aa29a1d17a"
+            "_id": "6a3ba55822eb5bbd6925c3ea"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ed6ec88028aa29a1d178"
+        "_id": "6a3ba55822eb5bbd6925c3e8"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ed6ec88028aa29a1d17b",
     "createdAt": "2026-01-02T16:08:14.342Z",
-    "updatedAt": "2026-06-17T09:37:55.676Z",
+    "updatedAt": "2026-06-24T09:37:28.367Z",
     "__v": 0
   },
   {
@@ -609,13 +609,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "A new novel of a famous writer (17.5)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "A new novel of a famous writer ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293913628_2f32773853bbb42a_18_new_novel.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" I've just finished reading the latest release from one of the most celebrated authors of our time,\"},{\"timestamp\":[5.52,10.24],\"text\":\" and it has certainly sparked a lot of conversation among literary circles.\"},{\"timestamp\":[10.24,15.12],\"text\":\" The most striking thing about this book and what everyone seems to be discussing\"},{\"timestamp\":[15.12,20.48],\"text\":\" is that it is quite different compared to his previous works. While he is built his reputation\"},{\"timestamp\":[20.48,25.96],\"text\":\" on fast-paced action thrillers, this new publication takes a much more experimental\"},{\"timestamp\":[25.96,31.64],\"text\":\" and slow-burning approach to storytelling, which might catch long-time fans off guard.\"},{\"timestamp\":[31.64,36.8],\"text\":\" Despite his own in-iable talent and creative ambition, I found the execution of this particular\"},{\"timestamp\":[36.8,39.52],\"text\":\" story to be somewhat hit-ormous.\"},{\"timestamp\":[39.52,44.24],\"text\":\" While I appreciate his willingness to step out of his comfort zone, I believe there's room\"},{\"timestamp\":[44.24,47.96],\"text\":\" for improvement in how he handles these new themes.\"},{\"timestamp\":[47.96,52.56],\"text\":\" In my view, the author should take some time to reflect on the feedback he is receiving\"},{\"timestamp\":[52.56,54.48],\"text\":\" from professional reviewers.\"},{\"timestamp\":[54.48,58.72],\"text\":\" My honest opinion of this writer is that he should listen to the critics before writing\"},{\"timestamp\":[58.72,60.4],\"text\":\" his next novel.\"},{\"timestamp\":[60.4,64.88],\"text\":\" Paying attention to their concerns regarding pacing and structure could be the key to\"},{\"timestamp\":[64.88,66.16],\"text\":\" ensuring his.\"},{\"timestamp\":[66.16,70.56],\"text\":\" Future projects are as successful as his early masterpieces.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -635,7 +635,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957edb6c88028aa29a1d183"
+            "_id": "6a3ba59a22eb5bbd6925c423"
           },
           {
             "content": "What is the speaker's opinion of this writer?",
@@ -654,19 +654,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957edb6c88028aa29a1d184"
+            "_id": "6a3ba59a22eb5bbd6925c424"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957edb6c88028aa29a1d182"
+        "_id": "6a3ba59a22eb5bbd6925c422"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957edb6c88028aa29a1d185",
     "createdAt": "2026-01-02T16:09:26.848Z",
-    "updatedAt": "2026-06-17T09:37:55.722Z",
+    "updatedAt": "2026-06-24T09:38:34.310Z",
     "__v": 0
   },
   {
@@ -676,13 +676,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "A musician's life (16.6)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "A musician's life",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294012147_45c622fefec76a26_23_musician_life.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" Welcome back to Music Legends. Today we're discussing the bittersweet announcement from one of the industry's most enduring icons.\"},{\"timestamp\":[8,14],\"text\":\" After a career spanning over 40 years, rumors have been swirling about what's next.\"},{\"timestamp\":[14,24],\"text\":\" While many younger artists are eager to get him back into the studio, and fans have been buzzing about a potential collaboration with today's pop stars,\"},{\"timestamp\":[24,26],\"text\":\" the singer has dismissed\"},{\"timestamp\":[26,32],\"text\":\" these ideas. He recently clarified that he isn't looking for a comeback or a new creative\"},{\"timestamp\":[32,39.24],\"text\":\" project. Instead, he expressed a deep desire for peace and quiet. Consequently, it is now\"},{\"timestamp\":[39.24,45.6],\"text\":\" almost certain that he will probably retire from singing entirely after his final performance next month.\"},{\"timestamp\":[45.6,51.2],\"text\":\" As he feels his voice is no longer what it used to be. Looking back at his long journey,\"},{\"timestamp\":[51.2,57.28],\"text\":\" it's a career of high peaks and low valleys. Although he never reached a point where he regrets\"},{\"timestamp\":[57.28,63.84],\"text\":\" choosing his profession, as he still loves music deeply. The overall trajectory of his fame is\"},{\"timestamp\":[63.84,66.64],\"text\":\" quite interesting. Many critics argue that\"},{\"timestamp\":[66.64,73.04],\"text\":\" he reached his creative peak far too early in his twenties and struggled to innovate afterwards.\"},{\"timestamp\":[73.04,79.52],\"text\":\" When we evaluate his influence on the industry today, there's a common feeling that, despite his\"},{\"timestamp\":[79.52,85.36],\"text\":\" natural talent and early hits, he could have been more successful if he had embraced international\"},{\"timestamp\":[85.36,89.12],\"text\":\" trends rather than sticking to a very niche style.\"},{\"timestamp\":[89.12,94.88],\"text\":\" It's a classic case of a great artist who had the potential for global stardom, but ended\"},{\"timestamp\":[94.88,97],\"text\":\" up as a local hero instead.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -702,7 +702,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957edf5c88028aa29a1d18d"
+            "_id": "6a3ba5fc22eb5bbd6925c481"
           },
           {
             "content": "What does the speaker think about his career in general?",
@@ -721,19 +721,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957edf5c88028aa29a1d18e"
+            "_id": "6a3ba5fc22eb5bbd6925c482"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957edf5c88028aa29a1d18c"
+        "_id": "6a3ba5fc22eb5bbd6925c480"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957edf5c88028aa29a1d18f",
     "createdAt": "2026-01-02T16:10:29.048Z",
-    "updatedAt": "2026-06-17T09:37:55.768Z",
+    "updatedAt": "2026-06-24T09:40:12.832Z",
     "__v": 0
   },
   {
@@ -743,13 +743,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "A new guide (17.6)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "A new guide",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294094640_edc3e948766b65d6_24_new_guide.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.2],\"text\":\" In recent years, a new type of travel guide has been developed to appeal to modern travelers,\"},{\"timestamp\":[6.2,11.8],\"text\":\" especially younger people who are looking for more exciting and meaningful experiences.\"},{\"timestamp\":[11.8,16.6],\"text\":\" Unlike traditional guidebooks that mainly provide practical information such as hotel reviews\"},{\"timestamp\":[16.6,22.5],\"text\":\" or transportation details, this new guide focuses on inspiring its readers.\"},{\"timestamp\":[22.5,25.36],\"text\":\" It presents travel as an adventure, encouraging people to step\"},{\"timestamp\":[25.36,30.56],\"text\":\" out of their comfort zones and explore unfamiliar destinations. As a result, one of its main\"},{\"timestamp\":[30.56,36.28],\"text\":\" advantages is that it creates a strong sense of adventure, making traveling feel more engaging\"},{\"timestamp\":[36.28,43.6],\"text\":\" and personal rather than routine, despite these strengths, the guide is not without its drawbacks.\"},{\"timestamp\":[43.6,48],\"text\":\" One significant limitation is that it is designed with a specific audience in mind.\"},{\"timestamp\":[48,54],\"text\":\" The language, style, and content are tailored mainly to a particular generation.\"},{\"timestamp\":[54,59],\"text\":\" Especially younger travelers who prefer exploration over convenience.\"},{\"timestamp\":[59,63],\"text\":\" Because of this, it may not be suitable for everyone.\"},{\"timestamp\":[63,68.04],\"text\":\" Older travelers, or those who prefer detailed planning and practical information, might\"},{\"timestamp\":[68.04,70.16],\"text\":\" find it less useful.\"},{\"timestamp\":[70.16,75.08],\"text\":\" Therefore, while the guide is innovative in inspiring, it's appeal is somewhat limited\"},{\"timestamp\":[75.08,76.88],\"text\":\" to a specific group of users.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -769,7 +769,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ee3bc88028aa29a1d197"
+            "_id": "6a3ba71122eb5bbd6925c5ab"
           },
           {
             "content": "What is the limitation of this new guide?",
@@ -788,19 +788,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ee3bc88028aa29a1d198"
+            "_id": "6a3ba71122eb5bbd6925c5ac"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ee3bc88028aa29a1d196"
+        "_id": "6a3ba71122eb5bbd6925c5aa"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ee3bc88028aa29a1d199",
     "createdAt": "2026-01-02T16:11:39.941Z",
-    "updatedAt": "2026-06-17T09:37:55.814Z",
+    "updatedAt": "2026-06-24T09:44:49.724Z",
     "__v": 0
   },
   {
@@ -810,13 +810,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "A research into happiness (16.7)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "A research into happiness",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294164065_e4e13cf37b33a131_25_research_appiness.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,9.28],\"text\":\" Research into happiness has attracted considerable attention as scientists try to understand what truly contributes to people's sense of well-being.\"},{\"timestamp\":[9.28,14.24],\"text\":\" Although the topic appears frequently in newspapers and online articles,\"},{\"timestamp\":[14.24,20.4],\"text\":\" the way it is presented is often misleading, a common problem is that the media does not report.\"},{\"timestamp\":[20.4,26.04],\"text\":\" The findings accurately, instead, complex studies are simplified or taken out of context\"},{\"timestamp\":[26.04,32],\"text\":\" with headlines focusing on surprising or appealing conclusions rather than the full picture.\"},{\"timestamp\":[32,37.56],\"text\":\" This can give the public an incomplete or even incorrect understanding of what the research\"},{\"timestamp\":[37.56,43.42],\"text\":\" actually shows, regarding the overall value of this research, the speaker expresses a cautious\"},{\"timestamp\":[43.42,45.52],\"text\":\" opinion while these studies offer\"},{\"timestamp\":[45.52,51.52],\"text\":\" interesting perspectives on human behavior and emotions. It seems unlikely that they will lead to\"},{\"timestamp\":[51.52,57.2],\"text\":\" a single definitive answer. Happiness is a complex concept that varies greatly from person to\"},{\"timestamp\":[57.2,65.32],\"text\":\" person and is influenced by many different factors, including culture, lifestyle, and personal expectations.\"},{\"timestamp\":[65.32,69.48],\"text\":\" Because of this complexity, the research may continue to evolve.\"},{\"timestamp\":[69.48,73.68],\"text\":\" But it is unlikely to produce one clear conclusion that applies universally.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -836,7 +836,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ee83c88028aa29a1d1a1"
+            "_id": "6a3ba69522eb5bbd6925c4f5"
           },
           {
             "content": "What is the speaker's opinion on this research in general?",
@@ -855,19 +855,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ee83c88028aa29a1d1a2"
+            "_id": "6a3ba69522eb5bbd6925c4f6"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ee83c88028aa29a1d1a0"
+        "_id": "6a3ba69522eb5bbd6925c4f4"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ee83c88028aa29a1d1a3",
     "createdAt": "2026-01-02T16:12:51.496Z",
-    "updatedAt": "2026-06-17T09:37:55.855Z",
+    "updatedAt": "2026-06-24T09:42:45.314Z",
     "__v": 0
   },
   {
@@ -877,13 +877,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "Criticism of the new novel (17.7)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "Criticism of the new novel",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
         "file": "",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,7],\"text\":\" The new novel has recently received a great deal of attention from readers and critics alike.\"},{\"timestamp\":[7,14],\"text\":\" One of the main reasons it has attracted such interest is the strength of its characters,\"},{\"timestamp\":[14,20],\"text\":\" rather than relying on complex plots or detailed background information.\"},{\"timestamp\":[20,26.88],\"text\":\" The story focuses on creating individuals who feel realistic and engaging.\"},{\"timestamp\":[26.88,33.36],\"text\":\" Readers are drawn to these characters because of their unique personalities and emotional depth,\"},{\"timestamp\":[34.16,39.12],\"text\":\" which makes it easier to connect with the story and remain interested throughout.\"},{\"timestamp\":[40,46.64],\"text\":\" As for the overall opinion of the novel, the speaker is quite positive about its potential impact.\"},{\"timestamp\":[47.44,53.76],\"text\":\" Although it may not be perfect in every aspect, it is believed that the book will play an\"},{\"timestamp\":[53.76,61.76],\"text\":\" important role in increasing the author's recognition. In fact, the success of this novel is likely\"},{\"timestamp\":[61.76,67.28],\"text\":\" to help establish the author's popularity among a wider audience.\"},{\"timestamp\":[67.28,74.36],\"text\":\" With strong character development and an engaging, narrative style, the book has the potential\"},{\"timestamp\":[74.36,78.56],\"text\":\" to become a significant milestone in the writer's career.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -903,7 +903,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957eed0c88028aa29a1d1ab"
+            "_id": "6a3ba70322eb5bbd6925c574"
           },
           {
             "content": "What is the speaker's opinion about this novel?",
@@ -922,19 +922,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957eed0c88028aa29a1d1ac"
+            "_id": "6a3ba70322eb5bbd6925c575"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957eed0c88028aa29a1d1aa"
+        "_id": "6a3ba70322eb5bbd6925c573"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957eed0c88028aa29a1d1ad",
     "createdAt": "2026-01-02T16:14:08.872Z",
-    "updatedAt": "2026-06-17T09:37:55.900Z",
+    "updatedAt": "2026-06-24T09:44:35.323Z",
     "__v": 0
   },
   {
@@ -944,13 +944,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "Writer's block (16.8)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "Writer's block",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294390676_ecfe6b977dbb3329_30_writer_block.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.8],\"text\":\" Many writers experience periods when they struggle to stay focused or produce new ideas.\"},{\"timestamp\":[6.8,10.6],\"text\":\" A situation often referred to as writers block.\"},{\"timestamp\":[10.6,17.34],\"text\":\" According to the speaker, one effective way to overcome this problem is by creating dedicated\"},{\"timestamp\":[17.34,21.04],\"text\":\" periods of time specifically for writing.\"},{\"timestamp\":[21.04,27.6],\"text\":\" Instead of waiting for inspiration to appear naturally, writers are encouraged to build a\"},{\"timestamp\":[27.6,32.72],\"text\":\" routine and commit to writing at certain times each day.\"},{\"timestamp\":[32.72,40.12],\"text\":\" This structured approach helps improve concentration and allows writers to develop discipline.\"},{\"timestamp\":[40.12,45.5],\"text\":\" Making it easier to stay productive even when motivation is low.\"},{\"timestamp\":[45.5,52.66],\"text\":\" At the same time, when generating ideas, writers sometimes make avoidable mistakes.\"},{\"timestamp\":[52.66,58.34],\"text\":\" One common issue is that they refuse to seek the advice of other people.\"},{\"timestamp\":[58.34,65],\"text\":\" Some prefer to work entirely on their own, believing that feedback might affect their creativity.\"},{\"timestamp\":[65,71],\"text\":\" In reality, discussing ideas with others can provide fresh perspectives\"},{\"timestamp\":[71,74],\"text\":\" and help improve the quality of their work.\"},{\"timestamp\":[74,null],\"text\":\" By ignoring external input, writers may limit their creativity and misvaluable opportunities to develop stronger ideas.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -970,7 +970,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ef19c88028aa29a1d1b5"
+            "_id": "6a3ba77722eb5bbd6925c5e5"
           },
           {
             "content": "What is a common mistake writers make when generating ideas?",
@@ -989,19 +989,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ef19c88028aa29a1d1b6"
+            "_id": "6a3ba77722eb5bbd6925c5e6"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ef19c88028aa29a1d1b4"
+        "_id": "6a3ba77722eb5bbd6925c5e4"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ef19c88028aa29a1d1b7",
     "createdAt": "2026-01-02T16:15:21.737Z",
-    "updatedAt": "2026-06-17T09:37:55.945Z",
+    "updatedAt": "2026-06-24T09:46:31.259Z",
     "__v": 0
   },
   {
@@ -1011,13 +1011,13 @@
     "description": null,
     "questions": [
       {
-        "questionTitle": "Professionalism at work (17.8)",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "questionTitle": "Professionalism at work",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294482520_761ae922f2bdbfed_31_professionalism_at_work.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.8],\"text\":\" Professionalism at work is often shown through the way employees interact with others and handle daily responsibilities.\"},{\"timestamp\":[6.8,10],\"text\":\" One clear example is maintaining a positive attitude.\"},{\"timestamp\":[10.64,15.12],\"text\":\" Even in challenging situations instead of complaining or creating conflict.\"},{\"timestamp\":[15.84,21.04],\"text\":\" A professional person stays calm, respectful and supportive toward colleagues.\"},{\"timestamp\":[21.04,24.64],\"text\":\" This kind of attitude helps build a healthy working environment,\"},{\"timestamp\":[24.64,28],\"text\":\" improves teamwork and increases overall productivity.\"},{\"timestamp\":[28,32],\"text\":\" It also shows reliability and emotional control.\"},{\"timestamp\":[32,35],\"text\":\" Witcher Hardy valued in any workplace.\"},{\"timestamp\":[35,40],\"text\":\" At the same time, the public's view of professionalism is gradually changing people no longer\"},{\"timestamp\":[40,47.28],\"text\":\" see it as strictly following traditional rules such as formal dress codes or rigid behaviour instead.\"},{\"timestamp\":[47.28,52.96],\"text\":\" Professionalism is now more about adaptability, communication skills, and the ability to work\"},{\"timestamp\":[52.96,57.56],\"text\":\" effectively in modern conditions like remote or flexible environments.\"},{\"timestamp\":[57.56,62.99],\"text\":\" This shift reflects how workplaces are evolving and it highlights the importance of redefining professionalism to match current expectations and realities.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1037,7 +1037,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ef66c88028aa29a1d1bf"
+            "_id": "6a3ba7d322eb5bbd6925c643"
           },
           {
             "content": "What is the public's view of current professionalism?",
@@ -1056,19 +1056,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6957ef66c88028aa29a1d1c0"
+            "_id": "6a3ba7d322eb5bbd6925c644"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6957ef66c88028aa29a1d1be"
+        "_id": "6a3ba7d322eb5bbd6925c642"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "6957ef66c88028aa29a1d1c1",
     "createdAt": "2026-01-02T16:16:38.622Z",
-    "updatedAt": "2026-06-17T09:37:55.988Z",
+    "updatedAt": "2026-06-24T09:48:03.180Z",
     "__v": 0
   },
   {
@@ -1082,9 +1082,9 @@
         "content": "Không có audio, học viên học thuộc đáp án",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294542206_67f91e9f176db22f_32_making_plans.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,4.8],\"text\":\" Creating small plans is an effective way to stay organized and make better decisions\"},{\"timestamp\":[4.8,10.32],\"text\":\" when tasks are broken down into smaller steps. It becomes easier to focus on what needs to be done next.\"},{\"timestamp\":[11.12,16.24],\"text\":\" This approach reduces confusion and helps you choose the most suitable actions at each stage of\"},{\"timestamp\":[16.24,22.08],\"text\":\" Azure. Result, you can manage your time more efficiently and avoid feeling overwhelmed.\"},{\"timestamp\":[22.08,25.4],\"text\":\" In general, making a plan also requires you to set certain\"},{\"timestamp\":[25.4,30.76],\"text\":\" limits for yourself. These limits help you stay disciplined and focused on your goals instead\"},{\"timestamp\":[30.76,36.36],\"text\":\" of getting distracted. By clearly defining what you can and cannot do within a given time,\"},{\"timestamp\":[36.36,null],\"text\":\" you are more likely to maintain steady progress. This structure not only improves productivity, but also helps you build good habits over time.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1104,7 +1104,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c110d7e521b65aeedbe3ff"
+            "_id": "6a3ba80e22eb5bbd6925c67d"
           },
           {
             "content": "How does creating a plan help you in general?",
@@ -1123,19 +1123,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c110d7e521b65aeedbe400"
+            "_id": "6a3ba80e22eb5bbd6925c67e"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c110d7e521b65aeedbe3fe"
+        "_id": "6a3ba80e22eb5bbd6925c67c"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c110d7e521b65aeedbe401",
     "createdAt": "2026-03-23T10:07:19.938Z",
-    "updatedAt": "2026-06-17T09:37:56.412Z",
+    "updatedAt": "2026-06-24T09:49:02.786Z",
     "__v": 0
   },
   {
@@ -1146,12 +1146,12 @@
     "questions": [
       {
         "questionTitle": "A promotion campaign for a product",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294610123_c6120066b74302ab_33_promotion_product_ver1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "<p><br></p>",
+        "suggestion": "<p>[{\"timestamp\":[0,7.32],\"text\":\" In my opinion, this promotion campaign is making exaggerated claims about the product, and\"},{\"timestamp\":[7.32,11.12],\"text\":\" that is a major problem when I watch the advertisements.\"},{\"timestamp\":[11.12,15.76],\"text\":\" They seem to promise results that are far too good to be true because of this.\"},{\"timestamp\":[15.76,20.24],\"text\":\" I feel that many people would become skeptical rather than convinced.\"},{\"timestamp\":[20.24,25.04],\"text\":\" Instead of building trust with potential customers, the campaign actually creates debt as\"},{\"timestamp\":[25.04,31.08],\"text\":\" people may question whether the product can really deliver what is being advertised personally.\"},{\"timestamp\":[31.08,35.88],\"text\":\" I think that honesty and realism are much more effective in the long term.\"},{\"timestamp\":[35.88,38.96],\"text\":\" So this approach could damage the brand's reputation.\"},{\"timestamp\":[38.96,43.96],\"text\":\" In addition to that, I believe the campaign costs too much to make to be profitable, even\"},{\"timestamp\":[43.96,45.48],\"text\":\" if it manages to attract\"},{\"timestamp\":[45.48,47.04],\"text\":\" a lot of attention.\"},{\"timestamp\":[47.04,53.08],\"text\":\" The company is likely spending a huge amount of money on production, marketing, and distribution\"},{\"timestamp\":[53.08,54.84],\"text\":\" from my perspective.\"},{\"timestamp\":[54.84,59.64],\"text\":\" This is not a smart investment because the return may not be high enough to justify such\"},{\"timestamp\":[59.64,60.64],\"text\":\" expenses.\"},{\"timestamp\":[60.64,69],\"text\":\" I would say that a simpler and more cost-effective campaign could achieve similar results without putting so much financial pressure on the company overall.\"},{\"timestamp\":[69,73],\"text\":\" I think the strategy is inefficient and needs to be reconsidered.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1171,7 +1171,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11138e521b65aeedbe421"
+            "_id": "6a3ba85222eb5bbd6925c6b7"
           },
           {
             "content": "What does the speaker think about this campaign?",
@@ -1190,19 +1190,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11138e521b65aeedbe422"
+            "_id": "6a3ba85222eb5bbd6925c6b8"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c11138e521b65aeedbe420"
+        "_id": "6a3ba85222eb5bbd6925c6b6"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c11138e521b65aeedbe423",
     "createdAt": "2026-03-23T10:08:56.278Z",
-    "updatedAt": "2026-06-17T09:37:56.367Z",
+    "updatedAt": "2026-06-24T09:50:10.729Z",
     "__v": 0
   },
   {
@@ -1213,12 +1213,12 @@
     "questions": [
       {
         "questionTitle": "Script production",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294701293_467ab5c41736e677_35_script_production_ver1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" When discussing the script, mainly because their backgrounds aren't explored in enough detail.\"},{\"timestamp\":[8,14],\"text\":\" Without a clear understanding of their past or motivations, it becomes difficult for the audience\"},{\"timestamp\":[14,18],\"text\":\" to relate to them or understand their actions.\"},{\"timestamp\":[18,24],\"text\":\" In addition, it is also pointed out that modern industry demands have a negative influence\"},{\"timestamp\":[24,26.6],\"text\":\" on script production.\"},{\"timestamp\":[26.6,33.32],\"text\":\" Instead of focusing on strong storytelling, the process often prioritizes deadlines and market\"},{\"timestamp\":[33.32,34.04],\"text\":\" demands.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1238,7 +1238,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c111a3e521b65aeedbe44b"
+            "_id": "6a3ba8ad22eb5bbd6925c71d"
           },
           {
             "content": "How do industries impact script production?",
@@ -1257,19 +1257,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c111a3e521b65aeedbe44c"
+            "_id": "6a3ba8ad22eb5bbd6925c71e"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c111a3e521b65aeedbe44a"
+        "_id": "6a3ba8ad22eb5bbd6925c71c"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c111a3e521b65aeedbe44d",
     "createdAt": "2026-03-23T10:10:43.061Z",
-    "updatedAt": "2026-06-17T09:37:56.324Z",
+    "updatedAt": "2026-06-24T09:51:41.823Z",
     "__v": 0
   },
   {
@@ -1280,12 +1280,12 @@
     "questions": [
       {
         "questionTitle": "A new restaurant",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294774187_885c7fc6e8fce091_43_a_new_restaurant.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.44],\"text\":\" I recently visited that new Bistro downtown, and I have to say, the feedback from the community\"},{\"timestamp\":[5.44,11.6],\"text\":\" has been quite mixed on one hand, people love the menu. Despite some concerns that the dishes\"},{\"timestamp\":[11.6,17.12],\"text\":\" might be too exotic for the locals. Most residents actually found the flavours refreshing\"},{\"timestamp\":[17.12,22.72],\"text\":\" and authentic. The location is also incredibly convenient, being right in the heart of the\"},{\"timestamp\":[22.72,30.2],\"text\":\" shopping district, however, the recurring complaint in almost every review is the unprofessional conduct of the staff.\"},{\"timestamp\":[30.2,33.4],\"text\":\" Guests have frequently reported feeling ignored.\"},{\"timestamp\":[33.4,38.24],\"text\":\" Suggesting that the overall quality of the hospitality was significantly below par.\"},{\"timestamp\":[38.24,42.72],\"text\":\" Looking ahead, simply adjusting the menu prices to boost margins or shifting the business\"},{\"timestamp\":[42.72,50.08],\"text\":\" model to focus exclusively on digital delivery won't solve the core issue. If the establishment wants to survive, they must\"},{\"timestamp\":[50.08,55.28],\"text\":\" prioritize the human element. The management needs to ensure that every person who walks through\"},{\"timestamp\":[55.28,60.24],\"text\":\" the door receives attentive care ultimately. Success will depend on their ability to faster\"},{\"timestamp\":[60.24,65.16],\"text\":\" genuine sense of appreciation. Ensuring that every guest feels truly appreciated and at home during their visit.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1305,7 +1305,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c111e5e521b65aeedbe46d"
+            "_id": "6a3ba8f622eb5bbd6925c757"
           },
           {
             "content": "What should this restaurant do?",
@@ -1324,19 +1324,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c111e5e521b65aeedbe46e"
+            "_id": "6a3ba8f622eb5bbd6925c758"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c111e5e521b65aeedbe46c"
+        "_id": "6a3ba8f622eb5bbd6925c756"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c111e5e521b65aeedbe46f",
     "createdAt": "2026-03-23T10:11:49.777Z",
-    "updatedAt": "2026-06-17T09:37:56.277Z",
+    "updatedAt": "2026-06-24T09:52:54.716Z",
     "__v": 0
   },
   {
@@ -1347,12 +1347,12 @@
     "questions": [
       {
         "questionTitle": "Work from home",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295196035_6b9a7ebcaa9ed236_44_work_from_home.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.16],\"text\":\" Before I transitioned to a remote role, I had a very idealized image of what it would be like.\"},{\"timestamp\":[6.16,10.88],\"text\":\" I was convinced it would grant me unprecedented flexibility and leisure time,\"},{\"timestamp\":[10.88,17.12],\"text\":\" and I even assumed I'd be far more efficient away from the constant interruptions of the office.\"},{\"timestamp\":[17.12,21.6],\"text\":\" However, after a few months, I have to admit it didn't quite live up to the hype.\"},{\"timestamp\":[21.6,27.36],\"text\":\" While it had its perks, the experience was underwhelming compared to my initial expectations,\"},{\"timestamp\":[27.36,32.68],\"text\":\" largely because the boundary between my personal and professional life became so blur.\"},{\"timestamp\":[32.68,37.04],\"text\":\" Looking at the bigger picture, I've realized that remote work isn't to one size fits\"},{\"timestamp\":[37.04,38.34],\"text\":\" all solution.\"},{\"timestamp\":[38.34,43.24],\"text\":\" Some people claim it's universally superior to the office for every employee.\"},{\"timestamp\":[43.24,46.08],\"text\":\" While skeptics argue it should be shunned entirely,\"},{\"timestamp\":[46.08,52.24],\"text\":\" in my view, neither extreme is correct, whether telecommuting is effective is entirely contingent\"},{\"timestamp\":[52.24,58.75],\"text\":\" upon a person's unique environment and their own disposition. It really is a matter of matching the work style to the right person and their specific situation.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1372,7 +1372,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11227e521b65aeedbe486"
+            "_id": "6a3baa9d22eb5bbd6925c86e"
           },
           {
             "content": "What is her opinion on working from home in general?",
@@ -1391,19 +1391,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11227e521b65aeedbe487"
+            "_id": "6a3baa9d22eb5bbd6925c86f"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c11227e521b65aeedbe485"
+        "_id": "6a3baa9d22eb5bbd6925c86d"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c11227e521b65aeedbe488",
     "createdAt": "2026-03-23T10:12:55.257Z",
-    "updatedAt": "2026-06-17T09:37:56.231Z",
+    "updatedAt": "2026-06-24T09:59:57.309Z",
     "__v": 0
   },
   {
@@ -1414,12 +1414,12 @@
     "questions": [
       {
         "questionTitle": "Managing financial spending",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295289501_05e2a911d6fef51a_45_managing_financial_spending_ver1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.24],\"text\":\" Mastering your personal finances is a skill that requires both discipline and a solid strategy\"},{\"timestamp\":[6.24,9.6],\"text\":\" when people struggle with their short-term outgoings.\"},{\"timestamp\":[9.6,15.28],\"text\":\" A common suggestion is to switch entirely to cash payments or to cut out every single.\"},{\"timestamp\":[15.28,19.92],\"text\":\" Non-essential purchase. While these drastic measures might work for a few days,\"},{\"timestamp\":[19.92,25.24],\"text\":\" they are rarely sustainable, a far more effective approach is to keep a close on your expenditures\"},{\"timestamp\":[25.24,27.36],\"text\":\" over a seven-day period.\"},{\"timestamp\":[27.36,32.48],\"text\":\" By tracking where your money goes each week, you can develop a realistic budget that allows\"},{\"timestamp\":[32.48,35],\"text\":\" for flexibility without overspending.\"},{\"timestamp\":[35,39.92],\"text\":\" Looking at the bigger picture, long-term financial stability involves more than just recording\"},{\"timestamp\":[39.92,46.64],\"text\":\" every minor daily expense, which can often become overwhelming and counterproductive similarly.\"},{\"timestamp\":[46.64,51.36],\"text\":\" You don't need to eliminate your entertainment budget altogether to save for the future.\"},{\"timestamp\":[51.36,56.88],\"text\":\" Instead, the most valuable step you can take for your future self is to consult with a professional\"},{\"timestamp\":[56.88,60.8],\"text\":\" or a mentor who has navigated these waters before.\"},{\"timestamp\":[60.8,71.27],\"text\":\" Tapping into the wisdom of those with a proven track record and wealth management will provide you. With the tailored insights needed to grow your assets over time.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1439,7 +1439,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11275e521b65aeedbe49f"
+            "_id": "6a3baafa22eb5bbd6925c8a8"
           },
           {
             "content": "What should you do to better control your long-term spending?",
@@ -1458,19 +1458,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c11275e521b65aeedbe4a0"
+            "_id": "6a3baafa22eb5bbd6925c8a9"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c11275e521b65aeedbe49e"
+        "_id": "6a3baafa22eb5bbd6925c8a7"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c11275e521b65aeedbe4a1",
     "createdAt": "2026-03-23T10:14:13.990Z",
-    "updatedAt": "2026-06-17T09:37:56.170Z",
+    "updatedAt": "2026-06-24T10:01:30.197Z",
     "__v": 0
   },
   {
@@ -1481,12 +1481,12 @@
     "questions": [
       {
         "questionTitle": "The importance of sleep",
-        "content": "Không có audio, học viên học thuộc đáp án",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295374172_42e36f776609e01c_48_importance_sleep_ver1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.24],\"text\":\" While many believe that sleeping fewer hours might actually improve deep sleep through exhaustion,\"},{\"timestamp\":[6.24,10.64],\"text\":\" or that drinking a cup of coffee can help some individuals relax before bed.\"},{\"timestamp\":[11.28,18.48],\"text\":\" These are largely myths. To truly enhance your rest, the secret lies in your sensory environment.\"},{\"timestamp\":[18.48,24.24],\"text\":\" Experts agree that shielding your bedroom from any auditory distractions and ensuring total darkness\"},{\"timestamp\":[24.24,25.28],\"text\":\" are the most critical\"},{\"timestamp\":[25.28,26.36],\"text\":\" factors.\"},{\"timestamp\":[26.36,30.88],\"text\":\" By eliminating both sound and light, you allow your brain to enter a restorative state\"},{\"timestamp\":[30.88,32.84],\"text\":\" far more effectively.\"},{\"timestamp\":[32.84,37.96],\"text\":\" Regarding sleep disorders, there is a common misunderstanding of how they manifest.\"},{\"timestamp\":[37.96,43.12],\"text\":\" Some people think that insomnia is solely a result of physical health issues, or they mistakenly\"},{\"timestamp\":[43.12,45.16],\"text\":\" believe that those with a condition\"},{\"timestamp\":[45.16,52],\"text\":\" actually spend too much time sleeping, in my view, the core issue is often a lack of awareness.\"},{\"timestamp\":[52,56.6],\"text\":\" Individuals frequently fail to detect the subtle cues of exhaustion their bodies are sending,\"},{\"timestamp\":[56.6,60.98],\"text\":\" because they cannot always identify the signs that they are genuinely fatigued. They continue to push themselves, worsening the cycle of sleeplessness.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1506,7 +1506,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c112c7e521b65aeedbe4b8"
+            "_id": "6a3bab4e22eb5bbd6925c8e2"
           },
           {
             "content": "What is the speaker's view on insomnia in general?",
@@ -1525,19 +1525,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c112c7e521b65aeedbe4b9"
+            "_id": "6a3bab4e22eb5bbd6925c8e3"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c112c7e521b65aeedbe4b7"
+        "_id": "6a3bab4e22eb5bbd6925c8e1"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c112c7e521b65aeedbe4ba",
     "createdAt": "2026-03-23T10:15:35.859Z",
-    "updatedAt": "2026-06-17T09:37:56.127Z",
+    "updatedAt": "2026-06-24T10:02:54.924Z",
     "__v": 0
   },
   {
@@ -1551,9 +1551,9 @@
         "content": "Không có audio, học viên học thuộc đáp án",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295504818_2b06be39214d5e98_51_nutritionist.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,4],\"text\":\" I started my career path a bit differently than some might expect.\"},{\"timestamp\":[4,9.92],\"text\":\" While many of my colleagues only decided to specialize in dietetics after gaining some experience\"},{\"timestamp\":[9.92,12.8],\"text\":\" working in a hospital setting or why.\"},{\"timestamp\":[12.8,17.6],\"text\":\" When they were employed at a local healthcare center, I took a more direct academic route.\"},{\"timestamp\":[17.6,23.2],\"text\":\" I actually qualified as a professional nutritionist during the time I was completing my biology\"},{\"timestamp\":[23.2,25.68],\"text\":\" degree. It was those early university\"},{\"timestamp\":[25.68,31.24],\"text\":\" years that really shaped my clinical focus. My rise to public recognition was also quite\"},{\"timestamp\":[31.24,36.98],\"text\":\" unexpected. A common misconception is that I gained my reputation after appearing on a famous\"},{\"timestamp\":[36.98,44],\"text\":\" TV talk show. Or perhaps after I tried to invent a revolutionary new health food however.\"},{\"timestamp\":[44,49.64],\"text\":\" Those were just minor highlights my career truly took off when I started working for a national.\"},{\"timestamp\":[49.64,54.88],\"text\":\" Telephone Advisory Service by dressing complex health concerns for anonymous callers\"},{\"timestamp\":[54.88,null],\"text\":\" on the helpline and offering them practical solutions to their daily problems. I built the trust and fame that eventually defined my professional life.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1573,7 +1573,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c113a6e521b65aeedbe4f6"
+            "_id": "6a3babd122eb5bbd6925c91c"
           },
           {
             "content": "When did she become famous?",
@@ -1592,19 +1592,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c113a6e521b65aeedbe4f7"
+            "_id": "6a3babd122eb5bbd6925c91d"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c113a6e521b65aeedbe4f5"
+        "_id": "6a3babd122eb5bbd6925c91b"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c113a6e521b65aeedbe4f8",
     "createdAt": "2026-03-23T10:19:18.468Z",
-    "updatedAt": "2026-06-17T09:37:56.080Z",
+    "updatedAt": "2026-06-24T10:05:05.342Z",
     "__v": 0
   },
   {
@@ -1618,9 +1618,9 @@
         "content": "Không có audio, học viên học thuộc đáp án",
         "answerList": null,
         "correctAnswer": "",
-        "file": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295582610_acea6f2159258e33_52_cycling_expedition.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Planning a long-distance cycling trip across borders is an ambitious undertaking that requires\"},{\"timestamp\":[5.36,8.32],\"text\":\" far more than just physical stamina.\"},{\"timestamp\":[8.32,12.76],\"text\":\" Many enthusiasts believe the most critical aspect is purely logistical, such as always\"},{\"timestamp\":[12.76,18.32],\"text\":\" carrying massive amounts of extra water and food supplies to last for days, or carefully\"},{\"timestamp\":[18.32,22.28],\"text\":\" selecting a route to avoid cycling on rough and uneven terrain.\"},{\"timestamp\":[22.28,30.88],\"text\":\" While these are certainly practical considerations, they aren't my primary piece of advice. Before you even set off, you must thoroughly research your intended\"},{\"timestamp\":[30.88,36.6],\"text\":\" route and gain, a comprehensive understanding of the locations on your itinerary. Truly equipping\"},{\"timestamp\":[36.6,41.92],\"text\":\" yourself with deep knowledge about the places, you are set to explore as the only way to navigate\"},{\"timestamp\":[41.92,48.6],\"text\":\" unexpected challenges effectively. On a broader level, I often remind travelers that an expedition shouldn't just be about\"},{\"timestamp\":[48.6,51.04],\"text\":\" the physical distance covered.\"},{\"timestamp\":[51.04,54.72],\"text\":\" Some suggest you should only visit regions with favorable weather conditions, or that you\"},{\"timestamp\":[54.72,59.92],\"text\":\" should simply \\\"cycle it your own pace\\\" without worrying about the final destination.\"},{\"timestamp\":[59.92,65],\"text\":\" However, I believe the true value of such a journey is found in the human element.\"},{\"timestamp\":[65,70.32],\"text\":\" My general philosophy is that the most rewarding experiences come from developing a deep appreciation\"},{\"timestamp\":[70.32,74.4],\"text\":\" for the local residents and the rich heritage of various nations.\"},{\"timestamp\":[74.4,78.56],\"text\":\" Focusing on engaging with the social customs and the diverse ways of life in every country\"},{\"timestamp\":[78.56,null],\"text\":\" you pass through is what truly transforms a simple bike ride into a life changing adventure.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1640,7 +1640,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c113ffe521b65aeedbe520"
+            "_id": "6a3bac1f22eb5bbd6925c956"
           },
           {
             "content": "What is the speaker's advice in general?",
@@ -1659,19 +1659,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69c113ffe521b65aeedbe521"
+            "_id": "6a3bac1f22eb5bbd6925c957"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69c113ffe521b65aeedbe51f"
+        "_id": "6a3bac1f22eb5bbd6925c955"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69c113ffe521b65aeedbe522",
     "createdAt": "2026-03-23T10:20:47.154Z",
-    "updatedAt": "2026-06-17T09:37:56.032Z",
+    "updatedAt": "2026-06-24T10:06:23.160Z",
     "__v": 0
   },
   {
@@ -1687,7 +1687,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776871765673_87ffb87b4f99468b_3_scientist_biography_verson2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.34],\"text\":\" I've just completed reading a new biography about a globally famous scientist, and it's\"},{\"timestamp\":[5.34,7.04],\"text\":\" very impressive.\"},{\"timestamp\":[7.04,10.16],\"text\":\" What stands out most is the author's storytelling style.\"},{\"timestamp\":[10.16,16.2],\"text\":\" It feels engaging and reads more like a compelling narrative than a traditional, dry biography.\"},{\"timestamp\":[16.2,20.8],\"text\":\" Moreover, even though the subject is quite technical, the content is written in a way that\"},{\"timestamp\":[20.8,23.36],\"text\":\" is accessible to general readers.\"},{\"timestamp\":[23.36,27.56],\"text\":\" As a result, complex discoveries become easy to understand,\"},{\"timestamp\":[27.56,30.08],\"text\":\" even for those without a scientific background.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1707,7 +1707,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8e9575e1769f65cd38e99"
+            "_id": "6a3bac6b22eb5bbd6925c98d"
           },
           {
             "content": "What does the speaker say about the overall content of the book?",
@@ -1726,19 +1726,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8e9575e1769f65cd38e9a"
+            "_id": "6a3bac6b22eb5bbd6925c98e"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8e9575e1769f65cd38e98"
+        "_id": "6a3bac6b22eb5bbd6925c98c"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8e9575e1769f65cd38e9b",
     "createdAt": "2026-04-22T15:29:27.691Z",
-    "updatedAt": "2026-06-17T09:37:56.458Z",
+    "updatedAt": "2026-06-24T10:07:39.172Z",
     "__v": 0
   },
   {
@@ -1754,7 +1754,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872015254_ee6f096c4b9ecbf9_5_the_sport_verson2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.68],\"text\":\" When discussing the role of athletics in education, many focus only on physical health.\"},{\"timestamp\":[6.68,11.72],\"text\":\" However, from an expert perspective, the value of sports competitions goes much further.\"},{\"timestamp\":[11.72,16.4],\"text\":\" They actually prepare students for a competitive work environment by teaching them resilience\"},{\"timestamp\":[16.4,18.48],\"text\":\" and how to perform under pressure.\"},{\"timestamp\":[18.48,23.52],\"text\":\" For this reason, my primary advice for schools is to keep these programs active as engaging\"},{\"timestamp\":[23.52,26.6],\"text\":\" in sports provides them with a balance in their lives.\"},{\"timestamp\":[26.6,31.2],\"text\":\" This balance is crucial for ensuring that academic demands don't become overwhelming for\"},{\"timestamp\":[31.2,31.92],\"text\":\" the students.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1774,7 +1774,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ea515e1769f65cd38ef6"
+            "_id": "6a3bac8f22eb5bbd6925c9c4"
           },
           {
             "content": "What is the expert’s advice for schools?",
@@ -1793,19 +1793,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ea515e1769f65cd38ef7"
+            "_id": "6a3bac8f22eb5bbd6925c9c5"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8ea515e1769f65cd38ef5"
+        "_id": "6a3bac8f22eb5bbd6925c9c3"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8ea515e1769f65cd38ef8",
     "createdAt": "2026-04-22T15:33:37.293Z",
-    "updatedAt": "2026-06-17T09:37:56.503Z",
+    "updatedAt": "2026-06-24T10:08:15.732Z",
     "__v": 0
   },
   {
@@ -1821,7 +1821,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872131309_813bf160ea3ef895_6_the_sport_verson3.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.32],\"text\":\" In my recent review of modern educational programs, I've noticed that physical education\"},{\"timestamp\":[6.32,8.92],\"text\":\" remains a cornerstone of development.\"},{\"timestamp\":[8.92,13.04],\"text\":\" According to my findings, one of the most significant benefits of school sports is that\"},{\"timestamp\":[13.04,18.08],\"text\":\" they help promote students overall health by encouraging consistent physical activity.\"},{\"timestamp\":[18.08,21.4],\"text\":\" Furthermore, sports offer more than just physical fitness.\"},{\"timestamp\":[21.4,25.2],\"text\":\" For many young people participating in these programs is essential because it\"},{\"timestamp\":[25.2,30.4],\"text\":\" provides balance. It helps them manage the heavy demands of their studies while developing social\"},{\"timestamp\":[30.4,31.6],\"text\":\" skills through teamwork.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1841,7 +1841,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8eac45e1769f65cd38f1b"
+            "_id": "6a3bacb322eb5bbd6925c9fb"
           },
           {
             "content": "What else do school sports provide for students?",
@@ -1860,19 +1860,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8eac45e1769f65cd38f1c"
+            "_id": "6a3bacb322eb5bbd6925c9fc"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8eac45e1769f65cd38f1a"
+        "_id": "6a3bacb322eb5bbd6925c9fa"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8eac45e1769f65cd38f1d",
     "createdAt": "2026-04-22T15:35:32.509Z",
-    "updatedAt": "2026-06-17T09:37:56.547Z",
+    "updatedAt": "2026-06-24T10:08:51.021Z",
     "__v": 0
   },
   {
@@ -1888,7 +1888,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872334797_7cb1bc3fe13e45a1_8_television_series_verson2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,9],\"text\":\" When the new drama series premiered last month, the production team was uncertain about how it would be received in such a crowded market.\"},{\"timestamp\":[9,26],\"text\":\" However, they were pleasantly surprised because it caught the audience's attention from the start, breaking viewership records within its very first week of release. The unique plot and high-quality cinematography had everyone talking immediately.\"},{\"timestamp\":[26,32.3],\"text\":\" Looking ahead, industry analysts believe the show has a very promising future beyond just\"},{\"timestamp\":[32.3,33.6],\"text\":\" high ratings.\"},{\"timestamp\":[33.6,38.36],\"text\":\" I spoke to a media consultant who pointed out that the series has a unique commercial\"},{\"timestamp\":[38.36,39.36],\"text\":\" appeal.\"},{\"timestamp\":[39.36,43.84],\"text\":\" According to the expert, the real potential of this show is that it can help reach new\"},{\"timestamp\":[43.84,45],\"text\":\" customers,\"},{\"timestamp\":[45,50],\"text\":\" particularly by attracting younger demographics and international viewers who don't\"},{\"timestamp\":[50,56],\"text\":\" usually watch domestic television. It is seen as a strategic tool to expand the\"},{\"timestamp\":[56,61],\"text\":\" network's influence into entirely new markets.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1908,7 +1908,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8eb905e1769f65cd38f8c"
+            "_id": "6a3bace922eb5bbd6925ca5e"
           },
           {
             "content": "According to the expert, what is the series' potential?",
@@ -1927,19 +1927,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8eb905e1769f65cd38f8d"
+            "_id": "6a3bace922eb5bbd6925ca5f"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8eb905e1769f65cd38f8b"
+        "_id": "6a3bace922eb5bbd6925ca5d"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8eb905e1769f65cd38f8e",
     "createdAt": "2026-04-22T15:38:56.544Z",
-    "updatedAt": "2026-06-17T09:37:56.592Z",
+    "updatedAt": "2026-06-24T10:09:45.928Z",
     "__v": 0
   },
   {
@@ -1955,7 +1955,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872440188_4da9fd23cea240d9_9_television_series_verson3.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6],\"text\":\" Today, I want to talk about a drama series that had a very difficult journey to the screen.\"},{\"timestamp\":[6,15.2],\"text\":\" Despite having a talented cast, the show struggled significantly during its premiere most critics agree that it failed to engage the audience from the start,\"},{\"timestamp\":[15.2,19.7],\"text\":\" because the opening episodes were quite confusing and lacked a clear direction,\"},{\"timestamp\":[19.7,24.2],\"text\":\" causing many viewers to turn off their TVs after just 10 minutes.\"},{\"timestamp\":[24.2,29.08],\"text\":\" Furthermore, the reviewer highlights a broader issue within the television industry that\"},{\"timestamp\":[29.08,32.52],\"text\":\" this show, unfortunately, fell victim to.\"},{\"timestamp\":[32.52,36.76],\"text\":\" It seems that many modern series are damaged by overexposure.\"},{\"timestamp\":[36.76,41.6],\"text\":\" This happens when a show is marketed so aggressively across every possible platform that by\"},{\"timestamp\":[41.6,45.04],\"text\":\" the time it actually airs, the public is already tired of hearing\"},{\"timestamp\":[45.04,46.04],\"text\":\" about it.\"},{\"timestamp\":[46.04,51.2],\"text\":\" This constant saturation of information can lead to \\\"viewer fatigue\\\" where even a decent\"},{\"timestamp\":[51.2,56.72],\"text\":\" story loses its appeal because it simply feels like too much for the audience to consume.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -1975,7 +1975,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ebfa5e1769f65cd38fa5"
+            "_id": "6a3bad1a22eb5bbd6925ca95"
           },
           {
             "content": "What problem does the reviewer mention about the series?",
@@ -1994,19 +1994,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ebfa5e1769f65cd38fa6"
+            "_id": "6a3bad1a22eb5bbd6925ca96"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8ebfa5e1769f65cd38fa4"
+        "_id": "6a3bad1a22eb5bbd6925ca94"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8ebfa5e1769f65cd38fa7",
     "createdAt": "2026-04-22T15:40:42.381Z",
-    "updatedAt": "2026-06-17T09:37:56.638Z",
+    "updatedAt": "2026-06-24T10:10:34.259Z",
     "__v": 0
   },
   {
@@ -2022,7 +2022,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872652354_6cfcab11f864aa39_11_advertising_sponsoring_verson2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.12],\"text\":\" Advertising plays a massive role in our economy, but it is not without its critics.\"},{\"timestamp\":[5.12,10.48],\"text\":\" When we look at the downside of modern marketing strategies, experts often point out a phenomenon\"},{\"timestamp\":[10.48,15.36],\"text\":\" known as \\\"view of fatigue\\\". They argue that even the most successful media series\"},{\"timestamp\":[15.36,20.56],\"text\":\" are damaged by overexposure. This happens when a campaign is so aggressive that the audience\"},{\"timestamp\":[20.56,25.84],\"text\":\" sees the same advertisements everywhere, causing them to lose interest in the show itself,\"},{\"timestamp\":[25.84,27.92],\"text\":\" rather than being attracted to it.\"},{\"timestamp\":[27.92,31.84],\"text\":\" In this case, more is definitely not better.\"},{\"timestamp\":[31.84,34.48],\"text\":\" The influence of Big Bug at advertising extends\"},{\"timestamp\":[34.48,36.72],\"text\":\" into the world of athletics as well,\"},{\"timestamp\":[36.72,39.64],\"text\":\" while sponsorship provides necessary funding.\"},{\"timestamp\":[39.64,42.2],\"text\":\" It can also be a double-edged sword.\"},{\"timestamp\":[42.2,44.72],\"text\":\" If a sponsor is involved in a controversy,\"},{\"timestamp\":[44.72,45.62],\"text\":\" or if the commercial\"},{\"timestamp\":[45.62,50.96],\"text\":\" side of the event becomes too dominant, they can generate negative publicity for the sport.\"},{\"timestamp\":[50.96,55.16],\"text\":\" Instead of celebrating the achievements of the athletes, the public focus shifts to the\"},{\"timestamp\":[55.16,null],\"text\":\" scandals or the corporate interests behind the scenes, which can ultimately harm the reputation and the spirit of the entire sporting community.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2042,7 +2042,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ecce5e1769f65cd39005"
+            "_id": "6a3bad5422eb5bbd6925caf0"
           },
           {
             "content": "In what way can advertising affect sports?",
@@ -2061,19 +2061,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ecce5e1769f65cd39006"
+            "_id": "6a3bad5422eb5bbd6925caf1"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8ecce5e1769f65cd39004"
+        "_id": "6a3bad5422eb5bbd6925caef"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8ecce5e1769f65cd39007",
     "createdAt": "2026-04-22T15:44:14.437Z",
-    "updatedAt": "2026-06-17T09:37:56.687Z",
+    "updatedAt": "2026-06-24T10:11:32.491Z",
     "__v": 0
   },
   {
@@ -2089,7 +2089,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776872739547_fe21166659722650_12_advertising_sponsoring_verson3.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" In our program today, we are discussing the powerful influence of marketing in the modern world.\"},{\"timestamp\":[8,15],\"text\":\" According to a leading industry expert I spoke with recently, despite the rise of social media,\"},{\"timestamp\":[15,19],\"text\":\" the fundamental goal of a commercial campaign hasn't changed.\"},{\"timestamp\":[19,26.32],\"text\":\" The expert emphasizes that it helps to reach new customers by introducing products to audiences\"},{\"timestamp\":[26.32,29.66],\"text\":\" who were previously unaware of them.\"},{\"timestamp\":[29.66,36.16],\"text\":\" Without this constant outreach, many innovative businesses would simply fail to grow.\"},{\"timestamp\":[36.16,42.96],\"text\":\" However, when we shifted the conversation to the impact of these brands on the world of athletics,\"},{\"timestamp\":[42.96,46.64],\"text\":\" the tone became more critical. The expert noted\"},{\"timestamp\":[46.64,51.84],\"text\":\" that while sponsorship deals bring in millions of dollars, they are not always good for sports\"},{\"timestamp\":[51.84,60.16],\"text\":\" fans. For example, the constant presence of logos and frequent commercial interruptions\"},{\"timestamp\":[60.16,66.32],\"text\":\" during live broadcasts can diminish the excitement of the game.\"},{\"timestamp\":[66.32,73.6],\"text\":\" Fans often feel that the true spirit of the sport is being overshadowed by corporate interests.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2109,7 +2109,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ed255e1769f65cd39012"
+            "_id": "6a3bad7622eb5bbd6925cb27"
           },
           {
             "content": "In what way can advertising affect sports?",
@@ -2128,19 +2128,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8ed255e1769f65cd39013"
+            "_id": "6a3bad7622eb5bbd6925cb28"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8ed255e1769f65cd39011"
+        "_id": "6a3bad7622eb5bbd6925cb26"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8ed255e1769f65cd39014",
     "createdAt": "2026-04-22T15:45:41.008Z",
-    "updatedAt": "2026-06-17T09:37:56.736Z",
+    "updatedAt": "2026-06-24T10:12:06.320Z",
     "__v": 0
   },
   {
@@ -2156,7 +2156,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776873602567_10719a0788d13242_15_regional_development_plan_verson2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.12],\"text\":\" Recent debates surrounding the latest draft of the regional development plan have highlighted\"},{\"timestamp\":[5.12,10.8],\"text\":\" some significant flaws that the authorities seem to have overlooked. Environmental experts\"},{\"timestamp\":[10.8,16.96],\"text\":\" and urban planners are increasingly vocal, arguing that the projects have a focus on expanding\"},{\"timestamp\":[16.96,23.36],\"text\":\" the highway network is a step backward for. Sustainability, the main criticism among these groups\"},{\"timestamp\":[23.36,26.88],\"text\":\" is that the plan doesn't provide enough alternatives to driving,\"},{\"timestamp\":[26.88,32.56],\"text\":\" such as a comprehensive light rail system or a more connected network of cycling lanes.\"},{\"timestamp\":[32.56,38.64],\"text\":\" By ignoring these greener options, the city risks becoming even more congested in the long run.\"},{\"timestamp\":[38.64,45.88],\"text\":\" Beyond these design flaws, the actual implementation of the project is expected to be quite difficult. Analysts\"},{\"timestamp\":[45.88,50.88],\"text\":\" believe the most significant challenge the plan is likely to face is that it is likely\"},{\"timestamp\":[50.88,56.84],\"text\":\" to. Meet resistance from local communities. Many residents living in the affected zones\"},{\"timestamp\":[56.84,62.16],\"text\":\" are already voicing their concerns about the loss of green spaces and the potential nose\"},{\"timestamp\":[62.16,65.56],\"text\":\" pollution. This social pushback could lead to lengthy legal\"},{\"timestamp\":[65.56,71.22],\"text\":\" battles and protests, which might ultimately stall the infrastructure phase for several years\"},{\"timestamp\":[71.22,77.16],\"text\":\" unless the government. Starts to prioritize public consultation over mere expansion.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2176,7 +2176,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f0845e1769f65cd390d3"
+            "_id": "6a3bad9c22eb5bbd6925cb5e"
           },
           {
             "content": "What challenge is the Regional Development Plan likely to face?",
@@ -2195,19 +2195,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f0845e1769f65cd390d4"
+            "_id": "6a3bad9c22eb5bbd6925cb5f"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8f0845e1769f65cd390d2"
+        "_id": "6a3bad9c22eb5bbd6925cb5d"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8f0845e1769f65cd390d5",
     "createdAt": "2026-04-22T16:00:04.007Z",
-    "updatedAt": "2026-06-17T09:37:56.783Z",
+    "updatedAt": "2026-06-24T10:12:44.823Z",
     "__v": 0
   },
   {
@@ -2223,7 +2223,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875469706_36fdf3d0a398920b_19_learn_and_dev.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6],\"text\":\" In the modern professional landscape, the traditional methods of training are often insufficient\"},{\"timestamp\":[6,8.48],\"text\":\" for the demands of high-passed industries.\"},{\"timestamp\":[8.48,13.96],\"text\":\" When we consider professional growth, the primary objective is not just to acquire knowledge,\"},{\"timestamp\":[13.96,19.04],\"text\":\" this involves streamlining our processes and focusing on high-impact tasks rather than just\"},{\"timestamp\":[19.04,29.92],\"text\":\" staying busy or following a set of rigid, outdated instructions. Mastering this efficiency is what allows a professional to stand out in a crowded market.\"},{\"timestamp\":[29.92,32.76],\"text\":\" To truly advance and make significant progress,\"},{\"timestamp\":[32.76,36.84],\"text\":\" individuals must be willing to step away from their predictable routines.\"},{\"timestamp\":[36.84,42.12],\"text\":\" The most successful people in any field are those who are brave enough to experiment with new ideas.\"},{\"timestamp\":[42.12,45.44],\"text\":\" Different workflows and emerging technologies.\"},{\"timestamp\":[45.44,50.12],\"text\":\" We can discover more innovative ways to solve complex problems and ensure our skills remain\"},{\"timestamp\":[50.12,52.28],\"text\":\" relevant in an ever-changing world.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2243,7 +2243,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f7cf5e1769f65cd39195"
+            "_id": "6a3badc622eb5bbd6925cbc1"
           },
           {
             "content": "What should people be willing to do in order to make progress?",
@@ -2262,19 +2262,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f7cf5e1769f65cd39196"
+            "_id": "6a3badc622eb5bbd6925cbc2"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8f7cf5e1769f65cd39194"
+        "_id": "6a3badc622eb5bbd6925cbc0"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8f7cf5e1769f65cd39197",
     "createdAt": "2026-04-22T16:31:11.803Z",
-    "updatedAt": "2026-06-17T09:37:56.831Z",
+    "updatedAt": "2026-06-24T10:13:26.971Z",
     "__v": 0
   },
   {
@@ -2290,7 +2290,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875564864_239be30b0399c189_20_work_and_book.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,4.48],\"text\":\" Many people view their careers through a purely financial lens.\"},{\"timestamp\":[4.48,10.88],\"text\":\" Yet the psychological and social rewards of labor are often much more significant.\"},{\"timestamp\":[10.88,16.72],\"text\":\" Professional activity is vital because it helps develop skills, contribute to society,\"},{\"timestamp\":[16.72,21.52],\"text\":\" and provide a sense of purpose that money alone cannot buy.\"},{\"timestamp\":[21.52,27.26],\"text\":\" It allows us to apply our talents to real-world problems, while building a network\"},{\"timestamp\":[27.26,33.04],\"text\":\" of meaningful connections and a stable identity. Integrating a love for reading and academic\"},{\"timestamp\":[33.04,40],\"text\":\" inquiry into one's daily routine creates a powerful foundation for personal development.\"},{\"timestamp\":[40,50.56],\"text\":\" When we learn to integrate the practical lessons of our jobs with the deep insights found in literature, the result is more than just professional success, fostering a well-rounded\"},{\"timestamp\":[50.56,53.92],\"text\":\" character and a much more enriched perspective on the world.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2310,7 +2310,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f82e5e1769f65cd391b1"
+            "_id": "6a3badf022eb5bbd6925cbf8"
           },
           {
             "content": "What is the main result of balancing both work and books?",
@@ -2329,19 +2329,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f82e5e1769f65cd391b2"
+            "_id": "6a3badf022eb5bbd6925cbf9"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8f82e5e1769f65cd391b0"
+        "_id": "6a3badf022eb5bbd6925cbf7"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8f82e5e1769f65cd391b3",
     "createdAt": "2026-04-22T16:32:46.208Z",
-    "updatedAt": "2026-06-17T09:37:56.875Z",
+    "updatedAt": "2026-06-24T10:14:08.856Z",
     "__v": 0
   },
   {
@@ -2357,7 +2357,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875677550_655e3490d596296d_21_history_railways.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,4.88],\"text\":\" The railway industry has seen many ops and downs throughout its long history.\"},{\"timestamp\":[4.88,10.88],\"text\":\" During a particularly difficult era in the mid-20th century, the network struggled significantly\"},{\"timestamp\":[10.88,16.64],\"text\":\" to maintain its viability. One major problem the railways faced during this time was that they\"},{\"timestamp\":[16.64,22.88],\"text\":\" were simply not making enough money to cover their high operational costs and aging infrastructure.\"},{\"timestamp\":[22.88,25.8],\"text\":\" Revenue from passenger tickets and freight transport\"},{\"timestamp\":[25.8,29.84],\"text\":\" had plummeted due to the rising popularity of cars and trucks.\"},{\"timestamp\":[29.84,32.48],\"text\":\" Despite these growing financial concerns,\"},{\"timestamp\":[32.48,35.88],\"text\":\" the management team was hesitant to make radical changes.\"},{\"timestamp\":[35.88,39.12],\"text\":\" Instead of modernizing or pivoting their strategy,\"},{\"timestamp\":[39.12,42.08],\"text\":\" the leader in charge decided to continue the policies\"},{\"timestamp\":[42.08,45.36],\"text\":\" that had already been implemented in previous\"},{\"timestamp\":[45.36,46.36],\"text\":\" years.\"},{\"timestamp\":[46.36,50.96],\"text\":\" They believed that by maintaining the status quo and waiting for the economy to shift,\"},{\"timestamp\":[50.96,55.44],\"text\":\" the railways would eventually return to profitability without the need for a total\"},{\"timestamp\":[55.44,56.24],\"text\":\" restructure.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2377,7 +2377,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f89e5e1769f65cd391d3"
+            "_id": "6a3bae1522eb5bbd6925cc2f"
           },
           {
             "content": "What did the leader in charge decide to do during this period?",
@@ -2396,19 +2396,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f89e5e1769f65cd391d4"
+            "_id": "6a3bae1522eb5bbd6925cc30"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8f89e5e1769f65cd391d2"
+        "_id": "6a3bae1522eb5bbd6925cc2e"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8f89e5e1769f65cd391d5",
     "createdAt": "2026-04-22T16:34:38.991Z",
-    "updatedAt": "2026-06-17T09:37:56.923Z",
+    "updatedAt": "2026-06-24T10:14:45.454Z",
     "__v": 0
   },
   {
@@ -2424,7 +2424,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776875790048_7154b90785b834bf_22_the_environment.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" Protecting our planet has become more urgent than ever as we witness the growing impact of global warming.\"},{\"timestamp\":[8,14.5],\"text\":\" To combat cis experts suggest that individual actions play a crucial role.\"},{\"timestamp\":[14.5,21.5],\"text\":\" To maintain a healthy environment, we don't necessarily need radical shifts overnight.\"},{\"timestamp\":[21.5,27.64],\"text\":\" Instead, people should make a daily effort to recycle their trash, reduce unnecessary\"},{\"timestamp\":[27.64,35.8],\"text\":\" waste, and use energy more carefully in their homes. Small habits, when multiplied by millions,\"},{\"timestamp\":[35.8,45],\"text\":\" can lead to significant conservation. However, large-scale human activities continue to pose a threat.\"},{\"timestamp\":[45,52.2],\"text\":\" For instance, widespread deforestation is stripping the earth of its natural filters.\"},{\"timestamp\":[52.2,57.82],\"text\":\" According to recent studies, these activities are devastating because they harm nature and\"},{\"timestamp\":[57.82,62.6],\"text\":\" cause serious problems like climate change and long-term.\"},{\"timestamp\":[62.6,67.12],\"text\":\" Health issues for communities worldwide. If we do not address these\"},{\"timestamp\":[67.12,73.16],\"text\":\" destructive practices soon, the damage to our ecosystems may become irreversible.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2444,7 +2444,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f9105e1769f65cd3920f"
+            "_id": "6a3bae4822eb5bbd6925cc66"
           },
           {
             "content": "According to the text, how do human activities like deforestation affect us?",
@@ -2463,19 +2463,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8f9105e1769f65cd39210"
+            "_id": "6a3bae4822eb5bbd6925cc67"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8f9105e1769f65cd3920e"
+        "_id": "6a3bae4822eb5bbd6925cc65"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8f8ea5e1769f65cd391f4",
     "createdAt": "2026-04-22T16:35:54.034Z",
-    "updatedAt": "2026-06-17T09:37:56.969Z",
+    "updatedAt": "2026-06-24T10:15:36.597Z",
     "__v": 0
   },
   {
@@ -2491,7 +2491,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876097977_11bc138669d99bff_26_building_design.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8],\"text\":\" When we look at modern buildings today, one noticeable feature is how closely they are linked to the overall appearance of contemporary cities.\"},{\"timestamp\":[8,19],\"text\":\" These structures are often designed to match the clean, uniform style that defines modern cityscapes, with glass surfaces, straight lines, and minimal decoration.\"},{\"timestamp\":[19,25.46],\"text\":\" Because of this, modern buildings tend to stand out not as individual masterpieces, but as part of a larger\"},{\"timestamp\":[25.46,30.06],\"text\":\" visual identity that reflects urban developments and modernization.\"},{\"timestamp\":[30.06,35.36],\"text\":\" However, despite this consistent and recognizable style, not all new buildings are considered\"},{\"timestamp\":[35.36,36.36],\"text\":\" impressive.\"},{\"timestamp\":[36.36,41.92],\"text\":\" In fact, the speaker suggests that many of them show a clear lack of ambition, rather than\"},{\"timestamp\":[41.92,46],\"text\":\" pushing creative boundaries or introducing innovative ideas.\"},{\"timestamp\":[46,50],\"text\":\" Developers often focus on efficiency, cost, and speed.\"},{\"timestamp\":[50,55],\"text\":\" As a result, cities are increasingly filled with buildings that look similar to one another,\"},{\"timestamp\":[55,59],\"text\":\" which may be practical, but rarely inspiring.\"},{\"timestamp\":[59,65.2],\"text\":\" This trend highlights a missed opportunity for more imaginative and bold architectural design.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2511,7 +2511,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fa435e1769f65cd392bf"
+            "_id": "6a3bae6e22eb5bbd6925cc9d"
           },
           {
             "content": "What does the speaker say about many new buildings?",
@@ -2530,19 +2530,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fa435e1769f65cd392c0"
+            "_id": "6a3bae6e22eb5bbd6925cc9e"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8fa435e1769f65cd392be"
+        "_id": "6a3bae6e22eb5bbd6925cc9c"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8fa435e1769f65cd392c1",
     "createdAt": "2026-04-22T16:41:39.989Z",
-    "updatedAt": "2026-06-17T09:37:57.012Z",
+    "updatedAt": "2026-06-24T10:16:14.597Z",
     "__v": 0
   },
   {
@@ -2558,7 +2558,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876255474_cbba36d41b0e8d02_28_criticism_new_novel_ver2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,7.72],\"text\":\" The writer's latest novel has sparked a variety of opinions, particularly regarding how the story was developed and completed.\"},{\"timestamp\":[7.72,13.12],\"text\":\" According to the speaker, one notable aspect of the book is the strength of its plot.\"},{\"timestamp\":[13.12,19.52],\"text\":\" The storyline is well-structured and engaging with events unfolding in a clear and compelling way.\"},{\"timestamp\":[19.52,29.92],\"text\":\" This strong narrative is considered a key factor in how the writer managed to bring the bulk to a satisfying conclusion, keeping readers interested from beginning to end, however,\"},{\"timestamp\":[29.92,33.28],\"text\":\" not all feedback has been entirely positive.\"},{\"timestamp\":[33.28,37.32],\"text\":\" Some readers have pointed out that the novel feels to familiar when compared to the\"},{\"timestamp\":[37.32,39.48],\"text\":\" authors earlier works.\"},{\"timestamp\":[39.48,44.2],\"text\":\" They argue that certain themes, character types, and plot developments are quite similar\"},{\"timestamp\":[44.2,46],\"text\":\" to what the writer has done before.\"},{\"timestamp\":[46,54],\"text\":\" As a result, while the book is still enjoyable, it may lack originality for those who are already familiar with the author's previous novels.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2578,7 +2578,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fae15e1769f65cd3932a"
+            "_id": "6a3bae8f22eb5bbd6925ccd4"
           },
           {
             "content": "What do some readers criticize about the book?",
@@ -2597,19 +2597,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fae15e1769f65cd3932b"
+            "_id": "6a3bae8f22eb5bbd6925ccd5"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8fae15e1769f65cd39329"
+        "_id": "6a3bae8f22eb5bbd6925ccd3"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8fae15e1769f65cd3932c",
     "createdAt": "2026-04-22T16:44:17.574Z",
-    "updatedAt": "2026-06-17T09:37:57.056Z",
+    "updatedAt": "2026-06-24T10:16:47.736Z",
     "__v": 0
   },
   {
@@ -2625,7 +2625,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776876351743_468399ff9a333ec4_29_criticism_new_novel_ver3.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Although the novel has generated a fair amount of interest among readers, it is also received\"},{\"timestamp\":[5.36,11.44],\"text\":\" several critical comments, one of the most frequently mentioned issues relates to the characters.\"},{\"timestamp\":[11.44,17.04],\"text\":\" Some readers report that they find it difficult to connect with them on an emotional level, even.\"},{\"timestamp\":[17.04,21.44],\"text\":\" Though the author provides clear descriptions and background details.\"},{\"timestamp\":[21.44,25.96],\"text\":\" The characters do not always feel relatable. Their thoughts, behaviors,\"},{\"timestamp\":[25.96,31.12],\"text\":\" or life experiences seem distant from those of ordinary readers which makes it harder for\"},{\"timestamp\":[31.12,36.84],\"text\":\" the audience to become fully engaged in the story as a result. The emotional impact of the\"},{\"timestamp\":[36.84,42.24],\"text\":\" novel is somewhat limited for certain readers. Another point of criticism focuses on the\"},{\"timestamp\":[42.24,45],\"text\":\" storyline itself, while the plot is generally\"},{\"timestamp\":[45,50.86],\"text\":\" easy to follow and logically structured, many readers feel that it lacks originality.\"},{\"timestamp\":[50.86,55.16],\"text\":\" They point out that the themes and narrative patterns appear similar to those found in\"},{\"timestamp\":[55.16,56.26],\"text\":\" other.\"},{\"timestamp\":[56.26,61.4],\"text\":\" Novels within the same genre, because of this familiarity the story may feel predictable or\"},{\"timestamp\":[61.4,65.56],\"text\":\" less exciting, especially for readers who are used to more innovative\"},{\"timestamp\":[65.56,67.72],\"text\":\" or creative storytelling.\"},{\"timestamp\":[67.72,73.08],\"text\":\" Although the novel is not necessarily poorly written, this lack of fresh ideas means it may\"},{\"timestamp\":[73.08,75.6],\"text\":\" struggle to leave a lasting impression.\"},{\"timestamp\":[75.6,81.41],\"text\":\" Overall, the book demonstrates a solid level of writing skill, but these weaknesses in character connection and originality prevented from standing out as a truly memorable\"},{\"timestamp\":[81.41,81.85],\"text\":\" war.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2645,7 +2645,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fb415e1769f65cd39337"
+            "_id": "6a3baeb822eb5bbd6925cd0b"
           },
           {
             "content": "What criticism do readers have about the storyline?",
@@ -2664,19 +2664,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69e8fb415e1769f65cd39338"
+            "_id": "6a3baeb822eb5bbd6925cd0c"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69e8fb415e1769f65cd39336"
+        "_id": "6a3baeb822eb5bbd6925cd0a"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69e8fb415e1769f65cd39339",
     "createdAt": "2026-04-22T16:45:53.603Z",
-    "updatedAt": "2026-06-17T09:37:57.104Z",
+    "updatedAt": "2026-06-24T10:17:28.009Z",
     "__v": 0
   },
   {
@@ -2692,7 +2692,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955305460_6fb637a7d413f258_34_promotion_product_ver2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.48],\"text\":\" Many people believe that this promotion campaign relies to heavily on exaggerated claims.\"},{\"timestamp\":[6.48,11.32],\"text\":\" The advertisements present the product in an overly perfect way, which makes some customers\"},{\"timestamp\":[11.32,14.12],\"text\":\" feel doubtful about its real value.\"},{\"timestamp\":[14.12,18.36],\"text\":\" While this strategy may attract attention at first, it can also reduce trust if people\"},{\"timestamp\":[18.36,21.56],\"text\":\" think the message is not entirely honest.\"},{\"timestamp\":[21.56,25.52],\"text\":\" As a result, the campaign may struggle to build a strong and lasting connection with\"},{\"timestamp\":[25.52,30.72],\"text\":\" its audience. From my perspective, the biggest issue with this campaign is its high cost.\"},{\"timestamp\":[31.52,36.24],\"text\":\" I think the company is spending too much money on producing and promoting it, which makes it\"},{\"timestamp\":[36.24,41.92],\"text\":\" difficult to achieve real profitability. Even if the campaign gains attention, their return on\"},{\"timestamp\":[41.92,47],\"text\":\" investment may not be sufficient. In my opinion, a more balanced approach,\"},{\"timestamp\":[47,50],\"text\":\" focusing on both effectiveness and reasonable costs,\"},{\"timestamp\":[50,52],\"text\":\" would lead to better long term success.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2712,7 +2712,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea2fc794821544ed40fb92"
+            "_id": "6a3baeee22eb5bbd6925cdab"
           },
           {
             "content": "What does the speaker think about this campaign?",
@@ -2731,19 +2731,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea2fc794821544ed40fb93"
+            "_id": "6a3baeee22eb5bbd6925cdac"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea2fc794821544ed40fb91"
+        "_id": "6a3baeee22eb5bbd6925cdaa"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69ea2fad94821544ed40fb65",
     "createdAt": "2026-04-23T14:41:49.729Z",
-    "updatedAt": "2026-06-17T09:37:57.149Z",
+    "updatedAt": "2026-06-24T10:18:22.034Z",
     "__v": 0
   },
   {
@@ -2759,7 +2759,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955596047_8990f174236f17a1_36_script_production_ver2.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" When talking about the new show, it is often said that the dialogue seems unrealistic.\"},{\"timestamp\":[5.36,10.88],\"text\":\" The way the character's speak does not sound natural or similar to real-life conversations,\"},{\"timestamp\":[10.88,14.48],\"text\":\" which makes it harder for the audience to believe in the story.\"},{\"timestamp\":[14.48,20.56],\"text\":\" Instead of feeling authentic, some lines may come across as forced or not suitable for the situation,\"},{\"timestamp\":[20.56,28.56],\"text\":\" reducing the overall impact of the scenes. In addition, it is widely believed that current industry demands are negatively influencing\"},{\"timestamp\":[28.56,34.52],\"text\":\" script production, writers are under pressure to meet deadlines and follow market trends.\"},{\"timestamp\":[34.52,40.2],\"text\":\" Which can limit their ability to focus on quality and creativity as a result.\"},{\"timestamp\":[40.2,45.08],\"text\":\" Scripts may not be as carefully developed as they should be. Leading to weaker storytelling and less engaging content overall.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2779,7 +2779,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea30ce94821544ed40fbe3"
+            "_id": "6a3baf1322eb5bbd6925cde2"
           },
           {
             "content": "How does current industry demand have an effect on script quality?",
@@ -2798,19 +2798,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea30ce94821544ed40fbe4"
+            "_id": "6a3baf1322eb5bbd6925cde3"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea30ce94821544ed40fbe2"
+        "_id": "6a3baf1322eb5bbd6925cde1"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69ea30ce94821544ed40fbe5",
     "createdAt": "2026-04-23T14:46:38.948Z",
-    "updatedAt": "2026-06-17T09:37:57.192Z",
+    "updatedAt": "2026-06-24T10:18:59.641Z",
     "__v": 0
   },
   {
@@ -2826,7 +2826,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955704964_e13c631b4e6cbba0_37_script_production_ver3.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,5],\"text\":\" When reviewing this series, it is often pointed out that the dialogue seems unrealistic.\"},{\"timestamp\":[5,11],\"text\":\" The way the characters communicate does not reflect how people normally speak in real life,\"},{\"timestamp\":[11,14],\"text\":\" which makes some scenes feel less believable.\"},{\"timestamp\":[14,19],\"text\":\" Instead of sounding natural, certain lines appear forced or unnatural,\"},{\"timestamp\":[19,28.4],\"text\":\" and this can reduce the audience's immersion in the story. In addition, it is also highlighted that new industry demands are negatively influencing\"},{\"timestamp\":[28.4,30.6],\"text\":\" script production.\"},{\"timestamp\":[30.6,35.7],\"text\":\" Writers are increasingly required to follow trends and meet commercial expectations, which\"},{\"timestamp\":[35.7,38.92],\"text\":\" puts pressure on the creative process.\"},{\"timestamp\":[38.92,43.6],\"text\":\" As a result, the quality of the writing may suffer, as there is less time and freedom\"},{\"timestamp\":[43.6,46.96],\"text\":\" to develop strong and original ideas.\"},{\"timestamp\":[46.96,50.24],\"text\":\" This ultimately affects the overall effectiveness of the series.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2846,7 +2846,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea313b94821544ed40fbf0"
+            "_id": "6a3baf3722eb5bbd6925ce19"
           },
           {
             "content": "What problem is pointed out regarding the series writing?",
@@ -2865,19 +2865,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea313b94821544ed40fbf1"
+            "_id": "6a3baf3722eb5bbd6925ce1a"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea313b94821544ed40fbef"
+        "_id": "6a3baf3722eb5bbd6925ce18"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69ea313b94821544ed40fbf2",
     "createdAt": "2026-04-23T14:48:27.960Z",
-    "updatedAt": "2026-06-17T09:37:57.233Z",
+    "updatedAt": "2026-06-24T10:19:35.061Z",
     "__v": 0
   },
   {
@@ -2893,7 +2893,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776955976491_7b6ce7329470d0be_38_concentration.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.28],\"text\":\" When it comes to productivity, many people believe that staying focused is simply a matter of individual effort.\"},{\"timestamp\":[6.28,8.68],\"text\":\" They think that if they just try harder.\"},{\"timestamp\":[8.68,12.28],\"text\":\" They can block out any external distractions, however.\"},{\"timestamp\":[12.28,16.76],\"text\":\" Research and cognitive psychology suggest that this is a misconception.\"},{\"timestamp\":[16.76,22.4],\"text\":\" While willpower plays a role, the environment you choose to work in is actually the most significant factor,\"},{\"timestamp\":[22.4,29.92],\"text\":\" whether it is the lighting, the noise level, or even the layout of your desk. Your physical surroundings ultimately dictate how long you\"},{\"timestamp\":[29.92,34.32],\"text\":\" can remain productive. Another crucial point that is frequently misunderstood is\"},{\"timestamp\":[34.32,38.24],\"text\":\" a mental capacity. We often live in a culture that rewards the hustle.\"},{\"timestamp\":[39.04,43.68],\"text\":\" Leading many to overlook the fact that concentration is a finite resource.\"},{\"timestamp\":[43.68,46.72],\"text\":\" We tend to push ourselves for hours without a break,\"},{\"timestamp\":[46.72,48.44],\"text\":\" failing to acknowledge that our brains\"},{\"timestamp\":[48.44,50.48],\"text\":\" have very clear biological limits\"},{\"timestamp\":[50.48,53.52],\"text\":\" by disregarding these natural boundaries.\"},{\"timestamp\":[53.52,null],\"text\":\" We don't actually get more done instead. We simply reach a point of diminished returns where our focus completely evaporates.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2913,7 +2913,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea324e94821544ed40fc2c"
+            "_id": "6a3baf5b22eb5bbd6925ce50"
           },
           {
             "content": "What is it that people often don't realize about focus?",
@@ -2932,19 +2932,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea324e94821544ed40fc2d"
+            "_id": "6a3baf5b22eb5bbd6925ce51"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea324e94821544ed40fc2b"
+        "_id": "6a3baf5b22eb5bbd6925ce4f"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69ea321a94821544ed40fc11",
     "createdAt": "2026-04-23T14:52:10.450Z",
-    "updatedAt": "2026-06-17T09:37:57.274Z",
+    "updatedAt": "2026-06-24T10:20:11.930Z",
     "__v": 0
   },
   {
@@ -2960,7 +2960,7 @@
         "correctAnswer": "",
         "file": "https://files.aptisacademy.com.vn/listening/2026/04/1776956070662_81bc69de7fd1a8e7_39_modern_society.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.08],\"text\":\" Today, we're examining a new wave of contemporary art that as sparked significant debate.\"},{\"timestamp\":[6.08,13.12],\"text\":\" While many traditionalists argue that art should focus exclusively on historical events and figures to preserve,\"},{\"timestamp\":[13.12,20.88],\"text\":\" be our heritage. These new artists take a different path, they intentionally move away from strictly adhering to.\"},{\"timestamp\":[20.88,26.08],\"text\":\" Classical artistic conventions, instead the true power of these pieces lies in their\"},{\"timestamp\":[26.08,31.68],\"text\":\" relevance they function as a mirror to our contemporary world. Each work strives to offer a\"},{\"timestamp\":[31.68,38],\"text\":\" profound commentary on the complexities of the life we lead today. Making them undeniably relevant\"},{\"timestamp\":[38,43.76],\"text\":\" to our current era, however, interpreting these works can be quite a challenge. Many viewers expect\"},{\"timestamp\":[43.76,48.92],\"text\":\" art to provide direct and simplified moral lessons similar to a fable.\"},{\"timestamp\":[48.92,53.48],\"text\":\" Some even search for a core message that is clearly stated in the opening.\"},{\"timestamp\":[53.48,55.64],\"text\":\" But they will likely be disappointed.\"},{\"timestamp\":[55.64,59.64],\"text\":\" These artists prefer to use ambiguous symbolism and hidden.\"},{\"timestamp\":[59.64,60.64],\"text\":\" Metaphors.\"},{\"timestamp\":[60.64,65.92],\"text\":\" Consequently, the underlying significance of each piece is rarely obvious at first glance,\"},{\"timestamp\":[65.92,71.44],\"text\":\" requiring the audience to look deeper as the true meanings are often intentionally obscured.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -2980,7 +2980,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea32a994821544ed40fc4a"
+            "_id": "6a3baf8422eb5bbd6925ce87"
           },
           {
             "content": "What does the speaker say about the meanings of these works?",
@@ -2999,19 +2999,19 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69ea32a994821544ed40fc4b"
+            "_id": "6a3baf8422eb5bbd6925ce88"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69ea32a994821544ed40fc49"
+        "_id": "6a3baf8422eb5bbd6925ce86"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
     "id": "69ea32a994821544ed40fc4c",
     "createdAt": "2026-04-23T14:54:33.760Z",
-    "updatedAt": "2026-06-17T09:37:57.317Z",
+    "updatedAt": "2026-06-24T10:20:52.776Z",
     "__v": 0
   },
   {
@@ -3078,7 +3078,7 @@
     "questionType": "LISTENING",
     "id": "69ea334394821544ed40fc79",
     "createdAt": "2026-04-23T14:57:07.043Z",
-    "updatedAt": "2026-06-17T09:37:57.359Z",
+    "updatedAt": "2026-06-22T03:54:14.987Z",
     "__v": 0
   },
   {
@@ -3145,7 +3145,7 @@
     "questionType": "LISTENING",
     "id": "69ea334e94821544ed40fc8f",
     "createdAt": "2026-04-23T14:57:18.435Z",
-    "updatedAt": "2026-06-17T09:37:57.400Z",
+    "updatedAt": "2026-06-22T03:54:15.031Z",
     "__v": 0
   },
   {
@@ -3212,7 +3212,7 @@
     "questionType": "LISTENING",
     "id": "69ea33fb94821544ed40fca2",
     "createdAt": "2026-04-23T15:00:11.310Z",
-    "updatedAt": "2026-06-17T09:37:57.442Z",
+    "updatedAt": "2026-06-22T03:54:15.075Z",
     "__v": 0
   },
   {
@@ -3279,7 +3279,7 @@
     "questionType": "LISTENING",
     "id": "69ea347894821544ed40fcbe",
     "createdAt": "2026-04-23T15:02:16.317Z",
-    "updatedAt": "2026-06-17T09:37:57.486Z",
+    "updatedAt": "2026-06-22T03:54:15.123Z",
     "__v": 0
   },
   {
@@ -3346,7 +3346,7 @@
     "questionType": "LISTENING",
     "id": "69ea379a94821544ed40fd60",
     "createdAt": "2026-04-23T15:15:38.816Z",
-    "updatedAt": "2026-06-17T09:37:57.532Z",
+    "updatedAt": "2026-06-22T03:54:15.170Z",
     "__v": 0
   },
   {
@@ -3413,7 +3413,7 @@
     "questionType": "LISTENING",
     "id": "69ea386c94821544ed40fde4",
     "createdAt": "2026-04-23T15:19:08.026Z",
-    "updatedAt": "2026-06-17T09:37:57.575Z",
+    "updatedAt": "2026-06-22T03:54:15.217Z",
     "__v": 0
   },
   {
@@ -3480,7 +3480,7 @@
     "questionType": "LISTENING",
     "id": "69ea3cb494821544ed40fe52",
     "createdAt": "2026-04-23T15:37:24.266Z",
-    "updatedAt": "2026-06-17T09:37:57.622Z",
+    "updatedAt": "2026-06-22T03:54:15.263Z",
     "__v": 0
   },
   {
@@ -3547,7 +3547,7 @@
     "questionType": "LISTENING",
     "id": "69ea3f1494821544ed40fef3",
     "createdAt": "2026-04-23T15:47:32.914Z",
-    "updatedAt": "2026-06-17T09:37:57.669Z",
+    "updatedAt": "2026-06-22T03:54:15.312Z",
     "__v": 0
   },
   {
@@ -3614,7 +3614,7 @@
     "questionType": "LISTENING",
     "id": "69ea401494821544ed40ffa4",
     "createdAt": "2026-04-23T15:51:48.188Z",
-    "updatedAt": "2026-06-17T09:37:57.715Z",
+    "updatedAt": "2026-06-22T03:54:15.360Z",
     "__v": 0
   },
   {
@@ -3681,7 +3681,7 @@
     "questionType": "LISTENING",
     "id": "69ea40a594821544ed40fffc",
     "createdAt": "2026-04-23T15:54:13.016Z",
-    "updatedAt": "2026-06-17T09:37:57.764Z",
+    "updatedAt": "2026-06-22T03:54:15.406Z",
     "__v": 0
   },
   {
@@ -3749,7 +3749,7 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "The Music Industry",
-    "updatedAt": "2026-06-17T09:37:57.810Z"
+    "updatedAt": "2026-06-22T03:54:15.453Z"
   },
   {
     "_id": "69fb00000000000000000006",
@@ -3816,7 +3816,7 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "Productivity",
-    "updatedAt": "2026-06-17T09:37:57.856Z"
+    "updatedAt": "2026-06-22T03:54:15.500Z"
   },
   {
     "_id": "69fb0000000000000000000b",
@@ -3832,9 +3832,9 @@
         "content": "Chọn đáp án đúng",
         "answerList": null,
         "correctAnswer": "",
-        "file": "/audio/question16/2026_T5/02_aptiskey_com_biography.mp3",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782295037558_848f1a48571ac9d2_17_150526173507.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,8.4],\"text\":\" Listen to a book critic giving a talk about a biography and answer the questions below.\"},{\"timestamp\":[8.4,13.6],\"text\":\" Biographies are often judged by fairly predictable standards.\"},{\"timestamp\":[13.6,18.78],\"text\":\" Readers tend to expect either a highly personal portrait of an individual or an extensively\"},{\"timestamp\":[18.78,24.04],\"text\":\" researched historical account supported by large amounts of documentation.\"},{\"timestamp\":[24.04,26.02],\"text\":\" This particular biography contains\"},{\"timestamp\":[26.02,32.46],\"text\":\" elements of both, although not always in the way people might anticipate. One of the most\"},{\"timestamp\":[32.46,37.48],\"text\":\" noticeable features of the book is the amount of attention given to the social and political\"},{\"timestamp\":[37.48,44.3],\"text\":\" atmosphere surrounding the subject's life. At times, entire sections focus less on the\"},{\"timestamp\":[44.3,46.86],\"text\":\" individual themselves and more on the wider\"},{\"timestamp\":[46.86,53.68],\"text\":\" historical circumstances in which events unfolded. Some readers may find this excessive, while\"},{\"timestamp\":[53.68,58.6],\"text\":\" others will appreciate the way the author reconstructs the period with such precision\"},{\"timestamp\":[58.6,65.48],\"text\":\" and texture. There has also been considerable discussion about the research behind the biography, the\"},{\"timestamp\":[65.48,71.12],\"text\":\" author clearly consulted a wide range of sources. Though the book never feels dominated\"},{\"timestamp\":[71.12,77.56],\"text\":\" by factual detail alone. Similarly, while certain passages reveal moments of emotional\"},{\"timestamp\":[77.56,87.08],\"text\":\" insight, the narrative generally avoids becoming overly personal or sentimental. What makes the biography particularly interesting?\"},{\"timestamp\":[87.08,93.2],\"text\":\" However, is the way it refuses to follow the structure readers might normally expect.\"},{\"timestamp\":[93.2,97.88],\"text\":\" Rather than presenting the subject's life in a strictly chronological sequence, the\"},{\"timestamp\":[97.88,103.4],\"text\":\" author moves repeatedly between different time periods and perspectives.\"},{\"timestamp\":[103.4,105.84],\"text\":\" Occasionally focusing more on ideas and themes than\"},{\"timestamp\":[105.84,108.26],\"text\":\" on events themselves.\"},{\"timestamp\":[108.26,113.68],\"text\":\" Because of this, the biography sometimes feels closer to a reflective piece of literature\"},{\"timestamp\":[113.68,119.64],\"text\":\" than to a conventional account of someone's life, that approach will probably divide opinion,\"},{\"timestamp\":[119.64,124.44],\"text\":\" but it also gives the book a distinctive identity that separates it from more traditional\"},{\"timestamp\":[124.44,126.76],\"text\":\" biographies.\"},{\"timestamp\":[126.76,131.52],\"text\":\" Discussions about biography writing have increasingly focused on experimentation in recent\"},{\"timestamp\":[131.52,135.36],\"text\":\" years, especially in literary publishing circles.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -3854,7 +3854,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69fb0000000000000000000c"
+            "_id": "6a3ba9fe22eb5bbd6925c813"
           },
           {
             "content": "What is the critic’s overall opinion of the book?",
@@ -3873,17 +3873,17 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69fb0000000000000000000d"
+            "_id": "6a3ba9fe22eb5bbd6925c814"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69fb0000000000000000000e"
+        "_id": "6a3ba9fe22eb5bbd6925c812"
       }
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "A Book Critic Talks About A Biography",
-    "updatedAt": "2026-06-17T09:37:57.900Z"
+    "updatedAt": "2026-06-24T09:57:18.280Z"
   },
   {
     "_id": "69fb00000000000000000010",
@@ -3899,9 +3899,9 @@
         "content": "Chọn đáp án đúng",
         "answerList": null,
         "correctAnswer": "",
-        "file": "/audio/question16/2026_T5/03_aptiskey_com_podcasting.mp3",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294947003_45fbc084b40bd952_03_aptiskey_com_podcasting.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "",
+        "suggestion": "<p>[{\"timestamp\":[0,6.8],\"text\":\" I think one of the main reasons new podcasts fail is that creators don't spend enough time promoting their shows.\"},{\"timestamp\":[6.8,11.28],\"text\":\" A lot of people focus only on making episodes, but they forget that list\"},{\"timestamp\":[11.28,14.08],\"text\":\" un is needed to discover the podcast first.\"},{\"timestamp\":[14.08,20.48],\"text\":\" Without advertising or sharing content on social media, it's very difficult to attract an audience.\"},{\"timestamp\":[20.48,25],\"text\":\" Personally, I believe podcasting is an excellent way to build a community.\"},{\"timestamp\":[25,32],\"text\":\" Podcasts allow people with similar interests to connect, share ideas, and feel part of something larger.\"},{\"timestamp\":[32,36],\"text\":\" That's why podcasting has become so popular in recent years.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
@@ -3921,7 +3921,7 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69fb00000000000000000011"
+            "_id": "6a3ba9a322eb5bbd6925c7d9"
           },
           {
             "content": "What is the speaker's opinion of podcasting?",
@@ -3940,16 +3940,16 @@
             ],
             "image": null,
             "suggestion": null,
-            "_id": "69fb00000000000000000012"
+            "_id": "6a3ba9a322eb5bbd6925c7da"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69fb00000000000000000013"
+        "_id": "6a3ba9a322eb5bbd6925c7d8"
       }
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "Podcasting",
-    "updatedAt": "2026-06-17T09:37:57.950Z"
+    "updatedAt": "2026-06-24T09:55:47.688Z"
   }
 ]
