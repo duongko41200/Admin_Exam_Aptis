@@ -973,5 +973,80 @@
     "createdAt": "2026-06-22T03:59:01.579Z",
     "updatedAt": "2026-06-22T03:59:01.579Z",
     "__v": 0
+  },
+  {
+    "_id": "6a3c8ca25b4af1f9e232a19a",
+    "title": "Local Culture diffirent",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Local Culture diffirent",
+        "content": "chưa có audio, hãy học thuộc đáp án trước",
+        "answerList": [
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3c8ca25b4af1f9e232a19c"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3c8ca25b4af1f9e232a19d"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3c8ca25b4af1f9e232a19e"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3c8ca25b4af1f9e232a19f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3c8ca25b4af1f9e232a19b"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a3c8ca25b4af1f9e232a1a0",
+    "createdAt": "2026-06-25T02:04:18.412Z",
+    "updatedAt": "2026-06-25T02:04:18.412Z",
+    "__v": 0
   }
 ]
