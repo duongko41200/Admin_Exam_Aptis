@@ -49,9 +49,25 @@ async function sync() {
     let totalUpserted = 0;
     let totalDeleted = 0;
 
+    const partMap = {
+        'part1': 'ONE',
+        'part2': 'TWO',
+        'part3': 'THREE',
+        'part4': 'FOUR',
+        'part5': 'FIVE'
+    };
+
     for (const file of files) {
-        const [skill] = file.split('-');
+        const [skill, partWithExt] = file.split('-');
         if (!SKILL_MODELS[skill]) continue;
+        
+        let mappedPart = null;
+        if (partWithExt) {
+            const match = partWithExt.match(/(part\d)/);
+            if (match && partMap[match[1]]) {
+                mappedPart = partMap[match[1]];
+            }
+        }
         
         const filePath = path.join(EXAMS_DIR, file);
         const dataStr = fs.readFileSync(filePath, 'utf-8');
@@ -79,6 +95,11 @@ async function sync() {
                 // Xóa _id để Mongoose không báo lỗi immutable
                 const docToUpdate = { ...doc };
                 delete docToUpdate._id;
+                
+                // Add questionPart from filename if missing, necessary for UI filters
+                if (!docToUpdate.questionPart && mappedPart) {
+                    docToUpdate.questionPart = mappedPart;
+                }
                 
                 await Model.findByIdAndUpdate(id, docToUpdate, { upsert: true, new: true, runValidators: false });
             }
