@@ -1,665 +1,5 @@
 [
   {
-    "_id": "68e47a7053b4655eba3f06e4",
-    "title": "Thứ mà bạn muốn nhưng không thể có",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Thứ mà bạn muốn nhưng không thể có",
-    "questions": [
-      {
-        "questionTitle": "Thứ mà bạn muốn nhưng không thể có",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you wanted something but couldn't have it.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea06ea53b4655eba3f1784"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea06ea53b4655eba3f1785"
-          },
-          {
-            "content": "Material possessions can't bring happiness. What are your thoughts on this?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea06ea53b4655eba3f1786"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68ea06ea53b4655eba3f1783"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e47a7053b4655eba3f06e9",
-    "createdAt": "2025-10-07T02:26:56.293Z",
-    "updatedAt": "2026-06-22T03:54:26.483Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4975953b4655eba3f094c",
-    "title": "Giải quyết một vấn đề",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Giải quyết một vấn đề",
-    "questions": [
-      {
-        "questionTitle": "Giải quyết một vấn đề",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you solved a problem.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e498e853b4655eba3f09da"
-          },
-          {
-            "content": "How do you feel when you can’t solve a problem?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e498e853b4655eba3f09db"
-          },
-          {
-            "content": "Technology causes more problems than the ones that it can solve. What do you think about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e498e853b4655eba3f09dc"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e498e853b4655eba3f09d9"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4975953b4655eba3f0951",
-    "createdAt": "2025-10-07T04:30:17.972Z",
-    "updatedAt": "2026-06-22T03:54:26.739Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4907453b4655eba3f090a",
-    "title": "Hòa mình vào thiên nhiên",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Hòa mình vào thiên nhiên",
-    "questions": [
-      {
-        "questionTitle": "Hòa mình vào thiên nhiên",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me a time you were surrounded by nature.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4907453b4655eba3f090c"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4907453b4655eba3f090d"
-          },
-          {
-            "content": "What are some advantages of getting close to nature?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4907453b4655eba3f090e"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4907453b4655eba3f090b"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4907453b4655eba3f090f",
-    "createdAt": "2025-10-07T04:00:52.342Z",
-    "updatedAt": "2026-06-22T03:54:25.614Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e496a953b4655eba3f0941",
-    "title": "Cư xử thô lỗ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cư xử thô lỗ",
-    "questions": [
-      {
-        "questionTitle": "Cư xử thô lỗ",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when someone was rude to you.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e496a953b4655eba3f0943"
-          },
-          {
-            "content": "What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e496a953b4655eba3f0944"
-          },
-          {
-            "content": "Do you think technology is changing people's thoughts, making them more uncommunicative? ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e496a953b4655eba3f0945"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e496a953b4655eba3f0942"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e496a953b4655eba3f0946",
-    "createdAt": "2025-10-07T04:27:21.145Z",
-    "updatedAt": "2026-06-22T03:54:25.697Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f3529053b4655eba3f39c9",
-    "title": "Nhận được sự giúp đỡ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhận được sự giúp đỡ",
-    "questions": [
-      {
-        "questionTitle": "Nhận được sự giúp đỡ",
-        "content": "Nhận được sự giúp đỡ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell about a time when you were supported by others.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3529053b4655eba3f39cb"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3529053b4655eba3f39cc"
-          },
-          {
-            "content": "What are ways to motivate others to cooperate?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3529053b4655eba3f39cd"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f3529053b4655eba3f39ca"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f3529053b4655eba3f39ce",
-    "createdAt": "2025-10-18T08:40:48.413Z",
-    "updatedAt": "2026-06-22T03:54:25.911Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e499fd53b4655eba3f09fb",
-    "title": "Làm việc tốt",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Làm việc tốt",
-    "questions": [
-      {
-        "questionTitle": "Làm việc tốt",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time when you gave help?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e499fd53b4655eba3f09fd"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e499fd53b4655eba3f09fe"
-          },
-          {
-            "content": "How can people be encouraged to do good things?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e499fd53b4655eba3f09ff"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e499fd53b4655eba3f09fc"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e499fd53b4655eba3f0a00",
-    "createdAt": "2025-10-07T04:41:33.427Z",
-    "updatedAt": "2026-06-22T03:54:26.262Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f3516653b4655eba3f39b3",
-    "title": "Ngừng làm gì đó lại",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ngừng làm gì đó lại",
-    "questions": [
-      {
-        "questionTitle": "Ngừng làm gì đó lại",
-        "content": "Ngừng làm gì đó lại",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when someone told you to stop doing something.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3516653b4655eba3f39b5"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3516653b4655eba3f39b6"
-          },
-          {
-            "content": "Do you think there are too many rules in modern life?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3516653b4655eba3f39b7"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f3516653b4655eba3f39b4"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f3516653b4655eba3f39b8",
-    "createdAt": "2025-10-18T08:35:50.677Z",
-    "updatedAt": "2026-06-22T03:54:26.440Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e47f1a53b4655eba3f071b",
-    "title": "Đứng trước nhiều lựa chọn",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Đứng trước nhiều lựa chọn",
-    "questions": [
-      {
-        "questionTitle": "Đứng trước nhiều lựa chọn",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me a time when you had many choices.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47f1a53b4655eba3f071d"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47f1a53b4655eba3f071e"
-          },
-          {
-            "content": "Do we have so many choices to make?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47f1a53b4655eba3f071f"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e47f1a53b4655eba3f071c"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e47f1a53b4655eba3f0720",
-    "createdAt": "2025-10-07T02:46:50.129Z",
-    "updatedAt": "2026-06-22T03:54:26.524Z",
-    "__v": 0
-  },
-  {
-    "_id": "68ea01ce53b4655eba3f1729",
-    "title": "Ăn ở nhà hàng",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ăn ở nhà hàng",
-    "questions": [
-      {
-        "questionTitle": "Ăn ở nhà hàng",
-        "content": "Ăn ở nhà hàng",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time you ate at a restaurant.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea01ce53b4655eba3f172b"
-          },
-          {
-            "content": "What makes a restaurant good?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea01ce53b4655eba3f172c"
-          },
-          {
-            "content": "Why do people choose to spend money in restaurants?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea01ce53b4655eba3f172d"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68ea01ce53b4655eba3f172a"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68ea01ce53b4655eba3f172e",
-    "createdAt": "2025-10-11T07:05:50.998Z",
-    "updatedAt": "2026-06-22T03:54:26.825Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e47fdf53b4655eba3f0726",
-    "title": "Gặp người ở thế hệ khác",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Gặp người ở thế hệ khác",
-    "questions": [
-      {
-        "questionTitle": "Gặp người ở thế hệ khác",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "The last time you met a person of the older or younger generation?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47fdf53b4655eba3f0728"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47fdf53b4655eba3f0729"
-          },
-          {
-            "content": "What lessons did each generation give you?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47fdf53b4655eba3f072a"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e47fdf53b4655eba3f0727"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e47fdf53b4655eba3f072b",
-    "createdAt": "2025-10-07T02:50:07.771Z",
-    "updatedAt": "2026-06-22T03:54:26.565Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e49b4453b4655eba3f0a1c",
-    "title": "Nhận giải thưởng",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhận giải thưởng",
-    "questions": [
-      {
-        "questionTitle": "Nhận giải thưởng",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you received a prize/ an award.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49b4453b4655eba3f0a1e"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49b4453b4655eba3f0a1f"
-          },
-          {
-            "content": "Should people push themselves to get prizes?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49b4453b4655eba3f0a20"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e49b4453b4655eba3f0a1d"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e49b4453b4655eba3f0a21",
-    "createdAt": "2025-10-07T04:47:00.068Z",
-    "updatedAt": "2026-06-22T03:54:26.782Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4824653b4655eba3f0731",
-    "title": "Nhận một email hoặc thông báo",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhận một email hoặc thông báo",
-    "questions": [
-      {
-        "questionTitle": "Nhận một email hoặc thông báo",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me a time you received an email or a notification.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4824653b4655eba3f0733"
-          },
-          {
-            "content": "Which do you use to receive that email or notification?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4824653b4655eba3f0734"
-          },
-          {
-            "content": "A lot of people think that information is available these days. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4824653b4655eba3f0735"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4824653b4655eba3f0732"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4824653b4655eba3f0736",
-    "createdAt": "2025-10-07T03:00:22.375Z",
-    "updatedAt": "2026-06-22T03:54:26.909Z",
-    "__v": 0
-  },
-  {
     "_id": "68e478fb53b4655eba3f06d9",
     "title": "Học một thứ mới",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -712,1161 +52,6 @@
     "id": "68e478fb53b4655eba3f06de",
     "createdAt": "2025-10-07T02:20:43.498Z",
     "updatedAt": "2026-06-22T03:54:25.448Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e48fcb53b4655eba3f08ff",
-    "title": "Sự sáng tạo",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Sự sáng tạo",
-    "questions": [
-      {
-        "questionTitle": "Sự sáng tạo",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time you saw an impressive work of art",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e48fcb53b4655eba3f0901"
-          },
-          {
-            "content": "How did it make you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e48fcb53b4655eba3f0902"
-          },
-          {
-            "content": "It is impossible to teach people to be creative. Do you agree with this?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e48fcb53b4655eba3f0903"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e48fcb53b4655eba3f0900"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e48fcb53b4655eba3f0904",
-    "createdAt": "2025-10-07T03:58:03.028Z",
-    "updatedAt": "2026-06-22T03:54:25.572Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e49a7753b4655eba3f0a06",
-    "title": "Cười về một điều gì đó",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Cười về một điều gì đó",
-    "questions": [
-      {
-        "questionTitle": "Cười về một điều gì đó",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you laughed with your friends.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49a7753b4655eba3f0a08"
-          },
-          {
-            "content": "What do you think of a cheerful person?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49a7753b4655eba3f0a09"
-          },
-          {
-            "content": "Why do people laugh at different things?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e49a7753b4655eba3f0a0a"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e49a7753b4655eba3f0a07"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e49a7753b4655eba3f0a0b",
-    "createdAt": "2025-10-07T04:43:35.634Z",
-    "updatedAt": "2026-06-22T03:54:25.740Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f3502053b4655eba3f397c",
-    "title": "Du lịch đường dài",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Du lịch đường dài",
-    "questions": [
-      {
-        "questionTitle": "Du lịch đường dài",
-        "content": "Du lịch đường dài",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you went on a long journey.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3502053b4655eba3f397e"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3502053b4655eba3f397f"
-          },
-          {
-            "content": "How do people travel long distances in your country?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3502053b4655eba3f3980"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f3502053b4655eba3f397d"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f3502053b4655eba3f3981",
-    "createdAt": "2025-10-18T08:30:24.278Z",
-    "updatedAt": "2026-06-22T03:54:25.825Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f350e853b4655eba3f399d",
-    "title": "Bộ quần áo yêu thích",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Bộ quần áo yêu thích",
-    "questions": [
-      {
-        "questionTitle": "Bộ quần áo yêu thích",
-        "content": "Bộ quần áo yêu thích",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about your favourite piece of clothing.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350e853b4655eba3f399f"
-          },
-          {
-            "content": "How do you feel when you wear it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350e853b4655eba3f39a0"
-          },
-          {
-            "content": "Why do people dress in such different ways?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350e853b4655eba3f39a1"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f350e853b4655eba3f399e"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f350e853b4655eba3f39a2",
-    "createdAt": "2025-10-18T08:33:44.345Z",
-    "updatedAt": "2026-06-22T03:54:25.869Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f352e253b4655eba3f39d4",
-    "title": "Nhận quà Version 2",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhận quà Version 2",
-    "questions": [
-      {
-        "questionTitle": "Nhận quà Version 2",
-        "content": "Nhận quà Version 2",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me a time you received a gift?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f352e253b4655eba3f39d6"
-          },
-          {
-            "content": " How do you feel when someone who you don’t know well sends you a gift?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f352e253b4655eba3f39d7"
-          },
-          {
-            "content": "Choosing a perfect gift for someone who you don’t know well can be very difficult. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f352e253b4655eba3f39d8"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f352e253b4655eba3f39d5"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f352e253b4655eba3f39d9",
-    "createdAt": "2025-10-18T08:42:10.923Z",
-    "updatedAt": "2026-06-22T03:54:25.953Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e487e553b4655eba3f0747",
-    "title": "Gặp gỡ người bạn mới",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Gặp gỡ người bạn mới",
-    "questions": [
-      {
-        "questionTitle": "Gặp gỡ người bạn mới",
-        "content": "2 phút/ 3 câu - trả lời liên tục ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time you met some new friends.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e487e553b4655eba3f0749"
-          },
-          {
-            "content": "Some of the best thing about the experience.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e487e553b4655eba3f074a"
-          },
-          {
-            "content": "Benefit from meeting new people.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e487e553b4655eba3f074b"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e487e553b4655eba3f0748"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e487e553b4655eba3f074c",
-    "createdAt": "2025-10-07T03:24:21.151Z",
-    "updatedAt": "2026-06-22T03:54:26.125Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f350a253b4655eba3f3992",
-    "title": "Bị lạc đường",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Bị lạc đường",
-    "questions": [
-      {
-        "questionTitle": "Bị lạc đường",
-        "content": "Bị lạc đường",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you got lost.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350a253b4655eba3f3994"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350a253b4655eba3f3995"
-          },
-          {
-            "content": "What do people usually do when they get lost?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f350a253b4655eba3f3996"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f350a253b4655eba3f3993"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f350a253b4655eba3f3997",
-    "createdAt": "2025-10-18T08:32:34.788Z",
-    "updatedAt": "2026-06-22T03:54:26.348Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f3512553b4655eba3f39a8",
-    "title": "Ghé thăm một tòa nhà cổ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ghé thăm một tòa nhà cổ",
-    "questions": [
-      {
-        "questionTitle": "Ghé thăm một tòa nhà cổ",
-        "content": "Ghé thăm một tòa nhà cổ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you visited an old building.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3512553b4655eba3f39aa"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3512553b4655eba3f39ab"
-          },
-          {
-            "content": "Why do you think it is important to look after an old building?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3512553b4655eba3f39ac"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f3512553b4655eba3f39a9"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f3512553b4655eba3f39ad",
-    "createdAt": "2025-10-18T08:34:45.647Z",
-    "updatedAt": "2026-06-22T03:54:26.396Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4895053b4655eba3f0768",
-    "title": "Thể thao mạo hiểm",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Thể thao mạo hiểm",
-    "questions": [
-      {
-        "questionTitle": "Thể thao mạo hiểm",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you did an extreme sport.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4895053b4655eba3f076a"
-          },
-          {
-            "content": "How do you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4895053b4655eba3f076b"
-          },
-          {
-            "content": "Only adults do extreme sports. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4895053b4655eba3f076c"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4895053b4655eba3f0769"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4895053b4655eba3f076d",
-    "createdAt": "2025-10-07T03:30:24.044Z",
-    "updatedAt": "2026-06-22T03:54:26.950Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4996953b4655eba3f09f0",
-    "title": "Làm một việc mình không thích",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Làm một việc mình không thích",
-    "questions": [
-      {
-        "questionTitle": "Làm một việc mình không thích",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time you did something you didn’t like.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4996953b4655eba3f09f2"
-          },
-          {
-            "content": "Do you prefer the job you love or the job that helps you make a lot of money?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4996953b4655eba3f09f3"
-          },
-          {
-            "content": "In today's society, we often find ourselves having to do many things we don't enjoy, both in social settings and within our families.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4996953b4655eba3f09f4"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4996953b4655eba3f09f1"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4996953b4655eba3f09f5",
-    "createdAt": "2025-10-07T04:39:05.806Z",
-    "updatedAt": "2026-06-22T03:54:27.034Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4914a53b4655eba3f0915",
-    "title": "Nhận quà",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Nhận quà",
-    "questions": [
-      {
-        "questionTitle": "Nhận quà",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me a time you received a gift.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4914a53b4655eba3f0917"
-          },
-          {
-            "content": "How do you feel about this gift?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4914a53b4655eba3f0918"
-          },
-          {
-            "content": "Why do people give gifts?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4914a53b4655eba3f0919"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4914a53b4655eba3f0916"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4914a53b4655eba3f091a",
-    "createdAt": "2025-10-07T04:04:26.745Z",
-    "updatedAt": "2026-06-22T03:54:25.655Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f34faa53b4655eba3f3971",
-    "title": "Âm nhạc",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Âm nhạc",
-    "questions": [
-      {
-        "questionTitle": "Âm nhạc",
-        "content": "Âm nhạc",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about the music that comes from your country. ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f34faa53b4655eba3f3973"
-          },
-          {
-            "content": "How do you feel when you hear or listen to music?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f34faa53b4655eba3f3974"
-          },
-          {
-            "content": "Why do some cultures produce so much music and others so little?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f34faa53b4655eba3f3975"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f34faa53b4655eba3f3972"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f34faa53b4655eba3f3976",
-    "createdAt": "2025-10-18T08:28:26.375Z",
-    "updatedAt": "2026-06-22T03:54:25.783Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f3506553b4655eba3f3987",
-    "title": "Ghé thăm một toà nhà cao",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Ghé thăm một toà nhà cao",
-    "questions": [
-      {
-        "questionTitle": "Ghé thăm một toà nhà cao",
-        "content": "Ghé thăm một toà nhà cao",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you visited a very tall building.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3506553b4655eba3f3989"
-          },
-          {
-            "content": "How did you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3506553b4655eba3f398a"
-          },
-          {
-            "content": "Why do you think so many cities have tall buildings?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f3506553b4655eba3f398b"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f3506553b4655eba3f3988"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f3506553b4655eba3f398c",
-    "createdAt": "2025-10-18T08:31:33.160Z",
-    "updatedAt": "2026-06-22T03:54:27.077Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4960453b4655eba3f0936",
-    "title": "Một thử thách",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Một thử thách",
-    "questions": [
-      {
-        "questionTitle": "Một thử thách",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you were successful in a challenging situation.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4960453b4655eba3f0938"
-          },
-          {
-            "content": "How do you feel when you are given a challenge?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4960453b4655eba3f0939"
-          },
-          {
-            "content": "What can help people face the challenges of daily life?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4960453b4655eba3f093a"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4960453b4655eba3f0937"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4960453b4655eba3f093b",
-    "createdAt": "2025-10-07T04:24:36.286Z",
-    "updatedAt": "2026-06-22T03:54:26.214Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4833b53b4655eba3f073c",
-    "title": "Mất nhiều công sức làm một món đồ",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Mất nhiều công sức làm một món đồ",
-    "questions": [
-      {
-        "questionTitle": "Mất nhiều công sức làm một món đồ",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "The last time you made something by yourself that took a lot of effort? ",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4833b53b4655eba3f073e"
-          },
-          {
-            "content": "How did you feel when you finished it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4833b53b4655eba3f073f"
-          },
-          {
-            "content": "People should make as many items as they can instead of buying them. Do you agree?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4833b53b4655eba3f0740"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4833b53b4655eba3f073d"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4833b53b4655eba3f0741",
-    "createdAt": "2025-10-07T03:04:27.316Z",
-    "updatedAt": "2026-06-22T03:54:26.608Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4886c53b4655eba3f0752",
-    "title": "Sử dụng Internet",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Sử dụng Internet",
-    "questions": [
-      {
-        "questionTitle": "Sử dụng Internet",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about some of the different ways you use the internet?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4886c53b4655eba3f0754"
-          },
-          {
-            "content": "How do you feel when you use the internet?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4886c53b4655eba3f0755"
-          },
-          {
-            "content": "Some people think the internet has a bad impact on our lives. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4886c53b4655eba3f0756"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4886c53b4655eba3f0753"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4886c53b4655eba3f0757",
-    "createdAt": "2025-10-07T03:26:36.436Z",
-    "updatedAt": "2026-06-22T03:54:26.651Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e47aea53b4655eba3f06ef",
-    "title": "Công viên giải trí",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Công viên giải trí",
-    "questions": [
-      {
-        "questionTitle": "Công viên giải trí",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time you went to an amusement park?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea0a8653b4655eba3f1848"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea0a8653b4655eba3f1849"
-          },
-          {
-            "content": "Rides in amusement parks are scary. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68ea0a8653b4655eba3f184a"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68ea0a8653b4655eba3f1847"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e47aea53b4655eba3f06f4",
-    "createdAt": "2025-10-07T02:28:58.840Z",
-    "updatedAt": "2026-06-22T03:54:26.037Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e4954c53b4655eba3f092b",
-    "title": "Đọc sách",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Đọc sách",
-    "questions": [
-      {
-        "questionTitle": "Đọc sách",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "A time when you read books",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4954c53b4655eba3f092d"
-          },
-          {
-            "content": "How do you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4954c53b4655eba3f092e"
-          },
-          {
-            "content": "Some people prefer watching films to books. What do you think?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e4954c53b4655eba3f092f"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e4954c53b4655eba3f092c"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e4954c53b4655eba3f0930",
-    "createdAt": "2025-10-07T04:21:32.903Z",
-    "updatedAt": "2026-06-22T03:54:26.168Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e488d553b4655eba3f075d",
-    "title": "Thành quả",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Thành quả",
-    "questions": [
-      {
-        "questionTitle": "Thành quả",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you achieved your goal.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e488d553b4655eba3f075f"
-          },
-          {
-            "content": "How do you feel about it?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e488d553b4655eba3f0760"
-          },
-          {
-            "content": "What do people need to do to achieve their goals?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e488d553b4655eba3f0761"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e488d553b4655eba3f075e"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e488d553b4655eba3f0762",
-    "createdAt": "2025-10-07T03:28:21.557Z",
-    "updatedAt": "2026-06-22T03:54:26.693Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e47b9053b4655eba3f06fa",
-    "title": "Chuyến du lịch",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Chuyến du lịch",
-    "questions": [
-      {
-        "questionTitle": "Chuyến du lịch",
-        "content": "2 phút/ 3 câu - trả lời liên tục",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time you traveled somewhere?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47b9053b4655eba3f06fc"
-          },
-          {
-            "content": "How did you feel before the trip?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47b9053b4655eba3f06fd"
-          },
-          {
-            "content": "People spend more and more money on traveling?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68e47b9053b4655eba3f06fe"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68e47b9053b4655eba3f06fb"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68e47b9053b4655eba3f06ff",
-    "createdAt": "2025-10-07T02:31:44.637Z",
-    "updatedAt": "2026-06-22T03:54:26.866Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f351a753b4655eba3f39be",
-    "title": "Chuyển nhà",
-    "timeToDo": "1970-01-01T00:00:00.050Z",
-    "description": "Chuyển nhà",
-    "questions": [
-      {
-        "questionTitle": "Chuyển nhà",
-        "content": "Chuyển nhà",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Tell me about a time when you moved house.",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f351a753b4655eba3f39c0"
-          },
-          {
-            "content": "How did you feel?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f351a753b4655eba3f39c1"
-          },
-          {
-            "content": "What can people do to ease the task of moving house?",
-            "correctAnswer": null,
-            "file": "",
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "68f351a753b4655eba3f39c2"
-          }
-        ],
-        "isExample": "",
-        "image": null,
-        "_id": "68f351a753b4655eba3f39bf"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "SPEAKING",
-    "id": "68f351a753b4655eba3f39c3",
-    "createdAt": "2025-10-18T08:36:55.718Z",
-    "updatedAt": "2026-06-22T03:54:27.120Z",
     "__v": 0
   },
   {
@@ -1980,6 +165,556 @@
     "__v": 0
   },
   {
+    "_id": "68e48fcb53b4655eba3f08ff",
+    "title": "Sự sáng tạo",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Sự sáng tạo",
+    "questions": [
+      {
+        "questionTitle": "Sự sáng tạo",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time you saw an impressive work of art",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e48fcb53b4655eba3f0901"
+          },
+          {
+            "content": "How did it make you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e48fcb53b4655eba3f0902"
+          },
+          {
+            "content": "It is impossible to teach people to be creative. Do you agree with this?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e48fcb53b4655eba3f0903"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e48fcb53b4655eba3f0900"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e48fcb53b4655eba3f0904",
+    "createdAt": "2025-10-07T03:58:03.028Z",
+    "updatedAt": "2026-06-22T03:54:25.572Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4907453b4655eba3f090a",
+    "title": "Hòa mình vào thiên nhiên",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Hòa mình vào thiên nhiên",
+    "questions": [
+      {
+        "questionTitle": "Hòa mình vào thiên nhiên",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me a time you were surrounded by nature.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4907453b4655eba3f090c"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4907453b4655eba3f090d"
+          },
+          {
+            "content": "What are some advantages of getting close to nature?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4907453b4655eba3f090e"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4907453b4655eba3f090b"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4907453b4655eba3f090f",
+    "createdAt": "2025-10-07T04:00:52.342Z",
+    "updatedAt": "2026-06-22T03:54:25.614Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4914a53b4655eba3f0915",
+    "title": "Nhận quà",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhận quà",
+    "questions": [
+      {
+        "questionTitle": "Nhận quà",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me a time you received a gift.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4914a53b4655eba3f0917"
+          },
+          {
+            "content": "How do you feel about this gift?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4914a53b4655eba3f0918"
+          },
+          {
+            "content": "Why do people give gifts?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4914a53b4655eba3f0919"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4914a53b4655eba3f0916"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4914a53b4655eba3f091a",
+    "createdAt": "2025-10-07T04:04:26.745Z",
+    "updatedAt": "2026-06-22T03:54:25.655Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e496a953b4655eba3f0941",
+    "title": "Cư xử thô lỗ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cư xử thô lỗ",
+    "questions": [
+      {
+        "questionTitle": "Cư xử thô lỗ",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when someone was rude to you.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e496a953b4655eba3f0943"
+          },
+          {
+            "content": "What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e496a953b4655eba3f0944"
+          },
+          {
+            "content": "Do you think technology is changing people's thoughts, making them more uncommunicative? ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e496a953b4655eba3f0945"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e496a953b4655eba3f0942"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e496a953b4655eba3f0946",
+    "createdAt": "2025-10-07T04:27:21.145Z",
+    "updatedAt": "2026-06-22T03:54:25.697Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e49a7753b4655eba3f0a06",
+    "title": "Cười về một điều gì đó",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Cười về một điều gì đó",
+    "questions": [
+      {
+        "questionTitle": "Cười về một điều gì đó",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you laughed with your friends.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49a7753b4655eba3f0a08"
+          },
+          {
+            "content": "What do you think of a cheerful person?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49a7753b4655eba3f0a09"
+          },
+          {
+            "content": "Why do people laugh at different things?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49a7753b4655eba3f0a0a"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e49a7753b4655eba3f0a07"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e49a7753b4655eba3f0a0b",
+    "createdAt": "2025-10-07T04:43:35.634Z",
+    "updatedAt": "2026-06-22T03:54:25.740Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f34faa53b4655eba3f3971",
+    "title": "Âm nhạc",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Âm nhạc",
+    "questions": [
+      {
+        "questionTitle": "Âm nhạc",
+        "content": "Âm nhạc",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about the music that comes from your country. ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f34faa53b4655eba3f3973"
+          },
+          {
+            "content": "How do you feel when you hear or listen to music?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f34faa53b4655eba3f3974"
+          },
+          {
+            "content": "Why do some cultures produce so much music and others so little?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f34faa53b4655eba3f3975"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f34faa53b4655eba3f3972"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f34faa53b4655eba3f3976",
+    "createdAt": "2025-10-18T08:28:26.375Z",
+    "updatedAt": "2026-06-22T03:54:25.783Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f3502053b4655eba3f397c",
+    "title": "Du lịch đường dài",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Du lịch đường dài",
+    "questions": [
+      {
+        "questionTitle": "Du lịch đường dài",
+        "content": "Du lịch đường dài",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you went on a long journey.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3502053b4655eba3f397e"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3502053b4655eba3f397f"
+          },
+          {
+            "content": "How do people travel long distances in your country?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3502053b4655eba3f3980"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f3502053b4655eba3f397d"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f3502053b4655eba3f3981",
+    "createdAt": "2025-10-18T08:30:24.278Z",
+    "updatedAt": "2026-06-22T03:54:25.825Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f350e853b4655eba3f399d",
+    "title": "Bộ quần áo yêu thích",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Bộ quần áo yêu thích",
+    "questions": [
+      {
+        "questionTitle": "Bộ quần áo yêu thích",
+        "content": "Bộ quần áo yêu thích",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about your favourite piece of clothing.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350e853b4655eba3f399f"
+          },
+          {
+            "content": "How do you feel when you wear it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350e853b4655eba3f39a0"
+          },
+          {
+            "content": "Why do people dress in such different ways?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350e853b4655eba3f39a1"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f350e853b4655eba3f399e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f350e853b4655eba3f39a2",
+    "createdAt": "2025-10-18T08:33:44.345Z",
+    "updatedAt": "2026-06-22T03:54:25.869Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f3529053b4655eba3f39c9",
+    "title": "Nhận được sự giúp đỡ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhận được sự giúp đỡ",
+    "questions": [
+      {
+        "questionTitle": "Nhận được sự giúp đỡ",
+        "content": "Nhận được sự giúp đỡ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell about a time when you were supported by others.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3529053b4655eba3f39cb"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3529053b4655eba3f39cc"
+          },
+          {
+            "content": "What are ways to motivate others to cooperate?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3529053b4655eba3f39cd"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f3529053b4655eba3f39ca"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f3529053b4655eba3f39ce",
+    "createdAt": "2025-10-18T08:40:48.413Z",
+    "updatedAt": "2026-06-22T03:54:25.911Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f352e253b4655eba3f39d4",
+    "title": "Nhận quà Version 2",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhận quà Version 2",
+    "questions": [
+      {
+        "questionTitle": "Nhận quà Version 2",
+        "content": "Nhận quà Version 2",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me a time you received a gift?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f352e253b4655eba3f39d6"
+          },
+          {
+            "content": " How do you feel when someone who you don’t know well sends you a gift?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f352e253b4655eba3f39d7"
+          },
+          {
+            "content": "Choosing a perfect gift for someone who you don’t know well can be very difficult. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f352e253b4655eba3f39d8"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f352e253b4655eba3f39d5"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f352e253b4655eba3f39d9",
+    "createdAt": "2025-10-18T08:42:10.923Z",
+    "updatedAt": "2026-06-22T03:54:25.953Z",
+    "__v": 0
+  },
+  {
     "_id": "68e4770953b4655eba3f06ce",
     "title": "Phỏng vấn",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2032,6 +767,61 @@
     "id": "68e4770953b4655eba3f06d3",
     "createdAt": "2025-10-07T02:12:25.725Z",
     "updatedAt": "2026-06-22T03:54:25.995Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e47aea53b4655eba3f06ef",
+    "title": "Công viên giải trí",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Công viên giải trí",
+    "questions": [
+      {
+        "questionTitle": "Công viên giải trí",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time you went to an amusement park?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea0a8653b4655eba3f1848"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea0a8653b4655eba3f1849"
+          },
+          {
+            "content": "Rides in amusement parks are scary. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea0a8653b4655eba3f184a"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68ea0a8653b4655eba3f1847"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e47aea53b4655eba3f06f4",
+    "createdAt": "2025-10-07T02:28:58.840Z",
+    "updatedAt": "2026-06-22T03:54:26.037Z",
     "__v": 0
   },
   {
@@ -2090,6 +880,226 @@
     "__v": 0
   },
   {
+    "_id": "68e487e553b4655eba3f0747",
+    "title": "Gặp gỡ người bạn mới",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Gặp gỡ người bạn mới",
+    "questions": [
+      {
+        "questionTitle": "Gặp gỡ người bạn mới",
+        "content": "2 phút/ 3 câu - trả lời liên tục ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time you met some new friends.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e487e553b4655eba3f0749"
+          },
+          {
+            "content": "Some of the best thing about the experience.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e487e553b4655eba3f074a"
+          },
+          {
+            "content": "Benefit from meeting new people.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e487e553b4655eba3f074b"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e487e553b4655eba3f0748"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e487e553b4655eba3f074c",
+    "createdAt": "2025-10-07T03:24:21.151Z",
+    "updatedAt": "2026-06-22T03:54:26.125Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4954c53b4655eba3f092b",
+    "title": "Đọc sách",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Đọc sách",
+    "questions": [
+      {
+        "questionTitle": "Đọc sách",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time when you read books",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4954c53b4655eba3f092d"
+          },
+          {
+            "content": "How do you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4954c53b4655eba3f092e"
+          },
+          {
+            "content": "Some people prefer watching films to books. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4954c53b4655eba3f092f"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4954c53b4655eba3f092c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4954c53b4655eba3f0930",
+    "createdAt": "2025-10-07T04:21:32.903Z",
+    "updatedAt": "2026-06-22T03:54:26.168Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4960453b4655eba3f0936",
+    "title": "Một thử thách",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Một thử thách",
+    "questions": [
+      {
+        "questionTitle": "Một thử thách",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you were successful in a challenging situation.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4960453b4655eba3f0938"
+          },
+          {
+            "content": "How do you feel when you are given a challenge?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4960453b4655eba3f0939"
+          },
+          {
+            "content": "What can help people face the challenges of daily life?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4960453b4655eba3f093a"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4960453b4655eba3f0937"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4960453b4655eba3f093b",
+    "createdAt": "2025-10-07T04:24:36.286Z",
+    "updatedAt": "2026-06-22T03:54:26.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e499fd53b4655eba3f09fb",
+    "title": "Làm việc tốt",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Làm việc tốt",
+    "questions": [
+      {
+        "questionTitle": "Làm việc tốt",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time when you gave help?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e499fd53b4655eba3f09fd"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e499fd53b4655eba3f09fe"
+          },
+          {
+            "content": "How can people be encouraged to do good things?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e499fd53b4655eba3f09ff"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e499fd53b4655eba3f09fc"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e499fd53b4655eba3f0a00",
+    "createdAt": "2025-10-07T04:41:33.427Z",
+    "updatedAt": "2026-06-22T03:54:26.262Z",
+    "__v": 0
+  },
+  {
     "_id": "68e49add53b4655eba3f0a11",
     "title": "Nhận tin tốt",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2145,6 +1155,831 @@
     "__v": 0
   },
   {
+    "_id": "68f350a253b4655eba3f3992",
+    "title": "Bị lạc đường",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Bị lạc đường",
+    "questions": [
+      {
+        "questionTitle": "Bị lạc đường",
+        "content": "Bị lạc đường",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you got lost.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350a253b4655eba3f3994"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350a253b4655eba3f3995"
+          },
+          {
+            "content": "What do people usually do when they get lost?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f350a253b4655eba3f3996"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f350a253b4655eba3f3993"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f350a253b4655eba3f3997",
+    "createdAt": "2025-10-18T08:32:34.788Z",
+    "updatedAt": "2026-06-22T03:54:26.348Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f3512553b4655eba3f39a8",
+    "title": "Ghé thăm một tòa nhà cổ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ghé thăm một tòa nhà cổ",
+    "questions": [
+      {
+        "questionTitle": "Ghé thăm một tòa nhà cổ",
+        "content": "Ghé thăm một tòa nhà cổ",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you visited an old building.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3512553b4655eba3f39aa"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3512553b4655eba3f39ab"
+          },
+          {
+            "content": "Why do you think it is important to look after an old building?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3512553b4655eba3f39ac"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f3512553b4655eba3f39a9"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f3512553b4655eba3f39ad",
+    "createdAt": "2025-10-18T08:34:45.647Z",
+    "updatedAt": "2026-06-22T03:54:26.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f3516653b4655eba3f39b3",
+    "title": "Ngừng làm gì đó lại",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ngừng làm gì đó lại",
+    "questions": [
+      {
+        "questionTitle": "Ngừng làm gì đó lại",
+        "content": "Ngừng làm gì đó lại",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when someone told you to stop doing something.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3516653b4655eba3f39b5"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3516653b4655eba3f39b6"
+          },
+          {
+            "content": "Do you think there are too many rules in modern life?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3516653b4655eba3f39b7"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f3516653b4655eba3f39b4"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f3516653b4655eba3f39b8",
+    "createdAt": "2025-10-18T08:35:50.677Z",
+    "updatedAt": "2026-06-22T03:54:26.440Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e47a7053b4655eba3f06e4",
+    "title": "Thứ mà bạn muốn nhưng không thể có",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Thứ mà bạn muốn nhưng không thể có",
+    "questions": [
+      {
+        "questionTitle": "Thứ mà bạn muốn nhưng không thể có",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you wanted something but couldn't have it.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea06ea53b4655eba3f1784"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea06ea53b4655eba3f1785"
+          },
+          {
+            "content": "Material possessions can't bring happiness. What are your thoughts on this?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea06ea53b4655eba3f1786"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68ea06ea53b4655eba3f1783"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e47a7053b4655eba3f06e9",
+    "createdAt": "2025-10-07T02:26:56.293Z",
+    "updatedAt": "2026-06-22T03:54:26.483Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e47f1a53b4655eba3f071b",
+    "title": "Đứng trước nhiều lựa chọn",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Đứng trước nhiều lựa chọn",
+    "questions": [
+      {
+        "questionTitle": "Đứng trước nhiều lựa chọn",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me a time when you had many choices.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47f1a53b4655eba3f071d"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47f1a53b4655eba3f071e"
+          },
+          {
+            "content": "Do we have so many choices to make?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47f1a53b4655eba3f071f"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e47f1a53b4655eba3f071c"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e47f1a53b4655eba3f0720",
+    "createdAt": "2025-10-07T02:46:50.129Z",
+    "updatedAt": "2026-06-22T03:54:26.524Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e47fdf53b4655eba3f0726",
+    "title": "Gặp người ở thế hệ khác",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Gặp người ở thế hệ khác",
+    "questions": [
+      {
+        "questionTitle": "Gặp người ở thế hệ khác",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "The last time you met a person of the older or younger generation?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47fdf53b4655eba3f0728"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47fdf53b4655eba3f0729"
+          },
+          {
+            "content": "What lessons did each generation give you?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47fdf53b4655eba3f072a"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e47fdf53b4655eba3f0727"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e47fdf53b4655eba3f072b",
+    "createdAt": "2025-10-07T02:50:07.771Z",
+    "updatedAt": "2026-06-22T03:54:26.565Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4833b53b4655eba3f073c",
+    "title": "Mất nhiều công sức làm một món đồ",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Mất nhiều công sức làm một món đồ",
+    "questions": [
+      {
+        "questionTitle": "Mất nhiều công sức làm một món đồ",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "The last time you made something by yourself that took a lot of effort? ",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4833b53b4655eba3f073e"
+          },
+          {
+            "content": "How did you feel when you finished it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4833b53b4655eba3f073f"
+          },
+          {
+            "content": "People should make as many items as they can instead of buying them. Do you agree?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4833b53b4655eba3f0740"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4833b53b4655eba3f073d"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4833b53b4655eba3f0741",
+    "createdAt": "2025-10-07T03:04:27.316Z",
+    "updatedAt": "2026-06-22T03:54:26.608Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4886c53b4655eba3f0752",
+    "title": "Sử dụng Internet",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Sử dụng Internet",
+    "questions": [
+      {
+        "questionTitle": "Sử dụng Internet",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about some of the different ways you use the internet?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4886c53b4655eba3f0754"
+          },
+          {
+            "content": "How do you feel when you use the internet?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4886c53b4655eba3f0755"
+          },
+          {
+            "content": "Some people think the internet has a bad impact on our lives. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4886c53b4655eba3f0756"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4886c53b4655eba3f0753"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4886c53b4655eba3f0757",
+    "createdAt": "2025-10-07T03:26:36.436Z",
+    "updatedAt": "2026-06-22T03:54:26.651Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e488d553b4655eba3f075d",
+    "title": "Thành quả",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Thành quả",
+    "questions": [
+      {
+        "questionTitle": "Thành quả",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you achieved your goal.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e488d553b4655eba3f075f"
+          },
+          {
+            "content": "How do you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e488d553b4655eba3f0760"
+          },
+          {
+            "content": "What do people need to do to achieve their goals?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e488d553b4655eba3f0761"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e488d553b4655eba3f075e"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e488d553b4655eba3f0762",
+    "createdAt": "2025-10-07T03:28:21.557Z",
+    "updatedAt": "2026-06-22T03:54:26.693Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4975953b4655eba3f094c",
+    "title": "Giải quyết một vấn đề",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Giải quyết một vấn đề",
+    "questions": [
+      {
+        "questionTitle": "Giải quyết một vấn đề",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you solved a problem.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e498e853b4655eba3f09da"
+          },
+          {
+            "content": "How do you feel when you can’t solve a problem?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e498e853b4655eba3f09db"
+          },
+          {
+            "content": "Technology causes more problems than the ones that it can solve. What do you think about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e498e853b4655eba3f09dc"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e498e853b4655eba3f09d9"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4975953b4655eba3f0951",
+    "createdAt": "2025-10-07T04:30:17.972Z",
+    "updatedAt": "2026-06-22T03:54:26.739Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e49b4453b4655eba3f0a1c",
+    "title": "Nhận giải thưởng",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhận giải thưởng",
+    "questions": [
+      {
+        "questionTitle": "Nhận giải thưởng",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you received a prize/ an award.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49b4453b4655eba3f0a1e"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49b4453b4655eba3f0a1f"
+          },
+          {
+            "content": "Should people push themselves to get prizes?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e49b4453b4655eba3f0a20"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e49b4453b4655eba3f0a1d"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e49b4453b4655eba3f0a21",
+    "createdAt": "2025-10-07T04:47:00.068Z",
+    "updatedAt": "2026-06-22T03:54:26.782Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ea01ce53b4655eba3f1729",
+    "title": "Ăn ở nhà hàng",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ăn ở nhà hàng",
+    "questions": [
+      {
+        "questionTitle": "Ăn ở nhà hàng",
+        "content": "Ăn ở nhà hàng",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time you ate at a restaurant.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea01ce53b4655eba3f172b"
+          },
+          {
+            "content": "What makes a restaurant good?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea01ce53b4655eba3f172c"
+          },
+          {
+            "content": "Why do people choose to spend money in restaurants?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68ea01ce53b4655eba3f172d"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68ea01ce53b4655eba3f172a"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68ea01ce53b4655eba3f172e",
+    "createdAt": "2025-10-11T07:05:50.998Z",
+    "updatedAt": "2026-06-22T03:54:26.825Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e47b9053b4655eba3f06fa",
+    "title": "Chuyến du lịch",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Chuyến du lịch",
+    "questions": [
+      {
+        "questionTitle": "Chuyến du lịch",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you traveled somewhere?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47b9053b4655eba3f06fc"
+          },
+          {
+            "content": "How did you feel before the trip?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47b9053b4655eba3f06fd"
+          },
+          {
+            "content": "People spend more and more money on traveling?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e47b9053b4655eba3f06fe"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e47b9053b4655eba3f06fb"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e47b9053b4655eba3f06ff",
+    "createdAt": "2025-10-07T02:31:44.637Z",
+    "updatedAt": "2026-06-22T03:54:26.866Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4824653b4655eba3f0731",
+    "title": "Nhận một email hoặc thông báo",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Nhận một email hoặc thông báo",
+    "questions": [
+      {
+        "questionTitle": "Nhận một email hoặc thông báo",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me a time you received an email or a notification.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4824653b4655eba3f0733"
+          },
+          {
+            "content": "Which do you use to receive that email or notification?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4824653b4655eba3f0734"
+          },
+          {
+            "content": "A lot of people think that information is available these days. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4824653b4655eba3f0735"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4824653b4655eba3f0732"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4824653b4655eba3f0736",
+    "createdAt": "2025-10-07T03:00:22.375Z",
+    "updatedAt": "2026-06-22T03:54:26.909Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4895053b4655eba3f0768",
+    "title": "Thể thao mạo hiểm",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Thể thao mạo hiểm",
+    "questions": [
+      {
+        "questionTitle": "Thể thao mạo hiểm",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time you did an extreme sport.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4895053b4655eba3f076a"
+          },
+          {
+            "content": "How do you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4895053b4655eba3f076b"
+          },
+          {
+            "content": "Only adults do extreme sports. What do you think?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4895053b4655eba3f076c"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4895053b4655eba3f0769"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4895053b4655eba3f076d",
+    "createdAt": "2025-10-07T03:30:24.044Z",
+    "updatedAt": "2026-06-22T03:54:26.950Z",
+    "__v": 0
+  },
+  {
     "_id": "68e491a353b4655eba3f0920",
     "title": "Làm việc nhóm",
     "timeToDo": "1970-01-01T00:00:00.050Z",
@@ -2197,6 +2032,171 @@
     "id": "68e491a353b4655eba3f0925",
     "createdAt": "2025-10-07T04:05:55.674Z",
     "updatedAt": "2026-06-22T03:54:26.992Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e4996953b4655eba3f09f0",
+    "title": "Làm một việc mình không thích",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Làm một việc mình không thích",
+    "questions": [
+      {
+        "questionTitle": "Làm một việc mình không thích",
+        "content": "2 phút/ 3 câu - trả lời liên tục",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "A time you did something you didn’t like.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4996953b4655eba3f09f2"
+          },
+          {
+            "content": "Do you prefer the job you love or the job that helps you make a lot of money?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4996953b4655eba3f09f3"
+          },
+          {
+            "content": "In today's society, we often find ourselves having to do many things we don't enjoy, both in social settings and within our families.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68e4996953b4655eba3f09f4"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68e4996953b4655eba3f09f1"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68e4996953b4655eba3f09f5",
+    "createdAt": "2025-10-07T04:39:05.806Z",
+    "updatedAt": "2026-06-22T03:54:27.034Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f3506553b4655eba3f3987",
+    "title": "Ghé thăm một toà nhà cao",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Ghé thăm một toà nhà cao",
+    "questions": [
+      {
+        "questionTitle": "Ghé thăm một toà nhà cao",
+        "content": "Ghé thăm một toà nhà cao",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you visited a very tall building.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3506553b4655eba3f3989"
+          },
+          {
+            "content": "How did you feel about it?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3506553b4655eba3f398a"
+          },
+          {
+            "content": "Why do you think so many cities have tall buildings?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f3506553b4655eba3f398b"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f3506553b4655eba3f3988"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f3506553b4655eba3f398c",
+    "createdAt": "2025-10-18T08:31:33.160Z",
+    "updatedAt": "2026-06-22T03:54:27.077Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f351a753b4655eba3f39be",
+    "title": "Chuyển nhà",
+    "timeToDo": "1970-01-01T00:00:00.050Z",
+    "description": "Chuyển nhà",
+    "questions": [
+      {
+        "questionTitle": "Chuyển nhà",
+        "content": "Chuyển nhà",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Tell me about a time when you moved house.",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f351a753b4655eba3f39c0"
+          },
+          {
+            "content": "How did you feel?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f351a753b4655eba3f39c1"
+          },
+          {
+            "content": "What can people do to ease the task of moving house?",
+            "correctAnswer": null,
+            "file": "",
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "68f351a753b4655eba3f39c2"
+          }
+        ],
+        "isExample": "",
+        "image": null,
+        "_id": "68f351a753b4655eba3f39bf"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "SPEAKING",
+    "id": "68f351a753b4655eba3f39c3",
+    "createdAt": "2025-10-18T08:36:55.718Z",
+    "updatedAt": "2026-06-22T03:54:27.120Z",
     "__v": 0
   },
   {

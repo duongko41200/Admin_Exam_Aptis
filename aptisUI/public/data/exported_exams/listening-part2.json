@@ -1,5 +1,95 @@
 [
   {
+    "_id": "69529f3317d3f9f552a546a3",
+    "title": "Protect the environment ( phiên bản 1)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Protect the environment ( phiên bản 1)",
+        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "Does not use commercial cleaning products"
+          },
+          {
+            "id": 2,
+            "content": "Give away used items"
+          },
+          {
+            "id": 3,
+            "content": "Buy environmentally friendly products"
+          },
+          {
+            "id": 4,
+            "content": "Reuse containers for storing food"
+          },
+          {
+            "id": 5,
+            "content": "Plant trees in the backyard"
+          },
+          {
+            "id": 6,
+            "content": "Use solar panels for electricity"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "https://files.aptisacademy.com.vn/listening/2025/12/1767022387171_803c39e85f13b41a_audiotp_c14_01.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" Person A, I find the act of giving away old or second-hand items a bit hypocritical.\"},{\"timestamp\":[5.6,10.32],\"text\":\" Why do people give away their old things, only to go out and buy the same item, but brand new?\"},{\"timestamp\":[11.36,15.76],\"text\":\" Not only does this fail to protect the environment, but it also causes double the harm.\"},{\"timestamp\":[16.8,21.92],\"text\":\" Personally, I have a way of protecting the environment by not releasing harmful chemicals into it.\"},{\"timestamp\":[22.8,25.84],\"text\":\" I do this by not purchasing chemical cleaning solutions.\"},{\"timestamp\":[26.88,32.32],\"text\":\" Instead, I make use of natural products like lemons to create my own floor cleaning solutions.\"},{\"timestamp\":[32.32,37.36],\"text\":\" Person B, I often don't have time to think about how to reuse my belongings or clothes,\"},{\"timestamp\":[37.36,42.72],\"text\":\" but I don't want to throw them away because that would be wasteful. So, I think a better way\"},{\"timestamp\":[42.72,47],\"text\":\" is to donate them to charity organizations or give them to others.\"},{\"timestamp\":[47,54],\"text\":\" Many people are in need of these things, and giving away my old items also makes me feel happier because I'm helping others.\"},{\"timestamp\":[54,65.12],\"text\":\" Person C, a good way to protect the environment is by not using plastic bags or by bringing reusable bags when going to the market, which helps reduce the disposal of plastic bags, a material that\"},{\"timestamp\":[65.12,71.12],\"text\":\" is difficult to decompose. However, I'm a very busy person and rarely have time to prepare\"},{\"timestamp\":[71.12,76.4],\"text\":\" my own bags when going shopping, and I usually drive to buy groceries quickly instead of walking.\"},{\"timestamp\":[77.28,80],\"text\":\" I guess I can't protect the environment by not driving.\"},{\"timestamp\":[80.88,85.76],\"text\":\" But I have a principle of only buying eco-friendly products, so I think I'm still contributing\"},{\"timestamp\":[85.76,88],\"text\":\" in a small way to protecting the earth.\"},{\"timestamp\":[88,92.92],\"text\":\" Person D, I see that too many people are wasting food containers, as they often throw them\"},{\"timestamp\":[92.92,97.44],\"text\":\" away after use, such as glass jars or plastic bottles.\"},{\"timestamp\":[97.44,102.72],\"text\":\" I can reuse them to store food and neatly organize them in my refrigerator.\"},{\"timestamp\":[102.72,104.83],\"text\":\" Reusing these containers is a very easy way to protect the environment that anyone\"},{\"timestamp\":[104.83,105.47],\"text\":\" can do.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "Does not use commercial cleaning products",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1375b27e8fed251497a07"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "Give away used items",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1375b27e8fed251497a08"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "Buy environmentally friendly products",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1375b27e8fed251497a09"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "Reuse containers for storing food",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1375b27e8fed251497a0a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69b1375b27e8fed251497a06"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "69529f3317d3f9f552a546a9",
+    "createdAt": "2025-12-29T15:33:07.928Z",
+    "updatedAt": "2026-06-22T03:54:11.836Z",
+    "__v": 0
+  },
+  {
     "_id": "695686530731243929b0ce90",
     "title": "Protect the environment (phiên bản 2)",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -87,186 +177,6 @@
     "id": "695686530731243929b0ce96",
     "createdAt": "2026-01-01T14:36:03.699Z",
     "updatedAt": "2026-06-22T03:54:11.881Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957c6bbc88028aa29a1b086",
-    "title": "The Art",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "The Art",
-        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
-        "answerList": [
-          {
-            "id": 1,
-            "content": "social activity"
-          },
-          {
-            "id": 2,
-            "content": "with children"
-          },
-          {
-            "id": 3,
-            "content": "as part of their job"
-          },
-          {
-            "id": 4,
-            "content": "together"
-          },
-          {
-            "id": 5,
-            "content": "alone"
-          },
-          {
-            "id": 6,
-            "content": "stay at home"
-          }
-        ],
-        "correctAnswer": null,
-        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360187336_c4b5f6ae145c28d4_audiotp_de9.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Ah, I personally don't like and don't have a talent for fine arts, especially painting,\"},{\"timestamp\":[5.36,9.68],\"text\":\" but I see it as a great way to engage in social charity activities.\"},{\"timestamp\":[9.68,13.84],\"text\":\" I'm passionate about teaching children how to draw because I love kids.\"},{\"timestamp\":[13.84,19.84],\"text\":\" I'm also part of a volunteer organization that specializes in teaching art to poor children,\"},{\"timestamp\":[19.84,21.68],\"text\":\" which makes me very happy.\"},{\"timestamp\":[21.68,26.68],\"text\":\" B. I think drawing with my children is a great way to understand them better.\"},{\"timestamp\":[26.68,32.24],\"text\":\" No matter how busy my work is, I always make time to sit and draw with my kids.\"},{\"timestamp\":[32.24,36.16],\"text\":\" This helps us bond more and gives me the chance to talk with them more.\"},{\"timestamp\":[36.16,40.72],\"text\":\" C. I've loved literature, art and drawing since I was a child.\"},{\"timestamp\":[40.72,43.6],\"text\":\" Now, I'm a writer and a comic book creator.\"},{\"timestamp\":[43.6,49.12],\"text\":\" In my stories, I occasionally include some illustrations to make the book more vivid and lively.\"},{\"timestamp\":[49.12,54.52],\"text\":\" D. I'm currently taking a drawing course, and I really want to be serious about it.\"},{\"timestamp\":[54.52,null],\"text\":\" When practicing drawing, I prefer not to draw with friends, even though they often invite me to join them. I want to focus entirely on my work.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "1",
-            "correctAnswer": "social activity",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1384727e8fed251497be3"
-          },
-          {
-            "content": "2",
-            "correctAnswer": "with children",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1384727e8fed251497be4"
-          },
-          {
-            "content": "3",
-            "correctAnswer": "as part of their job",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1384727e8fed251497be5"
-          },
-          {
-            "content": "4",
-            "correctAnswer": "alone",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1384727e8fed251497be6"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69b1384727e8fed251497be2"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "LISTENING",
-    "id": "6957c6bbc88028aa29a1b08c",
-    "createdAt": "2026-01-02T13:23:07.867Z",
-    "updatedAt": "2026-06-22T03:54:12.204Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957c926c88028aa29a1b095",
-    "title": "Travel to work",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Travel to work",
-        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
-        "answerList": [
-          {
-            "id": 1,
-            "content": "travel by car"
-          },
-          {
-            "id": 2,
-            "content": "walk with a friend"
-          },
-          {
-            "id": 3,
-            "content": "take a taxi"
-          },
-          {
-            "id": 4,
-            "content": "travel by bus"
-          },
-          {
-            "id": 5,
-            "content": "walk alone"
-          },
-          {
-            "id": 6,
-            "content": "ride a bicycle"
-          }
-        ],
-        "correctAnswer": null,
-        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360805268_96b8632e72407b7f_audiotp_de10.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,10.12],\"text\":\" Ah, I'm concerned about the earth and the environment, so I always look for ways to use public transportation, like buses or trains, to reduce harmful emissions.\"},{\"timestamp\":[10.12,17.56],\"text\":\" I can't walk to work because it's too far from my home, but I always walk to the local market when I need to buy groceries.\"},{\"timestamp\":[17.56,21.64],\"text\":\" B. I had to take driving lessons to be able to drive to work.\"},{\"timestamp\":[21.64,25.1],\"text\":\" My mother works along the same route, so we often drive\"},{\"timestamp\":[25.1,30.34],\"text\":\" to work together. Occasionally, she takes over the driving, and I'm happy because driving\"},{\"timestamp\":[30.34,32.72],\"text\":\" together gives us more time to chat.\"},{\"timestamp\":[32.72,38.5],\"text\":\" See, I used to use my car a lot to get to work, but since I moved closer to the company,\"},{\"timestamp\":[38.5,44.24],\"text\":\" I always go there on foot. I have a friend who cycles for 20 minutes every day to work.\"},{\"timestamp\":[44.24,46.8],\"text\":\" Can you imagine? She must be super fit.\"},{\"timestamp\":[46.8,55.1],\"text\":\" D. I often choose to walk to work to save on gas money and to keep in shape. I usually walk to the company with a close friend.\"},{\"timestamp\":[55.1,59.2],\"text\":\" Sometimes we feel really tired but still push ourselves to walk.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "1",
-            "correctAnswer": "travel by bus",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1386127e8fed251497c28"
-          },
-          {
-            "content": "2",
-            "correctAnswer": "travel by car",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1386127e8fed251497c29"
-          },
-          {
-            "content": "3",
-            "correctAnswer": "walk alone",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1386127e8fed251497c2a"
-          },
-          {
-            "content": "4",
-            "correctAnswer": "walk with a friend",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1386127e8fed251497c2b"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69b1386127e8fed251497c27"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "LISTENING",
-    "id": "6957c926c88028aa29a1b09b",
-    "createdAt": "2026-01-02T13:33:26.657Z",
-    "updatedAt": "2026-06-22T03:54:12.249Z",
     "__v": 0
   },
   {
@@ -540,186 +450,6 @@
     "__v": 0
   },
   {
-    "_id": "6957c9c0c88028aa29a1b0a4",
-    "title": "Studying",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Studying",
-        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
-        "answerList": [
-          {
-            "id": 1,
-            "content": "Late at night"
-          },
-          {
-            "id": 2,
-            "content": "In a quiet place"
-          },
-          {
-            "id": 3,
-            "content": "Early in the morning"
-          },
-          {
-            "id": 4,
-            "content": "In various places"
-          },
-          {
-            "id": 5,
-            "content": "With music"
-          },
-          {
-            "id": 6,
-            "content": "With background noise"
-          }
-        ],
-        "correctAnswer": null,
-        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360959536_34fd06dfea14a911_audiotp_de11.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,6],\"text\":\" A, I can study in different places, like coffee shops, libraries, or parks.\"},{\"timestamp\":[6,11.44],\"text\":\" For me, the location isn't that important because I have good concentration skills.\"},{\"timestamp\":[11.44,17.04],\"text\":\" B, I can't study in very noisy places because I can't focus on my homework.\"},{\"timestamp\":[17.04,21.28],\"text\":\" If I study in a cafe, I end up not getting anything done.\"},{\"timestamp\":[21.28,26],\"text\":\" So, I usually study in places such as my room in my house or in my office.\"},{\"timestamp\":[26,32.44],\"text\":\" See, I prefer listening to music while studying. I usually play motivational songs to\"},{\"timestamp\":[32.44,38.48],\"text\":\" help keep me alert, especially when studying in the morning. Music is like a cup of coffee,\"},{\"timestamp\":[38.48,43.32],\"text\":\" keeping me awake and motivated in my studies. D. I often can't focus on studying during\"},{\"timestamp\":[43.32,45.46],\"text\":\" the day. I feel tired and sleepy when I have to wake up early in study. So, I often can't focus on studying during the day, I feel tired and sleepy when\"},{\"timestamp\":[45.46,50.8],\"text\":\" I have to wake up early in study. So, I usually study at night, when everyone in the\"},{\"timestamp\":[50.8,56.36],\"text\":\" house is asleep. The quiet atmosphere at night allows me to focus the best and be the most\"},{\"timestamp\":[56.36,57.08],\"text\":\" productive.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "1",
-            "correctAnswer": "In various places",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1387d27e8fed251497c77"
-          },
-          {
-            "content": "2",
-            "correctAnswer": "In a quiet place",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1387d27e8fed251497c78"
-          },
-          {
-            "content": "3",
-            "correctAnswer": "With music",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1387d27e8fed251497c79"
-          },
-          {
-            "content": "4",
-            "correctAnswer": "Late at night",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1387d27e8fed251497c7a"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69b1387d27e8fed251497c76"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "LISTENING",
-    "id": "6957c9c0c88028aa29a1b0aa",
-    "createdAt": "2026-01-02T13:36:00.173Z",
-    "updatedAt": "2026-06-22T03:54:12.297Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ca55c88028aa29a1b0b3",
-    "title": "Studying (phiên bản 2)",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Studying (phiên bản 2)",
-        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
-        "answerList": [
-          {
-            "id": 1,
-            "content": "In the coffee shop"
-          },
-          {
-            "id": 2,
-            "content": "On public transport"
-          },
-          {
-            "id": 3,
-            "content": "In the park"
-          },
-          {
-            "id": 4,
-            "content": "While traveling abroad"
-          },
-          {
-            "id": 5,
-            "content": "At home"
-          },
-          {
-            "id": 6,
-            "content": "In a shared workspace"
-          }
-        ],
-        "correctAnswer": null,
-        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361108209_ef15b5a244c3416d_audiotp_de12.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" A. I don't like studying in very quiet places such as at home or in the library because\"},{\"timestamp\":[4.64,8],\"text\":\" I get sleepy easily and might even fall asleep while studying.\"},{\"timestamp\":[8.88,13.44],\"text\":\" There's a coffee shop near my house, and I often go there to study because the presence of\"},{\"timestamp\":[13.44,18.72],\"text\":\" other people makes me feel more motivated. I find that I achieve higher productivity and\"},{\"timestamp\":[18.72,24.56],\"text\":\" efficiency in my studies when I'm there. B. I notice that most people prefer doing their homework\"},{\"timestamp\":[24.56,25.96],\"text\":\" in the classroom, but for\"},{\"timestamp\":[25.96,29.56],\"text\":\" me, those chairs are way too hard and leave me sore all day.\"},{\"timestamp\":[29.56,35.24],\"text\":\" I prefer sitting under the trees in the park to study, it's cool, and the air is fresh.\"},{\"timestamp\":[35.24,39.44],\"text\":\" There's a famous coffee shop across from where I sit, and they serve really good coffee.\"},{\"timestamp\":[39.44,46.8],\"text\":\" C. The distance from my house to school is 20 kilometers, and it usually takes me an hour to get there.\"},{\"timestamp\":[46.8,52.56],\"text\":\" So, when I'm on the train, I use the time to do homework and review the lessons for the day.\"},{\"timestamp\":[52.56,58.32],\"text\":\" Some people say that studying like this can be distracting, but I find it very effective for me.\"},{\"timestamp\":[58.32,63.6],\"text\":\" D, I don't like studying in very crowded places, because I can't focus well.\"},{\"timestamp\":[63.6,66.96],\"text\":\" I usually sit on the sofa in the living room to study.\"},{\"timestamp\":[66.96,70.44],\"text\":\" My parents often travel for work, so my house is very quiet.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "1",
-            "correctAnswer": "In the coffee shop",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1389227e8fed251497cb0"
-          },
-          {
-            "content": "2",
-            "correctAnswer": "In the park",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1389227e8fed251497cb1"
-          },
-          {
-            "content": "3",
-            "correctAnswer": "On public transport",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1389227e8fed251497cb2"
-          },
-          {
-            "content": "4",
-            "correctAnswer": "At home",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1389227e8fed251497cb3"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "69b1389227e8fed251497caf"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "LISTENING",
-    "id": "6957ca55c88028aa29a1b0b9",
-    "createdAt": "2026-01-02T13:38:29.069Z",
-    "updatedAt": "2026-06-22T03:54:12.342Z",
-    "__v": 0
-  },
-  {
     "_id": "6957c4aec88028aa29a1af7d",
     "title": "The place to run",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -990,93 +720,363 @@
     "__v": 0
   },
   {
-    "_id": "69529f3317d3f9f552a546a3",
-    "title": "Protect the environment ( phiên bản 1)",
+    "_id": "6957c6bbc88028aa29a1b086",
+    "title": "The Art",
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "description": null,
     "questions": [
       {
-        "questionTitle": "Protect the environment ( phiên bản 1)",
+        "questionTitle": "The Art",
         "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
         "answerList": [
           {
             "id": 1,
-            "content": "Does not use commercial cleaning products"
+            "content": "social activity"
           },
           {
             "id": 2,
-            "content": "Give away used items"
+            "content": "with children"
           },
           {
             "id": 3,
-            "content": "Buy environmentally friendly products"
+            "content": "as part of their job"
           },
           {
             "id": 4,
-            "content": "Reuse containers for storing food"
+            "content": "together"
           },
           {
             "id": 5,
-            "content": "Plant trees in the backyard"
+            "content": "alone"
           },
           {
             "id": 6,
-            "content": "Use solar panels for electricity"
+            "content": "stay at home"
           }
         ],
         "correctAnswer": null,
-        "file": "https://files.aptisacademy.com.vn/listening/2025/12/1767022387171_803c39e85f13b41a_audiotp_c14_01.mp3",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360187336_c4b5f6ae145c28d4_audiotp_de9.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" Person A, I find the act of giving away old or second-hand items a bit hypocritical.\"},{\"timestamp\":[5.6,10.32],\"text\":\" Why do people give away their old things, only to go out and buy the same item, but brand new?\"},{\"timestamp\":[11.36,15.76],\"text\":\" Not only does this fail to protect the environment, but it also causes double the harm.\"},{\"timestamp\":[16.8,21.92],\"text\":\" Personally, I have a way of protecting the environment by not releasing harmful chemicals into it.\"},{\"timestamp\":[22.8,25.84],\"text\":\" I do this by not purchasing chemical cleaning solutions.\"},{\"timestamp\":[26.88,32.32],\"text\":\" Instead, I make use of natural products like lemons to create my own floor cleaning solutions.\"},{\"timestamp\":[32.32,37.36],\"text\":\" Person B, I often don't have time to think about how to reuse my belongings or clothes,\"},{\"timestamp\":[37.36,42.72],\"text\":\" but I don't want to throw them away because that would be wasteful. So, I think a better way\"},{\"timestamp\":[42.72,47],\"text\":\" is to donate them to charity organizations or give them to others.\"},{\"timestamp\":[47,54],\"text\":\" Many people are in need of these things, and giving away my old items also makes me feel happier because I'm helping others.\"},{\"timestamp\":[54,65.12],\"text\":\" Person C, a good way to protect the environment is by not using plastic bags or by bringing reusable bags when going to the market, which helps reduce the disposal of plastic bags, a material that\"},{\"timestamp\":[65.12,71.12],\"text\":\" is difficult to decompose. However, I'm a very busy person and rarely have time to prepare\"},{\"timestamp\":[71.12,76.4],\"text\":\" my own bags when going shopping, and I usually drive to buy groceries quickly instead of walking.\"},{\"timestamp\":[77.28,80],\"text\":\" I guess I can't protect the environment by not driving.\"},{\"timestamp\":[80.88,85.76],\"text\":\" But I have a principle of only buying eco-friendly products, so I think I'm still contributing\"},{\"timestamp\":[85.76,88],\"text\":\" in a small way to protecting the earth.\"},{\"timestamp\":[88,92.92],\"text\":\" Person D, I see that too many people are wasting food containers, as they often throw them\"},{\"timestamp\":[92.92,97.44],\"text\":\" away after use, such as glass jars or plastic bottles.\"},{\"timestamp\":[97.44,102.72],\"text\":\" I can reuse them to store food and neatly organize them in my refrigerator.\"},{\"timestamp\":[102.72,104.83],\"text\":\" Reusing these containers is a very easy way to protect the environment that anyone\"},{\"timestamp\":[104.83,105.47],\"text\":\" can do.\"}]</p>",
+        "suggestion": "<p>[{\"timestamp\":[0,5.36],\"text\":\" Ah, I personally don't like and don't have a talent for fine arts, especially painting,\"},{\"timestamp\":[5.36,9.68],\"text\":\" but I see it as a great way to engage in social charity activities.\"},{\"timestamp\":[9.68,13.84],\"text\":\" I'm passionate about teaching children how to draw because I love kids.\"},{\"timestamp\":[13.84,19.84],\"text\":\" I'm also part of a volunteer organization that specializes in teaching art to poor children,\"},{\"timestamp\":[19.84,21.68],\"text\":\" which makes me very happy.\"},{\"timestamp\":[21.68,26.68],\"text\":\" B. I think drawing with my children is a great way to understand them better.\"},{\"timestamp\":[26.68,32.24],\"text\":\" No matter how busy my work is, I always make time to sit and draw with my kids.\"},{\"timestamp\":[32.24,36.16],\"text\":\" This helps us bond more and gives me the chance to talk with them more.\"},{\"timestamp\":[36.16,40.72],\"text\":\" C. I've loved literature, art and drawing since I was a child.\"},{\"timestamp\":[40.72,43.6],\"text\":\" Now, I'm a writer and a comic book creator.\"},{\"timestamp\":[43.6,49.12],\"text\":\" In my stories, I occasionally include some illustrations to make the book more vivid and lively.\"},{\"timestamp\":[49.12,54.52],\"text\":\" D. I'm currently taking a drawing course, and I really want to be serious about it.\"},{\"timestamp\":[54.52,null],\"text\":\" When practicing drawing, I prefer not to draw with friends, even though they often invite me to join them. I want to focus entirely on my work.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
             "content": "1",
-            "correctAnswer": "Does not use commercial cleaning products",
+            "correctAnswer": "social activity",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1375b27e8fed251497a07"
+            "_id": "69b1384727e8fed251497be3"
           },
           {
             "content": "2",
-            "correctAnswer": "Give away used items",
+            "correctAnswer": "with children",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1375b27e8fed251497a08"
+            "_id": "69b1384727e8fed251497be4"
           },
           {
             "content": "3",
-            "correctAnswer": "Buy environmentally friendly products",
+            "correctAnswer": "as part of their job",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1375b27e8fed251497a09"
+            "_id": "69b1384727e8fed251497be5"
           },
           {
             "content": "4",
-            "correctAnswer": "Reuse containers for storing food",
+            "correctAnswer": "alone",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1375b27e8fed251497a0a"
+            "_id": "69b1384727e8fed251497be6"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "69b1375b27e8fed251497a06"
+        "_id": "69b1384727e8fed251497be2"
       }
     ],
     "questionPart": "TWO",
     "questionType": "LISTENING",
-    "id": "69529f3317d3f9f552a546a9",
-    "createdAt": "2025-12-29T15:33:07.928Z",
-    "updatedAt": "2026-06-22T03:54:11.836Z",
+    "id": "6957c6bbc88028aa29a1b08c",
+    "createdAt": "2026-01-02T13:23:07.867Z",
+    "updatedAt": "2026-06-22T03:54:12.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957c926c88028aa29a1b095",
+    "title": "Travel to work",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Travel to work",
+        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "travel by car"
+          },
+          {
+            "id": 2,
+            "content": "walk with a friend"
+          },
+          {
+            "id": 3,
+            "content": "take a taxi"
+          },
+          {
+            "id": 4,
+            "content": "travel by bus"
+          },
+          {
+            "id": 5,
+            "content": "walk alone"
+          },
+          {
+            "id": 6,
+            "content": "ride a bicycle"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360805268_96b8632e72407b7f_audiotp_de10.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,10.12],\"text\":\" Ah, I'm concerned about the earth and the environment, so I always look for ways to use public transportation, like buses or trains, to reduce harmful emissions.\"},{\"timestamp\":[10.12,17.56],\"text\":\" I can't walk to work because it's too far from my home, but I always walk to the local market when I need to buy groceries.\"},{\"timestamp\":[17.56,21.64],\"text\":\" B. I had to take driving lessons to be able to drive to work.\"},{\"timestamp\":[21.64,25.1],\"text\":\" My mother works along the same route, so we often drive\"},{\"timestamp\":[25.1,30.34],\"text\":\" to work together. Occasionally, she takes over the driving, and I'm happy because driving\"},{\"timestamp\":[30.34,32.72],\"text\":\" together gives us more time to chat.\"},{\"timestamp\":[32.72,38.5],\"text\":\" See, I used to use my car a lot to get to work, but since I moved closer to the company,\"},{\"timestamp\":[38.5,44.24],\"text\":\" I always go there on foot. I have a friend who cycles for 20 minutes every day to work.\"},{\"timestamp\":[44.24,46.8],\"text\":\" Can you imagine? She must be super fit.\"},{\"timestamp\":[46.8,55.1],\"text\":\" D. I often choose to walk to work to save on gas money and to keep in shape. I usually walk to the company with a close friend.\"},{\"timestamp\":[55.1,59.2],\"text\":\" Sometimes we feel really tired but still push ourselves to walk.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "travel by bus",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1386127e8fed251497c28"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "travel by car",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1386127e8fed251497c29"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "walk alone",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1386127e8fed251497c2a"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "walk with a friend",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1386127e8fed251497c2b"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69b1386127e8fed251497c27"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "6957c926c88028aa29a1b09b",
+    "createdAt": "2026-01-02T13:33:26.657Z",
+    "updatedAt": "2026-06-22T03:54:12.249Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957c9c0c88028aa29a1b0a4",
+    "title": "Studying",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Studying",
+        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "Late at night"
+          },
+          {
+            "id": 2,
+            "content": "In a quiet place"
+          },
+          {
+            "id": 3,
+            "content": "Early in the morning"
+          },
+          {
+            "id": 4,
+            "content": "In various places"
+          },
+          {
+            "id": 5,
+            "content": "With music"
+          },
+          {
+            "id": 6,
+            "content": "With background noise"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767360959536_34fd06dfea14a911_audiotp_de11.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,6],\"text\":\" A, I can study in different places, like coffee shops, libraries, or parks.\"},{\"timestamp\":[6,11.44],\"text\":\" For me, the location isn't that important because I have good concentration skills.\"},{\"timestamp\":[11.44,17.04],\"text\":\" B, I can't study in very noisy places because I can't focus on my homework.\"},{\"timestamp\":[17.04,21.28],\"text\":\" If I study in a cafe, I end up not getting anything done.\"},{\"timestamp\":[21.28,26],\"text\":\" So, I usually study in places such as my room in my house or in my office.\"},{\"timestamp\":[26,32.44],\"text\":\" See, I prefer listening to music while studying. I usually play motivational songs to\"},{\"timestamp\":[32.44,38.48],\"text\":\" help keep me alert, especially when studying in the morning. Music is like a cup of coffee,\"},{\"timestamp\":[38.48,43.32],\"text\":\" keeping me awake and motivated in my studies. D. I often can't focus on studying during\"},{\"timestamp\":[43.32,45.46],\"text\":\" the day. I feel tired and sleepy when I have to wake up early in study. So, I often can't focus on studying during the day, I feel tired and sleepy when\"},{\"timestamp\":[45.46,50.8],\"text\":\" I have to wake up early in study. So, I usually study at night, when everyone in the\"},{\"timestamp\":[50.8,56.36],\"text\":\" house is asleep. The quiet atmosphere at night allows me to focus the best and be the most\"},{\"timestamp\":[56.36,57.08],\"text\":\" productive.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "In various places",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1387d27e8fed251497c77"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "In a quiet place",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1387d27e8fed251497c78"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "With music",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1387d27e8fed251497c79"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "Late at night",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1387d27e8fed251497c7a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69b1387d27e8fed251497c76"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "6957c9c0c88028aa29a1b0aa",
+    "createdAt": "2026-01-02T13:36:00.173Z",
+    "updatedAt": "2026-06-22T03:54:12.297Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ca55c88028aa29a1b0b3",
+    "title": "Studying (phiên bản 2)",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Studying (phiên bản 2)",
+        "content": "Four people are discussing their views on the topic above. Complete the sentences. Use each answer only once. You will not need two of the answers.",
+        "answerList": [
+          {
+            "id": 1,
+            "content": "In the coffee shop"
+          },
+          {
+            "id": 2,
+            "content": "On public transport"
+          },
+          {
+            "id": 3,
+            "content": "In the park"
+          },
+          {
+            "id": 4,
+            "content": "While traveling abroad"
+          },
+          {
+            "id": 5,
+            "content": "At home"
+          },
+          {
+            "id": 6,
+            "content": "In a shared workspace"
+          }
+        ],
+        "correctAnswer": null,
+        "file": "https://files.aptisacademy.com.vn/listening/2026/01/1767361108209_ef15b5a244c3416d_audiotp_de12.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.64],\"text\":\" A. I don't like studying in very quiet places such as at home or in the library because\"},{\"timestamp\":[4.64,8],\"text\":\" I get sleepy easily and might even fall asleep while studying.\"},{\"timestamp\":[8.88,13.44],\"text\":\" There's a coffee shop near my house, and I often go there to study because the presence of\"},{\"timestamp\":[13.44,18.72],\"text\":\" other people makes me feel more motivated. I find that I achieve higher productivity and\"},{\"timestamp\":[18.72,24.56],\"text\":\" efficiency in my studies when I'm there. B. I notice that most people prefer doing their homework\"},{\"timestamp\":[24.56,25.96],\"text\":\" in the classroom, but for\"},{\"timestamp\":[25.96,29.56],\"text\":\" me, those chairs are way too hard and leave me sore all day.\"},{\"timestamp\":[29.56,35.24],\"text\":\" I prefer sitting under the trees in the park to study, it's cool, and the air is fresh.\"},{\"timestamp\":[35.24,39.44],\"text\":\" There's a famous coffee shop across from where I sit, and they serve really good coffee.\"},{\"timestamp\":[39.44,46.8],\"text\":\" C. The distance from my house to school is 20 kilometers, and it usually takes me an hour to get there.\"},{\"timestamp\":[46.8,52.56],\"text\":\" So, when I'm on the train, I use the time to do homework and review the lessons for the day.\"},{\"timestamp\":[52.56,58.32],\"text\":\" Some people say that studying like this can be distracting, but I find it very effective for me.\"},{\"timestamp\":[58.32,63.6],\"text\":\" D, I don't like studying in very crowded places, because I can't focus well.\"},{\"timestamp\":[63.6,66.96],\"text\":\" I usually sit on the sofa in the living room to study.\"},{\"timestamp\":[66.96,70.44],\"text\":\" My parents often travel for work, so my house is very quiet.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "In the coffee shop",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1389227e8fed251497cb0"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "In the park",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1389227e8fed251497cb1"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "On public transport",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1389227e8fed251497cb2"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "At home",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1389227e8fed251497cb3"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "69b1389227e8fed251497caf"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "LISTENING",
+    "id": "6957ca55c88028aa29a1b0b9",
+    "createdAt": "2026-01-02T13:38:29.069Z",
+    "updatedAt": "2026-06-22T03:54:12.342Z",
     "__v": 0
   },
   {

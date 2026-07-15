@@ -1,289 +1,5 @@
 [
   {
-    "_id": "696365137ccc2d518f3e3a23",
-    "data": {
-      "title": "Digital transformation",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b132bf27e8fed2514960d2",
-        "questionTitle": "Digital transformation",
-        "content": "<p>1. The interaction between people and technology is continuously evolving. Modern gadgets and software are designed to be more user-friendly, enabling communication through voice commands, gestures, or even facial recognition. This transformation makes technology more intuitive and accessible, enhancing both personal and professional experiences.</p><p><br></p><p>2. Smart automation tools are revolutionizing workplaces by handling repetitive and time-consuming tasks. These technologies, often powered by AI, enable employees to concentrate on more valuable work, boosting efficiency and fostering innovation across various sectors.</p><p><br></p><p>3. Educational institutions are increasingly incorporating technology into their curricula to prepare students for future careers. Programs focused on coding, robotics, and digital literacy provide learners with vital skills for the digital age, promoting creativity and enhancing problem-solving abilities.</p><p><br></p><p>4. Although digital devices offer numerous advantages, over-reliance on screens can lead to negative consequences. Individuals may experience reduced social interactions, trouble concentrating, and higher stress levels. It’s crucial to balance digital engagement with offline activities for maintaining mental and physical well-being.</p><p><br></p><p>5. Not everyone has equal access to technology, which can result in significant social and economic divides. Those without reliable internet or modern devices may miss out on educational and employment opportunities, making it essential to address these inequalities through policies and community-driven efforts.</p><p><br></p><p>6. Tech communities unite individuals passionate about technology to exchange ideas, support projects, and collaborate. These groups encourage innovation and creativity, offering mentorship and resources to help transform new ideas into reality.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. As technology continues to evolve, there is a growing focus on sustainability. Companies are developing eco-friendly products and adopting green practices to reduce environmental impact, ensuring that digital advancements contribute to long-term ecological health.</span></p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b132bf27e8fed2514960bc",
-            "numberOrder": null,
-            "content": "Enhancing productivity through automation",
-            "_id": "69b132bf27e8fed2514960bb"
-          },
-          {
-            "id": "69b132bf27e8fed2514960be",
-            "numberOrder": null,
-            "content": "Concerns about cybersecurity risks",
-            "_id": "69b132bf27e8fed2514960bd"
-          },
-          {
-            "id": "69b132bf27e8fed2514960c0",
-            "numberOrder": null,
-            "content": "Building inclusive digital ecosystems",
-            "_id": "69b132bf27e8fed2514960bf"
-          },
-          {
-            "id": "69b132bf27e8fed2514960c2",
-            "numberOrder": null,
-            "content": "Promoting digital skills training",
-            "_id": "69b132bf27e8fed2514960c1"
-          },
-          {
-            "id": "69b132bf27e8fed2514960c4",
-            "numberOrder": null,
-            "content": "Over-reliance on automated systems",
-            "_id": "69b132bf27e8fed2514960c3"
-          },
-          {
-            "id": "69b132bf27e8fed2514960c6",
-            "numberOrder": null,
-            "content": "Redefining business models with technology",
-            "_id": "69b132bf27e8fed2514960c5"
-          },
-          {
-            "id": "69b132bf27e8fed2514960c8",
-            "numberOrder": null,
-            "content": "Focusing on ethical technology development",
-            "_id": "69b132bf27e8fed2514960c7"
-          },
-          {
-            "id": "69b132bf27e8fed2514960ca",
-            "numberOrder": null,
-            "content": "1 vài đáp án nhiễu",
-            "_id": "69b132bf27e8fed2514960c9"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn: </strong><strong style=\"color: rgb(37, 37, 37);\">Redefining </strong><span style=\"color: rgb(37, 37, 37);\">mô hình kinh doanh bằng công nghệ giúp </span><strong style=\"color: rgb(37, 37, 37);\">tăng năng suât (</strong><span style=\"color: rgb(37, 37, 37);\"> </span><strong style=\"color: rgb(37, 37, 37);\">productivity) </strong><span style=\"color: rgb(37, 37, 37);\">và phát triển kỹ năng số </span><strong style=\"color: rgb(37, 37, 37);\">digital skills</strong><span style=\"color: rgb(37, 37, 37);\">, nhưng </span><strong style=\"color: rgb(37, 37, 37);\">over-reliance</strong><span style=\"color: rgb(37, 37, 37);\"> vào tự động hóa có thể mang lại </span><strong style=\"color: rgb(37, 37, 37);\">risks</strong><span style=\"color: rgb(37, 37, 37);\">. </span><strong style=\"color: rgb(37, 37, 37);\">xây dựng (Building)</strong><span style=\"color: rgb(37, 37, 37);\"> hệ sinh thái số toàn diện là chìa khóa cho </span><strong style=\"color: rgb(37, 37, 37);\">development </strong><span style=\"color: rgb(37, 37, 37);\">công nghệ đạo đức.</span></p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Redefining → productivity → digital skills → Over-reliance → risks → Building → development.</p>",
-        "subQuestion": [
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Redefining business models with technology",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960cb"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Enhancing productivity through automation",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960cc"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Promoting digital skills training",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960cd"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Over-reliance on automated systems",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960ce"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Concerns about cybersecurity risks",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960cf"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Building inclusive digital ecosystems",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960d0"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Focusing on ethical technology development",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b132bf27e8fed2514960d1"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "FOUR",
-        "image": null,
-        "_id": "69b132bf27e8fed2514960ba"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a700f"
-    },
-    "createdAt": "2026-01-11T08:53:39.906Z",
-    "updatedAt": "2026-06-22T03:54:19.744Z",
-    "__v": 0
-  },
-  {
-    "_id": "697c759bfda7aa93bd8396e0",
-    "data": {
-      "title": "Mountain Summits ( phiên bản 3) Cùng đáp án với các đề Mountain Submits",
-      "timeToDo": 35,
-      "questions": {
-        "id": "697cc91e6d2610a5acfd8a01",
-        "questionTitle": "Mountain Summits ( phiên bản 3)",
-        "content": "<p><span style=\"color: rgb(10, 10, 10);\">1. In the early 1800s, people were believed not to enjoy climbing mountains. Later, as mountain climbing became a popular trend, interest grew rapidly. However, there is evidence that humans have always been fascinated by mountains. The difference now is that people focus mainly on reaching the summit to admire the majestic views rather than simply exploring the mountain itself.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">2.Climbing to the top of a mountain creates the same adrenaline rush as other extreme sports. But it goes far beyond that. Because of the sheer size and grandeur of the mountains, the experience becomes a powerful metaphor, making climbers feel deeply inspired. This intense feeling can even become addictive, as people unconsciously develop a strong desire to keep reaching the peak.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">3.People have always enjoyed capturing and sharing the moment of standing on a mountaintop. This practice existed even before social media, as climbers admired the view or described their experiences to others. With the rise of social media, this trend has become even more common. Now, almost everyone takes selfies and posts them online for friends and family to see after reaching the summit.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">4.Recently, some climbers have begun questioning whether this focus on the summit is truly meaningful. The most beautiful views might not be from the peak itself, and the path to the summit is often exhausting, requiring great physical strength. This approach excludes many people and overlooks the beauty found all along the mountain, not just at the top.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">5.A photo taken on Mount Everest in 2020, showing a “traffic jam” of climbers, shocked the world. It revealed how many climbers were rushing to reach the summit during the short window of good weather. This image raised concerns about overcrowding and highlighted how Everest, once seen as a remote and unreachable peak, has now become a site of intense competition and environmental strain.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">6.The viral photo made some people feel that climbing Everest had lost its charm. However, mountain climbing itself is not the problem. Instead, climbers must carefully reflect on their goals and habits, ensuring that future global tourism does not negatively impact the environment. A more mindful approach can protect mountains for generations to come.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">7.Perhaps we should approach mountains with a gentle mindset, seeing them as companions rather than challenges to conquer. In the 1940 book The Living Mountain by Shepherd, the author describes climbing near her family farm. She wandered the mountains without specific goals, treating each climb as a visit to old friends instead of a mission to claim victory over nature.</span></p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "697cc91e6d2610a5acfd89eb",
-            "numberOrder": null,
-            "content": "Publicising of achievement",
-            "_id": "697cc91e6d2610a5acfd89ea"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89ed",
-            "numberOrder": null,
-            "content": "A worrying priority",
-            "_id": "697cc91e6d2610a5acfd89ec"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89ef",
-            "numberOrder": null,
-            "content": "Changing the perspective towards mountains",
-            "_id": "697cc91e6d2610a5acfd89ee"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89f1",
-            "numberOrder": null,
-            "content": "Unique sense of achievement",
-            "_id": "697cc91e6d2610a5acfd89f0"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89f3",
-            "numberOrder": null,
-            "content": "A new intimate relationship",
-            "_id": "697cc91e6d2610a5acfd89f2"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89f5",
-            "numberOrder": null,
-            "content": "The disturbing revelation",
-            "_id": "697cc91e6d2610a5acfd89f4"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89f7",
-            "numberOrder": null,
-            "content": "More focus on sustainability",
-            "_id": "697cc91e6d2610a5acfd89f6"
-          },
-          {
-            "id": "697cc91e6d2610a5acfd89f9",
-            "numberOrder": null,
-            "content": "1 vài đáp án nhiễu",
-            "_id": "697cc91e6d2610a5acfd89f8"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Changing the perspective towards mountains",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89fa"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Unique sense of achievement",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89fb"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Publicising of achievement",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89fc"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "A worrying priority",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89fd"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "The disturbing revelation",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89fe"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "More focus on sustainability",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd89ff"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "A new intimate relationship",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "697cc91e6d2610a5acfd8a00"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "FOUR",
-        "image": null,
-        "_id": "697cc91e6d2610a5acfd89e9"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a709f"
-    },
-    "createdAt": "2026-01-30T09:10:51.114Z",
-    "updatedAt": "2026-06-22T03:54:20.156Z",
-    "__v": 0
-  },
-  {
     "_id": "6955d82d5723012229d3f1b6",
     "data": {
       "title": "Mountain Submmits ",
@@ -423,290 +139,6 @@
     },
     "createdAt": "2026-01-01T02:13:01.789Z",
     "updatedAt": "2026-06-22T03:54:19.564Z",
-    "__v": 0
-  },
-  {
-    "_id": "696368637ccc2d518f3e3bc3",
-    "data": {
-      "title": "Women mathematicians (Phiên bản 1)",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b1337927e8fed25149633a",
-        "questionTitle": "Women mathematicians (Phiên bản 1)",
-        "content": "<p>1. Long before modern scientific institutions emerged, certain individuals in ancient history established the foundations of mathematics as we know it. One such pioneer was Hypatia of Alexandria, a famous philosopher and mathematician in the 4th century.</p><p><br></p><p>2. The early 20th century saw remarkable advancements in computing, largely propelled by the innovative work of figures like Alan Turing. Turing’s concept of a universal machine, capable of performing any computable task, laid the foundation for modern computers.</p><p><br></p><p>3. Humanity’s quest to explore the cosmos has been defined by groundbreaking milestones. From the launch of Sputnik 1 to the Apollo moon landings, each mission has broadened our understanding of space and our place in the universe.</p><p><br></p><p>4. The study of geometry and motion was irrevocably altered by the works of Isaac Newton and later Albert Einstein. Newton’s laws provided the mathematical foundation for understanding motion on Earth and in space, while Einstein’s theory of general relativity revolutionized our understanding of gravity.</p><p><br></p><p>5. One of the most profound ideas in modern physics is the link between symmetry and the laws of nature. Emmy Noether, a brilliant German mathematician, proved a theorem that demonstrated how physical laws are intrinsically linked to symmetrical properties.</p><p><br></p><p>6. Despite advancements in science and technology, many groups remain underrepresented in STEM fields. In recent decades, educators and organizations have worked to foster more inclusive environments, offering scholarships, mentorship, and outreach programs.</p><p><br></p><p>7. <span style=\"color: rgb(33, 37, 41);\">In many parts of the world, individuals have had to fight for the right to education, particularly in scientific disciplines. A well-known example is the story of 19th-century women who were denied entry to universities.</span></p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b1337927e8fed251496324",
-            "numberOrder": null,
-            "content": "Breaking New Ground in Ancient Mathematics",
-            "_id": "69b1337927e8fed251496323"
-          },
-          {
-            "id": "69b1337927e8fed251496326",
-            "numberOrder": null,
-            "content": "Driving Space Exploration Forward",
-            "_id": "69b1337927e8fed251496325"
-          },
-          {
-            "id": "69b1337927e8fed251496328",
-            "numberOrder": null,
-            "content": "Connecting Symmetry to Physics",
-            "_id": "69b1337927e8fed251496327"
-          },
-          {
-            "id": "69b1337927e8fed25149632a",
-            "numberOrder": null,
-            "content": "Encouraging Diversity in STEM",
-            "_id": "69b1337927e8fed251496329"
-          },
-          {
-            "id": "69b1337927e8fed25149632c",
-            "numberOrder": null,
-            "content": "Trailblazing Computer Science",
-            "_id": "69b1337927e8fed25149632b"
-          },
-          {
-            "id": "69b1337927e8fed25149632e",
-            "numberOrder": null,
-            "content": "Transforming Geometry and Motion",
-            "_id": "69b1337927e8fed25149632d"
-          },
-          {
-            "id": "69b1337927e8fed251496330",
-            "numberOrder": null,
-            "content": "Breaking Through Educational Barriers",
-            "_id": "69b1337927e8fed25149632f"
-          },
-          {
-            "id": "69b1337927e8fed251496332",
-            "numberOrder": null,
-            "content": "1 vài đáp án nhiễu",
-            "_id": "69b1337927e8fed251496331"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Toán học (<strong>Mathematics</strong>) là nền tảng cho khoa học máy tính (<strong>Computer</strong>) và khám phá không gian (<strong>Space</strong>), giúp chúng ta hiểu về chuyển động (<strong>Motion</strong>) và kết nối (<strong>Connecting</strong>) các kiến thức đa dạng (<strong>Diversity</strong>), từ đó phát triển giáo dục (<strong>Educational</strong>) cho tương lai.</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p>Mathematics → Computer → Space → Motion → Connecting → Diversity → Educational</p>",
-        "subQuestion": [
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Breaking New Ground in Ancient Mathematics",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496333"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Trailblazing Computer Science",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496334"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Driving Space Exploration Forward",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496335"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Transforming Geometry and Motion",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496336"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Connecting Symmetry to Physics",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496337"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Encouraging Diversity in STEM",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496338"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Breaking Through Educational Barriers",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1337927e8fed251496339"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "FOUR",
-        "image": null,
-        "_id": "69b1337927e8fed251496322"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a702f"
-    },
-    "createdAt": "2026-01-11T09:07:47.203Z",
-    "updatedAt": "2026-06-22T03:54:19.843Z",
-    "__v": 0
-  },
-  {
-    "_id": "696370d07ccc2d518f3e4008",
-    "data": {
-      "title": "Urban Development",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b133e227e8fed251496533",
-        "questionTitle": "Urban Development",
-        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b133e227e8fed25149651d",
-            "numberOrder": null,
-            "content": "Supporting Affordable Housing Projects",
-            "_id": "69b133e227e8fed25149651c"
-          },
-          {
-            "id": "69b133e227e8fed25149651f",
-            "numberOrder": null,
-            "content": "Concerns About Traffic Congestion",
-            "_id": "69b133e227e8fed25149651e"
-          },
-          {
-            "id": "69b133e227e8fed251496521",
-            "numberOrder": null,
-            "content": "Overreliance on High-Rise Buildings",
-            "_id": "69b133e227e8fed251496520"
-          },
-          {
-            "id": "69b133e227e8fed251496523",
-            "numberOrder": null,
-            "content": "Strengthening Community Engagement",
-            "_id": "69b133e227e8fed251496522"
-          },
-          {
-            "id": "69b133e227e8fed251496525",
-            "numberOrder": null,
-            "content": "Encouraging Green Spaces in Urban Areas",
-            "_id": "69b133e227e8fed251496524"
-          },
-          {
-            "id": "69b133e227e8fed251496527",
-            "numberOrder": null,
-            "content": "Redefining Sustainable City Planning",
-            "_id": "69b133e227e8fed251496526"
-          },
-          {
-            "id": "69b133e227e8fed251496529",
-            "numberOrder": null,
-            "content": "Focusing on Renewable Energy Source",
-            "_id": "69b133e227e8fed251496528"
-          },
-          {
-            "id": "69b133e227e8fed25149652b",
-            "numberOrder": null,
-            "content": "1 vài đáp án nhiễu",
-            "_id": "69b133e227e8fed25149652a"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Quy hoạch thành phố bền vững (<strong>Sustainable</strong>) bắt đầu từ việc mở rộng không gian xanh trong khu đô thị (<strong>Urban Areas</strong>), hỗ trợ các dự án nhà ở hợp lý (<strong>Housing Projects</strong>), hạn chế sự phụ thuộc quá mức vào các tòa nhà cao tầng (<strong>Buildings</strong>). Đồng thời, cần giải quyết vấn đề tắc nghẽn giao thông (<strong>Traffic Congestion</strong>), tăng cường sự gắn kết cộng đồng (<strong>Community</strong>) và tập trung vào việc sử dụng nguồn năng lượng tái tạo (<strong>Energy Source</strong>).</p><p><br></p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Sustainable → Urban Areas → Housing Projects → Buildings → Traffic Congestion → Community → Energy Source.</p>",
-        "subQuestion": [
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Redefining Sustainable City Planning",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed25149652c"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Encouraging Green Spaces in Urban Areas",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed25149652d"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Supporting Affordable Housing Projects",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed25149652e"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Overreliance on High-Rise Buildings",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed25149652f"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Concerns About Traffic Congestion",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed251496530"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Strengthening Community Engagement",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed251496531"
-          },
-          {
-            "content": "aptis tien phong",
-            "correctAnswer": "Focusing on Renewable Energy Source",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b133e227e8fed251496532"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "FOUR",
-        "image": null,
-        "_id": "69b133e227e8fed25149651b"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a705f"
-    },
-    "createdAt": "2026-01-11T09:43:44.105Z",
-    "updatedAt": "2026-06-22T03:54:19.985Z",
     "__v": 0
   },
   {
@@ -994,287 +426,287 @@
     "__v": 0
   },
   {
-    "_id": "69636fe77ccc2d518f3e3d43",
+    "_id": "696363d17ccc2d518f3e39bf",
     "data": {
-      "title": "Cultural Exchange",
+      "title": "The arrival of four-day week ( Phiên bản 1)",
       "timeToDo": 35,
       "questions": {
-        "id": "69b133cc27e8fed2514964b0",
-        "questionTitle": "Cultural Exchange",
-        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
+        "id": "69b1328727e8fed25149602d",
+        "questionTitle": "The arrival of four-day week ( Phiên bản 1)",
+        "content": "<p>1. For many years, a workweek of five or even six days was the standard. However, advancements in technology, evolving social values, and an increasing emphasis on work-life balance are making this traditional schedule less relevant. Both employees and employers are starting to question whether spending the majority of one’s week at work is truly necessary or productive.</p><p><br></p><p>2. Proponents of a four-day workweek highlight various benefits for workers. With an extra day off, employees gain more time to recharge, connect with family, or explore personal interests. Research shows that shorter workweeks can enhance focus and efficiency, leading to improved job performance and higher levels of job satisfaction.</p><p><br></p><p>3. While appealing, a reduced workweek could have financial downsides. Companies might incur higher expenses from the need to hire additional staff or adjust compensation models. For sectors that rely on hourly employees, it may be difficult to maintain profitability, potentially leading to service reductions or job cuts.</p><p><br></p><p>4. Adapting to a new work schedule can be difficult for some employees. The pressure to complete tasks within a shorter timeframe can lead to stress, and fast-paced industries may face challenges such as missed deadlines or conflicting schedules, complicating the transition to a shorter workweek.</p><p><br></p><p>5. For individuals accustomed to traditional work hours, the shift to a four-day workweek can be challenging. Breaking long-established routines is tough, and some may resist change even when it offers potential benefits. Adapting to a new work pattern often requires time and support.</p><p><br></p><p>6. While a four-day workweek may sound ideal to many, it isn’t necessarily fair to all. Essential workers, healthcare providers, and employees in the hospitality industry may not have the option to reduce their hours. This could create disparities among different worker groups and lead to tension within the workforce.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. Rather than universally implementing a four-day workweek, experts suggest considering more flexible arrangements. Options such as allowing employees to choose their days off or offering shorter daily hours can provide similar advantages without disrupting industries that depend on a traditional work schedule.</span></p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "69b133cc27e8fed25149649a",
+            "id": "69b1328727e8fed251496017",
             "numberOrder": null,
-            "content": "Encouraging Cross-Cultural Festivals",
-            "_id": "69b133cc27e8fed251496499"
+            "content": "Alternative solutions worth considering",
+            "_id": "69b1328727e8fed251496016"
           },
           {
-            "id": "69b133cc27e8fed25149649c",
+            "id": "69b1328727e8fed251496019",
             "numberOrder": null,
-            "content": "Concerns About Cultural Preservation",
-            "_id": "69b133cc27e8fed25149649b"
+            "content": "Undesirable finalcial consequences",
+            "_id": "69b1328727e8fed251496018"
           },
           {
-            "id": "69b133cc27e8fed25149649e",
+            "id": "69b1328727e8fed25149601b",
             "numberOrder": null,
-            "content": "Overemphasis on Commercial Tourism",
-            "_id": "69b133cc27e8fed25149649d"
+            "content": "Difficult to change old habits",
+            "_id": "69b1328727e8fed25149601a"
           },
           {
-            "id": "69b133cc27e8fed2514964a0",
+            "id": "69b1328727e8fed25149601d",
             "numberOrder": null,
-            "content": "Promoting Language Exchange Programs",
-            "_id": "69b133cc27e8fed25149649f"
+            "content": "Benefits for employees",
+            "_id": "69b1328727e8fed25149601c"
           },
           {
-            "id": "69b133cc27e8fed2514964a2",
+            "id": "69b1328727e8fed25149601f",
             "numberOrder": null,
-            "content": "Building Mutual Respect Among Communities",
-            "_id": "69b133cc27e8fed2514964a1"
+            "content": "A way of life now out date",
+            "_id": "69b1328727e8fed25149601e"
           },
           {
-            "id": "69b133cc27e8fed2514964a4",
+            "id": "69b1328727e8fed251496021",
             "numberOrder": null,
-            "content": "Redefining Global Cultural Understanding",
-            "_id": "69b133cc27e8fed2514964a3"
+            "content": "Unfair for some people",
+            "_id": "69b1328727e8fed251496020"
           },
           {
-            "id": "69b133cc27e8fed2514964a6",
+            "id": "69b1328727e8fed251496023",
             "numberOrder": null,
-            "content": "Focusing on Authentic Cultural Experiences",
-            "_id": "69b133cc27e8fed2514964a5"
+            "content": "Unforeseen challenges for employees",
+            "_id": "69b1328727e8fed251496022"
           },
           {
-            "id": "69b133cc27e8fed2514964a8",
+            "id": "69b1328727e8fed251496025",
             "numberOrder": null,
             "content": "1 vài đáp án nhiễu",
-            "_id": "69b133cc27e8fed2514964a7"
+            "_id": "69b1328727e8fed251496024"
           }
         ],
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Hiểu biết toàn cầu (<strong>Global</strong>) thúc đẩy các lễ hội văn hóa (<strong>Festivals</strong>) và trao đổi ngôn ngữ (<strong>Language</strong>), nhưng đôi khi có sự tập trung quá mức vào du lịch thương mại (<strong>Overemphasis</strong>). Vì thế, cần quan tâm đến việc bảo tồn văn hóa (<strong>Preservation</strong>), xây dựng sự tôn trọng lẫn nhau (<strong>Building</strong>) và hướng đến trải nghiệm văn hóa chân thực (<strong>Authentic</strong>).</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Global → Festivals → Language → Overemphasis → Preservation → Building → Authentic.</p>",
+        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>Sống<strong> lỗi thời (outdated)</strong> khiến nhiều người bỏ lỡ q<strong>uyền lợi (Benefits)</strong>, dễ gặp hậu quả <strong>không mong muốn (Undesirable),</strong> đối mặt <strong>thử thách bất ngờ (Unforeseen)</strong>, thay đổi thói quen thì quá<strong> khó (Difficult),</strong> đôi khi còn <strong>bất công (Unfair) </strong>nên cần cân nhắc <strong>giải pháp thay thế (Alternative).</strong></p><p class=\"ql-align-justify\"><strong>Mẹo nhớ Keyword:</strong>&nbsp;outdated → Benefits → Undesirable → challenges → Difficult → Unfair → solutions.</p>",
         "subQuestion": [
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Redefining Global Cultural Understanding",
+            "correctAnswer": "A way of life now out date",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964a9"
+            "_id": "69b1328727e8fed251496026"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Encouraging Cross-Cultural Festivals",
+            "correctAnswer": "Benefits for employees",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964aa"
+            "_id": "69b1328727e8fed251496027"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Promoting Language Exchange Programs",
+            "correctAnswer": "Undesirable finalcial consequences",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964ab"
+            "_id": "69b1328727e8fed251496028"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Overemphasis on Commercial Tourism",
+            "correctAnswer": "Unforeseen challenges for employees",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964ac"
+            "_id": "69b1328727e8fed251496029"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Concerns About Cultural Preservation",
+            "correctAnswer": "Difficult to change old habits",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964ad"
+            "_id": "69b1328727e8fed25149602a"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Building Mutual Respect Among Communities",
+            "correctAnswer": "Unfair for some people",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964ae"
+            "_id": "69b1328727e8fed25149602b"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Focusing on Authentic Cultural Experiences",
+            "correctAnswer": "Alternative solutions worth considering",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b133cc27e8fed2514964af"
+            "_id": "69b1328727e8fed25149602c"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "FOUR",
         "image": null,
-        "_id": "69b133cc27e8fed251496498"
+        "_id": "69b1328727e8fed251496015"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a704f"
+      "id": "69ce8f13650c2c0a4a1a6fff"
     },
-    "createdAt": "2026-01-11T09:39:51.306Z",
-    "updatedAt": "2026-06-22T03:54:19.940Z",
+    "createdAt": "2026-01-11T08:48:17.797Z",
+    "updatedAt": "2026-06-22T03:54:19.695Z",
     "__v": 0
   },
   {
-    "_id": "6963c0c37ccc2d518f3e4b90",
+    "_id": "696365137ccc2d518f3e3a23",
     "data": {
-      "title": "Woman Mathematics  ( phiên bản 1)",
+      "title": "Digital transformation",
       "timeToDo": 35,
       "questions": {
-        "id": "697cc9486d2610a5acfd8b48",
-        "questionTitle": "Woman Mathematics (TP1)",
-        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
+        "id": "69b132bf27e8fed2514960d2",
+        "questionTitle": "Digital transformation",
+        "content": "<p>1. The interaction between people and technology is continuously evolving. Modern gadgets and software are designed to be more user-friendly, enabling communication through voice commands, gestures, or even facial recognition. This transformation makes technology more intuitive and accessible, enhancing both personal and professional experiences.</p><p><br></p><p>2. Smart automation tools are revolutionizing workplaces by handling repetitive and time-consuming tasks. These technologies, often powered by AI, enable employees to concentrate on more valuable work, boosting efficiency and fostering innovation across various sectors.</p><p><br></p><p>3. Educational institutions are increasingly incorporating technology into their curricula to prepare students for future careers. Programs focused on coding, robotics, and digital literacy provide learners with vital skills for the digital age, promoting creativity and enhancing problem-solving abilities.</p><p><br></p><p>4. Although digital devices offer numerous advantages, over-reliance on screens can lead to negative consequences. Individuals may experience reduced social interactions, trouble concentrating, and higher stress levels. It’s crucial to balance digital engagement with offline activities for maintaining mental and physical well-being.</p><p><br></p><p>5. Not everyone has equal access to technology, which can result in significant social and economic divides. Those without reliable internet or modern devices may miss out on educational and employment opportunities, making it essential to address these inequalities through policies and community-driven efforts.</p><p><br></p><p>6. Tech communities unite individuals passionate about technology to exchange ideas, support projects, and collaborate. These groups encourage innovation and creativity, offering mentorship and resources to help transform new ideas into reality.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. As technology continues to evolve, there is a growing focus on sustainability. Companies are developing eco-friendly products and adopting green practices to reduce environmental impact, ensuring that digital advancements contribute to long-term ecological health.</span></p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "697cc9486d2610a5acfd8b32",
+            "id": "69b132bf27e8fed2514960bc",
             "numberOrder": null,
-            "content": " A long career showing exceptional ability",
-            "_id": "697cc9486d2610a5acfd8b31"
+            "content": "Enhancing productivity through automation",
+            "_id": "69b132bf27e8fed2514960bb"
           },
           {
-            "id": "697cc9486d2610a5acfd8b34",
+            "id": "69b132bf27e8fed2514960be",
             "numberOrder": null,
-            "content": "Gender obscure achievements",
-            "_id": "697cc9486d2610a5acfd8b33"
+            "content": "Concerns about cybersecurity risks",
+            "_id": "69b132bf27e8fed2514960bd"
           },
           {
-            "id": "697cc9486d2610a5acfd8b36",
+            "id": "69b132bf27e8fed2514960c0",
             "numberOrder": null,
-            "content": "Man unfairly credited",
-            "_id": "697cc9486d2610a5acfd8b35"
+            "content": "Building inclusive digital ecosystems",
+            "_id": "69b132bf27e8fed2514960bf"
           },
           {
-            "id": "697cc9486d2610a5acfd8b38",
+            "id": "69b132bf27e8fed2514960c2",
             "numberOrder": null,
-            "content": "Labels can change perspective on people",
-            "_id": "697cc9486d2610a5acfd8b37"
+            "content": "Promoting digital skills training",
+            "_id": "69b132bf27e8fed2514960c1"
           },
           {
-            "id": "697cc9486d2610a5acfd8b3a",
+            "id": "69b132bf27e8fed2514960c4",
             "numberOrder": null,
-            "content": "Attempting to create a gender balance",
-            "_id": "697cc9486d2610a5acfd8b39"
+            "content": "Over-reliance on automated systems",
+            "_id": "69b132bf27e8fed2514960c3"
           },
           {
-            "id": "697cc9486d2610a5acfd8b3c",
+            "id": "69b132bf27e8fed2514960c6",
             "numberOrder": null,
-            "content": "Uniformity is not always beneficial",
-            "_id": "697cc9486d2610a5acfd8b3b"
+            "content": "Redefining business models with technology",
+            "_id": "69b132bf27e8fed2514960c5"
           },
           {
-            "id": "697cc9486d2610a5acfd8b3e",
+            "id": "69b132bf27e8fed2514960c8",
             "numberOrder": null,
-            "content": "Acknowledging achievement of a pioneer",
-            "_id": "697cc9486d2610a5acfd8b3d"
+            "content": "Focusing on ethical technology development",
+            "_id": "69b132bf27e8fed2514960c7"
           },
           {
-            "id": "697cc9486d2610a5acfd8b40",
+            "id": "69b132bf27e8fed2514960ca",
             "numberOrder": null,
             "content": "1 vài đáp án nhiễu",
-            "_id": "697cc9486d2610a5acfd8b3f"
+            "_id": "69b132bf27e8fed2514960c9"
           }
         ],
         "subQuestionAnswerList": [],
-        "suggestion": "<p>1. Gender obscure achievements</p><p>2. Acknowledging achievement of a pioneer</p><p>3. Man unfairly credited</p><p>4. A long career showing exceptional ability</p><p>5. Labels can change perspective on people</p><p>6. Attempting to create a gender balance</p><p>7. Uniformity is not always beneficial</p><p><br></p><p><strong><em><u>Mẹo học nhanh:</u></em></strong></p><p>GEN (gender) ÁC (Acknowledging ) MA (Man) của ANH LONG (A long) LÀ (labels) ẤT (Attempting) Ơ (Uniformity)</p>",
+        "suggestion": "<p><strong>Nhớ theo đoạn văn: </strong><strong style=\"color: rgb(37, 37, 37);\">Redefining </strong><span style=\"color: rgb(37, 37, 37);\">mô hình kinh doanh bằng công nghệ giúp </span><strong style=\"color: rgb(37, 37, 37);\">tăng năng suât (</strong><span style=\"color: rgb(37, 37, 37);\"> </span><strong style=\"color: rgb(37, 37, 37);\">productivity) </strong><span style=\"color: rgb(37, 37, 37);\">và phát triển kỹ năng số </span><strong style=\"color: rgb(37, 37, 37);\">digital skills</strong><span style=\"color: rgb(37, 37, 37);\">, nhưng </span><strong style=\"color: rgb(37, 37, 37);\">over-reliance</strong><span style=\"color: rgb(37, 37, 37);\"> vào tự động hóa có thể mang lại </span><strong style=\"color: rgb(37, 37, 37);\">risks</strong><span style=\"color: rgb(37, 37, 37);\">. </span><strong style=\"color: rgb(37, 37, 37);\">xây dựng (Building)</strong><span style=\"color: rgb(37, 37, 37);\"> hệ sinh thái số toàn diện là chìa khóa cho </span><strong style=\"color: rgb(37, 37, 37);\">development </strong><span style=\"color: rgb(37, 37, 37);\">công nghệ đạo đức.</span></p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Redefining → productivity → digital skills → Over-reliance → risks → Building → development.</p>",
         "subQuestion": [
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Gender obscure achievements",
+            "correctAnswer": "Redefining business models with technology",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b41"
+            "_id": "69b132bf27e8fed2514960cb"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Acknowledging achievement of a pioneer",
+            "correctAnswer": "Enhancing productivity through automation",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b42"
+            "_id": "69b132bf27e8fed2514960cc"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Man unfairly credited",
+            "correctAnswer": "Promoting digital skills training",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b43"
+            "_id": "69b132bf27e8fed2514960cd"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": " A long career showing exceptional ability",
+            "correctAnswer": "Over-reliance on automated systems",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b44"
+            "_id": "69b132bf27e8fed2514960ce"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Labels can change perspective on people",
+            "correctAnswer": "Concerns about cybersecurity risks",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b45"
+            "_id": "69b132bf27e8fed2514960cf"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Attempting to create a gender balance",
+            "correctAnswer": "Building inclusive digital ecosystems",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b46"
+            "_id": "69b132bf27e8fed2514960d0"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Uniformity is not always beneficial",
+            "correctAnswer": "Focusing on ethical technology development",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "697cc9486d2610a5acfd8b47"
+            "_id": "69b132bf27e8fed2514960d1"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "FOUR",
         "image": null,
-        "_id": "697cc9486d2610a5acfd8b30"
+        "_id": "69b132bf27e8fed2514960ba"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a708f"
+      "id": "69ce8f13650c2c0a4a1a700f"
     },
-    "createdAt": "2026-01-11T15:24:51.979Z",
-    "updatedAt": "2026-06-22T03:54:20.113Z",
+    "createdAt": "2026-01-11T08:53:39.906Z",
+    "updatedAt": "2026-06-22T03:54:19.744Z",
     "__v": 0
   },
   {
@@ -1420,145 +852,145 @@
     "__v": 0
   },
   {
-    "_id": "696363d17ccc2d518f3e39bf",
+    "_id": "696368637ccc2d518f3e3bc3",
     "data": {
-      "title": "The arrival of four-day week ( Phiên bản 1)",
+      "title": "Women mathematicians (Phiên bản 1)",
       "timeToDo": 35,
       "questions": {
-        "id": "69b1328727e8fed25149602d",
-        "questionTitle": "The arrival of four-day week ( Phiên bản 1)",
-        "content": "<p>1. For many years, a workweek of five or even six days was the standard. However, advancements in technology, evolving social values, and an increasing emphasis on work-life balance are making this traditional schedule less relevant. Both employees and employers are starting to question whether spending the majority of one’s week at work is truly necessary or productive.</p><p><br></p><p>2. Proponents of a four-day workweek highlight various benefits for workers. With an extra day off, employees gain more time to recharge, connect with family, or explore personal interests. Research shows that shorter workweeks can enhance focus and efficiency, leading to improved job performance and higher levels of job satisfaction.</p><p><br></p><p>3. While appealing, a reduced workweek could have financial downsides. Companies might incur higher expenses from the need to hire additional staff or adjust compensation models. For sectors that rely on hourly employees, it may be difficult to maintain profitability, potentially leading to service reductions or job cuts.</p><p><br></p><p>4. Adapting to a new work schedule can be difficult for some employees. The pressure to complete tasks within a shorter timeframe can lead to stress, and fast-paced industries may face challenges such as missed deadlines or conflicting schedules, complicating the transition to a shorter workweek.</p><p><br></p><p>5. For individuals accustomed to traditional work hours, the shift to a four-day workweek can be challenging. Breaking long-established routines is tough, and some may resist change even when it offers potential benefits. Adapting to a new work pattern often requires time and support.</p><p><br></p><p>6. While a four-day workweek may sound ideal to many, it isn’t necessarily fair to all. Essential workers, healthcare providers, and employees in the hospitality industry may not have the option to reduce their hours. This could create disparities among different worker groups and lead to tension within the workforce.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. Rather than universally implementing a four-day workweek, experts suggest considering more flexible arrangements. Options such as allowing employees to choose their days off or offering shorter daily hours can provide similar advantages without disrupting industries that depend on a traditional work schedule.</span></p>",
+        "id": "69b1337927e8fed25149633a",
+        "questionTitle": "Women mathematicians (Phiên bản 1)",
+        "content": "<p>1. Long before modern scientific institutions emerged, certain individuals in ancient history established the foundations of mathematics as we know it. One such pioneer was Hypatia of Alexandria, a famous philosopher and mathematician in the 4th century.</p><p><br></p><p>2. The early 20th century saw remarkable advancements in computing, largely propelled by the innovative work of figures like Alan Turing. Turing’s concept of a universal machine, capable of performing any computable task, laid the foundation for modern computers.</p><p><br></p><p>3. Humanity’s quest to explore the cosmos has been defined by groundbreaking milestones. From the launch of Sputnik 1 to the Apollo moon landings, each mission has broadened our understanding of space and our place in the universe.</p><p><br></p><p>4. The study of geometry and motion was irrevocably altered by the works of Isaac Newton and later Albert Einstein. Newton’s laws provided the mathematical foundation for understanding motion on Earth and in space, while Einstein’s theory of general relativity revolutionized our understanding of gravity.</p><p><br></p><p>5. One of the most profound ideas in modern physics is the link between symmetry and the laws of nature. Emmy Noether, a brilliant German mathematician, proved a theorem that demonstrated how physical laws are intrinsically linked to symmetrical properties.</p><p><br></p><p>6. Despite advancements in science and technology, many groups remain underrepresented in STEM fields. In recent decades, educators and organizations have worked to foster more inclusive environments, offering scholarships, mentorship, and outreach programs.</p><p><br></p><p>7. <span style=\"color: rgb(33, 37, 41);\">In many parts of the world, individuals have had to fight for the right to education, particularly in scientific disciplines. A well-known example is the story of 19th-century women who were denied entry to universities.</span></p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "69b1328727e8fed251496017",
+            "id": "69b1337927e8fed251496324",
             "numberOrder": null,
-            "content": "Alternative solutions worth considering",
-            "_id": "69b1328727e8fed251496016"
+            "content": "Breaking New Ground in Ancient Mathematics",
+            "_id": "69b1337927e8fed251496323"
           },
           {
-            "id": "69b1328727e8fed251496019",
+            "id": "69b1337927e8fed251496326",
             "numberOrder": null,
-            "content": "Undesirable finalcial consequences",
-            "_id": "69b1328727e8fed251496018"
+            "content": "Driving Space Exploration Forward",
+            "_id": "69b1337927e8fed251496325"
           },
           {
-            "id": "69b1328727e8fed25149601b",
+            "id": "69b1337927e8fed251496328",
             "numberOrder": null,
-            "content": "Difficult to change old habits",
-            "_id": "69b1328727e8fed25149601a"
+            "content": "Connecting Symmetry to Physics",
+            "_id": "69b1337927e8fed251496327"
           },
           {
-            "id": "69b1328727e8fed25149601d",
+            "id": "69b1337927e8fed25149632a",
             "numberOrder": null,
-            "content": "Benefits for employees",
-            "_id": "69b1328727e8fed25149601c"
+            "content": "Encouraging Diversity in STEM",
+            "_id": "69b1337927e8fed251496329"
           },
           {
-            "id": "69b1328727e8fed25149601f",
+            "id": "69b1337927e8fed25149632c",
             "numberOrder": null,
-            "content": "A way of life now out date",
-            "_id": "69b1328727e8fed25149601e"
+            "content": "Trailblazing Computer Science",
+            "_id": "69b1337927e8fed25149632b"
           },
           {
-            "id": "69b1328727e8fed251496021",
+            "id": "69b1337927e8fed25149632e",
             "numberOrder": null,
-            "content": "Unfair for some people",
-            "_id": "69b1328727e8fed251496020"
+            "content": "Transforming Geometry and Motion",
+            "_id": "69b1337927e8fed25149632d"
           },
           {
-            "id": "69b1328727e8fed251496023",
+            "id": "69b1337927e8fed251496330",
             "numberOrder": null,
-            "content": "Unforeseen challenges for employees",
-            "_id": "69b1328727e8fed251496022"
+            "content": "Breaking Through Educational Barriers",
+            "_id": "69b1337927e8fed25149632f"
           },
           {
-            "id": "69b1328727e8fed251496025",
+            "id": "69b1337927e8fed251496332",
             "numberOrder": null,
             "content": "1 vài đáp án nhiễu",
-            "_id": "69b1328727e8fed251496024"
+            "_id": "69b1337927e8fed251496331"
           }
         ],
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>Sống<strong> lỗi thời (outdated)</strong> khiến nhiều người bỏ lỡ q<strong>uyền lợi (Benefits)</strong>, dễ gặp hậu quả <strong>không mong muốn (Undesirable),</strong> đối mặt <strong>thử thách bất ngờ (Unforeseen)</strong>, thay đổi thói quen thì quá<strong> khó (Difficult),</strong> đôi khi còn <strong>bất công (Unfair) </strong>nên cần cân nhắc <strong>giải pháp thay thế (Alternative).</strong></p><p class=\"ql-align-justify\"><strong>Mẹo nhớ Keyword:</strong>&nbsp;outdated → Benefits → Undesirable → challenges → Difficult → Unfair → solutions.</p>",
+        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Toán học (<strong>Mathematics</strong>) là nền tảng cho khoa học máy tính (<strong>Computer</strong>) và khám phá không gian (<strong>Space</strong>), giúp chúng ta hiểu về chuyển động (<strong>Motion</strong>) và kết nối (<strong>Connecting</strong>) các kiến thức đa dạng (<strong>Diversity</strong>), từ đó phát triển giáo dục (<strong>Educational</strong>) cho tương lai.</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p>Mathematics → Computer → Space → Motion → Connecting → Diversity → Educational</p>",
         "subQuestion": [
           {
             "content": "aptis tien phong",
-            "correctAnswer": "A way of life now out date",
+            "correctAnswer": "Breaking New Ground in Ancient Mathematics",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed251496026"
+            "_id": "69b1337927e8fed251496333"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Benefits for employees",
+            "correctAnswer": "Trailblazing Computer Science",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed251496027"
+            "_id": "69b1337927e8fed251496334"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Undesirable finalcial consequences",
+            "correctAnswer": "Driving Space Exploration Forward",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed251496028"
+            "_id": "69b1337927e8fed251496335"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Unforeseen challenges for employees",
+            "correctAnswer": "Transforming Geometry and Motion",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed251496029"
+            "_id": "69b1337927e8fed251496336"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Difficult to change old habits",
+            "correctAnswer": "Connecting Symmetry to Physics",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed25149602a"
+            "_id": "69b1337927e8fed251496337"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Unfair for some people",
+            "correctAnswer": "Encouraging Diversity in STEM",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed25149602b"
+            "_id": "69b1337927e8fed251496338"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Alternative solutions worth considering",
+            "correctAnswer": "Breaking Through Educational Barriers",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1328727e8fed25149602c"
+            "_id": "69b1337927e8fed251496339"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "FOUR",
         "image": null,
-        "_id": "69b1328727e8fed251496015"
+        "_id": "69b1337927e8fed251496322"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a6fff"
+      "id": "69ce8f13650c2c0a4a1a702f"
     },
-    "createdAt": "2026-01-11T08:48:17.797Z",
-    "updatedAt": "2026-06-22T03:54:19.695Z",
+    "createdAt": "2026-01-11T09:07:47.203Z",
+    "updatedAt": "2026-06-22T03:54:19.843Z",
     "__v": 0
   },
   {
@@ -1704,145 +1136,287 @@
     "__v": 0
   },
   {
-    "_id": "696372d27ccc2d518f3e4048",
+    "_id": "69636fe77ccc2d518f3e3d43",
     "data": {
-      "title": "Women mathematicians (phiên bản 2)",
+      "title": "Cultural Exchange",
       "timeToDo": 35,
       "questions": {
-        "id": "69b1342027e8fed251496649",
-        "questionTitle": "Women mathematicians (phiên bản 2)",
-        "content": "<p>1. Achievements often go unnoticed when gender biases come into play. Many groundbreaking contributions from women in science, technology, and other fields are overshadowed by societal expectations, leading to a lack of recognition for their hard work and dedication.</p><p><br></p><p>2. Recognizing the accomplishments of pioneering women is essential for breaking stereotypes and inspiring future generations. Women like Marie Curie, Ada Lovelace, and Katherine Johnson changed the world with their brilliance, yet their achievements were often marginalized due to their gender.</p><p><br></p><p>3. Men are unfairly given credit for work that was often a joint effort or even led by women. History has been shaped by this bias, where the achievements of women were either ignored or misattributed, despite their immense contributions to progress.</p><p><br></p><p>4. A long career is a testament to one's exceptional abilities. Take the story of a female engineer who spent decades improving infrastructure in underdeveloped regions. Despite her groundbreaking work, she was often overlooked simply because of her gender, but her work left an indelible mark on society.</p><p><br></p><p>5. Labels can change perceptions dramatically. The label of 'genius' or 'pioneer' is often reserved for men, but when a woman is labeled in the same way, it challenges stereotypes and forces society to recognize her contributions. This shift in perception is key to breaking down barriers and opening doors for others.</p><p><br></p><p>6. Striving to create gender balance in the workplace and society at large has become a movement. Companies and governments are starting to realize that diverse teams lead to better solutions, yet the struggle for equal representation continues. The push for gender balance is not just about fairness but also about enhancing productivity and creativity.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. Uniformity can be a disadvantage in many settings. When everyone is expected to conform to the same mold, innovation and individuality suffer. The story of a diverse team at a tech startup shows how embracing different perspectives led to creative breakthroughs, proving that diversity is a powerful asset.</span></p>",
+        "id": "69b133cc27e8fed2514964b0",
+        "questionTitle": "Cultural Exchange",
+        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "69b1342027e8fed251496633",
+            "id": "69b133cc27e8fed25149649a",
             "numberOrder": null,
-            "content": "Recognizing the accomplishments of pioneering women",
-            "_id": "69b1342027e8fed251496632"
+            "content": "Encouraging Cross-Cultural Festivals",
+            "_id": "69b133cc27e8fed251496499"
           },
           {
-            "id": "69b1342027e8fed251496635",
+            "id": "69b133cc27e8fed25149649c",
             "numberOrder": null,
-            "content": "The labels can change perceptions",
-            "_id": "69b1342027e8fed251496634"
+            "content": "Concerns About Cultural Preservation",
+            "_id": "69b133cc27e8fed25149649b"
           },
           {
-            "id": "69b1342027e8fed251496637",
+            "id": "69b133cc27e8fed25149649e",
             "numberOrder": null,
-            "content": "Uniformity can be a disadvantage",
-            "_id": "69b1342027e8fed251496636"
+            "content": "Overemphasis on Commercial Tourism",
+            "_id": "69b133cc27e8fed25149649d"
           },
           {
-            "id": "69b1342027e8fed251496639",
+            "id": "69b133cc27e8fed2514964a0",
             "numberOrder": null,
-            "content": "Striving to create gender balance",
-            "_id": "69b1342027e8fed251496638"
+            "content": "Promoting Language Exchange Programs",
+            "_id": "69b133cc27e8fed25149649f"
           },
           {
-            "id": "69b1342027e8fed25149663b",
+            "id": "69b133cc27e8fed2514964a2",
             "numberOrder": null,
-            "content": "A long career demonstrates exceptional ability",
-            "_id": "69b1342027e8fed25149663a"
+            "content": "Building Mutual Respect Among Communities",
+            "_id": "69b133cc27e8fed2514964a1"
           },
           {
-            "id": "69b1342027e8fed25149663d",
+            "id": "69b133cc27e8fed2514964a4",
             "numberOrder": null,
-            "content": "Achievements obscured by gender",
-            "_id": "69b1342027e8fed25149663c"
+            "content": "Redefining Global Cultural Understanding",
+            "_id": "69b133cc27e8fed2514964a3"
           },
           {
-            "id": "69b1342027e8fed25149663f",
+            "id": "69b133cc27e8fed2514964a6",
             "numberOrder": null,
-            "content": "Men are unfairly given credit",
-            "_id": "69b1342027e8fed25149663e"
+            "content": "Focusing on Authentic Cultural Experiences",
+            "_id": "69b133cc27e8fed2514964a5"
           },
           {
-            "id": "69b1342027e8fed251496641",
+            "id": "69b133cc27e8fed2514964a8",
             "numberOrder": null,
             "content": "1 vài đáp án nhiễu",
-            "_id": "69b1342027e8fed251496640"
+            "_id": "69b133cc27e8fed2514964a7"
           }
         ],
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Đôi khi, thành tựu bị&nbsp;<strong>che mờ (Obscured)</strong>&nbsp;bởi định kiến giới. Những phụ nữ&nbsp;<strong>tiên phong (Pioneering)</strong>&nbsp;thường gặp khó khăn trong việc được công nhận, trong khi đàn ông đôi khi được khen&nbsp;<strong>không công bằng (Unfairly)</strong>.&nbsp;<strong>Một sự nghiệp dài (A long career)</strong>&nbsp;thể hiện năng lực thật sự, nhưng&nbsp;<strong>nhãn mác (Labels)</strong>&nbsp;xã hội có thể làm sai lệch cách nhìn. Cần thúc đẩy&nbsp;<strong>cân bằng giới (Gender balance)</strong>, dù sự&nbsp;<strong>đồng nhất tuyệt đối</strong>&nbsp;đôi khi lại là&nbsp;<strong>bất lợi (Disadvantage)</strong>.</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Obscured → Pioneering → Unfairly → A long career → Labels → Gender balance → Disadvantage.</p>",
+        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Hiểu biết toàn cầu (<strong>Global</strong>) thúc đẩy các lễ hội văn hóa (<strong>Festivals</strong>) và trao đổi ngôn ngữ (<strong>Language</strong>), nhưng đôi khi có sự tập trung quá mức vào du lịch thương mại (<strong>Overemphasis</strong>). Vì thế, cần quan tâm đến việc bảo tồn văn hóa (<strong>Preservation</strong>), xây dựng sự tôn trọng lẫn nhau (<strong>Building</strong>) và hướng đến trải nghiệm văn hóa chân thực (<strong>Authentic</strong>).</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Global → Festivals → Language → Overemphasis → Preservation → Building → Authentic.</p>",
         "subQuestion": [
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Achievements obscured by gender",
+            "correctAnswer": "Redefining Global Cultural Understanding",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496642"
+            "_id": "69b133cc27e8fed2514964a9"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Recognizing the accomplishments of pioneering women",
+            "correctAnswer": "Encouraging Cross-Cultural Festivals",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496643"
+            "_id": "69b133cc27e8fed2514964aa"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Men are unfairly given credit",
+            "correctAnswer": "Promoting Language Exchange Programs",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496644"
+            "_id": "69b133cc27e8fed2514964ab"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "A long career demonstrates exceptional ability",
+            "correctAnswer": "Overemphasis on Commercial Tourism",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496645"
+            "_id": "69b133cc27e8fed2514964ac"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "The labels can change perceptions",
+            "correctAnswer": "Concerns About Cultural Preservation",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496646"
+            "_id": "69b133cc27e8fed2514964ad"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Striving to create gender balance",
+            "correctAnswer": "Building Mutual Respect Among Communities",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496647"
+            "_id": "69b133cc27e8fed2514964ae"
           },
           {
             "content": "aptis tien phong",
-            "correctAnswer": "Uniformity can be a disadvantage",
+            "correctAnswer": "Focusing on Authentic Cultural Experiences",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b1342027e8fed251496648"
+            "_id": "69b133cc27e8fed2514964af"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "FOUR",
         "image": null,
-        "_id": "69b1342027e8fed251496631"
+        "_id": "69b133cc27e8fed251496498"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a707f"
+      "id": "69ce8f13650c2c0a4a1a704f"
     },
-    "createdAt": "2026-01-11T09:52:18.585Z",
-    "updatedAt": "2026-06-22T03:54:20.070Z",
+    "createdAt": "2026-01-11T09:39:51.306Z",
+    "updatedAt": "2026-06-22T03:54:19.940Z",
+    "__v": 0
+  },
+  {
+    "_id": "696370d07ccc2d518f3e4008",
+    "data": {
+      "title": "Urban Development",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b133e227e8fed251496533",
+        "questionTitle": "Urban Development",
+        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b133e227e8fed25149651d",
+            "numberOrder": null,
+            "content": "Supporting Affordable Housing Projects",
+            "_id": "69b133e227e8fed25149651c"
+          },
+          {
+            "id": "69b133e227e8fed25149651f",
+            "numberOrder": null,
+            "content": "Concerns About Traffic Congestion",
+            "_id": "69b133e227e8fed25149651e"
+          },
+          {
+            "id": "69b133e227e8fed251496521",
+            "numberOrder": null,
+            "content": "Overreliance on High-Rise Buildings",
+            "_id": "69b133e227e8fed251496520"
+          },
+          {
+            "id": "69b133e227e8fed251496523",
+            "numberOrder": null,
+            "content": "Strengthening Community Engagement",
+            "_id": "69b133e227e8fed251496522"
+          },
+          {
+            "id": "69b133e227e8fed251496525",
+            "numberOrder": null,
+            "content": "Encouraging Green Spaces in Urban Areas",
+            "_id": "69b133e227e8fed251496524"
+          },
+          {
+            "id": "69b133e227e8fed251496527",
+            "numberOrder": null,
+            "content": "Redefining Sustainable City Planning",
+            "_id": "69b133e227e8fed251496526"
+          },
+          {
+            "id": "69b133e227e8fed251496529",
+            "numberOrder": null,
+            "content": "Focusing on Renewable Energy Source",
+            "_id": "69b133e227e8fed251496528"
+          },
+          {
+            "id": "69b133e227e8fed25149652b",
+            "numberOrder": null,
+            "content": "1 vài đáp án nhiễu",
+            "_id": "69b133e227e8fed25149652a"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Quy hoạch thành phố bền vững (<strong>Sustainable</strong>) bắt đầu từ việc mở rộng không gian xanh trong khu đô thị (<strong>Urban Areas</strong>), hỗ trợ các dự án nhà ở hợp lý (<strong>Housing Projects</strong>), hạn chế sự phụ thuộc quá mức vào các tòa nhà cao tầng (<strong>Buildings</strong>). Đồng thời, cần giải quyết vấn đề tắc nghẽn giao thông (<strong>Traffic Congestion</strong>), tăng cường sự gắn kết cộng đồng (<strong>Community</strong>) và tập trung vào việc sử dụng nguồn năng lượng tái tạo (<strong>Energy Source</strong>).</p><p><br></p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Sustainable → Urban Areas → Housing Projects → Buildings → Traffic Congestion → Community → Energy Source.</p>",
+        "subQuestion": [
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Redefining Sustainable City Planning",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed25149652c"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Encouraging Green Spaces in Urban Areas",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed25149652d"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Supporting Affordable Housing Projects",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed25149652e"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Overreliance on High-Rise Buildings",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed25149652f"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Concerns About Traffic Congestion",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed251496530"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Strengthening Community Engagement",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed251496531"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Focusing on Renewable Energy Source",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b133e227e8fed251496532"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "FOUR",
+        "image": null,
+        "_id": "69b133e227e8fed25149651b"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a705f"
+    },
+    "createdAt": "2026-01-11T09:43:44.105Z",
+    "updatedAt": "2026-06-22T03:54:19.985Z",
     "__v": 0
   },
   {
@@ -1985,6 +1559,432 @@
     },
     "createdAt": "2026-01-11T09:48:38.824Z",
     "updatedAt": "2026-06-22T03:54:20.027Z",
+    "__v": 0
+  },
+  {
+    "_id": "696372d27ccc2d518f3e4048",
+    "data": {
+      "title": "Women mathematicians (phiên bản 2)",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b1342027e8fed251496649",
+        "questionTitle": "Women mathematicians (phiên bản 2)",
+        "content": "<p>1. Achievements often go unnoticed when gender biases come into play. Many groundbreaking contributions from women in science, technology, and other fields are overshadowed by societal expectations, leading to a lack of recognition for their hard work and dedication.</p><p><br></p><p>2. Recognizing the accomplishments of pioneering women is essential for breaking stereotypes and inspiring future generations. Women like Marie Curie, Ada Lovelace, and Katherine Johnson changed the world with their brilliance, yet their achievements were often marginalized due to their gender.</p><p><br></p><p>3. Men are unfairly given credit for work that was often a joint effort or even led by women. History has been shaped by this bias, where the achievements of women were either ignored or misattributed, despite their immense contributions to progress.</p><p><br></p><p>4. A long career is a testament to one's exceptional abilities. Take the story of a female engineer who spent decades improving infrastructure in underdeveloped regions. Despite her groundbreaking work, she was often overlooked simply because of her gender, but her work left an indelible mark on society.</p><p><br></p><p>5. Labels can change perceptions dramatically. The label of 'genius' or 'pioneer' is often reserved for men, but when a woman is labeled in the same way, it challenges stereotypes and forces society to recognize her contributions. This shift in perception is key to breaking down barriers and opening doors for others.</p><p><br></p><p>6. Striving to create gender balance in the workplace and society at large has become a movement. Companies and governments are starting to realize that diverse teams lead to better solutions, yet the struggle for equal representation continues. The push for gender balance is not just about fairness but also about enhancing productivity and creativity.</p><p><br></p><p><span style=\"color: rgb(33, 37, 41);\">7. Uniformity can be a disadvantage in many settings. When everyone is expected to conform to the same mold, innovation and individuality suffer. The story of a diverse team at a tech startup shows how embracing different perspectives led to creative breakthroughs, proving that diversity is a powerful asset.</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b1342027e8fed251496633",
+            "numberOrder": null,
+            "content": "Recognizing the accomplishments of pioneering women",
+            "_id": "69b1342027e8fed251496632"
+          },
+          {
+            "id": "69b1342027e8fed251496635",
+            "numberOrder": null,
+            "content": "The labels can change perceptions",
+            "_id": "69b1342027e8fed251496634"
+          },
+          {
+            "id": "69b1342027e8fed251496637",
+            "numberOrder": null,
+            "content": "Uniformity can be a disadvantage",
+            "_id": "69b1342027e8fed251496636"
+          },
+          {
+            "id": "69b1342027e8fed251496639",
+            "numberOrder": null,
+            "content": "Striving to create gender balance",
+            "_id": "69b1342027e8fed251496638"
+          },
+          {
+            "id": "69b1342027e8fed25149663b",
+            "numberOrder": null,
+            "content": "A long career demonstrates exceptional ability",
+            "_id": "69b1342027e8fed25149663a"
+          },
+          {
+            "id": "69b1342027e8fed25149663d",
+            "numberOrder": null,
+            "content": "Achievements obscured by gender",
+            "_id": "69b1342027e8fed25149663c"
+          },
+          {
+            "id": "69b1342027e8fed25149663f",
+            "numberOrder": null,
+            "content": "Men are unfairly given credit",
+            "_id": "69b1342027e8fed25149663e"
+          },
+          {
+            "id": "69b1342027e8fed251496641",
+            "numberOrder": null,
+            "content": "1 vài đáp án nhiễu",
+            "_id": "69b1342027e8fed251496640"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong>Nhớ theo đoạn văn:</strong>&nbsp;Đôi khi, thành tựu bị&nbsp;<strong>che mờ (Obscured)</strong>&nbsp;bởi định kiến giới. Những phụ nữ&nbsp;<strong>tiên phong (Pioneering)</strong>&nbsp;thường gặp khó khăn trong việc được công nhận, trong khi đàn ông đôi khi được khen&nbsp;<strong>không công bằng (Unfairly)</strong>.&nbsp;<strong>Một sự nghiệp dài (A long career)</strong>&nbsp;thể hiện năng lực thật sự, nhưng&nbsp;<strong>nhãn mác (Labels)</strong>&nbsp;xã hội có thể làm sai lệch cách nhìn. Cần thúc đẩy&nbsp;<strong>cân bằng giới (Gender balance)</strong>, dù sự&nbsp;<strong>đồng nhất tuyệt đối</strong>&nbsp;đôi khi lại là&nbsp;<strong>bất lợi (Disadvantage)</strong>.</p><p><strong>Học mẹo nếu bạn cần học gấp:</strong></p><p><strong>Mẹo nhớ Keyword:</strong>&nbsp;Obscured → Pioneering → Unfairly → A long career → Labels → Gender balance → Disadvantage.</p>",
+        "subQuestion": [
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Achievements obscured by gender",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496642"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Recognizing the accomplishments of pioneering women",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496643"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Men are unfairly given credit",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496644"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "A long career demonstrates exceptional ability",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496645"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "The labels can change perceptions",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496646"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Striving to create gender balance",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496647"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Uniformity can be a disadvantage",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1342027e8fed251496648"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "FOUR",
+        "image": null,
+        "_id": "69b1342027e8fed251496631"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a707f"
+    },
+    "createdAt": "2026-01-11T09:52:18.585Z",
+    "updatedAt": "2026-06-22T03:54:20.070Z",
+    "__v": 0
+  },
+  {
+    "_id": "6963c0c37ccc2d518f3e4b90",
+    "data": {
+      "title": "Woman Mathematics  ( phiên bản 1)",
+      "timeToDo": 35,
+      "questions": {
+        "id": "697cc9486d2610a5acfd8b48",
+        "questionTitle": "Woman Mathematics (TP1)",
+        "content": "<p>Đề này không có nội dung, bạn học thuộc đáp án.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "697cc9486d2610a5acfd8b32",
+            "numberOrder": null,
+            "content": " A long career showing exceptional ability",
+            "_id": "697cc9486d2610a5acfd8b31"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b34",
+            "numberOrder": null,
+            "content": "Gender obscure achievements",
+            "_id": "697cc9486d2610a5acfd8b33"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b36",
+            "numberOrder": null,
+            "content": "Man unfairly credited",
+            "_id": "697cc9486d2610a5acfd8b35"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b38",
+            "numberOrder": null,
+            "content": "Labels can change perspective on people",
+            "_id": "697cc9486d2610a5acfd8b37"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b3a",
+            "numberOrder": null,
+            "content": "Attempting to create a gender balance",
+            "_id": "697cc9486d2610a5acfd8b39"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b3c",
+            "numberOrder": null,
+            "content": "Uniformity is not always beneficial",
+            "_id": "697cc9486d2610a5acfd8b3b"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b3e",
+            "numberOrder": null,
+            "content": "Acknowledging achievement of a pioneer",
+            "_id": "697cc9486d2610a5acfd8b3d"
+          },
+          {
+            "id": "697cc9486d2610a5acfd8b40",
+            "numberOrder": null,
+            "content": "1 vài đáp án nhiễu",
+            "_id": "697cc9486d2610a5acfd8b3f"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>1. Gender obscure achievements</p><p>2. Acknowledging achievement of a pioneer</p><p>3. Man unfairly credited</p><p>4. A long career showing exceptional ability</p><p>5. Labels can change perspective on people</p><p>6. Attempting to create a gender balance</p><p>7. Uniformity is not always beneficial</p><p><br></p><p><strong><em><u>Mẹo học nhanh:</u></em></strong></p><p>GEN (gender) ÁC (Acknowledging ) MA (Man) của ANH LONG (A long) LÀ (labels) ẤT (Attempting) Ơ (Uniformity)</p>",
+        "subQuestion": [
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Gender obscure achievements",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b41"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Acknowledging achievement of a pioneer",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b42"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Man unfairly credited",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b43"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": " A long career showing exceptional ability",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b44"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Labels can change perspective on people",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b45"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Attempting to create a gender balance",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b46"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Uniformity is not always beneficial",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc9486d2610a5acfd8b47"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "FOUR",
+        "image": null,
+        "_id": "697cc9486d2610a5acfd8b30"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a708f"
+    },
+    "createdAt": "2026-01-11T15:24:51.979Z",
+    "updatedAt": "2026-06-22T03:54:20.113Z",
+    "__v": 0
+  },
+  {
+    "_id": "697c759bfda7aa93bd8396e0",
+    "data": {
+      "title": "Mountain Summits ( phiên bản 3) Cùng đáp án với các đề Mountain Submits",
+      "timeToDo": 35,
+      "questions": {
+        "id": "697cc91e6d2610a5acfd8a01",
+        "questionTitle": "Mountain Summits ( phiên bản 3)",
+        "content": "<p><span style=\"color: rgb(10, 10, 10);\">1. In the early 1800s, people were believed not to enjoy climbing mountains. Later, as mountain climbing became a popular trend, interest grew rapidly. However, there is evidence that humans have always been fascinated by mountains. The difference now is that people focus mainly on reaching the summit to admire the majestic views rather than simply exploring the mountain itself.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">2.Climbing to the top of a mountain creates the same adrenaline rush as other extreme sports. But it goes far beyond that. Because of the sheer size and grandeur of the mountains, the experience becomes a powerful metaphor, making climbers feel deeply inspired. This intense feeling can even become addictive, as people unconsciously develop a strong desire to keep reaching the peak.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">3.People have always enjoyed capturing and sharing the moment of standing on a mountaintop. This practice existed even before social media, as climbers admired the view or described their experiences to others. With the rise of social media, this trend has become even more common. Now, almost everyone takes selfies and posts them online for friends and family to see after reaching the summit.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">4.Recently, some climbers have begun questioning whether this focus on the summit is truly meaningful. The most beautiful views might not be from the peak itself, and the path to the summit is often exhausting, requiring great physical strength. This approach excludes many people and overlooks the beauty found all along the mountain, not just at the top.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">5.A photo taken on Mount Everest in 2020, showing a “traffic jam” of climbers, shocked the world. It revealed how many climbers were rushing to reach the summit during the short window of good weather. This image raised concerns about overcrowding and highlighted how Everest, once seen as a remote and unreachable peak, has now become a site of intense competition and environmental strain.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">6.The viral photo made some people feel that climbing Everest had lost its charm. However, mountain climbing itself is not the problem. Instead, climbers must carefully reflect on their goals and habits, ensuring that future global tourism does not negatively impact the environment. A more mindful approach can protect mountains for generations to come.</span></p><p><br></p><p><span style=\"color: rgb(10, 10, 10);\">7.Perhaps we should approach mountains with a gentle mindset, seeing them as companions rather than challenges to conquer. In the 1940 book The Living Mountain by Shepherd, the author describes climbing near her family farm. She wandered the mountains without specific goals, treating each climb as a visit to old friends instead of a mission to claim victory over nature.</span></p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "697cc91e6d2610a5acfd89eb",
+            "numberOrder": null,
+            "content": "Publicising of achievement",
+            "_id": "697cc91e6d2610a5acfd89ea"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89ed",
+            "numberOrder": null,
+            "content": "A worrying priority",
+            "_id": "697cc91e6d2610a5acfd89ec"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89ef",
+            "numberOrder": null,
+            "content": "Changing the perspective towards mountains",
+            "_id": "697cc91e6d2610a5acfd89ee"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89f1",
+            "numberOrder": null,
+            "content": "Unique sense of achievement",
+            "_id": "697cc91e6d2610a5acfd89f0"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89f3",
+            "numberOrder": null,
+            "content": "A new intimate relationship",
+            "_id": "697cc91e6d2610a5acfd89f2"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89f5",
+            "numberOrder": null,
+            "content": "The disturbing revelation",
+            "_id": "697cc91e6d2610a5acfd89f4"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89f7",
+            "numberOrder": null,
+            "content": "More focus on sustainability",
+            "_id": "697cc91e6d2610a5acfd89f6"
+          },
+          {
+            "id": "697cc91e6d2610a5acfd89f9",
+            "numberOrder": null,
+            "content": "1 vài đáp án nhiễu",
+            "_id": "697cc91e6d2610a5acfd89f8"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Changing the perspective towards mountains",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89fa"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Unique sense of achievement",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89fb"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "Publicising of achievement",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89fc"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "A worrying priority",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89fd"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "The disturbing revelation",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89fe"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "More focus on sustainability",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd89ff"
+          },
+          {
+            "content": "aptis tien phong",
+            "correctAnswer": "A new intimate relationship",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "697cc91e6d2610a5acfd8a00"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "FOUR",
+        "image": null,
+        "_id": "697cc91e6d2610a5acfd89e9"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a709f"
+    },
+    "createdAt": "2026-01-30T09:10:51.114Z",
+    "updatedAt": "2026-06-22T03:54:20.156Z",
     "__v": 0
   },
   {

@@ -1,5 +1,72 @@
 [
   {
+    "_id": "6957e8efc88028aa29a1cfa7",
+    "title": "A break from studying",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A break from studying ",
+        "content": "chọn đáp án đúng",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293016853_29aa0c4cf2641f90_1_study_break.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,6.04],\"text\":\" After completing high school, many of my friends chose to go directly to university, while\"},{\"timestamp\":[6.04,8.4],\"text\":\" I opted for a different direction.\"},{\"timestamp\":[8.4,12.64],\"text\":\" Honestly, I didn't feel prepared to begin higher education at that time.\"},{\"timestamp\":[12.64,16.24],\"text\":\" I needed some time away from studying to refresh my mind.\"},{\"timestamp\":[16.24,20.24],\"text\":\" Rather than signing up for courses, I spent the following two years traveling throughout\"},{\"timestamp\":[20.24,21.72],\"text\":\" Asia and Europe.\"},{\"timestamp\":[21.72,26.6],\"text\":\" For me, it wasn't simply a holiday. I wanted to gain practical experience\"},{\"timestamp\":[26.6,28.64],\"text\":\" and explore different perspectives\"},{\"timestamp\":[28.64,31.36],\"text\":\" before eventually returning to my studies.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why hasn't he gone to college?\n",
+            "correctAnswer": "He wasn't ready to start higher education",
+            "file": null,
+            "answerList": [
+              {
+                "content": "He didn't get good enough grades"
+              },
+              {
+                "content": "He wasn't ready to start higher education"
+              },
+              {
+                "content": "He couldn't afford the tuition fees."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3bf0e455ee9d55bd25870e"
+          },
+          {
+            "content": "Why did he decide to travel for 2 years?",
+            "correctAnswer": "To gain life experience.",
+            "file": null,
+            "answerList": [
+              {
+                "content": "To gain life experience."
+              },
+              {
+                "content": "To avoid studying."
+              },
+              {
+                "content": "To travelling."
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3bf0e455ee9d55bd25870f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3bf0e455ee9d55bd25870d"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957e8efc88028aa29a1cfab",
+    "createdAt": "2026-01-02T15:49:03.877Z",
+    "updatedAt": "2026-06-24T14:59:48.718Z",
+    "__v": 0
+  },
+  {
     "_id": "6957e94bc88028aa29a1cfb1",
     "title": "A book about a life of a scientist",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -64,140 +131,6 @@
     "id": "6957e94bc88028aa29a1cfb5",
     "createdAt": "2026-01-02T15:50:35.919Z",
     "updatedAt": "2026-06-24T09:27:42.203Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ed0fc88028aa29a1d16d",
-    "title": "Life after university",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Life after university ",
-        "content": "Nghe kỹ audio để chọn đáp án đúng ",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293751081_f834266844676242_16_life_after_uni_verson1.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,10],\"text\":\" Transitioning from the structured environment of academic life to the professional world is often one of the most significant shifts a young adult will ever experience.\"},{\"timestamp\":[10.5,17.4],\"text\":\" When standing at this crossroads, many graduates feel immense pressure to find the perfect role immediately.\"},{\"timestamp\":[17.5,30.48],\"text\":\" However, most career counselors suggest that the best approach for students is to be flexible and open-minded during the initial stages of their journey. Instead of limiting themselves to a narrow path or a specific\"},{\"timestamp\":[30.48,36.32],\"text\":\" job title, they should be willing to explore various industries, as their first job is rarely their\"},{\"timestamp\":[36.32,42.72],\"text\":\" last, but rather a valuable learning opportunity. Furthermore, it is vital for graduates to have a\"},{\"timestamp\":[42.72,47],\"text\":\" realistic understanding of the current economic landscape.\"},{\"timestamp\":[47,51.68],\"text\":\" When applying for positions in the modern market, students must pay close attention to the\"},{\"timestamp\":[51.68,55.92],\"text\":\" fact that jobs are becoming more competitive than ever before.\"},{\"timestamp\":[55.92,61.4],\"text\":\" With a global pool of talent and the rise of automation, simply having a degree is often\"},{\"timestamp\":[61.4,64.32],\"text\":\" just the baseline requirement.\"},{\"timestamp\":[64.32,69.04],\"text\":\" To succeed, applicants need to go beyond their formal qualifications by highlighting their\"},{\"timestamp\":[69.04,75.64],\"text\":\" soft skills, unique experiences, and a strong work ethic to distinguish themselves in an increasingly\"},{\"timestamp\":[75.64,77.44],\"text\":\" crowded field of candidates.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What should students do when choosing a career?",
-            "correctAnswer": "Be flexible and open minded",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Be flexible and open minded"
-              },
-              {
-                "content": "Focus only on the salary offered"
-              },
-              {
-                "content": "Choose the same career as their friends"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba4f722eb5bbd6925c341"
-          },
-          {
-            "content": "What should students pay attention to when applying for jobs these days?",
-            "correctAnswer": "They are becoming more competitive",
-            "file": null,
-            "answerList": [
-              {
-                "content": "They are becoming more competitive"
-              },
-              {
-                "content": "Companies prefer handwritten applications"
-              },
-              {
-                "content": "Most jobs no longer require any qualifications"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba4f722eb5bbd6925c342"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3ba4f722eb5bbd6925c340"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957ed0fc88028aa29a1d171",
-    "createdAt": "2026-01-02T16:06:39.742Z",
-    "updatedAt": "2026-06-24T09:35:51.636Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ec69c88028aa29a1d159",
-    "title": "Famous writers",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Famous writers ",
-        "content": "Bài văn này không có audio (học thuộc đáp án).",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293599320_3006d7c1a494b8da_13_famous_writers.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,7.84],\"text\":\" Today we are exploring the lives of tyconic authors who significantly shape the literary landscape of the 20th century.\"},{\"timestamp\":[7.84,12.88],\"text\":\" Although they belong to different generations and came from diverse backgrounds,\"},{\"timestamp\":[12.88,17.84],\"text\":\" they share to profound mutual respect that deeply influenced their writing style.\"},{\"timestamp\":[17.84,30.96],\"text\":\" One of the most fascinating aspects of their professional relationship is that they both make references to each other in their works subtly weaving their colleagues' ideas' themes, or even names into their own narratives\"},{\"timestamp\":[30.96,36.56],\"text\":\" as a form of literary tribute. However, their writing is certainly not for the casual reader.\"},{\"timestamp\":[36.56,41.76],\"text\":\" These authors are famous for their layers of symbolism and philosophical depth. Many literary\"},{\"timestamp\":[41.76,53],\"text\":\" critics have noted that the meaning of their work is not always easily identified as it usually requires deep reflection and multiple readings to truly grasp the underlying messages.\"},{\"timestamp\":[53,null],\"text\":\" This inherent complexity is exactly what has kept scholars and fans debating the true intento. Their stories for decades.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What do these two famous writers have in common?",
-            "correctAnswer": "They both make references to each other in their work",
-            "file": null,
-            "answerList": [
-              {
-                "content": "They both wrote in the same genre"
-              },
-              {
-                "content": "They both make references to each other in their work"
-              },
-              {
-                "content": "They both were born in the same country"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0f655ee9d55bd25877c"
-          },
-          {
-            "content": "What is special about their works?",
-            "correctAnswer": "The meaning of their work is not always easily identified",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The meaning of their work is not always easily identified"
-              },
-              {
-                "content": "They use simple language and structure"
-              },
-              {
-                "content": "Their works are all based on real events"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0f655ee9d55bd25877d"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3bf0f655ee9d55bd25877b"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957ec69c88028aa29a1d15d",
-    "createdAt": "2026-01-02T16:03:53.455Z",
-    "updatedAt": "2026-06-24T15:00:06.153Z",
     "__v": 0
   },
   {
@@ -268,70 +201,70 @@
     "__v": 0
   },
   {
-    "_id": "6957ecbec88028aa29a1d163",
-    "title": "A regional development plan",
+    "_id": "6957ea28c88028aa29a1cfc5",
+    "title": "Television series",
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "description": null,
     "questions": [
       {
-        "questionTitle": "A regional development plan ",
+        "questionTitle": "Television series ",
         "content": "Nghe kỹ audio để chọn đáp án đúng ",
         "answerList": null,
         "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293664519_195988edb579cd3c_14_regional_development_plan_verson1.mp3",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293445981_42983ef2203c9131_7_television_series_verson1.mp3",
         "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,3.4],\"text\":\" Welcome back to our community forum.\"},{\"timestamp\":[3.4,11.04],\"text\":\" We've been receiving a lot of letters regarding the proposed development project in our area.\"},{\"timestamp\":[11.04,16.6],\"text\":\" Residents oppose this plan, primarily because of its narrow focus.\"},{\"timestamp\":[16.6,23],\"text\":\" Many are disappointed that it doesn't do enough to promote alternatives to driving,\"},{\"timestamp\":[23,28],\"text\":\" such as better cycling lanes or expanded bus routes.\"},{\"timestamp\":[28,34.76],\"text\":\" Beyond the public's reaction, the City Council is also hitting some major roadblocks.\"},{\"timestamp\":[34.76,40.72],\"text\":\" The main difficulty the City Council is having with this plan is their realization that\"},{\"timestamp\":[40.72,49],\"text\":\" it is not making efficient use of existing land. Instead of revitalizing the empty spaces in the city centre,\"},{\"timestamp\":[49,54],\"text\":\" the proposal unnecessarily pushes into the outskirts,\"},{\"timestamp\":[54,58],\"text\":\" which many officials believe is a strategic mistake.\"}]</p>",
+        "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" In the world of entertainment, very few shows manage to capture the public's imagination,\"},{\"timestamp\":[5.52,10.96],\"text\":\" like the one we are discussing today. While many shows start with a great premise,\"},{\"timestamp\":[10.96,17.52],\"text\":\" but fail to keep the momentum. The reason this particular show has become a global phenomenon\"},{\"timestamp\":[17.52,26.12],\"text\":\" is that it has the consistent quality throughout every single season. From the very first episode to the Grand finale, the\"},{\"timestamp\":[26.12,32.04],\"text\":\" writing, acting, and production values never drop, ensuring that fans stay\"},{\"timestamp\":[32.04,37.28],\"text\":\" engaged for years. However, this success doesn't happen in a vacuum. If we look\"},{\"timestamp\":[37.28,41.72],\"text\":\" at bigger picture, the entire television landscape is undergoing a massive\"},{\"timestamp\":[41.72,45.84],\"text\":\" transformation. Experts have noted that the current series industry\"},{\"timestamp\":[45.84,52.64],\"text\":\" is heavily affected by how audiences consume content. In fact, viewer habits influence the way that\"},{\"timestamp\":[52.64,58.4],\"text\":\" series are made more than ever before. With the rise of streaming platforms and the trend of binge\"},{\"timestamp\":[58.4,64.4],\"text\":\" watching, producers and directors are now forced to adapt their storytelling techniques and release.\"},{\"timestamp\":[64.75,69.25],\"text\":\" Schedules to match the specific preferences and behaviors of the modern viewer.\"}]</p>",
         "subSuggestion": "",
         "subQuestion": [
           {
-            "content": "Why do residents oppose this plan?",
-            "correctAnswer": "It doesn't do enough to promote alternatives to driving",
+            "content": "Why is this series so popular?",
+            "correctAnswer": "It has the consistent quality throughout.",
             "file": null,
             "answerList": [
               {
-                "content": "It doesn't do enough to promote alternatives to driving"
+                "content": "It was only available for a short time."
               },
               {
-                "content": "It provides free public transportation for all residents"
+                "content": "It features unknown actors."
               },
               {
-                "content": "It increases the number of public parks in the area"
+                "content": "It has the consistent quality throughout."
               }
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6a3ba54d22eb5bbd6925c3b2"
+            "_id": "6a3bf0ef55ee9d55bd258745"
           },
           {
-            "content": "What difficulties is the city council having with this plan?",
-            "correctAnswer": "The plan is not making efficient use of existing land",
+            "content": "What is the current series industry affected by?",
+            "correctAnswer": "Viewer habits influence the way that series are made.",
             "file": null,
             "answerList": [
               {
-                "content": "There is too much public support, making it hard to manage expectations"
+                "content": "Actors now write most of the scripts themselves."
               },
               {
-                "content": "The plan is not making efficient use of existing land"
+                "content": "Series are no longer produced for online platforms."
               },
               {
-                "content": "The plan has already exceeded its budget by a large margin"
+                "content": "Viewer habits influence the way that series are made."
               }
             ],
             "image": null,
             "suggestion": null,
-            "_id": "6a3ba54d22eb5bbd6925c3b3"
+            "_id": "6a3bf0ef55ee9d55bd258746"
           }
         ],
         "isExample": "false",
         "image": null,
-        "_id": "6a3ba54d22eb5bbd6925c3b1"
+        "_id": "6a3bf0ef55ee9d55bd258744"
       }
     ],
     "questionPart": "FOUR",
     "questionType": "LISTENING",
-    "id": "6957ecbec88028aa29a1d167",
-    "createdAt": "2026-01-02T16:05:18.601Z",
-    "updatedAt": "2026-06-24T09:37:17.915Z",
+    "id": "6957ea28c88028aa29a1cfc9",
+    "createdAt": "2026-01-02T15:54:16.624Z",
+    "updatedAt": "2026-06-24T14:59:59.364Z",
     "__v": 0
   },
   {
@@ -402,6 +335,207 @@
     "__v": 0
   },
   {
+    "_id": "6957ec69c88028aa29a1d159",
+    "title": "Famous writers",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Famous writers ",
+        "content": "Bài văn này không có audio (học thuộc đáp án).",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293599320_3006d7c1a494b8da_13_famous_writers.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,7.84],\"text\":\" Today we are exploring the lives of tyconic authors who significantly shape the literary landscape of the 20th century.\"},{\"timestamp\":[7.84,12.88],\"text\":\" Although they belong to different generations and came from diverse backgrounds,\"},{\"timestamp\":[12.88,17.84],\"text\":\" they share to profound mutual respect that deeply influenced their writing style.\"},{\"timestamp\":[17.84,30.96],\"text\":\" One of the most fascinating aspects of their professional relationship is that they both make references to each other in their works subtly weaving their colleagues' ideas' themes, or even names into their own narratives\"},{\"timestamp\":[30.96,36.56],\"text\":\" as a form of literary tribute. However, their writing is certainly not for the casual reader.\"},{\"timestamp\":[36.56,41.76],\"text\":\" These authors are famous for their layers of symbolism and philosophical depth. Many literary\"},{\"timestamp\":[41.76,53],\"text\":\" critics have noted that the meaning of their work is not always easily identified as it usually requires deep reflection and multiple readings to truly grasp the underlying messages.\"},{\"timestamp\":[53,null],\"text\":\" This inherent complexity is exactly what has kept scholars and fans debating the true intento. Their stories for decades.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What do these two famous writers have in common?",
+            "correctAnswer": "They both make references to each other in their work",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They both wrote in the same genre"
+              },
+              {
+                "content": "They both make references to each other in their work"
+              },
+              {
+                "content": "They both were born in the same country"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3bf0f655ee9d55bd25877c"
+          },
+          {
+            "content": "What is special about their works?",
+            "correctAnswer": "The meaning of their work is not always easily identified",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The meaning of their work is not always easily identified"
+              },
+              {
+                "content": "They use simple language and structure"
+              },
+              {
+                "content": "Their works are all based on real events"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3bf0f655ee9d55bd25877d"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3bf0f655ee9d55bd25877b"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ec69c88028aa29a1d15d",
+    "createdAt": "2026-01-02T16:03:53.455Z",
+    "updatedAt": "2026-06-24T15:00:06.153Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ecbec88028aa29a1d163",
+    "title": "A regional development plan",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A regional development plan ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293664519_195988edb579cd3c_14_regional_development_plan_verson1.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,3.4],\"text\":\" Welcome back to our community forum.\"},{\"timestamp\":[3.4,11.04],\"text\":\" We've been receiving a lot of letters regarding the proposed development project in our area.\"},{\"timestamp\":[11.04,16.6],\"text\":\" Residents oppose this plan, primarily because of its narrow focus.\"},{\"timestamp\":[16.6,23],\"text\":\" Many are disappointed that it doesn't do enough to promote alternatives to driving,\"},{\"timestamp\":[23,28],\"text\":\" such as better cycling lanes or expanded bus routes.\"},{\"timestamp\":[28,34.76],\"text\":\" Beyond the public's reaction, the City Council is also hitting some major roadblocks.\"},{\"timestamp\":[34.76,40.72],\"text\":\" The main difficulty the City Council is having with this plan is their realization that\"},{\"timestamp\":[40.72,49],\"text\":\" it is not making efficient use of existing land. Instead of revitalizing the empty spaces in the city centre,\"},{\"timestamp\":[49,54],\"text\":\" the proposal unnecessarily pushes into the outskirts,\"},{\"timestamp\":[54,58],\"text\":\" which many officials believe is a strategic mistake.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Why do residents oppose this plan?",
+            "correctAnswer": "It doesn't do enough to promote alternatives to driving",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It doesn't do enough to promote alternatives to driving"
+              },
+              {
+                "content": "It provides free public transportation for all residents"
+              },
+              {
+                "content": "It increases the number of public parks in the area"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba54d22eb5bbd6925c3b2"
+          },
+          {
+            "content": "What difficulties is the city council having with this plan?",
+            "correctAnswer": "The plan is not making efficient use of existing land",
+            "file": null,
+            "answerList": [
+              {
+                "content": "There is too much public support, making it hard to manage expectations"
+              },
+              {
+                "content": "The plan is not making efficient use of existing land"
+              },
+              {
+                "content": "The plan has already exceeded its budget by a large margin"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba54d22eb5bbd6925c3b3"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3ba54d22eb5bbd6925c3b1"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ecbec88028aa29a1d167",
+    "createdAt": "2026-01-02T16:05:18.601Z",
+    "updatedAt": "2026-06-24T09:37:17.915Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ed0fc88028aa29a1d16d",
+    "title": "Life after university",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Life after university ",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293751081_f834266844676242_16_life_after_uni_verson1.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,10],\"text\":\" Transitioning from the structured environment of academic life to the professional world is often one of the most significant shifts a young adult will ever experience.\"},{\"timestamp\":[10.5,17.4],\"text\":\" When standing at this crossroads, many graduates feel immense pressure to find the perfect role immediately.\"},{\"timestamp\":[17.5,30.48],\"text\":\" However, most career counselors suggest that the best approach for students is to be flexible and open-minded during the initial stages of their journey. Instead of limiting themselves to a narrow path or a specific\"},{\"timestamp\":[30.48,36.32],\"text\":\" job title, they should be willing to explore various industries, as their first job is rarely their\"},{\"timestamp\":[36.32,42.72],\"text\":\" last, but rather a valuable learning opportunity. Furthermore, it is vital for graduates to have a\"},{\"timestamp\":[42.72,47],\"text\":\" realistic understanding of the current economic landscape.\"},{\"timestamp\":[47,51.68],\"text\":\" When applying for positions in the modern market, students must pay close attention to the\"},{\"timestamp\":[51.68,55.92],\"text\":\" fact that jobs are becoming more competitive than ever before.\"},{\"timestamp\":[55.92,61.4],\"text\":\" With a global pool of talent and the rise of automation, simply having a degree is often\"},{\"timestamp\":[61.4,64.32],\"text\":\" just the baseline requirement.\"},{\"timestamp\":[64.32,69.04],\"text\":\" To succeed, applicants need to go beyond their formal qualifications by highlighting their\"},{\"timestamp\":[69.04,75.64],\"text\":\" soft skills, unique experiences, and a strong work ethic to distinguish themselves in an increasingly\"},{\"timestamp\":[75.64,77.44],\"text\":\" crowded field of candidates.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What should students do when choosing a career?",
+            "correctAnswer": "Be flexible and open minded",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Be flexible and open minded"
+              },
+              {
+                "content": "Focus only on the salary offered"
+              },
+              {
+                "content": "Choose the same career as their friends"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba4f722eb5bbd6925c341"
+          },
+          {
+            "content": "What should students pay attention to when applying for jobs these days?",
+            "correctAnswer": "They are becoming more competitive",
+            "file": null,
+            "answerList": [
+              {
+                "content": "They are becoming more competitive"
+              },
+              {
+                "content": "Companies prefer handwritten applications"
+              },
+              {
+                "content": "Most jobs no longer require any qualifications"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba4f722eb5bbd6925c342"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3ba4f722eb5bbd6925c340"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ed0fc88028aa29a1d171",
+    "createdAt": "2026-01-02T16:06:39.742Z",
+    "updatedAt": "2026-06-24T09:35:51.636Z",
+    "__v": 0
+  },
+  {
     "_id": "6957ed6ec88028aa29a1d177",
     "title": "Security cameras",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -469,140 +603,6 @@
     "__v": 0
   },
   {
-    "_id": "6957e8efc88028aa29a1cfa7",
-    "title": "A break from studying",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "A break from studying ",
-        "content": "chọn đáp án đúng",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293016853_29aa0c4cf2641f90_1_study_break.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,6.04],\"text\":\" After completing high school, many of my friends chose to go directly to university, while\"},{\"timestamp\":[6.04,8.4],\"text\":\" I opted for a different direction.\"},{\"timestamp\":[8.4,12.64],\"text\":\" Honestly, I didn't feel prepared to begin higher education at that time.\"},{\"timestamp\":[12.64,16.24],\"text\":\" I needed some time away from studying to refresh my mind.\"},{\"timestamp\":[16.24,20.24],\"text\":\" Rather than signing up for courses, I spent the following two years traveling throughout\"},{\"timestamp\":[20.24,21.72],\"text\":\" Asia and Europe.\"},{\"timestamp\":[21.72,26.6],\"text\":\" For me, it wasn't simply a holiday. I wanted to gain practical experience\"},{\"timestamp\":[26.6,28.64],\"text\":\" and explore different perspectives\"},{\"timestamp\":[28.64,31.36],\"text\":\" before eventually returning to my studies.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "Why hasn't he gone to college?\n",
-            "correctAnswer": "He wasn't ready to start higher education",
-            "file": null,
-            "answerList": [
-              {
-                "content": "He didn't get good enough grades"
-              },
-              {
-                "content": "He wasn't ready to start higher education"
-              },
-              {
-                "content": "He couldn't afford the tuition fees."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0e455ee9d55bd25870e"
-          },
-          {
-            "content": "Why did he decide to travel for 2 years?",
-            "correctAnswer": "To gain life experience.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "To gain life experience."
-              },
-              {
-                "content": "To avoid studying."
-              },
-              {
-                "content": "To travelling."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0e455ee9d55bd25870f"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3bf0e455ee9d55bd25870d"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957e8efc88028aa29a1cfab",
-    "createdAt": "2026-01-02T15:49:03.877Z",
-    "updatedAt": "2026-06-24T14:59:48.718Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ea28c88028aa29a1cfc5",
-    "title": "Television series",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Television series ",
-        "content": "Nghe kỹ audio để chọn đáp án đúng ",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782293445981_42983ef2203c9131_7_television_series_verson1.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" In the world of entertainment, very few shows manage to capture the public's imagination,\"},{\"timestamp\":[5.52,10.96],\"text\":\" like the one we are discussing today. While many shows start with a great premise,\"},{\"timestamp\":[10.96,17.52],\"text\":\" but fail to keep the momentum. The reason this particular show has become a global phenomenon\"},{\"timestamp\":[17.52,26.12],\"text\":\" is that it has the consistent quality throughout every single season. From the very first episode to the Grand finale, the\"},{\"timestamp\":[26.12,32.04],\"text\":\" writing, acting, and production values never drop, ensuring that fans stay\"},{\"timestamp\":[32.04,37.28],\"text\":\" engaged for years. However, this success doesn't happen in a vacuum. If we look\"},{\"timestamp\":[37.28,41.72],\"text\":\" at bigger picture, the entire television landscape is undergoing a massive\"},{\"timestamp\":[41.72,45.84],\"text\":\" transformation. Experts have noted that the current series industry\"},{\"timestamp\":[45.84,52.64],\"text\":\" is heavily affected by how audiences consume content. In fact, viewer habits influence the way that\"},{\"timestamp\":[52.64,58.4],\"text\":\" series are made more than ever before. With the rise of streaming platforms and the trend of binge\"},{\"timestamp\":[58.4,64.4],\"text\":\" watching, producers and directors are now forced to adapt their storytelling techniques and release.\"},{\"timestamp\":[64.75,69.25],\"text\":\" Schedules to match the specific preferences and behaviors of the modern viewer.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "Why is this series so popular?",
-            "correctAnswer": "It has the consistent quality throughout.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It was only available for a short time."
-              },
-              {
-                "content": "It features unknown actors."
-              },
-              {
-                "content": "It has the consistent quality throughout."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0ef55ee9d55bd258745"
-          },
-          {
-            "content": "What is the current series industry affected by?",
-            "correctAnswer": "Viewer habits influence the way that series are made.",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Actors now write most of the scripts themselves."
-              },
-              {
-                "content": "Series are no longer produced for online platforms."
-              },
-              {
-                "content": "Viewer habits influence the way that series are made."
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3bf0ef55ee9d55bd258746"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3bf0ef55ee9d55bd258744"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957ea28c88028aa29a1cfc9",
-    "createdAt": "2026-01-02T15:54:16.624Z",
-    "updatedAt": "2026-06-24T14:59:59.364Z",
-    "__v": 0
-  },
-  {
     "_id": "6957edb6c88028aa29a1d181",
     "title": "A new novel of a famous writer",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -667,140 +667,6 @@
     "id": "6957edb6c88028aa29a1d185",
     "createdAt": "2026-01-02T16:09:26.848Z",
     "updatedAt": "2026-06-24T09:38:34.310Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ee83c88028aa29a1d19f",
-    "title": "A research into happiness",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "A research into happiness",
-        "content": "Nghe kỹ audio để chọn đáp án đúng ",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294164065_e4e13cf37b33a131_25_research_appiness.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,9.28],\"text\":\" Research into happiness has attracted considerable attention as scientists try to understand what truly contributes to people's sense of well-being.\"},{\"timestamp\":[9.28,14.24],\"text\":\" Although the topic appears frequently in newspapers and online articles,\"},{\"timestamp\":[14.24,20.4],\"text\":\" the way it is presented is often misleading, a common problem is that the media does not report.\"},{\"timestamp\":[20.4,26.04],\"text\":\" The findings accurately, instead, complex studies are simplified or taken out of context\"},{\"timestamp\":[26.04,32],\"text\":\" with headlines focusing on surprising or appealing conclusions rather than the full picture.\"},{\"timestamp\":[32,37.56],\"text\":\" This can give the public an incomplete or even incorrect understanding of what the research\"},{\"timestamp\":[37.56,43.42],\"text\":\" actually shows, regarding the overall value of this research, the speaker expresses a cautious\"},{\"timestamp\":[43.42,45.52],\"text\":\" opinion while these studies offer\"},{\"timestamp\":[45.52,51.52],\"text\":\" interesting perspectives on human behavior and emotions. It seems unlikely that they will lead to\"},{\"timestamp\":[51.52,57.2],\"text\":\" a single definitive answer. Happiness is a complex concept that varies greatly from person to\"},{\"timestamp\":[57.2,65.32],\"text\":\" person and is influenced by many different factors, including culture, lifestyle, and personal expectations.\"},{\"timestamp\":[65.32,69.48],\"text\":\" Because of this complexity, the research may continue to evolve.\"},{\"timestamp\":[69.48,73.68],\"text\":\" But it is unlikely to produce one clear conclusion that applies universally.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "How has this research into happiness been responded to?",
-            "correctAnswer": "It has not been accurately reported by the media",
-            "file": null,
-            "answerList": [
-              {
-                "content": "It has led to immediate changes in government policy"
-              },
-              {
-                "content": "It has not been accurately reported by the media"
-              },
-              {
-                "content": "It has been completely ignored by the public"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba69522eb5bbd6925c4f5"
-          },
-          {
-            "content": "What is the speaker's opinion on this research in general?",
-            "correctAnswer": "The research is unlikely to find a conclusive answer",
-            "file": null,
-            "answerList": [
-              {
-                "content": "The research has already changed public attitudes"
-              },
-              {
-                "content": "The researchers are biased in their approach"
-              },
-              {
-                "content": "The research is unlikely to find a conclusive answer"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba69522eb5bbd6925c4f6"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3ba69522eb5bbd6925c4f4"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957ee83c88028aa29a1d1a3",
-    "createdAt": "2026-01-02T16:12:51.496Z",
-    "updatedAt": "2026-06-24T09:42:45.314Z",
-    "__v": 0
-  },
-  {
-    "_id": "6957ef19c88028aa29a1d1b3",
-    "title": "Writer's block",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Writer's block",
-        "content": "Nghe kỹ audio để chọn đáp án đúng ",
-        "answerList": null,
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294390676_ecfe6b977dbb3329_30_writer_block.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,6.8],\"text\":\" Many writers experience periods when they struggle to stay focused or produce new ideas.\"},{\"timestamp\":[6.8,10.6],\"text\":\" A situation often referred to as writers block.\"},{\"timestamp\":[10.6,17.34],\"text\":\" According to the speaker, one effective way to overcome this problem is by creating dedicated\"},{\"timestamp\":[17.34,21.04],\"text\":\" periods of time specifically for writing.\"},{\"timestamp\":[21.04,27.6],\"text\":\" Instead of waiting for inspiration to appear naturally, writers are encouraged to build a\"},{\"timestamp\":[27.6,32.72],\"text\":\" routine and commit to writing at certain times each day.\"},{\"timestamp\":[32.72,40.12],\"text\":\" This structured approach helps improve concentration and allows writers to develop discipline.\"},{\"timestamp\":[40.12,45.5],\"text\":\" Making it easier to stay productive even when motivation is low.\"},{\"timestamp\":[45.5,52.66],\"text\":\" At the same time, when generating ideas, writers sometimes make avoidable mistakes.\"},{\"timestamp\":[52.66,58.34],\"text\":\" One common issue is that they refuse to seek the advice of other people.\"},{\"timestamp\":[58.34,65],\"text\":\" Some prefer to work entirely on their own, believing that feedback might affect their creativity.\"},{\"timestamp\":[65,71],\"text\":\" In reality, discussing ideas with others can provide fresh perspectives\"},{\"timestamp\":[71,74],\"text\":\" and help improve the quality of their work.\"},{\"timestamp\":[74,null],\"text\":\" By ignoring external input, writers may limit their creativity and misvaluable opportunities to develop stronger ideas.\"}]</p>",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "What helps writers focus more on writing?",
-            "correctAnswer": "Create dedicated periods",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Work in noisy environments"
-              },
-              {
-                "content": "Rely entirely on inspiration"
-              },
-              {
-                "content": "Create dedicated periods"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba77722eb5bbd6925c5e5"
-          },
-          {
-            "content": "What is a common mistake writers make when generating ideas?",
-            "correctAnswer": "Refusing to seek the advice of other people",
-            "file": null,
-            "answerList": [
-              {
-                "content": "Writing ideas only in digital format"
-              },
-              {
-                "content": "Refusing to seek the advice of other people"
-              },
-              {
-                "content": "Spending too much time researching grammar rules"
-              }
-            ],
-            "image": null,
-            "suggestion": null,
-            "_id": "6a3ba77722eb5bbd6925c5e6"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a3ba77722eb5bbd6925c5e4"
-      }
-    ],
-    "questionPart": "FOUR",
-    "questionType": "LISTENING",
-    "id": "6957ef19c88028aa29a1d1b7",
-    "createdAt": "2026-01-02T16:15:21.737Z",
-    "updatedAt": "2026-06-24T09:46:31.259Z",
     "__v": 0
   },
   {
@@ -938,6 +804,73 @@
     "__v": 0
   },
   {
+    "_id": "6957ee83c88028aa29a1d19f",
+    "title": "A research into happiness",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "A research into happiness",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294164065_e4e13cf37b33a131_25_research_appiness.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,9.28],\"text\":\" Research into happiness has attracted considerable attention as scientists try to understand what truly contributes to people's sense of well-being.\"},{\"timestamp\":[9.28,14.24],\"text\":\" Although the topic appears frequently in newspapers and online articles,\"},{\"timestamp\":[14.24,20.4],\"text\":\" the way it is presented is often misleading, a common problem is that the media does not report.\"},{\"timestamp\":[20.4,26.04],\"text\":\" The findings accurately, instead, complex studies are simplified or taken out of context\"},{\"timestamp\":[26.04,32],\"text\":\" with headlines focusing on surprising or appealing conclusions rather than the full picture.\"},{\"timestamp\":[32,37.56],\"text\":\" This can give the public an incomplete or even incorrect understanding of what the research\"},{\"timestamp\":[37.56,43.42],\"text\":\" actually shows, regarding the overall value of this research, the speaker expresses a cautious\"},{\"timestamp\":[43.42,45.52],\"text\":\" opinion while these studies offer\"},{\"timestamp\":[45.52,51.52],\"text\":\" interesting perspectives on human behavior and emotions. It seems unlikely that they will lead to\"},{\"timestamp\":[51.52,57.2],\"text\":\" a single definitive answer. Happiness is a complex concept that varies greatly from person to\"},{\"timestamp\":[57.2,65.32],\"text\":\" person and is influenced by many different factors, including culture, lifestyle, and personal expectations.\"},{\"timestamp\":[65.32,69.48],\"text\":\" Because of this complexity, the research may continue to evolve.\"},{\"timestamp\":[69.48,73.68],\"text\":\" But it is unlikely to produce one clear conclusion that applies universally.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "How has this research into happiness been responded to?",
+            "correctAnswer": "It has not been accurately reported by the media",
+            "file": null,
+            "answerList": [
+              {
+                "content": "It has led to immediate changes in government policy"
+              },
+              {
+                "content": "It has not been accurately reported by the media"
+              },
+              {
+                "content": "It has been completely ignored by the public"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba69522eb5bbd6925c4f5"
+          },
+          {
+            "content": "What is the speaker's opinion on this research in general?",
+            "correctAnswer": "The research is unlikely to find a conclusive answer",
+            "file": null,
+            "answerList": [
+              {
+                "content": "The research has already changed public attitudes"
+              },
+              {
+                "content": "The researchers are biased in their approach"
+              },
+              {
+                "content": "The research is unlikely to find a conclusive answer"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba69522eb5bbd6925c4f6"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3ba69522eb5bbd6925c4f4"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ee83c88028aa29a1d1a3",
+    "createdAt": "2026-01-02T16:12:51.496Z",
+    "updatedAt": "2026-06-24T09:42:45.314Z",
+    "__v": 0
+  },
+  {
     "_id": "6957eed0c88028aa29a1d1a9",
     "title": "Criticism of the new novel",
     "timeToDo": "1970-01-01T00:00:00.035Z",
@@ -1002,6 +935,73 @@
     "id": "6957eed0c88028aa29a1d1ad",
     "createdAt": "2026-01-02T16:14:08.872Z",
     "updatedAt": "2026-06-24T09:44:35.323Z",
+    "__v": 0
+  },
+  {
+    "_id": "6957ef19c88028aa29a1d1b3",
+    "title": "Writer's block",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Writer's block",
+        "content": "Nghe kỹ audio để chọn đáp án đúng ",
+        "answerList": null,
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/06/1782294390676_ecfe6b977dbb3329_30_writer_block.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,6.8],\"text\":\" Many writers experience periods when they struggle to stay focused or produce new ideas.\"},{\"timestamp\":[6.8,10.6],\"text\":\" A situation often referred to as writers block.\"},{\"timestamp\":[10.6,17.34],\"text\":\" According to the speaker, one effective way to overcome this problem is by creating dedicated\"},{\"timestamp\":[17.34,21.04],\"text\":\" periods of time specifically for writing.\"},{\"timestamp\":[21.04,27.6],\"text\":\" Instead of waiting for inspiration to appear naturally, writers are encouraged to build a\"},{\"timestamp\":[27.6,32.72],\"text\":\" routine and commit to writing at certain times each day.\"},{\"timestamp\":[32.72,40.12],\"text\":\" This structured approach helps improve concentration and allows writers to develop discipline.\"},{\"timestamp\":[40.12,45.5],\"text\":\" Making it easier to stay productive even when motivation is low.\"},{\"timestamp\":[45.5,52.66],\"text\":\" At the same time, when generating ideas, writers sometimes make avoidable mistakes.\"},{\"timestamp\":[52.66,58.34],\"text\":\" One common issue is that they refuse to seek the advice of other people.\"},{\"timestamp\":[58.34,65],\"text\":\" Some prefer to work entirely on their own, believing that feedback might affect their creativity.\"},{\"timestamp\":[65,71],\"text\":\" In reality, discussing ideas with others can provide fresh perspectives\"},{\"timestamp\":[71,74],\"text\":\" and help improve the quality of their work.\"},{\"timestamp\":[74,null],\"text\":\" By ignoring external input, writers may limit their creativity and misvaluable opportunities to develop stronger ideas.\"}]</p>",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What helps writers focus more on writing?",
+            "correctAnswer": "Create dedicated periods",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Work in noisy environments"
+              },
+              {
+                "content": "Rely entirely on inspiration"
+              },
+              {
+                "content": "Create dedicated periods"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba77722eb5bbd6925c5e5"
+          },
+          {
+            "content": "What is a common mistake writers make when generating ideas?",
+            "correctAnswer": "Refusing to seek the advice of other people",
+            "file": null,
+            "answerList": [
+              {
+                "content": "Writing ideas only in digital format"
+              },
+              {
+                "content": "Refusing to seek the advice of other people"
+              },
+              {
+                "content": "Spending too much time researching grammar rules"
+              }
+            ],
+            "image": null,
+            "suggestion": null,
+            "_id": "6a3ba77722eb5bbd6925c5e6"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a3ba77722eb5bbd6925c5e4"
+      }
+    ],
+    "questionPart": "FOUR",
+    "questionType": "LISTENING",
+    "id": "6957ef19c88028aa29a1d1b7",
+    "createdAt": "2026-01-02T16:15:21.737Z",
+    "updatedAt": "2026-06-24T09:46:31.259Z",
     "__v": 0
   },
   {

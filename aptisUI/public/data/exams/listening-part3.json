@@ -973,5 +973,294 @@
     "createdAt": "2026-06-22T03:59:01.579Z",
     "updatedAt": "2026-06-22T03:59:01.579Z",
     "__v": 0
+  },
+  {
+    "_id": "6a3c8ca25b4af1f9e232a19a",
+    "title": "Local Culture diffirent",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Local Culture diffirent",
+        "content": "Listen to two people discussing Local Cultural Differences. Read the opinions below and decide whose opinion matches the statements: the man, the woman, or both the man and the woman. You can listen to the discussion twice.",
+        "answerList": [
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/07/1782880907706_c9d6072d7719e2dc_15_010726094130.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,5.32],\"text\":\" Listen to two people discussing local cultural differences. Read the opinions below and\"},{\"timestamp\":[5.32,10.96],\"text\":\" decide whose opinion matches the statements, the man. The woman, or both the man and the\"},{\"timestamp\":[10.96,17.24],\"text\":\" woman, you can listen to the discussion twice.\"},{\"timestamp\":[17.24,22],\"text\":\" Have you ever thought about how different local cultures can be, even within the same country?\"},{\"timestamp\":[22,27.76],\"text\":\" Definitely. When I visited different regions last year, I was really surprised by how\"},{\"timestamp\":[27.76,31.08],\"text\":\" unique each place felt, the food.\"},{\"timestamp\":[31.08,34.72],\"text\":\" The festivals, the daily customs.\"},{\"timestamp\":[34.72,40.2],\"text\":\" For me, the hardest part is always the language, even when people share a national language.\"},{\"timestamp\":[40.2,43.48],\"text\":\" Local dialects and accents can create real misunderstandings.\"},{\"timestamp\":[43.48,48.52],\"text\":\" I honestly think language is the biggest barrier to experiencing a different local culture.\"},{\"timestamp\":[48.52,52.16],\"text\":\" I would not say language alone is the biggest issue.\"},{\"timestamp\":[52.16,57.68],\"text\":\" There are other challenges too, like differences in values and social customs.\"},{\"timestamp\":[57.68,63.88],\"text\":\" But I am also concerned about how globalization is affecting local cultures.\"},{\"timestamp\":[63.88,67],\"text\":\" International trends are slowly replacing traditional customs everywhere.\"},{\"timestamp\":[67,72],\"text\":\" I think you are right about that. Globalization is clearly changing the way people live,\"},{\"timestamp\":[72,75],\"text\":\" and local traditions are not as strong as they used to be.\"},{\"timestamp\":[75,81],\"text\":\" What worries me most is that younger people seem less motivated to learn about their own heritage.\"},{\"timestamp\":[81,85.5],\"text\":\" They are more interested in global trends than in local\"},{\"timestamp\":[85.5,91],\"text\":\" traditions. I am not completely sure about that. Some young people are actually very proud\"},{\"timestamp\":[91,94.88],\"text\":\" of where they come from and work hard to keep their traditions alive.\"},{\"timestamp\":[94.88,100.16],\"text\":\" Maybe a few are, but in general, local knowledge is not being passed on the way it used\"},{\"timestamp\":[100.16,106.8],\"text\":\" to be. That is why I believe travel is really the most effective way to truly understand and appreciate\"},{\"timestamp\":[106.8,109.24],\"text\":\" cultural differences.\"},{\"timestamp\":[109.24,114.4],\"text\":\" You learn so much more by being there in person than by reading about it.\"},{\"timestamp\":[114.4,null],\"text\":\" Travel can certainly be eye-opening, but I think there are other good ways to learn too, such as online resources and cultural events.\"}]</p>",
+        "subSuggestion": "<p>Man: Have you ever thought about how different local cultures can be, even within the same country?</p><p>Woman: Definitely. When I visited different regions last year, I was really surprised by how unique each place felt — the food, the festivals, the daily customs.</p><p>Man: For me, the hardest part is always the language. Even when people share a national language, local dialects and accents can create real misunderstandings. I honestly think language is the biggest barrier to experiencing a different local culture.</p><p>Woman: I would not say language alone is the biggest issue. There are other challenges too, like differences in values and social customs. But I am also concerned about how globalisation is affecting local cultures. International trends are slowly replacing traditional customs everywhere.</p><p>Man: I think you are right about that. Globalisation is clearly changing the way people live, and local traditions are not as strong as they used to be.</p><p>Woman: What worries me most is that younger people seem less motivated to learn about their own heritage. They are more interested in global trends than in local traditions.</p><p>Man: I am not completely sure about that. Some young people are actually very proud of where they come from and work hard to keep their traditions alive.</p><p>Woman: Maybe a few are. But in general, local knowledge is not being passed on the way it used to be. That is why I believe travel is really the most effective way to truly understand and appreciate cultural differences. You learn so much more by being there in person than by reading about it.</p><p>Man: Travel can certainly be eye-opening. But I think there are other good ways to learn too, such as online resources and cultural events.</p>",
+        "subQuestion": [
+          {
+            "content": "Language is the main barrier to experiencing a local culture.",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449a8d7886f21f186f633f"
+          },
+          {
+            "content": "Globalisation is having an impact on local cultures.",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449a8d7886f21f186f6340"
+          },
+          {
+            "content": "Young people are less interested in their own local heritage.",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449a8d7886f21f186f6341"
+          },
+          {
+            "content": "Travel is the best way to understand cultural differences.",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449a8d7886f21f186f6342"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a449a8d7886f21f186f633e"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a3c8ca25b4af1f9e232a1a0",
+    "createdAt": "2026-06-25T02:04:18.412Z",
+    "updatedAt": "2026-07-01T04:41:49.432Z",
+    "__v": 0
+  },
+  {
+    "_id": "b2c3d4e5f6a1b2c3d4e5f6b0",
+    "title": "Children and young people with technology - Nam nói trước",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Children and young people with technology -  Nam nói trước",
+        "content": "Listen to two people discussing Children and young people with technology. Read the opinions below and decide whose opinion matches the statements: the man, the woman, or both the man and the woman. You can listen to the discussion twice.",
+        "answerList": [
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/07/1782881990033_f4ccf8c0784184a4_F_15_150526171850.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.4],\"text\":\" Listen to two people discussing children and young people with technology.\"},{\"timestamp\":[4.4,9.8],\"text\":\" Read the opinions below and decide whose opinion matches the statements, the man.\"},{\"timestamp\":[9.8,18.28],\"text\":\" The woman, or both the man and the woman, you can listen to the discussion twice.\"},{\"timestamp\":[18.28,30.24],\"text\":\" It's remarkable how dependent children and teenagers have become on technology these days. Everywhere you go, you see young people staring at screens instead of interacting with the\"},{\"timestamp\":[30.24,32.4],\"text\":\" people around them.\"},{\"timestamp\":[32.4,36.16],\"text\":\" That's true, but I don't think technology is entirely negative.\"},{\"timestamp\":[36.16,41.28],\"text\":\" In fact, many children are far more engaged in learning when lessons involve digital tools\"},{\"timestamp\":[41.28,44.2],\"text\":\" or interactive platforms.\"},{\"timestamp\":[44.2,48.72],\"text\":\" Traditional teaching methods alone often fail to capture their attention nowadays.\"},{\"timestamp\":[48.72,54.4],\"text\":\" I agree that technology has made education more accessible and stimulating.\"},{\"timestamp\":[54.4,60.64],\"text\":\" Educational apps, online courses, and virtual learning environments can definitely motivate\"},{\"timestamp\":[60.64,63.24],\"text\":\" students to learn independently.\"},{\"timestamp\":[63.24,66.64],\"text\":\" However, I'm concerned that excessive screen time\"},{\"timestamp\":[66.64,71.4],\"text\":\" is affecting young people's ability to communicate face to face.\"},{\"timestamp\":[71.4,76.48],\"text\":\" I've noticed that, too, some children seem perfectly confident online but become extremely\"},{\"timestamp\":[76.48,82],\"text\":\" awkward in real-life conversations. They often struggle to maintain eye contact or express\"},{\"timestamp\":[82,85.16],\"text\":\" themselves clearly without relying on messaging apps or social\"},{\"timestamp\":[85.16,86.16],\"text\":\" media.\"},{\"timestamp\":[86.16,92.36],\"text\":\" Exactly. Many parents are also finding it increasingly difficult to manage their children's\"},{\"timestamp\":[92.36,98.8],\"text\":\" use of technology. Devices are now involved in nearly every aspect of daily life. From\"},{\"timestamp\":[98.8,106.06],\"text\":\" education and entertainment to social interaction. As a result, families often need guidance on how to set\"},{\"timestamp\":[106.06,108.1],\"text\":\" healthy boundaries.\"},{\"timestamp\":[108.1,113.16],\"text\":\" That's a very valid point. Some parents are not particularly familiar with modern technology\"},{\"timestamp\":[113.16,119.22],\"text\":\" themselves, so monitoring online activities can be quite challenging. Nevertheless, I believe\"},{\"timestamp\":[119.22,123.52],\"text\":\" children can gradually learn to regulate their own online behaviour if they are given proper\"},{\"timestamp\":[123.52,126.4],\"text\":\" support and guidance from an early age.\"},{\"timestamp\":[126.4,133.16],\"text\":\" Perhaps, but self-control is not always easy for young people. Social media platforms are\"},{\"timestamp\":[133.16,140.28],\"text\":\" intentionally designed to keep users engaged for long periods of time. Without supervision,\"},{\"timestamp\":[140.28,151.28],\"text\":\" many children can easily become addicted to online entertainment. I don't disagree with that. However, completely restricting technology is unrealistic in today's world.\"},{\"timestamp\":[151.28,156.4],\"text\":\" Instead, I think schools and families should focus on teaching digital responsibility.\"},{\"timestamp\":[156.4,161.52],\"text\":\" Young people need to understand both the advantages and the potential dangers of the online environment.\"},{\"timestamp\":[162.32,168.24],\"text\":\" That sounds reasonable. After all, technology itself is not the problem.\"},{\"timestamp\":[168.24,172.96],\"text\":\" The real issue is whether children are taught how to use it in a balanced and responsible\"},{\"timestamp\":[172.96,174.36],\"text\":\" manner.\"},{\"timestamp\":[174.36,null],\"text\":\" Exactly, if adults provide the right guidance, technology can become a valuable educational and social tool rather than something harmful to young people's development.\"}]</p>",
+        "subSuggestion": "<p>Man: It’s remarkable how dependent children and teenagers have become on technology these days. Everywhere you go, you see young people staring at screens instead of interacting with the people around them.</p><p>Woman: That’s true, but I don’t think technology is entirely negative. In fact, many children are far more engaged in learning when lessons involve digital tools or interactive platforms. Traditional teaching methods alone often fail to capture their attention nowadays.</p><p>Man: I agree that technology has made education more accessible and stimulating. Educational apps, online courses, and virtual learning environments can definitely motivate students to learn independently. However, I’m concerned that excessive screen time is affecting young people’s ability to communicate face-to-face.</p><p>Woman: I’ve noticed that too. Some children seem perfectly confident online but become extremely awkward in real-life conversations. They often struggle to maintain eye contact or express themselves clearly without relying on messaging apps or social media.</p><p>Man: Exactly. Many parents are also finding it increasingly difficult to manage their children’s use of technology. Devices are now involved in nearly every aspect of daily life, from education and entertainment to social interaction. As a result, families often need guidance on how to set healthy boundaries.</p><p>Woman: That’s a very valid point. Some parents are not particularly familiar with modern technology themselves, so monitoring online activities can be quite challenging. Nevertheless, I believe children can gradually learn to regulate their own online behaviour if they are given proper support and guidance from an early age.</p><p>Man: Perhaps, but self-control is not always easy for young people. Social media platforms are intentionally designed to keep users engaged for long periods of time. Without supervision, many children can easily become addicted to online entertainment.</p><p>Woman: I don’t disagree with that. However, completely restricting technology is unrealistic in today’s world. Instead, I think schools and families should focus on teaching digital responsibility. Young people need to understand both the advantages and the potential dangers of the online environment.</p><p>Man: That sounds reasonable. After all, technology itself is not the problem. The real issue is whether children are taught how to use it in a balanced and responsible manner.</p><p>Woman: Exactly. If adults provide the right guidance, technology can become a valuable educational and social tool rather than something harmful to young people’s development.</p>",
+        "subQuestion": [
+          {
+            "content": "Children are interested in tech-based learning",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449ec77886f21f186f6987"
+          },
+          {
+            "content": "Children find it difficult to communicate offline",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449ec77886f21f186f6988"
+          },
+          {
+            "content": "Families need help to mangage technology ",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449ec77886f21f186f6989"
+          },
+          {
+            "content": "Children can learn to regulate their online interactions ",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449ec77886f21f186f698a"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a449ec77886f21f186f6986"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a449ec77886f21f186f698b",
+    "createdAt": "2026-07-01T04:59:51.494Z",
+    "updatedAt": "2026-07-01T04:59:51.494Z",
+    "__v": 0
+  },
+
+  {
+    "_id": "b2c3d4e5f6a1b2c3d4e5f6a0",
+    "title": "homeschooling",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "subSuggestion": "",
+        "questionTitle": "homeschooling",
+        "content": "Bài nghe phần này sẽ là nữ nói trước",
+        "answerList": [
+          { "content": "Man" },
+          { "content": "Woman" },
+          { "content": "Both" }
+        ],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Statement 1",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a1"
+          },
+          {
+            "content": "Statement 2",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a2"
+          },
+          {
+            "content": "Statement 3",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a3"
+          },
+          {
+            "content": "Statement 4",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "b2c3d4e5f6a1b2c3d4e5f6a4"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "b2c3d4e5f6a1b2c3d4e5f6a5"
+      }
+    ]
+  },
+  {
+    "_id": "6a449fca7886f21f186f6a3a",
+    "title": "Work Business / Business and Cultural ",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work Business / Business and Cultural ",
+        "content": "chưa có file audio nên học đáp án trước",
+        "answerList": [
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3c"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3d"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3e"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a449fca7886f21f186f6a3b"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a449fca7886f21f186f6a40",
+    "createdAt": "2026-07-01T05:04:10.920Z",
+    "updatedAt": "2026-07-01T05:04:10.920Z",
+    "__v": 0
   }
 ]

@@ -118,475 +118,121 @@
     "__v": 0
   },
   {
-    "_id": "695a776f10b9d3fe9bd3a8af",
+    "_id": "6955de965723012229d3fc6b",
     "data": {
-      "title": "Music festival - Version 1",
+      "title": "Extreme sports ( Phiên bản 3)",
       "timeToDo": 35,
       "questions": {
-        "id": "69c2127c683ec8b79c910320",
-        "questionTitle": "Music festival - Version 1",
-        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;I stayed until the very last moment of the festival and absolutely loved the grand finale. The stage lit up with dazzling lights and fireworks, creating an unforgettable atmosphere. Although getting there was a hassle due to heavy traffic and packed buses, once I arrived, all those inconveniences faded away. In the end, the final performance made every bit of the struggle worthwhile.</p><p><strong>B:</strong>&nbsp;Normally, I steer clear of festivals, but I decided to give this one a try. Unfortunately, I didn’t have a great time. The sound quality was poor, the event schedule seemed chaotic, and to top it off, it started raining heavily. The muddy ground made things even worse, and I spent most of the day feeling uncomfortable. Honestly, I didn’t think it was worth the trouble. The only highlight for me was the beautiful park where the festival took place.</p><p><strong>C:</strong>&nbsp;I really enjoyed the lively atmosphere created by the music. One of the bands on the opening night was so amazing that I couldn’t help but sing along. However, everything was quite expensive. The tickets were pricey, and the food and drinks were ridiculously overcharged. I ended up spending more than I had planned. Even though the performances were great, I do hope the organizers will bring the prices down next year.</p><p><strong>D:</strong>&nbsp;For me, the most memorable part of the festival was its location. The park by the river was vast and picturesque, with plenty of spots to sit and unwind between performances. I enjoyed a nice lunch there, though it was a bit pricey. Some of the shows were enjoyable, but I didn’t stay for the entire event. Overall, it was the venue that left the biggest impression on me.</p>",
+        "id": "69b1301027e8fed251495720",
+        "questionTitle": "Extreme sports ( Phiên bản 3)",
+        "content": "<p class=\"ql-align-justify\">Person A:</p><p class=\"ql-align-justify\">For me, the most important thing about extreme sports is preparation. Many people think it’s just about excitement and bravery, but I don’t agree. Without proper training, you can easily get injured or even cause accidents for other people. I once joined a rock-climbing course, and I spent weeks learning how to use the equipment safely. After that, the real climb was much more enjoyable because I felt confident. I believe training is not only useful but also makes the whole experience less stressful and more rewarding.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person B:</p><p class=\"ql-align-justify\">I have always preferred traditional sports such as swimming and running because they keep me healthy without being too dangerous. Still, I wanted to know what an extreme sport would feel like, so last year I tried bungee jumping while on holiday. At first, I was extremely nervous, but when I finally jumped, the feeling was unforgettable. It gave me a thrill that swimming never could. Even so, I still practice swimming every week because it’s safer and more practical, but I admit that extreme sports can be fun if you try them at least once.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person C:</p><p class=\"ql-align-justify\">Honestly, I don’t understand why people do extreme sports. They seem very risky and unnecessary to me. I have never tried one and I don’t plan to. Some of my friends invited me to join them for snowboarding and paragliding, but I always said no. It’s not that I don’t like sports—I enjoy cycling and tennis—but I don’t see the point of risking my health just to feel a few seconds of excitement. To me, extreme sports are not important for a happy life, and I avoid them whenever possible.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person D:</p><p class=\"ql-align-justify\">What I really enjoy about extreme sports is that they often take place in nature. Last summer, I went kayaking on a wild river, and the scenery was breathtaking. I also tried mountain biking in the forest, and I loved the feeling of fresh air and freedom. It’s not just about the sport itself, but about being surrounded by mountains, trees, and water. I sometimes wish I had more free time and money so that I could join these activities more often. Extreme sports give me energy and help me feel connected to the natural world.</p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "69c2127c683ec8b79c910312",
+            "id": "69b1301027e8fed251495712",
             "numberOrder": null,
             "content": "Person A",
-            "_id": "69c2127c683ec8b79c910311"
+            "_id": "69b1301027e8fed251495711"
           },
           {
-            "id": "69c2127c683ec8b79c910314",
+            "id": "69b1301027e8fed251495714",
             "numberOrder": null,
             "content": "Person B",
-            "_id": "69c2127c683ec8b79c910313"
+            "_id": "69b1301027e8fed251495713"
           },
           {
-            "id": "69c2127c683ec8b79c910316",
+            "id": "69b1301027e8fed251495716",
             "numberOrder": null,
             "content": "Person C",
-            "_id": "69c2127c683ec8b79c910315"
+            "_id": "69b1301027e8fed251495715"
           },
           {
-            "id": "69c2127c683ec8b79c910318",
+            "id": "69b1301027e8fed251495718",
             "numberOrder": null,
             "content": "Person D",
-            "_id": "69c2127c683ec8b79c910317"
+            "_id": "69b1301027e8fed251495717"
           }
         ],
         "subQuestionAnswerList": [],
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Who experienced bad weather?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69c2127c683ec8b79c910319"
-          },
-          {
-            "content": "Who loved one of the performances?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031a"
-          },
-          {
-            "content": "Who thought it was too expensive?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031b"
-          },
-          {
-            "content": "Who found the traffic difficult?",
+            "content": "Who thinks preparation is necessary before doing extreme sports?",
             "correctAnswer": "Person A",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031c"
+            "_id": "69b1301027e8fed251495719"
           },
           {
-            "content": "Who liked the final performance of the show?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031d"
-          },
-          {
-            "content": "Who didn’t like the festival overall?",
+            "content": "Who usually does ordinary sports?",
             "correctAnswer": "Person B",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031e"
+            "_id": "69b1301027e8fed25149571a"
           },
           {
-            "content": "Who liked the location?",
+            "content": "Who once tried an extreme sport and enjoyed it?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1301027e8fed25149571b"
+          },
+          {
+            "content": "Who enjoys being outdoors when doing extreme sports?",
             "correctAnswer": "Person D",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69c2127c683ec8b79c91031f"
+            "_id": "69b1301027e8fed25149571c"
+          },
+          {
+            "content": "Who wishes to do more extreme sports in the future?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1301027e8fed25149571d"
+          },
+          {
+            "content": "Who believes extreme sports are not important?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1301027e8fed25149571e"
+          },
+          {
+            "content": "Who always avoids extreme sports?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b1301027e8fed25149571f"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "THREE",
         "image": null,
-        "_id": "69c2127c683ec8b79c910310"
+        "_id": "69b1301027e8fed251495710"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a725a"
+      "id": "69ce8f13650c2c0a4a1a722a"
     },
-    "createdAt": "2026-01-04T14:21:35.341Z",
-    "updatedAt": "2026-06-22T03:54:19.021Z",
-    "__v": 0
-  },
-  {
-    "_id": "695a7e8610b9d3fe9bd3aa1f",
-    "data": {
-      "title": "Job and trainning",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b131a127e8fed251495dc2",
-        "questionTitle": "Job and trainning",
-        "content": "<p><strong>Here are four people's experiences about choosing or starting their careers. Read carefully and answer the questions below.</strong></p><p><strong>A:</strong>&nbsp;When I first graduated from school, I wasn’t sure what to do, so I joined several volunteer programs with different companies and organizations to gain experience. I really enjoyed volunteering because it helped me decide on a career path and gave me many valuable lessons. I also believe I was able to make a difference through my work.</p><p><strong>B:</strong>&nbsp;Back in school, I already knew I wanted to become a teacher, so I didn’t need to try other jobs. I decided to study education at university, which is free in my country. Last summer, I did some practical training in local schools, and it was extremely helpful for my future career.</p><p><strong>C:</strong>&nbsp;When I was young, I used to help my neighbor, a plumber, with simple jobs like measuring pipes, loosening screws, and handling tools. It felt very natural for me to learn that kind of work, so later I studied for two years at university to become an electrician. Now, I’ve learned that there are shorter courses available in this field, and I regret not choosing that option instead.</p><p><strong>D:</strong>&nbsp;After graduating, I found it really difficult to get a job. I applied to many companies, but none accepted me because I lacked experience. Eventually, I found work at a gaming company that allowed me to work from home. It didn’t affect my daily schedule — I worked at night while my colleagues worked during the day — and that arrangement suited me perfectly.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b131a127e8fed251495db4",
-            "numberOrder": null,
-            "content": "Person A",
-            "_id": "69b131a127e8fed251495db3"
-          },
-          {
-            "id": "69b131a127e8fed251495db6",
-            "numberOrder": null,
-            "content": "Person B",
-            "_id": "69b131a127e8fed251495db5"
-          },
-          {
-            "id": "69b131a127e8fed251495db8",
-            "numberOrder": null,
-            "content": "Person C",
-            "_id": "69b131a127e8fed251495db7"
-          },
-          {
-            "id": "69b131a127e8fed251495dba",
-            "numberOrder": null,
-            "content": "Person D",
-            "_id": "69b131a127e8fed251495db9"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Who likes working with their hands?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dbb"
-          },
-          {
-            "content": "Who enjoys working during their training?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dbc"
-          },
-          {
-            "content": "Who thinks it is very hard to get your first job?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dbd"
-          },
-          {
-            "content": "Who thinks their training was too long?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dbe"
-          },
-          {
-            "content": "Who did not want to choose another job?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dbf"
-          },
-          {
-            "content": "Who enjoys working in a flexible working environment?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dc0"
-          },
-          {
-            "content": "Who thinks they benefited from working for free?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b131a127e8fed251495dc1"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "THREE",
-        "image": null,
-        "_id": "69b131a127e8fed251495db2"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a72ba"
-    },
-    "createdAt": "2026-01-04T14:51:50.178Z",
-    "updatedAt": "2026-06-22T03:54:19.321Z",
-    "__v": 0
-  },
-  {
-    "_id": "695a780910b9d3fe9bd3a8c7",
-    "data": {
-      "title": "Technology in childhood",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b130a227e8fed25149597a",
-        "questionTitle": "Technology in childhood",
-        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was young, I enjoyed playing simple computer games that my dad had programmed for me. Today, I teach my children to code using easy-to-use platforms like Scratch. These tools make learning programming enjoyable, though I spend time helping them grasp the logic behind it. Working together on coding fosters both creativity and teamwork.</p><p><strong>B:</strong>&nbsp;As a child, I loved spending time with my friends, building and controlling toy robots. I’ll never forget the thrill of making them move. Those experiences sparked my passion for technology, and I still look back fondly on those moments of discovery.</p><p><strong>C:</strong>&nbsp;When I was younger, I was fascinated by science magazines about robots and computers. The articles fueled my curiosity. Now, I develop mobile apps, creating tools for daily life. Thanks to modern software, the development process has become faster, but the excitement of innovation remains the same.</p><p><strong>D:</strong>&nbsp;As a kid, I spent rainy days with my siblings watching TV shows about gadgets and inventions. We eagerly awaited each new episode. Today, I prefer taking online courses to stay up-to-date with AI and blockchain. They offer flexibility and are a great way to keep pace with the rapidly changing tech world.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b130a227e8fed25149596c",
-            "numberOrder": null,
-            "content": "Person A",
-            "_id": "69b130a227e8fed25149596b"
-          },
-          {
-            "id": "69b130a227e8fed25149596e",
-            "numberOrder": null,
-            "content": "Person B",
-            "_id": "69b130a227e8fed25149596d"
-          },
-          {
-            "id": "69b130a227e8fed251495970",
-            "numberOrder": null,
-            "content": "Person C",
-            "_id": "69b130a227e8fed25149596f"
-          },
-          {
-            "id": "69b130a227e8fed251495972",
-            "numberOrder": null,
-            "content": "Person D",
-            "_id": "69b130a227e8fed251495971"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Who finds modern tools more accessible?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495973"
-          },
-          {
-            "content": "Who now enjoys app development?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495974"
-          },
-          {
-            "content": "Who loved playing with toy robots as a child?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495975"
-          },
-          {
-            "content": "Who loved watching tech shows as a child?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495976"
-          },
-          {
-            "content": "Who now prefers online learning?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495977"
-          },
-          {
-            "content": "Who enjoys coding with family?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495978"
-          },
-          {
-            "content": "Who loved science magazines as a child?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130a227e8fed251495979"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "THREE",
-        "image": null,
-        "_id": "69b130a227e8fed25149596a"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a7266"
-    },
-    "createdAt": "2026-01-04T14:24:09.320Z",
-    "updatedAt": "2026-06-22T03:54:19.064Z",
-    "__v": 0
-  },
-  {
-    "_id": "695a793e10b9d3fe9bd3a8f7",
-    "data": {
-      "title": "Work and life balance",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b130d827e8fed251495a76",
-        "questionTitle": "Work and life balance",
-        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was a child, I enjoyed playing board games with my parents after their busy workdays. Now, I get to share that experience with my own kids, and having a four-day workweek gives us more time together. Flexible schedules are a big help, but I always make sure to plan ahead so I can balance both work and family life. These are the moments that create lasting memories.</p><p><strong>B:</strong>&nbsp;As a kid, I would set up pretend offices with my friends, using toy phones and notebooks. I loved taking on the role of 'boss' and organizing our tasks. Those imaginative games taught me valuable lessons in organization and leadership, and I still laugh thinking about the 'serious' meetings we held.</p><p><strong>C:</strong>&nbsp;When I was younger, I devoured books about different professions, dreaming about what my future career might be. Those books inspired my ambition. Today, I rely on productivity apps to keep track of my tasks in my four-day workweek. While the apps make my work more efficient, the excitement of organizing and planning is still the same.</p><p><strong>D:</strong>&nbsp;As a child, I spent countless evenings playing tag with my friends in the neighborhood. On rainy days, though, I often found myself feeling bored indoors. Now, after work, I practice mindfulness to help me relax and recharge. It’s especially helpful with a shorter workweek, as it keeps me focused and refreshed.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b130d827e8fed251495a68",
-            "numberOrder": null,
-            "content": "Person A",
-            "_id": "69b130d827e8fed251495a67"
-          },
-          {
-            "id": "69b130d827e8fed251495a6a",
-            "numberOrder": null,
-            "content": "Person B",
-            "_id": "69b130d827e8fed251495a69"
-          },
-          {
-            "id": "69b130d827e8fed251495a6c",
-            "numberOrder": null,
-            "content": "Person C",
-            "_id": "69b130d827e8fed251495a6b"
-          },
-          {
-            "id": "69b130d827e8fed251495a6e",
-            "numberOrder": null,
-            "content": "Person D",
-            "_id": "69b130d827e8fed251495a6d"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Who now enjoys productivity apps?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a6f"
-          },
-          {
-            "content": "Who loved outdoor play as a child?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a70"
-          },
-          {
-            "content": "Who enjoys family time with board games?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a71"
-          },
-          {
-            "content": "Who loved organizing pretend offices as a child?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a72"
-          },
-          {
-            "content": "Who finds modern schedules more flexible?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a73"
-          },
-          {
-            "content": "Who loved reading about careers as a child?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a74"
-          },
-          {
-            "content": "Who now prefers mindfulness practices?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130d827e8fed251495a75"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "THREE",
-        "image": null,
-        "_id": "69b130d827e8fed251495a66"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a727e"
-    },
-    "createdAt": "2026-01-04T14:29:18.404Z",
-    "updatedAt": "2026-06-22T03:54:19.149Z",
+    "createdAt": "2026-01-01T02:40:22.514Z",
+    "updatedAt": "2026-06-22T03:54:18.849Z",
     "__v": 0
   },
   {
@@ -708,6 +354,124 @@
     "__v": 0
   },
   {
+    "_id": "695a768810b9d3fe9bd3a87f",
+    "data": {
+      "title": "Games from childhood",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b12f9d27e8fed2514954bc",
+        "questionTitle": "Games from childhood",
+        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;In the past, I really liked playing board games. Now, to limit the children from using computers, I often spend time playing with them. However, I have struggled with them because the games nowadays have more characters and rules, making us think a lot every time we play. Despite this, my children and I still like it and have a good time together.</p><p><strong>B:</strong>&nbsp;When I was a child, I often played soccer with other children of the same age. We usually played in the schoolyard and sometimes in the open spaces of the neighborhood. We divided into small teams and chased the ball until we were all tired.</p><p><strong>C:</strong>&nbsp;When I was a child, I didn't like going out to play, so I chose reading books as a form of entertainment. The stories described in the pages of books helped me discover my own world. Later, when I grew up, I started liking modern games with eye-catching interfaces, which help me relax and increase my creativity.</p><p><strong>D:</strong>&nbsp;When I was a child, I really liked outdoor activities. I remember that on bad weather days, I was always by the window, glued to it, looking outside and praying for the rain to stop. At those times, my mother often gave me paper and a box of crayons. I really enjoyed that drawing activity and often drew at home when the weather was bad.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b12f9d27e8fed2514954ae",
+            "numberOrder": null,
+            "content": "Person A",
+            "_id": "69b12f9d27e8fed2514954ad"
+          },
+          {
+            "id": "69b12f9d27e8fed2514954b0",
+            "numberOrder": null,
+            "content": "Person B",
+            "_id": "69b12f9d27e8fed2514954af"
+          },
+          {
+            "id": "69b12f9d27e8fed2514954b2",
+            "numberOrder": null,
+            "content": "Person C",
+            "_id": "69b12f9d27e8fed2514954b1"
+          },
+          {
+            "id": "69b12f9d27e8fed2514954b4",
+            "numberOrder": null,
+            "content": "Person D",
+            "_id": "69b12f9d27e8fed2514954b3"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Who finds today’s games harder than before?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954b5"
+          },
+          {
+            "content": "Who enjoyed playing with friends in childhood?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954b6"
+          },
+          {
+            "content": "Who enjoys playing with their children?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954b7"
+          },
+          {
+            "content": "Who waited and hoped to go outside?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954b8"
+          },
+          {
+            "content": "Who prefers modern games?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954b9"
+          },
+          {
+            "content": "Who enjoyed arts as a child?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954ba"
+          },
+          {
+            "content": "Who enjoyed reading books as a child?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b12f9d27e8fed2514954bb"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "THREE",
+        "image": null,
+        "_id": "69b12f9d27e8fed2514954ac"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a7242"
+    },
+    "createdAt": "2026-01-04T14:17:44.696Z",
+    "updatedAt": "2026-06-22T03:54:18.935Z",
+    "__v": 0
+  },
+  {
     "_id": "695a76f810b9d3fe9bd3a897",
     "data": {
       "title": "Extreme sports",
@@ -826,6 +590,242 @@
     "__v": 0
   },
   {
+    "_id": "695a776f10b9d3fe9bd3a8af",
+    "data": {
+      "title": "Music festival - Version 1",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69c2127c683ec8b79c910320",
+        "questionTitle": "Music festival - Version 1",
+        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;I stayed until the very last moment of the festival and absolutely loved the grand finale. The stage lit up with dazzling lights and fireworks, creating an unforgettable atmosphere. Although getting there was a hassle due to heavy traffic and packed buses, once I arrived, all those inconveniences faded away. In the end, the final performance made every bit of the struggle worthwhile.</p><p><strong>B:</strong>&nbsp;Normally, I steer clear of festivals, but I decided to give this one a try. Unfortunately, I didn’t have a great time. The sound quality was poor, the event schedule seemed chaotic, and to top it off, it started raining heavily. The muddy ground made things even worse, and I spent most of the day feeling uncomfortable. Honestly, I didn’t think it was worth the trouble. The only highlight for me was the beautiful park where the festival took place.</p><p><strong>C:</strong>&nbsp;I really enjoyed the lively atmosphere created by the music. One of the bands on the opening night was so amazing that I couldn’t help but sing along. However, everything was quite expensive. The tickets were pricey, and the food and drinks were ridiculously overcharged. I ended up spending more than I had planned. Even though the performances were great, I do hope the organizers will bring the prices down next year.</p><p><strong>D:</strong>&nbsp;For me, the most memorable part of the festival was its location. The park by the river was vast and picturesque, with plenty of spots to sit and unwind between performances. I enjoyed a nice lunch there, though it was a bit pricey. Some of the shows were enjoyable, but I didn’t stay for the entire event. Overall, it was the venue that left the biggest impression on me.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69c2127c683ec8b79c910312",
+            "numberOrder": null,
+            "content": "Person A",
+            "_id": "69c2127c683ec8b79c910311"
+          },
+          {
+            "id": "69c2127c683ec8b79c910314",
+            "numberOrder": null,
+            "content": "Person B",
+            "_id": "69c2127c683ec8b79c910313"
+          },
+          {
+            "id": "69c2127c683ec8b79c910316",
+            "numberOrder": null,
+            "content": "Person C",
+            "_id": "69c2127c683ec8b79c910315"
+          },
+          {
+            "id": "69c2127c683ec8b79c910318",
+            "numberOrder": null,
+            "content": "Person D",
+            "_id": "69c2127c683ec8b79c910317"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Who experienced bad weather?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c910319"
+          },
+          {
+            "content": "Who loved one of the performances?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031a"
+          },
+          {
+            "content": "Who thought it was too expensive?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031b"
+          },
+          {
+            "content": "Who found the traffic difficult?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031c"
+          },
+          {
+            "content": "Who liked the final performance of the show?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031d"
+          },
+          {
+            "content": "Who didn’t like the festival overall?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031e"
+          },
+          {
+            "content": "Who liked the location?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c2127c683ec8b79c91031f"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "THREE",
+        "image": null,
+        "_id": "69c2127c683ec8b79c910310"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a725a"
+    },
+    "createdAt": "2026-01-04T14:21:35.341Z",
+    "updatedAt": "2026-06-22T03:54:19.021Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a780910b9d3fe9bd3a8c7",
+    "data": {
+      "title": "Technology in childhood",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b130a227e8fed25149597a",
+        "questionTitle": "Technology in childhood",
+        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was young, I enjoyed playing simple computer games that my dad had programmed for me. Today, I teach my children to code using easy-to-use platforms like Scratch. These tools make learning programming enjoyable, though I spend time helping them grasp the logic behind it. Working together on coding fosters both creativity and teamwork.</p><p><strong>B:</strong>&nbsp;As a child, I loved spending time with my friends, building and controlling toy robots. I’ll never forget the thrill of making them move. Those experiences sparked my passion for technology, and I still look back fondly on those moments of discovery.</p><p><strong>C:</strong>&nbsp;When I was younger, I was fascinated by science magazines about robots and computers. The articles fueled my curiosity. Now, I develop mobile apps, creating tools for daily life. Thanks to modern software, the development process has become faster, but the excitement of innovation remains the same.</p><p><strong>D:</strong>&nbsp;As a kid, I spent rainy days with my siblings watching TV shows about gadgets and inventions. We eagerly awaited each new episode. Today, I prefer taking online courses to stay up-to-date with AI and blockchain. They offer flexibility and are a great way to keep pace with the rapidly changing tech world.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b130a227e8fed25149596c",
+            "numberOrder": null,
+            "content": "Person A",
+            "_id": "69b130a227e8fed25149596b"
+          },
+          {
+            "id": "69b130a227e8fed25149596e",
+            "numberOrder": null,
+            "content": "Person B",
+            "_id": "69b130a227e8fed25149596d"
+          },
+          {
+            "id": "69b130a227e8fed251495970",
+            "numberOrder": null,
+            "content": "Person C",
+            "_id": "69b130a227e8fed25149596f"
+          },
+          {
+            "id": "69b130a227e8fed251495972",
+            "numberOrder": null,
+            "content": "Person D",
+            "_id": "69b130a227e8fed251495971"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Who finds modern tools more accessible?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495973"
+          },
+          {
+            "content": "Who now enjoys app development?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495974"
+          },
+          {
+            "content": "Who loved playing with toy robots as a child?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495975"
+          },
+          {
+            "content": "Who loved watching tech shows as a child?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495976"
+          },
+          {
+            "content": "Who now prefers online learning?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495977"
+          },
+          {
+            "content": "Who enjoys coding with family?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495978"
+          },
+          {
+            "content": "Who loved science magazines as a child?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130a227e8fed251495979"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "THREE",
+        "image": null,
+        "_id": "69b130a227e8fed25149596a"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a7266"
+    },
+    "createdAt": "2026-01-04T14:24:09.320Z",
+    "updatedAt": "2026-06-22T03:54:19.064Z",
+    "__v": 0
+  },
+  {
     "_id": "695a789510b9d3fe9bd3a8df",
     "data": {
       "title": "Technology in childhood - Phiên bản 2",
@@ -941,6 +941,242 @@
     },
     "createdAt": "2026-01-04T14:26:29.539Z",
     "updatedAt": "2026-06-22T03:54:19.107Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a793e10b9d3fe9bd3a8f7",
+    "data": {
+      "title": "Work and life balance",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b130d827e8fed251495a76",
+        "questionTitle": "Work and life balance",
+        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was a child, I enjoyed playing board games with my parents after their busy workdays. Now, I get to share that experience with my own kids, and having a four-day workweek gives us more time together. Flexible schedules are a big help, but I always make sure to plan ahead so I can balance both work and family life. These are the moments that create lasting memories.</p><p><strong>B:</strong>&nbsp;As a kid, I would set up pretend offices with my friends, using toy phones and notebooks. I loved taking on the role of 'boss' and organizing our tasks. Those imaginative games taught me valuable lessons in organization and leadership, and I still laugh thinking about the 'serious' meetings we held.</p><p><strong>C:</strong>&nbsp;When I was younger, I devoured books about different professions, dreaming about what my future career might be. Those books inspired my ambition. Today, I rely on productivity apps to keep track of my tasks in my four-day workweek. While the apps make my work more efficient, the excitement of organizing and planning is still the same.</p><p><strong>D:</strong>&nbsp;As a child, I spent countless evenings playing tag with my friends in the neighborhood. On rainy days, though, I often found myself feeling bored indoors. Now, after work, I practice mindfulness to help me relax and recharge. It’s especially helpful with a shorter workweek, as it keeps me focused and refreshed.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b130d827e8fed251495a68",
+            "numberOrder": null,
+            "content": "Person A",
+            "_id": "69b130d827e8fed251495a67"
+          },
+          {
+            "id": "69b130d827e8fed251495a6a",
+            "numberOrder": null,
+            "content": "Person B",
+            "_id": "69b130d827e8fed251495a69"
+          },
+          {
+            "id": "69b130d827e8fed251495a6c",
+            "numberOrder": null,
+            "content": "Person C",
+            "_id": "69b130d827e8fed251495a6b"
+          },
+          {
+            "id": "69b130d827e8fed251495a6e",
+            "numberOrder": null,
+            "content": "Person D",
+            "_id": "69b130d827e8fed251495a6d"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Who now enjoys productivity apps?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a6f"
+          },
+          {
+            "content": "Who loved outdoor play as a child?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a70"
+          },
+          {
+            "content": "Who enjoys family time with board games?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a71"
+          },
+          {
+            "content": "Who loved organizing pretend offices as a child?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a72"
+          },
+          {
+            "content": "Who finds modern schedules more flexible?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a73"
+          },
+          {
+            "content": "Who loved reading about careers as a child?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a74"
+          },
+          {
+            "content": "Who now prefers mindfulness practices?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130d827e8fed251495a75"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "THREE",
+        "image": null,
+        "_id": "69b130d827e8fed251495a66"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a727e"
+    },
+    "createdAt": "2026-01-04T14:29:18.404Z",
+    "updatedAt": "2026-06-22T03:54:19.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "695a7a8910b9d3fe9bd3a9bf",
+    "data": {
+      "title": "Childhood memories",
+      "timeToDo": 35,
+      "questions": {
+        "id": "69b130fc27e8fed251495aeb",
+        "questionTitle": "Childhood memories",
+        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was a child, I loved sitting by the fireplace listening to my grandfather’s folktales. His voice brought every character to life, and those evenings always felt magical—they taught me the power of imagination. Nowadays, I share that same joy with my nieces by reading interactive storybooks on tablets. The animations and sounds make the stories more vivid and exciting for them. Still, I always take care to choose content that’s suitable for their age. To me, blending old traditions with modern technology is a beautiful way to keep storytelling alive across generations.</p><p><strong>B:</strong>&nbsp;When I was a young, I used to ride my bike around the village with my friends almost every afternoon. I can still recall the feeling of the wind brushing against my face, the excitement of racing each other, and the pure sense of freedom it brought. Those simple rides weren’t just fun—they taught me what independence and adventure felt like, lessons that stayed with me as I grew up. Nowadays, it’s a bit sad to see that many children spend more time indoors, glued to screens instead of exploring outside. Sometimes I find myself missing those carefree afternoons when happiness was as simple as pedaling down a dusty road. Thinking back, I realize those moments helped me develop a love for the outdoors and a lasting appreciation for friendship.</p><p><strong>C:</strong>&nbsp;As a kid, I could spend hours drawing animals, trees, and landscapes with my box of crayons and pencils. I loved playing with bright colors and shapes, and I always felt proud showing my drawings to my family. What started as a simple childhood hobby slowly turned into a lifelong passion. Now, I’m a graphic designer, creating digital art for various clients. Modern design tools help me bring my ideas to life with more precision, yet the creative joy I feel is just like it was back then. For me, drawing has always been a way to express myself—and it still fills my days with happiness.</p><p><strong>D:</strong>&nbsp;When I was growing up, I loved going on camping trips with my family in the countryside. We pitched our tents, cooked simple meals over a fire, and spent long nights gazing at the stars. Those moments made me feel deeply connected to nature and left me with unforgettable memories. Sometimes, though, rainy weather would ruin our plans, and I always felt a bit sad when we had to stay indoors. These days, my adventures have taken a different form — I enjoy visiting museums and exhibitions instead. Exploring history through artifacts and stories gives me a similar sense of curiosity and wonder, just in a quieter, more comfortable setting. To me, museums are a gentle way to travel through time and appreciate the beauty of the past.</p>",
+        "correctAnswer": "",
+        "file": null,
+        "answerList": [
+          {
+            "id": "69b130fc27e8fed251495add",
+            "numberOrder": null,
+            "content": "Person A",
+            "_id": "69b130fc27e8fed251495adc"
+          },
+          {
+            "id": "69b130fc27e8fed251495adf",
+            "numberOrder": null,
+            "content": "Person B",
+            "_id": "69b130fc27e8fed251495ade"
+          },
+          {
+            "id": "69b130fc27e8fed251495ae1",
+            "numberOrder": null,
+            "content": "Person C",
+            "_id": "69b130fc27e8fed251495ae0"
+          },
+          {
+            "id": "69b130fc27e8fed251495ae3",
+            "numberOrder": null,
+            "content": "Person D",
+            "_id": "69b130fc27e8fed251495ae2"
+          }
+        ],
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subQuestion": [
+          {
+            "content": "Who now enjoys graphic design?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae4"
+          },
+          {
+            "content": "Who loved camping as a child?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae5"
+          },
+          {
+            "content": "Who finds modern books more engaging?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae6"
+          },
+          {
+            "content": "Who loved drawing as a child?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae7"
+          },
+          {
+            "content": "Who now prefers museum visits?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae8"
+          },
+          {
+            "content": "Who enjoys storytelling with family?",
+            "correctAnswer": "Person A",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495ae9"
+          },
+          {
+            "content": "Who loved bike riding as a child?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b130fc27e8fed251495aea"
+          }
+        ],
+        "questionType": "READING",
+        "isExample": false,
+        "questionPart": "THREE",
+        "image": null,
+        "_id": "69b130fc27e8fed251495adb"
+      },
+      "skill": "READING",
+      "description": null,
+      "id": "69ce8f13650c2c0a4a1a728a"
+    },
+    "createdAt": "2026-01-04T14:34:49.213Z",
+    "updatedAt": "2026-06-22T03:54:19.191Z",
     "__v": 0
   },
   {
@@ -1180,357 +1416,121 @@
     "__v": 0
   },
   {
-    "_id": "695a768810b9d3fe9bd3a87f",
+    "_id": "695a7e8610b9d3fe9bd3aa1f",
     "data": {
-      "title": "Games from childhood",
+      "title": "Job and trainning",
       "timeToDo": 35,
       "questions": {
-        "id": "69b12f9d27e8fed2514954bc",
-        "questionTitle": "Games from childhood",
-        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;In the past, I really liked playing board games. Now, to limit the children from using computers, I often spend time playing with them. However, I have struggled with them because the games nowadays have more characters and rules, making us think a lot every time we play. Despite this, my children and I still like it and have a good time together.</p><p><strong>B:</strong>&nbsp;When I was a child, I often played soccer with other children of the same age. We usually played in the schoolyard and sometimes in the open spaces of the neighborhood. We divided into small teams and chased the ball until we were all tired.</p><p><strong>C:</strong>&nbsp;When I was a child, I didn't like going out to play, so I chose reading books as a form of entertainment. The stories described in the pages of books helped me discover my own world. Later, when I grew up, I started liking modern games with eye-catching interfaces, which help me relax and increase my creativity.</p><p><strong>D:</strong>&nbsp;When I was a child, I really liked outdoor activities. I remember that on bad weather days, I was always by the window, glued to it, looking outside and praying for the rain to stop. At those times, my mother often gave me paper and a box of crayons. I really enjoyed that drawing activity and often drew at home when the weather was bad.</p>",
+        "id": "69b131a127e8fed251495dc2",
+        "questionTitle": "Job and trainning",
+        "content": "<p><strong>Here are four people's experiences about choosing or starting their careers. Read carefully and answer the questions below.</strong></p><p><strong>A:</strong>&nbsp;When I first graduated from school, I wasn’t sure what to do, so I joined several volunteer programs with different companies and organizations to gain experience. I really enjoyed volunteering because it helped me decide on a career path and gave me many valuable lessons. I also believe I was able to make a difference through my work.</p><p><strong>B:</strong>&nbsp;Back in school, I already knew I wanted to become a teacher, so I didn’t need to try other jobs. I decided to study education at university, which is free in my country. Last summer, I did some practical training in local schools, and it was extremely helpful for my future career.</p><p><strong>C:</strong>&nbsp;When I was young, I used to help my neighbor, a plumber, with simple jobs like measuring pipes, loosening screws, and handling tools. It felt very natural for me to learn that kind of work, so later I studied for two years at university to become an electrician. Now, I’ve learned that there are shorter courses available in this field, and I regret not choosing that option instead.</p><p><strong>D:</strong>&nbsp;After graduating, I found it really difficult to get a job. I applied to many companies, but none accepted me because I lacked experience. Eventually, I found work at a gaming company that allowed me to work from home. It didn’t affect my daily schedule — I worked at night while my colleagues worked during the day — and that arrangement suited me perfectly.</p>",
         "correctAnswer": "",
         "file": null,
         "answerList": [
           {
-            "id": "69b12f9d27e8fed2514954ae",
+            "id": "69b131a127e8fed251495db4",
             "numberOrder": null,
             "content": "Person A",
-            "_id": "69b12f9d27e8fed2514954ad"
+            "_id": "69b131a127e8fed251495db3"
           },
           {
-            "id": "69b12f9d27e8fed2514954b0",
+            "id": "69b131a127e8fed251495db6",
             "numberOrder": null,
             "content": "Person B",
-            "_id": "69b12f9d27e8fed2514954af"
+            "_id": "69b131a127e8fed251495db5"
           },
           {
-            "id": "69b12f9d27e8fed2514954b2",
+            "id": "69b131a127e8fed251495db8",
             "numberOrder": null,
             "content": "Person C",
-            "_id": "69b12f9d27e8fed2514954b1"
+            "_id": "69b131a127e8fed251495db7"
           },
           {
-            "id": "69b12f9d27e8fed2514954b4",
+            "id": "69b131a127e8fed251495dba",
             "numberOrder": null,
             "content": "Person D",
-            "_id": "69b12f9d27e8fed2514954b3"
+            "_id": "69b131a127e8fed251495db9"
           }
         ],
         "subQuestionAnswerList": [],
         "suggestion": "",
         "subQuestion": [
           {
-            "content": "Who finds today’s games harder than before?",
-            "correctAnswer": "Person A",
+            "content": "Who likes working with their hands?",
+            "correctAnswer": "Person C",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954b5"
+            "_id": "69b131a127e8fed251495dbb"
           },
           {
-            "content": "Who enjoyed playing with friends in childhood?",
+            "content": "Who enjoys working during their training?",
             "correctAnswer": "Person B",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954b6"
+            "_id": "69b131a127e8fed251495dbc"
           },
           {
-            "content": "Who enjoys playing with their children?",
+            "content": "Who thinks it is very hard to get your first job?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b131a127e8fed251495dbd"
+          },
+          {
+            "content": "Who thinks their training was too long?",
+            "correctAnswer": "Person C",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b131a127e8fed251495dbe"
+          },
+          {
+            "content": "Who did not want to choose another job?",
+            "correctAnswer": "Person B",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b131a127e8fed251495dbf"
+          },
+          {
+            "content": "Who enjoys working in a flexible working environment?",
+            "correctAnswer": "Person D",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69b131a127e8fed251495dc0"
+          },
+          {
+            "content": "Who thinks they benefited from working for free?",
             "correctAnswer": "Person A",
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954b7"
-          },
-          {
-            "content": "Who waited and hoped to go outside?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954b8"
-          },
-          {
-            "content": "Who prefers modern games?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954b9"
-          },
-          {
-            "content": "Who enjoyed arts as a child?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954ba"
-          },
-          {
-            "content": "Who enjoyed reading books as a child?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b12f9d27e8fed2514954bb"
+            "_id": "69b131a127e8fed251495dc1"
           }
         ],
         "questionType": "READING",
         "isExample": false,
         "questionPart": "THREE",
         "image": null,
-        "_id": "69b12f9d27e8fed2514954ac"
+        "_id": "69b131a127e8fed251495db2"
       },
       "skill": "READING",
       "description": null,
-      "id": "69ce8f13650c2c0a4a1a7242"
+      "id": "69ce8f13650c2c0a4a1a72ba"
     },
-    "createdAt": "2026-01-04T14:17:44.696Z",
-    "updatedAt": "2026-06-22T03:54:18.935Z",
-    "__v": 0
-  },
-  {
-    "_id": "6955de965723012229d3fc6b",
-    "data": {
-      "title": "Extreme sports ( Phiên bản 3)",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b1301027e8fed251495720",
-        "questionTitle": "Extreme sports ( Phiên bản 3)",
-        "content": "<p class=\"ql-align-justify\">Person A:</p><p class=\"ql-align-justify\">For me, the most important thing about extreme sports is preparation. Many people think it’s just about excitement and bravery, but I don’t agree. Without proper training, you can easily get injured or even cause accidents for other people. I once joined a rock-climbing course, and I spent weeks learning how to use the equipment safely. After that, the real climb was much more enjoyable because I felt confident. I believe training is not only useful but also makes the whole experience less stressful and more rewarding.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person B:</p><p class=\"ql-align-justify\">I have always preferred traditional sports such as swimming and running because they keep me healthy without being too dangerous. Still, I wanted to know what an extreme sport would feel like, so last year I tried bungee jumping while on holiday. At first, I was extremely nervous, but when I finally jumped, the feeling was unforgettable. It gave me a thrill that swimming never could. Even so, I still practice swimming every week because it’s safer and more practical, but I admit that extreme sports can be fun if you try them at least once.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person C:</p><p class=\"ql-align-justify\">Honestly, I don’t understand why people do extreme sports. They seem very risky and unnecessary to me. I have never tried one and I don’t plan to. Some of my friends invited me to join them for snowboarding and paragliding, but I always said no. It’s not that I don’t like sports—I enjoy cycling and tennis—but I don’t see the point of risking my health just to feel a few seconds of excitement. To me, extreme sports are not important for a happy life, and I avoid them whenever possible.</p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\">Person D:</p><p class=\"ql-align-justify\">What I really enjoy about extreme sports is that they often take place in nature. Last summer, I went kayaking on a wild river, and the scenery was breathtaking. I also tried mountain biking in the forest, and I loved the feeling of fresh air and freedom. It’s not just about the sport itself, but about being surrounded by mountains, trees, and water. I sometimes wish I had more free time and money so that I could join these activities more often. Extreme sports give me energy and help me feel connected to the natural world.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b1301027e8fed251495712",
-            "numberOrder": null,
-            "content": "Person A",
-            "_id": "69b1301027e8fed251495711"
-          },
-          {
-            "id": "69b1301027e8fed251495714",
-            "numberOrder": null,
-            "content": "Person B",
-            "_id": "69b1301027e8fed251495713"
-          },
-          {
-            "id": "69b1301027e8fed251495716",
-            "numberOrder": null,
-            "content": "Person C",
-            "_id": "69b1301027e8fed251495715"
-          },
-          {
-            "id": "69b1301027e8fed251495718",
-            "numberOrder": null,
-            "content": "Person D",
-            "_id": "69b1301027e8fed251495717"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Who thinks preparation is necessary before doing extreme sports?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed251495719"
-          },
-          {
-            "content": "Who usually does ordinary sports?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571a"
-          },
-          {
-            "content": "Who once tried an extreme sport and enjoyed it?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571b"
-          },
-          {
-            "content": "Who enjoys being outdoors when doing extreme sports?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571c"
-          },
-          {
-            "content": "Who wishes to do more extreme sports in the future?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571d"
-          },
-          {
-            "content": "Who believes extreme sports are not important?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571e"
-          },
-          {
-            "content": "Who always avoids extreme sports?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b1301027e8fed25149571f"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "THREE",
-        "image": null,
-        "_id": "69b1301027e8fed251495710"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a722a"
-    },
-    "createdAt": "2026-01-01T02:40:22.514Z",
-    "updatedAt": "2026-06-22T03:54:18.849Z",
-    "__v": 0
-  },
-  {
-    "_id": "695a7a8910b9d3fe9bd3a9bf",
-    "data": {
-      "title": "Childhood memories",
-      "timeToDo": 35,
-      "questions": {
-        "id": "69b130fc27e8fed251495aeb",
-        "questionTitle": "Childhood memories",
-        "content": "<p><strong>Here is the perspective of four people on the above topic. Please read the content and answer the question.</strong></p><p><strong>A:</strong>&nbsp;When I was a child, I loved sitting by the fireplace listening to my grandfather’s folktales. His voice brought every character to life, and those evenings always felt magical—they taught me the power of imagination. Nowadays, I share that same joy with my nieces by reading interactive storybooks on tablets. The animations and sounds make the stories more vivid and exciting for them. Still, I always take care to choose content that’s suitable for their age. To me, blending old traditions with modern technology is a beautiful way to keep storytelling alive across generations.</p><p><strong>B:</strong>&nbsp;When I was a young, I used to ride my bike around the village with my friends almost every afternoon. I can still recall the feeling of the wind brushing against my face, the excitement of racing each other, and the pure sense of freedom it brought. Those simple rides weren’t just fun—they taught me what independence and adventure felt like, lessons that stayed with me as I grew up. Nowadays, it’s a bit sad to see that many children spend more time indoors, glued to screens instead of exploring outside. Sometimes I find myself missing those carefree afternoons when happiness was as simple as pedaling down a dusty road. Thinking back, I realize those moments helped me develop a love for the outdoors and a lasting appreciation for friendship.</p><p><strong>C:</strong>&nbsp;As a kid, I could spend hours drawing animals, trees, and landscapes with my box of crayons and pencils. I loved playing with bright colors and shapes, and I always felt proud showing my drawings to my family. What started as a simple childhood hobby slowly turned into a lifelong passion. Now, I’m a graphic designer, creating digital art for various clients. Modern design tools help me bring my ideas to life with more precision, yet the creative joy I feel is just like it was back then. For me, drawing has always been a way to express myself—and it still fills my days with happiness.</p><p><strong>D:</strong>&nbsp;When I was growing up, I loved going on camping trips with my family in the countryside. We pitched our tents, cooked simple meals over a fire, and spent long nights gazing at the stars. Those moments made me feel deeply connected to nature and left me with unforgettable memories. Sometimes, though, rainy weather would ruin our plans, and I always felt a bit sad when we had to stay indoors. These days, my adventures have taken a different form — I enjoy visiting museums and exhibitions instead. Exploring history through artifacts and stories gives me a similar sense of curiosity and wonder, just in a quieter, more comfortable setting. To me, museums are a gentle way to travel through time and appreciate the beauty of the past.</p>",
-        "correctAnswer": "",
-        "file": null,
-        "answerList": [
-          {
-            "id": "69b130fc27e8fed251495add",
-            "numberOrder": null,
-            "content": "Person A",
-            "_id": "69b130fc27e8fed251495adc"
-          },
-          {
-            "id": "69b130fc27e8fed251495adf",
-            "numberOrder": null,
-            "content": "Person B",
-            "_id": "69b130fc27e8fed251495ade"
-          },
-          {
-            "id": "69b130fc27e8fed251495ae1",
-            "numberOrder": null,
-            "content": "Person C",
-            "_id": "69b130fc27e8fed251495ae0"
-          },
-          {
-            "id": "69b130fc27e8fed251495ae3",
-            "numberOrder": null,
-            "content": "Person D",
-            "_id": "69b130fc27e8fed251495ae2"
-          }
-        ],
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subQuestion": [
-          {
-            "content": "Who now enjoys graphic design?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae4"
-          },
-          {
-            "content": "Who loved camping as a child?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae5"
-          },
-          {
-            "content": "Who finds modern books more engaging?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae6"
-          },
-          {
-            "content": "Who loved drawing as a child?",
-            "correctAnswer": "Person C",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae7"
-          },
-          {
-            "content": "Who now prefers museum visits?",
-            "correctAnswer": "Person D",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae8"
-          },
-          {
-            "content": "Who enjoys storytelling with family?",
-            "correctAnswer": "Person A",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495ae9"
-          },
-          {
-            "content": "Who loved bike riding as a child?",
-            "correctAnswer": "Person B",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69b130fc27e8fed251495aea"
-          }
-        ],
-        "questionType": "READING",
-        "isExample": false,
-        "questionPart": "THREE",
-        "image": null,
-        "_id": "69b130fc27e8fed251495adb"
-      },
-      "skill": "READING",
-      "description": null,
-      "id": "69ce8f13650c2c0a4a1a728a"
-    },
-    "createdAt": "2026-01-04T14:34:49.213Z",
-    "updatedAt": "2026-06-22T03:54:19.191Z",
+    "createdAt": "2026-01-04T14:51:50.178Z",
+    "updatedAt": "2026-06-22T03:54:19.321Z",
     "__v": 0
   },
   {
