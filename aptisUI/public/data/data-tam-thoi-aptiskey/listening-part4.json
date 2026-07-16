@@ -1,0 +1,1477 @@
+[
+    {
+        "audioUrl": "audio/question16/1_study_break.mp3",
+        "topic": "A break from studying",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why hasn't he gone to college?",
+                "options": [
+                    "He wasn't ready to start higher education",
+                    "He couldn't afford the tuition fees.",
+                    "He didn't get good enough grades"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "Why did he decide to travel for 2 years?",
+                "options": [
+                    "To gain life experience.",
+                    "To avoid studying.",
+                    "To travelling."
+                ]
+            }
+        ],
+        "transcript": "After completing high school, many of my friends chose to go directly to university, while I opted for a different direction. Honestly, I didn’t feel prepared to begin higher education at that time; I needed some time away from studying to refresh my mind. Rather than signing up for courses, I spent the following two years traveling throughout Asia and Europe. For me, it wasn’t simply a holiday; I wanted to gain practical experience and explore different perspectives before eventually returning to my studies."
+    },
+    {
+        "audioUrl": "audio/question16/2_scientist_biography_verson1.mp3",
+        "topic": "A book about a life of a scientist",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "Why do many readers find the book interesting?",
+                "options": [
+                    "It uses simple language to describe complex ideas.",
+                    "It relies heavily on technical vocabulary.",
+                    "It avoids explaining abstract concepts."
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "Why is the book so popular?",
+                "options": [
+                    "It is similar to the previous book about the scientist.",
+                    "It is too long.",
+                    "It is too difficult to understand."
+                ]
+            }
+        ],
+        "transcript": "I’ve just completed a new biography about a well-known physicist, and it’s truly impressive. What makes it engaging is the author’s style, which explains complicated ideas in a clear and simple way, allowing even readers without a scientific background to understand it. The book has already become a bestseller. Many specialists think its popularity comes from its similarity to the earlier book about the same scientist, which was also highly successful. If you liked the previous one, you’ll certainly find this new book worth reading."
+    },
+    {
+        "audioUrl": "audio/question16/3_scientist_biography_verson2.mp3",
+        "topic": "A Book About A Life Of A Scientist (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What does the speaker say about the way of writing?",
+                "options": [
+                    "It is exciting to read",
+                    "It employs a very outdated narrative style.",
+                    "It focuses exclusively on the scientist's childhood."
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What does the speaker say about the overall content of the book?",
+                "options": [
+                    "It has been written for a general audience",
+                    "It is intended primarily for advanced research purposes.",
+                    "It mainly summarizes the scientist's previous publications."
+                ]
+            }
+        ],
+        "transcript": "I’ve just completed reading a new biography about a globally famous scientist, and it’s very impressive. What stands out most is the author’s storytelling style; it feels engaging and reads more like a compelling narrative than a traditional, dry biography. Moreover, even though the subject is quite technical, the content is written in a way that is accessible to general readers. As a result, complex discoveries become easy to understand, even for those without a scientific background."
+    },
+    {
+        "audioUrl": "audio/question16/4_the_sport_verson1.mp3",
+        "topic": "The Sport",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is this person's opinion on sports?",
+                "options": [
+                    "They have a harmful effect",
+                    "They bring people together",
+                    "They improve concentration"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the importance of sports for students?",
+                "options": [
+                    "It helps balance student's lives.",
+                    "It distracts students from studying.",
+                    "It is only useful for professional athletes."
+                ]
+            }
+        ],
+        "transcript": "While most people praise the benefits of exercise, I have a somewhat different view on professional competitive sports. In my experience, when sports become too intense or commercialized, they can actually have a harmful effect on both the players' health and the spirit of fair play. However, my opinion changes when it comes to education. I believe that engaging in physical activity is essential for those in school because it helps balance student's lives. It provides a much-needed break from long hours of academic pressure and keeps them mentally grounded."
+    },
+    {
+        "audioUrl": "audio/question16/5_the_sport_verson2.mp3",
+        "topic": "The Sport (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the expert’s opinion about sports competitions?",
+                "options": [
+                    "Prepare students for a competitive work environment",
+                    "Attract significant funding from international sponsors.",
+                    "Identify and recruit professional athletes for national teams."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the expert’s advice for schools?",
+                "options": [
+                    "Provides them with a balance in their lives",
+                    "Enforce athletic participation as a strict graduation requirement.",
+                    "Restrict physical activities to ensure academic excellence."
+                ]
+            }
+        ],
+        "transcript": "When discussing the role of athletics in education, many focus only on physical health. However, from an expert perspective, the value of sports competitions goes much further; they actually prepare students for a competitive work environment by teaching them resilience and how to perform under pressure. For this reason, my primary advice for schools is to keep these programs active, as engaging in sports provides them with a balance in their lives. This balance is crucial for ensuring that academic demands don't become overwhelming for the students."
+    },
+    {
+        "audioUrl": "audio/question16/6_the_sport_verson3.mp3",
+        "topic": "The Sport (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "According to the reviewer, what is one benefit of school sports?",
+                "options": [
+                    "They help promote students’ overall health.",
+                    "They primarily focus on academic competition.",
+                    "They are designed to limit physical exertion."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What else do school sports provide for students?",
+                "options": [
+                    "It provides balance.",
+                    "It encourages extreme specialization.",
+                    "It prioritizes individual over team success."
+                ]
+            }
+        ],
+        "transcript": "In my recent review of modern educational programs, I’ve noticed that physical education remains a cornerstone of development. According to my findings, one of the most significant benefits of school sports is that they help promote students’ overall health by encouraging consistent physical activity. Furthermore, sports offer more than just physical fitness; for many young people, participating in these programs is essential because it provides balance. It helps them manage the heavy demands of their studies while developing social skills through teamwork."
+    },
+    {
+        "audioUrl": "audio/question16/7_television_series_verson1.mp3",
+        "topic": "Television series",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "Why is this series so popular?",
+                "options": [
+                    "It has the consistent quality throughout.",
+                    "It was only available for a short time.",
+                    "It features unknown actors."
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the current series industry affected by?",
+                "options": [
+                    "Viewer habits influence the way that series are made.",
+                    "Series are no longer produced for online platforms.",
+                    "Actors now write most of the scripts themselves."
+                ]
+            }
+        ],
+        "transcript": "In the world of entertainment, very few shows manage to capture the public's imagination like the one we are discussing today. While many shows start with a great premise but fail to keep the momentum, the reason this particular show has become a global phenomenon is that it has the consistent quality throughout every single season. From the very first episode to the grand finale, the writing, acting, and production values never drop, ensuring that fans stay engaged for years.\nHowever, this success doesn't happen in a vacuum. If we look at the bigger picture, the entire television landscape is undergoing a massive transformation. Experts have noted that the current series industry is heavily affected by how audiences consume content. In fact, viewer habits influence the way that series are made more than ever before. With the rise of streaming platforms and the trend of binge-watching, producers and directors are now forced to adapt their storytelling techniques and release schedules to match the specific preferences and behaviors of the modern viewer."
+    },
+    {
+        "audioUrl": "audio/question16/8_television_series_verson2.mp3",
+        "topic": "Television Series (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What happened to the TV series?",
+                "options": [
+                    "It caught the audience's attention from the start.",
+                    "It faced significant backlash from local viewers.",
+                    "It struggled to secure a prime-time slot."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "According to the expert, what is the series' potential?",
+                "options": [
+                    "It can help reach new customers.",
+                    "It will dominate the international award season.",
+                    "It primarily focuses on educational content for kids."
+                ]
+            }
+        ],
+        "transcript": "When the new drama series premiered last month, the production team was uncertain about how it would be received in such a crowded market. However, they were pleasantly surprised because it caught the audience's attention from the start, breaking viewership records within its very first week of release. The unique plot and high-quality cinematography had everyone talking immediately.\n\nLooking ahead, industry analysts believe the show has a very promising future beyond just high ratings. I spoke to a media consultant who pointed out that the series has a unique commercial appeal. According to the expert, the real potential of this show is that it can help reach new customers, particularly by attracting younger demographics and international viewers who don't usually watch domestic television. It is seen as a strategic tool to expand the network's influence into entirely new markets."
+    },
+    {
+        "audioUrl": "audio/question16/9_television_series_verson3.mp3",
+        "topic": "Television Series (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What made the TV series attract viewers from the beginning?",
+                "options": [
+                    "It failed to engage the audience from the start",
+                    "It utilized a massive celebrity marketing budget",
+                    "The plot was based on a globally famous novel"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What problem does the reviewer mention about the series?",
+                "options": [
+                    "Series are damaged by overexposure",
+                    "The production quality is inconsistent between episodes",
+                    "There is a lack of diversity in the casting"
+                ]
+            }
+        ],
+        "transcript": "Today, I want to talk about a drama series that had a very difficult journey to the screen. Despite having a talented cast, the show struggled significantly during its premiere. Most critics agree that it failed to engage the audience from the start because the opening episodes were quite confusing and lacked a clear direction, causing many viewers to turn off their TVs after just ten minutes.\n\nFurthermore, the reviewer highlights a broader issue within the television industry that this show unfortunately fell victim to. It seems that many modern series are damaged by overexposure. This happens when a show is marketed so aggressively across every possible platform that by the time it actually airs, the public is already tired of hearing about it. This constant saturation of information can lead to 'viewer fatigue,' where even a decent story loses its appeal because it simply feels like 'too much' for the audience to consume."
+    },
+    {
+        "audioUrl": "audio/question16/10_advertising_sponsoring_verson1.mp3",
+        "topic": "Advertising and sponsoring",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the importance of advertising?",
+                "options": [
+                    "It can help reach new customers",
+                    "It increases the product price",
+                    "It can build brand recognition"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "Why shouldn't we sponsor sports tournaments?",
+                "options": [
+                    "They can generate negative publicity for the sport",
+                    "They are too expensive",
+                    "They can create unfair competition"
+                ]
+            }
+        ],
+        "transcript": "In the competitive world of business today, many companies struggle to find the most effective way to grow their presence. While some argue that marketing budgets are getting out of control, most experts agree on the fundamental importance of traditional methods. The primary advantage of a well-executed campaign is that it can help reach new customers who might otherwise never hear of the brand. By expanding the target audience, businesses can ensure long-term growth and stability.\n\nHowever, when it comes to specific strategies like sponsoring major events, companies must be extremely cautious. For example, while sponsoring sports tournaments might seem like a great way to gain visibility, there are significant risks involved. Critics argue that if a brand is linked to an event that experiences a scandal or unethical behavior, it can generate negative publicity for the sport as a whole. Instead of promoting a healthy image, the sponsorship might end up damaging the reputation of both the company and the athletic community involved."
+    },
+    {
+        "audioUrl": "audio/question16/11_advertising_sponsoring_verson2.mp3",
+        "topic": "Advertising And Sponsoring (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What does the expert say about the negative side of advertising?",
+                "options": [
+                    "Series are damaged by overexposure",
+                    "It significantly increases the retail price of essential goods",
+                    "Small businesses are unable to compete with global brands"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "In what way can advertising affect sports?",
+                "options": [
+                    "They can generate negative publicity for the sport",
+                    "They improve the physical performance of the athletes",
+                    "They eliminate the need for traditional stadium ticket sales"
+                ]
+            }
+        ],
+        "transcript": "Advertising plays a massive role in our economy, but it is not without its critics. When we look at the downside of modern marketing strategies, experts often point out a phenomenon known as 'viewer fatigue.' They argue that even the most successful media series are damaged by overexposure. This happens when a campaign is so aggressive that the audience sees the same advertisements everywhere, causing them to lose interest in the show itself rather than being attracted to it. In this case, more is definitely not better.\n\nThe influence of big-budget advertising extends into the world of athletics as well. While sponsorship provides necessary funding, it can also be a double-edged sword. If a sponsor is involved in a controversy or if the commercial side of the event becomes too dominant, they can generate negative publicity for the sport. Instead of celebrating the achievements of the athletes, the public focus shifts to the scandals or the corporate interests behind the scenes, which can ultimately harm the reputation and the spirit of the entire sporting community."
+    },
+    {
+        "audioUrl": "audio/question16/12_advertising_sponsoring_verson3.mp3",
+        "topic": "Advertising And Sponsoring (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What does the expert say about advertising?",
+                "options": [
+                    "It helps to reach new customers",
+                    "It primarily focuses on reducing production costs",
+                    "It has become less effective due to digital media"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "In what way can advertising affect sports?",
+                "options": [
+                    "They are not always good for sports fans",
+                    "They guarantee a win for the sponsored teams",
+                    "They focus exclusively on amateur local events"
+                ]
+            }
+        ],
+        "transcript": "In our program today, we are discussing the powerful influence of marketing in the modern world. According to a leading industry expert I spoke with recently, despite the rise of social media, the fundamental goal of a commercial campaign hasn't changed; the expert emphasizes that it helps to reach new customers by introducing products to audiences who were previously unaware of them. Without this constant outreach, many innovative businesses would simply fail to grow.\n\nHowever, when we shifted the conversation to the impact of these brands on the world of athletics, the tone became more critical. The expert noted that while sponsorship deals bring in millions of dollars, they are not always good for sports fans. For example, the constant presence of logos and frequent commercial interruptions during live broadcasts can diminish the excitement of the game. Fans often feel that the true spirit of the sport is being overshadowed by corporate interests, making the overall experience more about sales than about the competition itself."
+    },
+    {
+        "audioUrl": "audio/question16/13_famous_writers.mp3",
+        "topic": "Famous writers",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What do these two famous writers have in common?",
+                "options": [
+                    "They both make references to each other in their work",
+                    "They both wrote in the same genre",
+                    "They both were born in the same country"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is special about their works?",
+                "options": [
+                    "The meaning of their work is not always easily identified",
+                    "Their works are all based on real events",
+                    "They use simple language and structure"
+                ]
+            }
+        ],
+        "transcript": "Today we are exploring the lives of two iconic authors who significantly shaped the literary landscape of the 20th century. Although they belonged to different generations and came from diverse backgrounds, they shared a profound mutual respect that deeply influenced their writing style. One of the most fascinating aspects of their professional relationship is that they both make references to each other in their work, subtly weaving their colleague's ideas, themes, or even names into their own narratives as a form of literary tribute.\n\nHowever, their writing is certainly not for the casual reader. These authors are famous for their layers of symbolism and philosophical depth. Many literary critics have noted that the meaning of their work is not always easily identified, as it usually requires deep reflection and multiple readings to truly grasp the underlying messages. This inherent complexity is exactly what has kept scholars and fans debating the true intent of their stories for decades."
+    },
+    {
+        "audioUrl": "audio/question16/14_regional_development_plan_verson1.mp3",
+        "topic": "A regional development plan",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why do residents oppose this plan?",
+                "options": [
+                    "It doesn't do enough to promote alternatives to driving",
+                    "It increases the number of public parks in the area",
+                    "It provides free public transportation for all residents"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What difficulties is the city council having with this plan?",
+                "options": [
+                    "The plan is not making efficient use of existing land",
+                    "The plan has already exceeded its budget by a large margin",
+                    "There is too much public support, making it hard to manage expectations"
+                ]
+            }
+        ],
+        "transcript": "Welcome back to our community forum. We've been receiving a lot of letters regarding the proposed development project in our area. Residents oppose this plan primarily because of its narrow focus; many are disappointed that it doesn't do enough to promote alternatives to driving, such as better cycling lanes or expanded bus routes.\n\nBeyond the public's reaction, the city council is also hitting some major roadblocks. The main difficulty the city council is having with this plan is their realization that it is not making efficient use of existing land. Instead of revitalizing the empty spaces in the city center, the proposal unnecessarily pushes into the outskirts, which many officials believe is a strategic mistake."
+    },
+    {
+        "audioUrl": "audio/question16/15_regional_development_plan_verson2.mp3",
+        "topic": "Regional Development Plan (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is one of the main criticisms of the Regional Development Plan?",
+                "options": [
+                    "It doesn't provide enough alternatives to driving.",
+                    "The proposed budget relies too heavily on international loans.",
+                    "It focuses exclusively on urban areas while ignoring rural zones."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What challenge is the Regional Development Plan likely to face?",
+                "options": [
+                    "It is likely to meet resistance from local communities.",
+                    "The legal framework for the plan has not been finalized yet.",
+                    "A shortage of skilled engineers might stall the infrastructure phase."
+                ]
+            }
+        ],
+        "transcript": "Recent debates surrounding the latest draft of the Regional Development Plan have highlighted some significant flaws that the authorities seem to have overlooked. Environmental experts and urban planners are increasingly vocal, arguing that the project’s heavy focus on expanding the highway network is a step backward for sustainability. The main criticism among these groups is that the plan doesn't provide enough alternatives to driving, such as a comprehensive light rail system or a more connected network of cycling lanes. By ignoring these greener options, the city risks becoming even more congested in the long run.\n\nBeyond these design flaws, the actual implementation of the project is expected to be quite difficult. Analysts believe the most significant challenge the plan is likely to face is that it is likely to meet resistance from local communities. Many residents living in the affected zones are already voicing their concerns about the loss of green spaces and the potential noise pollution. This social pushback could lead to lengthy legal battles and protests, which might ultimately stall the infrastructure phase for several years unless the government starts to prioritize public consultation over mere expansion."
+    },
+    {
+        "audioUrl": "audio/question16/16_life_after_uni_verson1.mp3",
+        "topic": "Life after university",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What should students do when choosing a career?",
+                "options": [
+                    "Be flexible and open minded",
+                    "Choose the same career as their friends",
+                    "Focus only on the salary offered"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What should students pay attention to when applying for jobs these days?",
+                "options": [
+                    "They are becoming more competitive",
+                    "Most jobs no longer require any qualifications",
+                    "Companies prefer handwritten applications"
+                ]
+            }
+        ],
+        "transcript": "Transitioning from the structured environment of academic life to the professional world is often one of the most significant shifts a young adult will ever experience. When standing at this crossroads, many graduates feel immense pressure to find the perfect role immediately. However, most career counselors suggest that the best approach for students is to be flexible and open-minded during the initial stages of their journey. Instead of limiting themselves to a narrow path or a specific job title, they should be willing to explore various industries, as their first job is rarely their last, but rather a valuable learning opportunity.\n\nFurthermore, it is vital for graduates to have a realistic understanding of the current economic landscape. When applying for positions in the modern market, students must pay close attention to the fact that jobs are becoming more competitive than ever before. With a global pool of talent and the rise of automation, simply having a degree is often just the baseline requirement. To succeed, applicants need to go beyond their formal qualifications by highlighting their soft skills, unique experiences, and a strong work ethic to distinguish themselves in an increasingly crowded field of candidates."
+    },
+    {
+        "audioUrl": "audio/question16/17_security_cameras.mp3",
+        "topic": "Security cameras",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How should people feel about cameras in the workplace?",
+                "options": [
+                    "Employees probably worry unnecessarily",
+                    "People should feel uneasy",
+                    "Cameras should be banned"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "How should people feel about cameras in general?",
+                "options": [
+                    "People should feel reassured",
+                    "Cameras invade personal space",
+                    "People should feel paranoid"
+                ]
+            }
+        ],
+        "transcript": "The widespread use of surveillance technology often sparks intense debates regarding the balance between privacy and safety. When looking specifically at the professional environment, many staff members express a certain level of anxiety about being observed throughout their shifts. However, perspective is key; in reality, employees probably worry unnecessarily about these devices. Most systems are installed primarily for insurance purposes or to ensure workplace safety in case of emergencies, rather than for the constant, minute-by-minute monitoring of staff behavior that many fear.\n\nFurthermore, when shifting the focus to our broader society, the presence of digital eyes in public spaces is becoming a standard feature of modern life. While it is true that some individuals feel their personal space is being invaded, the overarching consensus among security experts is that people should feel reassured by their existence. These cameras play a vital role in deterring criminal activity, aiding emergency services in real-time, and providing objective evidence in legal disputes. Ultimately, the peace of mind that comes from knowing a public area is monitored significantly contributes to a sense of collective security."
+    },
+    {
+        "audioUrl": "audio/question16/18_new_novel.mp3",
+        "topic": "A new novel of a famous writer",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What is special about his new novel?",
+                "options": [
+                    "It is quite different compared to his previous works",
+                    "It is shorter and easier to read",
+                    "It has been written in a different genre"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the speaker's opinion of this writer?",
+                "options": [
+                    "He should listen to the critics before writing next novel",
+                    "He is a brilliant but slow writer",
+                    "He needs to change his writing style"
+                ]
+            }
+        ],
+        "transcript": "I’ve just finished reading the latest release from one of the most celebrated authors of our time, and it has certainly sparked a lot of conversation among literary circles. The most striking thing about this book, and what everyone seems to be discussing, is that it is quite different compared to his previous works. While he has built his reputation on fast-paced action thrillers, this new publication takes a much more experimental and slow-burning approach to storytelling, which might catch long-time fans off guard.\n\nDespite his undeniable talent and creative ambition, I found the execution of this particular story to be somewhat hit-or-miss. While I appreciate his willingness to step out of his comfort zone, I believe there is room for improvement in how he handles these new themes. In my view, the author should take some time to reflect on the feedback he is receiving from professional reviewers. My honest opinion of this writer is that he should listen to the critics before writing his next novel. Paying attention to their concerns regarding pacing and structure could be the key to ensuring his future projects are as successful as his early masterpieces."
+    },
+    {
+        "audioUrl": "audio/question16/19_learn_and_dev.mp3",
+        "topic": "Learning And Development",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "According to the speaker, how should we learn to work?",
+                "options": [
+                    "Effectively",
+                    "Independently without any guidance",
+                    "By following strictly fixed instructions"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What should people be willing to do in order to make progress?",
+                "options": [
+                    "Experiment",
+                    "Maintain a predictable daily routine",
+                    "Avoid any risks in the workplace"
+                ]
+            }
+        ],
+        "transcript": "In the modern professional landscape, the traditional methods of training are often insufficient for the demands of high-paced industries. When we consider professional growth, the primary objective is not just to acquire knowledge, but to understand how to learn to work effectively. This involves streamlining our processes and focusing on high-impact tasks rather than just staying busy or following a set of rigid, outdated instructions. Mastering this efficiency is what allows a professional to stand out in a crowded market.\n\nHowever, efficiency alone is not enough to drive long-term career growth. To truly advance and make significant progress, individuals must be willing to step away from their predictable routines. The most successful people in any field are those who are brave enough to experiment with new ideas, different workflows, and emerging technologies. By testing various approaches and learning from both successes and failures, we can discover more innovative ways to solve complex problems and ensure our skills remain relevant in an ever-changing world."
+    },
+    {
+        "audioUrl": "audio/question16/20_work_and_book.mp3",
+        "topic": "Work And Books",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "According to the passage, how does work benefit an individual beyond just earning money?",
+                "options": [
+                    "It helps develop skills, contribute to society, and provide a sense of purpose.",
+                    "It primarily serves as a way to avoid social interactions",
+                    "It focuses on maximizing leisure time during the weekends"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the main result of balancing both work and books?",
+                "options": [
+                    "Growth in every area of a person's life",
+                    "The complete separation of professional and private interests",
+                    "A decrease in the need for formal education over time"
+                ]
+            }
+        ],
+        "transcript": "Many people view their careers through a purely financial lens, yet the psychological and social rewards of labor are often much more significant. Professional activity is vital because it helps develop skills, contribute to society, and provide a sense of purpose that money alone cannot buy. It allows us to apply our talents to real-world problems while building a network of meaningful connections and a stable identity.\n\nHowever, a career should not exist in a vacuum. Integrating a love for reading and academic inquiry into one's daily routine creates a powerful foundation for personal development. When we learn to integrate the practical lessons of our jobs with the deep insights found in literature, the result is more than just professional success. Achieving a true harmony between these two worlds results in growth in every area of a person's life, fostering a well-rounded character and a much more enriched perspective on the world."
+    },
+    {
+        "audioUrl": "audio/question16/21_history_railways.mp3",
+        "topic": "The History Of Railways",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What was one major problem the railways faced?",
+                "options": [
+                    "Not making enough money",
+                    "The lack of qualified engineers and staff",
+                    "Extreme weather damaging the tracks"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What did the leader in charge decide to do during this period?",
+                "options": [
+                    "Continuing policies that had already been implemented",
+                    "Suspending all operations for a total restructure",
+                    "Selling the assets to international investors"
+                ]
+            }
+        ],
+        "transcript": "The railway industry has seen many ups and downs throughout its long history. During a particularly difficult era in the mid-20th century, the network struggled significantly to maintain its viability. One major problem the railways faced during this time was that they were simply not making enough money to cover their high operational costs and aging infrastructure. Revenue from passenger tickets and freight transport had plummeted due to the rising popularity of cars and trucks.\n\nDespite these growing financial concerns, the management team was hesitant to make radical changes. Instead of modernizing or pivoting their strategy, the leader in charge decided to continue the policies that had already been implemented in previous years. They believed that by maintaining the status quo and waiting for the economy to shift, the railways would eventually return to profitability without the need for a total restructure."
+    },
+    {
+        "audioUrl": "audio/question16/22_the_environment.mp3",
+        "topic": "The Environment",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What should people do to maintain a healthy environment?",
+                "options": [
+                    "Make a daily effort to recycle, reduce waste, and use energy carefully.",
+                    "Limit industrial production to strictly rural areas",
+                    "Replace all personal vehicles with electric bicycles"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "According to the text, how do human activities like deforestation affect us?",
+                "options": [
+                    "They harm nature and cause problems like climate change and health issues.",
+                    "They create more resilient ecosystems for the future",
+                    "They primarily benefit the local economy in the short term"
+                ]
+            }
+        ],
+        "transcript": "Protecting our planet has become more urgent than ever as we witness the growing impact of global warming. To combat this, experts suggest that individual actions play a crucial role. To maintain a healthy environment, we don't necessarily need radical shifts overnight; instead, people should make a daily effort to recycle their trash, reduce unnecessary waste, and use energy more carefully in their homes. Small habits, when multiplied by millions, can lead to significant conservation.\n\nHowever, large-scale human activities continue to pose a threat. For instance, widespread deforestation is stripping the earth of its natural filters. According to recent studies, these activities are devastating because they harm nature and cause serious problems like climate change and long-term health issues for communities worldwide. If we do not address these destructive practices soon, the damage to our ecosystems may become irreversible."
+    },
+    {
+        "audioUrl": "audio/question16/23_musician_life.mp3",
+        "topic": "A musician's life",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What will this musician do in the near future?",
+                "options": [
+                    "He will probably retire from singing",
+                    "He plans to release a new album",
+                    "He wants to collaborate with younger artists"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What does the speaker think about his career in general?",
+                "options": [
+                    "He could have been more successful",
+                    "He regrets choosing his profession",
+                    "He believes he reached the peak too early"
+                ]
+            }
+        ],
+        "transcript": "Welcome back to \"Music Legends.\" Today, we’re discussing the bittersweet announcement from one of the industry's most enduring icons. After a career spanning over forty years, rumors have been swirling about what’s next. While many younger artists are eager to get him back into the studio, and fans have been buzzing about a potential collaboration with today's pop stars, the singer has dismissed these ideas. He recently clarified that he isn't looking for a comeback or a new creative project. Instead, he expressed a deep desire for peace and quiet. Consequently, it is now almost certain that he will probably retire from singing entirely after his final performance next month, as he feels his voice is no longer what it used to be.\n\nLooking back at his long journey, it’s a career of high peaks and low valleys. Although he never reached a point where he regrets choosing his profession—as he still loves music deeply—the overall trajectory of his fame is quite interesting. Many critics argue that he reached his creative peak far too early in his twenties and struggled to innovate afterwards. When we evaluate his influence on the industry today, there’s a common feeling that, despite his natural talent and early hits, he could have been more successful if he had embraced international trends rather than sticking to a very niche style. It’s a classic case of a great artist who had the potential for global stardom but ended up as a local hero instead."
+    },
+    {
+        "audioUrl": "audio/question16/24_new_guide.mp3",
+        "topic": "A new guide",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What is the advantage of this new guide?",
+                "options": [
+                    "It creates a sense of adventure",
+                    "It includes detailed hotel reviews",
+                    "It focuses mainly on luxury travel"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the limitation of this new guide?",
+                "options": [
+                    "It is only suitable for a particular generation",
+                    "It doesn’t cover popular tourist attractions",
+                    "It is too expensive for most travelers"
+                ]
+            }
+        ],
+        "transcript": "In recent years, a new type of travel guide has been developed to appeal to modern travelers, especially younger people who are looking for more exciting and meaningful experiences. Unlike traditional guidebooks that mainly provide practical information such as hotel reviews or transportation details, this new guide focuses on inspiring its readers. It presents travel as an adventure, encouraging people to step out of their comfort zones and explore unfamiliar destinations. As a result, one of its main advantages is that it creates a strong sense of adventure, making traveling feel more engaging and personal rather than routine.\n\nDespite these strengths, the guide is not without its drawbacks. One significant limitation is that it is designed with a specific audience in mind. The language, style, and content are tailored mainly to a particular generation, especially younger travelers who prefer exploration over convenience. Because of this, it may not be suitable for everyone. Older travelers or those who prefer detailed planning and practical information might find it less useful. Therefore, while the guide is innovative and inspiring, its appeal is somewhat limited to a specific group of users."
+    },
+    {
+        "audioUrl": "audio/question16/25_research_appiness.mp3",
+        "topic": "A research into happiness",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How has this research into happiness been responded to?",
+                "options": [
+                    "It has not been accurately reported by the media",
+                    "It has been completely ignored by the public",
+                    "It has led to immediate changes in government policy"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the speaker's opinion on this research in general?",
+                "options": [
+                    "The research is unlikely to find a conclusive answer",
+                    "The research has already changed public attitudes",
+                    "The researchers are biased in their approach"
+                ]
+            }
+        ],
+        "transcript": "Research into happiness has attracted considerable attention, as scientists try to understand what truly contributes to people’s sense of well-being. Although the topic appears frequently in newspapers and online articles, the way it is presented is often misleading. A common problem is that the media does not report the findings accurately. Instead, complex studies are simplified or taken out of context, with headlines focusing on surprising or appealing conclusions rather than the full picture. This can give the public an incomplete or even incorrect understanding of what the research actually shows.\n\nRegarding the overall value of this research, the speaker expresses a cautious opinion. While these studies offer interesting perspectives on human behavior and emotions, it seems unlikely that they will lead to a single, definitive answer. Happiness is a complex concept that varies greatly from person to person and is influenced by many different factors, including culture, lifestyle, and personal expectations. Because of this complexity, the research may continue to evolve, but it is unlikely to produce one clear conclusion that applies universally."
+    },
+    {
+        "audioUrl": "audio/question16/26_building_design.mp3",
+        "topic": "Building Design",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why do modern buildings stand out?",
+                "options": [
+                    "They associate with modern cityscapes",
+                    "They prioritize traditional materials over steel",
+                    "They are primarily built in rural environments"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What does the speaker say about many new buildings?",
+                "options": [
+                    "They often display a lack of ambition.",
+                    "They represent the peak of architectural innovation",
+                    "They focus on maximizing public green spaces"
+                ]
+            }
+        ],
+        "transcript": "When we look at modern buildings today, one noticeable feature is how closely they are linked to the overall appearance of contemporary cities. These structures are often designed to match the clean, uniform style that defines modern cityscapes, with glass surfaces, straight lines, and minimal decoration. Because of this, modern buildings tend to stand out not as individual masterpieces, but as part of a larger visual identity that reflects urban development and modernization.\n\nHowever, despite this consistent and recognizable style, not all new buildings are considered impressive. In fact, the speaker suggests that many of them show a clear lack of ambition. Rather than pushing creative boundaries or introducing innovative ideas, developers often focus on efficiency, cost, and speed. As a result, cities are increasingly filled with buildings that look similar to one another, which may be practical but rarely inspiring. This trend highlights a missed opportunity for more imaginative and bold architectural design."
+    },
+    {
+        "audioUrl": "audio/question16/27_criticism_new_novel_ver1.mp3",
+        "topic": "Criticism of the new novel",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What attracts readers to this novel?",
+                "options": [
+                    "The characters were interesting",
+                    "The book includes detailed historical facts",
+                    "The chapters are very short and easy to read"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the speaker's opinion about this novel?",
+                "options": [
+                    "It will establish the author's popularity",
+                    "It needs major editing before publication",
+                    "It’s unlikely to appeal to international readers"
+                ]
+            }
+        ],
+        "transcript": "The new novel has recently received a great deal of attention from readers and critics alike. One of the main reasons it has attracted such interest is the strength of its characters. Rather than relying on complex plots or detailed background information, the story focuses on creating individuals who feel realistic and engaging. Readers are drawn to these characters because of their unique personalities and emotional depth, which makes it easier to connect with the story and remain interested throughout.\n\nAs for the overall opinion of the novel, the speaker is quite positive about its potential impact. Although it may not be perfect in every aspect, it is believed that the book will play an important role in increasing the author’s recognition. In fact, the success of this novel is likely to help establish the author's popularity among a wider audience. With strong character development and an engaging narrative style, the book has the potential to become a significant milestone in the writer’s career."
+    },
+    {
+        "audioUrl": "audio/question16/28_criticism_new_novel_ver2.mp3",
+        "topic": "Criticism Of The New Novel (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How did the writer finish his book?",
+                "options": [
+                    "The plot was very strong",
+                    "By incorporating feedback from a famous editor",
+                    "It was completed much faster than his previous work"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What do some readers criticize about the book?",
+                "options": [
+                    "It is very similar to the author's other books",
+                    "The vocabulary used is far too academic",
+                    "The physical quality of the hardback edition"
+                ]
+            }
+        ],
+        "transcript": "The writer’s latest novel has sparked a variety of opinions, particularly regarding how the story was developed and completed. According to the speaker, one notable aspect of the book is the strength of its plot. The storyline is well-structured and engaging, with events unfolding in a clear and compelling way. This strong narrative is considered a key factor in how the writer managed to bring the book to a satisfying conclusion, keeping readers interested from beginning to end.\n\nHowever, not all feedback has been entirely positive. Some readers have pointed out that the novel feels too familiar when compared to the author’s earlier works. They argue that certain themes, character types, and plot developments are quite similar to what the writer has done before. As a result, while the book is still enjoyable, it may lack originality for those who are already familiar with the author’s previous novels."
+    },
+    {
+        "audioUrl": "audio/question16/29_criticism_new_novel_ver3.mp3",
+        "topic": "Criticism Of The New Novel (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why do some readers struggle to connect with the characters in the novel?",
+                "options": [
+                    "They are difficult to relate to.",
+                    "Their motivations are explained too clearly.",
+                    "There are too many main characters to follow."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What criticism do readers have about the storyline?",
+                "options": [
+                    "It lacks originality.",
+                    "It is too complex for a general audience.",
+                    "The plot twists are too predictable for experts."
+                ]
+            }
+        ],
+        "transcript": "Although the novel has generated a fair amount of interest among readers, it has also received several critical comments. One of the most frequently mentioned issues relates to the characters. Some readers report that they find it difficult to connect with them on an emotional level. Even though the author provides clear descriptions and background details, the characters do not always feel relatable. Their thoughts, behaviors, or life experiences seem distant from those of ordinary readers, which makes it harder for the audience to become fully engaged in the story. As a result, the emotional impact of the novel is somewhat limited for certain readers.\n\nAnother point of criticism focuses on the storyline itself. While the plot is generally easy to follow and logically structured, many readers feel that it lacks originality. They point out that the themes and narrative patterns appear similar to those found in other novels within the same genre. Because of this familiarity, the story may feel predictable or less exciting, especially for readers who are used to more innovative or creative storytelling. Although the novel is not necessarily poorly written, this lack of fresh ideas means it may struggle to leave a lasting impression.\n\nOverall, the book demonstrates a solid level of writing skill, but these weaknesses in character connection and originality prevent it from standing out as a truly memorable work."
+    },
+    {
+        "audioUrl": "audio/question16/30_writer_block.mp3",
+        "topic": "Writer's block",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What helps writers focus more on writing?",
+                "options": [
+                    "Create dedicated periods",
+                    "Work in noisy environments",
+                    "Rely entirely on inspiration"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is a common mistake writers make when generating ideas?",
+                "options": [
+                    "Refusing to seek the advice of other people",
+                    "Writing ideas only in digital format",
+                    "Spending too much time researching grammar rules"
+                ]
+            }
+        ],
+        "transcript": "Many writers experience periods when they struggle to stay focused or produce new ideas, a situation often referred to as writer’s block. According to the speaker, one effective way to overcome this problem is by creating dedicated periods of time specifically for writing. Instead of waiting for inspiration to appear naturally, writers are encouraged to build a routine and commit to writing at certain times each day. This structured approach helps improve concentration and allows writers to develop discipline, making it easier to stay productive even when motivation is low.\n\nAt the same time, when generating ideas, writers sometimes make avoidable mistakes. One common issue is that they refuse to seek the advice of other people. Some prefer to work entirely on their own, believing that feedback might affect their creativity. In reality, discussing ideas with others can provide fresh perspectives and help improve the quality of their work. By ignoring external input, writers may limit their creativity and miss valuable opportunities to develop stronger ideas."
+    },
+    {
+        "audioUrl": "audio/question16/31_professionalism_at_work.mp3",
+        "topic": "Professionalism at work",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "How is professionalism demonstrated at work?",
+                "options": [
+                    "Maintain the positive attitude",
+                    "Always agree with your manager",
+                    "Avoid giving feedback to colleagues"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the public's view of current professionalism?",
+                "options": [
+                    "Change its definition",
+                    "Increase working hours",
+                    "Reduce opportunities for remote work"
+                ]
+            }
+        ],
+        "transcript": "Professionalism at work is often shown through the way employees interact with others and handle daily responsibilities. One clear example is maintaining a positive attitude, even in challenging situations. Instead of complaining or creating conflict, a professional person stays calm, respectful, and supportive toward colleagues. This kind of attitude helps build a healthy working environment, improves teamwork, and increases overall productivity. It also shows reliability and emotional control, which are highly valued in any workplace.\n\nAt the same time, the public’s view of professionalism is gradually changing. People no longer see it as strictly following traditional rules such as formal dress codes or rigid behavior. Instead, professionalism is now more about adaptability, communication skills, and the ability to work effectively in modern conditions like remote or flexible environments. This shift reflects how workplaces are evolving, and it highlights the importance of redefining professionalism to match current expectations and realities."
+    },
+    {
+        "audioUrl": "audio/question16/32_making_plans.mp3",
+        "topic": "Making plans",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How does creating each small plan help you?",
+                "options": [
+                    "They help you make decisions",
+                    "They increase your workload",
+                    "They delay overall progress"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "How does creating a plan help you in general?",
+                "options": [
+                    "It requires you to set yourself certain limits",
+                    "It removes all risks from the process",
+                    "It guarantees immediate success"
+                ]
+            }
+        ],
+        "transcript": "Creating small plans is an effective way to stay organized and make better decisions. When tasks are broken down into smaller steps, it becomes easier to focus on what needs to be done next. This approach reduces confusion and helps you choose the most suitable actions at each stage. As a result, you can manage your time more efficiently and avoid feeling overwhelmed.\n\nIn general, making a plan also requires you to set certain limits for yourself. These limits help you stay disciplined and focused on your goals instead of getting distracted. By clearly defining what you can and cannot do within a given time, you are more likely to maintain steady progress. This structure not only improves productivity but also helps you build good habits over time."
+    },
+    {
+        "audioUrl": "audio/question16/33_promotion_product_ver1.mp3",
+        "topic": "A promotion campaign for a product",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What do people think about this promotion campaign?",
+                "options": [
+                    "It is making exaggerated claims",
+                    "It is being ignored completely",
+                    "It is too simple to be effective"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What does the speaker think about this campaign?",
+                "options": [
+                    "It costs too much to make to be profitable",
+                    "It is reaching the wrong audience",
+                    "It lacks creativity"
+                ]
+            }
+        ],
+        "transcript": "In my opinion, this promotion campaign is making exaggerated claims about the product, and that is a major problem. When I watch the advertisements, they seem to promise results that are far too good to be true. Because of this, I feel that many people would become skeptical rather than convinced. Instead of building trust with potential customers, the campaign actually creates doubt, as people may question whether the product can really deliver what is being advertised. Personally, I think that honesty and realism are much more effective in the long term, so this approach could damage the brand’s reputation.\n\nIn addition to that, I believe the campaign costs too much to make to be profitable. Even if it manages to attract a lot of attention, the company is likely spending a huge amount of money on production, marketing, and distribution. From my perspective, this is not a smart investment because the return may not be high enough to justify such expenses. I would say that a simpler and more cost-effective campaign could achieve similar results without putting so much financial pressure on the company. Overall, I think the strategy is inefficient and needs to be reconsidered."
+    },
+    {
+        "audioUrl": "audio/question16/34_promotion_product_ver2.mp3",
+        "topic": "A Promotion Campaign For A Product (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What do people think about this promotion campaign?",
+                "options": [
+                    "It is making exaggerated claims",
+                    "It focuses too much on environmental issues",
+                    "It uses celebrity endorsements ineffectively"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What does the speaker think about this campaign?",
+                "options": [
+                    "It costs too much to make to be profitable",
+                    "It is reaching the wrong audience",
+                    "The visual design is not professional enough"
+                ]
+            }
+        ],
+        "transcript": "Many people believe that this promotion campaign relies too heavily on exaggerated claims. The advertisements present the product in an overly perfect way, which makes some customers feel doubtful about its real value. While this strategy may attract attention at first, it can also reduce trust if people think the message is not entirely honest. As a result, the campaign may struggle to build a strong and lasting connection with its audience.\n\nFrom my perspective, the biggest issue with this campaign is its high cost. I think the company is spending too much money on producing and promoting it, which makes it difficult to achieve real profitability. Even if the campaign gains attention, the return on investment may not be sufficient. In my opinion, a more balanced approach, focusing on both effectiveness and reasonable costs, would lead to better long-term success."
+    },
+    {
+        "audioUrl": "audio/question16/35_script_production_ver1.mp3",
+        "topic": "Script production",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the speaker's opinion on this script?",
+                "options": [
+                    "The characters' background are not adequately explored",
+                    "The dialogue is too complex for viewers",
+                    "The setting feels too unrealistic"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "How do industries impact script production?",
+                "options": [
+                    "The new industry demands have a negative influence.",
+                    "They provide more creative freedom to writers",
+                    "They increase audience engagement significantly"
+                ]
+            }
+        ],
+        "transcript": "When discussing the script, it is often mentioned that one noticeable issue is that the characters don’t feel fully developed, mainly because their backgrounds aren’t explored in enough detail. Without a clear understanding of their past or motivations, it becomes difficult for the audience to relate to them or understand their actions. This lack of depth makes the story less engaging, as viewers may find it hard to form an emotional connection with the characters.\n\nIn addition, it is also pointed out that modern industry demands have a negative influence on script production. Writers are frequently required to follow trends or meet commercial expectations, which can limit their creativity. As a result, scripts may feel rushed or not fully developed. Instead of focusing on strong storytelling, the process often prioritizes deadlines and market demands, which can ultimately reduce the overall quality of the script."
+    },
+    {
+        "audioUrl": "audio/question16/36_script_production_ver2.mp3",
+        "topic": "Script Production (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the producer’s opinion on the dialogue in the new show?",
+                "options": [
+                    "They seem unrealistic",
+                    "They appear somewhat exaggerated and overly dramatic",
+                    "They are too formal compared to everyday speech"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "How does current industry demand have an effect on script quality?",
+                "options": [
+                    "It is negatively influencing script production.",
+                    "It has a positive effect by improving production speed.",
+                    "It has little effect on how scripts are developed."
+                ]
+            }
+        ],
+        "transcript": "When talking about the new show, it is often said that the dialogue seems unrealistic. The way the characters speak does not sound natural or similar to real-life conversations, which makes it harder for the audience to believe in the story. Instead of feeling authentic, some lines may come across as forced or not suitable for the situation, reducing the overall impact of the scenes.\n\nIn addition, it is widely believed that current industry demands are negatively influencing script production. Writers are under pressure to meet deadlines and follow market trends, which can limit their ability to focus on quality and creativity. As a result, scripts may not be as carefully developed as they should be, leading to weaker storytelling and less engaging content overall."
+    },
+    {
+        "audioUrl": "audio/question16/37_script_production_ver3.mp3",
+        "topic": "Script Production (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What criticism does the reviewer make about the series storytelling?",
+                "options": [
+                    "The dialogues seems unrealistic",
+                    "The pacing feels inconsistent throughout the episodes",
+                    "The storyline lacks emotional depth"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What problem is pointed out regarding the series writing?",
+                "options": [
+                    "The new industry demand is negatively influencing script production",
+                    "The scripts rely too heavily on predictable patterns",
+                    "The writing fails to maintain audience interest over time"
+                ]
+            }
+        ],
+        "transcript": "When reviewing the series, it is often pointed out that the dialogue seems unrealistic. The way the characters communicate does not reflect how people normally speak in real life, which makes some scenes feel less believable. Instead of sounding natural, certain lines appear forced or unnatural, and this can reduce the audience’s immersion in the story.\n\nIn addition, it is also highlighted that new industry demands are negatively influencing script production. Writers are increasingly required to follow trends and meet commercial expectations, which puts pressure on the creative process. As a result, the quality of the writing may suffer, as there is less time and freedom to develop strong and original ideas. This ultimately affects the overall effectiveness of the series."
+    },
+    {
+        "audioUrl": "audio/question16/38_concentration.mp3",
+        "topic": "Concentration",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What does the speaker say mostly affects concentration?",
+                "options": [
+                    "Concentration depends mostly on environment.",
+                    "Concentration depends mainly on external distractions.",
+                    "Concentration is primarily influenced by individual effort."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is it that people often don't realize about focus?",
+                "options": [
+                    "People often fail to consider the limits of concentration.",
+                    "People often recognize the limits of concentration.",
+                    "People frequently excel at managing the limits of concentration."
+                ]
+            }
+        ],
+        "transcript": "When it comes to productivity, many people believe that staying focused is simply a matter of individual effort. They think that if they just try harder, they can block out any external distractions. However, research in cognitive psychology suggests that this is a misconception. While willpower plays a role, the environment you choose to work in is actually the most significant factor. Whether it is the lighting, the noise level, or even the layout of your desk, your physical surroundings ultimately dictate how long you can remain productive.\n\nAnother crucial point that is frequently misunderstood is our mental capacity. We often live in a culture that rewards 'the hustle,' leading many to overlook the fact that concentration is a finite resource. We tend to push ourselves for hours without a break, failing to acknowledge that our brains have very clear biological limits. By disregarding these natural boundaries, we don't actually get more done; instead, we simply reach a point of diminished returns where our focus completely evaporates."
+    },
+    {
+        "audioUrl": "audio/question16/39_modern_society.mp3",
+        "topic": "Modern Society",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is one of the strong qualities of these modern works?",
+                "options": [
+                    "Have something to say about modern society",
+                    "Strictly adhere to classical artistic conventions",
+                    "Focus exclusively on historical events and figures"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What does the speaker say about the meanings of these works?",
+                "options": [
+                    "The meanings are not easily identified",
+                    "They provide direct and simplified moral lessons",
+                    "The core message is usually stated in the opening"
+                ]
+            }
+        ],
+        "transcript": "Today, we are examining a new wave of contemporary art that has sparked significant debate. While many traditionalists argue that art should focus exclusively on historical events and figures to preserve our heritage, these new artists take a different path. They intentionally move away from strictly adhering to classical artistic conventions. Instead, the true power of these pieces lies in their relevance; they function as a mirror to our contemporary world. Each work strives to offer a profound commentary on the complexities of the life we lead today, making them undeniably relevant to our current era.\n\nHowever, interpreting these works can be quite a challenge. Many viewers expect art to provide direct and simplified moral lessons, similar to a fable. Some even search for a core message that is clearly stated in the opening, but they will likely be disappointed. These artists prefer to use ambiguous symbolism and hidden metaphors. Consequently, the underlying significance of each piece is rarely obvious at first glance, requiring the audience to look deeper as the true meanings are often intentionally obscured."
+    },
+    {
+        "audioUrl": "audio/question16/40_customers_in_business.mp3",
+        "topic": "Customers In Business",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why is an 'important customer' valuable to a company?",
+                "options": [
+                    "Because they provide steady money, influence others, and help improve services.",
+                    "Because they are responsible for hiring and training new employees.",
+                    "Because they guarantee the company's stock prices will never fall."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What should a business do because customer behavior is unpredictable?",
+                "options": [
+                    "Stay flexible, adapt to new demands, and keep improving.",
+                    "Reduce the marketing budget to avoid financial risks.",
+                    "Standardize all products to ignore individual customer preferences."
+                ]
+            }
+        ],
+        "transcript": "In the corporate world, identifying your 'key accounts' or important customers is vital for long-term success. Some analysts wrongly assume these individuals are responsible for internal tasks like hiring and training new staff, or that their presence alone guarantees that stock prices will never fluctuate. This is far from the truth. The real value of an important customer lies in their multi-layered contribution: they ensure a consistent stream of revenue, act as vocal advocates who drive brand awareness through word-of-mouth, and provide the critical feedback necessary for refining our offerings.\n\nFurthermore, companies must recognize that the modern market is highly volatile. Because consumer habits are often fickle and hard to forecast, a rigid business model is a recipe for failure. Instead of standardizing every product to ignore personal preferences, successful firms understand that agility is paramount. To survive, a business must be ready to pivot, respond effectively to emerging trends, and commit to the continuous evolution of their brand to meet ever-changing expectations."
+    },
+    {
+        "audioUrl": "audio/question16/41_creating_otivation_Team.mp3",
+        "topic": "Creating Motivation Within A Team",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What occurs when things don’t go according to plan in a team?",
+                "options": [
+                    "The team members lose confidence.",
+                    "The team members become more assured.",
+                    "The team members start again from the beginning."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "In the speaker’s view, what helps a leader maintain team motivation?",
+                "options": [
+                    "Set a realistic goal",
+                    "Focus on individual performance only",
+                    "Increase the project budget significantly"
+                ]
+            }
+        ],
+        "transcript": "Leading a diverse group of people toward a common objective is never a straightforward journey. In a perfect scenario, every task would be completed on time, but in reality, we often face unforeseen roadblocks. When a project hits a snag and things deviate from the original timeline, you might expect the group to simply head back to the drawing board and start over. However, the psychological effect is usually more damaging. In most instances, morale takes a significant hit, and team members begin to question their own abilities, causing a sudden drop in their overall self-belief.\n\nTo counter this, a manager must be strategic about how they restore energy. While some leaders believe that drastically increasing the financial resources or monitoring every individual's performance will solve the issue, these methods rarely work in the long run. In my experience, the key to sustained engagement is the nature of the mission itself. A leader can effectively maintain momentum by establishing objectives that are genuinely attainable. When the staff feels that the targets are grounded and within their reach, they are much more likely to remain committed, even when the pressure is on."
+    },
+    {
+        "audioUrl": "audio/question16/42_traveling.mp3",
+        "topic": "Traveling",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why does the brother find traveling meaningful?",
+                "options": [
+                    "Because it brings him joy and chances to learn about different cultures.",
+                    "Because it allows him to escape his professional responsibilities.",
+                    "Because he wants to document his trips for social media influence."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "How is traveling similar to reading a book?",
+                "options": [
+                    "Both help people discover new worlds and grow as a person.",
+                    "Both require a high level of physical endurance and preparation.",
+                    "Both are considered mandatory activities for academic success."
+                ]
+            }
+        ],
+        "transcript": "My brother has always been an avid traveler, though people often misinterpret his motives. Some colleagues think he’s simply trying to escape the pressure of his professional responsibilities, while others assume he’s just looking to boost his social media presence with envy-inducing photos. However, for him, it’s never about the 'likes' or running away from work. He finds a unique sense of fulfillment in the simple act of engaging with local traditions and diverse ways of life. To him, the genuine happiness derived from these cross-cultural encounters is what makes every trip worth it.\n\nI often tell him that his passion for exploration is remarkably similar to my love for reading. Of course, neither should be seen as a mandatory task for academic success, nor do they always require immense physical stamina. The real parallel lies in the transformative power they both hold. Much like a captivating novel, traveling acts as a gateway to unfamiliar perspectives. Both allow us to step into entirely different worlds, and in doing so, they foster a profound sense of personal maturity and self-discovery."
+    },
+    {
+        "audioUrl": "audio/question16/43_a_new_restaurant.mp3",
+        "topic": "A new restaurant",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "How is this restaurant reviewed by customers?",
+                "options": [
+                    "The standard of service wasn’t good",
+                    "The food was too exotic for locals",
+                    "The location is difficult to find"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What should this restaurant do?",
+                "options": [
+                    "They need to make the customers feel valued and welcome",
+                    "They should increase their prices for profit",
+                    "They need to focus only on online orders"
+                ]
+            }
+        ],
+        "transcript": "I recently visited that new bistro downtown, and I have to say, the feedback from the community has been quite mixed. On one hand, people love the menu; despite some concerns that the dishes might be too exotic for the locals, most residents actually found the flavors refreshing and authentic. The location is also incredibly convenient, being right in the heart of the shopping district. However, the recurring complaint in almost every review is the unprofessional conduct of the staff. Guests have frequently reported feeling ignored, suggesting that the overall quality of the hospitality was significantly below par.\n\nLooking ahead, simply adjusting the menu prices to boost margins or shifting the business model to focus exclusively on digital delivery won't solve the core issue. If the establishment wants to survive, they must prioritize the human element. The management needs to ensure that every person who walks through the door receives attentive care. Ultimately, success will depend on their ability to foster a genuine sense of appreciation, ensuring that every guest feels truly appreciated and at home during their visit."
+    },
+    {
+        "audioUrl": "audio/question16/44_work_from_home.mp3",
+        "topic": "Work from home",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How does she feel about working from home?",
+                "options": [
+                    "It wasn't as good as she expected",
+                    "It gave her more free time than expected",
+                    "It helped her become more productive"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is her opinion on working from home in general?",
+                "options": [
+                    "It depends on your situation and personality",
+                    "It's better than working in an office for everyone",
+                    "It should be avoided whenever possible"
+                ]
+            }
+        ],
+        "transcript": "Before I transitioned to a remote role, I had a very idealized image of what it would be like. I was convinced it would grant me unprecedented flexibility and leisure time, and I even assumed I’d be far more efficient away from the constant interruptions of the office. However, after a few months, I have to admit it didn't quite live up to the hype. While it had its perks, the experience was underwhelming compared to my initial expectations, largely because the boundary between my personal and professional life became so blurred.\n\nLooking at the bigger picture, I’ve realized that remote work isn't a 'one-size-fits-all' solution. Some people claim it's universally superior to the office for every employee, while skeptics argue it should be shunned entirely. In my view, neither extreme is correct. Whether telecommuting is effective is entirely contingent upon a person's unique environment and their own disposition. It really is a matter of matching the work style to the right person and their specific situation."
+    },
+    {
+        "audioUrl": "audio/question16/45_managing_financial_spending_ver1.mp3",
+        "topic": "Managing financial spending",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What should you do to better control your short-term spending?",
+                "options": [
+                    "Monitor your spending for a weekly plan",
+                    "Avoid all unnecessary purchases entirely",
+                    "Use only cash instead of cards"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What should you do to better control your long-term spending?",
+                "options": [
+                    "Seek advice from someone who have experience",
+                    "Stop spending on entertainment altogether",
+                    "Track every single expense daily"
+                ]
+            }
+        ],
+        "transcript": "Mastering your personal finances is a skill that requires both discipline and a solid strategy. When people struggle with their short-term outgoings, a common suggestion is to switch entirely to cash payments or to cut out every single non-essential purchase. While these drastic measures might work for a few days, they are rarely sustainable. A far more effective approach is to keep a close eye on your expenditures over a seven-day period. By tracking where your money goes each week, you can develop a realistic budget that allows for flexibility without overspending.\n\nLooking at the bigger picture, long-term financial stability involves more than just recording every minor daily expense, which can often become overwhelming and counterproductive. Similarly, you don't need to eliminate your entertainment budget altogether to save for the future. Instead, the most valuable step you can take for your future self is to consult with a professional or a mentor who has navigated these waters before. Tapping into the wisdom of those with a proven track record in wealth management will provide you with the tailored insights needed to grow your assets over time."
+    },
+    {
+        "audioUrl": "audio/question16/46_managing_financial_spending_ver2.mp3",
+        "topic": "Managing Financial Spending (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What method does the speaker suggest for saving money efficiently?",
+                "options": [
+                    "Organizing their resources more effectively",
+                    "Relying on credit cards to control spending",
+                    "Putting aside a large sum every single day only"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "According to the speaker, who is most likely to save money successfully?",
+                "options": [
+                    "Get advice from people who have experience",
+                    "Keeping all savings in just one account",
+                    "Not creating any long-term financial strategies"
+                ]
+            }
+        ],
+        "transcript": "Saving for the future is a goal for many, but the method you choose often determines the outcome. Some beginners mistakenly believe that relying on credit cards will somehow help them regulate their daily costs, or they attempt to force themselves to put aside a massive sum of money every single day. In reality, these tactics are often unsustainable and lead to frustration. A much more reliable approach to saving efficiently is to focus on structuring your financial assets with greater precision. By sorting through your existing budget and allocating your available funds where they are truly needed, you can create a far more robust and organized system for growth.\n\nFurthermore, the journey toward financial independence shouldn't be a solitary one. You will find individuals who prefer keeping every penny in a single savings account, often avoiding any kind of complex long-term strategy altogether. However, these people rarely see significant progress. In my experience, those who are most likely to reach their goals are the ones who reach out to those with a proven history of success. By consulting with mentors or seasoned professionals who have already navigated these financial hurdles, you gain invaluable insights that can't be found in any textbook."
+    },
+    {
+        "audioUrl": "audio/question16/47_managing_financial_spending_ver3.mp3",
+        "topic": "Managing Financial Spending (Phiên bản 3)",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What does the speaker mention about handling personal finances?",
+                "options": [
+                    "Organize their resources more effectively",
+                    "Track every expense in detail on a daily basis",
+                    "Eliminate all spending on leisure activities completely"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What does the speaker suggest for improving financial management?",
+                "options": [
+                    "Seek advice from someone who is experienced",
+                    "Rely on financial software to make decisions independently",
+                    "Avoid seeking advice and manage finances on your own"
+                ]
+            }
+        ],
+        "transcript": "Effective wealth management is often misunderstood as a series of restrictive habits. You will frequently hear advisors suggesting that you must meticulously diarize every minor transaction on a daily basis just to stay afloat. Others might even insist that the only way to save is to entirely strip away any budget for recreational pursuits or leisure activities. While these tactics might yield short-term results, they often lead to burnout. In reality, the cornerstone of financial health is the systematic arrangement of your existing assets. By prioritizing and allocating your funds with greater precision, you can achieve a much more stable and organized financial structure.\n\nFurthermore, refining your fiscal habits should never be seen as a solitary endeavor. Many people attempt to navigate the complexities of the market alone, or they rely exclusively on automated software and algorithms to dictate their choices. However, these tools lack the nuance of human experience. For genuine improvement, the most effective strategy is to tap into the wisdom of a seasoned mentor. Engaging with someone who possesses a wealth of practical knowledge in the field provides a level of insight that no application can replicate, helping you avoid common pitfalls and build a more secure future."
+    },
+    {
+        "audioUrl": "audio/question16/48_importance_sleep_ver1.mp3",
+        "topic": "The importance of sleep",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the way to have a good sleep according to the speaker?",
+                "options": [
+                    "Blocking out noise and light is key",
+                    "Drinking coffee before bed helps relax the mind",
+                    "Sleeping fewer hours increases deep sleep quality"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the speaker's view on insomnia in general?",
+                "options": [
+                    "People can't always recognize the symptoms of tiredness",
+                    "Most people with insomnia actually sleep too much",
+                    "Insomnia is caused only by physical health problems"
+                ]
+            }
+        ],
+        "transcript": "While many believe that sleeping fewer hours might actually improve deep sleep through exhaustion, or that drinking a cup of coffee can help some individuals relax before bed, these are largely myths. To truly enhance your rest, the secret lies in your sensory environment. Experts agree that shielding your bedroom from any auditory distractions and ensuring total darkness are the most critical factors. By eliminating both sound and light, you allow your brain to enter a restorative state far more effectively.\n\nRegarding sleep disorders, there is a common misunderstanding of how they manifest. Some people think that insomnia is solely a result of physical health issues, or they mistakenly believe that those with the condition actually spend too much time sleeping. In my view, the core issue is often a lack of awareness. Individuals frequently fail to detect the subtle cues of exhaustion their bodies are sending. Because they cannot always identify the signs that they are genuinely fatigued, they continue to push themselves, worsening the cycle of sleeplessness."
+    },
+    {
+        "audioUrl": "audio/question16/49_importance_sleep_ver2.mp3",
+        "topic": "The Importance Of Sleep (Phiên bản 2)",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "The most important Of Sleep",
+                "options": [
+                    "Blocking noise and light is the key",
+                    "Investing in expensive orthopedic mattresses",
+                    "Maintaining a strict high-protein diet"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "According to the expert, what is the public attitude towards sleeping?",
+                "options": [
+                    "The media overemphasize the subject",
+                    "People are generally ignoring the benefits of rest",
+                    "There is a global movement to reduce working hours"
+                ]
+            }
+        ],
+        "transcript": "It seems like lately, you cannot open a news app or watch a health segment without being bombarded by advice on how to get a better night's rest. While some health advocates argue that we are still largely ignoring the benefits of rest, I personally find the current trend quite exhausting. In my view, news outlets and social platforms have started to overemphasize the subject, turning a natural biological process into a source of constant public anxiety through excessive coverage and repetitive reports.\n\nAmidst all this noise, people are often led to believe that they need to invest in expensive orthopedic mattresses or follow a strict high-protein diet to see any improvement. However, high-tech gear and dietary changes are secondary at best. If you want to strip away the hype and focus on what truly matters, the solution is surprisingly low-tech. The fundamental key to deep, restorative sleep is simply your environment: ensuring your room is shielded from any auditory disturbances and is kept in total darkness. Nothing is more vital than blocking out every potential source of sound and light before you close your eyes."
+    },
+    {
+        "audioUrl": "audio/question16/50_life_of_scientist.mp3",
+        "topic": "A book about a life of a scientist",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "Why is the book so popular?",
+                "options": [
+                    "It uses simple language to describe complex ideas",
+                    "It was endorsed by a famous celebrity",
+                    "It contains many colorful illustrations"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What do people criticize about the book?",
+                "options": [
+                    "It is similar to the previous book about the scientist",
+                    "It is too short to be meaningful",
+                    "It focuses too much on entertainment rather than facts"
+                ]
+            }
+        ],
+        "transcript": "A new biography about a world-renowned scientist has recently become a bestseller, sparking a great deal of interest. Many analysts initially suggested that its success was due to a major endorsement by a famous celebrity or the inclusion of numerous high-quality illustrations. However, the real reason it has captured the public's attention is the author's remarkable ability to explain highly intricate concepts using layman’s terms. By stripping away the technical jargon, the writer ensures that even the most difficult theories are presented in a way that is perfectly clear to an average reader.\n\nDespite this success, the book has not been without its detractors. Some readers argue that the work is too brief to be truly meaningful, while others feel it prioritizes entertaining stories over scientific facts. Nevertheless, the most frequent criticism is that the content is highly derivative. Many experts have pointed out that the book largely echoes a biography published a few years ago, offering very little in the way of new information. To many, it feels as though the author has simply recycled the same material from the previous volume without providing any fresh insights."
+    },
+    {
+        "audioUrl": "audio/question16/51_nutritionist.mp3",
+        "topic": "Nutritionist",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "When did she become a Nutritionist?",
+                "options": [
+                    "When she did a biology degree.",
+                    "After working in a hospital.",
+                    "When she worked at a healthcare center."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "When did she become famous?",
+                "options": [
+                    "After solving people's problems in a helpline.",
+                    "After appearing on a famous TV show.",
+                    "After inventing a new type of food."
+                ]
+            }
+        ],
+        "transcript": "I started my career path a bit differently than some might expect. While many of my colleagues only decided to specialize in dietetics after gaining some experience working in a hospital setting or while they were employed at a local healthcare center, I took a more direct academic route. I actually qualified as a professional nutritionist during the time I was completing my biology degree. It was those early university years that really shaped my clinical focus.\n\nMy rise to public recognition was also quite unexpected. A common misconception is that I gained my reputation after appearing on a famous TV talk show, or perhaps after I tried to invent a revolutionary new health food. However, those were just minor highlights. My career truly took off when I started working for a national telephone advisory service. By addressing complex health concerns for anonymous callers on the helpline and offering them practical solutions to their daily problems, I built the trust and fame that eventually defined my professional life."
+    },
+    {
+        "audioUrl": "audio/question16/52_cycling_expedition.mp3",
+        "topic": "Cycling expedition",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What is the speaker's advice?",
+                "options": [
+                    "Be well informed of the places you are going to visit.",
+                    "Always carry extra water and food supplies.",
+                    "Avoid cycling on rough terrain."
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the speaker's advice in general?",
+                "options": [
+                    "Knowing the people and cultures in the different countries.",
+                    "Only visit places with good weather conditions.",
+                    "Cycle at your own pace without worrying about the destination."
+                ]
+            }
+        ],
+        "transcript": "Planning a long-distance cycling trip across borders is an ambitious undertaking that requires far more than just physical stamina. Many enthusiasts believe the most critical aspect is purely logistical—such as always carrying massive amounts of extra water and food supplies to last for days, or carefully selecting a route to avoid cycling on rough and uneven terrain. While these are certainly practical considerations, they aren't my primary piece of advice. Before you even set off, you must thoroughly research your intended route and gain a comprehensive understanding of the locations on your itinerary. Truly equipping yourself with deep knowledge about the places you are set to explore is the only way to navigate unexpected challenges effectively.\n\nOn a broader level, I often remind travelers that an expedition shouldn't just be about the physical distance covered. Some suggest you should only visit regions with favorable weather conditions or that you should simply cycle at your own pace without worrying about the final destination. However, I believe the true value of such a journey is found in the human element. My general philosophy is that the most rewarding experiences come from developing a deep appreciation for the local residents and the rich heritage of various nations. Focusing on engaging with the social customs and the diverse ways of life in every country you pass through is what truly transforms a simple bike ride into a life-changing adventure."
+    },
+    {
+        "audioUrl": "audio/question16/53_viral_video.mp3",
+        "topic": "Viral Video",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What makes the video stand out from others?",
+                "options": [
+                    "Its production techniques.",
+                    "The high marketing budget involved.",
+                    "The participation of famous celebrities."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "According to the reviewer, when can videos become more successful?",
+                "options": [
+                    "They should be released at the right time.",
+                    "When they strictly follow long-term trends.",
+                    "If they are translated into multiple languages."
+                ]
+            }
+        ],
+        "transcript": "The recent explosion in popularity of this particular short film has left many marketing experts puzzled. At first glance, one might assume its success was driven by the participation of world-renowned celebrities or perhaps a massive financial investment in social media advertising. However, neither of these factors played a significant role. What truly distinguishes this piece from the millions of other uploads is its sophisticated technical execution. The innovative cinematography, seamless editing style, and advanced sound design provide a level of quality that is rarely seen in amateur content, making it truly unique in a crowded digital landscape.\n\nFurthermore, we must consider why some content thrives while others vanish. Many creators believe that translating their work into multiple global languages is the key to a wider audience, or they attempt to strictly mirror long-term industry trends to stay relevant. While these strategies have their merits, they are not the primary drivers of viral success. According to most critics, the most influential factor is strategic timing. A video is far more likely to achieve massive reach if it is launched at the exact moment when public interest in a specific topic peaks. Ultimately, releasing content during the perfect window of opportunity is what separates a global hit from a forgotten clip."
+    },
+    {
+        "audioUrl": "audio/question16/54_business_strategy.mp3",
+        "topic": "Business Strategy",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "Why is identifying the correct market so important for a company?",
+                "options": [
+                    "It helps the company focus its resources and avoid wasting time on low-demand areas.",
+                    "It guarantees that the business will operate without any rival firms.",
+                    "It provides a justification for lowering product standards to maximize profit."
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "According to the passage, what is the significance of 'profitability'?",
+                "options": [
+                    "It proves the company can cover costs and create opportunities for future growth.",
+                    "It signals that the company has no further need for market research.",
+                    "It suggests that the company can disregard the activities of its competitors."
+                ]
+            }
+        ],
+        "transcript": "In the realm of strategic management, determining your target audience is a critical first step. While it is a common mistake to believe that choosing a specific niche guarantees a business will operate without any pressure from rival firms, the true benefit lies in efficiency. By pinpointing exactly where your potential customers are, an organization can concentrate its limited assets and capital more effectively. This ensures that a company is not squandering precious hours or funds on market segments where consumer interest is minimal.\n\nAnother term that is frequently debated in boardrooms is ‘profitability’. It’s certainly not a vanity metric that signals an end to the need for continuous market research, nor should it ever be used as a reason to disregard the strategic moves of your competitors. Rather, profitability serves as a vital indicator of a firm’s fundamental health. It demonstrates that a business is successfully meeting its operational expenses while simultaneously generating the surplus necessary to fund future expansion and long-term development."
+    },
+    {
+        "audioUrl": "audio/question16/2026_T5/01_aptiskey_com_music_industry.mp3",
+        "topic": "The Music Industry",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "What is the key to her enduring career?",
+                "options": [
+                    "Belief in her musical instincts",
+                    "Following the latest music trends",
+                    "Copying other successful artists"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the musician’s opinion of the current music industry?",
+                "options": [
+                    "Performers find it difficult to start their careers",
+                    "There are too many music genres today",
+                    "The industry supports new artists very well"
+                ]
+            }
+        ],
+        "transcript": "Many people ask me what the secret to my enduring career is. Personally, I believe it comes from trusting my musical instincts and staying true to the kind of music I love. I’ve never tried to copy other artists or follow every trend in the industry.\n\nAt the same time, I think the music industry today is very challenging for new performers. There is so much competition now that many talented artists find it difficult to start their careers and become well known."
+    },
+    {
+        "audioUrl": "audio/question16/2026_T5/04_aptiskey_com_time_effectively.mp3",
+        "topic": "Productivity",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How can productivity be maximized?",
+                "options": [
+                    "By managing time effectively",
+                    "By working longer hours each day",
+                    "By avoiding all distractions completely"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the problem with productivity strategies?",
+                "options": [
+                    "Using them effectively requires effort",
+                    "They are too expensive to implement",
+                    "They only work for certain types of people"
+                ]
+            }
+        ],
+        "transcript": "A lot of people want to maximize their productivity, and I think the best way to do that is through effective time management. Planning tasks carefully and focusing on important priorities can help people achieve more in less time.\n\nHowever, the problem with many productivity strategies is that they require real effort to use effectively. Some people expect quick results, but staying organized and following a system consistently can actually be quite difficult."
+    },
+    {
+        "audioUrl": "audio/question16/2026_T5/02_aptiskey_com_biography.mp3",
+        "topic": "A Book Critic Talks About A Biography",
+        "questions": [
+            {
+                "id": "17.1",
+                "question": "What is the main strength of the book?",
+                "options": [
+                    "The book describes a particular historical period very effectively",
+                    "The author is very well known in the field",
+                    "It is shorter than most other biographies"
+                ]
+            },
+            {
+                "id": "17.2",
+                "question": "What is the critic’s overall opinion of the book?",
+                "options": [
+                    "It is an unconventional biography",
+                    "It follows the typical style of most biographies",
+                    "It is too long and difficult to read"
+                ]
+            }
+        ],
+        "transcript": "I’ve recently read a book that I found extremely interesting. In my opinion, the main strength of the book is the way it describes a particular historical period so vividly and effectively. The author includes a lot of rich details about daily life, society, and the atmosphere of the time, which really helps readers imagine what it was like to live during that period. Because of this, the story feels realistic and engaging from beginning to end.\n\nOverall, the critic had a very positive opinion of the book. They mentioned that it was an unconventional biography because it does not follow the typical style of most biographies. Instead of simply listing events in chronological order, the author tells the story in a more creative and original way. This approach makes the book more enjoyable to read and helps it stand out from other books in the same genre."
+    },
+    {
+        "audioUrl": "audio/question16/2026_T5/03_aptiskey_com_podcasting.mp3",
+        "topic": "Podcasting",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How does the speaker explain why new podcasts fail?",
+                "options": [
+                    "Content creators do not promote their shows",
+                    "The audio quality is too poor to attract listeners",
+                    "Episodes are too long and boring"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What is the speaker's opinion of podcasting?",
+                "options": [
+                    "It is a great way to build a community",
+                    "It is too expensive to produce",
+                    "It is less popular than other media"
+                ]
+            }
+        ],
+        "transcript": "I think one of the main reasons new podcasts fail is that creators don't spend enough time promoting their shows. A lot of people focus only on making episodes, but they forget that listeners need to discover the podcast first. Without advertising or sharing content on social media, it's very difficult to attract an audience.\n\nPersonally, I believe podcasting is an excellent way to build a community. Podcasts allow people with similar interests to connect, share ideas, and feel part of something larger. That's why podcasting has become so popular in recent years."
+    },
+    {
+        "audioUrl": "audio/question16/2026_T5/05_aptiskey_com_james_panos_exhibition.mp3",
+        "topic": "James Panos Greek Art Exhibition",
+        "questions": [
+            {
+                "id": "16.1",
+                "question": "How did many art critics describe Jame Panos' paintings?",
+                "options": [
+                    "They would be characterized by sadness",
+                    "They would be admired for their bright colors",
+                    "They would be criticized for being too abstract"
+                ]
+            },
+            {
+                "id": "16.2",
+                "question": "What did the exhibition seem like to visitors?",
+                "options": [
+                    "A window into the past",
+                    "A confusing maze of rooms",
+                    "A modern showcase of technology"
+                ]
+            }
+        ],
+        "transcript": "When art critics reviewed the recent collection by Greek artist James Panos, many focused on the emotional tone running through his work. Some might expect critics to praise the paintings for their vibrant, cheerful colors, but that was rarely the case here. Others assumed the pieces would be dismissed as overly abstract and difficult to interpret. In reality, most critics agreed that the paintings carried a deep sense of melancholy, with muted tones and solitary figures that left viewers with a lingering feeling of sadness.\n\nAs for the exhibition itself, visitors described their experience in very personal terms. It wasn't seen as a confusing maze of rooms that left people lost, nor did it come across as a modern showcase built around flashy technology and interactive displays. Instead, many visitors said walking through the gallery felt like stepping through a window into the past, as though each canvas offered a quiet glimpse of an earlier time in Greek history and culture."
+    }
+]

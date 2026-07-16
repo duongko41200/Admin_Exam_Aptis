@@ -1,0 +1,142 @@
+const questions = [
+    {
+        question: "Could you describe your family?",
+        answer1: "I come from a family of four. I live with my parents and my younger brother. My father works as a mechanic, while my mother runs a small grocery shop. My brother is still at school. We often have dinner together and talk about our day. I feel lucky because everyone in my family always supports me.",
+        answer2: "There are five members in my family: my grandparents, my parents, and me. My grandparents are retired and enjoy gardening. My father is a driver, and my mother works in an office. Although we are sometimes busy, we usually spend Sunday together. My family is very important to me because they always make me feel safe and loved."
+    },
+    {
+        question: "Can you introduce yourself?",
+        answer1: "Hello, my name is Minh. I am twenty-five years old and work as a primary school teacher. I am a friendly and patient person. After work, I often listen to music or go for a short walk. These activities help me clear my mind and recover after a busy day.",
+        answer2: "My name is Lan, and I am in my final year at university. I study business administration because I am interested in how companies work. In my spare time, I enjoy watching films, meeting friends, and reading short articles. After graduation, I hope to find a job in marketing and develop my communication skills."
+    },
+    {
+        question: "What is your hometown or the place where you live like?",
+        answer1: "I was born in Hanoi, a busy city in northern Vietnam. The city is well known for its old streets, lakes, and traditional food. Summers are usually hot, while winters can be quite cold. I especially enjoy walking around Hoan Kiem Lake in the evening. Although traffic is crowded, Hanoi is still a special place to me.",
+        answer2: "I live in Hung Yen, which is not far from Hanoi. It is quieter than the capital and has many green fields and small villages. The local people are welcoming, and life there is peaceful. My hometown is also famous for longan fruit. I think it is a pleasant place for anyone who wants to escape from a noisy city."
+    },
+    {
+        question: "What is the most convenient way to travel around your country?",
+        answer1: "In my opinion, travelling by train is a great way to explore Vietnam. Trains connect many major cities, and passengers can enjoy the countryside through the window. It may take longer than flying, but it is usually more comfortable and less stressful. It is also a good choice for people who want to see more of the country during their journey.",
+        answer2: "I think a motorbike is the most practical vehicle for short trips in Vietnam. It is affordable, easy to park, and useful on small roads. Travellers can stop whenever they see an interesting place or want to taste local food. However, they should wear a helmet and follow traffic rules to stay safe."
+    },
+    {
+        question: "Tell me about a close friend or someone in your family.",
+        answer1: "My closest friend is Nam. We first met in secondary school and have stayed in contact for many years. He is cheerful, honest, and always willing to listen when I have a problem. We often play badminton or drink coffee at the weekend. I value our friendship because I can always be myself when I am with him.",
+        answer2: "I would like to talk about my older sister. She is three years older than me and works as a nurse. She is caring, responsible, and very patient. Whenever I have to make an important decision, she gives me useful advice without judging me. I admire her because she works hard and always takes care of our family."
+    },
+    {
+        question: "How is the weather today, and which season do you enjoy most?",
+        answer1: "The weather today is warm and sunny, with only a few clouds in the sky. My favorite season is autumn because the temperature is comfortable and the air feels fresh. I can go outside without feeling too hot or too cold. During autumn, I enjoy walking in the park and having coffee with my friends.",
+        answer2: "It is cloudy today, and there is a light breeze. I prefer spring because the weather is mild and many flowers begin to bloom. Spring also brings several important holidays, so families have more time to meet each other. This season always gives me a positive and hopeful feeling."
+    },
+    {
+        question: "Could you share a happy memory from your life?",
+        answer1: "One of my happiest memories was my first trip to Da Nang with my family. We stayed there for three days and visited the beach, Ba Na Hills, and several local restaurants. In the evening, we walked near the river and took many photos together. It was a simple holiday, but I still remember how relaxed and close we felt.",
+        answer2: "A memory I really treasure is my university graduation day. My parents travelled a long distance to attend the ceremony. When I received my certificate, I could see how proud they were. We later had a small meal together and talked about my future. That day reminded me that all my hard work had been worthwhile."
+    },
+    {
+        question: "How do you usually spend time with your friends?",
+        answer1: "My friends and I often meet at a small café near our homes. We talk about work, share funny stories, and sometimes play board games. On special weekends, we may go to the cinema or have a picnic in a park. Spending time with them helps me forget daily pressure and keeps our friendship strong.",
+        answer2: "I enjoy doing outdoor activities with my friends. We sometimes ride bicycles around the city or play badminton in the afternoon. After that, we usually have dinner at a local restaurant. These activities are not expensive, but they give us a chance to exercise, laugh, and create good memories together."
+    },
+    {
+        question: "What activities do you enjoy when you have free time?",
+        answer1: "When I am free, I often read books or watch travel videos. Reading helps me learn new ideas, while travel videos introduce me to places I have never visited. If the weather is pleasant, I also take a walk around my neighborhood. These simple activities help me relax without spending much money.",
+        answer2: "I usually spend my free time cooking. I like finding easy recipes online and preparing meals for my family. Sometimes the food does not look perfect, but I enjoy the process. Cooking allows me to be creative, and I feel satisfied when everyone enjoys what I have made."
+    },
+    {
+        question: "What did you do last night or during the previous weekend?",
+        answer1: "Last night, I stayed at home and finished some unfinished work. After that, I made a cup of tea and watched a comedy with my sister. The film was quite funny, so we laughed a lot. I went to bed before eleven because I needed to wake up early this morning.",
+        answer2: "Last weekend, I visited my grandparents in the countryside. I helped them clean the garden and water the vegetables. In the afternoon, we had lunch together and talked about family news. The trip was short, but it helped me slow down and enjoy a peaceful atmosphere."
+    },
+    {
+        question: "What do you remember about the first school you attended?",
+        answer1: "My first school was a small primary school near my house. The classrooms were simple, and there was a large playground in front of the main building. I remember my first teacher because she was gentle and encouraged me to speak in class. I also made several close friends there, so the school holds many warm memories for me.",
+        answer2: "I started school when I was six years old. My father took me there on the first morning because I was nervous. The school had yellow walls, tall trees, and a small library. I especially enjoyed break time, when my classmates and I played simple games in the yard. Those early school days were exciting and unforgettable."
+    },
+    {
+        question: "Can you describe the room you are currently in?",
+        answer1: "I am sitting in a medium-sized room with white walls and bright lights. There are several rows of desks, and each desk has a computer. An air conditioner is running, so the room feels cool. Most people are quiet because they are concentrating on their work. The room is simple, clean, and well organized.",
+        answer2: "The room I am in is quite spacious. It has large windows, two fans, and a clock on the front wall. There are many chairs arranged neatly in rows. A few supervisors are walking around to assist people when necessary. The atmosphere is serious, but the room is comfortable enough for everyone to focus."
+    },
+    {
+        question: "How did you travel here today?",
+        answer1: "I left home at about seven this morning after having breakfast. I booked a motorbike taxi because I did not want to arrive late. The journey took around twenty minutes, and the traffic was lighter than usual. I reached the building early, checked my documents, and had enough time to relax before coming into the room.",
+        answer2: "This morning, my friend drove me here by car. We started early because the road is often crowded during rush hour. On the way, we talked about the exam and listened to music. The trip took about half an hour. I felt a little nervous when we arrived, but I was also excited to begin."
+    },
+    {
+        question: "Could you describe what you are wearing today?",
+        answer1: "Today I am wearing a light-blue shirt with black trousers. I chose this outfit because it looks neat and feels comfortable. I am also wearing a pair of simple sports shoes because I had to walk some distance. I usually prefer practical clothes rather than fashionable ones, especially on a busy day.",
+        answer2: "I have on a white T-shirt, dark jeans, and a thin jacket. The weather was cool this morning, so the jacket was useful. My clothes are quite casual, but they allow me to move easily. I normally choose neutral colors because they are easy to match and suitable for many situations."
+    },
+    {
+        question: "In what situations do you usually feel tired?",
+        answer1: "I normally feel tired after spending many hours in front of a computer. My eyes become uncomfortable, and it is difficult to concentrate. When that happens, I stand up, drink some water, and walk around for a few minutes. A short break usually gives me enough energy to continue working.",
+        answer2: "I feel exhausted when I do not get enough sleep. If I stay up late, I am often sleepy and less productive the next day. Heavy workloads can also make me tired, especially when several tasks have the same deadline. To recover, I try to rest early and avoid using my phone before bedtime."
+    },
+    {
+        question: "What does an ordinary Vietnamese family meal usually include?",
+        answer1: "A common Vietnamese meal often has steamed rice, a vegetable dish, meat or fish, and a bowl of soup. The dishes are placed in the middle of the table so everyone can share them. Fish sauce is also commonly served. Family members usually eat together and talk about their day, which makes mealtime an important social activity.",
+        answer2: "In many Vietnamese homes, lunch or dinner includes rice with two or three side dishes. For example, a family may have fried fish, boiled vegetables, and sour soup. Fresh ingredients are used, and the flavors are usually balanced rather than too heavy. Eating together is valued because it gives family members time to connect."
+    },
+    {
+        question: "What is a normal day like for you?",
+        answer1: "I usually wake up at half past six, wash, and prepare a quick breakfast. I start work at eight and spend most of the morning answering emails and completing tasks. After lunch, I continue working until late afternoon. In the evening, I cook dinner, talk with my family, and read for a while before sleeping.",
+        answer2: "On a typical weekday, I get up early and travel to university by bus. I attend classes in the morning and study in the library after lunch. When I return home, I help with housework and review my lessons. I sometimes watch a short program before bed. My routine is busy, but it keeps me organized."
+    },
+    {
+        question: "How do you normally relax in your spare time?",
+        answer1: "Listening to podcasts is one of my favorite ways to relax. I usually choose programs about daily life, language learning, or personal development. I can listen while cleaning my room or travelling by bus. This habit is enjoyable and also helps me learn useful information without feeling pressured.",
+        answer2: "I like taking photos when I have spare time. I often walk around local streets and photograph flowers, buildings, or everyday scenes. I only use my phone, so I do not need expensive equipment. Photography helps me notice small details and gives me a reason to spend more time outdoors."
+    },
+    {
+        question: "What place do you like visiting most?",
+        answer1: "My favorite place is a quiet park near my home. It has many trees, a small lake, and several paths for walking. I often go there in the late afternoon when the temperature is cooler. The peaceful environment helps me think clearly and take a break from traffic and noise.",
+        answer2: "I really enjoy visiting Da Lat because the weather is cool and the scenery is beautiful. The city has flower gardens, pine forests, lakes, and many cozy cafés. I also like trying local vegetables and hot drinks there. Da Lat is a good destination for resting and spending time with people I care about."
+    },
+    {
+        question: "When was the most recent time you spoke to your mother?",
+        answer1: "I spoke to my mother this morning while we were having breakfast. She asked about my plans for the day and reminded me to bring everything I needed. We also discussed what to cook for dinner. It was only a short conversation, but talking to her always helps me feel calmer and more confident.",
+        answer2: "The last time I talked with my mother was yesterday evening. I called her because we do not live in the same city. She told me about my grandparents and asked whether I was eating properly. We spoke for nearly fifteen minutes. Hearing her voice made me feel close to home again."
+    },
+    {
+        question: "Are sports popular among people in your country?",
+        answer1: "Yes, sports are quite popular in Vietnam. Football attracts the largest number of fans, and important matches are watched by millions of people. Badminton, running, and cycling are also common because they are easy to practise. In the early morning, many parks are full of people exercising to improve their health.",
+        answer2: "Many Vietnamese people enjoy both playing and watching sports. Young people often play football or basketball after school, while older adults may prefer walking or doing light exercise. Major international competitions receive a lot of attention on television and social media. Sports are a good way to stay active and meet other people."
+    },
+    {
+        question: "What features would you like your next home to have?",
+        answer1: "I would like my future home to be in a quiet neighborhood with convenient transport. It should have two bedrooms, a bright living room, and a kitchen with enough space for cooking. A small balcony would also be useful for growing plants. I do not need a luxurious house; I mainly want it to be comfortable and easy to maintain.",
+        answer2: "The most important thing I want in a new house is natural light. I would prefer large windows and a small garden where I could grow flowers and herbs. I also need a separate work area because I sometimes work from home. A safe location near shops and a hospital would make the house even more suitable."
+    },
+    {
+        question: "What are your main reasons for studying English?",
+        answer1: "I am learning English because it can create more opportunities for my career. Many companies expect employees to communicate with international customers or read documents in English. I also want to travel independently and speak to people from different countries. Improving my English will therefore make both my work and personal life easier.",
+        answer2: "English is useful for education, entertainment, and communication. I want to understand online courses, books, and films without depending completely on translations. In addition, speaking English confidently may help me qualify for a better job. Although learning a language takes time, I believe the effort will benefit me in the future."
+    },
+    {
+        question: "Could you explain what you do for a living?",
+        answer1: "I work as an English teacher at a secondary school. I plan lessons, explain grammar, and give students opportunities to practise speaking. I also check homework and prepare tests. The job can be demanding, especially when classes are large, but I enjoy seeing students become more confident and improve over time.",
+        answer2: "I am an accountant for a small manufacturing company. My main tasks include checking invoices, recording expenses, and preparing monthly financial reports. I often use spreadsheets and communicate with other departments to confirm information. The work requires accuracy and patience, but it has helped me become more careful and organized."
+    },
+    {
+        question: "How would you describe the food in your country?",
+        answer1: "Vietnamese food is varied, fresh, and full of flavor. Meals often combine rice or noodles with vegetables, herbs, meat, or seafood. Pho is one of the best-known dishes, but each region also has its own specialties. I like Vietnamese cuisine because it offers many choices and is usually not too heavy.",
+        answer2: "Food in Vietnam changes from one area to another. Northern dishes are often mild, central food can be spicy, and southern meals may taste slightly sweeter. Street food is widely available and usually affordable. Some popular choices include banh mi, noodle soup, spring rolls, and rice dishes. Visitors can easily find something suitable for their taste."
+    },
+    {
+        question: "What kinds of situations make you feel stressed?",
+        answer1: "I feel stressed when several important tasks must be completed at the same time. It becomes difficult to decide what to do first, and I worry about making mistakes. To manage this, I write a list, divide large tasks into smaller steps, and focus on one thing at a time. This usually makes the workload feel more manageable.",
+        answer2: "Speaking in front of a large group can make me nervous, especially when I have not prepared enough. I may forget words or speak too quickly. Before a presentation, I practise several times and take slow breaths. The more experience I gain, the more confident I become in these situations."
+    },
+    {
+        question: "Why do you find travelling interesting?",
+        answer1: "Travelling interests me because every trip gives me a chance to experience something different. I can learn about local customs, taste unfamiliar food, and see landscapes that are unlike my hometown. It also helps me take a break from my normal routine. I usually return home with new ideas and more energy.",
+        answer2: "I enjoy travelling because it allows me to spend meaningful time with friends or relatives. During a trip, we can explore new places, solve small problems together, and create shared memories. Travel also teaches me to be more independent and open-minded. For these reasons, I try to take at least one trip each year."
+    },
+    {
+        question: "What book or type of book is popular in your country?",
+        answer1: "One Vietnamese book I particularly like is Cho Tôi Xin Một Vé Đi Tuổi Thơ by Nguyễn Nhật Ánh. It tells stories about childhood from a warm and humorous point of view. The book is easy to read, but it also makes adults think about how their lives have changed. I enjoy it because it brings back simple memories from school days.",
+        answer2: "Novels and comic books are popular among many readers in Vietnam. Teenagers often enjoy romance, adventure, or fantasy stories, while adults may choose business or self-development books. Online reading has also become common because people can use their phones anywhere. In general, books are read for both entertainment and learning."
+    }
+];

@@ -1,0 +1,2134 @@
+[
+    [
+        {
+            "questionStart": "You can catch the next train at the ",
+            "answerOptions": [
+                "station",
+                "school",
+                "market"
+            ],
+            "questionEnd": "near the city center.",
+            "correctAnswer": "station"
+        },
+        {
+            "questionStart": "The number 5 bus ",
+            "answerOptions": [
+                "runs",
+                "stops",
+                "flies"
+            ],
+            "questionEnd": "right in front of my house.",
+            "correctAnswer": "stops"
+        },
+        {
+            "questionStart": "Wait until the light turns ",
+            "answerOptions": [
+                "red",
+                "yellow",
+                "green"
+            ],
+            "questionEnd": "before you cross the street.",
+            "correctAnswer": "green"
+        },
+        {
+            "questionStart": "My family likes to eat ",
+            "answerOptions": [
+                "breakfast",
+                "lunch",
+                "dinner"
+            ],
+            "questionEnd": "together in the evening.",
+            "correctAnswer": "dinner"
+        },
+        {
+            "questionStart": "My little brother loves watching ",
+            "answerOptions": [
+                "books",
+                "films",
+                "hotdog"
+            ],
+            "questionEnd": "every Saturday night.",
+            "correctAnswer": "films"
+        }
+    ],
+    [
+        {
+            "questionStart": "She likes to go jogging in the ",
+            "answerOptions": [
+                "morning",
+                "sea",
+                "roof"
+            ],
+            "questionEnd": "before breakfast.",
+            "correctAnswer": "morning"
+        },
+        {
+            "questionStart": "All of my ",
+            "answerOptions": [
+                "friends",
+                "dog",
+                "tree"
+            ],
+            "questionEnd": "came to my birthday party.",
+            "correctAnswer": "friends"
+        },
+        {
+            "questionStart": "Please don't ",
+            "answerOptions": [
+                "leave",
+                "go",
+                "love"
+            ],
+            "questionEnd": "your shoes in the hallway.",
+            "correctAnswer": "leave"
+        },
+        {
+            "questionStart": "Fresh vegetables are really ",
+            "answerOptions": [
+                "hate",
+                "lovely",
+                "good"
+            ],
+            "questionEnd": "for children.",
+            "correctAnswer": "good"
+        },
+        {
+            "questionStart": "The restaurant serves delicious ",
+            "answerOptions": [
+                "food",
+                "books",
+                "games"
+            ],
+            "questionEnd": "at a fair price.",
+            "correctAnswer": "food"
+        }
+    ],
+    [
+        {
+            "questionStart": "What time will you be ",
+            "answerOptions": [
+                "home",
+                "sea",
+                "park"
+            ],
+            "questionEnd": "tonight?",
+            "correctAnswer": "home"
+        },
+        {
+            "questionStart": "The shop assistant was very polite to the ",
+            "answerOptions": [
+                "customers",
+                "bird",
+                "chair"
+            ],
+            "questionEnd": "this morning.",
+            "correctAnswer": "customers"
+        },
+        {
+            "questionStart": "This exercise looks quite ",
+            "answerOptions": [
+                "easy",
+                "go",
+                "bring"
+            ],
+            "questionEnd": "to me.",
+            "correctAnswer": "easy"
+        },
+        {
+            "questionStart": "What time do you usually ",
+            "answerOptions": [
+                "prepare",
+                "big",
+                "team"
+            ],
+            "questionEnd": "lunch for your kids?",
+            "correctAnswer": "prepare"
+        },
+        {
+            "questionStart": "I like to ",
+            "answerOptions": [
+                "watch",
+                "read",
+                "take"
+            ],
+            "questionEnd": "the news before going to bed.",
+            "correctAnswer": "watch"
+        }
+    ],
+    [
+        {
+            "questionStart": "Children love to play in the ",
+            "answerOptions": [
+                "park",
+                "moon",
+                "tree"
+            ],
+            "questionEnd": "after school.",
+            "correctAnswer": "park"
+        },
+        {
+            "questionStart": "The new gym offers dance ",
+            "answerOptions": [
+                "classes",
+                "running",
+                "books"
+            ],
+            "questionEnd": "every weekend.",
+            "correctAnswer": "classes"
+        },
+        {
+            "questionStart": "This math problem is quite ",
+            "answerOptions": [
+                "easy",
+                "try",
+                "bye"
+            ],
+            "questionEnd": "to solve.",
+            "correctAnswer": "easy"
+        },
+        {
+            "questionStart": "What do you usually cook for ",
+            "answerOptions": [
+                "breakfast",
+                "love",
+                "cold"
+            ],
+            "questionEnd": "on weekends?",
+            "correctAnswer": "breakfast"
+        },
+        {
+            "questionStart": "My mother does ",
+            "answerOptions": [
+                "meditation",
+                "book",
+                "healthy"
+            ],
+            "questionEnd": "every morning to feel calm.",
+            "correctAnswer": "meditation"
+        }
+    ],
+    [
+        {
+            "questionStart": "The people in my hometown are very ",
+            "answerOptions": [
+                "friendly",
+                "hate",
+                "big"
+            ],
+            "questionEnd": "to visitors.",
+            "correctAnswer": "friendly"
+        },
+        {
+            "questionStart": "I prefer to ",
+            "answerOptions": [
+                "run",
+                "walk",
+                "buy"
+            ],
+            "questionEnd": "to the market instead of driving.",
+            "correctAnswer": "walk"
+        },
+        {
+            "questionStart": "Where did you meet your best friend ",
+            "answerOptions": [
+                "first",
+                "love",
+                "bring"
+            ],
+            "questionEnd": "?",
+            "correctAnswer": "first"
+        },
+        {
+            "questionStart": "Can your sister ",
+            "answerOptions": [
+                "speak",
+                "big",
+                "most"
+            ],
+            "questionEnd": "Japanese fluently?",
+            "correctAnswer": "speak"
+        },
+        {
+            "questionStart": "We usually go camping ",
+            "answerOptions": [
+                "alone",
+                "together",
+                "morning"
+            ],
+            "questionEnd": "every summer.",
+            "correctAnswer": "together"
+        }
+    ],
+    [
+        {
+            "questionStart": "Every morning, he rides his ",
+            "answerOptions": [
+                "spaceship",
+                "plane",
+                "bicycle"
+            ],
+            "questionEnd": "to the office.",
+            "correctAnswer": "bicycle"
+        },
+        {
+            "questionStart": "The trees in this forest are extremely ",
+            "answerOptions": [
+                "hate",
+                "tall",
+                "went"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "tall"
+        },
+        {
+            "questionStart": "There are lots of tall ",
+            "answerOptions": [
+                "road",
+                "buy",
+                "trees"
+            ],
+            "questionEnd": " along this street.",
+            "correctAnswer": "trees"
+        },
+        {
+            "questionStart": "We always have ",
+            "answerOptions": [
+                "breakfast",
+                "lunch",
+                "dinner"
+            ],
+            "questionEnd": " together before work.",
+            "correctAnswer": "breakfast"
+        },
+        {
+            "questionStart": "On weekends, I enjoy playing board ",
+            "answerOptions": [
+                "games",
+                "make",
+                "time"
+            ],
+            "questionEnd": " with my siblings.",
+            "correctAnswer": "games"
+        }
+    ],
+    [
+        {
+            "questionStart": "Next month, I plan to ",
+            "answerOptions": [
+                "visit",
+                "clean",
+                "run"
+            ],
+            "questionEnd": " my old university friends.",
+            "correctAnswer": "visit"
+        },
+        {
+            "questionStart": "My ",
+            "answerOptions": [
+                "room",
+                "father",
+                "mother"
+            ],
+            "questionEnd": " has a large window facing the garden.",
+            "correctAnswer": "room"
+        },
+        {
+            "questionStart": "It has been extremely ",
+            "answerOptions": [
+                "big",
+                "hot",
+                "small"
+            ],
+            "questionEnd": " this whole week.",
+            "correctAnswer": "hot"
+        },
+        {
+            "questionStart": "We traveled to the countryside by ",
+            "answerOptions": [
+                "spaceship",
+                "plane",
+                "train"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "train"
+        },
+        {
+            "questionStart": "My cousin can ",
+            "answerOptions": [
+                "make",
+                "speak",
+                "love"
+            ],
+            "questionEnd": " three languages fluently.",
+            "correctAnswer": "speak"
+        }
+    ],
+    [
+        {
+            "questionStart": "My grandparents own a small ",
+            "answerOptions": [
+                "farm",
+                "compare",
+                "spare"
+            ],
+            "questionEnd": " outside the city.",
+            "correctAnswer": "farm"
+        },
+        {
+            "questionStart": "Everyone in the class felt very ",
+            "answerOptions": [
+                "run",
+                "excited",
+                "most"
+            ],
+            "questionEnd": " about the field trip.",
+            "correctAnswer": "excited"
+        },
+        {
+            "questionStart": "Please turn ",
+            "answerOptions": [
+                "big",
+                "left",
+                "go"
+            ],
+            "questionEnd": " when you reach the traffic light.",
+            "correctAnswer": "left"
+        },
+        {
+            "questionStart": "We strolled along the busy ",
+            "answerOptions": [
+                "water",
+                "street",
+                "cloud"
+            ],
+            "questionEnd": " near the market.",
+            "correctAnswer": "street"
+        },
+        {
+            "questionStart": "I always ",
+            "answerOptions": [
+                "stone",
+                "drink",
+                "school"
+            ],
+            "questionEnd": " a glass of juice before breakfast.",
+            "correctAnswer": "drink"
+        }
+    ],
+    [
+        {
+            "questionStart": "My whole family stays ",
+            "answerOptions": [
+                "cloud",
+                "home",
+                "road"
+            ],
+            "questionEnd": " on public holidays.",
+            "correctAnswer": "home"
+        },
+        {
+            "questionStart": "My older brother can ",
+            "answerOptions": [
+                "fly",
+                "drive",
+                "big"
+            ],
+            "questionEnd": " a truck safely.",
+            "correctAnswer": "drive"
+        },
+        {
+            "questionStart": "I really enjoy chatting with my ",
+            "answerOptions": [
+                "tree",
+                "friends",
+                "go"
+            ],
+            "questionEnd": " during lunch break.",
+            "correctAnswer": "friends"
+        },
+        {
+            "questionStart": "Let's take a short ",
+            "answerOptions": [
+                "walk",
+                "big",
+                "sea"
+            ],
+            "questionEnd": " along the riverside.",
+            "correctAnswer": "walk"
+        },
+        {
+            "questionStart": "The garden looks really ",
+            "answerOptions": [
+                "pretty",
+                "father",
+                "went"
+            ],
+            "questionEnd": " in spring.",
+            "correctAnswer": "pretty"
+        }
+    ],
+    [
+        {
+            "questionStart": "I would like to visit a different ",
+            "answerOptions": [
+                "country",
+                "small",
+                "big"
+            ],
+            "questionEnd": " next year.",
+            "correctAnswer": "country"
+        },
+        {
+            "questionStart": "Please make sure to keep the kitchen ",
+            "answerOptions": [
+                "green",
+                "boring",
+                "clean"
+            ],
+            "questionEnd": " after cooking.",
+            "correctAnswer": "clean"
+        },
+        {
+            "questionStart": "We have a math ",
+            "answerOptions": [
+                "class",
+                "lunch",
+                "sea"
+            ],
+            "questionEnd": " every Tuesday morning.",
+            "correctAnswer": "class"
+        },
+        {
+            "questionStart": "I really enjoy volunteering to help ",
+            "answerOptions": [
+                "myself",
+                "father",
+                "other"
+            ],
+            "questionEnd": " students with homework.",
+            "correctAnswer": "other"
+        },
+        {
+            "questionStart": "Could you please explain these new ",
+            "answerOptions": [
+                "small",
+                "bring",
+                "words"
+            ],
+            "questionEnd": " in the lesson?",
+            "correctAnswer": "words"
+        }
+    ],
+    [
+        {
+            "questionStart": "The apartment we rented last year was quite ",
+            "answerOptions": [
+                "boring",
+                "small",
+                "healthy"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "small"
+        },
+        {
+            "questionStart": "We usually ",
+            "answerOptions": [
+                "stay",
+                "movie",
+                "bring"
+            ],
+            "questionEnd": " at my aunt's house during the holidays.",
+            "correctAnswer": "stay"
+        },
+        {
+            "questionStart": "She planted colorful roses in the ",
+            "answerOptions": [
+                "sky",
+                "garden",
+                "water"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "garden"
+        },
+        {
+            "questionStart": "Several old ",
+            "answerOptions": [
+                "cloud",
+                "trees",
+                "morning"
+            ],
+            "questionEnd": " were cut down last week.",
+            "correctAnswer": "trees"
+        },
+        {
+            "questionStart": "That wooden bridge looks very ",
+            "answerOptions": [
+                "hot",
+                "old",
+                "free"
+            ],
+            "questionEnd": " but it's still safe.",
+            "correctAnswer": "old"
+        }
+    ],
+    [
+        {
+            "questionStart": "I really ",
+            "answerOptions": [
+                "love",
+                "make",
+                "run"
+            ],
+            "questionEnd": " spending my weekends painting.",
+            "correctAnswer": "love"
+        },
+        {
+            "questionStart": "This jacket feels a little too ",
+            "answerOptions": [
+                "mean",
+                "small",
+                "again"
+            ],
+            "questionEnd": " for me now.",
+            "correctAnswer": "small"
+        },
+        {
+            "questionStart": "Could you go to the ",
+            "answerOptions": [
+                "shop",
+                "park",
+                "sea"
+            ],
+            "questionEnd": " and buy some bread?",
+            "correctAnswer": "shop"
+        },
+        {
+            "questionStart": "There were so many ",
+            "answerOptions": [
+                "people",
+                "birds",
+                "trees"
+            ],
+            "questionEnd": " waiting outside the cinema.",
+            "correctAnswer": "people"
+        },
+        {
+            "questionStart": "My grandparents plan to ",
+            "answerOptions": [
+                "room",
+                "visit",
+                "fly"
+            ],
+            "questionEnd": " us during the summer break.",
+            "correctAnswer": "visit"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually go for a run early in the ",
+            "answerOptions": [
+                "morning",
+                "sky",
+                "free"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "morning"
+        },
+        {
+            "questionStart": "The kids are flying kites in the ",
+            "answerOptions": [
+                "park",
+                "big",
+                "hot"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "park"
+        },
+        {
+            "questionStart": "What time does your flight ",
+            "answerOptions": [
+                "leave",
+                "bring",
+                "stop"
+            ],
+            "questionEnd": " the airport?",
+            "correctAnswer": "leave"
+        },
+        {
+            "questionStart": "We usually eat toast and eggs for ",
+            "answerOptions": [
+                "breakfast",
+                "train",
+                "time"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "breakfast"
+        },
+        {
+            "questionStart": "It was great to ",
+            "answerOptions": [
+                "meet",
+                "hate",
+                "look"
+            ],
+            "questionEnd": " you at the conference.",
+            "correctAnswer": "meet"
+        }
+    ],
+    [
+        {
+            "questionStart": "Every morning, my mother ",
+            "answerOptions": [
+                "drives",
+                "reads",
+                "paints"
+            ],
+            "questionEnd": "the newspaper before breakfast.",
+            "correctAnswer": "reads"
+        },
+        {
+            "questionStart": "My father usually rides his ",
+            "answerOptions": [
+                "kite",
+                "boat",
+                "bicycle"
+            ],
+            "questionEnd": "to work.",
+            "correctAnswer": "bicycle"
+        },
+        {
+            "questionStart": "I always ",
+            "answerOptions": [
+                "brush",
+                "cook",
+                "drive"
+            ],
+            "questionEnd": "my teeth twice a day.",
+            "correctAnswer": "brush"
+        },
+        {
+            "questionStart": "The children usually ",
+            "answerOptions": [
+                "sell",
+                "swim",
+                "eat"
+            ],
+            "questionEnd": "breakfast before school.",
+            "correctAnswer": "eat"
+        },
+        {
+            "questionStart": "We often ",
+            "answerOptions": [
+                "watch",
+                "drive",
+                "sleep"
+            ],
+            "questionEnd": "the morning news together.",
+            "correctAnswer": "watch"
+        }
+    ],
+    [
+        {
+            "questionStart": "It usually ",
+            "answerOptions": [
+                "cooks",
+                "rains",
+                "sings"
+            ],
+            "questionEnd": "a lot in this region during autumn.",
+            "correctAnswer": "rains"
+        },
+        {
+            "questionStart": "The weather here is quite ",
+            "answerOptions": [
+                "hot",
+                "cheap",
+                "polite"
+            ],
+            "questionEnd": "in summer.",
+            "correctAnswer": "hot"
+        },
+        {
+            "questionStart": "People usually wear ",
+            "answerOptions": [
+                "shorts",
+                "coats",
+                "sandals"
+            ],
+            "questionEnd": "when it snows.",
+            "correctAnswer": "coats"
+        },
+        {
+            "questionStart": "The sky looks quite ",
+            "answerOptions": [
+                "cheap",
+                "cloudy",
+                "friendly"
+            ],
+            "questionEnd": "today.",
+            "correctAnswer": "cloudy"
+        },
+        {
+            "questionStart": "In spring, flowers usually ",
+            "answerOptions": [
+                "melt",
+                "freeze",
+                "grow"
+            ],
+            "questionEnd": "in the garden.",
+            "correctAnswer": "grow"
+        }
+    ],
+    [
+        {
+            "questionStart": "On Sundays, my family usually ",
+            "answerOptions": [
+                "travels",
+                "gathers",
+                "argues"
+            ],
+            "questionEnd": "for a big lunch.",
+            "correctAnswer": "gathers"
+        },
+        {
+            "questionStart": "My grandparents like to tell ",
+            "answerOptions": [
+                "lies",
+                "stories",
+                "jokes"
+            ],
+            "questionEnd": "about their childhood.",
+            "correctAnswer": "stories"
+        },
+        {
+            "questionStart": "My little sister often ",
+            "answerOptions": [
+                "cooks",
+                "draws",
+                "drives"
+            ],
+            "questionEnd": "pictures of animals.",
+            "correctAnswer": "draws"
+        },
+        {
+            "questionStart": "We usually spend the holidays with our ",
+            "answerOptions": [
+                "strangers",
+                "relatives",
+                "colleagues"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "relatives"
+        },
+        {
+            "questionStart": "My parents always ",
+            "answerOptions": [
+                "forget",
+                "ignore",
+                "support"
+            ],
+            "questionEnd": "my decisions.",
+            "correctAnswer": "support"
+        }
+    ],
+    [
+        {
+            "questionStart": "Our school starts every day at ",
+            "answerOptions": [
+                "seven",
+                "midnight",
+                "noon"
+            ],
+            "questionEnd": "o'clock.",
+            "correctAnswer": "seven"
+        },
+        {
+            "questionStart": "Students usually wear a ",
+            "answerOptions": [
+                "uniform",
+                "costume",
+                "helmet"
+            ],
+            "questionEnd": "to school.",
+            "correctAnswer": "uniform"
+        },
+        {
+            "questionStart": "My teacher always ",
+            "answerOptions": [
+                "ignores",
+                "hides",
+                "explains"
+            ],
+            "questionEnd": "the lesson clearly.",
+            "correctAnswer": "explains"
+        },
+        {
+            "questionStart": "We usually have ",
+            "answerOptions": [
+                "exams",
+                "parties",
+                "holidays"
+            ],
+            "questionEnd": "at the end of each term.",
+            "correctAnswer": "exams"
+        },
+        {
+            "questionStart": "During break time, students often ",
+            "answerOptions": [
+                "chat",
+                "cook",
+                "sleep"
+            ],
+            "questionEnd": "with their friends.",
+            "correctAnswer": "chat"
+        }
+    ],
+    [
+        {
+            "questionStart": "My mother usually ",
+            "answerOptions": [
+                "paints",
+                "cooks",
+                "drives"
+            ],
+            "questionEnd": "dinner for the whole family.",
+            "correctAnswer": "cooks"
+        },
+        {
+            "questionStart": "We often add a little ",
+            "answerOptions": [
+                "glue",
+                "sand",
+                "salt"
+            ],
+            "questionEnd": "to the soup.",
+            "correctAnswer": "salt"
+        },
+        {
+            "questionStart": "This bakery sells fresh ",
+            "answerOptions": [
+                "shoes",
+                "bread",
+                "toys"
+            ],
+            "questionEnd": "every morning.",
+            "correctAnswer": "bread"
+        },
+        {
+            "questionStart": "I usually drink a glass of ",
+            "answerOptions": [
+                "milk",
+                "paint",
+                "oil"
+            ],
+            "questionEnd": "before bed.",
+            "correctAnswer": "milk"
+        },
+        {
+            "questionStart": "My favorite dish is quite ",
+            "answerOptions": [
+                "heavy",
+                "loud",
+                "spicy"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "spicy"
+        }
+    ],
+    [
+        {
+            "questionStart": "Our dog usually ",
+            "answerOptions": [
+                "barks",
+                "cooks",
+                "sings"
+            ],
+            "questionEnd": "when someone knocks on the door.",
+            "correctAnswer": "barks"
+        },
+        {
+            "questionStart": "My cat likes to sleep on the ",
+            "answerOptions": [
+                "stove",
+                "roof",
+                "sofa"
+            ],
+            "questionEnd": "all afternoon.",
+            "correctAnswer": "sofa"
+        },
+        {
+            "questionStart": "We feed our fish ",
+            "answerOptions": [
+                "never",
+                "twice",
+                "rarely"
+            ],
+            "questionEnd": "a day.",
+            "correctAnswer": "twice"
+        },
+        {
+            "questionStart": "Rabbits usually eat ",
+            "answerOptions": [
+                "carrots",
+                "meat",
+                "bread"
+            ],
+            "questionEnd": "and other vegetables.",
+            "correctAnswer": "carrots"
+        },
+        {
+            "questionStart": "My brother takes the dog for a ",
+            "answerOptions": [
+                "swim",
+                "walk",
+                "ride"
+            ],
+            "questionEnd": "every evening.",
+            "correctAnswer": "walk"
+        }
+    ],
+    [
+        {
+            "questionStart": "My mother usually goes ",
+            "answerOptions": [
+                "swimming",
+                "shopping",
+                "hiking"
+            ],
+            "questionEnd": "on Saturday mornings.",
+            "correctAnswer": "shopping"
+        },
+        {
+            "questionStart": "This shop offers a big ",
+            "answerOptions": [
+                "delay",
+                "punishment",
+                "discount"
+            ],
+            "questionEnd": "every weekend.",
+            "correctAnswer": "discount"
+        },
+        {
+            "questionStart": "I usually pay by ",
+            "answerOptions": [
+                "foot",
+                "hand",
+                "card"
+            ],
+            "questionEnd": "instead of cash.",
+            "correctAnswer": "card"
+        },
+        {
+            "questionStart": "The market sells fresh ",
+            "answerOptions": [
+                "vegetables",
+                "furniture",
+                "electronics"
+            ],
+            "questionEnd": "every day.",
+            "correctAnswer": "vegetables"
+        },
+        {
+            "questionStart": "We usually make a shopping ",
+            "answerOptions": [
+                "speech",
+                "song",
+                "list"
+            ],
+            "questionEnd": "before going to the store.",
+            "correctAnswer": "list"
+        }
+    ],
+    [
+        {
+            "questionStart": "My brother plays ",
+            "answerOptions": [
+                "piano",
+                "chess",
+                "football"
+            ],
+            "questionEnd": "every weekend.",
+            "correctAnswer": "football"
+        },
+        {
+            "questionStart": "I usually go ",
+            "answerOptions": [
+                "sleeping",
+                "shopping",
+                "jogging"
+            ],
+            "questionEnd": "in the park before work.",
+            "correctAnswer": "jogging"
+        },
+        {
+            "questionStart": "Our gym offers yoga ",
+            "answerOptions": [
+                "meals",
+                "classes",
+                "uniforms"
+            ],
+            "questionEnd": "every evening.",
+            "correctAnswer": "classes"
+        },
+        {
+            "questionStart": "Swimming helps keep my body ",
+            "answerOptions": [
+                "tired",
+                "fit",
+                "heavy"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "fit"
+        },
+        {
+            "questionStart": "We usually train as a ",
+            "answerOptions": [
+                "crowd",
+                "audience",
+                "team"
+            ],
+            "questionEnd": "twice a week.",
+            "correctAnswer": "team"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually check my ",
+            "answerOptions": [
+                "shoes",
+                "email",
+                "garden"
+            ],
+            "questionEnd": "first thing in the morning.",
+            "correctAnswer": "email"
+        },
+        {
+            "questionStart": "This app helps me ",
+            "answerOptions": [
+                "destroy",
+                "organize",
+                "ignore"
+            ],
+            "questionEnd": "my daily schedule.",
+            "correctAnswer": "organize"
+        },
+        {
+            "questionStart": "My phone battery usually ",
+            "answerOptions": [
+                "grows",
+                "lasts",
+                "melts"
+            ],
+            "questionEnd": "all day.",
+            "correctAnswer": "lasts"
+        },
+        {
+            "questionStart": "We often ",
+            "answerOptions": [
+                "cook",
+                "paint",
+                "call"
+            ],
+            "questionEnd": "our relatives abroad through video chat.",
+            "correctAnswer": "call"
+        },
+        {
+            "questionStart": "This laptop is quite ",
+            "answerOptions": [
+                "heavy",
+                "old",
+                "light"
+            ],
+            "questionEnd": "and easy to carry.",
+            "correctAnswer": "light"
+        }
+    ],
+    [
+        {
+            "questionStart": "The bus usually ",
+            "answerOptions": [
+                "disappears",
+                "explodes",
+                "arrives"
+            ],
+            "questionEnd": "on time.",
+            "correctAnswer": "arrives"
+        },
+        {
+            "questionStart": "I usually take the ",
+            "answerOptions": [
+                "helicopter",
+                "boat",
+                "train"
+            ],
+            "questionEnd": "to work every day.",
+            "correctAnswer": "train"
+        },
+        {
+            "questionStart": "During rush hour, the roads are usually quite ",
+            "answerOptions": [
+                "empty",
+                "crowded",
+                "quiet"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "crowded"
+        },
+        {
+            "questionStart": "Passengers must buy a ",
+            "answerOptions": [
+                "ticket",
+                "uniform",
+                "gift"
+            ],
+            "questionEnd": "before boarding.",
+            "correctAnswer": "ticket"
+        },
+        {
+            "questionStart": "The subway station is very close to my ",
+            "answerOptions": [
+                "farm",
+                "house",
+                "forest"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "house"
+        }
+    ],
+    [
+        {
+            "questionStart": "Our neighborhood has a small ",
+            "answerOptions": [
+                "park",
+                "factory",
+                "airport"
+            ],
+            "questionEnd": "where children play.",
+            "correctAnswer": "park"
+        },
+        {
+            "questionStart": "The local bakery always smells ",
+            "answerOptions": [
+                "delicious",
+                "strange",
+                "terrible"
+            ],
+            "questionEnd": "in the morning.",
+            "correctAnswer": "delicious"
+        },
+        {
+            "questionStart": "Our neighbors are always very ",
+            "answerOptions": [
+                "noisy",
+                "friendly",
+                "rude"
+            ],
+            "questionEnd": "to us.",
+            "correctAnswer": "friendly"
+        },
+        {
+            "questionStart": "There is a small ",
+            "answerOptions": [
+                "volcano",
+                "library",
+                "desert"
+            ],
+            "questionEnd": "near my house.",
+            "correctAnswer": "library"
+        },
+        {
+            "questionStart": "The streets in our town are usually quite ",
+            "answerOptions": [
+                "dirty",
+                "flooded",
+                "clean"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "clean"
+        }
+    ],
+    [
+        {
+            "questionStart": "My colleagues and I usually have a ",
+            "answerOptions": [
+                "holiday",
+                "meeting",
+                "party"
+            ],
+            "questionEnd": "every Monday morning.",
+            "correctAnswer": "meeting"
+        },
+        {
+            "questionStart": "I usually finish my ",
+            "answerOptions": [
+                "dinner",
+                "report",
+                "vacation"
+            ],
+            "questionEnd": "before lunchtime.",
+            "correctAnswer": "report"
+        },
+        {
+            "questionStart": "My boss is usually quite ",
+            "answerOptions": [
+                "strict",
+                "lazy",
+                "careless"
+            ],
+            "questionEnd": "about deadlines.",
+            "correctAnswer": "strict"
+        },
+        {
+            "questionStart": "The office usually opens at ",
+            "answerOptions": [
+                "noon",
+                "midnight",
+                "eight"
+            ],
+            "questionEnd": "o'clock.",
+            "correctAnswer": "eight"
+        },
+        {
+            "questionStart": "We usually take a short ",
+            "answerOptions": [
+                "nap",
+                "break",
+                "trip"
+            ],
+            "questionEnd": "in the middle of the day.",
+            "correctAnswer": "break"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually drink plenty of ",
+            "answerOptions": [
+                "paint",
+                "water",
+                "oil"
+            ],
+            "questionEnd": "every day.",
+            "correctAnswer": "water"
+        },
+        {
+            "questionStart": "My grandmother goes for a check-up ",
+            "answerOptions": [
+                "regularly",
+                "rarely",
+                "never"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "regularly"
+        },
+        {
+            "questionStart": "Eating too much sugar is not very ",
+            "answerOptions": [
+                "cheap",
+                "healthy",
+                "quiet"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "healthy"
+        },
+        {
+            "questionStart": "I usually go to bed ",
+            "answerOptions": [
+                "early",
+                "late",
+                "never"
+            ],
+            "questionEnd": "on weekdays.",
+            "correctAnswer": "early"
+        },
+        {
+            "questionStart": "We always wash our hands before ",
+            "answerOptions": [
+                "eating",
+                "sleeping",
+                "singing"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "eating"
+        }
+    ],
+    [
+        {
+            "questionStart": "My sister enjoys playing the ",
+            "answerOptions": [
+                "computer",
+                "football",
+                "piano"
+            ],
+            "questionEnd": "every afternoon.",
+            "correctAnswer": "piano"
+        },
+        {
+            "questionStart": "I usually read a ",
+            "answerOptions": [
+                "recipe",
+                "novel",
+                "map"
+            ],
+            "questionEnd": "before going to sleep.",
+            "correctAnswer": "novel"
+        },
+        {
+            "questionStart": "My father likes to collect old ",
+            "answerOptions": [
+                "plates",
+                "shoes",
+                "stamps"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "stamps"
+        },
+        {
+            "questionStart": "We usually listen to ",
+            "answerOptions": [
+                "music",
+                "traffic",
+                "silence"
+            ],
+            "questionEnd": "while doing housework.",
+            "correctAnswer": "music"
+        },
+        {
+            "questionStart": "Painting helps me feel very ",
+            "answerOptions": [
+                "tired",
+                "relaxed",
+                "nervous"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "relaxed"
+        }
+    ],
+    [
+        {
+            "questionStart": "We usually go ",
+            "answerOptions": [
+                "sleeping",
+                "hiking",
+                "working"
+            ],
+            "questionEnd": "in the mountains on weekends.",
+            "correctAnswer": "hiking"
+        },
+        {
+            "questionStart": "My family likes to have a ",
+            "answerOptions": [
+                "exam",
+                "picnic",
+                "meeting"
+            ],
+            "questionEnd": "in the park.",
+            "correctAnswer": "picnic"
+        },
+        {
+            "questionStart": "On Saturdays, I usually clean my ",
+            "answerOptions": [
+                "office",
+                "room",
+                "garden"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "room"
+        },
+        {
+            "questionStart": "We usually watch a ",
+            "answerOptions": [
+                "meeting",
+                "movie",
+                "lecture"
+            ],
+            "questionEnd": "together on Friday night.",
+            "correctAnswer": "movie"
+        },
+        {
+            "questionStart": "My friends and I like to meet at the ",
+            "answerOptions": [
+                "cafe",
+                "office",
+                "hospital"
+            ],
+            "questionEnd": "on weekends.",
+            "correctAnswer": "cafe"
+        }
+    ],
+    [
+        {
+            "questionStart": "Birds usually sing early in the ",
+            "answerOptions": [
+                "storm",
+                "morning",
+                "night"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "morning"
+        },
+        {
+            "questionStart": "The forest near our town is very ",
+            "answerOptions": [
+                "peaceful",
+                "loud",
+                "crowded"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "peaceful"
+        },
+        {
+            "questionStart": "We usually go camping near the ",
+            "answerOptions": [
+                "airport",
+                "mall",
+                "lake"
+            ],
+            "questionEnd": "in summer.",
+            "correctAnswer": "lake"
+        },
+        {
+            "questionStart": "Bees usually fly around the colorful ",
+            "answerOptions": [
+                "books",
+                "cars",
+                "flowers"
+            ],
+            "questionEnd": "in the garden.",
+            "correctAnswer": "flowers"
+        },
+        {
+            "questionStart": "The mountain air always feels quite ",
+            "answerOptions": [
+                "fresh",
+                "heavy",
+                "dirty"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "fresh"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually ",
+            "answerOptions": [
+                "cook",
+                "vacuum",
+                "paint"
+            ],
+            "questionEnd": "the living room every weekend.",
+            "correctAnswer": "vacuum"
+        },
+        {
+            "questionStart": "My brother always takes out the ",
+            "answerOptions": [
+                "trash",
+                "furniture",
+                "carpet"
+            ],
+            "questionEnd": "every evening.",
+            "correctAnswer": "trash"
+        },
+        {
+            "questionStart": "We usually do the ",
+            "answerOptions": [
+                "laundry",
+                "shopping",
+                "homework"
+            ],
+            "questionEnd": "on Sunday mornings.",
+            "correctAnswer": "laundry"
+        },
+        {
+            "questionStart": "My mother likes to keep the kitchen very ",
+            "answerOptions": [
+                "messy",
+                "dark",
+                "tidy"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "tidy"
+        },
+        {
+            "questionStart": "I usually water the ",
+            "answerOptions": [
+                "windows",
+                "plants",
+                "furniture"
+            ],
+            "questionEnd": "every morning.",
+            "correctAnswer": "plants"
+        }
+    ],
+    [
+        {
+            "questionStart": "My family usually travels ",
+            "answerOptions": [
+                "backwards",
+                "underground",
+                "abroad"
+            ],
+            "questionEnd": "once a year.",
+            "correctAnswer": "abroad"
+        },
+        {
+            "questionStart": "Before any trip, I always check the ",
+            "answerOptions": [
+                "weather",
+                "homework",
+                "furniture"
+            ],
+            "questionEnd": "forecast.",
+            "correctAnswer": "weather"
+        },
+        {
+            "questionStart": "We usually pack our ",
+            "answerOptions": [
+                "suitcase",
+                "kitchen",
+                "garden"
+            ],
+            "questionEnd": "the night before a trip.",
+            "correctAnswer": "suitcase"
+        },
+        {
+            "questionStart": "My father prefers to book flights ",
+            "answerOptions": [
+                "underground",
+                "loudly",
+                "online"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "online"
+        },
+        {
+            "questionStart": "Travelling by train is usually quite ",
+            "answerOptions": [
+                "expensive",
+                "relaxing",
+                "dangerous"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "relaxing"
+        }
+    ],
+    [
+        {
+            "questionStart": "My cousin plays the ",
+            "answerOptions": [
+                "chess",
+                "football",
+                "guitar"
+            ],
+            "questionEnd": "in a local band.",
+            "correctAnswer": "guitar"
+        },
+        {
+            "questionStart": "This museum usually displays modern ",
+            "answerOptions": [
+                "vegetables",
+                "paintings",
+                "furniture"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "paintings"
+        },
+        {
+            "questionStart": "I usually sing in the school ",
+            "answerOptions": [
+                "choir",
+                "garden",
+                "kitchen"
+            ],
+            "questionEnd": "on Fridays.",
+            "correctAnswer": "choir"
+        },
+        {
+            "questionStart": "Classical music always makes me feel quite ",
+            "answerOptions": [
+                "angry",
+                "calm",
+                "hungry"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "calm"
+        },
+        {
+            "questionStart": "My sister takes dance ",
+            "answerOptions": [
+                "lessons",
+                "medicine",
+                "exams"
+            ],
+            "questionEnd": "every Tuesday.",
+            "correctAnswer": "lessons"
+        }
+    ],
+    [
+        {
+            "questionStart": "My grandmother usually bakes ",
+            "answerOptions": [
+                "bread",
+                "shoes",
+                "furniture"
+            ],
+            "questionEnd": "every weekend.",
+            "correctAnswer": "bread"
+        },
+        {
+            "questionStart": "This recipe needs a pinch of ",
+            "answerOptions": [
+                "paint",
+                "salt",
+                "sand"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "salt"
+        },
+        {
+            "questionStart": "We usually preheat the ",
+            "answerOptions": [
+                "fridge",
+                "garden",
+                "oven"
+            ],
+            "questionEnd": "before baking a cake.",
+            "correctAnswer": "oven"
+        },
+        {
+            "questionStart": "I always add fresh ",
+            "answerOptions": [
+                "rocks",
+                "paper",
+                "herbs"
+            ],
+            "questionEnd": "to my salads.",
+            "correctAnswer": "herbs"
+        },
+        {
+            "questionStart": "This cake usually takes an hour to ",
+            "answerOptions": [
+                "bake",
+                "melt",
+                "freeze"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "bake"
+        }
+    ],
+    [
+        {
+            "questionStart": "My mother grows several ",
+            "answerOptions": [
+                "rocks",
+                "animals",
+                "vegetables"
+            ],
+            "questionEnd": "in our backyard.",
+            "correctAnswer": "vegetables"
+        },
+        {
+            "questionStart": "These flowers need plenty of ",
+            "answerOptions": [
+                "snow",
+                "sunlight",
+                "shade"
+            ],
+            "questionEnd": "to grow well.",
+            "correctAnswer": "sunlight"
+        },
+        {
+            "questionStart": "I usually water the garden every ",
+            "answerOptions": [
+                "winter",
+                "morning",
+                "midnight"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "morning"
+        },
+        {
+            "questionStart": "Our garden always looks quite ",
+            "answerOptions": [
+                "dusty",
+                "colorful",
+                "empty"
+            ],
+            "questionEnd": "in spring.",
+            "correctAnswer": "colorful"
+        },
+        {
+            "questionStart": "My father likes to cut the ",
+            "answerOptions": [
+                "grass",
+                "carpets",
+                "windows"
+            ],
+            "questionEnd": "every month.",
+            "correctAnswer": "grass"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually study at the ",
+            "answerOptions": [
+                "stadium",
+                "library",
+                "cinema"
+            ],
+            "questionEnd": "after school.",
+            "correctAnswer": "library"
+        },
+        {
+            "questionStart": "My classmates and I often ",
+            "answerOptions": [
+                "review",
+                "skip",
+                "forget"
+            ],
+            "questionEnd": "our lessons together.",
+            "correctAnswer": "review"
+        },
+        {
+            "questionStart": "This library usually stays open until ",
+            "answerOptions": [
+                "nine",
+                "noon",
+                "dawn"
+            ],
+            "questionEnd": "in the evening.",
+            "correctAnswer": "nine"
+        },
+        {
+            "questionStart": "I always take careful ",
+            "answerOptions": [
+                "naps",
+                "notes",
+                "photos"
+            ],
+            "questionEnd": "during lectures.",
+            "correctAnswer": "notes"
+        },
+        {
+            "questionStart": "Group study usually helps me stay ",
+            "answerOptions": [
+                "tired",
+                "bored",
+                "focused"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "focused"
+        }
+    ],
+    [
+        {
+            "questionStart": "My friends and I usually meet at the ",
+            "answerOptions": [
+                "cafe",
+                "airport",
+                "hospital"
+            ],
+            "questionEnd": "after class.",
+            "correctAnswer": "cafe"
+        },
+        {
+            "questionStart": "I always ",
+            "answerOptions": [
+                "ignore",
+                "support",
+                "avoid"
+            ],
+            "questionEnd": "my friends when they need help.",
+            "correctAnswer": "support"
+        },
+        {
+            "questionStart": "We usually chat about our ",
+            "answerOptions": [
+                "enemies",
+                "plans",
+                "chores"
+            ],
+            "questionEnd": "for the weekend.",
+            "correctAnswer": "plans"
+        },
+        {
+            "questionStart": "My best friend always tells the truth and never ",
+            "answerOptions": [
+                "lies",
+                "helps",
+                "smiles"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "lies"
+        },
+        {
+            "questionStart": "We usually celebrate birthdays with a small ",
+            "answerOptions": [
+                "party",
+                "meeting",
+                "exam"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "party"
+        }
+    ],
+    [
+        {
+            "questionStart": "This restaurant usually serves the best ",
+            "answerOptions": [
+                "furniture",
+                "clothes",
+                "seafood"
+            ],
+            "questionEnd": "in town.",
+            "correctAnswer": "seafood"
+        },
+        {
+            "questionStart": "We usually book a ",
+            "answerOptions": [
+                "ticket",
+                "flight",
+                "table"
+            ],
+            "questionEnd": "in advance on weekends.",
+            "correctAnswer": "table"
+        },
+        {
+            "questionStart": "The waiter always brings the ",
+            "answerOptions": [
+                "bill",
+                "menu",
+                "receipt"
+            ],
+            "questionEnd": "first.",
+            "correctAnswer": "menu"
+        },
+        {
+            "questionStart": "This cafe usually plays soft ",
+            "answerOptions": [
+                "thunder",
+                "music",
+                "traffic"
+            ],
+            "questionEnd": "in the background.",
+            "correctAnswer": "music"
+        },
+        {
+            "questionStart": "I always leave a small ",
+            "answerOptions": [
+                "tip",
+                "gift",
+                "note"
+            ],
+            "questionEnd": "for good service.",
+            "correctAnswer": "tip"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually save some ",
+            "answerOptions": [
+                "clothes",
+                "food",
+                "money"
+            ],
+            "questionEnd": "every month.",
+            "correctAnswer": "money"
+        },
+        {
+            "questionStart": "My parents always compare ",
+            "answerOptions": [
+                "colors",
+                "shapes",
+                "prices"
+            ],
+            "questionEnd": "before buying anything expensive.",
+            "correctAnswer": "prices"
+        },
+        {
+            "questionStart": "This store usually offers free ",
+            "answerOptions": [
+                "delivery",
+                "punishment",
+                "noise"
+            ],
+            "questionEnd": "for large orders.",
+            "correctAnswer": "delivery"
+        },
+        {
+            "questionStart": "I always keep my ",
+            "answerOptions": [
+                "receipts",
+                "shoes",
+                "keys"
+            ],
+            "questionEnd": "just in case I need a refund.",
+            "correctAnswer": "receipts"
+        },
+        {
+            "questionStart": "We usually pay our bills ",
+            "answerOptions": [
+                "loudly",
+                "online",
+                "underground"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "online"
+        }
+    ],
+    [
+        {
+            "questionStart": "We always ",
+            "answerOptions": [
+                "waste",
+                "burn",
+                "recycle"
+            ],
+            "questionEnd": "paper and plastic at home.",
+            "correctAnswer": "recycle"
+        },
+        {
+            "questionStart": "Our town usually collects the ",
+            "answerOptions": [
+                "vehicles",
+                "trash",
+                "furniture"
+            ],
+            "questionEnd": "every Tuesday.",
+            "correctAnswer": "trash"
+        },
+        {
+            "questionStart": "Turning off the lights helps save ",
+            "answerOptions": [
+                "energy",
+                "paper",
+                "noise"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "energy"
+        },
+        {
+            "questionStart": "Many people now prefer cloth ",
+            "answerOptions": [
+                "phones",
+                "bags",
+                "cars"
+            ],
+            "questionEnd": "instead of plastic ones.",
+            "correctAnswer": "bags"
+        },
+        {
+            "questionStart": "Planting more trees helps keep the air ",
+            "answerOptions": [
+                "dirty",
+                "heavy",
+                "clean"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "clean"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually go to ",
+            "answerOptions": [
+                "school",
+                "work",
+                "sleep"
+            ],
+            "questionEnd": "around ten o'clock.",
+            "correctAnswer": "sleep"
+        },
+        {
+            "questionStart": "My brother always takes a short ",
+            "answerOptions": [
+                "walk",
+                "nap",
+                "shower"
+            ],
+            "questionEnd": "after lunch.",
+            "correctAnswer": "nap"
+        },
+        {
+            "questionStart": "A quiet room usually helps me sleep quite ",
+            "answerOptions": [
+                "loudly",
+                "well",
+                "badly"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "well"
+        },
+        {
+            "questionStart": "I always read a little before ",
+            "answerOptions": [
+                "lunchtime",
+                "breakfast",
+                "bedtime"
+            ],
+            "questionEnd": ".",
+            "correctAnswer": "bedtime"
+        },
+        {
+            "questionStart": "Too much coffee usually keeps me ",
+            "answerOptions": [
+                "calm",
+                "awake",
+                "asleep"
+            ],
+            "questionEnd": "at night.",
+            "correctAnswer": "awake"
+        }
+    ],
+    [
+        {
+            "questionStart": "I usually call my parents ",
+            "answerOptions": [
+                "daily",
+                "hourly",
+                "yearly"
+            ],
+            "questionEnd": "to check on them.",
+            "correctAnswer": "daily"
+        },
+        {
+            "questionStart": "We often send each other funny ",
+            "answerOptions": [
+                "bills",
+                "messages",
+                "reports"
+            ],
+            "questionEnd": "during the day.",
+            "correctAnswer": "messages"
+        },
+        {
+            "questionStart": "My grandmother prefers to talk on the ",
+            "answerOptions": [
+                "bridge",
+                "roof",
+                "phone"
+            ],
+            "questionEnd": "rather than text.",
+            "correctAnswer": "phone"
+        },
+        {
+            "questionStart": "I always reply to important ",
+            "answerOptions": [
+                "movies",
+                "emails",
+                "songs"
+            ],
+            "questionEnd": "right away.",
+            "correctAnswer": "emails"
+        },
+        {
+            "questionStart": "We usually keep our conversations quite ",
+            "answerOptions": [
+                "short",
+                "silent",
+                "endless"
+            ],
+            "questionEnd": "during work hours.",
+            "correctAnswer": "short"
+        }
+    ]
+]
