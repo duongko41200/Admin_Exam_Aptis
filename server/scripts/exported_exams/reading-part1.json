@@ -151,7 +151,7 @@
       "id": "6955d3ee5723012229d3eeae"
     },
     "createdAt": "2026-01-01T01:54:54.196Z",
-    "updatedAt": "2026-07-15T14:52:57.382Z",
+    "updatedAt": "2026-08-10T07:36:54.183Z",
     "__v": 0
   },
   {
@@ -306,7 +306,7 @@
       "id": "6955dbea5723012229d3fb6f"
     },
     "createdAt": "2026-01-01T02:28:58.154Z",
-    "updatedAt": "2026-07-15T14:52:57.476Z",
+    "updatedAt": "2026-08-10T07:36:54.249Z",
     "__v": 0
   },
   {
@@ -461,7 +461,7 @@
       "id": "6955e01d5723012229d3fd0f"
     },
     "createdAt": "2026-01-01T02:46:53.388Z",
-    "updatedAt": "2026-07-15T14:52:57.566Z",
+    "updatedAt": "2026-08-10T07:36:54.305Z",
     "__v": 0
   },
   {
@@ -616,7 +616,7 @@
       "id": "69ce8f13650c2c0a4a1a6e58"
     },
     "createdAt": "2026-01-04T08:36:31.042Z",
-    "updatedAt": "2026-07-15T14:52:57.670Z",
+    "updatedAt": "2026-08-10T07:36:54.360Z",
     "__v": 0
   },
   {
@@ -771,7 +771,7 @@
       "id": "695a28f110b9d3fe9bd38b20"
     },
     "createdAt": "2026-01-04T08:46:41.877Z",
-    "updatedAt": "2026-07-15T14:52:57.751Z",
+    "updatedAt": "2026-08-10T07:36:54.416Z",
     "__v": 0
   },
   {
@@ -926,7 +926,7 @@
       "id": "695a29f510b9d3fe9bd38b4c"
     },
     "createdAt": "2026-01-04T08:51:01.015Z",
-    "updatedAt": "2026-07-15T14:52:57.838Z",
+    "updatedAt": "2026-08-10T07:36:54.473Z",
     "__v": 0
   },
   {
@@ -1081,7 +1081,7 @@
       "id": "695a2afc10b9d3fe9bd38b78"
     },
     "createdAt": "2026-01-04T08:55:24.945Z",
-    "updatedAt": "2026-07-15T14:52:57.994Z",
+    "updatedAt": "2026-08-10T07:36:54.528Z",
     "__v": 0
   },
   {
@@ -1236,7 +1236,7 @@
       "id": "695a311210b9d3fe9bd38f31"
     },
     "createdAt": "2026-01-04T09:21:22.213Z",
-    "updatedAt": "2026-07-15T14:52:58.085Z",
+    "updatedAt": "2026-08-10T07:36:54.608Z",
     "__v": 0
   },
   {
@@ -1391,7 +1391,7 @@
       "id": "695a323d10b9d3fe9bd38f5f"
     },
     "createdAt": "2026-01-04T09:26:21.847Z",
-    "updatedAt": "2026-07-15T14:52:58.191Z",
+    "updatedAt": "2026-08-10T07:36:54.662Z",
     "__v": 0
   },
   {
@@ -1546,7 +1546,7 @@
       "id": "695a323e10b9d3fe9bd38f89"
     },
     "createdAt": "2026-01-04T09:26:22.033Z",
-    "updatedAt": "2026-07-15T14:52:58.291Z",
+    "updatedAt": "2026-08-10T07:36:54.715Z",
     "__v": 0
   },
   {
@@ -1701,7 +1701,7 @@
       "id": "69ce8f13650c2c0a4a1a6ee5"
     },
     "createdAt": "2026-01-04T09:30:49.157Z",
-    "updatedAt": "2026-07-15T14:52:58.423Z",
+    "updatedAt": "2026-08-10T07:36:54.774Z",
     "__v": 0
   },
   {
@@ -1856,7 +1856,7 @@
       "id": "69ce8f13650c2c0a4a1a6efa"
     },
     "createdAt": "2026-01-04T09:38:16.241Z",
-    "updatedAt": "2026-07-15T14:52:58.527Z",
+    "updatedAt": "2026-08-10T07:36:54.830Z",
     "__v": 0
   },
   {
@@ -2011,7 +2011,7 @@
       "id": "69ce8f13650c2c0a4a1a6f0f"
     },
     "createdAt": "2026-01-04T09:42:15.660Z",
-    "updatedAt": "2026-07-15T14:52:58.641Z",
+    "updatedAt": "2026-08-10T07:36:54.886Z",
     "__v": 0
   },
   {
@@ -2166,7 +2166,7 @@
       "id": "695a36e010b9d3fe9bd392e8"
     },
     "createdAt": "2026-01-04T09:46:08.889Z",
-    "updatedAt": "2026-07-15T14:52:58.727Z",
+    "updatedAt": "2026-08-10T07:36:54.942Z",
     "__v": 0
   },
   {
@@ -2321,7 +2321,7 @@
       "id": "6980262a83ed47779e04f87d"
     },
     "createdAt": "2026-02-02T04:20:58.969Z",
-    "updatedAt": "2026-07-15T14:52:58.815Z",
+    "updatedAt": "2026-08-10T07:36:54.998Z",
     "__v": 0
   },
   {
@@ -2477,7 +2477,7 @@
       "description": null,
       "id": "69ec457d7d60acd0eda14e21"
     },
-    "updatedAt": "2026-07-15T14:52:58.940Z"
+    "updatedAt": "2026-08-10T07:36:55.052Z"
   },
   {
     "_id": "69ec457defedf4f1a227fe8e",
@@ -2632,7 +2632,7 @@
       "description": null,
       "id": "69ec457d0ed822aa7a5e63af"
     },
-    "updatedAt": "2026-07-15T14:52:59.027Z"
+    "updatedAt": "2026-08-10T07:36:55.104Z"
   },
   {
     "_id": "756184854aa85a7f9a914b4a",
@@ -2787,7 +2787,7 @@
       "description": null,
       "id": "97d81ffc3784391d00691340"
     },
-    "updatedAt": "2026-07-15T14:52:59.115Z"
+    "updatedAt": "2026-08-10T07:36:55.155Z"
   },
   {
     "_id": "ad2c4e269509fe481ba5a847",
@@ -2797,6 +2797,7 @@
       "title": "Đề 20",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f3a56204fbb3bd78d5260",
         "questionTitle": "Đề 20 ",
         "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -2811,19 +2812,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a56204fbb3bd78d523f",
                 "content": "get",
-                "_id": "6a5f3a56204fbb3bd78d523e",
-                "id": "6a5f3a56204fbb3bd78d523f"
+                "_id": "6a5f3a56204fbb3bd78d523e"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5241",
                 "content": "make",
-                "_id": "6a5f3a56204fbb3bd78d5240",
-                "id": "6a5f3a56204fbb3bd78d5241"
+                "_id": "6a5f3a56204fbb3bd78d5240"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5243",
                 "content": "eat",
-                "_id": "6a5f3a56204fbb3bd78d5242",
-                "id": "6a5f3a56204fbb3bd78d5243"
+                "_id": "6a5f3a56204fbb3bd78d5242"
               }
             ],
             "image": null,
@@ -2836,19 +2837,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a56204fbb3bd78d5246",
                 "content": "great",
-                "_id": "6a5f3a56204fbb3bd78d5245",
-                "id": "6a5f3a56204fbb3bd78d5246"
+                "_id": "6a5f3a56204fbb3bd78d5245"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5248",
                 "content": "bad",
-                "_id": "6a5f3a56204fbb3bd78d5247",
-                "id": "6a5f3a56204fbb3bd78d5248"
+                "_id": "6a5f3a56204fbb3bd78d5247"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d524a",
                 "content": "cold",
-                "_id": "6a5f3a56204fbb3bd78d5249",
-                "id": "6a5f3a56204fbb3bd78d524a"
+                "_id": "6a5f3a56204fbb3bd78d5249"
               }
             ],
             "image": null,
@@ -2861,19 +2862,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a56204fbb3bd78d524d",
                 "content": "in",
-                "_id": "6a5f3a56204fbb3bd78d524c",
-                "id": "6a5f3a56204fbb3bd78d524d"
+                "_id": "6a5f3a56204fbb3bd78d524c"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d524f",
                 "content": "on",
-                "_id": "6a5f3a56204fbb3bd78d524e",
-                "id": "6a5f3a56204fbb3bd78d524f"
+                "_id": "6a5f3a56204fbb3bd78d524e"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5251",
                 "content": "at",
-                "_id": "6a5f3a56204fbb3bd78d5250",
-                "id": "6a5f3a56204fbb3bd78d5251"
+                "_id": "6a5f3a56204fbb3bd78d5250"
               }
             ],
             "image": null,
@@ -2886,19 +2887,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a56204fbb3bd78d5254",
                 "content": "know",
-                "_id": "6a5f3a56204fbb3bd78d5253",
-                "id": "6a5f3a56204fbb3bd78d5254"
+                "_id": "6a5f3a56204fbb3bd78d5253"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5256",
                 "content": "see",
-                "_id": "6a5f3a56204fbb3bd78d5255",
-                "id": "6a5f3a56204fbb3bd78d5256"
+                "_id": "6a5f3a56204fbb3bd78d5255"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d5258",
                 "content": "hear",
-                "_id": "6a5f3a56204fbb3bd78d5257",
-                "id": "6a5f3a56204fbb3bd78d5258"
+                "_id": "6a5f3a56204fbb3bd78d5257"
               }
             ],
             "image": null,
@@ -2911,19 +2912,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a56204fbb3bd78d525b",
                 "content": "make",
-                "_id": "6a5f3a56204fbb3bd78d525a",
-                "id": "6a5f3a56204fbb3bd78d525b"
+                "_id": "6a5f3a56204fbb3bd78d525a"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d525d",
                 "content": "take",
-                "_id": "6a5f3a56204fbb3bd78d525c",
-                "id": "6a5f3a56204fbb3bd78d525d"
+                "_id": "6a5f3a56204fbb3bd78d525c"
               },
               {
+                "id": "6a5f3a56204fbb3bd78d525f",
                 "content": "do",
-                "_id": "6a5f3a56204fbb3bd78d525e",
-                "id": "6a5f3a56204fbb3bd78d525f"
+                "_id": "6a5f3a56204fbb3bd78d525e"
               }
             ],
             "image": null,
@@ -2935,13 +2936,12 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f3a56204fbb3bd78d523c",
-        "id": "6a5f3a56204fbb3bd78d5260"
+        "_id": "6a5f3a56204fbb3bd78d523c"
       },
       "skill": "READING",
       "description": null
     },
-    "updatedAt": "2026-07-21T09:22:30.113Z"
+    "updatedAt": "2026-08-10T07:36:55.207Z"
   },
   {
     "_id": "9af06f7fde01dcff8088e388",
@@ -2951,6 +2951,7 @@
       "title": "Đề 21",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f3a4e204fbb3bd78d51d9",
         "questionTitle": "Đề 21 ",
         "content": "<p><span style=\"background-color: transparent;\">Choose the word that fits in the gap. The first one is done for you.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -2965,19 +2966,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a4e204fbb3bd78d51b8",
                 "content": "mind",
-                "_id": "6a5f3a4e204fbb3bd78d51b7",
-                "id": "6a5f3a4e204fbb3bd78d51b8"
+                "_id": "6a5f3a4e204fbb3bd78d51b7"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51ba",
                 "content": "like",
-                "_id": "6a5f3a4e204fbb3bd78d51b9",
-                "id": "6a5f3a4e204fbb3bd78d51ba"
+                "_id": "6a5f3a4e204fbb3bd78d51b9"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51bc",
                 "content": "want",
-                "_id": "6a5f3a4e204fbb3bd78d51bb",
-                "id": "6a5f3a4e204fbb3bd78d51bc"
+                "_id": "6a5f3a4e204fbb3bd78d51bb"
               }
             ],
             "image": null,
@@ -2990,19 +2991,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a4e204fbb3bd78d51bf",
                 "content": "on",
-                "_id": "6a5f3a4e204fbb3bd78d51be",
-                "id": "6a5f3a4e204fbb3bd78d51bf"
+                "_id": "6a5f3a4e204fbb3bd78d51be"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51c1",
                 "content": "in",
-                "_id": "6a5f3a4e204fbb3bd78d51c0",
-                "id": "6a5f3a4e204fbb3bd78d51c1"
+                "_id": "6a5f3a4e204fbb3bd78d51c0"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51c3",
                 "content": "off",
-                "_id": "6a5f3a4e204fbb3bd78d51c2",
-                "id": "6a5f3a4e204fbb3bd78d51c3"
+                "_id": "6a5f3a4e204fbb3bd78d51c2"
               }
             ],
             "image": null,
@@ -3015,19 +3016,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a4e204fbb3bd78d51c6",
                 "content": "out",
-                "_id": "6a5f3a4e204fbb3bd78d51c5",
-                "id": "6a5f3a4e204fbb3bd78d51c6"
+                "_id": "6a5f3a4e204fbb3bd78d51c5"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51c8",
                 "content": "in",
-                "_id": "6a5f3a4e204fbb3bd78d51c7",
-                "id": "6a5f3a4e204fbb3bd78d51c8"
+                "_id": "6a5f3a4e204fbb3bd78d51c7"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51ca",
                 "content": "up",
-                "_id": "6a5f3a4e204fbb3bd78d51c9",
-                "id": "6a5f3a4e204fbb3bd78d51ca"
+                "_id": "6a5f3a4e204fbb3bd78d51c9"
               }
             ],
             "image": null,
@@ -3040,19 +3041,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a4e204fbb3bd78d51cd",
                 "content": "shops",
-                "_id": "6a5f3a4e204fbb3bd78d51cc",
-                "id": "6a5f3a4e204fbb3bd78d51cd"
+                "_id": "6a5f3a4e204fbb3bd78d51cc"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51cf",
                 "content": "parks",
-                "_id": "6a5f3a4e204fbb3bd78d51ce",
-                "id": "6a5f3a4e204fbb3bd78d51cf"
+                "_id": "6a5f3a4e204fbb3bd78d51ce"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51d1",
                 "content": "museums",
-                "_id": "6a5f3a4e204fbb3bd78d51d0",
-                "id": "6a5f3a4e204fbb3bd78d51d1"
+                "_id": "6a5f3a4e204fbb3bd78d51d0"
               }
             ],
             "image": null,
@@ -3065,19 +3066,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3a4e204fbb3bd78d51d4",
                 "content": "should",
-                "_id": "6a5f3a4e204fbb3bd78d51d3",
-                "id": "6a5f3a4e204fbb3bd78d51d4"
+                "_id": "6a5f3a4e204fbb3bd78d51d3"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51d6",
                 "content": "would",
-                "_id": "6a5f3a4e204fbb3bd78d51d5",
-                "id": "6a5f3a4e204fbb3bd78d51d6"
+                "_id": "6a5f3a4e204fbb3bd78d51d5"
               },
               {
+                "id": "6a5f3a4e204fbb3bd78d51d8",
                 "content": "could",
-                "_id": "6a5f3a4e204fbb3bd78d51d7",
-                "id": "6a5f3a4e204fbb3bd78d51d8"
+                "_id": "6a5f3a4e204fbb3bd78d51d7"
               }
             ],
             "image": null,
@@ -3089,13 +3090,12 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f3a4e204fbb3bd78d51b5",
-        "id": "6a5f3a4e204fbb3bd78d51d9"
+        "_id": "6a5f3a4e204fbb3bd78d51b5"
       },
       "skill": "READING",
       "description": null
     },
-    "updatedAt": "2026-07-21T09:22:22.229Z"
+    "updatedAt": "2026-08-10T07:36:55.270Z"
   },
   {
     "_id": "73e5caa5c9124a183ee64308",
@@ -3250,7 +3250,7 @@
       "description": null,
       "id": "b46d298e97de1287b6f3bf2a"
     },
-    "updatedAt": "2026-07-15T14:52:59.365Z"
+    "updatedAt": "2026-08-10T07:36:55.323Z"
   },
   {
     "_id": "5d2af7208cf7130c6addb976",
@@ -3330,7 +3330,7 @@
       "description": null,
       "id": "9d7a32459ac39f6857bd28a0"
     },
-    "updatedAt": "2026-07-15T14:52:59.444Z"
+    "updatedAt": "2026-08-10T07:36:55.375Z"
   },
   {
     "_id": "6a5f3d17204fbb3bd78d59de",
@@ -3338,6 +3338,7 @@
       "title": "Đề 24: Đề mới ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f3d17204fbb3bd78d5a03",
         "questionTitle": "Đề 24: Đề mới ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p><p><span style=\"color: rgb(33, 37, 41);\"><span class=\"ql-cursor\">﻿</span>Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -3352,19 +3353,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3d17204fbb3bd78d59e2",
                 "content": "drank",
-                "_id": "6a5f3d17204fbb3bd78d59e1",
-                "id": "6a5f3d17204fbb3bd78d59e2"
+                "_id": "6a5f3d17204fbb3bd78d59e1"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59e4",
                 "content": "packed",
-                "_id": "6a5f3d17204fbb3bd78d59e3",
-                "id": "6a5f3d17204fbb3bd78d59e4"
+                "_id": "6a5f3d17204fbb3bd78d59e3"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59e6",
                 "content": "sang",
-                "_id": "6a5f3d17204fbb3bd78d59e5",
-                "id": "6a5f3d17204fbb3bd78d59e6"
+                "_id": "6a5f3d17204fbb3bd78d59e5"
               }
             ],
             "image": null,
@@ -3377,19 +3378,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3d17204fbb3bd78d59e9",
                 "content": "gave",
-                "_id": "6a5f3d17204fbb3bd78d59e8",
-                "id": "6a5f3d17204fbb3bd78d59e9"
+                "_id": "6a5f3d17204fbb3bd78d59e8"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59eb",
                 "content": "broke",
-                "_id": "6a5f3d17204fbb3bd78d59ea",
-                "id": "6a5f3d17204fbb3bd78d59eb"
+                "_id": "6a5f3d17204fbb3bd78d59ea"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59ed",
                 "content": "sold",
-                "_id": "6a5f3d17204fbb3bd78d59ec",
-                "id": "6a5f3d17204fbb3bd78d59ed"
+                "_id": "6a5f3d17204fbb3bd78d59ec"
               }
             ],
             "image": null,
@@ -3402,19 +3403,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3d17204fbb3bd78d59f0",
                 "content": "break",
-                "_id": "6a5f3d17204fbb3bd78d59ef",
-                "id": "6a5f3d17204fbb3bd78d59f0"
+                "_id": "6a5f3d17204fbb3bd78d59ef"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59f2",
                 "content": "sell",
-                "_id": "6a5f3d17204fbb3bd78d59f1",
-                "id": "6a5f3d17204fbb3bd78d59f2"
+                "_id": "6a5f3d17204fbb3bd78d59f1"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59f4",
                 "content": "bring",
-                "_id": "6a5f3d17204fbb3bd78d59f3",
-                "id": "6a5f3d17204fbb3bd78d59f4"
+                "_id": "6a5f3d17204fbb3bd78d59f3"
               }
             ],
             "image": null,
@@ -3427,19 +3428,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3d17204fbb3bd78d59f7",
                 "content": "sing",
-                "_id": "6a5f3d17204fbb3bd78d59f6",
-                "id": "6a5f3d17204fbb3bd78d59f7"
+                "_id": "6a5f3d17204fbb3bd78d59f6"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59f9",
                 "content": "eat",
-                "_id": "6a5f3d17204fbb3bd78d59f8",
-                "id": "6a5f3d17204fbb3bd78d59f9"
+                "_id": "6a5f3d17204fbb3bd78d59f8"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d59fb",
                 "content": "break",
-                "_id": "6a5f3d17204fbb3bd78d59fa",
-                "id": "6a5f3d17204fbb3bd78d59fb"
+                "_id": "6a5f3d17204fbb3bd78d59fa"
               }
             ],
             "image": null,
@@ -3452,19 +3453,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f3d17204fbb3bd78d59fe",
                 "content": "fun",
-                "_id": "6a5f3d17204fbb3bd78d59fd",
-                "id": "6a5f3d17204fbb3bd78d59fe"
+                "_id": "6a5f3d17204fbb3bd78d59fd"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d5a00",
                 "content": "hate",
-                "_id": "6a5f3d17204fbb3bd78d59ff",
-                "id": "6a5f3d17204fbb3bd78d5a00"
+                "_id": "6a5f3d17204fbb3bd78d59ff"
               },
               {
+                "id": "6a5f3d17204fbb3bd78d5a02",
                 "content": "loud",
-                "_id": "6a5f3d17204fbb3bd78d5a01",
-                "id": "6a5f3d17204fbb3bd78d5a02"
+                "_id": "6a5f3d17204fbb3bd78d5a01"
               }
             ],
             "image": null,
@@ -3476,15 +3477,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f3d17204fbb3bd78d59df",
-        "id": "6a5f3d17204fbb3bd78d5a03"
+        "_id": "6a5f3d17204fbb3bd78d59df"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f3d17204fbb3bd78d5a04"
     },
     "createdAt": "2026-07-21T09:34:15.441Z",
-    "updatedAt": "2026-07-21T09:34:15.441Z",
+    "updatedAt": "2026-08-10T07:36:55.425Z",
     "__v": 0
   },
   {
@@ -3493,6 +3493,7 @@
       "title": "Dề 25 ( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4fd573ba836b587124ee",
         "questionTitle": "Dề 25 ( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p><p><span style=\"color: rgb(33, 37, 41);\">﻿Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -3507,19 +3508,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fd573ba836b587124cd",
                 "content": "bad",
-                "_id": "6a5f4fd573ba836b587124cc",
-                "id": "6a5f4fd573ba836b587124cd"
+                "_id": "6a5f4fd573ba836b587124cc"
               },
               {
+                "id": "6a5f4fd573ba836b587124cf",
                 "content": "good",
-                "_id": "6a5f4fd573ba836b587124ce",
-                "id": "6a5f4fd573ba836b587124cf"
+                "_id": "6a5f4fd573ba836b587124ce"
               },
               {
+                "id": "6a5f4fd573ba836b587124d1",
                 "content": "loud",
-                "_id": "6a5f4fd573ba836b587124d0",
-                "id": "6a5f4fd573ba836b587124d1"
+                "_id": "6a5f4fd573ba836b587124d0"
               }
             ],
             "image": null,
@@ -3532,19 +3533,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fd573ba836b587124d4",
                 "content": "broke",
-                "_id": "6a5f4fd573ba836b587124d3",
-                "id": "6a5f4fd573ba836b587124d4"
+                "_id": "6a5f4fd573ba836b587124d3"
               },
               {
+                "id": "6a5f4fd573ba836b587124d6",
                 "content": "sold",
-                "_id": "6a5f4fd573ba836b587124d5",
-                "id": "6a5f4fd573ba836b587124d6"
+                "_id": "6a5f4fd573ba836b587124d5"
               },
               {
+                "id": "6a5f4fd573ba836b587124d8",
                 "content": "helped",
-                "_id": "6a5f4fd573ba836b587124d7",
-                "id": "6a5f4fd573ba836b587124d8"
+                "_id": "6a5f4fd573ba836b587124d7"
               }
             ],
             "image": null,
@@ -3557,19 +3558,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fd573ba836b587124db",
                 "content": "mixed",
-                "_id": "6a5f4fd573ba836b587124da",
-                "id": "6a5f4fd573ba836b587124db"
+                "_id": "6a5f4fd573ba836b587124da"
               },
               {
+                "id": "6a5f4fd573ba836b587124dd",
                 "content": "drank",
-                "_id": "6a5f4fd573ba836b587124dc",
-                "id": "6a5f4fd573ba836b587124dd"
+                "_id": "6a5f4fd573ba836b587124dc"
               },
               {
+                "id": "6a5f4fd573ba836b587124df",
                 "content": "sang",
-                "_id": "6a5f4fd573ba836b587124de",
-                "id": "6a5f4fd573ba836b587124df"
+                "_id": "6a5f4fd573ba836b587124de"
               }
             ],
             "image": null,
@@ -3582,19 +3583,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fd573ba836b587124e2",
                 "content": "break",
-                "_id": "6a5f4fd573ba836b587124e1",
-                "id": "6a5f4fd573ba836b587124e2"
+                "_id": "6a5f4fd573ba836b587124e1"
               },
               {
+                "id": "6a5f4fd573ba836b587124e4",
                 "content": "make",
-                "_id": "6a5f4fd573ba836b587124e3",
-                "id": "6a5f4fd573ba836b587124e4"
+                "_id": "6a5f4fd573ba836b587124e3"
               },
               {
+                "id": "6a5f4fd573ba836b587124e6",
                 "content": "sell",
-                "_id": "6a5f4fd573ba836b587124e5",
-                "id": "6a5f4fd573ba836b587124e6"
+                "_id": "6a5f4fd573ba836b587124e5"
               }
             ],
             "image": null,
@@ -3607,19 +3608,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fd573ba836b587124e9",
                 "content": "from",
-                "_id": "6a5f4fd573ba836b587124e8",
-                "id": "6a5f4fd573ba836b587124e9"
+                "_id": "6a5f4fd573ba836b587124e8"
               },
               {
+                "id": "6a5f4fd573ba836b587124eb",
                 "content": "with",
-                "_id": "6a5f4fd573ba836b587124ea",
-                "id": "6a5f4fd573ba836b587124eb"
+                "_id": "6a5f4fd573ba836b587124ea"
               },
               {
+                "id": "6a5f4fd573ba836b587124ed",
                 "content": "for",
-                "_id": "6a5f4fd573ba836b587124ec",
-                "id": "6a5f4fd573ba836b587124ed"
+                "_id": "6a5f4fd573ba836b587124ec"
               }
             ],
             "image": null,
@@ -3631,14 +3632,13 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4fd573ba836b587124ca",
-        "id": "6a5f4fd573ba836b587124ee"
+        "_id": "6a5f4fd573ba836b587124ca"
       },
       "skill": "READING",
       "description": null
     },
     "createdAt": "2026-07-21T09:42:14.015Z",
-    "updatedAt": "2026-07-21T10:54:13.661Z",
+    "updatedAt": "2026-08-10T07:36:55.480Z",
     "__v": 0
   },
   {
@@ -3647,6 +3647,7 @@
       "title": " Đề 26 ( Đề mới) ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4fae73ba836b5871213f",
         "questionTitle": " Đề 26 ( Đề mới) ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you</strong></p><p><span style=\"color: rgb(33, 37, 41);\">﻿Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -3661,19 +3662,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fae73ba836b5871211e",
                 "content": "calm",
-                "_id": "6a5f4fae73ba836b5871211d",
-                "id": "6a5f4fae73ba836b5871211e"
+                "_id": "6a5f4fae73ba836b5871211d"
               },
               {
+                "id": "6a5f4fae73ba836b58712120",
                 "content": "rough",
-                "_id": "6a5f4fae73ba836b5871211f",
-                "id": "6a5f4fae73ba836b58712120"
+                "_id": "6a5f4fae73ba836b5871211f"
               },
               {
+                "id": "6a5f4fae73ba836b58712122",
                 "content": "loud",
-                "_id": "6a5f4fae73ba836b58712121",
-                "id": "6a5f4fae73ba836b58712122"
+                "_id": "6a5f4fae73ba836b58712121"
               }
             ],
             "image": null,
@@ -3686,19 +3687,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fae73ba836b58712125",
                 "content": "drank",
-                "_id": "6a5f4fae73ba836b58712124",
-                "id": "6a5f4fae73ba836b58712125"
+                "_id": "6a5f4fae73ba836b58712124"
               },
               {
+                "id": "6a5f4fae73ba836b58712127",
                 "content": "caught",
-                "_id": "6a5f4fae73ba836b58712126",
-                "id": "6a5f4fae73ba836b58712127"
+                "_id": "6a5f4fae73ba836b58712126"
               },
               {
+                "id": "6a5f4fae73ba836b58712129",
                 "content": "sang",
-                "_id": "6a5f4fae73ba836b58712128",
-                "id": "6a5f4fae73ba836b58712129"
+                "_id": "6a5f4fae73ba836b58712128"
               }
             ],
             "image": null,
@@ -3711,19 +3712,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fae73ba836b5871212c",
                 "content": "broke",
-                "_id": "6a5f4fae73ba836b5871212b",
-                "id": "6a5f4fae73ba836b5871212c"
+                "_id": "6a5f4fae73ba836b5871212b"
               },
               {
+                "id": "6a5f4fae73ba836b5871212e",
                 "content": "sold",
-                "_id": "6a5f4fae73ba836b5871212d",
-                "id": "6a5f4fae73ba836b5871212e"
+                "_id": "6a5f4fae73ba836b5871212d"
               },
               {
+                "id": "6a5f4fae73ba836b58712130",
                 "content": "started",
-                "_id": "6a5f4fae73ba836b5871212f",
-                "id": "6a5f4fae73ba836b58712130"
+                "_id": "6a5f4fae73ba836b5871212f"
               }
             ],
             "image": null,
@@ -3736,19 +3737,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fae73ba836b58712133",
                 "content": "drive",
-                "_id": "6a5f4fae73ba836b58712132",
-                "id": "6a5f4fae73ba836b58712133"
+                "_id": "6a5f4fae73ba836b58712132"
               },
               {
+                "id": "6a5f4fae73ba836b58712135",
                 "content": "break",
-                "_id": "6a5f4fae73ba836b58712134",
-                "id": "6a5f4fae73ba836b58712135"
+                "_id": "6a5f4fae73ba836b58712134"
               },
               {
+                "id": "6a5f4fae73ba836b58712137",
                 "content": "sell",
-                "_id": "6a5f4fae73ba836b58712136",
-                "id": "6a5f4fae73ba836b58712137"
+                "_id": "6a5f4fae73ba836b58712136"
               }
             ],
             "image": null,
@@ -3761,19 +3762,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4fae73ba836b5871213a",
                 "content": "loud",
-                "_id": "6a5f4fae73ba836b58712139",
-                "id": "6a5f4fae73ba836b5871213a"
+                "_id": "6a5f4fae73ba836b58712139"
               },
               {
+                "id": "6a5f4fae73ba836b5871213c",
                 "content": "nice",
-                "_id": "6a5f4fae73ba836b5871213b",
-                "id": "6a5f4fae73ba836b5871213c"
+                "_id": "6a5f4fae73ba836b5871213b"
               },
               {
+                "id": "6a5f4fae73ba836b5871213e",
                 "content": "heavy",
-                "_id": "6a5f4fae73ba836b5871213d",
-                "id": "6a5f4fae73ba836b5871213e"
+                "_id": "6a5f4fae73ba836b5871213d"
               }
             ],
             "image": null,
@@ -3785,14 +3786,13 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4fae73ba836b5871211b",
-        "id": "6a5f4fae73ba836b5871213f"
+        "_id": "6a5f4fae73ba836b5871211b"
       },
       "skill": "READING",
       "description": null
     },
     "createdAt": "2026-07-21T09:47:54.783Z",
-    "updatedAt": "2026-07-21T10:53:34.830Z",
+    "updatedAt": "2026-08-10T07:36:55.537Z",
     "__v": 0
   },
   {
@@ -3801,6 +3801,7 @@
       "title": "Đề 27 ( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4189204fbb3bd78d6d17",
         "questionTitle": "Đề 27 ( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p><p><span style=\"color: rgb(33, 37, 41);\"><span class=\"ql-cursor\">﻿</span>Hey Lewis,</span></p>",
         "correctAnswer": "",
@@ -3815,19 +3816,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4189204fbb3bd78d6cf6",
                 "content": "warm",
-                "_id": "6a5f4189204fbb3bd78d6cf5",
-                "id": "6a5f4189204fbb3bd78d6cf6"
+                "_id": "6a5f4189204fbb3bd78d6cf5"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6cf8",
                 "content": "cold",
-                "_id": "6a5f4189204fbb3bd78d6cf7",
-                "id": "6a5f4189204fbb3bd78d6cf8"
+                "_id": "6a5f4189204fbb3bd78d6cf7"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6cfa",
                 "content": "tall",
-                "_id": "6a5f4189204fbb3bd78d6cf9",
-                "id": "6a5f4189204fbb3bd78d6cfa"
+                "_id": "6a5f4189204fbb3bd78d6cf9"
               }
             ],
             "image": null,
@@ -3840,19 +3841,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4189204fbb3bd78d6cfd",
                 "content": "flew",
-                "_id": "6a5f4189204fbb3bd78d6cfc",
-                "id": "6a5f4189204fbb3bd78d6cfd"
+                "_id": "6a5f4189204fbb3bd78d6cfc"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6cff",
                 "content": "ate",
-                "_id": "6a5f4189204fbb3bd78d6cfe",
-                "id": "6a5f4189204fbb3bd78d6cff"
+                "_id": "6a5f4189204fbb3bd78d6cfe"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d01",
                 "content": "wrote",
-                "_id": "6a5f4189204fbb3bd78d6d00",
-                "id": "6a5f4189204fbb3bd78d6d01"
+                "_id": "6a5f4189204fbb3bd78d6d00"
               }
             ],
             "image": null,
@@ -3865,19 +3866,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4189204fbb3bd78d6d04",
                 "content": "painted",
-                "_id": "6a5f4189204fbb3bd78d6d03",
-                "id": "6a5f4189204fbb3bd78d6d04"
+                "_id": "6a5f4189204fbb3bd78d6d03"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d06",
                 "content": "broke",
-                "_id": "6a5f4189204fbb3bd78d6d05",
-                "id": "6a5f4189204fbb3bd78d6d06"
+                "_id": "6a5f4189204fbb3bd78d6d05"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d08",
                 "content": "visited",
-                "_id": "6a5f4189204fbb3bd78d6d07",
-                "id": "6a5f4189204fbb3bd78d6d08"
+                "_id": "6a5f4189204fbb3bd78d6d07"
               }
             ],
             "image": null,
@@ -3890,19 +3891,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4189204fbb3bd78d6d0b",
                 "content": "buy",
-                "_id": "6a5f4189204fbb3bd78d6d0a",
-                "id": "6a5f4189204fbb3bd78d6d0b"
+                "_id": "6a5f4189204fbb3bd78d6d0a"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d0d",
                 "content": "break",
-                "_id": "6a5f4189204fbb3bd78d6d0c",
-                "id": "6a5f4189204fbb3bd78d6d0d"
+                "_id": "6a5f4189204fbb3bd78d6d0c"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d0f",
                 "content": "sing",
-                "_id": "6a5f4189204fbb3bd78d6d0e",
-                "id": "6a5f4189204fbb3bd78d6d0f"
+                "_id": "6a5f4189204fbb3bd78d6d0e"
               }
             ],
             "image": null,
@@ -3915,19 +3916,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4189204fbb3bd78d6d12",
                 "content": "none",
-                "_id": "6a5f4189204fbb3bd78d6d11",
-                "id": "6a5f4189204fbb3bd78d6d12"
+                "_id": "6a5f4189204fbb3bd78d6d11"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d14",
                 "content": "all",
-                "_id": "6a5f4189204fbb3bd78d6d13",
-                "id": "6a5f4189204fbb3bd78d6d14"
+                "_id": "6a5f4189204fbb3bd78d6d13"
               },
               {
+                "id": "6a5f4189204fbb3bd78d6d16",
                 "content": "some",
-                "_id": "6a5f4189204fbb3bd78d6d15",
-                "id": "6a5f4189204fbb3bd78d6d16"
+                "_id": "6a5f4189204fbb3bd78d6d15"
               }
             ],
             "image": null,
@@ -3939,15 +3940,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4189204fbb3bd78d6cf3",
-        "id": "6a5f4189204fbb3bd78d6d17"
+        "_id": "6a5f4189204fbb3bd78d6cf3"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4189204fbb3bd78d6d18"
     },
     "createdAt": "2026-07-21T09:53:13.582Z",
-    "updatedAt": "2026-07-21T09:53:13.582Z",
+    "updatedAt": "2026-08-10T07:36:55.589Z",
     "__v": 0
   },
   {
@@ -3956,6 +3956,7 @@
       "title": "Đề 28 ( đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4239204fbb3bd78d6dd7",
         "questionTitle": "Đề 28 ( đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -3970,19 +3971,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4239204fbb3bd78d6db6",
                 "content": "sour",
-                "_id": "6a5f4239204fbb3bd78d6db5",
-                "id": "6a5f4239204fbb3bd78d6db6"
+                "_id": "6a5f4239204fbb3bd78d6db5"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6db8",
                 "content": "sweet",
-                "_id": "6a5f4239204fbb3bd78d6db7",
-                "id": "6a5f4239204fbb3bd78d6db8"
+                "_id": "6a5f4239204fbb3bd78d6db7"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dba",
                 "content": "loud",
-                "_id": "6a5f4239204fbb3bd78d6db9",
-                "id": "6a5f4239204fbb3bd78d6dba"
+                "_id": "6a5f4239204fbb3bd78d6db9"
               }
             ],
             "image": null,
@@ -3995,19 +3996,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4239204fbb3bd78d6dbd",
                 "content": "broke",
-                "_id": "6a5f4239204fbb3bd78d6dbc",
-                "id": "6a5f4239204fbb3bd78d6dbd"
+                "_id": "6a5f4239204fbb3bd78d6dbc"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dbf",
                 "content": "sold",
-                "_id": "6a5f4239204fbb3bd78d6dbe",
-                "id": "6a5f4239204fbb3bd78d6dbf"
+                "_id": "6a5f4239204fbb3bd78d6dbe"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dc1",
                 "content": "make",
-                "_id": "6a5f4239204fbb3bd78d6dc0",
-                "id": "6a5f4239204fbb3bd78d6dc1"
+                "_id": "6a5f4239204fbb3bd78d6dc0"
               }
             ],
             "image": null,
@@ -4020,19 +4021,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4239204fbb3bd78d6dc4",
                 "content": "washed",
-                "_id": "6a5f4239204fbb3bd78d6dc3",
-                "id": "6a5f4239204fbb3bd78d6dc4"
+                "_id": "6a5f4239204fbb3bd78d6dc3"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dc6",
                 "content": "broke",
-                "_id": "6a5f4239204fbb3bd78d6dc5",
-                "id": "6a5f4239204fbb3bd78d6dc6"
+                "_id": "6a5f4239204fbb3bd78d6dc5"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dc8",
                 "content": "sold",
-                "_id": "6a5f4239204fbb3bd78d6dc7",
-                "id": "6a5f4239204fbb3bd78d6dc8"
+                "_id": "6a5f4239204fbb3bd78d6dc7"
               }
             ],
             "image": null,
@@ -4045,19 +4046,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4239204fbb3bd78d6dcb",
                 "content": "break",
-                "_id": "6a5f4239204fbb3bd78d6dca",
-                "id": "6a5f4239204fbb3bd78d6dcb"
+                "_id": "6a5f4239204fbb3bd78d6dca"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dcd",
                 "content": "buy",
-                "_id": "6a5f4239204fbb3bd78d6dcc",
-                "id": "6a5f4239204fbb3bd78d6dcd"
+                "_id": "6a5f4239204fbb3bd78d6dcc"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dcf",
                 "content": "sell",
-                "_id": "6a5f4239204fbb3bd78d6dce",
-                "id": "6a5f4239204fbb3bd78d6dcf"
+                "_id": "6a5f4239204fbb3bd78d6dce"
               }
             ],
             "image": null,
@@ -4070,19 +4071,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4239204fbb3bd78d6dd2",
                 "content": "terrible",
-                "_id": "6a5f4239204fbb3bd78d6dd1",
-                "id": "6a5f4239204fbb3bd78d6dd2"
+                "_id": "6a5f4239204fbb3bd78d6dd1"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dd4",
                 "content": "loud",
-                "_id": "6a5f4239204fbb3bd78d6dd3",
-                "id": "6a5f4239204fbb3bd78d6dd4"
+                "_id": "6a5f4239204fbb3bd78d6dd3"
               },
               {
+                "id": "6a5f4239204fbb3bd78d6dd6",
                 "content": "great",
-                "_id": "6a5f4239204fbb3bd78d6dd5",
-                "id": "6a5f4239204fbb3bd78d6dd6"
+                "_id": "6a5f4239204fbb3bd78d6dd5"
               }
             ],
             "image": null,
@@ -4094,15 +4095,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4239204fbb3bd78d6db3",
-        "id": "6a5f4239204fbb3bd78d6dd7"
+        "_id": "6a5f4239204fbb3bd78d6db3"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4239204fbb3bd78d6dd8"
     },
     "createdAt": "2026-07-21T09:56:09.356Z",
-    "updatedAt": "2026-07-21T09:56:09.356Z",
+    "updatedAt": "2026-08-10T07:36:55.640Z",
     "__v": 0
   },
   {
@@ -4111,6 +4111,7 @@
       "title": "Đề 29: ( Đề mới )",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4322204fbb3bd78d6f53",
         "questionTitle": "Đề 29: ( Đề mới )",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4125,19 +4126,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4322204fbb3bd78d6f32",
                 "content": "light",
-                "_id": "6a5f4322204fbb3bd78d6f31",
-                "id": "6a5f4322204fbb3bd78d6f32"
+                "_id": "6a5f4322204fbb3bd78d6f31"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f34",
                 "content": "heavy",
-                "_id": "6a5f4322204fbb3bd78d6f33",
-                "id": "6a5f4322204fbb3bd78d6f34"
+                "_id": "6a5f4322204fbb3bd78d6f33"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f36",
                 "content": "loud",
-                "_id": "6a5f4322204fbb3bd78d6f35",
-                "id": "6a5f4322204fbb3bd78d6f36"
+                "_id": "6a5f4322204fbb3bd78d6f35"
               }
             ],
             "image": null,
@@ -4150,19 +4151,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4322204fbb3bd78d6f39",
                 "content": "broke",
-                "_id": "6a5f4322204fbb3bd78d6f38",
-                "id": "6a5f4322204fbb3bd78d6f39"
+                "_id": "6a5f4322204fbb3bd78d6f38"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f3b",
                 "content": "fixed",
-                "_id": "6a5f4322204fbb3bd78d6f3a",
-                "id": "6a5f4322204fbb3bd78d6f3b"
+                "_id": "6a5f4322204fbb3bd78d6f3a"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f3d",
                 "content": "sold",
-                "_id": "6a5f4322204fbb3bd78d6f3c",
-                "id": "6a5f4322204fbb3bd78d6f3d"
+                "_id": "6a5f4322204fbb3bd78d6f3c"
               }
             ],
             "image": null,
@@ -4175,19 +4176,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4322204fbb3bd78d6f40",
                 "content": "drank",
-                "_id": "6a5f4322204fbb3bd78d6f3f",
-                "id": "6a5f4322204fbb3bd78d6f40"
+                "_id": "6a5f4322204fbb3bd78d6f3f"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f42",
                 "content": "sang",
-                "_id": "6a5f4322204fbb3bd78d6f41",
-                "id": "6a5f4322204fbb3bd78d6f42"
+                "_id": "6a5f4322204fbb3bd78d6f41"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f44",
                 "content": "rode",
-                "_id": "6a5f4322204fbb3bd78d6f43",
-                "id": "6a5f4322204fbb3bd78d6f44"
+                "_id": "6a5f4322204fbb3bd78d6f43"
               }
             ],
             "image": null,
@@ -4200,19 +4201,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4322204fbb3bd78d6f47",
                 "content": "take",
-                "_id": "6a5f4322204fbb3bd78d6f46",
-                "id": "6a5f4322204fbb3bd78d6f47"
+                "_id": "6a5f4322204fbb3bd78d6f46"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f49",
                 "content": "break",
-                "_id": "6a5f4322204fbb3bd78d6f48",
-                "id": "6a5f4322204fbb3bd78d6f49"
+                "_id": "6a5f4322204fbb3bd78d6f48"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f4b",
                 "content": "sell",
-                "_id": "6a5f4322204fbb3bd78d6f4a",
-                "id": "6a5f4322204fbb3bd78d6f4b"
+                "_id": "6a5f4322204fbb3bd78d6f4a"
               }
             ],
             "image": null,
@@ -4225,19 +4226,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4322204fbb3bd78d6f4e",
                 "content": "never",
-                "_id": "6a5f4322204fbb3bd78d6f4d",
-                "id": "6a5f4322204fbb3bd78d6f4e"
+                "_id": "6a5f4322204fbb3bd78d6f4d"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f50",
                 "content": "soon",
-                "_id": "6a5f4322204fbb3bd78d6f4f",
-                "id": "6a5f4322204fbb3bd78d6f50"
+                "_id": "6a5f4322204fbb3bd78d6f4f"
               },
               {
+                "id": "6a5f4322204fbb3bd78d6f52",
                 "content": "loudly",
-                "_id": "6a5f4322204fbb3bd78d6f51",
-                "id": "6a5f4322204fbb3bd78d6f52"
+                "_id": "6a5f4322204fbb3bd78d6f51"
               }
             ],
             "image": null,
@@ -4249,15 +4250,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4322204fbb3bd78d6f2f",
-        "id": "6a5f4322204fbb3bd78d6f53"
+        "_id": "6a5f4322204fbb3bd78d6f2f"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4322204fbb3bd78d6f54"
     },
     "createdAt": "2026-07-21T10:00:02.056Z",
-    "updatedAt": "2026-07-21T10:00:02.056Z",
+    "updatedAt": "2026-08-10T07:36:55.692Z",
     "__v": 0
   },
   {
@@ -4266,6 +4266,7 @@
       "title": "Đề 30 ( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f500e73ba836b58712983",
         "questionTitle": "Đề 30 ( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4280,19 +4281,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f500e73ba836b58712962",
                 "content": "boring",
-                "_id": "6a5f500e73ba836b58712961",
-                "id": "6a5f500e73ba836b58712962"
+                "_id": "6a5f500e73ba836b58712961"
               },
               {
+                "id": "6a5f500e73ba836b58712964",
                 "content": "loud",
-                "_id": "6a5f500e73ba836b58712963",
-                "id": "6a5f500e73ba836b58712964"
+                "_id": "6a5f500e73ba836b58712963"
               },
               {
+                "id": "6a5f500e73ba836b58712966",
                 "content": "useful",
-                "_id": "6a5f500e73ba836b58712965",
-                "id": "6a5f500e73ba836b58712966"
+                "_id": "6a5f500e73ba836b58712965"
               }
             ],
             "image": null,
@@ -4305,19 +4306,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f500e73ba836b58712969",
                 "content": "discussed",
-                "_id": "6a5f500e73ba836b58712968",
-                "id": "6a5f500e73ba836b58712969"
+                "_id": "6a5f500e73ba836b58712968"
               },
               {
+                "id": "6a5f500e73ba836b5871296b",
                 "content": "broke",
-                "_id": "6a5f500e73ba836b5871296a",
-                "id": "6a5f500e73ba836b5871296b"
+                "_id": "6a5f500e73ba836b5871296a"
               },
               {
+                "id": "6a5f500e73ba836b5871296d",
                 "content": "sold",
-                "_id": "6a5f500e73ba836b5871296c",
-                "id": "6a5f500e73ba836b5871296d"
+                "_id": "6a5f500e73ba836b5871296c"
               }
             ],
             "image": null,
@@ -4330,19 +4331,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f500e73ba836b58712970",
                 "content": "broke",
-                "_id": "6a5f500e73ba836b5871296f",
-                "id": "6a5f500e73ba836b58712970"
+                "_id": "6a5f500e73ba836b5871296f"
               },
               {
+                "id": "6a5f500e73ba836b58712972",
                 "content": "finished",
-                "_id": "6a5f500e73ba836b58712971",
-                "id": "6a5f500e73ba836b58712972"
+                "_id": "6a5f500e73ba836b58712971"
               },
               {
+                "id": "6a5f500e73ba836b58712974",
                 "content": "sold",
-                "_id": "6a5f500e73ba836b58712973",
-                "id": "6a5f500e73ba836b58712974"
+                "_id": "6a5f500e73ba836b58712973"
               }
             ],
             "image": null,
@@ -4355,19 +4356,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f500e73ba836b58712977",
                 "content": "break",
-                "_id": "6a5f500e73ba836b58712976",
-                "id": "6a5f500e73ba836b58712977"
+                "_id": "6a5f500e73ba836b58712976"
               },
               {
+                "id": "6a5f500e73ba836b58712979",
                 "content": "sell",
-                "_id": "6a5f500e73ba836b58712978",
-                "id": "6a5f500e73ba836b58712979"
+                "_id": "6a5f500e73ba836b58712978"
               },
               {
+                "id": "6a5f500e73ba836b5871297b",
                 "content": "send",
-                "_id": "6a5f500e73ba836b5871297a",
-                "id": "6a5f500e73ba836b5871297b"
+                "_id": "6a5f500e73ba836b5871297a"
               }
             ],
             "image": null,
@@ -4380,19 +4381,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f500e73ba836b5871297e",
                 "content": "need",
-                "_id": "6a5f500e73ba836b5871297d",
-                "id": "6a5f500e73ba836b5871297e"
+                "_id": "6a5f500e73ba836b5871297d"
               },
               {
+                "id": "6a5f500e73ba836b58712980",
                 "content": "break",
-                "_id": "6a5f500e73ba836b5871297f",
-                "id": "6a5f500e73ba836b58712980"
+                "_id": "6a5f500e73ba836b5871297f"
               },
               {
+                "id": "6a5f500e73ba836b58712982",
                 "content": "sell",
-                "_id": "6a5f500e73ba836b58712981",
-                "id": "6a5f500e73ba836b58712982"
+                "_id": "6a5f500e73ba836b58712981"
               }
             ],
             "image": null,
@@ -4404,14 +4405,13 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f500e73ba836b5871295f",
-        "id": "6a5f500e73ba836b58712983"
+        "_id": "6a5f500e73ba836b5871295f"
       },
       "skill": "READING",
       "description": null
     },
     "createdAt": "2026-07-21T10:04:24.491Z",
-    "updatedAt": "2026-07-21T10:55:10.212Z",
+    "updatedAt": "2026-08-10T07:36:55.743Z",
     "__v": 0
   },
   {
@@ -4420,6 +4420,7 @@
       "title": "Đề 31( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4505204fbb3bd78d78d9",
         "questionTitle": "Đề 31( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4434,19 +4435,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4505204fbb3bd78d78b8",
                 "content": "lazy",
-                "_id": "6a5f4505204fbb3bd78d78b7",
-                "id": "6a5f4505204fbb3bd78d78b8"
+                "_id": "6a5f4505204fbb3bd78d78b7"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78ba",
                 "content": "playfull",
-                "_id": "6a5f4505204fbb3bd78d78b9",
-                "id": "6a5f4505204fbb3bd78d78ba"
+                "_id": "6a5f4505204fbb3bd78d78b9"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78bc",
                 "content": "loud",
-                "_id": "6a5f4505204fbb3bd78d78bb",
-                "id": "6a5f4505204fbb3bd78d78bc"
+                "_id": "6a5f4505204fbb3bd78d78bb"
               }
             ],
             "image": null,
@@ -4459,19 +4460,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4505204fbb3bd78d78bf",
                 "content": "drank",
-                "_id": "6a5f4505204fbb3bd78d78be",
-                "id": "6a5f4505204fbb3bd78d78bf"
+                "_id": "6a5f4505204fbb3bd78d78be"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78c1",
                 "content": "sang",
-                "_id": "6a5f4505204fbb3bd78d78c0",
-                "id": "6a5f4505204fbb3bd78d78c1"
+                "_id": "6a5f4505204fbb3bd78d78c0"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78c3",
                 "content": "took",
-                "_id": "6a5f4505204fbb3bd78d78c2",
-                "id": "6a5f4505204fbb3bd78d78c3"
+                "_id": "6a5f4505204fbb3bd78d78c2"
               }
             ],
             "image": null,
@@ -4484,19 +4485,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4505204fbb3bd78d78c6",
                 "content": "cleaned",
-                "_id": "6a5f4505204fbb3bd78d78c5",
-                "id": "6a5f4505204fbb3bd78d78c6"
+                "_id": "6a5f4505204fbb3bd78d78c5"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78c8",
                 "content": "broke",
-                "_id": "6a5f4505204fbb3bd78d78c7",
-                "id": "6a5f4505204fbb3bd78d78c8"
+                "_id": "6a5f4505204fbb3bd78d78c7"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78ca",
                 "content": "sold",
-                "_id": "6a5f4505204fbb3bd78d78c9",
-                "id": "6a5f4505204fbb3bd78d78ca"
+                "_id": "6a5f4505204fbb3bd78d78c9"
               }
             ],
             "image": null,
@@ -4509,19 +4510,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4505204fbb3bd78d78cd",
                 "content": "break",
-                "_id": "6a5f4505204fbb3bd78d78cc",
-                "id": "6a5f4505204fbb3bd78d78cd"
+                "_id": "6a5f4505204fbb3bd78d78cc"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78cf",
                 "content": "do",
-                "_id": "6a5f4505204fbb3bd78d78ce",
-                "id": "6a5f4505204fbb3bd78d78cf"
+                "_id": "6a5f4505204fbb3bd78d78ce"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78d1",
                 "content": "sell",
-                "_id": "6a5f4505204fbb3bd78d78d0",
-                "id": "6a5f4505204fbb3bd78d78d1"
+                "_id": "6a5f4505204fbb3bd78d78d0"
               }
             ],
             "image": null,
@@ -4534,19 +4535,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4505204fbb3bd78d78d4",
                 "content": "noise",
-                "_id": "6a5f4505204fbb3bd78d78d3",
-                "id": "6a5f4505204fbb3bd78d78d4"
+                "_id": "6a5f4505204fbb3bd78d78d3"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78d6",
                 "content": "weather",
-                "_id": "6a5f4505204fbb3bd78d78d5",
-                "id": "6a5f4505204fbb3bd78d78d6"
+                "_id": "6a5f4505204fbb3bd78d78d5"
               },
               {
+                "id": "6a5f4505204fbb3bd78d78d8",
                 "content": "control",
-                "_id": "6a5f4505204fbb3bd78d78d7",
-                "id": "6a5f4505204fbb3bd78d78d8"
+                "_id": "6a5f4505204fbb3bd78d78d7"
               }
             ],
             "image": null,
@@ -4558,15 +4559,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4505204fbb3bd78d78b5",
-        "id": "6a5f4505204fbb3bd78d78d9"
+        "_id": "6a5f4505204fbb3bd78d78b5"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4505204fbb3bd78d78da"
     },
     "createdAt": "2026-07-21T10:08:05.733Z",
-    "updatedAt": "2026-07-21T10:08:05.733Z",
+    "updatedAt": "2026-08-10T07:36:55.794Z",
     "__v": 0
   },
   {
@@ -4575,6 +4575,7 @@
       "title": "Đề 32 ( đề mới )",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4651204fbb3bd78d7aa5",
         "questionTitle": "Đề 32 ( đề mới )",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4589,19 +4590,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4651204fbb3bd78d7a84",
                 "content": "clean",
-                "_id": "6a5f4651204fbb3bd78d7a83",
-                "id": "6a5f4651204fbb3bd78d7a84"
+                "_id": "6a5f4651204fbb3bd78d7a83"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a86",
                 "content": "dirty",
-                "_id": "6a5f4651204fbb3bd78d7a85",
-                "id": "6a5f4651204fbb3bd78d7a86"
+                "_id": "6a5f4651204fbb3bd78d7a85"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a88",
                 "content": "loud",
-                "_id": "6a5f4651204fbb3bd78d7a87",
-                "id": "6a5f4651204fbb3bd78d7a88"
+                "_id": "6a5f4651204fbb3bd78d7a87"
               }
             ],
             "image": null,
@@ -4614,19 +4615,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4651204fbb3bd78d7a8b",
                 "content": "drank",
-                "_id": "6a5f4651204fbb3bd78d7a8a",
-                "id": "6a5f4651204fbb3bd78d7a8b"
+                "_id": "6a5f4651204fbb3bd78d7a8a"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a8d",
                 "content": "showed",
-                "_id": "6a5f4651204fbb3bd78d7a8c",
-                "id": "6a5f4651204fbb3bd78d7a8d"
+                "_id": "6a5f4651204fbb3bd78d7a8c"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a8f",
                 "content": "sang",
-                "_id": "6a5f4651204fbb3bd78d7a8e",
-                "id": "6a5f4651204fbb3bd78d7a8f"
+                "_id": "6a5f4651204fbb3bd78d7a8e"
               }
             ],
             "image": null,
@@ -4639,19 +4640,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4651204fbb3bd78d7a92",
                 "content": "wrote",
-                "_id": "6a5f4651204fbb3bd78d7a91",
-                "id": "6a5f4651204fbb3bd78d7a92"
+                "_id": "6a5f4651204fbb3bd78d7a91"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a94",
                 "content": "flew",
-                "_id": "6a5f4651204fbb3bd78d7a93",
-                "id": "6a5f4651204fbb3bd78d7a94"
+                "_id": "6a5f4651204fbb3bd78d7a93"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a96",
                 "content": "ate",
-                "_id": "6a5f4651204fbb3bd78d7a95",
-                "id": "6a5f4651204fbb3bd78d7a96"
+                "_id": "6a5f4651204fbb3bd78d7a95"
               }
             ],
             "image": null,
@@ -4664,19 +4665,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4651204fbb3bd78d7a99",
                 "content": "work",
-                "_id": "6a5f4651204fbb3bd78d7a98",
-                "id": "6a5f4651204fbb3bd78d7a99"
+                "_id": "6a5f4651204fbb3bd78d7a98"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a9b",
                 "content": "sleep",
-                "_id": "6a5f4651204fbb3bd78d7a9a",
-                "id": "6a5f4651204fbb3bd78d7a9b"
+                "_id": "6a5f4651204fbb3bd78d7a9a"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7a9d",
                 "content": "music",
-                "_id": "6a5f4651204fbb3bd78d7a9c",
-                "id": "6a5f4651204fbb3bd78d7a9d"
+                "_id": "6a5f4651204fbb3bd78d7a9c"
               }
             ],
             "image": null,
@@ -4689,19 +4690,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4651204fbb3bd78d7aa0",
                 "content": "badly",
-                "_id": "6a5f4651204fbb3bd78d7a9f",
-                "id": "6a5f4651204fbb3bd78d7aa0"
+                "_id": "6a5f4651204fbb3bd78d7a9f"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7aa2",
                 "content": "well",
-                "_id": "6a5f4651204fbb3bd78d7aa1",
-                "id": "6a5f4651204fbb3bd78d7aa2"
+                "_id": "6a5f4651204fbb3bd78d7aa1"
               },
               {
+                "id": "6a5f4651204fbb3bd78d7aa4",
                 "content": "loudly",
-                "_id": "6a5f4651204fbb3bd78d7aa3",
-                "id": "6a5f4651204fbb3bd78d7aa4"
+                "_id": "6a5f4651204fbb3bd78d7aa3"
               }
             ],
             "image": null,
@@ -4713,15 +4714,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4651204fbb3bd78d7a81",
-        "id": "6a5f4651204fbb3bd78d7aa5"
+        "_id": "6a5f4651204fbb3bd78d7a81"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4651204fbb3bd78d7aa6"
     },
     "createdAt": "2026-07-21T10:13:37.089Z",
-    "updatedAt": "2026-07-21T10:13:37.089Z",
+    "updatedAt": "2026-08-10T07:36:55.848Z",
     "__v": 0
   },
   {
@@ -4730,6 +4730,7 @@
       "title": "Đề 33 ( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f502373ba836b58712b7b",
         "questionTitle": "Đề 33 ( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4744,19 +4745,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f502373ba836b58712b5a",
                 "content": "sweet",
-                "_id": "6a5f502373ba836b58712b59",
-                "id": "6a5f502373ba836b58712b5a"
+                "_id": "6a5f502373ba836b58712b59"
               },
               {
+                "id": "6a5f502373ba836b58712b5c",
                 "content": "loud",
-                "_id": "6a5f502373ba836b58712b5b",
-                "id": "6a5f502373ba836b58712b5c"
+                "_id": "6a5f502373ba836b58712b5b"
               },
               {
+                "id": "6a5f502373ba836b58712b5e",
                 "content": "dusty",
-                "_id": "6a5f502373ba836b58712b5d",
-                "id": "6a5f502373ba836b58712b5e"
+                "_id": "6a5f502373ba836b58712b5d"
               }
             ],
             "image": null,
@@ -4769,19 +4770,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f502373ba836b58712b61",
                 "content": "found",
-                "_id": "6a5f502373ba836b58712b60",
-                "id": "6a5f502373ba836b58712b61"
+                "_id": "6a5f502373ba836b58712b60"
               },
               {
+                "id": "6a5f502373ba836b58712b63",
                 "content": "drank",
-                "_id": "6a5f502373ba836b58712b62",
-                "id": "6a5f502373ba836b58712b63"
+                "_id": "6a5f502373ba836b58712b62"
               },
               {
+                "id": "6a5f502373ba836b58712b65",
                 "content": "sang",
-                "_id": "6a5f502373ba836b58712b64",
-                "id": "6a5f502373ba836b58712b65"
+                "_id": "6a5f502373ba836b58712b64"
               }
             ],
             "image": null,
@@ -4794,19 +4795,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f502373ba836b58712b68",
                 "content": "painted",
-                "_id": "6a5f502373ba836b58712b67",
-                "id": "6a5f502373ba836b58712b68"
+                "_id": "6a5f502373ba836b58712b67"
               },
               {
+                "id": "6a5f502373ba836b58712b6a",
                 "content": "fixed",
-                "_id": "6a5f502373ba836b58712b69",
-                "id": "6a5f502373ba836b58712b6a"
+                "_id": "6a5f502373ba836b58712b69"
               },
               {
+                "id": "6a5f502373ba836b58712b6c",
                 "content": "sold",
-                "_id": "6a5f502373ba836b58712b6b",
-                "id": "6a5f502373ba836b58712b6c"
+                "_id": "6a5f502373ba836b58712b6b"
               }
             ],
             "image": null,
@@ -4819,19 +4820,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f502373ba836b58712b6f",
                 "content": "forget",
-                "_id": "6a5f502373ba836b58712b6e",
-                "id": "6a5f502373ba836b58712b6f"
+                "_id": "6a5f502373ba836b58712b6e"
               },
               {
+                "id": "6a5f502373ba836b58712b71",
                 "content": "break",
-                "_id": "6a5f502373ba836b58712b70",
-                "id": "6a5f502373ba836b58712b71"
+                "_id": "6a5f502373ba836b58712b70"
               },
               {
+                "id": "6a5f502373ba836b58712b73",
                 "content": "organize",
-                "_id": "6a5f502373ba836b58712b72",
-                "id": "6a5f502373ba836b58712b73"
+                "_id": "6a5f502373ba836b58712b72"
               }
             ],
             "image": null,
@@ -4844,19 +4845,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f502373ba836b58712b76",
                 "content": "never",
-                "_id": "6a5f502373ba836b58712b75",
-                "id": "6a5f502373ba836b58712b76"
+                "_id": "6a5f502373ba836b58712b75"
               },
               {
+                "id": "6a5f502373ba836b58712b78",
                 "content": "soon",
-                "_id": "6a5f502373ba836b58712b77",
-                "id": "6a5f502373ba836b58712b78"
+                "_id": "6a5f502373ba836b58712b77"
               },
               {
+                "id": "6a5f502373ba836b58712b7a",
                 "content": "loudly",
-                "_id": "6a5f502373ba836b58712b79",
-                "id": "6a5f502373ba836b58712b7a"
+                "_id": "6a5f502373ba836b58712b79"
               }
             ],
             "image": null,
@@ -4868,14 +4869,13 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f502373ba836b58712b57",
-        "id": "6a5f502373ba836b58712b7b"
+        "_id": "6a5f502373ba836b58712b57"
       },
       "skill": "READING",
       "description": null
     },
     "createdAt": "2026-07-21T10:17:35.851Z",
-    "updatedAt": "2026-07-21T10:55:31.121Z",
+    "updatedAt": "2026-08-10T07:36:55.900Z",
     "__v": 0
   },
   {
@@ -4884,6 +4884,7 @@
       "title": "Đề 34 ( Đề mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f47e9204fbb3bd78d849e",
         "questionTitle": "Đề 34 ( Đề mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -4898,19 +4899,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f47e9204fbb3bd78d847d",
                 "content": "cool",
-                "_id": "6a5f47e9204fbb3bd78d847c",
-                "id": "6a5f47e9204fbb3bd78d847d"
+                "_id": "6a5f47e9204fbb3bd78d847c"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d847f",
                 "content": "hot",
-                "_id": "6a5f47e9204fbb3bd78d847e",
-                "id": "6a5f47e9204fbb3bd78d847f"
+                "_id": "6a5f47e9204fbb3bd78d847e"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d8481",
                 "content": "loud",
-                "_id": "6a5f47e9204fbb3bd78d8480",
-                "id": "6a5f47e9204fbb3bd78d8481"
+                "_id": "6a5f47e9204fbb3bd78d8480"
               }
             ],
             "image": null,
@@ -4923,19 +4924,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f47e9204fbb3bd78d8484",
                 "content": "broke",
-                "_id": "6a5f47e9204fbb3bd78d8483",
-                "id": "6a5f47e9204fbb3bd78d8484"
+                "_id": "6a5f47e9204fbb3bd78d8483"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d8486",
                 "content": "watched",
-                "_id": "6a5f47e9204fbb3bd78d8485",
-                "id": "6a5f47e9204fbb3bd78d8486"
+                "_id": "6a5f47e9204fbb3bd78d8485"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d8488",
                 "content": "sold",
-                "_id": "6a5f47e9204fbb3bd78d8487",
-                "id": "6a5f47e9204fbb3bd78d8488"
+                "_id": "6a5f47e9204fbb3bd78d8487"
               }
             ],
             "image": null,
@@ -4948,19 +4949,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f47e9204fbb3bd78d848b",
                 "content": "broke",
-                "_id": "6a5f47e9204fbb3bd78d848a",
-                "id": "6a5f47e9204fbb3bd78d848b"
+                "_id": "6a5f47e9204fbb3bd78d848a"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d848d",
                 "content": "sold",
-                "_id": "6a5f47e9204fbb3bd78d848c",
-                "id": "6a5f47e9204fbb3bd78d848d"
+                "_id": "6a5f47e9204fbb3bd78d848c"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d848f",
                 "content": "explored",
-                "_id": "6a5f47e9204fbb3bd78d848e",
-                "id": "6a5f47e9204fbb3bd78d848f"
+                "_id": "6a5f47e9204fbb3bd78d848e"
               }
             ],
             "image": null,
@@ -4973,19 +4974,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f47e9204fbb3bd78d8492",
                 "content": "visit",
-                "_id": "6a5f47e9204fbb3bd78d8491",
-                "id": "6a5f47e9204fbb3bd78d8492"
+                "_id": "6a5f47e9204fbb3bd78d8491"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d8494",
                 "content": "break",
-                "_id": "6a5f47e9204fbb3bd78d8493",
-                "id": "6a5f47e9204fbb3bd78d8494"
+                "_id": "6a5f47e9204fbb3bd78d8493"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d8496",
                 "content": "sell",
-                "_id": "6a5f47e9204fbb3bd78d8495",
-                "id": "6a5f47e9204fbb3bd78d8496"
+                "_id": "6a5f47e9204fbb3bd78d8495"
               }
             ],
             "image": null,
@@ -4998,19 +4999,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f47e9204fbb3bd78d8499",
                 "content": "little",
-                "_id": "6a5f47e9204fbb3bd78d8498",
-                "id": "6a5f47e9204fbb3bd78d8499"
+                "_id": "6a5f47e9204fbb3bd78d8498"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d849b",
                 "content": "much",
-                "_id": "6a5f47e9204fbb3bd78d849a",
-                "id": "6a5f47e9204fbb3bd78d849b"
+                "_id": "6a5f47e9204fbb3bd78d849a"
               },
               {
+                "id": "6a5f47e9204fbb3bd78d849d",
                 "content": "loud",
-                "_id": "6a5f47e9204fbb3bd78d849c",
-                "id": "6a5f47e9204fbb3bd78d849d"
+                "_id": "6a5f47e9204fbb3bd78d849c"
               }
             ],
             "image": null,
@@ -5022,15 +5023,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f47e9204fbb3bd78d847a",
-        "id": "6a5f47e9204fbb3bd78d849e"
+        "_id": "6a5f47e9204fbb3bd78d847a"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f47e9204fbb3bd78d849f"
     },
     "createdAt": "2026-07-21T10:20:25.408Z",
-    "updatedAt": "2026-07-21T10:20:25.408Z",
+    "updatedAt": "2026-08-10T07:36:55.951Z",
     "__v": 0
   },
   {
@@ -5039,6 +5039,7 @@
       "title": "Đề 35 ( mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f487a204fbb3bd78d8599",
         "questionTitle": "Đề 35 ( mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5053,19 +5054,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f487a204fbb3bd78d8578",
                 "content": "quiet",
-                "_id": "6a5f487a204fbb3bd78d8577",
-                "id": "6a5f487a204fbb3bd78d8578"
+                "_id": "6a5f487a204fbb3bd78d8577"
               },
               {
+                "id": "6a5f487a204fbb3bd78d857a",
                 "content": "soft",
-                "_id": "6a5f487a204fbb3bd78d8579",
-                "id": "6a5f487a204fbb3bd78d857a"
+                "_id": "6a5f487a204fbb3bd78d8579"
               },
               {
+                "id": "6a5f487a204fbb3bd78d857c",
                 "content": "loud",
-                "_id": "6a5f487a204fbb3bd78d857b",
-                "id": "6a5f487a204fbb3bd78d857c"
+                "_id": "6a5f487a204fbb3bd78d857b"
               }
             ],
             "image": null,
@@ -5078,19 +5079,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f487a204fbb3bd78d857f",
                 "content": "took",
-                "_id": "6a5f487a204fbb3bd78d857e",
-                "id": "6a5f487a204fbb3bd78d857f"
+                "_id": "6a5f487a204fbb3bd78d857e"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8581",
                 "content": "drank",
-                "_id": "6a5f487a204fbb3bd78d8580",
-                "id": "6a5f487a204fbb3bd78d8581"
+                "_id": "6a5f487a204fbb3bd78d8580"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8583",
                 "content": "sang",
-                "_id": "6a5f487a204fbb3bd78d8582",
-                "id": "6a5f487a204fbb3bd78d8583"
+                "_id": "6a5f487a204fbb3bd78d8582"
               }
             ],
             "image": null,
@@ -5103,19 +5104,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f487a204fbb3bd78d8586",
                 "content": "broke",
-                "_id": "6a5f487a204fbb3bd78d8585",
-                "id": "6a5f487a204fbb3bd78d8586"
+                "_id": "6a5f487a204fbb3bd78d8585"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8588",
                 "content": "watched",
-                "_id": "6a5f487a204fbb3bd78d8587",
-                "id": "6a5f487a204fbb3bd78d8588"
+                "_id": "6a5f487a204fbb3bd78d8587"
               },
               {
+                "id": "6a5f487a204fbb3bd78d858a",
                 "content": "sold",
-                "_id": "6a5f487a204fbb3bd78d8589",
-                "id": "6a5f487a204fbb3bd78d858a"
+                "_id": "6a5f487a204fbb3bd78d8589"
               }
             ],
             "image": null,
@@ -5128,19 +5129,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f487a204fbb3bd78d858d",
                 "content": "break",
-                "_id": "6a5f487a204fbb3bd78d858c",
-                "id": "6a5f487a204fbb3bd78d858d"
+                "_id": "6a5f487a204fbb3bd78d858c"
               },
               {
+                "id": "6a5f487a204fbb3bd78d858f",
                 "content": "sell",
-                "_id": "6a5f487a204fbb3bd78d858e",
-                "id": "6a5f487a204fbb3bd78d858f"
+                "_id": "6a5f487a204fbb3bd78d858e"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8591",
                 "content": "buỵ",
-                "_id": "6a5f487a204fbb3bd78d8590",
-                "id": "6a5f487a204fbb3bd78d8591"
+                "_id": "6a5f487a204fbb3bd78d8590"
               }
             ],
             "image": null,
@@ -5153,19 +5154,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f487a204fbb3bd78d8594",
                 "content": "fun",
-                "_id": "6a5f487a204fbb3bd78d8593",
-                "id": "6a5f487a204fbb3bd78d8594"
+                "_id": "6a5f487a204fbb3bd78d8593"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8596",
                 "content": "boring",
-                "_id": "6a5f487a204fbb3bd78d8595",
-                "id": "6a5f487a204fbb3bd78d8596"
+                "_id": "6a5f487a204fbb3bd78d8595"
               },
               {
+                "id": "6a5f487a204fbb3bd78d8598",
                 "content": "loud",
-                "_id": "6a5f487a204fbb3bd78d8597",
-                "id": "6a5f487a204fbb3bd78d8598"
+                "_id": "6a5f487a204fbb3bd78d8597"
               }
             ],
             "image": null,
@@ -5177,15 +5178,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f487a204fbb3bd78d8575",
-        "id": "6a5f487a204fbb3bd78d8599"
+        "_id": "6a5f487a204fbb3bd78d8575"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f487a204fbb3bd78d859a"
     },
     "createdAt": "2026-07-21T10:22:50.254Z",
-    "updatedAt": "2026-07-21T10:22:50.254Z",
+    "updatedAt": "2026-08-10T07:36:56.003Z",
     "__v": 0
   },
   {
@@ -5194,6 +5194,7 @@
       "title": "Đề 36 ( mới ) ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f504373ba836b58712e43",
         "questionTitle": "Đề 36 ( mới ) ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5208,19 +5209,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f504373ba836b58712e22",
                 "content": "quiet",
-                "_id": "6a5f504373ba836b58712e21",
-                "id": "6a5f504373ba836b58712e22"
+                "_id": "6a5f504373ba836b58712e21"
               },
               {
+                "id": "6a5f504373ba836b58712e24",
                 "content": "busy",
-                "_id": "6a5f504373ba836b58712e23",
-                "id": "6a5f504373ba836b58712e24"
+                "_id": "6a5f504373ba836b58712e23"
               },
               {
+                "id": "6a5f504373ba836b58712e26",
                 "content": "loud",
-                "_id": "6a5f504373ba836b58712e25",
-                "id": "6a5f504373ba836b58712e26"
+                "_id": "6a5f504373ba836b58712e25"
               }
             ],
             "image": null,
@@ -5233,19 +5234,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f504373ba836b58712e29",
                 "content": "forest",
-                "_id": "6a5f504373ba836b58712e28",
-                "id": "6a5f504373ba836b58712e29"
+                "_id": "6a5f504373ba836b58712e28"
               },
               {
+                "id": "6a5f504373ba836b58712e2b",
                 "content": "river",
-                "_id": "6a5f504373ba836b58712e2a",
-                "id": "6a5f504373ba836b58712e2b"
+                "_id": "6a5f504373ba836b58712e2a"
               },
               {
+                "id": "6a5f504373ba836b58712e2d",
                 "content": "museum",
-                "_id": "6a5f504373ba836b58712e2c",
-                "id": "6a5f504373ba836b58712e2d"
+                "_id": "6a5f504373ba836b58712e2c"
               }
             ],
             "image": null,
@@ -5258,19 +5259,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f504373ba836b58712e30",
                 "content": "ate",
-                "_id": "6a5f504373ba836b58712e2f",
-                "id": "6a5f504373ba836b58712e30"
+                "_id": "6a5f504373ba836b58712e2f"
               },
               {
+                "id": "6a5f504373ba836b58712e32",
                 "content": "wrote",
-                "_id": "6a5f504373ba836b58712e31",
-                "id": "6a5f504373ba836b58712e32"
+                "_id": "6a5f504373ba836b58712e31"
               },
               {
+                "id": "6a5f504373ba836b58712e34",
                 "content": "sang",
-                "_id": "6a5f504373ba836b58712e33",
-                "id": "6a5f504373ba836b58712e34"
+                "_id": "6a5f504373ba836b58712e33"
               }
             ],
             "image": null,
@@ -5283,19 +5284,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f504373ba836b58712e37",
                 "content": "break",
-                "_id": "6a5f504373ba836b58712e36",
-                "id": "6a5f504373ba836b58712e37"
+                "_id": "6a5f504373ba836b58712e36"
               },
               {
+                "id": "6a5f504373ba836b58712e39",
                 "content": "take",
-                "_id": "6a5f504373ba836b58712e38",
-                "id": "6a5f504373ba836b58712e39"
+                "_id": "6a5f504373ba836b58712e38"
               },
               {
+                "id": "6a5f504373ba836b58712e3b",
                 "content": "sell",
-                "_id": "6a5f504373ba836b58712e3a",
-                "id": "6a5f504373ba836b58712e3b"
+                "_id": "6a5f504373ba836b58712e3a"
               }
             ],
             "image": null,
@@ -5308,19 +5309,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f504373ba836b58712e3e",
                 "content": "rocks",
-                "_id": "6a5f504373ba836b58712e3d",
-                "id": "6a5f504373ba836b58712e3e"
+                "_id": "6a5f504373ba836b58712e3d"
               },
               {
+                "id": "6a5f504373ba836b58712e40",
                 "content": "papers",
-                "_id": "6a5f504373ba836b58712e3f",
-                "id": "6a5f504373ba836b58712e40"
+                "_id": "6a5f504373ba836b58712e3f"
               },
               {
+                "id": "6a5f504373ba836b58712e42",
                 "content": "souvenirs",
-                "_id": "6a5f504373ba836b58712e41",
-                "id": "6a5f504373ba836b58712e42"
+                "_id": "6a5f504373ba836b58712e41"
               }
             ],
             "image": null,
@@ -5332,14 +5333,13 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f504373ba836b58712e1f",
-        "id": "6a5f504373ba836b58712e43"
+        "_id": "6a5f504373ba836b58712e1f"
       },
       "skill": "READING",
       "description": null
     },
     "createdAt": "2026-07-21T10:25:29.891Z",
-    "updatedAt": "2026-07-21T10:56:03.995Z",
+    "updatedAt": "2026-08-10T07:36:56.053Z",
     "__v": 0
   },
   {
@@ -5348,6 +5348,7 @@
       "title": "Đề 37 ( mới ) ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f49b8204fbb3bd78d8ac0",
         "questionTitle": "Đề 37 ( mới ) ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5362,19 +5363,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f49b8204fbb3bd78d8a9f",
                 "content": "bad",
-                "_id": "6a5f49b8204fbb3bd78d8a9e",
-                "id": "6a5f49b8204fbb3bd78d8a9f"
+                "_id": "6a5f49b8204fbb3bd78d8a9e"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8aa1",
                 "content": "loud",
-                "_id": "6a5f49b8204fbb3bd78d8aa0",
-                "id": "6a5f49b8204fbb3bd78d8aa1"
+                "_id": "6a5f49b8204fbb3bd78d8aa0"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8aa3",
                 "content": "nice",
-                "_id": "6a5f49b8204fbb3bd78d8aa2",
-                "id": "6a5f49b8204fbb3bd78d8aa3"
+                "_id": "6a5f49b8204fbb3bd78d8aa2"
               }
             ],
             "image": null,
@@ -5387,19 +5388,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f49b8204fbb3bd78d8aa6",
                 "content": "made",
-                "_id": "6a5f49b8204fbb3bd78d8aa5",
-                "id": "6a5f49b8204fbb3bd78d8aa6"
+                "_id": "6a5f49b8204fbb3bd78d8aa5"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8aa8",
                 "content": "broke",
-                "_id": "6a5f49b8204fbb3bd78d8aa7",
-                "id": "6a5f49b8204fbb3bd78d8aa8"
+                "_id": "6a5f49b8204fbb3bd78d8aa7"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8aaa",
                 "content": "sold",
-                "_id": "6a5f49b8204fbb3bd78d8aa9",
-                "id": "6a5f49b8204fbb3bd78d8aaa"
+                "_id": "6a5f49b8204fbb3bd78d8aa9"
               }
             ],
             "image": null,
@@ -5412,19 +5413,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f49b8204fbb3bd78d8aad",
                 "content": "drank",
-                "_id": "6a5f49b8204fbb3bd78d8aac",
-                "id": "6a5f49b8204fbb3bd78d8aad"
+                "_id": "6a5f49b8204fbb3bd78d8aac"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8aaf",
                 "content": "mixed",
-                "_id": "6a5f49b8204fbb3bd78d8aae",
-                "id": "6a5f49b8204fbb3bd78d8aaf"
+                "_id": "6a5f49b8204fbb3bd78d8aae"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8ab1",
                 "content": "sang",
-                "_id": "6a5f49b8204fbb3bd78d8ab0",
-                "id": "6a5f49b8204fbb3bd78d8ab1"
+                "_id": "6a5f49b8204fbb3bd78d8ab0"
               }
             ],
             "image": null,
@@ -5437,19 +5438,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f49b8204fbb3bd78d8ab4",
                 "content": "break",
-                "_id": "6a5f49b8204fbb3bd78d8ab3",
-                "id": "6a5f49b8204fbb3bd78d8ab4"
+                "_id": "6a5f49b8204fbb3bd78d8ab3"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8ab6",
                 "content": "sell",
-                "_id": "6a5f49b8204fbb3bd78d8ab5",
-                "id": "6a5f49b8204fbb3bd78d8ab6"
+                "_id": "6a5f49b8204fbb3bd78d8ab5"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8ab8",
                 "content": "bring",
-                "_id": "6a5f49b8204fbb3bd78d8ab7",
-                "id": "6a5f49b8204fbb3bd78d8ab8"
+                "_id": "6a5f49b8204fbb3bd78d8ab7"
               }
             ],
             "image": null,
@@ -5462,19 +5463,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f49b8204fbb3bd78d8abb",
                 "content": "soon",
-                "_id": "6a5f49b8204fbb3bd78d8aba",
-                "id": "6a5f49b8204fbb3bd78d8abb"
+                "_id": "6a5f49b8204fbb3bd78d8aba"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8abd",
                 "content": "never",
-                "_id": "6a5f49b8204fbb3bd78d8abc",
-                "id": "6a5f49b8204fbb3bd78d8abd"
+                "_id": "6a5f49b8204fbb3bd78d8abc"
               },
               {
+                "id": "6a5f49b8204fbb3bd78d8abf",
                 "content": "loudly",
-                "_id": "6a5f49b8204fbb3bd78d8abe",
-                "id": "6a5f49b8204fbb3bd78d8abf"
+                "_id": "6a5f49b8204fbb3bd78d8abe"
               }
             ],
             "image": null,
@@ -5486,15 +5487,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f49b8204fbb3bd78d8a9c",
-        "id": "6a5f49b8204fbb3bd78d8ac0"
+        "_id": "6a5f49b8204fbb3bd78d8a9c"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f49b8204fbb3bd78d8ac1"
     },
     "createdAt": "2026-07-21T10:28:08.224Z",
-    "updatedAt": "2026-07-21T10:28:08.224Z",
+    "updatedAt": "2026-08-10T07:36:56.104Z",
     "__v": 0
   },
   {
@@ -5503,6 +5503,7 @@
       "title": "Đề 38 ( mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4a56204fbb3bd78d8b6c",
         "questionTitle": "Đề 38 ( mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5517,19 +5518,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4a56204fbb3bd78d8b4b",
                 "content": "sunny",
-                "_id": "6a5f4a56204fbb3bd78d8b4a",
-                "id": "6a5f4a56204fbb3bd78d8b4b"
+                "_id": "6a5f4a56204fbb3bd78d8b4a"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b4d",
                 "content": "rain",
-                "_id": "6a5f4a56204fbb3bd78d8b4c",
-                "id": "6a5f4a56204fbb3bd78d8b4d"
+                "_id": "6a5f4a56204fbb3bd78d8b4c"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b4f",
                 "content": "loud",
-                "_id": "6a5f4a56204fbb3bd78d8b4e",
-                "id": "6a5f4a56204fbb3bd78d8b4f"
+                "_id": "6a5f4a56204fbb3bd78d8b4e"
               }
             ],
             "image": null,
@@ -5542,19 +5543,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4a56204fbb3bd78d8b52",
                 "content": "dinner",
-                "_id": "6a5f4a56204fbb3bd78d8b51",
-                "id": "6a5f4a56204fbb3bd78d8b52"
+                "_id": "6a5f4a56204fbb3bd78d8b51"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b54",
                 "content": "breakfast",
-                "_id": "6a5f4a56204fbb3bd78d8b53",
-                "id": "6a5f4a56204fbb3bd78d8b54"
+                "_id": "6a5f4a56204fbb3bd78d8b53"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b56",
                 "content": "luch",
-                "_id": "6a5f4a56204fbb3bd78d8b55",
-                "id": "6a5f4a56204fbb3bd78d8b56"
+                "_id": "6a5f4a56204fbb3bd78d8b55"
               }
             ],
             "image": null,
@@ -5567,19 +5568,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4a56204fbb3bd78d8b59",
                 "content": "broke",
-                "_id": "6a5f4a56204fbb3bd78d8b58",
-                "id": "6a5f4a56204fbb3bd78d8b59"
+                "_id": "6a5f4a56204fbb3bd78d8b58"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b5b",
                 "content": "sold",
-                "_id": "6a5f4a56204fbb3bd78d8b5a",
-                "id": "6a5f4a56204fbb3bd78d8b5b"
+                "_id": "6a5f4a56204fbb3bd78d8b5a"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b5d",
                 "content": "rented",
-                "_id": "6a5f4a56204fbb3bd78d8b5c",
-                "id": "6a5f4a56204fbb3bd78d8b5d"
+                "_id": "6a5f4a56204fbb3bd78d8b5c"
               }
             ],
             "image": null,
@@ -5592,19 +5593,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4a56204fbb3bd78d8b60",
                 "content": "visit",
-                "_id": "6a5f4a56204fbb3bd78d8b5f",
-                "id": "6a5f4a56204fbb3bd78d8b60"
+                "_id": "6a5f4a56204fbb3bd78d8b5f"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b62",
                 "content": "break",
-                "_id": "6a5f4a56204fbb3bd78d8b61",
-                "id": "6a5f4a56204fbb3bd78d8b62"
+                "_id": "6a5f4a56204fbb3bd78d8b61"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b64",
                 "content": "sell",
-                "_id": "6a5f4a56204fbb3bd78d8b63",
-                "id": "6a5f4a56204fbb3bd78d8b64"
+                "_id": "6a5f4a56204fbb3bd78d8b63"
               }
             ],
             "image": null,
@@ -5617,19 +5618,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4a56204fbb3bd78d8b67",
                 "content": "rocks",
-                "_id": "6a5f4a56204fbb3bd78d8b66",
-                "id": "6a5f4a56204fbb3bd78d8b67"
+                "_id": "6a5f4a56204fbb3bd78d8b66"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b69",
                 "content": "gifts",
-                "_id": "6a5f4a56204fbb3bd78d8b68",
-                "id": "6a5f4a56204fbb3bd78d8b69"
+                "_id": "6a5f4a56204fbb3bd78d8b68"
               },
               {
+                "id": "6a5f4a56204fbb3bd78d8b6b",
                 "content": "papers",
-                "_id": "6a5f4a56204fbb3bd78d8b6a",
-                "id": "6a5f4a56204fbb3bd78d8b6b"
+                "_id": "6a5f4a56204fbb3bd78d8b6a"
               }
             ],
             "image": null,
@@ -5641,15 +5642,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4a56204fbb3bd78d8b48",
-        "id": "6a5f4a56204fbb3bd78d8b6c"
+        "_id": "6a5f4a56204fbb3bd78d8b48"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4a56204fbb3bd78d8b6d"
     },
     "createdAt": "2026-07-21T10:30:46.952Z",
-    "updatedAt": "2026-07-21T10:30:46.952Z",
+    "updatedAt": "2026-08-10T07:36:56.155Z",
     "__v": 0
   },
   {
@@ -5658,6 +5658,7 @@
       "title": "Đề 39 ( mới)",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4af0204fbb3bd78d8c2c",
         "questionTitle": "Đề 39 ( mới)",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5672,19 +5673,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4af0204fbb3bd78d8c0b",
                 "content": "heavy",
-                "_id": "6a5f4af0204fbb3bd78d8c0a",
-                "id": "6a5f4af0204fbb3bd78d8c0b"
+                "_id": "6a5f4af0204fbb3bd78d8c0a"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c0d",
                 "content": "interesting",
-                "_id": "6a5f4af0204fbb3bd78d8c0c",
-                "id": "6a5f4af0204fbb3bd78d8c0d"
+                "_id": "6a5f4af0204fbb3bd78d8c0c"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c0f",
                 "content": "quiet",
-                "_id": "6a5f4af0204fbb3bd78d8c0e",
-                "id": "6a5f4af0204fbb3bd78d8c0f"
+                "_id": "6a5f4af0204fbb3bd78d8c0e"
               }
             ],
             "image": null,
@@ -5697,19 +5698,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4af0204fbb3bd78d8c12",
                 "content": "ate",
-                "_id": "6a5f4af0204fbb3bd78d8c11",
-                "id": "6a5f4af0204fbb3bd78d8c12"
+                "_id": "6a5f4af0204fbb3bd78d8c11"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c14",
                 "content": "swam",
-                "_id": "6a5f4af0204fbb3bd78d8c13",
-                "id": "6a5f4af0204fbb3bd78d8c14"
+                "_id": "6a5f4af0204fbb3bd78d8c13"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c16",
                 "content": "wrote",
-                "_id": "6a5f4af0204fbb3bd78d8c15",
-                "id": "6a5f4af0204fbb3bd78d8c16"
+                "_id": "6a5f4af0204fbb3bd78d8c15"
               }
             ],
             "image": null,
@@ -5722,19 +5723,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4af0204fbb3bd78d8c19",
                 "content": "completed",
-                "_id": "6a5f4af0204fbb3bd78d8c18",
-                "id": "6a5f4af0204fbb3bd78d8c19"
+                "_id": "6a5f4af0204fbb3bd78d8c18"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c1b",
                 "content": "forgotten",
-                "_id": "6a5f4af0204fbb3bd78d8c1a",
-                "id": "6a5f4af0204fbb3bd78d8c1b"
+                "_id": "6a5f4af0204fbb3bd78d8c1a"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c1d",
                 "content": "broken",
-                "_id": "6a5f4af0204fbb3bd78d8c1c",
-                "id": "6a5f4af0204fbb3bd78d8c1d"
+                "_id": "6a5f4af0204fbb3bd78d8c1c"
               }
             ],
             "image": null,
@@ -5747,19 +5748,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4af0204fbb3bd78d8c20",
                 "content": "close",
-                "_id": "6a5f4af0204fbb3bd78d8c1f",
-                "id": "6a5f4af0204fbb3bd78d8c20"
+                "_id": "6a5f4af0204fbb3bd78d8c1f"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c22",
                 "content": "start",
-                "_id": "6a5f4af0204fbb3bd78d8c21",
-                "id": "6a5f4af0204fbb3bd78d8c22"
+                "_id": "6a5f4af0204fbb3bd78d8c21"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c24",
                 "content": "paint",
-                "_id": "6a5f4af0204fbb3bd78d8c23",
-                "id": "6a5f4af0204fbb3bd78d8c24"
+                "_id": "6a5f4af0204fbb3bd78d8c23"
               }
             ],
             "image": null,
@@ -5772,19 +5773,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4af0204fbb3bd78d8c27",
                 "content": "noise",
-                "_id": "6a5f4af0204fbb3bd78d8c26",
-                "id": "6a5f4af0204fbb3bd78d8c27"
+                "_id": "6a5f4af0204fbb3bd78d8c26"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c29",
                 "content": "weather",
-                "_id": "6a5f4af0204fbb3bd78d8c28",
-                "id": "6a5f4af0204fbb3bd78d8c29"
+                "_id": "6a5f4af0204fbb3bd78d8c28"
               },
               {
+                "id": "6a5f4af0204fbb3bd78d8c2b",
                 "content": "support",
-                "_id": "6a5f4af0204fbb3bd78d8c2a",
-                "id": "6a5f4af0204fbb3bd78d8c2b"
+                "_id": "6a5f4af0204fbb3bd78d8c2a"
               }
             ],
             "image": null,
@@ -5796,15 +5797,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4af0204fbb3bd78d8c08",
-        "id": "6a5f4af0204fbb3bd78d8c2c"
+        "_id": "6a5f4af0204fbb3bd78d8c08"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4af0204fbb3bd78d8c2d"
     },
     "createdAt": "2026-07-21T10:33:20.638Z",
-    "updatedAt": "2026-07-21T10:33:20.638Z",
+    "updatedAt": "2026-08-10T07:36:56.207Z",
     "__v": 0
   },
   {
@@ -5813,6 +5813,7 @@
       "title": "Đề 40 ( Đề mới) ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4b6d204fbb3bd78d8d00",
         "questionTitle": "Đề 40 ( Đề mới) ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5827,19 +5828,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4b6d204fbb3bd78d8cdf",
                 "content": "easy",
-                "_id": "6a5f4b6d204fbb3bd78d8cde",
-                "id": "6a5f4b6d204fbb3bd78d8cdf"
+                "_id": "6a5f4b6d204fbb3bd78d8cde"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8ce1",
                 "content": "hard",
-                "_id": "6a5f4b6d204fbb3bd78d8ce0",
-                "id": "6a5f4b6d204fbb3bd78d8ce1"
+                "_id": "6a5f4b6d204fbb3bd78d8ce0"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8ce3",
                 "content": "loud",
-                "_id": "6a5f4b6d204fbb3bd78d8ce2",
-                "id": "6a5f4b6d204fbb3bd78d8ce3"
+                "_id": "6a5f4b6d204fbb3bd78d8ce2"
               }
             ],
             "image": null,
@@ -5852,19 +5853,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4b6d204fbb3bd78d8ce6",
                 "content": "broke",
-                "_id": "6a5f4b6d204fbb3bd78d8ce5",
-                "id": "6a5f4b6d204fbb3bd78d8ce6"
+                "_id": "6a5f4b6d204fbb3bd78d8ce5"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8ce8",
                 "content": "sold",
-                "_id": "6a5f4b6d204fbb3bd78d8ce7",
-                "id": "6a5f4b6d204fbb3bd78d8ce8"
+                "_id": "6a5f4b6d204fbb3bd78d8ce7"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cea",
                 "content": "followed",
-                "_id": "6a5f4b6d204fbb3bd78d8ce9",
-                "id": "6a5f4b6d204fbb3bd78d8cea"
+                "_id": "6a5f4b6d204fbb3bd78d8ce9"
               }
             ],
             "image": null,
@@ -5877,19 +5878,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4b6d204fbb3bd78d8ced",
                 "content": "checked",
-                "_id": "6a5f4b6d204fbb3bd78d8cec",
-                "id": "6a5f4b6d204fbb3bd78d8ced"
+                "_id": "6a5f4b6d204fbb3bd78d8cec"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cef",
                 "content": "broke",
-                "_id": "6a5f4b6d204fbb3bd78d8cee",
-                "id": "6a5f4b6d204fbb3bd78d8cef"
+                "_id": "6a5f4b6d204fbb3bd78d8cee"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cf1",
                 "content": "sold",
-                "_id": "6a5f4b6d204fbb3bd78d8cf0",
-                "id": "6a5f4b6d204fbb3bd78d8cf1"
+                "_id": "6a5f4b6d204fbb3bd78d8cf0"
               }
             ],
             "image": null,
@@ -5902,19 +5903,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4b6d204fbb3bd78d8cf4",
                 "content": "break",
-                "_id": "6a5f4b6d204fbb3bd78d8cf3",
-                "id": "6a5f4b6d204fbb3bd78d8cf4"
+                "_id": "6a5f4b6d204fbb3bd78d8cf3"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cf6",
                 "content": "submit",
-                "_id": "6a5f4b6d204fbb3bd78d8cf5",
-                "id": "6a5f4b6d204fbb3bd78d8cf6"
+                "_id": "6a5f4b6d204fbb3bd78d8cf5"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cf8",
                 "content": "sell",
-                "_id": "6a5f4b6d204fbb3bd78d8cf7",
-                "id": "6a5f4b6d204fbb3bd78d8cf8"
+                "_id": "6a5f4b6d204fbb3bd78d8cf7"
               }
             ],
             "image": null,
@@ -5927,19 +5928,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4b6d204fbb3bd78d8cfb",
                 "content": "noise",
-                "_id": "6a5f4b6d204fbb3bd78d8cfa",
-                "id": "6a5f4b6d204fbb3bd78d8cfb"
+                "_id": "6a5f4b6d204fbb3bd78d8cfa"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cfd",
                 "content": "weather",
-                "_id": "6a5f4b6d204fbb3bd78d8cfc",
-                "id": "6a5f4b6d204fbb3bd78d8cfd"
+                "_id": "6a5f4b6d204fbb3bd78d8cfc"
               },
               {
+                "id": "6a5f4b6d204fbb3bd78d8cff",
                 "content": "help",
-                "_id": "6a5f4b6d204fbb3bd78d8cfe",
-                "id": "6a5f4b6d204fbb3bd78d8cff"
+                "_id": "6a5f4b6d204fbb3bd78d8cfe"
               }
             ],
             "image": null,
@@ -5951,15 +5952,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4b6d204fbb3bd78d8cdc",
-        "id": "6a5f4b6d204fbb3bd78d8d00"
+        "_id": "6a5f4b6d204fbb3bd78d8cdc"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4b6d204fbb3bd78d8d01"
     },
     "createdAt": "2026-07-21T10:35:25.988Z",
-    "updatedAt": "2026-07-21T10:35:25.988Z",
+    "updatedAt": "2026-08-10T07:36:56.260Z",
     "__v": 0
   },
   {
@@ -5968,6 +5968,7 @@
       "title": "Đề 41 ( Đề mới) ",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4c18204fbb3bd78d8de8",
         "questionTitle": "Đề 41 ( Đề mới) ",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -5982,19 +5983,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4c18204fbb3bd78d8dc7",
                 "content": "new",
-                "_id": "6a5f4c18204fbb3bd78d8dc6",
-                "id": "6a5f4c18204fbb3bd78d8dc7"
+                "_id": "6a5f4c18204fbb3bd78d8dc6"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dc9",
                 "content": "loud",
-                "_id": "6a5f4c18204fbb3bd78d8dc8",
-                "id": "6a5f4c18204fbb3bd78d8dc9"
+                "_id": "6a5f4c18204fbb3bd78d8dc8"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dcb",
                 "content": "old",
-                "_id": "6a5f4c18204fbb3bd78d8dca",
-                "id": "6a5f4c18204fbb3bd78d8dcb"
+                "_id": "6a5f4c18204fbb3bd78d8dca"
               }
             ],
             "image": null,
@@ -6007,19 +6008,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4c18204fbb3bd78d8dce",
                 "content": "visited",
-                "_id": "6a5f4c18204fbb3bd78d8dcd",
-                "id": "6a5f4c18204fbb3bd78d8dce"
+                "_id": "6a5f4c18204fbb3bd78d8dcd"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dd0",
                 "content": "broke",
-                "_id": "6a5f4c18204fbb3bd78d8dcf",
-                "id": "6a5f4c18204fbb3bd78d8dd0"
+                "_id": "6a5f4c18204fbb3bd78d8dcf"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dd2",
                 "content": "sold",
-                "_id": "6a5f4c18204fbb3bd78d8dd1",
-                "id": "6a5f4c18204fbb3bd78d8dd2"
+                "_id": "6a5f4c18204fbb3bd78d8dd1"
               }
             ],
             "image": null,
@@ -6032,19 +6033,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4c18204fbb3bd78d8dd5",
                 "content": "wrote",
-                "_id": "6a5f4c18204fbb3bd78d8dd4",
-                "id": "6a5f4c18204fbb3bd78d8dd5"
+                "_id": "6a5f4c18204fbb3bd78d8dd4"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dd7",
                 "content": "drank",
-                "_id": "6a5f4c18204fbb3bd78d8dd6",
-                "id": "6a5f4c18204fbb3bd78d8dd7"
+                "_id": "6a5f4c18204fbb3bd78d8dd6"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dd9",
                 "content": "sang",
-                "_id": "6a5f4c18204fbb3bd78d8dd8",
-                "id": "6a5f4c18204fbb3bd78d8dd9"
+                "_id": "6a5f4c18204fbb3bd78d8dd8"
               }
             ],
             "image": null,
@@ -6057,19 +6058,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4c18204fbb3bd78d8ddc",
                 "content": "break",
-                "_id": "6a5f4c18204fbb3bd78d8ddb",
-                "id": "6a5f4c18204fbb3bd78d8ddc"
+                "_id": "6a5f4c18204fbb3bd78d8ddb"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8dde",
                 "content": "sell",
-                "_id": "6a5f4c18204fbb3bd78d8ddd",
-                "id": "6a5f4c18204fbb3bd78d8dde"
+                "_id": "6a5f4c18204fbb3bd78d8ddd"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8de0",
                 "content": "visit",
-                "_id": "6a5f4c18204fbb3bd78d8ddf",
-                "id": "6a5f4c18204fbb3bd78d8de0"
+                "_id": "6a5f4c18204fbb3bd78d8ddf"
               }
             ],
             "image": null,
@@ -6082,19 +6083,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4c18204fbb3bd78d8de3",
                 "content": "gifts",
-                "_id": "6a5f4c18204fbb3bd78d8de2",
-                "id": "6a5f4c18204fbb3bd78d8de3"
+                "_id": "6a5f4c18204fbb3bd78d8de2"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8de5",
                 "content": "rocks",
-                "_id": "6a5f4c18204fbb3bd78d8de4",
-                "id": "6a5f4c18204fbb3bd78d8de5"
+                "_id": "6a5f4c18204fbb3bd78d8de4"
               },
               {
+                "id": "6a5f4c18204fbb3bd78d8de7",
                 "content": "papers",
-                "_id": "6a5f4c18204fbb3bd78d8de6",
-                "id": "6a5f4c18204fbb3bd78d8de7"
+                "_id": "6a5f4c18204fbb3bd78d8de6"
               }
             ],
             "image": null,
@@ -6106,15 +6107,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4c18204fbb3bd78d8dc4",
-        "id": "6a5f4c18204fbb3bd78d8de8"
+        "_id": "6a5f4c18204fbb3bd78d8dc4"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4c18204fbb3bd78d8de9"
     },
     "createdAt": "2026-07-21T10:38:16.986Z",
-    "updatedAt": "2026-07-21T10:38:16.986Z",
+    "updatedAt": "2026-08-10T07:36:56.314Z",
     "__v": 0
   },
   {
@@ -6123,6 +6123,7 @@
       "title": "Đề 42 ( mới )",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4cae204fbb3bd78d8ee4",
         "questionTitle": "Đề 42 ( mới )",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -6137,19 +6138,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4cae204fbb3bd78d8ec3",
                 "content": "common",
-                "_id": "6a5f4cae204fbb3bd78d8ec2",
-                "id": "6a5f4cae204fbb3bd78d8ec3"
+                "_id": "6a5f4cae204fbb3bd78d8ec2"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ec5",
                 "content": "rare",
-                "_id": "6a5f4cae204fbb3bd78d8ec4",
-                "id": "6a5f4cae204fbb3bd78d8ec5"
+                "_id": "6a5f4cae204fbb3bd78d8ec4"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ec7",
                 "content": "heavy",
-                "_id": "6a5f4cae204fbb3bd78d8ec6",
-                "id": "6a5f4cae204fbb3bd78d8ec7"
+                "_id": "6a5f4cae204fbb3bd78d8ec6"
               }
             ],
             "image": null,
@@ -6162,19 +6163,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4cae204fbb3bd78d8eca",
                 "content": "sold",
-                "_id": "6a5f4cae204fbb3bd78d8ec9",
-                "id": "6a5f4cae204fbb3bd78d8eca"
+                "_id": "6a5f4cae204fbb3bd78d8ec9"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ecc",
                 "content": "cooked",
-                "_id": "6a5f4cae204fbb3bd78d8ecb",
-                "id": "6a5f4cae204fbb3bd78d8ecc"
+                "_id": "6a5f4cae204fbb3bd78d8ecb"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ece",
                 "content": "borrowed",
-                "_id": "6a5f4cae204fbb3bd78d8ecd",
-                "id": "6a5f4cae204fbb3bd78d8ece"
+                "_id": "6a5f4cae204fbb3bd78d8ecd"
               }
             ],
             "image": null,
@@ -6187,19 +6188,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4cae204fbb3bd78d8ed1",
                 "content": "watched",
-                "_id": "6a5f4cae204fbb3bd78d8ed0",
-                "id": "6a5f4cae204fbb3bd78d8ed1"
+                "_id": "6a5f4cae204fbb3bd78d8ed0"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ed3",
                 "content": "wrote",
-                "_id": "6a5f4cae204fbb3bd78d8ed2",
-                "id": "6a5f4cae204fbb3bd78d8ed3"
+                "_id": "6a5f4cae204fbb3bd78d8ed2"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ed5",
                 "content": "drank",
-                "_id": "6a5f4cae204fbb3bd78d8ed4",
-                "id": "6a5f4cae204fbb3bd78d8ed5"
+                "_id": "6a5f4cae204fbb3bd78d8ed4"
               }
             ],
             "image": null,
@@ -6212,19 +6213,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4cae204fbb3bd78d8ed8",
                 "content": "break",
-                "_id": "6a5f4cae204fbb3bd78d8ed7",
-                "id": "6a5f4cae204fbb3bd78d8ed8"
+                "_id": "6a5f4cae204fbb3bd78d8ed7"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8eda",
                 "content": "prepare",
-                "_id": "6a5f4cae204fbb3bd78d8ed9",
-                "id": "6a5f4cae204fbb3bd78d8eda"
+                "_id": "6a5f4cae204fbb3bd78d8ed9"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8edc",
                 "content": "sing",
-                "_id": "6a5f4cae204fbb3bd78d8edb",
-                "id": "6a5f4cae204fbb3bd78d8edc"
+                "_id": "6a5f4cae204fbb3bd78d8edb"
               }
             ],
             "image": null,
@@ -6237,19 +6238,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4cae204fbb3bd78d8edf",
                 "content": "noise",
-                "_id": "6a5f4cae204fbb3bd78d8ede",
-                "id": "6a5f4cae204fbb3bd78d8edf"
+                "_id": "6a5f4cae204fbb3bd78d8ede"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ee1",
                 "content": "weather",
-                "_id": "6a5f4cae204fbb3bd78d8ee0",
-                "id": "6a5f4cae204fbb3bd78d8ee1"
+                "_id": "6a5f4cae204fbb3bd78d8ee0"
               },
               {
+                "id": "6a5f4cae204fbb3bd78d8ee3",
                 "content": "luck",
-                "_id": "6a5f4cae204fbb3bd78d8ee2",
-                "id": "6a5f4cae204fbb3bd78d8ee3"
+                "_id": "6a5f4cae204fbb3bd78d8ee2"
               }
             ],
             "image": null,
@@ -6261,15 +6262,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4cae204fbb3bd78d8ec0",
-        "id": "6a5f4cae204fbb3bd78d8ee4"
+        "_id": "6a5f4cae204fbb3bd78d8ec0"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4cae204fbb3bd78d8ee5"
     },
     "createdAt": "2026-07-21T10:40:46.795Z",
-    "updatedAt": "2026-07-21T10:40:46.795Z",
+    "updatedAt": "2026-08-10T07:36:56.365Z",
     "__v": 0
   },
   {
@@ -6278,6 +6278,7 @@
       "title": "Đề 43 ( mới )",
       "timeToDo": 35,
       "questions": {
+        "id": "6a5f4d38204fbb3bd78d8fdf",
         "questionTitle": "Đề 43 ( mới )",
         "content": "<p><strong style=\"color: rgb(22, 22, 22);\">Read the email from Helen to her friend. Choose one word from the list for each gap. The first one is done for you.</strong></p>",
         "correctAnswer": "",
@@ -6292,19 +6293,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4d38204fbb3bd78d8fbe",
                 "content": "change",
-                "_id": "6a5f4d38204fbb3bd78d8fbd",
-                "id": "6a5f4d38204fbb3bd78d8fbe"
+                "_id": "6a5f4d38204fbb3bd78d8fbd"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fc0",
                 "content": "sleep",
-                "_id": "6a5f4d38204fbb3bd78d8fbf",
-                "id": "6a5f4d38204fbb3bd78d8fc0"
+                "_id": "6a5f4d38204fbb3bd78d8fbf"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fc2",
                 "content": "sing",
-                "_id": "6a5f4d38204fbb3bd78d8fc1",
-                "id": "6a5f4d38204fbb3bd78d8fc2"
+                "_id": "6a5f4d38204fbb3bd78d8fc1"
               }
             ],
             "image": null,
@@ -6317,19 +6318,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4d38204fbb3bd78d8fc5",
                 "content": "colder",
-                "_id": "6a5f4d38204fbb3bd78d8fc4",
-                "id": "6a5f4d38204fbb3bd78d8fc5"
+                "_id": "6a5f4d38204fbb3bd78d8fc4"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fc7",
                 "content": "hotter",
-                "_id": "6a5f4d38204fbb3bd78d8fc6",
-                "id": "6a5f4d38204fbb3bd78d8fc7"
+                "_id": "6a5f4d38204fbb3bd78d8fc6"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fc9",
                 "content": "quieter",
-                "_id": "6a5f4d38204fbb3bd78d8fc8",
-                "id": "6a5f4d38204fbb3bd78d8fc9"
+                "_id": "6a5f4d38204fbb3bd78d8fc8"
               }
             ],
             "image": null,
@@ -6342,19 +6343,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4d38204fbb3bd78d8fcc",
                 "content": "break",
-                "_id": "6a5f4d38204fbb3bd78d8fcb",
-                "id": "6a5f4d38204fbb3bd78d8fcc"
+                "_id": "6a5f4d38204fbb3bd78d8fcb"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fce",
                 "content": "drop",
-                "_id": "6a5f4d38204fbb3bd78d8fcd",
-                "id": "6a5f4d38204fbb3bd78d8fce"
+                "_id": "6a5f4d38204fbb3bd78d8fcd"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fd0",
                 "content": "plant",
-                "_id": "6a5f4d38204fbb3bd78d8fcf",
-                "id": "6a5f4d38204fbb3bd78d8fd0"
+                "_id": "6a5f4d38204fbb3bd78d8fcf"
               }
             ],
             "image": null,
@@ -6367,19 +6368,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4d38204fbb3bd78d8fd3",
                 "content": "plastic",
-                "_id": "6a5f4d38204fbb3bd78d8fd2",
-                "id": "6a5f4d38204fbb3bd78d8fd3"
+                "_id": "6a5f4d38204fbb3bd78d8fd2"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fd5",
                 "content": "music",
-                "_id": "6a5f4d38204fbb3bd78d8fd4",
-                "id": "6a5f4d38204fbb3bd78d8fd5"
+                "_id": "6a5f4d38204fbb3bd78d8fd4"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fd7",
                 "content": "paper",
-                "_id": "6a5f4d38204fbb3bd78d8fd6",
-                "id": "6a5f4d38204fbb3bd78d8fd7"
+                "_id": "6a5f4d38204fbb3bd78d8fd6"
               }
             ],
             "image": null,
@@ -6392,19 +6393,19 @@
             "file": null,
             "answerList": [
               {
+                "id": "6a5f4d38204fbb3bd78d8fda",
                 "content": "everyone",
-                "_id": "6a5f4d38204fbb3bd78d8fd9",
-                "id": "6a5f4d38204fbb3bd78d8fda"
+                "_id": "6a5f4d38204fbb3bd78d8fd9"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fdc",
                 "content": "something",
-                "_id": "6a5f4d38204fbb3bd78d8fdb",
-                "id": "6a5f4d38204fbb3bd78d8fdc"
+                "_id": "6a5f4d38204fbb3bd78d8fdb"
               },
               {
+                "id": "6a5f4d38204fbb3bd78d8fde",
                 "content": "nothing",
-                "_id": "6a5f4d38204fbb3bd78d8fdd",
-                "id": "6a5f4d38204fbb3bd78d8fde"
+                "_id": "6a5f4d38204fbb3bd78d8fdd"
               }
             ],
             "image": null,
@@ -6416,15 +6417,14 @@
         "isExample": false,
         "questionPart": "ONE",
         "image": null,
-        "_id": "6a5f4d38204fbb3bd78d8fbb",
-        "id": "6a5f4d38204fbb3bd78d8fdf"
+        "_id": "6a5f4d38204fbb3bd78d8fbb"
       },
       "skill": "READING",
       "description": null,
       "id": "6a5f4d38204fbb3bd78d8fe0"
     },
     "createdAt": "2026-07-21T10:43:04.729Z",
-    "updatedAt": "2026-07-21T10:43:04.729Z",
+    "updatedAt": "2026-08-10T07:36:56.416Z",
     "__v": 0
   }
 ]

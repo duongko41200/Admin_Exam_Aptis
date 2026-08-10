@@ -272,7 +272,7 @@
     "questionType": "LISTENING",
     "id": "695634bd0731243929b0c8fc",
     "createdAt": "2026-01-01T08:47:57.309Z",
-    "updatedAt": "2026-06-17T09:37:53.292Z",
+    "updatedAt": "2026-08-10T07:36:48.249Z",
     "__v": 0
   },
   {
@@ -548,7 +548,7 @@
     "questionType": "LISTENING",
     "id": "695639700731243929b0c911",
     "createdAt": "2026-01-01T09:08:00.336Z",
-    "updatedAt": "2026-06-17T09:37:53.635Z",
+    "updatedAt": "2026-08-10T07:36:48.631Z",
     "__v": 0
   },
   {
@@ -824,7 +824,7 @@
     "questionType": "LISTENING",
     "id": "69563db80731243929b0c926",
     "createdAt": "2026-01-01T09:26:16.483Z",
-    "updatedAt": "2026-06-17T09:37:53.681Z",
+    "updatedAt": "2026-08-10T07:36:48.691Z",
     "__v": 0
   },
   {
@@ -1100,7 +1100,7 @@
     "questionType": "LISTENING",
     "id": "695651040731243929b0c98e",
     "createdAt": "2026-01-01T10:48:36.418Z",
-    "updatedAt": "2026-06-17T09:37:53.732Z",
+    "updatedAt": "2026-08-10T07:36:48.751Z",
     "__v": 0
   },
   {
@@ -1376,7 +1376,7 @@
     "questionType": "LISTENING",
     "id": "695653de0731243929b0c9a3",
     "createdAt": "2026-01-01T11:00:46.987Z",
-    "updatedAt": "2026-06-17T09:37:53.815Z",
+    "updatedAt": "2026-08-10T07:36:48.806Z",
     "__v": 0
   },
   {
@@ -1652,7 +1652,7 @@
     "questionType": "LISTENING",
     "id": "6956576a0731243929b0c9b8",
     "createdAt": "2026-01-01T11:15:54.321Z",
-    "updatedAt": "2026-06-17T09:37:53.865Z",
+    "updatedAt": "2026-08-10T07:36:48.863Z",
     "__v": 0
   },
   {
@@ -1928,7 +1928,7 @@
     "questionType": "LISTENING",
     "id": "69565b1c0731243929b0c9cd",
     "createdAt": "2026-01-01T11:31:40.146Z",
-    "updatedAt": "2026-06-17T09:37:53.911Z",
+    "updatedAt": "2026-08-10T07:36:48.916Z",
     "__v": 0
   },
   {
@@ -2204,7 +2204,7 @@
     "questionType": "LISTENING",
     "id": "69565e420731243929b0ca73",
     "createdAt": "2026-01-01T11:45:06.375Z",
-    "updatedAt": "2026-06-17T09:37:53.957Z",
+    "updatedAt": "2026-08-10T07:36:48.972Z",
     "__v": 0
   },
   {
@@ -2480,7 +2480,7 @@
     "questionType": "LISTENING",
     "id": "69567b620731243929b0cac6",
     "createdAt": "2026-01-01T13:49:22.887Z",
-    "updatedAt": "2026-06-17T09:37:54.004Z",
+    "updatedAt": "2026-08-10T07:36:49.028Z",
     "__v": 0
   },
   {
@@ -2756,7 +2756,7 @@
     "questionType": "LISTENING",
     "id": "69567e6c0731243929b0cadb",
     "createdAt": "2026-01-01T14:02:20.487Z",
-    "updatedAt": "2026-06-17T09:37:54.049Z",
+    "updatedAt": "2026-08-10T07:36:49.083Z",
     "__v": 0
   },
   {
@@ -3032,7 +3032,7 @@
     "questionType": "LISTENING",
     "id": "695682170731243929b0caf0",
     "createdAt": "2026-01-01T14:17:59.753Z",
-    "updatedAt": "2026-06-17T09:37:54.094Z",
+    "updatedAt": "2026-08-10T07:36:49.141Z",
     "__v": 0
   },
   {
@@ -3308,7 +3308,7 @@
     "questionType": "LISTENING",
     "id": "696fa2e05f30844cf4a950b2",
     "createdAt": "2026-01-20T15:44:32.616Z",
-    "updatedAt": "2026-06-17T09:37:54.138Z",
+    "updatedAt": "2026-08-10T07:36:49.195Z",
     "__v": 0
   },
   {
@@ -3585,7 +3585,7 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "Đề mới bổ sung",
-    "updatedAt": "2026-06-17T10:17:44.954Z"
+    "updatedAt": "2026-08-10T07:36:49.251Z"
   },
   {
     "_id": "6a60d8342063db93c80e1908",
@@ -3860,7 +3860,7 @@
     "questionType": "LISTENING",
     "id": "6a60d8342063db93c80e1917",
     "createdAt": "2026-07-22T14:48:20.654Z",
-    "updatedAt": "2026-07-22T14:48:20.654Z",
+    "updatedAt": "2026-08-10T07:36:49.306Z",
     "__v": 0
   },
   {
@@ -4136,7 +4136,7 @@
     "questionType": "LISTENING",
     "id": "6a70620d4ced4bde8e68babb",
     "createdAt": "2026-08-03T09:40:29.719Z",
-    "updatedAt": "2026-08-03T09:40:29.719Z",
+    "updatedAt": "2026-08-10T07:36:49.360Z",
     "__v": 0
   }
 ]

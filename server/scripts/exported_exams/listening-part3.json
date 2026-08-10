@@ -71,7 +71,7 @@
     "questionType": "LISTENING",
     "id": "6957cbcbc88028aa29a1b2c6",
     "createdAt": "2026-01-02T13:44:43.238Z",
-    "updatedAt": "2026-06-22T03:54:12.384Z",
+    "updatedAt": "2026-08-10T07:36:50.133Z",
     "__v": 0
   },
   {
@@ -146,7 +146,7 @@
     "questionType": "LISTENING",
     "id": "6957ccb3c88028aa29a1b3ea",
     "createdAt": "2026-01-02T13:48:35.218Z",
-    "updatedAt": "2026-06-22T03:54:12.428Z",
+    "updatedAt": "2026-08-10T07:36:50.185Z",
     "__v": 0
   },
   {
@@ -221,7 +221,7 @@
     "questionType": "LISTENING",
     "id": "6957cd96c88028aa29a1b3f9",
     "createdAt": "2026-01-02T13:52:22.975Z",
-    "updatedAt": "2026-06-22T03:54:12.472Z",
+    "updatedAt": "2026-08-10T07:36:50.234Z",
     "__v": 0
   },
   {
@@ -296,7 +296,7 @@
     "questionType": "LISTENING",
     "id": "6957ce41c88028aa29a1b408",
     "createdAt": "2026-01-02T13:55:13.064Z",
-    "updatedAt": "2026-06-22T03:54:12.519Z",
+    "updatedAt": "2026-08-10T07:36:50.286Z",
     "__v": 0
   },
   {
@@ -371,7 +371,7 @@
     "questionType": "LISTENING",
     "id": "6957d2efc88028aa29a1b7d2",
     "createdAt": "2026-01-02T14:15:11.476Z",
-    "updatedAt": "2026-06-22T03:54:12.564Z",
+    "updatedAt": "2026-08-10T07:36:50.344Z",
     "__v": 0
   },
   {
@@ -446,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6957d38dc88028aa29a1b7e1",
     "createdAt": "2026-01-02T14:17:49.741Z",
-    "updatedAt": "2026-06-22T03:54:12.608Z",
+    "updatedAt": "2026-08-10T07:36:50.396Z",
     "__v": 0
   },
   {
@@ -521,7 +521,7 @@
     "questionType": "LISTENING",
     "id": "6957d526c88028aa29a1b998",
     "createdAt": "2026-01-02T14:24:38.160Z",
-    "updatedAt": "2026-06-22T03:54:12.652Z",
+    "updatedAt": "2026-08-10T07:36:50.446Z",
     "__v": 0
   },
   {
@@ -596,7 +596,7 @@
     "questionType": "LISTENING",
     "id": "6957d573c88028aa29a1b9a4",
     "createdAt": "2026-01-02T14:25:55.660Z",
-    "updatedAt": "2026-06-22T03:54:12.696Z",
+    "updatedAt": "2026-08-10T07:36:50.496Z",
     "__v": 0
   },
   {
@@ -671,7 +671,7 @@
     "questionType": "LISTENING",
     "id": "6957d65ec88028aa29a1bc29",
     "createdAt": "2026-01-02T14:29:50.372Z",
-    "updatedAt": "2026-06-22T03:54:12.743Z",
+    "updatedAt": "2026-08-10T07:36:50.547Z",
     "__v": 0
   },
   {
@@ -746,7 +746,7 @@
     "questionType": "LISTENING",
     "id": "6957d6e2c88028aa29a1bc38",
     "createdAt": "2026-01-02T14:32:02.012Z",
-    "updatedAt": "2026-06-22T03:54:12.791Z",
+    "updatedAt": "2026-08-10T07:36:50.598Z",
     "__v": 0
   },
   {
@@ -821,7 +821,7 @@
     "questionType": "LISTENING",
     "id": "6957d77ac88028aa29a1bc47",
     "createdAt": "2026-01-02T14:34:34.446Z",
-    "updatedAt": "2026-06-22T03:54:12.839Z",
+    "updatedAt": "2026-08-10T07:36:50.654Z",
     "__v": 0
   },
   {
@@ -896,7 +896,7 @@
     "questionType": "LISTENING",
     "id": "6957d80fc88028aa29a1bc56",
     "createdAt": "2026-01-02T14:37:03.180Z",
-    "updatedAt": "2026-06-22T03:54:12.886Z",
+    "updatedAt": "2026-08-10T07:36:50.705Z",
     "__v": 0
   },
   {
@@ -971,7 +971,7 @@
     "questionType": "LISTENING",
     "id": "6a38b3059e4ccda11bf0de81",
     "createdAt": "2026-06-22T03:59:01.579Z",
-    "updatedAt": "2026-06-22T03:59:01.579Z",
+    "updatedAt": "2026-08-10T07:36:50.757Z",
     "__v": 0
   },
   {
@@ -1046,14 +1046,92 @@
     "questionType": "LISTENING",
     "id": "6a3c8ca25b4af1f9e232a1a0",
     "createdAt": "2026-06-25T02:04:18.412Z",
-    "updatedAt": "2026-07-01T04:41:49.432Z",
+    "updatedAt": "2026-08-10T07:36:50.816Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a449fca7886f21f186f6a3a",
+    "title": "Work Business / Business and Cultural ",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work Business / Business and Cultural ",
+        "content": "chưa có file audio nên học đáp án trước",
+        "answerList": [
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "",
+        "subQuestionAnswerList": [],
+        "suggestion": "",
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "1",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3c"
+          },
+          {
+            "content": "2",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3d"
+          },
+          {
+            "content": "3",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3e"
+          },
+          {
+            "content": "4",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6a449fca7886f21f186f6a3f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a449fca7886f21f186f6a3b"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a449fca7886f21f186f6a40",
+    "createdAt": "2026-07-01T05:04:10.920Z",
+    "updatedAt": "2026-08-10T07:36:50.990Z",
     "__v": 0
   },
   {
     "_id": "b2c3d4e5f6a1b2c3d4e5f6b0",
-    "title": "Children and young people with technology - Nam nói trước",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "__v": 0,
+    "createdAt": "2026-07-15T09:57:21.399Z",
     "description": null,
+    "id": "6a449ec77886f21f186f698b",
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "Children and young people with technology -  Nam nói trước",
@@ -1117,12 +1195,9 @@
         "_id": "6a449ec77886f21f186f6986"
       }
     ],
-    "questionPart": "THREE",
-    "questionType": "LISTENING",
-    "id": "6a449ec77886f21f186f698b",
-    "createdAt": "2026-07-01T04:59:51.494Z",
-    "updatedAt": "2026-07-01T04:59:51.494Z",
-    "__v": 0
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "title": "Children and young people with technology - Nam nói trước",
+    "updatedAt": "2026-08-10T07:36:50.878Z"
   },
   {
     "_id": "b2c3d4e5f6a1b2c3d4e5f6a0",
@@ -1197,81 +1272,6 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "homeschooling",
-    "updatedAt": "2026-07-22T09:41:38.785Z"
-  },
-  {
-    "_id": "6a449fca7886f21f186f6a3a",
-    "title": "Work Business / Business and Cultural ",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Work Business / Business and Cultural ",
-        "content": "chưa có file audio nên học đáp án trước",
-        "answerList": [
-          {
-            "content": "Woman"
-          },
-          {
-            "content": "Man"
-          },
-          {
-            "content": "Both"
-          }
-        ],
-        "correctAnswer": "",
-        "file": "",
-        "subQuestionAnswerList": [],
-        "suggestion": "",
-        "subSuggestion": "",
-        "subQuestion": [
-          {
-            "content": "1",
-            "correctAnswer": "Man",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6a449fca7886f21f186f6a3c"
-          },
-          {
-            "content": "2",
-            "correctAnswer": "Both",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6a449fca7886f21f186f6a3d"
-          },
-          {
-            "content": "3",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6a449fca7886f21f186f6a3e"
-          },
-          {
-            "content": "4",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6a449fca7886f21f186f6a3f"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6a449fca7886f21f186f6a3b"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "LISTENING",
-    "id": "6a449fca7886f21f186f6a40",
-    "createdAt": "2026-07-01T05:04:10.920Z",
-    "updatedAt": "2026-07-01T05:04:10.920Z",
-    "__v": 0
+    "updatedAt": "2026-08-10T07:36:50.934Z"
   }
 ]
