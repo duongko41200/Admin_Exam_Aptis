@@ -4138,5 +4138,281 @@
     "createdAt": "2026-08-03T09:40:29.719Z",
     "updatedAt": "2026-08-10T07:36:49.360Z",
     "__v": 0
+  },
+  {
+    "_id": "6a8fb740faae25015590c508",
+    "title": "Đề 13 mới",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Đề 13 mới",
+        "content": "nghe kỹ và chọn đáp án đúng",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": null,
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Where will they wait for the bus?",
+            "correctAnswer": "At the hotel's main entrance",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803448671_87d890a7d37eda25_by_the_hotel_s_main_entrance_220826102819.mp3",
+            "answerList": [
+              {
+                "content": "At the City Museum"
+              },
+              {
+                "content": "At the hotel's main entrance"
+              },
+              {
+                "content": "At the Central Park"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.68],\"text\":\" Good morning everyone, let me walk you through today's schedule.\"},{\"timestamp\":[3.68,8.24],\"text\":\" First, we'll start the day at 9 a.m. with a visit to the City Museum,\"},{\"timestamp\":[8.24,11.92],\"text\":\" where you'll have about two hours to explore the exhibits.\"},{\"timestamp\":[11.92,18.96],\"text\":\" After that, at 12.30 p.m., we'll head to the Central Park for a picnic lunch and a relaxing stroll.\"},{\"timestamp\":[18.96,22.48],\"text\":\" Around 3 p.m. we'll make our way to the Old Town Market,\"},{\"timestamp\":[22.48,26],\"text\":\" where you can shop for souvenirs and enjoy some local treats.\"},{\"timestamp\":[26,32],\"text\":\" We'll wrap up our activities by 6pm, giving you a little free time back at the hotel.\"},{\"timestamp\":[32,null],\"text\":\" Finally, at 8pm, we'll meet at the hotel's main entrance to catch the bus to the airport. Make sure to be on time and we'll head to the airport together.\"}]</p>",
+            "_id": "6a8fb740faae25015590c50a"
+          },
+          {
+            "content": "A tour guide is introducing a famous building. What is this building currently used for?",
+            "correctAnswer": "A department store",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803449830_a4ac0568b9bf914e_9_210826182419.mp3",
+            "answerList": [
+              {
+                "content": "A department store"
+              },
+              {
+                "content": "A museum "
+              },
+              {
+                "content": "A cinema"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,7],\"text\":\" A tour guide is introducing a famous building. What is this building currently used for?\"},{\"timestamp\":[8.54,15.54],\"text\":\" Welcome, this is a famous building. It was a museum in the 1920s. Then it was a cinema.\"},{\"timestamp\":[15.92,null],\"text\":\" Now, it is a big department store. You can buy many things here.\"}]</p>",
+            "_id": "6a8fb740faae25015590c50b"
+          },
+          {
+            "content": "A saleswoman is talking to her customer. How much is the cheapest computer in the shop? ",
+            "correctAnswer": "£135",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803450315_df760c74b494b228_8_210826182351__1_.mp3",
+            "answerList": [
+              {
+                "content": "£155"
+              },
+              {
+                "content": "£145"
+              },
+              {
+                "content": "£135"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,5.84],\"text\":\" A saleswoman is talking to her customer. How much is the cheapest computer in the shop?\"},{\"timestamp\":[9.12,17.6],\"text\":\" So, we have several options for your computer. The one priced at £145 is great for light gaming and everyday use.\"},{\"timestamp\":[17.84,26.64],\"text\":\" If you need something more powerful for complex tasks, I recommend the £pound model, which offers better performance. However, if you're\"},{\"timestamp\":[26.64,32.72],\"text\":\" looking for something basic for simple tasks, the cheapest option at 135 pounds would be perfect.\"}]</p>",
+            "_id": "6a8fb740faae25015590c50c"
+          },
+          {
+            "content": "Dan wants to find the campus. Where should Dan turn right? ",
+            "correctAnswer": "At the traffic lights",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803450762_f76cb9da36bedbe8_7_210826182252.mp3",
+            "answerList": [
+              {
+                "content": "At Main Street"
+              },
+              {
+                "content": "At the traffic lights"
+              },
+              {
+                "content": "At the hospital"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.4],\"text\":\" Dan is going to university, where should Dan turn right?\"},{\"timestamp\":[7.44,12.88],\"text\":\" Hey, today is my first day at university, and I want to make sure I'm on the right route.\"},{\"timestamp\":[13.6,18.72],\"text\":\" First, I'll go straight to Main Street. After that, I need to turn left at the hospital.\"},{\"timestamp\":[19.36,24.4],\"text\":\" I've heard that the university is not far from there. Once I reach the traffic lights,\"},{\"timestamp\":[24.4,25.44],\"text\":\" I'll turn right,\"},{\"timestamp\":[25.44,29.44],\"text\":\" and I should be able to see the campus soon. Is that the correct way?\"}]</p>",
+            "_id": "6a8fb740faae25015590c50d"
+          },
+          {
+            "content": "What time does the movie begin?",
+            "correctAnswer": "06:40",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803451477_67eb7f1ca410d854_6_210826181910.mp3",
+            "answerList": [
+              {
+                "content": "06:50"
+              },
+              {
+                "content": "06:20"
+              },
+              {
+                "content": "06:40"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.32],\"text\":\" A woman is going to the cinema with her husband.\"},{\"timestamp\":[3.32,5.44],\"text\":\" What time does the movie begin?\"},{\"timestamp\":[8.76,13.84],\"text\":\" I just checked the movie schedule, and the film actually begins at 640, not at 7 o'clock\"},{\"timestamp\":[13.84,15.48],\"text\":\" like I thought.\"},{\"timestamp\":[15.48,18.76],\"text\":\" After the movie, we'll finish around 920.\"},{\"timestamp\":[18.76,21.44],\"text\":\" Do you want to grab something to eat afterward?\"},{\"timestamp\":[21.44,28.42],\"text\":\" We can go to that new restaurant nearby and relax after the movie. It'll be nice to talk about the film while enjoying a meal together.\"}]</p>",
+            "_id": "6a8fb740faae25015590c50e"
+          },
+          {
+            "content": "A son is stuck in traffic. How long will he be late? ",
+            "correctAnswer": "10 minutes",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803451959_1b9f894e82245bf9_5_210826181820.mp3",
+            "answerList": [
+              {
+                "content": "15 minutes"
+              },
+              {
+                "content": "10 minutes"
+              },
+              {
+                "content": "20 minutes"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.6],\"text\":\" A man is calling his mother. How long will he be late?\"},{\"timestamp\":[6.72,11.68],\"text\":\" Hi mom, it's me. I'm stuck in traffic right now, so I'll be late.\"},{\"timestamp\":[12.56,16.08],\"text\":\" The train takes about 20 minutes, but I'll arrive 10 minutes late.\"},{\"timestamp\":[16.96,22.24],\"text\":\" Don't worry, though. We still have 15 minutes until our appointment with Mr. Smith.\"},{\"timestamp\":[23.12,25.12],\"text\":\" I'll hurry as much as I can.\"},{\"timestamp\":[25.12,28.08],\"text\":\" I just wanted to let you know, so you're not waiting too long.\"}]</p>",
+            "_id": "6a8fb740faae25015590c50f"
+          },
+          {
+            "content": "The man is talking about his key. Where did he find the key?",
+            "correctAnswer": "At the front door",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803452594_79ba86890583929b_4_210826181714.mp3",
+            "answerList": [
+              {
+                "content": "In the car"
+              },
+              {
+                "content": "In the bedroom"
+              },
+              {
+                "content": "At the front door"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.5],\"text\":\" The man is talking about his key. Where did he find the key?\"},{\"timestamp\":[6.78,11.88],\"text\":\" I lost my house key. It was not in the car or bedroom. I waited outside for an hour.\"},{\"timestamp\":[11.88,14.98],\"text\":\" Then I saw it under the mat at the door. I was very happy.\"}]</p>",
+            "_id": "6a8fb740faae25015590c510"
+          },
+          {
+            "content": "A man is talking about his job. Where is he working now?",
+            "correctAnswer": "In a bank",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803453255_8acb6d7c023a1371_3_210826181617.mp3",
+            "answerList": [
+              {
+                "content": "In finance"
+              },
+              {
+                "content": "In a bank"
+              },
+              {
+                "content": "In a busy office"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,7],\"text\":\" A man is talking about his job. Where is he working now?\"},{\"timestamp\":[7,12.28],\"text\":\" I work in a bank now. It is busy. The pay is good, but the job is stressful. I have a lot\"},{\"timestamp\":[12.28,15.24],\"text\":\" of work to do, but I am learning a lot about finance.\"}]</p>",
+            "_id": "6a8fb740faae25015590c511"
+          },
+          {
+            "content": "Jane is calling her friend Martha. What time are they going to meet? ",
+            "correctAnswer": "5:30",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803453653_2d1a9ee611e4723c_2_210826181449.mp3",
+            "answerList": [
+              {
+                "content": "4:00"
+              },
+              {
+                "content": "6:00"
+              },
+              {
+                "content": "5:30"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,7],\"text\":\" Jane is calling her friend Martha. What time are they going to meet?\"},{\"timestamp\":[7,15.44],\"text\":\" Hi Martha. I want to check our time. I cannot meet at 4 o'clock. Can we meet at 5.30? 6 o'clock\"},{\"timestamp\":[15.44,null],\"text\":\" is too late. Please tell me if 5.30 is okay. I want to see.\"}]</p>",
+            "_id": "6a8fb740faae25015590c512"
+          },
+          {
+            "content": "A woman is chatting with a friend about her afternoon plans. What is she going to do this afternoon?",
+            "correctAnswer": "Go on a city tour",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803454038_a9be29abd0585e0f_1_220826095408.mp3",
+            "answerList": [
+              {
+                "content": "Go to the park"
+              },
+              {
+                "content": "Go on a city tour"
+              },
+              {
+                "content": "Go to a museum"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.58],\"text\":\" a woman is chatting with a friend about her afternoon plans. What is she going to do this\"},{\"timestamp\":[4.58,9.02],\"text\":\" afternoon?\"},{\"timestamp\":[9.02,15.72],\"text\":\" I am happy about this afternoon. Usually, I stay home. Today I want to do something new.\"},{\"timestamp\":[15.72,null],\"text\":\" I will go on a city tour. I didn't want to go to the park or museum. The tour is more exciting.\"}]</p>",
+            "_id": "6a8fb740faae25015590c513"
+          },
+          {
+            "content": "What does the man enjoy most about business trips?",
+            "correctAnswer": "Learn new ideas",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803454442_aa03c4e8aaac0d8b_file_cpjxks.mp3",
+            "answerList": [
+              {
+                "content": "Learn new ideas"
+              },
+              {
+                "content": "Meet business partners"
+              },
+              {
+                "content": "A break from the usual daily routine"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.58],\"text\":\" a woman is chatting with a friend about her afternoon plans. What is she going to do this\"},{\"timestamp\":[4.58,9.02],\"text\":\" afternoon?\"},{\"timestamp\":[9.02,15.72],\"text\":\" I am happy about this afternoon. Usually, I stay home. Today I want to do something new.\"},{\"timestamp\":[15.72,null],\"text\":\" I will go on a city tour. I didn't want to go to the park or museum. The tour is more exciting.\"}]</p>",
+            "_id": "6a8fb740faae25015590c514"
+          },
+          {
+            "content": "Why did the woman move abroad?",
+            "correctAnswer": "Be closer to her family",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803454831_c106786194a3055c_file_gicubg.mp3",
+            "answerList": [
+              {
+                "content": "Get a higher salary"
+              },
+              {
+                "content": "Be closer to her family"
+              },
+              {
+                "content": "Improve her career prospects"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.28],\"text\":\" There were actually some good opportunities in my hometown.\"},{\"timestamp\":[3.28,8],\"text\":\" The salary was quite high and there were good prospects for career development.\"},{\"timestamp\":[8,11.68],\"text\":\" However, I decided to move abroad because my sister lives there.\"},{\"timestamp\":[11.68,15.76],\"text\":\" It means I can be closer to my sister and spend more time with her.\"},{\"timestamp\":[15.76,19.44],\"text\":\" That was the main reason I chose to work in another country.\"}]</p>",
+            "_id": "6a8fb740faae25015590c515"
+          },
+          {
+            "content": " What does the teacher tell the student to do?",
+            "correctAnswer": "Submit the assignment on time",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803455323_f6641e0b682e75ad_file_ooup6s.mp3",
+            "answerList": [
+              {
+                "content": "Submit the assignment on time"
+              },
+              {
+                "content": "Change the assignment topic"
+              },
+              {
+                "content": "Ask another student for help"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" Is everything going well with your assignment? Are you having any problems? I'm a little worried.\"},{\"timestamp\":[5.52,11.04],\"text\":\" I don't think I can finish it until next week. I chose a topic that's quite difficult,\"},{\"timestamp\":[11.04,16],\"text\":\" and I'm having trouble finding enough information. I understand, but you need to finish the\"},{\"timestamp\":[16,null],\"text\":\" assignment by the deadline. You must submit it on time. If you're having problems with the topic, we can discuss them, but don't miss the deadline.\"}]</p>",
+            "_id": "6a8fb740faae25015590c516"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6a8fb740faae25015590c509"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "LISTENING",
+    "id": "6a8fb740faae25015590c517",
+    "createdAt": "2026-08-27T04:04:16.384Z",
+    "updatedAt": "2026-08-27T04:04:16.384Z",
+    "__v": 0
   }
 ]
