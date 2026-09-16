@@ -213,9 +213,7 @@ const QuestionBox = memo(
       <Box>
         <div>
           <TextField
-            {...register(`subContent${questionNumber}` as keyof FormData, {
-              required: true,
-            })}
+            {...register(`subContent${questionNumber}` as keyof FormData)}
             placeholder={`Question ${questionNumber} content`}
             variant="outlined"
             fullWidth
@@ -246,9 +244,7 @@ const QuestionBox = memo(
           </Box>
           <TextField
             type={`correctAnswer${questionNumber}`}
-            {...register(`correctAnswer${questionNumber}` as keyof FormData, {
-              required: true,
-            })}
+            {...register(`correctAnswer${questionNumber}` as keyof FormData)}
             placeholder="Đán án đúng"
             variant="outlined"
             fullWidth
@@ -358,10 +354,7 @@ const QuestionBox = memo(
                 <TextField
                   type={`answer${num}Sub${questionNumber}`}
                   {...register(
-                    `answer${num}Sub${questionNumber}` as keyof FormData,
-                    {
-                      required: true,
-                    }
+                    `answer${num}Sub${questionNumber}` as keyof FormData
                   )}
                   placeholder={`Đáp án ${num}`}
                   variant="outlined"

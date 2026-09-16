@@ -4344,63 +4344,6 @@
             "image": null,
             "suggestion": "<p>[{\"timestamp\":[0,4.58],\"text\":\" a woman is chatting with a friend about her afternoon plans. What is she going to do this\"},{\"timestamp\":[4.58,9.02],\"text\":\" afternoon?\"},{\"timestamp\":[9.02,15.72],\"text\":\" I am happy about this afternoon. Usually, I stay home. Today I want to do something new.\"},{\"timestamp\":[15.72,null],\"text\":\" I will go on a city tour. I didn't want to go to the park or museum. The tour is more exciting.\"}]</p>",
             "_id": "6a8fb740faae25015590c513"
-          },
-          {
-            "content": "What does the man enjoy most about business trips?",
-            "correctAnswer": "Learn new ideas",
-            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803454442_aa03c4e8aaac0d8b_file_cpjxks.mp3",
-            "answerList": [
-              {
-                "content": "Learn new ideas"
-              },
-              {
-                "content": "Meet business partners"
-              },
-              {
-                "content": "A break from the usual daily routine"
-              }
-            ],
-            "image": null,
-            "suggestion": "<p>[{\"timestamp\":[0,4.58],\"text\":\" a woman is chatting with a friend about her afternoon plans. What is she going to do this\"},{\"timestamp\":[4.58,9.02],\"text\":\" afternoon?\"},{\"timestamp\":[9.02,15.72],\"text\":\" I am happy about this afternoon. Usually, I stay home. Today I want to do something new.\"},{\"timestamp\":[15.72,null],\"text\":\" I will go on a city tour. I didn't want to go to the park or museum. The tour is more exciting.\"}]</p>",
-            "_id": "6a8fb740faae25015590c514"
-          },
-          {
-            "content": "Why did the woman move abroad?",
-            "correctAnswer": "Be closer to her family",
-            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803454831_c106786194a3055c_file_gicubg.mp3",
-            "answerList": [
-              {
-                "content": "Get a higher salary"
-              },
-              {
-                "content": "Be closer to her family"
-              },
-              {
-                "content": "Improve her career prospects"
-              }
-            ],
-            "image": null,
-            "suggestion": "<p>[{\"timestamp\":[0,3.28],\"text\":\" There were actually some good opportunities in my hometown.\"},{\"timestamp\":[3.28,8],\"text\":\" The salary was quite high and there were good prospects for career development.\"},{\"timestamp\":[8,11.68],\"text\":\" However, I decided to move abroad because my sister lives there.\"},{\"timestamp\":[11.68,15.76],\"text\":\" It means I can be closer to my sister and spend more time with her.\"},{\"timestamp\":[15.76,19.44],\"text\":\" That was the main reason I chose to work in another country.\"}]</p>",
-            "_id": "6a8fb740faae25015590c515"
-          },
-          {
-            "content": " What does the teacher tell the student to do?",
-            "correctAnswer": "Submit the assignment on time",
-            "file": "https://files.aptisacademy.com.vn/listening/2026/08/1787803455323_f6641e0b682e75ad_file_ooup6s.mp3",
-            "answerList": [
-              {
-                "content": "Submit the assignment on time"
-              },
-              {
-                "content": "Change the assignment topic"
-              },
-              {
-                "content": "Ask another student for help"
-              }
-            ],
-            "image": null,
-            "suggestion": "<p>[{\"timestamp\":[0,5.52],\"text\":\" Is everything going well with your assignment? Are you having any problems? I'm a little worried.\"},{\"timestamp\":[5.52,11.04],\"text\":\" I don't think I can finish it until next week. I chose a topic that's quite difficult,\"},{\"timestamp\":[11.04,16],\"text\":\" and I'm having trouble finding enough information. I understand, but you need to finish the\"},{\"timestamp\":[16,null],\"text\":\" assignment by the deadline. You must submit it on time. If you're having problems with the topic, we can discuss them, but don't miss the deadline.\"}]</p>",
-            "_id": "6a8fb740faae25015590c516"
           }
         ],
         "isExample": "false",

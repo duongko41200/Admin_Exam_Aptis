@@ -4,6 +4,7 @@
     "title": "Vội vã",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Vội vã",
@@ -61,6 +62,7 @@
     "title": "Đi đâu đó với bạn bè",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Đi đâu đó với bạn bè",
@@ -116,6 +118,7 @@
     "title": "Làm việc trong văn phòng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "The picture shows a modern open-plan office with four people working at wooden desks, all wearing face masks. On the right, a woman with long dark hair, wearing a black top with a yellow pattern, sits at a desk holding some papers/documents in her hands; in front of her on the table are an open laptop and a smartphone. Across the same table, another person wearing headphones is typing on a keyboard in front of a desktop computer monitor, with a notebook, pens, and a blue folder nearby. In the background, two more people are seated at a second desk, one in a light blue top working on a laptop; a whiteboard is visible on the far wall. Behind them are large windows with white blinds looking out onto an outdoor walkway with plants. On the right-hand wall hang three framed abstract paintings depicting mountains/desert scenery in orange, teal, and yellow tones. The office has grey carpet flooring and white ergonomic chairs.",
     "questions": [
       {
         "questionTitle": "Làm việc trong văn phòng",
@@ -171,6 +174,7 @@
     "title": "1 người đọc sách, một người chơi game",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "1 người đọc sách, một người chơi game",
@@ -226,6 +230,7 @@
     "title": "Xem triển lãm tranh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Xem triển lãm tranh",
@@ -281,6 +286,7 @@
     "title": "Cô gái đi siêu thị",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "The picture shows a young woman with long dark hair, wearing a white blouse, standing in a supermarket in the fresh produce/vegetable section. She is smiling and looking down at a piece of paper (a shopping list) that she is holding and writing on with a pen. In front of her is an orange shopping trolley/basket already filled with fruits and vegetables, including pineapples, red cabbage, bananas, lettuce, and other colourful produce. To her left are shelves stocked with packaged vegetables such as mushrooms, bean sprouts, and leafy greens. In the background, a green plant display and another person can be seen faintly. The overall scene shows her carefully checking off items on her shopping list while grocery shopping.",
     "questions": [
       {
         "questionTitle": "Cô gái đi siêu thị",
@@ -336,6 +342,7 @@
     "title": "Nấu ăn cho gia đình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Nấu ăn cho gia đình",
@@ -391,6 +398,7 @@
     "title": "Đi du lịch theo nhóm",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Đi du lịch theo nhóm",
@@ -446,6 +454,7 @@
     "title": "Mua sắm cùng bạn bè",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Mua sắm cùng bạn bè",
@@ -501,6 +510,7 @@
     "title": "3 người nằm trên cỏ đọc sách",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "3 người nằm trên cỏ đọc sách",
@@ -558,6 +568,7 @@
     "title": "Mẹ và con đọc sách trên giường",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Mẹ và con đọc sách trên giường",
@@ -615,6 +626,7 @@
     "title": "Gia đình trong phòng khách",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Gia đình trong phòng khách",
@@ -672,6 +684,7 @@
     "title": "Người đàn ông viết thư",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Người đàn ông viết thư",
@@ -729,6 +742,7 @@
     "title": "Hai mẹ con cưỡi ngựa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Hai mẹ con cưỡi ngựa",
@@ -784,6 +798,7 @@
     "title": "Cô gái đọc sách trên bãi cỏ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Cô gái đọc sách trên bãi cỏ",
@@ -839,6 +854,7 @@
     "title": "Gia đình ngồi trên ô tô",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Gia đình ngồi trên ô tô",
@@ -894,6 +910,7 @@
     "title": "Ăn ở ngoài",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Ăn ở ngoài",
@@ -949,6 +966,7 @@
     "title": "Gọi điện thoại",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Gọi điện thoại",
@@ -1004,6 +1022,7 @@
     "title": "2 vợ chồng dọn nhà",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "2 vợ chồng dọn nhà",
@@ -1061,6 +1080,7 @@
     "title": "Ảnh cưới",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Ảnh cưới",
@@ -1118,6 +1138,7 @@
     "title": "Người đàn ông đang nhảy",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Người đàn ông đang nhảy",
@@ -1175,6 +1196,7 @@
     "title": "Nhóm người chơi vòng lắc eo",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Nhóm người chơi vòng lắc eo",
@@ -1232,6 +1254,7 @@
     "title": "Gia đình đi picnic",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Gia đình đi picnic",
@@ -1289,6 +1312,7 @@
     "title": "4 người đàn ông leo núi",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "4 người đàn ông leo núi",
@@ -1346,6 +1370,7 @@
     "title": "2 bố con ăn sáng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "2 bố con ăn sáng",
@@ -1403,6 +1428,7 @@
     "title": "Làm việc khi người khác ngủ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Làm việc khi người khác ngủ",
@@ -1458,6 +1484,7 @@
     "title": "Người đi xe Bus",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Người đi xe Bus",
@@ -1513,6 +1540,7 @@
     "title": "Trò chuyện chân thành",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Trò chuyện chân thành",
@@ -1568,6 +1596,7 @@
     "title": "Nhận tin tốt",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Nhận tin tốt",
@@ -1625,6 +1654,7 @@
     "title": "Sử dụng máy tính",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Sử dụng máy tính",
@@ -1680,6 +1710,7 @@
     "title": "Điều khiển và màn hình smart TV",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Điều khiển và màn hình smart TV",
@@ -1737,6 +1768,7 @@
     "title": "Con tặng hoa mẹ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Con tặng hoa mẹ",
@@ -1794,6 +1826,7 @@
     "title": "Người đàn ông đọc báo",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Người đàn ông đọc báo",
@@ -1851,6 +1884,7 @@
     "title": "Con tặng quà bố",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Con tặng quà bố",
@@ -1908,6 +1942,7 @@
     "title": "Cô gái ăn đồ ăn nhanh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Cô gái ăn đồ ăn nhanh",
@@ -1965,6 +2000,7 @@
     "title": "Đường phố đông đúc",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Đường phố đông đúc",
@@ -2020,6 +2056,7 @@
     "title": "Cuộc họp văn phòng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Cuộc họp văn phòng",
@@ -2075,6 +2112,7 @@
     "title": "Treo tranh lên tường",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Treo tranh lên tường",
@@ -2130,6 +2168,7 @@
     "title": "Hai bố con đang chơi bóng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Hai bố con đang chơi bóng",
@@ -2185,6 +2224,7 @@
     "title": "Cười trong rạp chiếu phim",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Cười trong rạp chiếu phim",
@@ -2240,6 +2280,7 @@
     "title": "Cô giáo và đám trẻ trong lớp học",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Cô giáo và đám trẻ trong lớp học",
@@ -2295,6 +2336,7 @@
     "title": "Ăn nhà hàng với gia đình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Ăn nhà hàng với gia đình",
@@ -2350,6 +2392,7 @@
     "title": "Ăn nhà hàng với bạn bè",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "không có sub title",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Ăn nhà hàng với bạn bè",
@@ -2405,6 +2448,7 @@
     "title": "Người đàn ông nằm trên sofa xem TV",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Người đàn ông nằm trên sofa xem TV",
@@ -2462,6 +2506,7 @@
     "title": "Mẹ cõng con",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Mẹ cõng con",
@@ -2519,6 +2564,7 @@
     "title": "Trẻ em đi xe bus",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Trẻ em đi xe bus",
@@ -2576,6 +2622,7 @@
     "title": "Sử dụng máy tính - Version 2",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Sử dụng máy tính - Version 2",
@@ -2633,6 +2680,7 @@
     "title": "Hoạt động làm bánh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "Hoạt động làm bánh",
@@ -2690,6 +2738,7 @@
     "title": " Cô gái ngồi trên du thuyền, ngắm cảnh biển",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": " Cô gái ngồi trên du thuyền, ngắm cảnh biển",
@@ -2747,6 +2796,7 @@
     "title": "1 người đàn ông mặc vest đứng đợi tàu",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "1 người đàn ông mặc vest đứng đợi tàu",
@@ -2804,6 +2854,7 @@
     "title": "1 người đàn ông ngồi vẽ tranh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "",
+    "imageDescription": "",
     "questions": [
       {
         "questionTitle": "1 người đàn ông ngồi vẽ tranh",

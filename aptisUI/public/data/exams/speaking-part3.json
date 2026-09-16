@@ -4,6 +4,7 @@
     "title": "Mua đồ xa xỉ, mua đồ bình dân",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Mua đồ xa xỉ, mua đồ bình dân",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Mua đồ xa xỉ, mua đồ bình dân",
@@ -62,6 +63,7 @@
     "title": "Sống 1 mình, sống với gia đình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Sống 1 mình, sống với gia đình",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Sống 1 mình, sống với gia đình",
@@ -120,6 +122,11 @@
     "title": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
+    "imageDescriptions": [
+      "Picture 1: A man is standing alone inside a modern, bright airport terminal, seen from behind. He is wearing a plaid/checked shirt and jeans, carrying a backpack, and pulling a wheeled suitcase. He is looking out through a large glass window at an airplane taking off, with the airport tarmac and several other planes visible outside. The scene is bright, clean, and modern, suggesting he is about to travel by air.",
+      "Picture 2: A person is standing alone on a train platform/track area, seen from behind, waiting as a train approaches in the distance with smoke/steam rising from it. The photo has a warm, vintage, sepia/orange tone (like a sunset), with power lines, industrial buildings, and a chimney visible in the background. The setting feels older, more industrial, and quieter compared to Picture 1.",
+      "Key differences to compare: mode of transport (air travel at a modern airport vs. waiting for a train at an older, industrial-looking station), atmosphere (bright, clean, contemporary vs. warm-toned, vintage, atmospheric), and the stage of the journey shown (watching a plane already take off vs. still waiting for the train to arrive)."
+    ],
     "questions": [
       {
         "questionTitle": "1 người đàn ông đang đứng ở sân bay, 1 người đàn ông đang chờ tàu hỏa",
@@ -178,6 +185,7 @@
     "title": "Nhóm người đi leo núi, bãi biển xanh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Nhóm người đi leo núi, bãi biển xanh",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Nhóm người đi leo núi, bãi biển xanh",
@@ -236,6 +244,7 @@
     "title": "bãi biển đông đúc, 1 cô gái đang ngồi ở một nơi yên tĩnh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "bãi biển đông đúc, 1 cô gái đang ngồi ở một nơi yên tĩnh",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "bãi biển đông đúc, 1 cô gái đang ngồi ở một nơi yên tĩnh",
@@ -294,6 +303,11 @@
     "title": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
+    "imageDescriptions": [
+      "Picture 1: Inside a car, a family is travelling together. The father, wearing sunglasses and a blue shirt, is in the driver's seat, turning back and reaching out his hand to pass something to his young daughter, who is sitting in the back seat. The mother, wearing a light-coloured top and sunglasses, is also in the back seat next to the girl, looking down at her and smiling. The scene shows close family interaction — everyone is engaged with each other during the car journey.",
+      "Picture 2: Inside a train carriage, lit with warm, golden sunlight coming through the window. A young woman with reddish-brown hair, wearing a green top, is sitting at a small table, looking down and reading a book with a slight smile; a water bottle and a small food container are on the table in front of her. In the background, an older man is seated separately by another window, reading a newspaper or document on his own. Unlike Picture 1, the passengers here are travelling individually and quietly, each absorbed in their own solitary activity (reading), with little to no interaction between them.",
+      "Key differences to compare: mode of transport (private car vs. train), number of travellers and relationship (a family of three interacting together vs. two unrelated passengers sitting apart), main activity (a parent handing something to a child vs. each person reading alone), and atmosphere (an active, engaged family moment vs. a calm, quiet, solitary journey)."
+    ],
     "questions": [
       {
         "questionTitle": "1 gia đình đi ô tô, 2 người đi tàu hỏa",
@@ -352,6 +366,7 @@
     "title": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "3 người đang thu hoạch táo, ông và cháu đang tưới cây",
@@ -410,6 +425,7 @@
     "title": "Du lịch vùng núi, du lịch thành phố",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Du lịch vùng núi, du lịch thành phố",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Du lịch vùng núi, du lịch thành phố",
@@ -468,6 +484,7 @@
     "title": "Âm nhạc sôi động, âm nhạc du dương",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Âm nhạc sôi động, âm nhạc du dương",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Âm nhạc sôi động, âm nhạc du dương",
@@ -526,6 +543,7 @@
     "title": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 cô gái đọc sách giấy, 1 cô gái nhìn màn hình máy tính",
@@ -584,6 +602,7 @@
     "title": "Mua sắm trong siêu thị, mua sắm trong chợ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Mua sắm trong siêu thị, mua sắm trong chợ",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Mua sắm trong siêu thị, mua sắm trong chợ",
@@ -642,6 +661,7 @@
     "title": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 gia đình chụp ảnh, 1 người đàn ông viết nhật ký",
@@ -700,6 +720,7 @@
     "title": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cô gái nghe nhạc trên sofa, ban nhạc đang chơi nhạc",
@@ -758,6 +779,7 @@
     "title": "Ăn đồ ăn nhanh, nấu ăn healthy",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Ăn đồ ăn nhanh, nấu ăn healthy",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Ăn đồ ăn nhanh, nấu ăn healthy",
@@ -816,6 +838,7 @@
     "title": "Thành thị đông đúc, vùng quê thanh tĩnh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Thành thị đông đúc, vùng quê thanh tĩnh",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Thành thị đông đúc, vùng quê thanh tĩnh",
@@ -874,6 +897,7 @@
     "title": "1 cặp đôi trò chuyện dưới tuyết, 2 cô gái đang tắm nắng",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cười về một điều gì đó",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cười về một điều gì đó",
@@ -932,6 +956,7 @@
     "title": "1 người đàn ông tập gym, 2 người đi leo núi",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 người đàn ông tập gym, 2 người đi leo núi",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 người đàn ông tập gym, 2 người đi leo núi",
@@ -990,6 +1015,7 @@
     "title": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 người đàn ông chạy bộ, 1 đội thể thao chuyên nghiệp",
@@ -1048,6 +1074,7 @@
     "title": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Nhiều người trên xe bus, 1 người mở cửa vào ô tô",
@@ -1106,6 +1133,7 @@
     "title": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Thể thao chuyên nghiệp, thể thao nghiệp dư",
@@ -1164,6 +1192,7 @@
     "title": "Trèo thuyền theo team, đạp xe một mình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Trèo thuyền theo team, đạp xe một mình",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Trèo thuyền theo team, đạp xe một mình",
@@ -1222,6 +1251,7 @@
     "title": "Cưỡi lạc đà, cưỡi ngựa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cưỡi lạc đà, cưỡi ngựa",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cưỡi lạc đà, cưỡi ngựa",
@@ -1280,6 +1310,7 @@
     "title": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Bé gái đang đi thang dây, 1 lớp học đang xem tranh thiên nhiên",
@@ -1338,6 +1369,7 @@
     "title": "đội tuyển đá bóng, vận động viên nhảy sào",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "đội tuyển đá bóng, vận động viên nhảy sào",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "đội tuyển đá bóng, vận động viên nhảy sào",
@@ -1396,6 +1428,7 @@
     "title": "Trang trí nhà cửa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Trang trí nhà cửa",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Trang trí nhà cửa",
@@ -1454,6 +1487,7 @@
     "title": "1 người đầu bếp, 2 công nhân mỏ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 người đầu bếp, 2 công nhân mỏ",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 người đầu bếp, 2 công nhân mỏ",
@@ -1512,6 +1546,7 @@
     "title": "Cô gái ngồi trước máy tính, lớp học trực tuyến",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cô gái ngồi trước máy tính, lớp học trực tuyến",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cô gái ngồi trước máy tính, lớp học trực tuyến",
@@ -1570,6 +1605,7 @@
     "title": "1 ngọn núi tuyết, 1 bãi biển đẹp",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 ngọn núi tuyết, 1 bãi biển đẹp",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 ngọn núi tuyết, 1 bãi biển đẹp",
@@ -1628,6 +1664,7 @@
     "title": "1 cuộc đua xe đạp, 1 cuộc đua xe máy",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 cuộc đua xe đạp, 1 cuộc đua xe máy",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 cuộc đua xe đạp, 1 cuộc đua xe máy",
@@ -1686,6 +1723,7 @@
     "title": "Bãi biển, thảo nguyên xanh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Bãi biển, thảo nguyên xanh",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Bãi biển, thảo nguyên xanh",
@@ -1744,6 +1782,7 @@
     "title": "1 người đàn ông đọc sách, 1 cậu bé đang chơi game",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 người đàn ông đọc sách, 1 cậu bé đang chơi game",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 người đàn ông đọc sách, 1 cậu bé đang chơi game",
@@ -1802,6 +1841,7 @@
     "title": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 gia đình đang đi picnic, 1 bãi biển đông đúc",
@@ -1860,6 +1900,7 @@
     "title": "Ăn một mình, ăn cùng gia đình",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Ăn một mình, ăn cùng gia đình",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Ăn một mình, ăn cùng gia đình",
@@ -1918,6 +1959,7 @@
     "title": "Đám trẻ đọc sách, người đàn ông làm việc trên iPad",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Đám trẻ đọc sách, người đàn ông làm việc trên iPad",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Đám trẻ đọc sách, người đàn ông làm việc trên iPad",
@@ -1976,6 +2018,7 @@
     "title": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cô gái đang bê khay đồ ăn, 2 người đang ăn và 1 người phục vụ",
@@ -2034,6 +2077,7 @@
     "title": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 cô gái ôm mèo, 1 cậu bé đang chơi với một con sâu",
@@ -2092,6 +2136,7 @@
     "title": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Ăn ở nhà bình dân, ăn ở nhà hàng cao cấp",
@@ -2150,6 +2195,7 @@
     "title": "2 bố con cho ngựa ăn, trẻ con chơi với rắn",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "2 bố con cho ngựa ăn, trẻ con chơi với rắn",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "2 bố con cho ngựa ăn, trẻ con chơi với rắn",
@@ -2208,6 +2254,7 @@
     "title": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "thuyết trình không có công nghệ, thuyết trình với công nghệ",
@@ -2266,6 +2313,7 @@
     "title": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "1 gia đình đi biển, 1 nhóm bạn đi leo núi",
@@ -2324,6 +2372,7 @@
     "title": "chung cư, nhà mặt đất",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "chung cư, nhà mặt đất",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "chung cư, nhà mặt đất",
@@ -2382,6 +2431,7 @@
     "title": "Mua sắm trong siêu thị, mua sắm trong chợ ( Version 2)",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Mua sắm trong siêu thị, mua sắm trong chợ ( Version 2)",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Mua sắm trong siêu thị, mua sắm trong chợ ( Version 2)",
@@ -2440,6 +2490,7 @@
     "title": "Làm việc trong văn phòng, làm việc trong nhà máy",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Làm việc trong văn phòng, làm việc trong nhà máy",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Làm việc trong văn phòng, làm việc trong nhà máy",
@@ -2498,6 +2549,7 @@
     "title": "2 đứa trẻ chơi cờ vua, 2 đứa trẻ đang chơi điện tử",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "2 đứa trẻ chơi cờ vua, 2 đứa trẻ đang chơi điện tử",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "2 đứa trẻ chơi cờ vua, 2 đứa trẻ đang chơi điện tử",
@@ -2556,6 +2608,7 @@
     "title": "rừng thông, bãi biển",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "rừng thông, bãi biển",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "rừng thông, bãi biển",
@@ -2614,6 +2667,7 @@
     "title": "Người đàn ông trong rừng thông, nhóm người cưỡi lạc đà trên sa mạc",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Người đàn ông trong rừng thông, nhóm người cưỡi lạc đà trên sa mạc",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Người đàn ông trong rừng thông, nhóm người cưỡi lạc đà trên sa mạc",
@@ -2672,6 +2726,7 @@
     "title": "Chơi đàn trong nhà, chơi đàn ngoài trời",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Chơi đàn trong nhà, chơi đàn ngoài trời",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Chơi đàn trong nhà, chơi đàn ngoài trời",
@@ -2730,6 +2785,7 @@
     "title": "Cô gái trồng rau, 2 cha con trồng hoa",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "Cô gái trồng rau, 2 cha con trồng hoa",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "Cô gái trồng rau, 2 cha con trồng hoa",
@@ -2788,6 +2844,7 @@
     "title": "2 cha con nấu ăn, người đàn ông ăn đồ ăn nhanh",
     "timeToDo": "1970-01-01T00:00:00.050Z",
     "description": "2 cha con nấu ăn, người đàn ông ăn đồ ăn nhanh",
+    "imageDescriptions": [],
     "questions": [
       {
         "questionTitle": "2 cha con nấu ăn, người đàn ông ăn đồ ăn nhanh",
