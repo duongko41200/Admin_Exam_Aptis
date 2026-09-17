@@ -20,7 +20,6 @@ import { useNavigate } from "react-router-dom";
 import { SimpleR2FilePreview } from "../../../components/R2FileUpload";
 import TextEditor from "../../../components/TextEditor/TextEditor";
 import { UPDATED_SUCCESS } from "../../../consts/general";
-import baseDataProvider from "../../../providers/dataProviders/baseDataProvider";
 import dataProvider from "../../../providers/dataProviders/dataProvider";
 import R2UploadService from "../../../services/API/r2UploadHelper.service";
 import {
@@ -695,8 +694,8 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
             file: null,
             subQuestionAnswerList: [],
             suggestion: null,
-            subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(
-              (num) => ({
+            subQuestion: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+              .map((num) => ({
                 content:
                   listeningStore?.currentListeningData?.subQuestions?.[num - 1]
                     ?.content ||
@@ -718,8 +717,8 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
                   })),
                 image: null,
                 suggestion: suggestions[num] || "",
-              })
-            ),
+              }))
+              .filter((subQ) => subQ.content.trim() !== ""),
             isExample: false,
             image: null,
           },
@@ -763,15 +762,16 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
   const createListeningPartOne = useCallback(
     async (data: any) => {
       try {
-        await baseDataProvider.create("listenings", { data });
+        await dataProvider.create("listenings", { data });
         await notify(UPDATED_SUCCESS, {
           type: "success",
         });
+        navigate("/listenings");
       } catch (error) {
         console.log({ error });
       }
     },
-    [notify]
+    [notify, navigate]
   );
 
   const updateListeningPartOne = useCallback(

@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const COLLECTION_NAME = 'Listenings';
 
 const SubQuestionSchema = new Schema({
-  content: { type: String, required: true },
+  content: { type: String, default: '' },
   correctAnswer: { type: String, default: '' },
   file: { type: String, default: null },
   answerList: { type: Array, default: [] },

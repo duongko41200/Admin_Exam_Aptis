@@ -5,13 +5,8 @@ import baseRepo from "./base-repo/baseRepo.js";
 
 class ListeningFactory {
   static create = async (data) => {
-    try {
-      const Listening = await ListeningModel.create(data);
-      return Listening ? Listening : null;
-    } catch (error) {
-      console.log("error: là: ", error);
-      return error;
-    }
+    const Listening = await ListeningModel.create(data);
+    return Listening ? Listening : null;
   };
 
   static getAllWithQuery = async ({ filter, range, sort }) => {
