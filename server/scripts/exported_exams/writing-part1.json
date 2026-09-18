@@ -1,75 +1,5 @@
 [
   {
-    "_id": "68e396aa53b4655eba3f0113",
-    "title": "Music Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Music Club",
-        "content": "You want to join a Music club. Fill in the form. Use 1 – 5 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I like playing badminton.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love sci-fi movies.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Once a month.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My first language is Vietnamese.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; By bus.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What's your favorite sport?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc65311c3df81b918c7bf"
-          },
-          {
-            "content": "What kind of movies do you like?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc65311c3df81b918c7c0"
-          },
-          {
-            "content": "How often do you play golf?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc65311c3df81b918c7c1"
-          },
-          {
-            "content": "What is your first language?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc65311c3df81b918c7c2"
-          },
-          {
-            "content": "How do you go to school?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc65311c3df81b918c7c3"
-          }
-        ],
-        "_id": "695fc65311c3df81b918c7be"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T10:15:06.007Z",
-    "updatedAt": "2026-08-10T07:37:09.253Z",
-    "__v": 0
-  },
-  {
     "_id": "68e3997e53b4655eba3f0137",
     "title": "Walking Club",
     "timeToDo": 50,
@@ -136,7 +66,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-06T10:27:10.281Z",
-    "updatedAt": "2026-08-10T07:37:09.316Z",
+    "updatedAt": "2026-09-16T06:53:32.916Z",
     "__v": 0
   },
   {
@@ -206,427 +136,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-06T10:34:54.155Z",
-    "updatedAt": "2026-08-10T07:37:09.365Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e3d7c853b4655eba3f02e5",
-    "title": "Technology Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Technology Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I am a student.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watch TV in the evening.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is chicken.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Yes, I use Facebook daily.</span></li><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">Cafes and parks.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What do you do?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc90d11c3df81b918cad5"
-          },
-          {
-            "content": "When do you usually watch TV?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc90d11c3df81b918cad6"
-          },
-          {
-            "content": "What’s your favorite food?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc90d11c3df81b918cad7"
-          },
-          {
-            "content": "Do you often use Facebook?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc90d11c3df81b918cad8"
-          },
-          {
-            "content": "Where do you meet your friends?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc90d11c3df81b918cad9"
-          }
-        ],
-        "_id": "695fc90d11c3df81b918cad4"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T14:52:56.004Z",
-    "updatedAt": "2026-08-10T07:37:09.415Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e3d92b53b4655eba3f02f1",
-    "title": "Science Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Science Club",
-        "content": "You want to join a Science Club. Fill in the form. Use 1 – 5 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am keen on red.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I studied at Bac Ninh primary school.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Of course, I’m a big fan of sports.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; </span>Of course, I’m a big fan of sports.I love to go to Hanoi.</li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watched TV with my husband.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is your favorite color?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc95d11c3df81b918cb33"
-          },
-          {
-            "content": " What is your first school?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc95d11c3df81b918cb34"
-          },
-          {
-            "content": "Do you like doing exercise?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc95d11c3df81b918cb35"
-          },
-          {
-            "content": "Where do you like to go on holiday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc95d11c3df81b918cb36"
-          },
-          {
-            "content": "What did you do last night?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc95d11c3df81b918cb37"
-          }
-        ],
-        "_id": "695fc95d11c3df81b918cb32"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T14:58:51.152Z",
-    "updatedAt": "2026-08-10T07:37:09.465Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e3da7053b4655eba3f02fd",
-    "title": "Museum Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Museum Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite time is evening.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love to play soccer with my friends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I have one phone.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy action and drama films.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Red is my cup of tea.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is your favorite time of the day?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc9bf11c3df81b918cbde"
-          },
-          {
-            "content": "What do you like to do in free time?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc9bf11c3df81b918cbdf"
-          },
-          {
-            "content": "How many phones do you have?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc9bf11c3df81b918cbe0"
-          },
-          {
-            "content": "What kinds of films do you like?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc9bf11c3df81b918cbe1"
-          },
-          {
-            "content": "What is your favourite colour?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc9bf11c3df81b918cbe2"
-          }
-        ],
-        "_id": "695fc9bf11c3df81b918cbdd"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T15:04:16.918Z",
-    "updatedAt": "2026-08-10T07:37:09.518Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8e90f53b4655eba3f45ff",
-    "title": "Fitness Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Fitness Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is raining cats and dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I’m into summer.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy reading books.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite sport is basketball.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Usually the church near my house.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "How is the weather today?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcbbf11c3df81b918cc3c"
-          },
-          {
-            "content": "What is your favorite season of the year?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcbbf11c3df81b918cc3d"
-          },
-          {
-            "content": "What’s your favorite hobby?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcbbf11c3df81b918cc3e"
-          },
-          {
-            "content": "What’s your favorite hobby?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcbbf11c3df81b918cc3f"
-          },
-          {
-            "content": "Where do you like to go on weekends?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcbbf11c3df81b918cc40"
-          }
-        ],
-        "_id": "695fcbbf11c3df81b918cc3b"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:24:15.036Z",
-    "updatedAt": "2026-08-10T07:37:09.568Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8e9d153b4655eba3f4623",
-    "title": "English Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "English Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It's sunny today.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watch TV shows.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I want to visit Japan.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is Sunday.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My birthday is on May 6th.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is the weather today?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd3011c3df81b918ce27"
-          },
-          {
-            "content": "What do you like to do in the evening?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd3011c3df81b918ce28"
-          },
-          {
-            "content": "Where do you wanna go on holiday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd3011c3df81b918ce29"
-          },
-          {
-            "content": "What is your favourite day?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd3011c3df81b918ce2a"
-          },
-          {
-            "content": "When is your birthday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd3011c3df81b918ce2b"
-          }
-        ],
-        "_id": "695fcd3011c3df81b918ce26"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:27:29.023Z",
-    "updatedAt": "2026-08-10T07:37:09.618Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8ea2f53b4655eba3f463b",
-    "title": "Outdoor club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Outdoor club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I play tennis.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like visiting Vung Tau beach.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It rains cats and dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like going to Vung Tau beach.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is your favorite time of the year?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcdfc11c3df81b918cf94"
-          },
-          {
-            "content": "What do you usually do in the morning?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcdfc11c3df81b918cf95"
-          },
-          {
-            "content": "What is a place you would like to visit in your country?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcdfc11c3df81b918cf96"
-          },
-          {
-            "content": "What is the weather like today?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcdfc11c3df81b918cf97"
-          },
-          {
-            "content": "Where would you like to go on holiday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcdfc11c3df81b918cf98"
-          }
-        ],
-        "_id": "695fcdfc11c3df81b918cf93"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:29:03.981Z",
-    "updatedAt": "2026-08-10T07:37:09.667Z",
+    "updatedAt": "2026-09-16T06:53:32.959Z",
     "__v": 0
   },
   {
@@ -696,49 +206,250 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T15:01:44.517Z",
-    "updatedAt": "2026-08-10T07:37:09.717Z",
+    "updatedAt": "2026-09-16T06:53:33.259Z",
     "__v": 0
   },
   {
-    "_id": "68e09b9453b4655eba3efc22",
-    "title": "Art Club",
+    "_id": "68f8e90f53b4655eba3f45ff",
+    "title": "Fitness Club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "Art Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes. ",
+        "questionTitle": "Fitness Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(67, 67, 67);\">There are four people in my family.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I would like to visit Ha Long Bay.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I am from Hanoi, Vietnam.</span></li><li>My favorite food is Pho.</li><li>My favorite season is autumn.</li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is raining cats and dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I’m into summer.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy reading books.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite sport is basketball.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Usually the church near my house.</span></li></ol>",
         "subQuestion": [
           {
-            "content": "How many people are there in your family?",
+            "content": "How is the weather today?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc41a11c3df81b918c457"
+            "_id": "695fcbbf11c3df81b918cc3c"
           },
           {
-            "content": "A place you would like to visit in your country?",
+            "content": "What is your favorite season of the year?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc41a11c3df81b918c458"
+            "_id": "695fcbbf11c3df81b918cc3d"
           },
           {
-            "content": "Where are you from?",
+            "content": "What’s your favorite hobby?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc41a11c3df81b918c459"
+            "_id": "695fcbbf11c3df81b918cc3e"
+          },
+          {
+            "content": "What’s your favorite hobby?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcbbf11c3df81b918cc3f"
+          },
+          {
+            "content": "Where do you like to go on weekends?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcbbf11c3df81b918cc40"
+          }
+        ],
+        "_id": "695fcbbf11c3df81b918cc3b"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:24:15.036Z",
+    "updatedAt": "2026-09-16T06:53:33.131Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8e9d153b4655eba3f4623",
+    "title": "English Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "English Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It's sunny today.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watch TV shows.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I want to visit Japan.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is Sunday.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My birthday is on May 6th.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is the weather today?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd3011c3df81b918ce27"
+          },
+          {
+            "content": "What do you like to do in the evening?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd3011c3df81b918ce28"
+          },
+          {
+            "content": "Where do you wanna go on holiday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd3011c3df81b918ce29"
+          },
+          {
+            "content": "What is your favourite day?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd3011c3df81b918ce2a"
+          },
+          {
+            "content": "When is your birthday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd3011c3df81b918ce2b"
+          }
+        ],
+        "_id": "695fcd3011c3df81b918ce26"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:27:29.023Z",
+    "updatedAt": "2026-09-16T06:53:33.173Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e396aa53b4655eba3f0113",
+    "title": "Music Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Music Club",
+        "content": "You want to join a Music club. Fill in the form. Use 1 – 5 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I like playing badminton.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love sci-fi movies.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Once a month.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My first language is Vietnamese.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; By bus.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What's your favorite sport?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc65311c3df81b918c7bf"
+          },
+          {
+            "content": "What kind of movies do you like?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc65311c3df81b918c7c0"
+          },
+          {
+            "content": "How often do you play golf?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc65311c3df81b918c7c1"
+          },
+          {
+            "content": "What is your first language?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc65311c3df81b918c7c2"
+          },
+          {
+            "content": "How do you go to school?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc65311c3df81b918c7c3"
+          }
+        ],
+        "_id": "695fc65311c3df81b918c7be"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T10:15:06.007Z",
+    "updatedAt": "2026-09-16T06:53:32.861Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e3d7c853b4655eba3f02e5",
+    "title": "Technology Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Technology Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I am a student.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watch TV in the evening.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is chicken.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Yes, I use Facebook daily.</span></li><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">Cafes and parks.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What do you do?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc90d11c3df81b918cad5"
+          },
+          {
+            "content": "When do you usually watch TV?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc90d11c3df81b918cad6"
           },
           {
             "content": "What’s your favorite food?",
@@ -747,77 +458,156 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc41a11c3df81b918c45a"
+            "_id": "695fc90d11c3df81b918cad7"
           },
           {
-            "content": "What is your favorite season?",
+            "content": "Do you often use Facebook?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc41a11c3df81b918c45b"
+            "_id": "695fc90d11c3df81b918cad8"
+          },
+          {
+            "content": "Where do you meet your friends?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc90d11c3df81b918cad9"
           }
         ],
-        "_id": "695fc41a11c3df81b918c456"
+        "_id": "695fc90d11c3df81b918cad4"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-04T03:59:16.052Z",
-    "updatedAt": "2026-08-10T07:37:09.767Z",
+    "createdAt": "2025-10-06T14:52:56.004Z",
+    "updatedAt": "2026-09-16T06:53:33.001Z",
     "__v": 0
   },
   {
-    "_id": "68e09bff53b4655eba3efc2e",
-    "title": "Book Club",
+    "_id": "68e3da7053b4655eba3f02fd",
+    "title": "Museum Club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "Book Club",
+        "questionTitle": "Museum Club",
         "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><em><u>Gợi ý:</u></em></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My surname is Taylor.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am from Ninh Binh.</span></li><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I go shopping once a month.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It would be Japan.</span></li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite time is evening.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love to play soccer with my friends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I have one phone.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy action and drama films.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Red is my cup of tea.</span></li></ol>",
         "subQuestion": [
           {
-            "content": "What is your surname name?",
+            "content": "What is your favorite time of the day?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc48311c3df81b918c4b5"
+            "_id": "695fc9bf11c3df81b918cbde"
           },
           {
-            "content": "Where are you from?",
+            "content": "What do you like to do in free time?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc48311c3df81b918c4b6"
+            "_id": "695fc9bf11c3df81b918cbdf"
           },
           {
-            "content": "How often do you go shopping?",
+            "content": "How many phones do you have?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc48311c3df81b918c4b7"
+            "_id": "695fc9bf11c3df81b918cbe0"
           },
           {
-            "content": "What animals do you like?",
+            "content": "What kinds of films do you like?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc48311c3df81b918c4b8"
+            "_id": "695fc9bf11c3df81b918cbe1"
+          },
+          {
+            "content": "What is your favourite colour?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc9bf11c3df81b918cbe2"
+          }
+        ],
+        "_id": "695fc9bf11c3df81b918cbdd"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T15:04:16.918Z",
+    "updatedAt": "2026-09-16T06:53:33.086Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8ea2f53b4655eba3f463b",
+    "title": "Outdoor club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Outdoor club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I play tennis.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like visiting Vung Tau beach.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It rains cats and dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like going to Vung Tau beach.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your favorite time of the year?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcdfc11c3df81b918cf94"
+          },
+          {
+            "content": "What do you usually do in the morning?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcdfc11c3df81b918cf95"
+          },
+          {
+            "content": "What is a place you would like to visit in your country?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcdfc11c3df81b918cf96"
+          },
+          {
+            "content": "What is the weather like today?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcdfc11c3df81b918cf97"
           },
           {
             "content": "Where would you like to go on holiday?",
@@ -826,17 +616,87 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc48311c3df81b918c4b9"
+            "_id": "695fcdfc11c3df81b918cf98"
           }
         ],
-        "_id": "695fc48311c3df81b918c4b4"
+        "_id": "695fcdfc11c3df81b918cf93"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-04T04:01:03.357Z",
-    "updatedAt": "2026-08-10T07:37:09.817Z",
+    "createdAt": "2025-10-22T14:29:03.981Z",
+    "updatedAt": "2026-09-16T06:53:33.216Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e3d92b53b4655eba3f02f1",
+    "title": "Science Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Science Club",
+        "content": "You want to join a Science Club. Fill in the form. Use 1 – 5 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am keen on red.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I studied at Bac Ninh primary school.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Of course, I’m a big fan of sports.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; </span>Of course, I’m a big fan of sports.I love to go to Hanoi.</li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watched TV with my husband.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your favorite color?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc95d11c3df81b918cb33"
+          },
+          {
+            "content": " What is your first school?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc95d11c3df81b918cb34"
+          },
+          {
+            "content": "Do you like doing exercise?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc95d11c3df81b918cb35"
+          },
+          {
+            "content": "Where do you like to go on holiday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc95d11c3df81b918cb36"
+          },
+          {
+            "content": "What did you do last night?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc95d11c3df81b918cb37"
+          }
+        ],
+        "_id": "695fc95d11c3df81b918cb32"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T14:58:51.152Z",
+    "updatedAt": "2026-09-16T06:53:33.043Z",
     "__v": 0
   },
   {
@@ -906,7 +766,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-06T09:51:05.189Z",
-    "updatedAt": "2026-08-10T07:37:09.866Z",
+    "updatedAt": "2026-09-16T06:53:33.386Z",
     "__v": 0
   },
   {
@@ -976,287 +836,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-06T09:52:52.096Z",
-    "updatedAt": "2026-08-10T07:37:09.919Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e3974453b4655eba3f011f",
-    "title": "Sport Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Sport Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I often ride my bike to my office.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am a big fan of pop music</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am into the morning.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually go by bus.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Playing chess and swimming.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "How do you go to work?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc6a911c3df81b918c85f"
-          },
-          {
-            "content": "What kind of music do you like?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc6a911c3df81b918c860"
-          },
-          {
-            "content": "What time of day do you like most?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc6a911c3df81b918c861"
-          },
-          {
-            "content": "How do you get to work?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc6a911c3df81b918c862"
-          },
-          {
-            "content": "What hobbies do you have? ",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc6a911c3df81b918c863"
-          }
-        ],
-        "_id": "695fc6a911c3df81b918c85e"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T10:17:40.288Z",
-    "updatedAt": "2026-08-10T07:37:09.970Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e398cb53b4655eba3f012b",
-    "title": "Social Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Social Club",
-        "content": "You want to join a Social Club. Fill in the form. Use 1 – 5 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I went hiking last weekend.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am feeling great.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite time is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; To communicate globally.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy playing badminton.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What did you do last week?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc71211c3df81b918c8bd"
-          },
-          {
-            "content": "How are you?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc71211c3df81b918c8be"
-          },
-          {
-            "content": "What is your favorite time of year?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc71211c3df81b918c8bf"
-          },
-          {
-            "content": "Why do you learn English?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc71211c3df81b918c8c0"
-          },
-          {
-            "content": "What do you like to do in the evening?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc71211c3df81b918c8c1"
-          }
-        ],
-        "_id": "695fc71211c3df81b918c8bc"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T10:24:11.612Z",
-    "updatedAt": "2026-08-10T07:37:10.019Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e3d64753b4655eba3f02d9",
-    "title": "Debate Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Debate Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes. ",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like chess.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I meet my friends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I go to university.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am keen on doing housework.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I speak Vietnamese.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What’s your favorite board game?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc8b511c3df81b918ca77"
-          },
-          {
-            "content": "What did you do on the weekend?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc8b511c3df81b918ca78"
-          },
-          {
-            "content": "What school do you go to?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc8b511c3df81b918ca79"
-          },
-          {
-            "content": "What do you like to do every morning?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc8b511c3df81b918ca7a"
-          },
-          {
-            "content": "What language do you speak?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc8b511c3df81b918ca7b"
-          }
-        ],
-        "_id": "695fc8b511c3df81b918ca76"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T14:46:31.981Z",
-    "updatedAt": "2026-08-10T07:37:10.079Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8f01153b4655eba3f4689",
-    "title": "Business club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Business club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My family has four people.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like listening to music to relax.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite season/time of the year is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watched TV with my husband.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I go with friends.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "How many people are there in your family?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696076e4d73871927bdde306"
-          },
-          {
-            "content": "How do you relax?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696076e4d73871927bdde307"
-          },
-          {
-            "content": "What is your favorite season/time of the year?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696076e4d73871927bdde308"
-          },
-          {
-            "content": "What did you do last night?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696076e4d73871927bdde309"
-          },
-          {
-            "content": "Who do you usually go to the movies with?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696076e4d73871927bdde30a"
-          }
-        ],
-        "_id": "696076e4d73871927bdde305"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:54:09.322Z",
-    "updatedAt": "2026-08-10T07:37:10.130Z",
+    "updatedAt": "2026-09-16T06:53:33.429Z",
     "__v": 0
   },
   {
@@ -1326,93 +906,120 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T14:55:01.671Z",
-    "updatedAt": "2026-08-10T07:37:10.180Z",
+    "updatedAt": "2026-09-16T06:53:33.640Z",
     "__v": 0
   },
   {
-    "_id": "68f8f12753b4655eba3f46c5",
-    "title": "College club",
+    "_id": "68e09b9453b4655eba3efc22",
+    "title": "Art Club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "College club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "questionTitle": "Art Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes. ",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">-&gt; I would like to become the president in the future.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">A watching action/romantic films.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I enjoy pop music.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt;</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">&nbsp;I love pizza.\t</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I like going to the beach.</span></li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(67, 67, 67);\">There are four people in my family.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I would like to visit Ha Long Bay.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I am from Hanoi, Vietnam.</span></li><li>My favorite food is Pho.</li><li>My favorite season is autumn.</li></ol>",
         "subQuestion": [
           {
-            "content": "Which job would you like to do in the future?",
+            "content": "How many people are there in your family?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6960795cd73871927bddee5d"
+            "_id": "695fc41a11c3df81b918c457"
           },
           {
-            "content": "What kinds/types of movies/films do you like?",
+            "content": "A place you would like to visit in your country?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6960795cd73871927bddee5e"
+            "_id": "695fc41a11c3df81b918c458"
           },
           {
-            "content": "What is your favorite kind of music?",
+            "content": "Where are you from?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6960795cd73871927bddee5f"
+            "_id": "695fc41a11c3df81b918c459"
           },
           {
-            "content": "What is your favorite food?",
+            "content": "What’s your favorite food?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6960795cd73871927bddee60"
+            "_id": "695fc41a11c3df81b918c45a"
           },
           {
-            "content": "Where do you like to go in the summer?",
+            "content": "What is your favorite season?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6960795cd73871927bddee61"
+            "_id": "695fc41a11c3df81b918c45b"
           }
         ],
-        "_id": "6960795cd73871927bddee5c"
+        "_id": "695fc41a11c3df81b918c456"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-22T14:58:47.303Z",
-    "updatedAt": "2026-08-10T07:37:10.232Z",
+    "createdAt": "2025-10-04T03:59:16.052Z",
+    "updatedAt": "2026-09-16T06:53:33.301Z",
     "__v": 0
   },
   {
-    "_id": "68f8f15253b4655eba3f46d1",
-    "title": "Film club",
+    "_id": "68e398cb53b4655eba3f012b",
+    "title": "Social Club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "Film club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "questionTitle": "Social Club",
+        "content": "You want to join a Social Club. Fill in the form. Use 1 – 5 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<ol><li><span style=\"color: rgb(33, 37, 41);\">-&gt; Because it can enable me to get a high paying job in the future.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">My favorite film is Mua Do</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">I like football.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">We love playing games.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">I like action movies.</span></li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I went hiking last weekend.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am feeling great.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite time is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; To communicate globally.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy playing badminton.</span></li></ol>",
         "subQuestion": [
+          {
+            "content": "What did you do last week?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc71211c3df81b918c8bd"
+          },
+          {
+            "content": "How are you?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc71211c3df81b918c8be"
+          },
+          {
+            "content": "What is your favorite time of year?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc71211c3df81b918c8bf"
+          },
           {
             "content": "Why do you learn English?",
             "correctAnswer": null,
@@ -1420,53 +1027,26 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69607a0bd73871927bddf1cc"
+            "_id": "695fc71211c3df81b918c8c0"
           },
           {
-            "content": "What is your favorite film?",
+            "content": "What do you like to do in the evening?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69607a0bd73871927bddf1cd"
-          },
-          {
-            "content": "Which sport do you like to play the most?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607a0bd73871927bddf1ce"
-          },
-          {
-            "content": "What do you like doing with your friend?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607a0bd73871927bddf1cf"
-          },
-          {
-            "content": "What kinds of movies do you like?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607a0bd73871927bddf1d0"
+            "_id": "695fc71211c3df81b918c8c1"
           }
         ],
-        "_id": "69607a0bd73871927bddf1cb"
+        "_id": "695fc71211c3df81b918c8bc"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-22T14:59:30.341Z",
-    "updatedAt": "2026-08-10T07:37:10.283Z",
+    "createdAt": "2025-10-06T10:24:11.612Z",
+    "updatedAt": "2026-09-16T06:53:33.514Z",
     "__v": 0
   },
   {
@@ -1536,7 +1116,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T15:01:00.125Z",
-    "updatedAt": "2026-08-10T07:37:10.332Z",
+    "updatedAt": "2026-09-16T06:53:33.764Z",
     "__v": 0
   },
   {
@@ -1606,357 +1186,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T14:25:43.785Z",
-    "updatedAt": "2026-08-10T07:37:10.382Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8ea9053b4655eba3f4653",
-    "title": "Fashion club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Fashion club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love summer.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually listen to music.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is Da Lat city.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(33, 37, 41);\">Sunny</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Spring</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is your favorite time of the year?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fceca11c3df81b918d0ae"
-          },
-          {
-            "content": "What do you do in your free time?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fceca11c3df81b918d0af"
-          },
-          {
-            "content": "Which place would you like to visit in your country?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fceca11c3df81b918d0b0"
-          },
-          {
-            "content": "What's the weather like today?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fceca11c3df81b918d0b1"
-          },
-          {
-            "content": "What's your favourite season?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fceca11c3df81b918d0b2"
-          }
-        ],
-        "_id": "695fceca11c3df81b918d0ad"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:30:40.137Z",
-    "updatedAt": "2026-08-10T07:37:10.432Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8eabe53b4655eba3f465f",
-    "title": "Community club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Community club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like football</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; By bus.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I'm into watching movies.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is an action movie.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is pizza.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What's your favorite hobby?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607690d73871927bdde218"
-          },
-          {
-            "content": "How do you get to work?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607690d73871927bdde219"
-          },
-          {
-            "content": "What do you like to do in the evening?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607690d73871927bdde21a"
-          },
-          {
-            "content": "What kinds of movies do you like?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607690d73871927bdde21b"
-          },
-          {
-            "content": "What's your favorite food?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607690d73871927bdde21c"
-          }
-        ],
-        "_id": "69607690d73871927bdde217"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:31:26.258Z",
-    "updatedAt": "2026-08-10T07:37:10.481Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8f07053b4655eba3f46a1",
-    "title": "Nature club  - Version 2",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Nature club  - Version 2",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I live in Thainguyen, Vietnam.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually play tennis with my friends on weekends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite color is a</span> red/blue/ green/yellow/ brown.</li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Yes, I love it.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love the beach.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "Where are you living now?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960777ad73871927bdde4e2"
-          },
-          {
-            "content": "What do you usually do on weekends?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960777ad73871927bdde4e3"
-          },
-          {
-            "content": "What is your favorite color?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960777ad73871927bdde4e4"
-          },
-          {
-            "content": "Do you like taking photos?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960777ad73871927bdde4e5"
-          },
-          {
-            "content": "Where do you like to go on holiday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960777ad73871927bdde4e6"
-          }
-        ],
-        "_id": "6960777ad73871927bdde4e1"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:55:44.343Z",
-    "updatedAt": "2026-08-10T07:37:10.541Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8f0d353b4655eba3f46ad",
-    "title": "Writing club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Writing club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(33, 37, 41);\">A visiting Hanoi.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I usually/ often go to the movies with my love.</span></li><li><span style=\"color: rgb(0, 0, 0);\">Yes, I do.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I use Facebook occasionally.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I love exploring new places.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "A place you visit in your country?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696077edd73871927bdde78a"
-          },
-          {
-            "content": "Who do you usually/often go to the movies/theatres/films with?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696077edd73871927bdde78b"
-          },
-          {
-            "content": "Do you like shopping?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696077edd73871927bdde78c"
-          },
-          {
-            "content": "Do you often use Facebook?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696077edd73871927bdde78d"
-          },
-          {
-            "content": "Why are you interested in travel?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696077edd73871927bdde78e"
-          }
-        ],
-        "_id": "696077edd73871927bdde789"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:57:23.795Z",
-    "updatedAt": "2026-08-10T07:37:10.590Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8f0fe53b4655eba3f46b9",
-    "title": "Movie club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Movie club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(33, 37, 41);\">I am a high school student.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I often/usually watch TV in the evening/ in the morning/ in the afternoon.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I’m wearing jeans.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I watched TV last night.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I often visit the park.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "What is your job?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960785ad73871927bdde878"
-          },
-          {
-            "content": "When do you usually watch TV?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960785ad73871927bdde879"
-          },
-          {
-            "content": "What are you wearing today?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960785ad73871927bdde87a"
-          },
-          {
-            "content": "Tell me the last time you watched TV.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960785ad73871927bdde87b"
-          },
-          {
-            "content": "Tell me a place you often visit?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6960785ad73871927bdde87c"
-          }
-        ],
-        "_id": "6960785ad73871927bdde877"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-22T14:58:06.132Z",
-    "updatedAt": "2026-08-10T07:37:10.640Z",
+    "updatedAt": "2026-09-16T06:53:33.806Z",
     "__v": 0
   },
   {
@@ -2026,58 +1256,128 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T15:00:13.313Z",
-    "updatedAt": "2026-08-10T07:37:10.689Z",
+    "updatedAt": "2026-09-16T06:53:34.058Z",
     "__v": 0
   },
   {
-    "_id": "68e3920453b4655eba3f0107",
-    "title": "Photography Club",
+    "_id": "68e3d64753b4655eba3f02d9",
+    "title": "Debate Club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "Photography Club",
-        "content": "You want to join a photography club. Fill in the form. Use 1 – 5 words.",
+        "questionTitle": "Debate Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes. ",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; I am from Vietnam.</li><li>-&gt; There are 5 members</li><li>-&gt; Watch action movies.</li><li>-&gt; &nbsp;I am keen on listening to music.</li><li>-&gt; My best friend.</li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like chess.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I meet my friends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I go to university.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am keen on doing housework.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I speak Vietnamese.</span></li></ol>",
         "subQuestion": [
           {
-            "content": " Where are you from?",
+            "content": "What’s your favorite board game?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc5e311c3df81b918c761"
+            "_id": "695fc8b511c3df81b918ca77"
           },
           {
-            "content": "How many people in your family?",
+            "content": "What did you do on the weekend?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc5e311c3df81b918c762"
+            "_id": "695fc8b511c3df81b918ca78"
           },
           {
-            "content": "What do you do in your free time?",
+            "content": "What school do you go to?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc5e311c3df81b918c763"
+            "_id": "695fc8b511c3df81b918ca79"
           },
           {
-            "content": "What is your hobby?",
+            "content": "What do you like to do every morning?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc5e311c3df81b918c764"
+            "_id": "695fc8b511c3df81b918ca7a"
+          },
+          {
+            "content": "What language do you speak?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc8b511c3df81b918ca7b"
+          }
+        ],
+        "_id": "695fc8b511c3df81b918ca76"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T14:46:31.981Z",
+    "updatedAt": "2026-09-16T06:53:33.556Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8f01153b4655eba3f4689",
+    "title": "Business club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Business club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My family has four people.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like listening to music to relax.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite season/time of the year is spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I watched TV with my husband.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I go with friends.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "How many people are there in your family?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696076e4d73871927bdde306"
+          },
+          {
+            "content": "How do you relax?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696076e4d73871927bdde307"
+          },
+          {
+            "content": "What is your favorite season/time of the year?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696076e4d73871927bdde308"
+          },
+          {
+            "content": "What did you do last night?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696076e4d73871927bdde309"
           },
           {
             "content": "Who do you usually go to the movies with?",
@@ -2086,111 +1386,50 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc5e311c3df81b918c765"
+            "_id": "696076e4d73871927bdde30a"
           }
         ],
-        "_id": "695fc5e311c3df81b918c760"
+        "_id": "696076e4d73871927bdde305"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-06T09:55:16.513Z",
-    "updatedAt": "2026-08-10T07:37:10.739Z",
+    "createdAt": "2025-10-22T14:54:09.322Z",
+    "updatedAt": "2026-09-16T06:53:33.598Z",
     "__v": 0
   },
   {
-    "_id": "68e39a7453b4655eba3f0143",
-    "title": "Computer Club",
+    "_id": "68f8f12753b4655eba3f46c5",
+    "title": "College club",
     "timeToDo": 50,
     "questions": [
       {
-        "questionTitle": "Computer Club",
+        "questionTitle": "College club",
         "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy pop music.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I play football.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Paris, France.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; No, I haven’t.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Several hours daily.</span></li></ol>",
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">-&gt; I would like to become the president in the future.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">A watching action/romantic films.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I enjoy pop music.</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt;</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">&nbsp;I love pizza.\t</span></li><li class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I like going to the beach.</span></li></ol>",
         "subQuestion": [
           {
-            "content": "What is your favorite type of music?",
+            "content": "Which job would you like to do in the future?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc7d211c3df81b918c979"
+            "_id": "6960795cd73871927bddee5d"
           },
           {
-            "content": "What do you do on the weekends?",
+            "content": "What kinds/types of movies/films do you like?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fc7d211c3df81b918c97a"
-          },
-          {
-            "content": "Where was your best holiday?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc7d211c3df81b918c97b"
-          },
-          {
-            "content": "Have you ever lived in another country?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc7d211c3df81b918c97c"
-          },
-          {
-            "content": "How much time do you spend on your phone?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fc7d211c3df81b918c97d"
-          }
-        ],
-        "_id": "695fc7d211c3df81b918c978"
-      }
-    ],
-    "questionPart": "ONE",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-06T10:31:16.207Z",
-    "updatedAt": "2026-08-10T07:37:10.789Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f8e99753b4655eba3f4617",
-    "title": "Travel Club",
-    "timeToDo": 50,
-    "questions": [
-      {
-        "questionTitle": "Travel Club",
-        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><em>Gợi ý:</em></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love the spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy listening to pop.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I’m wearing a dress.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Football is popular.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favourite colour is red.</span></li></ol>",
-        "subQuestion": [
-          {
-            "content": "Which is your favorite season?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "695fcd4411c3df81b918ce9a"
+            "_id": "6960795cd73871927bddee5e"
           },
           {
             "content": "What is your favorite kind of music?",
@@ -2199,7 +1438,558 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fcd4411c3df81b918ce9b"
+            "_id": "6960795cd73871927bddee5f"
+          },
+          {
+            "content": "What is your favorite food?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960795cd73871927bddee60"
+          },
+          {
+            "content": "Where do you like to go in the summer?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960795cd73871927bddee61"
+          }
+        ],
+        "_id": "6960795cd73871927bddee5c"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:58:47.303Z",
+    "updatedAt": "2026-09-16T06:53:33.682Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8f15253b4655eba3f46d1",
+    "title": "Film club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Film club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<ol><li><span style=\"color: rgb(33, 37, 41);\">-&gt; Because it can enable me to get a high paying job in the future.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">My favorite film is Mua Do</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">I like football.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">We love playing games.</span></li><li><span style=\"color: rgb(33, 37, 41);\">-&gt; </span><span style=\"color: rgb(0, 0, 0);\">I like action movies.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "Why do you learn English?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607a0bd73871927bddf1cc"
+          },
+          {
+            "content": "What is your favorite film?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607a0bd73871927bddf1cd"
+          },
+          {
+            "content": "Which sport do you like to play the most?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607a0bd73871927bddf1ce"
+          },
+          {
+            "content": "What do you like doing with your friend?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607a0bd73871927bddf1cf"
+          },
+          {
+            "content": "What kinds of movies do you like?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607a0bd73871927bddf1d0"
+          }
+        ],
+        "_id": "69607a0bd73871927bddf1cb"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:59:30.341Z",
+    "updatedAt": "2026-09-16T06:53:33.723Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e09bff53b4655eba3efc2e",
+    "title": "Book Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Book Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><em><u>Gợi ý:</u></em></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My surname is Taylor.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am from Ninh Binh.</span></li><li>-&gt; <span style=\"color: rgb(0, 0, 0);\">I go shopping once a month.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love dogs.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It would be Japan.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your surname name?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc48311c3df81b918c4b5"
+          },
+          {
+            "content": "Where are you from?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc48311c3df81b918c4b6"
+          },
+          {
+            "content": "How often do you go shopping?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc48311c3df81b918c4b7"
+          },
+          {
+            "content": "What animals do you like?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc48311c3df81b918c4b8"
+          },
+          {
+            "content": "Where would you like to go on holiday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc48311c3df81b918c4b9"
+          }
+        ],
+        "_id": "695fc48311c3df81b918c4b4"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T04:01:03.357Z",
+    "updatedAt": "2026-09-16T06:53:33.345Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e3974453b4655eba3f011f",
+    "title": "Sport Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Sport Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I often ride my bike to my office.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am a big fan of pop music</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I am into the morning.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually go by bus.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Playing chess and swimming.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "How do you go to work?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc6a911c3df81b918c85f"
+          },
+          {
+            "content": "What kind of music do you like?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc6a911c3df81b918c860"
+          },
+          {
+            "content": "What time of day do you like most?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc6a911c3df81b918c861"
+          },
+          {
+            "content": "How do you get to work?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc6a911c3df81b918c862"
+          },
+          {
+            "content": "What hobbies do you have? ",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc6a911c3df81b918c863"
+          }
+        ],
+        "_id": "695fc6a911c3df81b918c85e"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T10:17:40.288Z",
+    "updatedAt": "2026-09-16T06:53:33.472Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8ea9053b4655eba3f4653",
+    "title": "Fashion club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Fashion club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love summer.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually listen to music.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is Da Lat city.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; </span><span style=\"color: rgb(33, 37, 41);\">Sunny</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Spring</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your favorite time of the year?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fceca11c3df81b918d0ae"
+          },
+          {
+            "content": "What do you do in your free time?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fceca11c3df81b918d0af"
+          },
+          {
+            "content": "Which place would you like to visit in your country?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fceca11c3df81b918d0b0"
+          },
+          {
+            "content": "What's the weather like today?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fceca11c3df81b918d0b1"
+          },
+          {
+            "content": "What's your favourite season?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fceca11c3df81b918d0b2"
+          }
+        ],
+        "_id": "695fceca11c3df81b918d0ad"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:30:40.137Z",
+    "updatedAt": "2026-09-16T06:53:33.849Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8eabe53b4655eba3f465f",
+    "title": "Community club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Community club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I like football</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; By bus.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I'm into watching movies.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is an action movie.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; It is pizza.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What's your favorite hobby?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607690d73871927bdde218"
+          },
+          {
+            "content": "How do you get to work?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607690d73871927bdde219"
+          },
+          {
+            "content": "What do you like to do in the evening?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607690d73871927bdde21a"
+          },
+          {
+            "content": "What kinds of movies do you like?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607690d73871927bdde21b"
+          },
+          {
+            "content": "What's your favorite food?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69607690d73871927bdde21c"
+          }
+        ],
+        "_id": "69607690d73871927bdde217"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:31:26.258Z",
+    "updatedAt": "2026-09-16T06:53:33.892Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8f07053b4655eba3f46a1",
+    "title": "Nature club  - Version 2",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Nature club  - Version 2",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I live in Thainguyen, Vietnam.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I usually play tennis with my friends on weekends.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favorite color is a</span> red/blue/ green/yellow/ brown.</li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Yes, I love it.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love the beach.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "Where are you living now?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960777ad73871927bdde4e2"
+          },
+          {
+            "content": "What do you usually do on weekends?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960777ad73871927bdde4e3"
+          },
+          {
+            "content": "What is your favorite color?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960777ad73871927bdde4e4"
+          },
+          {
+            "content": "Do you like taking photos?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960777ad73871927bdde4e5"
+          },
+          {
+            "content": "Where do you like to go on holiday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960777ad73871927bdde4e6"
+          }
+        ],
+        "_id": "6960777ad73871927bdde4e1"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:55:44.343Z",
+    "updatedAt": "2026-09-16T06:53:33.933Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8f0d353b4655eba3f46ad",
+    "title": "Writing club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Writing club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(33, 37, 41);\">A visiting Hanoi.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I usually/ often go to the movies with my love.</span></li><li><span style=\"color: rgb(0, 0, 0);\">Yes, I do.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I use Facebook occasionally.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I love exploring new places.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "A place you visit in your country?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696077edd73871927bdde78a"
+          },
+          {
+            "content": "Who do you usually/often go to the movies/theatres/films with?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696077edd73871927bdde78b"
+          },
+          {
+            "content": "Do you like shopping?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696077edd73871927bdde78c"
+          },
+          {
+            "content": "Do you often use Facebook?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696077edd73871927bdde78d"
+          },
+          {
+            "content": "Why are you interested in travel?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696077edd73871927bdde78e"
+          }
+        ],
+        "_id": "696077edd73871927bdde789"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:57:23.795Z",
+    "updatedAt": "2026-09-16T06:53:33.975Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8f0fe53b4655eba3f46b9",
+    "title": "Movie club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Movie club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(33, 37, 41);\">I am a high school student.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I often/usually watch TV in the evening/ in the morning/ in the afternoon.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I’m wearing jeans.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I watched TV last night.</span></li><li><span style=\"color: rgb(0, 0, 0);\">I often visit the park.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your job?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960785ad73871927bdde878"
+          },
+          {
+            "content": "When do you usually watch TV?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6960785ad73871927bdde879"
           },
           {
             "content": "What are you wearing today?",
@@ -2208,35 +1998,35 @@
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fcd4411c3df81b918ce9c"
+            "_id": "6960785ad73871927bdde87a"
           },
           {
-            "content": "Which sport is the most popular in your country?",
+            "content": "Tell me the last time you watched TV.",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fcd4411c3df81b918ce9d"
+            "_id": "6960785ad73871927bdde87b"
           },
           {
-            "content": "What's your favourite colour?",
+            "content": "Tell me a place you often visit?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "695fcd4411c3df81b918ce9e"
+            "_id": "6960785ad73871927bdde87c"
           }
         ],
-        "_id": "695fcd4411c3df81b918ce99"
+        "_id": "6960785ad73871927bdde877"
       }
     ],
     "questionPart": "ONE",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-22T14:26:31.615Z",
-    "updatedAt": "2026-08-10T07:37:10.839Z",
+    "createdAt": "2025-10-22T14:58:06.132Z",
+    "updatedAt": "2026-09-16T06:53:34.017Z",
     "__v": 0
   },
   {
@@ -2306,7 +2096,77 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T14:28:12.406Z",
-    "updatedAt": "2026-08-10T07:37:10.889Z",
+    "updatedAt": "2026-09-16T06:53:34.229Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e3920453b4655eba3f0107",
+    "title": "Photography Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Photography Club",
+        "content": "You want to join a photography club. Fill in the form. Use 1 – 5 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li>-&gt; I am from Vietnam.</li><li>-&gt; There are 5 members</li><li>-&gt; Watch action movies.</li><li>-&gt; &nbsp;I am keen on listening to music.</li><li>-&gt; My best friend.</li></ol>",
+        "subQuestion": [
+          {
+            "content": " Where are you from?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc5e311c3df81b918c761"
+          },
+          {
+            "content": "How many people in your family?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc5e311c3df81b918c762"
+          },
+          {
+            "content": "What do you do in your free time?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc5e311c3df81b918c763"
+          },
+          {
+            "content": "What is your hobby?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc5e311c3df81b918c764"
+          },
+          {
+            "content": "Who do you usually go to the movies with?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc5e311c3df81b918c765"
+          }
+        ],
+        "_id": "695fc5e311c3df81b918c760"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T09:55:16.513Z",
+    "updatedAt": "2026-09-16T06:53:34.101Z",
     "__v": 0
   },
   {
@@ -2376,7 +2236,147 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-22T14:29:47.782Z",
-    "updatedAt": "2026-08-10T07:37:10.939Z",
+    "updatedAt": "2026-09-16T06:53:34.273Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f8e99753b4655eba3f4617",
+    "title": "Travel Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Travel Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><em>Gợi ý:</em></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I love the spring.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy listening to pop.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I’m wearing a dress.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Football is popular.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; My favourite colour is red.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "Which is your favorite season?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd4411c3df81b918ce9a"
+          },
+          {
+            "content": "What is your favorite kind of music?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd4411c3df81b918ce9b"
+          },
+          {
+            "content": "What are you wearing today?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd4411c3df81b918ce9c"
+          },
+          {
+            "content": "Which sport is the most popular in your country?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd4411c3df81b918ce9d"
+          },
+          {
+            "content": "What's your favourite colour?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fcd4411c3df81b918ce9e"
+          }
+        ],
+        "_id": "695fcd4411c3df81b918ce99"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-22T14:26:31.615Z",
+    "updatedAt": "2026-09-16T06:53:34.186Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e39a7453b4655eba3f0143",
+    "title": "Computer Club",
+    "timeToDo": 50,
+    "questions": [
+      {
+        "questionTitle": "Computer Club",
+        "content": "You are joining a club. Fill out the form. Write short answers (1-5 words) for each message. You have 3 minutes.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong><em><u>Gợi ý:</u></em></strong></p><ol><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I enjoy pop music.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; I play football.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Paris, France.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; No, I haven’t.</span></li><li><span style=\"color: rgb(0, 0, 0);\">-&gt; Several hours daily.</span></li></ol>",
+        "subQuestion": [
+          {
+            "content": "What is your favorite type of music?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc7d211c3df81b918c979"
+          },
+          {
+            "content": "What do you do on the weekends?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc7d211c3df81b918c97a"
+          },
+          {
+            "content": "Where was your best holiday?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc7d211c3df81b918c97b"
+          },
+          {
+            "content": "Have you ever lived in another country?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc7d211c3df81b918c97c"
+          },
+          {
+            "content": "How much time do you spend on your phone?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "695fc7d211c3df81b918c97d"
+          }
+        ],
+        "_id": "695fc7d211c3df81b918c978"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-06T10:31:16.207Z",
+    "updatedAt": "2026-09-16T06:53:34.144Z",
     "__v": 0
   },
   {
@@ -2447,6 +2447,6 @@
     ],
     "timeToDo": 50,
     "title": "Reading Book Club",
-    "updatedAt": "2026-08-10T07:37:10.993Z"
+    "updatedAt": "2026-09-16T06:53:34.316Z"
   }
 ]
