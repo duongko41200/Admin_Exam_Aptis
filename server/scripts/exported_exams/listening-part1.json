@@ -4633,5 +4633,281 @@
     "createdAt": "2026-09-17T08:00:28.060Z",
     "updatedAt": "2026-09-18T09:30:57.307Z",
     "__v": 0
+  },
+  {
+    "_id": "6ab22742c007e40dd20f56bc",
+    "title": "Đề 15",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Đề 15",
+        "content": "Đề 15",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": null,
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "Where are they going to meet before catching the bus?",
+            "correctAnswer": "At the market place",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060352971_3902dc53ba2a04fd_c__u1.mp3",
+            "answerList": [
+              {
+                "content": "Near the train stop"
+              },
+              {
+                "content": "At the market place"
+              },
+              {
+                "content": "By the old chapel"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,2.64],\"text\":\" Hi, are you still at the gym?\"},{\"timestamp\":[2.64,6.08],\"text\":\" Let's team up so we can catch the same bus back.\"},{\"timestamp\":[6.08,10.56],\"text\":\" Rather than hanging around near the old chapel, it's way too loud there.\"},{\"timestamp\":[10.56,12.8],\"text\":\" Let's head a little further down the road.\"},{\"timestamp\":[12.8,null],\"text\":\" I'll see you at the marketplace right beside the front gate. It's much easier to notice the bus coming from that spot. See you shortly.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5743"
+          },
+          {
+            "content": "Where should the visitors gather for the bus?",
+            "correctAnswer": "At the hotel's main entrance",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060354080_c27e69a7389f76af_c__u2.mp3",
+            "answerList": [
+              {
+                "content": "At the hotel's main entrance"
+              },
+              {
+                "content": "By the hotel's side entrance"
+              },
+              {
+                "content": "In front of the cinema"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.5],\"text\":\" For this evening's meal, let's gather by the side entrance of the hotel.\"},{\"timestamp\":[4.5,8.7],\"text\":\" No bus needed since the restaurant is within walking distance.\"},{\"timestamp\":[8.7,12.2],\"text\":\" Around midday tomorrow though, a coach will pick us up,\"},{\"timestamp\":[12.2,15.66],\"text\":\" so please be at the hotel's main entrance.\"},{\"timestamp\":[15.66,18.9],\"text\":\" Then tomorrow night, we'll all meet in front of the cinema.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5744"
+          },
+          {
+            "content": "How are the two of them connected?",
+            "correctAnswer": "Best friend",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060828002_e63f55426841bbdb_c__u3.mp3",
+            "answerList": [
+              {
+                "content": "Co-workers"
+              },
+              {
+                "content": "Best friend"
+              },
+              {
+                "content": "Relatives"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.18],\"text\":\" Sharing a home with somebody you truly cherish feels amazing.\"},{\"timestamp\":[4.18,7.12],\"text\":\" The two of us rent the same flat during our studies.\"},{\"timestamp\":[7.12,8.76],\"text\":\" And even though people often assume\"},{\"timestamp\":[8.76,11.4],\"text\":\" we're co-workers, we're really just splitting the rent\"},{\"timestamp\":[11.4,12.88],\"text\":\" as students.\"},{\"timestamp\":[12.88,14.96],\"text\":\" Folks also sometimes think we're relative\"},{\"timestamp\":[14.96,16.44],\"text\":\" since we live under one roof.\"},{\"timestamp\":[16.44,19.08],\"text\":\" And honestly, we do look out for each other,\"},{\"timestamp\":[19.08,21.6],\"text\":\" running errands, splitting bills.\"},{\"timestamp\":[21.6,24.4],\"text\":\" When I think about it, having a person like that nearby\"},{\"timestamp\":[24.4,26.48],\"text\":\" changes everything.\"},{\"timestamp\":[26.48,30.88],\"text\":\" She's more than just someone I share a flat with. She's genuinely my best friend. The\"},{\"timestamp\":[30.88,32.64],\"text\":\" one who knows everything about me.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5745"
+          },
+          {
+            "content": "Which region is currently enjoying the finest weather?",
+            "correctAnswer": "East",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060829048_6e9be99bca6bd539_c__u5.mp3",
+            "answerList": [
+              {
+                "content": "North"
+              },
+              {
+                "content": "South"
+              },
+              {
+                "content": "East"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,5.6],\"text\":\" Time for today's regional forecast. Down in the south expect strong winds and scattered showers,\"},{\"timestamp\":[5.6,11.28],\"text\":\" so an umbrella is a must. Over in the north, conditions are pleasant, with clear skies and plenty\"},{\"timestamp\":[11.28,15.92],\"text\":\" of sun throughout the day. That said, if you're after the very best conditions right now,\"},{\"timestamp\":[15.92,22.6],\"text\":\" head east. Skies are perfectly clear there, with lovely mild temperatures. Meanwhile, in the west, clouds will roll in in along with a cool breeze as evening approaches.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5746"
+          },
+          {
+            "content": "Roughly how many issues of the magazine come out each summer?",
+            "correctAnswer": "Just over 300,000 copies",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060829581_37ddbbe2d0addc1d_c__u6.mp3",
+            "answerList": [
+              {
+                "content": "About 500,000 copies"
+              },
+              {
+                "content": "Just over 300,000 copies"
+              },
+              {
+                "content": "Around 150,000 copies"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.2],\"text\":\" Our publication City Pulse has expanded quite a bit in recent years,\"},{\"timestamp\":[4.2,8],\"text\":\" and we now employ around 150 staff members.\"},{\"timestamp\":[8,12.2],\"text\":\" Print runs vary throughout the year, but summer is when demand peaks.\"},{\"timestamp\":[12.2,15.8],\"text\":\" During that period, we put out just over 300,000 copies.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5747"
+          },
+          {
+            "content": "What item did the man leave behind at his friend's place?",
+            "correctAnswer": "His bag",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790060830010_e06a7bf02095e792_c__u7.mp3",
+            "answerList": [
+              {
+                "content": "His bag"
+              },
+              {
+                "content": "His glasses"
+              },
+              {
+                "content": "His phone"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,1.72],\"text\":\" Guess what happened last night?\"},{\"timestamp\":[1.72,6.12],\"text\":\" I went around to Tom's place for dinner, and when I got home I realized my bag was missing.\"},{\"timestamp\":[6.12,8.52],\"text\":\" I must have left it by a sofa.\"},{\"timestamp\":[8.52,13.44],\"text\":\" Good thing my phone and glasses were both in my pocket the whole time, so at least I didn't lose those.\"},{\"timestamp\":[13.44,15.48],\"text\":\" I'll swing by tomorrow to pick it up.\"}]</p>",
+            "_id": "6ab2291ec007e40dd20f5748"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f5749"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574a"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574b"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574c"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574d"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574e"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6ab2291ec007e40dd20f574f"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6ab2291ec007e40dd20f5742"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "LISTENING",
+    "id": "6ab22742c007e40dd20f56c0",
+    "createdAt": "2026-09-22T06:59:14.640Z",
+    "updatedAt": "2026-09-22T07:07:10.500Z",
+    "__v": 0
   }
 ]
