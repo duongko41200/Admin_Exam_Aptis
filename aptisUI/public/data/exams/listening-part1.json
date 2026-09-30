@@ -4768,6 +4768,130 @@
         "isExample": "false",
         "image": null,
         "_id": "6ab2291ec007e40dd20f5742"
+      },
+      {
+        "_id": "6abcd32293772eddabfd3ee7",
+        "title": "Đề 16",
+        "timeToDo": "1970-01-01T00:00:00.035Z",
+        "description": null,
+        "questions": [
+          {
+            "questionTitle": "Đề 16",
+            "content": "Đề 16",
+            "answerList": [],
+            "correctAnswer": "",
+            "file": null,
+            "subQuestionAnswerList": [],
+            "suggestion": null,
+            "subSuggestion": "",
+            "subQuestion": [
+              {
+                "content": "Where will they stay on Saturday night?",
+                "correctAnswer": "At friend's house",
+                "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790759711769_112d81097604c38d_cau1.mp3",
+                "answerList": [
+                  {
+                    "content": "At a hostel"
+                  },
+                  {
+                    "content": "At friend's house"
+                  },
+                  {
+                    "content": "In a cabin"
+                  }
+                ],
+                "image": null,
+                "suggestion": "<p>[{\"timestamp\":[0,2.54],\"text\":\" Guess what happened last night?\"},{\"timestamp\":[2.54,9],\"text\":\" I went round to Tom's place for dinner, and when I got home, I realized my bag was missing.\"},{\"timestamp\":[9,11.44],\"text\":\" I must have left it by his sofa.\"},{\"timestamp\":[11.44,17.24],\"text\":\" Good thing my phone and glasses were both in my pocket the whole time, so at least I didn't lose those.\"},{\"timestamp\":[17.24,20.16],\"text\":\" I'll swing by tomorrow to pick it up.\"},{\"timestamp\":[20.16,23.4],\"text\":\" There's been a change of plan for our weekend getaway.\"},{\"timestamp\":[23.4,26.56],\"text\":\" We'd originally booked the hostel by the coast for Saturday,\"},{\"timestamp\":[26.56,29.2],\"text\":\" but it turns out they're completely booked up.\"},{\"timestamp\":[29.2,32.24],\"text\":\" We looked into renting a cabin out in the hills instead,\"},{\"timestamp\":[32.24,35.68],\"text\":\" but the forecast is calling for heavy rain that day.\"},{\"timestamp\":[35.68,null],\"text\":\" Fortunately, my friend Sarah said we can crash in her spare room, so we'll be staying at her place instead.\"}]</p>",
+                "_id": "6abcd32293772eddabfd3ee9"
+              },
+              {
+                "content": "Why doesn't he want to eat at the Italian restaurant?",
+                "correctAnswer": "It is too expensive",
+                "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790759713048_5e8e5e626675d2fb_cau2.mp3",
+                "answerList": [
+                  {
+                    "content": "It is too expensive"
+                  },
+                  {
+                    "content": "It is closed today"
+                  },
+                  {
+                    "content": "It doesn't take reservations"
+                  }
+                ],
+                "image": null,
+                "suggestion": "<p>[{\"timestamp\":[0,3.48],\"text\":\" I've been trying to find somewhere for us to grab dinner tomorrow night.\"},{\"timestamp\":[3.48,8.42],\"text\":\" The Italian spot by the station gets excellent reviews, and they've still got tables open,\"},{\"timestamp\":[8.42,11.92],\"text\":\" but the prices turned out to be way more than I was expecting.\"},{\"timestamp\":[11.92,15.68],\"text\":\" There's a different place about 10 minutes walk away that's much more affordable, so let's\"},{\"timestamp\":[15.68,16.72],\"text\":\" just go there instead.\"}]</p>",
+                "_id": "6abcd32293772eddabfd3eea"
+              },
+              {
+                "content": "How does she usually get to work?",
+                "correctAnswer": "By bicycle",
+                "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790759713413_6a11cb36c61a8d38_cau3.mp3",
+                "answerList": [
+                  {
+                    "content": "By bus"
+                  },
+                  {
+                    "content": "By bicycle"
+                  },
+                  {
+                    "content": "By taxi"
+                  }
+                ],
+                "image": null,
+                "suggestion": "<p>[{\"timestamp\":[0,3.2],\"text\":\" Getting to the office is never a hassle for me.\"},{\"timestamp\":[3.2,6],\"text\":\" There's a bus that stops right outside my building,\"},{\"timestamp\":[6,9.32],\"text\":\" though it tends to be packed during the morning rush.\"},{\"timestamp\":[9.32,11.6],\"text\":\" Taking a taxi would be quicker,\"},{\"timestamp\":[11.6,14],\"text\":\" but it works out pretty pricey.\"},{\"timestamp\":[14,null],\"text\":\" Most mornings I just ride my bike since it only takes around 20 minutes and I can skip all the traffic. [Sighs]\"}]</p>",
+                "_id": "6abcd32293772eddabfd3eeb"
+              },
+              {
+                "content": "What time does the class begin?",
+                "correctAnswer": "6:30",
+                "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790759713764_50c9999127a1f8a6_cau4.mp3",
+                "answerList": [
+                  {
+                    "content": "6:30"
+                  },
+                  {
+                    "content": " 6:15"
+                  },
+                  {
+                    "content": "6:45"
+                  }
+                ],
+                "image": null,
+                "suggestion": "<p>[{\"timestamp\":[0,2.44],\"text\":\" Hey quick message about tonight's workout class.\"},{\"timestamp\":[2.44,6.24],\"text\":\" I thought it kicked off at a quarter past 6 but I double checked the schedule and that's\"},{\"timestamp\":[6.24,8.08],\"text\":\" actually the kid's session.\"},{\"timestamp\":[8.08,10.32],\"text\":\" Our class really starts at half past 6.\"},{\"timestamp\":[10.32,14.72],\"text\":\" I might get that closer to 7 if traffic's bad so please don't wait around for me outside.\"}]</p>",
+                "_id": "6abcd32293772eddabfd3eec"
+              },
+              {
+                "content": "What will she do first?",
+                "correctAnswer": "Visit the library",
+                "file": "https://files.aptisacademy.com.vn/listening/2026/09/1790759714154_dce11d8a19200bea_cau5.mp3",
+                "answerList": [
+                  {
+                    "content": "Go shopping"
+                  },
+                  {
+                    "content": "Visit the library"
+                  },
+                  {
+                    "content": "Meet her brother"
+                  }
+                ],
+                "image": null,
+                "suggestion": "<p>[{\"timestamp\":[0,3.12],\"text\":\" I've got quite a packed afternoon ahead of me.\"},{\"timestamp\":[3.12,6.4],\"text\":\" My brother asked me to meet up with him at the mall around five,\"},{\"timestamp\":[6.4,10.24],\"text\":\" and I also need to pick up a few items while I'm there.\"},{\"timestamp\":[10.24,14.72],\"text\":\" But before any of that, I have some books that are overdue,\"},{\"timestamp\":[14.72,null],\"text\":\" so I'm heading straight to the library once my class wraps up. Only after that will I go meet my brother?\"}]</p>",
+                "_id": "6abcd32293772eddabfd3eed"
+              }
+            ],
+            "isExample": "false",
+            "image": null,
+            "_id": "6abcd32293772eddabfd3ee8"
+          }
+        ],
+        "questionPart": "ONE",
+        "questionType": "LISTENING",
+        "id": "6abcd32293772eddabfd3eee",
+        "createdAt": "2026-09-30T09:15:14.686Z",
+        "updatedAt": "2026-09-30T09:15:14.686Z",
+        "__v": 0
       }
     ],
     "questionPart": "ONE",
