@@ -1,36 +1,36 @@
 [
   {
-    "_id": "68e099b553b4655eba3efbf2",
-    "title": "Travel Club - Version 1",
+    "_id": "68e0561d53b4655eba3ef8c0",
+    "title": "Language Club - Version 1",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Travel Club - Version 1",
-        "content": "You are a new member of a Travel club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "questionTitle": "Language Club - Version 1",
+        "content": "You are a new member of a language club. Fill in the form. Write in sentences. Use 20 – 30 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Lợi ích/ bất lợi/quan điểm</span></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Áp dụng công thức: </em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">I</em><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">'m keen on/into/crazy about/interested in/fond of</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> [hoạt động/club] </em><em style=\"color: rgb(0, 0, 0); background-color: rgb(235, 214, 255);\">because/since it brings many benefits</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Firstly</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">, [chọn 1 trong 8 khía cạnh]. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Secondly</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">, [chọn 1 trong 8 khía cạnh].&nbsp;</em></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on traveling because it brings many benefits. Firstly, going out helps me to discover the world's beauty. Moreover, I can join a Travel club, meet new people and make friends with those who share my similar interests.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi đam mê du lịch vì nó mang lại nhiều lợi ích. Thứ nhất, ra ngoài giúp tôi khám phá vẻ đẹp thế giới. Hơn nữa, tôi có thể tham gia câu lạc bộ Du lịch, gặp gỡ người mới và kết bạn với những người có sở thích tương đồng.)</em></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Activity &amp; Hobby</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I always enjoy doing various activities in my free time. One of my favorites is going to the gym with my best friends, where we usually spend around two hours working out together because it helps improve our health day by day.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">DỊCH:</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Tôi luôn thích tham gia nhiều hoạt động khác nhau vào thời gian rảnh rỗi. Một trong những hoạt động yêu thích của tôi là đến phòng tập thể dục với bạn thân, nơi chúng tôi thường dành khoảng hai giờ tập luyện cùng nhau vì nó giúp cải thiện sức khỏe mỗi ngày.</em></p>",
         "subQuestion": [
           {
-            "content": "Why are you interested in travel?",
+            "content": "Tell me about your free time and interests.",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "696085bbd73871927bde10df"
+            "_id": "69607e5dd73871927bddfacd"
           }
         ],
-        "_id": "696085bbd73871927bde10de"
+        "_id": "69607e5dd73871927bddfacc"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-04T03:51:17.488Z",
-    "updatedAt": "2026-09-16T06:53:34.669Z",
+    "createdAt": "2025-10-03T23:02:53.124Z",
+    "updatedAt": "2026-10-12T04:34:55.653Z",
     "__v": 0
   },
   {
@@ -64,7 +64,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:03:44.225Z",
-    "updatedAt": "2026-09-16T06:53:34.403Z",
+    "updatedAt": "2026-10-12T04:34:55.701Z",
     "__v": 0
   },
   {
@@ -98,279 +98,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:05:45.658Z",
-    "updatedAt": "2026-09-16T06:53:34.448Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e05a5253b4655eba3ef928",
-    "title": "Technology Club - Version 1",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Technology Club - Version 1",
-        "content": "You are a new member of a Technology club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always use my laptop at various times of the day. One of my habits is listening to music on it in the evenings at home, where I usually spend about 2 hours because it helps me let my hair down.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi luôn sử dụng máy tính vào nhiều thời điểm khác nhau trong ngày. Một trong những thói quen của tôi là nghe nhạc trên máy tính vào buổi tối ở nhà, thường là khoảng 2 tiếng vì nó giúp tôi thư giãn.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "What do you usually use your laptop for?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69608331d73871927bde0633"
-          }
-        ],
-        "_id": "69608331d73871927bde0632"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:20:50.711Z",
-    "updatedAt": "2026-09-16T06:53:34.576Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e05c7053b4655eba3efa54",
-    "title": "Food Club - Version 1",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Food Club - Version 1",
-        "content": "You are a new member of a Food Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\">Đang cập nhật...</p>",
-        "subQuestion": [
-          {
-            "content": "What did you eat for breakfast?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fcb41c5689aec00856ef"
-          }
-        ],
-        "_id": "6968fcb41c5689aec00856ee"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:29:52.142Z",
-    "updatedAt": "2026-09-16T06:53:34.627Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f755af53b4655eba3f41a8",
-    "title": "Garden club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Garden club",
-        "content": "You are joining a Garden club. Fill out the form.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Dạng đề lợi ích</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on joining the Garden Club because it brings many benefits. First, participating in club activities gives me joy and inspiration. Moreover, I can meet new people and make friends with those who share my similar interests.</em></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch:&nbsp;Tôi đam mê tham gia Câu lạc bộ Làm Vườn vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia hoạt động câu lạc bộ mang lại niềm vui và cảm hứng cho tôi. Hơn nữa, tôi có thể gặp gỡ người mới và kết bạn với những người có sở thích tương đồng.)</em></p><p><br></p>",
-        "subQuestion": [
-          {
-            "content": "Why did you join the club?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fdca1c5689aec0085866"
-          }
-        ],
-        "_id": "6968fdca1c5689aec0085865"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:43:11.884Z",
-    "updatedAt": "2026-09-16T06:53:34.753Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f755f553b4655eba3f41b8",
-    "title": "Car club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Car club",
-        "content": "Now you've become a new member of the Car club. Fill in the form. Write in sentences. Use 20-30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\"><em>Dạng đề lợi ích</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I'm keen on traveling by car because it brings many benefits. Firstly, traveling by car gives me control over my time. Most importantly, I always feel comfortable when I enjoy the beautiful scenery along the way.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dịch: Tôi đam mê đi du lịch bằng xe hơi vì nó mang lại nhiều lợi ích. Thứ nhất, đi xe hơi cho tôi kiểm soát thời gian. Quan trọng nhất, tôi luôn cảm thấy thoải mái khi thưởng thức cảnh đẹp dọc đường.</em></p>",
-        "subQuestion": [
-          {
-            "content": "Do you usually travel by car?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968f89c1c5689aec008538c"
-          }
-        ],
-        "_id": "6968f89c1c5689aec008538b"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:44:21.176Z",
-    "updatedAt": "2026-09-16T06:53:34.795Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f7562453b4655eba3f41c8",
-    "title": "Community club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Community club",
-        "content": "Now you've become a new member of the Community club. Fill in the form. Write in sentences. Use 20-30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Lợi ích/ Bất lợi/ Quan điểm</em></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on joining the Community Club because it brings many benefits. Firstly, participating in various events helps me contribute to the local area and develop a sense of responsibility. Moreover, I can meet new people and make friends with those who share my interests in volunteering.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Tôi đam mê tham gia Câu lạc bộ Cộng đồng vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia các sự kiện đa dạng giúp tôi đóng góp cho địa phương và phát triển ý thức trách nhiệm. Hơn nữa, tôi có thể gặp gỡ người mới và kết bạn với những người có sở thích tình nguyện tương đồng.\"</em></p>",
-        "subQuestion": [
-          {
-            "content": "Why did you join this Community club?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968f9441c5689aec008540a"
-          }
-        ],
-        "_id": "6968f9441c5689aec0085409"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:45:08.638Z",
-    "updatedAt": "2026-09-16T06:53:34.837Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f756c953b4655eba3f41e8",
-    "title": "Movie club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Movie club",
-        "content": "Now you've become a new member of the Movie club. Fill in the form. Write in sentences. Use 20-30 words (Viết 20 đến 30 từ thôi nhé!).",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Dạng đề: Lợi ích/bất lợi/ quan điểm</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I'm keen on joining the Movie club because it brings many benefits. Firstly, participating in the club's activities helps me discover new perspectives through movies. Moreover, I can meet new people and make friends with those who share my similar interests.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dịch:\"Tôi đam mê tham gia Câu lạc bộ Phim vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia hoạt động giúp tôi khám phá góc nhìn mới qua phim. Hơn nữa, tôi có thể gặp người mới và kết bạn với những người có sở thích tương đồng.\"</em></p>",
-        "subQuestion": [
-          {
-            "content": "Why did you join the club?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fae71c5689aec00854f6"
-          }
-        ],
-        "_id": "6968fae71c5689aec00854f5"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:47:53.774Z",
-    "updatedAt": "2026-09-16T06:53:34.878Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e09abd53b4655eba3efc1a",
-    "title": "English Club - Version 2",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "English Club - Version 2",
-        "content": "You are a new member of the English Club. Fill in the form. Write in sentences. Use 20–30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>Đang cập nhật...</p>",
-        "subQuestion": [
-          {
-            "content": "When do you usually have to come into contact with English?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fd901c5689aec008581b"
-          }
-        ],
-        "_id": "6968fd901c5689aec008581a"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-04T03:55:41.149Z",
-    "updatedAt": "2026-09-16T06:53:34.711Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e0561d53b4655eba3ef8c0",
-    "title": "Language Club - Version 1",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Language Club - Version 1",
-        "content": "You are a new member of a language club. Fill in the form. Write in sentences. Use 20 – 30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Activity &amp; Hobby</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I always enjoy doing various activities in my free time. One of my favorites is going to the gym with my best friends, where we usually spend around two hours working out together because it helps improve our health day by day.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">DỊCH:</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Tôi luôn thích tham gia nhiều hoạt động khác nhau vào thời gian rảnh rỗi. Một trong những hoạt động yêu thích của tôi là đến phòng tập thể dục với bạn thân, nơi chúng tôi thường dành khoảng hai giờ tập luyện cùng nhau vì nó giúp cải thiện sức khỏe mỗi ngày.</em></p>",
-        "subQuestion": [
-          {
-            "content": "Tell me about your free time and interests.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69607e5dd73871927bddfacd"
-          }
-        ],
-        "_id": "69607e5dd73871927bddfacc"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:02:53.124Z",
-    "updatedAt": "2026-09-16T06:53:34.361Z",
+    "updatedAt": "2026-10-12T04:34:55.749Z",
     "__v": 0
   },
   {
@@ -404,7 +132,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:09:13.941Z",
-    "updatedAt": "2026-09-16T06:53:34.490Z",
+    "updatedAt": "2026-10-12T04:34:55.798Z",
     "__v": 0
   },
   {
@@ -438,7 +166,279 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:17:50.652Z",
-    "updatedAt": "2026-09-16T06:53:34.532Z",
+    "updatedAt": "2026-10-12T04:34:55.850Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e05a5253b4655eba3ef928",
+    "title": "Technology Club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Technology Club - Version 1",
+        "content": "You are a new member of a Technology club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always use my laptop at various times of the day. One of my habits is listening to music on it in the evenings at home, where I usually spend about 2 hours because it helps me let my hair down.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi luôn sử dụng máy tính vào nhiều thời điểm khác nhau trong ngày. Một trong những thói quen của tôi là nghe nhạc trên máy tính vào buổi tối ở nhà, thường là khoảng 2 tiếng vì nó giúp tôi thư giãn.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "What do you usually use your laptop for?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69608331d73871927bde0633"
+          }
+        ],
+        "_id": "69608331d73871927bde0632"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-03T23:20:50.711Z",
+    "updatedAt": "2026-10-12T04:34:55.901Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e05c7053b4655eba3efa54",
+    "title": "Food Club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Food Club - Version 1",
+        "content": "You are a new member of a Food Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\">Đang cập nhật...</p>",
+        "subQuestion": [
+          {
+            "content": "What did you eat for breakfast?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fcb41c5689aec00856ef"
+          }
+        ],
+        "_id": "6968fcb41c5689aec00856ee"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-03T23:29:52.142Z",
+    "updatedAt": "2026-10-12T04:34:55.952Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e099b553b4655eba3efbf2",
+    "title": "Travel Club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Travel Club - Version 1",
+        "content": "You are a new member of a Travel club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Lợi ích/ bất lợi/quan điểm</span></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Áp dụng công thức: </em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">I</em><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">'m keen on/into/crazy about/interested in/fond of</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> [hoạt động/club] </em><em style=\"color: rgb(0, 0, 0); background-color: rgb(235, 214, 255);\">because/since it brings many benefits</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Firstly</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">, [chọn 1 trong 8 khía cạnh]. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Secondly</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">, [chọn 1 trong 8 khía cạnh].&nbsp;</em></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on traveling because it brings many benefits. Firstly, going out helps me to discover the world's beauty. Moreover, I can join a Travel club, meet new people and make friends with those who share my similar interests.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi đam mê du lịch vì nó mang lại nhiều lợi ích. Thứ nhất, ra ngoài giúp tôi khám phá vẻ đẹp thế giới. Hơn nữa, tôi có thể tham gia câu lạc bộ Du lịch, gặp gỡ người mới và kết bạn với những người có sở thích tương đồng.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "Why are you interested in travel?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "696085bbd73871927bde10df"
+          }
+        ],
+        "_id": "696085bbd73871927bde10de"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T03:51:17.488Z",
+    "updatedAt": "2026-10-12T04:34:56.005Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e09abd53b4655eba3efc1a",
+    "title": "English Club - Version 2",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "English Club - Version 2",
+        "content": "You are a new member of the English Club. Fill in the form. Write in sentences. Use 20–30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>Đang cập nhật...</p>",
+        "subQuestion": [
+          {
+            "content": "When do you usually have to come into contact with English?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fd901c5689aec008581b"
+          }
+        ],
+        "_id": "6968fd901c5689aec008581a"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T03:55:41.149Z",
+    "updatedAt": "2026-10-12T04:34:56.057Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f755af53b4655eba3f41a8",
+    "title": "Garden club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Garden club",
+        "content": "You are joining a Garden club. Fill out the form.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Dạng đề lợi ích</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on joining the Garden Club because it brings many benefits. First, participating in club activities gives me joy and inspiration. Moreover, I can meet new people and make friends with those who share my similar interests.</em></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch:&nbsp;Tôi đam mê tham gia Câu lạc bộ Làm Vườn vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia hoạt động câu lạc bộ mang lại niềm vui và cảm hứng cho tôi. Hơn nữa, tôi có thể gặp gỡ người mới và kết bạn với những người có sở thích tương đồng.)</em></p><p><br></p>",
+        "subQuestion": [
+          {
+            "content": "Why did you join the club?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fdca1c5689aec0085866"
+          }
+        ],
+        "_id": "6968fdca1c5689aec0085865"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:43:11.884Z",
+    "updatedAt": "2026-10-12T04:34:56.107Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f755f553b4655eba3f41b8",
+    "title": "Car club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Car club",
+        "content": "Now you've become a new member of the Car club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\"><em>Dạng đề lợi ích</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I'm keen on traveling by car because it brings many benefits. Firstly, traveling by car gives me control over my time. Most importantly, I always feel comfortable when I enjoy the beautiful scenery along the way.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dịch: Tôi đam mê đi du lịch bằng xe hơi vì nó mang lại nhiều lợi ích. Thứ nhất, đi xe hơi cho tôi kiểm soát thời gian. Quan trọng nhất, tôi luôn cảm thấy thoải mái khi thưởng thức cảnh đẹp dọc đường.</em></p>",
+        "subQuestion": [
+          {
+            "content": "Do you usually travel by car?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968f89c1c5689aec008538c"
+          }
+        ],
+        "_id": "6968f89c1c5689aec008538b"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:44:21.176Z",
+    "updatedAt": "2026-10-12T04:34:56.154Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f7562453b4655eba3f41c8",
+    "title": "Community club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Community club",
+        "content": "Now you've become a new member of the Community club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Lợi ích/ Bất lợi/ Quan điểm</em></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I'm keen on joining the Community Club because it brings many benefits. Firstly, participating in various events helps me contribute to the local area and develop a sense of responsibility. Moreover, I can meet new people and make friends with those who share my interests in volunteering.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Tôi đam mê tham gia Câu lạc bộ Cộng đồng vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia các sự kiện đa dạng giúp tôi đóng góp cho địa phương và phát triển ý thức trách nhiệm. Hơn nữa, tôi có thể gặp gỡ người mới và kết bạn với những người có sở thích tình nguyện tương đồng.\"</em></p>",
+        "subQuestion": [
+          {
+            "content": "Why did you join this Community club?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968f9441c5689aec008540a"
+          }
+        ],
+        "_id": "6968f9441c5689aec0085409"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:45:08.638Z",
+    "updatedAt": "2026-10-12T04:34:56.206Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f756c953b4655eba3f41e8",
+    "title": "Movie club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Movie club",
+        "content": "Now you've become a new member of the Movie club. Fill in the form. Write in sentences. Use 20-30 words (Viết 20 đến 30 từ thôi nhé!).",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Dạng đề: Lợi ích/bất lợi/ quan điểm</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I'm keen on joining the Movie club because it brings many benefits. Firstly, participating in the club's activities helps me discover new perspectives through movies. Moreover, I can meet new people and make friends with those who share my similar interests.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Dịch:\"Tôi đam mê tham gia Câu lạc bộ Phim vì nó mang lại nhiều lợi ích. Thứ nhất, tham gia hoạt động giúp tôi khám phá góc nhìn mới qua phim. Hơn nữa, tôi có thể gặp người mới và kết bạn với những người có sở thích tương đồng.\"</em></p>",
+        "subQuestion": [
+          {
+            "content": "Why did you join the club?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fae71c5689aec00854f6"
+          }
+        ],
+        "_id": "6968fae71c5689aec00854f5"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:47:53.774Z",
+    "updatedAt": "2026-10-12T04:34:56.258Z",
     "__v": 0
   },
   {
@@ -472,7 +472,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-21T09:48:19.139Z",
-    "updatedAt": "2026-09-16T06:53:34.921Z",
+    "updatedAt": "2026-10-12T04:34:56.310Z",
     "__v": 0
   },
   {
@@ -506,41 +506,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-21T09:48:42.747Z",
-    "updatedAt": "2026-09-16T06:53:34.964Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f7575053b4655eba3f4220",
-    "title": "Healthy club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Healthy club",
-        "content": "Now you've become a new member of the Healthy club. Fill in the form. Write in sentences. Use 20-30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p>I would like to take yoga and cardio classes. I’m available on weekdays in the evenings, preferably around 6 PM. Weekend morning sessions would also work for me.</p><p>Dịch: “Tôi muốn tham gia các lớp yoga và cardio. Tôi rảnh vào các buổi tối các ngày trong tuần, tốt nhất là khoảng 6 giờ tối. Các buổi sáng cuối tuần cũng phù hợp với tôi.”</p>",
-        "subQuestion": [
-          {
-            "content": "Tell me the classes you want to take and what times and days are suitable for you?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968f84e1c5689aec00852e8"
-          }
-        ],
-        "_id": "6968f84e1c5689aec00852e7"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:50:08.032Z",
-    "updatedAt": "2026-09-16T06:53:35.049Z",
+    "updatedAt": "2026-10-12T04:34:56.362Z",
     "__v": 0
   },
   {
@@ -574,109 +540,41 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-21T09:49:48.672Z",
-    "updatedAt": "2026-09-16T06:53:35.006Z",
+    "updatedAt": "2026-10-12T04:34:56.411Z",
     "__v": 0
   },
   {
-    "_id": "68e0568353b4655eba3ef8d0",
-    "title": "Beautiful Homes Club",
+    "_id": "68f7575053b4655eba3f4220",
+    "title": "Healthy club",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Beautiful Homes Club",
-        "content": "You are a new member of a Beautiful Homes Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
+        "questionTitle": "Healthy club",
+        "content": "Now you've become a new member of the Healthy club. Fill in the form. Write in sentences. Use 20-30 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0);\"><em><u>Gợi ý: Lợi ích/ bất lợi/quan điểm</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Áp dụng công thức:</em></strong><strong style=\"color: rgb(0, 0, 0);\"><em>  </em></strong><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">I'm keen on/into/crazy about/interested in/fond of </em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">[hoạt động/club] </em><em style=\"color: rgb(0, 0, 0); background-color: rgb(194, 133, 255);\">because/since it brings many benefits</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Firstly, </em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">[chọn 1 trong 8 khía cạnh]. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Secondly,</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> [chọn 1 trong 8 khía cạnh].&nbsp;</em></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Ví dụ:</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> I'm keen on joining the Beautiful Homes Club because it brings many benefits. First, participating in club activities gives me joy and inspiration. Moreover, I can meet new people and make friends with them who share my similar interests.</em></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">( Dịch: Tôi rất muốn tham gia Câu lạc bộ Nhà Đẹp vì nó mang lại nhiều lợi ích. Thứ nhất, việc tham gia các hoạt động của câu lạc bộ mang lại cho tôi niềm vui và cảm hứng. Hơn nữa, tôi có thể gặp gỡ và kết bạn với những người có cùng sở thích.)</em></p>",
+        "suggestion": "<p><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p>I would like to take yoga and cardio classes. I’m available on weekdays in the evenings, preferably around 6 PM. Weekend morning sessions would also work for me.</p><p>Dịch: “Tôi muốn tham gia các lớp yoga và cardio. Tôi rảnh vào các buổi tối các ngày trong tuần, tốt nhất là khoảng 6 giờ tối. Các buổi sáng cuối tuần cũng phù hợp với tôi.”</p>",
         "subQuestion": [
           {
-            "content": "Why do you want to join the beautiful homes club?",
+            "content": "Tell me the classes you want to take and what times and days are suitable for you?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69607ee2d73871927bddfba5"
+            "_id": "6968f84e1c5689aec00852e8"
           }
         ],
-        "_id": "69607ee2d73871927bddfba4"
+        "_id": "6968f84e1c5689aec00852e7"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-03T23:04:35.303Z",
-    "updatedAt": "2026-09-16T06:53:35.132Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e05c3a53b4655eba3efa4c",
-    "title": "Fitness Club - Version 1",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Fitness Club - Version 1",
-        "content": "You are a new member of a Fitness club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I had to frantically run after a bus to get to the train station on time to return to Hanoi. At that time, I was in a panic and confused.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Nếu tôi nhớ không nhầm thì đó là hai tuần trước. Tôi đã có một chuyến đi dài một mình đến Huế bằng tàu hỏa. Trong chuyến đi này, tôi phải cuống cuồng chạy theo xe buýt để kịp ra ga về Hà Nội. Lúc đó, tôi đang trong tâm trạng hoảng loạn và hoang mang.)</em></p><p class=\"ql-align-justify\"><em style=\"background-color: rgb(0, 255, 0); color: rgb(0, 0, 0);\">Từ vựng nâng cao:&nbsp;</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">frantically = cuống cuồng</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">In a panic = very nervous: rất lo lắng, hoảng loạn</em></p>",
-        "subQuestion": [
-          {
-            "content": "Please talk about the last time you had to run somewhere?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69c14dc9c68879da1b92b78e"
-          }
-        ],
-        "_id": "69c14dc9c68879da1b92b78d"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:28:58.959Z",
-    "updatedAt": "2026-09-16T06:53:35.174Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e05c9953b4655eba3efa5c",
-    "title": "Food Club - Version 2",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Food Club - Version 2",
-        "content": "You are a new member of a Food Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I ate at a famous restaurant in Hue to enjoy local specialties. At that time, I was so excited and had so much fun.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch:Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến này, tôi ăn tại một nhà hàng nổi tiếng ở Huế để thưởng thức đặc sản địa phương. Lúc đó, tôi rất phấn khích và vui vẻ.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "What was the last time you ate out and where did you eat it?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69608508d73871927bde0e23"
-          }
-        ],
-        "_id": "69608508d73871927bde0e22"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:30:33.539Z",
-    "updatedAt": "2026-09-16T06:53:35.216Z",
+    "createdAt": "2025-10-21T09:50:08.032Z",
+    "updatedAt": "2026-10-12T04:34:56.458Z",
     "__v": 0
   },
   {
@@ -710,245 +608,109 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T22:54:38.836Z",
-    "updatedAt": "2026-09-16T06:53:35.090Z",
+    "updatedAt": "2026-10-12T04:34:56.508Z",
     "__v": 0
   },
   {
-    "_id": "68f7560c53b4655eba3f41c0",
-    "title": "Fashion club",
+    "_id": "68e0568353b4655eba3ef8d0",
+    "title": "Beautiful Homes Club",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Fashion club",
-        "content": "Now you've become a new member of the Fashion club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "questionTitle": "Beautiful Homes Club",
+        "content": "You are a new member of a Beautiful Homes Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Trải nghiệm</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I went shopping for some new clothes at a local mall in Hue. At that time, I was so excited and had so much fun.</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: \"Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến này, tôi đã đi mua sắm quần áo mới tại một trung tâm thương mại địa phương ở Huế. Lúc đó, tôi rất phấn khích và vui vẻ.)</span></p><p><br></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0);\"><em><u>Gợi ý: Lợi ích/ bất lợi/quan điểm</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Áp dụng công thức:</em></strong><strong style=\"color: rgb(0, 0, 0);\"><em>  </em></strong><em style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">I'm keen on/into/crazy about/interested in/fond of </em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">[hoạt động/club] </em><em style=\"color: rgb(0, 0, 0); background-color: rgb(194, 133, 255);\">because/since it brings many benefits</em><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Firstly, </em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">[chọn 1 trong 8 khía cạnh]. </em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Secondly,</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> [chọn 1 trong 8 khía cạnh].&nbsp;</em></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Ví dụ:</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\"> I'm keen on joining the Beautiful Homes Club because it brings many benefits. First, participating in club activities gives me joy and inspiration. Moreover, I can meet new people and make friends with them who share my similar interests.</em></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">( Dịch: Tôi rất muốn tham gia Câu lạc bộ Nhà Đẹp vì nó mang lại nhiều lợi ích. Thứ nhất, việc tham gia các hoạt động của câu lạc bộ mang lại cho tôi niềm vui và cảm hứng. Hơn nữa, tôi có thể gặp gỡ và kết bạn với những người có cùng sở thích.)</em></p>",
         "subQuestion": [
           {
-            "content": "When was the last time you went shopping for clothes?",
+            "content": "Why do you want to join the beautiful homes club?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6968f8e51c5689aec00853e0"
+            "_id": "69607ee2d73871927bddfba5"
           }
         ],
-        "_id": "6968f8e51c5689aec00853df"
+        "_id": "69607ee2d73871927bddfba4"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-21T09:44:44.287Z",
-    "updatedAt": "2026-09-16T06:53:35.301Z",
+    "createdAt": "2025-10-03T23:04:35.303Z",
+    "updatedAt": "2026-10-12T04:34:56.558Z",
     "__v": 0
   },
   {
-    "_id": "68f7564753b4655eba3f41d0",
-    "title": "Business club",
+    "_id": "68e05c3a53b4655eba3efa4c",
+    "title": "Fitness Club - Version 1",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Business club",
-        "content": "Now you've become a new member of the Business club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "questionTitle": "Fitness Club - Version 1",
+        "content": "You are a new member of a Fitness club. Fill in the form. Write in sentences. Use 20 – 30 words",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Shopping is one of my favorite hobbies. I usually go shopping at the local mall on weekends with my friends. This is because it helps me let my hair down.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Mua sắm là một trong những sở thích yêu thích của tôi. Tôi thường đi mua sắm tại trung tâm thương mại địa phương vào cuối tuần với bạn bè của mình. Điều này là vì nó giúp tôi thả lỏng.\"</em></p><p><br></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I had to frantically run after a bus to get to the train station on time to return to Hanoi. At that time, I was in a panic and confused.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Nếu tôi nhớ không nhầm thì đó là hai tuần trước. Tôi đã có một chuyến đi dài một mình đến Huế bằng tàu hỏa. Trong chuyến đi này, tôi phải cuống cuồng chạy theo xe buýt để kịp ra ga về Hà Nội. Lúc đó, tôi đang trong tâm trạng hoảng loạn và hoang mang.)</em></p><p class=\"ql-align-justify\"><em style=\"background-color: rgb(0, 255, 0); color: rgb(0, 0, 0);\">Từ vựng nâng cao:&nbsp;</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">frantically = cuống cuồng</em></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">In a panic = very nervous: rất lo lắng, hoảng loạn</em></p>",
         "subQuestion": [
           {
-            "content": "Where do you usually go shopping?",
+            "content": "Please talk about the last time you had to run somewhere?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6968f97f1c5689aec0085434"
+            "_id": "69c14dc9c68879da1b92b78e"
           }
         ],
-        "_id": "6968f97f1c5689aec0085433"
+        "_id": "69c14dc9c68879da1b92b78d"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-21T09:45:43.368Z",
-    "updatedAt": "2026-09-16T06:53:35.733Z",
+    "createdAt": "2025-10-03T23:28:58.959Z",
+    "updatedAt": "2026-10-12T04:34:56.612Z",
     "__v": 0
   },
   {
-    "_id": "68f7569453b4655eba3f41d8",
-    "title": "Nature club - Version 1",
+    "_id": "68e05c9953b4655eba3efa5c",
+    "title": "Food Club - Version 2",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Nature club - Version 1",
-        "content": "Now you've become a new member of the Nature club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "questionTitle": "Food Club - Version 2",
+        "content": "You are a new member of a Food Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Dạng đề: hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I always enjoy doing various activities in my free time. One of my favorites is going to the gym with my best friends, where we usually spend around two hours working out together because it helps improve our health day by day.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Tôi luôn thích tham gia nhiều hoạt động khác nhau trong thời gian rảnh rỗi. Một trong những hoạt động yêu thích của tôi là đến phòng tập thể dục với những người bạn thân nhất, nơi chúng tôi thường dành khoảng hai tiếng đồng hồ tập luyện cùng nhau vì nó giúp cải thiện sức khỏe của chúng tôi từng ngày.)</em></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I ate at a famous restaurant in Hue to enjoy local specialties. At that time, I was so excited and had so much fun.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch:Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến này, tôi ăn tại một nhà hàng nổi tiếng ở Huế để thưởng thức đặc sản địa phương. Lúc đó, tôi rất phấn khích và vui vẻ.)</em></p>",
         "subQuestion": [
           {
-            "content": "Please tell me about your free time and hobbies?",
+            "content": "What was the last time you ate out and where did you eat it?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69c153c3c68879da1b92bbb7"
+            "_id": "69608508d73871927bde0e23"
           }
         ],
-        "_id": "69c153c3c68879da1b92bbb6"
+        "_id": "69608508d73871927bde0e22"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-21T09:47:00.939Z",
-    "updatedAt": "2026-09-16T06:53:35.343Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e0594e53b4655eba3ef908",
-    "title": "Walking Club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Walking Club",
-        "content": "You are a new member of a Walking Club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Chủ đề: Hobby &amp; activity</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always enjoy walking at various times of day. One of my favorites is walking in the park near my house after finishing my work in the afternoon because it leaves me feeling over the moon.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(DỊCH: Tôi luôn thích đi bộ vào nhiều thời điểm khác nhau trong ngày. Một trong những hoạt động yêu thích của tôi là đi bộ trong công viên gần nhà sau khi tan làm vào buổi chiều vì nó khiến tôi cảm thấy vô cùng sảng khoái.)</em></p><p><br></p>",
-        "subQuestion": [
-          {
-            "content": "Where and when do you like to walk?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696080f7d73871927bde00c6"
-          }
-        ],
-        "_id": "696080f7d73871927bde00c5"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:16:30.307Z",
-    "updatedAt": "2026-09-16T06:53:35.428Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e059e153b4655eba3ef918",
-    "title": "Home Living Club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Home Living Club",
-        "content": "You are a new member of a Home living club. Fill in the form. Write in sentences. Use 20 – 30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\">Chủ đề: Place</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Currently, my family and I live in a small town in the countryside, also a famous place. It is Bac Ha town, which is 300 kilometers from Hanoi. Even though it's always crowded with tourists, we still love living there because the weather is so cool.&nbsp;</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Hiện tại, gia đình tôi đang sống tại một thị trấn nhỏ ở vùng nông thôn, cũng là một địa điểm nổi tiếng. Đó là thị trấn Bắc Hà, cách Hà Nội 300 km. Mặc dù nơi đây luôn đông đúc khách du lịch, nhưng chúng tôi vẫn rất thích sống ở đó vì thời tiết rất mát mẻ.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "Describe the area that you live in.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "696081ded73871927bde04a3"
-          }
-        ],
-        "_id": "696081ded73871927bde04a2"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:18:57.281Z",
-    "updatedAt": "2026-09-16T06:53:35.470Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e09a3053b4655eba3efc0a",
-    "title": "Television Club - Version 2",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Television Club - Version 2",
-        "content": "You are a new member of a Television club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Tương tự câu hỏi: Do you usually watch TV?</em></p>",
-        "subQuestion": [
-          {
-            "content": "When do you usually watch TV? What do you usually watch?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fd231c5689aec00857c7"
-          }
-        ],
-        "_id": "6968fd231c5689aec00857c6"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-04T03:53:20.154Z",
-    "updatedAt": "2026-09-16T06:53:35.602Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e09a6353b4655eba3efc12",
-    "title": "English Club - Version 1",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "English Club - Version 1",
-        "content": "You are a new member of an English Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Activity &amp; hobby</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always use the Internet at various times of the day. One of them is frequently using it to study English online, where I usually spend about 2 hours watching videos on YouTube. This is because it helps me improve my skills efficiently.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi luôn sử dụng Internet vào nhiều thời điểm khác nhau trong ngày. Một trong số đó là thường xuyên sử dụng nó để học tiếng Anh trực tuyến, nơi tôi thường dành khoảng 2 tiếng để xem video trên YouTube. Lý do là vì nó giúp tôi cải thiện kỹ năng một cách hiệu quả.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "What do you usually use the Internet for?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fd641c5689aec00857f1"
-          }
-        ],
-        "_id": "6968fd641c5689aec00857f0"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-04T03:54:11.765Z",
-    "updatedAt": "2026-09-16T06:53:35.644Z",
+    "createdAt": "2025-10-03T23:30:33.539Z",
+    "updatedAt": "2026-10-12T04:34:56.667Z",
     "__v": 0
   },
   {
@@ -982,7 +744,75 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-04T03:52:57.393Z",
-    "updatedAt": "2026-09-16T06:53:35.258Z",
+    "updatedAt": "2026-10-12T04:34:56.720Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f7560c53b4655eba3f41c0",
+    "title": "Fashion club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Fashion club",
+        "content": "Now you've become a new member of the Fashion club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Trải nghiệm</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I went shopping for some new clothes at a local mall in Hue. At that time, I was so excited and had so much fun.</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: \"Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến này, tôi đã đi mua sắm quần áo mới tại một trung tâm thương mại địa phương ở Huế. Lúc đó, tôi rất phấn khích và vui vẻ.)</span></p><p><br></p>",
+        "subQuestion": [
+          {
+            "content": "When was the last time you went shopping for clothes?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968f8e51c5689aec00853e0"
+          }
+        ],
+        "_id": "6968f8e51c5689aec00853df"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:44:44.287Z",
+    "updatedAt": "2026-10-12T04:34:56.773Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f7569453b4655eba3f41d8",
+    "title": "Nature club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Nature club - Version 1",
+        "content": "Now you've become a new member of the Nature club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Dạng đề: hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I always enjoy doing various activities in my free time. One of my favorites is going to the gym with my best friends, where we usually spend around two hours working out together because it helps improve our health day by day.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Tôi luôn thích tham gia nhiều hoạt động khác nhau trong thời gian rảnh rỗi. Một trong những hoạt động yêu thích của tôi là đến phòng tập thể dục với những người bạn thân nhất, nơi chúng tôi thường dành khoảng hai tiếng đồng hồ tập luyện cùng nhau vì nó giúp cải thiện sức khỏe của chúng tôi từng ngày.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "Please tell me about your free time and hobbies?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69c153c3c68879da1b92bbb7"
+          }
+        ],
+        "_id": "69c153c3c68879da1b92bbb6"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:47:00.939Z",
+    "updatedAt": "2026-10-12T04:34:56.826Z",
     "__v": 0
   },
   {
@@ -1016,109 +846,75 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:08:24.444Z",
-    "updatedAt": "2026-09-16T06:53:35.386Z",
+    "updatedAt": "2026-10-12T04:34:56.876Z",
     "__v": 0
   },
   {
-    "_id": "68e05aa653b4655eba3ef930",
-    "title": "Science Club - Version 1",
+    "_id": "68e0594e53b4655eba3ef908",
+    "title": "Walking Club",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Science Club - Version 1",
-        "content": "Now you've become a new member of the Science Club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "questionTitle": "Walking Club",
+        "content": "You are a new member of a Walking Club. Fill in the form. Write in sentences. Use 20 – 30 words",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Gợi ý:&nbsp;</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Lợi ích&nbsp;</span></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Phương pháp: Đưa về hết câu lạc bộ</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I like Science because it has many benefits. Firstly, I can join the Science club, which helps me broaden my knowledge when I learn from other members. Most importantly, I always feel comfortable when joining the club because people there are so friendly.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(</em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Dịch:&nbsp;</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Tôi thích Khoa học vì nó có nhiều lợi ích. Thứ nhất, tôi có thể tham gia câu lạc bộ khoa học, điều này giúp tôi mở rộng kiến thức khi học từ các thành viên khác. Quan trọng nhất, tôi luôn cảm thấy thoải mái khi tham gia câu lạc bộ vì mọi người ở đó rất thân thiện.)</em></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\">Chủ đề: Hobby &amp; activity</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always enjoy walking at various times of day. One of my favorites is walking in the park near my house after finishing my work in the afternoon because it leaves me feeling over the moon.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(DỊCH: Tôi luôn thích đi bộ vào nhiều thời điểm khác nhau trong ngày. Một trong những hoạt động yêu thích của tôi là đi bộ trong công viên gần nhà sau khi tan làm vào buổi chiều vì nó khiến tôi cảm thấy vô cùng sảng khoái.)</em></p><p><br></p>",
         "subQuestion": [
           {
-            "content": "Do you like Science? Why?",
+            "content": "Where and when do you like to walk?",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "69608374d73871927bde069f"
+            "_id": "696080f7d73871927bde00c6"
           }
         ],
-        "_id": "69608374d73871927bde069e"
+        "_id": "696080f7d73871927bde00c5"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-03T23:22:14.797Z",
-    "updatedAt": "2026-09-16T06:53:35.560Z",
+    "createdAt": "2025-10-03T23:16:30.307Z",
+    "updatedAt": "2026-10-12T04:34:56.925Z",
     "__v": 0
   },
   {
-    "_id": "68f755db53b4655eba3f41b0",
-    "title": "Outdoor club",
+    "_id": "68e059e153b4655eba3ef918",
+    "title": "Home Living Club",
     "timeToDo": 20,
     "questions": [
       {
-        "questionTitle": "Outdoor club",
-        "content": "Now you've become a new member of the Outdoor club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "questionTitle": "Home Living Club",
+        "content": "You are a new member of a Home living club. Fill in the form. Write in sentences. Use 20 – 30 words.",
         "answerList": [],
         "correctAnswer": "",
         "file": null,
         "subQuestionAnswerList": [],
-        "suggestion": "<p><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p><span style=\"background-color: rgb(255, 153, 0);\">Dạng đề: Activity &amp; Hobby</span></p><p>I always enjoy doing various outdoor activities. One of them is playing badminton with friends, which we usually spend around two hours playing together at the park near my house because it helps me let my hair down after an exhausting workday.</p><p><em>Dịch: \"Tôi luôn thích tham gia nhiều hoạt động ngoài trời khác nhau. Một trong số đó là chơi cầu lông với bạn bè, chúng tôi thường dành khoảng hai tiếng đồng hồ chơi cùng nhau ở công viên gần nhà vì nó giúp tôi thư giãn sau một ngày làm việc mệt mỏi.”</em></p>",
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\">Chủ đề: Place</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Currently, my family and I live in a small town in the countryside, also a famous place. It is Bac Ha town, which is 300 kilometers from Hanoi. Even though it's always crowded with tourists, we still love living there because the weather is so cool.&nbsp;</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Hiện tại, gia đình tôi đang sống tại một thị trấn nhỏ ở vùng nông thôn, cũng là một địa điểm nổi tiếng. Đó là thị trấn Bắc Hà, cách Hà Nội 300 km. Mặc dù nơi đây luôn đông đúc khách du lịch, nhưng chúng tôi vẫn rất thích sống ở đó vì thời tiết rất mát mẻ.)</em></p>",
         "subQuestion": [
           {
-            "content": "Which outdoor activities do you like? Why?",
+            "content": "Describe the area that you live in.",
             "correctAnswer": null,
             "file": null,
             "answerList": null,
             "image": null,
             "suggestion": null,
-            "_id": "6968fdfb1c5689aec0085890"
+            "_id": "696081ded73871927bde04a3"
           }
         ],
-        "_id": "6968fdfb1c5689aec008588f"
+        "_id": "696081ded73871927bde04a2"
       }
     ],
     "questionPart": "TWO",
     "questionType": "WRITING",
     "image": null,
-    "createdAt": "2025-10-21T09:43:55.190Z",
-    "updatedAt": "2026-09-16T06:53:35.691Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f756b953b4655eba3f41e0",
-    "title": "Writing club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Writing club",
-        "content": "Now you've become a new member of the Writing club. Fill in the form. Write in sentences. Use 20-30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I wrote a travel journal about my experiences. This is because it helps me capture precious memories.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Nếu tôi nhớ không nhầm thì đó là hai tuần trước. Tôi đã có một chuyến đi dài một mình đến Huế bằng tàu hỏa. Trong chuyến đi này, tôi đã viết nhật ký hành trình về những trải nghiệm của mình. Bởi vì nó giúp tôi lưu giữ những kỷ niệm quý giá.)</em></p><p><br></p>",
-        "subQuestion": [
-          {
-            "content": "Tell me about the last time you wrote something.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fa671c5689aec00854b2"
-          }
-        ],
-        "_id": "6968fa671c5689aec00854b1"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:47:37.239Z",
-    "updatedAt": "2026-09-16T06:53:35.775Z",
+    "createdAt": "2025-10-03T23:18:57.281Z",
+    "updatedAt": "2026-10-12T04:34:56.977Z",
     "__v": 0
   },
   {
@@ -1152,7 +948,211 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:19:54.773Z",
-    "updatedAt": "2026-09-16T06:53:35.511Z",
+    "updatedAt": "2026-10-12T04:34:57.026Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e05aa653b4655eba3ef930",
+    "title": "Science Club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Science Club - Version 1",
+        "content": "Now you've become a new member of the Science Club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Gợi ý:&nbsp;</em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Chủ đề: Lợi ích&nbsp;</span></p><p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Phương pháp: Đưa về hết câu lạc bộ</strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I like Science because it has many benefits. Firstly, I can join the Science club, which helps me broaden my knowledge when I learn from other members. Most importantly, I always feel comfortable when joining the club because people there are so friendly.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(</em><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\"><em>Dịch:&nbsp;</em></strong><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Tôi thích Khoa học vì nó có nhiều lợi ích. Thứ nhất, tôi có thể tham gia câu lạc bộ khoa học, điều này giúp tôi mở rộng kiến thức khi học từ các thành viên khác. Quan trọng nhất, tôi luôn cảm thấy thoải mái khi tham gia câu lạc bộ vì mọi người ở đó rất thân thiện.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "Do you like Science? Why?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69608374d73871927bde069f"
+          }
+        ],
+        "_id": "69608374d73871927bde069e"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-03T23:22:14.797Z",
+    "updatedAt": "2026-10-12T04:34:57.075Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e09a3053b4655eba3efc0a",
+    "title": "Television Club - Version 2",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Television Club - Version 2",
+        "content": "You are a new member of a Television club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">Tương tự câu hỏi: Do you usually watch TV?</em></p>",
+        "subQuestion": [
+          {
+            "content": "When do you usually watch TV? What do you usually watch?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fd231c5689aec00857c7"
+          }
+        ],
+        "_id": "6968fd231c5689aec00857c6"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T03:53:20.154Z",
+    "updatedAt": "2026-10-12T04:34:57.123Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e09a6353b4655eba3efc12",
+    "title": "English Club - Version 1",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "English Club - Version 1",
+        "content": "You are a new member of an English Club. Tell me about your knowledgeTalk to them using sentences. Use 20 – 30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Activity &amp; hobby</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I always use the Internet at various times of the day. One of them is frequently using it to study English online, where I usually spend about 2 hours watching videos on YouTube. This is because it helps me improve my skills efficiently.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Tôi luôn sử dụng Internet vào nhiều thời điểm khác nhau trong ngày. Một trong số đó là thường xuyên sử dụng nó để học tiếng Anh trực tuyến, nơi tôi thường dành khoảng 2 tiếng để xem video trên YouTube. Lý do là vì nó giúp tôi cải thiện kỹ năng một cách hiệu quả.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "What do you usually use the Internet for?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fd641c5689aec00857f1"
+          }
+        ],
+        "_id": "6968fd641c5689aec00857f0"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T03:54:11.765Z",
+    "updatedAt": "2026-10-12T04:34:57.175Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f755db53b4655eba3f41b0",
+    "title": "Outdoor club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Outdoor club",
+        "content": "Now you've become a new member of the Outdoor club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p><span style=\"background-color: rgb(255, 153, 0);\">Dạng đề: Activity &amp; Hobby</span></p><p>I always enjoy doing various outdoor activities. One of them is playing badminton with friends, which we usually spend around two hours playing together at the park near my house because it helps me let my hair down after an exhausting workday.</p><p><em>Dịch: \"Tôi luôn thích tham gia nhiều hoạt động ngoài trời khác nhau. Một trong số đó là chơi cầu lông với bạn bè, chúng tôi thường dành khoảng hai tiếng đồng hồ chơi cùng nhau ở công viên gần nhà vì nó giúp tôi thư giãn sau một ngày làm việc mệt mỏi.”</em></p>",
+        "subQuestion": [
+          {
+            "content": "Which outdoor activities do you like? Why?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fdfb1c5689aec0085890"
+          }
+        ],
+        "_id": "6968fdfb1c5689aec008588f"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:43:55.190Z",
+    "updatedAt": "2026-10-12T04:34:57.229Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f7564753b4655eba3f41d0",
+    "title": "Business club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Business club",
+        "content": "Now you've become a new member of the Business club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Shopping is one of my favorite hobbies. I usually go shopping at the local mall on weekends with my friends. This is because it helps me let my hair down.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Mua sắm là một trong những sở thích yêu thích của tôi. Tôi thường đi mua sắm tại trung tâm thương mại địa phương vào cuối tuần với bạn bè của mình. Điều này là vì nó giúp tôi thả lỏng.\"</em></p><p><br></p>",
+        "subQuestion": [
+          {
+            "content": "Where do you usually go shopping?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968f97f1c5689aec0085434"
+          }
+        ],
+        "_id": "6968f97f1c5689aec0085433"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:45:43.368Z",
+    "updatedAt": "2026-10-12T04:34:57.281Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f756b953b4655eba3f41e0",
+    "title": "Writing club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Writing club",
+        "content": "Now you've become a new member of the Writing club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I wrote a travel journal about my experiences. This is because it helps me capture precious memories.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">(Dịch: Nếu tôi nhớ không nhầm thì đó là hai tuần trước. Tôi đã có một chuyến đi dài một mình đến Huế bằng tàu hỏa. Trong chuyến đi này, tôi đã viết nhật ký hành trình về những trải nghiệm của mình. Bởi vì nó giúp tôi lưu giữ những kỷ niệm quý giá.)</em></p><p><br></p>",
+        "subQuestion": [
+          {
+            "content": "Tell me about the last time you wrote something.",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fa671c5689aec00854b2"
+          }
+        ],
+        "_id": "6968fa671c5689aec00854b1"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:47:37.239Z",
+    "updatedAt": "2026-10-12T04:34:57.331Z",
     "__v": 0
   },
   {
@@ -1186,7 +1186,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:01:44.828Z",
-    "updatedAt": "2026-09-16T06:53:35.817Z",
+    "updatedAt": "2026-10-12T04:34:57.383Z",
     "__v": 0
   },
   {
@@ -1220,7 +1220,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:05:04.239Z",
-    "updatedAt": "2026-09-16T06:53:35.861Z",
+    "updatedAt": "2026-10-12T04:34:57.434Z",
     "__v": 0
   },
   {
@@ -1254,7 +1254,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:07:19.365Z",
-    "updatedAt": "2026-09-16T06:53:35.903Z",
+    "updatedAt": "2026-10-12T04:34:57.486Z",
     "__v": 0
   },
   {
@@ -1288,109 +1288,7 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:10:07.103Z",
-    "updatedAt": "2026-09-16T06:53:35.944Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e05b5653b4655eba3ef94d",
-    "title": "Museum Club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Museum Club",
-        "content": "You are a new member of a Museum Club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\">Gợi ý:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I went to the Hue Royal Antiquities Museum. At that time, I was so excited and had so much fun exploring the exhibits.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến đi này, tôi đến Bảo tàng Cổ vật Cung đình Huế. Lúc đó, tôi rất phấn khích và vui vẻ khám phá các hiện vật.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "Tell me the last time you went to a museum.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69608418d73871927bde0932"
-          }
-        ],
-        "_id": "69608418d73871927bde0931"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-03T23:25:10.944Z",
-    "updatedAt": "2026-09-16T06:53:36.028Z",
-    "__v": 0
-  },
-  {
-    "_id": "68e099ce53b4655eba3efbfa",
-    "title": "Travel Club - Version 2",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Travel Club - Version 2",
-        "content": "You are a new member of a Travel club. Fill in the form. Write in sentences. Use 20 – 30 words",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Hobby &amp; activity</span></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I’m usually keen on visiting Bac Ha town, also a famous place. It is 300 kilometers from Hanoi. Even though it's always crowded with tourists, I still love visiting there because the weather is so cool, and the people are incredibly friendly. The most important reason is that the food here is exceptionally delicious and cheap.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch:Tôi thường thích ghé thăm thị trấn Bắc Hà, cũng là nơi nổi tiếng. Nó cách Hà Nội 300km. Dù luôn đông du khách, tôi vẫn yêu thích ghé thăm nơi đó vì thời tiết mát mẻ, và mọi người cực kỳ thân thiện. Lý do quan trọng nhất là đồ ăn ở đây ngon tuyệt và rẻ.)</em></p>",
-        "subQuestion": [
-          {
-            "content": "Tell me a place you often visit.",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "69608676d73871927bde1322"
-          }
-        ],
-        "_id": "69608676d73871927bde1321"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-04T03:51:42.293Z",
-    "updatedAt": "2026-09-16T06:53:36.070Z",
-    "__v": 0
-  },
-  {
-    "_id": "68f7572253b4655eba3f4210",
-    "title": "Cinema club",
-    "timeToDo": 20,
-    "questions": [
-      {
-        "questionTitle": "Cinema club",
-        "content": "Now you've become a new member of the Cinema club. Fill in the form. Write in sentences. Use 20-30 words.",
-        "answerList": [],
-        "correctAnswer": "",
-        "file": null,
-        "subQuestionAnswerList": [],
-        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I usually enjoy watching various films. One of my favorite movies is “Minh Lan Truyen”, which I watch for 30 minutes every night. This is because it helps improve my mood every day.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Tôi thường thích xem nhiều phim. Một phim yêu thích là “Minh Lan Truyện”, tôi xem 30 phút mỗi tối. Điều này là vì nó giúp cải thiện tâm trạng hàng ngày.\"</em></p>",
-        "subQuestion": [
-          {
-            "content": "When and how often do you watch films?",
-            "correctAnswer": null,
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6968fbf71c5689aec0085604"
-          }
-        ],
-        "_id": "6968fbf71c5689aec0085603"
-      }
-    ],
-    "questionPart": "TWO",
-    "questionType": "WRITING",
-    "image": null,
-    "createdAt": "2025-10-21T09:49:22.733Z",
-    "updatedAt": "2026-09-16T06:53:36.112Z",
+    "updatedAt": "2026-10-12T04:34:57.540Z",
     "__v": 0
   },
   {
@@ -1424,7 +1322,109 @@
     "questionType": "WRITING",
     "image": null,
     "createdAt": "2025-10-03T23:23:29.073Z",
-    "updatedAt": "2026-09-16T06:53:35.986Z",
+    "updatedAt": "2026-10-12T04:34:57.601Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e05b5653b4655eba3ef94d",
+    "title": "Museum Club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Museum Club",
+        "content": "You are a new member of a Museum Club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\">Gợi ý:</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Trải nghiệm - Experience (When – Where – Who – What happened – How did you feel.)</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If my memory serves me right, it was two weeks ago. I had a long journey alone to Hue by train. On this trip, I went to the Hue Royal Antiquities Museum. At that time, I was so excited and had so much fun exploring the exhibits.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch: Nếu tôi nhớ không nhầm, đó là hai tuần trước. Tôi có chuyến đi dài một mình đến Huế bằng tàu. Trong chuyến đi này, tôi đến Bảo tàng Cổ vật Cung đình Huế. Lúc đó, tôi rất phấn khích và vui vẻ khám phá các hiện vật.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "Tell me the last time you went to a museum.",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69608418d73871927bde0932"
+          }
+        ],
+        "_id": "69608418d73871927bde0931"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-03T23:25:10.944Z",
+    "updatedAt": "2026-10-12T04:34:57.651Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e099ce53b4655eba3efbfa",
+    "title": "Travel Club - Version 2",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Travel Club - Version 2",
+        "content": "You are a new member of a Travel club. Fill in the form. Write in sentences. Use 20 – 30 words",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);\"><em>Gợi ý:</em></strong></p><p class=\"ql-align-justify\"><span style=\"background-color: rgb(255, 153, 0); color: rgb(0, 0, 0);\">Chủ đề: Hobby &amp; activity</span></p><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">I’m usually keen on visiting Bac Ha town, also a famous place. It is 300 kilometers from Hanoi. Even though it's always crowded with tourists, I still love visiting there because the weather is so cool, and the people are incredibly friendly. The most important reason is that the food here is exceptionally delicious and cheap.</span></p><p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(0, 0, 0);\">(Dịch:Tôi thường thích ghé thăm thị trấn Bắc Hà, cũng là nơi nổi tiếng. Nó cách Hà Nội 300km. Dù luôn đông du khách, tôi vẫn yêu thích ghé thăm nơi đó vì thời tiết mát mẻ, và mọi người cực kỳ thân thiện. Lý do quan trọng nhất là đồ ăn ở đây ngon tuyệt và rẻ.)</em></p>",
+        "subQuestion": [
+          {
+            "content": "Tell me a place you often visit.",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "69608676d73871927bde1322"
+          }
+        ],
+        "_id": "69608676d73871927bde1321"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-04T03:51:42.293Z",
+    "updatedAt": "2026-10-12T04:34:57.703Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f7572253b4655eba3f4210",
+    "title": "Cinema club",
+    "timeToDo": 20,
+    "questions": [
+      {
+        "questionTitle": "Cinema club",
+        "content": "Now you've become a new member of the Cinema club. Fill in the form. Write in sentences. Use 20-30 words.",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": "<p class=\"ql-align-justify\"><strong style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);\"><em><u>Gợi ý:</u></em></strong></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 153, 0);\">Dạng đề: Hobby &amp; Activity</span></p><p class=\"ql-align-justify\"><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">I usually enjoy watching various films. One of my favorite movies is “Minh Lan Truyen”, which I watch for 30 minutes every night. This is because it helps improve my mood every day.</span></p><p class=\"ql-align-justify\"><em style=\"color: rgb(0, 0, 0); background-color: transparent;\">Dịch: \"Tôi thường thích xem nhiều phim. Một phim yêu thích là “Minh Lan Truyện”, tôi xem 30 phút mỗi tối. Điều này là vì nó giúp cải thiện tâm trạng hàng ngày.\"</em></p>",
+        "subQuestion": [
+          {
+            "content": "When and how often do you watch films?",
+            "correctAnswer": null,
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6968fbf71c5689aec0085604"
+          }
+        ],
+        "_id": "6968fbf71c5689aec0085603"
+      }
+    ],
+    "questionPart": "TWO",
+    "questionType": "WRITING",
+    "image": null,
+    "createdAt": "2025-10-21T09:49:22.733Z",
+    "updatedAt": "2026-10-12T04:34:57.756Z",
     "__v": 0
   },
   {
@@ -1459,6 +1459,6 @@
     ],
     "timeToDo": 20,
     "title": "Reading Book Club",
-    "updatedAt": "2026-09-16T06:53:36.154Z"
+    "updatedAt": "2026-10-12T04:34:57.807Z"
   }
 ]
