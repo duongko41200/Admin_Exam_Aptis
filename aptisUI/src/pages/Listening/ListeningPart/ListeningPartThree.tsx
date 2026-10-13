@@ -490,10 +490,11 @@ const ListeningPartThree: React.FC<ListeningPartOneProps> = ({
         );
 
         if (
-          uploadResults.metadata.successful &&
-          uploadResults.metadata.successful.length > 0
+          uploadResults.success &&
+          uploadResults.data?.successful &&
+          uploadResults.data.successful.length > 0
         ) {
-          uploadedAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.metadata.successful[0].key}`;
+          uploadedAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.data.successful[0].key}`;
         }
       }
 

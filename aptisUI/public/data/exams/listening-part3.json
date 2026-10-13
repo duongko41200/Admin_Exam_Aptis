@@ -71,7 +71,7 @@
     "questionType": "LISTENING",
     "id": "6957cbcbc88028aa29a1b2c6",
     "createdAt": "2026-01-02T13:44:43.238Z",
-    "updatedAt": "2026-10-12T04:34:35.107Z",
+    "updatedAt": "2026-06-22T03:54:12.384Z",
     "__v": 0
   },
   {
@@ -146,7 +146,7 @@
     "questionType": "LISTENING",
     "id": "6957ccb3c88028aa29a1b3ea",
     "createdAt": "2026-01-02T13:48:35.218Z",
-    "updatedAt": "2026-10-12T04:34:35.161Z",
+    "updatedAt": "2026-06-22T03:54:12.428Z",
     "__v": 0
   },
   {
@@ -221,7 +221,7 @@
     "questionType": "LISTENING",
     "id": "6957cd96c88028aa29a1b3f9",
     "createdAt": "2026-01-02T13:52:22.975Z",
-    "updatedAt": "2026-10-12T04:34:35.214Z",
+    "updatedAt": "2026-06-22T03:54:12.472Z",
     "__v": 0
   },
   {
@@ -296,7 +296,7 @@
     "questionType": "LISTENING",
     "id": "6957ce41c88028aa29a1b408",
     "createdAt": "2026-01-02T13:55:13.064Z",
-    "updatedAt": "2026-10-12T04:34:35.264Z",
+    "updatedAt": "2026-06-22T03:54:12.519Z",
     "__v": 0
   },
   {
@@ -371,7 +371,7 @@
     "questionType": "LISTENING",
     "id": "6957d2efc88028aa29a1b7d2",
     "createdAt": "2026-01-02T14:15:11.476Z",
-    "updatedAt": "2026-10-12T04:34:35.316Z",
+    "updatedAt": "2026-06-22T03:54:12.564Z",
     "__v": 0
   },
   {
@@ -446,7 +446,7 @@
     "questionType": "LISTENING",
     "id": "6957d38dc88028aa29a1b7e1",
     "createdAt": "2026-01-02T14:17:49.741Z",
-    "updatedAt": "2026-10-12T04:34:35.367Z",
+    "updatedAt": "2026-06-22T03:54:12.608Z",
     "__v": 0
   },
   {
@@ -521,7 +521,7 @@
     "questionType": "LISTENING",
     "id": "6957d526c88028aa29a1b998",
     "createdAt": "2026-01-02T14:24:38.160Z",
-    "updatedAt": "2026-10-12T04:34:35.420Z",
+    "updatedAt": "2026-06-22T03:54:12.652Z",
     "__v": 0
   },
   {
@@ -596,7 +596,7 @@
     "questionType": "LISTENING",
     "id": "6957d573c88028aa29a1b9a4",
     "createdAt": "2026-01-02T14:25:55.660Z",
-    "updatedAt": "2026-10-12T04:34:35.480Z",
+    "updatedAt": "2026-06-22T03:54:12.696Z",
     "__v": 0
   },
   {
@@ -671,7 +671,7 @@
     "questionType": "LISTENING",
     "id": "6957d65ec88028aa29a1bc29",
     "createdAt": "2026-01-02T14:29:50.372Z",
-    "updatedAt": "2026-10-12T04:34:35.530Z",
+    "updatedAt": "2026-06-22T03:54:12.743Z",
     "__v": 0
   },
   {
@@ -746,7 +746,7 @@
     "questionType": "LISTENING",
     "id": "6957d6e2c88028aa29a1bc38",
     "createdAt": "2026-01-02T14:32:02.012Z",
-    "updatedAt": "2026-10-12T04:34:35.584Z",
+    "updatedAt": "2026-06-22T03:54:12.791Z",
     "__v": 0
   },
   {
@@ -821,7 +821,7 @@
     "questionType": "LISTENING",
     "id": "6957d77ac88028aa29a1bc47",
     "createdAt": "2026-01-02T14:34:34.446Z",
-    "updatedAt": "2026-10-12T04:34:35.636Z",
+    "updatedAt": "2026-06-22T03:54:12.839Z",
     "__v": 0
   },
   {
@@ -896,7 +896,7 @@
     "questionType": "LISTENING",
     "id": "6957d80fc88028aa29a1bc56",
     "createdAt": "2026-01-02T14:37:03.180Z",
-    "updatedAt": "2026-10-12T04:34:35.691Z",
+    "updatedAt": "2026-06-22T03:54:12.886Z",
     "__v": 0
   },
   {
@@ -971,7 +971,7 @@
     "questionType": "LISTENING",
     "id": "6a38b3059e4ccda11bf0de81",
     "createdAt": "2026-06-22T03:59:01.579Z",
-    "updatedAt": "2026-10-12T04:34:35.745Z",
+    "updatedAt": "2026-06-22T03:59:01.579Z",
     "__v": 0
   },
   {
@@ -1046,92 +1046,14 @@
     "questionType": "LISTENING",
     "id": "6a3c8ca25b4af1f9e232a1a0",
     "createdAt": "2026-06-25T02:04:18.412Z",
-    "updatedAt": "2026-10-12T04:34:35.798Z",
-    "__v": 0
-  },
-  {
-    "_id": "6a449fca7886f21f186f6a3a",
-    "title": "Work Business / Business and Cultural ",
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "description": null,
-    "questions": [
-      {
-        "questionTitle": "Work Business / Business and Cultural  (Nữ nói trước)",
-        "content": "A man and a woman are talking about work Business/ business Culture. Read the opinions below and decide whose opinion matches the statements: the man, the woman, or both the man and the woman. You can listen to the discussion twice.",
-        "answerList": [
-          {
-            "content": "Woman"
-          },
-          {
-            "content": "Man"
-          },
-          {
-            "content": "Both"
-          }
-        ],
-        "correctAnswer": "",
-        "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791780222790_2e7c6052351e3d50_download.mp3",
-        "subQuestionAnswerList": [],
-        "suggestion": "<p>[{\"timestamp\":[0,4.8],\"text\":\" A lot of people believe that launching a new business requires substantial funding.\"},{\"timestamp\":[5.6,10.16],\"text\":\" Yet someone I know set up a small graphic studio from her bedroom at home.\"},{\"timestamp\":[11.12,15.36],\"text\":\" She relied on secondhand equipment and had barely any initial investment.\"},{\"timestamp\":[16.4,20.88],\"text\":\" By focusing on a single service and paying close attention to what her clients wanted,\"},{\"timestamp\":[21.52,26.6],\"text\":\" she was able to open two additional locations in just two years.\"},{\"timestamp\":[26.6,32.18],\"text\":\" That is quite remarkable. Still, I would think twice about growing that fast. If a company\"},{\"timestamp\":[32.18,38.08],\"text\":\" does not have sufficient savings, even one late invoice or surprise expense could leave\"},{\"timestamp\":[38.08,46.6],\"text\":\" it unable to cover staff wages, I think it is wiser for a business to secure its finances before considering a second location.\"},{\"timestamp\":[46.6,49.1],\"text\":\" That is a fair observation.\"},{\"timestamp\":[49.1,54.76],\"text\":\" Businesses must also be aware of cultural variations when they move into overseas markets.\"},{\"timestamp\":[54.76,58.12],\"text\":\" The way people communicate differs greatly.\"},{\"timestamp\":[58.12,65],\"text\":\" A straightforward remark might seem professional in one culture, yet offensive in another. Absolutely.\"},{\"timestamp\":[65,70.72],\"text\":\" Learning about regional traditions allows companies to build stronger relationships and prevent\"},{\"timestamp\":[70.72,72.68],\"text\":\" avoidable conflicts.\"},{\"timestamp\":[72.68,78.88],\"text\":\" It is better to consult local team members than to rely on general assumptions about a culture.\"},{\"timestamp\":[78.88,82.08],\"text\":\" Internal company culture matters just as much.\"},{\"timestamp\":[82.08,86.96],\"text\":\" A more relaxed working environment can give newer staff the confidence to speak up about\"},{\"timestamp\":[86.96,90.24],\"text\":\" small issues before they turn into major ones.\"},{\"timestamp\":[90.24,96.32],\"text\":\" Of course, encouraging open dialogue and maintaining a structured framework are not mutually\"},{\"timestamp\":[96.32,97.32],\"text\":\" exclusive.\"}]</p>",
-        "subSuggestion": "<p><strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">♀ Nữ nói trước</strong></p><p><strong class=\"ql-font-monospace\" style=\"background-color: rgb(239, 246, 255); color: rgb(37, 99, 235);\">Code: 1022</strong></p><p><strong style=\"color: rgb(156, 163, 175);\">Nữ trước</strong></p><p><strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">W</strong> <strong style=\"color: rgb(124, 58, 237); background-color: rgb(243, 232, 255);\">B</strong> <strong style=\"color: rgb(29, 78, 216); background-color: rgb(219, 234, 254);\">M</strong> <strong style=\"color: rgb(29, 78, 216); background-color: rgb(219, 234, 254);\">M</strong></p><p><strong style=\"color: rgb(156, 163, 175);\">Nam trước</strong></p><p><strong style=\"color: rgb(29, 78, 216); background-color: rgb(219, 234, 254);\">M</strong> <strong style=\"color: rgb(124, 58, 237); background-color: rgb(243, 232, 255);\">B</strong> <strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">W</strong> <strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">W</strong></p><p><strong>Mẹo ghi nhớ</strong></p><p><em>Đàn ông (M) nói cả hai (B) phụ nữ (W) đều (W) giỏi kinh doanh.</em></p><p><strong style=\"color: rgb(29, 78, 216); background-color: rgb(219, 234, 254);\">M</strong><span style=\"color: rgb(107, 114, 128);\"> Man (1)</span><strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">W</strong><span style=\"color: rgb(107, 114, 128);\"> Woman (2)</span><strong style=\"color: rgb(124, 58, 237); background-color: rgb(243, 232, 255);\">B</strong><span style=\"color: rgb(107, 114, 128);\"> Both (0)</span></p><p><strong>GIẢI THÍCH ĐÁP ÁN</strong></p><p><strong>Câu 1: \"Câu 1\"</strong></p><p>→ Đáp án: <strong style=\"color: rgb(29, 78, 216); background-color: rgb(219, 234, 254);\">Man</strong></p><p><strong>👨 Man nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p><strong>👩 Woman nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p>✅ Đáp án: Man</p><p><strong>Câu 2: \"Câu 2\"</strong></p><p>→ Đáp án: <strong style=\"color: rgb(124, 58, 237); background-color: rgb(243, 232, 255);\">Both</strong></p><p><strong>👨 Man nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p><strong>👩 Woman nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p>✅ Đáp án: Both</p><p><strong>Câu 3: \"Câu 3\"</strong></p><p>→ Đáp án: <strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">Woman</strong></p><p><strong>👨 Man nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p><strong>👩 Woman nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p>✅ Đáp án: Woman</p><p><strong>Câu 4: \"Câu 4\"</strong></p><p>→ Đáp án: <strong style=\"color: rgb(190, 24, 93); background-color: rgb(252, 231, 243);\">Woman</strong></p><p><strong>👨 Man nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p><strong>👩 Woman nói:</strong></p><p><em>(Chưa có transcript)</em></p><p>→ Đang cập nhật.</p><p>✅ Đáp án: Woman</p><p><br></p><p>Transcipt:</p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Woman: A lot of people believe that launching a new business requires substantial funding. Yet, someone I know set up a small graphic studio from her bedroom at home. She relied on second-hand equipment and had barely any initial investment. By focusing on a single service and paying close attention to what her clients wanted, she was able to open two additional locations in just two years.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Man: That is quite remarkable. Still, I would think twice about growing that fast. If a company does not have sufficient savings, even one late invoice or surprise expense could leave it unable to cover staff wages. I think it is wiser for a business to secure its finances before considering a second location.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Woman: That is a fair observation. Businesses must also be aware of cultural variations when they move into overseas markets. The way people communicate differs greatly. A straightforward remark might seem professional in one culture, yet offensive in another.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Man: Absolutely. Learning about regional traditions allows companies to build stronger relationships and prevent avoidable conflicts. It is better to consult local team members than to rely on general assumptions about a culture.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Woman: Internal company culture matters just as much. A more relaxed working environment can give newer staff the confidence to speak up about small issues before they turn into major ones.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Man: Perhaps. Though as an organisation expands, staff still require well-defined roles and duties.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(37, 37, 37);\">Woman: Of course. Encouraging open dialogue and maintaining a structured framework are not mutually exclusive.</span></p><p><br></p><p><br></p>",
-        "subQuestion": [
-          {
-            "content": "1.A company ought to secure its financial position before considering expansion",
-            "correctAnswer": "Man",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6acc657f0fc5fa69cac5e26a"
-          },
-          {
-            "content": "2.Businesses operating in a different country should learn about local traditions and ways of communicating",
-            "correctAnswer": "Both",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6acc657f0fc5fa69cac5e26b"
-          },
-          {
-            "content": "3.Starting with minimal funding does not necessarily stop a small business from succeeding",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6acc657f0fc5fa69cac5e26c"
-          },
-          {
-            "content": "4..A more relaxed work environment might lead employees to report issues sooner",
-            "correctAnswer": "Woman",
-            "file": null,
-            "answerList": null,
-            "image": null,
-            "suggestion": null,
-            "_id": "6acc657f0fc5fa69cac5e26d"
-          }
-        ],
-        "isExample": "false",
-        "image": null,
-        "_id": "6acc657f0fc5fa69cac5e269"
-      }
-    ],
-    "questionPart": "THREE",
-    "questionType": "LISTENING",
-    "id": "6a449fca7886f21f186f6a40",
-    "createdAt": "2026-07-01T05:04:10.920Z",
-    "updatedAt": "2026-10-12T04:43:43.946Z",
+    "updatedAt": "2026-07-01T04:41:49.432Z",
     "__v": 0
   },
   {
     "_id": "b2c3d4e5f6a1b2c3d4e5f6b0",
-    "__v": 0,
-    "createdAt": "2026-07-15T09:57:21.399Z",
+    "title": "Children and young people with technology",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
     "description": null,
-    "id": "6a449ec77886f21f186f698b",
-    "questionPart": "THREE",
-    "questionType": "LISTENING",
     "questions": [
       {
         "questionTitle": "Children and young people with technology (Nam nói trước)",
@@ -1195,9 +1117,12 @@
         "_id": "6a449ec77886f21f186f6986"
       }
     ],
-    "timeToDo": "1970-01-01T00:00:00.035Z",
-    "title": "Children and young people with technology",
-    "updatedAt": "2026-10-12T04:34:35.849Z"
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a449ec77886f21f186f698b",
+    "createdAt": "2026-07-01T04:59:51.494Z",
+    "updatedAt": "2026-07-01T04:59:51.494Z",
+    "__v": 0
   },
   {
     "_id": "b2c3d4e5f6a1b2c3d4e5f6a0",
@@ -1272,6 +1197,81 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "homeschooling",
-    "updatedAt": "2026-10-12T04:34:35.900Z"
+    "updatedAt": "2026-07-22T09:41:38.785Z"
+  },
+  {
+    "_id": "6a449fca7886f21f186f6a3a",
+    "title": "Work Business / Business and Cultural ",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Work Business / Business and Cultural  (Nữ nói trước)",
+        "content": "A man and a woman are talking about work Business/ business Culture. Read the opinions below and decide whose opinion matches the statements: the man, the woman, or both the man and the woman. You can listen to the discussion twice.",
+        "answerList": [
+          {
+            "content": "Woman"
+          },
+          {
+            "content": "Man"
+          },
+          {
+            "content": "Both"
+          }
+        ],
+        "correctAnswer": "",
+        "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791780222790_2e7c6052351e3d50_download.mp3",
+        "subQuestionAnswerList": [],
+        "suggestion": "<p>[{\"timestamp\":[0,4.8],\"text\":\" A lot of people believe that launching a new business requires substantial funding.\"},{\"timestamp\":[5.6,10.16],\"text\":\" Yet someone I know set up a small graphic studio from her bedroom at home.\"},{\"timestamp\":[11.12,15.36],\"text\":\" She relied on secondhand equipment and had barely any initial investment.\"},{\"timestamp\":[16.4,20.88],\"text\":\" By focusing on a single service and paying close attention to what her clients wanted,\"},{\"timestamp\":[21.52,26.6],\"text\":\" she was able to open two additional locations in just two years.\"},{\"timestamp\":[26.6,32.18],\"text\":\" That is quite remarkable. Still, I would think twice about growing that fast. If a company\"},{\"timestamp\":[32.18,38.08],\"text\":\" does not have sufficient savings, even one late invoice or surprise expense could leave\"},{\"timestamp\":[38.08,46.6],\"text\":\" it unable to cover staff wages, I think it is wiser for a business to secure its finances before considering a second location.\"},{\"timestamp\":[46.6,49.1],\"text\":\" That is a fair observation.\"},{\"timestamp\":[49.1,54.76],\"text\":\" Businesses must also be aware of cultural variations when they move into overseas markets.\"},{\"timestamp\":[54.76,58.12],\"text\":\" The way people communicate differs greatly.\"},{\"timestamp\":[58.12,65],\"text\":\" A straightforward remark might seem professional in one culture, yet offensive in another. Absolutely.\"},{\"timestamp\":[65,70.72],\"text\":\" Learning about regional traditions allows companies to build stronger relationships and prevent\"},{\"timestamp\":[70.72,72.68],\"text\":\" avoidable conflicts.\"},{\"timestamp\":[72.68,78.88],\"text\":\" It is better to consult local team members than to rely on general assumptions about a culture.\"},{\"timestamp\":[78.88,82.08],\"text\":\" Internal company culture matters just as much.\"},{\"timestamp\":[82.08,86.96],\"text\":\" A more relaxed working environment can give newer staff the confidence to speak up about\"},{\"timestamp\":[86.96,90.24],\"text\":\" small issues before they turn into major ones.\"},{\"timestamp\":[90.24,96.32],\"text\":\" Of course, encouraging open dialogue and maintaining a structured framework are not mutually\"},{\"timestamp\":[96.32,97.32],\"text\":\" exclusive.\"}]</p>",
+        "subSuggestion": "<div style=\"background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:20px;font-family:system-ui,sans-serif;\"><div style=\"display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap;\"><span style=\"font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">♀ Nữ nói trước</span><span style=\"font-family:monospace;font-weight:800;font-size:14px;color:#2563eb;background:#eff6ff;padding:4px 10px;border-radius:8px;border:1px solid #bfdbfe;\">Code: 1022</span></div><div style=\"display:flex;gap:24px;margin-bottom:16px;flex-wrap:wrap;\"><div><div style=\"margin-bottom:4px;\"><span style=\"font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.5px;\">Nữ trước</span></div><div style=\"display:flex;align-items:center;gap:6px;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">W</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#f3e8ff;color:#7c3aed;border:1px solid #e9d5ff;\">B</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;\">M</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;\">M</span></div></div><div><div style=\"margin-bottom:4px;\"><span style=\"font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.5px;\">Nam trước</span></div><div style=\"display:flex;align-items:center;gap:6px;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;\">M</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#f3e8ff;color:#7c3aed;border:1px solid #e9d5ff;\">B</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">W</span> <span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">W</span></div></div></div><div style=\"background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:12px 16px;\"><div style=\"font-size:11px;font-weight:700;color:#15803d;text-transform:uppercase;margin-bottom:4px;\">Mẹo ghi nhớ</div><div style=\"font-size:13px;color:#166534;font-style:italic;line-height:1.6;\">Đàn ông (M) nói cả hai (B) phụ nữ (W) đều (W) giỏi kinh doanh.</div></div><div style=\"margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;\"><span style=\"font-size:11px;color:#6b7280;display:flex;align-items:center;gap:4px;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;\">M</span> Man (1)</span><span style=\"font-size:11px;color:#6b7280;display:flex;align-items:center;gap:4px;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">W</span> Woman (2)</span><span style=\"font-size:11px;color:#6b7280;display:flex;align-items:center;gap:4px;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-size:13px;font-weight:700;border-radius:6px;background:#f3e8ff;color:#7c3aed;border:1px solid #e9d5ff;\">B</span> Both (0)</span></div></div><div style=\"margin:20px 0;border-top:2px dashed #cbd5e1;\"></div><div style=\"background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;font-family:system-ui,sans-serif;\"><div style=\"font-size:14px;font-weight:800;color:#1e293b;margin-bottom:16px;border-bottom:2px solid #e2e8f0;padding-bottom:8px;\">GIẢI THÍCH ĐÁP ÁN</div><div style=\"background:#f8fafc;border:1px solid #f1f5f9;border-radius:12px;padding:14px;margin-bottom:12px;\"><div style=\"margin-bottom:10px;\"><div style=\"font-size:13px;font-weight:700;color:#334155;margin-bottom:4px;\">Câu 1: \"Doanh nghiệp nên ổn định tài chính trước khi mở rộng\"</div><div style=\"font-size:12px;color:#64748b;margin-bottom:6px;\">→ Đáp án: <span style=\"display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe;\">Man</span></div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #93c5fd;\"><div style=\"font-size:11px;font-weight:700;color:#1d4ed8;margin-bottom:2px;\">👨 Man nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"I think it is wiser for a business to secure its finances before considering a second location.\"</div><div style=\"font-size:12px;color:#1e40af;\">→ Tôi nghĩ doanh nghiệp nên ổn định tài chính trước khi mở thêm chi nhánh.</div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #f9a8d4;\"><div style=\"font-size:11px;font-weight:700;color:#be185d;margin-bottom:2px;\">👩 Woman nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">(Không đề cập — Woman kể về bạn mở rộng nhanh nhưng không nói nên ổn định tài chính trước)</div><div style=\"font-size:12px;color:#9d174d;\">→ Woman không nói về việc cần ổn định tài chính trước.</div></div><div style=\"background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;color:#166534;\">✅ Chỉ Man nhấn mạnh cần ổn định tài chính trước khi mở rộng → Đáp án: Man</div></div><div style=\"background:#ffffff;border:1px solid #f1f5f9;border-radius:12px;padding:14px;margin-bottom:12px;\"><div style=\"margin-bottom:10px;\"><div style=\"font-size:13px;font-weight:700;color:#334155;margin-bottom:4px;\">Câu 2: \"Doanh nghiệp hoạt động ở nước ngoài cần hiểu phong tục và cách giao tiếp địa phương\"</div><div style=\"font-size:12px;color:#64748b;margin-bottom:6px;\">→ Đáp án: <span style=\"display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;background:#f3e8ff;color:#7c3aed;border:1px solid #e9d5ff;\">Both</span></div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #93c5fd;\"><div style=\"font-size:11px;font-weight:700;color:#1d4ed8;margin-bottom:2px;\">👨 Man nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"Learning about regional traditions allows companies to build stronger relationships and prevent avoidable conflicts.\"</div><div style=\"font-size:12px;color:#1e40af;\">→ Tìm hiểu phong tục vùng miền giúp công ty xây dựng quan hệ tốt hơn và tránh mâu thuẫn.</div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #f9a8d4;\"><div style=\"font-size:11px;font-weight:700;color:#be185d;margin-bottom:2px;\">👩 Woman nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"Businesses must also be aware of cultural variations when they move into overseas markets. The way people communicate differs greatly.\"</div><div style=\"font-size:12px;color:#9d174d;\">→ Doanh nghiệp cần nhận thức về sự khác biệt văn hóa khi vào thị trường nước ngoài. Cách giao tiếp rất khác nhau.</div></div><div style=\"background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;color:#166534;\">✅ Cả hai đều đồng ý cần hiểu văn hóa và giao tiếp địa phương → Đáp án: Both</div></div><div style=\"background:#f8fafc;border:1px solid #f1f5f9;border-radius:12px;padding:14px;margin-bottom:12px;\"><div style=\"margin-bottom:10px;\"><div style=\"font-size:13px;font-weight:700;color:#334155;margin-bottom:4px;\">Câu 3: \"Ít vốn khởi nghiệp không nhất thiết cản trở doanh nghiệp nhỏ phát triển\"</div><div style=\"font-size:12px;color:#64748b;margin-bottom:6px;\">→ Đáp án: <span style=\"display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">Woman</span></div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #93c5fd;\"><div style=\"font-size:11px;font-weight:700;color:#1d4ed8;margin-bottom:2px;\">👨 Man nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"If a company does not have sufficient savings, even one late invoice or surprise expense could leave it unable to cover staff wages.\"</div><div style=\"font-size:12px;color:#1e40af;\">→ Man lo ngại thiếu vốn sẽ gây rủi ro — Man KHÔNG đồng ý ít vốn vẫn thành công.</div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #f9a8d4;\"><div style=\"font-size:11px;font-weight:700;color:#be185d;margin-bottom:2px;\">👩 Woman nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"Someone I know set up a small graphic studio from her bedroom at home. She relied on second-hand equipment and had barely any initial investment... she was able to open two additional locations in just two years.\"</div><div style=\"font-size:12px;color:#9d174d;\">→ Bạn tôi mở studio từ phòng ngủ, dùng đồ cũ, gần như không có vốn đầu tư — vẫn mở được 2 chi nhánh trong 2 năm.</div></div><div style=\"background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;color:#166534;\">✅ Chỉ Woman cho rằng ít vốn vẫn có thể thành công → Đáp án: Woman</div></div><div style=\"background:#ffffff;border:1px solid #f1f5f9;border-radius:12px;padding:14px;margin-bottom:12px;\"><div style=\"margin-bottom:10px;\"><div style=\"font-size:13px;font-weight:700;color:#334155;margin-bottom:4px;\">Câu 4: \"Môi trường làm việc thoải mái hơn có thể khuyến khích nhân viên báo cáo vấn đề sớm hơn\"</div><div style=\"font-size:12px;color:#64748b;margin-bottom:6px;\">→ Đáp án: <span style=\"display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;background:#fce7f3;color:#be185d;border:1px solid #fbcfe8;\">Woman</span></div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #93c5fd;\"><div style=\"font-size:11px;font-weight:700;color:#1d4ed8;margin-bottom:2px;\">👨 Man nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"Perhaps. Though as an organisation expands, staff still require well-defined roles and duties.\"</div><div style=\"font-size:12px;color:#1e40af;\">→ Man chỉ nói \"Có thể\" rồi chuyển sang nói về vai trò rõ ràng — Man KHÔNG thực sự đồng ý.</div></div><div style=\"margin-bottom:8px;padding-left:12px;border-left:3px solid #f9a8d4;\"><div style=\"font-size:11px;font-weight:700;color:#be185d;margin-bottom:2px;\">👩 Woman nói:</div><div style=\"font-size:12px;color:#475569;font-style:italic;\">\"A more relaxed working environment can give newer staff the confidence to speak up about small issues before they turn into major ones.\"</div><div style=\"font-size:12px;color:#9d174d;\">→ Môi trường thoải mái giúp nhân viên mới tự tin lên tiếng về vấn đề nhỏ trước khi chúng trở nên nghiêm trọng.</div></div><div style=\"background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;color:#166534;\">✅ Chỉ Woman khẳng định rõ ràng môi trường thoải mái giúp nhân viên báo cáo sớm → Đáp án: Woman</div></div></div><div style=\"margin:20px 0;border-top:2px dashed #cbd5e1;\"></div><div style=\"font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;margin-bottom:8px;\">Transcript</div><div style=\"font-size:13px;line-height:1.8;color:#334155;\"><p><strong>W:</strong> A lot of people believe that launching a new business requires substantial funding. Yet, someone I know set up a small graphic studio from her bedroom at home. She relied on second-hand equipment and had barely any initial investment. By focusing on a single service and paying close attention to what her clients wanted, she was able to open two additional locations in just two years.</p><p><strong>M:</strong> That is quite remarkable. Still, I would think twice about growing that fast. If a company does not have sufficient savings, even one late invoice or surprise expense could leave it unable to cover staff wages. I think it is wiser for a business to secure its finances before considering a second location.</p><p><strong>W:</strong> That is a fair observation. Businesses must also be aware of cultural variations when they move into overseas markets. The way people communicate differs greatly. A straightforward remark might seem professional in one culture, yet offensive in another.</p><p><strong>M:</strong> Absolutely. Learning about regional traditions allows companies to build stronger relationships and prevent avoidable conflicts. It is better to consult local team members than to rely on general assumptions about a culture.</p><p><strong>W:</strong> Internal company culture matters just as much. A more relaxed working environment can give newer staff the confidence to speak up about small issues before they turn into major ones.</p><p><strong>M:</strong> Perhaps. Though as an organisation expands, staff still require well-defined roles and duties.</p><p><strong>W:</strong> Of course. Encouraging open dialogue and maintaining a structured framework are not mutually exclusive.</p></div>",
+        "subQuestion": [
+          {
+            "content": "1.A company ought to secure its financial position before considering expansion",
+            "correctAnswer": "Man",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6acc657f0fc5fa69cac5e26a"
+          },
+          {
+            "content": "2.Businesses operating in a different country should learn about local traditions and ways of communicating",
+            "correctAnswer": "Both",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6acc657f0fc5fa69cac5e26b"
+          },
+          {
+            "content": "3.Starting with minimal funding does not necessarily stop a small business from succeeding",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6acc657f0fc5fa69cac5e26c"
+          },
+          {
+            "content": "4..A more relaxed work environment might lead employees to report issues sooner",
+            "correctAnswer": "Woman",
+            "file": null,
+            "answerList": null,
+            "image": null,
+            "suggestion": null,
+            "_id": "6acc657f0fc5fa69cac5e26d"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6acc657f0fc5fa69cac5e269"
+      }
+    ],
+    "questionPart": "THREE",
+    "questionType": "LISTENING",
+    "id": "6a449fca7886f21f186f6a40",
+    "createdAt": "2026-07-01T05:04:10.920Z",
+    "updatedAt": "2026-10-12T04:43:43.946Z",
+    "__v": 0
   }
 ]

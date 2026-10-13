@@ -539,11 +539,11 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
           "speaking"
         );
 
-        if (uploadResults.metadata.successful) {
-          const newImageUrls = uploadResults.metadata.successful.map(
+        if (uploadResults.success && uploadResults.data?.successful) {
+          const newImageUrls = uploadResults.data.successful.map(
             (result) => `https://files.aptisacademy.com.vn/${result.key}`
           );
-          const newImageKeys = uploadResults.metadata.successful.map(
+          const newImageKeys = uploadResults.data.successful.map(
             (result) => result.key
           );
 

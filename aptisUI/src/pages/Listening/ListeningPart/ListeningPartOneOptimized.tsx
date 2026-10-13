@@ -670,10 +670,11 @@ const ListeningPartOneOptimized: React.FC<ListeningPartOneProps> = ({
             );
 
             if (
-              uploadResults.metadata.successful &&
-              uploadResults.metadata.successful.length > 0
+              uploadResults.success &&
+              uploadResults.data?.successful &&
+              uploadResults.data.successful.length > 0
             ) {
-              finalAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.metadata.successful[0].key}`;
+              finalAudioUrl = `https://files.aptisacademy.com.vn/${uploadResults.data.successful[0].key}`;
             }
           }
 

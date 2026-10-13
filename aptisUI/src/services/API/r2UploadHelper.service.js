@@ -36,15 +36,26 @@ const R2UploadService = {
     files.forEach((file) => formData.append("files", file));
     formData.append("fileType", fileType);
 
-    const res = await ApiService.post(
+    const [data, error] = await ApiService.post(
       `${serviceURL}/upload/multiple`,
       formData,
       {},
       true
     );
 
-    console.log({ res });
-    return res[0];
+    console.log({ data, error });
+
+    if (error) {
+      return {
+        success: false,
+        error: error?.message || "Upload failed",
+      };
+    }
+
+    return {
+      success: true,
+      data: data?.metadata,
+    };
   },
 
   /**

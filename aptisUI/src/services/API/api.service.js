@@ -53,8 +53,9 @@ axios.interceptors.response.use(
 
     console.log("ApiService Response Error:", { status, error });
 
+    // Chỉ clear session khi 401 (Unauthorized) - không phải 500 (Server Error)
     if (
-      (status === 401 || status === 500) &&
+      status === 401 &&
       window.location.pathname !== "/login"
     ) {
       ToastError(

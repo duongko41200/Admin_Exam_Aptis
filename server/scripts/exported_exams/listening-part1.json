@@ -272,7 +272,7 @@
     "questionType": "LISTENING",
     "id": "695634bd0731243929b0c8fc",
     "createdAt": "2026-01-01T08:47:57.309Z",
-    "updatedAt": "2026-10-12T04:34:32.604Z",
+    "updatedAt": "2026-10-13T03:49:37.253Z",
     "__v": 0
   },
   {
@@ -548,7 +548,7 @@
     "questionType": "LISTENING",
     "id": "695639700731243929b0c911",
     "createdAt": "2026-01-01T09:08:00.336Z",
-    "updatedAt": "2026-10-12T04:34:33.260Z",
+    "updatedAt": "2026-10-13T03:49:37.641Z",
     "__v": 0
   },
   {
@@ -824,7 +824,7 @@
     "questionType": "LISTENING",
     "id": "69563db80731243929b0c926",
     "createdAt": "2026-01-01T09:26:16.483Z",
-    "updatedAt": "2026-10-12T04:34:33.361Z",
+    "updatedAt": "2026-10-13T03:49:37.693Z",
     "__v": 0
   },
   {
@@ -1100,7 +1100,7 @@
     "questionType": "LISTENING",
     "id": "695651040731243929b0c98e",
     "createdAt": "2026-01-01T10:48:36.418Z",
-    "updatedAt": "2026-10-12T04:34:33.462Z",
+    "updatedAt": "2026-10-13T03:49:37.747Z",
     "__v": 0
   },
   {
@@ -1376,7 +1376,7 @@
     "questionType": "LISTENING",
     "id": "695653de0731243929b0c9a3",
     "createdAt": "2026-01-01T11:00:46.987Z",
-    "updatedAt": "2026-10-12T04:34:33.560Z",
+    "updatedAt": "2026-10-13T03:49:37.800Z",
     "__v": 0
   },
   {
@@ -1652,7 +1652,7 @@
     "questionType": "LISTENING",
     "id": "6956576a0731243929b0c9b8",
     "createdAt": "2026-01-01T11:15:54.321Z",
-    "updatedAt": "2026-10-12T04:34:33.616Z",
+    "updatedAt": "2026-10-13T03:49:37.852Z",
     "__v": 0
   },
   {
@@ -1928,7 +1928,7 @@
     "questionType": "LISTENING",
     "id": "69565b1c0731243929b0c9cd",
     "createdAt": "2026-01-01T11:31:40.146Z",
-    "updatedAt": "2026-10-12T04:34:33.668Z",
+    "updatedAt": "2026-10-13T03:49:37.904Z",
     "__v": 0
   },
   {
@@ -2204,7 +2204,7 @@
     "questionType": "LISTENING",
     "id": "69565e420731243929b0ca73",
     "createdAt": "2026-01-01T11:45:06.375Z",
-    "updatedAt": "2026-10-12T04:34:33.728Z",
+    "updatedAt": "2026-10-13T03:49:37.956Z",
     "__v": 0
   },
   {
@@ -2480,7 +2480,7 @@
     "questionType": "LISTENING",
     "id": "69567b620731243929b0cac6",
     "createdAt": "2026-01-01T13:49:22.887Z",
-    "updatedAt": "2026-10-12T04:34:33.783Z",
+    "updatedAt": "2026-10-13T03:49:38.008Z",
     "__v": 0
   },
   {
@@ -2756,7 +2756,7 @@
     "questionType": "LISTENING",
     "id": "69567e6c0731243929b0cadb",
     "createdAt": "2026-01-01T14:02:20.487Z",
-    "updatedAt": "2026-10-12T04:34:33.837Z",
+    "updatedAt": "2026-10-13T03:49:38.061Z",
     "__v": 0
   },
   {
@@ -3032,7 +3032,7 @@
     "questionType": "LISTENING",
     "id": "695682170731243929b0caf0",
     "createdAt": "2026-01-01T14:17:59.753Z",
-    "updatedAt": "2026-10-12T04:34:33.891Z",
+    "updatedAt": "2026-10-13T03:49:38.115Z",
     "__v": 0
   },
   {
@@ -3308,7 +3308,7 @@
     "questionType": "LISTENING",
     "id": "696fa2e05f30844cf4a950b2",
     "createdAt": "2026-01-20T15:44:32.616Z",
-    "updatedAt": "2026-10-12T04:34:33.944Z",
+    "updatedAt": "2026-10-13T03:49:38.169Z",
     "__v": 0
   },
   {
@@ -3585,7 +3585,7 @@
     ],
     "timeToDo": "1970-01-01T00:00:00.035Z",
     "title": "Đề bổ sung",
-    "updatedAt": "2026-10-12T04:34:33.996Z"
+    "updatedAt": "2026-10-13T03:49:38.221Z"
   },
   {
     "_id": "6a60d8342063db93c80e1908",
@@ -3860,7 +3860,7 @@
     "questionType": "LISTENING",
     "id": "6a60d8342063db93c80e1917",
     "createdAt": "2026-07-22T14:48:20.654Z",
-    "updatedAt": "2026-10-12T04:34:34.048Z",
+    "updatedAt": "2026-10-13T03:49:38.273Z",
     "__v": 0
   },
   {
@@ -4136,7 +4136,7 @@
     "questionType": "LISTENING",
     "id": "6a70620d4ced4bde8e68babb",
     "createdAt": "2026-08-03T09:40:29.719Z",
-    "updatedAt": "2026-10-12T04:34:34.098Z",
+    "updatedAt": "2026-10-13T03:49:38.325Z",
     "__v": 0
   },
   {
@@ -4355,7 +4355,7 @@
     "questionType": "LISTENING",
     "id": "6a8fb740faae25015590c517",
     "createdAt": "2026-08-27T04:04:16.384Z",
-    "updatedAt": "2026-10-12T04:34:34.148Z",
+    "updatedAt": "2026-10-13T03:49:38.375Z",
     "__v": 0
   },
   {
@@ -4631,7 +4631,7 @@
     "questionType": "LISTENING",
     "id": "6aab9e1c1a79973c382967b1",
     "createdAt": "2026-09-17T08:00:28.060Z",
-    "updatedAt": "2026-10-12T04:34:34.199Z",
+    "updatedAt": "2026-10-13T03:49:38.426Z",
     "__v": 0
   },
   {
@@ -4774,7 +4774,7 @@
     "questionType": "LISTENING",
     "id": "6ab22742c007e40dd20f56c0",
     "createdAt": "2026-09-22T06:59:14.640Z",
-    "updatedAt": "2026-10-12T04:34:34.250Z",
+    "updatedAt": "2026-10-13T03:49:38.476Z",
     "__v": 0
   },
   {
@@ -4898,7 +4898,283 @@
     "questionType": "LISTENING",
     "id": "6abcd32293772eddabfd3eee",
     "createdAt": "2026-09-30T09:15:14.686Z",
-    "updatedAt": "2026-10-12T04:34:34.300Z",
+    "updatedAt": "2026-10-13T03:49:38.525Z",
+    "__v": 0
+  },
+  {
+    "_id": "6acdb175d87a9c1eae4fb51e",
+    "title": "Đề 17",
+    "timeToDo": "1970-01-01T00:00:00.035Z",
+    "description": null,
+    "questions": [
+      {
+        "questionTitle": "Đề 17",
+        "content": "Đề 17",
+        "answerList": [],
+        "correctAnswer": "",
+        "file": null,
+        "subQuestionAnswerList": [],
+        "suggestion": null,
+        "subSuggestion": "",
+        "subQuestion": [
+          {
+            "content": "What is the same about his aunt and his mother?",
+            "correctAnswer": "Thin",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866434339_e1007c9b5ec204a0_c1.mp3",
+            "answerList": [
+              {
+                "content": "They both have short hair"
+              },
+              {
+                "content": "Thin"
+              },
+              {
+                "content": "They both have blue eyes"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3],\"text\":\" I'm meeting my aunt for the first time this Saturday.\"},{\"timestamp\":[3,4.8],\"text\":\" My mom told me a bit about her.\"},{\"timestamp\":[4.8,7.88],\"text\":\" She's much taller, and her hair is short and dark,\"},{\"timestamp\":[7.88,10],\"text\":\" while my mom keeps her as long.\"},{\"timestamp\":[10,13.36],\"text\":\" But they're both really thin because they stay active and eat well.\"},{\"timestamp\":[13.36,20.35],\"text\":\" They even wear the same clothing size. As for eyes, my aunt's are blue, but mine are brown just like my mom's. [BLANK_AUDIO]\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399e7"
+          },
+          {
+            "content": "Which destination does the woman choose?",
+            "correctAnswer": "Going to the south",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866479495_c014e3f153b021f9_c2.mp3",
+            "answerList": [
+              {
+                "content": "The central park"
+              },
+              {
+                "content": "The mountains in the north"
+              },
+              {
+                "content": "Going to the south"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.4],\"text\":\" I've got a few days off and I want to get away from the city.\"},{\"timestamp\":[3.4,7.6],\"text\":\" The central park sounded nice at first, but it's too close to home.\"},{\"timestamp\":[7.6,11.64],\"text\":\" The mountains in the north would be great for cycling, but a four-hour drive is too far\"},{\"timestamp\":[11.64,13.76],\"text\":\" for a short break.\"},{\"timestamp\":[13.76,null],\"text\":\" In the end, I've decided I'm going to the south. It's only an hour away, and the hills there are perfect for a quiet bike ride. by grind.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399e8"
+          },
+          {
+            "content": "When are they going to have their meal?",
+            "correctAnswer": "2:00 PM",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866479911_f1fdf95ccb521c77_c3.mp3",
+            "answerList": [
+              {
+                "content": "2:00 PM"
+              },
+              {
+                "content": "1:00 PM"
+              },
+              {
+                "content": "12:00 PM"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,2.36],\"text\":\" Hi, I'm running late today.\"},{\"timestamp\":[2.36,4.48],\"text\":\" I had to stop at the pharmacy first,\"},{\"timestamp\":[4.48,6.04],\"text\":\" and now I'm still at the market\"},{\"timestamp\":[6.04,8.24],\"text\":\" picking up vegetables for our meal.\"},{\"timestamp\":[8.24,9.68],\"text\":\" I've got a lot left to buy,\"},{\"timestamp\":[9.68,12.28],\"text\":\" so I won't be back anytime soon.\"},{\"timestamp\":[12.28,13.92],\"text\":\" Just relax at home.\"},{\"timestamp\":[13.92,16.16],\"text\":\" We'll probably sit down to eat at about 2 p.m.\"},{\"timestamp\":[16.16,17.52],\"text\":\" once I get everything sorted.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399e9"
+          },
+          {
+            "content": "What was his main reason for picking this coat?",
+            "correctAnswer": "Because it will keep him warm",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866480223_92c0435a8fc2d3d5_c4.mp3",
+            "answerList": [
+              {
+                "content": "Because it was the cheapest"
+              },
+              {
+                "content": "Because it was fashionable"
+              },
+              {
+                "content": "Because it will keep him warm"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,2.54],\"text\":\" I bought a new coat for our camping trip.\"},{\"timestamp\":[2.54,6.9],\"text\":\" It wasn't the cheapest in the store, and the color isn't exactly fashionable, but that\"},{\"timestamp\":[6.9,8.4],\"text\":\" doesn't matter to me.\"},{\"timestamp\":[8.4,12.58],\"text\":\" We'll be outdoors at high altitude, where it gets very cold at night.\"},{\"timestamp\":[12.58,15.26],\"text\":\" I picked this one because it will keep me warm.\"},{\"timestamp\":[15.26,18.32],\"text\":\" It has a thick lining, but is still light enough to carry in my bag.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399ea"
+          },
+          {
+            "content": "Where exactly is the noise coming from?",
+            "correctAnswer": "The third floor",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866480616_fd4fb312f0def981_c5.mp3",
+            "answerList": [
+              {
+                "content": "A\tThe first floor"
+              },
+              {
+                "content": "The third floor"
+              },
+              {
+                "content": "The second floor"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.56],\"text\":\" Hello, I'm calling about a hammering noise in my building.\"},{\"timestamp\":[3.56,6.96],\"text\":\" I first thought it was from the second floor, directly above me,\"},{\"timestamp\":[6.96,8.6],\"text\":\" but that flat is empty.\"},{\"timestamp\":[8.6,10.8],\"text\":\" The neighbors are on holiday.\"},{\"timestamp\":[10.8,13.68],\"text\":\" I went up another flight and found the real source.\"},{\"timestamp\":[13.68,null],\"text\":\" A workman on the third floor is fitting a new kitchen. Could you ask him to stop by six? I need to study for my exams.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399eb"
+          },
+          {
+            "content": "Which activity does the student sign up for?",
+            "correctAnswer": "The art club",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866481006_2be72f6d9cd12859_c6.mp3",
+            "answerList": [
+              {
+                "content": "The music club"
+              },
+              {
+                "content": "The drama club"
+              },
+              {
+                "content": "The art club"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,2.96],\"text\":\" I've been looking at the clubs available this term.\"},{\"timestamp\":[2.96,7.96],\"text\":\" The music club sounds fun, but you need your own instrument and I don't have one.\"},{\"timestamp\":[7.96,13.2],\"text\":\" My friend wants me to join the Drama Club, but I really don't enjoy performing on stage.\"},{\"timestamp\":[13.2,15.08],\"text\":\" So I've chosen the Art Club.\"},{\"timestamp\":[15.08,19.2],\"text\":\" They welcome beginners, and I'd love to learn portrait drawing rather than just copying\"},{\"timestamp\":[19.2,19.84],\"text\":\" pictures.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399ec"
+          },
+          {
+            "content": "Which place does Malik suggest visiting?",
+            "correctAnswer": "Town Hall",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866481417_ad815eab9e83ebad_c7.mp3",
+            "answerList": [
+              {
+                "content": "Town Hall"
+              },
+              {
+                "content": "The library"
+              },
+              {
+                "content": "The community center"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,4.32],\"text\":\" Hey Mia, I was looking at the local events page and found something great.\"},{\"timestamp\":[4.32,7.92],\"text\":\" There's a free photography exhibition at the town hall this Saturday.\"},{\"timestamp\":[7.92,11.76],\"text\":\" I've always wanted to visit that building, so this is the perfect excuse.\"},{\"timestamp\":[11.76,13.76],\"text\":\" Let me know if you're free to come along.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399ed"
+          },
+          {
+            "content": "How many years old is the city?",
+            "correctAnswer": "1,500 years old",
+            "file": "https://files.aptisacademy.com.vn/listening/2026/10/1791866481901_bcbf71b3a2b42c80_c8.mp3",
+            "answerList": [
+              {
+                "content": "500 years old"
+              },
+              {
+                "content": "1,000 years old"
+              },
+              {
+                "content": "1,500 years old"
+              }
+            ],
+            "image": null,
+            "suggestion": "<p>[{\"timestamp\":[0,3.44],\"text\":\" Welcome to today's guided walk through the old quarter.\"},{\"timestamp\":[3.44,6.32],\"text\":\" Visitors always ask how old this place is.\"},{\"timestamp\":[6.32,8.72],\"text\":\" For years the exact date was debated,\"},{\"timestamp\":[8.72,10.84],\"text\":\" but researchers have now agreed.\"},{\"timestamp\":[10.84,15.16],\"text\":\" This city is approximately 1,500 years old.\"},{\"timestamp\":[15.16,18.52],\"text\":\" Take your time to look around and enjoy the history all around you.\"}]</p>",
+            "_id": "6acdb672e5b45b4063c399ee"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6acdb672e5b45b4063c399ef"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6acdb672e5b45b4063c399f0"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6acdb672e5b45b4063c399f1"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6acdb672e5b45b4063c399f2"
+          },
+          {
+            "content": "",
+            "correctAnswer": "",
+            "file": "",
+            "answerList": [
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              },
+              {
+                "content": ""
+              }
+            ],
+            "image": null,
+            "suggestion": "",
+            "_id": "6acdb672e5b45b4063c399f3"
+          }
+        ],
+        "isExample": "false",
+        "image": null,
+        "_id": "6acdb672e5b45b4063c399e6"
+      }
+    ],
+    "questionPart": "ONE",
+    "questionType": "LISTENING",
+    "id": "6acdb175d87a9c1eae4fb528",
+    "createdAt": "2026-10-13T04:20:05.321Z",
+    "updatedAt": "2026-10-13T04:41:22.304Z",
     "__v": 0
   }
 ]

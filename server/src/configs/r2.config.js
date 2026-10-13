@@ -42,8 +42,7 @@ class R2Config {
         accessKeyId: this.config.accessKeyId,
         secretAccessKey: this.config.secretAccessKey,
       },
-      // Force path style for R2 compatibility
-      forcePathStyle: false,
+      forcePathStyle: true,
     });
   }
 
