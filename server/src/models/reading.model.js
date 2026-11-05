@@ -56,6 +56,8 @@ const QuestionSchema = new Schema({
 	isExample: { type: Boolean, required: true },
 	questionPart: { type: String, required: true },
 	image: { type: String, default: null },
+	// Optional: example sentence shown before the ordering task (Reading Part 2)
+	exampleSentence: { type: String, default: null },
 });
 
 const ReadingSchema = new Schema(

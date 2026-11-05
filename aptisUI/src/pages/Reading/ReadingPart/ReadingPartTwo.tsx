@@ -23,6 +23,7 @@ interface ReadingPartOneProps {
 interface FormData {
   title: string;
   subTitle: string;
+  exampleSentence?: string;
   content: string;
   subContent1: string;
   correctAnswer1: string;
@@ -145,6 +146,7 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
         isExample: false,
         questionPart: "TWO",
         image: null,
+        exampleSentence: values.exampleSentence?.trim() || null,
       },
 
       skill: "READING",
@@ -198,6 +200,10 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
     if (dataReadingPartTwo) {
       setValue("title", dataReadingPartTwo.data.title);
       setValue("subTitle", dataReadingPartTwo.data.questions.questionTitle);
+      setValue(
+        "exampleSentence",
+        dataReadingPartTwo.data.questions.exampleSentence || ""
+      );
       // setValue("suggestion", dataReadingPartTwo.data.questions.suggestion);
       setSuggestion(dataReadingPartTwo.data.questions.suggestion);
       setContent(dataReadingPartTwo.data.questions.content);
@@ -242,6 +248,17 @@ const ReadingPartTwo: React.FC<ReadingPartOneProps> = ({
             fullWidth
             error={!!errors.subTitle}
             helperText={errors.subTitle ? "This field is required" : ""}
+          />
+        </div>
+        <div>
+          <TextField
+            {...register("exampleSentence")}
+            label="Câu ví dụ (Example sentence) - không bắt buộc"
+            placeholder="VD: In 1895, the first film was presented to an audience in Paris, France."
+            variant="outlined"
+            fullWidth
+            multiline
+            InputLabelProps={{ shrink: true }}
           />
         </div>
 
